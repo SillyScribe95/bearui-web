@@ -6,7 +6,7 @@ function BigButton() {
       return console.log("saokdaw");
     }
   };
-  var okaew = /*#__PURE__*/React.createElement("button", aswe, "click asdij me bedia");
+  var okaew = /*#__PURE__*/React.createElement("button", aswe, "Another big BUTTON me bedia");
   return okaew;
 }
 
@@ -20,4 +20,14 @@ function HiButton() {
   return okaew;
 }
 
-export { BigButton, HiButton };
+function BeginButton() {
+  var aswe = {
+    onClick: function onClick() {
+      return console.log("saokdaw");
+    }
+  };
+  var okaew = /*#__PURE__*/React.createElement("button", aswe, "Button Begin Team!");
+  return okaew;
+}
+
+export { BeginButton, BigButton, HiButton };
