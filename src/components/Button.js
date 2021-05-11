@@ -5,7 +5,7 @@ export function BigButton() {
     onClick: () => console.log("saokdaw"),
   };
 
-  const okaew = <button {...aswe}>Big me bedia</button>;
+  const okaew = <button {...aswe}>Another big BUTTON me bedia</button>;
 
   return okaew;
 }
