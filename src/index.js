@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-export * from "./components/Button";
+export { BigButton } from "./components/Button";
 
 // ReactDOM.render(
 //   <React.StrictMode>
