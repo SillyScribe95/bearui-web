@@ -1,0 +1,2 @@
+(this["webpackJsonpbareui-web"]=this["webpackJsonpbareui-web"]||[]).push([[0],{10:function(n,t,c){},12:function(n,t,c){"use strict";c.r(t),c.d(t,"BigButton",(function(){return o}));c(1),c(5),c(9),c.p,c(10);var e=c(3),i=c(0);function o(){var n={onClick:function(){return console.log("saokdaw")}};return Object(i.jsx)("button",Object(e.a)(Object(e.a)({},n),{},{children:"click me bedia"}))}},9:function(n,t,c){}},[[12,1,2]]]);
+//# sourceMappingURL=main.85125307.chunk.js.map
