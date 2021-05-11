@@ -18,4 +18,15 @@ function BigButton() {
   return okaew;
 }
 
+function HiButton() {
+  var aswe = {
+    onClick: function onClick() {
+      return console.log("saokdaw");
+    }
+  };
+  var okaew = /*#__PURE__*/React__default['default'].createElement("button", aswe, "Hi From the Team!");
+  return okaew;
+}
+
 exports.BigButton = BigButton;
+exports.HiButton = HiButton;
