@@ -1,11 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { Button } from "./components/Button";
+import { BigButton } from "./components/Button";
 
 function App() {
   return (
     <div className="App">
-      <Button />
+      <BigButton />
     </div>
   );
 }

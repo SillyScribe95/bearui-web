@@ -17,3 +17,9 @@ export * from "./components/Button";
 // // to log results (for example: reportWebVitals(console.log))
 // // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
+
+// https://github.com/SillyScribe95/bearui-web
+// npm install git+ssh://git@git.mydomain.com:Username/Repository-name
+// git+https://github.com/SillyScribe95/bearui-web.git
+// npm install git+https://github.com/SillyScribe95/bearui-web.git
+// npm install git+ssh://git@github.com/SillyScribe95/bearui-web.git

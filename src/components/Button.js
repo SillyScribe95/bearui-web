@@ -1,4 +1,4 @@
-export function Button() {
+export function BigButton() {
   const aswe = {
     onClick: () => console.log("saokdaw"),
   };
