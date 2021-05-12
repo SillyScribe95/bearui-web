@@ -42,7 +42,7 @@ export function BearInput({
   initialValue,
   selectvar,
   rightSubmit,
-  typevar,
+  inputType,
   rows,
   titlevar,
   placeholder,
@@ -60,8 +60,8 @@ export function BearInput({
 }) {
   logs.logga("___Asidnw obj ___", obj);
 
-  // const [checkBoxo, setcheckBoxo] = useState();
-  // const [chekBxTrue, setchekBxTrue] = useState(checked);
+  const [checkBoxo, setcheckBoxo] = useState();
+  const [chekBxTrue, setchekBxTrue] = useState(checked);
 
   logs.logga("___ errors ___", errors);
 
@@ -138,18 +138,16 @@ export function BearInput({
     style: daezxv,
   };
 
-  let sdfoewr =
-    //
-    "select";
+  let sdfoewr = "select";
 
   let sdjrete =
     //
-    typevar == sdfoewr;
+    inputType == sdfoewr;
   // logtrue
 
   // 1console
   if (sdjrete) {
-    logs.logga(typevar + "___formMain--INPUT------zzz", name, objbase);
+    logs.logga(inputType + "___formMain--INPUT------zzz", name, objbase);
   }
 
   //
@@ -158,7 +156,7 @@ export function BearInput({
   //
 
   function retFunc() {
-    switch (typevar) {
+    switch (inputType) {
       case "select":
         let fodsfew = {
           isMulti: true,

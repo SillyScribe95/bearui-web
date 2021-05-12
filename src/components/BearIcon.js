@@ -108,6 +108,6 @@ export function BearIcon(sdfoger, sdfke) {
     close: kxmvs,
   };
 
-  return "";
-  // return ijsadwe[sdfoger];
+  // return "";
+  return ijsadwe[sdfoger];
 }

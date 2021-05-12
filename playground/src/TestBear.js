@@ -7,6 +7,7 @@ import {
   BearEmoji,
   BearSelect,
   logs,
+  BearDuration,
   BigButton,
   BearForm,
   HiButton,
@@ -76,16 +77,25 @@ export default function TestBear() {
   // 1form
   function Formios() {
     function sdofkre(sdfew) {
-      logs.loggo("___ sdfew ___", sdfew);
+      logs.loggo("___ TESTBEAR - FORMIOS RESULTS ___", sdfew);
     }
 
     const awqeq = {
-      // variable:
+      variable: {
+        // inputType: },
+      },
     };
+
+    const oskde = [
+      //
+      "variable",
+      "name",
+      "password",
+    ];
 
     const cvbdf = {
       // dictvar: awqeq,
-      listvar: ["name", "password"],
+      listvar: oskde,
       onSubmit: sdofkre,
       formid: "testFOrmo",
     };
@@ -172,31 +182,39 @@ export default function TestBear() {
     return <BearSelect {...aokwe} />;
   }
 
+  function Dureo() {
+    const aease = {
+      duration: 50,
+    };
+
+    const sdrease = <BearDuration {...aease} />;
+
+    return sdrease;
+  }
+
   // 1return
   return (
-    <div>
+    <>
       {/*  */}
-      {/* 1carousel */}
-      CAROUSEL
+      1carousel
       <CaroBase />
-      {/* 1emoji  */}
-      {/* <Mojioe /> */}
-      {/* 1float */}
-      {/* FLOAT MAIN
-      <Flotio /> */}
-      {/* 1wiki TEST WIKI
-      <Seleo /> */}
+      1emoji
+      <Mojioe />
+      1float
+      <Flotio />
+      1SELECT TEST
+      <Seleo />
+      {/* 1wiki TEST WIKI */}
+      {/* <Seleo /> */}
       {/* 1div */}
       <DivRend />
       {/* <TestPage /> */}
-      {/* <BigButton /> */}
-      {/* <TestForm /> */}
-      {/* <HiButton /> */}
-      {/* 1list */}
-      {/* <ListO /> */}
+      1list
+      <ListO />
+      1duration
+      <Dureo />
       1test
       <Formios />
-      {/* <BigBu */}
-    </div>
+    </>
   );
 }

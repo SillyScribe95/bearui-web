@@ -9,7 +9,7 @@ function App() {
       {/*  */}
       {/* asdokqw */}
       {/* <TestPage /> */}
-      {/* <TestBear /> */}
+      <TestBear />
     </div>
   );
 }

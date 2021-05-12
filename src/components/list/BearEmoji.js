@@ -10,7 +10,7 @@ import { BearList } from "./BearList";
 import { emojiDict } from "../../consts/emojiConst";
 import * as logs from "../../functions/logFuncs";
 import {
-  EmojiLabel,
+  // EmojiLabel,
   EmojiLabelMap,
   mapEmojiFace,
 } from "../../functions/emojiFuncs";

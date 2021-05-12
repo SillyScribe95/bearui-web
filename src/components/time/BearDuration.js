@@ -24,13 +24,14 @@ import {
   sectoHours,
   timeDecim,
 } from "../functions/GlobalFunctions";
-import { getObjDuration } from "@todcode/components/";
 import { BearIcon } from "../BearIcon";
 
 export default function BearDuration({
   //
+  // icon=
+  // noIcon
   parseType = "decimal",
-  obj,
+  duration,
   ...args
 }) {
   // 1const
@@ -49,7 +50,10 @@ export default function BearDuration({
     return asokew;
   }
 
-  const djsfder = getObjDuration(obj);
+  const djsfder =
+    //
+    duration;
+  // getObjDuration(obj);
 
   let ijewwe =
     //

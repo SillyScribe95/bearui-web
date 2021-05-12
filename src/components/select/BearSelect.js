@@ -1,8 +1,14 @@
 import Select from "react-select";
 import CreatableSelect from "react-select/creatable";
-import AsyncSelect, { makeAsyncSelect } from "react-select/async";
+// import { Input } from "@chakra-ui/react";
 import AsyncCreatableSelect from "react-select/async-creatable";
-import React, { useContext } from "react";
+// import { Input } from "reactstrap";
+// import AsyncSelect, { makeAsyncSelect } from "react.-select/async";
+import React, {
+  //
+  useState,
+  useContext,
+} from "react";
 import * as logs from "../../functions/logFuncs";
 
 export function BearSelect({
@@ -32,6 +38,7 @@ export function BearSelect({
   ...args
 }) {
   // 1const
+  const [type, setType] = useState("");
 
   function showTrue(inputValue, selectValue, selectOptions) {
     if (!inputValue) {
@@ -228,12 +235,11 @@ export function BearSelect({
       break;
 
     default:
-      endValue =
+      endValue = (
         //
-        "sodkwewq";
-    // CreatableSelect(dfijew);
-    // <CreatableSelect {...dfijew} />
-    // <Select {...dfijew} />
+        // <CreatableSelect {...dfijew} />
+        <Select {...dfijew} />
+      );
   }
 
   return endValue;

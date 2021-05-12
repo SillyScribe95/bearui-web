@@ -1,6 +1,3 @@
-import { BearFloat } from "./components/BearFloat";
-
-import * as logs from "./functions/logFuncs";
 // 1components
 
 // 1div
@@ -10,9 +7,6 @@ export * from "./components/BearDiv";
 export * from "./components/BearFloat";
 
 // 1button
-export * from "./components/button/Button";
-export * from "./components/button/HiButton";
-export * from "./components/button/BeginButton";
 export * from "./components/button/BearButton";
 
 // 1user
@@ -27,10 +21,11 @@ export * from "./components/list/BearEmoji";
 export * from "./components/select/BearSelect";
 
 // 1form
-import BearForm from "./components/form/BearForm";
+export * from "./components/form/BearForm";
 
-// export BearForm from "./components/form/BearForm";
-// import BearIn from "./components/form/BearInput";
+// 1time
+export * from "./components/time/BearDuration";
 
-//
-export { BearForm, logs };
+// 1logs
+import * as logs from "./functions/logFuncs";
+export { logs };

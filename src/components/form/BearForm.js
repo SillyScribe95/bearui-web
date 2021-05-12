@@ -1,9 +1,4 @@
 import React, { useState } from "react";
-// import //
-// //   BearDiv,
-// //   BearList,
-// //   logs,
-// "bearui-web";
 import * as yup from "yup";
 import { isEmpty } from "lodash";
 import { useForm, Controller } from "react-hook-form";
@@ -16,7 +11,7 @@ import { BearList } from "../list/BearList";
 import { BearButton } from "../button/BearButton";
 import * as logs from "../../functions/logFuncs";
 
-export default function BearForm({
+export function BearForm({
   noButton,
   noText,
   listDict,
@@ -39,7 +34,7 @@ export default function BearForm({
   tabConfig,
   schemavar,
   hookConfig,
-  typevar,
+  typeForm,
   sameLine,
   topButtonConfig,
   ImageTextList,
@@ -122,7 +117,7 @@ export default function BearForm({
     let asaoke = submitExtra && submitExtra();
 
     values = {
-      typevar: typevar,
+      typeForm: typeForm,
       ...values,
       ...asaoke,
     };
@@ -141,7 +136,7 @@ export default function BearForm({
       emptiosa: emptiosa,
     };
 
-    logs.logga("___ FORMAMAIN AAAA ___", gifhjer);
+    logs.logga("___ FORMAMAIN SUBMIT ___", gifhjer);
 
     if (trudsoe) {
       let dsifer = singleTrue ? goSing(values) : mainFI(values);
@@ -158,8 +153,8 @@ export default function BearForm({
   args = {
     ...args,
     id: formid,
-    onSubmit: subbTo,
-    // onSubmit: handleSubmit(subbTo),
+    // onSubmit: subbTo,
+    onSubmit: handleSubmit(subbTo),
   };
 
   function Buttiona({ ...siwerew }) {
@@ -218,6 +213,7 @@ export default function BearForm({
     //     message: "invalid email address",
     //   },
   };
+
   const objbase = {
     // ref: register(uasdw),
     // errorobj: asw,
@@ -228,55 +224,72 @@ export default function BearForm({
     // ...obj,
   };
 
-  // 1FUNCTION
-  function asdiwe(obj, baseObj) {
-    // 1name
-    const nameeo =
-      //
-      // obj
-      baseObj["name"];
-    const existo = overObj && overObj[nameeo];
-
-    const regDict = baseObj["regDict"];
-    const pattBase = getFormDict(obj);
-    const asokwe = {
-      ...pattBase,
-      ...regDict,
+  function FormError(textvar) {
+    const okaease = {
+      obj: textvar,
     };
 
-    const ijawe = existo ? existo : baseObj["textvar"];
+    const dfbokerr = <BearDiv {...okaease} />;
 
-    function sdifnew(asdf) {
-      logs.logga("___ asdf ___", asdf);
-    }
+    return dfbokerr;
+  }
 
-    const gihrw = topButtonTrue && {
+  function firstInputCheck(baseObj) {
+    //
+    const nameeo = baseObj.name;
+
+    logs.logga(nameeo, "___BeaForm firstInputCheck ___", {
+      baseObj: baseObj,
+      NAME: nameeo,
+    });
+
+    // 1name
+    const okwaew = nameeo
+      ? secondCheck(baseObj)
+      : FormError("No Form Name Supplied");
+
+    return okwaew;
+  }
+
+  // 1FUNCTION
+  function secondCheck({ ...baseObj }) {
+    logs.logga("___ REGISTER BASE  ___", baseObj);
+
+    const nameeo = baseObj["name"];
+    const titlCheck = topButtonTrue && {
       noTitle: true,
     };
 
+    function getRef({ name, titlevar, iconvar, ...asdsa }) {
+      //
+      const reffo =
+        //
+        // register("name");
+        register(name, asdsa);
+
+      return reffo;
+    }
+
+    const okasew = getRef(baseObj);
     const hookArgs = {
-      //   control: control,
-      //   errors: errors,
-      //   ref: register(asokwe),
+      control: control,
+      errors: errors,
+      //   ref: okasew,
+      ...okasew,
     };
 
+    const existo = overObj && overObj[nameeo];
+    const ijawe = existo ? existo : baseObj["textvar"];
+
     const odkasew = {
-      // ...asdwe,
-      //   ...hookArgs,
+      //   ...asdwe,
+      ...hookArgs,
       sameLine: sameLine,
       overObj: overObj,
       ...baseObj,
       ...inputConfig,
-      ...asokwe,
-      ...gihrw,
-      onChange: sdifnew,
+      ...titlCheck,
       textvar: ijawe,
-    };
-
-    const asodkwe = {
-      baseObj: baseObj,
-      existo: existo,
-      ijawe: ijawe,
     };
 
     const fhgsdf =
@@ -300,11 +313,18 @@ export default function BearForm({
   }
 
   function sdfok(obj) {
-    // const horzTrue = obj?.horizTrue
     const inDict = dictvar && dictvar[obj];
-    const baseObj = inDict ? inDict : obj;
+    const baseObj = {
+      ...getFormDict(obj),
+      ...inDict,
+    };
+
     const fdjgre = baseObj?.obj;
-    const obvdsaf = fdjgre ? fdjgre : baseObj ? asdiwe(obj, baseObj) : "";
+    const obvdsaf = fdjgre
+      ? fdjgre
+      : baseObj
+      ? firstInputCheck(baseObj)
+      : FormError("no form Dictionary supplied - " + obj);
 
     logs.logga("___ FORMAMIN - FIRST RUN OBJECT___", {
       INITIAL: obj,
@@ -467,7 +487,7 @@ export default function BearForm({
   };
 
   // 1console
-  let dskf = `${typevar} ${formid} ___ formMain args ___`;
+  let dskf = `${typeForm} ${formid} ___ formMain args ___`;
   logs.logga(dskf, duhiew);
 
   const aweuw = noForm ? (
@@ -543,8 +563,9 @@ function getFormDict(objsoa) {
   };
 
   const nasmwoBL = {
-    // required: true,
+    required: true,
     // pattern: emailPatto,
+    name: "name",
     titlevar: "Name",
     // titlevar: vbijdf9te,
     iconvar: "",
