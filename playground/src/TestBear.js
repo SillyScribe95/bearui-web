@@ -53,6 +53,7 @@ export default function TestBear() {
           {iconvar}, {textvar}
         </>
       );
+
       return oaksdew;
     }
 
@@ -162,8 +163,9 @@ export default function TestBear() {
   function Mojioe() {
     const okwesdr = {
       //
-      itemConfig: {
-        background: "blue",
+      itemStyle: {
+        // background: "green",
+        fontSize: "54px",
       },
       style: {
         border: "2px solid red",
@@ -175,8 +177,13 @@ export default function TestBear() {
   }
 
   function Seleo() {
+    function fgokre(cvbok) {
+      logs.loggo("___ cvbok ___", cvbok);
+    }
+
     const aokwe = {
-      //
+      onCreate: fgokre,
+      typeSelect: "create",
     };
 
     return <BearSelect {...aokwe} />;
@@ -184,7 +191,8 @@ export default function TestBear() {
 
   function Dureo() {
     const aease = {
-      duration: 50,
+      parseType: "short",
+      duration: 250,
     };
 
     const sdrease = <BearDuration {...aease} />;
@@ -209,8 +217,8 @@ export default function TestBear() {
       {/* 1div */}
       <DivRend />
       {/* <TestPage /> */}
-      1list
-      <ListO />
+      {/* 1list */}
+      {/* <ListO /> */}
       1duration
       <Dureo />
       1test

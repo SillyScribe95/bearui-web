@@ -1,32 +1,19 @@
-// // 1duration
-// function getDuration
-//   const { getVideoDurationInSeconds } = require('get-video-duration')
-//   const { getAudioDurationInSeconds } = require('get-audio-duration');
-
-// // From a local path...
-// getVideoDurationInSeconds('video.mov').then((duration) => {
-//   console.log(duration)
-// })
-
-// getAudioDurationInSeconds('audio.flac').then((duration) => {
-//   console.log(duration);
-// });
-
 import React, {
   //
   useState,
   useContext,
 } from "react";
-import { BearDiv } from "./BearDiv";
 import {
   durationParser,
   getDuration,
   sectoHours,
   timeDecim,
-} from "../functions/GlobalFunctions";
+} from "../../functions/timeFuncs";
 import { BearIcon } from "../BearIcon";
+import { BearDiv } from "../BearDiv";
+import * as logs from "../../functions/logFuncs";
 
-export default function BearDuration({
+export function BearDuration({
   //
   // icon=
   // noIcon
@@ -60,6 +47,7 @@ export default function BearDuration({
     // durationParser(djsfder, "ms");
     "";
 
+  // 1type
   switch (parseType) {
     case "decimal":
       ijewwe = timeDecim(djsfder);
@@ -102,3 +90,17 @@ export default function BearDuration({
 
   return <BearDiv {...args} />;
 }
+
+// // 1duration
+// function getDuration
+//   const { getVideoDurationInSeconds } = require('get-video-duration')
+//   const { getAudioDurationInSeconds } = require('get-audio-duration');
+
+// // From a local path...
+// getVideoDurationInSeconds('video.mov').then((duration) => {
+//   console.log(duration)
+// })
+
+// getAudioDurationInSeconds('audio.flac').then((duration) => {
+//   console.log(duration);
+// });

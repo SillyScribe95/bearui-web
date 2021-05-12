@@ -28,8 +28,12 @@ export function BearDiv({
     justifyContent: "center",
   };
 
-  const gibjr = {
+  const oksdae = fontSize && {
     fontSize: fontSize,
+  };
+
+  const gibjr = {
+    ...oksdae,
     ...osdakew,
     ...zxcsd,
     ...style,

@@ -18,7 +18,6 @@ import {
 export function BearEmoji({
   initialValue,
   selectBlue,
-  fontSize,
   typevar,
   listvar,
   onlyEmoji,
@@ -59,16 +58,14 @@ export function BearEmoji({
   // selectBlue ? plaqwe : "pointer";
 
   const oksae = {
-    fontSize: fontSize,
     // background: "red",
-    // padding: "40%",
-    // borderRadius: "50%",
+    padding: "5px",
+    borderRadius: "50%",
   };
 
   const sfjaw = {
     className: sadwqe,
     style: oksae,
-    // bediaTrue: true,
     ...itemConfig,
   };
 

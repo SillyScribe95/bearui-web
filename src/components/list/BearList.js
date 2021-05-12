@@ -48,6 +48,7 @@ export function BearList({
   chooseBaseFunc,
   returnArray,
   clickSingle,
+  itemStyle = {},
   itemConfig = {},
   spaceBetween,
   //
@@ -119,6 +120,7 @@ export function BearList({
     // 1style
     const mainseo = {
       ...sokwe,
+      ...itemStyle,
       ...adojaqw("style"),
     };
 
@@ -171,14 +173,13 @@ export function BearList({
     let asdpkwe = "";
     switch (typeList) {
       case "div":
-        asdpkwe = "div";
-        // asdpkwe = <BearDiv {...endRet} />;
+        asdpkwe = <BearDiv {...endRet} />;
         break;
       case "dict":
         asdpkwe = endRet;
       case "return":
-        asdpkwe = "dict";
-        // asdpkwe = <BearDiv {...itemConfig} obj={listarr} />;
+        // asdpkwe = "dict";
+        asdpkwe = <BearDiv {...itemConfig} obj={listarr} />;
         break;
 
       default:

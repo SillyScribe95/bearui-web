@@ -117,3 +117,1134 @@
   -webkit-box-orient: vertical;
   white-space: nowrap;
 }
+
+/* @import "~antd/dist/antd.css"; */
+/* @import "compass/css3"; */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
+.item.selected {
+  background: #177779;
+  color: white;
+  border-color: #206748;
+}
+
+.lp-copy-sel__option,
+.lp-copy-sel__single-value {
+  white-space: pre-wrap !important;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.vidobbo::-webkit-scrollbar {
+  display: none;
+}
+
+.noresize {
+  resize: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.vidobbo {
+  -ms-overflow-style: none;
+}
+
+.item.not-selectable .tick,
+.item.selected .tick {
+  /* color: white; */
+}
+
+.item.selecting {
+  /* border: 1px solid #177779; */
+}
+
+.item {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 145px;
+  min-height: 125px;
+  margin: 2px;
+  float: left;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 0.3rem; */
+}
+
+.item.not-selectable {
+  /* background: #819198;
+  color: white; */
+}
+
+.item .tick {
+  /* position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 10px;
+  color: #5f6c70;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 6px;
+  line-height: 7px; */
+}
+
+.ant-btn-clicked:after {
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+}
+
+[ant-click-animating-without-extra-node]:after {
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+}
+
+.ais-InstantSearch__root {
+  display: flex;
+  border: 1px solid grey;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.selectHov {
+  transition: 0.3s;
+}
+
+.selectHov:hover {
+  background: green;
+}
+
+.selectHov {
+  transition: 0.3s;
+}
+
+.selectHov:hover {
+  background: red;
+}
+
+.hoverMain {
+  position: relative;
+  /* opacity: 1; */
+}
+
+.hoverMain.no-hover:hover {
+  opacity: 1;
+}
+
+.hoverMain.no-hover {
+  opacity: 0;
+}
+
+.hoverMain.hover {
+  /* position: absolute;
+  top: 0; */
+  opacity: 1;
+}
+
+.hoverMain.hover:hover {
+  opacity: 0;
+}
+
+/* 
+&:hover &__no-hover {
+  opacity: 0;
+}
+
+&:hover &__hover {
+  opacity: 1;
+}
+
+&__hover {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+&__no-hover {
+  opacity: 1;
+} */
+
+.wrapQuotes::before {
+  content: "❝";
+}
+.wrapQuotes::after {
+  content: "❞";
+}
+
+/* 1hover */
+.playText:hover {
+  cursor: pointer;
+}
+
+.playTextLight:hover {
+  background-color: #e5e5e5;
+  cursor: pointer;
+}
+
+.playTextDark:hover {
+  /* background-color: white; */
+  color: blue;
+  cursor: pointer;
+}
+
+.playCurrent {
+  background-color: purple;
+  /* color: white; */
+  /* cursor: pointer; */
+  /* background-color: rgb(0, 229, 229, 0.9); */
+}
+
+/* wrapTrue + shadeTrue + expandHover */
+
+/* animation: shadowPulse 3s infinite;
+
+
+  export const shadowPulse = keyframes`
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(44, 130, 201, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}
+`; */
+
+/* .hideSect {
+  max-height: 0; 
+} */
+
+.ant-list-item {
+  padding: 0 0px;
+}
+
+.iconNum {
+  padding: 0 1px;
+}
+
+.vertCont {
+  /* dis */
+  align-items: center;
+}
+
+.vertBox {
+  display: flex;
+  align-items: center;
+}
+
+.vertAlign {
+  display: flex;
+  align-items: center;
+  justify-content: "center";
+  vertical-align: middle;
+  /* justify-content: center; */
+  /* width: 100%; */
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+}
+
+.vertTop {
+  display: flex;
+  /* justify-content: center; */
+  align-items: top;
+  vertical-align: top;
+}
+
+.lineBetween:after {
+  content: "";
+
+  height: 100%;
+  border-right: 1px solid lightgrey;
+}
+
+.nowap {
+  white-space: nowap;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+/* height: 200px;
+  width: 400px;
+  color: green; */
+
+/* 1wrap */
+.wrapLine {
+  /* STYLE OF ENTIRE SECTION; */
+  /* user-drag: none;  */
+  /*  */
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical; */
+}
+/* 
+display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical; */
+
+.wrapLineTwo {
+  /* STYLE OF ENTIRE SECTION; */
+  /* user-drag: none;  */
+  /* display: inline; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.hiddenTrue {
+  display: none;
+}
+
+.hiddenTrue {
+  display: block;
+}
+
+.hideSect {
+  /* max-height: 0; */
+  display: hidden;
+}
+
+.scrollTrue {
+  overflow: scroll;
+}
+
+.overflow-scrolling {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pulseTrue {
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: 0.3s;
+}
+
+.pulseTrue:hover {
+  border: 3px solid lightblue;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+/* ... */
+
+.greyHover {
+  cursor: pointer;
+}
+
+.greyHover:hover {
+  cursor: pointer;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(154, 154, 154, 0.2) 100%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.circleHover {
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.circleHover:hover {
+  /* padding: 10px; */
+}
+
+.shadowBottom {
+  /* background: red; */
+  box-shadow: inset 0 4px 2px -2px gray;
+  /* box-shadow: inset 0 0 0 6px #e78267; */
+  /* box-shadow: inset 15px #111; */
+}
+
+.lighthover {
+  transition: 0.1s;
+}
+.lightHover:hover {
+  cursor: pointer;
+  border: 2px solid rgb(0, 22, 77);
+  /* border-radius: 5px; */
+}
+
+.sdfaszxc {
+  opacity: 0.8;
+  /* border-left: 2px solid grey; */
+  padding-left: 5px;
+  /* border: 2px solid red; */
+  transition: 0.1s;
+}
+.sdfaszxc:hover {
+  cursor: pointer;
+  opacity: 1;
+  /* border: 2px solid rgb(0, 22, 77); */
+  /* border-radius: 5px; */
+  /* border-radius: 5px; */
+}
+
+.buttonHover {
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.1s;
+}
+
+.buttonHover:hover {
+  /* background: red; */
+  border: 2px solid rgb(0, 22, 77);
+  /* border-radius: 5px; */
+  /* border-radius: 5px; */
+}
+
+.borderRound {
+  border: 2px solid darkblue;
+  border-radius: 5px;
+}
+
+.borderHover {
+  /* padding: 1px; */
+  border: 2px solid lightgrey;
+  transition: 0.1s;
+  border-radius: 5px;
+}
+
+.borderMain {
+  /* padding: 1px; */
+  border: 2px solid lightgrey;
+  transition: 0.1s;
+  border-radius: 5px;
+}
+
+.error {
+  font-weight: bold;
+  color: red;
+}
+
+.titleMain {
+  font-weight: bold;
+  /* text-decoration: underline; */
+  /* box-shadow: 0 4px 2px -2px gray; */
+  /* color: red; */
+}
+
+.shadowMain {
+  border: 2px solid lightgrey;
+  transition: 0.1s;
+  border-radius: 5px;
+  /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 2px 0 rgba(0, 0, 0, 0.02);
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black; */
+}
+
+.bordeViddo {
+  background: black;
+  border: 2px solid white;
+}
+
+.darkenBehind {
+  /*  */
+  text-shadow: 0 0 10px blue;
+
+  /* text-shadow: 100100px 100px 8100px rgba(0, 0, 0, 1); */
+}
+.darkenOver {
+  background: linear-gradient(to bottom, transparent 0%, black 100%);
+}
+
+/* 
+.slick-prev:before {
+  content: "<";
+  color: red;
+  font-size: 30px;
+}
+
+.slick-next:before {
+  content: ">";
+  color: red;
+  font-size: 30px;
+} */
+
+.speakSelect {
+  /* background: red; */
+  /* color: green; */
+  background: lightblue;
+  border: 2px solid darkblue;
+  transition: 0.3s;
+}
+
+.speakSelect:hover {
+  /* background: green; */
+  /* border: 22px solid red; */
+}
+
+.buttonselect {
+  border: 15px solid red;
+}
+
+.buttonSelect:hover {
+  /*  */
+}
+
+.buttonSelect:active {
+  /*  */
+}
+
+/* 1transition */
+.transitMain {
+  transition: background-color 1s linear;
+  -webkit-transition: background-color 1s linear;
+
+  transition: color 0.3s linear;
+  -webkit-transition: color 0.3s linear;
+}
+
+.popAnim {
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+}
+.popAnim::before,
+.popAnim::after {
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+.popAnim::before {
+  top: 0;
+  left: 0;
+}
+.popAnim::after {
+  bottom: 0;
+  right: 0;
+}
+.popAnim:hover {
+  color: #60daaa;
+}
+.popAnim:hover::before,
+.popAnim:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.popAnim:hover::before {
+  border-top-color: #60daaa;
+  border-right-color: #60daaa;
+  -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.popAnim:hover::after {
+  border-bottom-color: #60daaa;
+  border-left-color: #60daaa;
+  -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+    height 0.25s ease-out 0.75s;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
+    height 0.25s ease-out 0.75s;
+}
+.backMain {
+  /* #F3F3F3 */
+  background-color: #f3f3f3;
+  /* background-color: #cee2fb; */
+  /* background-image: linear-gradient(
+    62deg,
+    #f3f3f3 0%,
+    #c3d4fc 31%,
+    #ffffff 100%
+  ); */
+}
+.required:after {
+  /* content: " *"; */
+  /* color: red; */
+}
+.flashBox {
+  border: 2px solid transparent;
+}
+
+.flashBox:hover {
+  border-color: red;
+  animation-name: flash_border;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: flash_border;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: flash_border;
+  -moz-animation-duration: 2s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+}
+
+@keyframes flash_border {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: blue;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+.linkPlush {
+  font-weight: 10;
+  color: white;
+  /* background: red; */
+  /* border: 5px solid green;
+  color: orange;
+ */
+}
+
+.linkPlush:hover {
+  text-decoration: underline;
+  /* cursor: pointer; */
+}
+
+.linkPlush:active {
+  color: lightblue;
+  /* cursor: pointer; */
+}
+
+.hoverPointer {
+  cursor: pointer;
+}
+
+.selectMain {
+  background: red;
+  /* color: red; */
+  /* border-radius: 50px; */
+}
+.selectMain:hover {
+  background-color: blue;
+}
+
+.highText {
+  /* background: red; */
+  color: red;
+  border-radius: 50px;
+}
+
+.textpopup {
+  /* color: red; */
+  background: blue;
+  transition: 3s;
+  transform: translateY(-100%);
+  /* transform: translateY(0); */
+}
+
+.animate-bottom {
+  /* position: relative; */
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 0.5s;
+  animation-name: animatebottom;
+  animation-duration: 0.5s;
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -50;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+.textpopup:hover {
+  /* color: red; */
+  /* background: blue;
+  transition: 3s; */
+  /* transform: translateY(-100%); */
+  transform: translateY(0);
+}
+
+.highText:hover {
+  background-color: rgb(0, 22, 77, 0.2);
+}
+
+.watchHover:hover {
+  /* background-color: green; */
+}
+
+.disabled:hover {
+  cursor: not-allowed;
+}
+.disabled:hover {
+  cursor: not-allowed;
+}
+
+/* 1class */
+/* 1shadeTrue */
+
+.shadeBorder {
+  border: 2px;
+}
+
+.shadeBorder:hover {
+  border: 2px solid blue;
+}
+
+.shadeDisable {
+  opacity: 0.3;
+}
+.shadeDisable:hover {
+  cursor: not-allowed;
+}
+
+.shadeTrue {
+  opacity: 0.6;
+}
+
+.shadeTrue:hover {
+  opacity: 1;
+  /* background: linear-gradient(119deg, rgba(2,0,36,1) 0%, lightblue 4%, rgba(0,212,255,1) 41%); */
+}
+
+.hoverOpac:hover {
+  opacity: 1;
+  /* background: linear-gradient(119deg, rgba(2,0,36,1) 0%, lightblue 4%, rgba(0,212,255,1) 41%); */
+}
+
+.shadeReverse {
+  opacity: 0.3;
+}
+
+.shadeReverse:hover {
+  opacity: 1;
+  /* background: linear-gradient(119deg, rgba(2,0,36,1) 0%, lightblue 4%, rgba(0,212,255,1) 41%); */
+}
+
+.whiteHover:hover {
+  background: white;
+  color: rgb(0, 22, 77);
+}
+
+.expandHover {
+  transition: transform 0.2s;
+}
+
+.expandHover:hover {
+  transform: scale(1.1);
+}
+
+.slick-prev {
+  left: 3% !important;
+}
+.slick-next {
+  right: 3% !important;
+}
+
+.anchorLine {
+  /*  */
+  /* background: lightblue; */
+  text-decoration: underline;
+  text-decoration-color: darkblue;
+}
+
+.highTranscript {
+  /* background: lightblue; */
+  text-decoration: underline;
+  text-decoration-color: darkblue;
+}
+
+.noDisplay {
+  /*  */
+  /* display: block; */
+  display: none;
+}
+
+.stretchTrue {
+  /*  */
+}
+
+/* .yesDisplay {
+  display: none;
+} */
+.video-stick {
+  top: 240px;
+}
+.audio-stick {
+  top: 60px;
+}
+/* 
+.component-wrapper {
+  transition: height 0.5s;
+  overflow: hidden;
+}
+
+.before-enter {
+  opacity: 0;
+}
+
+.entering {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.before-leave {
+  opacity: 1;
+}
+
+.leaving {
+  opacity: 0;
+  transition: opacity 0.5s;
+} */
+
+/* $keycolor: rgb(190, 121, 13);
+$keycolor-transparent: rgba(190, 121, 13, 0.3); */
+
+.nav-link {
+  display: inline-block;
+  margin-right: 20px;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.1em;
+  line-height: 1.3;
+  text-decoration: none;
+  border-bottom: 1px solid $keycolor-transparent;
+  @include transition(0.3s ease);
+
+  &:hover,
+  &:focus {
+    color: darkblue;
+    border-bottom: 10px solid $keycolor-transparent;
+  }
+
+  &:active {
+    border-bottom: 20px solid $keycolor-transparent;
+  }
+}
+
+/*  */
+/*  */
+/* <!-- CSS Reset : BEGIN --> */
+/* 1email */
+/*  */
+
+/* 1highlight */
+mark {
+  padding: 1px;
+  background-color: red;
+  /* background-color: HotPink; */
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.shadowLarge {
+  /* padding: 5px; */
+  transition: 0.01s;
+  border: 100px solid lightgrey;
+  transition: 0.1s;
+  border-radius: 10px;
+}
+
+.borderShadow {
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 2px 0 rgba(0, 0, 0, 0.02);
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black; */
+}
+
+.shadowHover {
+  /* padding: 5px; */
+  transition: 0.01s;
+  border: 2px solid lightgrey;
+  transition: 0.1s;
+  border-radius: 5px;
+}
+.shadowHover:hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 2px 0 rgba(0, 0, 0, 0.02);
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.wrapMain {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  /* -webkit-line-clamp: 5; */
+  -webkit-box-orient: vertical;
+}
+
+.wrapTwo {
+  /* STYLE OF ENTIRE SECTION; */
+  /* user-drag: none;  */
+  /* display: inline; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.wrapTrue {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: nowrap;
+}
+
+.chooseList {
+  border: 2px solid darkblue;
+  border-top: 5px solid darkblue;
+}
+
+.regardso {
+  padding: 15px 0;
+  /* width: 100%; */
+}
+
+.bedBeforeList {
+  padding-right: 5px;
+}
+.bedAfterList {
+  /* text-align: 5px; */
+  text-decoration: none;
+  font-size: 14px;
+}
+.bedTabList {
+  /* padding: 0 50px; */
+  /* width: 100%; */
+  vertical-align: baseline;
+}
+.bedList,
+.bedList div:before {
+  margin: 0 0 10px 30px;
+}
+
+.mainBackDiv {
+  font-family: sans-serif;
+  color: #222222;
+  padding: 60px 0;
+  /* background: rgb(0,22,77); */
+}
+
+.main {
+  background: #ffffff;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.content-block {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.footer {
+  clear: both;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  color: #999999;
+}
+.footer td,
+.footer p,
+.footer span,
+.footer a {
+}
+
+.bediaMark,
+.bediaMark a:link,
+.bediaMark a:visited,
+.bediaMark a:hover,
+.bediaMark a:active {
+  font-family: sans-serif;
+  text-decoration: none;
+  background: rgb(0, 22, 77);
+  color: #ffffff;
+}
+.bediaText {
+  color: blue;
+  /* color: rgb(0, 22, 77); */
+}
+
+.footer .emailTitle {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.emailBody {
+  margin: 0;
+  padding: 0 !important;
+  font-family: sans-serif;
+  mso-line-height-rule: exactly;
+}
+
+.emailButton {
+  font-size: 26px;
+  line-height: 23px;
+  min-width: 20px;
+  text-decoration: none;
+  padding: 15px 37px;
+  margin: 10px 0px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.emailButDiv {
+  /* transition: all 100ms ease-in; */
+  text-align: center;
+  padding: 0 25px;
+}
+
+.bedialink,
+.bedialink a:link,
+.bedialink a:visited,
+.bedialink a:hover,
+.bedialink a:active {
+  color: black;
+}
+@media screen and (max-width: 600px) {
+  /* What it does: Adjust typography on small screens to improve readability */
+  .email-container p {
+    font-size: 17px !important;
+  }
+}
+/* What it does: Tells the email client that only light styles are provided but the client can transform them to dark. A duplicate of meta color-scheme meta tag above. */
+:root {
+  color-scheme: light;
+  supported-color-schemes: light;
+}
+
+/* What it does: Remove spaces around the email design added by some email clients. */
+/* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+html,
+body {
+  margin: 0 auto !important;
+  padding: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.selectable-selectbox {
+  z-index: 9000;
+  position: absolute;
+  cursor: default;
+  background: none;
+  border: 1px dashed grey;
+}
+
+/* What it does: Stops email clients resizing small text. */
+* {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* What it does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+  margin: 0 !important;
+}
+
+/* What it does: forces Samsung Android mail clients to use the entire viewport */
+#MessageViewBody,
+#MessageWebViewDiv {
+  width: 100% !important;
+}
+
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,
+td {
+  mso-table-lspace: 0pt !important;
+  mso-table-rspace: 0pt !important;
+}
+
+/* What it does: Fixes webkit padding issue. */
+table {
+  border-spacing: 0 !important;
+  border-collapse: collapse !important;
+  table-layout: fixed !important;
+  margin: 0 auto !important;
+}
+
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+a {
+  text-decoration: none;
+}
+
+/* What it does: A work-around for email clients meddling in triggered links. */
+a[x-apple-data-detectors],  /* iOS */
+  .unstyle-auto-detected-links a,
+  .aBn {
+  border-bottom: 0 !important;
+  cursor: default !important;
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+.a6S {
+  display: none !important;
+  opacity: 0.01 !important;
+}
+
+/* What it does: Prevents Gmail from changing the text color in conversation threads. */
+.im {
+  color: inherit !important;
+}
+
+/* If the above doesn't work, add a .g-img class to any image in question. */
+img.g-img + div {
+  display: none !important;
+}
+
+/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+/* Create one of these media queries for each additional viewport size you'd like to fix */
+
+/* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+  u ~ div .email-container {
+    min-width: 320px !important;
+  }
+}
+/* iPhone 6, 6S, 7, 8, and X */
+@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+  u ~ div .email-container {
+    min-width: 375px !important;
+  }
+}
+/* iPhone 6+, 7+, and 8+ */
+@media only screen and (min-device-width: 414px) {
+  u ~ div .email-container {
+    min-width: 414px !important;
+  }
+}
