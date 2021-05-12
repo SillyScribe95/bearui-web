@@ -6,7 +6,6 @@ import 'react-select';
 import CreatableSelect$1 from 'react-select/creatable';
 import 'react-select/async';
 import AsyncCreatableSelect from 'react-select/async-creatable';
-import 'bearui-web';
 import * as yup from 'yup';
 import { Controller, useForm } from 'react-hook-form';
 import TextareaAutosize from 'react-textarea-autosize';

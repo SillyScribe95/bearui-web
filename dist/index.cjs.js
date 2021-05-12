@@ -10,7 +10,6 @@ require('react-select');
 var CreatableSelect$1 = require('react-select/creatable');
 require('react-select/async');
 var AsyncCreatableSelect = require('react-select/async-creatable');
-require('bearui-web');
 var yup = require('yup');
 var reactHookForm = require('react-hook-form');
 var TextareaAutosize = require('react-textarea-autosize');
