@@ -1,6 +1,19 @@
-import React from "react";
+import "bootstrap/dist/css/bootstrap.css";
+import "./index.css";
+export * from "./importBase";
+// import React from "react";
+// import ReactDOM from "react-dom";
+// import App from "./App";
+// // import reportWebVitals from './reportWebVitals';
 
-// 1import
-export * from "./components/Button";
-export * from "./components/HiButton";
-export * from "./components/BeginButton";
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById("root")
+// );
+
+// // If you want to start measuring performance in your app, pass a function
+// // to log results (for example: reportWebVitals(console.log))
+// // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// // reportWebVitals();

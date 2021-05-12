@@ -1,14 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { BigButton, HiButton } from "bearui-web";
+import TestPage from "./TestObj";
+import TestBear from "./TestBear";
 
 function App() {
   return (
     <div className="App">
       {/*  */}
-      <BigButton />
-      <HiButton />
-      {/* <BigBu */}
+      {/* asdokqw */}
+      {/* <TestPage /> */}
+      {/* <TestBear /> */}
     </div>
   );
 }
