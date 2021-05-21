@@ -1,4 +1,12 @@
-# Installing
+# Local Install
+
+run the following command:
+```
+npm i --save ../bareui-web
+```
+
+
+# Github Install
 
 Add the following in a .npmrc file:
 ```
@@ -9,6 +17,11 @@ registry=https://npm.pkg.github.com/SillyScribe95
 Then run the following command:
 ```
 npm install git+https://github.com/SillyScribe95/bearui-web.git#master
+```
+
+The library should appear in the dependencies of your package.json;
+```
+"@SillyScribe95/bearui-web": "git+https://github.com/SillyScribe95/bearui-web.git#master",
 ```
 
 Add this to your "scripts" section in package.json to get the latest version:
