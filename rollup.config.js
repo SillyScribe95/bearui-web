@@ -8,8 +8,8 @@ import css from "rollup-plugin-import-css";
 export default {
   input: pkg.source,
   output: [
-    { file: pkg.main, format: "cjs" },
-    { file: pkg.module, format: "esm" },
+    { file: pkg.main, format: "cjs", sourcemap: true },
+    { file: pkg.module, format: "esm", sourcemap: true },
   ],
   plugins: [
     // css(
@@ -21,7 +21,7 @@ export default {
     css(),
     external(),
     babel(),
-    del({ targets: ["dist/*"] }),
+    del({ targets: ["build/*"] }),
   ],
   external: Object.keys(pkg.peerDependencies || {}),
 };

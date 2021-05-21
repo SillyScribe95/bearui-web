@@ -1,309 +1,319 @@
-// import {
-//   FacebookLoginButton,
-//   GoogleLoginButton,
-//   AppleLoginButton,
-//   TwitterLoginButton,
-//   GithubLoginButton,
-//   createButton,
-// } from "react-social-login-buttons";
-// import {
-//   SiFacebook,
-//   SiGoogle,
-//   SiLinkedin,
-//   SiMessenger,
-//   SiTwitter,
-// } from "react-icons/si";
-// import FormMain from "../components/FormMain";
-// import ListMain from "../components/ListMain";
-// import { userConnect, userLogSign } from "@todcode/components/";
-// import { BearDiv  } from "../components/BearDiv";
-// import { getParamVar, ImageTextList } from "../functions/GlobalFunctions";
-// import { useState } from "react";
-// import BearButton from "../components/BearButton";
+import React, {
+  //
+  useState,
+  useContext,
+} from "react";
+import {
+  FacebookLoginButton,
+  GoogleLoginButton,
+  AppleLoginButton,
+  TwitterLoginButton,
+  GithubLoginButton,
+  createButton,
+} from "react-social-login-buttons";
+import {
+  SiFacebook,
+  SiGoogle,
+  SiLinkedin,
+  SiMessenger,
+  SiTwitter,
+} from "react-icons/si";
+import { getParamVar, logs, userLogSign } from "@SillyScribe95/bedia-shared/";
+import { BearForm } from "../form/BearForm";
+import { BearDiv } from "../BearDiv";
+import { BearButton } from "../button/BearButton";
+import { BearTextMedia } from "../BearTextMedia";
+import { BearList } from "../list/BearList";
 
-// export default function BearSign({
-//   //
-//   funcvar,
-//   typeSign = "login",
-//   socialConfig,
-//   formConfig,
-//   ...sdse
-// }) {
-//   //
-//   //
-//   const [emaTrue, setemaTrue] = useState();
-//   const [sdfer, setsignType] = useState(typeSign);
+export function SignBase({
+  //
+  funcvar,
+  typeSign = "login",
+  socialConfig,
+  socialSubmit,
+  emailSubmit,
+  socialList,
+  formConfig,
+  ...sdse
+}) {
+  //
+  //
+  const [emaTrue, setemaTrue] = useState();
+  const [sdfer, setsignType] = useState(typeSign);
 
-//   let signType = sdfer ? sdfer : getParamVar("typeSign");
+  let signType = sdfer ? sdfer : getParamVar("typeSign");
 
-//   // 1emailbase
-//   const emaCon = {
-//     text: "Log in with Email",
-//     icon: "envelope",
-//     iconFormat: (name) => `fa fa-envelope`,
-//     style: { background: "#FF5733" },
-//     activeStyle: { background: "#ff6700" },
-//   };
-//   /** My Facebook login button. */
-//   const EmailLoginButton = createButton(emaCon);
+  function signCheck(typevar) {
+    let okads =
+      //
+      // "";
+      "Continue with " + typevar;
 
-//   function dskwad() {
-//     logs.logga("asokdwqe");
-//   }
+    // switch (signType) {
+    //   case "login":
+    //     okads = "Log in with " + typevar;
+    //     break;
+    //   case "signup":
+    //     okads = "Sign up with " + typevar;
+    //     break;
+    // }
 
-//   const emBaso = {
-//     textvar: <EmailLoginButton />,
-//     onClick: dskwad,
-//     typevar: "email",
-//   };
+    return okads;
+  }
 
-//   function signCheck(typevar) {
-//     let okads =
-//       //
-//       "";
-//     // "Continue with " + typevar;
+  // 1emailbase
+  const emaCon = {
+    text: signCheck("Email"),
+    icon: "envelope",
+    iconFormat: (name) => `fa fa-envelope`,
+    style: { background: "#FF5733" },
+    activeStyle: { background: "#ff6700" },
+  };
+  /** My Facebook login button. */
+  const EmailLoginButton = createButton(emaCon);
 
-//     switch (signType) {
-//       case "login":
-//         okads = "Log in with " + typevar;
-//         break;
-//       case "signup":
-//         okads = "Sign up with " + typevar;
-//         break;
-//     }
+  function dskwad() {
+    logs.logga("asokdwqe");
+  }
 
-//     return okads;
-//   }
+  const emBaso = {
+    textvar: <EmailLoginButton />,
+    onClick: dskwad,
+    typevar: "email",
+  };
 
-//   const fdsogkret = {
-//     google: {
-//       textvar: <GoogleLoginButton>{signCheck("Google")}</GoogleLoginButton>,
-//       // textvar: "Google",
-//       iconvar: <SiGoogle />,
-//       typevar: "google",
-//     },
-//     facebook: {
-//       textvar: (
-//         <FacebookLoginButton>{signCheck("Facebook")}</FacebookLoginButton>
-//       ),
-//       // textvar: "Facebook",
-//       // iconvar: <SiFacebook />,
-//       typevar: "facebook",
-//     },
-//     email: emBaso,
-//     github: {
-//       textvar: <GithubLoginButton />,
-//       // textvar: "Twitter",
-//       // iconvar: <SiGithub />,
-//       typevar: "github",
-//     },
-//     apple: {
-//       textvar: <AppleLoginButton />,
-//       typevar: "apple",
-//     },
-//     twitter: {
-//       textvar: <TwitterLoginButton />,
-//       // textvar: "Github",
-//       iconvar: <SiTwitter />,
-//       typevar: "github",
-//     },
-//     //
-//   };
+  const fdsogkret = {
+    google: {
+      textvar: <GoogleLoginButton>{signCheck("Google")}</GoogleLoginButton>,
+      // textvar: "Google",
+      iconvar: <SiGoogle />,
+      typevar: "google",
+    },
+    facebook: {
+      textvar: (
+        <FacebookLoginButton>{signCheck("Facebook")}</FacebookLoginButton>
+      ),
+      // textvar: "Facebook",
+      // iconvar: <SiFacebook />,
+      typevar: "facebook",
+    },
+    email: emBaso,
+    github: {
+      textvar: <GithubLoginButton />,
+      // textvar: "Twitter",
+      // iconvar: <SiGithub />,
+      typevar: "github",
+    },
+    apple: {
+      textvar: <AppleLoginButton />,
+      typevar: "apple",
+    },
+    twitter: {
+      textvar: <TwitterLoginButton />,
+      // textvar: "Github",
+      iconvar: <SiTwitter />,
+      typevar: "github",
+    },
+    //
+  };
 
-//   function osadew({ typevar }) {
-//     logs.logga("___ userConnect ___", typevar);
+  function osadew({ typevar }) {
+    logs.logga("___ sinBas SOCIAL CLICK ___", typevar);
 
-//     switch (typevar) {
-//       case "email":
-//         setemaTrue(true);
-//         break;
+    switch (typevar) {
+      case "email":
+        setemaTrue(true);
+        break;
 
-//       default:
-//         userConnect(typevar, funcvar);
-//     }
-//   }
+      default:
+        socialSubmit(typevar);
+    }
+  }
 
-//   function Bsaeosa({ typevar, iconvar, textvar, ...swe }) {
-//     const dfid = {
-//       // fontSize: "20px",
-//       w: "full",
-//       onClick: osadew,
-//       leftIcon: iconvar,
-//       ...swe,
-//       // color: "black",
-//       // background: "white",
-//       // colorScheme: "white",
-//     };
+  function Bsaeosa({ typevar, iconvar, textvar, ...swe }) {
+    const dfid = {
+      // fontSize: "20px",
+      w: "full",
+      onClick: osadew,
+      leftIcon: iconvar,
+      ...swe,
+      // color: "black",
+      // background: "white",
+      // colorScheme: "white",
+    };
 
-//     const ijdsf = (
-//       <>
-//         <Button {...dfid}>
-//           <Center>
-//             <Text>
-//               {/* {iconvar} */}
-//               {/* Continue with */}
-//               {textvar}
-//             </Text>
-//           </Center>
-//         </Button>
-//         {/* <hr /> */}
-//       </>
-//     );
+    const ijdsf = (
+      <>
+        <Button {...dfid}>
+          <Center>
+            <Text>
+              {/* {iconvar} */}
+              {/* Continue with */}
+              {textvar}
+            </Text>
+          </Center>
+        </Button>
+        {/* <hr /> */}
+      </>
+    );
 
-//     return ijdsf;
-//   }
+    return ijdsf;
+  }
 
-//   // 1list
-//   const dfogre = [
-//     //
-//     // "twitter",
-//     "google",
-//     // "facebook",
-//     // "github",
-//     // "email",
-//   ];
+  // 1listvar
+  const dfogre = [
+    //
+    // "twitter",
+    "google",
+    "facebook",
+    "apple",
+    "email",
+  ];
 
-//   const igfder = {
-//     listvar: dfogre,
-//     dictvar: fdsogkret,
-//     onClick: osadew,
-//     spaceBetween: "10px",
-//     // obj: Bsaeosa,
-//     // obj
-//     ...socialConfig,
-//   };
+  const igfder = {
+    listvar: socialList ? socialList : dfogre,
+    dictvar: fdsogkret,
+    onClick: osadew,
+    spaceBetween: "10px",
+    // renderItem: Bsaeosa,
+    renderItem: (sad) => sad.textvar,
+    // obj
+    ...socialConfig,
+  };
 
-//   function spfdewr({ email, password }) {
-//     logs.logga("___ signBase SIGNUP ___", email, password);
-//     //
-//     userLogSign(email, password, funcvar);
-//   }
+  function spfdewr({ email, password }) {
+    logs.logga("___ signBase SIGNUP ___", email, password);
+    //
+    userLogSign(email, password, funcvar);
+  }
 
-//   const dsfijd = (
-//     <>
-//       <ImageTextList {...igfder} />
+  // 1console
 
-//       {/* // <ListMain {...igfder} />; */}
-//     </>
-//   );
+  logs.logga("___ SignBsae SOCIAL ___", igfder);
 
-//   function FOrnaW() {
-//     //
-//     //
-//     const dfijd = [
-//       //
-//       "email",
-//       "password",
-//     ];
+  const dsfijd = (
+    //
+    // {/* <BearTextMedia {...igfder} /> */}
+    <BearList {...igfder} />
+  );
 
-//     const klmi =
-//       //
-//       // sofer;
-//       spfdewr;
+  function FOrnaW() {
+    //
+    //
+    const dfijd = [
+      //
+      "email",
+      "password",
+    ];
 
-//     const dfgre = {
-//       listvar: dfijd,
-//       // dictvar:
-//       // sameline
-//       titleConfig: {
-//         width: "80px",
-//       },
-//       buttonText: "Register",
-//       formid: "register",
-//       onSubmit: klmi,
-//       ...formConfig,
-//     };
+    const klmi =
+      //
+      // sofer;
+      spfdewr;
 
-//     const forso = <FormMain {...dfgre} />;
+    const dfgre = {
+      listvar: dfijd,
+      // dictvar:
+      // sameline
+      titleConfig: {
+        width: "80px",
+      },
+      buttonText: "Register",
+      formid: "register",
+      onSubmit: klmi,
+      ...formConfig,
+    };
 
-//     return forso;
-//   }
+    const forso = <BearForm {...dfgre} />;
 
-//   const jvsfeer =
-//     //
-//     emaTrue ? <FOrnaW /> : dsfijd;
+    return forso;
+  }
 
-//   function OrCHekc() {
-//     let baseTEST = "";
-//     let bottLink = "";
-//     let changeit = "";
+  const jvsfeer =
+    //
+    emaTrue ? <FOrnaW /> : dsfijd;
 
-//     switch (signType) {
-//       case "login":
-//         changeit = "signup";
-//         baseTEST = "Don't have an account?";
-//         bottLink = "Sign Up for free";
-//         break;
-//       case "signup":
-//         baseTEST = "Already have an account?";
-//         bottLink = "Sign in to Bedia";
-//         changeit = "login";
-//         break;
-//     }
+  function OrCHekc() {
+    let baseTEST = "";
+    let bottLink = "";
+    let changeit = "";
 
-//     const kasesd = {
-//       obj: baseTEST,
-//     };
+    switch (signType) {
+      case "login":
+        changeit = "signup";
+        baseTEST = "Don't have an account?";
+        bottLink = "Sign Up for free";
+        break;
+      case "signup":
+        baseTEST = "Already have an account?";
+        bottLink = "Sign in to Bedia";
+        changeit = "login";
+        break;
+    }
 
-//     function saoke(sad) {
-//       setsignType(changeit);
-//     }
+    const kasesd = {
+      obj: baseTEST,
+    };
 
-//     const koewqe = {
-//       onClick: saoke,
-//       // linkvar: "?typeSign=" + signType,
-//       // linkvar: " signType,
-//       // linkConfig: {
-//       //   noBlack: true,
-//       // },
-//       obj: bottLink,
-//       style: {
-//         marginBottom: "20p",
-//         fontSize: "1.3em",
-//       },
-//     };
+    function saoke(sad) {
+      setsignType(changeit);
+    }
 
-//     const oksae = (
-//       <>
-//         <BearDiv {...kasesd} />
-//         <BearDiv {...koewqe} />
-//       </>
-//     );
+    const koewqe = {
+      onClick: saoke,
+      // linkvar: "?typeSign=" + signType,
+      // linkvar: " signType,
+      // linkConfig: {
+      //   noBlack: true,
+      // },
+      obj: bottLink,
+      style: {
+        marginBottom: "20p",
+        fontSize: "1.3em",
+      },
+    };
 
-//     const sdease = {
-//       obj: oksae,
-//       bediaTrue: true,
-//       style: {
-//         padding: "15px",
-//       },
-//     };
+    const oksae = (
+      <>
+        <BearDiv {...kasesd} />
+        <BearDiv {...koewqe} />
+      </>
+    );
 
-//     const kdsfse = <BearButton {...sdease} />;
+    const sdease = {
+      obj: oksae,
+      bediaTrue: true,
+      style: {
+        padding: "15px",
+      },
+    };
 
-//     const oasebd = {
-//       style: {
-//         paddingTop: "20px",
-//         textAlign: "center",
-//         fontSize: "1.3em",
-//       },
-//       obj: kdsfse,
-//     };
+    const kdsfse = <BearButton {...sdease} />;
 
-//     return <BearDiv {...oasebd} />;
-//   }
+    const oasebd = {
+      style: {
+        paddingTop: "20px",
+        textAlign: "center",
+        fontSize: "1.3em",
+      },
+      obj: kdsfse,
+    };
 
-//   const jdtre = sdfer && (
-//     <>
-//       {jvsfeer}
-//       <OrCHekc />
-//     </>
-//   );
+    return <BearDiv {...oasebd} />;
+  }
 
-//   const okasdew = {
-//     obj: jdtre,
-//     // fadeBool: "boo",
-//     ...sdse,
-//   };
+  const jdtre = sdfer && (
+    <>
+      {jvsfeer}
+      <OrCHekc />
+    </>
+  );
 
-//   return <BearDiv {...okasdew} />;
-// }
+  const okasdew = {
+    obj: jdtre,
+    // fadeBool: "boo",
+    ...sdse,
+  };
+
+  return <BearDiv {...okasdew} />;
+}

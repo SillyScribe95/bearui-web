@@ -5,9 +5,11 @@ import React, {
 } from "react";
 import { MdPlaylistPlay } from "react-icons/md";
 import { TiStar } from "react-icons/ti";
+import { BsChatQuote } from "react-icons/bs";
 import { BiShare, BiCommentDetail, BiEdit } from "react-icons/bi";
 import { SiMicrosoftteams, SiNotion, SiSlack } from "react-icons/si";
 import {
+  AiOutlineLink,
   AiFillDelete,
   AiOutlineCheckCircle,
   AiOutlineClockCircle,
@@ -15,9 +17,11 @@ import {
 } from "react-icons/ai";
 import { FiExternalLink } from "react-icons/fi";
 import { RiTimerLine } from "react-icons/ri";
-import { FaPlay } from "react-icons/fa";
+import { FaPlay, FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import { BearDiv } from "./BearDiv";
+import { BearTextMedia } from "./BearTextMedia";
 // import BearFloat from "../components/BearFloat";
-// import ImageBaseText from "../components/ImageBaseText";
+// import BearTextMedia from "../components/BearTextMedia";
 
 export function BearIcon(sdfoger, sdfke) {
   // 1tick
@@ -25,7 +29,7 @@ export function BearIcon(sdfoger, sdfke) {
     style: {
       // background: "green",
       color: "green",
-      ...sdfke,
+      // ...sdfke,
     },
   };
 
@@ -78,6 +82,22 @@ export function BearIcon(sdfoger, sdfke) {
     <AiOutlineCloseCircle />
   );
 
+  const iosade = (
+    //
+    <FaQuoteLeft />
+  );
+
+  const asdhgew = (
+    //
+    <FaQuoteRight />
+  );
+
+  // 1quote
+  const oksaew = (
+    //
+    <BsChatQuote />
+  );
+
   // 1comment
   const sowaseowq = (
     //
@@ -93,7 +113,8 @@ export function BearIcon(sdfoger, sdfke) {
   // 1link
   const linkios = (
     //
-    <FiExternalLink />
+    <AiOutlineLink />
+    // <FiExternalLink />
   );
 
   const ijsadwe = {
@@ -106,13 +127,61 @@ export function BearIcon(sdfoger, sdfke) {
     link: linkios,
     play: sfdgmr,
     edit: sdiwer,
+    quote: oksaew,
+    quoteLeft: iosade,
+    quoteRight: asdhgew,
     time: lasdew,
     teams: <SiMicrosoftteams />,
     slack: <SiSlack />,
+    // 1notion
     notion: <SiNotion />,
     close: kxmvs,
   };
 
-  // return "";
-  return ijsadwe[sdfoger];
+  let oksdew = ijsadwe[sdfoger];
+  oksdew = oksdew ? oksdew : sdfoger;
+
+  function Berios() {
+    const fdjghrt = (
+      <>
+        {oksdew} {sdfke}
+      </>
+    );
+
+    const ritdfsr = {
+      obj: fdjghrt,
+      flexTrue: true,
+      vertAlign: true,
+    };
+
+    return <BearDiv {...ritdfsr} />;
+  }
+
+  function JAsds() {
+    const oaksdw = {
+      iconvar: oksdew,
+      textvar: sdfke,
+    };
+
+    return <BearTextMedia {...oaksdw} />;
+  }
+
+  const okasde = {
+    spanTrue: true,
+    obj: oksdew,
+    ...sdfke,
+  };
+
+  const cbnkfg =
+    //
+    // oksdew
+    BearDiv(okasde);
+  // sdfke
+  //   ? //
+  //     // Berios()
+  //     JAsds()
+  //   : //
+  //     oksdew;
+
+  return cbnkfg;
 }

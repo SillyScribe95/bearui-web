@@ -27,9 +27,9 @@ export function BearSelect({
   valueFunc,
   fontSize = 16,
   newLineTrue,
-  messvar,
+  messvar = "",
+  name = "",
   limitvar,
-  name,
   ref,
   // onInputChange,
   //
@@ -156,6 +156,10 @@ export function BearSelect({
   let dsfijaae =
     //
     vbmofd;
+  // vbmofd & {
+
+  // }
+
   // limitvar ? sliceArray(vbmofd, limitvar) : vbmofd;
 
   // 1id reffo
@@ -185,11 +189,30 @@ export function BearSelect({
     // "first";
     createTop ? "first" : "last";
 
+  function setBear(sfje) {}
+
+  function odkqwe(asdfwe) {
+    logs.logga("___ BEASELECT onCreate ___", {
+      VALUE: asdfwe,
+      createFunc: createFunc,
+    });
+
+    setType(asdfwe);
+
+    if (createFunc) {
+      createFunc(asdfwe);
+    }
+  }
+
+  const creatios = createFunc && {
+    onCreateOption: createFunc,
+    // value: type,
+  };
+
   const fdgrt = {
     styles: stylBasoe,
-    // FUNCTION
     onChange: dfgoe,
-    onCreateOption: createFunc,
+    ...creatios,
     createOptionPosition: toppoIos,
     //
     // STYLE
@@ -199,9 +222,7 @@ export function BearSelect({
     // 1EMPTY
     ...fullOpts,
     isValidNewOption: showTrue,
-    // noOptionsMessage:
     options: dsfijaae,
-
     ...sdfijewr,
     ...ogkfds,
   };
@@ -215,14 +236,14 @@ export function BearSelect({
   let bmcvfd =
     //
     // "";
-    "4";
+    name == "testSelect";
   // logtrue;
   // messvar == "otherTitles";
 
   // 1console
   if (bmcvfd) {
-    logs.logga(messvar + "___ selectMain BASE___", sdfijewr);
-    logs.logga(messvar + "___ selectMain ALL___", dfijew);
+    logs.logga(name, messvar + "___ BearSelect BASE___", sdfijewr);
+    logs.logga(name, messvar + "___ BearSelect ALL___", dfijew);
   }
 
   let endValue = "";
@@ -237,10 +258,22 @@ export function BearSelect({
     default:
       endValue = (
         //
-        // <CreatableSelect {...dfijew} />
-        <Select {...dfijew} />
+        <CreatableSelect {...dfijew} />
+        // <Select {...dfijew} />
       );
   }
 
   return endValue;
 }
+
+// autoFocus - focus the control when it mounts
+// className - apply a className to the control
+// classNamePrefix - apply classNames to inner elements with the given prefix
+// isDisabled - disable the control
+// isMulti - allow the user to select multiple values
+// isSearchable - allow the user to search for matching options
+// name - generate an HTML input with this name, containing the current value
+// onChange - subscribe to change events
+// options - specify the options the user can select from
+// placeholder - change the text displayed when no option is selected
+// value - control the current value

@@ -4,36 +4,27 @@ import React, {
   useContext,
   useEffect,
 } from "react";
-import ListMain from "./ListMain";
-import { CopyToClipboard } from "react-copy-to-clipboard";
 import { BearDiv } from "../components/BearDiv";
-
-import BearFloat from "./BearFloat";
-import BearButton from "./BearButton";
-import { ImageTextList } from "../functions/GlobalFunctions";
+// import { CopyToClipboard } from "react-copy-to-clipboard";
+// import BearFloat from "./BearFloat";
+// import BearButton from "./BearButton";
+// import { ImageTextList } from "../functions/GlobalFunctions";
+//
+//
+//
+import {
+  //
+  logs,
+} from "@SillyScribe95/bedia-shared/";
 import {
   //
   Skeleton,
-  Slider,
-  Button,
-  Avatar as AntAva,
-  notification,
 } from "antd";
-
-import {
-  //
-  Input,
-  // AVATAR
-  Avatar as ChakAva,
-  AvatarBadge,
-  AvatarGroup,
-  // Skeleton,
-  SkeletonCircle,
-  SkeletonText,
-} from "@chakra-ui/react";
-import SearchKnowledge from "../containers/search/SearchKnowledge";
+import { vertAlign } from "../consts/genStyle";
+import { BearList } from "./list/BearList";
+import { BearTextMedia } from "./BearTextMedia";
+// import SearchKnowledge from "../containers/search/SearchKnowledge";
 // import { AlignMain } from "./AlignMain";
-import { vertAlign } from "../consts/GenStyled";
 
 export function InputForm({ ...sae }) {
   // size="xs"
@@ -44,6 +35,19 @@ export function InputForm({ ...sae }) {
     //
     "";
   // <Input {...sae} />;
+
+  return sadwew;
+}
+
+export function BearIconText(icon, text, osdfds) {
+  //
+  const bodfg = {
+    iconvar: icon,
+    textvar: text,
+    ...osdfds,
+  };
+
+  const sadwew = <BearTextMedia {...bodfg} />;
 
   return sadwew;
 }
@@ -62,21 +66,22 @@ export function linkBase(linkvar, objvar, osdfds) {
 
 // 1list
 export function ListReturn({ ...sae }) {
-  const sadwew = <ListMain returnTrue {...sae} />;
+  const sadwew = <BearList returnTrue {...sae} />;
 
   return sadwew;
 }
 
 export function ListFlex({ ...sae }) {
-  const sadwew = <ListMain returnTrue {...sae} />;
+  const sadwew = <BearList returnTrue {...sae} />;
 
   return sadwew;
 }
 
 export function FlexMain({
   padvar = "20px",
-  style,
   listvar,
+  itemStyle,
+  style,
   noVertAlign,
   obj,
   ...sae
@@ -88,7 +93,6 @@ export function FlexMain({
       ...difreeq,
       ...style,
     },
-    ...sae,
   };
 
   function dokesad({ obj, width, ...asd }) {
@@ -97,18 +101,39 @@ export function FlexMain({
         width: width,
         textAlign: "left",
         marginRight: padvar,
+        ...itemStyle,
       },
       ...asd,
     };
 
+    logs.logga("___ flexMain ITEM ___", oksade);
+
     return <div {...oksade}>{obj}</div>;
   }
 
-  const okdsse = listvar.map(dokesad);
+  function redndo(asdwa) {
+    const ijase = asdwa.obj
+      ? asdwa
+      : {
+          obj: asdwa,
+        };
+
+    return dokesad(ijase);
+  }
+
+  // listvar = [{
+  //   obj:"aaaa"
+  // }, {
+  //   obj: "bbbb"
+  // }]
+
+  const okdsse = listvar.map(redndo);
 
   const vbdrewe = {
     obj: okdsse,
     flexTrue: true,
+    ...kdsse,
+    ...sae,
   };
   const sadwew = <BearDiv {...vbdrewe} />;
 
@@ -249,9 +274,8 @@ export function LoadMain({
     default:
       endValue = (
         <>
-          {obj}
           {/* <Skeleton startColor="pink.500" endColor="orange.500" height="60px" /> */}
-          {/* <Skeleton {...ijsdwqe} /> */}
+          <Skeleton {...ijsdwqe} />
           {/* <SkeletonCircle size="10" />
     <SkeletonText mt="4" noOfLines={4} spacing="4" /> */}
         </>

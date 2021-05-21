@@ -1,3 +1,11 @@
+import React, {
+  //
+  useState,
+  useContext,
+} from "react";
+import { logs } from "@SillyScribe95/bedia-shared";
+import { Avatar } from "antd";
+
 export function BearImage({
   typevar,
   badgecolor,
@@ -23,14 +31,20 @@ export function BearImage({
     htmlHeight: imagesize,
   };
 
+  imagesize =
+    //
+    35;
+  // imagesize
+
   let osdew = {
     src: imagevar,
     size: imagesize,
     style: sacwe,
+    shape: "circle",
     ...sae,
   };
 
-  logs.logga("___ osdew ___", osdew);
+  logs.logga("___BearIamge tosdew ___", osdew);
 
   let endValue = "";
   switch (typevar) {
@@ -51,10 +65,11 @@ export function BearImage({
       break;
 
     default:
-      endValue =
+      endValue = (
         //
-        "sadwqe";
-    //   <AntAva {...osdew} />
+        // "sadwqe";
+        <Avatar {...osdew} />
+      );
   }
 
   return endValue;

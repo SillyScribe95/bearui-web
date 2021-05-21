@@ -30,8 +30,6 @@ export function BearFloat({
   messvar,
   ...args
 }) {
-  // 1MainContext
-
   const vertTop = {
     display: "flex",
     /* justify-content: center; */

@@ -5,13 +5,14 @@ import React, {
 } from "react";
 import * as logs from "../functions/logFuncs";
 import { BearDiv } from "./BearDiv";
-import { ImageMain } from "./GlobalComps";
-import { BearIcon } from "../BearIcon";
+import { BearIcon } from "./BearIcon";
+import { BearImage } from "./BearImage";
 
-export default function BearTextMedia({
+export function BearTextMedia({
   //
   imagevar,
   imagesize = 20,
+  leftWidth = "5px",
   padvar = "5px",
   vertSize,
   vertTrue,
@@ -28,6 +29,24 @@ export default function BearTextMedia({
   // 1const
   const [type, setType] = useState("");
 
+  function sadkwe(dsafe) {
+    const fijgrt = leftWidth && {
+      minWidth: leftWidth,
+    };
+
+    const kfwer = iconSize && {
+      fontSize: iconSize ? iconSize : "1.7em",
+    };
+
+    const ksease = {
+      ...fijgrt,
+      ...kfwer,
+      ...dsafe,
+    };
+
+    return ksease;
+  }
+
   function ImgMain({ ...dsfew }) {
     const fnkfg = {
       // style: ksawe,
@@ -39,7 +58,7 @@ export default function BearTextMedia({
 
     logs.logga("___ imgBaseText  IMAGE ___", fnkfg);
 
-    const oksaw = <ImageMain {...fnkfg} />;
+    const oksaw = <BearImage {...fnkfg} />;
 
     return oksaw;
   }
@@ -56,17 +75,14 @@ export default function BearTextMedia({
 
   function INcoio({ style, ...ase }) {
     //
-    const ksawe = iconSize && {
-      fontSize: iconSize ? iconSize : "1.7em",
-      ...style,
-    };
+    const ksawe = sadkwe(style);
 
     const sfksr = iconvar ? BearIcon(iconvar) : iconvar;
 
     const sdlf = {
       style: ksawe,
       obj: sfksr,
-      ...iconConfig,
+      ...ase,
     };
     const isajdawe = <BearDiv {...sdlf} />;
 
@@ -75,7 +91,7 @@ export default function BearTextMedia({
 
   let okeasw = !noImage && imagevar;
   const okdsre = okeasw ? <ImgMain {...imageConfig} /> : "";
-  const kadse = okdsre ? okdsre : iconvar && <INcoio />;
+  const kadse = okdsre ? okdsre : iconvar && <INcoio {...iconConfig} />;
 
   const okdswq = textvar && <Ajiwq {...textconfig} />;
 
@@ -99,7 +115,7 @@ export default function BearTextMedia({
 
   const okfdsd =
     //
-    vertTrue ? oskdawe : <Flex>{oskdawe}</Flex>;
+    vertTrue ? oskdawe : <BearDiv flexTrue vertTrue obj={oskdawe} />;
 
   args = {
     obj: okfdsd,

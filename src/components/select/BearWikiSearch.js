@@ -14,7 +14,7 @@
 //     removeArrayArray,
 //     removeEmptyArray,
 //     loggo,
-//   } from "@todcode/components/";
+//   } from "@SillyScribe95/bedia-shared/";
 
 //   import axios from "axios";
 
@@ -24,12 +24,12 @@
 
 //   import { BearDiv  } from "../../components/BearDiv";
 
-//   import ListMain from "../../components/ListMain";
-//   import SelectMain from "../../components/SelectMain";
+//   import BearList from "../../components/BearList";
+//   import BearSelect from "../../components/BearSelect";
 //   import ImageTextDiv from "../../components/ImageTextDiv";
-//   import ImageBaseText from "../../components/ImageBaseText";
-//   import { filtModelArr, filtModelin } from "@todcode/components/";
-//   import { indexTopic } from "@todcode/components/";
+//   import BearTextMedia from "../../components/BearTextMedia";
+//   import { filtModelArr, filtModelin } from "@SillyScribe95/bedia-shared/";
+//   import { indexTopic } from "@SillyScribe95/bedia-shared/";
 //   import { mapInnerAttr, slugFunc } from "../../functions/GlobalFunctions";
 
 //   export default function SearchKnowledge({
@@ -297,7 +297,7 @@
 
 //       const fdgorr =
 //         //
-//         includeImage ? <ImageBaseText {...daease} /> : name;
+//         includeImage ? <BearTextMedia {...daease} /> : name;
 
 //       const asjwaswe = (
 //         <>
@@ -464,7 +464,7 @@
 
 //     logs.logga("___ SEAR KNowledge MAIN ___", asdyw);
 
-//     const xcvear = <SelectMain {...asdyw} />;
+//     const xcvear = <BearSelect {...asdyw} />;
 
 //     return xcvear;
 //   }

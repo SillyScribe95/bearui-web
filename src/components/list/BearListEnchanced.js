@@ -66,7 +66,7 @@ export function BearListEnchanced({
           <BearDiv {...asdije} />
           // <ImageTextDiv {...asdije} />
         );
-      // <ImageBaseText {...asdije} />
+      // <BearTextMedia {...asdije} />
     }
 
     return endValue;
@@ -89,7 +89,7 @@ export function BearListEnchanced({
   logs.logga("___ asijdwe ___", asijdwe);
 
   return (
-    <ListMain
+    <BearList
       //
       objFuncTrue
       // objReturnTrue

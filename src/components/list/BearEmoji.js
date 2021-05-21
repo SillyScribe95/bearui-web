@@ -4,7 +4,7 @@ import React, {
   useContext,
 } from "react";
 import { BearDiv } from "../BearDiv";
-//   import SelectMain from "./SelectMain";
+//   import BearSelect from "./BearSelect";
 //   import HorizChoiceBar from "./HorizChoiceBar";
 import { BearList } from "./BearList";
 import { emojiDict } from "../../consts/emojiConst";
@@ -14,10 +14,13 @@ import {
   EmojiLabelMap,
   mapEmojiFace,
 } from "../../functions/emojiFuncs";
+import { BearIcon } from "../BearIcon";
 
 export function BearEmoji({
   initialValue,
   selectBlue,
+  selectTrue,
+  chooseFunc,
   typevar,
   listvar,
   onlyEmoji,
@@ -38,6 +41,8 @@ export function BearEmoji({
     "sad",
     // "angry",
   ];
+
+  const [asdoe, setasdoe] = useState();
 
   const jdfew =
     //
@@ -90,7 +95,7 @@ export function BearEmoji({
 
     const bocd = onlyEmoji ? emoji : <>{emoji}</>;
 
-    const qwtgsa = chosenTrue && iconFind("tick");
+    const qwtgsa = chosenTrue && BearIcon("tick");
     const okaew = {
       mainObj: bocd,
       smallObj: qwtgsa,
@@ -124,7 +129,7 @@ export function BearEmoji({
       ...qweq,
     };
 
-    logs.logga("___ aokdwe ___", aokdwe);
+    logs.logga("___BearEmoji BASE EMOJI ___", aokdwe);
 
     return <BearDiv {...aokdwe} />;
   }
@@ -133,16 +138,20 @@ export function BearEmoji({
     //
     const ijdwq = {
       // style: { background: "red" },
-      //   chosenItem: asdoe,
+      chosenItem: asdoe,
+      chooseTrue: true,
+      returnArray: true,
+      clickSingle: true,
       chosenConfig: {
-        //
+        // style: {
+        //   background: "blue",
+        // },
         // className: "shadowBottom",
-        // bediaTrue: true,
       },
     };
 
     function asdoke(sdfswe) {
-      logs.loggo("___ asdoke ___", sdfswe);
+      logs.logga("___ asdoke ___", sdfswe);
 
       let oksadw =
         //
@@ -152,25 +161,27 @@ export function BearEmoji({
       return oksadw;
     }
 
+    const kfdgew = {
+      clickSingle: true,
+    };
+
+    const logBaso = {
+      logtrue: "asdas",
+      messvar: "BEAEMOJI",
+    };
+
     const dsjs = {
       listvar: jdfew,
       dictvar: ijsae,
       renderItem: asdoke,
-      //   chooseBaseFunc: setasdoe,
       horizTrue: true,
-      returnArray: true,
       itemConfig: sfjaw,
-      // mainClass: "pointer",
-      clickSingle: true,
-      // chooseBedia: true,
-      logtrue: "false",
-      // returnTrue: true,
-      // constTrue: true,
+      ...logBaso,
       ...ijdwq,
       ...ssdwedf,
     };
 
-    logs.loggo("___ emojListo MAIN LIST  ___", dsjs);
+    logs.logga("___ emojListo MAIN LIST  ___", dsjs);
 
     return <BearList {...dsjs} />;
   }
@@ -212,7 +223,7 @@ export function BearEmoji({
     const asiew =
       //
       "";
-    //   <SelectMain {...ijsaew} />;
+    //   <BearSelect {...ijsaew} />;
 
     return asiew;
   }

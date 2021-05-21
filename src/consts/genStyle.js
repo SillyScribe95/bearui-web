@@ -22,8 +22,8 @@ const alignContentFlex =
 const justifyContentFlex =
   //
   // "";
-  "flex-start";
-// "space-between";
+  // "flex-start";
+  "space-between";
 // "center";
 // "stretch";
 // "space-around"
@@ -40,3 +40,16 @@ export const vertAlign = {
   /* flex-direction: row; */
   /* flex-wrap: wrap; */
 };
+
+export function flexStyle(asfjwe) {
+  const okase = {
+    style: {
+      //
+      display: "flex",
+      // ...vertAlign,
+      ...asfjwe,
+    },
+  };
+
+  return okase;
+}

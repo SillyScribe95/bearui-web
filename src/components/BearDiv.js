@@ -8,9 +8,11 @@ import { BearLink } from "./BearLink";
 export function BearDiv({
   //
   obj,
+  bediaTrue,
   flexTrue,
   vertAlign,
   typeDiv,
+  spanTrue,
   fontSize,
   linkvar,
   linkConfig,
@@ -28,6 +30,12 @@ export function BearDiv({
     justifyContent: "center",
   };
 
+  const kdfr = bediaTrue && {
+    background: "red",
+    color: "white",
+    // ...bediaMainStyle
+  };
+
   const oksdae = fontSize && {
     fontSize: fontSize,
   };
@@ -36,6 +44,7 @@ export function BearDiv({
     ...oksdae,
     ...osdakew,
     ...zxcsd,
+    ...kdfr,
     ...style,
   };
 
@@ -44,8 +53,12 @@ export function BearDiv({
     ...args,
   };
 
+  const aokdwe =
+    //
+    spanTrue ? "span" : typeDiv;
+
   let endo = "";
-  switch (typeDiv) {
+  switch (aokdwe) {
     case "span":
       endo = <span {...oksde}>{obj}</span>;
       break;

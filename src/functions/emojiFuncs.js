@@ -1,5 +1,5 @@
 // import * as logs from "../functions/logFuncs";
-// import { mapReturn } from "@todcode/components";
+// import { mapReturn } from "@SillyScribe95/bedia-shared";
 import { emojiDict } from "../consts/emojiConst";
 
 function getEMoj(asofkr) {

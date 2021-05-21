@@ -1,9 +1,19 @@
-import React from "react";
-import * as logs from "../../functions/logFuncs";
+import React, {
+  //
+  useState,
+  useContext,
+} from "react";
+// import * as logs from "../../functions/logFuncs";
 import { BearDiv } from "../BearDiv";
 import { isEmpty, remove } from "lodash";
+import {
+  //
+  turnarray,
+  logs,
+} from "@SillyScribe95/bedia-shared/";
+import { BearError } from "../BearError";
 // import SelectComp from "./general/SelectComp";
-// import * as gens from "../consts/GenStyled";
+// import * as gens from "../consts/genStyle";
 // import { SelectArray } from "../functions/GlobalFunctions";
 
 export function BearList({
@@ -28,10 +38,7 @@ export function BearList({
   // SELECT
   selectableTrue,
   selectableConfig,
-  // CHOSEN
-  chosenItem,
-  chosenConfig = {},
-  chooseBedia,
+
   // GENERAL
   genConfig,
   // TITLE
@@ -45,9 +52,17 @@ export function BearList({
   loadNumber = 10,
   // 1onclick
   onClick,
+  //
+  // 1choose
   chooseBaseFunc,
+  chooseTrue,
   returnArray,
   clickSingle,
+  chosenItem,
+  chosenConfig = {},
+  chooseBedia,
+  //
+  //
   itemStyle = {},
   itemConfig = {},
   spaceBetween,
@@ -66,7 +81,7 @@ export function BearList({
   collapseTrue,
   ...listArgs
 }) {
-  logs.loggo("___ listvar BBB___", listvar);
+  logs.logga("___ listvar BBB___", listvar);
 
   // 1list PREPARE
   // listvar = noRemove ? listvar : removeEmptyArray(listvar);
@@ -77,7 +92,7 @@ export function BearList({
     : listvar;
   listvar = listNumber ? listvar.slice(0, listNumber) : listvar;
 
-  logs.loggo("___ listvar CCC___", listvar);
+  logs.logga("___ listvar CCC___", listvar);
 
   // 1style
   styleList = {
@@ -88,28 +103,66 @@ export function BearList({
 
   const fullVar = !isEmpty(listvar) || loadtrue;
 
-  function EndListA(coimswe, indexSort) {
-    const asdwe = itemConfig;
-    const origText = coimswe;
-    const cvokbsdf = chosenItem;
-    const selectTrue = coimswe == cvokbsdf;
+  const [chosios, setchosios] = useState(chosenItem);
+
+  function passChoose(itmBase) {
+    if (chooseTrue) {
+      let ogfsdfds =
+        //
+        itmBase;
+      // expandItem(itmBase)
+
+      setchosios(ogfsdfds);
+    }
+  }
+
+  function findSelect(itmCurr) {
+    const cvokbsdf = chooseTrue ? chosios : chosenItem;
+    const itemBase =
+      //
+      itmCurr;
+    // expandItem(itmCurr);
+
+    const selectTrue =
+      //
+      returnArray && cvokbsdf
+        ? cvokbsdf.includes(itemBase)
+        : itemBase == cvokbsdf;
 
     // 1chosen
-    const choseAll = selectTrue && {
+    const dfbidfg = selectTrue && {
       chosenTrue: true,
       ...chosenConfig,
     };
-    const dictTrue = dictvar;
-    const dgste = dictFunc
-      ? dictFunc(coimswe)
-      : dictvar
-      ? dictvar[coimswe]
-      : coimswe;
 
+    logs.logga(messvar, "BEARLST- CHOSEN ITEM ", {
+      CURRENT_ITEM: itemBase,
+      CHOSEN_ITEM: cvokbsdf,
+      SELECTTRUE: selectTrue,
+      CONFIG: dfbidfg,
+    });
+
+    return dfbidfg;
+  }
+
+  function expandItem(coimswe) {
+    return dictFunc ? dictFunc(coimswe) : dictvar ? dictvar[coimswe] : coimswe;
+  }
+
+  function EndListA(coimswe, indexSort) {
+    const asdwe = itemConfig;
+    const origText = coimswe;
+    const choseAll = findSelect(coimswe);
+
+    const dictTrue = dictvar;
+    const dgste = expandItem(coimswe);
+
+    // 1type
     const listarr = dictTrue
       ? //
         {
-          listName: coimswe,
+          itemName: coimswe,
+          itemType: coimswe,
           ...dgste,
           ...addDict,
         }
@@ -133,7 +186,7 @@ export function BearList({
         listarr: listarr,
       };
 
-      logs.loggo("___ CHOOSING ITEM " + theoasd + ":", olaqwefs);
+      logs.logga("___ CHOOSING ITEM " + theoasd + ":", olaqwefs);
 
       const iasda = {
         ...asdwe[theoasd],
@@ -150,12 +203,11 @@ export function BearList({
       style: mainseo,
     };
 
-    logs.loggo("___ endRet ___", endRet);
+    logs.logga("___ endRet ___", endRet);
 
-    const findoobj = endRet.obj ? endRet.obj : renderItem;
+    const findoobj = endRet.renderItem ? endRet.renderItem : renderItem;
 
     const asjds = {
-      // selectTrue: selectTrue,
       // itemConfig: asdwe,
       findoobj: findoobj,
       listarr: listarr,
@@ -167,7 +219,7 @@ export function BearList({
     // logtrue = "oaskd";
 
     if (logtrue) {
-      logs.loggo(messvar + "---listMain---", asjds);
+      logs.logga(messvar + "---BearList---", asjds);
     }
 
     let asdpkwe = "";
@@ -181,9 +233,23 @@ export function BearList({
         // asdpkwe = "dict";
         asdpkwe = <BearDiv {...itemConfig} obj={listarr} />;
         break;
+      case "button":
+        // asdpkwe = "dict";
+        asdpkwe = (
+          //
+          // <BearDiv {...itemConfig} obj={listarr} />;
+          <BearButton {...itemConfig} />
+        );
+
+        break;
 
       default:
-        asdpkwe = findoobj ? findoobj(endRet) : "NONE";
+        asdpkwe =
+          //
+          // findoobj(endRet);
+          findoobj
+            ? findoobj(endRet)
+            : BearError("No renderItem specified in BearList's arguments");
     }
 
     const isjdew =
@@ -199,6 +265,8 @@ export function BearList({
         returnArray ? turnarray(okgs) : okgs;
 
       const clickEnd = endRet.onClick ? endRet.onClick : onClick;
+
+      passChoose(coimswe);
 
       // 1onClick
       if (clickEnd) {
@@ -216,8 +284,8 @@ export function BearList({
       : selectableTrue
       ? "<SelectComp {...filleoo} />"
       : //
-        isjdew;
-    // BearDiv(filleoo)
+        // isjdew;
+        BearDiv(filleoo);
 
     const ijsew =
       //
@@ -269,9 +337,9 @@ export function BearList({
     };
 
     // 1console
-    // logs.loggo("xxx-LIST-MAIN--args", messvar, listvar, "asd90u12321");
-    logs.loggo("xxx-LIST-MAIN--args", endoa, "asd90u12321");
-    // gens.messCheck("sd9jqwxas", listMess, "ListMain --AAAA--", oaskdwq);
+    // logs.logga("xxx-LIST-MAIN--args", messvar, listvar, "asd90u12321");
+    logs.logga("xxx-LIST-MAIN--args", endoa, "asd90u12321");
+    // gens.messCheck("sd9jqwxas", listMess, "BearList --AAAA--", oaskdwq);
 
     const jisad = (
       //
@@ -286,7 +354,7 @@ export function BearList({
   }
 
   function mapoBap(saokae, indexvr) {
-    logs.loggo("___ saokae ___", saokae);
+    logs.logga("___ saokae ___", saokae);
 
     const asidjwe = saokae["mainObj"];
     const jcvbfd = asidjwe ? asidjwe : EndListA(saokae, indexvr);
@@ -297,7 +365,13 @@ export function BearList({
   const sadfwe =
     //
     // "oaksdwqew";
-    !listvar ? "" : horizTrue ? <HozBar /> : listvar.map(mapoBap);
+    !listvar ? (
+      BearError("No 'listvar' argument specified")
+    ) : horizTrue ? (
+      <HozBar />
+    ) : (
+      listvar.map(mapoBap)
+    );
 
   // 1TITLE
   const showTit = titlevar && !collapseTrue;

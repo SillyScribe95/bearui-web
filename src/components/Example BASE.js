@@ -4,7 +4,10 @@ import React, {
   useContext,
 } from "react";
 
-//   import * as logs from "../../functions/logFuncs";
+import {
+  //
+  logs,
+} from "@SillyScribe95/bedia-shared/";
 
 export default function SpeakAdd({
   //

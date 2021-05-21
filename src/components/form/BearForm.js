@@ -125,26 +125,38 @@ export function BearForm({
     return values;
   }
 
+  function parsVal(values) {
+    let dsifer = singleTrue ? goSing(values) : mainFI(values);
+
+    logs.logga("FORMA--MAIN Submit", dsifer);
+
+    onSubmit(dsifer);
+  }
+
   // 1submit
   function subbTo(values) {
     //
     const emptiosa = !isEmpty(values);
-    const trudsoe = emptiosa && onSubmit;
+    const trudsoe = onSubmit && emptiosa;
 
     const gifhjer = {
       values: values,
       emptiosa: emptiosa,
+      trudsoe: trudsoe,
     };
 
     logs.logga("___ FORMAMAIN SUBMIT ___", gifhjer);
+    logs.logga("___ Fomain values ___", values);
 
-    if (trudsoe) {
-      let dsifer = singleTrue ? goSing(values) : mainFI(values);
+    onSubmit(values);
+    // parsVal(values);
 
-      logs.logga("FORMA--MAIN Submit", dsifer);
-
-      onSubmit(dsifer);
-    }
+    //
+    // if (trudsoe) {
+    //   onSubmit(values);
+    //   parsVal(values);
+    // }
+    //
   }
 
   logs.logga("argwwwwws-zzzzzz", args, "asdy89io211");
@@ -192,7 +204,7 @@ export function BearForm({
     const adhwdse = (
       //
       <BearButton {...dvbijkrw} />
-      //   <button {...dvbijkrw}>sdfjwerw</button>
+      // <button {...dvbijkrw}>sdfjwerw</button>
     );
 
     const asidja = {
@@ -322,12 +334,13 @@ export function BearForm({
     const fdjgre = baseObj?.obj;
     const obvdsaf = fdjgre
       ? fdjgre
-      : baseObj
-      ? firstInputCheck(baseObj)
-      : FormError("no form Dictionary supplied - " + obj);
+      : isEmpty(baseObj)
+      ? FormError("no form Dictionary supplied - " + obj)
+      : firstInputCheck(baseObj);
 
     logs.logga("___ FORMAMIN - FIRST RUN OBJECT___", {
       INITIAL: obj,
+      baseObj: baseObj,
       FINAL: obvdsaf,
     });
 
@@ -487,7 +500,7 @@ export function BearForm({
   };
 
   // 1console
-  let dskf = `${typeForm} ${formid} ___ formMain args ___`;
+  let dskf = `${typeForm} ${formid} ___ BearForm args ___`;
   logs.logga(dskf, duhiew);
 
   const aweuw = noForm ? (

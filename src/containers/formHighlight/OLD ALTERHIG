@@ -1,0 +1,25 @@
+function joinwithmedia(dignos) {
+    const asidjaew = {
+      ...overObj,
+      ...dignos,
+    };
+
+    const newChap = filterChapter(chapList, asidjaew);
+
+    const ijyfgt = {
+      dignos: dignos,
+      chapList: chapList,
+      newChap: newChap,
+      asidjaew: asidjaew,
+    };
+
+    logs.logga("___ ijyfgt ___", ijyfgt);
+    logs.logga("___ newChap ___", newChap);
+
+    setlistChapters(newChap, mediaObj);
+  }
+
+  const chapList =
+    //
+    listChapters;
+  // mediaObj.chapterList;

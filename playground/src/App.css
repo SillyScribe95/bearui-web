@@ -719,12 +719,12 @@ display: -webkit-box;
   cursor: pointer;
 }
 
-.selectMain {
+.BearSelect {
   background: red;
   /* color: red; */
   /* border-radius: 50px; */
 }
-.selectMain:hover {
+.BearSelect:hover {
   background-color: blue;
 }
 

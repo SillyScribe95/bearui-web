@@ -3,17 +3,23 @@ import React, {
   useState,
   useContext,
 } from "react";
+import {
+  //
+  playBsaelist,
+  logs,
+} from "@SillyScribe95/bedia-shared/";
 import TextareaAutosize from "react-textarea-autosize";
 import { useForm, Controller } from "react-hook-form";
 import { BearDiv } from "../BearDiv";
 import { BearIcon } from "../BearIcon";
 import { BearFloat } from "../BearFloat";
 import { BearButton } from "../button/BearButton";
-import * as logs from "../../functions/logFuncs";
+import { BearSelect } from "../select/BearSelect";
+import { BearIconText } from "../GlobalComps";
 
 // import CreatableSelect from "react-select/creatable";
 // import { BearButton } from "./BearButton";
-// import SelectMain from "./SelectMain";
+// import BearSelect from "./BearSelect";
 // import SearchFormFields from "../containers/search/SearchFormFields";
 
 export function BearInput({
@@ -27,8 +33,13 @@ export function BearInput({
   noTitle,
   checked,
   control,
+  //
+  //
   inputObj,
   inputFunction,
+  inputObjectFunction,
+  //
+  //
   selectTrue,
   style,
   onChange,
@@ -60,12 +71,10 @@ export function BearInput({
 }) {
   logs.logga("___Asidnw obj ___", obj);
 
+  // 1const
   const [checkBoxo, setcheckBoxo] = useState();
   const [chekBxTrue, setchekBxTrue] = useState(checked);
-
-  logs.logga("___ errors ___", errors);
-
-  //   const [valInit, setvalInit] = useState(initialValue);
+  const [valInit, setvalInit] = useState(initialValue);
 
   const asw =
     //
@@ -95,7 +104,7 @@ export function BearInput({
   const slasso = ijdsew ? "required" : "";
 
   function chaneeo(adowe) {
-    const valows = adowe.target.value;
+    const valows = adowe.target && adowe.target.value;
 
     // logs.logga("___ adowe ___", adowe);
     logs.logga("___ valows ___", valows);
@@ -109,16 +118,20 @@ export function BearInput({
 
   const changBssoe = {
     onChange: chaneeo,
-    // value: valInit,
+    value: valInit,
+    valueFunc: setvalInit,
   };
+
+  // 1ref
+  function getRef(rfo) {
+    return { ref: rfo, inputRef: rfo, innerRef: rfo };
+  }
 
   const sdweew = {
     name: name,
     id: name,
-    ref: ref,
-    innerRef: ref,
-    // onBlur: chaneeo,
     className: slasso,
+    ...getRef(ref),
   };
 
   let cntrMan = {
@@ -128,7 +141,8 @@ export function BearInput({
 
   const objbase = {
     ...dfsgre,
-    ...cntrMan,
+    ...sdweew,
+    // ...cntrMan,
     fontSize: fontSize,
     errorobj: asw,
     textvar: textvar,
@@ -146,8 +160,16 @@ export function BearInput({
   // logtrue
 
   // 1console
-  if (sdjrete) {
-    logs.logga(inputType + "___formMain--INPUT------zzz", name, objbase);
+  function logros(...asa) {
+    //
+    let sdfijer =
+      //
+      "asda";
+    // name == "testSelect";
+
+    if (sdfijer) {
+      logs.logga(name + "___BearForm--INPUT------zzz", ...asa);
+    }
   }
 
   //
@@ -158,57 +180,18 @@ export function BearInput({
   function retFunc() {
     switch (inputType) {
       case "select":
-        let fodsfew = {
-          isMulti: true,
-          ...sdweew,
-        };
-
-        // ujsdqwe = "dlpadewq";
-
-        // ujsdqwe = <SelectMain {...fodsfew} />;
-        ujsdqwe = <Controller as={ujsdqwe} {...cntrMan} />;
-
-        // ujsdqwe = <SelectMain {...fodsfew} />;
-
-        // ujsdqwe = (
-        //   <select {...objbase}>
-        //     {selectvar.map((value) => (
-        //       <option key={value} value={value}>
-        //         {value}
-        //       </option>
-        //     ))}
-        //   </select>
-        // );
-
         break;
 
       case "selectable":
-        //
-        // autoFocus - focus the control when it mounts
-        // className - apply a className to the control
-        // classNamePrefix - apply classNames to inner elements with the given prefix
-        // isDisabled - disable the control
-        // isMulti - allow the user to select multiple values
-        // isSearchable - allow the user to search for matching options
-        // name - generate an HTML input with this name, containing the current value
-        // onChange - subscribe to change events
-        // options - specify the options the user can select from
-        // placeholder - change the text displayed when no option is selected
-        // value - control the current value
-
         const dfdsawe = {
           ...objbase,
-          isClearable: true,
-          // onInputChange={this.handleInputChange}
-          // options={colourOptions}
         };
         ujsdqwe = <CreatableSelect {...dfdsawe} />;
-
-        //
         break;
       case "textarea":
-        // const gfknht =  ref={(tag) => (this.textarea = tag)}
+        // 1rows
         rows = rows ? rows : 3;
+
         const ijsdfasd = {
           rows: rows,
           minRows: rows,
@@ -289,7 +272,7 @@ export function BearInput({
           ...objbase,
         };
 
-        logs.logga("___ inputBase--INPUT ___", ijawe);
+        logs.logga(name + "___ inputBase--INPUT ___", ijawe);
 
         // 1input
         ujsdqwe = noInput ? (
@@ -375,8 +358,15 @@ export function BearInput({
     // TITLE MAIN
     const okasde =
       //
-      newTrue ? <ChooseTit /> : BearIcon(iconvar, titlevar);
-    //         {iconvar} {titlevar}
+      newTrue ? (
+        ChooseTit()
+      ) : (
+        <>
+          {/* {BearIcon(iconvar, titlevar)} */}
+          {/* {BearIconText(iconvar, titlevar)} */}
+          {iconvar} {titlevar}
+        </>
+      );
 
     const ioakawe = (
       <>
@@ -485,14 +475,48 @@ export function BearInput({
     obj: "YES",
   };
 
-  // ujsdqwe = <Controller as={inputFunction(objbase)} {...cntrMan} />;
+  function goCont(goObj) {
+    // inputFunction(objbase)
+
+    function inEar({
+      //
+      field: { ref, value, ...field },
+    }) {
+      const sfeqwwe = {
+        ...objbase,
+        ...field,
+        ...getRef(ref),
+      };
+
+      logros("___ BearCont CONTROL field ___", field);
+      logros("___ BerInot ___", sfeqwwe);
+
+      const dfigjew =
+        //
+        inputFunction(sfeqwwe);
+      // BearSelect(sfeqwwe);
+
+      return dfigjew;
+    }
+
+    let asod =
+      //
+      Controller({
+        // as: inputFunction(objbase),
+        ...cntrMan,
+        render: inEar,
+      });
+
+    return asod;
+  }
 
   ujsdqwe = inputObj
-    ? inputObj(objbase)
+    ? inputObj
     : inputFunction
-    ? inputObj(objbase)
-    : // <Controller as={inputFunction(objbase)} {...cntrMan} />
-      retFunc();
+    ? goCont()
+    : inputObjectFunction
+    ? inputObjectFunction(retFunc())
+    : retFunc();
 
   const jaewdsr = {
     rightobj: <BearButton {...confijre} />,
