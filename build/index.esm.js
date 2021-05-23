@@ -1909,7 +1909,10 @@ function BearInput(_ref) {
   } // 1title
 
 
-  function TitleOBbi() {
+  function TitleOBbi(_ref2) {
+    var style = _ref2.style;
+        _objectWithoutProperties(_ref2, ["style"]);
+
     //
     var skdowqe = sameLine ? {
       //
@@ -1923,7 +1926,7 @@ function BearInput(_ref) {
 
     var iawqe = _objectSpread2(_objectSpread2({}, skdowqe), {}, {
       fontWeight: "bold"
-    }, titleConfig === null || titleConfig === void 0 ? void 0 : titleConfig.style);
+    }, style);
 
     var ijweq = {
       obj: " *",
@@ -2025,7 +2028,7 @@ function BearInput(_ref) {
   var showTit = //
   // true;
   !noTitle && titlevar;
-  var oksdwqe = showTit && /*#__PURE__*/React.createElement(TitleOBbi, null);
+  var oksdwqe = showTit && /*#__PURE__*/React.createElement(TitleOBbi, titleConfig);
   var confijre = {
     size: "sm",
     type: "submit",
@@ -2034,11 +2037,11 @@ function BearInput(_ref) {
 
   function goCont(goObj) {
     // inputFunction(objbase)
-    function inEar(_ref2) {
-      var _ref2$field = _ref2.field,
-          ref = _ref2$field.ref;
-          _ref2$field.value;
-          var field = _objectWithoutProperties(_ref2$field, ["ref", "value"]);
+    function inEar(_ref3) {
+      var _ref3$field = _ref3.field,
+          ref = _ref3$field.ref;
+          _ref3$field.value;
+          var field = _objectWithoutProperties(_ref3$field, ["ref", "value"]);
 
       var sfeqwwe = _objectSpread2(_objectSpread2(_objectSpread2({}, objbase), field), getRef(ref));
 
@@ -2291,7 +2294,7 @@ function BearForm(_ref) {
 
     var baseObj = _objectSpread2(_objectSpread2({}, getFormDict(obj)), inDict);
 
-    var fdjgre = baseObj === null || baseObj === void 0 ? void 0 : baseObj.obj;
+    var fdjgre = baseObj.obj;
     var obvdsaf = fdjgre ? fdjgre : isEmpty(baseObj) ? FormError("no form Dictionary supplied - " + obj) : firstInputCheck(baseObj);
     return obvdsaf;
   } //   const [currTab, setcurrTab] = useState(initBase);
@@ -2766,9 +2769,8 @@ var emojiDict = {
 };
 
 function getEMoj(asofkr) {
-  var _emojiDict$asofkr;
-
-  var side = (_emojiDict$asofkr = emojiDict[asofkr]) === null || _emojiDict$asofkr === void 0 ? void 0 : _emojiDict$asofkr.emoji;
+  var idfwer = emojiDict[asofkr];
+  var side = idfwer && idfwer.emoji;
   side = side ? side : "";
   return side;
 }
@@ -3099,11 +3101,11 @@ function FetchLink(askdw, _ref) {
       dsokfe = _objectWithoutProperties(_useQuery, ["data", "isLoading"]);
 
   var sdifew = //
-  data === null || data === void 0 ? void 0 : data.data;
+  data && data.data;
 
   var sodfkew = _objectSpread2(_objectSpread2({
     data: sdifew,
-    dataList: sdifew === null || sdifew === void 0 ? void 0 : sdifew.results,
+    dataList: sdifew && sdifew.results,
     dataBase: data,
     loading: isLoading
   }, dsokfe), sdifew);
@@ -3769,7 +3771,7 @@ function SearchKnowledge(_ref) {
 
     //
     var daease = {
-      imageAttr: thumbnail === null || thumbnail === void 0 ? void 0 : thumbnail.source,
+      imageAttr: thumbnail && thumbnail.source,
       name: title,
       wikiID: pageid.toString(),
       id: slugFunc(title, "_")
@@ -3780,10 +3782,8 @@ function SearchKnowledge(_ref) {
   }
 
   function returnWiki(cxzvfd) {
-    var _cxzvfd$query;
-
     var asduw = //
-    cxzvfd === null || cxzvfd === void 0 ? void 0 : (_cxzvfd$query = cxzvfd.query) === null || _cxzvfd$query === void 0 ? void 0 : _cxzvfd$query.pages;
+    cxzvfd && cxzvfd.query.pages;
     var sidwq = //
     asduw && //
     //   Object.values(asduw);
@@ -4406,7 +4406,7 @@ function AlterUserCheck(_ref) {
     var idsawe = _objectSpread2(_objectSpread2({}, loginConfig), {}, {
       style: _objectSpread2({
         fontSize: "1.2em"
-      }, loginConfig === null || loginConfig === void 0 ? void 0 : loginConfig.style)
+      }, loginConfig && loginConfig.style)
     });
 
     var noaieq = //
@@ -4688,13 +4688,13 @@ function MediaTypeChoose(_ref) {
   function Linkio() {
     var oewqw = //
     // "";
-    BearIconText("link", mediaObj === null || mediaObj === void 0 ? void 0 : mediaObj.name); // formData?.title;
+    BearIconText("link", mediaObj && mediaObj.name); // formData?.title;
 
     var oksadw = {
       obj: oewqw,
       fontSize: "16px",
       className: "wrapTrue",
-      linkvar: mediaObj.webLink,
+      linkvar: mediaObj && mediaObj.webLink,
       linkConfig: {
         noBlack: true
       },
@@ -5029,9 +5029,9 @@ function AlterHighlight(_ref) {
       _useState2[1]; // const {data, isLoading, error} = useQuery(addHighlights())
 
 
-  var mediaObj = overObj.media;
-  overObj === null || overObj === void 0 ? void 0 : overObj.startTime;
-  overObj === null || overObj === void 0 ? void 0 : overObj.endTime;
+  var mediaObj = overObj.media; // const vbnd = overObj?.startTime;
+  // const asidjw = overObj?.endTime;
+
   var dfoke = //
   ""; // vbnd;
   // vbnd ? vbnd : 0;

@@ -314,11 +314,11 @@ export default function OrderList({
     return asokwe;
   }
 
-  const ocxvkbas = orderObj?.deliveryTime;
+  const ocxvkbas = orderObj && orderObj.deliveryTime;
   //  && orderObj.deliveryTime;
   const { deliveryBase } = mediaDeliver(
     mediaList,
-    orderObj?.deliveryPlusHours,
+    orderObj && orderObj.deliveryPlusHours,
     "orderList"
   );
 

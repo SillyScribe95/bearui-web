@@ -308,7 +308,7 @@ export function BearInput({
   }
 
   // 1title
-  function TitleOBbi() {
+  function TitleOBbi({ style, ...sd }) {
     //
 
     const skdowqe = sameLine
@@ -326,7 +326,7 @@ export function BearInput({
     const iawqe = {
       ...skdowqe,
       fontWeight: "bold",
-      ...titleConfig?.style,
+      ...style,
     };
 
     const ijweq = {
@@ -467,7 +467,7 @@ export function BearInput({
     // true;
     !noTitle && titlevar;
 
-  const oksdwqe = showTit && <TitleOBbi />;
+  const oksdwqe = showTit && <TitleOBbi {...titleConfig} />;
 
   const confijre = {
     size: "sm",

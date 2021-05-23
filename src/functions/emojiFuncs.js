@@ -3,7 +3,8 @@
 import { emojiDict } from "../consts/emojiConst";
 
 function getEMoj(asofkr) {
-  let side = emojiDict[asofkr]?.emoji;
+  const idfwer = emojiDict[asofkr];
+  let side = idfwer && idfwer.emoji;
   side = side ? side : "";
 
   return side;

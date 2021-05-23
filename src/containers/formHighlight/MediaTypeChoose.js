@@ -114,14 +114,14 @@ export function MediaTypeChoose({
     const oewqw =
       //
       // "";
-      BearIconText("link", mediaObj?.name);
+      BearIconText("link", mediaObj && mediaObj.name);
     // formData?.title;
 
     const oksadw = {
       obj: oewqw,
       fontSize: "16px",
       className: "wrapTrue",
-      linkvar: mediaObj.webLink,
+      linkvar: mediaObj && mediaObj.webLink,
       linkConfig: {
         noBlack: true,
       },

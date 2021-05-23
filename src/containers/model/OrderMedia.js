@@ -86,7 +86,7 @@ export default function OrderMedia({
     saveTrue: saveTrue,
   };
 
-  const aisjdew = obj?.name;
+  const aisjdew = obj && obj.name;
   const [nameIt, setnameIt] = useState(aisjdew);
 
   function TransDownl() {
@@ -164,7 +164,7 @@ export default function OrderMedia({
     const highListo = mergeArrays(
       //
       bomfdre,
-      ordeDros?.chapterList
+      ordeDros && ordeDros.chapterList
     );
 
     const ijse =

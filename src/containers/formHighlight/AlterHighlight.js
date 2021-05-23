@@ -39,8 +39,8 @@ export function AlterHighlight({
 
   // const {data, isLoading, error} = useQuery(addHighlights())
   const mediaObj = overObj.media;
-  const vbnd = overObj?.startTime;
-  const asidjw = overObj?.endTime;
+  // const vbnd = overObj?.startTime;
+  // const asidjw = overObj?.endTime;
   const dfoke =
     //
     "";
@@ -97,7 +97,7 @@ export function AlterHighlight({
 
     const asdew =
       //
-      addPlaylist.userObj?.name;
+      addPlaylist.userObj && addPlaylist.userObj.name;
     // UserMain(osdkfer);
 
     const dxokvr = {

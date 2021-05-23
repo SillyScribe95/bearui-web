@@ -322,7 +322,7 @@ export function SearchKnowledge({
   function wikItem({ thumbnail, title, pageid, ...asdw }) {
     //
     const daease = {
-      imageAttr: thumbnail?.source,
+      imageAttr: thumbnail && thumbnail.source,
       name: title,
       wikiID: pageid.toString(),
       id: slugFunc(title, "_"),
@@ -337,7 +337,7 @@ export function SearchKnowledge({
   function returnWiki(cxzvfd) {
     const asduw =
       //
-      cxzvfd?.query?.pages;
+      cxzvfd && cxzvfd.query.pages;
 
     const sidwq =
       //

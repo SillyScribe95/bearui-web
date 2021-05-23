@@ -331,7 +331,7 @@ export function BearForm({
       ...inDict,
     };
 
-    const fdjgre = baseObj?.obj;
+    const fdjgre = baseObj.obj;
     const obvdsaf = fdjgre
       ? fdjgre
       : isEmpty(baseObj)

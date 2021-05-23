@@ -29,7 +29,7 @@ export default function AlterUserCheck({
       style: {
         fontSize: "1.2em",
         // padding: "0 10%",
-        ...loginConfig?.style,
+        ...(loginConfig && loginConfig.style),
       },
     };
 

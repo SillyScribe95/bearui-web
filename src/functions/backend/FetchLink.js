@@ -27,11 +27,11 @@ export default function FetchLink(
 
   let sdifew =
     //
-    data?.data;
+    data && data.data;
 
   const sodfkew = {
     data: sdifew,
-    dataList: sdifew?.results,
+    dataList: sdifew && sdifew.results,
     dataBase: data,
     loading: isLoading,
     ...dsokfe,
