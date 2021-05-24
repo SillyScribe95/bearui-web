@@ -29,3 +29,10 @@ Add this to your "scripts" section in package.json to get the latest version:
 "update:packages": "npm install git+https://github.com/SillyScribe95/bearui-web#master"
 ```
 
+link your modules this way:
+```
+SHARED LIBRARY: 
+npm link node_modules/react && npm link node_modules/react-dom
+YOUR LIBRARY:
+npm link react && npm link react-dom 
+```
