@@ -1,3 +1,17 @@
+# Using in project
+
+```
+import {
+  //
+  BearDiv,
+} from "@SillyScribe95/bearui-web";
+import {
+  //
+  logs,
+} from "@SillyScribe95/bedia-shared";
+
+```
+
 # Local Install
 
 run the following command:
