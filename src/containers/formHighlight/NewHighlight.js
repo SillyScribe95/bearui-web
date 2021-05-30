@@ -3,20 +3,51 @@ import React, {
   useState,
   useContext,
 } from "react";
-import { checkFullArray, logs } from "@SillyScribe95/bedia-shared/";
+import {
+  checkFullArray,
+  getFirstArr,
+  logs,
+  QueryMain,
+} from "@SillyScribe95/bedia-shared/";
 
 import { BearDiv } from "../../components/BearDiv";
 // import ModelList from "../model/ModelList";
 import { AlterHighlight } from "./AlterHighlight";
+import { BearList } from "../../components/list/BearList";
+import { QueryNode } from "../../functions/backendFuncs";
 
 export function NewHighlight({
   //
+  linkDetails,
+  findLink,
+  media,
   highlightObj,
   formConfig,
+  genConfig,
   ...args
 }) {
   // 1const
   const [type, setType] = useState("");
+
+  const {
+    //
+    // ...medMain
+    data: medMain,
+    loading: lodMed,
+  } =
+    //
+    // "";
+    linkDetails ? QueryNode("fetch-media", linkDetails) : "";
+
+  const sdfkwe = {
+    ...getFirstArr(medMain),
+    ...media,
+  };
+
+  highlightObj = {
+    ...highlightObj,
+    media: sdfkwe,
+  };
 
   const { data: similarHighs, isLoading: lodOther } =
     //
@@ -94,18 +125,10 @@ export function NewHighlight({
 
     const kdsfsr = <BearList {...vbdf} />;
 
-    const okaswe = {
-      centerConfig: {
-        style: { textAlign: "left" },
-      },
-      centerobj: "Join Bedia to start making notes.",
-      rightobj: kdsfsr,
-    };
-
     const sfdgret = (
       <>
         {/*  */}
-        Join Bedia to start making notes.
+        Join Bedia to start making Clips.
         {/* <BearFloat {...okaswe} /> */}
         {/* Sign up to start making notes.
         {kdsfsr} */}
@@ -137,7 +160,11 @@ export function NewHighlight({
 
     const koase = {
       ...loksdass,
+      loadTrue: lodMed,
       ...formConfig,
+      ...args,
+      mediaList: sdfkwe,
+      overObj: highlightObj,
     };
 
     const vbuhd =
@@ -160,11 +187,19 @@ export function NewHighlight({
     </>
   );
 
-  args = {
+  // 1console
+  const sdfjww = {
+    //
+    MEDIA: medMain,
+  };
+
+  logs.logga("___ NEWw-HIGHLGIHT ___", sdfjww);
+
+  const ijsdq = {
     obj: okfdsd,
-    ...args,
+    // ...genConfig,
   };
 
   //
-  return <BearDiv {...args} />;
+  return <BearDiv {...ijsdq} />;
 }

@@ -3,11 +3,11 @@ import React, {
   useState,
   useContext,
 } from "react";
-
 import {
   //
   logs,
 } from "@SillyScribe95/bedia-shared/";
+import { BearDiv } from "./BearDiv";
 
 export function BearError(obj) {
   // 1const
@@ -27,4 +27,6 @@ export function BearError(obj) {
   };
 
   const okasew = <BearDiv {...adkease} />;
+
+  return okasew;
 }

@@ -15,9 +15,14 @@ import {
   AiOutlineClockCircle,
   AiOutlineCloseCircle,
 } from "react-icons/ai";
-import { FiExternalLink } from "react-icons/fi";
+import { FiExternalLink, FiSettings } from "react-icons/fi";
 import { RiTimerLine } from "react-icons/ri";
-import { FaPlay, FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
+import {
+  FaPlay,
+  FaSignOutAlt,
+  FaQuoteLeft,
+  FaQuoteRight,
+} from "react-icons/fa";
 import { BearDiv } from "./BearDiv";
 import { BearTextMedia } from "./BearTextMedia";
 // import BearFloat from "../components/BearFloat";
@@ -37,6 +42,12 @@ export function BearIcon(sdfoger, sdfke) {
     //
     // <TiTickOutline />
     <AiOutlineCheckCircle {...lasew} />
+  );
+
+  // 1signout
+  const sduhfer = (
+    //
+    <FaSignOutAlt />
   );
 
   // 1time
@@ -117,10 +128,22 @@ export function BearIcon(sdfoger, sdfke) {
     // <FiExternalLink />
   );
 
+  // 1settings
+  const sdijwqe = (
+    //
+    <FiSettings />
+  );
+
+  // 1icons
   const ijsadwe = {
+    // facebook:
+    // twitter:
+    // whatsapp
+    signout: sduhfer,
     tick: okasdew,
     delete: asdfewr,
     playlist: asdkqe,
+    settings: sdijwqe,
     share: sjerw,
     star: dfigjew,
     comment: sowaseowq,
@@ -175,7 +198,8 @@ export function BearIcon(sdfoger, sdfke) {
   const cbnkfg =
     //
     // oksdew
-    BearDiv(okasde);
+    oksdew;
+  // BearDiv(okasde);
   // sdfke
   //   ? //
   //     // Berios()

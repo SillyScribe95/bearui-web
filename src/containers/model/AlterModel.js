@@ -50,20 +50,29 @@ export function AlterModel({
   //
   noOtherList,
   //
+  // 1save
+  showSaved,
   formConfig,
   noExtraModels,
   ...args
 }) {
   // 1context
-  //   const { SaveUser, currentUser } = useContext(AuthContext);
+  //   const { SaveUser, userObj } = useContext(AuthContext);
 
   // function subios()
 
   // 1const
 
+  // 1baseArgs
+  const baseArgs = {
+    typevar: typevar,
+  };
+
   // 1load
   const [loadSave, setloadSave] = useState();
   const [emoStto, setemoStto] = useState();
+
+  const [currStage, setcurrStage] = useState();
 
   function sdkfje9(fgijgre) {
     logs.logga("___ fgijgre ___", fgijgre);
@@ -120,6 +129,9 @@ export function AlterModel({
       if (setLoadSave) {
         setloadSave(false);
         // clearSettos();
+      }
+      if (showSaved) {
+        setcurrStage("save");
       }
     }
   }
@@ -201,19 +213,34 @@ export function AlterModel({
   }
 
   // 1console
+
+  logs.logga("___ AlterMod ___", oksae);
   logs.logga("___AlterModel lComplo ___", {
     userObj,
     lisComplo,
   });
 
-  // 1form
-  let asdokwe = <BearForm {...lisComplo} />;
-  let mskesdf = (
-    <>
-      {topObj}
-      {asdokwe}
-    </>
-  );
+  let mskesdf = "";
+  switch (currStage) {
+    case "save":
+      const iksfer = {
+        ...baseArgs,
+        newFunc: () => setcurrStage(),
+        // listvar:
+      };
+
+      mskesdf = <ModelPanel {...iksfer} />;
+
+    default:
+      // 1form
+      let asdokwe = <BearForm {...lisComplo} />;
+      mskesdf = (
+        <>
+          {topObj}
+          {asdokwe}
+        </>
+      );
+  }
 
   const asesae = {
     ...oksae,

@@ -7,6 +7,7 @@ import * as logs from "../functions/logFuncs";
 import { BearDiv } from "./BearDiv";
 import { BearIcon } from "./BearIcon";
 import { BearImage } from "./BearImage";
+import { BearButton } from "./button/BearButton";
 
 export function BearTextMedia({
   //
@@ -22,6 +23,7 @@ export function BearTextMedia({
   textvar,
   iconvar,
   noImage,
+  buttonTrue,
   iconConfig,
   textconfig,
   ...args
@@ -44,6 +46,8 @@ export function BearTextMedia({
       ...dsafe,
     };
 
+    logs.logga("___ ksease ___", ksease);
+
     return ksease;
   }
 
@@ -63,6 +67,7 @@ export function BearTextMedia({
     return oksaw;
   }
 
+  // 1text
   function Ajiwq({ ...dsfew }) {
     const oisde = {
       obj: textvar,
@@ -70,21 +75,26 @@ export function BearTextMedia({
       ...dsfew,
     };
 
-    return <BearDiv {...oisde} />;
+    return <BearDiv spanTrue {...oisde} />;
   }
 
   function INcoio({ style, ...ase }) {
     //
     const ksawe = sadkwe(style);
 
-    const sfksr = iconvar ? BearIcon(iconvar) : iconvar;
-
     const sdlf = {
       style: ksawe,
-      obj: sfksr,
+      obj: BearIcon(iconvar),
       ...ase,
     };
-    const isajdawe = <BearDiv {...sdlf} />;
+
+    logs.logga("___ bertextmed ___", sdlf);
+
+    const isajdawe = (
+      //
+      // BearIcon(iconvar);
+      <BearDiv spanTrue {...sdlf} />
+    );
 
     return isajdawe;
   }
@@ -103,24 +113,50 @@ export function BearTextMedia({
 
   const sdijwqe = iconvar || imagevar;
   const bothTrue = textvar && sdijwqe;
-  const oksaew = bothTrue && <BearDiv {...okasew} />;
+  const oksaew = bothTrue && <BearDiv spanTrue {...okasew} />;
 
   const oskdawe = (
     <>
+      {/* {kadse} */}
+      {/* {textvar} */}
       {kadse}
       {oksaew}
       {okdswq}
     </>
   );
 
+  function Rendo() {
+    const VCIFWRE = {
+      obj: oskdawe,
+    };
+
+    const fdghew = (
+      <BearDiv
+        //
+        flexTrue
+        vertAlign
+        {...VCIFWRE}
+      />
+    );
+
+    // return "dojwewq";
+    return fdghew;
+  }
+
   const okfdsd =
     //
-    vertTrue ? oskdawe : <BearDiv flexTrue vertTrue obj={oskdawe} />;
+    vertTrue ? oskdawe : Rendo();
 
   args = {
     obj: okfdsd,
     ...args,
   };
 
-  return <BearDiv {...args} />;
+  // switch (typeDiv){
+  //   case "button":
+
+  //     default:
+  // }
+
+  return buttonTrue ? <BearButton {...args} /> : <BearDiv {...args} />;
 }

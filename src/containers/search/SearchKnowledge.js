@@ -56,7 +56,7 @@ export function SearchKnowledge({
     let oksaew = checkFullArray(okweqq) && createIndex;
 
     // if (oksaew) {
-    //   CreateTopic(okweqq, currentUser);
+    //   CreateTopic(okweqq, userObj);
     // }
   }
 

@@ -5,7 +5,7 @@ import React, {
 } from "react";
 import { BearDiv } from "../BearDiv";
 
-export default function BearTitle({
+export function BearTitle({
   subtitleConfig,
   titlevar,
   belowObj,

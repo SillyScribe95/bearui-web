@@ -7,7 +7,7 @@ import { logs } from "@SillyScribe95/bedia-shared/";
 
 import BearDiv from "../components/BearDiv";
 
-import FormMain from "../components/FormMain";
+import BearForm from "../components/BearForm";
 import { CurrencyMain, joinString } from "../functions/GlobalFunctions";
 import { MainContext } from "../contexts/MainContext";
 
@@ -182,7 +182,7 @@ export default function OrderOptions({
   };
 
   const formos = (
-    <FormMain
+    <BearForm
       //
       //   noButton
       // addTrue

@@ -3,6 +3,7 @@ import React, {
   useState,
   useContext,
 } from "react";
+import { BearPopover } from "../BearPopover";
 import { BearDiv } from "../BearDiv";
 //   import BearSelect from "./BearSelect";
 //   import HorizChoiceBar from "./HorizChoiceBar";
@@ -96,6 +97,7 @@ export function BearEmoji({
     const bocd = onlyEmoji ? emoji : <>{emoji}</>;
 
     const qwtgsa = chosenTrue && BearIcon("tick");
+
     const okaew = {
       mainObj: bocd,
       smallObj: qwtgsa,
@@ -117,6 +119,7 @@ export function BearEmoji({
 
     const oksaew = {
       obj: lsadwe,
+      flexTrue: true, 
       ...sfjaw,
     };
 
@@ -131,7 +134,7 @@ export function BearEmoji({
 
     logs.logga("___BearEmoji BASE EMOJI ___", aokdwe);
 
-    return <BearDiv {...aokdwe} />;
+    return <BearPopover {...aokdwe} />;
   }
 
   function Listso({ ...ssdwedf }) {

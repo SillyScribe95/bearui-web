@@ -10,7 +10,7 @@ import { BearDiv } from "../../components/BearDiv";
 export default function HighlightAdded({
   //
   obj,
-  currentUser,
+  userObj,
   ...args
 }) {
   // 1const
@@ -24,7 +24,7 @@ export default function HighlightAdded({
 
     const masew = (
       <>
-        Thanks, {currentUser.name}!
+        Thanks, {userObj.name}!
         <br />
         Start making better notes today with Bedia.
       </>

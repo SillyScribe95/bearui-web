@@ -1,9 +1,11 @@
+import { Center } from "@chakra-ui/layout";
 import React, {
   //
   useState,
   useContext,
 } from "react";
 import { BearLink } from "./BearLink";
+import { LoadMain } from "./GlobalComps";
 
 export function BearDiv({
   //
@@ -12,11 +14,14 @@ export function BearDiv({
   flexTrue,
   vertAlign,
   typeDiv,
+  centerTrue,
   spanTrue,
   fontSize,
   linkvar,
   linkConfig,
   style,
+  loadTrue,
+  loadConfig,
   ...args
 }) {
   //
@@ -27,7 +32,7 @@ export function BearDiv({
 
   const zxcsd = vertAlign && {
     alignItems: "center",
-    justifyContent: "center",
+    // justifyContent: "center",
   };
 
   const kdfr = bediaTrue && {
@@ -40,8 +45,16 @@ export function BearDiv({
     fontSize: fontSize,
   };
 
+  const centerConf = centerTrue && {
+    width: "100%",
+    margin: "auto",
+    textAlign: "center",
+  };
+
   const gibjr = {
+    // ...centerConf,
     ...oksdae,
+    ...centerConf,
     ...osdakew,
     ...zxcsd,
     ...kdfr,
@@ -59,6 +72,12 @@ export function BearDiv({
 
   let endo = "";
   switch (aokdwe) {
+    case "center":
+      endo = (
+        <Center bg="tomato" h="100px" color="white" {...oksde}>
+          {obj}
+        </Center>
+      );
     case "span":
       endo = <span {...oksde}>{obj}</span>;
       break;
@@ -80,5 +99,16 @@ export function BearDiv({
     //
     linkTrue ? <BearLink {...okdas} /> : endo;
 
-  return xczaeewqa;
+  function Lodio() {
+    const cvboker = {
+      //
+      ...loadConfig,
+    };
+
+    return <LoadMain {...cvboker} />;
+  }
+
+  const sadijqwe = loadTrue ? Lodio() : xczaeewqa;
+
+  return sadijqwe;
 }

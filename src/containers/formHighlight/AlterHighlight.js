@@ -21,14 +21,15 @@ import { AlterModel } from "../model/AlterModel";
 import { BearCarousel } from "../../components/list/BearCarousel";
 import { BearButton } from "../../components/button/BearButton";
 import { MediaTypeTime } from "./MediaTypeTime";
+import MediaFindChoose from "../formMedia/MediaFindChoose";
 
 export function AlterHighlight({
   //
   overObj,
   onSubmit,
-
   seriesObj,
   addPlaylist,
+  mediaList,
   saveToMedia,
   newUser,
   timeConfig,
@@ -38,7 +39,7 @@ export function AlterHighlight({
   const [trueInd, settrueInd] = useState();
 
   // const {data, isLoading, error} = useQuery(addHighlights())
-  const mediaObj = overObj.media;
+  const media = overObj && overObj.media;
   // const vbnd = overObj?.startTime;
   // const asidjw = overObj?.endTime;
   const dfoke =
@@ -59,7 +60,7 @@ export function AlterHighlight({
   let typeia =
     //
     // "video";
-    mediaObj.mediaType;
+    media && media.mediaType;
 
   const [mediaVary, setmediaVary] = useState(typeia);
 
@@ -166,7 +167,7 @@ export function AlterHighlight({
 
   let linkGo =
     //
-    mediaObj && `/m/${mediaObj.slugURL}/highlights`;
+    media && `/m/${media.slugURL}/highlights`;
   // linkGo =
 
   // 1submit 1save
@@ -197,7 +198,7 @@ export function AlterHighlight({
   const baseArgs = {
     mediaType: mediaVary,
     overObj: newHgho,
-    mediaObj: mediaObj,
+    media: media,
   };
 
   // // 1console
@@ -205,11 +206,11 @@ export function AlterHighlight({
   logs.logga("___ FORM BASE ITEMS ___", newHgho);
 
   const baseName =
-    mediaObj &&
+    media &&
     joinString(
       //
       [
-        mediaObj.name,
+        media.name,
         //
         // "(" + ijsewe + ")",
       ],
@@ -331,7 +332,8 @@ export function AlterHighlight({
     };
 
     const ywers = {
-      chooseFunc: setmediaVary,
+      typeChooseFunc: setmediaVary,
+      mediaChooseFunc: () => settrueInd(2),
     };
 
     const cvbokf = {
@@ -341,7 +343,8 @@ export function AlterHighlight({
       ...args,
     };
 
-    logs.logga("___ altHigh MediaTyTime ___", cvbokf);
+    // 1type
+    logs.loggo("___ altHigh MediaTyTime ___", cvbokf);
 
     const fdjeaw =
       //
@@ -420,8 +423,8 @@ export function AlterHighlight({
   function TitleO() {
     const gfgfkho =
       //
-      // mediaObj;
-      "<- " + mediaObj.name;
+      // media;
+      "<- " + media.name;
 
     const vbfod = {
       fontSize: "20px",
@@ -477,12 +480,43 @@ export function AlterHighlight({
     onSubmit: idjew,
   };
 
+  function NoAddoIt() {
+    const nsdifjwr = (
+      <>
+        {asidwe}
+        NO MEDIA ITEM HERE
+      </>
+    );
+
+    const fdhgrw = {
+      obj: nsdifjwr,
+    };
+
+    return <BearDiv {...fdhgrw} />;
+  }
+
+  function ChooseMedList() {
+    function chooese(dfg9ere) {
+      logs.logga("___ dfg9ere ___", dfg9ere);
+    }
+
+    const ijawe = {
+      //
+      onClick: chooese,
+      listvar: mediaList,
+    };
+
+    return <MediaFindChoose {...ijawe} />;
+  }
+
   function CarosStart() {
+    const firstO = altBase(listAll);
+
     const niase = [
       // letPlaio, sfisre
-      altBase(listAll),
-      // altBase(listOne),
-      // altBase(listTwo),
+      firstO,
+      altBase(listOne),
+      // ChooseMedList(),
     ];
 
     const sdokfr = {
@@ -497,7 +531,8 @@ export function AlterHighlight({
 
   const okadse =
     //
-    CarosStart();
+    media ? CarosStart() : NoAddoIt();
+  // CarosStart();
   // addPlaylist ? <CarosStart /> : sfisre;
 
   const fdjgirt = (

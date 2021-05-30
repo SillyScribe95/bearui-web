@@ -5,6 +5,8 @@ import React, {
 } from "react";
 import {
   //
+  changeWebPlayerTime,
+  getWebCurrentTime,
   getDuration,
   timeDecim,
   logs,
@@ -18,6 +20,7 @@ import { BearIconText } from "../../components/GlobalComps";
 
 export function TimeButtons({
   //
+  webTrue,
   changePlayerTime,
   getCurrentTime,
   showTime,
@@ -55,7 +58,11 @@ export function TimeButtons({
   // trackStart && !endTime
 
   function getTimeo(aspecto, timeo) {
-    const timeea = timeo ? timeo : getCurrentTime();
+    const timeea = timeo
+      ? timeo
+      : webTrue
+      ? getWebCurrentTime()
+      : getCurrentTime();
 
     //
     //
@@ -146,6 +153,15 @@ export function TimeButtons({
       // true
       !endTime;
 
+    function chanPlay() {
+      if (webTrue) {
+        //
+        changeWebPlayerTime(startTime);
+      } else {
+        changePlayerTime(startTime);
+      }
+    }
+
     const askdwse = {
       disableTrue: disoes,
       // chakTrue: true,
@@ -154,7 +170,7 @@ export function TimeButtons({
       // bediaTrue: true,
       background: "darkgreen",
       butName: "playeButton",
-      onClick: () => changePlayerTime(startTime),
+      onClick: chanPlay,
     };
 
     return askdwse;

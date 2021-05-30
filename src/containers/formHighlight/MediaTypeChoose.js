@@ -18,14 +18,15 @@ import {
 import { BearList } from "../../components/list/BearList";
 import { BearFloat } from "../../components/BearFloat";
 import { ModelObject } from "../model/ModelObject";
-import { BearIconText, FlexMain } from "../../components/GlobalComps";
+import { BearIconText, BearFlex } from "../../components/GlobalComps";
 import { BearError } from "../../components/BearError";
 
 export function MediaTypeChoose({
   //
-  mediaType,
-  chooseFunc,
-  mediaObj,
+  mediaType = "book",
+  typeChooseFunc,
+  mediaChooseFunc,
+  media,
   obj,
   ...args
 }) {
@@ -114,14 +115,14 @@ export function MediaTypeChoose({
     const oewqw =
       //
       // "";
-      BearIconText("link", mediaObj && mediaObj.name);
+      BearIconText("link", media && media.name);
     // formData?.title;
 
     const oksadw = {
       obj: oewqw,
       fontSize: "16px",
       className: "wrapTrue",
-      linkvar: mediaObj && mediaObj.webLink,
+      linkvar: media && media.webLink,
       linkConfig: {
         noBlack: true,
       },
@@ -140,24 +141,27 @@ export function MediaTypeChoose({
     return oaswe;
   }
 
-  const okfdsd = (
-    <>
-      <ItemOver />
-      <Linkio />
-      {/*  */}
-    </>
-  );
+  function MediaShow() {
+    const sdkjwr =
+      //
+      Linkio();
 
-  const reuthw = {
-    logtrue: true,
-    leftobj: <ItemOver />,
-    rightobj: <Linkio />,
-  };
+    const ijsdfse = {
+      obj: sdkjwr,
+      onClick: mediaChooseFunc,
+    };
+
+    return <BearDiv {...ijsdfse} />;
+  }
+
+  const medChck =
+    //
+    MediaShow();
 
   const xcijgdt = [
     //
     <ItemOver />,
-    <Linkio />,
+    medChck,
   ];
 
   const nbaseao = {
@@ -172,5 +176,5 @@ export function MediaTypeChoose({
   // return "sdew";
   // return <BearFloat {...reuthw} />;
   // return <BearFloat {...reuthw} />;
-  return <FlexMain {...nbaseao} />;
+  return <BearFlex {...nbaseao} />;
 }

@@ -13,3 +13,6 @@ export * from "./containers/formHighlight/NewHighlight";
 
 // 1time
 export * from "./containers/time/TimeButtons";
+
+// 1extra
+export * from "./components/extra/BearCreditCard";

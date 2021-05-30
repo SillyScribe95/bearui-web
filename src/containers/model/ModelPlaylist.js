@@ -19,7 +19,7 @@ export default function ModelPlaylist({
   afterText,
   changeCurr,
   addFunc,
-  mediaObj,
+  media,
   index,
   nameFunc,
   editTrue,
@@ -63,7 +63,7 @@ export default function ModelPlaylist({
   };
 
   const ksaae = {
-    // textSocial: sajdae,
+    // shareText: sajdae,
   };
 
   //   const saew =

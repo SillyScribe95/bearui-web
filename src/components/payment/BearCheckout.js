@@ -9,7 +9,7 @@ import {
   logs,
 } from "@SillyScribe95/bedia-shared/";
 
-export function SpeakAdd({
+export function BearCheckout({
   //
   seriesObj,
   ...args

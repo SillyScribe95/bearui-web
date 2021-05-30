@@ -5,8 +5,7 @@ import React, {
 } from "react";
 import * as logs from "../../functions/logFuncs";
 import { BearDiv } from "../../components/BearDiv";
-
-import LoginModal from "../../containers/user/LoginModal";
+import { LoginModal } from "../../containers/user/LoginModal";
 // import AlterPlaylist from "../../containers/playlist/AlterPlaylist";
 
 export default function AlterUserCheck({

@@ -12,16 +12,14 @@ export default {
     { file: pkg.module, format: "esm", sourcemap: true },
   ],
   plugins: [
-    // css(
-    //   include.: ["/**/*.css", "/**/*.scss", "/**/*.sass"],
-    //   output: "css/style.css",
-    //   failOnError: true,
-
-    // ),
-    css(),
+    css({
+      include: ["/**/*.css", "/**/*.scss", "/**/*.sass"],
+      output: "bearui.css",
+      failOnError: true,
+    }),
     external(),
     babel(),
-    del({ targets: ["build/*"] }),
+    // del({ targets: ["build/*"] }),
   ],
   external: Object.keys(pkg.peerDependencies || {}),
 };

@@ -46,7 +46,7 @@
 
 //     // 1context
 //     const { aaaaaa } = useContext(MainContext);
-//     const { currentUser } = useContext(AuthContext);
+//     const { userObj } = useContext(AuthContext);
 
 //     const saodkwe =
 //       //
@@ -91,7 +91,7 @@
 //       let oksaew = checkFullArray(okweqq) && createIndex;
 
 //       // if (oksaew) {
-//       //   CreateTopic(okweqq, currentUser);
+//       //   CreateTopic(okweqq, userObj);
 //       // }
 //     }
 

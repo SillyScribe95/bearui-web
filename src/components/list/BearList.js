@@ -12,8 +12,9 @@ import {
   logs,
 } from "@SillyScribe95/bedia-shared/";
 import { BearError } from "../BearError";
+import { BearTextMedia } from "../BearTextMedia";
+import { BearButton } from "../button/BearButton";
 // import SelectComp from "./general/SelectComp";
-// import * as gens from "../consts/genStyle";
 // import { SelectArray } from "../functions/GlobalFunctions";
 
 export function BearList({
@@ -233,12 +234,17 @@ export function BearList({
         // asdpkwe = "dict";
         asdpkwe = <BearDiv {...itemConfig} obj={listarr} />;
         break;
+      case "textMedia":
+        // asdpkwe = "sodawewqs";
+        asdpkwe = <BearTextMedia {...endRet} />;
+        break;
+
       case "button":
         // asdpkwe = "dict";
         asdpkwe = (
           //
-          // <BearDiv {...itemConfig} obj={listarr} />;
-          <BearButton {...itemConfig} />
+          <BearButton {...itemConfig} obj={listarr} />
+          // <BearButton {...itemConfig} />
         );
 
         break;
@@ -279,13 +285,15 @@ export function BearList({
       obj: isjdew,
     };
 
-    const auewasdash = loadtrue
-      ? loadobj
-      : selectableTrue
-      ? "<SelectComp {...filleoo} />"
-      : //
-        // isjdew;
-        BearDiv(filleoo);
+    const auewasdash = loadtrue ? (
+      loadobj
+    ) : selectableTrue ? (
+      <SelectComp {...filleoo} />
+    ) : (
+      //
+      // isjdew;
+      BearDiv(filleoo)
+    );
 
     const ijsew =
       //
@@ -362,11 +370,29 @@ export function BearList({
     return jcvbfd;
   }
 
+  // 1select
+  function Seletio() {
+    const asikwe = {
+      // ...selectableContext,
+      // renderItem:
+      ...selectableConfig,
+    };
+
+    const as83asd =
+      //
+      "";
+    // <SelectArray {...asikwe} />
+
+    return as83asd;
+  }
+
   const sadfwe =
     //
     // "oaksdwqew";
     !listvar ? (
       BearError("No 'listvar' argument specified")
+    ) : selectableTrue ? (
+      <Seletio />
     ) : horizTrue ? (
       <HozBar />
     ) : (
@@ -378,7 +404,6 @@ export function BearList({
   const titlo = showTit && <TitleFix />;
   const asudwe =
     //
-    //   fullVar ? selectableTrue ? <Seletio /> : aisjwe : noListObj;
     sadfwe;
 
   const saokwe = (

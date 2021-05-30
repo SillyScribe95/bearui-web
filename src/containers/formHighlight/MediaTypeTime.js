@@ -53,7 +53,7 @@ export function MediaTypeTime({
       ...timeConfig,
     };
 
-    logs.logga("___ TieButtons ___", dfkgret);
+    logs.loggo("___ TieButtons ___", dfkgret);
 
     const ijsadwqe = <TimeButtons {...dfkgret} />;
 
@@ -79,8 +79,8 @@ export function MediaTypeTime({
 
   const ijaase =
     //
-    // "";
-    ChooseIo();
+    "";
+  // ChooseIo();
 
   //   1timing
   const timeNotTrue =

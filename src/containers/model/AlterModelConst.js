@@ -29,13 +29,15 @@ export default function AlterModelConst({
   topicConfig,
   nameConfig,
   emojiConfig,
-  currentUser,
+  userObj,
   modelCreateFunc,
   listvar,
   dictvar,
   ...args
 }) {
-  //
+  
+
+  // 
   // 1fontsize
   const baseoFont = 80;
   const asijew = {
@@ -46,8 +48,8 @@ export default function AlterModelConst({
     //
     // "";
     // QueryData()
-    QueryMain(getUserPlaylists(currentUser));
-  // QueryMain(GetUserObjs(indexPlaylist, currentUser));
+    userObj ? QueryMain(getUserPlaylists(userObj)) : "";
+  // QueryMain(GetUserObjs(indexPlaylist, userObj));
 
   function showSelStly(lcxmvd) {
     let dsofk = {
@@ -109,16 +111,7 @@ export default function AlterModelConst({
   }
 
   // 1users
-  // function SpekaFind(asdfewr) {
-  //   const ijasew = {
-  //     //
-  //     name: "aboutList",
-  //     style: asijew,
-  //     ...asdfewr,
-  //   };
 
-  //   return <SearchKnowledge {...ijasew} />;
-  // }
 
   // 1private 1public
   function PrivacySett(asdew) {
@@ -331,8 +324,8 @@ export default function AlterModelConst({
   function htr() {
     const sdeqwe =
       //
-      // BearIconText("📚", "Playlist"),
-      "Playlist";
+      BearIconText("📚", "Playlist")
+      // "Playlist";
 
     const oeiw = {
       obj: sdeqwe,
@@ -343,17 +336,13 @@ export default function AlterModelConst({
 
   const sdifr =
     //
-    htr();
-  // "Playlists";
+    // htr();
+  "Playlists";
 
   // 1playlist
   let dsifwqeq = {
-    //
-    // style: {
-    //   marginTop: "100px",
-    // },
     name: "playlist",
-    // iconvar: "📚",
+    iconvar: "📚",
     titlevar: sdifr,
     // addFunc: () => addNew(1),
     sameLine: "",
@@ -388,7 +377,6 @@ export default function AlterModelConst({
   let sprkOR = {
     //
     name: "speakers",
-    // iconvar:
     iconvar: "🧑‍🤝‍🧑",
     required: true,
     titlevar: "Speakers",

@@ -10,7 +10,7 @@ import {
 } from "@SillyScribe95/bedia-shared/";
 
 import { ModelThumbnail } from "./ModelThumbnail";
-import { FlexMain } from "../../components/GlobalComps";
+import { BearFlex } from "../../components/GlobalComps";
 import { BearDiv } from "../../components/BearDiv";
 
 export function ModelObject({
@@ -148,7 +148,7 @@ export function ModelObject({
       padvar: "10px",
     };
 
-    const oadase = <FlexMain {...oksde} />;
+    const oadase = <BearFlex {...oksde} />;
 
     return oadase;
   }

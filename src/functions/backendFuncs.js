@@ -3,12 +3,36 @@ import { useQuery } from "react-query";
 import FetchLink from "./backend/FetchLink";
 import UseFirestoreQuery from "./backend/UseFirestoreQuery";
 
+// 1test
+const testTrue =
+  //
+  // ""
+  true;
+
 export function fetchParams(sdforw, sdokereq) {
   return FetchLink(sdforw, { params: sdokereq });
 }
 
 export function dataFunc(funcv) {
   return funcv();
+}
+
+export function queryInit() {}
+
+export function QueryNode(linko, aasddwe) {
+  const saodwe =
+    //
+    "http://localhost:4000/";
+  // testTrue ? "http://localhost:4000/" :
+
+  const sidqeasd = `${saodwe}${linko}`;
+
+  return fetchParams(sidqeasd, aasddwe);
+  // return FetchLink(sidqeasd, aasddwe);
+}
+
+export function FireQuery(funcv) {
+  return UseFirestoreQuery(funcv);
 }
 
 export function QueryMain(funcv, nameo = "querybsae") {
@@ -38,8 +62,7 @@ export function QueryMain(funcv, nameo = "querybsae") {
     ...asodke,
   };
 
-  //   return okwwew;
-  return UseFirestoreQuery(funcv);
+  return okwwew;
 }
 
 // export function createModelApp(typeos, listvar, {!noaksew){

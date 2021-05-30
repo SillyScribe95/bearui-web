@@ -77,11 +77,13 @@ export function ListFlex({ ...sae }) {
   return sadwew;
 }
 
-export function FlexMain({
+export function BearFlex({
   padvar = "20px",
   listvar,
   itemStyle,
   style,
+  leftobj,
+  rightobj,
   noVertAlign,
   obj,
   ...sae
@@ -106,7 +108,7 @@ export function FlexMain({
       ...asd,
     };
 
-    logs.logga("___ flexMain ITEM ___", oksade);
+    logs.logga("___ BearFlex ITEM ___", oksade);
 
     return <div {...oksade}>{obj}</div>;
   }
@@ -121,13 +123,35 @@ export function FlexMain({
     return dokesad(ijase);
   }
 
+  function RendFlex() {
+    const sdijrwe = {
+      obj: leftobj,
+    };
+
+    const ijasew = {
+      obj: rightobj,
+      style: {
+        marginLeft: "auto",
+      },
+    };
+
+    const saijwe = (
+      <>
+        <BearDiv {...sdijrwe} />
+        <BearDiv {...ijasew} />
+      </>
+    );
+
+    return saijwe;
+  }
+
   // listvar = [{
   //   obj:"aaaa"
   // }, {
   //   obj: "bbbb"
   // }]
 
-  const okdsse = listvar.map(redndo);
+  const okdsse = listvar ? listvar.map(redndo) : <RendFlex />;
 
   const vbdrewe = {
     obj: okdsse,

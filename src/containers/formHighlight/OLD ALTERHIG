@@ -16,10 +16,10 @@ function joinwithmedia(dignos) {
     logs.logga("___ ijyfgt ___", ijyfgt);
     logs.logga("___ newChap ___", newChap);
 
-    setlistChapters(newChap, mediaObj);
+    setlistChapters(newChap, media);
   }
 
   const chapList =
     //
     listChapters;
-  // mediaObj.chapterList;
+  // media.chapterList;

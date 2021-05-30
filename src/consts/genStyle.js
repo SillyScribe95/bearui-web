@@ -22,8 +22,8 @@ const alignContentFlex =
 const justifyContentFlex =
   //
   // "";
-  // "flex-start";
-  "space-between";
+  "flex-start";
+// "space-between";
 // "center";
 // "stretch";
 // "space-around"

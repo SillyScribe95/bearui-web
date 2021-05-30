@@ -6,6 +6,7 @@ import React, {
 import * as logs from "../functions/logFuncs";
 import { vertAlign } from "../consts/genStyle";
 import { BearDiv } from "./BearDiv";
+import { Flex, Spacer } from "@chakra-ui/react";
 
 export function BearFloat({
   //
@@ -51,6 +52,7 @@ export function BearFloat({
     // paddingLeft: noPadding
     p: "0 2",
     padding: "0 10px",
+    marginRight: "auto",
   };
 
   let sasease = leftobj || showLeft;
@@ -60,7 +62,7 @@ export function BearFloat({
         {/*  */}
         {leftobj}
       </div>
-      {/* {!noSpace && <Spacer />} */}
+      {!noSpace && <Spacer />}
     </>
   );
 
@@ -73,13 +75,14 @@ export function BearFloat({
   );
 
   const ijsad = {
+    marginLeft: "auto",
     style: alignTrue && { textAlign: "right" },
   };
 
   let askdw = rightobj || showRight;
   const rightos = (
     <>
-      {/* {!noSpace && <Spacer />} */}
+      {!noSpace && <Spacer />}
       <div {...ijsad}>
         {/* sdokw */}
         {rightobj}
@@ -104,6 +107,7 @@ export function BearFloat({
     default:
       const oesfdrtw = {
         flexTrue: true,
+        vertAlign: true,
         ...trueClass,
         obj: ksaewe,
       };
@@ -124,6 +128,7 @@ export function BearFloat({
 
   args = {
     ...args,
+
     obj: sdifjw,
   };
 

@@ -1,9 +1,12 @@
-import logo from "./logo.svg";
-import "./App.css";
-import TestPage from "./TestObj";
+// import TestPage from "./TestObj";
+// import TestComp from "./TestComp";
 import TestBear from "./TestBear";
-import TestComp from "./TestComp";
-import { QueryClient, QueryClientProvider, useQuery } from "react-query";
+import { BearContextProvider } from "bearui-web";
+import "bearui-web/build/bearui.css";
+import {
+  //
+  logs,
+} from "@SillyScribe95/bedia-shared";
 
 function App() {
   const okdfger = {
@@ -13,8 +16,12 @@ function App() {
     },
   };
 
+  const iasjde = {
+    apiKey: "phIcmS4LWP6s6P1WMJVn",
+  };
+
   return (
-    <QueryClientProvider client={new QueryClient()}>
+    <BearContextProvider {...iasjde}>
       <div {...okdfger}>
         {/*  */}
         {/* asdokqw */}
@@ -22,7 +29,7 @@ function App() {
         {/* <TestComp /> */}
         <TestBear />
       </div>
-    </QueryClientProvider>
+    </BearContextProvider>
   );
 }
 

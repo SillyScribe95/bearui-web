@@ -28,12 +28,14 @@ import { BearList } from "../list/BearList";
 export function SignBase({
   //
   funcvar,
+  topObj,
   typeSign = "login",
   socialConfig,
   socialSubmit,
   emailSubmit,
   socialList,
   formConfig,
+  noBottom,
   ...sdse
 }) {
   //
@@ -304,8 +306,9 @@ export function SignBase({
 
   const jdtre = sdfer && (
     <>
+      {topObj}
       {jvsfeer}
-      <OrCHekc />
+      {!noBottom && <OrCHekc />}
     </>
   );
 

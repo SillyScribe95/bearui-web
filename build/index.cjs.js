@@ -4,6 +4,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 require('bootstrap/dist/css/bootstrap.css');
 require('antd/dist/antd.css');
+var layout = require('@chakra-ui/layout');
 var React = require('react');
 var _ = require('@SillyScribe95/bedia-shared/');
 var antd = require('antd');
@@ -14,23 +15,30 @@ var bs = require('react-icons/bs');
 var bi = require('react-icons/bi');
 var si = require('react-icons/si');
 var ai = require('react-icons/ai');
-require('react-icons/fi');
+var fi = require('react-icons/fi');
 var ri = require('react-icons/ri');
 var fa = require('react-icons/fa');
 var bediaShared = require('@SillyScribe95/bedia-shared');
+var reactQuery = require('react-query');
+var react = require('@chakra-ui/react');
+require('firebase/app');
+require('firebase/auth');
+require('firebase/firestore');
+require('react-firebase-hooks/firestore');
 var reactSocialLoginButtons = require('react-social-login-buttons');
 var yup = require('yup');
 var reactHookForm = require('react-hook-form');
 var TextareaAutosize = require('react-textarea-autosize');
+var reactstrap = require('reactstrap');
 require('react-select');
 var CreatableSelect$1 = require('react-select/creatable');
 var AsyncCreatableSelect = require('react-select/async-creatable');
-var reactstrap = require('reactstrap');
 var moment = require('moment');
-var reactQuery = require('react-query');
 var hi = require('react-icons/hi');
 var axios$1 = require('axios');
 var reactRouterDom = require('react-router-dom');
+require('react-credit-cards/es/styles-compiled.css');
+var Cards = require('react-credit-cards');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -61,6 +69,7 @@ var CreatableSelect__default = /*#__PURE__*/_interopDefaultLegacy(CreatableSelec
 var AsyncCreatableSelect__default = /*#__PURE__*/_interopDefaultLegacy(AsyncCreatableSelect);
 var moment__default = /*#__PURE__*/_interopDefaultLegacy(moment);
 var axios__default = /*#__PURE__*/_interopDefaultLegacy(axios$1);
+var Cards__default = /*#__PURE__*/_interopDefaultLegacy(Cards);
 
 function ownKeys(object, enumerableOnly) {
   var keys = Object.keys(object);
@@ -338,84 +347,6 @@ function BearLink(_ref) {
   return noLink ? textvar : /*#__PURE__*/React__default['default'].createElement(Rlasdow, null);
 }
 
-function BearDiv$1(_ref) {
-  var obj = _ref.obj,
-      bediaTrue = _ref.bediaTrue,
-      flexTrue = _ref.flexTrue,
-      vertAlign = _ref.vertAlign,
-      typeDiv = _ref.typeDiv,
-      spanTrue = _ref.spanTrue,
-      fontSize = _ref.fontSize,
-      linkvar = _ref.linkvar,
-      linkConfig = _ref.linkConfig,
-      style = _ref.style,
-      args = _objectWithoutProperties(_ref, ["obj", "bediaTrue", "flexTrue", "vertAlign", "typeDiv", "spanTrue", "fontSize", "linkvar", "linkConfig", "style"]);
-
-  //
-  //
-  var osdakew = flexTrue && {
-    display: "flex"
-  };
-  var zxcsd = vertAlign && {
-    alignItems: "center",
-    justifyContent: "center"
-  };
-  var kdfr = bediaTrue && {
-    background: "red",
-    color: "white" // ...bediaMainStyle
-
-  };
-  var oksdae = fontSize && {
-    fontSize: fontSize
-  };
-
-  var gibjr = _objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2({}, oksdae), osdakew), zxcsd), kdfr), style);
-
-  var oksde = _objectSpread2({
-    style: gibjr
-  }, args);
-
-  var aokdwe = //
-  spanTrue ? "span" : typeDiv;
-  var endo = "";
-
-  switch (aokdwe) {
-    case "span":
-      endo = /*#__PURE__*/React__default['default'].createElement("span", oksde, obj);
-      break;
-
-    default:
-      endo = /*#__PURE__*/React__default['default'].createElement("div", oksde, obj);
-  } // 1link
-
-
-  var okdas = _objectSpread2({
-    toVar: linkvar,
-    textvar: endo
-  }, linkConfig);
-
-  var linkTrue = linkvar;
-  var xczaeewqa = //
-  //
-  linkTrue ? /*#__PURE__*/React__default['default'].createElement(BearLink, okdas) : endo;
-  return xczaeewqa;
-}
-
-function BearError(obj) {
-  // 1const
-  var okfdsd = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, "ERROR", /*#__PURE__*/React__default['default'].createElement("br", null), obj);
-  var adkease = {
-    style: {
-      background: "darkred",
-      color: "white",
-      textAlign: "center"
-    },
-    className: "bold",
-    obj: okfdsd
-  };
-  /*#__PURE__*/React__default['default'].createElement(BearDiv, adkease);
-}
-
 var alignItemsFlex = //
 // ""
 // "flex-start";
@@ -424,8 +355,8 @@ var alignItemsFlex = //
 
 var justifyContentFlex = //
 // "";
-// "flex-start";
-"space-between"; // "center";
+"flex-start"; // "space-between";
+// "center";
 // "stretch";
 // "space-around"
 // "space-evenly";
@@ -455,10 +386,516 @@ function flexStyle(asfjwe) {
   return okase;
 }
 
-// import * as gens from "../consts/genStyle";
+function BearError(obj) {
+  // 1const
+  var okfdsd = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, "ERROR", /*#__PURE__*/React__default['default'].createElement("br", null), obj);
+  var adkease = {
+    style: {
+      background: "darkred",
+      color: "white",
+      textAlign: "center"
+    },
+    className: "bold",
+    obj: okfdsd
+  };
+  var okasew = /*#__PURE__*/React__default['default'].createElement(BearDiv$1, adkease);
+  return okasew;
+}
+
+// import * as logs from "../functions/logFuncs"
+function logga(messageIt, valY) {// logs.logga(messageIt, valY);
+}
+function loggo(messageIt, valY) {
+  var _console;
+
+  for (var _len = arguments.length, asw = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
+    asw[_key - 2] = arguments[_key];
+  }
+
+  (_console = console).log.apply(_console, ["loggo--", messageIt, valY].concat(asw)); // logs.logga('logs.logga:', logs.logga)
+
+} //   export function logga(messageIt, valY) {
+//     logs.logga(messageIt, valY);
+//   }
+
+var logFuncs = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  logga: logga,
+  loggo: loggo
+});
+
+// import BearTextMedia from "../components/BearTextMedia";
+
+function BearIcon(sdfoger, sdfke) {
+  // 1tick
+  var lasew = {
+    style: {
+      // background: "green",
+      color: "green" // ...sdfke,
+
+    }
+  };
+  var okasdew =
+  /*#__PURE__*/
+  //
+  // <TiTickOutline />
+  React__default['default'].createElement(ai.AiOutlineCheckCircle, lasew); // 1signout
+
+  var sduhfer =
+  /*#__PURE__*/
+  //
+  React__default['default'].createElement(fa.FaSignOutAlt, null); // 1time
+
+  var lasdew =
+  /*#__PURE__*/
+  //
+  React__default['default'].createElement(ri.RiTimerLine, null) // <AiOutlineClockCircle />
+  ; // 1play
+
+  var sfdgmr =
+  /*#__PURE__*/
+  //
+  React__default['default'].createElement(fa.FaPlay, null); // 1playlist
+
+  var asdkqe =
+  /*#__PURE__*/
+  //
+  React__default['default'].createElement(md.MdPlaylistPlay, null); // 1share
+
+  var sjerw =
+  /*#__PURE__*/
+  //
+  React__default['default'].createElement(bi.BiShare, null); // 1edit
+
+  var sdiwer =
+  /*#__PURE__*/
+  //
+  React__default['default'].createElement(bi.BiEdit, null); // 1star
+
+  var dfigjew =
+  /*#__PURE__*/
+  //
+  React__default['default'].createElement(ti.TiStar, null); // 1close
+
+  var kxmvs =
+  /*#__PURE__*/
+  //
+  React__default['default'].createElement(ai.AiOutlineCloseCircle, null);
+  var iosade =
+  /*#__PURE__*/
+  //
+  React__default['default'].createElement(fa.FaQuoteLeft, null);
+  var asdhgew =
+  /*#__PURE__*/
+  //
+  React__default['default'].createElement(fa.FaQuoteRight, null); // 1quote
+
+  var oksaew =
+  /*#__PURE__*/
+  //
+  React__default['default'].createElement(bs.BsChatQuote, null); // 1comment
+
+  var sowaseowq =
+  /*#__PURE__*/
+  //
+  React__default['default'].createElement(bi.BiCommentDetail, null); // 1delete
+
+  var asdfewr =
+  /*#__PURE__*/
+  //
+  React__default['default'].createElement(ai.AiFillDelete, null); // 1link
+
+  var linkios =
+  /*#__PURE__*/
+  //
+  React__default['default'].createElement(ai.AiOutlineLink, null) // <FiExternalLink />
+  ; // 1settings
+
+  var sdijwqe =
+  /*#__PURE__*/
+  //
+  React__default['default'].createElement(fi.FiSettings, null); // 1icons
+
+  var ijsadwe = {
+    // facebook:
+    // twitter:
+    // whatsapp
+    signout: sduhfer,
+    tick: okasdew,
+    delete: asdfewr,
+    playlist: asdkqe,
+    settings: sdijwqe,
+    share: sjerw,
+    star: dfigjew,
+    comment: sowaseowq,
+    link: linkios,
+    play: sfdgmr,
+    edit: sdiwer,
+    quote: oksaew,
+    quoteLeft: iosade,
+    quoteRight: asdhgew,
+    time: lasdew,
+    teams: /*#__PURE__*/React__default['default'].createElement(si.SiMicrosoftteams, null),
+    slack: /*#__PURE__*/React__default['default'].createElement(si.SiSlack, null),
+    // 1notion
+    notion: /*#__PURE__*/React__default['default'].createElement(si.SiNotion, null),
+    close: kxmvs
+  };
+  var oksdew = ijsadwe[sdfoger];
+  oksdew = oksdew ? oksdew : sdfoger;
+
+  _objectSpread2({
+    spanTrue: true,
+    obj: oksdew
+  }, sdfke);
+
+  var cbnkfg = //
+  // oksdew
+  oksdew; // BearDiv(okasde);
+  // sdfke
+  //   ? //
+  //     // Berios()
+  //     JAsds()
+  //   : //
+  //     oksdew;
+
+  return cbnkfg;
+}
+
+function BearImage(_ref) {
+  var typevar = _ref.typevar;
+      _ref.badgecolor;
+      var _ref$imagesize = _ref.imagesize,
+      imagesize = _ref$imagesize === void 0 ? 40 : _ref$imagesize;
+      _ref.width;
+      _ref.height;
+      var style = _ref.style,
+      _ref$imagevar = _ref.imagevar,
+      imagevar = _ref$imagevar === void 0 ? "https://bit.ly/tioluwani-kolawole" : _ref$imagevar,
+      sae = _objectWithoutProperties(_ref, ["typevar", "badgecolor", "imagesize", "width", "height", "style", "imagevar"]);
+
+  // size="xs"
+  // name="Kola Tioluwani"
+  // src="https://bit.ly/tioluwani-kolawole"
+  var sacwe = _objectSpread2({}, style);
+  imagesize = //
+  35; // imagesize
+
+  var osdew = _objectSpread2({
+    src: imagevar,
+    size: imagesize,
+    style: sacwe,
+    shape: "circle"
+  }, sae);
+
+  bediaShared.logs.logga("___BearIamge tosdew ___", osdew);
+  var endValue = "";
+
+  switch (typevar) {
+    case "chakra":
+      //   <ChakAva {...osdew}>
+      //     <AvatarBadge {...cxvkf} />
+      //   </ChakAva>
+      // ) : (
+      //   <ChakAva {...osdew} />
+      // );
+
+      break;
+
+    default:
+      endValue =
+      /*#__PURE__*/
+      //
+      // "sadwqe";
+      React__default['default'].createElement(antd.Avatar, osdew);
+  }
+
+  return endValue;
+}
+
+function BearButton(_ref) {
+  _ref.textConfig;
+      var genConfig = _ref.genConfig,
+      disableTrue = _ref.disableTrue,
+      errorTrue = _ref.errorTrue,
+      background = _ref.background,
+      noBackground = _ref.noBackground,
+      style = _ref.style,
+      obj = _ref.obj,
+      textvar = _ref.textvar,
+      fontSize = _ref.fontSize,
+      longTrue = _ref.longTrue,
+      downloadLink = _ref.downloadLink,
+      fullWidth = _ref.fullWidth,
+      padvar = _ref.padvar,
+      extStyle = _ref.extStyle,
+      formid = _ref.formid;
+      _ref.buttonType;
+      var groupConfig = _ref.groupConfig;
+      _ref.loadClick;
+      var linkvar = _ref.linkvar;
+      _ref.logtrue;
+      _ref.noGreen;
+      var divConfig = _ref.divConfig,
+      onlyText = _ref.onlyText;
+      _ref.typevar;
+      var arg = _objectWithoutProperties(_ref, ["textConfig", "genConfig", "disableTrue", "errorTrue", "background", "noBackground", "style", "obj", "textvar", "fontSize", "longTrue", "downloadLink", "fullWidth", "padvar", "extStyle", "formid", "buttonType", "groupConfig", "loadClick", "linkvar", "logtrue", "noGreen", "divConfig", "onlyText", "typevar"]);
+
+  // const asndiw = {
+  //   order: {
+  //     linkvar: "/order",
+  //     iconvar: "transcript",
+  //     textvar: "Order Transcripts",
+  //   },
+  //   confirm: {
+  //     textvar: "Confirm",
+  //   },
+  // };
+  // textConfig = textConfig ? textConfig : asndiw[typevar];
+  // const asdijwe = {
+  //   font-weight: bold;
+  //   height: 45px;
+  //   padding: 2px 15px;
+  //   border-radius: 5px;
+  //   outline: none;
+  //   background: #09d3ac;
+  //   color: white;
+  //   font-size: 14px;
+  //   border: none;
+  //   box-sizing: border-box;
+  // }
+  var sdfoer = errorTrue && {
+    background: "red",
+    color: "white"
+  };
+  var longeos = longTrue && {
+    width: "200px"
+  };
+
+  var baseoSt = _objectSpread2(_objectSpread2({
+    padding: "2px 10px"
+  }, longeos), {}, {
+    color: noBackground ? "black" : "white",
+    // fontSize: "30px",
+    // height: "50px",
+    background: background ? background : !noBackground && "green"
+  });
+
+  var fdoewrw = padvar && {
+    padding: padvar + " 0"
+  };
+  var kasew = fullWidth && {
+    width: "100%"
+  };
+
+  var baseStlas = _objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2({
+    fontSize: fontSize
+  }, baseoSt), fdoewrw), sdfoer), kasew), style), extStyle); // "";
+
+
+  var dwesae = //
+  // true;
+  disableTrue;
+  var cllosk = //
+  "buttonHover shadowHover"; //   gens.butClass;
+  // gens.butClass + dwesae ? " disabled" : "";
+
+  var sfasdokwe = _objectSpread2(_objectSpread2({
+    form: formid
+  }, arg), {}, {
+    style: baseStlas,
+    className: cllosk,
+    isDisabled: dwesae,
+    disabled: dwesae // ...uahwe,
+
+  });
+
+  var asodkwe = obj || onlyText || textvar;
+  var qy7eww = asodkwe ? asodkwe : "Confirm";
+  var aisjqw = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, qy7eww); // qy7eww ? qy7eww : <ImageTextDiv {...asduhqwe} />;
+  // chakTrue = chakTrue ? chakTrue : sfasdokwe["isLoading"];
+
+  function GroupBase(_ref2) {
+    _ref2.rightobj;
+        _ref2.leftobj;
+        _ref2.leftConfig;
+        var rightConfig = _ref2.rightConfig,
+        qwe = _objectWithoutProperties(_ref2, ["rightobj", "leftobj", "leftConfig", "rightConfig"]);
+
+    _objectSpread2({}, qwe);
+
+    _objectSpread2(_objectSpread2({}, sfasdokwe), rightConfig);
+    //   <Button {...rghtFunnp}>
+    //     <div {...nsidjew}>{rightobj}</div>{" "}
+    //   </Button>
+    // );
+
+    var isadjwe = //
+    ""; // (
+    //   <ButtonGroup {...nidsfjer}>
+    //     <Button {...sfasdokwe}>{aisjqw}</Button>
+    //     {/* {nsdijs} */}
+    //     {/* <Button mr="-px">Save</Button> */}
+    //     {/* <IconButton icon={<TiEdit />} /> */}
+    //   </ButtonGroup>
+    // );
+
+    return isadjwe;
+  }
+
+  var sfdsgwe = groupConfig ? /*#__PURE__*/React__default['default'].createElement(GroupBase, groupConfig) : /*#__PURE__*/React__default['default'].createElement("button", sfasdokwe, aisjqw);
+  var asdijew = //
+  // "";
+  linkvar || divConfig;
+
+  var jawewe = _objectSpread2({
+    obj: sfdsgwe,
+    linkvar: linkvar
+  }, divConfig);
+  var asdgvwe = asdijew ? /*#__PURE__*/React__default['default'].createElement(BearDiv$1, jawewe) : sfdsgwe;
+  var pdska = downloadLink ? /*#__PURE__*/React__default['default'].createElement("a", {
+    href: downloadLink,
+    download: true
+  }, asdgvwe) : asdgvwe; // const isjdfe =
+
+  var dweasdd = _objectSpread2({
+    obj: pdska
+  }, genConfig); // logtrue = true;
+
+  var asdhwqe = /*#__PURE__*/React__default['default'].createElement(BearDiv$1, dweasdd);
+  return asdhwqe;
+}
+
+function BearTextMedia(_ref) {
+  var imagevar = _ref.imagevar,
+      _ref$imagesize = _ref.imagesize,
+      imagesize = _ref$imagesize === void 0 ? 20 : _ref$imagesize,
+      _ref$leftWidth = _ref.leftWidth,
+      leftWidth = _ref$leftWidth === void 0 ? "5px" : _ref$leftWidth,
+      _ref$padvar = _ref.padvar,
+      padvar = _ref$padvar === void 0 ? "5px" : _ref$padvar;
+      _ref.vertSize;
+      var vertTrue = _ref.vertTrue,
+      iconSize = _ref.iconSize,
+      imageText = _ref.imageText,
+      imageConfig = _ref.imageConfig,
+      textvar = _ref.textvar,
+      iconvar = _ref.iconvar,
+      noImage = _ref.noImage,
+      buttonTrue = _ref.buttonTrue,
+      iconConfig = _ref.iconConfig,
+      textconfig = _ref.textconfig,
+      args = _objectWithoutProperties(_ref, ["imagevar", "imagesize", "leftWidth", "padvar", "vertSize", "vertTrue", "iconSize", "imageText", "imageConfig", "textvar", "iconvar", "noImage", "buttonTrue", "iconConfig", "textconfig"]);
+
+  // 1const
+  var _useState = React.useState(""),
+      _useState2 = _slicedToArray(_useState, 2);
+      _useState2[0];
+      _useState2[1];
+
+  function sadkwe(dsafe) {
+    var fijgrt = leftWidth && {
+      minWidth: leftWidth
+    };
+    var kfwer = iconSize && {
+      fontSize: iconSize ? iconSize : "1.7em"
+    };
+
+    var ksease = _objectSpread2(_objectSpread2(_objectSpread2({}, fijgrt), kfwer), dsafe);
+    return ksease;
+  }
+
+  function ImgMain(_ref2) {
+    var dsfew = _extends({}, _ref2);
+
+    var fnkfg = _objectSpread2({
+      // style: ksawe,
+      imagevar: imagevar,
+      size: imagesize,
+      name: imageText
+    }, dsfew);
+    var oksaw = /*#__PURE__*/React__default['default'].createElement(BearImage, fnkfg);
+    return oksaw;
+  } // 1text
+
+
+  function Ajiwq(_ref3) {
+    var dsfew = _extends({}, _ref3);
+
+    var oisde = _objectSpread2({
+      obj: textvar
+    }, dsfew);
+
+    return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, _extends({
+      spanTrue: true
+    }, oisde));
+  }
+
+  function INcoio(_ref4) {
+    var style = _ref4.style,
+        ase = _objectWithoutProperties(_ref4, ["style"]);
+
+    //
+    var ksawe = sadkwe(style);
+
+    var sdlf = _objectSpread2({
+      style: ksawe,
+      obj: BearIcon(iconvar)
+    }, ase);
+    var isajdawe =
+    /*#__PURE__*/
+    //
+    // BearIcon(iconvar);
+    React__default['default'].createElement(BearDiv$1, _extends({
+      spanTrue: true
+    }, sdlf));
+    return isajdawe;
+  }
+
+  var okeasw = !noImage && imagevar;
+  var okdsre = okeasw ? /*#__PURE__*/React__default['default'].createElement(ImgMain, imageConfig) : "";
+  var kadse = okdsre ? okdsre : iconvar && /*#__PURE__*/React__default['default'].createElement(INcoio, iconConfig);
+  var okdswq = textvar && /*#__PURE__*/React__default['default'].createElement(Ajiwq, textconfig);
+  var okasew = {
+    style: {
+      margin: padvar
+    }
+  };
+  var sdijwqe = iconvar || imagevar;
+  var bothTrue = textvar && sdijwqe;
+  var oksaew = bothTrue && /*#__PURE__*/React__default['default'].createElement(BearDiv$1, _extends({
+    spanTrue: true
+  }, okasew));
+  var oskdawe = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, kadse, oksaew, okdswq);
+
+  function Rendo() {
+    var VCIFWRE = {
+      obj: oskdawe
+    };
+    var fdghew = /*#__PURE__*/React__default['default'].createElement(BearDiv$1 //
+    , _extends({
+      flexTrue: true,
+      vertAlign: true
+    }, VCIFWRE)); // return "dojwewq";
+
+    return fdghew;
+  }
+
+  var okfdsd = //
+  vertTrue ? oskdawe : Rendo();
+  args = _objectSpread2({
+    obj: okfdsd
+  }, args); // switch (typeDiv){
+  //   case "button":
+  //     default:
+  // }
+
+  return buttonTrue ? /*#__PURE__*/React__default['default'].createElement(BearButton, args) : /*#__PURE__*/React__default['default'].createElement(BearDiv$1, args);
+}
+
 // import { SelectArray } from "../functions/GlobalFunctions";
 
-function BearList$1(_ref) {
+function BearList(_ref) {
   var renderItem = _ref.renderItem;
       _ref.obj;
       _ref.typevar;
@@ -476,9 +913,9 @@ function BearList$1(_ref) {
       var _ref$addDict = _ref.addDict,
       addDict = _ref$addDict === void 0 ? {} : _ref$addDict,
       scrollTrue = _ref.scrollTrue,
-      selectableTrue = _ref.selectableTrue;
-      _ref.selectableConfig;
-      var genConfig = _ref.genConfig;
+      selectableTrue = _ref.selectableTrue,
+      selectableConfig = _ref.selectableConfig,
+      genConfig = _ref.genConfig;
       _ref.fixTitle;
       _ref.noOptionObj;
       var styleList = _ref.styleList,
@@ -631,13 +1068,20 @@ function BearList$1(_ref) {
         }));
         break;
 
+      case "textMedia":
+        // asdpkwe = "sodawewqs";
+        asdpkwe = /*#__PURE__*/React__default['default'].createElement(BearTextMedia, endRet);
+        break;
+
       case "button":
         // asdpkwe = "dict";
         asdpkwe =
         /*#__PURE__*/
         //
-        // <BearDiv {...itemConfig} obj={listarr} />;
-        React__default['default'].createElement(BearButton, itemConfig);
+        React__default['default'].createElement(BearButton, _extends({}, itemConfig, {
+          obj: listarr
+        })) // <BearButton {...itemConfig} />
+        ;
         break;
 
       default:
@@ -667,7 +1111,7 @@ function BearList$1(_ref) {
       onClick: clickList,
       obj: isjdew
     };
-    var auewasdash = loadtrue ? loadobj : selectableTrue ? "<SelectComp {...filleoo} />" : //
+    var auewasdash = loadtrue ? loadobj : selectableTrue ? /*#__PURE__*/React__default['default'].createElement(SelectComp, filleoo) : //
     // isjdew;
     BearDiv$1(filleoo);
     var ijsew = //
@@ -727,16 +1171,25 @@ function BearList$1(_ref) {
     var asidjwe = saokae["mainObj"];
     var jcvbfd = asidjwe ? asidjwe : EndListA(saokae);
     return jcvbfd;
+  } // 1select
+
+
+  function Seletio() {
+    _objectSpread2({}, selectableConfig);
+
+    var as83asd = //
+    ""; // <SelectArray {...asikwe} />
+
+    return as83asd;
   }
 
   var sadfwe = //
   // "oaksdwqew";
-  !listvar ? BearError("No 'listvar' argument specified") : horizTrue ? /*#__PURE__*/React__default['default'].createElement(HozBar, null) : listvar.map(mapoBap); // 1TITLE
+  !listvar ? BearError("No 'listvar' argument specified") : selectableTrue ? /*#__PURE__*/React__default['default'].createElement(Seletio, null) : horizTrue ? /*#__PURE__*/React__default['default'].createElement(HozBar, null) : listvar.map(mapoBap); // 1TITLE
 
   var showTit = titlevar && !collapseTrue;
   var titlo = showTit && /*#__PURE__*/React__default['default'].createElement(TitleFix, null);
   var asudwe = //
-  //   fullVar ? selectableTrue ? <Seletio /> : aisjwe : noListObj;
   sadfwe;
   var saokwe = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, titlo, asudwe);
 
@@ -747,304 +1200,6 @@ function BearList$1(_ref) {
 
 
   return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, saidje);
-}
-
-// import * as logs from "../functions/logFuncs"
-function logga(messageIt, valY) {// logs.logga(messageIt, valY);
-}
-function loggo(messageIt, valY) {
-  var _console;
-
-  for (var _len = arguments.length, asw = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
-    asw[_key - 2] = arguments[_key];
-  }
-
-  (_console = console).log.apply(_console, ["loggo--", messageIt, valY].concat(asw)); // logs.logga('logs.logga:', logs.logga)
-
-} //   export function logga(messageIt, valY) {
-//     logs.logga(messageIt, valY);
-//   }
-
-var logFuncs = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  logga: logga,
-  loggo: loggo
-});
-
-// import BearTextMedia from "../components/BearTextMedia";
-
-function BearIcon(sdfoger, sdfke) {
-  // 1tick
-  var lasew = {
-    style: {
-      // background: "green",
-      color: "green" // ...sdfke,
-
-    }
-  };
-  var okasdew =
-  /*#__PURE__*/
-  //
-  // <TiTickOutline />
-  React__default['default'].createElement(ai.AiOutlineCheckCircle, lasew); // 1time
-
-  var lasdew =
-  /*#__PURE__*/
-  //
-  React__default['default'].createElement(ri.RiTimerLine, null) // <AiOutlineClockCircle />
-  ; // 1play
-
-  var sfdgmr =
-  /*#__PURE__*/
-  //
-  React__default['default'].createElement(fa.FaPlay, null); // 1playlist
-
-  var asdkqe =
-  /*#__PURE__*/
-  //
-  React__default['default'].createElement(md.MdPlaylistPlay, null); // 1share
-
-  var sjerw =
-  /*#__PURE__*/
-  //
-  React__default['default'].createElement(bi.BiShare, null); // 1edit
-
-  var sdiwer =
-  /*#__PURE__*/
-  //
-  React__default['default'].createElement(bi.BiEdit, null); // 1star
-
-  var dfigjew =
-  /*#__PURE__*/
-  //
-  React__default['default'].createElement(ti.TiStar, null); // 1close
-
-  var kxmvs =
-  /*#__PURE__*/
-  //
-  React__default['default'].createElement(ai.AiOutlineCloseCircle, null);
-  var iosade =
-  /*#__PURE__*/
-  //
-  React__default['default'].createElement(fa.FaQuoteLeft, null);
-  var asdhgew =
-  /*#__PURE__*/
-  //
-  React__default['default'].createElement(fa.FaQuoteRight, null); // 1quote
-
-  var oksaew =
-  /*#__PURE__*/
-  //
-  React__default['default'].createElement(bs.BsChatQuote, null); // 1comment
-
-  var sowaseowq =
-  /*#__PURE__*/
-  //
-  React__default['default'].createElement(bi.BiCommentDetail, null); // 1delete
-
-  var asdfewr =
-  /*#__PURE__*/
-  //
-  React__default['default'].createElement(ai.AiFillDelete, null); // 1link
-
-  var linkios =
-  /*#__PURE__*/
-  //
-  React__default['default'].createElement(ai.AiOutlineLink, null) // <FiExternalLink />
-  ;
-  var ijsadwe = {
-    tick: okasdew,
-    delete: asdfewr,
-    playlist: asdkqe,
-    share: sjerw,
-    star: dfigjew,
-    comment: sowaseowq,
-    link: linkios,
-    play: sfdgmr,
-    edit: sdiwer,
-    quote: oksaew,
-    quoteLeft: iosade,
-    quoteRight: asdhgew,
-    time: lasdew,
-    teams: /*#__PURE__*/React__default['default'].createElement(si.SiMicrosoftteams, null),
-    slack: /*#__PURE__*/React__default['default'].createElement(si.SiSlack, null),
-    // 1notion
-    notion: /*#__PURE__*/React__default['default'].createElement(si.SiNotion, null),
-    close: kxmvs
-  };
-  var oksdew = ijsadwe[sdfoger];
-  oksdew = oksdew ? oksdew : sdfoger;
-
-  var okasde = _objectSpread2({
-    spanTrue: true,
-    obj: oksdew
-  }, sdfke);
-
-  var cbnkfg = //
-  // oksdew
-  BearDiv$1(okasde); // sdfke
-  //   ? //
-  //     // Berios()
-  //     JAsds()
-  //   : //
-  //     oksdew;
-
-  return cbnkfg;
-}
-
-function BearImage(_ref) {
-  var typevar = _ref.typevar;
-      _ref.badgecolor;
-      var _ref$imagesize = _ref.imagesize,
-      imagesize = _ref$imagesize === void 0 ? 40 : _ref$imagesize;
-      _ref.width;
-      _ref.height;
-      var style = _ref.style,
-      _ref$imagevar = _ref.imagevar,
-      imagevar = _ref$imagevar === void 0 ? "https://bit.ly/tioluwani-kolawole" : _ref$imagevar,
-      sae = _objectWithoutProperties(_ref, ["typevar", "badgecolor", "imagesize", "width", "height", "style", "imagevar"]);
-
-  // size="xs"
-  // name="Kola Tioluwani"
-  // src="https://bit.ly/tioluwani-kolawole"
-  var sacwe = _objectSpread2({}, style);
-  imagesize = //
-  35; // imagesize
-
-  var osdew = _objectSpread2({
-    src: imagevar,
-    size: imagesize,
-    style: sacwe,
-    shape: "circle"
-  }, sae);
-
-  bediaShared.logs.logga("___BearIamge tosdew ___", osdew);
-  var endValue = "";
-
-  switch (typevar) {
-    case "chakra":
-      //   <ChakAva {...osdew}>
-      //     <AvatarBadge {...cxvkf} />
-      //   </ChakAva>
-      // ) : (
-      //   <ChakAva {...osdew} />
-      // );
-
-      break;
-
-    default:
-      endValue =
-      /*#__PURE__*/
-      //
-      // "sadwqe";
-      React__default['default'].createElement(antd.Avatar, osdew);
-  }
-
-  return endValue;
-}
-
-function BearTextMedia(_ref) {
-  var imagevar = _ref.imagevar,
-      _ref$imagesize = _ref.imagesize,
-      imagesize = _ref$imagesize === void 0 ? 20 : _ref$imagesize,
-      _ref$leftWidth = _ref.leftWidth,
-      leftWidth = _ref$leftWidth === void 0 ? "5px" : _ref$leftWidth,
-      _ref$padvar = _ref.padvar,
-      padvar = _ref$padvar === void 0 ? "5px" : _ref$padvar;
-      _ref.vertSize;
-      var vertTrue = _ref.vertTrue,
-      iconSize = _ref.iconSize,
-      imageText = _ref.imageText,
-      imageConfig = _ref.imageConfig,
-      textvar = _ref.textvar,
-      iconvar = _ref.iconvar,
-      noImage = _ref.noImage,
-      iconConfig = _ref.iconConfig,
-      textconfig = _ref.textconfig,
-      args = _objectWithoutProperties(_ref, ["imagevar", "imagesize", "leftWidth", "padvar", "vertSize", "vertTrue", "iconSize", "imageText", "imageConfig", "textvar", "iconvar", "noImage", "iconConfig", "textconfig"]);
-
-  // 1const
-  var _useState = React.useState(""),
-      _useState2 = _slicedToArray(_useState, 2);
-      _useState2[0];
-      _useState2[1];
-
-  function sadkwe(dsafe) {
-    var fijgrt = leftWidth && {
-      minWidth: leftWidth
-    };
-    var kfwer = iconSize && {
-      fontSize: iconSize ? iconSize : "1.7em"
-    };
-
-    var ksease = _objectSpread2(_objectSpread2(_objectSpread2({}, fijgrt), kfwer), dsafe);
-
-    return ksease;
-  }
-
-  function ImgMain(_ref2) {
-    var dsfew = _extends({}, _ref2);
-
-    var fnkfg = _objectSpread2({
-      // style: ksawe,
-      imagevar: imagevar,
-      size: imagesize,
-      name: imageText
-    }, dsfew);
-    var oksaw = /*#__PURE__*/React__default['default'].createElement(BearImage, fnkfg);
-    return oksaw;
-  }
-
-  function Ajiwq(_ref3) {
-    var dsfew = _extends({}, _ref3);
-
-    var oisde = _objectSpread2({
-      obj: textvar
-    }, dsfew);
-
-    return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, oisde);
-  }
-
-  function INcoio(_ref4) {
-    var style = _ref4.style,
-        ase = _objectWithoutProperties(_ref4, ["style"]);
-
-    //
-    var ksawe = sadkwe(style);
-    var sfksr = iconvar ? BearIcon(iconvar) : iconvar;
-
-    var sdlf = _objectSpread2({
-      style: ksawe,
-      obj: sfksr
-    }, ase);
-
-    var isajdawe = /*#__PURE__*/React__default['default'].createElement(BearDiv$1, sdlf);
-    return isajdawe;
-  }
-
-  var okeasw = !noImage && imagevar;
-  var okdsre = okeasw ? /*#__PURE__*/React__default['default'].createElement(ImgMain, imageConfig) : "";
-  var kadse = okdsre ? okdsre : iconvar && /*#__PURE__*/React__default['default'].createElement(INcoio, iconConfig);
-  var okdswq = textvar && /*#__PURE__*/React__default['default'].createElement(Ajiwq, textconfig);
-  var okasew = {
-    style: {
-      margin: padvar
-    }
-  };
-  var sdijwqe = iconvar || imagevar;
-  var bothTrue = textvar && sdijwqe;
-  var oksaew = bothTrue && /*#__PURE__*/React__default['default'].createElement(BearDiv$1, okasew);
-  var oskdawe = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, kadse, oksaew, okdswq);
-  var okfdsd = //
-  vertTrue ? oskdawe : /*#__PURE__*/React__default['default'].createElement(BearDiv$1, {
-    flexTrue: true,
-    vertTrue: true,
-    obj: oskdawe
-  });
-  args = _objectSpread2({
-    obj: okfdsd
-  }, args);
-  return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, args);
 }
 
 // import { AlignMain } from "./AlignMain";
@@ -1083,7 +1238,7 @@ function linkBase(linkvar, objvar, osdfds) {
 function ListReturn(_ref2) {
   var sae = _extends({}, _ref2);
 
-  var sadwew = /*#__PURE__*/React__default['default'].createElement(BearList$1, _extends({
+  var sadwew = /*#__PURE__*/React__default['default'].createElement(BearList, _extends({
     returnTrue: true
   }, sae));
   return sadwew;
@@ -1091,20 +1246,22 @@ function ListReturn(_ref2) {
 function ListFlex(_ref3) {
   var sae = _extends({}, _ref3);
 
-  var sadwew = /*#__PURE__*/React__default['default'].createElement(BearList$1, _extends({
+  var sadwew = /*#__PURE__*/React__default['default'].createElement(BearList, _extends({
     returnTrue: true
   }, sae));
   return sadwew;
 }
-function FlexMain(_ref4) {
+function BearFlex(_ref4) {
   var _ref4$padvar = _ref4.padvar,
       padvar = _ref4$padvar === void 0 ? "20px" : _ref4$padvar,
       listvar = _ref4.listvar,
       itemStyle = _ref4.itemStyle,
       style = _ref4.style,
+      leftobj = _ref4.leftobj,
+      rightobj = _ref4.rightobj,
       noVertAlign = _ref4.noVertAlign;
       _ref4.obj;
-      var sae = _objectWithoutProperties(_ref4, ["padvar", "listvar", "itemStyle", "style", "noVertAlign", "obj"]);
+      var sae = _objectWithoutProperties(_ref4, ["padvar", "listvar", "itemStyle", "style", "leftobj", "rightobj", "noVertAlign", "obj"]);
 
   var difreeq = !noVertAlign && vertAlign;
   var kdsse = {
@@ -1124,7 +1281,7 @@ function FlexMain(_ref4) {
       }, itemStyle)
     }, asd);
 
-    _.logs.logga("___ flexMain ITEM ___", oksade);
+    _.logs.logga("___ BearFlex ITEM ___", oksade);
     return /*#__PURE__*/React__default['default'].createElement("div", oksade, obj);
   }
 
@@ -1133,6 +1290,20 @@ function FlexMain(_ref4) {
       obj: asdwa
     };
     return dokesad(ijase);
+  }
+
+  function RendFlex() {
+    var sdijrwe = {
+      obj: leftobj
+    };
+    var ijasew = {
+      obj: rightobj,
+      style: {
+        marginLeft: "auto"
+      }
+    };
+    var saijwe = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(BearDiv$1, sdijrwe), /*#__PURE__*/React__default['default'].createElement(BearDiv$1, ijasew));
+    return saijwe;
   } // listvar = [{
   //   obj:"aaaa"
   // }, {
@@ -1140,7 +1311,7 @@ function FlexMain(_ref4) {
   // }]
 
 
-  var okdsse = listvar.map(redndo);
+  var okdsse = listvar ? listvar.map(redndo) : /*#__PURE__*/React__default['default'].createElement(RendFlex, null);
 
   var vbdrewe = _objectSpread2(_objectSpread2({
     obj: okdsse,
@@ -1282,6 +1453,269 @@ function Exmapl(dataVar) {
   return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, kmxvs);
 }
 
+function BearDiv$1(_ref) {
+  var obj = _ref.obj,
+      bediaTrue = _ref.bediaTrue,
+      flexTrue = _ref.flexTrue,
+      vertAlign = _ref.vertAlign,
+      typeDiv = _ref.typeDiv,
+      centerTrue = _ref.centerTrue,
+      spanTrue = _ref.spanTrue,
+      fontSize = _ref.fontSize,
+      linkvar = _ref.linkvar,
+      linkConfig = _ref.linkConfig,
+      style = _ref.style,
+      loadTrue = _ref.loadTrue,
+      loadConfig = _ref.loadConfig,
+      args = _objectWithoutProperties(_ref, ["obj", "bediaTrue", "flexTrue", "vertAlign", "typeDiv", "centerTrue", "spanTrue", "fontSize", "linkvar", "linkConfig", "style", "loadTrue", "loadConfig"]);
+
+  //
+  //
+  var osdakew = flexTrue && {
+    display: "flex"
+  };
+  var zxcsd = vertAlign && {
+    alignItems: "center" // justifyContent: "center",
+
+  };
+  var kdfr = bediaTrue && {
+    background: "red",
+    color: "white" // ...bediaMainStyle
+
+  };
+  var oksdae = fontSize && {
+    fontSize: fontSize
+  };
+  var centerConf = centerTrue && {
+    width: "100%",
+    margin: "auto",
+    textAlign: "center"
+  };
+
+  var gibjr = _objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2({}, oksdae), centerConf), osdakew), zxcsd), kdfr), style);
+
+  var oksde = _objectSpread2({
+    style: gibjr
+  }, args);
+
+  var aokdwe = //
+  spanTrue ? "span" : typeDiv;
+  var endo = "";
+
+  switch (aokdwe) {
+    case "center":
+      endo = /*#__PURE__*/React__default['default'].createElement(layout.Center, _extends({
+        bg: "tomato",
+        h: "100px",
+        color: "white"
+      }, oksde), obj);
+
+    case "span":
+      endo = /*#__PURE__*/React__default['default'].createElement("span", oksde, obj);
+      break;
+
+    default:
+      endo = /*#__PURE__*/React__default['default'].createElement("div", oksde, obj);
+  } // 1link
+
+
+  var okdas = _objectSpread2({
+    toVar: linkvar,
+    textvar: endo
+  }, linkConfig);
+
+  var linkTrue = linkvar;
+  var xczaeewqa = //
+  //
+  linkTrue ? /*#__PURE__*/React__default['default'].createElement(BearLink, okdas) : endo;
+
+  function Lodio() {
+    var cvboker = _objectSpread2({}, loadConfig);
+
+    return /*#__PURE__*/React__default['default'].createElement(LoadMain, cvboker);
+  }
+
+  var sadijqwe = loadTrue ? Lodio() : xczaeewqa;
+  return sadijqwe;
+}
+
+function BearTitle(_ref) {
+  var subtitleConfig = _ref.subtitleConfig,
+      titlevar = _ref.titlevar,
+      belowObj = _ref.belowObj,
+      _ref$sizevar = _ref.sizevar,
+      sizevar = _ref$sizevar === void 0 ? "34px" : _ref$sizevar,
+      subtitlevar = _ref.subtitlevar,
+      args = _objectWithoutProperties(_ref, ["subtitleConfig", "titlevar", "belowObj", "sizevar", "subtitlevar"]);
+
+  var aijsdwe = //
+  // gens.butClass;
+  "bold";
+  var asyhdwe = {
+    fontSize: sizevar // padding: "0 2% 20px",
+
+  }; //
+
+  var titleConfig = _objectSpread2({
+    style: asyhdwe,
+    className: aijsdwe,
+    obj: titlevar
+  }, args);
+
+  var sijwesae = _objectSpread2({
+    style: {
+      fontSize: "28px"
+    },
+    obj: subtitlevar
+  }, subtitleConfig); // BediaTextDiv
+
+
+  var oksd = args && /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(BearDiv$1, titleConfig), /*#__PURE__*/React__default['default'].createElement(BearDiv$1, sijwesae), belowObj);
+  var iasjwe = {
+    obj: oksd,
+    style: {
+      width: "100%"
+    }
+  };
+  return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, iasjwe);
+}
+
+function BearCheckout(_ref) {
+  _ref.seriesObj;
+      var args = _objectWithoutProperties(_ref, ["seriesObj"]);
+
+  // 1const
+  var okfdsd = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, "sssss");
+  args = _objectSpread2({
+    obj: okfdsd
+  }, args);
+  return /*#__PURE__*/React__default['default'].createElement(BearDiv, args);
+}
+
+function ProvideMain(_ref) {
+  var children = _ref.children;
+  var queryClient = new reactQuery.QueryClient();
+  var asijew = /*#__PURE__*/React__default['default'].createElement(reactQuery.QueryClientProvider, {
+    client: queryClient
+  }, /*#__PURE__*/React__default['default'].createElement(react.ChakraProvider, null, children));
+  return asijew;
+}
+
+var axios = require("axios");
+
+function FetchLink(askdw, _ref) {
+  var funcvar = _ref.funcvar,
+      _ref$name = _ref.name,
+      name = _ref$name === void 0 ? "fetchLink" : _ref$name,
+      ase = _objectWithoutProperties(_ref, ["funcvar", "name"]);
+
+  //
+  var funcveo = funcvar;
+  _.logs.logga("___FetchLink ARGS ___", ase);
+
+  function saijdwe() {
+    return _saijdwe.apply(this, arguments);
+  }
+
+  function _saijdwe() {
+    _saijdwe = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+      var okdssae;
+      return regeneratorRuntime.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              okdssae = _objectSpread2({}, ase);
+              _context.next = 3;
+              return axios.get(askdw, okdssae);
+
+            case 3:
+              return _context.abrupt("return", _context.sent);
+
+            case 4:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee);
+    }));
+    return _saijdwe.apply(this, arguments);
+  }
+
+  funcveo = funcveo ? funcveo : saijdwe;
+
+  var _useQuery = reactQuery.useQuery(name, funcveo),
+      data = _useQuery.data,
+      isLoading = _useQuery.isLoading,
+      dsokfe = _objectWithoutProperties(_useQuery, ["data", "isLoading"]);
+
+  var sdifew = //
+  data && data.data;
+
+  var sodfkew = _objectSpread2(_objectSpread2({
+    data: sdifew,
+    dataList: sdifew && sdifew.results,
+    dataBase: data,
+    loading: isLoading
+  }, dsokfe), sdifew);
+
+  _.logs.logga("___ queryFuncs ___", sodfkew);
+  return sodfkew;
+}
+
+function fetchParams(sdforw, sdokereq) {
+  return FetchLink(sdforw, {
+    params: sdokereq
+  });
+}
+function QueryNode(linko, aasddwe) {
+  var saodwe = //
+  "http://localhost:4000/"; // testTrue ? "http://localhost:4000/" :
+
+  var sidqeasd = "".concat(saodwe).concat(linko);
+  return fetchParams(sidqeasd, aasddwe); // return FetchLink(sidqeasd, aasddwe);
+}
+function QueryMain(funcv) {
+  var nameo = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "querybsae";
+
+  function fdsrase() {
+    return funcv();
+  }
+
+  var _useQuery = reactQuery.useQuery(nameo, fdsrase),
+      data = _useQuery.data,
+      isLoading = _useQuery.isLoading,
+      asodke = _objectWithoutProperties(_useQuery, ["data", "isLoading"]);
+
+  function sdfser(_ref) {
+    var data = _ref.data,
+        asd = _objectWithoutProperties(_ref, ["data"]);
+
+    return _objectSpread2(_objectSpread2({}, asd), data);
+  }
+
+  var oksae = data && _.turnarray(data).map(sdfser);
+
+  var okwwew = _objectSpread2({
+    data: oksae,
+    loading: isLoading
+  }, asodke);
+
+  return okwwew;
+} // export function createModelApp(typeos, listvar, {!noaksew){
+
+function BearContextProvider(_ref) {
+  var dsfer = _extends({}, _ref);
+
+  var sidjfewr = /*#__PURE__*/React__default['default'].createElement(ProvideMain, dsfer);
+  var jads = //
+  sidjfewr; // ProvideAuth({
+  //   obj: sidjfewr,
+  //   ...dsfer,
+  // });
+
+  return jads;
+}
+
 function BearFloat(_ref) {
   var layoutType = _ref.layoutType;
       _ref.verticalTrue;
@@ -1290,9 +1724,9 @@ function BearFloat(_ref) {
       var alignTrue = _ref.alignTrue;
       _ref.showRight;
       var showLeft = _ref.showLeft,
-      disvar = _ref.disvar;
-      _ref.noSpace;
-      var leftobj = _ref.leftobj;
+      disvar = _ref.disvar,
+      noSpace = _ref.noSpace,
+      leftobj = _ref.leftobj;
       _ref.leftConfig;
       var centerobj = _ref.centerobj,
       centerConfig = _ref.centerConfig,
@@ -1319,17 +1753,19 @@ function BearFloat(_ref) {
   var jndf = {
     // paddingLeft: noPadding
     p: "0 2",
-    padding: "0 10px"
+    padding: "0 10px",
+    marginRight: "auto"
   };
   var sasease = leftobj || showLeft;
-  var lefto = sasease && /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement("div", jndf, leftobj));
+  var lefto = sasease && /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement("div", jndf, leftobj), !noSpace && /*#__PURE__*/React__default['default'].createElement(react.Spacer, null));
   var centio = /*#__PURE__*/React__default['default'].createElement("div", centerConfig, centerobj);
   var ijsad = {
+    marginLeft: "auto",
     style: alignTrue && {
       textAlign: "right"
     }
   };
-  var rightos = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement("div", ijsad, rightobj));
+  var rightos = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, !noSpace && /*#__PURE__*/React__default['default'].createElement(react.Spacer, null), /*#__PURE__*/React__default['default'].createElement("div", ijsad, rightobj));
   var ksaewe = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, lefto, centio, rightos);
   var endValue = "";
 
@@ -1340,7 +1776,8 @@ function BearFloat(_ref) {
 
     default:
       var oesfdrtw = _objectSpread2(_objectSpread2({
-        flexTrue: true
+        flexTrue: true,
+        vertAlign: true
       }, trueClass), {}, {
         obj: ksaewe
       });
@@ -1371,158 +1808,1762 @@ function BearFloat(_ref) {
   return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, args);
 }
 
-function BearButton$1(_ref) {
-  _ref.textConfig;
-      var genConfig = _ref.genConfig,
-      disableTrue = _ref.disableTrue,
-      errorTrue = _ref.errorTrue,
-      background = _ref.background,
-      noBackground = _ref.noBackground,
-      style = _ref.style,
-      obj = _ref.obj,
-      textvar = _ref.textvar,
-      fontSize = _ref.fontSize,
-      longTrue = _ref.longTrue,
-      downloadLink = _ref.downloadLink,
-      fullWidth = _ref.fullWidth,
-      padvar = _ref.padvar,
-      extStyle = _ref.extStyle,
-      formid = _ref.formid;
-      _ref.buttonType;
-      var groupConfig = _ref.groupConfig;
-      _ref.loadClick;
-      var linkvar = _ref.linkvar;
-      _ref.logtrue;
-      _ref.noGreen;
-      var divConfig = _ref.divConfig,
-      onlyText = _ref.onlyText;
-      _ref.typevar;
-      var arg = _objectWithoutProperties(_ref, ["textConfig", "genConfig", "disableTrue", "errorTrue", "background", "noBackground", "style", "obj", "textvar", "fontSize", "longTrue", "downloadLink", "fullWidth", "padvar", "extStyle", "formid", "buttonType", "groupConfig", "loadClick", "linkvar", "logtrue", "noGreen", "divConfig", "onlyText", "typevar"]);
+function InputTitle(_ref) {
+  var titlevar = _ref.titlevar,
+      subtitlevar = _ref.subtitlevar,
+      addFunc = _ref.addFunc,
+      iconvar = _ref.iconvar,
+      newTrue = _ref.newTrue,
+      errorMessage = _ref.errorMessage,
+      args = _objectWithoutProperties(_ref, ["titlevar", "subtitlevar", "addFunc", "iconvar", "newTrue", "errorMessage"]);
+  var aokdwe = //
+  ""; // ijdsew ? <BearDiv spanTrue {...ijweq} /> : "";
 
-  // const asndiw = {
-  //   order: {
-  //     linkvar: "/order",
-  //     iconvar: "transcript",
-  //     textvar: "Order Transcripts",
-  //   },
-  //   confirm: {
-  //     textvar: "Confirm",
-  //   },
-  // };
-  // textConfig = textConfig ? textConfig : asndiw[typevar];
-  // const asdijwe = {
-  //   font-weight: bold;
-  //   height: 45px;
-  //   padding: 2px 15px;
-  //   border-radius: 5px;
-  //   outline: none;
-  //   background: #09d3ac;
-  //   color: white;
-  //   font-size: 14px;
-  //   border: none;
-  //   box-sizing: border-box;
-  // }
-  var sdfoer = errorTrue && {
-    background: "red",
-    color: "white"
+  var olbknfr = {
+    fontSize: "0.7em",
+    color: "red",
+    marginLeft: "10px" // className: "error",
+
   };
-  var longeos = longTrue && {
-    width: "200px"
+  var asdwe = {
+    obj: errorMessage,
+    className: "error",
+    style: olbknfr
   };
+  var bnkifg = /*#__PURE__*/React__default['default'].createElement(BearDiv$1, _extends({
+    spanTrue: true
+  }, asdwe)); // 1title
 
-  var baseoSt = _objectSpread2(_objectSpread2({
-    padding: "2px 10px"
-  }, longeos), {}, {
-    color: noBackground ? "black" : "white",
-    // fontSize: "30px",
-    // height: "50px",
-    background: background ? background : !noBackground && "green"
-  });
-
-  var fdoewrw = padvar && {
-    padding: padvar + " 0"
-  };
-  var kasew = fullWidth && {
-    width: "100%"
-  };
-
-  var baseStlas = _objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2({
-    fontSize: fontSize
-  }, baseoSt), fdoewrw), sdfoer), kasew), style), extStyle); // "";
+  function AllNo() {
+    var okdsras = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, BearIconText(iconvar, titlevar));
+    var nisdjre = {
+      // flexTrue: true,
+      // vertAlign: true,
+      obj: okdsras
+    };
+    var dijrw = /*#__PURE__*/React__default['default'].createElement(BearDiv$1, nisdjre);
+    return dijrw;
+  } // TITLE MAIN
 
 
-  var dwesae = //
-  // true;
-  disableTrue;
-  var cllosk = //
-  "buttonHover shadowHover"; //   gens.butClass;
-  // gens.butClass + dwesae ? " disabled" : "";
+  var okasde = //
+  newTrue ? ChooseTit() : AllNo();
+  var ioakawe = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, okasde, aokdwe, bnkifg);
 
-  var sfasdokwe = _objectSpread2(_objectSpread2({
-    form: formid
-  }, arg), {}, {
-    style: baseStlas,
-    className: cllosk,
-    isDisabled: dwesae,
-    disabled: dwesae // ...uahwe,
+  function BswTi() {
+    var cvobkof = {
+      className: "shadowHover pointer",
+      onClick: addFunc,
+      obj: BearIcon("➕", ""),
+      style: {
+        padding: "5px",
+        marginTop: "-5px",
+        fontSize: "0.8em" // marginLeft: "20px",
 
-  });
-
-  var asodkwe = obj || onlyText || textvar;
-  var qy7eww = asodkwe ? asodkwe : "Confirm";
-  var aisjqw = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, qy7eww); // qy7eww ? qy7eww : <ImageTextDiv {...asduhqwe} />;
-  // chakTrue = chakTrue ? chakTrue : sfasdokwe["isLoading"];
-
-  function GroupBase(_ref2) {
-    _ref2.rightobj;
-        _ref2.leftobj;
-        _ref2.leftConfig;
-        var rightConfig = _ref2.rightConfig,
-        qwe = _objectWithoutProperties(_ref2, ["rightobj", "leftobj", "leftConfig", "rightConfig"]);
-
-    _objectSpread2({}, qwe);
-
-    _objectSpread2(_objectSpread2({}, sfasdokwe), rightConfig);
-    //   <Button {...rghtFunnp}>
-    //     <div {...nsidjew}>{rightobj}</div>{" "}
-    //   </Button>
-    // );
-
-    var isadjwe = //
-    ""; // (
-    //   <ButtonGroup {...nidsfjer}>
-    //     <Button {...sfasdokwe}>{aisjqw}</Button>
-    //     {/* {nsdijs} */}
-    //     {/* <Button mr="-px">Save</Button> */}
-    //     {/* <IconButton icon={<TiEdit />} /> */}
-    //   </ButtonGroup>
-    // );
-
-    return isadjwe;
+      }
+    };
+    var dfigjrt = /*#__PURE__*/React__default['default'].createElement(BearDiv$1, cvobkof);
+    var kcmdr = {
+      centerobj: ioakawe,
+      rightobj: dfigjrt
+    };
+    var ijcwe = BearFloat(kcmdr);
+    return ijcwe;
   }
 
-  var sfdsgwe = groupConfig ? /*#__PURE__*/React__default['default'].createElement(GroupBase, groupConfig) : /*#__PURE__*/React__default['default'].createElement("button", sfasdokwe, aisjqw);
-  var asdijew = //
-  // "";
-  linkvar || divConfig;
+  var ijsae = addFunc ? BswTi() : ioakawe;
+  var asdojwqs = {
+    obj: ijsae,
+    // textvar: ioakawe,
+    iconvar: iconvar,
+    noImage: !iconvar,
+    noIcon: !iconvar // noText: true,
+    // disVar: true,
 
-  var jawewe = _objectSpread2({
-    obj: sfdsgwe,
-    linkvar: linkvar
-  }, divConfig);
-  var asdgvwe = asdijew ? /*#__PURE__*/React__default['default'].createElement(BearDiv$1, jawewe) : sfdsgwe;
-  var pdska = downloadLink ? /*#__PURE__*/React__default['default'].createElement("a", {
-    href: downloadLink,
-    download: true
-  }, asdgvwe) : asdgvwe; // const isjdfe =
+  };
+  _.logs.logga(name + "___ inpuBase TITLE CONF ___", asdojwqs);
+  var seokwer =
+  /*#__PURE__*/
+  //
+  // <ImageTextDiv {...asdojwqs} />
+  // <BediaTextDiv {...asdojwqs} />
+  React__default['default'].createElement(BearDiv$1, asdojwqs);
 
-  var dweasdd = _objectSpread2({
-    obj: pdska
-  }, genConfig); // logtrue = true;
+  function Subtoter() {
+    var ikawed = {
+      fontSize: "0.8em"
+    };
+    var okawe = {
+      obj: subtitlevar,
+      style: ikawed
+    };
+    var uiajwe = /*#__PURE__*/React__default['default'].createElement(BearDiv$1, okawe);
+    return uiajwe;
+  }
 
-  var asdhwqe = /*#__PURE__*/React__default['default'].createElement(BearDiv$1, dweasdd);
-  return asdhwqe;
+  var ijawe = subtitlevar && /*#__PURE__*/React__default['default'].createElement(Subtoter, null);
+  var sdfgret = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, seokwer, ijawe);
+  var kase = {
+    padding: "0px 0",
+    textAlign: "left"
+  };
+
+  var isawqe = _objectSpread2({
+    obj: sdfgret,
+    style: kase
+  }, args);
+
+  return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, isawqe);
 }
+
+// import { BearButton } from "./BearButton";
+// import BearSelect from "./BearSelect";
+// import SearchFormFields from "../containers/search/SearchFormFields";
+
+function BearInput(_ref) {
+  var textConfig = _ref.textConfig,
+      titleConfig = _ref.titleConfig,
+      textvar = _ref.textvar;
+      _ref.errorobj;
+      var noInput = _ref.noInput;
+      _ref.onInput;
+      var noTitle = _ref.noTitle,
+      checked = _ref.checked,
+      control = _ref.control,
+      inputObj = _ref.inputObj,
+      inputFunction = _ref.inputFunction,
+      inputObjectFunction = _ref.inputObjectFunction;
+      _ref.selectTrue;
+      var style = _ref.style,
+      changeGlobal = _ref.changeGlobal,
+      onChange = _ref.onChange,
+      obj = _ref.obj,
+      ref = _ref.ref,
+      required = _ref.required,
+      name = _ref.name,
+      errors = _ref.errors,
+      fontSize = _ref.fontSize,
+      sameLine = _ref.sameLine,
+      initialValue = _ref.initialValue;
+      _ref.selectvar;
+      var rightSubmit = _ref.rightSubmit,
+      inputType = _ref.inputType,
+      rows = _ref.rows,
+      titlevar = _ref.titlevar;
+      _ref.placeholder;
+      _ref.checkList;
+      _ref.checklistTitle;
+      var lineBelow = _ref.lineBelow,
+      _ref$titleWidth = _ref.titleWidth,
+      titleWidth = _ref$titleWidth === void 0 ? "160px" : _ref$titleWidth,
+      dfsgre = _objectWithoutProperties(_ref, ["textConfig", "titleConfig", "textvar", "errorobj", "noInput", "onInput", "noTitle", "checked", "control", "inputObj", "inputFunction", "inputObjectFunction", "selectTrue", "style", "changeGlobal", "onChange", "obj", "ref", "required", "name", "errors", "fontSize", "sameLine", "initialValue", "selectvar", "rightSubmit", "inputType", "rows", "titlevar", "placeholder", "checkList", "checklistTitle", "lineBelow", "titleWidth"]);
+
+  _.logs.logga("___Asidnw obj ___", obj); // 1const
+
+  var _useState = React.useState(),
+      _useState2 = _slicedToArray(_useState, 2);
+      _useState2[0];
+      _useState2[1];
+
+  var _useState3 = React.useState(checked),
+      _useState4 = _slicedToArray(_useState3, 2);
+      _useState4[0];
+      _useState4[1];
+
+  var _useState5 = React.useState(initialValue),
+      _useState6 = _slicedToArray(_useState5, 2);
+      _useState6[0];
+      _useState6[1];
+
+  fontSize = fontSize ? fontSize : 18;
+
+  var ashwe = _objectSpread2({
+    width: "100%",
+    fontSize: fontSize,
+    padding: "0px 5px"
+  }, style);
+
+  var daezxv = {
+    //
+    fontSize: "1.1em",
+    width: "100%"
+  };
+  var ijdsew = //
+  required; // requireClass && required;
+
+  var slasso = ijdsew ? "required" : "";
+
+  function chaneeo(adowe) {
+    var valows = adowe.target && adowe.target.value; // logs.logga("___ adowe ___", adowe);
+
+    _.logs.logga("___ valows ___", valows); // setvalInit(valows);
+
+    if (onChange) {
+      onChange(valows);
+    }
+  }
+  var isjdfr = {
+    onChange: chaneeo
+  };
+  var nsijqwe = //
+  // isjdfr;
+  changeGlobal && isjdfr; // 1ref
+
+  function getRef(rfo) {
+    return {
+      ref: rfo,
+      inputRef: rfo,
+      innerRef: rfo
+    };
+  }
+
+  var sdweew = _objectSpread2({
+    name: name,
+    id: name,
+    className: slasso
+  }, getRef(ref));
+
+  var cntrMan = _objectSpread2({
+    control: control
+  }, sdweew);
+
+  var asw = //
+  // "";
+  errors && errors[name] && errors[name]["message"];
+
+  var zdssdire = _objectSpread2(_objectSpread2({}, dfsgre), {}, {
+    errorMessage: asw,
+    required: required
+  });
+
+  var objbase = _objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2({}, sdweew), {}, {
+    fontSize: fontSize,
+    textvar: textvar
+  }, zdssdire), {}, {
+    innerRef: {
+      required: required
+    }
+  }, nsijqwe), {}, {
+    style: daezxv
+  });
+  // 1console
+
+  function logros() {
+
+    {
+      for (var _len = arguments.length, asa = new Array(_len), _key = 0; _key < _len; _key++) {
+        asa[_key] = arguments[_key];
+      }
+
+      _.logs.logga.apply(_.logs, [name + "___BearForm--INPUT------zzz"].concat(asa));
+    }
+  } //
+  //
+
+
+  var ujsdqwe = ""; //
+
+  function retFunc() {
+    switch (inputType) {
+      case "select":
+        break;
+
+      case "selectable":
+        var dfdsawe = _objectSpread2({}, objbase);
+
+        ujsdqwe = /*#__PURE__*/React__default['default'].createElement(CreatableSelect, dfdsawe);
+        break;
+
+      case "textarea":
+        // 1rows
+        rows = rows ? rows : 3;
+
+        var ijsdfasd = _objectSpread2(_objectSpread2({
+          rows: rows,
+          minRows: rows,
+          defaultValue: textvar
+        }, objbase), textConfig); // const sadije = innerRef({ required: required }
+
+
+        _.logs.logga(textvar + "___ INPUTBASE TEXTAREA ___", ijsdfasd);
+        // ujsdqwe = <TextareaAutosize autoFocus />;
+
+        ujsdqwe = /*#__PURE__*/React__default['default'].createElement(TextareaAutosize__default['default'], ijsdfasd); // {textvar}</TextareaAutosize>;
+        // ujsdqwe = <textarea {...ijsdfasd} />;
+        // ujsdqwe = <textarea {...ijsdfasd}>{textvar}</textarea>;
+        // ujsdqwe = "";
+
+        break;
+
+      case "checkboxList":
+        //
+        ujsdqwe = "ijadqwoek";
+      // ujsdqwe = <input {...dsoadkw0} />;
+
+      case "checkbox":
+        _objectSpread2({
+          type: "checkbox"
+        }, objbase); // const okaswe;
+
+
+        var isawe = {
+          type: "checkbox" // {...dsoadkw0}
+
+        };
+        var ijasdwe = {
+          obj: textvar,
+          style: {
+            marginRight: "10px"
+          }
+        };
+        var dsf9jewr = /*#__PURE__*/React__default['default'].createElement(BearDiv$1, ijasdwe); // 1input
+
+        ujsdqwe = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement("input", isawe), " ", dsf9jewr);
+        break;
+      // case "number":
+      //   [type] = "tel";
+
+      default:
+        // textvar = "DEFAULT TEXT";
+        var ijawe = _objectSpread2({
+          // type: "text",
+          // height: "10px"
+          rows: 1,
+          autocomplete: "off",
+          className: "noresize"
+        }, objbase);
+
+        _.logs.logga(name + "___ inputBase--INPUT ___", ijawe); // 1input
+
+        ujsdqwe = noInput ? "" : textvar ?
+        /*#__PURE__*/
+        //
+        // <gens.StInput {...objbase}>{textvar}</gens.StInput>
+        React__default['default'].createElement("textarea", ijawe, textvar) :
+        /*#__PURE__*/
+        // <input {...ijawe}>{textvar}</input>
+        // <input {...ijawe} />
+        // <textarea {...ijawe}>{textvar}</textarea>
+        // <gens.StInput {...ijawe} />
+        // <input {...ijawe} />
+        React__default['default'].createElement("input", ijawe);
+    }
+
+    return ujsdqwe;
+  }
+
+
+  function TitleOBbi(_ref2) {
+    var style = _ref2.style,
+        cxzv = _objectWithoutProperties(_ref2, ["style"]);
+
+    //
+    var skdowqe = sameLine ? {
+      //
+      fontSize: "1.15em",
+      minWidth: titleWidth,
+      marginTop: "-10px"
+    } : {
+      //
+      fontSize: "1.15em"
+    };
+
+    var iawqe = _objectSpread2(_objectSpread2({}, skdowqe), {}, {
+      fontWeight: "bold"
+    }, style);
+
+    var sdfkewr = _objectSpread2({
+      titlevar: titlevar,
+      style: iawqe
+    }, cxzv);
+
+    return /*#__PURE__*/React__default['default'].createElement(InputTitle, sdfkewr);
+  }
+
+  var showTit = //
+  // true;
+  !noTitle && titlevar;
+
+  var saewase = _objectSpread2(_objectSpread2({}, zdssdire), titleConfig);
+
+  var oksdwqe = showTit && /*#__PURE__*/React__default['default'].createElement(TitleOBbi, saewase);
+  var confijre = {
+    size: "sm",
+    type: "submit",
+    obj: "YES"
+  };
+
+  function goCont(goObj) {
+    // inputFunction(objbase)
+    function inEar(_ref3) {
+      var _ref3$field = _ref3.field,
+          ref = _ref3$field.ref;
+          _ref3$field.value;
+          var field = _objectWithoutProperties(_ref3$field, ["ref", "value"]);
+
+      var sfeqwwe = _objectSpread2(_objectSpread2(_objectSpread2({}, objbase), field), getRef(ref));
+
+      logros("___ BearCont CONTROL field ___", field);
+      logros("___ BerInot ___", sfeqwwe);
+      var dfigjew = //
+      inputFunction(sfeqwwe); // BearSelect(sfeqwwe);
+
+      return dfigjew;
+    }
+
+    var asod = //
+    reactHookForm.Controller(_objectSpread2(_objectSpread2({}, cntrMan), {}, {
+      render: inEar
+    }));
+    return asod;
+  }
+
+  ujsdqwe = inputObj ? inputObj : inputFunction ? goCont() : inputObjectFunction ? inputObjectFunction(retFunc()) : retFunc();
+  var jaewdsr = {
+    rightobj: /*#__PURE__*/React__default['default'].createElement(BearButton, confijre),
+    centerobj: ujsdqwe
+  }; // rightSubmit = true;
+
+  var asdijwe = rightSubmit ?
+  /*#__PURE__*/
+  //
+  React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(BearFloat, jaewdsr)) : ujsdqwe;
+  _.logs.logga("___ ujsdqwe ___", ujsdqwe);
+  _.logs.logga("___ asdijwe ___", asdijwe);
+  var ijsa = {
+    style: ashwe
+  };
+  var okdsae = {
+    style: {
+      width: "100%"
+    }
+  }; // lineBelow = true;
+
+  var xvcmfde = lineBelow && /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement("hr", null));
+  var okaweasd = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, oksdwqe, /*#__PURE__*/React__default['default'].createElement("div", okdsae, asdijwe));
+
+  function asdowe() {
+    return okaweasd;
+  }
+
+  var ijdas = sameLine ? /*#__PURE__*/React__default['default'].createElement(layout.Flex, ijsa, asdowe()) : /*#__PURE__*/React__default['default'].createElement("div", ijsa, okaweasd);
+  var kaosdew = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, ijdas, xvcmfde);
+  return kaosdew;
+}
+
+function BearForm(_ref) {
+  var noButton = _ref.noButton;
+      _ref.noText;
+      var listDict = _ref.listDict,
+      loadConfig = _ref.loadConfig,
+      buttonText = _ref.buttonText;
+      _ref.subtitleConfig;
+      _ref.textConfig;
+      var overObj = _ref.overObj,
+      listvar = _ref.listvar,
+      _ref$buttonSize = _ref.buttonSize,
+      buttonSize = _ref$buttonSize === void 0 ? "35px" : _ref$buttonSize,
+      inputConfig = _ref.inputConfig,
+      buttonConfig = _ref.buttonConfig,
+      toplist = _ref.toplist,
+      noForm = _ref.noForm,
+      dictvar = _ref.dictvar,
+      formid = _ref.formid;
+      _ref.headerObj;
+      _ref.singleTrue;
+      _ref.headerConfig;
+      _ref.logtrue;
+      var tabConfig = _ref.tabConfig,
+      schemavar = _ref.schemavar,
+      hookConfig = _ref.hookConfig;
+      _ref.typeForm;
+      var sameLine = _ref.sameLine;
+      _ref.topButtonConfig;
+      _ref.ImageTextList;
+      var topButtonTrue = _ref.topButtonTrue,
+      loadSubmit = _ref.loadSubmit,
+      onSubmit = _ref.onSubmit;
+      _ref.submitExtra;
+      var topObj = _ref.topObj;
+      _ref.marginBetween;
+      var titlevar = _ref.titlevar,
+      titleConfig = _ref.titleConfig,
+      changeGlobal = _ref.changeGlobal,
+      args = _objectWithoutProperties(_ref, ["noButton", "noText", "listDict", "loadConfig", "buttonText", "subtitleConfig", "textConfig", "overObj", "listvar", "buttonSize", "inputConfig", "buttonConfig", "toplist", "noForm", "dictvar", "formid", "headerObj", "singleTrue", "headerConfig", "logtrue", "tabConfig", "schemavar", "hookConfig", "typeForm", "sameLine", "topButtonConfig", "ImageTextList", "topButtonTrue", "loadSubmit", "onSubmit", "submitExtra", "topObj", "marginBetween", "titlevar", "titleConfig", "changeGlobal"]);
+
+  //
+  //
+  // 1const
+  var _useState = React.useState(),
+      _useState2 = _slicedToArray(_useState, 2),
+      loadSetto = _useState2[0],
+      setloadSetto = _useState2[1];
+
+  var nameMessError = //
+  ""; // "Please add your name."
+
+  schemavar = _objectSpread2({
+    name: yup__namespace.string() //
+    // .match("")
+    .required(nameMessError),
+    email: yup__namespace.string().email("This is not a valid email.").required("Please add your email.")
+  }, schemavar);
+  var finsaShc = //
+  // schemavar
+  {};
+
+  function asifjew(asdofj) {
+    finsaShc[asdofj] = schemavar[asdofj];
+  }
+
+  listvar.map(asifjew);
+  yup__namespace.object().shape(finsaShc);
+
+  var oksdaew = _objectSpread2({
+    // validationSchema: schemaYup
+    // mode: "onBlur",
+    // reValidateMode: "onChange",
+    mode: "onSubmit",
+    reValidateMode: "onChange"
+  }, hookConfig);
+
+  var _useForm = //
+  // "";
+  reactHookForm.useForm(oksdaew),
+      handleSubmit = _useForm.handleSubmit,
+      register = _useForm.register,
+      errors = _useForm.errors,
+      control = _useForm.control;
+      _useForm.watch;
+      _objectWithoutProperties(_useForm, ["handleSubmit", "register", "errors", "control", "watch"]);
+
+
+  function subbTo(values) {
+    //
+    if (loadSubmit) {
+      setloadSetto(true);
+    }
+
+    !lodash.isEmpty(values);
+    onSubmit(values);
+    setloadSetto(); // parsVal(values);
+    //
+    // if (trudsoe) {
+    //   onSubmit(values);
+    //   parsVal(values);
+    // }
+    //
+  }
+  args = _objectSpread2(_objectSpread2({}, args), {}, {
+    id: formid,
+    // onSubmit: subbTo,
+    onSubmit: handleSubmit(subbTo)
+  });
+
+  function Buttiona(_ref2) {
+    var siwerew = _extends({}, _ref2);
+
+    //
+    var aewsadw = {
+      style: {
+        margin: "20px"
+      }
+    }; //
+
+    var jsadcvx = {
+      // width: "100%",
+      fontSize: buttonSize
+    }; //
+
+    var dvbijkrw = _objectSpread2({
+      type: "submit",
+      textAlign: "center",
+      form: formid,
+      // color: "black",
+      // height: "60px",
+      // padding: "10px 20px",
+      style: jsadcvx,
+      genConfig: aewsadw,
+      obj: buttonText,
+      longTrue: true
+    }, siwerew);
+    var adhwdse =
+    /*#__PURE__*/
+    //
+    React__default['default'].createElement(BearButton, dvbijkrw) // <button {...dvbijkrw}>sdfjwerw</button>
+    ;
+    var asidja = {
+      obj: adhwdse,
+      style: {
+        marginBottom: "20px",
+        textAlign: "center"
+      }
+    };
+    return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, asidja);
+  }
+
+  function FormError(textvar) {
+    var okaease = {
+      obj: textvar
+    };
+    var dfbokerr = /*#__PURE__*/React__default['default'].createElement(BearDiv$1, okaease);
+    return dfbokerr;
+  }
+
+  function firstInputCheck(baseObj) {
+    //
+    var nameeo = baseObj.name;
+
+    var okwaew = nameeo ? secondCheck(baseObj) : FormError("No Form Name Supplied");
+    return okwaew;
+  } // 1FUNCTION
+
+
+  function secondCheck(_ref3) {
+    var baseObj = _extends({}, _ref3);
+    var nameeo = baseObj["name"];
+    var titlCheck = topButtonTrue && {
+      noTitle: true
+    };
+
+    function getRef(_ref4) {
+      var name = _ref4.name;
+          _ref4.titlevar;
+          _ref4.iconvar;
+          var asdsa = _objectWithoutProperties(_ref4, ["name", "titlevar", "iconvar"]);
+
+      //
+      var reffo = //
+      // register("name");
+      register(name, asdsa);
+      return reffo;
+    }
+
+    var okasew = getRef(baseObj);
+
+    var hookArgs = _objectSpread2({
+      control: control,
+      errors: errors
+    }, okasew);
+
+    var existo = overObj && overObj[nameeo];
+    var ijawe = existo ? existo : baseObj["textvar"];
+
+    var odkasew = _objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2({}, hookArgs), {}, {
+      sameLine: sameLine,
+      overObj: overObj,
+      changeGlobal: changeGlobal
+    }, baseObj), inputConfig), titlCheck), {}, {
+      textvar: ijawe
+    });
+
+
+    var oiaswe = BearInput(odkasew);
+    return oiaswe;
+  }
+
+  function sdfok(obj) {
+    var inDict = dictvar && dictvar[obj];
+
+    var baseObj = _objectSpread2(_objectSpread2({}, getFormDict(obj)), inDict);
+
+    var fdjgre = baseObj.obj;
+    var obvdsaf = fdjgre ? fdjgre : lodash.isEmpty(baseObj) ? FormError("no form Dictionary supplied - " + obj) : firstInputCheck(baseObj);
+    return obvdsaf;
+  } //   const [currTab, setcurrTab] = useState(initBase);
+
+
+  var currTab = "";
+  var currForm = currTab;
+  topButtonTrue && listvar[0];
+  var listRend = listDict && listDict[currForm];
+  var atbosa = listRend ? listRend : currForm;
+  var listaros = topButtonTrue ? [atbosa] : listvar;
+  var ijawesdafr = {
+    dictvar: dictvar,
+    listvar: listvar
+  };
+  var buttio = !noButton && /*#__PURE__*/React__default['default'].createElement(Buttiona, buttonConfig);
+
+  function vijsd9(_ref5) {
+    _ref5.name;
+        _objectWithoutProperties(_ref5, ["name"]);
+  }
+
+  function iasjdwe(obj) {
+    // const chsersd = checkTick()
+    var kadwesd = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, obj["tabTitle"]);
+    return kadwesd;
+  }
+
+  function Tabios() {
+    var bdoewr = //
+    "greyHover pointer";
+    var okae = {
+      margin: "10px",
+      borderRadius: "20px"
+    };
+    var oksae = {
+      chosenConfig: {
+        bediaTrue: true
+      },
+      itemConfig: {
+        style: okae,
+        className: bdoewr
+      }
+    };
+
+    function aidsjfew(_ref6) {
+      var titlevar = _ref6.titlevar,
+          iconvar = _ref6.iconvar,
+          style = _ref6.style,
+          zcvdf = _objectWithoutProperties(_ref6, ["titlevar", "iconvar", "style"]);
+      var okawe = {
+        style: {
+          fontSize: "1.5em"
+        },
+        obj: iconvar
+      };
+      var lpsda = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(BearDiv$1, okawe), titlevar);
+      style["textAlign"] = "center";
+
+      _objectSpread2(_objectSpread2({
+        style: style
+      }, zcvdf), {}, {
+        obj: lpsda
+      });
+
+      return lpsda; //   return <BearDiv {...oaewc} />;
+      // return "oskdasd";
+    }
+
+    var asodwe = _objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2({
+      onClick: vijsd9,
+      singleClick: true,
+      horizTrue: true,
+      chosenItem: currTab,
+      // titleAttr: "tabTitle",
+      titleFunc: iasjdwe
+    }, oksae), ijawesdafr), tabConfig), {}, {
+      obj: aidsjfew // obj: (adqq) => "aspdle",
+
+    });
+    var okfdsd = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(BearList, asodwe));
+    return okfdsd;
+  }
+
+  function maperlis(sdfew) {
+    return sdfew.map(sdfok);
+  }
+
+  var kaewsae = maperlis(listaros);
+  var sudhawe = topButtonTrue ? /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(Tabios, null), kaewsae) : kaewsae;
+  /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, sudhawe);
+  var iterwr = toplist;
+  var mappit = iterwr ? /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, maperlis(toplist), /*#__PURE__*/React__default['default'].createElement("br", null), sudhawe) : /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, sudhawe);
+  var aidjwe = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, topObj, mappit, buttio);
+
+  _objectSpread2(_objectSpread2({}, args), {}, {
+    listvar: listvar,
+    listaros: listaros
+  }); // 1console
+  var aweuw = noForm ? aidjwe : formid ? /*#__PURE__*/React__default['default'].createElement("form", args, aidjwe) : "NO FORM ID SPECIFIED";
+
+  function Titren(_ref7) {
+    var style = _ref7.style,
+        sdfok = _objectWithoutProperties(_ref7, ["style"]);
+
+    var kjase = _objectSpread2({
+      style: _objectSpread2({
+        textAlign: "left",
+        fontSize: "1.3em",
+        marginBottom: "30px"
+      }, style),
+      obj: titlevar
+    }, sdfok); // const sdfijre =
+
+
+    var noisae = /*#__PURE__*/React__default['default'].createElement(BearDiv$1, kjase);
+    return noisae;
+  }
+
+  var askew = titlevar && /*#__PURE__*/React__default['default'].createElement(Titren, titleConfig);
+  var vbokre = {//
+  };
+  var isae = loadSetto ? /*#__PURE__*/React__default['default'].createElement(LoadMain, loadConfig) : /*#__PURE__*/React__default['default'].createElement("div", vbokre, askew, aweuw);
+  var isjdwesdfoek = //
+  isae; // aweuw;
+  // <div {...genConfig}>{aweuw}</div>;
+
+  return isjdwesdfoek;
+}
+
+function getFormDict(objsoa) {
+  var _emalBaso;
+
+  var vbijdf9te = //
+  "Email"; // ("Email address");
+  var emalBaso = (_emalBaso = {
+    required: true,
+    // pattern: emailPatto,
+    titlevar: "Email address"
+  }, _defineProperty(_emalBaso, "titlevar", vbijdf9te), _defineProperty(_emalBaso, "iconvar", "email"), _emalBaso);
+  var nasmwoBL = {
+    required: true,
+    // pattern: emailPatto,
+    name: "name",
+    titlevar: "Name",
+    // titlevar: vbijdf9te,
+    iconvar: "" // iconvar: "email",
+
+  };
+  var diewrsm = {
+    required: true,
+    name: "password",
+    titlevar: "Password",
+    type: "password"
+  }; //  1tags
+
+  var tgsoer = {
+    name: "tags",
+    titlevar: "Tags"
+  };
+  var nvcbxf = {
+    email: emalBaso,
+    name: nasmwoBL,
+    password: diewrsm,
+    tags: tgsoer // firstname:
+    // lastname:
+
+  };
+  var ocvbds = nvcbxf[objsoa];
+  return ocvbds;
+}
+
+function SignBase(_ref) {
+  var funcvar = _ref.funcvar,
+      topObj = _ref.topObj,
+      _ref$typeSign = _ref.typeSign,
+      typeSign = _ref$typeSign === void 0 ? "login" : _ref$typeSign,
+      socialConfig = _ref.socialConfig,
+      socialSubmit = _ref.socialSubmit;
+      _ref.emailSubmit;
+      var socialList = _ref.socialList,
+      formConfig = _ref.formConfig,
+      noBottom = _ref.noBottom,
+      sdse = _objectWithoutProperties(_ref, ["funcvar", "topObj", "typeSign", "socialConfig", "socialSubmit", "emailSubmit", "socialList", "formConfig", "noBottom"]);
+
+  //
+  //
+  var _useState = React.useState(),
+      _useState2 = _slicedToArray(_useState, 2),
+      emaTrue = _useState2[0],
+      setemaTrue = _useState2[1];
+
+  var _useState3 = React.useState(typeSign),
+      _useState4 = _slicedToArray(_useState3, 2),
+      sdfer = _useState4[0],
+      setsignType = _useState4[1];
+
+  var signType = sdfer ? sdfer : _.getParamVar("typeSign");
+
+  function signCheck(typevar) {
+    var okads = //
+    // "";
+    "Continue with " + typevar; // switch (signType) {
+    //   case "login":
+    //     okads = "Log in with " + typevar;
+    //     break;
+    //   case "signup":
+    //     okads = "Sign up with " + typevar;
+    //     break;
+    // }
+
+    return okads;
+  } // 1emailbase
+
+
+  var emaCon = {
+    text: signCheck("Email"),
+    icon: "envelope",
+    iconFormat: function iconFormat(name) {
+      return "fa fa-envelope";
+    },
+    style: {
+      background: "#FF5733"
+    },
+    activeStyle: {
+      background: "#ff6700"
+    }
+  };
+  /** My Facebook login button. */
+
+  var EmailLoginButton = reactSocialLoginButtons.createButton(emaCon);
+
+  function dskwad() {
+    _.logs.logga("asokdwqe");
+  }
+
+  var emBaso = {
+    textvar: /*#__PURE__*/React__default['default'].createElement(EmailLoginButton, null),
+    onClick: dskwad,
+    typevar: "email"
+  };
+  var fdsogkret = {
+    google: {
+      textvar: /*#__PURE__*/React__default['default'].createElement(reactSocialLoginButtons.GoogleLoginButton, null, signCheck("Google")),
+      // textvar: "Google",
+      iconvar: /*#__PURE__*/React__default['default'].createElement(si.SiGoogle, null),
+      typevar: "google"
+    },
+    facebook: {
+      textvar: /*#__PURE__*/React__default['default'].createElement(reactSocialLoginButtons.FacebookLoginButton, null, signCheck("Facebook")),
+      // textvar: "Facebook",
+      // iconvar: <SiFacebook />,
+      typevar: "facebook"
+    },
+    email: emBaso,
+    github: {
+      textvar: /*#__PURE__*/React__default['default'].createElement(reactSocialLoginButtons.GithubLoginButton, null),
+      // textvar: "Twitter",
+      // iconvar: <SiGithub />,
+      typevar: "github"
+    },
+    apple: {
+      textvar: /*#__PURE__*/React__default['default'].createElement(reactSocialLoginButtons.AppleLoginButton, null),
+      typevar: "apple"
+    },
+    twitter: {
+      textvar: /*#__PURE__*/React__default['default'].createElement(reactSocialLoginButtons.TwitterLoginButton, null),
+      // textvar: "Github",
+      iconvar: /*#__PURE__*/React__default['default'].createElement(si.SiTwitter, null),
+      typevar: "github"
+    } //
+
+  };
+
+  function osadew(_ref2) {
+    var typevar = _ref2.typevar;
+    _.logs.logga("___ sinBas SOCIAL CLICK ___", typevar);
+
+    switch (typevar) {
+      case "email":
+        setemaTrue(true);
+        break;
+
+      default:
+        socialSubmit(typevar);
+    }
+  }
+
+
+  var dfogre = [//
+  // "twitter",
+  "google", "facebook", "apple", "email"];
+
+  var igfder = _objectSpread2({
+    listvar: socialList ? socialList : dfogre,
+    dictvar: fdsogkret,
+    onClick: osadew,
+    spaceBetween: "10px",
+    // renderItem: Bsaeosa,
+    renderItem: function renderItem(sad) {
+      return sad.textvar;
+    }
+  }, socialConfig);
+
+  function spfdewr(_ref4) {
+    var email = _ref4.email,
+        password = _ref4.password;
+    _.logs.logga("___ signBase SIGNUP ___", email, password); //
+
+    _.userLogSign(email, password, funcvar);
+  } // 1console
+
+
+  _.logs.logga("___ SignBsae SOCIAL ___", igfder);
+  var dsfijd =
+  /*#__PURE__*/
+  //
+  // {/* <BearTextMedia {...igfder} /> */}
+  React__default['default'].createElement(BearList, igfder);
+
+  function FOrnaW() {
+    //
+    //
+    var dfijd = [//
+    "email", "password"];
+    var klmi = //
+    // sofer;
+    spfdewr;
+
+    var dfgre = _objectSpread2({
+      listvar: dfijd,
+      // dictvar:
+      // sameline
+      titleConfig: {
+        width: "80px"
+      },
+      buttonText: "Register",
+      formid: "register",
+      onSubmit: klmi
+    }, formConfig);
+
+    var forso = /*#__PURE__*/React__default['default'].createElement(BearForm, dfgre);
+    return forso;
+  }
+
+  var jvsfeer = //
+  emaTrue ? /*#__PURE__*/React__default['default'].createElement(FOrnaW, null) : dsfijd;
+
+  function OrCHekc() {
+    var baseTEST = "";
+    var bottLink = "";
+    var changeit = "";
+
+    switch (signType) {
+      case "login":
+        changeit = "signup";
+        baseTEST = "Don't have an account?";
+        bottLink = "Sign Up for free";
+        break;
+
+      case "signup":
+        baseTEST = "Already have an account?";
+        bottLink = "Sign in to Bedia";
+        changeit = "login";
+        break;
+    }
+
+    var kasesd = {
+      obj: baseTEST
+    };
+
+    function saoke(sad) {
+      setsignType(changeit);
+    }
+
+    var koewqe = {
+      onClick: saoke,
+      // linkvar: "?typeSign=" + signType,
+      // linkvar: " signType,
+      // linkConfig: {
+      //   noBlack: true,
+      // },
+      obj: bottLink,
+      style: {
+        marginBottom: "20p",
+        fontSize: "1.3em"
+      }
+    };
+    var oksae = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(BearDiv$1, kasesd), /*#__PURE__*/React__default['default'].createElement(BearDiv$1, koewqe));
+    var sdease = {
+      obj: oksae,
+      bediaTrue: true,
+      style: {
+        padding: "15px"
+      }
+    };
+    var kdsfse = /*#__PURE__*/React__default['default'].createElement(BearButton, sdease);
+    var oasebd = {
+      style: {
+        paddingTop: "20px",
+        textAlign: "center",
+        fontSize: "1.3em"
+      },
+      obj: kdsfse
+    };
+    return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, oasebd);
+  }
+
+  var jdtre = sdfer && /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, topObj, jvsfeer, !noBottom && /*#__PURE__*/React__default['default'].createElement(OrCHekc, null));
+
+  var okasdew = _objectSpread2({
+    obj: jdtre
+  }, sdse);
+
+  return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, okasdew);
+}
+
+function BearCarousel(_ref) {
+  var listvar = _ref.listvar,
+      _ref$slideNum = _ref.slideNum,
+      slideNum = _ref$slideNum === void 0 ? 0 : _ref$slideNum;
+      _ref.messvar;
+      var args = _objectWithoutProperties(_ref, ["listvar", "slideNum", "messvar"]);
+
+  function caroRet(sdfewr) {
+    var sokdaw = {// onExiting={() => setAnimating(true)}
+      // onExited={() => setAnimating(false)}
+      // key={item.src}
+    };
+    var iasd = /*#__PURE__*/React__default['default'].createElement(reactstrap.CarouselItem, sokdaw, /*#__PURE__*/React__default['default'].createElement("br", null), sdfewr);
+    return iasd;
+  }
+
+  var nisaw = //
+  // listvar.map(Asdew);
+  listvar.map(caroRet);
+  var strapCaro = {
+    activeIndex: slideNum
+  };
+  args = _objectSpread2(_objectSpread2({}, strapCaro), args);
+  var kesae = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(reactstrap.Carousel, args, nisaw));
+  return kesae;
+}
+
+function BearPopover(_ref) {
+  var obj = _ref.obj;
+      _ref.noCenter;
+      var popConfig = _ref.popConfig,
+      content = _ref.content,
+      testShow = _ref.testShow;
+      _ref.titleConfig;
+      var titlevar = _ref.titlevar,
+      args = _objectWithoutProperties(_ref, ["obj", "noCenter", "popConfig", "content", "testShow", "titleConfig", "titlevar"]);
+
+  //
+  function Daokwe() {
+    var okaew = {
+      obj: content,
+      style: {
+        textAlign: "center"
+      }
+    };
+    var okasdw = /*#__PURE__*/React__default['default'].createElement(Divo, okaew);
+    return okasdw;
+  }
+
+  var oksaew = _objectSpread2({
+    style: {
+      padding: "0"
+    },
+    title: titlevar,
+    content: /*#__PURE__*/React__default['default'].createElement(Daokwe, null)
+  }, popConfig);
+  // titlevar && <PopoverHeader>{titlevar}</PopoverHeader>;
+  //   const isadwqe = (
+  //     <Popover>
+  //       <PopoverTrigger>{obj}</PopoverTrigger>
+  //       <PopoverContent>
+  //         <PopoverArrow />
+  //         {/* <PopoverCloseButton /> */}
+  //         {dfijwr}
+  //         <PopoverBody>
+  //           adsfokewrewrw
+  //           {/* <Divo {...popConfig} /> */}
+  //         </PopoverBody>
+  //       </PopoverContent>
+  //     </Popover>
+  //   );
+  //   placement="leftTop" title={text} content={content} trigger="click"
+
+  var jdse = testShow ? content : /*#__PURE__*/React__default['default'].createElement(antd.Popover, oksaew, obj);
+  var sadwe = //
+  jdse;
+
+  var fdiisdjr = _objectSpread2({
+    obj: sadwe
+  }, args);
+
+  return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, fdiisdjr);
+}
+
+var emojiDict = {
+  surprise: {
+    emoji: "😲",
+    textvar: "Surprised!"
+  },
+  angry: {
+    emoji: "😡",
+    textvar: "Angry"
+  },
+  happy: {
+    emoji: "😃",
+    textvar: "Happy"
+  },
+  sad: {
+    emoji: "😢",
+    textvar: "Sad"
+  },
+  funny: {
+    emoji: "🤣",
+    textvar: "Funny"
+  },
+  love: {
+    emoji: "😍",
+    textvar: "Love"
+  },
+  interest: {
+    emoji: "🤔",
+    textvar: "Interesting"
+  }
+};
+
+function getEMoj(asofkr) {
+  var idfwer = emojiDict[asofkr];
+  var side = idfwer && idfwer.emoji;
+  side = side ? side : "";
+  return side;
+}
+
+function mapEmojiFace(listvar) {
+  var iewase = listvar && listvar.map(getEMoj);
+  return iewase;
+}
+
+function mainRet(cxsd) {
+  var aijew = emojiDict[cxsd];
+  var oiajew = "".concat(aijew["emoji"], " ").concat(aijew["textvar"], " ");
+  var oaksde = {
+    DICT: emojiDict,
+    inits: cxsd,
+    LABEL: oiajew
+  };
+  logs.logga("___ emojilist--mainRet ___", oaksde);
+  return oiajew;
+}
+
+function labelMoj(cxsd) {
+  var xcokvse = {
+    value: cxsd,
+    label: mainRet(cxsd)
+  };
+  return xcokvse;
+}
+function EmojiLabelMap(cxsd) {
+  var sd9fwq = cxsd.map(labelMoj);
+  logs.logga("___ EmojiLabelMap ___", sd9fwq);
+  return sd9fwq;
+}
+
+function BearEmoji(_ref) {
+  var initialValue = _ref.initialValue;
+      _ref.selectBlue;
+      _ref.selectTrue;
+      _ref.chooseFunc;
+      var typevar = _ref.typevar,
+      listvar = _ref.listvar,
+      onlyEmoji = _ref.onlyEmoji,
+      itemConfig = _ref.itemConfig,
+      sdaa = _objectWithoutProperties(_ref, ["initialValue", "selectBlue", "selectTrue", "chooseFunc", "typevar", "listvar", "onlyEmoji", "itemConfig"]);
+
+  //
+  var ijsae = //
+  emojiDict;
+  var kjsijsa = [//
+  "funny", "happy", "interest", // "surprise",
+  "sad" // "angry",
+  ];
+
+  var _useState = React.useState(),
+      _useState2 = _slicedToArray(_useState, 2),
+      asdoe = _useState2[0];
+      _useState2[1];
+
+  var jdfew = //
+  // kjsijsa
+  listvar ? listvar : kjsijsa; //
+  //
+
+  var plaqwe = //
+  // greyHover circleHover
+  "expandHover pointer";
+  var sadwqe = //
+  plaqwe; // selectBlue ? plaqwe : "pointer";
+
+  var oksae = {
+    // background: "red",
+    padding: "5px",
+    borderRadius: "50%"
+  };
+
+  var sfjaw = _objectSpread2({
+    className: sadwqe,
+    style: oksae
+  }, itemConfig);
+
+  function saokde(_ref2) {
+    var chosenTrue = _ref2.chosenTrue,
+        emoji = _ref2.emoji,
+        textvar = _ref2.textvar,
+        qweq = _objectWithoutProperties(_ref2, ["chosenTrue", "emoji", "textvar"]);
+    var dsfge = {
+      minWidth: "100px",
+      fontSize: "22px"
+    };
+    var xdffsd = {
+      obj: textvar,
+      style: dsfge
+    };
+    var sdfiewrw =
+    /*#__PURE__*/
+    //
+    // "sodkqeq"
+    React__default['default'].createElement(BearDiv$1, xdffsd);
+    var bocd = onlyEmoji ? emoji : /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, emoji);
+    var qwtgsa = chosenTrue && BearIcon("tick");
+    var lfdijg = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, bocd, qwtgsa);
+    var lsadwe = //
+    lfdijg; // bocd
+    // ureytue;
+
+    var oksaew = _objectSpread2({
+      obj: lsadwe,
+      flexTrue: true
+    }, sfjaw);
+
+    var aokdwe = _objectSpread2({
+      // style:
+      obj: /*#__PURE__*/React__default['default'].createElement(BearDiv$1, oksaew),
+      popConfig: {
+        content: sdfiewrw
+      }
+    }, qweq);
+    return /*#__PURE__*/React__default['default'].createElement(BearPopover, aokdwe);
+  }
+
+  function Listso(_ref3) {
+    var ssdwedf = _extends({}, _ref3);
+
+    //
+    var ijdwq = {
+      // style: { background: "red" },
+      chosenItem: asdoe,
+      chooseTrue: true,
+      returnArray: true,
+      clickSingle: true,
+      chosenConfig: {// style: {
+        //   background: "blue",
+        // },
+        // className: "shadowBottom",
+      }
+    };
+
+    function asdoke(sdfswe) {
+      var oksadw = //
+      // "dsfoker";
+      saokde(sdfswe);
+      return oksadw;
+    }
+    var logBaso = {
+      logtrue: "asdas",
+      messvar: "BEAEMOJI"
+    };
+
+    var dsjs = _objectSpread2(_objectSpread2(_objectSpread2({
+      listvar: jdfew,
+      dictvar: ijsae,
+      renderItem: asdoke,
+      horizTrue: true,
+      itemConfig: sfjaw
+    }, logBaso), ijdwq), ssdwedf);
+    return /*#__PURE__*/React__default['default'].createElement(BearList, dsjs);
+  }
+
+  function Selectos() {
+    // const sidjew = {
+    //   value:
+    // }
+    var fdogkre = //
+    // jdfew
+    Object.keys(ijsae);
+    var awwsa = EmojiLabelMap(fdogkre);
+    var adsfw = EmojiLabelMap(initialValue);
+
+    _objectSpread2(_objectSpread2({
+      initOptions: awwsa,
+      limitvar: 3
+    }, sdaa), {}, {
+      logtrue: false,
+      messvar: "emojListo",
+      value: adsfw
+    });
+    var asiew = //
+    ""; //   <BearSelect {...ijsaew} />;
+
+    return asiew;
+  }
+
+  var endValue = "";
+
+  switch (typevar) {
+    case "select":
+      endValue = Selectos();
+      break;
+
+    case "base":
+      endValue = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, mapEmojiFace(jdfew));
+      break;
+
+    default:
+      endValue = /*#__PURE__*/React__default['default'].createElement(Listso, sdaa);
+  }
+
+  return endValue;
+}
+
+var _skeweewr;
+var twitLink = "https://twitter.com/";
+var plsusew = "";
+var twitterShareLink = twitLink + "intent/tweet" + plsusew;
+var twittDirectLink = twitLink + "messages/compose" + plsusew; // 1twitter
+
+var skeweewr = (_skeweewr = {
+  linkBase: twitterShareLink,
+  iconvar: "twitter",
+  toolText: "Twitter",
+  textConnect: "text",
+  linkConnect: "url"
+}, _defineProperty(_skeweewr, "iconvar", /*#__PURE__*/React__default['default'].createElement(si.SiTwitter, null)), _defineProperty(_skeweewr, "styleIcon", {
+  color: "white",
+  background: "#1da1f2"
+}), _skeweewr); // 1reddit
+
+var rddito = {
+  linkBase: "https://www.reddit.com/submit",
+  linkConnect: "url",
+  toolText: "Reddit",
+  textConnect: "title",
+  iconvar: /*#__PURE__*/React__default['default'].createElement(si.SiReddit, null),
+  styleIcon: {
+    color: "white",
+    background: "#FF4301"
+  }
+}; // 1hacker
+
+var hckn = {
+  toolText: "Hacker News",
+  iconvar: /*#__PURE__*/React__default['default'].createElement(si.SiYcombinator, null),
+  linkBase: "https://news.ycombinator.com/submitlink",
+  textConnect: "t",
+  linkConnect: "u"
+}; // 1linkedin
+
+var lnkeos = {
+  iconvar: /*#__PURE__*/React__default['default'].createElement(si.SiLinkedin, null),
+  linkBase: "https://www.linkedin.com/sharing/share-offsite",
+  toolText: "Linkedin",
+  // textConnect: "url",
+  linkConnect: "url",
+  summaryVar: "summary",
+  styleIcon: {
+    color: "white",
+    background: "#0e76a8"
+  }
+}; // 1google
+
+var ggge = {
+  iconvar: /*#__PURE__*/React__default['default'].createElement(si.SiGoogle, null),
+  toolText: "Google",
+  linkBase: "https://www.google.com/search",
+  textConnect: "q"
+}; // 1embed
+
+var okfgfd =
+/*#__PURE__*/
+//
+//  <ImEmbed2/>
+React__default['default'].createElement(fa.FaCode, null);
+var dkewqew = {
+  iconvar: okfgfd,
+  toolText: "Embed",
+  copyLink: true
+}; // 1whatsapp
+
+var whstConfo = {
+  // linkBase: "https://api.whatsapp.com/send/?phone",
+  linkBase: "https://web.whatsapp.com/send",
+  textConnect: "text",
+  toolText: "Whatsapp",
+  iconvar: /*#__PURE__*/React__default['default'].createElement(si.SiWhatsapp, null),
+  styleIcon: {
+    color: "white",
+    background: "#128C7E"
+  }
+}; // 1facebook
+
+var fceConfo = {
+  linkBase: "https://www.facebook.com/sharer/sharer.php",
+  // textConnect: "u",
+  linkConnect: "u",
+  typevar: "facebook",
+  toolText: "Facebook",
+  iconvar: /*#__PURE__*/React__default['default'].createElement(si.SiFacebook, null),
+  styleIcon: {
+    color: "white",
+    background: "#3b5998"
+  }
+}; // 1telegram
+
+var teldsofe = {
+  linkBase: "https://t.me/share/url",
+  textConnect: "text",
+  linkConnect: "url"
+}; // 1copy
+
+var cppyo = {
+  // toolText: "Copy link to Clipboard",
+  // noLink: true,
+  toolText: "Copy Link",
+  copyLink: true,
+  iconvar: /*#__PURE__*/React__default['default'].createElement(ai.AiOutlineCopy, null)
+};
+var socialListDict = {
+  facebook: fceConfo,
+  telegram: teldsofe,
+  // messenger: {
+  //   iconvar: "messenger",
+  //   linkBase: "https://www.messenger.com/t/",
+  //   // textConnect: "t",
+  //   // linkConnect: "u",
+  // },
+  copy: cppyo,
+  embed: dkewqew,
+  quote: {
+    noLink: true,
+    iconvar: "quote",
+    toolText: "Copy Quote"
+  },
+  whatsapp: whstConfo,
+  email: {
+    linkBase: "mailto:",
+    titlevar: "subject",
+    textConnect: "body"
+  },
+  //   1twitter
+  twitter: skeweewr,
+  twitterdm: _objectSpread2(_objectSpread2({}, skeweewr), {}, {
+    linkBase: twittDirectLink,
+    toolText: "Twitter DM"
+  }),
+  reddit: rddito,
+  hackerNews: hckn,
+  linkedin: lnkeos,
+  google: ggge,
+  slack: {//
+  },
+  skype: {//
+  },
+  instagram: {//
+  },
+  wechat: {
+    iconvar: "weixin"
+  },
+  weibo: {//
+  },
+  qq: {//
+  }
+};
+
+//
+function linkOrdse(_ref) {
+  var typevar = _ref.typevar,
+      textvar = _ref.textvar,
+      linkvar = _ref.linkvar,
+      linkBase = _ref.linkBase,
+      linkConnect = _ref.linkConnect,
+      textConnect = _ref.textConnect;
+  linkvar = encodeURIComponent(linkvar);
+  var twitTure = typevar == "twitter";
+  var noLink = twitTure;
+  var showLink = //
+  !noLink && linkConnect;
+  var tnstFinal = //
+  twitTure ? textvar + " " + linkvar : textvar;
+  tnstFinal = encodeURIComponent(tnstFinal);
+  var linkeo = //
+  linkvar; // encodeURIComponent(linkvar)
+
+  var bsaeio = showLink && bediaShared.joinString([//
+  linkConnect, linkeo], "=");
+  var txtooeio = textConnect && bediaShared.joinString([//
+  textConnect, tnstFinal], "=");
+  var ihjtt = [//
+  txtooeio, bsaeio];
+  var linksiw = bediaShared.joinString(ihjtt, "&"); // const okasew = linkBase
+
+  var sadije = bediaShared.joinString([//
+  linkBase, "?", linksiw]);
+  var didsfe = //
+  sadije; // encodeURIComponent(sadije);
+
+  bediaShared.logs.logga("___ linkOrdse-zzz ___", didsfe);
+  return didsfe;
+}
+
+function BearSocial(_ref) {
+  var shareLink = _ref.shareLink,
+      shareText = _ref.shareText,
+      userText = _ref.userText,
+      iconSide = _ref.iconSide,
+      nameTrue = _ref.nameTrue,
+      iconPop = _ref.iconPop,
+      iconStyle = _ref.iconStyle,
+      embedCode = _ref.embedCode,
+      itemConfig = _ref.itemConfig,
+      sdfsrew = _objectWithoutProperties(_ref, ["shareLink", "shareText", "userText", "iconSide", "nameTrue", "iconPop", "iconStyle", "embedCode", "itemConfig"]);
+
+  // 1const
+  var _useState = React.useState(""),
+      _useState2 = _slicedToArray(_useState, 2);
+      _useState2[0];
+      _useState2[1];
+
+  var _useState3 = React.useState(),
+      _useState4 = _slicedToArray(_useState3, 2),
+      cosNamB = _useState4[0];
+      _useState4[1];
+
+  var sodkfwe = "asdqweqs";
+  userText = cosNamB ? cosNamB : userText; // userText = "okwqeasd sodkdsfo";
+
+  var sdokfwe = userText ? "&".concat(_.linkuseNameProvide, "=").concat(userText) : "";
+  shareLink = //
+  // shareLink + "sdokfwe";
+  shareLink + sdokfwe;
+
+  function iasjde(_ref2) {
+    var typevar = _ref2.typevar,
+        iconvar = _ref2.iconvar;
+        _ref2.iconText;
+        _ref2.textvar;
+        var toolText = _ref2.toolText,
+        styleIcon = _ref2.styleIcon,
+        style = _ref2.style;
+        _ref2.copyLink;
+        var asswd = _objectWithoutProperties(_ref2, ["typevar", "iconvar", "iconText", "textvar", "toolText", "styleIcon", "style", "copyLink"]);
+
+    // toolText = "Share on " + toolText;
+    var ijsaew = _objectSpread2({
+      typevar: typevar,
+      textvar: shareText,
+      linkvar: shareLink
+    }, asswd); // endValue = {
+    //   copyLink {
+    //     copyText: shareLink,
+    //   } : {
+    //   linkvar: linkOrdse(ijsaew)}
+
+
+    var endValue = "";
+
+    switch (typevar) {
+      case "copy":
+        endValue = {
+          copyConfig: {
+            copyMessage: "Copied Link",
+            copyText: shareLink
+          }
+        };
+        break;
+
+      case "embed":
+        endValue = {
+          copyConfig: {
+            copyMessage: "Copied Embed Code!",
+            copyText: embedCode
+          }
+        };
+        break;
+
+      default:
+        endValue = _objectSpread2({}, _.getBlankLink(linkOrdse(ijsaew)));
+    }
+
+    _objectSpread2({}, style);
+
+    /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null);
+    var mainIco = {
+      iconConfig: {
+        style: _objectSpread2(_objectSpread2({
+          fontSize: "0.9em",
+          // width: "50px",
+          // height: "50px",
+          borderRadius: "60%",
+          padding: "10px"
+        }, styleIcon), iconStyle)
+      }
+    };
+
+    var saewawe = iconSide && _objectSpread2({
+      textvar: toolText
+    }, mainIco);
+
+    var ikasde = iconPop && {
+      popConfig: {
+        trigger: "click",
+        content: toolText
+      }
+    };
+
+    var jsaease = _objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2({}, saewawe), ikasde), itemConfig), endValue), mainIco), {}, {
+      iconvar: iconvar,
+      // textvar: toolText,
+      // leftobj: iconvar,
+      noVertTop: true,
+      // popContent: toolText,
+      padvar: 5
+    });
+
+    var gfnmeir = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(BearTextMedia, jsaease));
+    var sdjerw = //
+    typevar == "facebook"; // true
+
+    if (sdjerw) {
+      // 1console
+      _.logs.logga(typevar + "___ Link Social BASIC ___", ijsaew);
+      _.logs.logga(typevar + "___ns Link Social FULL ___", jsaease);
+      _.logs.logga(typevar, "___ mainIco ___", mainIco);
+    }
+
+    return gfnmeir;
+  }
+  var okaasad = [//
+  "facebook", "twitter", "whatsapp", "reddit", "hackernews", "embed", "copy"];
+
+  function sadqwe(cvdfa) {
+    //
+    var osdasew = //
+    iasjde(cvdfa); // "qplwqe";
+
+    return osdasew;
+  }
+
+  var ijsadwe = _objectSpread2({
+    dictvar: socialListDict,
+    listvar: okaasad,
+    renderItem: sadqwe,
+    typeTrue: "t",
+    iconSide: iconSide
+  }, sdfsrew);
+
+  _.logs.logga("___ LISTSOCIAL ___", ijsadwe);
+
+  function NameSingio() {
+    function asokds(sdfer) {
+      _.logs.logga("___ setcosNamB ___", sdfer); // setcosNamB(sdfer);
+    }
+
+    var okasew = {
+      formid: sodkfwe,
+      // onSubmit: subopens,
+      onChange: asokds,
+      singleTrue: true,
+      noButton: true,
+      listvar: [{
+        name: "name"
+      }]
+    };
+    var vcbfd = /*#__PURE__*/React__default['default'].createElement(BearForm, okasew);
+    return vcbfd;
+  }
+
+  var tkdf = nameTrue && /*#__PURE__*/React__default['default'].createElement(NameSingio, null);
+  var ijsaddsf = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, tkdf, /*#__PURE__*/React__default['default'].createElement(BearList, ijsadwe)); //
+
+  return ijsaddsf;
+} // let oaskdwe = `<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@charlidamelio/video/6772082062670204166" data-video-id="6772082062670204166" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@charlidamelio" href="https://www.tiktok.com/@charlidamelio">@charlidamelio</a> <p>i am now in the car on the way to the airport just an update</p> <a target="_blank" title="♬ original sound - ❗️Arkansas boy😁👋🏽" href="https://www.tiktok.com/music/original-sound-6755923489514965766">♬ original sound - ❗️Arkansas boy😁👋🏽</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>`;
 
 function BearSelect(_ref) {
   var noMulti = _ref.noMulti;
@@ -1718,1292 +3759,6 @@ function BearSelect(_ref) {
 // placeholder - change the text displayed when no option is selected
 // value - control the current value
 
-// import { BearButton } from "./BearButton";
-// import BearSelect from "./BearSelect";
-// import SearchFormFields from "../containers/search/SearchFormFields";
-
-function BearInput(_ref) {
-  var textConfig = _ref.textConfig,
-      titleConfig = _ref.titleConfig,
-      textvar = _ref.textvar;
-      _ref.errorobj;
-      var noInput = _ref.noInput;
-      _ref.onInput;
-      var requireClass = _ref.requireClass,
-      noTitle = _ref.noTitle,
-      checked = _ref.checked,
-      control = _ref.control,
-      inputObj = _ref.inputObj,
-      inputFunction = _ref.inputFunction,
-      inputObjectFunction = _ref.inputObjectFunction;
-      _ref.selectTrue;
-      var style = _ref.style;
-      _ref.onChange;
-      var obj = _ref.obj,
-      ref = _ref.ref,
-      required = _ref.required,
-      name = _ref.name,
-      fontSize = _ref.fontSize,
-      sameLine = _ref.sameLine,
-      newTrue = _ref.newTrue,
-      initialValue = _ref.initialValue;
-      _ref.selectvar;
-      var rightSubmit = _ref.rightSubmit,
-      inputType = _ref.inputType,
-      rows = _ref.rows,
-      titlevar = _ref.titlevar;
-      _ref.placeholder;
-      var subtitlevar = _ref.subtitlevar,
-      errors = _ref.errors,
-      iconvar = _ref.iconvar;
-      _ref.checkList;
-      _ref.checklistTitle;
-      var lineBelow = _ref.lineBelow,
-      addFunc = _ref.addFunc,
-      _ref$titleWidth = _ref.titleWidth,
-      titleWidth = _ref$titleWidth === void 0 ? "160px" : _ref$titleWidth,
-      dfsgre = _objectWithoutProperties(_ref, ["textConfig", "titleConfig", "textvar", "errorobj", "noInput", "onInput", "requireClass", "noTitle", "checked", "control", "inputObj", "inputFunction", "inputObjectFunction", "selectTrue", "style", "onChange", "obj", "ref", "required", "name", "fontSize", "sameLine", "newTrue", "initialValue", "selectvar", "rightSubmit", "inputType", "rows", "titlevar", "placeholder", "subtitlevar", "errors", "iconvar", "checkList", "checklistTitle", "lineBelow", "addFunc", "titleWidth"]);
-
-  _.logs.logga("___Asidnw obj ___", obj); // 1const
-
-  var _useState = React.useState(),
-      _useState2 = _slicedToArray(_useState, 2);
-      _useState2[0];
-      _useState2[1];
-
-  var _useState3 = React.useState(checked),
-      _useState4 = _slicedToArray(_useState3, 2);
-      _useState4[0];
-      _useState4[1];
-
-  var _useState5 = React.useState(initialValue),
-      _useState6 = _slicedToArray(_useState5, 2);
-      _useState6[0];
-      _useState6[1];
-
-  var asw = //
-  // "";
-  errors && errors[name] && errors[name]["message"];
-  fontSize = fontSize ? fontSize : 18;
-
-  var ashwe = _objectSpread2({
-    width: "100%",
-    fontSize: fontSize,
-    padding: "0px 5px"
-  }, style);
-
-  var daezxv = {
-    //
-    fontSize: "1.1em",
-    width: "100%"
-  };
-  var ijdsew = //
-  // required
-  requireClass && required;
-  var slasso = ijdsew ? "required" : "";
-
-  function getRef(rfo) {
-    return {
-      ref: rfo,
-      inputRef: rfo,
-      innerRef: rfo
-    };
-  }
-
-  var sdweew = _objectSpread2({
-    name: name,
-    id: name,
-    className: slasso
-  }, getRef(ref));
-
-  var cntrMan = _objectSpread2({
-    control: control
-  }, sdweew);
-
-  var objbase = _objectSpread2(_objectSpread2(_objectSpread2({}, dfsgre), sdweew), {}, {
-    // ...cntrMan,
-    fontSize: fontSize,
-    errorobj: asw,
-    textvar: textvar,
-    required: required,
-    innerRef: {
-      required: required
-    },
-    // ...changBssoe,
-    style: daezxv
-  });
-  // 1console
-
-  function logros() {
-
-    {
-      for (var _len = arguments.length, asa = new Array(_len), _key = 0; _key < _len; _key++) {
-        asa[_key] = arguments[_key];
-      }
-
-      _.logs.logga.apply(_.logs, [name + "___BearForm--INPUT------zzz"].concat(asa));
-    }
-  } //
-  //
-
-
-  var ujsdqwe = ""; //
-
-  function retFunc() {
-    switch (inputType) {
-      case "select":
-        break;
-
-      case "selectable":
-        var dfdsawe = _objectSpread2({}, objbase);
-
-        ujsdqwe = /*#__PURE__*/React__default['default'].createElement(CreatableSelect, dfdsawe);
-        break;
-
-      case "textarea":
-        // 1rows
-        rows = rows ? rows : 3;
-
-        var ijsdfasd = _objectSpread2(_objectSpread2({
-          rows: rows,
-          minRows: rows,
-          defaultValue: textvar
-        }, objbase), textConfig); // const sadije = innerRef({ required: required }
-
-
-        _.logs.logga(textvar + "___ INPUTBASE TEXTAREA ___", ijsdfasd);
-        // ujsdqwe = <TextareaAutosize autoFocus />;
-
-        ujsdqwe = /*#__PURE__*/React__default['default'].createElement(TextareaAutosize__default['default'], ijsdfasd); // {textvar}</TextareaAutosize>;
-        // ujsdqwe = <textarea {...ijsdfasd} />;
-        // ujsdqwe = <textarea {...ijsdfasd}>{textvar}</textarea>;
-        // ujsdqwe = "";
-
-        break;
-
-      case "checkboxList":
-        //
-        ujsdqwe = "ijadqwoek";
-      // ujsdqwe = <input {...dsoadkw0} />;
-
-      case "checkbox":
-        _objectSpread2({
-          type: "checkbox"
-        }, objbase); // const okaswe;
-
-
-        var isawe = {
-          type: "checkbox" // {...dsoadkw0}
-
-        };
-        var ijasdwe = {
-          obj: textvar,
-          style: {
-            marginRight: "10px"
-          }
-        };
-        var dsf9jewr = /*#__PURE__*/React__default['default'].createElement(BearDiv$1, ijasdwe);
-        ujsdqwe = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement("input", isawe), " ", dsf9jewr);
-        break;
-
-      default:
-        // textvar = "DEFAULT TEXT";
-        var ijawe = _objectSpread2({
-          // type: "text",
-          // height: "10px"
-          rows: 1,
-          autocomplete: "off",
-          className: "noresize"
-        }, objbase);
-
-        _.logs.logga(name + "___ inputBase--INPUT ___", ijawe); // 1input
-
-        ujsdqwe = noInput ? "" : textvar ?
-        /*#__PURE__*/
-        //
-        // <gens.StInput {...objbase}>{textvar}</gens.StInput>
-        React__default['default'].createElement("textarea", ijawe, textvar) :
-        /*#__PURE__*/
-        // <input {...ijawe}>{textvar}</input>
-        // <input {...ijawe} />
-        // <textarea {...ijawe}>{textvar}</textarea>
-        // <gens.StInput {...ijawe} />
-        // <input {...ijawe} />
-        React__default['default'].createElement("input", ijawe);
-    }
-
-    return ujsdqwe;
-  }
-
-  function ChooseTit() {
-    var ijasde = //
-    ""; // <SearchFormFields {...isade} />;
-
-    return ijasde;
-  } // 1title
-
-
-  function TitleOBbi(_ref2) {
-    var style = _ref2.style;
-        _objectWithoutProperties(_ref2, ["style"]);
-
-    //
-    var skdowqe = sameLine ? {
-      //
-      fontSize: "1.15em",
-      minWidth: titleWidth,
-      marginTop: "-10px"
-    } : {
-      //
-      fontSize: "1.15em"
-    };
-
-    var iawqe = _objectSpread2(_objectSpread2({}, skdowqe), {}, {
-      fontWeight: "bold"
-    }, style);
-
-    var ijweq = {
-      obj: " *",
-      style: {
-        color: "red"
-      }
-    };
-    var aokdwe = //
-    ijdsew ? /*#__PURE__*/React__default['default'].createElement(BearDiv$1, _extends({
-      spanTrue: true
-    }, ijweq)) : "";
-    var olbknfr = {
-      fontSize: "0.7em",
-      color: "red",
-      marginLeft: "10px" // className: "error",
-
-    };
-    var asdwe = {
-      obj: asw,
-      className: "error",
-      style: olbknfr
-    };
-    var bnkifg = /*#__PURE__*/React__default['default'].createElement(BearDiv$1, _extends({
-      spanTrue: true
-    }, asdwe)); // TITLE MAIN
-
-    var okasde = //
-    newTrue ? ChooseTit() : /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, iconvar, " ", titlevar);
-    var ioakawe = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, okasde, aokdwe, bnkifg);
-
-    function BswTi() {
-      var cvobkof = {
-        className: "shadowHover pointer",
-        onClick: addFunc,
-        obj: BearIcon("➕", ""),
-        style: {
-          padding: "5px",
-          marginTop: "-5px",
-          fontSize: "0.8em" // marginLeft: "20px",
-
-        }
-      };
-      var dfigjrt = /*#__PURE__*/React__default['default'].createElement(BearDiv$1, cvobkof);
-      var kcmdr = {
-        centerobj: ioakawe,
-        rightobj: dfigjrt
-      };
-      var ijcwe = BearFloat(kcmdr);
-      return ijcwe;
-    }
-
-    var ijsae = addFunc ? BswTi() : ioakawe;
-
-    var asdojwqs = _objectSpread2(_objectSpread2({
-      obj: ijsae,
-      // textvar: ioakawe,
-      iconvar: iconvar,
-      noImage: !iconvar,
-      noIcon: !iconvar
-    }, titleConfig), {}, {
-      style: iawqe // noText: true,
-      // disVar: true,
-
-    });
-
-    _.logs.logga(name + "___ inpuBase TITLE CONF ___", asdojwqs);
-    var seokwer =
-    /*#__PURE__*/
-    //
-    // <ImageTextDiv {...asdojwqs} />
-    // <BediaTextDiv {...asdojwqs} />
-    React__default['default'].createElement(BearDiv$1, asdojwqs);
-
-    function Subtoter() {
-      var ikawed = {
-        fontSize: "0.8em"
-      };
-      var okawe = {
-        obj: subtitlevar,
-        style: ikawed
-      };
-      var uiajwe = /*#__PURE__*/React__default['default'].createElement(BearDiv$1, okawe);
-      return uiajwe;
-    }
-
-    var ijawe = subtitlevar && /*#__PURE__*/React__default['default'].createElement(Subtoter, null);
-    var sdfgret = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, seokwer, ijawe);
-    var kase = {
-      padding: "10px 0",
-      textAlign: "left"
-    };
-    var isawqe = {
-      obj: sdfgret,
-      style: kase
-    };
-    return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, isawqe);
-  }
-
-  var showTit = //
-  // true;
-  !noTitle && titlevar;
-  var oksdwqe = showTit && /*#__PURE__*/React__default['default'].createElement(TitleOBbi, titleConfig);
-  var confijre = {
-    size: "sm",
-    type: "submit",
-    obj: "YES"
-  };
-
-  function goCont(goObj) {
-    // inputFunction(objbase)
-    function inEar(_ref3) {
-      var _ref3$field = _ref3.field,
-          ref = _ref3$field.ref;
-          _ref3$field.value;
-          var field = _objectWithoutProperties(_ref3$field, ["ref", "value"]);
-
-      var sfeqwwe = _objectSpread2(_objectSpread2(_objectSpread2({}, objbase), field), getRef(ref));
-
-      logros("___ BearCont CONTROL field ___", field);
-      logros("___ BerInot ___", sfeqwwe);
-      var dfigjew = //
-      inputFunction(sfeqwwe); // BearSelect(sfeqwwe);
-
-      return dfigjew;
-    }
-
-    var asod = //
-    reactHookForm.Controller(_objectSpread2(_objectSpread2({}, cntrMan), {}, {
-      render: inEar
-    }));
-    return asod;
-  }
-
-  ujsdqwe = inputObj ? inputObj : inputFunction ? goCont() : inputObjectFunction ? inputObjectFunction(retFunc()) : retFunc();
-  var jaewdsr = {
-    rightobj: /*#__PURE__*/React__default['default'].createElement(BearButton$1, confijre),
-    centerobj: ujsdqwe
-  }; // rightSubmit = true;
-
-  var asdijwe = rightSubmit ?
-  /*#__PURE__*/
-  //
-  React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(BearFloat, jaewdsr)) : ujsdqwe;
-  _.logs.logga("___ ujsdqwe ___", ujsdqwe);
-  _.logs.logga("___ asdijwe ___", asdijwe);
-  var ijsa = {
-    style: ashwe
-  };
-  var okdsae = {
-    style: {
-      width: "100%"
-    }
-  }; // lineBelow = true;
-
-  var xvcmfde = lineBelow && /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement("hr", null));
-  var okaweasd = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, oksdwqe, /*#__PURE__*/React__default['default'].createElement("div", okdsae, asdijwe));
-
-  function asdowe() {
-    return okaweasd;
-  }
-
-  var ijdas = sameLine ? /*#__PURE__*/React__default['default'].createElement(Flex, ijsa, asdowe()) : /*#__PURE__*/React__default['default'].createElement("div", ijsa, okaweasd);
-  var kaosdew = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, ijdas, xvcmfde);
-  return kaosdew;
-}
-
-function BearForm(_ref) {
-  var noButton = _ref.noButton;
-      _ref.noText;
-      var listDict = _ref.listDict,
-      buttonText = _ref.buttonText;
-      _ref.subtitleConfig;
-      _ref.textConfig;
-      var overObj = _ref.overObj,
-      listvar = _ref.listvar,
-      _ref$buttonSize = _ref.buttonSize,
-      buttonSize = _ref$buttonSize === void 0 ? "35px" : _ref$buttonSize,
-      inputConfig = _ref.inputConfig,
-      buttonConfig = _ref.buttonConfig,
-      toplist = _ref.toplist,
-      noForm = _ref.noForm,
-      dictvar = _ref.dictvar,
-      formid = _ref.formid;
-      _ref.headerObj;
-      _ref.singleTrue;
-      _ref.headerConfig;
-      _ref.logtrue;
-      var tabConfig = _ref.tabConfig,
-      schemavar = _ref.schemavar,
-      hookConfig = _ref.hookConfig;
-      _ref.typeForm;
-      var sameLine = _ref.sameLine;
-      _ref.topButtonConfig;
-      _ref.ImageTextList;
-      var topButtonTrue = _ref.topButtonTrue,
-      onSubmit = _ref.onSubmit;
-      _ref.submitExtra;
-      var topObj = _ref.topObj;
-      _ref.marginBetween;
-      var titlevar = _ref.titlevar,
-      titleConfig = _ref.titleConfig,
-      args = _objectWithoutProperties(_ref, ["noButton", "noText", "listDict", "buttonText", "subtitleConfig", "textConfig", "overObj", "listvar", "buttonSize", "inputConfig", "buttonConfig", "toplist", "noForm", "dictvar", "formid", "headerObj", "singleTrue", "headerConfig", "logtrue", "tabConfig", "schemavar", "hookConfig", "typeForm", "sameLine", "topButtonConfig", "ImageTextList", "topButtonTrue", "onSubmit", "submitExtra", "topObj", "marginBetween", "titlevar", "titleConfig"]);
-
-  //
-  //
-  var nameMessError = //
-  ""; // "Please add your name."
-
-  schemavar = _objectSpread2({
-    name: yup__namespace.string() //
-    // .match("")
-    .required(nameMessError),
-    email: yup__namespace.string().email("This is not a valid email.").required("Please add your email.")
-  }, schemavar);
-  var finsaShc = //
-  // schemavar
-  {};
-
-  function asifjew(asdofj) {
-    finsaShc[asdofj] = schemavar[asdofj];
-  }
-
-  listvar.map(asifjew);
-  yup__namespace.object().shape(finsaShc);
-
-  var oksdaew = _objectSpread2({
-    // validationSchema: schemaYup
-    // mode: "onBlur",
-    // reValidateMode: "onChange",
-    mode: "onSubmit",
-    reValidateMode: "onChange"
-  }, hookConfig);
-
-  var _useForm = //
-  // "";
-  reactHookForm.useForm(oksdaew),
-      handleSubmit = _useForm.handleSubmit,
-      register = _useForm.register,
-      errors = _useForm.errors,
-      control = _useForm.control;
-      _useForm.watch;
-      _objectWithoutProperties(_useForm, ["handleSubmit", "register", "errors", "control", "watch"]);
-
-
-  function subbTo(values) {
-    //
-    !lodash.isEmpty(values);
-    onSubmit(values); // parsVal(values);
-    //
-    // if (trudsoe) {
-    //   onSubmit(values);
-    //   parsVal(values);
-    // }
-    //
-  }
-  args = _objectSpread2(_objectSpread2({}, args), {}, {
-    id: formid,
-    // onSubmit: subbTo,
-    onSubmit: handleSubmit(subbTo)
-  });
-
-  function Buttiona(_ref2) {
-    var siwerew = _extends({}, _ref2);
-
-    //
-    var aewsadw = {
-      style: {
-        margin: "20px"
-      }
-    }; //
-
-    var jsadcvx = {
-      // width: "100%",
-      fontSize: buttonSize
-    }; //
-
-    var dvbijkrw = _objectSpread2({
-      type: "submit",
-      textAlign: "center",
-      form: formid,
-      // color: "black",
-      // height: "60px",
-      // padding: "10px 20px",
-      style: jsadcvx,
-      genConfig: aewsadw,
-      obj: buttonText,
-      longTrue: true
-    }, siwerew);
-    var adhwdse =
-    /*#__PURE__*/
-    //
-    React__default['default'].createElement(BearButton$1, dvbijkrw) // <button {...dvbijkrw}>sdfjwerw</button>
-    ;
-    var asidja = {
-      obj: adhwdse,
-      style: {
-        marginBottom: "20px",
-        textAlign: "center"
-      }
-    };
-    return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, asidja);
-  }
-
-  function FormError(textvar) {
-    var okaease = {
-      obj: textvar
-    };
-    var dfbokerr = /*#__PURE__*/React__default['default'].createElement(BearDiv$1, okaease);
-    return dfbokerr;
-  }
-
-  function firstInputCheck(baseObj) {
-    //
-    var nameeo = baseObj.name;
-
-    var okwaew = nameeo ? secondCheck(baseObj) : FormError("No Form Name Supplied");
-    return okwaew;
-  } // 1FUNCTION
-
-
-  function secondCheck(_ref3) {
-    var baseObj = _extends({}, _ref3);
-    var nameeo = baseObj["name"];
-    var titlCheck = topButtonTrue && {
-      noTitle: true
-    };
-
-    function getRef(_ref4) {
-      var name = _ref4.name;
-          _ref4.titlevar;
-          _ref4.iconvar;
-          var asdsa = _objectWithoutProperties(_ref4, ["name", "titlevar", "iconvar"]);
-
-      //
-      var reffo = //
-      // register("name");
-      register(name, asdsa);
-      return reffo;
-    }
-
-    var okasew = getRef(baseObj);
-
-    var hookArgs = _objectSpread2({
-      control: control,
-      errors: errors
-    }, okasew);
-
-    var existo = overObj && overObj[nameeo];
-    var ijawe = existo ? existo : baseObj["textvar"];
-
-    var odkasew = _objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2({}, hookArgs), {}, {
-      sameLine: sameLine,
-      overObj: overObj
-    }, baseObj), inputConfig), titlCheck), {}, {
-      textvar: ijawe
-    });
-
-
-    var oiaswe = BearInput(odkasew);
-    return oiaswe;
-  }
-
-  function sdfok(obj) {
-    var inDict = dictvar && dictvar[obj];
-
-    var baseObj = _objectSpread2(_objectSpread2({}, getFormDict(obj)), inDict);
-
-    var fdjgre = baseObj.obj;
-    var obvdsaf = fdjgre ? fdjgre : lodash.isEmpty(baseObj) ? FormError("no form Dictionary supplied - " + obj) : firstInputCheck(baseObj);
-    return obvdsaf;
-  } //   const [currTab, setcurrTab] = useState(initBase);
-
-
-  var currTab = "";
-  var currForm = currTab;
-  topButtonTrue && listvar[0];
-  var listRend = listDict && listDict[currForm];
-  var atbosa = listRend ? listRend : currForm;
-  var listaros = topButtonTrue ? [atbosa] : listvar;
-  var ijawesdafr = {
-    dictvar: dictvar,
-    listvar: listvar
-  };
-  var buttio = !noButton && /*#__PURE__*/React__default['default'].createElement(Buttiona, buttonConfig);
-
-  function vijsd9(_ref5) {
-    _ref5.name;
-        _objectWithoutProperties(_ref5, ["name"]);
-  }
-
-  function iasjdwe(obj) {
-    // const chsersd = checkTick()
-    var kadwesd = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, obj["tabTitle"]);
-    return kadwesd;
-  }
-
-  function Tabios() {
-    var bdoewr = //
-    "greyHover pointer";
-    var okae = {
-      margin: "10px",
-      borderRadius: "20px"
-    };
-    var oksae = {
-      chosenConfig: {
-        bediaTrue: true
-      },
-      itemConfig: {
-        style: okae,
-        className: bdoewr
-      }
-    };
-
-    function aidsjfew(_ref6) {
-      var titlevar = _ref6.titlevar,
-          iconvar = _ref6.iconvar,
-          style = _ref6.style,
-          zcvdf = _objectWithoutProperties(_ref6, ["titlevar", "iconvar", "style"]);
-      var okawe = {
-        style: {
-          fontSize: "1.5em"
-        },
-        obj: iconvar
-      };
-      var lpsda = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(BearDiv$1, okawe), titlevar);
-      style["textAlign"] = "center";
-
-      _objectSpread2(_objectSpread2({
-        style: style
-      }, zcvdf), {}, {
-        obj: lpsda
-      });
-
-      return lpsda; //   return <BearDiv {...oaewc} />;
-      // return "oskdasd";
-    }
-
-    var asodwe = _objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2({
-      onClick: vijsd9,
-      singleClick: true,
-      horizTrue: true,
-      chosenItem: currTab,
-      // titleAttr: "tabTitle",
-      titleFunc: iasjdwe
-    }, oksae), ijawesdafr), tabConfig), {}, {
-      obj: aidsjfew // obj: (adqq) => "aspdle",
-
-    });
-    var okfdsd = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(BearList$1, asodwe));
-    return okfdsd;
-  }
-
-  function maperlis(sdfew) {
-    return sdfew.map(sdfok);
-  }
-
-  var kaewsae = maperlis(listaros);
-  var sudhawe = topButtonTrue ? /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(Tabios, null), kaewsae) : kaewsae;
-  /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, sudhawe);
-  var iterwr = toplist;
-  var mappit = iterwr ? /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, maperlis(toplist), /*#__PURE__*/React__default['default'].createElement("br", null), sudhawe) : /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, sudhawe);
-  var aidjwe = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, topObj, mappit, buttio);
-
-  _objectSpread2(_objectSpread2({}, args), {}, {
-    listvar: listvar,
-    listaros: listaros
-  }); // 1console
-  var aweuw = noForm ? aidjwe : formid ? /*#__PURE__*/React__default['default'].createElement("form", args, aidjwe) : "NO FORM ID SPECIFIED";
-
-  function Titren(_ref7) {
-    var style = _ref7.style,
-        sdfok = _objectWithoutProperties(_ref7, ["style"]);
-
-    var kjase = _objectSpread2({
-      style: _objectSpread2({
-        textAlign: "left",
-        fontSize: "1.3em",
-        marginBottom: "30px"
-      }, style),
-      obj: titlevar
-    }, sdfok); // const sdfijre =
-
-
-    var noisae = /*#__PURE__*/React__default['default'].createElement(BearDiv$1, kjase);
-    return noisae;
-  }
-
-  var askew = titlevar && /*#__PURE__*/React__default['default'].createElement(Titren, titleConfig);
-  var vbokre = {//
-  };
-  var isae = /*#__PURE__*/React__default['default'].createElement("div", vbokre, askew, aweuw);
-  var isjdwesdfoek = //
-  isae; // aweuw;
-  // <div {...genConfig}>{aweuw}</div>;
-
-  return isjdwesdfoek;
-}
-
-function getFormDict(objsoa) {
-  var _emalBaso;
-
-  var vbijdf9te = //
-  "Email"; // ("Email address");
-  var emalBaso = (_emalBaso = {
-    required: true,
-    // pattern: emailPatto,
-    titlevar: "Email address"
-  }, _defineProperty(_emalBaso, "titlevar", vbijdf9te), _defineProperty(_emalBaso, "iconvar", "email"), _emalBaso);
-  var nasmwoBL = {
-    required: true,
-    // pattern: emailPatto,
-    name: "name",
-    titlevar: "Name",
-    // titlevar: vbijdf9te,
-    iconvar: "" // iconvar: "email",
-
-  };
-  var diewrsm = {
-    required: true,
-    name: "password",
-    titlevar: "Password",
-    type: "password"
-  }; //  1tags
-
-  var tgsoer = {
-    name: "tags",
-    titlevar: "Tags"
-  };
-  var nvcbxf = {
-    email: emalBaso,
-    name: nasmwoBL,
-    password: diewrsm,
-    tags: tgsoer // firstname:
-    // lastname:
-
-  };
-  var ocvbds = nvcbxf[objsoa];
-  return ocvbds;
-}
-
-function SignBase(_ref) {
-  var funcvar = _ref.funcvar,
-      _ref$typeSign = _ref.typeSign,
-      typeSign = _ref$typeSign === void 0 ? "login" : _ref$typeSign,
-      socialConfig = _ref.socialConfig,
-      socialSubmit = _ref.socialSubmit;
-      _ref.emailSubmit;
-      var socialList = _ref.socialList,
-      formConfig = _ref.formConfig,
-      sdse = _objectWithoutProperties(_ref, ["funcvar", "typeSign", "socialConfig", "socialSubmit", "emailSubmit", "socialList", "formConfig"]);
-
-  //
-  //
-  var _useState = React.useState(),
-      _useState2 = _slicedToArray(_useState, 2),
-      emaTrue = _useState2[0],
-      setemaTrue = _useState2[1];
-
-  var _useState3 = React.useState(typeSign),
-      _useState4 = _slicedToArray(_useState3, 2),
-      sdfer = _useState4[0],
-      setsignType = _useState4[1];
-
-  var signType = sdfer ? sdfer : _.getParamVar("typeSign");
-
-  function signCheck(typevar) {
-    var okads = //
-    // "";
-    "Continue with " + typevar; // switch (signType) {
-    //   case "login":
-    //     okads = "Log in with " + typevar;
-    //     break;
-    //   case "signup":
-    //     okads = "Sign up with " + typevar;
-    //     break;
-    // }
-
-    return okads;
-  } // 1emailbase
-
-
-  var emaCon = {
-    text: signCheck("Email"),
-    icon: "envelope",
-    iconFormat: function iconFormat(name) {
-      return "fa fa-envelope";
-    },
-    style: {
-      background: "#FF5733"
-    },
-    activeStyle: {
-      background: "#ff6700"
-    }
-  };
-  /** My Facebook login button. */
-
-  var EmailLoginButton = reactSocialLoginButtons.createButton(emaCon);
-
-  function dskwad() {
-    _.logs.logga("asokdwqe");
-  }
-
-  var emBaso = {
-    textvar: /*#__PURE__*/React__default['default'].createElement(EmailLoginButton, null),
-    onClick: dskwad,
-    typevar: "email"
-  };
-  var fdsogkret = {
-    google: {
-      textvar: /*#__PURE__*/React__default['default'].createElement(reactSocialLoginButtons.GoogleLoginButton, null, signCheck("Google")),
-      // textvar: "Google",
-      iconvar: /*#__PURE__*/React__default['default'].createElement(si.SiGoogle, null),
-      typevar: "google"
-    },
-    facebook: {
-      textvar: /*#__PURE__*/React__default['default'].createElement(reactSocialLoginButtons.FacebookLoginButton, null, signCheck("Facebook")),
-      // textvar: "Facebook",
-      // iconvar: <SiFacebook />,
-      typevar: "facebook"
-    },
-    email: emBaso,
-    github: {
-      textvar: /*#__PURE__*/React__default['default'].createElement(reactSocialLoginButtons.GithubLoginButton, null),
-      // textvar: "Twitter",
-      // iconvar: <SiGithub />,
-      typevar: "github"
-    },
-    apple: {
-      textvar: /*#__PURE__*/React__default['default'].createElement(reactSocialLoginButtons.AppleLoginButton, null),
-      typevar: "apple"
-    },
-    twitter: {
-      textvar: /*#__PURE__*/React__default['default'].createElement(reactSocialLoginButtons.TwitterLoginButton, null),
-      // textvar: "Github",
-      iconvar: /*#__PURE__*/React__default['default'].createElement(si.SiTwitter, null),
-      typevar: "github"
-    } //
-
-  };
-
-  function osadew(_ref2) {
-    var typevar = _ref2.typevar;
-    _.logs.logga("___ sinBas SOCIAL CLICK ___", typevar);
-
-    switch (typevar) {
-      case "email":
-        setemaTrue(true);
-        break;
-
-      default:
-        socialSubmit(typevar);
-    }
-  }
-
-
-  var dfogre = [//
-  // "twitter",
-  "google", "facebook", "apple", "email"];
-
-  var igfder = _objectSpread2({
-    listvar: socialList ? socialList : dfogre,
-    dictvar: fdsogkret,
-    onClick: osadew,
-    spaceBetween: "10px",
-    // renderItem: Bsaeosa,
-    renderItem: function renderItem(sad) {
-      return sad.textvar;
-    }
-  }, socialConfig);
-
-  function spfdewr(_ref4) {
-    var email = _ref4.email,
-        password = _ref4.password;
-    _.logs.logga("___ signBase SIGNUP ___", email, password); //
-
-    _.userLogSign(email, password, funcvar);
-  } // 1console
-
-
-  _.logs.logga("___ SignBsae SOCIAL ___", igfder);
-  var dsfijd =
-  /*#__PURE__*/
-  //
-  // {/* <BearTextMedia {...igfder} /> */}
-  React__default['default'].createElement(BearList$1, igfder);
-
-  function FOrnaW() {
-    //
-    //
-    var dfijd = [//
-    "email", "password"];
-    var klmi = //
-    // sofer;
-    spfdewr;
-
-    var dfgre = _objectSpread2({
-      listvar: dfijd,
-      // dictvar:
-      // sameline
-      titleConfig: {
-        width: "80px"
-      },
-      buttonText: "Register",
-      formid: "register",
-      onSubmit: klmi
-    }, formConfig);
-
-    var forso = /*#__PURE__*/React__default['default'].createElement(BearForm, dfgre);
-    return forso;
-  }
-
-  var jvsfeer = //
-  emaTrue ? /*#__PURE__*/React__default['default'].createElement(FOrnaW, null) : dsfijd;
-
-  function OrCHekc() {
-    var baseTEST = "";
-    var bottLink = "";
-    var changeit = "";
-
-    switch (signType) {
-      case "login":
-        changeit = "signup";
-        baseTEST = "Don't have an account?";
-        bottLink = "Sign Up for free";
-        break;
-
-      case "signup":
-        baseTEST = "Already have an account?";
-        bottLink = "Sign in to Bedia";
-        changeit = "login";
-        break;
-    }
-
-    var kasesd = {
-      obj: baseTEST
-    };
-
-    function saoke(sad) {
-      setsignType(changeit);
-    }
-
-    var koewqe = {
-      onClick: saoke,
-      // linkvar: "?typeSign=" + signType,
-      // linkvar: " signType,
-      // linkConfig: {
-      //   noBlack: true,
-      // },
-      obj: bottLink,
-      style: {
-        marginBottom: "20p",
-        fontSize: "1.3em"
-      }
-    };
-    var oksae = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(BearDiv$1, kasesd), /*#__PURE__*/React__default['default'].createElement(BearDiv$1, koewqe));
-    var sdease = {
-      obj: oksae,
-      bediaTrue: true,
-      style: {
-        padding: "15px"
-      }
-    };
-    var kdsfse = /*#__PURE__*/React__default['default'].createElement(BearButton$1, sdease);
-    var oasebd = {
-      style: {
-        paddingTop: "20px",
-        textAlign: "center",
-        fontSize: "1.3em"
-      },
-      obj: kdsfse
-    };
-    return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, oasebd);
-  }
-
-  var jdtre = sdfer && /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, jvsfeer, /*#__PURE__*/React__default['default'].createElement(OrCHekc, null));
-
-  var okasdew = _objectSpread2({
-    obj: jdtre
-  }, sdse);
-
-  return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, okasdew);
-}
-
-function BearCarousel(_ref) {
-  var listvar = _ref.listvar,
-      _ref$slideNum = _ref.slideNum,
-      slideNum = _ref$slideNum === void 0 ? 0 : _ref$slideNum;
-      _ref.messvar;
-      var args = _objectWithoutProperties(_ref, ["listvar", "slideNum", "messvar"]);
-
-  function caroRet(sdfewr) {
-    var sokdaw = {// onExiting={() => setAnimating(true)}
-      // onExited={() => setAnimating(false)}
-      // key={item.src}
-    };
-    var iasd = /*#__PURE__*/React__default['default'].createElement(reactstrap.CarouselItem, sokdaw, /*#__PURE__*/React__default['default'].createElement("br", null), sdfewr);
-    return iasd;
-  }
-
-  var nisaw = //
-  // listvar.map(Asdew);
-  listvar.map(caroRet);
-  var strapCaro = {
-    activeIndex: slideNum
-  };
-  args = _objectSpread2(_objectSpread2({}, strapCaro), args);
-  var kesae = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(reactstrap.Carousel, args, nisaw));
-  return kesae;
-}
-
-var emojiDict = {
-  surprise: {
-    emoji: "😲",
-    textvar: "Surprised!"
-  },
-  angry: {
-    emoji: "😡",
-    textvar: "Angry"
-  },
-  happy: {
-    emoji: "😃",
-    textvar: "Happy"
-  },
-  sad: {
-    emoji: "😢",
-    textvar: "Sad"
-  },
-  funny: {
-    emoji: "🤣",
-    textvar: "Funny"
-  },
-  love: {
-    emoji: "😍",
-    textvar: "Love"
-  },
-  interest: {
-    emoji: "🤔",
-    textvar: "Interesting"
-  }
-};
-
-function getEMoj(asofkr) {
-  var idfwer = emojiDict[asofkr];
-  var side = idfwer && idfwer.emoji;
-  side = side ? side : "";
-  return side;
-}
-
-function mapEmojiFace(listvar) {
-  var iewase = listvar && listvar.map(getEMoj);
-  return iewase;
-}
-
-function mainRet(cxsd) {
-  var aijew = emojiDict[cxsd];
-  var oiajew = "".concat(aijew["emoji"], " ").concat(aijew["textvar"], " ");
-  var oaksde = {
-    DICT: emojiDict,
-    inits: cxsd,
-    LABEL: oiajew
-  };
-  logs.logga("___ emojilist--mainRet ___", oaksde);
-  return oiajew;
-}
-
-function labelMoj(cxsd) {
-  var xcokvse = {
-    value: cxsd,
-    label: mainRet(cxsd)
-  };
-  return xcokvse;
-}
-function EmojiLabelMap(cxsd) {
-  var sd9fwq = cxsd.map(labelMoj);
-  logs.logga("___ EmojiLabelMap ___", sd9fwq);
-  return sd9fwq;
-}
-
-function BearEmoji(_ref) {
-  var initialValue = _ref.initialValue;
-      _ref.selectBlue;
-      _ref.selectTrue;
-      _ref.chooseFunc;
-      var typevar = _ref.typevar,
-      listvar = _ref.listvar,
-      onlyEmoji = _ref.onlyEmoji,
-      itemConfig = _ref.itemConfig,
-      sdaa = _objectWithoutProperties(_ref, ["initialValue", "selectBlue", "selectTrue", "chooseFunc", "typevar", "listvar", "onlyEmoji", "itemConfig"]);
-
-  //
-  var ijsae = //
-  emojiDict;
-  var kjsijsa = [//
-  "funny", "happy", "interest", // "surprise",
-  "sad" // "angry",
-  ];
-
-  var _useState = React.useState(),
-      _useState2 = _slicedToArray(_useState, 2),
-      asdoe = _useState2[0];
-      _useState2[1];
-
-  var jdfew = //
-  // kjsijsa
-  listvar ? listvar : kjsijsa; //
-  //
-
-  var plaqwe = //
-  // greyHover circleHover
-  "expandHover pointer";
-  var sadwqe = //
-  plaqwe; // selectBlue ? plaqwe : "pointer";
-
-  var oksae = {
-    // background: "red",
-    padding: "5px",
-    borderRadius: "50%"
-  };
-
-  var sfjaw = _objectSpread2({
-    className: sadwqe,
-    style: oksae
-  }, itemConfig);
-
-  function saokde(_ref2) {
-    var chosenTrue = _ref2.chosenTrue,
-        emoji = _ref2.emoji,
-        textvar = _ref2.textvar,
-        qweq = _objectWithoutProperties(_ref2, ["chosenTrue", "emoji", "textvar"]);
-    var dsfge = {
-      minWidth: "100px",
-      fontSize: "22px"
-    };
-    var xdffsd = {
-      obj: textvar,
-      style: dsfge
-    };
-    var sdfiewrw =
-    /*#__PURE__*/
-    //
-    // "sodkqeq"
-    React__default['default'].createElement(BearDiv$1, xdffsd);
-    var bocd = onlyEmoji ? emoji : /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, emoji);
-    var qwtgsa = chosenTrue && BearIcon("tick");
-    var lfdijg = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, bocd, qwtgsa);
-    var lsadwe = //
-    lfdijg; // bocd
-    // ureytue;
-
-    var oksaew = _objectSpread2({
-      obj: lsadwe
-    }, sfjaw);
-
-    var aokdwe = _objectSpread2({
-      // style:
-      obj: /*#__PURE__*/React__default['default'].createElement(BearDiv$1, oksaew),
-      popConfig: {
-        content: sdfiewrw
-      }
-    }, qweq);
-    return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, aokdwe);
-  }
-
-  function Listso(_ref3) {
-    var ssdwedf = _extends({}, _ref3);
-
-    //
-    var ijdwq = {
-      // style: { background: "red" },
-      chosenItem: asdoe,
-      chooseTrue: true,
-      returnArray: true,
-      clickSingle: true,
-      chosenConfig: {// style: {
-        //   background: "blue",
-        // },
-        // className: "shadowBottom",
-      }
-    };
-
-    function asdoke(sdfswe) {
-      var oksadw = //
-      // "dsfoker";
-      saokde(sdfswe);
-      return oksadw;
-    }
-    var logBaso = {
-      logtrue: "asdas",
-      messvar: "BEAEMOJI"
-    };
-
-    var dsjs = _objectSpread2(_objectSpread2(_objectSpread2({
-      listvar: jdfew,
-      dictvar: ijsae,
-      renderItem: asdoke,
-      horizTrue: true,
-      itemConfig: sfjaw
-    }, logBaso), ijdwq), ssdwedf);
-    return /*#__PURE__*/React__default['default'].createElement(BearList$1, dsjs);
-  }
-
-  function Selectos() {
-    // const sidjew = {
-    //   value:
-    // }
-    var fdogkre = //
-    // jdfew
-    Object.keys(ijsae);
-    var awwsa = EmojiLabelMap(fdogkre);
-    var adsfw = EmojiLabelMap(initialValue);
-
-    _objectSpread2(_objectSpread2({
-      initOptions: awwsa,
-      limitvar: 3
-    }, sdaa), {}, {
-      logtrue: false,
-      messvar: "emojListo",
-      value: adsfw
-    });
-    var asiew = //
-    ""; //   <BearSelect {...ijsaew} />;
-
-    return asiew;
-  }
-
-  var endValue = "";
-
-  switch (typevar) {
-    case "select":
-      endValue = Selectos();
-      break;
-
-    case "base":
-      endValue = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, mapEmojiFace(jdfew));
-      break;
-
-    default:
-      endValue = /*#__PURE__*/React__default['default'].createElement(Listso, sdaa);
-  }
-
-  return endValue;
-}
-
 function durationParser(inputTime) {
   var formatType = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "h[h] m[m]";
 
@@ -3086,282 +3841,6 @@ function BearDuration(_ref) {
 // getAudioDurationInSeconds('audio.flac').then((duration) => {
 //   console.log(duration);
 // });
-
-var axios = require("axios");
-
-function FetchLink(askdw, _ref) {
-  var funcvar = _ref.funcvar,
-      _ref$name = _ref.name,
-      name = _ref$name === void 0 ? "fetchLink" : _ref$name,
-      ase = _objectWithoutProperties(_ref, ["funcvar", "name"]);
-
-  //
-  var funcveo = funcvar;
-  _.logs.logga("___FetchLink ARGS ___", ase);
-
-  function saijdwe() {
-    return _saijdwe.apply(this, arguments);
-  }
-
-  function _saijdwe() {
-    _saijdwe = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-      var okdssae;
-      return regeneratorRuntime.wrap(function _callee$(_context) {
-        while (1) {
-          switch (_context.prev = _context.next) {
-            case 0:
-              okdssae = _objectSpread2({}, ase);
-              _context.next = 3;
-              return axios.get(askdw, okdssae);
-
-            case 3:
-              return _context.abrupt("return", _context.sent);
-
-            case 4:
-            case "end":
-              return _context.stop();
-          }
-        }
-      }, _callee);
-    }));
-    return _saijdwe.apply(this, arguments);
-  }
-
-  funcveo = funcveo ? funcveo : saijdwe;
-
-  var _useQuery = reactQuery.useQuery(name, funcveo),
-      data = _useQuery.data,
-      isLoading = _useQuery.isLoading,
-      dsokfe = _objectWithoutProperties(_useQuery, ["data", "isLoading"]);
-
-  var sdifew = //
-  data && data.data;
-
-  var sodfkew = _objectSpread2(_objectSpread2({
-    data: sdifew,
-    dataList: sdifew && sdifew.results,
-    dataBase: data,
-    loading: isLoading
-  }, dsokfe), sdifew);
-
-  _.logs.logga("___ queryFuncs ___", sodfkew);
-  return sodfkew;
-}
-
-// Hook
-
-function UseFirestoreQuery(query, funcas) {
-  //
-  // Our initial state
-  // Start with an "idle" status if query is falsy, as that means hook consumer is
-  // waiting on required data before creating the query object.
-  // Example: useFirestoreQuery(uid && firestore.collection("profiles").doc(uid))
-  var initialState = {
-    status: query ? "loading" : "idle",
-    data: undefined,
-    error: undefined
-  };
-
-  var reducer = function reducer(state, action) {
-
-    switch (action.type) {
-      case "idle":
-        return {
-          status: "idle",
-          idle: true
-        };
-
-      case "loading":
-        return {
-          status: "loading",
-          loading: true
-        };
-
-      case "success":
-        if (funcas) {
-          funcas(action.payload);
-        }
-
-        return {
-          searched: true,
-          status: "success",
-          data: action.payload,
-          error: undefined
-        };
-
-      case "error":
-        return {
-          searched: true,
-          status: "error",
-          data: undefined,
-          error: action.payload
-        };
-
-      default:
-        throw new Error("invalid action");
-    }
-  };
-
-  function useMemoCompare(next, compare) {
-    // Ref for storing previous value
-    var previousRef = React.useRef();
-    var previous = previousRef.current; // Pass previous and next value to compare function
-    // to determine whether to consider them equal.
-
-    var isEqual = compare(previous, next); // If not equal update previousRef to next value.
-    // We only update if not equal so that this hook continues to return
-    // the same old value if compare keeps returning true.
-
-    React.useEffect(function () {
-      if (!isEqual) {
-        previousRef.current = next;
-      }
-    }); // Finally, if equal then return the previous value
-
-    return isEqual ? previous : next;
-  } // Setup our state and actions
-
-
-  var _useReducer = React.useReducer(reducer, initialState),
-      _useReducer2 = _slicedToArray(_useReducer, 2),
-      state = _useReducer2[0],
-      dispatch = _useReducer2[1]; // Get cached Firestore query object with useMemoCompare (https://usehooks.com/useMemoCompare)
-  // Needed because firestore.collection("profiles").doc(uid) will always being a new object reference
-  // causing effect to run -> state change -> rerender -> effect runs -> etc ...
-  // This is nicer than requiring hook consumer to always memoize query with useMemo.
-
-
-  var queryCached = useMemoCompare(query, function (prevQuery) {
-    // Use built-in Firestore isEqual method to determine if "equal"
-    return prevQuery && query && query.isEqual(prevQuery);
-  });
-  React.useEffect(function () {
-    // Return early if query is falsy and reset to "idle" status in case
-    // we're coming from "success" or "error" status due to query change.
-    if (!queryCached) {
-      dispatch({
-        type: "idle"
-      });
-      return;
-    }
-
-    dispatch({
-      type: "loading"
-    }); // Subscribe to query with onSnapshot
-    // Will unsubscribe on cleanup since this returns an unsubscribe function
-
-    return queryCached.onSnapshot(function (response) {
-      // Get data for collection or doc
-      var data = //
-      fireDocs(response); // response.docs
-      //   ? getCollectionData(response.docs)
-      //   : getDocData(response);
-
-      dispatch({
-        type: "success",
-        payload: data
-      });
-    }, function (error) {
-      dispatch({
-        type: "error",
-        payload: error
-      });
-    });
-  }, [queryCached]); // Only run effect if queryCached changes
-
-  return state;
-}
-
-function fetchParams(sdforw, sdokereq) {
-  return FetchLink(sdforw, {
-    params: sdokereq
-  });
-}
-function dataFunc(funcv) {
-  return funcv();
-}
-function QueryMain(funcv) {
-  var nameo = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "querybsae";
-
-  function fdsrase() {
-    return funcv();
-  }
-
-  var _useQuery = reactQuery.useQuery(nameo, fdsrase),
-      data = _useQuery.data,
-      isLoading = _useQuery.isLoading,
-      asodke = _objectWithoutProperties(_useQuery, ["data", "isLoading"]);
-
-  function sdfser(_ref) {
-    var data = _ref.data,
-        asd = _objectWithoutProperties(_ref, ["data"]);
-
-    return _objectSpread2(_objectSpread2({}, asd), data);
-  }
-
-  var oksae = data && _.turnarray(data).map(sdfser);
-
-  _objectSpread2({
-    data: oksae,
-    loading: isLoading
-  }, asodke); //   return okwwew;
-
-
-  return UseFirestoreQuery(funcv);
-} // export function createModelApp(typeos, listvar, {!noaksew){
-// if (!noNote) {
-//     createModelNote(asdjew);
-//   }
-// }
-
-function getDocData(doc) {
-  return doc.exists === true ? _objectSpread2({
-    id: doc.id
-  }, doc.data()) : "NO OBJECT";
-}
-function fireDocs(response) {
-  return response.docs ? response.docs.map(getDocData) : getDocData(response);
-}
-function queryData(_x) {
-  return _queryData.apply(this, arguments);
-} // const okaeas =
-// funcv &&
-// funcv.onSnapshot((response) => {
-//   // Get data for collection or doc
-//   let asokwe = fireDocs(response);
-//   logs.logga("___ queryData ___", {
-//     response: response,
-//     FILTERED: asokwe,
-//   });
-//   osadwe = asokwe;
-//   // return asokwe;
-// });
-
-function _queryData() {
-  _queryData = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(funcv) {
-    var osadwe;
-    return regeneratorRuntime.wrap(function _callee$(_context) {
-      while (1) {
-        switch (_context.prev = _context.next) {
-          case 0:
-            _context.next = 2;
-            return funcv;
-
-          case 2:
-            osadwe = _context.sent;
-            osadwe = fireDocs(osadwe); // funcv.then();
-
-            return _context.abrupt("return", osadwe);
-
-          case 5:
-          case "end":
-            return _context.stop();
-        }
-      }
-    }, _callee);
-  }));
-  return _queryData.apply(this, arguments);
-}
 
 function SearchPlaylist(_ref) {
   var userObj = _ref.userObj;
@@ -3591,7 +4070,7 @@ function SearchKnowledge(_ref) {
   function onCreat(okweqq) {
     bediaShared.logs.logga("___ CREAT TOPIC ___", okweqq);
     bediaShared.checkFullArray(okweqq) && createIndex; // if (oksaew) {
-    //   CreateTopic(okweqq, currentUser);
+    //   CreateTopic(okweqq, userObj);
     // }
   }
 
@@ -3917,25 +4396,25 @@ function AlterModelConst(_ref) {
   var topicConfig = _ref.topicConfig;
       _ref.nameConfig;
       var emojiConfig = _ref.emojiConfig,
-      currentUser = _ref.currentUser,
+      userObj = _ref.userObj,
       modelCreateFunc = _ref.modelCreateFunc,
       listvar = _ref.listvar,
       dictvar = _ref.dictvar,
-      args = _objectWithoutProperties(_ref, ["topicConfig", "nameConfig", "emojiConfig", "currentUser", "modelCreateFunc", "listvar", "dictvar"]);
+      args = _objectWithoutProperties(_ref, ["topicConfig", "nameConfig", "emojiConfig", "userObj", "modelCreateFunc", "listvar", "dictvar"]);
 
-  //
+  // 
   // 1fontsize
   var baseoFont = 80;
   var asijew = {
     fontSize: baseoFont
   };
 
-  var _QueryMain = //
+  var _ref2 = //
   // "";
   // QueryData()
-  QueryMain(_.getUserPlaylists(currentUser)),
-      plydatuser = _QueryMain.data;
-      _QueryMain.isLoading; // QueryMain(GetUserObjs(indexPlaylist, currentUser));
+  userObj ? QueryMain(_.getUserPlaylists(userObj)) : "",
+      plydatuser = _ref2.data;
+      _ref2.isLoading; // QueryMain(GetUserObjs(indexPlaylist, userObj));
 
 
   function showSelStly(lcxmvd) {
@@ -3966,15 +4445,6 @@ function AlterModelConst(_ref) {
 
     return emkjBaseo;
   } // 1name
-  // function SpekaFind(asdfewr) {
-  //   const ijasew = {
-  //     //
-  //     name: "aboutList",
-  //     style: asijew,
-  //     ...asdfewr,
-  //   };
-  //   return <SearchKnowledge {...ijasew} />;
-  // }
   // 1private 1public
 
 
@@ -4115,30 +4585,13 @@ function AlterModelConst(_ref) {
 
   };
 
-  function htr() {
-    var sdeqwe = //
-    // BearIconText("📚", "Playlist"),
-    "Playlist";
-    var oeiw = {
-      obj: sdeqwe //  ...linkPlayTt,
-
-    };
-    return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, _extends({
-      spanTrue: true
-    }, oeiw));
-  }
-
   var sdifr = //
-  htr(); // "Playlists";
-  // 1playlist
+  // htr();
+  "Playlists"; // 1playlist
 
   var dsifwqeq = {
-    //
-    // style: {
-    //   marginTop: "100px",
-    // },
     name: "playlist",
-    // iconvar: "📚",
+    iconvar: "📚",
     titlevar: sdifr,
     // addFunc: () => addNew(1),
     sameLine: "",
@@ -4159,7 +4612,6 @@ function AlterModelConst(_ref) {
   var sprkOR = {
     //
     name: "speakers",
-    // iconvar:
     iconvar: "🧑‍🤝‍🧑",
     required: true,
     titlevar: "Speakers",
@@ -4275,47 +4727,6 @@ function AlterModelConst(_ref) {
   }, args);
 
   return ldsfiejr;
-}
-
-function BearTitle(_ref) {
-  var subtitleConfig = _ref.subtitleConfig,
-      titlevar = _ref.titlevar,
-      belowObj = _ref.belowObj,
-      _ref$sizevar = _ref.sizevar,
-      sizevar = _ref$sizevar === void 0 ? "34px" : _ref$sizevar,
-      subtitlevar = _ref.subtitlevar,
-      args = _objectWithoutProperties(_ref, ["subtitleConfig", "titlevar", "belowObj", "sizevar", "subtitlevar"]);
-
-  var aijsdwe = //
-  // gens.butClass;
-  "bold";
-  var asyhdwe = {
-    fontSize: sizevar // padding: "0 2% 20px",
-
-  }; //
-
-  var titleConfig = _objectSpread2({
-    style: asyhdwe,
-    className: aijsdwe,
-    obj: titlevar
-  }, args);
-
-  var sijwesae = _objectSpread2({
-    style: {
-      fontSize: "28px"
-    },
-    obj: subtitlevar
-  }, subtitleConfig); // BediaTextDiv
-
-
-  var oksd = args && /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(BearDiv$1, titleConfig), /*#__PURE__*/React__default['default'].createElement(BearDiv$1, sijwesae), belowObj);
-  var iasjwe = {
-    obj: oksd,
-    style: {
-      width: "100%"
-    }
-  };
-  return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, iasjwe);
 }
 
 function LoginModal(_ref) {
@@ -4489,15 +4900,20 @@ function AlterModel(_ref) {
       submitLink = _ref.submitLink;
       _ref.noJump;
       _ref.noOtherList;
-      var formConfig = _ref.formConfig;
+      var showSaved = _ref.showSaved,
+      formConfig = _ref.formConfig;
       _ref.noExtraModels;
-      var args = _objectWithoutProperties(_ref, ["typevar", "formObj", "noSave", "aboveLoad", "topObj", "fontSize", "titleConfig", "loadConfig", "loadTrue", "userObj", "onSubmit", "submitLink", "noJump", "noOtherList", "formConfig", "noExtraModels"]);
+      var args = _objectWithoutProperties(_ref, ["typevar", "formObj", "noSave", "aboveLoad", "topObj", "fontSize", "titleConfig", "loadConfig", "loadTrue", "userObj", "onSubmit", "submitLink", "noJump", "noOtherList", "showSaved", "formConfig", "noExtraModels"]);
 
   // 1context
-  //   const { SaveUser, currentUser } = useContext(AuthContext);
+  //   const { SaveUser, userObj } = useContext(AuthContext);
   // function subios()
   // 1const
-  // 1load
+  // 1baseArgs
+  var baseArgs = {
+    typevar: typevar
+  }; // 1load
+
   var _useState = React.useState(),
       _useState2 = _slicedToArray(_useState, 2),
       loadSave = _useState2[0],
@@ -4508,21 +4924,26 @@ function AlterModel(_ref) {
       emoStto = _useState4[0],
       setemoStto = _useState4[1];
 
+  var _useState5 = React.useState(),
+      _useState6 = _slicedToArray(_useState5, 2),
+      currStage = _useState6[0],
+      setcurrStage = _useState6[1];
+
 
   var jasmoji = {
     onClick: setemoStto,
     chosenItem: emoStto
   };
 
-  var _useState5 = React.useState(0),
-      _useState6 = _slicedToArray(_useState5, 2);
-      _useState6[0];
-      _useState6[1];
+  var _useState7 = React.useState(0),
+      _useState8 = _slicedToArray(_useState7, 2);
+      _useState8[0];
+      _useState8[1];
 
-  var _useState7 = React.useState(),
-      _useState8 = _slicedToArray(_useState7, 2),
-      playCreate = _useState8[0],
-      setplayCreate = _useState8[1];
+  var _useState9 = React.useState(),
+      _useState10 = _slicedToArray(_useState9, 2),
+      playCreate = _useState10[0],
+      setplayCreate = _useState10[1];
 
   var oksae = _objectSpread2(_objectSpread2({}, formConfig), {}, {
     userObj: userObj,
@@ -4558,6 +4979,10 @@ function AlterModel(_ref) {
 
       if (setLoadSave) {
         setloadSave(false); // clearSettos();
+      }
+
+      if (showSaved) {
+        setcurrStage("save");
       }
     }
   } // 1function
@@ -4605,13 +5030,29 @@ function AlterModel(_ref) {
   } // 1console
 
 
+  _.logs.logga("___ AlterMod ___", oksae);
   _.logs.logga("___AlterModel lComplo ___", {
     userObj: userObj,
     lisComplo: lisComplo
-  }); // 1form
+  });
+  var mskesdf = "";
 
-  var asdokwe = /*#__PURE__*/React__default['default'].createElement(BearForm, lisComplo);
-  var mskesdf = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, topObj, asdokwe);
+  switch (currStage) {
+    case "save":
+      var iksfer = _objectSpread2(_objectSpread2({}, baseArgs), {}, {
+        newFunc: function newFunc() {
+          return setcurrStage();
+        } // listvar:
+
+      });
+
+      mskesdf = /*#__PURE__*/React__default['default'].createElement(ModelPanel, iksfer);
+
+    default:
+      // 1form
+      var asdokwe = /*#__PURE__*/React__default['default'].createElement(BearForm, lisComplo);
+      mskesdf = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, topObj, asdokwe);
+  }
 
   _objectSpread2(_objectSpread2({}, oksae), {}, {
     obj: mskesdf,
@@ -4634,11 +5075,13 @@ function AlterModel(_ref) {
 }
 
 function MediaTypeChoose(_ref) {
-  var mediaType = _ref.mediaType,
-      chooseFunc = _ref.chooseFunc,
-      mediaObj = _ref.mediaObj;
+  var _ref$mediaType = _ref.mediaType,
+      mediaType = _ref$mediaType === void 0 ? "book" : _ref$mediaType;
+      _ref.typeChooseFunc;
+      var mediaChooseFunc = _ref.mediaChooseFunc,
+      media = _ref.media;
       _ref.obj;
-      var args = _objectWithoutProperties(_ref, ["mediaType", "chooseFunc", "mediaObj", "obj"]);
+      var args = _objectWithoutProperties(_ref, ["mediaType", "typeChooseFunc", "mediaChooseFunc", "media", "obj"]);
 
   // 1context
   //   const { formData, mediaType, setmediaType } = useContext(MainContext);
@@ -4713,7 +5156,7 @@ function MediaTypeChoose(_ref) {
       renderItem: rendo
     }; // const dkfjf = "aokdsa";
 
-    var dkfjf = /*#__PURE__*/React__default['default'].createElement(BearList$1, okadsew); // const dkfjf = mediaList.map((asoew) => rendo(saeasew[asoew]));
+    var dkfjf = /*#__PURE__*/React__default['default'].createElement(BearList, okadsew); // const dkfjf = mediaList.map((asoew) => rendo(saeasew[asoew]));
 
     var okasdew = /*#__PURE__*/React__default['default'].createElement(reactstrap.Dropdown, sdfjkre, /*#__PURE__*/React__default['default'].createElement(reactstrap.DropdownToggle, ioaew, okaew.iconvar), /*#__PURE__*/React__default['default'].createElement(reactstrap.DropdownMenu, null, dkfjf));
     return okasdew;
@@ -4722,13 +5165,13 @@ function MediaTypeChoose(_ref) {
   function Linkio() {
     var oewqw = //
     // "";
-    BearIconText("link", mediaObj && mediaObj.name); // formData?.title;
+    BearIconText("link", media && media.name); // formData?.title;
 
     var oksadw = {
       obj: oewqw,
       fontSize: "16px",
       className: "wrapTrue",
-      linkvar: mediaObj && mediaObj.webLink,
+      linkvar: media && media.webLink,
       linkConfig: {
         noBlack: true
       },
@@ -4745,11 +5188,22 @@ function MediaTypeChoose(_ref) {
     return oaswe;
   }
 
-  /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(ItemOver, null), /*#__PURE__*/React__default['default'].createElement(Linkio, null));
+  function MediaShow() {
+    var sdkjwr = //
+    Linkio();
+    var ijsdfse = {
+      obj: sdkjwr,
+      onClick: mediaChooseFunc
+    };
+    return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, ijsdfse);
+  }
+
+  var medChck = //
+  MediaShow();
   var xcijgdt = [
   /*#__PURE__*/
   //
-  React__default['default'].createElement(ItemOver, null), /*#__PURE__*/React__default['default'].createElement(Linkio, null)];
+  React__default['default'].createElement(ItemOver, null), medChck];
 
   var nbaseao = _objectSpread2({
     listvar: xcijgdt,
@@ -4759,11 +5213,12 @@ function MediaTypeChoose(_ref) {
   // return <BearFloat {...reuthw} />;
 
 
-  return /*#__PURE__*/React__default['default'].createElement(FlexMain, nbaseao);
+  return /*#__PURE__*/React__default['default'].createElement(BearFlex, nbaseao);
 }
 
 function TimeButtons(_ref) {
-  var changePlayerTime = _ref.changePlayerTime,
+  var webTrue = _ref.webTrue,
+      changePlayerTime = _ref.changePlayerTime,
       getCurrentTime = _ref.getCurrentTime;
       _ref.showTime;
       var bothFunc = _ref.bothFunc,
@@ -4773,7 +5228,7 @@ function TimeButtons(_ref) {
       startFunc = _ref.startFunc,
       endFunc = _ref.endFunc,
       buttonConfig = _ref.buttonConfig,
-      args = _objectWithoutProperties(_ref, ["changePlayerTime", "getCurrentTime", "showTime", "bothFunc", "startTime", "titleConfig", "endTime", "startFunc", "endFunc", "buttonConfig"]);
+      args = _objectWithoutProperties(_ref, ["webTrue", "changePlayerTime", "getCurrentTime", "showTime", "bothFunc", "startTime", "titleConfig", "endTime", "startFunc", "endFunc", "buttonConfig"]);
 
   // 1MainContext
   //   const { changePlayerTime, getCurrentTime } = useContext(PlayContext);
@@ -4799,7 +5254,7 @@ function TimeButtons(_ref) {
   // trackStart && !endTime
 
   function getTimeo(aspecto, timeo) {
-    var timeea = timeo ? timeo : getCurrentTime(); //
+    var timeea = timeo ? timeo : webTrue ? _.getWebCurrentTime() : getCurrentTime(); //
     //
 
     var safdew = "";
@@ -4885,6 +5340,16 @@ function TimeButtons(_ref) {
     var disoes = //
     // true
     !endTime;
+
+    function chanPlay() {
+      if (webTrue) {
+        //
+        _.changeWebPlayerTime(startTime);
+      } else {
+        changePlayerTime(startTime);
+      }
+    }
+
     var askdwse = {
       disableTrue: disoes,
       // chakTrue: true,
@@ -4893,9 +5358,7 @@ function TimeButtons(_ref) {
       // bediaTrue: true,
       background: "darkgreen",
       butName: "playeButton",
-      onClick: function onClick() {
-        return changePlayerTime(startTime);
-      }
+      onClick: chanPlay
     };
     return askdwse;
   }
@@ -4935,7 +5398,7 @@ function TimeButtons(_ref) {
 
     var ksaesdwe = //
     // "asokdewq";
-    BearButton$1(okasedwe);
+    BearButton(okasedwe);
     return ksaesdwe;
   }
 
@@ -4959,7 +5422,7 @@ function TimeButtons(_ref) {
   /*#__PURE__*/
   //
   // "";
-  React__default['default'].createElement(BearList$1, _extends({
+  React__default['default'].createElement(BearList, _extends({
     horizTrue: true
   }, jasde)); // <ImageTextDiv horizTrue {...jasde} />
   // <BearFloat {...asdnow8q} />
@@ -4980,9 +5443,9 @@ function TimeButtons(_ref) {
 }
 
 function MediaTypeTime(_ref) {
-  var mediaType = _ref.mediaType,
-      chooseConfig = _ref.chooseConfig,
-      noTiming = _ref.noTiming,
+  var mediaType = _ref.mediaType;
+      _ref.chooseConfig;
+      var noTiming = _ref.noTiming,
       timeConfig = _ref.timeConfig,
       args = _objectWithoutProperties(_ref, ["mediaType", "chooseConfig", "noTiming", "timeConfig"]);
 
@@ -5006,7 +5469,7 @@ function MediaTypeTime(_ref) {
       itemConfig: okrte
     }, timeConfig);
 
-    _.logs.logga("___ TieButtons ___", dfkgret);
+    _.logs.loggo("___ TieButtons ___", dfkgret);
     var ijsadwqe = /*#__PURE__*/React__default['default'].createElement(TimeButtons, dfkgret);
     var hutry = {
       obj: ijsadwqe
@@ -5014,21 +5477,9 @@ function MediaTypeTime(_ref) {
     return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, hutry);
   }
 
-  function ChooseIo() {
-    //
-    var cvbokf = _objectSpread2(_objectSpread2(_objectSpread2({}, basos), chooseConfig), {}, {
-      style: {
-        marginBottom: "20px"
-      }
-    });
-
-    var fdjeaw = /*#__PURE__*/React__default['default'].createElement(MediaTypeChoose, cvbokf);
-    return fdjeaw;
-  }
-
   var ijaase = //
-  // "";
-  ChooseIo(); //   1timing
+  ""; // ChooseIo();
+  //   1timing
 
   var timeNotTrue = //
   // "";
@@ -5051,19 +5502,20 @@ function AlterHighlight(_ref) {
       onSubmit = _ref.onSubmit;
       _ref.seriesObj;
       var addPlaylist = _ref.addPlaylist;
+      _ref.mediaList;
       _ref.saveToMedia;
       _ref.newUser;
       var timeConfig = _ref.timeConfig,
-      args = _objectWithoutProperties(_ref, ["overObj", "onSubmit", "seriesObj", "addPlaylist", "saveToMedia", "newUser", "timeConfig"]);
+      args = _objectWithoutProperties(_ref, ["overObj", "onSubmit", "seriesObj", "addPlaylist", "mediaList", "saveToMedia", "newUser", "timeConfig"]);
 
   // 1const
   var _useState = React.useState(),
       _useState2 = _slicedToArray(_useState, 2),
-      trueInd = _useState2[0];
-      _useState2[1]; // const {data, isLoading, error} = useQuery(addHighlights())
+      trueInd = _useState2[0],
+      settrueInd = _useState2[1]; // const {data, isLoading, error} = useQuery(addHighlights())
 
 
-  var mediaObj = overObj.media; // const vbnd = overObj?.startTime;
+  var media = overObj && overObj.media; // const vbnd = overObj?.startTime;
   // const asidjw = overObj?.endTime;
 
   var dfoke = //
@@ -5086,7 +5538,7 @@ function AlterHighlight(_ref) {
 
   var typeia = //
   // "video";
-  mediaObj.mediaType;
+  media && media.mediaType;
 
   var _useState7 = React.useState(typeia),
       _useState8 = _slicedToArray(_useState7, 2),
@@ -5101,7 +5553,7 @@ function AlterHighlight(_ref) {
   });
 
   var linkGo = //
-  mediaObj && "/m/".concat(mediaObj.slugURL, "/highlights"); // linkGo =
+  media && "/m/".concat(media.slugURL, "/highlights"); // linkGo =
   // 1submit 1save
 
   function Vcbod0e(dsofkwr) {
@@ -5127,13 +5579,13 @@ function AlterHighlight(_ref) {
   var baseArgs = {
     mediaType: mediaVary,
     overObj: newHgho,
-    mediaObj: mediaObj
+    media: media
   }; // // 1console
 
   _.logs.logga("___ newgho ___", newHgho);
   _.logs.logga("___ FORM BASE ITEMS ___", newHgho);
-  mediaObj && _.joinString( //
-  [mediaObj.name //
+  media && _.joinString( //
+  [media.name //
   // "(" + ijsewe + ")",
   ], " ");
 
@@ -5180,15 +5632,19 @@ function AlterHighlight(_ref) {
     }, timeConfig);
 
     var ywers = {
-      chooseFunc: setmediaVary
+      typeChooseFunc: setmediaVary,
+      mediaChooseFunc: function mediaChooseFunc() {
+        return settrueInd(2);
+      }
     };
 
     var cvbokf = _objectSpread2(_objectSpread2({
       chooseConfig: ywers,
       timeConfig: oaksde
-    }, baseArgs), args);
+    }, baseArgs), args); // 1type
 
-    _.logs.logga("___ altHigh MediaTyTime ___", cvbokf);
+
+    _.logs.loggo("___ altHigh MediaTyTime ___", cvbokf);
     var fdjeaw = //
     // "";
     MediaTypeTime(cvbokf);
@@ -5218,6 +5674,21 @@ function AlterHighlight(_ref) {
     var sfisre = /*#__PURE__*/React__default['default'].createElement(AlterModel, vcokge);
     return sfisre;
   } // 1form
+
+  function subOne(cvxobkfdg) {
+    _.logs.logga("___ subOne ___", cvxobkfdg);
+    settrueInd(1);
+  } // 1list 1carousel
+
+
+  var listOne = {
+    topObj: asidwe,
+    listvar: baseList,
+    formid: "highaltone",
+    onSubmit: subOne,
+    noSave: true,
+    noJump: true
+  };
   var listAll = {
     topObj: asidwe,
     listvar: okdss,
@@ -5225,10 +5696,18 @@ function AlterHighlight(_ref) {
     onSubmit: idjew
   };
 
+  function NoAddoIt() {
+    var nsdifjwr = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, asidwe, "NO MEDIA ITEM HERE");
+    var fdhgrw = {
+      obj: nsdifjwr
+    };
+    return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, fdhgrw);
+  }
+
   function CarosStart() {
+    var firstO = altBase(listAll);
     var niase = [// letPlaio, sfisre
-    altBase(listAll) // altBase(listOne),
-    // altBase(listTwo),
+    firstO, altBase(listOne) // ChooseMedList(),
     ];
     var sdokfr = {
       listvar: niase,
@@ -5239,7 +5718,8 @@ function AlterHighlight(_ref) {
   }
 
   var okadse = //
-  CarosStart(); // addPlaylist ? <CarosStart /> : sfisre;
+  media ? CarosStart() : NoAddoIt(); // CarosStart();
+  // addPlaylist ? <CarosStart /> : sfisre;
 
   var fdjgirt = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, okadse);
   args = _objectSpread2({
@@ -5249,9 +5729,13 @@ function AlterHighlight(_ref) {
 }
 
 function NewHighlight(_ref) {
-  _ref.highlightObj;
-      var formConfig = _ref.formConfig,
-      args = _objectWithoutProperties(_ref, ["highlightObj", "formConfig"]);
+  var linkDetails = _ref.linkDetails;
+      _ref.findLink;
+      var media = _ref.media,
+      highlightObj = _ref.highlightObj,
+      formConfig = _ref.formConfig;
+      _ref.genConfig;
+      var args = _objectWithoutProperties(_ref, ["linkDetails", "findLink", "media", "highlightObj", "formConfig", "genConfig"]);
 
   // 1const
   var _useState = React.useState(""),
@@ -5260,9 +5744,20 @@ function NewHighlight(_ref) {
       _useState2[1];
 
   var _ref2 = //
+  // "";
+  linkDetails ? QueryNode("fetch-media", linkDetails) : "",
+      medMain = _ref2.data,
+      lodMed = _ref2.loading;
+
+  var sdfkwe = _objectSpread2(_objectSpread2({}, _.getFirstArr(medMain)), media);
+
+  highlightObj = _objectSpread2(_objectSpread2({}, highlightObj), {}, {
+    media: sdfkwe
+  });
+  var _ref3 = //
   "",
-      similarHighs = _ref2.data,
-      lodOther = _ref2.isLoading; // getHighsSameMedia(highlightObj);
+      similarHighs = _ref3.data,
+      lodOther = _ref3.isLoading; // getHighsSameMedia(highlightObj);
 
   var anyHighs = _.checkFullArray(similarHighs);
 
@@ -5283,25 +5778,7 @@ function NewHighlight(_ref) {
   }
 
   function JoinComment() {
-    var ikad = {
-      obj: "Preview",
-      bediaTrue: true
-    };
-    var sdkfre = {
-      style: {
-        height: "100%"
-      } // className: "shadowHover",
-
-    };
-    var vbdf = {
-      listvar: [ikad],
-      horizTrue: true,
-      itemConfig: sdkfre,
-      typeList: "button"
-    }; // const
-
-    /*#__PURE__*/React__default['default'].createElement(BearList, vbdf);
-    var sfdgret = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, "Join Bedia to start making notes.");
+    var sfdgret = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, "Join Bedia to start making Clips.");
     var vffdg = {
       obj: sfdgret,
       style: {
@@ -5325,7 +5802,12 @@ function NewHighlight(_ref) {
       }
     };
 
-    var koase = _objectSpread2(_objectSpread2({}, loksdass), formConfig);
+    var koase = _objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2({}, loksdass), {}, {
+      loadTrue: lodMed
+    }, formConfig), args), {}, {
+      mediaList: sdfkwe,
+      overObj: highlightObj
+    });
 
     var vbuhd = //
     // "sawqe";
@@ -5335,32 +5817,148 @@ function NewHighlight(_ref) {
 
   var awewadw = //
   !lodOther && /*#__PURE__*/React__default['default'].createElement(PostBott, null);
-  var okfdsd = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(MainForm, null), awewadw);
-  args = _objectSpread2({
-    obj: okfdsd
-  }, args); //
+  var okfdsd = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(MainForm, null), awewadw); // 1console
 
-  return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, args);
+  var sdfjww = {
+    //
+    MEDIA: medMain
+  };
+  _.logs.logga("___ NEWw-HIGHLGIHT ___", sdfjww);
+  var ijsdq = {
+    obj: okfdsd // ...genConfig,
+
+  }; //
+
+  return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, ijsdq);
+}
+
+function BearCreditCard(_ref) {
+  var genConfig = _ref.genConfig,
+      formConfig = _ref.formConfig,
+      args = _objectWithoutProperties(_ref, ["genConfig", "formConfig"]);
+
+  // 1const
+  var _useState = React.useState(""),
+      _useState2 = _slicedToArray(_useState, 2),
+      cvcCard = _useState2[0],
+      setcvcCard = _useState2[1];
+
+  var _useState3 = React.useState(""),
+      _useState4 = _slicedToArray(_useState3, 2),
+      expiryCard = _useState4[0],
+      setexpiryCard = _useState4[1];
+
+  var _useState5 = React.useState(""),
+      _useState6 = _slicedToArray(_useState5, 2),
+      numberCard = _useState6[0],
+      setnumberCard = _useState6[1];
+
+  var _useState7 = React.useState(""),
+      _useState8 = _slicedToArray(_useState7, 2),
+      focusedCard = _useState8[0];
+      _useState8[1];
+
+  var _useState9 = React.useState(""),
+      _useState10 = _slicedToArray(_useState9, 2),
+      nameCard = _useState10[0],
+      setnameCard = _useState10[1];
+
+  var ijae = {
+    cvc: cvcCard,
+    expiry: expiryCard,
+    focused: focusedCard,
+    name: nameCard,
+    number: numberCard
+  };
+
+  function FormGo() {
+    // 1number
+    var nuneias = {
+      name: "cardnumber",
+      titlevar: "Card Number",
+      onChange: setnumberCard
+    }; // 1expiry
+
+    var adsfoker = {
+      name: "expiry",
+      titlevar: "Expiry Date",
+      onChange: setexpiryCard
+    }; // 1cvc
+
+    var niswes = {
+      name: "cvc",
+      titlevar: "CVC Number",
+      onChange: setcvcCard
+    }; // 1name
+
+    var sijfeww = {
+      name: "name",
+      titlevar: "Card Name",
+      onChange: setnameCard
+    }; // 1listvar
+
+    var lstcard = [//
+    "number", "name", "expiry", "cvc"]; // 1dictvar
+
+    var aijewe = {
+      name: sijfeww,
+      number: nuneias,
+      cvc: niswes,
+      expiry: adsfoker
+    };
+
+    _objectSpread2({
+      formid: "sdfiew",
+      dictvar: aijewe,
+      sameLine: true,
+      listvar: lstcard
+    }, formConfig);
+
+    var ogertew = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, BearInput(aijewe["number"]), BearInput(aijewe["name"]));
+    return ogertew; // return <BearForm {...ijase} />;
+  }
+
+  var okfdsd = /*#__PURE__*/React__default['default'].createElement("div", genConfig, /*#__PURE__*/React__default['default'].createElement(Cards__default['default'], ijae), FormGo());
+  var weyrw = [
+  /*#__PURE__*/
+  //
+  React__default['default'].createElement(Cards__default['default'], ijae), /*#__PURE__*/React__default['default'].createElement(FormGo, null)];
+  args = _objectSpread2({
+    listvar: weyrw,
+    horizTrue: true,
+    typeList: "return"
+  }, args); // const sdfogkret = (<>
+  //   //
+  //   // <BearDiv {...args} />;
+  //   // <BearList {...args} />
+  // </>
+
+  return okfdsd;
 }
 
 exports.AlterHighlight = AlterHighlight;
 exports.AlterModel = AlterModel;
-exports.BearButton = BearButton$1;
+exports.BearButton = BearButton;
 exports.BearCarousel = BearCarousel;
+exports.BearCheckout = BearCheckout;
+exports.BearContextProvider = BearContextProvider;
+exports.BearCreditCard = BearCreditCard;
 exports.BearDiv = BearDiv$1;
 exports.BearDuration = BearDuration;
 exports.BearEmoji = BearEmoji;
 exports.BearError = BearError;
+exports.BearFlex = BearFlex;
 exports.BearFloat = BearFloat;
 exports.BearForm = BearForm;
 exports.BearIcon = BearIcon;
 exports.BearIconText = BearIconText;
-exports.BearList = BearList$1;
+exports.BearList = BearList;
 exports.BearSelect = BearSelect;
+exports.BearSocial = BearSocial;
 exports.BearTextMedia = BearTextMedia;
+exports.BearTitle = BearTitle;
 exports.CopyMain = CopyMain;
 exports.Exmapl = Exmapl;
-exports.FlexMain = FlexMain;
 exports.ImageAlign = ImageAlign;
 exports.ImageGroup = ImageGroup;
 exports.InputForm = InputForm;
@@ -5371,15 +5969,9 @@ exports.LoadMain = LoadMain;
 exports.MediaTypeChoose = MediaTypeChoose;
 exports.NewHighlight = NewHighlight;
 exports.PagePad = PagePad;
-exports.QueryMain = QueryMain;
 exports.SignBase = SignBase;
 exports.SliderMain = SliderMain;
 exports.TimeButtons = TimeButtons;
-exports.dataFunc = dataFunc;
-exports.fetchParams = fetchParams;
-exports.fireDocs = fireDocs;
-exports.getDocData = getDocData;
 exports.linkBase = linkBase;
 exports.logs = logFuncs;
-exports.queryData = queryData;
 //# sourceMappingURL=index.cjs.js.map

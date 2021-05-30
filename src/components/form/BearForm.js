@@ -10,11 +10,13 @@ import { BearDiv } from "../BearDiv";
 import { BearList } from "../list/BearList";
 import { BearButton } from "../button/BearButton";
 import * as logs from "../../functions/logFuncs";
+import { LoadMain } from "../GlobalComps";
 
 export function BearForm({
   noButton,
   noText,
   listDict,
+  loadConfig,
   buttonText,
   subtitleConfig,
   textConfig,
@@ -39,8 +41,9 @@ export function BearForm({
   topButtonConfig,
   ImageTextList,
   topButtonTrue,
-  // 1submit
   //
+  // 1submit
+  loadSubmit,
   onSubmit,
   submitExtra,
   topObj,
@@ -51,11 +54,15 @@ export function BearForm({
   // title
   titlevar,
   titleConfig,
+  changeGlobal,
   //
   ...args
 }) {
   //
   //
+
+  // 1const
+  const [loadSetto, setloadSetto] = useState();
 
   let nameMessError =
     //
@@ -136,6 +143,10 @@ export function BearForm({
   // 1submit
   function subbTo(values) {
     //
+    if (loadSubmit) {
+      setloadSetto(true);
+    }
+
     const emptiosa = !isEmpty(values);
     const trudsoe = onSubmit && emptiosa;
 
@@ -149,6 +160,8 @@ export function BearForm({
     logs.logga("___ Fomain values ___", values);
 
     onSubmit(values);
+    setloadSetto();
+
     // parsVal(values);
 
     //
@@ -298,6 +311,7 @@ export function BearForm({
       ...hookArgs,
       sameLine: sameLine,
       overObj: overObj,
+      changeGlobal: changeGlobal,
       ...baseObj,
       ...inputConfig,
       ...titlCheck,
@@ -536,7 +550,9 @@ export function BearForm({
     //
   };
 
-  const isae = (
+  const isae = loadSetto ? (
+    <LoadMain {...loadConfig} />
+  ) : (
     <div {...vbokre}>
       {askew}
       {aweuw}

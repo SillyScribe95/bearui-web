@@ -11,11 +11,11 @@ import {
 import TextareaAutosize from "react-textarea-autosize";
 import { useForm, Controller } from "react-hook-form";
 import { BearDiv } from "../BearDiv";
-import { BearIcon } from "../BearIcon";
 import { BearFloat } from "../BearFloat";
 import { BearButton } from "../button/BearButton";
-import { BearSelect } from "../select/BearSelect";
-import { BearIconText } from "../GlobalComps";
+import { Flex } from "@chakra-ui/layout";
+import { InputTitle } from "./InputTitle";
+import { Input } from "reactstrap";
 
 // import CreatableSelect from "react-select/creatable";
 // import { BearButton } from "./BearButton";
@@ -29,7 +29,6 @@ export function BearInput({
   errorobj,
   noInput,
   onInput,
-  requireClass,
   noTitle,
   checked,
   control,
@@ -42,14 +41,16 @@ export function BearInput({
   //
   selectTrue,
   style,
+  // 1change 1onchange
+  changeGlobal,
   onChange,
   obj,
   ref,
   required,
   name,
+  errors,
   fontSize,
   sameLine,
-  newTrue,
   initialValue,
   selectvar,
   rightSubmit,
@@ -57,15 +58,11 @@ export function BearInput({
   rows,
   titlevar,
   placeholder,
-  subtitlevar,
-  errors,
-  iconvar,
   checkList,
   checklistTitle,
   lineBelow,
   //
   // 1title
-  addFunc,
   titleWidth = "160px",
   ...dfsgre
 }) {
@@ -75,11 +72,6 @@ export function BearInput({
   const [checkBoxo, setcheckBoxo] = useState();
   const [chekBxTrue, setchekBxTrue] = useState(checked);
   const [valInit, setvalInit] = useState(initialValue);
-
-  const asw =
-    //
-    // "";
-    errors && errors[name] && errors[name]["message"];
 
   fontSize = fontSize ? fontSize : 18;
 
@@ -98,8 +90,8 @@ export function BearInput({
 
   const ijdsew =
     //
-    // required
-    requireClass && required;
+    required;
+  // requireClass && required;
 
   const slasso = ijdsew ? "required" : "";
 
@@ -117,10 +109,16 @@ export function BearInput({
   }
 
   const changBssoe = {
-    onChange: chaneeo,
     value: valInit,
     valueFunc: setvalInit,
   };
+
+  const isjdfr = { onChange: chaneeo };
+
+  const nsijqwe =
+    //
+    // isjdfr;
+    changeGlobal && isjdfr;
 
   // 1ref
   function getRef(rfo) {
@@ -139,16 +137,26 @@ export function BearInput({
     ...sdweew,
   };
 
-  const objbase = {
+  const asw =
+    //
+    // "";
+    errors && errors[name] && errors[name]["message"];
+
+  const zdssdire = {
     ...dfsgre,
-    ...sdweew,
-    // ...cntrMan,
-    fontSize: fontSize,
-    errorobj: asw,
-    textvar: textvar,
+    errorMessage: asw,
     required: required,
+  };
+
+  const objbase = {
+    ...sdweew,
+    fontSize: fontSize,
+    textvar: textvar,
+    ...zdssdire,
     innerRef: { required: required },
+    // ...cntrMan,
     // ...changBssoe,
+    ...nsijqwe,
     style: daezxv,
   };
 
@@ -245,10 +253,12 @@ export function BearInput({
 
         const dsf9jewr = <BearDiv {...ijasdwe} />;
 
+        // 1input
         ujsdqwe = (
           <>
             {/*  */}
             {/* <input {...dsoadkw0} />; */}
+            {/* <Input {...isawe} /> */}
             <input {...isawe} /> {dsf9jewr}
             {/* </input> */}
             {/* <gens.CheckboxMain {...dsoadkw0}>{obj["textvar"]}</gens.CheckboxMain> */}
@@ -256,6 +266,9 @@ export function BearInput({
         );
 
         break;
+
+      // case "number":
+      //   [type] = "tel";
 
       default:
         // textvar = "DEFAULT TEXT";
@@ -308,7 +321,7 @@ export function BearInput({
   }
 
   // 1title
-  function TitleOBbi({ style, ...sd }) {
+  function TitleOBbi({ style, ...cxzv }) {
     //
 
     const skdowqe = sameLine
@@ -329,137 +342,13 @@ export function BearInput({
       ...style,
     };
 
-    const ijweq = {
-      obj: " *",
-      style: {
-        color: "red",
-      },
-    };
-
-    const aokdwe =
-      //
-      ijdsew ? <BearDiv spanTrue {...ijweq} /> : "";
-
-    const olbknfr = {
-      fontSize: "0.7em",
-      color: "red",
-      marginLeft: "10px",
-      // className: "error",
-    };
-
-    const asdwe = {
-      obj: asw,
-      className: "error",
-      style: olbknfr,
-    };
-
-    const bnkifg = <BearDiv spanTrue {...asdwe} />;
-
-    // TITLE MAIN
-    const okasde =
-      //
-      newTrue ? (
-        ChooseTit()
-      ) : (
-        <>
-          {/* {BearIcon(iconvar, titlevar)} */}
-          {/* {BearIconText(iconvar, titlevar)} */}
-          {iconvar} {titlevar}
-        </>
-      );
-
-    const ioakawe = (
-      <>
-        {okasde}
-        {aokdwe}
-        {bnkifg}
-      </>
-    );
-
-    function BswTi() {
-      const cvobkof = {
-        className: "shadowHover pointer",
-        onClick: addFunc,
-        obj: BearIcon("➕", ""),
-        style: {
-          padding: "5px",
-          marginTop: "-5px",
-          fontSize: "0.8em",
-          // marginLeft: "20px",
-        },
-      };
-
-      const dfigjrt = <BearDiv {...cvobkof} />;
-      const kcmdr = {
-        centerobj: ioakawe,
-        rightobj: dfigjrt,
-      };
-
-      const ijcwe = BearFloat(kcmdr);
-
-      return ijcwe;
-    }
-
-    const ijsae = addFunc ? BswTi() : ioakawe;
-
-    const asdojwqs = {
-      obj: ijsae,
-      // textvar: ioakawe,
-      iconvar: iconvar,
-      noImage: !iconvar,
-      noIcon: !iconvar,
-      ...titleConfig,
+    const sdfkewr = {
+      titlevar: titlevar,
       style: iawqe,
-      // noText: true,
-      // disVar: true,
+      ...cxzv,
     };
 
-    logs.logga(name + "___ inpuBase TITLE CONF ___", asdojwqs);
-
-    const seokwer = (
-      //
-      // <ImageTextDiv {...asdojwqs} />
-      // <BediaTextDiv {...asdojwqs} />
-      <BearDiv {...asdojwqs} />
-    );
-
-    function Subtoter() {
-      const ikawed = {
-        fontSize: "0.8em",
-      };
-
-      const okawe = {
-        obj: subtitlevar,
-        style: ikawed,
-      };
-      const uiajwe = <BearDiv {...okawe} />;
-
-      return uiajwe;
-    }
-
-    const ijawe = subtitlevar && <Subtoter />;
-
-    const sdfgret = (
-      <>
-        {/* {okasde} */}
-        {/* TITLE */}
-        {seokwer}
-        {ijawe}
-        {/* <hr /> */}
-      </>
-    );
-
-    const kase = {
-      padding: "10px 0",
-      textAlign: "left",
-    };
-
-    const isawqe = {
-      obj: sdfgret,
-      style: kase,
-    };
-
-    return <BearDiv {...isawqe} />;
+    return <InputTitle {...sdfkewr} />;
   }
 
   const showTit =
@@ -467,7 +356,12 @@ export function BearInput({
     // true;
     !noTitle && titlevar;
 
-  const oksdwqe = showTit && <TitleOBbi {...titleConfig} />;
+  const saewase = {
+    ...zdssdire,
+    ...titleConfig,
+  };
+
+  const oksdwqe = showTit && <TitleOBbi {...saewase} />;
 
   const confijre = {
     size: "sm",

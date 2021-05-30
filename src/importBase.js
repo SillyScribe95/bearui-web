@@ -5,9 +5,19 @@ export * from "./components/BearDiv";
 export * from "./components/BearError";
 export * from "./components/GlobalComps";
 
+// 1title
+export * from "./components/title/BearTitle";
+
+// 1payment
+export * from "./components/payment/BearCheckout";
+// export * from "./components/payment/BearPayButton";
+
 // 1icon
 export * from "./components/BearTextMedia";
 export * from "./components/BearIcon";
+
+// 1context
+export * from "./components/BearContextProvider";
 
 // 1float
 export * from "./components/BearFloat";
@@ -22,6 +32,7 @@ export * from "./components/user/SignBase";
 export * from "./components/list/BearList";
 export * from "./components/list/BearCarousel";
 export * from "./components/list/BearEmoji";
+export * from "./components/list/BearSocial";
 
 // 1select
 export * from "./components/select/BearSelect";
@@ -33,7 +44,7 @@ export * from "./components/form/BearForm";
 export * from "./components/time/BearDuration";
 
 // 1functions
-export * from "./functions/backendFuncs";
+// export * from "./functions/backendFuncs";
 
 // 1logs
 import * as logs from "./functions/logFuncs";

@@ -16,7 +16,7 @@
 // import ModelObject from "../containers/ModelObject";
 // import {
 //   getLinkPlay,
-//   getLinkSocial,
+//   getshareLink,
 //   joinString,
 //   highEditLink,
 //   setGlobalSource,
@@ -39,7 +39,7 @@
 //   afterText,
 //   noPlay,
 //   addFunc,
-//   mediaObj,
+//   media,
 //   index,
 //   nameFunc,
 //   editTrue,
@@ -272,10 +272,10 @@
 //     // editConfig:
 //     editFunc: sdijsde,
 //     editLink: nsijasd,
-//     // editBefore: "/edit/" + mediaObj.slugURL + "/highlights",
+//     // editBefore: "/edit/" + media.slugURL + "/highlights",
 //     // editAfter: obj.id,
 //     shareConfig: {
-//       textSocial: sajdae,
+//       shareText: sajdae,
 //     },
 //   };
 

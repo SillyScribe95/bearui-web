@@ -11,10 +11,10 @@ import {
 } from "@SillyScribe95/bedia-shared/";
 import { SignBase } from "../../components/user/SignBase";
 import { BearDiv } from "../../components/BearDiv";
-import BearTitle from "../../components/title/BearTitle";
+import { BearTitle } from "../../components/title/BearTitle";
 // import AlterUser from "../user/AlterUser";
 
-export default function LoginModal({
+export function LoginModal({
   //
   topObj,
   okdsew,

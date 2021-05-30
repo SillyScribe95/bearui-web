@@ -107,7 +107,7 @@
 
 // // 1star
 // function StarObj() {
-//   let userLiked = checkUserLiked(typevar, obj, currentUser);
+//   let userLiked = checkUserLiked(typevar, obj, userObj);
 
 //   const kbfdf = userLiked && {
 //     background: "yellow",
