@@ -27,7 +27,7 @@ export function BearLink({
   toVar,
   linkConfig,
   linkvar,
-  noBlack,
+  blackTrue,
   linkTextTrue,
   textvar,
   obj,
@@ -35,7 +35,6 @@ export function BearLink({
   className,
   ...argso
 }) {
-  //
   toVar =
     linkTextTrue && textvar
       ? textvar.toLowerCase()
@@ -50,7 +49,7 @@ export function BearLink({
   const outBlank = outsideTrue || outsideVar || blankTrue;
   const noLink = disabled | !toVar;
 
-  let kmda = !noBlack && {
+  let kmda = blackTrue && {
     textDecoration: "none",
     color: "black",
     // color: colorTextMain,

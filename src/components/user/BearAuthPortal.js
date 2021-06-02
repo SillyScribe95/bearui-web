@@ -25,7 +25,7 @@ import { BearButton } from "../button/BearButton";
 import { BearTextMedia } from "../BearTextMedia";
 import { BearList } from "../list/BearList";
 
-export function SignBase({
+export function BearAuthPortal({
   //
   funcvar,
   topObj,
@@ -184,7 +184,7 @@ export function SignBase({
   };
 
   function spfdewr({ email, password }) {
-    logs.logga("___ signBase SIGNUP ___", email, password);
+    logs.logga("___ BearAuthPortal SIGNUP ___", email, password);
     //
     userLogSign(email, password, funcvar);
   }

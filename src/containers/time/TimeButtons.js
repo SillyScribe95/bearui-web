@@ -23,6 +23,7 @@ export function TimeButtons({
   webTrue,
   changePlayerTime,
   getCurrentTime,
+  trackingTrue,
   showTime,
   bothFunc,
   startTime,
@@ -52,7 +53,8 @@ export function TimeButtons({
 
   let trackTrue =
     //
-    recordTime;
+    trackingTrue;
+  // recordTime;
   // trackStart
   // startTime && !endTime;
   // trackStart && !endTime
@@ -96,7 +98,7 @@ export function TimeButtons({
       //   duraion: duraion,
     };
 
-    logs.logga("___ dsdfwer ___", dsdfwer);
+    logs.logga("___ timButtons ONCLICK ___", dsdfwer);
   }
 
   function getto(typoe) {
@@ -146,7 +148,10 @@ export function TimeButtons({
       "Tracking...";
     // "Setting"
 
-    const asidjew = BearIconText("play", duritObj);
+    const asidjew =
+      //
+      // "ASDWQQW"
+      BearIconText("play", duritObj);
 
     const disoes =
       //
@@ -193,10 +198,11 @@ export function TimeButtons({
 
     const sadebd = {
       height: "60px",
-      minWidth: "130px",
+      // minWidth: "130px",
       padding: "10px",
       margin: "0 20px",
       fontSize: "25px",
+      textAlign: "center",
     };
 
     let asjdwe = "";
@@ -214,13 +220,12 @@ export function TimeButtons({
     const okasedwe = {
       // genConfig: kdsdqwe,
       obj: sdifje,
-      centerTrue: "y",
       ...asdw,
       style: sadebd,
       ...buttonConfig,
     };
 
-    logs.logga("___ okasedwe ___", okasedwe);
+    logs.logga("___ tiebutt BUTTON OBJECT ___", okasedwe);
 
     // attr = "endTime";
     const ksaesdwe =
@@ -259,9 +264,9 @@ export function TimeButtons({
   const ewrqasa = (
     //
     // "";
-    <BearList horizTrue {...jasde} />
+    <BearList horiz {...jasde} />
   );
-  // <ImageTextDiv horizTrue {...jasde} />
+  // <ImageTextDiv horiz {...jasde} />
   // <BearFloat {...asdnow8q} />
 
   // const ossdf = {

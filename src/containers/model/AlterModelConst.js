@@ -35,9 +35,7 @@ export default function AlterModelConst({
   dictvar,
   ...args
 }) {
-  
-
-  // 
+  //
   // 1fontsize
   const baseoFont = 80;
   const asijew = {
@@ -111,7 +109,6 @@ export default function AlterModelConst({
   }
 
   // 1users
-
 
   // 1private 1public
   function PrivacySett(asdew) {
@@ -324,8 +321,8 @@ export default function AlterModelConst({
   function htr() {
     const sdeqwe =
       //
-      BearIconText("📚", "Playlist")
-      // "Playlist";
+      BearIconText("📚", "Playlist");
+    // "Playlist";
 
     const oeiw = {
       obj: sdeqwe,
@@ -337,7 +334,7 @@ export default function AlterModelConst({
   const sdifr =
     //
     // htr();
-  "Playlists";
+    "Playlists";
 
   // 1playlist
   let dsifwqeq = {
@@ -378,7 +375,7 @@ export default function AlterModelConst({
     //
     name: "speakers",
     iconvar: "🧑‍🤝‍🧑",
-    required: true,
+    // required: true,
     titlevar: "Speakers",
     inputFunction: SpekaFind,
   };
@@ -447,18 +444,19 @@ export default function AlterModelConst({
   let saokdawe = listvar ? listvar : ksdwe;
 
   let txtNameoTru = {
-    rows: 1,
+    rows: 2,
     inputType: "textarea",
   };
 
   // 1name FORM
   const ijawewaw = {
     //
+    autoFocus: true,
     required: true,
     mustHave: true,
     name: "name",
     // noExpand: true,
-    // noTitle: true,
+    noTitle: true,
     ...txtNameoTru,
     // autocomplete: jgjgfdg,
     // noTitle: true,
@@ -481,8 +479,8 @@ export default function AlterModelConst({
 
     const jsada = {
       style: {
-        fontSize: "34px",
-        padding: "0 30px",
+        fontSize: "16px",
+        margin: "0 10px",
       },
     };
 
@@ -529,7 +527,7 @@ export default function AlterModelConst({
   const asidesd = {
     style: {
       textAlign: "center",
-      margin: "10px 0",
+      margin: "30px 0",
     },
   };
 

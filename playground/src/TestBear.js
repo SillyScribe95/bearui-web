@@ -8,6 +8,7 @@ import {
   BearSocial,
   BearSelect,
   BearTitle,
+  BearSearchList,
   logs,
   AlterHighlight,
   AlterModel,
@@ -17,6 +18,7 @@ import {
   BearForm,
   NewHighlight,
   HiButton,
+  BearCodePreview,
   BearIcon,
   TimeButtons,
 } from "bearui-web";
@@ -26,11 +28,15 @@ import {
   testMedia,
   testLink,
   testHighlight,
+  textHighChrome,
   // logs,
 } from "@SillyScribe95/bedia-shared/";
 
 import { TestList } from "./test/TestList";
 import React, { useState } from "react";
+import { bearConst } from "./bearConst";
+import { SearchBearItem } from "./components/SearchBearItem";
+import { ExploreBear } from "./components/ExploreBear";
 
 export default function TestBear() {
   // 1user
@@ -352,12 +358,124 @@ export default function TestBear() {
     return sdrease;
   }
 
+  // 1code 1bear
+  function Asjdwe() {
+    const sdjerae = {
+      ...bearConst,
+      renderItem: asidjwe,
+    };
+
+    function asidjwe({ title, subtitle, code, ...sadsd }) {
+      //
+      const sdkjfer = `
+      import { ${title} } from "bearui-web";
+  
+      const app = <>
+        ${code}
+      </>
+
+      ReactDOM.render(app, _mount_);
+      `;
+
+      const isdjr = {
+        code: sdkjfer,
+        ...sadsd,
+      };
+
+      function Titlio() {
+        const jsdasd = {
+          obj: title,
+          className: "bold",
+          fontSize: "1.3em",
+          style: {
+            fontFamily: "Times",
+            fontWeight: 500,
+            // background: "blue",
+            minWidth: "120px",
+          },
+        };
+
+        const cvbjfr = {
+          spanTrue: true,
+          obj: subtitle + ".",
+        };
+
+        const asdoksdq = (
+          <>
+            {/*  */}
+            <BearDiv {...jsdasd} /> <BearDiv {...cvbjfr} />
+            {/* <Divider /> */}
+          </>
+        );
+
+        const iskde = {
+          flexTrue: true,
+          vertAlign: true,
+          obj: asdoksdq,
+          style: {
+            marginBottom: 10,
+            alignItems: "flex-end",
+          },
+        };
+
+        return <BearDiv {...iskde} />;
+      }
+
+      const oaase = (
+        <>
+          {/*  */}
+          <Titlio />
+          <BearCodePreview {...isdjr} />;
+        </>
+      );
+
+      const isjdewr = {
+        obj: oaase,
+        style: {
+          margin: "30px",
+        },
+      };
+
+      const sadije = <BearDiv {...isjdewr} />;
+
+      return sadije;
+      // return oaase;
+    }
+
+    return <BearList {...sdjerae} />;
+  }
+
+  // 1code 1preview
+  function Previous() {
+    const ijsder = `
+    import { BearForm, BearDiv, BearFloat } from "bearui-web";
+  
+    const app = <>
+      <BearDiv 
+        linkvar="https://codesandbox.io/docs/embedding"
+        obj="asasdadd" 
+      />
+      </>
+
+    ReactDOM.render(app, _mount_);
+    `;
+
+    const nsidfwr = {
+      code: ijsder,
+      dependencies: { BearForm, BearDiv, BearFloat },
+    };
+
+    const ijksdr = <BearCodePreview {...nsidfwr} />;
+
+    return ijksdr;
+  }
+
   // 1altermode
   function ALtioso() {
     //
     //
     function fdiuret(sdfweq) {
-      logs.loggo("___ TESTEBEAR ALTEMODEL ___", sdfweq);
+      logs.logga("___ TESTEBEAR ALTEMODEL SUBTMI ___", sdfweq);
     }
 
     let ksde =
@@ -369,6 +487,7 @@ export default function TestBear() {
     logs.logga("___ FETCH LINK de ___", ksde);
 
     const fogkdret = {
+      ...textHighChrome,
       webTrue: true,
       typevar: "highlight",
       formid: "aoskdwqe",
@@ -378,6 +497,8 @@ export default function TestBear() {
       onSubmit: fdiuret,
       ...usoConfo,
     };
+
+    logs.logga("___ Test bear HIGHLIGHT ___", fogkdret);
 
     const fkgjdfg = (
       //
@@ -429,7 +550,7 @@ export default function TestBear() {
     const sdbsfg = {
       //
       itemConfig: sdfewr,
-      horizTrue: true,
+      horiz: true,
       listvar: figjdwe,
       shareLink: "twitter.com",
       shareText: "Just started using BearUI. It rocks!",
@@ -437,6 +558,28 @@ export default function TestBear() {
     };
 
     return <BearSocial {...sdbsfg} />;
+  }
+
+  // 1search
+  function Searchio() {
+    function asokdwe({ title, subtitle }) {
+      const okasdew = (
+        <>
+          {title} {subtitle}
+        </>
+      );
+
+      return okasdew;
+    }
+
+    const ijsder = {
+      ...bearConst,
+      searchAttrs: ["title", "subtitle"],
+      renderItem: asokdwe,
+      placeholder: "Choose a component",
+    };
+
+    return <BearSearchList {...ijsder} />;
   }
 
   // 1function
@@ -451,7 +594,7 @@ export default function TestBear() {
   // 1return
   return (
     <>
-      ---- TEST BEAR ---
+      {/* ---- TEST BEAR --- */}
       {/*  */}
       {/* 1carousel
       <CaroBase />
@@ -460,6 +603,9 @@ export default function TestBear() {
       1float
       1SELECT TEST
       <Seleo /> */}
+      {/* 1search */}
+      {/* {Searchio()} */}
+      <ExploreBear />
       {/* 1wiki TEST WIKI */}
       {/* <Seleo /> */}
       {/* 1div
@@ -472,8 +618,11 @@ export default function TestBear() {
       {/* 1time */}
       {/* <Timeao /> */}
       {/* <Flotio /> */}
+      {/* 1code 1preview */}
+      {/* <Previous /> */}
+      {/* <Asjdwe /> */}
       {/* 1alter */}
-      <ALtioso />
+      {/* <ALtioso /> */}
       {/* 1card */}
       {/* <CardBase /> */}
       {/* 1landing */}

@@ -332,7 +332,7 @@
 
 //       const oksawe = {
 //         itemConfig: oksa,
-//         horizTrue: "",
+//         horiz: "",
 //       };
 
 //       righeos = <ASoaksqw {...oksawe} />;

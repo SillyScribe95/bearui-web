@@ -9,7 +9,7 @@ import {
   userConnect,
   userLogSign,
 } from "@SillyScribe95/bedia-shared/";
-import { SignBase } from "../../components/user/SignBase";
+import { BearAuthPortal } from "../../components/user/BearAuthPortal";
 import { BearDiv } from "../../components/BearDiv";
 import { BearTitle } from "../../components/title/BearTitle";
 // import AlterUser from "../user/AlterUser";
@@ -83,7 +83,7 @@ export function LoginModal({
     const ikwae = (
       //
       // "";
-      <SignBase {...oake} />
+      <BearAuthPortal {...oake} />
     );
 
     return ikwae;

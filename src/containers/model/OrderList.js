@@ -368,7 +368,7 @@ export default function OrderList({
     //
     const vifsdf = {
       // listvar:
-      // horizTrue:
+      // horiz:
       listTrue: true,
       centerobj: xkzxa,
       rightobj: <AdddMore />,

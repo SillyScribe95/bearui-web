@@ -65,7 +65,7 @@ export function BearEmoji({
 
   const oksae = {
     // background: "red",
-    padding: "5px",
+    padding: "5px 10px",
     borderRadius: "50%",
   };
 
@@ -75,8 +75,39 @@ export function BearEmoji({
     ...itemConfig,
   };
 
+  // 1tick
+  // function goTick() {
+  //   logs.logga("___ qweq ___", qweq);
+
+  //   const bocd = onlyEmoji ? emoji : <>{emoji}</>;
+
+  //   const qwtgsa = chosenTrue && BearIcon("tick");
+
+  //   // 1emoji
+  //   const okaew = {
+  //     mainObj: bocd,
+  //     smallObj: qwtgsa,
+  //     alignvar: "topRight",
+  //   };
+
+  //   const lfdijg = (
+  //     <>
+  //       {bocd}
+  //       {qwtgsa}
+  //     </>
+  //   );
+
+  //   return lfdijg;
+  // }
+
   function saokde({ chosenTrue, emoji, textvar, ...qweq }) {
-    logs.logga("___ qweq ___", qweq);
+    const lsadwe =
+      //
+      emoji;
+    // textvar;
+    // lfdijg;
+    // bocd
+    // ureytue;
 
     const dsfge = {
       minWidth: "100px",
@@ -94,32 +125,9 @@ export function BearEmoji({
       <BearDiv {...xdffsd} />
     );
 
-    const bocd = onlyEmoji ? emoji : <>{emoji}</>;
-
-    const qwtgsa = chosenTrue && BearIcon("tick");
-
-    const okaew = {
-      mainObj: bocd,
-      smallObj: qwtgsa,
-      alignvar: "topRight",
-    };
-
-    const lfdijg = (
-      <>
-        {bocd}
-        {qwtgsa}
-      </>
-    );
-
-    const lsadwe =
-      //
-      lfdijg;
-    // bocd
-    // ureytue;
-
     const oksaew = {
       obj: lsadwe,
-      flexTrue: true, 
+      flexTrue: true,
       ...sfjaw,
     };
 
@@ -139,18 +147,25 @@ export function BearEmoji({
 
   function Listso({ ...ssdwedf }) {
     //
+
+    // 1chosen
+    const djifwsare = {
+      style: {
+        border: "2px solid black",
+        borderRadius: "50%",
+        // background: "blue",
+      },
+      className: "shadowBottom",
+    };
+
     const ijdwq = {
       // style: { background: "red" },
       chosenItem: asdoe,
+      chosenConfig: djifwsare,
+      // chooseTick
       chooseTrue: true,
       returnArray: true,
       clickSingle: true,
-      chosenConfig: {
-        // style: {
-        //   background: "blue",
-        // },
-        // className: "shadowBottom",
-      },
     };
 
     function asdoke(sdfswe) {
@@ -176,8 +191,9 @@ export function BearEmoji({
     const dsjs = {
       listvar: jdfew,
       dictvar: ijsae,
+      // typeList: "div",
       renderItem: asdoke,
-      horizTrue: true,
+      horiz: true,
       itemConfig: sfjaw,
       ...logBaso,
       ...ijdwq,

@@ -198,9 +198,7 @@ export function BearIcon(sdfoger, sdfke) {
   const cbnkfg =
     //
     // oksdew
-    oksdew;
-  // BearDiv(okasde);
-  // sdfke
+    sdfke ? BearDiv(okasde) : oksdew;
   //   ? //
   //     // Berios()
   //     JAsds()

@@ -6,11 +6,13 @@ import React, {
 import { BearDiv } from "../BearDiv";
 
 export function BearTitle({
-  subtitleConfig,
+  titleConfig,
   titlevar,
   belowObj,
-  sizevar = "34px",
+  // sizevar = "34px",
   subtitlevar,
+  subtitleConfig,
+  lineBetween,
   ...args
 }) {
   const aijsdwe =
@@ -19,29 +21,30 @@ export function BearTitle({
     "bold";
 
   const asyhdwe = {
-    fontSize: sizevar,
+    // fontSize: sizevar,
     // padding: "0 2% 20px",
   };
 
   //
-  const titleConfig = {
+  titleConfig = {
     style: asyhdwe,
     className: aijsdwe,
     obj: titlevar,
-    ...args,
+    ...titleConfig,
   };
 
   const sijwesae = {
-    style: { fontSize: "28px" },
+    style: { fontSize: "0.8em" },
     obj: subtitlevar,
     ...subtitleConfig,
   };
 
   // BediaTextDiv
-  const oksd = args && (
+  const oksd = (
     <>
       {/* asdokw */}
       <BearDiv {...titleConfig} />
+      {lineBetween && <hr />}
       <BearDiv {...sijwesae} />
       {belowObj}
       {/* sdfoker */}
@@ -52,6 +55,7 @@ export function BearTitle({
   const iasjwe = {
     obj: oksd,
     style: { width: "100%" },
+    ...args,
   };
 
   return <BearDiv {...iasjwe} />;

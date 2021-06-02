@@ -19,6 +19,7 @@ import {
   logs,
 } from "@SillyScribe95/bedia-shared/";
 import { AlterSide } from "./AlterSide.js";
+import { ModelPanel } from "./ModelPanel.js";
 
 export function AlterModel({
   //
@@ -51,7 +52,8 @@ export function AlterModel({
   noOtherList,
   //
   // 1save
-  showSaved,
+  modelStage,
+  savePanelTrue,
   formConfig,
   noExtraModels,
   ...args
@@ -72,7 +74,7 @@ export function AlterModel({
   const [loadSave, setloadSave] = useState();
   const [emoStto, setemoStto] = useState();
 
-  const [currStage, setcurrStage] = useState();
+  const [currStage, setcurrStage] = useState(modelStage);
 
   function sdkfje9(fgijgre) {
     logs.logga("___ fgijgre ___", fgijgre);
@@ -130,7 +132,7 @@ export function AlterModel({
         setloadSave(false);
         // clearSettos();
       }
-      if (showSaved) {
+      if (savePanelTrue) {
         setcurrStage("save");
       }
     }
@@ -152,10 +154,11 @@ export function AlterModel({
     }
   }
 
-  function firstsUBMIT({ playlist, topic, otherTitles, ...asewe }) {
+  function firstsUBMIT({ playlist, topic, otherTitles, speakers, ...asewe }) {
     //
     const oksaew = {
       ...asewe,
+      ...mapSelectEnd("speakers", speakers),
       ...mapSelectEnd("topic", topic),
       ...mapSelectEnd("playlist", playlist),
       ...mapSelectEnd("otherTitles", otherTitles),
@@ -167,7 +170,7 @@ export function AlterModel({
     secSub(oksaew);
   }
 
-  // 1submit
+  // 1submit 1onsubmit
   function fdogkdf(sdfse) {
     logs.logga("___ SUBMIT BASE ___", sdfse);
   }

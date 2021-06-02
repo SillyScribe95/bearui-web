@@ -17,14 +17,18 @@ export function BearForm({
   noText,
   listDict,
   loadConfig,
-  buttonText,
   subtitleConfig,
   textConfig,
   overObj,
   listvar,
   buttonSize = "35px",
   inputConfig,
+  //
+  // 1button
   buttonConfig,
+  buttonText = "Submit",
+  //
+  //
   toplist,
   noForm,
   dictvar,
@@ -102,9 +106,8 @@ export function BearForm({
   const oksdaew = {
     // validationSchema: schemaYup
     // mode: "onBlur",
-    // reValidateMode: "onChange",
     mode: "onSubmit",
-    reValidateMode: "onChange",
+    // reValidateMode: "onChange",
     // resolver: yupResolver(schemabas),
     ...hookConfig,
   };
@@ -156,6 +159,7 @@ export function BearForm({
       trudsoe: trudsoe,
     };
 
+    // 1submit
     logs.logga("___ FORMAMAIN SUBMIT ___", gifhjer);
     logs.logga("___ Fomain values ___", values);
 
@@ -172,27 +176,41 @@ export function BearForm({
     //
   }
 
+  function sease(e) {
+    e.preventDefault();
+    // subbTo()
+
+    logs.logga("___ e ___", e);
+  }
+
   logs.logga("argwwwwws-zzzzzz", args, "asdy89io211");
   logs.logga("___ args AAAAAA ___", args);
+
+  const kasewse =
+    //
+    handleSubmit(subbTo);
+  // subbTo
+  // sease;
 
   args = {
     ...args,
     id: formid,
-    // onSubmit: subbTo,
-    onSubmit: handleSubmit(subbTo),
+    onSubmit: kasewse,
   };
 
+  // 1button
   function Buttiona({ ...siwerew }) {
     //
 
     const aewsadw = {
       style: {
-        margin: "20px",
+        margin: "20px 0",
       },
     };
     //
     const jsadcvx = {
       // width: "100%",
+      // padding: "60px",
       fontSize: buttonSize,
     };
 
@@ -299,7 +317,7 @@ export function BearForm({
     const hookArgs = {
       control: control,
       errors: errors,
-      //   ref: okasew,
+      ref: okasew,
       ...okasew,
     };
 
@@ -320,7 +338,7 @@ export function BearForm({
 
     const fhgsdf =
       //
-      nameeo == "topic";
+      nameeo == "name";
     // logtrue;
     // true;
 
@@ -448,7 +466,7 @@ export function BearForm({
     const asodwe = {
       onClick: vijsd9,
       singleClick: true,
-      horizTrue: true,
+      horiz: true,
       chosenItem: currTab,
       // titleAttr: "tabTitle",
       titleFunc: iasjdwe,

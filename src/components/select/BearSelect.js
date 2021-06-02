@@ -13,12 +13,13 @@ import * as logs from "../../functions/logFuncs";
 
 export function BearSelect({
   //
-  noMulti,
+  multi,
   noMenu,
   menuConfig,
   typeSelect,
   options,
   optionConfig,
+  notClearable,
   initOptions,
   onChange,
   createTop,
@@ -27,6 +28,9 @@ export function BearSelect({
   valueFunc,
   fontSize = 16,
   newLineTrue,
+  // 1menu
+  noMenuBorder,
+  menuStick,
   messvar = "",
   name = "",
   limitvar,
@@ -60,40 +64,93 @@ export function BearSelect({
     width: "100%",
   };
 
-  //   1styles
-  const stylBasoe = {
-    control: (base) => ({
+  // 1OPEN
+
+  // menuIsOpen: true,
+  // defaultMenuIsOpen: true,
+
+  function skwe(base) {
+    const dokdfew = {
+      ...base,
+      // paddingTop: "-40px",
+      marginTop: "0px",
+      // marginBottom: "-40px",
+    };
+
+    // logs.logga("dropdownIndicator:", dokdfew);
+
+    return dokdfew;
+  }
+
+  // 1option
+  function optRdio(base) {
+    const ijsdr = {
       ...base,
       ...lcxvb,
-      //   maxHeight: 20,
-      fontSize: fontSize,
-    }),
-    option: (base) => ({
-      ...base,
-      ...lcxvb,
-      //   maxHeight: 20,
       textAlign: "left",
       fontSize: fontSize - 4,
       ...optionConfig,
-    }),
-    menuList: (styles) => {
-      logs.logga("menuList:", styles);
+    };
 
-      return {
+    const sodk =
+      //
+      ijsdr;
+    // skwe(ijsdr);
+
+    return sodk;
+  }
+
+  // 1menu
+  function rendMenu(bsao) {
+    const aaese = menuStick && {
+      marginTop: "0px",
+    };
+
+    const sdoewr = !noMenuBorder && bsao;
+
+    const oasde = {
+      ...sdoewr,
+      ...aaese,
+    };
+
+    return oasde;
+  }
+
+  // 1control
+  function rendCont(base) {
+    const iksdrqe = {
+      ...base,
+      ...lcxvb,
+      // maxHeight: 20,
+      fontSize: fontSize,
+    };
+
+    logs.logga("___ rendCont ___", iksdrqe);
+
+    return iksdrqe;
+  }
+
+  //   1styles
+  const stylBasoe = {
+    control: rendCont,
+    option: optRdio,
+    menuList: (styles) => {
+      const oksdr = {
         ...lcxvb,
         ...styles,
-        maxHeight: "160px",
+        // paddingTop: "-30px",
+        // maxHeight: "160px",
       };
+
+      logs.logga("menuList:", oksdr);
+
+      return oksdr;
     },
+    menu: rendMenu,
     noOptionsMessage: (base) => ({
       ...base,
       fontSize: fontSize,
     }),
-    // dropdownIndicator: (base) => ({
-    //   ...base,
-    //   paddingTop: 0,
-    //   paddingBottom: 0,
-    // }),
     // clearIndicator: (base) => ({
     //   ...base,
     //   paddingTop: 0,
@@ -122,13 +179,20 @@ export function BearSelect({
     classNamePrefix: "lp-copy-sel",
   };
 
-  const asidjwe = !noMulti && {
+  const asidjwe = multi && {
     isMulti: true,
   };
 
   function changeos(params) {
     //
-    let sovkoe = noValueReturn ? params : params.map((sdfe) => sdfe.value);
+
+    let sovkoe =
+      //
+      noValueReturn
+        ? params
+        : multi
+        ? params.map((sdfe) => sdfe.value)
+        : params.value;
 
     if (logtrue) {
       logs.logga(messvar + "__SELECT onChange____", params);
@@ -175,9 +239,15 @@ export function BearSelect({
     ref: ref,
   };
 
+  const iasjdwe = !notClearable && {
+    isClearable: true,
+  };
+
   const sdfijewr = {
     // MENU
     //
+    isSearchable: true,
+    ...iasjdwe,
     ...mennoPIt,
     ...asidjwe,
     ...args,
@@ -258,8 +328,8 @@ export function BearSelect({
     default:
       endValue = (
         //
-        <CreatableSelect {...dfijew} />
-        // <Select {...dfijew} />
+        // <CreatableSelect {...dfijew} />
+        <Select {...dfijew} />
       );
   }
 

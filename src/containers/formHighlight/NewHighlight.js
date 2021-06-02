@@ -21,7 +21,7 @@ export function NewHighlight({
   linkDetails,
   findLink,
   media,
-  highlightObj,
+  overObj,
   formConfig,
   genConfig,
   ...args
@@ -36,23 +36,23 @@ export function NewHighlight({
     loading: lodMed,
   } =
     //
-    // "";
-    linkDetails ? QueryNode("fetch-media", linkDetails) : "";
+    "";
+  // linkDetails ? QueryNode("fetch-media", linkDetails) : "";
 
   const sdfkwe = {
     ...getFirstArr(medMain),
     ...media,
   };
 
-  highlightObj = {
-    ...highlightObj,
+  overObj = {
+    ...overObj,
     media: sdfkwe,
   };
 
   const { data: similarHighs, isLoading: lodOther } =
     //
     "";
-  // getHighsSameMedia(highlightObj);
+  // getHighsSameMedia(overObj);
   let anyHighs = checkFullArray(similarHighs);
 
   function HighFetch() {
@@ -116,7 +116,7 @@ export function NewHighlight({
 
     const vbdf = {
       listvar: [ikad],
-      horizTrue: true,
+      horiz: true,
       itemConfig: sdkfre,
       typeList: "button",
     };
@@ -164,7 +164,7 @@ export function NewHighlight({
       ...formConfig,
       ...args,
       mediaList: sdfkwe,
-      overObj: highlightObj,
+      overObj: overObj,
     };
 
     const vbuhd =

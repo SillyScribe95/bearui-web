@@ -49,7 +49,7 @@ export default function TestPage({}) {
       {/* 1people 1user */}
       {/* <USokeew /> */}
       {/* <SOKEsad /> */}
-      {/* 1signin 1signbase */}
+      {/* 1signin 1BearAuthPortal */}
       {/* <Somdie /> */}
       {/* 1form 1fields */}
       {/* <FosamIjwe /> */}

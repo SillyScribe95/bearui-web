@@ -205,7 +205,7 @@ export function BearSocial({
     renderItem: sadqwe,
     typeTrue: "t",
     iconSide: iconSide,
-    // horizTrue: true,
+    // horiz: true,
     // itemConfig: sdije,
     // linkConfig: linksos,
     ...sdfsrew,

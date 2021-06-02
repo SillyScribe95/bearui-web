@@ -37,7 +37,9 @@ export function FireQuery(funcv) {
 
 export function QueryMain(funcv, nameo = "querybsae") {
   function fdsrase() {
-    return funcv();
+    if (funcv) {
+      return funcv();
+    }
   }
 
   const {

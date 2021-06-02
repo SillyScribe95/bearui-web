@@ -118,7 +118,7 @@ export function BearCreditCard({
 
   args = {
     listvar: weyrw,
-    horizTrue: true,
+    horiz: true,
     typeList: "return",
     // obj: okfdsd,
     ...args,

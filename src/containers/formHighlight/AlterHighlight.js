@@ -173,14 +173,14 @@ export function AlterHighlight({
   // 1submit 1save
   function Vcbod0e(dsofkwr) {
     //
-    logs.logga("___ AlteHighlights submit FINAL ___", dsofkwr);
 
     const asidjwe = {
-      dsofkwr: dsofkwr,
-      linkGo: linkGo,
+      DATA: dsofkwr,
+      PAGE_LINK: linkGo,
+      SUBMITFUNC: onSubmit,
     };
 
-    logs.logga("___ asidjwe ___", asidjwe);
+    logs.logga("___ AlteHighlights submit FINAL ___", asidjwe);
 
     // if (saveToMedia) {
     //   joinwithmedia(dsofkwr);
@@ -202,7 +202,6 @@ export function AlterHighlight({
   };
 
   // // 1console
-  logs.logga("___ newgho ___", newHgho);
   logs.logga("___ FORM BASE ITEMS ___", newHgho);
 
   const baseName =
@@ -317,7 +316,7 @@ export function AlterHighlight({
   function ChooseIo() {
     //
     function sfde(fdkgwer) {
-      logs.logga("___ altHighlight StartFunc ___", fdkgwer);
+      logs.logga("___ altHigh TIMBUTTON StartFunc ___", fdkgwer);
 
       setstaro(fdkgwer);
       setendklp();
@@ -328,8 +327,11 @@ export function AlterHighlight({
       endFunc: setendklp,
       startTime: staro,
       endTime: endklp,
+      trackingTrue: staro && !endklp,
       ...timeConfig,
     };
+
+    logs.logga("AltHigh TimeConfig---", oaksde);
 
     const ywers = {
       typeChooseFunc: setmediaVary,
@@ -344,8 +346,9 @@ export function AlterHighlight({
     };
 
     // 1type
-    logs.loggo("___ altHigh MediaTyTime ___", cvbokf);
+    logs.logga("___ altHigh MediaTyTime ___", cvbokf);
 
+    // 1timebuttons
     const fdjeaw =
       //
       // "";
@@ -366,8 +369,8 @@ export function AlterHighlight({
   // 1list
   const baseList = [
     //
-    "name",
     "emoji",
+    "name",
     "quote",
     "speaker",
   ];
@@ -389,7 +392,7 @@ export function AlterHighlight({
     : [
         //
         ...baseList,
-        ...afterList,
+        // ...afterList,
         // "slack",
         // "teams",
       ];

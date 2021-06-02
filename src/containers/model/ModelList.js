@@ -112,7 +112,7 @@ export default function ModelList({
         itemConfig: {
           margin: "20px 40px",
         },
-        horizTrue: true,
+        horiz: true,
       };
       break;
 

@@ -10,6 +10,7 @@ import { LoadMain } from "./GlobalComps";
 export function BearDiv({
   //
   obj,
+  renderObj,
   bediaTrue,
   flexTrue,
   vertAlign,
@@ -17,7 +18,10 @@ export function BearDiv({
   centerTrue,
   spanTrue,
   fontSize,
+  // 1link
+  href,
   linkvar,
+  newtabLink,
   linkConfig,
   style,
   loadTrue,
@@ -70,29 +74,42 @@ export function BearDiv({
     //
     spanTrue ? "span" : typeDiv;
 
+  const ksdrewq =
+    //
+    // obj
+    renderObj ? renderObj(obj) : obj;
+
   let endo = "";
   switch (aokdwe) {
     case "center":
       endo = (
         <Center bg="tomato" h="100px" color="white" {...oksde}>
-          {obj}
+          {ksdrewq}
         </Center>
       );
     case "span":
-      endo = <span {...oksde}>{obj}</span>;
+      endo = <span {...oksde}>{ksdrewq}</span>;
       break;
     default:
-      endo = <div {...oksde}>{obj}</div>;
+      endo = <div {...oksde}>{ksdrewq}</div>;
   }
+
+  const iasje = newtabLink && {
+    //
+    outsideTrue: true,
+  };
 
   // 1link
   const okdas = {
     toVar: linkvar,
     textvar: endo,
+    ...iasje,
     ...linkConfig,
   };
 
-  const linkTrue = linkvar;
+  // linkvar = href || newtabLink || linkvar;
+
+  const linkTrue = newtabLink || linkvar;
 
   const xczaeewqa =
     //

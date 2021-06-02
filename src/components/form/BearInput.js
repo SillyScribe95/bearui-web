@@ -9,13 +9,15 @@ import {
   logs,
 } from "@SillyScribe95/bedia-shared/";
 import TextareaAutosize from "react-textarea-autosize";
+import ResizeTextarea from "react-textarea-autosize";
 import { useForm, Controller } from "react-hook-form";
 import { BearDiv } from "../BearDiv";
 import { BearFloat } from "../BearFloat";
 import { BearButton } from "../button/BearButton";
 import { Flex } from "@chakra-ui/layout";
 import { InputTitle } from "./InputTitle";
-import { Input } from "reactstrap";
+import { Textarea as TextChak, Input as InputChak } from "@chakra-ui/react";
+import { Input as InputStrap } from "reactstrap";
 
 // import CreatableSelect from "react-select/creatable";
 // import { BearButton } from "./BearButton";
@@ -95,17 +97,29 @@ export function BearInput({
 
   const slasso = ijdsew ? "required" : "";
 
-  function chaneeo(adowe) {
-    const valows = adowe.target && adowe.target.value;
-
+  // 1onchange
+  function mainChange(valows) {
     // logs.logga("___ adowe ___", adowe);
     logs.logga("___ valows ___", valows);
 
-    // setvalInit(valows);
+    setvalInit(valows);
 
-    if (onChange) {
-      onChange(valows);
-    }
+    // if (onChange) {
+    //   onChange(valows);
+    // }
+  }
+
+  function chaneeo(adowe) {
+    const valows =
+      //
+      adowe.target && adowe.target.value;
+
+    logs.logga("___Asidnw obj ___", {
+      MAIN: adowe,
+      VALUE: valows,
+    });
+
+    mainChange(valows);
   }
 
   const changBssoe = {
@@ -114,6 +128,11 @@ export function BearInput({
   };
 
   const isjdfr = { onChange: chaneeo };
+
+  const changeAll = {
+    ...changBssoe,
+    ...isjdfr,
+  };
 
   const nsijqwe =
     //
@@ -154,6 +173,7 @@ export function BearInput({
     textvar: textvar,
     ...zdssdire,
     innerRef: { required: required },
+    ...changeAll,
     // ...cntrMan,
     // ...changBssoe,
     ...nsijqwe,
@@ -170,13 +190,19 @@ export function BearInput({
   // 1console
   function logros(...asa) {
     //
+
+    const oisdkre =
+      //
+      "name";
+    // "testSelect"
+
     let sdfijer =
       //
-      "asda";
-    // name == "testSelect";
+      // "asda";
+      name == oisdkre;
 
     if (sdfijer) {
-      logs.logga(name + "___BearForm--INPUT------zzz", ...asa);
+      logs.logge(name + "___BearForm--INPUT------zzz", ...asa);
     }
   }
 
@@ -200,10 +226,19 @@ export function BearInput({
         // 1rows
         rows = rows ? rows : 3;
 
+        const chakResize = {
+          minH: "unset",
+          overflow: "hidden",
+          w: "100%",
+          resize: "none",
+          as: ResizeTextarea,
+        };
+
         const ijsdfasd = {
           rows: rows,
           minRows: rows,
           defaultValue: textvar,
+          ...chakResize,
           ...objbase,
           ...textConfig,
           // ref={(tag) => (this.textarea = tag)}
@@ -213,16 +248,17 @@ export function BearInput({
 
         logs.logga(textvar + "___ INPUTBASE TEXTAREA ___", ijsdfasd);
 
+        // size="sm"
+
         const okasewe =
           //
           "";
         // placeholder
 
-        // ujsdqwe = <TextareaAutosize autoFocus />;
-        ujsdqwe = <TextareaAutosize {...ijsdfasd} />;
-        // {textvar}</TextareaAutosize>;
+        // ujsdqwe = <TextareaAutosize {...ijsdfasd} />;
+        ujsdqwe = <TextChak {...ijsdfasd} />;
         // ujsdqwe = <textarea {...ijsdfasd} />;
-        // ujsdqwe = <textarea {...ijsdfasd}>{textvar}</textarea>;
+
         // ujsdqwe = "";
 
         break;
@@ -258,8 +294,8 @@ export function BearInput({
           <>
             {/*  */}
             {/* <input {...dsoadkw0} />; */}
-            {/* <Input {...isawe} /> */}
-            <input {...isawe} /> {dsf9jewr}
+            <Input {...isawe} />
+            {/* <input {...isawe} /> {dsf9jewr} */}
             {/* </input> */}
             {/* <gens.CheckboxMain {...dsoadkw0}>{obj["textvar"]}</gens.CheckboxMain> */}
           </>
@@ -272,9 +308,16 @@ export function BearInput({
 
       default:
         // textvar = "DEFAULT TEXT";
+
+        const sdkfewr = {
+          focusBorderColor: "lime",
+          // placeholder: "Here is a sample placeholder"
+        };
+
         const ijawe = {
           // type: "text",
           // height: "10px"
+          ...sdkfewr,
           rows: 1,
           autocomplete: "off",
           className: "noresize",
@@ -299,8 +342,9 @@ export function BearInput({
           // <input {...ijawe} />
           // <textarea {...ijawe}>{textvar}</textarea>
           // <gens.StInput {...ijawe} />
+          <InputChak {...ijawe} />
+          // <InputStrap {...ijawe} />
           // <input {...ijawe} />
-          <input {...ijawe} />
         );
     }
 

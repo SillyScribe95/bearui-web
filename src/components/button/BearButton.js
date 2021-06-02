@@ -30,10 +30,15 @@ export function BearButton({
   loadClick,
   linkvar,
   logtrue,
+  //
+  // 1onclick
+  clickObj,
+  onClick,
+  //
   noGreen,
   divConfig,
   onlyText,
-  typevar = "confirm",
+  typevar,
   ...arg
 }) {
   // const asndiw = {
@@ -61,6 +66,9 @@ export function BearButton({
   //   border: none;
   //   box-sizing: border-box;
   // }
+
+  // 1const
+  const [clickTrue, setclickTrue] = useState();
 
   const sdfoer = errorTrue && {
     background: "red",
@@ -113,9 +121,20 @@ export function BearButton({
   //   gens.butClass;
   // gens.butClass + dwesae ? " disabled" : "";
 
+  function asoke() {
+    if (clickObj) {
+      setclickTrue(!clickTrue);
+    }
+
+    if (onClick) {
+      onClick();
+    }
+  }
+
   const sfasdokwe = {
     form: formid,
     ...arg,
+    onClick: asoke,
     style: baseStlas,
     className: cllosk,
     isDisabled: dwesae,
@@ -123,8 +142,12 @@ export function BearButton({
     // ...uahwe,
   };
 
-  const asodkwe = obj || onlyText || textvar;
-  const qy7eww = asodkwe ? asodkwe : "Confirm";
+  const asodkwe = clickTrue ? clickObj : obj;
+
+  const qy7eww =
+    //
+    asodkwe;
+  // asodkwe ? asodkwe : "Confirm";
 
   const aisjqw = (
     <>
@@ -208,8 +231,6 @@ export function BearButton({
     asdgvwe
   );
 
-  // const isjdfe =
-
   const dweasdd = {
     obj: pdska,
     ...genConfig,
@@ -220,7 +241,7 @@ export function BearButton({
   // logs.logga("___ sfasdokwe ___", sfasdokwe);
 
   if (logtrue) {
-    logs.logga(obj + "___CONFIRM BUTTON " + aisjqw, sfasdokwe);
+    logs.logga(obj + "___CONIRM BUTTON " + aisjqw, sfasdokwe);
     logs.logga("___ BearButton  STYLE___", baseStlas);
     logs.logga("___ baseStlas ___", baseStlas);
   }

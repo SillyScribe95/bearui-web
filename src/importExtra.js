@@ -16,3 +16,6 @@ export * from "./containers/time/TimeButtons";
 
 // 1extra
 export * from "./components/extra/BearCreditCard";
+
+// 1bear
+// export * from "./consts/bearConst";

@@ -11,7 +11,7 @@ import {
 } from "@SillyScribe95/bedia-shared/";
 import { BearList } from "../../components/list/BearList";
 
-export default function ModelPanel({
+export function ModelPanel({
   //
   typevar,
   newFunc,
@@ -22,7 +22,11 @@ export default function ModelPanel({
     typevar;
   //   getModelAtt(typevar, "title");
 
-  let dgeir = `Created ${saewase}: '${asdokwe.name}'`;
+  let dgeir =
+    //
+    asdokwe.name;
+  // `Created ${saewase}: '${asdokwe.name}'`;
+
   let osade = getBlankLink(modelLink(typevar, asdokwe, "edit"));
 
   const ksaecv = {
@@ -83,7 +87,7 @@ export default function ModelPanel({
     const fogsd = {
       listvar: lkasew,
       dictvar: oksaa,
-      horizTrue: true,
+      horiz: true,
       typevar: "button",
       itemConfig: {
         style: {

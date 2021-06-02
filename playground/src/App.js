@@ -12,7 +12,7 @@ function App() {
   const okdfger = {
     className: "App",
     style: {
-      padding: "2% 15%",
+      padding: "3% 5%",
     },
   };
 

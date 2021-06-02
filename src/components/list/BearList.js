@@ -54,6 +54,9 @@ export function BearList({
   // 1onclick
   onClick,
   //
+  // 1error
+  noError,
+  //
   // 1choose
   chooseBaseFunc,
   chooseTrue,
@@ -70,7 +73,7 @@ export function BearList({
   //
   // 1horizotal
   centerItem = true,
-  horizTrue,
+  horiz,
   flexTrue,
   //
   // TITLE
@@ -197,12 +200,14 @@ export function BearList({
       return iasda;
     }
 
-    const endRet = {
-      ...asdwe,
-      ...listarr,
-      ...choseAll,
-      style: mainseo,
-    };
+    const endRet = !dictTrue
+      ? dgste
+      : {
+          ...asdwe,
+          ...listarr,
+          ...choseAll,
+          style: mainseo,
+        };
 
     logs.logga("___ endRet ___", endRet);
 
@@ -250,12 +255,14 @@ export function BearList({
         break;
 
       default:
+        const jasdwqe =
+          //
+          "No 'renderItem' or 'typeList' specified in BearList's arguments.";
+
         asdpkwe =
           //
           // findoobj(endRet);
-          findoobj
-            ? findoobj(endRet)
-            : BearError("No renderItem specified in BearList's arguments");
+          findoobj ? findoobj(endRet) : BearError(jasdwqe);
     }
 
     const isjdew =
@@ -323,7 +330,7 @@ export function BearList({
     //
     const endoa = {
       messvar: messvar,
-      ...listArgs,
+      // ...listArgs,
       listvar: listvar,
       dictvar: dictvar,
       dictFunc: dictFunc,
@@ -390,10 +397,14 @@ export function BearList({
     //
     // "oaksdwqew";
     !listvar ? (
-      BearError("No 'listvar' argument specified")
+      noError ? (
+        ""
+      ) : (
+        BearError("No 'listvar' argument specified")
+      )
     ) : selectableTrue ? (
       <Seletio />
-    ) : horizTrue ? (
+    ) : horiz ? (
       <HozBar />
     ) : (
       listvar.map(mapoBap)
@@ -416,6 +427,7 @@ export function BearList({
   const saidje = {
     loadtrue: loadtrue,
     obj: saokwe,
+    ...listArgs,
     ...genConfig,
   };
 

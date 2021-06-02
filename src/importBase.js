@@ -26,13 +26,20 @@ export * from "./components/BearFloat";
 export * from "./components/button/BearButton";
 
 // 1user
-export * from "./components/user/SignBase";
+export * from "./components/user/BearAuthPortal";
 
 // 1list
 export * from "./components/list/BearList";
 export * from "./components/list/BearCarousel";
 export * from "./components/list/BearEmoji";
 export * from "./components/list/BearSocial";
+export * from "./components/list/BearTags";
+
+// 1search
+export * from "./components/search/BearSearchList";
+
+// 1code
+export * from "./components/code/BearCodePreview";
 
 // 1select
 export * from "./components/select/BearSelect";
