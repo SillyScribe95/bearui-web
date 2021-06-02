@@ -7,6 +7,7 @@ import {
   //
   logs,
 } from "@SillyScribe95/bedia-shared";
+import { ExploreBear } from "./components/ExploreBear";
 
 function App() {
   const okdfger = {
@@ -28,6 +29,7 @@ function App() {
         {/* <TestPage /> */}
         {/* <TestComp /> */}
         <TestBear />
+        {/* <ExploreBear /> */}
       </div>
     </BearContextProvider>
   );

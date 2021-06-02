@@ -26,6 +26,9 @@ export * from "./components/BearFloat";
 export * from "./components/button/BearButton";
 
 // 1user
+export * from "./components/user/BearUserPortal";
+
+// 1auth
 export * from "./components/user/BearAuthPortal";
 
 // 1list

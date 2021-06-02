@@ -605,7 +605,6 @@ export default function TestBear() {
       <Seleo /> */}
       {/* 1search */}
       {/* {Searchio()} */}
-      <ExploreBear />
       {/* 1wiki TEST WIKI */}
       {/* <Seleo /> */}
       {/* 1div
@@ -632,7 +631,7 @@ export default function TestBear() {
       {/* 1checkout */}
       {/* <Checkios /> */}
       {/* 1social */}
-      {/* <Sonasi /> */}
+      <Sonasi />
       {/* i1con */}
       {/* <Incasod /> */}
       {/* 1form */}

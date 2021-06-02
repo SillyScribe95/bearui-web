@@ -19,6 +19,8 @@ import { FiExternalLink, FiSettings } from "react-icons/fi";
 import { RiTimerLine } from "react-icons/ri";
 import {
   FaPlay,
+  FaUser,
+  FaCog,
   FaSignOutAlt,
   FaQuoteLeft,
   FaQuoteRight,

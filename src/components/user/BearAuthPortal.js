@@ -10,6 +10,9 @@ import {
   TwitterLoginButton,
   GithubLoginButton,
   createButton,
+  DiscordLoginButton,
+  MicrosoftLoginButton,
+  LinkedInLoginButton,
 } from "react-social-login-buttons";
 import {
   SiFacebook,
@@ -84,6 +87,12 @@ export function BearAuthPortal({
     typevar: "email",
   };
 
+  // function retto(typeo, button){
+
+  //   return
+
+  // }
+
   const fdsogkret = {
     google: {
       textvar: <GoogleLoginButton>{signCheck("Google")}</GoogleLoginButton>,
@@ -101,19 +110,40 @@ export function BearAuthPortal({
     },
     email: emBaso,
     github: {
-      textvar: <GithubLoginButton />,
+      textvar: (
+        <GithubLoginButton>
+          {/*  */}
+          {signCheck("Github")}
+        </GithubLoginButton>
+      ),
       // textvar: "Twitter",
       // iconvar: <SiGithub />,
       typevar: "github",
     },
     apple: {
-      textvar: <AppleLoginButton />,
+      textvar: <AppleLoginButton>{signCheck("Apple")}</AppleLoginButton>,
       typevar: "apple",
     },
     twitter: {
-      textvar: <TwitterLoginButton />,
+      textvar: <TwitterLoginButton>{signCheck("Twitter")}</TwitterLoginButton>,
       // textvar: "Github",
       iconvar: <SiTwitter />,
+      typevar: "github",
+    },
+    linkedin: {
+      typevar: "linkedin",
+      textvar: (
+        <LinkedInLoginButton>{signCheck("Discord")}</LinkedInLoginButton>
+      ),
+    },
+    microsoft: {
+      typevar: "microsoft",
+      textvar: (
+        <MicrosoftLoginButton>{signCheck("Discord")}</MicrosoftLoginButton>
+      ),
+    },
+    discord: {
+      textvar: <DiscordLoginButton>{signCheck("Discord")}</DiscordLoginButton>,
       typevar: "github",
     },
     //

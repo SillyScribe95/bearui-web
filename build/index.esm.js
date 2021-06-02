@@ -1,8 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import 'antd/dist/antd.css';
-import { Center, Flex } from '@chakra-ui/layout';
+import { Center, Flex as Flex$1 } from '@chakra-ui/layout';
 import React, { useState } from 'react';
-import { logs as logs$2, turnarray, getParamVar, userLogSign, getBlankLink, linkuseNameProvide, mapSelectValue, mapDictAttrToString, getUserPlaylists, userConnect, modelLink, SaveUser as SaveUser$1, moveItemFront, getDuration, timeDecim as timeDecim$1, getWebCurrentTime, changeWebPlayerTime, mediaTypeTrue, joinString as joinString$1, indexHighlights, getFirstArr, checkFullArray as checkFullArray$1 } from '@SillyScribe95/bedia-shared/';
+import { logs as logs$2, turnarray, getParamVar, userLogSign, getBlankLink, linkuseNameProvide, mapSelectValue, mapDictAttrToString, getUserPlaylists, userConnect as userConnect$1, modelLink, SaveUser as SaveUser$1, moveItemFront, getDuration, timeDecim as timeDecim$1, getWebCurrentTime, changeWebPlayerTime, mediaTypeTrue, joinString as joinString$1, indexHighlights, getFirstArr, checkFullArray as checkFullArray$1 } from '@SillyScribe95/bedia-shared/';
 import { Avatar, Skeleton, Popover } from 'antd';
 import { remove, isEmpty } from 'lodash';
 import { MdPlaylistPlay } from 'react-icons/md';
@@ -21,7 +21,7 @@ import 'firebase/app';
 import 'firebase/auth';
 import 'firebase/firestore';
 import 'react-firebase-hooks/firestore';
-import { createButton, GoogleLoginButton, FacebookLoginButton, GithubLoginButton, AppleLoginButton, TwitterLoginButton } from 'react-social-login-buttons';
+import { createButton, GoogleLoginButton, FacebookLoginButton, GithubLoginButton, AppleLoginButton, TwitterLoginButton, LinkedInLoginButton, MicrosoftLoginButton, DiscordLoginButton } from 'react-social-login-buttons';
 import * as yup from 'yup';
 import { Controller, useForm } from 'react-hook-form';
 import ResizeTextarea from 'react-textarea-autosize';
@@ -2204,7 +2204,7 @@ function BearInput(_ref) {
     return okaweasd;
   }
 
-  var ijdas = sameLine ? /*#__PURE__*/React.createElement(Flex, ijsa, asdowe()) : /*#__PURE__*/React.createElement("div", ijsa, okaweasd);
+  var ijdas = sameLine ? /*#__PURE__*/React.createElement(Flex$1, ijsa, asdowe()) : /*#__PURE__*/React.createElement("div", ijsa, okaweasd);
   var kaosdew = /*#__PURE__*/React.createElement(React.Fragment, null, ijdas, xvcmfde);
   return kaosdew;
 }
@@ -2670,7 +2670,10 @@ function BearAuthPortal(_ref) {
     textvar: /*#__PURE__*/React.createElement(EmailLoginButton, null),
     onClick: dskwad,
     typevar: "email"
-  };
+  }; // function retto(typeo, button){
+  //   return
+  // }
+
   var fdsogkret = {
     google: {
       textvar: /*#__PURE__*/React.createElement(GoogleLoginButton, null, signCheck("Google")),
@@ -2686,19 +2689,31 @@ function BearAuthPortal(_ref) {
     },
     email: emBaso,
     github: {
-      textvar: /*#__PURE__*/React.createElement(GithubLoginButton, null),
+      textvar: /*#__PURE__*/React.createElement(GithubLoginButton, null, signCheck("Github")),
       // textvar: "Twitter",
       // iconvar: <SiGithub />,
       typevar: "github"
     },
     apple: {
-      textvar: /*#__PURE__*/React.createElement(AppleLoginButton, null),
+      textvar: /*#__PURE__*/React.createElement(AppleLoginButton, null, signCheck("Apple")),
       typevar: "apple"
     },
     twitter: {
-      textvar: /*#__PURE__*/React.createElement(TwitterLoginButton, null),
+      textvar: /*#__PURE__*/React.createElement(TwitterLoginButton, null, signCheck("Twitter")),
       // textvar: "Github",
       iconvar: /*#__PURE__*/React.createElement(SiTwitter, null),
+      typevar: "github"
+    },
+    linkedin: {
+      typevar: "linkedin",
+      textvar: /*#__PURE__*/React.createElement(LinkedInLoginButton, null, signCheck("Discord"))
+    },
+    microsoft: {
+      typevar: "microsoft",
+      textvar: /*#__PURE__*/React.createElement(MicrosoftLoginButton, null, signCheck("Discord"))
+    },
+    discord: {
+      textvar: /*#__PURE__*/React.createElement(DiscordLoginButton, null, signCheck("Discord")),
       typevar: "github"
     } //
 
@@ -2845,6 +2860,226 @@ function BearAuthPortal(_ref) {
   }, sdse);
 
   return /*#__PURE__*/React.createElement(BearDiv$1, okasdew);
+}
+
+function BearUserPortal(_ref) {
+  var user = _ref.user,
+      authConfig = _ref.authConfig,
+      noConfig = _ref.noConfig,
+      args = _objectWithoutProperties(_ref, ["user", "authConfig", "noConfig"]);
+
+  // 1MainContext
+  var currentUser = user;
+  var loggedIn = user; // 1const
+
+  var _useState = useState(""),
+      _useState2 = _slicedToArray(_useState, 2);
+      _useState2[0];
+      _useState2[1];
+
+  function BepopB() {
+    //
+    // 1register
+    function RegShowy() {
+
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(BearAuthPortal, null));
+    } // 1login
+
+
+    function LogShow(_ref2) {
+      var dictvar = _ref2.dictvar,
+          extra = _objectWithoutProperties(_ref2, ["dictvar"]);
+
+      //
+      var foghtr = [//
+      "profile", "settings"];
+      var ijsae = {
+        className: "greyHover",
+        style: {
+          fontSize: "26px"
+        }
+      };
+
+      var goOut = _objectSpread2(_objectSpread2({}, ijsae), {}, {
+        onClick: userSignOut,
+        obj: "Sign Out"
+      }); // 1profile
+
+
+      var proffo = {
+        iconvar: "user",
+        obj: "Profile",
+        linkvar: "/account"
+      }; // 1settings
+
+      var setingso = {
+        iconvar: "settings",
+        obj: "Settings",
+        linkvar: "/settings"
+      };
+
+      var fokdt = _objectSpread2({
+        signout: goOut,
+        profile: proffo,
+        settings: setingso
+      }, dictvar);
+
+      var oksae = _objectSpread2({
+        dictvar: fokdt,
+        itemConfig: ijsae
+      }, extra);
+
+      function NameNase() {
+        // 1nameBase
+        var kadawe = {
+          obj: currentUser.name,
+          className: "wrapTrue bold",
+          style: {
+            textAlign: "center",
+            fontSize: "1.4em"
+          }
+        };
+        return /*#__PURE__*/React.createElement(Divo, kadawe);
+      }
+
+      var dfgoker = _objectSpread2({
+        listvar: foghtr
+      }, oksae);
+
+      var signBomtos = _objectSpread2(_objectSpread2({}, oksae), {}, {
+        listvar: ["signout"]
+      });
+
+      return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(NameNase, null), /*#__PURE__*/React.createElement(ImageTextList, dfgoker), /*#__PURE__*/React.createElement("hr", null), /*#__PURE__*/React.createElement(ImageTextList, signBomtos));
+    }
+
+    var aisjdwe = //
+    loggedIn ? /*#__PURE__*/React.createElement(LogShow, authConfig) : /*#__PURE__*/React.createElement(RegShowy, null);
+    return aisjdwe;
+  }
+
+  var sdfiew = //
+  // 30;
+  "2x1"; // "5x1";
+  // "xl";
+  //   "1x2";
+  // "lg";
+
+  var vbfdg = /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(BepopB, null));
+  var ijsadw = {
+    obj: vbfdg,
+    style: {
+      width: "180px",
+      fontSize: "18px"
+    }
+  };
+  var aswe = /*#__PURE__*/React.createElement(Divo, ijsadw);
+  var placeos = //
+  // "bottom"
+  "bottomRight";
+  var djgere = {
+    content: aswe,
+    placement: placeos,
+    trigger: "click"
+  };
+  var ksasa = {
+    obj: currentUser,
+    imagesize: sdfiew,
+    logtrue: true,
+    messvar: "dokeq"
+  }; // logs.logga("___ useSignin ___", fnkfg);
+
+  function SinglImg() {
+    var osakew = currentUser === null || currentUser === void 0 ? void 0 : currentUser.name;
+    var sokaew = //
+    osakew; // osakew ? osakew : "User M"
+
+    var aesdofwr = _objectSpread2(_objectSpread2({}, ksasa), {}, {
+      name: sokaew,
+      imagevar: currentUser === null || currentUser === void 0 ? void 0 : currentUser.imageAttr,
+      src: currentUser === null || currentUser === void 0 ? void 0 : currentUser.imageAttr
+    }, args);
+
+    logs$2.logga("___ USER SIGN IN ___", aesdofwr);
+    var sewwad =
+    /*#__PURE__*/
+    //
+    // <Avatar src="https://bit.ly/broken-link" />
+    // <Avatar {...aesdofwr} />
+    React.createElement(ImageMain, aesdofwr);
+    return sewwad;
+  }
+
+  function Bssdweos() {
+    // const sakdew = <
+    var asokew = {
+      obj: "Log in",
+      bediaTrue: true
+    };
+    var okasew = /*#__PURE__*/React.createElement(Flex, null, "Join");
+    var ijfvds = {
+      login: asokew,
+      join: {
+        obj: okasew,
+        popConfig: djgere,
+        bediaTrue: true
+      },
+      signup: {
+        obj: "Sign Up"
+      }
+    };
+    var okasdew = {
+      minWidth: "90px",
+      fontSize: "24px",
+      textAlign: "center",
+      margin: "0 5px",
+      padding: "0 5px"
+    };
+
+    function sdikfewq() {
+      userConnect("google");
+    }
+
+    var kmfvds = {
+      className: "borderHover pointer",
+      // popConfig: djgere,
+      onClick: sdikfewq,
+      style: okasdew
+    };
+    var oksad = [//
+    // "join",
+    "login", "signup"];
+
+    var kasdew = _objectSpread2({
+      listvar: oksad,
+      dictvar: ijfvds,
+      itemConfig: kmfvds,
+      // horizTrue: "y",
+      flexTrue: true
+    }, noConfig);
+
+    return /*#__PURE__*/React.createElement(ImageTextList, kasdew);
+  }
+
+  var ifjdsr = //
+  "pointer"; // "pointer buttonHover"
+
+  var okase =
+  /*#__PURE__*/
+  //
+  // currentUser ? <SinglImg /> : <ASqwe />;
+  React.createElement(SinglImg, null);
+  var kadse = {
+    obj: okase,
+    className: ifjdsr,
+    popConfig: djgere // testShow: true,
+
+  };
+  var oksdewq = //
+  currentUser ? /*#__PURE__*/React.createElement(Divo, kadse) : /*#__PURE__*/React.createElement(Bssdweos, null); // <Divo {...kadse} />
+  //
+
+  return oksdewq;
 }
 
 function BearCarousel(_ref) {
@@ -4963,7 +5198,7 @@ function LoginModal(_ref) {
     function asdokew(type) {
       //
       logs$2.logga("___ LoginMod CONNECT ___", type);
-      userConnect(type, loginFunc);
+      userConnect$1(type, loginFunc);
     } // function sdfer
 
 
@@ -6160,5 +6395,5 @@ function BearCreditCard(_ref) {
   return okfdsd;
 }
 
-export { AlterHighlight, AlterModel, BearAuthPortal, BearButton, BearCarousel, BearCheckout, BearCodePreview, BearContextProvider, BearCreditCard, BearDiv$1 as BearDiv, BearDuration, BearEmoji, BearError, BearFlex, BearFloat, BearForm, BearIcon, BearIconText, BearList, BearSearchList, BearSelect, BearSocial, BearTags, BearTextMedia, BearTitle, CopyMain, Exmapl, ImageAlign, ImageGroup, InputForm, InputMain, ListFlex, ListReturn, LoadMain, MediaTypeChoose, NewHighlight, PagePad, SliderMain, TimeButtons, linkBase, logFuncs as logs };
+export { AlterHighlight, AlterModel, BearAuthPortal, BearButton, BearCarousel, BearCheckout, BearCodePreview, BearContextProvider, BearCreditCard, BearDiv$1 as BearDiv, BearDuration, BearEmoji, BearError, BearFlex, BearFloat, BearForm, BearIcon, BearIconText, BearList, BearSearchList, BearSelect, BearSocial, BearTags, BearTextMedia, BearTitle, BearUserPortal, CopyMain, Exmapl, ImageAlign, ImageGroup, InputForm, InputMain, ListFlex, ListReturn, LoadMain, MediaTypeChoose, NewHighlight, PagePad, SliderMain, TimeButtons, linkBase, logFuncs as logs };
 //# sourceMappingURL=index.esm.js.map

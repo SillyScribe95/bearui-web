@@ -2707,7 +2707,10 @@ function BearAuthPortal(_ref) {
     textvar: /*#__PURE__*/React__default['default'].createElement(EmailLoginButton, null),
     onClick: dskwad,
     typevar: "email"
-  };
+  }; // function retto(typeo, button){
+  //   return
+  // }
+
   var fdsogkret = {
     google: {
       textvar: /*#__PURE__*/React__default['default'].createElement(reactSocialLoginButtons.GoogleLoginButton, null, signCheck("Google")),
@@ -2723,19 +2726,31 @@ function BearAuthPortal(_ref) {
     },
     email: emBaso,
     github: {
-      textvar: /*#__PURE__*/React__default['default'].createElement(reactSocialLoginButtons.GithubLoginButton, null),
+      textvar: /*#__PURE__*/React__default['default'].createElement(reactSocialLoginButtons.GithubLoginButton, null, signCheck("Github")),
       // textvar: "Twitter",
       // iconvar: <SiGithub />,
       typevar: "github"
     },
     apple: {
-      textvar: /*#__PURE__*/React__default['default'].createElement(reactSocialLoginButtons.AppleLoginButton, null),
+      textvar: /*#__PURE__*/React__default['default'].createElement(reactSocialLoginButtons.AppleLoginButton, null, signCheck("Apple")),
       typevar: "apple"
     },
     twitter: {
-      textvar: /*#__PURE__*/React__default['default'].createElement(reactSocialLoginButtons.TwitterLoginButton, null),
+      textvar: /*#__PURE__*/React__default['default'].createElement(reactSocialLoginButtons.TwitterLoginButton, null, signCheck("Twitter")),
       // textvar: "Github",
       iconvar: /*#__PURE__*/React__default['default'].createElement(si.SiTwitter, null),
+      typevar: "github"
+    },
+    linkedin: {
+      typevar: "linkedin",
+      textvar: /*#__PURE__*/React__default['default'].createElement(reactSocialLoginButtons.LinkedInLoginButton, null, signCheck("Discord"))
+    },
+    microsoft: {
+      typevar: "microsoft",
+      textvar: /*#__PURE__*/React__default['default'].createElement(reactSocialLoginButtons.MicrosoftLoginButton, null, signCheck("Discord"))
+    },
+    discord: {
+      textvar: /*#__PURE__*/React__default['default'].createElement(reactSocialLoginButtons.DiscordLoginButton, null, signCheck("Discord")),
       typevar: "github"
     } //
 
@@ -2882,6 +2897,226 @@ function BearAuthPortal(_ref) {
   }, sdse);
 
   return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, okasdew);
+}
+
+function BearUserPortal(_ref) {
+  var user = _ref.user,
+      authConfig = _ref.authConfig,
+      noConfig = _ref.noConfig,
+      args = _objectWithoutProperties(_ref, ["user", "authConfig", "noConfig"]);
+
+  // 1MainContext
+  var currentUser = user;
+  var loggedIn = user; // 1const
+
+  var _useState = React.useState(""),
+      _useState2 = _slicedToArray(_useState, 2);
+      _useState2[0];
+      _useState2[1];
+
+  function BepopB() {
+    //
+    // 1register
+    function RegShowy() {
+
+      return /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(BearAuthPortal, null));
+    } // 1login
+
+
+    function LogShow(_ref2) {
+      var dictvar = _ref2.dictvar,
+          extra = _objectWithoutProperties(_ref2, ["dictvar"]);
+
+      //
+      var foghtr = [//
+      "profile", "settings"];
+      var ijsae = {
+        className: "greyHover",
+        style: {
+          fontSize: "26px"
+        }
+      };
+
+      var goOut = _objectSpread2(_objectSpread2({}, ijsae), {}, {
+        onClick: userSignOut,
+        obj: "Sign Out"
+      }); // 1profile
+
+
+      var proffo = {
+        iconvar: "user",
+        obj: "Profile",
+        linkvar: "/account"
+      }; // 1settings
+
+      var setingso = {
+        iconvar: "settings",
+        obj: "Settings",
+        linkvar: "/settings"
+      };
+
+      var fokdt = _objectSpread2({
+        signout: goOut,
+        profile: proffo,
+        settings: setingso
+      }, dictvar);
+
+      var oksae = _objectSpread2({
+        dictvar: fokdt,
+        itemConfig: ijsae
+      }, extra);
+
+      function NameNase() {
+        // 1nameBase
+        var kadawe = {
+          obj: currentUser.name,
+          className: "wrapTrue bold",
+          style: {
+            textAlign: "center",
+            fontSize: "1.4em"
+          }
+        };
+        return /*#__PURE__*/React__default['default'].createElement(Divo, kadawe);
+      }
+
+      var dfgoker = _objectSpread2({
+        listvar: foghtr
+      }, oksae);
+
+      var signBomtos = _objectSpread2(_objectSpread2({}, oksae), {}, {
+        listvar: ["signout"]
+      });
+
+      return /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(NameNase, null), /*#__PURE__*/React__default['default'].createElement(ImageTextList, dfgoker), /*#__PURE__*/React__default['default'].createElement("hr", null), /*#__PURE__*/React__default['default'].createElement(ImageTextList, signBomtos));
+    }
+
+    var aisjdwe = //
+    loggedIn ? /*#__PURE__*/React__default['default'].createElement(LogShow, authConfig) : /*#__PURE__*/React__default['default'].createElement(RegShowy, null);
+    return aisjdwe;
+  }
+
+  var sdfiew = //
+  // 30;
+  "2x1"; // "5x1";
+  // "xl";
+  //   "1x2";
+  // "lg";
+
+  var vbfdg = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(BepopB, null));
+  var ijsadw = {
+    obj: vbfdg,
+    style: {
+      width: "180px",
+      fontSize: "18px"
+    }
+  };
+  var aswe = /*#__PURE__*/React__default['default'].createElement(Divo, ijsadw);
+  var placeos = //
+  // "bottom"
+  "bottomRight";
+  var djgere = {
+    content: aswe,
+    placement: placeos,
+    trigger: "click"
+  };
+  var ksasa = {
+    obj: currentUser,
+    imagesize: sdfiew,
+    logtrue: true,
+    messvar: "dokeq"
+  }; // logs.logga("___ useSignin ___", fnkfg);
+
+  function SinglImg() {
+    var osakew = currentUser === null || currentUser === void 0 ? void 0 : currentUser.name;
+    var sokaew = //
+    osakew; // osakew ? osakew : "User M"
+
+    var aesdofwr = _objectSpread2(_objectSpread2({}, ksasa), {}, {
+      name: sokaew,
+      imagevar: currentUser === null || currentUser === void 0 ? void 0 : currentUser.imageAttr,
+      src: currentUser === null || currentUser === void 0 ? void 0 : currentUser.imageAttr
+    }, args);
+
+    _.logs.logga("___ USER SIGN IN ___", aesdofwr);
+    var sewwad =
+    /*#__PURE__*/
+    //
+    // <Avatar src="https://bit.ly/broken-link" />
+    // <Avatar {...aesdofwr} />
+    React__default['default'].createElement(ImageMain, aesdofwr);
+    return sewwad;
+  }
+
+  function Bssdweos() {
+    // const sakdew = <
+    var asokew = {
+      obj: "Log in",
+      bediaTrue: true
+    };
+    var okasew = /*#__PURE__*/React__default['default'].createElement(Flex, null, "Join");
+    var ijfvds = {
+      login: asokew,
+      join: {
+        obj: okasew,
+        popConfig: djgere,
+        bediaTrue: true
+      },
+      signup: {
+        obj: "Sign Up"
+      }
+    };
+    var okasdew = {
+      minWidth: "90px",
+      fontSize: "24px",
+      textAlign: "center",
+      margin: "0 5px",
+      padding: "0 5px"
+    };
+
+    function sdikfewq() {
+      userConnect("google");
+    }
+
+    var kmfvds = {
+      className: "borderHover pointer",
+      // popConfig: djgere,
+      onClick: sdikfewq,
+      style: okasdew
+    };
+    var oksad = [//
+    // "join",
+    "login", "signup"];
+
+    var kasdew = _objectSpread2({
+      listvar: oksad,
+      dictvar: ijfvds,
+      itemConfig: kmfvds,
+      // horizTrue: "y",
+      flexTrue: true
+    }, noConfig);
+
+    return /*#__PURE__*/React__default['default'].createElement(ImageTextList, kasdew);
+  }
+
+  var ifjdsr = //
+  "pointer"; // "pointer buttonHover"
+
+  var okase =
+  /*#__PURE__*/
+  //
+  // currentUser ? <SinglImg /> : <ASqwe />;
+  React__default['default'].createElement(SinglImg, null);
+  var kadse = {
+    obj: okase,
+    className: ifjdsr,
+    popConfig: djgere // testShow: true,
+
+  };
+  var oksdewq = //
+  currentUser ? /*#__PURE__*/React__default['default'].createElement(Divo, kadse) : /*#__PURE__*/React__default['default'].createElement(Bssdweos, null); // <Divo {...kadse} />
+  //
+
+  return oksdewq;
 }
 
 function BearCarousel(_ref) {
@@ -6222,6 +6457,7 @@ exports.BearSocial = BearSocial;
 exports.BearTags = BearTags;
 exports.BearTextMedia = BearTextMedia;
 exports.BearTitle = BearTitle;
+exports.BearUserPortal = BearUserPortal;
 exports.CopyMain = CopyMain;
 exports.Exmapl = Exmapl;
 exports.ImageAlign = ImageAlign;
