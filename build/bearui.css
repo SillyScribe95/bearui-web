@@ -251,22 +251,22 @@
   color: green; */
 
 /* 1wrap */
-.wrapLine {
+.wrap {
   /* STYLE OF ENTIRE SECTION; */
   /* user-drag: none;  */
   /*  */
-  /* overflow: hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical; */
+  -webkit-box-orient: vertical;
 }
 /* 
 display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical; */
 
-.wrapLineTwo {
+.wrapTwo {
   /* STYLE OF ENTIRE SECTION; */
   /* user-drag: none;  */
   /* display: inline; */

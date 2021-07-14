@@ -7,7 +7,7 @@ import React, {
 import {
   //
   logs,
-} from "@SillyScribe95/bedia-shared/";
+} from "../../index";
 import { BearList } from "./BearList";
 import { BearButton } from "../button/BearButton";
 
@@ -18,39 +18,26 @@ export function BearTags({
 }) {
   // 1const
 
-  const okfdsd = (
-    <>
-      {/*  */}
-      sssss
-    </>
-  );
-
   function rendios(itemo) {
-    const osdfks = <># {itemo}</>;
-
-    const oksasde = {
-      obj: osdfks,
+    const kasde = {
+      color: "black",
+      background: "lightgrey",
     };
 
-    return <BearButton {...oksasde} />;
+    const djfwer = <># {itemo}</>;
+
+    const oksdewqsa = {
+      className: "shadowHover",
+      style: kasde,
+      obj: djfwer,
+      ...itemConfig,
+    };
+
+    return <BearButton {...oksdewqsa} />;
   }
 
-  const kasde = {
-    color: "darkblue",
-    background: "lightgrey",
-  };
-
-  const oksdewqsa = {
-    className: "shadowHover",
-    style: kasde,
-    ...itemConfig,
-  };
-
   args = {
-    obj: okfdsd,
     noError: true,
-    itemConfig: oksdewqsa,
-    typeList: "button",
     renderItem: rendios,
     ...args,
   };

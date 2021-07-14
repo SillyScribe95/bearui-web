@@ -38,7 +38,7 @@
 // //   <gens.CollapseMain
 // //     defaultActiveKey={activeVar ? turnarray(activeVar) : ""}
 // //   >
-// //     {mapFunc(listvar, PanPot)}
+// //     {mapFunc(list, PanPot)}
 // //   </gens.CollapseMain>
 // // ) : (
 // //   <ListRend />

@@ -3,12 +3,17 @@ import React, {
   useState,
   useContext,
 } from "react";
-import { logs } from "@SillyScribe95/bedia-shared/";
+import { logs } from "../../index";
 import { BearAuthPortal } from "./BearAuthPortal";
+import { BearDiv } from "../BearDiv";
 
 export function BearUserPortal({
   //
   user,
+  loadUser,
+  noUserReturn,
+  noUserTemplate,
+  noUserConfig,
   authConfig,
   noConfig,
   ...args
@@ -33,17 +38,17 @@ export function BearUserPortal({
 
       const dfgew = {
         register: {
-          linkvar: "register",
+          link: "register",
           obj: "Sign Up",
         },
         login: {
-          linkvar: "login",
+          link: "login",
           obj: "Log In",
         },
       };
 
       const asdwe = {
-        listvar: askawe,
+        list: askawe,
         dictvar: dfgew,
       };
 
@@ -87,14 +92,14 @@ export function BearUserPortal({
       const proffo = {
         iconvar: "user",
         obj: "Profile",
-        linkvar: "/account",
+        link: "/account",
       };
 
       // 1settings
       const setingso = {
         iconvar: "settings",
         obj: "Settings",
-        linkvar: "/settings",
+        link: "/settings",
       };
 
       const fokdt = {
@@ -123,24 +128,24 @@ export function BearUserPortal({
           },
         };
 
-        return <Divo {...kadawe} />;
+        return <BearDiv {...kadawe} />;
       }
 
       const dfgoker = {
-        listvar: foghtr,
+        list: foghtr,
         ...oksae,
       };
 
       const signBomtos = {
         ...oksae,
-        listvar: ["signout"],
+        list: ["signout"],
       };
 
       return (
         <>
           <NameNase />
           <ImageTextList {...dfgoker} />
-          {/* <Divo {...proffo} /> */}
+          {/* <BearDiv {...proffo} /> */}
           <hr />
           <ImageTextList {...signBomtos} />
         </>
@@ -178,7 +183,7 @@ export function BearUserPortal({
     },
   };
 
-  const aswe = <Divo {...ijsadw} />;
+  const aswe = <BearDiv {...ijsadw} />;
 
   const placeos =
     //
@@ -194,7 +199,7 @@ export function BearUserPortal({
   const ksasa = {
     obj: currentUser,
     imagesize: sdfiew,
-    logtrue: true,
+    logtrue: "",
     messvar: "dokeq",
   };
 
@@ -257,73 +262,43 @@ export function BearUserPortal({
       obj: kaew,
     };
 
-    return <Divo {...okasew} />;
+    return <BearDiv {...okasew} />;
+  }
+
+  function asewe({ dictvar, ...asdfe }) {
+    //
+
+    const idsjfr = {
+      login: {
+        text: "Login",
+        link: "/login",
+      },
+      signup: {
+        text: "Signup",
+        link: "/register",
+      },
+    };
+
+    //
+  }
+
+  function switchTemp() {
+    let endios = "";
+    switch (noUserTemplate) {
+      case "":
+        endios = "aokd";
+        break;
+    }
+
+    return endios;
   }
 
   function Bssdweos() {
-    // const sakdew = <
+    const sakdew = "";
+    //
+    // noUserTemplate ? switchTemp() ? noUserReturn
 
-    const asokew = {
-      obj: "Log in",
-      bediaTrue: true,
-    };
-
-    const okasew = (
-      <Flex>
-        {/* Account */}
-        {/* <AiFillGoogleCircle />  */}
-        Join
-      </Flex>
-    );
-
-    const ijfvds = {
-      login: asokew,
-      join: {
-        obj: okasew,
-        popConfig: djgere,
-        bediaTrue: true,
-      },
-      signup: {
-        obj: "Sign Up",
-      },
-    };
-
-    const okasdew = {
-      minWidth: "90px",
-      fontSize: "24px",
-      textAlign: "center",
-      margin: "0 5px",
-      padding: "0 5px",
-    };
-
-    function sdikfewq() {
-      userConnect("google");
-    }
-
-    const kmfvds = {
-      className: "borderHover pointer",
-      // popConfig: djgere,
-      onClick: sdikfewq,
-      style: okasdew,
-    };
-
-    const oksad = [
-      //
-      // "join",
-      "login",
-      "signup",
-    ];
-
-    const kasdew = {
-      listvar: oksad,
-      dictvar: ijfvds,
-      itemConfig: kmfvds,
-      // horizTrue: "y",
-      flexTrue: true,
-      ...noConfig,
-    };
-
-    return <ImageTextList {...kasdew} />;
+    return noUserReturn;
   }
 
   let ifjdsr =
@@ -331,11 +306,11 @@ export function BearUserPortal({
     "pointer";
   // "pointer buttonHover"
 
-  let okase = (
+  let okase =
     //
+    // "asdawe";
     // currentUser ? <SinglImg /> : <ASqwe />;
-    <SinglImg />
-  );
+    SinglImg();
 
   const kadse = {
     obj: okase,
@@ -346,9 +321,72 @@ export function BearUserPortal({
 
   const oksdewq =
     //
-    currentUser ? <Divo {...kadse} /> : <Bssdweos />;
-  // <Divo {...kadse} />
+    currentUser ? <BearDiv {...kadse} /> : <Bssdweos />;
+  // <BearDiv {...kadse} />
 
   //
   return oksdewq;
 }
+
+// const asokew = {
+//   obj: "Log in",
+//   bediaTrue: true,
+// };
+
+// const okasew = (
+//   <Flex>
+//     {/* Account */}
+//     {/* <AiFillGoogleCircle />  */}
+//     Join
+//   </Flex>
+// );
+
+// const ijfvds = {
+//   login: asokew,
+//   join: {
+//     obj: okasew,
+//     popConfig: djgere,
+//     bediaTrue: true,
+//   },
+//   signup: {
+//     obj: "Sign Up",
+//   },
+// };
+
+// const okasdew = {
+//   minWidth: "90px",
+//   fontSize: "24px",
+//   textAlign: "center",
+//   margin: "0 5px",
+//   padding: "0 5px",
+// };
+
+// function sdikfewq() {
+//   // BearUserConnect("google");
+// }
+
+// const kmfvds = {
+//   className: "borderHover pointer",
+//   // popConfig: djgere,
+//   onClick: sdikfewq,
+//   style: okasdew,
+// };
+
+// const oksad = [
+//   //
+//   // "join",
+//   "login",
+//   "signup",
+// ];
+
+// const kasdew = {
+//   list: oksad,
+//   dictvar: ijfvds,
+//   itemConfig: kmfvds,
+//   // horizTrue: "y",
+//   flex: true,
+//   ...noConfig,
+// };
+
+// return <ImageTextList {...kasdew} />;
+// }

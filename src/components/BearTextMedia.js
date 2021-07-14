@@ -3,11 +3,15 @@ import React, {
   useState,
   useContext,
 } from "react";
-import * as logs from "../functions/logFuncs";
+import {
+  //
+  logs,
+} from "../index"
 import { BearDiv } from "./BearDiv";
 import { BearIcon } from "./BearIcon";
 import { BearImage } from "./BearImage";
 import { BearButton } from "./button/BearButton";
+import { SwitchComp } from "./GlobalComps.js";
 
 export function BearTextMedia({
   //
@@ -23,13 +27,19 @@ export function BearTextMedia({
   textvar,
   iconvar,
   noImage,
+  noIcon,
+  noText,
+  onlyIcons,
   buttonTrue,
   iconConfig,
   textconfig,
+  itemType = "",
+  swapItems,
+  className,
+  style,
   ...args
 }) {
   // 1const
-  const [type, setType] = useState("");
 
   function sadkwe(dsafe) {
     const fijgrt = leftWidth && {
@@ -75,7 +85,7 @@ export function BearTextMedia({
       ...dsfew,
     };
 
-    return <BearDiv spanTrue {...oisde} />;
+    return <BearDiv span {...oisde} />;
   }
 
   function INcoio({ style, ...ase }) {
@@ -93,7 +103,7 @@ export function BearTextMedia({
     const isajdawe = (
       //
       // BearIcon(iconvar);
-      <BearDiv spanTrue {...sdlf} />
+      <BearDiv span {...sdlf} />
     );
 
     return isajdawe;
@@ -103,7 +113,8 @@ export function BearTextMedia({
   const okdsre = okeasw ? <ImgMain {...imageConfig} /> : "";
   const kadse = okdsre ? okdsre : iconvar && <INcoio {...iconConfig} />;
 
-  const okdswq = textvar && <Ajiwq {...textconfig} />;
+  const textShow = !noText && !onlyIcons && textvar;
+  const okdswq = textShow && <Ajiwq {...textconfig} />;
 
   const okasew = {
     style: {
@@ -112,51 +123,57 @@ export function BearTextMedia({
   };
 
   const sdijwqe = iconvar || imagevar;
-  const bothTrue = textvar && sdijwqe;
-  const oksaew = bothTrue && <BearDiv spanTrue {...okasew} />;
+  const bothTrue = textShow && sdijwqe;
+  const oksaew = bothTrue && <BearDiv span ignoreNull {...okasew}></BearDiv>;
 
-  const oskdawe = (
-    <>
-      {/* {kadse} */}
-      {/* {textvar} */}
-      {kadse}
-      {oksaew}
-      {okdswq}
-    </>
-  );
-
-  function Rendo() {
-    const VCIFWRE = {
-      obj: oskdawe,
-    };
-
-    const fdghew = (
-      <BearDiv
-        //
-        flexTrue
-        vertAlign
-        {...VCIFWRE}
-      />
+  function RendMain() {
+    const lftoe = swapItems ? okdswq : kadse;
+    const righto = swapItems ? kadse : okdswq;
+    const oskdawe = (
+      <>
+        {/* {kadse} */}
+        {/* {textvar} */}
+        {lftoe}
+        {oksaew}
+        {righto}
+      </>
     );
 
-    // return "dojwewq";
-    return fdghew;
+    function Rendo() {
+      const VCIFWRE = {
+        obj: oskdawe,
+      };
+
+      const fdghew = (
+        <BearDiv
+          //
+          flex
+          vertAlign
+          {...VCIFWRE}
+        />
+      );
+
+      // return "dojwewq";
+      return fdghew;
+    }
+
+    const okfdsd =
+      //
+      vertTrue ? oskdawe : Rendo();
+
+    return okfdsd;
   }
 
-  const okfdsd =
-    //
-    vertTrue ? oskdawe : Rendo();
+  // funct;
 
   args = {
-    obj: okfdsd,
+    obj: RendMain(),
+    className,
+    style,
     ...args,
   };
 
-  // switch (typeDiv){
-  //   case "button":
+  logs.logga("___ BETEXTMEDIA args ___", args);
 
-  //     default:
-  // }
-
-  return buttonTrue ? <BearButton {...args} /> : <BearDiv {...args} />;
+  return SwitchComp(itemType, args);
 }

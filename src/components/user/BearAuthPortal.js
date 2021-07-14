@@ -8,45 +8,56 @@ import {
   GoogleLoginButton,
   AppleLoginButton,
   TwitterLoginButton,
+  InstagramLoginButton,
   GithubLoginButton,
   createButton,
   DiscordLoginButton,
   MicrosoftLoginButton,
   LinkedInLoginButton,
 } from "react-social-login-buttons";
-import {
-  SiFacebook,
-  SiGoogle,
-  SiLinkedin,
-  SiMessenger,
-  SiTwitter,
-} from "react-icons/si";
-import { getParamVar, logs, userLogSign } from "@SillyScribe95/bedia-shared/";
+import { logs } from "../../index";
 import { BearForm } from "../form/BearForm";
 import { BearDiv } from "../BearDiv";
 import { BearButton } from "../button/BearButton";
-import { BearTextMedia } from "../BearTextMedia";
+import { BearCheckMain } from "../check/BearCheckMain";
 import { BearList } from "../list/BearList";
+import { BearIcon } from "../BearIcon";
+import { BearUserConnect } from "../../functions/authFuncs";
 
 export function BearAuthPortal({
   //
   funcvar,
-  topObj,
-  typeSign = "login",
+  typeSign = "register",
   socialConfig,
   socialSubmit,
+  onSubmit,
+  bearName = "BearAuthPortal",
   emailSubmit,
-  socialList,
+  firebase,
+  onSuccess,
+  onFailure,
+  list,
+  authList,
   formConfig,
-  noBottom,
+  changeButton,
   ...sdse
 }) {
   //
   //
+  // 1baseargs
+  // let emaTrue;
+  // setemaTrue;
+  // sdfer;
+  // setsignType = "";
   const [emaTrue, setemaTrue] = useState();
   const [sdfer, setsignType] = useState(typeSign);
 
-  let signType = sdfer ? sdfer : getParamVar("typeSign");
+  logs.logga("___ emaTrue", emaTrue, setemaTrue, sdfer, setsignType);
+
+  let signType =
+    //
+    typeSign;
+  // sdfer;
 
   function signCheck(typevar) {
     let okads =
@@ -66,23 +77,36 @@ export function BearAuthPortal({
     return okads;
   }
 
+  const Jfase = () =>
+    //
+    // "telegram";
+    // "google";
+    BearIcon("email");
+  // <BiShare />
+
   // 1emailbase
   const emaCon = {
     text: signCheck("Email"),
-    icon: "envelope",
-    iconFormat: (name) => `fa fa-envelope`,
+    icon: Jfase,
+    // iconFormat: (name) => `fa fa-${name}`,
     style: { background: "#FF5733" },
     activeStyle: { background: "#ff6700" },
   };
+
   /** My Facebook login button. */
   const EmailLoginButton = createButton(emaCon);
+  const idfjgrt = (
+    ///
+    <EmailLoginButton />
+  );
+  // BearIconText("email", signCheck("Email"));
 
   function dskwad() {
     logs.logga("asokdwqe");
   }
 
   const emBaso = {
-    textvar: <EmailLoginButton />,
+    textvar: idfjgrt,
     onClick: dskwad,
     typevar: "email",
   };
@@ -97,8 +121,12 @@ export function BearAuthPortal({
     google: {
       textvar: <GoogleLoginButton>{signCheck("Google")}</GoogleLoginButton>,
       // textvar: "Google",
-      iconvar: <SiGoogle />,
       typevar: "google",
+    },
+    instagram: {
+      textvar: (
+        <InstagramLoginButton>{signCheck("Instagram")}</InstagramLoginButton>
+      ),
     },
     facebook: {
       textvar: (
@@ -126,8 +154,6 @@ export function BearAuthPortal({
     },
     twitter: {
       textvar: <TwitterLoginButton>{signCheck("Twitter")}</TwitterLoginButton>,
-      // textvar: "Github",
-      iconvar: <SiTwitter />,
       typevar: "github",
     },
     linkedin: {
@@ -149,8 +175,24 @@ export function BearAuthPortal({
     //
   };
 
-  function osadew({ typevar }) {
-    logs.logga("___ sinBas SOCIAL CLICK ___", typevar);
+  let userBase = "";
+
+  async function osadew({ itemType }) {
+    const typevar = itemType;
+    logs.logga(typevar, "___ sinBas SOCIAL CLICK ___", {
+      typevar,
+      onSubmit,
+      socialSubmit,
+    });
+
+    let isdfwer = {
+      firebase,
+      onSuccess,
+      onFailure,
+      authType: itemType,
+    };
+
+    // isdfwer["authType"] = typevar;
 
     switch (typevar) {
       case "email":
@@ -158,7 +200,19 @@ export function BearAuthPortal({
         break;
 
       default:
-        socialSubmit(typevar);
+        const ijsre =
+          //
+          firebase;
+        // firebase || supabase || passportjs || auth0
+
+        if (ijsre) {
+          BearUserConnect(isdfwer);
+        } else if (onSubmit) {
+          onSubmit(itemType);
+        }
+
+      //
+      // socialSubmit(typevar);
     }
   }
 
@@ -192,7 +246,7 @@ export function BearAuthPortal({
     return ijdsf;
   }
 
-  // 1listvar
+  // 1list
   const dfogre = [
     //
     // "twitter",
@@ -202,26 +256,52 @@ export function BearAuthPortal({
     "email",
   ];
 
+  const ifje =
+    //
+    // "";
+    dfogre;
+
+  function ASsfokse({ textvar }) {
+    // const sdfke = { style: { margin: "20px 0" } };
+    // const ijsder = <BearDiv {...sdfke}>{textvar}</BearDiv>;
+
+    return textvar;
+    // return ijsder;
+  }
+
+  const difjewr =
+    //
+    list;
+  // authList ? authList : ifje;
+
   const igfder = {
-    listvar: socialList ? socialList : dfogre,
+    list: difjewr,
     dictvar: fdsogkret,
     onClick: osadew,
-    spaceBetween: "10px",
-    // renderItem: Bsaeosa,
-    renderItem: (sad) => sad.textvar,
-    // obj
+    bearName: "BearAuthPortal - Social Authentication",
+    logtrue: true,
+    spaceBetween: "30px",
+    renderItem: dsafweR,
     ...socialConfig,
   };
+
+  function dsafweR(asdfe) {
+    logs.logga("___ asdfe ___", asdfe);
+
+    return ASsfokse(asdfe);
+    // return "gisdfoe";
+  }
 
   function spfdewr({ email, password }) {
     logs.logga("___ BearAuthPortal SIGNUP ___", email, password);
     //
-    userLogSign(email, password, funcvar);
+    // userLogSign(email, password, funcvar);
   }
 
   // 1console
-
   logs.logga("___ SignBsae SOCIAL ___", igfder);
+
+  //  TimHernandez : TimHernandez ,
 
   const dsfijd = (
     //
@@ -244,15 +324,13 @@ export function BearAuthPortal({
       spfdewr;
 
     const dfgre = {
-      listvar: dfijd,
+      list: dfijd,
       // dictvar:
       // sameline
-      titleConfig: {
-        width: "80px",
-      },
       buttonText: "Register",
-      formid: "register",
+      bearName: "register",
       onSubmit: klmi,
+      ...sdse,
       ...formConfig,
     };
 
@@ -277,6 +355,7 @@ export function BearAuthPortal({
         bottLink = "Sign Up for free";
         break;
       case "signup":
+      case "register":
         baseTEST = "Already have an account?";
         bottLink = "Sign in to Bedia";
         changeit = "login";
@@ -293,8 +372,8 @@ export function BearAuthPortal({
 
     const koewqe = {
       onClick: saoke,
-      // linkvar: "?typeSign=" + signType,
-      // linkvar: " signType,
+      // link: "?typeSign=" + signType,
+      // link: " signType,
       // linkConfig: {
       //   noBlack: true,
       // },
@@ -336,17 +415,27 @@ export function BearAuthPortal({
 
   const jdtre = sdfer && (
     <>
-      {topObj}
       {jvsfeer}
-      {!noBottom && <OrCHekc />}
+      {changeButton && <OrCHekc />}
     </>
   );
 
-  const okasdew = {
-    obj: jdtre,
-    // fadeBool: "boo",
+  const nsifjew = {
+    // requiredArgs: { onSubmit },
+    titleConfig: {
+      // lineBetween: true,
+      // class: "shadowButton",
+      style: {
+        fontWeight: "bold",
+        // padding: "0 20%",
+        fontSize: "1.6em",
+        marginBottom: "30px",
+      },
+    },
+    bearName,
     ...sdse,
   };
 
-  return <BearDiv {...okasdew} />;
+  // return "aaaaaaaasdja";
+  return BearCheckMain("BearAuthPortal", jdtre, nsifjew);
 }

@@ -30,7 +30,6 @@ const skeweewr = {
   toolText: "Twitter",
   textConnect: "text",
   linkConnect: "url",
-  iconvar: <SiTwitter />,
   styleIcon: { color: "white", background: "#1da1f2" },
 };
 
@@ -40,14 +39,12 @@ const rddito = {
   linkConnect: "url",
   toolText: "Reddit",
   textConnect: "title",
-  iconvar: <SiReddit />,
   styleIcon: { color: "white", background: "#FF4301" },
 };
 
 // 1hacker
 const hckn = {
   toolText: "Hacker News",
-  iconvar: <SiYcombinator />,
   linkBase: "https://news.ycombinator.com/submitlink",
   textConnect: "t",
   linkConnect: "u",
@@ -55,7 +52,6 @@ const hckn = {
 
 // 1linkedin
 const lnkeos = {
-  iconvar: <SiLinkedin />,
   linkBase: "https://www.linkedin.com/sharing/share-offsite",
   toolText: "Linkedin",
   // textConnect: "url",
@@ -66,7 +62,6 @@ const lnkeos = {
 
 // 1google
 const ggge = {
-  iconvar: <SiGoogle />,
   toolText: "Google",
   linkBase: "https://www.google.com/search",
   textConnect: "q",
@@ -91,7 +86,6 @@ const whstConfo = {
   linkBase: "https://web.whatsapp.com/send",
   textConnect: "text",
   toolText: "Whatsapp",
-  iconvar: <SiWhatsapp />,
   styleIcon: { color: "white", background: "#128C7E" },
 };
 
@@ -102,7 +96,6 @@ const fceConfo = {
   linkConnect: "u",
   typevar: "facebook",
   toolText: "Facebook",
-  iconvar: <SiFacebook />,
   styleIcon: { color: "white", background: "#3b5998" },
 };
 
@@ -129,7 +122,7 @@ export const testLinks = {
   mp3: "https://ipaudio5.com/wp-content/uploads/HP/FRY%20AZKABAN/05%20THE%20DEMENTOR.mp3",
 };
 
-export const socialListDict = {
+export const authListDict = {
   facebook: fceConfo,
   telegram: teldsofe,
   // messenger: {
@@ -148,7 +141,7 @@ export const socialListDict = {
   whatsapp: whstConfo,
   email: {
     linkBase: "mailto:",
-    titlevar: "subject",
+    title: "subject",
     textConnect: "body",
   },
   //   1twitter

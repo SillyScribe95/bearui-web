@@ -3,42 +3,30 @@ import React, {
   useState,
   useContext,
 } from "react";
-import { logs } from "@SillyScribe95/bedia-shared";
-import { Avatar } from "antd";
+import {
+  //
+  logs,
+} from "../index"
 
 export function BearImage({
   typevar,
   badgecolor,
-  imagesize = 40,
+  size = 40,
   width,
   height,
   style,
-  imagevar = "https://bit.ly/tioluwani-kolawole",
+  image,
   ...sae
 }) {
-  // size="xs"
-  // name="Kola Tioluwani"
-  // src="https://bit.ly/tioluwani-kolawole"
-
   let sacwe = {
-    // width: width,
-    // height: height,
+    width: width,
+    height: height,
     ...style,
   };
 
-  const okasdew = {
-    htmlWidth: imagesize,
-    htmlHeight: imagesize,
-  };
-
-  imagesize =
-    //
-    35;
-  // imagesize
-
   let osdew = {
-    src: imagevar,
-    size: imagesize,
+    size,
+    src: image,
     style: sacwe,
     shape: "circle",
     ...sae,
@@ -48,27 +36,13 @@ export function BearImage({
 
   let endValue = "";
   switch (typevar) {
-    case "chakra":
-      const cxvkf = {
-        borderColor: "papayawhip",
-        bg: badgecolor,
-        // boxSize: "1.25em",
-      };
-
-      // endValue = badgecolor ? (
-      //   <ChakAva {...osdew}>
-      //     <AvatarBadge {...cxvkf} />
-      //   </ChakAva>
-      // ) : (
-      //   <ChakAva {...osdew} />
-      // );
-      break;
-
+    //
     default:
       endValue = (
         //
         // "sadwqe";
-        <Avatar {...osdew} />
+        <img {...osdew} />
+        // <Avatar {...osdew} />
       );
   }
 

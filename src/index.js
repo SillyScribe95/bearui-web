@@ -1,35 +1,19 @@
-import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "antd/dist/antd.css";
 import "./index.css";
-import "antd/dist/antd.css";
+// 1css
+
+// 1logs
+import * as logs from "./functions/logFuncs";
+export { logs };
+
+// 1shared
+export * from "./functions/mainFuncs";
+export * from "./functions/arrayFuncs";
+export * from "./functions/selectFuncs";
+
+
 
 export * from "./importBase";
-export * from "./importExtra";
-
-// import {
-//     //
-//     //
-//  } from "@SillyScribe95/bearui-web";
-
-// import {
-//     //
-//     logs,
-//  } from "@SillyScribe95/bedia-shared";
-
-// import React from "react";
-// import ReactDOM from "react-dom";
-// import App from "./App";
-// // import reportWebVitals from './reportWebVitals';
-
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById("root")
-// );
-
-// // If you want to start measuring performance in your app, pass a function
-// // to log results (for example: reportWebVitals(console.log))
-// // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// // reportWebVitals();
-
-// "link-packages":  npm link && npm link react && npm link react-dom &&
+// export * from "./importExtra";

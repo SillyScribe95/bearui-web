@@ -8,12 +8,13 @@ import React, {
   useRef,
 } from "react";
 // import { Link } from "react-router-dom";
-// import { useHistory } from "react-router-dom";
+import { logs } from "../index"
 
 export function BearLink({
   //
-  outsideVar,
+  outsideLink,
   blankTrue,
+  linkParams,
   outsideTrue,
   hrefTrue,
   spaceTrue,
@@ -26,7 +27,7 @@ export function BearLink({
   disabled,
   toVar,
   linkConfig,
-  linkvar,
+  link,
   blackTrue,
   linkTextTrue,
   textvar,
@@ -35,6 +36,8 @@ export function BearLink({
   className,
   ...argso
 }) {
+  const nsdijfwer = linkParams ? "?" + turnDictLink(linkParams) : "";
+
   toVar =
     linkTextTrue && textvar
       ? textvar.toLowerCase()
@@ -44,9 +47,16 @@ export function BearLink({
       ? "/"
       : toVar;
 
+  toVar += nsdijfwer;
+
+  const handleClick = () => {
+    //
+    // history.push(toVar);
+  };
+
   // const outReg = gens.outsideReg;
   const outReg = /^(https?:\/\/)|(mailto:)/;
-  const outBlank = outsideTrue || outsideVar || blankTrue;
+  const outBlank = outsideTrue || outsideLink || blankTrue;
   const noLink = disabled | !toVar;
 
   let kmda = blackTrue && {
@@ -60,16 +70,27 @@ export function BearLink({
     ...style,
   };
 
-  const aisdwq = {
-    // target: "_blank",
-    target: outBlank ? "_blank" : "",
-    href: toVar,
-    to: toVar,
+  const isdaeqw = {
     style: okasdw,
     className: className,
     ...argso,
   };
 
+  const sdjfwe = outBlank && {
+    target: "_blank",
+  };
+
+  const aisdwq = {
+    // target: "_blank",
+    ...sdjfwe,
+    href: toVar,
+    to: toVar,
+  };
+
+  const idjfewr = {
+    // onClick: handleClick,
+    ...isdaeqw,
+  };
   // logs.logga("___ aisdwq ___", aisdwq);
 
   function Rlasdow() {
@@ -77,8 +98,9 @@ export function BearLink({
       <a {...aisdwq}>{textvar}</a>
     ) : (
       // <gens.StyledLink {...aisdwq}>{textPush}</gens.StyledLink>
+      // <span {...idjfewr}>{textvar}</span>
       <a {...aisdwq}>{textvar}</a>
-      //   <Link {...aisdwq}>{textPush}</Link>
+      // <Link {...aisdwq}>{textPush}</Link>
     );
   }
 

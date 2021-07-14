@@ -14,6 +14,20 @@
   display: none;
 }
 
+.fadeOut {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s;
+}
+
+.fadeIn {
+  opacity: 1;
+  width: 100px;
+  height: 100px;
+  transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
+}
+
 .noresize {
   resize: none;
 }
@@ -251,22 +265,22 @@
   color: green; */
 
 /* 1wrap */
-.wrapLine {
+.wrap {
   /* STYLE OF ENTIRE SECTION; */
   /* user-drag: none;  */
   /*  */
-  /* overflow: hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical; */
+  -webkit-box-orient: vertical;
 }
 /* 
 display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical; */
 
-.wrapLineTwo {
+.wrapTwo {
   /* STYLE OF ENTIRE SECTION; */
   /* user-drag: none;  */
   /* display: inline; */
@@ -336,6 +350,8 @@ display: -webkit-box;
 
 .circleHover:hover {
   /* padding: 10px; */
+  border-radius: 50%;
+  padding: 5px;
 }
 
 .shadowBottom {
@@ -369,16 +385,34 @@ display: -webkit-box;
   /* border-radius: 5px; */
 }
 
+.buttonBase {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.buttonMain {
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: 0.1s;
+  padding: 2px 5px;
+}
+
 .buttonHover {
   cursor: pointer;
   border-radius: 5px;
   border: 2px solid transparent;
   transition: 0.1s;
+  padding: 2px 5px;
 }
 
 .buttonHover:hover {
   /* background: red; */
-  border: 2px solid rgb(0, 22, 77);
+  border: 2px solid rgb(44, 65, 121);
   /* border-radius: 5px; */
   /* border-radius: 5px; */
 }

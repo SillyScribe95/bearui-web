@@ -1,42 +1,22 @@
+import React, { useState } from "react";
+
+import firebase from "firebase/app";
 import {
-  BearCarousel,
   BearList,
   BearButton,
   BearDiv,
   BearFloat,
+  BearModel,
   BearEmoji,
-  BearSocial,
-  BearSelect,
+  BearIconText,
+  BearBorder,
+  BearAuthPortal,
+  BearCheckMain,
   BearTitle,
-  BearSearchList,
   logs,
-  AlterHighlight,
-  AlterModel,
-  BearDuration,
-  BigButton,
-  BearCreditCard,
   BearForm,
-  NewHighlight,
-  HiButton,
-  BearCodePreview,
-  BearIcon,
-  TimeButtons,
+  BearSocialLinks,
 } from "bearui-web";
-
-import {
-  //
-  testMedia,
-  testLink,
-  testHighlight,
-  textHighChrome,
-  // logs,
-} from "@SillyScribe95/bedia-shared/";
-
-import { TestList } from "./test/TestList";
-import React, { useState } from "react";
-import { bearConst } from "./bearConst";
-import { SearchBearItem } from "./components/SearchBearItem";
-import { ExploreBear } from "./components/ExploreBear";
 
 export default function TestBear() {
   // 1user
@@ -64,32 +44,53 @@ export default function TestBear() {
     onClick: () => console.log("asodkqwe"),
   };
 
-  // 1timebutt
-  function Timeao() {
-    //
-    function sdokae() {
-      logs.logga("___ changePlayerTime ___");
-    }
-
-    function ogkfger() {
-      logs.logga("___ getCurrentTime ___");
-    }
-
-    const okawease = {
-      listvar: ["track", "play"],
-      changePlayerTime: sdokae,
-      getCurrentTime: ogkfger,
+  // 1title
+  function AlltIT() {
+    const jawe = {
+      title: "sodkwerfa",
+      // titleConfig:
     };
 
-    const cbdfew = <TimeButtons {...okawease} />;
+    const udfhgr = {
+      style: { color: "blue", background: "green" },
+    };
+    const jdfgr = <BearDiv {...udfhgr}>sdifjer0</BearDiv>;
 
-    return cbdfew;
+    const idjfa = BearCheckMain("BearTitle", jdfgr, {bearName: "sj iwqe i"})
+
+    return idjfa;
+  }
+
+  function LiNew() {
+    const ijsfsa = [
+      // "sokdqeq",
+      // "sokdqeq",
+      // {
+      //   obj: "sokdqeq",
+      // },
+      {
+        obj: "sdfw",
+        // fontSize: "34px",
+      },
+    ];
+
+    const jsidase = {
+      bearName: "TestBear TEST",
+      list: ijsfsa,
+      itemConfig: {
+        style: { color: "green" },
+      },
+      typeList: "div",
+      // renderItem: "buto"
+    };
+
+    return <BearList {...jsidase} />;
   }
 
   //   1LIST
   function ListO() {
     const testRend = {
-      listvar: ["hello", "anotehr", "here"],
+      list: ["hello", "anotehr", "here"],
       typeList: "return",
     };
 
@@ -150,9 +151,9 @@ export default function TestBear() {
 
     const testDict = {
       // dictvar: sfoewkr,
-      // listvar: ["video", "audio", "book"],
+      // list: ["video", "audio", "book"],
       // renderItem: baserend,
-      listvar: ["one", "two", "end", "four", "five"],
+      list: ["one", "two", "end", "four", "five"],
       itemConfig: {
         style: {
           background: "lightorange",
@@ -162,7 +163,7 @@ export default function TestBear() {
       },
       renderItem: objio,
       // logItem: true,
-      //   logtrue: true,
+      //   logtrue: "",
       // style: {}
     };
 
@@ -178,115 +179,76 @@ export default function TestBear() {
 
   // 1form
   function Formios() {
+    //
     function sdofkre(sdfew) {
       logs.logga("___ TESTBEAR - FORMIOS RESULTS ___", sdfew);
     }
 
     const awqeq = {
       variable: {
+        inputType: "checkbox",
+        name: "variable",
         // inputType: },
       },
     };
 
     const oskde = [
       //
-      "variable",
+      // "variable",
+      // "name",
       "name",
       "password",
+      // "country",
+      // "mobileNumber",
     ];
+
+    const dfjig = {
+      name: "weofkerwe",
+      password: "dofkr",
+    };
 
     const cvbdf = {
       loadSubmit: true,
-      sameLine: true,
-      titleWidth: "20px",
+      // loadConfig:
+      // sameLine: true,
+      // titleWidth: "120px",
+      // inputStyle: {
+      //   margin: "10px 0px",
+      // },
       // dictvar: awqeq,
-      listvar: oskde,
+      formData: dfjig,
+      list: oskde,
       onSubmit: sdofkre,
-      formid: "testFOrmo",
+      bearName: "testFOrmo",
+      formid: "formin",
     };
 
     return <BearForm {...cvbdf} />;
   }
 
-  // 1landing
-  function Lando() {
-    // consti jsdr
-  }
-
-  // 1checkout
-  function Checkios() {
-    const usjdre = {
-      //
-    };
-
-    return "";
-    // return <BearCheckout
-  }
-
-  // 1payios
-  function Payios() {
-    function payGo(sfsd) {
-      //
-    }
-
-    const sijewrwe = {
-      // secere
-    };
-
-    const sijfwr = {
-      // successURL:
-    };
-
-    const ijsder = {
-      stripeConfig: sijewrwe,
-      onSuccess: payGo,
-      checkoutConfig: sijfwr,
-      openCheckout: true,
-    };
-
-    return "sd";
-    // return <BearPayButton {...ijsder} />;
-  }
-
   //   1float
   function Flotio() {
     const kwrewr = {
+      topLeft: "topLeft",
+      topRight: "topRight",
+      bottomRight: "bottomRight",
+      bottomLeft: "bottomLeft",
       // leftobj: "AAAA",
-      showLeft: true,
-      centerobj: "bbbb",
+      // showLeft: true,
+      centerConfig: {
+        className: "truncate",
+      },
       rightobj: "cccc",
+      style: {
+        height: "100px",
+        padding: "10px",
+        color: "red",
+        background: "blue",
+        // width: "100px",
+      },
     };
 
-    return <BearFloat {...kwrewr} />;
-  }
-
-  // 1carousel
-  function CaroBase() {
-    //
-    const niase = [
-      //
-      "osakdqweq",
-      " sfisre",
-    ];
-
-    const [truo, settruo] = useState();
-
-    const cvbdger = {
-      listvar: niase,
-      slideNum: truo ? 0 : 1,
-    };
-
-    const okaew = {
-      onClick: () => settruo(!truo),
-    };
-
-    return (
-      <>
-        {/*  */}
-        <BearButton {...okaew} />
-        <BearCarousel {...cvbdger} />
-      </>
-    );
+    return <BearFloat {...kwrewr}>Another dollars</BearFloat>;
   }
 
   function DivRend() {
@@ -294,7 +256,7 @@ export default function TestBear() {
       obj: "test DiV",
       style: { textAlign: "center", width: "50px", background: "red" },
       className: "shadowHover bold",
-      // linkvar: "elTesto",
+      // link: "elTesto",
     };
 
     //   1div
@@ -321,200 +283,43 @@ export default function TestBear() {
     return <BearEmoji {...okwesdr} />;
   }
 
-  function CardBase() {
-    const ijaew = {
-      display: "flex",
-      style: {
-        textAlign: "center",
+  // 1model
+  function Modelos() {
+    const ijvdffsa = {
+      // warnDelete:
+      list: ["delete", "edit", "share"],
+      itemConfig: {},
+    };
+
+    return <BearModel {...ijvdffsa}>I AM A MODEL</BearModel>;
+  }
+
+  // 1iconLIST
+  function Ioncijsfsd() {
+    const cvbokf = {
+      bearName: "iconList",
+      list: ["delete"],
+      dictvar: {
+        delete: { iconvar: "delete" },
       },
+      itemConfig: {
+        class: "p-8 text-lg bg-blue-300 rounded-full",
+      },
+      typeList: "button",
     };
 
-    const iswqase = <BearCreditCard {...ijaew} />;
-
-    return iswqase;
-  }
-
-  function Seleo() {
-    function fgokre(cvbok) {
-      logs.logga("___ cvbok ___", cvbok);
-    }
-
-    const aokwe = {
-      onCreate: fgokre,
-      typeSelect: "create",
-    };
-
-    return <BearSelect {...aokwe} />;
-  }
-
-  function Dureo() {
-    const aease = {
-      parseType: "short",
-      duration: 250,
-    };
-
-    const sdrease = <BearDuration {...aease} />;
-
-    return sdrease;
-  }
-
-  // 1code 1bear
-  function Asjdwe() {
-    const sdjerae = {
-      ...bearConst,
-      renderItem: asidjwe,
-    };
-
-    function asidjwe({ title, subtitle, code, ...sadsd }) {
-      //
-      const sdkjfer = `
-      import { ${title} } from "bearui-web";
-  
-      const app = <>
-        ${code}
-      </>
-
-      ReactDOM.render(app, _mount_);
-      `;
-
-      const isdjr = {
-        code: sdkjfer,
-        ...sadsd,
-      };
-
-      function Titlio() {
-        const jsdasd = {
-          obj: title,
-          className: "bold",
-          fontSize: "1.3em",
-          style: {
-            fontFamily: "Times",
-            fontWeight: 500,
-            // background: "blue",
-            minWidth: "120px",
-          },
-        };
-
-        const cvbjfr = {
-          spanTrue: true,
-          obj: subtitle + ".",
-        };
-
-        const asdoksdq = (
-          <>
-            {/*  */}
-            <BearDiv {...jsdasd} /> <BearDiv {...cvbjfr} />
-            {/* <Divider /> */}
-          </>
-        );
-
-        const iskde = {
-          flexTrue: true,
-          vertAlign: true,
-          obj: asdoksdq,
-          style: {
-            marginBottom: 10,
-            alignItems: "flex-end",
-          },
-        };
-
-        return <BearDiv {...iskde} />;
-      }
-
-      const oaase = (
-        <>
-          {/*  */}
-          <Titlio />
-          <BearCodePreview {...isdjr} />;
-        </>
-      );
-
-      const isjdewr = {
-        obj: oaase,
-        style: {
-          margin: "30px",
-        },
-      };
-
-      const sadije = <BearDiv {...isjdewr} />;
-
-      return sadije;
-      // return oaase;
-    }
-
-    return <BearList {...sdjerae} />;
-  }
-
-  // 1code 1preview
-  function Previous() {
-    const ijsder = `
-    import { BearForm, BearDiv, BearFloat } from "bearui-web";
-  
-    const app = <>
-      <BearDiv 
-        linkvar="https://codesandbox.io/docs/embedding"
-        obj="asasdadd" 
-      />
-      </>
-
-    ReactDOM.render(app, _mount_);
-    `;
-
-    const nsidfwr = {
-      code: ijsder,
-      dependencies: { BearForm, BearDiv, BearFloat },
-    };
-
-    const ijksdr = <BearCodePreview {...nsidfwr} />;
-
-    return ijksdr;
-  }
-
-  // 1altermode
-  function ALtioso() {
-    //
-    //
-    function fdiuret(sdfweq) {
-      logs.logga("___ TESTEBEAR ALTEMODEL SUBTMI ___", sdfweq);
-    }
-
-    let ksde =
-      //
-      // testLink;
-      // testLink["book"];
-      testLink["youtube"];
-
-    logs.logga("___ FETCH LINK de ___", ksde);
-
-    const fogkdret = {
-      ...textHighChrome,
-      webTrue: true,
-      typevar: "highlight",
-      formid: "aoskdwqe",
-      // overObj: testHighlight,
-      // linkDetails: ksde,
-      media: testMedia,
-      onSubmit: fdiuret,
-      ...usoConfo,
-    };
-
-    logs.logga("___ Test bear HIGHLIGHT ___", fogkdret);
-
-    const fkgjdfg = (
-      //
-      <NewHighlight {...fogkdret} />
-      // <AlterHighlight {...fogkdret} />
-      // return <AlterModel {...fogkdret} />
-    );
-
-    return fkgjdfg;
+    // return <button
+    return BearList(cvbokf);
   }
 
   // 1icon
   function Incasod() {
     //
     //
-    const isdfrew = BearIcon("delete");
+    const isdfrew =
+      //
+      BearIconText("delete", "Delete");
+    // BearIcon("delete");
 
     const dfijwer = {
       obj: isdfrew,
@@ -549,37 +354,57 @@ export default function TestBear() {
 
     const sdbsfg = {
       //
+      facebook: "https://www.facebook.com/scottishparliament/videos/",
+      twitter: "https://twitter.com/scotgov",
+      instagram: "https://www.instagram.com/alimosbikes/?hl=en",
+      bearName: "SOcila text",
       itemConfig: sdfewr,
       horiz: true,
-      listvar: figjdwe,
+      list: figjdwe,
       shareLink: "twitter.com",
       shareText: "Just started using BearUI. It rocks!",
+      ignoreEmpty: true,
       // textSoci,
     };
 
-    return <BearSocial {...sdbsfg} />;
+    return <BearSocialLinks {...sdbsfg} />;
+    // return <BearSocialShare {...sdbsfg} />;
   }
 
-  // 1search
-  function Searchio() {
-    function asokdwe({ title, subtitle }) {
-      const okasdew = (
-        <>
-          {title} {subtitle}
-        </>
-      );
-
-      return okasdew;
+  // 1authportal
+  function Ajsew() {
+    function ASDJA(asfdkwe) {
+      logs.logga("asfdkwe-zzz", asfdkwe);
     }
 
-    const ijsder = {
-      ...bearConst,
-      searchAttrs: ["title", "subtitle"],
-      renderItem: asokdwe,
-      placeholder: "Choose a component",
+    function as9d32(asfdkwe) {
+      logs.logga("asfdkwe-zzz", asfdkwe);
+    }
+
+    const xcvbijr = {
+      //
+      // firebase,
+      onSuccess: ASDJA,
+      onFailure: as9d32,
+      // onSubmit: ASDJA,
+      list: ["google", "facebook"],
+      title: "Sign in",
+      style: {
+        ...BearBorder("grey", "2px"),
+        margin: "0 20%",
+      },
     };
 
-    return <BearSearchList {...ijsder} />;
+    const dijert = <BearAuthPortal {...xcvbijr} />;
+
+    return dijert;
+  }
+
+  // 1key
+  function Keios() {
+    return "asds";
+    // return BearKeySpreadsheet()
+    // return BearKeyValue(isjdfeas);
   }
 
   // 1function
@@ -589,53 +414,101 @@ export default function TestBear() {
     // return <BearLandingPage  />
   }
 
+  // 1test
+  function IJasea() {
+    const jdfsdasd =
+      //
+      // "";
+      // "buttonHover";
+      // "bg-gray-100 rounded-xl p-8";
+      // "bg-green-500";
+      "rounded-full cursor-pointer py-3 px-6 hover:bg-red-300";
+    // "p-8";
+    // "border border-indigo-600 ...";
+    // "bg-purple-600 bg-opacity-100";
+    // "bg-blue-100";
+    // "p-8";
+    // "truncate";
+    // "line-clamp-2";
+
+    const kvsdr =
+      //
+      // jdfsdasd;
+      `text-lg ${jdfsdasd}`;
+
+    const nfvnszd = {
+      class: kvsdr,
+      // style: "20px",
+    };
+
+    const xkcvxc =
+      "zzzzz Et molestiae hic earum repellat aliquid est doloribus delectus. Enim illum odio porro ut omnis dolor debitis natus. Voluptas possimus deserunt sit delectus est saepe nihil. Qui voluptate possimus et quia. Eligendi voluptas voluptas dolor cum. Rerum est quos quos id ut molestiae fugit.";
+
+    const iksds = (
+      <>
+        {/*  */}
+        {/*  */}
+        <BearDiv {...nfvnszd}>
+          {/* <button {...nfvnszd}> */}
+          {/* <div {...nfvnszd}> */}
+          {/*  */}
+          sdvokdsfj
+          {/* {xkcvxc} */}
+          {/* {BearIcon("plus")} */}
+          {/* </div> */}
+          {/* </button> */}
+        </BearDiv>
+      </>
+    );
+
+    return iksds;
+  }
+
   logs.logga("___ TEST BEAR RUNNING  ___");
 
   // 1return
-  return (
+  const ijert = (
     <>
-      {/* ---- TEST BEAR --- */}
       {/*  */}
-      {/* 1carousel
-      <CaroBase />
-      1emoji
-      <Mojioe />
-      1float
-      1SELECT TEST
-      <Seleo /> */}
-      {/* 1search */}
-      {/* {Searchio()} */}
-      {/* 1wiki TEST WIKI */}
-      {/* <Seleo /> */}
+      ---- TEST BEAR ---
+      {/* 1test */}
+      {IJasea()}
+      {/*  */}
+      {/* 1emoji */}
+      {/* <Mojioe /> */}
+      {/*  */}
       {/* 1div
       <DivRend /> */}
       {/* <TestPage /> */}
       {/* 1list */}
       {/* <ListO /> */}
-      {/* 1duration */}
-      {/* <Dureo /> */}
-      {/* 1time */}
-      {/* <Timeao /> */}
+      {/* <LiNew /> */}
+      {/* 1float */}
       {/* <Flotio /> */}
-      {/* 1code 1preview */}
-      {/* <Previous /> */}
-      {/* <Asjdwe /> */}
-      {/* 1alter */}
-      {/* <ALtioso /> */}
-      {/* 1card */}
-      {/* <CardBase /> */}
-      {/* 1landing */}
-      {/* {Lando()} */}
-      {/* 1paybutton */}
-      {/* <Payios /> */}
-      {/* 1checkout */}
-      {/* <Checkios /> */}
       {/* 1social */}
-      <Sonasi />
-      {/* i1con */}
-      {/* <Incasod /> */}
+      {/* <Sonasi /> */}
+      {/* 1model
+      {Modelos()}
+      1iconlist
+      {Ioncijsfsd()}
+      1icon
+      <Incasod />
+      asdoakewq */}
       {/* 1form */}
       {/* <Formios /> */}
+      {/* <AlltIT /> */}
+      {/* 1authportal */}
+      {/* <Ajsew /> */}
     </>
   );
+
+  // 1page
+  const dfgijert = {
+    title: "Testing",
+    user: testUser,
+    // loadUser,
+  };
+
+  return ijert;
+  //   return <BearPage {...dfgijert}>{ijert}</BearPage>;
 }

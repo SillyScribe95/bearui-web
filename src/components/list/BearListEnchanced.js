@@ -31,7 +31,7 @@ export function BearListEnchanced({
 
     const okdsw =
       //
-      obj.obj ? obj.obj : obj.textvar ? obj.textvar : obj.titlevar;
+      obj.obj ? obj.obj : obj.textvar ? obj.textvar : obj.title;
 
     const asdije = {
       style: xkfs,

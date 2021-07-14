@@ -4,7 +4,10 @@ import React, {
   useContext,
 } from "react";
 
-import * as logs from "../../functions/logFuncs";
+import {
+  //
+  logs,
+} from "../../index";
 import { BearDiv } from "../../components/BearDiv";
 
 //   import {

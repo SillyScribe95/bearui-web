@@ -9,13 +9,8 @@ import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
 import { useCollection, useDocumentOnce } from "react-firebase-hooks/firestore";
-import { FireQuery } from "../../functions/backendFuncs";
-import {
-  //
-  logs,
-  // filtModelDocs,
-  // backendInit,
-} from "@SillyScribe95/bedia-shared";
+// import { FireQuery } from "../../functions/backendFuncs";
+import { logs } from "../../index";
 
 export function ProvideAuth({ apiKey, obj, firebaseConfig }) {
   //
@@ -35,9 +30,9 @@ export function ProvideAuth({ apiKey, obj, firebaseConfig }) {
     // "r";
     firebase.apps.length;
 
-  if (!elgnttioss) {
-    firebase.initializeApp(vsdkorewr);
-  }
+  // if (!elgnttioss) {
+  //   firebase.initializeApp(vsdkorewr);
+  // }
 
   useEffect(() => {
     // firebase.initializeApp(vsdkorewr);
@@ -56,10 +51,10 @@ export function ProvideAuth({ apiKey, obj, firebaseConfig }) {
   // const data = "";
   const { data, loading: loadUser, ...asdae } =
     //
-    // "";
-    !apiKey
-      ? ""
-      : FireQuery(firebase.firestore().collection("users").doc(apiKey));
+    "";
+    // !apiKey
+    //   ? ""
+    //   : FireQuery(firebase.firestore().collection("users").doc(apiKey));
 
   logs.logga("___ Contioes ___", {
     firebase: firebase,
@@ -68,16 +63,14 @@ export function ProvideAuth({ apiKey, obj, firebaseConfig }) {
     data: data,
   });
 
-  if (!apiKey) {
-    const sdijew =
-      //
-      "BearContextProvider: please provide a valid API KEY via the apiKey attribute.";
-    throw new ReferenceError(sdijew);
-  } else if (loadUser) {
-    return "";
-  } else if (!data) {
-    throw new ReferenceError("The API key you passed isn't valid");
-  } else {
-    return obj;
-  }
+  // if (!apiKey) {
+  //   const sdijew =
+  //     //
+  //     "BearContextProvider: please provide a valid API KEY via the apiKey attribute.";
+  //   throw new ReferenceError(sdijew);
+  // } else if (!loadUser && !data) {
+  //   throw new ReferenceError("The API key you passed isn't valid");
+  // }
+
+  return obj;
 }

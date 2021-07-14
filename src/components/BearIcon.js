@@ -1,12 +1,9 @@
-import React, {
-  //
-  useState,
-  useContext,
-} from "react";
-import { MdPlaylistPlay } from "react-icons/md";
+import { MdArrowBack, MdArrowForward, MdPlaylistPlay } from "react-icons/md";
 import { TiStar } from "react-icons/ti";
+import { BiExpand } from "react-icons/bi";
 import { BsChatQuote } from "react-icons/bs";
-import { BiShare, BiCommentDetail, BiEdit } from "react-icons/bi";
+import { IoArrowBack } from "react-icons/io";
+import { BiShare, BiCommentDetail, BiEditAlt, BiEdit } from "react-icons/bi";
 import { SiMicrosoftteams, SiNotion, SiSlack } from "react-icons/si";
 import {
   AiOutlineLink,
@@ -14,6 +11,10 @@ import {
   AiOutlineCheckCircle,
   AiOutlineClockCircle,
   AiOutlineCloseCircle,
+  AiOutlineSearch,
+  AiOutlineMail,
+  AiOutlinePlus,
+  AiOutlineInfoCircle,
 } from "react-icons/ai";
 import { FiExternalLink, FiSettings } from "react-icons/fi";
 import { RiTimerLine } from "react-icons/ri";
@@ -24,11 +25,31 @@ import {
   FaSignOutAlt,
   FaQuoteLeft,
   FaQuoteRight,
+  FaCopy,
+  FaCheck,
 } from "react-icons/fa";
 import { BearDiv } from "./BearDiv";
 import { BearTextMedia } from "./BearTextMedia";
+import { BearError } from "./BearError";
 // import BearFloat from "../components/BearFloat";
 // import BearTextMedia from "../components/BearTextMedia";
+import React, {
+  //
+  useState,
+  useContext,
+  useEffect,
+} from "react";
+import {
+  SiFacebook,
+  SiGoogle,
+  SiLinkedin,
+  SiReddit,
+  SiTwitter,
+  SiWhatsapp,
+  SiYcombinator,
+} from "react-icons/si";
+import { AiOutlineCopy } from "react-icons/ai";
+import { FaCode } from "react-icons/fa";
 
 export function BearIcon(sdfoger, sdfke) {
   // 1tick
@@ -43,7 +64,8 @@ export function BearIcon(sdfoger, sdfke) {
   const okasdew = (
     //
     // <TiTickOutline />
-    <AiOutlineCheckCircle {...lasew} />
+    <FaCheck {...lasew} />
+    // <AiOutlineCheckCircle {...lasew} />
   );
 
   // 1signout
@@ -57,6 +79,12 @@ export function BearIcon(sdfoger, sdfke) {
     //
     <RiTimerLine />
     // <AiOutlineClockCircle />
+  );
+
+  // 1info
+  const jdfgrt = (
+    //
+    <AiOutlineInfoCircle />
   );
 
   // 1play
@@ -80,7 +108,10 @@ export function BearIcon(sdfoger, sdfke) {
   // 1edit
   const sdiwer = (
     //
-    <BiEdit />
+    // <FiEdit2 />
+    <BiEditAlt />
+    // <VscEdit />
+    // <BiEdit />
   );
 
   // 1star
@@ -130,24 +161,59 @@ export function BearIcon(sdfoger, sdfke) {
     // <FiExternalLink />
   );
 
+  // 1search
+  const sdfgorek = (
+    //
+    <AiOutlineSearch />
+    // < />
+  );
+
   // 1settings
   const sdijwqe = (
     //
     <FiSettings />
   );
 
-  // 1icons
+  // 1email
+  const ijsfr = (
+    //
+    <AiOutlineMail />
+  );
+
+  // 1brands 1social
+  const brandCons = {
+    twitter: <SiTwitter />,
+    reddit: <SiReddit />,
+    ycombinator: <SiYcombinator />,
+    linkedin: <SiLinkedin />,
+    google: <SiGoogle />,
+    whatsapp: <SiWhatsapp />,
+    facebook: <SiFacebook />,
+    teams: <SiMicrosoftteams />,
+    slack: <SiSlack />,
+    // 1notion
+    notion: <SiNotion />,
+  };
+
+  // 1general 1icon
   const ijsadwe = {
-    // facebook:
-    // twitter:
-    // whatsapp
+    // left: <
+    // right:
+    back: <MdArrowBack />,
+    forward: <MdArrowForward />,
+    info: jdfgrt,
+    email: ijsfr,
+    search: sdfgorek,
     signout: sduhfer,
+    copy: <FaCopy />,
+    expand: <BiExpand />,
     tick: okasdew,
     delete: asdfewr,
     playlist: asdkqe,
     settings: sdijwqe,
     share: sjerw,
     star: dfigjew,
+    plus: <AiOutlinePlus />,
     comment: sowaseowq,
     link: linkios,
     play: sfdgmr,
@@ -155,16 +221,21 @@ export function BearIcon(sdfoger, sdfke) {
     quote: oksaew,
     quoteLeft: iosade,
     quoteRight: asdhgew,
+    //
     time: lasdew,
-    teams: <SiMicrosoftteams />,
-    slack: <SiSlack />,
-    // 1notion
-    notion: <SiNotion />,
+    clock: lasdew,
+    //
     close: kxmvs,
+    ...brandCons,
   };
 
   let oksdew = ijsadwe[sdfoger];
-  oksdew = oksdew ? oksdew : sdfoger;
+  oksdew = oksdew
+    ? oksdew
+    : //
+      //
+      sdfoger;
+  // BearError("No icon found in BearUI's libary for '" + sdfoger + "'.");
 
   function Berios() {
     const fdjghrt = (
@@ -175,7 +246,7 @@ export function BearIcon(sdfoger, sdfke) {
 
     const ritdfsr = {
       obj: fdjghrt,
-      flexTrue: true,
+      flex: true,
       vertAlign: true,
     };
 
@@ -192,7 +263,7 @@ export function BearIcon(sdfoger, sdfke) {
   }
 
   const okasde = {
-    spanTrue: true,
+    span: true,
     obj: oksdew,
     ...sdfke,
   };

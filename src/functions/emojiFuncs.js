@@ -1,5 +1,7 @@
-// import * as logs from "../functions/logFuncs";
-// import { mapReturn } from "@SillyScribe95/bedia-shared";
+import {
+  //
+  logs,
+} from "../index";
 import { emojiDict } from "../consts/emojiConst";
 
 function getEMoj(asofkr) {
@@ -10,8 +12,8 @@ function getEMoj(asofkr) {
   return side;
 }
 
-export function mapEmojiFace(listvar) {
-  const iewase = listvar && listvar.map(getEMoj);
+export function mapEmojiFace(list) {
+  const iewase = list && list.map(getEMoj);
   return iewase;
 }
 

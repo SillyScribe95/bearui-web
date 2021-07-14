@@ -4,13 +4,6 @@ import React, {
   useEffect,
   useContext,
 } from "react";
-import {
-  //
-  logs,
-  // filtModelDocs,
-  // backendInit,
-} from "@SillyScribe95/bedia-shared";
-// import { ThemeProvider } from "@chakra-ui/core";
 
 import { ProvideMain } from "./provider/ProvideMain";
 import { ProvideAuth } from "./provider/ProvideAuth";

@@ -4,20 +4,31 @@ import React, {
   useEffect,
   useContext,
 } from "react";
-import { QueryClient, QueryClientProvider, useQuery } from "react-query";
+import { QueryClient, QueryClientProvider } from "react-query";
 import { ChakraProvider } from "@chakra-ui/react";
 
-export function ProvideMain({ children }) {
-  const queryClient = new QueryClient();
-  const asijew = (
-    <QueryClientProvider client={queryClient}>
+export function ProvideMain({ query, children, chakra }) {
+  // const queryClient = query ? query : new QueryClient();
+
+  let asijew = (
+    <>
+      {/* <QueryClientProvider client={queryClient}> */}
       {/* <ThemeProvider> */}
-      <ChakraProvider>
-        {/*  */}
-        {children}
-      </ChakraProvider>
+      {/*  */}
+      {children}
       {/* </ThemeProvider> */}
-    </QueryClientProvider>
+      {/* </QueryClientProvider> */}
+    </>
+  );
+
+  asijew = (
+    // !chakra. ? (
+    //   asijew
+    // ) : (
+    <ChakraProvider>
+      {/*  */}
+      {children}
+    </ChakraProvider>
   );
 
   return asijew;

@@ -6,36 +6,62 @@ import React, {
 import { BearDiv } from "../BearDiv";
 
 export function BearTitle({
-  titleConfig,
-  titlevar,
+  titleConfig = {},
+  title,
+  children,
   belowObj,
   // sizevar = "34px",
-  subtitlevar,
-  subtitleConfig,
+  subtitle,
+  subtitleConfig = {},
   lineBetween,
   ...args
 }) {
+  //
+  title = children || title;
+
   const aijsdwe =
     //
-    // gens.butClass;
-    "bold";
+    "";
+  // "shadowBottom";
+  // gens.butClass;
+  // "bold";
 
   const asyhdwe = {
     // fontSize: sizevar,
-    // padding: "0 2% 20px",
+    // padding: "0 10% 20px",
+    // marginBottom: "30px",
   };
 
-  //
+  const usdhfr = (
+    <>
+      {title}
+      {lineBetween && <hr />}
+    </>
+  );
+
+  function sadfae({ style, ...aasds }) {
+    const jifdgr = {
+      marginBottom: "30px",
+      ...style,
+    };
+
+    const ijdf = {
+      style: jifdgr,
+      ...aasds,
+    };
+
+    return ijdf;
+  }
+
   titleConfig = {
-    style: asyhdwe,
     className: aijsdwe,
-    obj: titlevar,
-    ...titleConfig,
+    obj: usdhfr,
+    ...sadfae(titleConfig),
   };
 
   const sijwesae = {
     style: { fontSize: "0.8em" },
-    obj: subtitlevar,
+    obj: subtitle,
     ...subtitleConfig,
   };
 
@@ -44,8 +70,7 @@ export function BearTitle({
     <>
       {/* asdokw */}
       <BearDiv {...titleConfig} />
-      {lineBetween && <hr />}
-      <BearDiv {...sijwesae} />
+      {subtitle && <BearDiv {...sijwesae} />}
       {belowObj}
       {/* sdfoker */}
       {/* <ImageTextDiv noIcon noImage {...titleConfig} /> */}

@@ -1,4 +1,3 @@
-import { Center } from "@chakra-ui/layout";
 import React, {
   //
   useState,
@@ -6,23 +5,39 @@ import React, {
 } from "react";
 import { BearLink } from "./BearLink";
 import { LoadMain } from "./GlobalComps";
+import { logs } from "../index"
+
+import { BearCheckMain } from "./check/BearCheckMain";
+import { BearError } from "./BearError";
 
 export function BearDiv({
   //
   obj,
-  renderObj,
+  text,
+  children,
+  bearName = "BearDiv",
+  divContainer,
   bediaTrue,
-  flexTrue,
+  flex,
+  equalSpacing = true,
   vertAlign,
+  ignoreNull,
   typeDiv,
   centerTrue,
-  spanTrue,
+  span,
+  logtrue,
   fontSize,
+  //
   // 1link
+  linkParams,
   href,
-  linkvar,
-  newtabLink,
+  preLink = "",
+  link,
+  outsideLink,
+  //
   linkConfig,
+  //
+  //
   style,
   loadTrue,
   loadConfig,
@@ -30,7 +45,7 @@ export function BearDiv({
 }) {
   //
   //
-  const osdakew = flexTrue && {
+  const osdakew = flex && {
     display: "flex",
   };
 
@@ -38,6 +53,12 @@ export function BearDiv({
     alignItems: "center",
     // justifyContent: "center",
   };
+
+  const sidjfr =
+    !equalSpacing &&
+    {
+      // alignItems: "flex-start",
+    };
 
   const kdfr = bediaTrue && {
     background: "red",
@@ -55,6 +76,10 @@ export function BearDiv({
     textAlign: "center",
   };
 
+  const baseFonto = {
+    fontFamily: "Arial",
+  };
+
   const gibjr = {
     // ...centerConf,
     ...oksdae,
@@ -62,6 +87,8 @@ export function BearDiv({
     ...osdakew,
     ...zxcsd,
     ...kdfr,
+    ...sidjfr,
+    ...baseFonto,
     ...style,
   };
 
@@ -72,21 +99,16 @@ export function BearDiv({
 
   const aokdwe =
     //
-    spanTrue ? "span" : typeDiv;
+    span ? "span" : typeDiv;
 
+  const sijewr = children ? children : obj ? obj : text;
   const ksdrewq =
     //
     // obj
-    renderObj ? renderObj(obj) : obj;
+    divContainer ? divContainer(sijewr) : sijewr;
 
   let endo = "";
   switch (aokdwe) {
-    case "center":
-      endo = (
-        <Center bg="tomato" h="100px" color="white" {...oksde}>
-          {ksdrewq}
-        </Center>
-      );
     case "span":
       endo = <span {...oksde}>{ksdrewq}</span>;
       break;
@@ -94,22 +116,33 @@ export function BearDiv({
       endo = <div {...oksde}>{ksdrewq}</div>;
   }
 
-  const iasje = newtabLink && {
+  const iasje = outsideLink && {
     //
     outsideTrue: true,
   };
 
+  // link = href || outsideLink || link;
+  const dfuhsdw = preLink;
+  const sjfweqw = outsideLink || link;
+  const linkTrue = sjfweqw || dfuhsdw;
+  const nsdas = sjfweqw ? preLink + sjfweqw : preLink;
+
   // 1link
   const okdas = {
-    toVar: linkvar,
+    toVar: nsdas,
     textvar: endo,
+    linkParams,
     ...iasje,
     ...linkConfig,
   };
 
-  // linkvar = href || newtabLink || linkvar;
+  if (logtrue) {
+    logs.loggo("___ okdas ___", okdas);
+  }
 
-  const linkTrue = newtabLink || linkvar;
+  if (linkTrue) {
+    logs.loggo("___ linkTrue ___", okdas);
+  }
 
   const xczaeewqa =
     //
@@ -127,5 +160,19 @@ export function BearDiv({
 
   const sadijqwe = loadTrue ? Lodio() : xczaeewqa;
 
+  const jswaee = {
+    noNameNeeded: true,
+    // requiredArgs: { obj, text, children },
+    // degr
+  };
+  if (logtrue) {
+    logs.loggo("___ sijewr ___", sijewr);
+    // logs.loggo("___ sadijqwe ___", sadijqwe);
+  }
+
+  const difjgerwas =
+    !sijewr && !ignoreNull ? BearError(bearName + " is empty") : sadijqwe;
+
+  // return difjgerwas
   return sadijqwe;
 }

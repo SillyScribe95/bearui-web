@@ -3,13 +3,15 @@ import React, {
   useState,
   useContext,
 } from "react";
-import { BearPopover } from "../BearPopover";
 import { BearDiv } from "../BearDiv";
 //   import BearSelect from "./BearSelect";
 //   import HorizChoiceBar from "./HorizChoiceBar";
 import { BearList } from "./BearList";
 import { emojiDict } from "../../consts/emojiConst";
-import * as logs from "../../functions/logFuncs";
+import {
+  //
+  logs,
+} from "../../index";
 import {
   // EmojiLabel,
   EmojiLabelMap,
@@ -23,7 +25,7 @@ export function BearEmoji({
   selectTrue,
   chooseFunc,
   typevar,
-  listvar,
+  list,
   onlyEmoji,
   itemConfig,
   ...sdaa
@@ -48,7 +50,7 @@ export function BearEmoji({
   const jdfew =
     //
     // kjsijsa
-    listvar ? listvar : kjsijsa;
+    list ? list : kjsijsa;
 
   //
   //
@@ -127,13 +129,12 @@ export function BearEmoji({
 
     const oksaew = {
       obj: lsadwe,
-      flexTrue: true,
+      flex: true,
       ...sfjaw,
     };
 
     const aokdwe = {
       // style:
-      obj: <BearDiv {...oksaew} />,
       popConfig: {
         content: sdfiewrw,
       },
@@ -142,7 +143,8 @@ export function BearEmoji({
 
     logs.logga("___BearEmoji BASE EMOJI ___", aokdwe);
 
-    return <BearPopover {...aokdwe} />;
+    return <BearDiv {...oksaew} />;
+    // return <BearPopover {...aokdwe} />;
   }
 
   function Listso({ ...ssdwedf }) {
@@ -189,7 +191,7 @@ export function BearEmoji({
     };
 
     const dsjs = {
-      listvar: jdfew,
+      list: jdfew,
       dictvar: ijsae,
       // typeList: "div",
       renderItem: asdoke,

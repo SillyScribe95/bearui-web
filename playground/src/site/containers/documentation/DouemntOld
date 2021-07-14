@@ -1,0 +1,94 @@
+
+  const fksde = {
+    text: "Installation",
+    link: "/installation",
+    list: [
+      { text: "Desktop", link: "/desktop" },
+      { text: "Mobile", link: "/mobile" },
+    ],
+  };
+
+  // 1install
+  const nsidjer = {
+    install: {
+      header: "Getting Started",
+      list: [
+        //
+        fksde,
+      ],
+    },
+  };
+
+  // 1dictvar
+
+  function Asje({ preLink, headerConfig, header, list, text, link, ...ase }) {
+    //
+    function asdwe({ link, ...asdw }) {
+      const ijsdfe = preLink + link;
+
+      return Asje({
+        preLink: ijsdfe,
+        // preLink,
+        ...asdw,
+      });
+    }
+
+    const iskadw = {
+      text,
+      preLink,
+      list,
+      link,
+    };
+
+    logs.logga("___ iskadw ___", iskadw);
+
+    const ijsdf =
+      list &&
+      BearList({
+        bearName: "listBase",
+        list: list,
+        renderItem: asdwe,
+      });
+
+    const ijsderw =
+      text &&
+      BearDiv({
+        ...iskadw,
+        ...ase,
+      });
+
+    const difjwes =
+      header &&
+      BearDiv({
+        obj: header,
+        fontSize: "1.43em",
+        ...headerConfig,
+      });
+
+    const ijdsr = (
+      <>
+        {difjwes}
+        {ijsderw}
+        {ijsdf}
+      </>
+    );
+
+    return ijdsr;
+  }
+
+  const sidjew = {
+    //
+    preLink: baseLink,
+  };
+
+  const isjdewae = {
+    bearName: "listBase",
+    dictvar: nsidjer,
+    list: ["install"],
+    renderItem: Asje,
+    itemConfig: sidjew,
+    style: {
+      textAlign: "left",
+    },
+    // typeBullet: "qw",
+  };

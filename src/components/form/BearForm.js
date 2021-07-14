@@ -1,50 +1,66 @@
 import React, { useState } from "react";
-import * as yup from "yup";
 import { isEmpty } from "lodash";
 import { useForm, Controller } from "react-hook-form";
-// import { yupResolver } from "@hookform/resolvers/yup";
-
-//
-import { BearInput } from "../form/BearInput";
 import { BearDiv } from "../BearDiv";
 import { BearList } from "../list/BearList";
 import { BearButton } from "../button/BearButton";
-import * as logs from "../../functions/logFuncs";
-import { LoadMain } from "../GlobalComps";
+import {
+  //
+  logs,
+} from "../../index"
+import {
+  //
+  BearUpper,
+  argMiss,
+  argPass,
+  BearErrMiss,
+  LoadMain,
+} from "../GlobalComps";
+import { BearError } from "../BearError";
+import { BearCheckMain } from "../check/BearCheckMain";
+import { BearFormInputCheck } from "./BearFormInputCheck";
+import { formValidPass } from "./formValidPass";
+import { BearFormSetup } from "./BearFormSetup";
+import { getFormPass } from "./getFormPass";
+import { BearInputBase } from "../input/BearInputBase";
 
 export function BearForm({
   noButton,
   noText,
   listDict,
   loadConfig,
-  subtitleConfig,
+  bearName = "",
   textConfig,
-  overObj,
-  listvar,
-  buttonSize = "35px",
+  list,
+  //
   inputConfig,
   //
   // 1button
-  buttonConfig,
+  buttonConfig = {},
   buttonText = "Submit",
+  buttonSize = "35px",
+  betweenItem,
   //
   //
+  buttonList,
   toplist,
   noForm,
   dictvar,
-  formid,
   headerObj,
   singleTrue,
   headerConfig,
   logtrue,
   tabConfig,
-  schemavar,
+  schema,
   hookConfig,
   typeForm,
-  sameLine,
+  //
   topButtonConfig,
   ImageTextList,
   topButtonTrue,
+  formid,
+  // 1required
+  requireAll,
   //
   // 1submit
   loadSubmit,
@@ -52,70 +68,59 @@ export function BearForm({
   submitExtra,
   topObj,
   //
-  // style
+  // style,
   marginBetween,
   //
-  // title
-  titlevar,
-  titleConfig,
-  changeGlobal,
   //
   ...args
 }) {
   //
-  //
-
   // 1const
-  const [loadSetto, setloadSetto] = useState();
+  const [loadSetto, setloadSetto] =
+    //
+    ["", ""];
+  // useState();
 
-  let nameMessError =
+  const asokew =
     //
     "";
-  // "Please add your name."
+  // formValidPass({ list, dictvar });
 
-  schemavar = {
-    name: yup
-      .string()
-      //
-      // .match("")
-      .required(nameMessError),
-    email: yup
-      .string()
-      .email("This is not a valid email.")
-      .required("Please add your email."),
-    // age: yup.number().required(),
-    ...schemavar,
-  };
-
-  const finsaShc =
+  const modeo =
     //
-    // schemavar
-    {};
-
-  function asifjew(asdofj) {
-    finsaShc[asdofj] = schemavar[asdofj];
-  }
-
-  listvar.map(asifjew);
-
-  const schemabas = yup.object().shape(finsaShc);
-
-  logs.logga("___ finsaShc ___", finsaShc);
-  logs.logga("___ schemabas ___", schemabas);
+    // "onBlur"
+    "onSubmit";
+  // "onChange";
 
   const oksdaew = {
-    // validationSchema: schemaYup
-    // mode: "onBlur",
-    mode: "onSubmit",
+    // validationSchema: asokew,
+    // resolver: asokew,
+    //
     // reValidateMode: "onChange",
-    // resolver: yupResolver(schemabas),
+    mode: modeo,
     ...hookConfig,
   };
 
-  const { handleSubmit, register, errors, control, watch, ...asdwe } =
+  const {
     //
-    // "";
+    handleSubmit,
+    register,
+    errors,
+    control,
+    // watch,
+    ...asdw
+  } =
+    //
     useForm(oksdaew);
+
+  const idjfe = {
+    errors,
+    control,
+    register,
+  };
+
+  logs.logga("___ idjfe ___", { ...idjfe, asdw });
+  logs.logga("___ bEARFORM userForm MAIN___", asdw);
 
   function goSing(doksad) {
     let sdifje = Object.values(doksad)[0];
@@ -127,7 +132,8 @@ export function BearForm({
     let asaoke = submitExtra && submitExtra();
 
     values = {
-      typeForm: typeForm,
+      typeForm,
+      bearName,
       ...values,
       ...asaoke,
     };
@@ -135,17 +141,28 @@ export function BearForm({
     return values;
   }
 
-  function parsVal(values) {
-    let dsifer = singleTrue ? goSing(values) : mainFI(values);
+  function subbTo({ _reactName, listIndex, ...values }, funta) {
+    const kjdsasd =
+      //
+      // funta
+      !_reactName && !listIndex && funta;
 
-    logs.logga("FORMA--MAIN Submit", dsifer);
+    const ijsdr = {
+      _reactName,
+      listIndex,
+    };
 
-    onSubmit(dsifer);
+    logs.logga("___ ijsdr ___", ijsdr);
+
+    if (kjdsasd) {
+      cxvbmf(values, funta);
+    }
   }
 
   // 1submit
-  function subbTo(values) {
+  function cxvbmf(values, funta) {
     //
+
     if (loadSubmit) {
       setloadSetto(true);
     }
@@ -154,245 +171,247 @@ export function BearForm({
     const trudsoe = onSubmit && emptiosa;
 
     const gifhjer = {
-      values: values,
-      emptiosa: emptiosa,
-      trudsoe: trudsoe,
+      loadSubmit,
+      values,
+      emptiosa,
+      trudsoe,
     };
 
-    // 1submit
     logs.logga("___ FORMAMAIN SUBMIT ___", gifhjer);
     logs.logga("___ Fomain values ___", values);
 
-    onSubmit(values);
-    setloadSetto();
+    if (trudsoe) {
+      let dsifer = singleTrue ? goSing(values) : mainFI(values);
 
-    // parsVal(values);
+      logs.logga("FORMA--MAIN Submit", dsifer);
 
-    //
-    // if (trudsoe) {
-    //   onSubmit(values);
-    //   parsVal(values);
-    // }
-    //
+      funta(dsifer);
+      setloadSetto();
+    }
   }
 
   function sease(e) {
-    e.preventDefault();
+    // e.preventDefault();
     // subbTo()
 
     logs.logga("___ e ___", e);
   }
 
-  logs.logga("argwwwwws-zzzzzz", args, "asdy89io211");
-  logs.logga("___ args AAAAAA ___", args);
+  function onSubMain(fjdwe) {
+    subbTo(fjdwe, onSubmit);
+  }
 
   const kasewse =
     //
-    handleSubmit(subbTo);
-  // subbTo
+    handleSubmit(onSubMain);
+  // handleSubmit(sease);
+  // subbTo;
   // sease;
 
   args = {
     ...args,
-    id: formid,
+    bearName,
+  };
+
+  const noSumibt =
+    //
+    !buttonList;
+
+  const jsidwer = noSumibt && {
     onSubmit: kasewse,
   };
 
-  // 1button
-  function Buttiona({ ...siwerew }) {
-    //
+  const difjgr = {
+    ...args,
+    id: formid,
+    ...jsidwer,
+  };
 
+  // 1button
+  function Buttiona({ text, style, ...siwerew }) {
+    //
     const aewsadw = {
       style: {
         margin: "20px 0",
       },
     };
-    //
+
     const jsadcvx = {
       // width: "100%",
       // padding: "60px",
+      color: "white",
+      background: "green",
+      padding: "5px 10px",
       fontSize: buttonSize,
+      // marginBottom: "20px",
+      ...style,
     };
 
-    //
+    const fghtr = {
+      loadClick: true,
+      loading: true,
+    };
+
+    const nsdijfer = {
+      name: "submitButton",
+      text: buttonText,
+    };
+
     const dvbijkrw = {
-      type: "submit",
-      textAlign: "center",
-      form: formid,
-      // color: "black",
-      // height: "60px",
-      // padding: "10px 20px",
-      style: jsadcvx,
-      genConfig: aewsadw,
-      obj: buttonText,
-      longTrue: true,
+      // ...fghtr,
+      ...nsdijfer,
       ...siwerew,
+      type: "submit",
+      value: text,
+      form: formid,
+      style: jsadcvx,
+      // genConfig: aewsadw,
+      className: "buttonHover",
+      longTrue: true,
       // marginTop: ""
     };
 
-    logs.logga("___ dvbijkrw ___", dvbijkrw);
+    logs.logga("___ bForm BUTTON ___", dvbijkrw);
 
     const adhwdse = (
-      //
-      <BearButton {...dvbijkrw} />
-      // <button {...dvbijkrw}>sdfjwerw</button>
+      <>
+        {/* <BearButton {...dvbijkrw}>{buttonText}</BearButton> */}
+        {/* <Button {...dvbijkrw}>{text}</Button> */}
+        <button {...dvbijkrw}>{text ? text : buttonText}</button>
+        {/* <input {...dvbijkrw} /> */}
+      </>
     );
 
-    const asidja = {
-      obj: adhwdse,
-      style: {
-        marginBottom: "20px",
-        textAlign: "center",
-      },
-    };
-
-    return <BearDiv {...asidja} />;
+    return adhwdse;
   }
 
-  const uasdw = {
-    required: "Required",
-    //   pattern: {
-    //     value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-    //     message: "invalid email address",
-    //   },
-  };
-
-  const objbase = {
-    // ref: register(uasdw),
-    // errorobj: asw,
-    name: "name",
-    // textvar: textvar,
-    // ...args,
-    // ...inputConfig,
-    // ...obj,
-  };
-
   function FormError(textvar) {
-    const okaease = {
-      obj: textvar,
-    };
-
-    const dfbokerr = <BearDiv {...okaease} />;
+    const dfbokerr = BearError(textvar);
 
     return dfbokerr;
   }
 
-  function firstInputCheck(baseObj) {
-    //
-    const nameeo = baseObj.name;
-
-    logs.logga(nameeo, "___BeaForm firstInputCheck ___", {
-      baseObj: baseObj,
-      NAME: nameeo,
-    });
-
-    // 1name
-    const okwaew = nameeo
-      ? secondCheck(baseObj)
-      : FormError("No Form Name Supplied");
-
-    return okwaew;
-  }
-
-  // 1FUNCTION
-  function secondCheck({ ...baseObj }) {
-    logs.logga("___ REGISTER BASE  ___", baseObj);
-
-    const nameeo = baseObj["name"];
-    const titlCheck = topButtonTrue && {
-      noTitle: true,
-    };
-
-    function getRef({ name, titlevar, iconvar, ...asdsa }) {
-      //
-      const reffo =
-        //
-        // register("name");
-        register(name, asdsa);
-
-      return reffo;
-    }
-
-    const okasew = getRef(baseObj);
-    const hookArgs = {
-      control: control,
-      errors: errors,
-      ref: okasew,
-      ...okasew,
-    };
-
-    const existo = overObj && overObj[nameeo];
-    const ijawe = existo ? existo : baseObj["textvar"];
-
-    const odkasew = {
-      //   ...asdwe,
-      ...hookArgs,
-      sameLine: sameLine,
-      overObj: overObj,
-      changeGlobal: changeGlobal,
-      ...baseObj,
-      ...inputConfig,
-      ...titlCheck,
-      textvar: ijawe,
-    };
-
-    const fhgsdf =
-      //
-      nameeo == "name";
-    // logtrue;
-    // true;
-
-    if (fhgsdf) {
-      // logs.logga("___ regDict ___", regDict);
-      logs.logga(nameeo + "___ baseObj ___", baseObj);
-      logs.logga(nameeo + "___ baseObj ___", baseObj);
-      logs.logga(nameeo + "___ InputBase TEXT ___", odkasew);
-      //logs.logga(obj + "___ InputBase ___", odkasew);
-    }
-
-    // 1inputbase
-    const oiaswe = BearInput(odkasew);
-
-    return oiaswe;
-  }
-
   function sdfok(obj) {
     const inDict = dictvar && dictvar[obj];
-    const baseObj = {
-      ...getFormDict(obj),
-      ...inDict,
+
+    const nissase = requireAll && {
+      required: true,
     };
+
+    const bfdg = {
+      ...nissase,
+      ...inputConfig,
+    };
+
+    const baseObj = {
+      dictvar,
+      inputItem: obj,
+      name: obj,
+      ...idjfe,
+      ...bfdg,
+      ...inDict,
+      ...argMiss(args),
+    };
+
+    logs.logga("___ baseObj ___", baseObj);
 
     const fdjgre = baseObj.obj;
     const obvdsaf = fdjgre
       ? fdjgre
       : isEmpty(baseObj)
       ? FormError("no form Dictionary supplied - " + obj)
-      : firstInputCheck(baseObj);
+      : BearFormList(baseObj);
 
     logs.logga("___ FORMAMIN - FIRST RUN OBJECT___", {
+      dictvar,
       INITIAL: obj,
-      baseObj: baseObj,
+      baseObj,
       FINAL: obvdsaf,
     });
 
-    return obvdsaf;
+    const sdijfr =
+      //
+      obvdsaf;
+    // "sdofkwerw";
+
+    return sdijfr;
   }
 
   //   const [currTab, setcurrTab] = useState(initBase);
   const currTab = "";
   const currForm = currTab;
-  const initBase = topButtonTrue && listvar[0];
+  const initBase = topButtonTrue && list[0];
   const listRend = listDict && listDict[currForm];
   const atbosa = listRend ? listRend : currForm;
-  const listaros = topButtonTrue ? [atbosa] : listvar;
+  const listaros = topButtonTrue ? [atbosa] : list;
 
   const ijawesdafr = {
     dictvar: dictvar,
-    listvar: listvar,
+    list: list,
   };
 
-  const buttio = !noButton && <Buttiona {...buttonConfig} />;
+  // function sasee(){
+
+  //   const jsid = onSaveDraft &&
+
+  // }
+
+  function sdijfwer({ onClick, ...sdf }) {
+    function xcvase(adfad) {
+      //
+      logs.logga("___BFORM BTTON CLICK VALS ___", adfad);
+
+      subbTo(adfad, onClick);
+    }
+
+    // const ijfde =
+
+    const jidsfjd = {
+      ...buttonConfig,
+      ...sdf,
+      onClick: onClick && handleSubmit(xcvase),
+    };
+
+    // return "asokdewe";
+    return Buttiona(jidsfjd);
+  }
+
+  function ajde() {
+    const mainSb = {
+      // onClick: kasewse,
+      name: "submitButton",
+      text: buttonText,
+      //
+    };
+
+    const jsdre =
+      //
+      buttonList;
+    // buttonList ? buttonList : [mainSb];
+
+    const jnsdf =
+      //
+      bearName + "_BearForm_Buttons";
+
+    const xcvnsdf = {
+      bearName: jnsdf,
+      list: jsdre,
+      horiz: true,
+      renderItem: sdijfwer,
+    };
+
+    // function
+
+    const ijsdrwe = BearList(xcvnsdf);
+
+    return ijsdrwe;
+  }
+
+  // 1button
+  const buttio =
+    //
+    //
+    !noButton && buttonList ? ajde() : Buttiona(buttonConfig);
 
   function vijsd9({ name, ...adaw }) {
     let as = name;
@@ -435,7 +454,7 @@ export function BearForm({
       },
     };
 
-    function aidsjfew({ titlevar, iconvar, style, ...zcvdf }) {
+    function aidsjfew({ title, iconvar, style, ...zcvdf }) {
       logs.logga("___ zcvdf ___", zcvdf);
 
       const okawe = {
@@ -446,7 +465,7 @@ export function BearForm({
       const lpsda = (
         <>
           <BearDiv {...okawe} />
-          {titlevar}
+          {title}
         </>
       );
 
@@ -490,6 +509,7 @@ export function BearForm({
     return okfdsd;
   }
 
+  // 1map
   function maperlis(sdfew) {
     return sdfew.map(sdfok);
   }
@@ -514,134 +534,145 @@ export function BearForm({
       {sudhawe}
     </>
   ) : (
-    <>{sudhawe}</>
+    <>
+      {/*  */}
+      {sudhawe}
+    </>
   );
 
   const aidjwe = (
     <>
       {topObj}
       {mappit}
+      {betweenItem}
       {buttio}
     </>
   );
 
-  const duhiew = {
-    ...args,
-    listvar: listvar,
-    listaros: listaros,
-  };
+  const ijdfsr =
+    //
+    difjgr;
+  // argPass
 
   // 1console
-  let dskf = `${typeForm} ${formid} ___ BearForm args ___`;
-  logs.logga(dskf, duhiew);
+  let dskf = `${typeForm} ${bearName} ___ BearForm args ___`;
+  logs.logga(dskf, {
+    ...ijdfsr,
+    list,
+    listaros,
+  });
 
-  const aweuw = noForm ? (
-    aidjwe
-  ) : formid ? (
-    <form {...args}>{aidjwe}</form>
-  ) : (
-    "NO FORM ID SPECIFIED"
-  );
-
-  function Titren({ style, ...sdfok }) {
-    const kjase = {
-      style: {
-        textAlign: "left",
-        fontSize: "1.3em",
-        marginBottom: "30px",
-        ...style,
-      },
-      obj: titlevar,
-      ...sdfok,
-    };
-
-    // const sdfijre =
-
-    const noisae = <BearDiv {...kjase} />;
-
-    return noisae;
-  }
-
-  const askew = titlevar && <Titren {...titleConfig} />;
-
-  const vbokre = {
-    //
-  };
-
-  const isae = loadSetto ? (
+  const xcvsfs = loadSetto ? (
     <LoadMain {...loadConfig} />
+  ) : noForm ? (
+    aidjwe
   ) : (
-    <div {...vbokre}>
-      {askew}
-      {aweuw}
-    </div>
+    <>
+      <form {...ijdfsr}>
+        {aidjwe}
+        {/* <button type="submit">asidje</button> */}
+      </form>
+    </>
   );
+
+  const nsdokfer= argPass(args)
+  const isae = <div {...nsdokfer}>{xcvsfs}</div>
 
   const isjdwesdfoek =
-    //
-    isae;
-  // aweuw;
-  // <div {...genConfig}>{aweuw}</div>;
+    //   //
+    !formid
+      ? BearErrMiss("formid", bearName, "BearForm")
+      : BearCheckMain("BearForm", isae, args);
+  // // aweuw;
+  // BearCheckMain("BearForm", <BearForm {...dfjgrt} />, args);
+  // // <div {...genConfig}>{aweuw}</div>;
 
   return isjdwesdfoek;
 }
 
-function getFormDict(objsoa) {
-  const vbijdf9te =
+export function BearFormList({ inputList, horizList, ...jdfsd }) {
+  //
+
+  const sijewer = inputList || horizList;
+  //
+  function sdjfwer() {
+    function cvlbk({ label, ...dfewer }) {
+      const isdjfre = !label && {
+        noLabel: true,
+      };
+      const dfjsds = {
+        ...jdfsd,
+        ...isdjfre,
+        ...dfewer,
+        label,
+      };
+
+      logs.logga("___ dfjsds ___", dfjsds);
+
+      return firstInputCheck(dfjsds);
+    }
+
+    const jdfwea =
+      //
+      // "oksdfer";
+      sijewer.map(cvlbk);
+
+    const fbjdfg = horizList && {
+      flex: true,
+      vertAlign: true,
+    };
+
+    const ijdfges = (
+      <>
+        {/* <BearList {...dijfgtr} /> */}
+        {/* <Flex> */}
+        {/* <BearFloat {...args} /> */}
+        <BearDiv {...fbjdfg}>{jdfwea}</BearDiv>
+        {/* </Flex> */}
+      </>
+    );
+
+    return BearInputBase(ijdfges, jdfsd);
+  }
+
+  const ijfgase = sijewer ? sdjfwer() : firstInputCheck(jdfsd);
+
+  return ijfgase;
+}
+
+export function firstInputCheck({ addTrue, noName, inputItem, ...baseObj }) {
+  //
+  const nameeo = baseObj.name;
+
+  logs.loggu(nameeo, "___BeaForm firstInputCheck ___", {
+    baseObj: baseObj,
+    NAME: nameeo,
+  });
+
+  const ijsre = noName
+    ? {
+        //
+        // noLabel: true,
+      }
+    : {
+        name: inputItem,
+        // inputItem
+      };
+
+  const isjdfe = {
+    ...baseObj,
+    ...ijsre,
+  };
+
+  // 1name
+  const okwaew =
     //
-    "Email";
-  // ("Email address");
-  // "What's your email address?";
-  // "Where should we send the transcript to?";
+    // "oskdfwerw"
+    noName
+      ? BearFormSetup(isjdfe)
+      : nameeo
+      ? BearFormSetup(isjdfe)
+      : BearErrMiss("name", baseObj.bearName + "'s input elementk");
 
-  // // "/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/"
-  const emailPatto = {
-    //   // value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-    //   message: "invalid email address",
-  };
-
-  const emalBaso = {
-    required: true,
-    // pattern: emailPatto,
-    titlevar: "Email address",
-    titlevar: vbijdf9te,
-    iconvar: "email",
-    // iconvar: "email",
-  };
-
-  const nasmwoBL = {
-    required: true,
-    // pattern: emailPatto,
-    name: "name",
-    titlevar: "Name",
-    // titlevar: vbijdf9te,
-    iconvar: "",
-    // iconvar: "email",
-  };
-
-  const diewrsm = {
-    required: true,
-    name: "password",
-    titlevar: "Password",
-    type: "password",
-  };
-
-  //  1tags
-  const tgsoer = {
-    name: "tags",
-    titlevar: "Tags",
-  };
-
-  const nvcbxf = {
-    email: emalBaso,
-    name: nasmwoBL,
-    password: diewrsm,
-    tags: tgsoer,
-    // firstname:
-    // lastname:
-  };
-
-  const ocvbds = nvcbxf[objsoa];
-
-  return ocvbds;
+  return okwaew;
 }

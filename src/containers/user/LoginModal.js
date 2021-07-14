@@ -3,12 +3,7 @@ import React, {
   useState,
   useContext,
 } from "react";
-import {
-  logs,
-  getParamVar,
-  userConnect,
-  userLogSign,
-} from "@SillyScribe95/bedia-shared/";
+import { logs } from "@SillyScribe95/bedia-shared/";
 import { BearAuthPortal } from "../../components/user/BearAuthPortal";
 import { BearDiv } from "../../components/BearDiv";
 import { BearTitle } from "../../components/title/BearTitle";
@@ -66,7 +61,7 @@ export function LoginModal({
     function asdokew(type) {
       //
       logs.logga("___ LoginMod CONNECT ___", type);
-      userConnect(type, loginFunc);
+      BearUserConnect(type, loginFunc);
     }
 
     // function sdfer
@@ -74,7 +69,7 @@ export function LoginModal({
     const oake = {
       formConfig: oksew,
       socialSubmit: asdokew,
-      socialList: ["google"],
+      authList: ["google"],
       // emailSubmit:
       ...odkfewr,
       ...signupConfig,

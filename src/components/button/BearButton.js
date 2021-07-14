@@ -4,38 +4,47 @@ import React, {
   useContext,
 } from "react";
 import { BearDiv } from "../../components/BearDiv";
-import * as logs from "../../functions/logFuncs";
-//   import { IconButton, Button, ButtonGroup } from "@chakra-ui/core";
+import {
+  //
+  logs,
+} from "../../index"
 
 export function BearButton({
   textConfig,
   genConfig,
-  disableTrue,
+  disabled,
   errorTrue,
   background,
+  color,
   noBackground,
   style,
   obj,
-  textvar,
+  children,
+  className,
   fontSize,
   longTrue,
   downloadLink,
   fullWidth,
   padvar,
   extStyle,
-  formid,
+  bearName,
   buttonType,
+  //
+  // 1loading
   // isLoading,
-  groupConfig,
+  loading,
   loadClick,
-  linkvar,
+  //
+  //
+  groupConfig,
+  link,
   logtrue,
   //
   // 1onclick
   clickObj,
   onClick,
   //
-  noGreen,
+  // background,
   divConfig,
   onlyText,
   typevar,
@@ -43,7 +52,7 @@ export function BearButton({
 }) {
   // const asndiw = {
   //   order: {
-  //     linkvar: "/order",
+  //     link: "/order",
   //     iconvar: "transcript",
   //     textvar: "Order Transcripts",
   //   },
@@ -68,7 +77,9 @@ export function BearButton({
   // }
 
   // 1const
-  const [clickTrue, setclickTrue] = useState();
+  const [clickTrue, setclickTrue, loadRend, setloadRend] = ["", "", "", ""];
+  // const [clickTrue, setclickTrue] = useState();
+  // const [loadRend, setloadRend] = useState();
 
   const sdfoer = errorTrue && {
     background: "red",
@@ -79,13 +90,19 @@ export function BearButton({
     width: "200px",
   };
 
+  const ijdase = {
+    color: "white",
+    background: "darkgreen",
+    color,
+    background,
+  };
+
   const baseoSt = {
     padding: "2px 10px",
+
     ...longeos,
-    color: noBackground ? "black" : "white",
     // fontSize: "30px",
     // height: "50px",
-    background: background ? background : !noBackground && "green",
   };
 
   const fdoewrw = padvar && {
@@ -97,10 +114,12 @@ export function BearButton({
   };
 
   const baseStlas = {
-    fontSize: fontSize,
+    fontSize,
+    borderRadius: "5px",
     ...baseoSt,
     ...fdoewrw,
     ...sdfoer,
+    ...ijdase,
     ...kasew,
     ...style,
     ...extStyle,
@@ -110,20 +129,33 @@ export function BearButton({
 
   // "";
 
+  // 1disable
   const dwesae =
     //
     // true;
-    disableTrue;
+    disabled;
 
+  // 1classname
   const cllosk =
     //
-    "buttonHover shadowHover";
+    "buttonBase " + className;
+  // "buttonHover shadowHover";
   //   gens.butClass;
   // gens.butClass + dwesae ? " disabled" : "";
 
+  // 1onclick
   function asoke() {
+    logs.logga("___ bButton ONCLICK ___", {
+      loadClick: loadClick,
+      onClick: onClick,
+    });
+
     if (clickObj) {
       setclickTrue(!clickTrue);
+    }
+
+    if (loadClick) {
+      setloadRend(true);
     }
 
     if (onClick) {
@@ -131,18 +163,14 @@ export function BearButton({
     }
   }
 
-  const sfasdokwe = {
-    form: formid,
-    ...arg,
-    onClick: asoke,
-    style: baseStlas,
-    className: cllosk,
-    isDisabled: dwesae,
-    disabled: dwesae,
-    // ...uahwe,
-  };
+  const locvbfdr = loading || loadRend;
 
-  const asodkwe = clickTrue ? clickObj : obj;
+  // 1obj
+  const asodkwe = locvbfdr
+    ? "Loading..."
+    : clickTrue
+    ? clickObj
+    : obj || children;
 
   const qy7eww =
     //
@@ -157,9 +185,24 @@ export function BearButton({
     </>
   );
 
-  // qy7eww ? qy7eww : <ImageTextDiv {...asduhqwe} />;
+  // const xcvfdc = {
+  //   borderRadius:
+  //   ...style
+  // }
 
-  // chakTrue = chakTrue ? chakTrue : sfasdokwe["isLoading"];
+  const sfasdokwe = {
+    form: bearName,
+    ...arg,
+    onClick: asoke,
+    style: baseStlas,
+    className: cllosk,
+    isDisabled: dwesae,
+    disabled: dwesae,
+    // ...uahwe,
+  };
+
+  // 1console
+  logs.logga("___ sfasdokwe ___", sfasdokwe);
 
   function GroupBase({ rightobj, leftobj, leftConfig, rightConfig, ...qwe }) {
     const nidsfjer = {
@@ -206,22 +249,28 @@ export function BearButton({
     <GroupBase {...groupConfig} />
   ) : (
     <button {...sfasdokwe}>{aisjqw}</button>
+    // <button {...sfasdokwe}>{aisjqw}</button>
   );
 
   const asdijew =
     //
     // "";
-    linkvar || divConfig;
+    link || divConfig;
 
   const jawewe = {
+    ...arg,
     obj: sfdsgwe,
-    linkvar: linkvar,
+    link,
     ...divConfig,
   };
 
   logs.logga("___ jawewe ___", jawewe);
 
-  const asdgvwe = asdijew ? <BearDiv {...jawewe} /> : sfdsgwe;
+  const asdgvwe =
+    //
+    BearDiv(jawewe);
+  // sfdsgwe;
+  // asdijew ? BearDiv(jawewe) : sfdsgwe;
 
   const pdska = downloadLink ? (
     <a href={downloadLink} download>
@@ -231,22 +280,5 @@ export function BearButton({
     asdgvwe
   );
 
-  const dweasdd = {
-    obj: pdska,
-    ...genConfig,
-  };
-
-  // logtrue = true;
-  // 1console
-  // logs.logga("___ sfasdokwe ___", sfasdokwe);
-
-  if (logtrue) {
-    logs.logga(obj + "___CONIRM BUTTON " + aisjqw, sfasdokwe);
-    logs.logga("___ BearButton  STYLE___", baseStlas);
-    logs.logga("___ baseStlas ___", baseStlas);
-  }
-
-  const asdhwqe = <BearDiv {...dweasdd} />;
-
-  return asdhwqe;
+  return pdska;
 }

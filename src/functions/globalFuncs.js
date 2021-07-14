@@ -2,11 +2,7 @@
 //
 //
 //
-import {
-  //
-  logs,
-  joinString,
-} from "@SillyScribe95/bedia-shared";
+import { logs } from "../index";
 
 export function slugFunc(sdrsdfe, asdok = "") {
   var slugify = require("slugify");
@@ -28,12 +24,12 @@ export function linkOrdse({
   //
   typevar,
   textvar,
-  linkvar,
+  link,
   linkBase,
   linkConnect,
   textConnect,
 }) {
-  linkvar = encodeURIComponent(linkvar);
+  link = encodeURIComponent(link);
   const twitTure = typevar == "twitter";
   const noLink = twitTure;
   const showLink =
@@ -42,14 +38,14 @@ export function linkOrdse({
 
   let tnstFinal =
     //
-    twitTure ? textvar + " " + linkvar : textvar;
+    twitTure ? textvar + " " + link : textvar;
 
   tnstFinal = encodeURIComponent(tnstFinal);
 
   let linkeo =
     //
-    linkvar;
-  // encodeURIComponent(linkvar)
+    link;
+  // encodeURIComponent(link)
 
   const bsaeio =
     showLink &&
@@ -99,3 +95,33 @@ export function linkOrdse({
 
   return didsfe;
 }
+
+// 1onchange
+export function onChangeFunc(inputAtts, { onChange, onChangeValue }) {
+  //
+  // const ikasae
+
+  const valueMain = inputAtts.target.value;
+
+  logs.logga("___ onChangeFunc ___", valueMain, {
+    valueMain,
+    inputAtts,
+    onChange,
+    onChangeValue,
+  });
+
+  if (onChangeValue) {
+    onChangeValue(valueMain);
+  }
+
+  if (onChange) {
+    onChange(inputAtts);
+  }
+}
+
+export function EXAMPLE(sfkr, oskdfr) {
+  //
+  // const ikasae
+  return sfkr + "___" + oskdfr;
+}
+// 1function
