@@ -605,8 +605,10 @@ function BearButton({
   };
   const kasew = fullWidth && {
     width: "100%"
-  };
+  }; // 1style
+
   const baseStlas = {
+    cursor: "pointer",
     fontSize,
     borderRadius: "5px",
     ...baseoSt,

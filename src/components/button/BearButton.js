@@ -113,7 +113,9 @@ export function BearButton({
     width: "100%",
   };
 
+// 1style
   const baseStlas = {
+    cursor: "pointer",
     fontSize,
     borderRadius: "5px",
     ...baseoSt,
