@@ -1,6 +1,5 @@
 import prettyFormat from 'pretty-format';
 import React, { useState, useEffect } from 'react';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { remove, isEmpty, chunk, isObject } from 'lodash';
 import { MdArrowBack, MdArrowForward, MdPlaylistPlay } from 'react-icons/md';
 import { TiStar } from 'react-icons/ti';
@@ -12,18 +11,10 @@ import { AiOutlinePlus, AiOutlineInfoCircle, AiOutlineCloseCircle, AiFillDelete,
 import { FiSettings } from 'react-icons/fi';
 import { RiTimerLine } from 'react-icons/ri';
 import { FaCopy, FaCheck, FaSignOutAlt, FaPlay, FaQuoteLeft, FaQuoteRight, FaCode } from 'react-icons/fa';
-import 'react-query';
 import { ChakraProvider, Modal, Textarea, InputGroup, InputLeftElement, InputRightElement, Input, NumberInput, NumberInputField, NumberInputStepper, NumberIncrementStepper, NumberDecrementStepper } from '@chakra-ui/react';
-import 'firebase/app';
-import 'firebase/auth';
-import 'firebase/firestore';
-import 'react-firebase-hooks/firestore';
 import { Controller, useForm } from 'react-hook-form';
 import ResizeTextarea from 'react-textarea-autosize';
 import { passwordStrength } from 'check-password-strength';
-import Select from 'react-select';
-import 'react-select/creatable';
-import 'react-select/async-creatable';
 import 'yup';
 import { Flex as Flex$1 } from '@chakra-ui/layout';
 import { logs } from '..';
@@ -115,106 +106,9 @@ var logFuncs = /*#__PURE__*/Object.freeze({
   logLinas: logLinas
 });
 
-function _typeof(obj) {
-  "@babel/helpers - typeof";
-
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof = function (obj) {
-      return typeof obj;
-    };
-  } else {
-    _typeof = function (obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-  }
-
-  return _typeof(obj);
-}
-
-function _extends() {
-  _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
-}
-
-function _slicedToArray(arr, i) {
-  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
-}
-
-function _arrayWithHoles(arr) {
-  if (Array.isArray(arr)) return arr;
-}
-
-function _iterableToArrayLimit(arr, i) {
-  var _i = arr && (typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]);
-
-  if (_i == null) return;
-  var _arr = [];
-  var _n = true;
-  var _d = false;
-
-  var _s, _e;
-
-  try {
-    for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) {
-      _arr.push(_s.value);
-
-      if (i && _arr.length === i) break;
-    }
-  } catch (err) {
-    _d = true;
-    _e = err;
-  } finally {
-    try {
-      if (!_n && _i["return"] != null) _i["return"]();
-    } finally {
-      if (_d) throw _e;
-    }
-  }
-
-  return _arr;
-}
-
-function _unsupportedIterableToArray(o, minLen) {
-  if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
-  var n = Object.prototype.toString.call(o).slice(8, -1);
-  if (n === "Object" && o.constructor) n = o.constructor.name;
-  if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
-}
-
-function _arrayLikeToArray(arr, len) {
-  if (len == null || len > arr.length) len = arr.length;
-
-  for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
-
-  return arr2;
-}
-
-function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-
 function getAnyDictValue(vlbdf) {
   if (vlbdf) {
-    for (var _i = 0, _Object$entries = Object.entries(vlbdf); _i < _Object$entries.length; _i++) {
-      var _Object$entries$_i = _slicedToArray(_Object$entries[_i], 2),
-          key = _Object$entries$_i[0],
-          value = _Object$entries$_i[1];
-
+    for (const [key, value] of Object.entries(vlbdf)) {
       if (!value) {
         return key;
       }
@@ -222,7 +116,7 @@ function getAnyDictValue(vlbdf) {
   }
 }
 function objectTrue(dictvar) {
-  return _typeof(dictvar) == "object";
+  return typeof dictvar == "object";
 }
 
 //
@@ -281,6 +175,24 @@ function BearLink$1({
   }
 
   return noLink ? textvar : /*#__PURE__*/React.createElement(Rlasdow, null);
+}
+
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
 }
 
 const alignItemsFlex = //
@@ -2543,19 +2455,7 @@ function BearCopy({
   copyMessage,
   ...asd
 }) {
-  // const [copssetot, setcopssetot] = useState(obj);
-  // function sajwe() {
-  //   // const iewawe = <div>Copied!</div>;
-  //   logs.logga("___ CopyMain ___", "CopyMain");
-  //   // ShowNote(copyMessage);
-  //   // setcopssetot(iewawe);
-  // }
-  const ovkewwe = {
-    text: obj ? obj : copyText,
-    // onCopy: sajwe,
-    ...asd
-  };
-  const iawe = /*#__PURE__*/React.createElement(CopyToClipboard, ovkewwe, /*#__PURE__*/React.createElement("span", null, obj));
+  const iawe = /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("span", null, obj));
   return iawe;
 } // 1capitalise
 
@@ -4878,6 +4778,7 @@ function FormBase({ //
   return okfdsd;
 }
 
+// import firebase from "firebase/app";
 function fireConnect(fireObj, {
   processType,
   authType,

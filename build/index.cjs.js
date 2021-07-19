@@ -4,7 +4,6 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 var prettyFormat = require('pretty-format');
 var React = require('react');
-var reactCopyToClipboard = require('react-copy-to-clipboard');
 var lodash = require('lodash');
 var md = require('react-icons/md');
 var ti = require('react-icons/ti');
@@ -16,18 +15,10 @@ var ai = require('react-icons/ai');
 var fi = require('react-icons/fi');
 var ri = require('react-icons/ri');
 var fa = require('react-icons/fa');
-require('react-query');
 var react = require('@chakra-ui/react');
-require('firebase/app');
-require('firebase/auth');
-require('firebase/firestore');
-require('react-firebase-hooks/firestore');
 var reactHookForm = require('react-hook-form');
 var ResizeTextarea = require('react-textarea-autosize');
 var checkPasswordStrength = require('check-password-strength');
-var Select = require('react-select');
-require('react-select/creatable');
-require('react-select/async-creatable');
 require('yup');
 var layout = require('@chakra-ui/layout');
 var __ = require('..');
@@ -38,7 +29,6 @@ function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'defau
 var prettyFormat__default = /*#__PURE__*/_interopDefaultLegacy(prettyFormat);
 var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
 var ResizeTextarea__default = /*#__PURE__*/_interopDefaultLegacy(ResizeTextarea);
-var Select__default = /*#__PURE__*/_interopDefaultLegacy(Select);
 
 function styleInject(css, ref) {
   if (ref === void 0) ref = {};
@@ -126,106 +116,9 @@ var logFuncs = /*#__PURE__*/Object.freeze({
   logLinas: logLinas
 });
 
-function _typeof(obj) {
-  "@babel/helpers - typeof";
-
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof = function (obj) {
-      return typeof obj;
-    };
-  } else {
-    _typeof = function (obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-  }
-
-  return _typeof(obj);
-}
-
-function _extends() {
-  _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
-}
-
-function _slicedToArray(arr, i) {
-  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
-}
-
-function _arrayWithHoles(arr) {
-  if (Array.isArray(arr)) return arr;
-}
-
-function _iterableToArrayLimit(arr, i) {
-  var _i = arr && (typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]);
-
-  if (_i == null) return;
-  var _arr = [];
-  var _n = true;
-  var _d = false;
-
-  var _s, _e;
-
-  try {
-    for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) {
-      _arr.push(_s.value);
-
-      if (i && _arr.length === i) break;
-    }
-  } catch (err) {
-    _d = true;
-    _e = err;
-  } finally {
-    try {
-      if (!_n && _i["return"] != null) _i["return"]();
-    } finally {
-      if (_d) throw _e;
-    }
-  }
-
-  return _arr;
-}
-
-function _unsupportedIterableToArray(o, minLen) {
-  if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
-  var n = Object.prototype.toString.call(o).slice(8, -1);
-  if (n === "Object" && o.constructor) n = o.constructor.name;
-  if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
-}
-
-function _arrayLikeToArray(arr, len) {
-  if (len == null || len > arr.length) len = arr.length;
-
-  for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
-
-  return arr2;
-}
-
-function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-
 function getAnyDictValue(vlbdf) {
   if (vlbdf) {
-    for (var _i = 0, _Object$entries = Object.entries(vlbdf); _i < _Object$entries.length; _i++) {
-      var _Object$entries$_i = _slicedToArray(_Object$entries[_i], 2),
-          key = _Object$entries$_i[0],
-          value = _Object$entries$_i[1];
-
+    for (const [key, value] of Object.entries(vlbdf)) {
       if (!value) {
         return key;
       }
@@ -233,7 +126,7 @@ function getAnyDictValue(vlbdf) {
   }
 }
 function objectTrue(dictvar) {
-  return _typeof(dictvar) == "object";
+  return typeof dictvar == "object";
 }
 
 //
@@ -292,6 +185,24 @@ function BearLink$1({
   }
 
   return noLink ? textvar : /*#__PURE__*/React__default['default'].createElement(Rlasdow, null);
+}
+
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
 }
 
 const alignItemsFlex = //
@@ -2554,19 +2465,7 @@ function BearCopy({
   copyMessage,
   ...asd
 }) {
-  // const [copssetot, setcopssetot] = useState(obj);
-  // function sajwe() {
-  //   // const iewawe = <div>Copied!</div>;
-  //   logs.logga("___ CopyMain ___", "CopyMain");
-  //   // ShowNote(copyMessage);
-  //   // setcopssetot(iewawe);
-  // }
-  const ovkewwe = {
-    text: obj ? obj : copyText,
-    // onCopy: sajwe,
-    ...asd
-  };
-  const iawe = /*#__PURE__*/React__default['default'].createElement(reactCopyToClipboard.CopyToClipboard, ovkewwe, /*#__PURE__*/React__default['default'].createElement("span", null, obj));
+  const iawe = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement("span", null, obj));
   return iawe;
 } // 1capitalise
 
@@ -4081,7 +3980,7 @@ function BearFormInputCheck({
     //
     // inputFunction(objbase)
     // BearSelect(testSelect)
-    React__default['default'].createElement(Select__default['default'], testSelect); // render
+    React__default['default'].createElement(Select, testSelect); // render
 
     const difjgr = //
     // Rendo;
@@ -4889,6 +4788,7 @@ function FormBase({ //
   return okfdsd;
 }
 
+// import firebase from "firebase/app";
 function fireConnect(fireObj, {
   processType,
   authType,
