@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { isEmpty } from "lodash";
+import React, { useEffect, useState } from "react";
+import { isEmpty, isObject } from "lodash";
 import { useForm, Controller } from "react-hook-form";
 import { BearDiv } from "../BearDiv";
 import { BearList } from "../list/BearList";
@@ -7,7 +7,7 @@ import { BearButton } from "../button/BearButton";
 import {
   //
   logs,
-} from "../../index"
+} from "../../index";
 import {
   //
   BearUpper,
@@ -23,6 +23,7 @@ import { formValidPass } from "./formValidPass";
 import { BearFormSetup } from "./BearFormSetup";
 import { getFormPass } from "./getFormPass";
 import { BearInputBase } from "../input/BearInputBase";
+import { focusBase } from "../../functions/formFuncs";
 
 export function BearForm({
   noButton,
@@ -42,6 +43,9 @@ export function BearForm({
   betweenItem,
   //
   //
+  // 1focus
+  focusFirst,
+  //
   buttonList,
   toplist,
   noForm,
@@ -58,6 +62,7 @@ export function BearForm({
   topButtonConfig,
   ImageTextList,
   topButtonTrue,
+  autofocus,
   formid,
   // 1required
   requireAll,
@@ -107,6 +112,7 @@ export function BearForm({
     register,
     errors,
     control,
+    setFocus,
     // watch,
     ...asdw
   } =
@@ -118,6 +124,21 @@ export function BearForm({
     control,
     register,
   };
+
+  // 1focus
+  function Faoksd() {
+    if (focusFirst) {
+      focusBase({
+        list,
+        onFocus: setFocus,
+      });
+    }
+  }
+
+  // 1useEffect
+  useEffect(() => {
+    Faoksd();
+  });
 
   logs.logga("___ idjfe ___", { ...idjfe, asdw });
   logs.logga("___ bEARFORM userForm MAIN___", asdw);
@@ -208,11 +229,6 @@ export function BearForm({
   // subbTo;
   // sease;
 
-  args = {
-    ...args,
-    bearName,
-  };
-
   const noSumibt =
     //
     !buttonList;
@@ -225,6 +241,11 @@ export function BearForm({
     ...args,
     id: formid,
     ...jsidwer,
+  };
+
+  args = {
+    ...args,
+    bearName,
   };
 
   // 1button
@@ -257,6 +278,10 @@ export function BearForm({
       text: buttonText,
     };
 
+    const ksfs = {
+      longTrue: true,
+    };
+
     const dvbijkrw = {
       // ...fghtr,
       ...nsdijfer,
@@ -267,7 +292,6 @@ export function BearForm({
       style: jsadcvx,
       // genConfig: aewsadw,
       className: "buttonHover",
-      longTrue: true,
       // marginTop: ""
     };
 
@@ -575,8 +599,8 @@ export function BearForm({
     </>
   );
 
-  const nsdokfer= argPass(args)
-  const isae = <div {...nsdokfer}>{xcvsfs}</div>
+  const nsdokfer = argPass(args);
+  const isae = <div {...nsdokfer}>{xcvsfs}</div>;
 
   const isjdwesdfoek =
     //   //

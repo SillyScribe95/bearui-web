@@ -23,6 +23,8 @@ export function BearInputText({
   bearName,
   onChangeValue,
   style,
+  noBase,
+  formData,
   ...sfdgert
 }) {
   // 1const
@@ -90,11 +92,13 @@ export function BearInputText({
   const baseo = {
     //
     rows: 1,
-    autocomplete: "off",
+    autoComplete: "off",
     className: "noresize",
   };
 
   const xvbjdfr = {
+    noBase,
+    formData,
     ...sfdgert,
     ...erroBase,
   };
@@ -107,6 +111,9 @@ export function BearInputText({
     onChange: sdijfer,
     // ...inputStyles(style),
   };
+
+  // 1console
+  logs.loggo("___ BeaInputText ___", ijawe);
 
   // 1input
   const centFsow = (

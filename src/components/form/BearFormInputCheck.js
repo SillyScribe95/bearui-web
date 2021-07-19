@@ -3,7 +3,7 @@ import React, {
   useState,
   useContext,
 } from "react";
-import { logs } from "../../index"
+import { logs } from "../../index";
 import { useForm, Controller } from "react-hook-form";
 import { BearInputText } from "../input/BearInputText";
 import { BearPassword } from "../input/BearPassword";
@@ -46,6 +46,9 @@ export function BearFormInputCheck({
   containerStyle,
   name,
   //
+  dictvar,
+  spaceBetween,
+  //
   //
   ...dfsgre
 }) {
@@ -77,10 +80,10 @@ export function BearFormInputCheck({
   const sdweew = {
     subtitle,
     ...sdokwre,
-    subtitlePlacement,
+    // subtitlePlacement,
     name,
     fontSize,
-    containerStyle,
+    // containerStyle,
     ...stylBsae,
     ref,
   };
@@ -124,7 +127,17 @@ export function BearFormInputCheck({
     }
   }
 
-  function sijdgdf(objer, argoes, nameo) {
+  function sijdgdf(
+    objer,
+    {
+      //
+      noBase,
+      formData,
+      errorMessage,
+      ...argoes
+    } = {},
+    nameo
+  ) {
     //
     const idjfr = {
       noBase: true,
@@ -209,7 +222,12 @@ export function BearFormInputCheck({
         break;
 
       default:
-        ujsdqwe = noInput ? "" : sijdgdf(BearInputText, "BInput");
+        ujsdqwe = noInput
+          ? ""
+          : sijdgdf(BearInputText, {
+              //
+              bearName: "BInput",
+            });
     }
 
     return ujsdqwe;

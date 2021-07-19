@@ -4,10 +4,10 @@ import React, {
   useContext,
 } from "react";
 import { BearDiv } from "../BearDiv";
-import { 
-  // 
-  logs
-  } from "../../index";
+import {
+  //
+  logs,
+} from "../../index";
 import { isEmpty, remove } from "lodash";
 import { BearError } from "../BearError";
 import { BearListMap } from "./BearListMap";
@@ -15,6 +15,7 @@ import { BearListItem } from "./BearListItem";
 import { argPass, BearMissing, BearPossess } from "../GlobalComps";
 import { getListComplex } from "./getListComplex";
 import { BearCheckList } from "../check/BearCheckList";
+import { chunk } from "lodash";
 
 export function BearList(
   //
@@ -27,6 +28,12 @@ export function BearList(
     list,
     // 1name
     bearName,
+    //
+    // 1display
+    displayNumber,
+    rowConfig,
+    //
+    //
     // 1list
     //
     compName = "BearList",
@@ -114,7 +121,7 @@ export function BearList(
   };
 
   // 1horiz
-  function HozBar() {
+  function HozBar(lsoeas) {
     // align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
 
     const okaewq = centerItem && {
@@ -125,7 +132,7 @@ export function BearList(
     const okadwe = {
       flex: true,
       style: okaewq,
-      obj: donelist(),
+      obj: donelist(lsoeas),
     };
 
     // 1console
@@ -159,18 +166,49 @@ export function BearList(
     return as83asd;
   }
 
+  // 1display
+  function ksajda() {
+    const sdidsf = displayNumber && Number.isInteger(displayNumber);
+
+    return sdidsf
+      ? xvcbmf()
+      : BearErrArgType("displayNumber", "integer", { bearName });
+  }
+
+  function xvcbmf() {
+    const domase = chunk(list, displayNumber);
+    const jfsdas = domase.map(sfjsd);
+
+    function sfjsd(xcvkm) {
+      const kseasd = {
+        ...rowConfig,
+      };
+      return <BearDiv {...kseasd}>{HozBar(xcvkm)}</BearDiv>;
+    }
+
+    return jfsdas;
+  }
+
   // 1name
   const sadfwe =
     //
     //
-    selectableTrue ? <Seletio /> : horiz ? <HozBar /> : donelist();
+    selectableTrue ? (
+      <Seletio />
+    ) : displayNumber ? (
+      ksajda()
+    ) : horiz ? (
+      HozBar(list)
+    ) : (
+      donelist(list)
+    );
 
-  function donelist() {
-    const fullVar = !isEmpty(list) || loadtrue;
+  function donelist(listio) {
+    const fullVar = !isEmpty(listio) || loadtrue;
 
     if (logtrue) {
       logs.logLinas(5);
-      logs.loggu(bearName, "___ BEARLIST ___", list);
+      logs.loggu(bearName, "___ BEARLIST ___", listio);
       logs.loggu("___ listArgs ___", listArgs);
       logs.loggu("___ sidwre ___", sidwre);
       logs.loggu("___ beList ___", sidjfwe);
@@ -178,7 +216,7 @@ export function BearList(
 
     const ushdsa =
       //
-      hideList ? "" : BearListMap(list, sidjfwe);
+      hideList ? "" : BearListMap(listio, sidjfwe);
     // fullVar ? BearListMap(list, sidjfwe) : "";
     // fullVar && list.map(mapoBap);
 

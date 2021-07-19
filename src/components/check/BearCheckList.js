@@ -71,15 +71,15 @@ export function BearCheckList(
 
   const idfjger = { bearName, hideError: "ignoreEmpty" };
 
-  const ijsfre = !list
-    ? BearError(BearMissing("list", bearName), idfjger)
+  const emptyall =  !list || !listFull
+
+  const ijsfre = emptyall && !ignoreEmpty
+    ? BearError(
+BearMissing("list", bearName)
+    // "wtf is this mate"
+    , idfjger)
     : !jsdawse
     ? BearError("list attribute must be an array!")
-    : !listFull && !ignoreEmpty
-    ? BearError(
-        <>{BearQuote(bearName)} + "'s list argument is a empty array.</>,
-        idfjger
-      )
     : okfdsd;
 
   return BearCheckMain(named, ijsfre, skfwe);

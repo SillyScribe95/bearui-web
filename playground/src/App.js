@@ -1,6 +1,7 @@
 // import TestPage from "./TestObj";
 // import TestComp from "./TestComp";
 import TestBear from "./TestBear";
+import { TestExtra } from "./TestExtra";
 import {
   //
   BearDiv,
@@ -18,7 +19,6 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { BrowserRouter, Route, Link, Switch, Redirect } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 
-import MainContextProvider from "./chat/context/ChatContext";
 // import { ChatContainer } from "./chat/containers/ChatContainer";
 // import { Site } from "./site/containers/Site";
 
@@ -94,14 +94,15 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <BearContextProvider {...iasjde}>
-        <MainContextProvider {...iasjde}>
-          aaaa bbbb
-          {/* <BearKeyValue /> */}
-          {/* <BearRouter {...djfgr} /> */}
-          {TestBear()}
-          {/* {dsifsaew} */}
-          {/* {dufhgert} */}
-        </MainContextProvider>
+        {/* <MainContextProvider {...iasjde}> */}
+        {/* aaaa bbbb */}
+        {/* <BearKeyValue /> */}
+        {/* <BearRouter {...djfgr} /> */}
+        {/* {TestExtra()} */}
+        {TestBear()}
+        {/* {dsifsaew} */}
+        {/* {dufhgert} */}
+        {/* </MainContextProvider> */}
       </BearContextProvider>
     </QueryClientProvider>
   );

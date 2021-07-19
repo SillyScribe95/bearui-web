@@ -11,7 +11,7 @@ import { BearButton } from "./button/BearButton";
 // import { ImageTextList } from "../functions/GlobalFunctions";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-import { logs } from "../index"
+import { logs } from "../index";
 import { vertAlign } from "../consts/genStyle";
 import { BearList } from "./list/BearList";
 import { getListComplex } from "./list/getListComplex";
@@ -70,6 +70,7 @@ export function BearAttrNeeds(bearName) {
   return "";
 }
 
+// 1must
 export function BearErrArgType(arg, type, { bearName, ...asd }) {
   //
 
@@ -510,7 +511,12 @@ export function BearSpan(asdwe) {
 export function BearBorder(color, radius, sdfr = {}) {
   return cxadfa(color, radius, sdfr);
 }
-export function cxadfa(color, radius, { noPadding, borderSize, ...asd } = {}) {
+
+export function cxadfa(
+  color,
+  radius,
+  { noPadding, borderSize = "2px", ...asd } = {}
+) {
   //
   const sjdfrwe = noPadding
     ? {
