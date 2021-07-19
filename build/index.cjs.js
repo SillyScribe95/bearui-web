@@ -30,6 +30,7 @@ require('react-select/creatable');
 require('react-select/async-creatable');
 require('yup');
 var layout = require('@chakra-ui/layout');
+var __ = require('..');
 var reactSocialLoginButtons = require('react-social-login-buttons');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
@@ -70,6 +71,60 @@ function styleInject(css, ref) {
 
 var css_248z = ".item.selected{background:#177779;color:#fff;border-color:#206748}.lp-copy-sel__option,.lp-copy-sel__single-value{white-space:pre-wrap!important}.vidobbo::-webkit-scrollbar{display:none}.fadeOut{opacity:0;width:0;height:0;transition:width .5s .5s,height .5s .5s,opacity .5s}.fadeIn{opacity:1;width:100px;height:100px;transition:width .5s,height .5s,opacity .5s .5s}.noresize{resize:none}.vidobbo{-ms-overflow-style:none}.ant-btn-clicked:after,[ant-click-animating-without-extra-node]:after{animation:none!important}.ais-InstantSearch__root{display:flex;border:1px solid grey}.btn:hover{opacity:1}.selectHov:hover{background:green}.selectHov{transition:.3s}.selectHov:hover{background:red}.hoverMain{position:relative}.hoverMain.no-hover:hover{opacity:1}.hoverMain.no-hover{opacity:0}.hoverMain.hover{opacity:1}.hoverMain.hover:hover{opacity:0}.wrapQuotes:before{content:\"❝\"}.wrapQuotes:after{content:\"❞\"}.playText:hover{cursor:pointer}.playTextLight:hover{background-color:#e5e5e5;cursor:pointer}.playTextDark:hover{color:#00f;cursor:pointer}.playCurrent{background-color:purple}.ant-list-item{padding:0}.iconNum{padding:0 1px}.vertCont{align-items:center}.vertAlign,.vertBox{display:flex;align-items:center}.vertAlign{justify-content:\"center\";vertical-align:middle}.vertTop{display:flex;align-items:top;vertical-align:top}.lineBetween:after{content:\"\";height:100%;border-right:1px solid #d3d3d3}.nowap{white-space:nowap;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical}.wrap{-webkit-line-clamp:1}.wrap,.wrapTwo{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical}.wrapTwo{-webkit-line-clamp:2}.hiddenTrue{display:none;display:block}.hideSect{display:hidden}.scrollTrue{overflow:scroll}.overflow-scrolling{overflow:auto;-webkit-overflow-scrolling:touch}.pulseTrue{cursor:pointer;border:3px solid transparent;transition:.3s}.pulseTrue:hover{border:3px solid #add8e6}.greyHover,.pointer:hover{cursor:pointer}.greyHover:hover{cursor:pointer;background:radial-gradient(circle,#fff 0,hsla(0,0%,60.4%,.2) 100%,#fff 0)}.circleHover,.circleHover:hover{border-radius:50%;padding:5px}.shadowBottom{box-shadow:inset 0 4px 2px -2px grey}.lighthover{transition:.1s}.lightHover:hover{cursor:pointer;border:2px solid #00164d}.sdfaszxc{opacity:.8;padding-left:5px;transition:.1s}.sdfaszxc:hover{cursor:pointer;opacity:1}.buttonBase{background-color:initial;background-repeat:no-repeat;border:none;cursor:pointer;overflow:hidden;outline:none}.buttonHover,.buttonMain{cursor:pointer;border-radius:5px;border:2px solid transparent;transition:.1s;padding:2px 5px}.buttonHover:hover{border:2px solid #2c4179}.borderRound{border:2px solid #00008b;border-radius:5px}.borderHover,.borderMain{border:2px solid #d3d3d3;transition:.1s;border-radius:5px}.error{color:red}.error,.titleMain{font-weight:700}.shadowMain{border:2px solid #d3d3d3;transition:.1s;border-radius:5px}.bordeViddo{background:#000;border:2px solid #fff}.darkenBehind{text-shadow:0 0 10px #00f}.darkenOver{background:linear-gradient(180deg,transparent 0,#000)}.speakSelect{background:#add8e6;border:2px solid #00008b;transition:.3s}.buttonselect{border:15px solid red}.transitMain{transition:background-color 1s linear;transition:color .3s linear;-webkit-transition:color .3s linear}.popAnim{transition:color .25s}.popAnim:after,.popAnim:before{border:2px solid transparent;width:0;height:0}.popAnim:before{top:0;left:0}.popAnim:after{bottom:0;right:0}.popAnim:hover{color:#60daaa}.popAnim:hover:after,.popAnim:hover:before{width:100%;height:100%}.popAnim:hover:before{border-top-color:#60daaa;border-right-color:#60daaa;transition:width .25s ease-out,height .25s ease-out .25s}.popAnim:hover:after{border-bottom-color:#60daaa;border-left-color:#60daaa;transition:border-color 0s ease-out .5s,width .25s ease-out .5s,height .25s ease-out .75s}.backMain{background-color:#f3f3f3}.flashBox{border:2px solid transparent}.flashBox:hover{border-color:red;animation-name:flash_border;animation-duration:2s;animation-timing-function:linear;animation-iteration-count:infinite;-webkit-animation-name:flash_border;-webkit-animation-duration:2s;-webkit-animation-timing-function:linear;-webkit-animation-iteration-count:infinite;-moz-animation-name:flash_border;-moz-animation-duration:2s;-moz-animation-timing-function:linear;-moz-animation-iteration-count:infinite}@keyframes flash_border{0%{border-color:transparent}50%{border-color:#00f}to{border-color:transparent}}.linkPlush{font-weight:10;color:#fff}.linkPlush:hover{text-decoration:underline}.linkPlush:active{color:#add8e6}.hoverPointer{cursor:pointer}.selectMain{background:red}.selectMain:hover{background-color:#00f}.highText{color:red;border-radius:50px}.textpopup{background:#00f;transition:3s;transform:translateY(-100%)}.animate-bottom{-webkit-animation-name:animatebottom;-webkit-animation-duration:.5s;animation-name:animatebottom;animation-duration:.5s}@keyframes animatebottom{0%{bottom:-50;opacity:0}to{bottom:0;opacity:1}}.textpopup:hover{transform:translateY(0)}.highText:hover{background-color:rgba(0,22,77,.2)}.disabled:hover{cursor:not-allowed}.shadeBorder{border:2px}.shadeBorder:hover{border:2px solid #00f}.shadeDisable{opacity:.3}.shadeDisable:hover{cursor:not-allowed}.shadeTrue{opacity:.6}.hoverOpac:hover,.shadeTrue:hover{opacity:1}.shadeReverse{opacity:.3}.shadeReverse:hover{opacity:1}.whiteHover:hover{background:#fff;color:#00164d}.expandHover{transition:transform .2s}.expandHover:hover{transform:scale(1.1)}.slick-prev{left:3%!important}.slick-next{right:3%!important}";
 styleInject(css_248z,{"insertAt":"top"});
+
+// import * as logs from "../functions/logFuncs"
+function logga(messageIt, valY) {// logs.logga(messageIt, valY);
+}
+function loggo(...asw) {
+  // console.log("loggo--", ...asw);
+  console.log("loggo--", ...asw); // baseLog(asw)
+  // logs.logga('logs.logga:', logs.logga)
+}
+function logCheck(name, first, ...asw) {
+  const asuhw = //
+  name == first; //
+
+  if (asuhw) {
+    loggo(...asw);
+  }
+}
+
+function logge(...sdf) {
+  loggo(...sdf); // logs.logga('logs.logga:', logs.logga)
+}
+function loggu(...sdf) {// loggo(...sdf)
+}
+function logJSON(messageIt, valY, ...asw) {
+  let sodase = //
+  // JSON.stringify(valY)
+  prettyFormat__default['default'](valY);
+  console.log("loggo--", messageIt, sodase, ...asw); // logs.logga('logs.logga:', logs.logga)
+} //   export function logga(messageIt, valY) {
+//     logs.logga(messageIt, valY);
+//   }
+
+function logLines(nubfd) {
+  let saodkwe = "-";
+
+  for (let i = 0; i < nubfd; i++) {
+    saodkwe += "-";
+    loggo(saodkwe);
+  }
+}
+function logLinas(...sdf) {// loggo(...sdf)
+}
+
+var logFuncs = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  logga: logga,
+  loggo: loggo,
+  logCheck: logCheck,
+  logge: logge,
+  loggu: loggu,
+  logJSON: logJSON,
+  logLines: logLines,
+  logLinas: logLinas
+});
 
 function _typeof(obj) {
   "@babel/helpers - typeof";
@@ -163,78 +218,6 @@ function _arrayLikeToArray(arr, len) {
 function _nonIterableRest() {
   throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
-
-function logga(messageIt, valY) {// logs.logga(messageIt, valY);
-}
-function loggo() {
-  var _console;
-
-  for (var _len = arguments.length, asw = new Array(_len), _key = 0; _key < _len; _key++) {
-    asw[_key] = arguments[_key];
-  }
-
-  // console.log("loggo--", ...asw);
-  (_console = console).log.apply(_console, ["loggo--"].concat(asw)); // baseLog(asw)
-  // logs.logga('logs.logga:', logs.logga)
-
-}
-function logCheck(name, first) {
-  var asuhw = //
-  name == first; //
-
-  if (asuhw) {
-    for (var _len2 = arguments.length, asw = new Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
-      asw[_key2 - 2] = arguments[_key2];
-    }
-
-    loggo.apply(void 0, asw);
-  }
-}
-
-function logge() {
-  loggo.apply(void 0, arguments); // logs.logga('logs.logga:', logs.logga)
-}
-function loggu() {// loggo(...sdf)
-}
-function logJSON(messageIt, valY) {
-  var _console2;
-
-  var sodase = //
-  // JSON.stringify(valY)
-  prettyFormat__default['default'](valY);
-
-  for (var _len3 = arguments.length, asw = new Array(_len3 > 2 ? _len3 - 2 : 0), _key3 = 2; _key3 < _len3; _key3++) {
-    asw[_key3 - 2] = arguments[_key3];
-  }
-
-  (_console2 = console).log.apply(_console2, ["loggo--", messageIt, sodase].concat(asw)); // logs.logga('logs.logga:', logs.logga)
-
-} //   export function logga(messageIt, valY) {
-//     logs.logga(messageIt, valY);
-//   }
-
-function logLines(nubfd) {
-  var saodkwe = "-";
-
-  for (var i = 0; i < nubfd; i++) {
-    saodkwe += "-";
-    loggo(saodkwe);
-  }
-}
-function logLinas() {// loggo(...sdf)
-}
-
-var logFuncs = /*#__PURE__*/Object.freeze({
-  __proto__: null,
-  logga: logga,
-  loggo: loggo,
-  logCheck: logCheck,
-  logge: logge,
-  loggu: loggu,
-  logJSON: logJSON,
-  logLines: logLines,
-  logLinas: logLinas
-});
 
 function getAnyDictValue(vlbdf) {
   if (vlbdf) {
@@ -1739,7 +1722,9 @@ function BearCheckList(named, obj, {
     bearName,
     hideError: "ignoreEmpty"
   };
-  const ijsfre = !list ? BearError(BearMissing("list", bearName), idfjger) : !jsdawse ? BearError("list attribute must be an array!") : !listFull && !ignoreEmpty ? BearError( /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, BearQuote(bearName), " + \"'s list argument is a empty array."), idfjger) : okfdsd;
+  const emptyall = !list || !listFull;
+  const ijsfre = emptyall && !ignoreEmpty ? BearError(BearMissing("list", bearName) // "wtf is this mate"
+  , idfjger) : !jsdawse ? BearError("list attribute must be an array!") : okfdsd;
   return BearCheckMain(named, ijsfre, skfwe);
 }
 
@@ -1753,6 +1738,12 @@ function BearList( //
   list,
   // 1name
   bearName,
+  //
+  // 1display
+  displayNumber,
+  rowConfig,
+  //
+  //
   // 1list
   //
   compName = "BearList",
@@ -1827,7 +1818,7 @@ function BearList( //
     ...styleList
   }; // 1horiz
 
-  function HozBar() {
+  function HozBar(lsoeas) {
     // align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
     const okaewq = centerItem && {
       alignContent: "center",
@@ -1836,7 +1827,7 @@ function BearList( //
     const okadwe = {
       flex: true,
       style: okaewq,
-      obj: donelist()
+      obj: donelist(lsoeas)
     }; // 1console
 
     const jisad = //
@@ -1854,18 +1845,39 @@ function BearList( //
     ""; // <SelectArray {...asikwe} />
 
     return as83asd;
+  } // 1display
+
+
+  function ksajda() {
+    const sdidsf = displayNumber && Number.isInteger(displayNumber);
+    return sdidsf ? xvcbmf() : BearErrArgType("displayNumber", "integer", {
+      bearName
+    });
+  }
+
+  function xvcbmf() {
+    const domase = lodash.chunk(list, displayNumber);
+    const jfsdas = domase.map(sfjsd);
+
+    function sfjsd(xcvkm) {
+      const kseasd = { ...rowConfig
+      };
+      return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, kseasd, HozBar(xcvkm));
+    }
+
+    return jfsdas;
   } // 1name
 
 
   const sadfwe = //
   //
-  selectableTrue ? /*#__PURE__*/React__default['default'].createElement(Seletio, null) : horiz ? /*#__PURE__*/React__default['default'].createElement(HozBar, null) : donelist();
+  selectableTrue ? /*#__PURE__*/React__default['default'].createElement(Seletio, null) : displayNumber ? ksajda() : horiz ? HozBar(list) : donelist(list);
 
-  function donelist() {
-    !lodash.isEmpty(list) || loadtrue;
+  function donelist(listio) {
+    !lodash.isEmpty(listio) || loadtrue;
 
     const ushdsa = //
-    hideList ? "" : BearListMap(list, sidjfwe); // fullVar ? BearListMap(list, sidjfwe) : "";
+    hideList ? "" : BearListMap(listio, sidjfwe); // fullVar ? BearListMap(list, sidjfwe) : "";
     // fullVar && list.map(mapoBap);
 
     return ushdsa;
@@ -2001,7 +2013,7 @@ function BearInputLabel({
     };
     const dijrw =
     /*#__PURE__*/
-    // 
+    //
     // ""
     // BearFlex(nisdjre)
     React__default['default'].createElement(BearDiv$1, _extends({
@@ -2037,13 +2049,11 @@ function BearInputLabel({
     return ijcwe;
   }
 
-  const ijsae = addFunc ? BswTi() : ioakawe;
+  const ijsae = addFunc ? BswTi() : ioakawe; // 1icon
   const asdojwqs = {
-    obj: ijsae,
+    obj: ijsae // ...sdijr,
     // textvar: ioakawe,
-    iconvar: iconvar,
-    noImage: !iconvar,
-    noIcon: !iconvar // noText: true,
+    // noText: true,
     // disVar: true,
 
   };
@@ -2079,7 +2089,12 @@ function BearInputLabel({
     style: kase,
     ...args
   }; // 1console
-  return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, isawqe);
+
+  loggo("___ inputLabel BASE MAIN ___", {
+    infoPopup,
+    subtitle
+  });
+  return /*#__PURE__*/React__default['default'].createElement(BearTextMedia, isawqe);
 }
 
 function BearInputBase(ujsdqwe, {
@@ -2124,6 +2139,9 @@ function BearInputBase(ujsdqwe, {
   fontSize = "28px",
   sameLine,
   lineBelow,
+  //
+  formData,
+  noIcon,
   //
   ...dfsgre
 }) {
@@ -2270,8 +2288,9 @@ function BearAttrNeeds(bearName) {
   //
   // const ikasae
   return "";
-}
-function BearErrArgType(arg, type, {
+} // 1must
+
+function BearErrArgType$1(arg, type, {
   bearName,
   ...asd
 }) {
@@ -2615,7 +2634,7 @@ function BearBorder(color, radius, sdfr = {}) {
 }
 function cxadfa(color, radius, {
   noPadding,
-  borderSize,
+  borderSize = "2px",
   ...asd
 } = {}) {
   //
@@ -3592,6 +3611,8 @@ function BearInputText({
   bearName,
   onChangeValue,
   style,
+  noBase,
+  formData,
   ...sfdgert
 }) {
   // 1const
@@ -3621,10 +3642,13 @@ function BearInputText({
   const baseo = {
     //
     rows: 1,
-    autocomplete: "off",
+    autoComplete: "off",
     className: "noresize"
   };
-  const xvbjdfr = { ...sfdgert,
+  const xvbjdfr = {
+    noBase,
+    formData,
+    ...sfdgert,
     ...erroBase
   };
   const ijawe = { ...sjdfer,
@@ -3633,7 +3657,9 @@ function BearInputText({
     ...sfdgert,
     onChange: sdijfer // ...inputStyles(style),
 
-  }; // 1input
+  }; // 1console
+
+  loggo("___ BeaInputText ___", ijawe); // 1input
 
   const centFsow = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(react.Input, ijawe));
   logPut("___ intput BASEO ___", xvbjdfr);
@@ -3873,6 +3899,9 @@ function BearFormInputCheck({
   containerStyle,
   name,
   //
+  dictvar,
+  spaceBetween,
+  //
   //
   ...dfsgre
 }) {
@@ -3902,10 +3931,10 @@ function BearFormInputCheck({
   const sdweew = {
     subtitle,
     ...sdokwre,
-    subtitlePlacement,
+    // subtitlePlacement,
     name,
     fontSize,
-    containerStyle,
+    // containerStyle,
     ...stylBsae,
     ref
   };
@@ -3922,7 +3951,13 @@ function BearFormInputCheck({
 
   }; // 1console
 
-  function sijdgdf(objer, argoes, nameo) {
+  function sijdgdf(objer, {
+    //
+    noBase,
+    formData,
+    errorMessage,
+    ...argoes
+  } = {}, nameo) {
     //
     const idjfr = {
       noBase: true,
@@ -4001,7 +4036,10 @@ function BearFormInputCheck({
         break;
 
       default:
-        ujsdqwe = noInput ? "" : sijdgdf(BearInputText, "BInput");
+        ujsdqwe = noInput ? "" : sijdgdf(BearInputText, {
+          //
+          bearName: "BInput"
+        });
     }
 
     return ujsdqwe;
@@ -4337,6 +4375,29 @@ function BearFormSetup({
   return oiaswe;
 }
 
+function focusBase({
+  //
+  list,
+  onFocus
+}) {
+  const existo = //
+  Array.isArray(list) && list[0];
+  const ijdswer = //
+  existo && lodash.isObject(existo) ? existo.name : existo;
+  const kvdsf = //
+  ijdswer;
+  __.logs.loggo("___ focusBase ___", {
+    //
+    existo,
+    ijdswer,
+    kvdsf
+  });
+
+  if (kvdsf) {
+    onFocus(ijdswer);
+  }
+}
+
 function BearForm({
   noButton,
   noText,
@@ -4355,6 +4416,9 @@ function BearForm({
   betweenItem,
   //
   //
+  // 1focus
+  focusFirst,
+  //
   buttonList,
   toplist,
   noForm,
@@ -4371,6 +4435,7 @@ function BearForm({
   topButtonConfig,
   ImageTextList,
   topButtonTrue,
+  autofocus,
   formid,
   // 1required
   requireAll,
@@ -4410,6 +4475,7 @@ function BearForm({
     register,
     errors,
     control,
+    setFocus,
     // watch,
     ...asdw
   } = //
@@ -4418,7 +4484,21 @@ function BearForm({
     errors,
     control,
     register
-  };
+  }; // 1focus
+
+  function Faoksd() {
+    if (focusFirst) {
+      focusBase({
+        list,
+        onFocus: setFocus
+      });
+    }
+  } // 1useEffect
+
+
+  React.useEffect(() => {
+    Faoksd();
+  });
 
   function goSing(doksad) {
     let sdifje = Object.values(doksad)[0];
@@ -4476,9 +4556,6 @@ function BearForm({
   // subbTo;
   // sease;
 
-  args = { ...args,
-    bearName
-  };
   const noSumibt = //
   !buttonList;
   const jsidwer = noSumibt && {
@@ -4487,6 +4564,9 @@ function BearForm({
   const difjgr = { ...args,
     id: formid,
     ...jsidwer
+  };
+  args = { ...args,
+    bearName
   }; // 1button
 
   function Buttiona({
@@ -4516,8 +4596,7 @@ function BearForm({
       form: formid,
       style: jsadcvx,
       // genConfig: aewsadw,
-      className: "buttonHover",
-      longTrue: true // marginTop: ""
+      className: "buttonHover" // marginTop: ""
 
     };
     const adhwdse = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement("button", dvbijkrw, text ? text : buttonText));
@@ -5649,7 +5728,7 @@ exports.BearDiv = BearDiv$1;
 exports.BearDivMain = BearDivMain;
 exports.BearEmoji = BearEmoji;
 exports.BearErASDJIQWE = BearErASDJIQWE;
-exports.BearErrArgType = BearErrArgType;
+exports.BearErrArgType = BearErrArgType$1;
 exports.BearErrMiss = BearErrMiss;
 exports.BearError = BearError;
 exports.BearFalseLog = BearFalseLog;

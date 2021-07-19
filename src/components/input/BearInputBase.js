@@ -59,6 +59,9 @@ export function BearInputBase(
     sameLine,
     lineBelow,
     //
+    formData,
+    noIcon,
+    //
     ...dfsgre
   }
 ) {

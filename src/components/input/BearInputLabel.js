@@ -9,7 +9,7 @@ import { BearIcon } from "../BearIcon";
 import { BearFloat } from "../BearFloat";
 // import { BearPopover } from "../BearPopover";
 import { BearTextMedia } from "../BearTextMedia";
-import * as logs from "../../functions/logFuncs"
+import * as logs from "../../functions/logFuncs";
 
 export function BearInputLabel({
   //
@@ -150,13 +150,15 @@ export function BearInputLabel({
 
     logs.logga("___ nisdjre ___", nisdjre);
 
-    const dijrw = 
-    // 
-    // ""
-    // BearFlex(nisdjre)
-    <BearDiv flex {...nisdjre}>
-    {okdsras}
-      {poppoBas}</BearDiv>
+    const dijrw = (
+      //
+      // ""
+      // BearFlex(nisdjre)
+      <BearDiv flex {...nisdjre}>
+        {okdsras}
+        {poppoBas}
+      </BearDiv>
+    );
 
     return dijrw;
   }
@@ -201,12 +203,17 @@ export function BearInputLabel({
 
   const ijsae = addFunc ? BswTi() : ioakawe;
 
+  // 1icon
+  const sdijr = {
+    iconvar,
+    // noImage: !iconvar,
+    // noIcon: !iconvar,
+  };
+
   const asdojwqs = {
     obj: ijsae,
+    // ...sdijr,
     // textvar: ioakawe,
-    iconvar: iconvar,
-    noImage: !iconvar,
-    noIcon: !iconvar,
     // noText: true,
     // disVar: true,
   };
@@ -261,12 +268,12 @@ export function BearInputLabel({
 
   // 1console
 
-  logs.logga("___ inputLabel BASE MAIN ___", {
+  logs.loggo("___ inputLabel BASE MAIN ___", {
     infoPopup,
     subtitle,
   });
 
   logs.logga("___ isawqe ___", isawqe);
 
-  return <BearDiv {...isawqe} />;
+  return <BearTextMedia {...isawqe} />;
 }

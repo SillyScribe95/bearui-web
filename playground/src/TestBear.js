@@ -56,7 +56,7 @@ export default function TestBear() {
     };
     const jdfgr = <BearDiv {...udfhgr}>sdifjer0</BearDiv>;
 
-    const idjfa = BearCheckMain("BearTitle", jdfgr, {bearName: "sj iwqe i"})
+    const idjfa = BearCheckMain("BearTitle", jdfgr, { bearName: "sj iwqe i" });
 
     return idjfa;
   }
@@ -149,6 +149,16 @@ export default function TestBear() {
       return <BearDiv {...sijer} />;
     }
 
+    const rowConfios = {
+      style: {
+        //
+        margin: "140px 0",
+        ...BearBorder("green", "10px"),
+        background: "red",
+        color: "white",
+      },
+    };
+
     const testDict = {
       // dictvar: sfoewkr,
       // list: ["video", "audio", "book"],
@@ -161,16 +171,21 @@ export default function TestBear() {
         },
         className: "shadowHover",
       },
-      renderItem: objio,
+      displayNumber: 3,
+      rowConfig: rowConfios,
+      typeList: "return",
+      // renderItem: objio,
       // logItem: true,
       //   logtrue: "",
       // style: {}
     };
 
-    const okasdew =
+    const okasdew = {
+      bearName: "234o23",
       //
-      // testRend;
-      testDict;
+      // ...testRend,
+      ...testDict,
+    };
 
     // return "asdfew";
     // return <TestList {...okasdew} />;
@@ -180,24 +195,26 @@ export default function TestBear() {
   // 1form
   function Formios() {
     //
-    function sdofkre(sdfew) {
-      logs.logga("___ TESTBEAR - FORMIOS RESULTS ___", sdfew);
+    function sdofkre({ ...sdfew }) {
+      logs.loggo("___ SUMIBT name, password ___", sdfew);
+
+      // logs.loggo("___ TESTBEAR - FORMIOS RESULTS ___", sdfew);
     }
 
     const awqeq = {
       variable: {
-        inputType: "checkbox",
+        // required: true,
+        // inputType: "checkbox",
         name: "variable",
-        // inputType: },
       },
     };
 
     const oskde = [
       //
-      // "variable",
+      "variable",
       // "name",
       "name",
-      "password",
+      // "password",
       // "country",
       // "mobileNumber",
     ];
@@ -208,15 +225,15 @@ export default function TestBear() {
     };
 
     const cvbdf = {
-      loadSubmit: true,
+      // loadSubmit: true,
       // loadConfig:
       // sameLine: true,
       // titleWidth: "120px",
       // inputStyle: {
       //   margin: "10px 0px",
       // },
-      // dictvar: awqeq,
-      formData: dfjig,
+      dictvar: awqeq,
+      // formData: dfjig,
       list: oskde,
       onSubmit: sdofkre,
       bearName: "testFOrmo",
@@ -472,7 +489,7 @@ export default function TestBear() {
       {/*  */}
       ---- TEST BEAR ---
       {/* 1test */}
-      {IJasea()}
+      {/* {IJasea()} */}
       {/*  */}
       {/* 1emoji */}
       {/* <Mojioe /> */}
@@ -495,7 +512,7 @@ export default function TestBear() {
       <Incasod />
       asdoakewq */}
       {/* 1form */}
-      {/* <Formios /> */}
+      <Formios />
       {/* <AlltIT /> */}
       {/* 1authportal */}
       {/* <Ajsew /> */}
