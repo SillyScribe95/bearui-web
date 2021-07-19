@@ -13,9 +13,9 @@ import { BearInputBase } from "../input/BearInputBase";
 import { BearInputNameFirstLast } from "../input/BearInputNameFirstLast";
 import { BearTextarea } from "../input/BearTextarea";
 // import { BearSelect } from "../select/BearSelect";
-import Select, { components } from "react-select";
-import CreatableSelect from "react-select/creatable";
-import AsyncCreatableSelect from "react-select/async-creatable";
+// import Select, { components } from "react-select";
+// import CreatableSelect from "react-select/creatable";
+// import AsyncCreatableSelect from "react-select/async-creatable";
 import { BearInputNumber } from "../input/BearInputNumber";
 
 export function BearFormInputCheck({

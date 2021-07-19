@@ -8,7 +8,7 @@ import React, {
 import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
-import { useCollection, useDocumentOnce } from "react-firebase-hooks/firestore";
+// import { useCollection, useDocumentOnce } from "react-firebase-hooks/firestore";
 // import { FireQuery } from "../../functions/backendFuncs";
 import { logs } from "../../index";
 

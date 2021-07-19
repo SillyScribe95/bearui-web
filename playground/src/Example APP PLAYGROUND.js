@@ -6,10 +6,6 @@ import React, {
 import {
   //
   logs,
-} from "@SillyScribe95/bedia-shared/";
-
-import {
-  //
   BearDiv,
 } from "bearui-web";
 import { MainContext } from "../context/MainContext";
