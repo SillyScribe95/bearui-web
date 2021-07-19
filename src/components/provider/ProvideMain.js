@@ -4,7 +4,7 @@ import React, {
   useEffect,
   useContext,
 } from "react";
-import { QueryClient, QueryClientProvider } from "react-query";
+// import { QueryClient, QueryClientProvider } from "react-query";
 import { ChakraProvider } from "@chakra-ui/react";
 
 export function ProvideMain({ query, children, chakra }) {

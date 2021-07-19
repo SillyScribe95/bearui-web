@@ -5,9 +5,9 @@ import React, {
   useContext,
 } from "react";
 //
-import firebase from "firebase/app";
-import "firebase/auth";
-import "firebase/firestore";
+// import firebase from "firebase/app";
+// import "firebase/auth";
+// import "firebase/firestore";
 // import { useCollection, useDocumentOnce } from "react-firebase-hooks/firestore";
 // import { FireQuery } from "../../functions/backendFuncs";
 import { logs } from "../../index";
@@ -27,8 +27,8 @@ export function ProvideAuth({ apiKey, obj, firebaseConfig }) {
 
   const elgnttioss =
     //
-    // "r";
-    firebase.apps.length;
+    "r";
+    // firebase.apps.length;
 
   // if (!elgnttioss) {
   //   firebase.initializeApp(vsdkorewr);
@@ -57,7 +57,7 @@ export function ProvideAuth({ apiKey, obj, firebaseConfig }) {
     //   : FireQuery(firebase.firestore().collection("users").doc(apiKey));
 
   logs.logga("___ Contioes ___", {
-    firebase: firebase,
+    // firebase,
     elgnttioss: elgnttioss,
     asdae: asdae,
     data: data,

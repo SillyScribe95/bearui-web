@@ -1,4 +1,4 @@
-import { useQuery } from "react-query";
+// import { useQuery } from "react-query";
 import { logs } from "../../index";
 let axios = require("axios");
 
@@ -22,7 +22,10 @@ export function BearFetchFunc(
 
   funcveo = funcveo ? funcveo : saijdwe;
 
-  const { data, isLoading, ...dsokfe } = useQuery(name, funcveo);
+  const { data, isLoading, ...dsokfe } = 
+  // 
+  ""
+  // useQuery(name, funcveo);
 
   let sdifew =
     //

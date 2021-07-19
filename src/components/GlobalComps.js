@@ -9,7 +9,7 @@ import { BearDiv } from "./BearDiv";
 import { BearFloat } from "./BearFloat";
 import { BearButton } from "./button/BearButton";
 // import { ImageTextList } from "../functions/GlobalFunctions";
-import { CopyToClipboard } from "react-copy-to-clipboard";
+// import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import { logs } from "../index";
 import { vertAlign } from "../consts/genStyle";
@@ -410,12 +410,13 @@ export function BearCopy({ copyText, obj, copyMessage, ...asd }) {
     ...asd,
   };
 
-  const iawe = (
-    <CopyToClipboard {...ovkewwe}>
+  const iawe = (<>
+    {/* <CopyToClipboard {...ovkewwe}> */}
       {/*  */}
       <span>{obj}</span>
       {/* {copssetot} */}
-    </CopyToClipboard>
+    {/* </CopyToClipboard> */}
+    </>
   );
 
   return iawe;
