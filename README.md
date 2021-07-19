@@ -17,7 +17,7 @@ import {
 run the following command:
 
 ```
-npm i --save ../bareui-web
+npm i --save ../bearui-web
 npm i --save ../bedia-shared
 ```
 
