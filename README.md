@@ -19,6 +19,11 @@ run the following command:
 ```
 npm i --save ../bearui-web
 npm i --save ../bedia-shared
+
+
+"bearui-web": "../bearui-web",
+"bedia-shared": "../bedia-shared",
+
 ```
 
 # Github Install
@@ -39,7 +44,7 @@ npm install git+https://github.com/SillyScribe95/bearui-web.git#master
 The library should appear in the dependencies of your package.json;
 
 ```
-"@SillyScribe95/bearui-web": "git+https://github.com/SillyScribe95/bearui-web.git#master",
+"bearui-web": "git+https://github.com/SillyScribe95/bearui-web.git#master",
 ```
 
 Add this to your "scripts" section in package.json to get the latest version:
