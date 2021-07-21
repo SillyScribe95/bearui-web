@@ -19,6 +19,11 @@ run the following command:
 ```
 npm i --save ../bearui-web
 npm i --save ../bedia-shared
+
+
+"bearui-web": "../bearui-web",
+"bedia-shared": "../bedia-shared",
+
 ```
 
 # Github Install
