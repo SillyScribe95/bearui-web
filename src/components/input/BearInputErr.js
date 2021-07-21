@@ -10,7 +10,7 @@ import {
   stringinarray,
   logs,
   checkAllArray,
-} from "@SillyScribe95/bedia-shared/";
+} from "bedia-shared/";
 import validator from "validator";
 
 export function BearInputErr(

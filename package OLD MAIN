@@ -1,5 +1,5 @@
 {
-  "name": "@SillyScribe95/bearui-web",
+  "name": "bearui-web",
   "version": "0.1.0",
   "main": "build/index.cjs.js",
   "module": "build/index.esm.js",

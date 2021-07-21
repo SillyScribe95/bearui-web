@@ -19,6 +19,7 @@ export function BearListItem(
     dictFunc,
     noShowItems,
     emptyDictReplace,
+    containFunc,
     logtrue,
     //
     //
@@ -107,5 +108,5 @@ export function BearListItem(
     ? ""
     : BearError("No list item declared!");
 
-  return sijfawe;
+  return  containFunc ? containFunc(sijfawe, dgste) : sijfawe;
 }

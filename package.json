@@ -1,5 +1,5 @@
 {
-  "name": "@SillyScribe95/bearui-web",
+  "name": "bearui-web",
   "version": "0.1.0",
   "main": "build/index.cjs.js",
   "module": "build/index.esm.js",
@@ -27,6 +27,7 @@
     "check-password-strength": "^2.0.3",
     "framer-motion": "^4.1.17",
     "lodash": "^4.17.21",
+    "play": "^0.5.0",
     "pluralize": "^8.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -36,6 +37,7 @@
     "react-router-dom": "^5.2.0",
     "react-router-sitemap": "^1.2.0",
     "react-scripts": "4.0.3",
+    "react-select": "^4.3.1",
     "react-social-login-buttons": "^3.4.0",
     "react-textarea-autosize": "^8.3.2",
     "rollup-plugin-import-css": "^2.0.1",
@@ -53,9 +55,9 @@
     "build": "rollup -c -w",
     "watch": "rollup -c -w",
     "build-watch": "rollup -c -w",
-    "start-playground": "cd playground && npm link react && npm link react-dom && npm run start",
-    "i-all": "npm i && cd playground && npm i",
-    "play": "cls && npm-run-all --parallel build-watch start-playground",
+    "start-play": "cd ../bearui-web-test && npm link react && npm link react-dom && npm run start",
+    "i-all": "npm i && cd ../bearui-web-test && npm i",
+    "play": "cls && npm-run-all --parallel build-watch start-play",
     "dev": "cls && npm run build-watch"
   },
   "eslintConfig": {

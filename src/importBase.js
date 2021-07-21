@@ -50,3 +50,7 @@ export * from "./components/user/BearAuthPortal";
 export * from "./components/social/BearSocialBase.js";
 export * from "./components/social/BearSocialLinks.js";
 export * from "./components/social/BearSocialShare.js";
+
+// 1search
+export * from "./components/search/BearSearchList.js";
+export * from "./components/select/BearSelect.js";

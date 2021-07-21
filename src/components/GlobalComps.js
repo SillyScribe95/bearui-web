@@ -58,6 +58,14 @@ export function BearDivMain(asok, zxsd) {
   return BearDiv(asdwe);
 }
 
+export function BearSwitch(item, dict, oksdfew = "") {
+  return item
+    ? dict[item]
+      ? dict[item]
+      : BearError(`BearSwitch doesn's have a ${oksdfew}`)
+    : oksdfew;
+}
+
 export function BearSurround() {
   //
   // const ikasae
@@ -410,12 +418,13 @@ export function BearCopy({ copyText, obj, copyMessage, ...asd }) {
     ...asd,
   };
 
-  const iawe = (<>
-    {/* <CopyToClipboard {...ovkewwe}> */}
+  const iawe = (
+    <>
+      {/* <CopyToClipboard {...ovkewwe}> */}
       {/*  */}
       <span>{obj}</span>
       {/* {copssetot} */}
-    {/* </CopyToClipboard> */}
+      {/* </CopyToClipboard> */}
     </>
   );
 

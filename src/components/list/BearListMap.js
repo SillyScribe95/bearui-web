@@ -13,7 +13,7 @@ import { BearError } from "../BearError";
 
 export function BearListMap(
   list,
-  { logtrue, containFunc, bearName = "", ...sidwre }
+  { logtrue,  bearName = "", ...sidwre }
 ) {
   //
   function mapoBap(saokae, indexvr) {
@@ -42,11 +42,11 @@ export function BearListMap(
     const jcvbfd = BearListItem(asidjwe, oskda);
 
     const cvbokds = {
-      containFunc,
       ...oskda,
     };
 
-    return containFunc ? containFunc(jcvbfd, saokae) : jcvbfd;
+    // return "ajqeqw"
+    return jcvbfd
   }
 
   const lytoLis = Array.isArray(list);

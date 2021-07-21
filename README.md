@@ -4,11 +4,11 @@
 import {
   //
   BearDiv,
-} from "@SillyScribe95/bearui-web";
+} from "bearui-web";
 import {
   //
   logs,
-} from "@SillyScribe95/bedia-shared";
+} from "bedia-shared";
 
 ```
 
@@ -39,7 +39,7 @@ npm install git+https://github.com/SillyScribe95/bearui-web.git#master
 The library should appear in the dependencies of your package.json;
 
 ```
-"@SillyScribe95/bearui-web": "git+https://github.com/SillyScribe95/bearui-web.git#master",
+"bearui-web": "git+https://github.com/SillyScribe95/bearui-web.git#master",
 ```
 
 Add this to your "scripts" section in package.json to get the latest version:
