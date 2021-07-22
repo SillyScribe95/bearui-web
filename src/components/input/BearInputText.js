@@ -113,7 +113,7 @@ export function BearInputText({
   };
 
   // 1console
-  logs.loggo("___ BeaInputText ___", ijawe);
+  logs.logga("___ BeaInputText ___", ijawe);
 
   // 1input
   const centFsow = (

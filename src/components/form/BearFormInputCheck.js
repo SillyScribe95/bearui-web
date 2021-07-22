@@ -12,7 +12,7 @@ import { BearRadio } from "../input/BearRadio";
 import { BearInputBase } from "../input/BearInputBase";
 import { BearInputNameFirstLast } from "../input/BearInputNameFirstLast";
 import { BearTextarea } from "../input/BearTextarea";
-// import { BearSelect } from "../select/BearSelect";
+import { BearSelect } from "../select/BearSelect";
 // import Select, { components } from "react-select";
 // import CreatableSelect from "react-select/creatable";
 // import AsyncCreatableSelect from "react-select/async-creatable";
@@ -184,6 +184,7 @@ export function BearFormInputCheck({
           // fontSize: "0.2em",
         };
         ujsdqwe = goCont(BearSelect, sfkwer);
+        // ujsdqwe = sijdgdf(BearSelect);
         // ujsdqwe = <Select {...objbase} />;
         // ujsdqwe = <AsyncCreatableSelect {...objbase} />;
         // ujsdqwe = <CreatableSelect {...objbase} />;
@@ -236,6 +237,29 @@ export function BearFormInputCheck({
   function goCont(funcPush, aisjdwe) {
     //
     //
+
+    const difjgr =
+      //
+      // Rendo
+      inEar;
+    // funcPush(aisjdwe);
+    // inputFunction(objbase);
+    // BearSelect(testSelect)
+    // <Select {...testSelect} />
+
+    const xbvkf = {
+      // as: inputFunction(objbase),
+      ...cntrMan,
+      render: difjgr,
+    };
+
+    logs.loggo("___ beform CONTROLLER ___", xbvkf);
+
+    let asod = (
+      //
+      <Controller {...xbvkf} />
+    );
+
     function inEar({
       //
       field: {
@@ -250,8 +274,6 @@ export function BearFormInputCheck({
         ...ashwe,
       };
 
-      //
-      //
       const sfeqwwe = {
         ...objbase,
         ...aisjdwe,
@@ -262,7 +284,7 @@ export function BearFormInputCheck({
       };
 
       logs.logga("___ value ___", value);
-      logros("___ BearCont CONTROL field ___", field);
+      logros("___ BearCont CONTROL fld ___", field);
       logros("___ BerInot ___", sfeqwwe);
 
       const nfdgers =
@@ -282,49 +304,17 @@ export function BearFormInputCheck({
       return dfigjew;
     }
 
-    function sdkfjre(kmgre) {
-      logs.logga("___ kmgre ___", kmgre);
-
-      return "kmgre";
-    }
-
     function Rendo({ onChange, value, name, ref }) {
       const ijdfg = {
         inputRef: ref,
         // classNamePrefix="addl-class"
         // value={options.find((c) => c.value === value)}
         // onChange={(val) => onChange(val.value)}
-        ...testSelect,
+        // ...testSelect,
       };
 
-      return <Select {...ijdfg} />;
+      return <BearSelect {...ijdfg} />;
     }
-
-    const ndifgrt = (
-      //
-      // inputFunction(objbase)
-      // BearSelect(testSelect)
-      <Select {...testSelect} />
-    );
-
-    // render
-    const difjgr =
-      //
-      // Rendo;
-      inEar;
-
-    const xbvkf = {
-      // as: inputFunction(objbase),
-      ...cntrMan,
-      render: difjgr,
-    };
-
-    logs.logga("___ beform CONTROLLER ___", xbvkf);
-
-    let asod = (
-      //
-      <Controller {...xbvkf} />
-    );
 
     return asod;
   }

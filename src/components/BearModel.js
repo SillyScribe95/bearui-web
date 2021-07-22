@@ -7,7 +7,7 @@ import React, {
 import {
   //
   logs,
-} from "../index"
+} from "../index";
 import { BearList } from "./list/BearList";
 import { BearFloat } from "./BearFloat";
 import { BearWarnDelete } from "../containers/globalContainers";
@@ -23,7 +23,9 @@ export function BearModel({
   //
   //
   onEdit,
+  editConfig,
   onShare,
+  shareConfig,
   onCancel,
   //
   onDelete,
@@ -60,8 +62,13 @@ export function BearModel({
   logs.logga("___ sidjfer ___", sidjfer);
 
   const isdfewr = {
-    edit: { iconvar: "edit", textvar: "Edit", onClick: onEdit },
-    share: { iconvar: "share", textvar: "Share", onClick: onShare },
+    edit: { iconvar: "edit", textvar: "Edit", onClick: onEdit, ...editConfig },
+    share: {
+      iconvar: "share",
+      textvar: "Share",
+      onClick: onShare,
+      ...shareConfig,
+    },
     cancel: { iconvar: "close", textvar: "Cancel", onClick: onCancel },
     delete: {
       iconvar: "delete",

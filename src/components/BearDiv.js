@@ -137,11 +137,11 @@ export function BearDiv({
   };
 
   if (logtrue) {
-    logs.loggo("___ okdas ___", okdas);
+    logs.logga("___ okdas ___", okdas);
   }
 
   if (linkTrue) {
-    logs.loggo("___ linkTrue ___", okdas);
+    logs.logga("___ linkTrue ___", okdas);
   }
 
   const xczaeewqa =
@@ -166,8 +166,8 @@ export function BearDiv({
     // degr
   };
   if (logtrue) {
-    logs.loggo("___ sijewr ___", sijewr);
-    // logs.loggo("___ sadijqwe ___", sadijqwe);
+    logs.logga("___ sijewr ___", sijewr);
+    // logs.logga("___ sadijqwe ___", sadijqwe);
   }
 
   const difjgerwas =

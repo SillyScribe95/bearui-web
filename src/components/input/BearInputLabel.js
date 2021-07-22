@@ -10,6 +10,7 @@ import { BearFloat } from "../BearFloat";
 // import { BearPopover } from "../BearPopover";
 import { BearTextMedia } from "../BearTextMedia";
 import * as logs from "../../functions/logFuncs";
+import { Checkbox, CheckboxGroup } from "@chakra-ui/react";
 
 export function BearInputLabel({
   //
@@ -19,10 +20,14 @@ export function BearInputLabel({
   subtitleConfig = {},
   subtitlePlacement,
   //
+  labelFunc,
   addFunc,
   iconvar,
   newTrue,
   errorMessage,
+  //
+  checkbox,
+  checkboxConfig = {},
   //
   // 1popup
   infoPopup,
@@ -115,15 +120,28 @@ export function BearInputLabel({
     return sfdgr;
     // return <BearPopover {...jdfgrwe}>{sfdgr}</BearPopover>;
   }
+
+  // 1checkbox
+  function ceckcio(dfokewr) {
+    return <Checkbox {...dfokewr} />;
+  }
+
   // 1title
   function AllNo() {
     // required = true;
     const ijstewr = required && RendReq(requiredConfig);
+    const xcvkdsijdew = BearIconText(iconvar, children);
+    const sdgr = checkbox
+      ? ceckcio({
+          children: xcvkdsijdew,
+          ...checkboxConfig,
+        })
+      : xcvkdsijdew;
 
     const okdsras = (
       <BearDiv vertAlign flex>
         {/* aaaaaa */}
-        {BearIconText(iconvar, children)}
+        {sdgr}
         {ijstewr}
         {/* {iconvar} {title} */}
       </BearDiv>
@@ -268,12 +286,13 @@ export function BearInputLabel({
 
   // 1console
 
-  logs.loggo("___ inputLabel BASE MAIN ___", {
+  logs.logga("___ inputLabel BASE MAIN ___", {
     infoPopup,
     subtitle,
   });
 
   logs.logga("___ isawqe ___", isawqe);
 
-  return <BearTextMedia {...isawqe} />;
+  const sdfewr = <BearTextMedia {...isawqe} />;
+  return labelFunc ? labelFunc(sdfewr) : sdfewr;
 }

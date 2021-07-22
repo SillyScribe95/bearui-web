@@ -4,13 +4,13 @@ import React, {
   useContext,
 } from "react";
 
-import {
-  //
-  joinString,
-  stringinarray,
-  logs,
-  checkAllArray,
-} from "bedia-shared/";
+// import {
+//   //
+//   joinString,
+//   stringinarray,
+//   logs,
+//   checkAllArray,
+// } from "../../index/";
 import validator from "validator";
 
 export function BearInputErr(

@@ -6,7 +6,7 @@ import React, {
 import {
   //
   logs,
-} from "../../index"
+} from "../../index";
 import { BearFormInputCheck } from "./BearFormInputCheck";
 import { argMiss, BearUpper } from "../GlobalComps";
 import { getFormPass } from "./getFormPass";
@@ -85,9 +85,9 @@ export function BearFormSetup({
   };
 
   const cxvijdsf = {
+    ...ndifjg,
     ...getFormPass(name, ndifjg),
     ...ijdfewr,
-    ...ndifjg,
   };
 
   logs.logga("___ formFullRef ___", cxvijdsf);

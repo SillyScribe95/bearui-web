@@ -3,7 +3,7 @@ import React, {
   useState,
   useContext,
 } from "react";
-import { logs } from "bedia-shared/";
+// import { logs } from "../../index/";
 import { BearAuthPortal } from "../../components/user/BearAuthPortal";
 import { BearDiv } from "../../components/BearDiv";
 import { BearTitle } from "../../components/title/BearTitle";

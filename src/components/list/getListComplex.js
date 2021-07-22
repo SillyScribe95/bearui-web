@@ -5,6 +5,7 @@ import React, {
   useEffect,
 } from "react";
 
+import { turnarray } from "../../index"
 import { isEmpty, remove } from "lodash";
 import {
   //
@@ -43,7 +44,7 @@ export function getListComplex(
     });
   }
 
-  const jvsdr = list;
+  const jvsdr = turnarray(list);
   list = keepNull
     ? list
     : jvsdr.filter(function (el) {

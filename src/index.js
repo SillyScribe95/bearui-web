@@ -9,9 +9,12 @@ import * as logs from "./functions/logFuncs";
 export { logs };
 
 // 1shared
-export * from "./functions/mainFuncs";
+export * from "./index";
 export * from "./functions/arrayFuncs";
+export * from "./functions/dictFuncs";
 export * from "./functions/selectFuncs";
+export * from "./functions/stringFuncs";
+// export * from "./functions/stringFuncs";
 
 
 

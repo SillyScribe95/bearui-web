@@ -108,5 +108,12 @@ export function BearListItem(
     ? ""
     : BearError("No list item declared!");
 
-  return  containFunc ? containFunc(sijfawe, dgste) : sijfawe;
+  function xcjsd() {
+    logs.logga("sijfawez--zz", sijfawe);
+
+    // return ""
+    return containFunc(sijfawe, dgste);
+  }
+
+  return containFunc ? xcjsd() : sijfawe;
 }

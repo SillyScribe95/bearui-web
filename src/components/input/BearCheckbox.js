@@ -7,7 +7,7 @@ import React, {
 import {
   //
   logs,
-} from "../../index"
+} from "../../index";
 
 import { BearDiv } from "../BearDiv";
 import { FlexHorz } from "../GlobalComps";

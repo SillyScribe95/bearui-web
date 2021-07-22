@@ -59,29 +59,29 @@ export function BearTextarea({
     ...style,
   };
 
-  logs.loggo("djfo--zzz", djfo)
+  logs.logga("djfo--zzz", djfo);
 
   const ijsdfasd = {
     rows,
     value,
     minRows: rows,
     // initialValue:
-    // defaultValue: value,
+    defaultValue: { lable: initialValue, value: initialValue },
     ...chakResize,
     style: djfo,
     ...dfgre,
     onChange: sofkes,
   };
 
-  logs.logga("___ ijsdfasd ___", ijsdfasd);
+  logs.loggo("___ ijsdfasd ___", ijsdfasd);
 
   const xcvbkf = (
     //
     // <textarea {...ijsdfasd} />
     //  <TextareaAutosize {...ijsdfasd} />
     // <TextChak {...ijsdfasd}>{value}</TextChak>
-    <TextChak {...ijsdfasd}>{initialValue}</TextChak>
-    // <TextChak {...ijsdfasd} />
+    // <TextChak {...ijsdfasd}>{initialValue}</TextChak>
+    <TextChak {...ijsdfasd} />
   );
 
   return InputBaseCheck(xcvbkf, dfgre);

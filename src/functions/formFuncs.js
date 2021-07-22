@@ -17,7 +17,7 @@ export function focusBase({
     //
     ijdswer;
 
-  logs.loggo("___ focusBase ___", {
+  logs.logga("___ focusBase ___", {
     //
     existo,
     ijdswer,

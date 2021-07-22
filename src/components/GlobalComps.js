@@ -11,7 +11,7 @@ import { BearButton } from "./button/BearButton";
 // import { ImageTextList } from "../functions/GlobalFunctions";
 // import { CopyToClipboard } from "react-copy-to-clipboard";
 
-import { logs } from "../index";
+import { logs, objectTrue } from "../index";
 import { vertAlign } from "../consts/genStyle";
 import { BearList } from "./list/BearList";
 import { getListComplex } from "./list/getListComplex";
@@ -519,7 +519,12 @@ export function BearSpan(asdwe) {
 // }
 
 export function BearBorder(color, radius, sdfr = {}) {
-  return cxadfa(color, radius, sdfr);
+  const okfg = objectTrue(sdfr);
+  const vijder = okfg
+    ? cxadfa(color, radius, sdfr)
+    : BearError("Third argument of 'BearBorder' must be an object");
+
+  return vijder;
 }
 
 export function cxadfa(

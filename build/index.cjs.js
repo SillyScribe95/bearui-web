@@ -3,8 +3,8 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var prettyFormat = require('pretty-format');
-var React = require('react');
 var lodash = require('lodash');
+var React = require('react');
 var md = require('react-icons/md');
 var ti = require('react-icons/ti');
 var bi = require('react-icons/bi');
@@ -19,9 +19,14 @@ var react = require('@chakra-ui/react');
 var reactHookForm = require('react-hook-form');
 var ResizeTextarea = require('react-textarea-autosize');
 var checkPasswordStrength = require('check-password-strength');
+var Select = require('react-select');
+var CreatableSelect = require('react-select/creatable');
+var AsyncCreatableSelect = require('react-select/async-creatable');
 require('yup');
 var layout = require('@chakra-ui/layout');
-var __ = require('..');
+var DateTimePicker = require('react-datetime-picker');
+require('react-datetime-picker/dist/DateTimePicker.css');
+require('..');
 var reactSocialLoginButtons = require('react-social-login-buttons');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
@@ -29,6 +34,10 @@ function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'defau
 var prettyFormat__default = /*#__PURE__*/_interopDefaultLegacy(prettyFormat);
 var React__default = /*#__PURE__*/_interopDefaultLegacy(React);
 var ResizeTextarea__default = /*#__PURE__*/_interopDefaultLegacy(ResizeTextarea);
+var Select__default = /*#__PURE__*/_interopDefaultLegacy(Select);
+var CreatableSelect__default = /*#__PURE__*/_interopDefaultLegacy(CreatableSelect);
+var AsyncCreatableSelect__default = /*#__PURE__*/_interopDefaultLegacy(AsyncCreatableSelect);
+var DateTimePicker__default = /*#__PURE__*/_interopDefaultLegacy(DateTimePicker);
 
 function styleInject(css, ref) {
   if (ref === void 0) ref = {};
@@ -62,46 +71,246 @@ function styleInject(css, ref) {
 var css_248z = ".item.selected{background:#177779;color:#fff;border-color:#206748}.lp-copy-sel__option,.lp-copy-sel__single-value{white-space:pre-wrap!important}.vidobbo::-webkit-scrollbar{display:none}.fadeOut{opacity:0;width:0;height:0;transition:width .5s .5s,height .5s .5s,opacity .5s}.fadeIn{opacity:1;width:100px;height:100px;transition:width .5s,height .5s,opacity .5s .5s}.noresize{resize:none}.vidobbo{-ms-overflow-style:none}.ant-btn-clicked:after,[ant-click-animating-without-extra-node]:after{-webkit-animation:none!important;-moz-animation:none!important;-o-animation:none!important;-ms-animation:none!important;animation:none!important}.ais-InstantSearch__root{display:flex;border:1px solid grey}.btn:hover{opacity:1}.selectHov:hover{background:green}.selectHov{transition:.3s}.selectHov:hover{background:red}.hoverMain{position:relative}.hoverMain.no-hover:hover{opacity:1}.hoverMain.no-hover{opacity:0}.hoverMain.hover{opacity:1}.hoverMain.hover:hover{opacity:0}.wrapQuotes:before{content:\"❝\"}.wrapQuotes:after{content:\"❞\"}.playText:hover{cursor:pointer}.playTextLight:hover{background-color:#e5e5e5;cursor:pointer}.playTextDark:hover{color:#00f;cursor:pointer}.playCurrent{background-color:purple}.ant-list-item{padding:0}.iconNum{padding:0 1px}.vertCont{align-items:center}.vertAlign,.vertBox{display:flex;align-items:center}.vertAlign{justify-content:\"center\";vertical-align:middle}.vertTop{display:flex;align-items:top;vertical-align:top}.lineBetween:after{content:\"\";height:100%;border-right:1px solid #d3d3d3}.nowap{white-space:nowap;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical}.wrap{-webkit-line-clamp:1}.wrap,.wrapTwo{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical}.wrapTwo{-webkit-line-clamp:2}.hiddenTrue{display:none;display:block}.hideSect{display:hidden}.scrollTrue{overflow:scroll}.overflow-scrolling{overflow:auto;-webkit-overflow-scrolling:touch}.pulseTrue{cursor:pointer;border:3px solid transparent;transition:.3s}.pulseTrue:hover{border:3px solid #add8e6}.greyHover,.pointer:hover{cursor:pointer}.greyHover:hover{cursor:pointer;background:radial-gradient(circle,#fff 0,hsla(0,0%,60.4%,.2) 100%,#fff 0)}.circleHover,.circleHover:hover{border-radius:50%;padding:5px}.shadowBottom{box-shadow:inset 0 4px 2px -2px grey}.lighthover{transition:.1s}.lightHover:hover{cursor:pointer;border:2px solid #00164d}.sdfaszxc{opacity:.8;padding-left:5px;transition:.1s}.sdfaszxc:hover{cursor:pointer;opacity:1}.buttonBase{background-color:initial;background-repeat:no-repeat;border:none;cursor:pointer;overflow:hidden;outline:none}.buttonHover,.buttonMain{cursor:pointer;border-radius:5px;border:2px solid transparent;transition:.1s;padding:2px 5px}.buttonHover:hover{border:2px solid #2c4179}.borderRound{border:2px solid #00008b;border-radius:5px}.borderHover,.borderMain{border:2px solid #d3d3d3;transition:.1s;border-radius:5px}.error{color:red}.error,.titleMain{font-weight:700}.shadowMain{border:2px solid #d3d3d3;transition:.1s;border-radius:5px}.bordeViddo{background:#000;border:2px solid #fff}.darkenBehind{text-shadow:0 0 10px #00f}.darkenOver{background:linear-gradient(180deg,transparent 0,#000)}.speakSelect{background:#add8e6;border:2px solid #00008b;transition:.3s}.buttonselect{border:15px solid red}.transitMain{transition:background-color 1s linear;-webkit-transition:background-color 1s linear;transition:color .3s linear;-webkit-transition:color .3s linear}.popAnim{-webkit-transition:color .25s;transition:color .25s}.popAnim:after,.popAnim:before{border:2px solid transparent;width:0;height:0}.popAnim:before{top:0;left:0}.popAnim:after{bottom:0;right:0}.popAnim:hover{color:#60daaa}.popAnim:hover:after,.popAnim:hover:before{width:100%;height:100%}.popAnim:hover:before{border-top-color:#60daaa;border-right-color:#60daaa;-webkit-transition:width .25s ease-out,height .25s ease-out .25s;transition:width .25s ease-out,height .25s ease-out .25s}.popAnim:hover:after{border-bottom-color:#60daaa;border-left-color:#60daaa;-webkit-transition:border-color 0s ease-out .5s,width .25s ease-out .5s,height .25s ease-out .75s;transition:border-color 0s ease-out .5s,width .25s ease-out .5s,height .25s ease-out .75s}.backMain{background-color:#f3f3f3}.flashBox{border:2px solid transparent}.flashBox:hover{border-color:red;animation-name:flash_border;animation-duration:2s;animation-timing-function:linear;animation-iteration-count:infinite;-webkit-animation-name:flash_border;-webkit-animation-duration:2s;-webkit-animation-timing-function:linear;-webkit-animation-iteration-count:infinite;-moz-animation-name:flash_border;-moz-animation-duration:2s;-moz-animation-timing-function:linear;-moz-animation-iteration-count:infinite}@keyframes flash_border{0%{border-color:transparent}50%{border-color:#00f}to{border-color:transparent}}.linkPlush{font-weight:10;color:#fff}.linkPlush:hover{text-decoration:underline}.linkPlush:active{color:#add8e6}.hoverPointer{cursor:pointer}.selectMain{background:red}.selectMain:hover{background-color:#00f}.highText{color:red;border-radius:50px}.textpopup{background:#00f;transition:3s;transform:translateY(-100%)}.animate-bottom{-webkit-animation-name:animatebottom;-webkit-animation-duration:.5s;animation-name:animatebottom;animation-duration:.5s}@keyframes animatebottom{0%{bottom:-50;opacity:0}to{bottom:0;opacity:1}}.textpopup:hover{transform:translateY(0)}.highText:hover{background-color:rgba(0,22,77,.2)}.disabled:hover{cursor:not-allowed}.shadeBorder{border:2px}.shadeBorder:hover{border:2px solid #00f}.shadeDisable{opacity:.3}.shadeDisable:hover{cursor:not-allowed}.shadeTrue{opacity:.6}.hoverOpac:hover,.shadeTrue:hover{opacity:1}.shadeReverse{opacity:.3}.shadeReverse:hover{opacity:1}.whiteHover:hover{background:#fff;color:#00164d}.expandHover{transition:transform .2s}.expandHover:hover{transform:scale(1.1)}.slick-prev{left:3%!important}.slick-next{right:3%!important}";
 styleInject(css_248z,{"insertAt":"top"});
 
-// import * as logs from "../functions/logFuncs"
+function ownKeys(object, enumerableOnly) {
+  var keys = Object.keys(object);
+
+  if (Object.getOwnPropertySymbols) {
+    var symbols = Object.getOwnPropertySymbols(object);
+
+    if (enumerableOnly) {
+      symbols = symbols.filter(function (sym) {
+        return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+      });
+    }
+
+    keys.push.apply(keys, symbols);
+  }
+
+  return keys;
+}
+
+function _objectSpread2(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+
+    if (i % 2) {
+      ownKeys(Object(source), true).forEach(function (key) {
+        _defineProperty(target, key, source[key]);
+      });
+    } else if (Object.getOwnPropertyDescriptors) {
+      Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+      ownKeys(Object(source)).forEach(function (key) {
+        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+      });
+    }
+  }
+
+  return target;
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+
+  var target = _objectWithoutPropertiesLoose(source, excluded);
+
+  var key, i;
+
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+
+  return target;
+}
+
+function _slicedToArray(arr, i) {
+  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
+}
+
+function _toConsumableArray(arr) {
+  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
+}
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) return _arrayLikeToArray(arr);
+}
+
+function _arrayWithHoles(arr) {
+  if (Array.isArray(arr)) return arr;
+}
+
+function _iterableToArray(iter) {
+  if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
+}
+
+function _iterableToArrayLimit(arr, i) {
+  var _i = arr && (typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]);
+
+  if (_i == null) return;
+  var _arr = [];
+  var _n = true;
+  var _d = false;
+
+  var _s, _e;
+
+  try {
+    for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) {
+      _arr.push(_s.value);
+
+      if (i && _arr.length === i) break;
+    }
+  } catch (err) {
+    _d = true;
+    _e = err;
+  } finally {
+    try {
+      if (!_n && _i["return"] != null) _i["return"]();
+    } finally {
+      if (_d) throw _e;
+    }
+  }
+
+  return _arr;
+}
+
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+}
+
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+
+  for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
+
+  return arr2;
+}
+
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+function _nonIterableRest() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
 function logga(messageIt, valY) {// logs.logga(messageIt, valY);
 }
-function loggo(...asw) {
+function loggo() {
+  var _console;
+
+  for (var _len = arguments.length, asw = new Array(_len), _key = 0; _key < _len; _key++) {
+    asw[_key] = arguments[_key];
+  }
+
   // console.log("loggo--", ...asw);
-  console.log("loggo--", ...asw); // baseLog(asw)
+  (_console = console).log.apply(_console, ["loggo--"].concat(asw)); // baseLog(asw)
   // logs.logga('logs.logga:', logs.logga)
+
 }
-function logCheck(name, first, ...asw) {
-  const asuhw = //
+function logCheck(name, first) {
+  var asuhw = //
   name == first; //
 
   if (asuhw) {
-    loggo(...asw);
+    for (var _len2 = arguments.length, asw = new Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
+      asw[_key2 - 2] = arguments[_key2];
+    }
+
+    loggo.apply(void 0, asw);
   }
 }
 
-function logge(...sdf) {
-  loggo(...sdf); // logs.logga('logs.logga:', logs.logga)
+function logge() {
+  loggo.apply(void 0, arguments); // logs.logga('logs.logga:', logs.logga)
 }
-function loggu(...sdf) {// loggo(...sdf)
+function loggu() {// loggo(...sdf)
 }
-function logJSON(messageIt, valY, ...asw) {
-  let sodase = //
+function logJSON(messageIt, valY) {
+  var _console2;
+
+  var sodase = //
   // JSON.stringify(valY)
   prettyFormat__default['default'](valY);
-  console.log("loggo--", messageIt, sodase, ...asw); // logs.logga('logs.logga:', logs.logga)
+
+  for (var _len3 = arguments.length, asw = new Array(_len3 > 2 ? _len3 - 2 : 0), _key3 = 2; _key3 < _len3; _key3++) {
+    asw[_key3 - 2] = arguments[_key3];
+  }
+
+  (_console2 = console).log.apply(_console2, ["loggo--", messageIt, sodase].concat(asw)); // logs.logga('logs.logga:', logs.logga)
+
 } //   export function logga(messageIt, valY) {
 //     logs.logga(messageIt, valY);
 //   }
 
 function logLines(nubfd) {
-  let saodkwe = "-";
+  var saodkwe = "-";
 
-  for (let i = 0; i < nubfd; i++) {
+  for (var i = 0; i < nubfd; i++) {
     saodkwe += "-";
     loggo(saodkwe);
   }
 }
-function logLinas(...sdf) {// loggo(...sdf)
+function logLinas() {// loggo(...sdf)
 }
 
 var logFuncs = /*#__PURE__*/Object.freeze({
@@ -116,6 +325,41 @@ var logFuncs = /*#__PURE__*/Object.freeze({
   logLinas: logLinas
 });
 
+function spaceSurround(stringVar) {
+  // eeeeee
+  return " " + stringVar + " ";
+}
+function quoteSurround(stringVar) {
+  // eeeeee
+  return "'" + stringVar + "'";
+}
+function joinString$1(arrayo, strngo = "", first = "") {
+  arrayo = turnarray(arrayo);
+  const okasd = arrayo ? arrayo.join(strngo) : "";
+  return okasd;
+}
+const getExtString = sdfweq => {
+  var re = /(?:\.([^.]+))?$/;
+  var ext = re.exec(sdfweq)[1];
+  return ext;
+};
+
+function turnDict(dictvar) {
+  return Object.entries(dictvar);
+}
+function objectTrue(dictvar) {
+  return typeof dictvar == "object";
+} // 1match
+
+function matchDictAttr(vlbdf, string, attr) {
+  for (const [key, value] of Object.entries(vlbdf)) {
+    const ndifvd = attr ? value[attr] : value;
+
+    if (ndifvd == string) {
+      return value;
+    }
+  }
+}
 function getAnyDictValue(vlbdf) {
   if (vlbdf) {
     for (const [key, value] of Object.entries(vlbdf)) {
@@ -125,14 +369,428 @@ function getAnyDictValue(vlbdf) {
     }
   }
 }
-function objectTrue(dictvar) {
-  return typeof dictvar == "object";
+function checkDict(dictvar, cxzvd) {
+  const asdrae = dictvar ? {
+    listItemName: cxzvd,
+    ...dictvar[cxzvd]
+  } : cxzvd;
+  return asdrae;
 }
+function mapDictAttr(obj, dictvar) {
+  for (const [key, value] of Object.entries(dictvar)) {
+    obj[key] = value;
+  }
 
-//
-//
-function turnarray(okgs) {
-  return Array.isArray(okgs) ? okgs : [okgs];
+  return obj;
+}
+function mapDictNew(dictvar, nqeo) {
+  const iase = {};
+
+  for (const [key, value] of Object.entries(dictvar)) {
+    const sdoeae = { ...value,
+      ...nqeo
+    };
+    iase[key] = sdoeae;
+  }
+
+  return iase;
+}
+function mapDictAttrToString(listvar, join, dictvar) {
+  //
+  function sigjt(dfigjtr) {
+    const ijfge = typeof dfigjtr == "string";
+    const bifdre = ijfge ? dfigjtr : "";
+    return bifdre;
+  }
+
+  function sidjfer(asda) {
+    const dfigjtr = dictvar && dictvar[asda];
+    return turnarray(dfigjtr).map(sigjt);
+  }
+
+  const okasasd = listvar.map(sidjfer);
+  const ofkew = joinString$1(okasasd, join);
+  return ofkew;
+}
+function removeEmptyDict(obj) {
+  // obj = JSON.parse(JSON.stringify(obj));
+  // // listArray = _.pickBy(listArray, _.identity);
+  // for (var propName in obj) {
+  //   if (obj[propName] === null || obj[propName] === undefined) {
+  //     delete obj[propName];
+  //   }
+  // }
+  // return obj;
+  return Object.fromEntries(Object.entries(obj).filter(([_, v]) => v != null));
+}
+function removeKeyDict(params, itemo) {
+  delete params[itemo]; // omit(params, itemo)
+
+  return params;
+}
+function removeKeyList(parmas, listo) {
+  listo.map(function (wewq) {
+    parmas = removeKeyDict(parmas, wewq);
+  });
+  return parmas;
+}
+function mapDictVals(dictvar) {
+  const toksaew = [];
+
+  for (const [key, value] of Object.entries(dictvar)) {
+    toksaew.push(value);
+  }
+
+  return toksaew;
+}
+function mapDictKey(dictvar) {
+  const toksaew = [];
+
+  for (const [key, value] of Object.entries(dictvar)) {
+    toksaew.push(key);
+  }
+
+  return toksaew;
+} // 1map
+
+function mapDictFunc(dictvar, dictfunc) {
+  const ijsdase = {};
+
+  for (const [key, value] of Object.entries(dictvar)) {
+    ijsdase[key] = dictfunc(value);
+  }
+
+  return ijsdase;
+}
+function mapDictKeyToValue(dict, attr) {
+  const sdjfer = {};
+
+  for (const [key, value] of Object.entries(dict)) {
+    const jsfer = {
+      [attr]: key,
+      ...value
+    };
+    sdjfer[key] = jsfer;
+  }
+
+  return sdjfer;
+}
+function createNewDictFromAttr(arrvar, attr) {
+  var oksae = {};
+  arrvar.map(function (wewq) {
+    oksae[wewq[attr]] = wewq;
+  });
+  return oksae;
+}
+function convertObjectDict(obj) {
+  function odkaeww(key) {
+    let okdsa = {
+      [key]: obj[key]
+    };
+    return okdsa;
+  }
+
+  let iase = Object.keys(obj);
+  let oaksde = iase.map(odkaeww);
+
+  return oaksde;
+} // export function mapDictFunc(dictvar, dictfunc) {
+//   const ijsdase = {};
+//   for (const [key, value] of Object.entries(dictvar)) {
+//     ijsdase[key] = dictfunc(value);
+//   }
+//   return ijsdase;
+// }
+
+function moveItemFront(listo, itemo) {
+  var jsdas = lodash.sortBy(listo, function (_ref) {
+    var type = _ref.type;
+    return type === itemo ? 0 : 1;
+  });
+  return jsdas;
+}
+function getFirstArr(dataVar) {
+  dataVar = turnarray(dataVar)[0];
+  return dataVar;
+}
+function turnarray(arrVary) {
+  var checkArr = Array.isArray(arrVary) ? arrVary : [arrVary];
+  return checkArr;
+}
+function mapFuncDict(arrVar, funcVar, dictvar) {
+  function hereo(obj, indexvar) {
+    var obrar = dictvar ? dictvar[obj] : obj;
+    var vkbmdfs = //
+    // "opkcwqe";
+    funcVar ? funcVar(obrar) : obrar;
+    return vkbmdfs;
+  } //
+
+
+  var asudjwe = //
+  // "asodkaewqe";
+  arrVar.map(hereo);
+  return asudjwe;
+}
+function mapListDict(arrvar, dictvar) {
+  return mapFuncDict(arrvar, "", dictvar);
+}
+function mapFunc(arrVar, funcVar, dictvar) {
+  function hereo(obj, indexvar) {
+    var obrar = //
+    obj; //  dictvar ? dictvar[obj] : obj;
+
+    var ijadw = _objectSpread2({
+      indexvar: indexvar
+    }, obrar);
+    var vkbmdfs = //
+    // "opkcwqe";
+    funcVar ? funcVar(obj) : ijadw;
+    return vkbmdfs;
+  } //
+
+
+  var ndfigt = arrVar && removeEmptyArray(turnarray(arrVar));
+  var asudjwe = //
+  // "asodkaewqe";
+  ndfigt && ndfigt.map(hereo);
+  return asudjwe;
+} // movearray
+
+function moveItemArray(arr, old_index, new_index) {
+  if (new_index >= arr.length) {
+    var k = new_index - arr.length + 1;
+
+    while (k--) {
+      arr.push(undefined);
+    }
+  }
+
+  arr.splice(new_index, 0, arr.splice(old_index, 1)[0]);
+  return arr; // for testing
+}
+function getEnchancedArray(arrayeo) {
+  //
+  var oskew = getLength(arrayeo);
+
+  function sakdwe(_ref2) {
+    var indexvar = _ref2.indexvar,
+        obj = _objectWithoutProperties(_ref2, ["indexvar"]);
+
+    //
+    var nextNumo = indexvar + 1;
+    var okacve = indexvar < oskew;
+    var nexitos = //
+    // "";
+    okacve ? arrayeo[nextNumo] : "";
+
+    var ladsa = _objectSpread2({
+      // indexvar,
+      nextItem: nexitos
+    }, obj);
+    return ladsa;
+  }
+
+  var odsfr = //
+  mapFunc(arrayeo, sakdwe);
+  return odsfr;
+}
+function checkLenArray(dataVar) {
+  var numVar = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+  dataVar = getLength(dataVar) == numVar;
+  return dataVar;
+}
+function checkEmptyArray(arr) {
+  arr = turnarray(arr).length < 1;
+  return arr;
+}
+function removeEmptyArray(arr) {
+  var sofksd = turnarray(arr).filter(function (item) {
+    return item;
+  });
+  return sofksd;
+}
+function addArray(obj, array) {
+  array.push(obj);
+  return array;
+}
+function addArrayNumber(array) {
+  var endNum = array.reduce(function (a, b) {
+    return a + b;
+  }, 0);
+  return endNum;
+}
+function getLength(arr) {
+  arr = turnarray(arr).length;
+  return arr;
+}
+function removeItemArray() {
+  return removeArray.apply(void 0, arguments);
+}
+function removeArray(array, obj, attr) {
+  //   _.remove(obj.subTopics, {
+  //     subTopicId: stToDelete
+  // });
+  function baseRem(currentObject) {
+    var asweas = //
+    attr ? currentObject[attr] != obj : currentObject != obj;
+    return asweas;
+  }
+
+  var okdsasd = lodash.filter(array, baseRem); // remove(
+  return okdsasd;
+}
+function filterDictArray(myArr, sdofkewr) {
+  var okada = lodash.filter(myArr, sdofkewr);
+  return okada;
+}
+function mapSelectEnd(odsfe, asdfer) {
+  var sdore = asdfer && _defineProperty({}, odsfe, mapValue(asdfer));
+  return sdore;
+}
+function mapSelectValue(arrBig, _ref4) {
+  var dictvar = _ref4.dictvar,
+      labelFunc = _ref4.labelFunc,
+      valueFunc = _ref4.valueFunc,
+      isDisabled = _ref4.isDisabled;
+      _objectWithoutProperties(_ref4, ["dictvar", "labelFunc", "valueFunc", "isDisabled"]);
+
+  //
+  function asijdwe(asdae) {
+    var ndsire = //
+    // asdae
+    checkDict(dictvar, asdae);
+    var sidjf = //
+    // asdae
+    ndsire;
+    var sakde = {
+      label: labelFunc ? labelFunc(sidjf) : asdae,
+      value: valueFunc ? valueFunc(ndsire) : asdae,
+      isDisabled: isDisabled
+    };
+    return sakde;
+  }
+  var dretjer = arrBig.map(asijdwe);
+  return dretjer;
+} // 1map
+
+function mapDictMain(listo, dicto) {
+  mapFunc();
+}
+function mapInnerJoin(arrVar, attrVar, connectVar) {
+  connectVar = connectVar ? connectVar : " ";
+  return mapFunc(arrVar, function (linearray) {
+    return linearray[attrVar];
+  }).join(connectVar);
+}
+function mapInnerAttr(arrVar, attrVar) {
+  var enaso = mapFunc(arrVar, function (linearray) {
+    return linearray[attrVar];
+  }); // aijdwq.push(linearray[attrVar]));
+
+  return enaso;
+}
+function mapValue(arrBig) {
+  return arrBig && arrBig.map(function (asdae) {
+    return asdae.value;
+  });
+} // 1map mapDict
+
+function mipBase(dictvar) {
+  var dfokg = new Set();
+
+  for (var _i = 0, _Object$entries = Object.entries(dictvar); _i < _Object$entries.length; _i++) {
+    var _Object$entries$_i = _slicedToArray(_Object$entries[_i], 2);
+        _Object$entries$_i[0];
+        var value = _Object$entries$_i[1];
+
+    var xcbsfd = objectTrue(value) && Object.keys(value);
+
+    if (xcbsfd) {
+      xcbsfd.map(function (sfwew) {
+        return dfokg.add(sfwew);
+      });
+    }
+  }
+
+  return Array.from(dfokg);
+}
+function getListAll(arrvar, _ref5) {
+  var dictvar = _ref5.dictvar;
+  return dictvar ? mipBase(dictvar) : arrvar;
+}
+function mapReturn(arrBig, arrSmall) {
+  return arrBig && arrBig.map(arrSmall);
+}
+function sliceArray(arrBig, limmo) {
+  return arrBig.slice(0, limmo);
+}
+function removeArrayArray(arrBig, arrSmall) {
+  for (var _len = arguments.length, sawe = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
+    sawe[_key - 2] = arguments[_key];
+  }
+
+  var arBiggo = []; //
+  //
+
+  function plusSpace(obj, indexvar) {
+    var saase = removeArray.apply(void 0, [arrBig, obj].concat(sawe));
+    arBiggo = checkFullArray(saase) ? [].concat(_toConsumableArray(arBiggo), _toConsumableArray(saase)) : arBiggo;
+    return arBiggo;
+  }
+  var fullo = checkFullArray(arrSmall) ? arrSmall.map(plusSpace) : arrBig;
+  return fullo;
+}
+function moveItemToFront(arrBig, item) {
+  var okasdw = removeArray(arrBig, item);
+  okasdw.unshift(item);
+  return okasdw;
+}
+function checkFullArray(arrBig, arrSmall) {
+  var okasdw = !lodash.isEmpty(removeEmptyArray(arrBig));
+  return okasdw;
+}
+function stringinarray(stirngo, arreo) {
+  var okasdw = //
+  arreo.includes(stirngo); // includes(col,go);
+
+  return okasdw;
+}
+function checkAllArray(arr, item) {
+  return arr && arr.every(function (dsf) {
+    return dsf === item;
+  });
+}
+function addRemoveArray(pushArr, obj, attrVar) {
+  //   pushArr = turnarray(pushArr);
+  //   const dicto = findArrayTrue(pushArr, obj, attrVar);
+  //   // const dicto = findArrayAttr(pushArr, obj, attrVar);
+  //   logs.logs.logga("pushArr-zzz", pushArr, "2193e1h2");
+  //   logs.logs.logga("dicto-zzz", dicto, "2193e1h2");
+  //   if (dicto > -1) {
+  //     _.remove(pushArr, function (el) {
+  //       return attrVar ? el[attrVar] === obj : el === obj;
+  //     });
+  //     // pushArr = removeArray(obj, pushArr, attrVar);
+  //   } else {
+  //     pushArr.push(obj);
+  //   }
+  return pushArr;
+}
+function mapArrFunc(arrfunc, funco) {
+  var vallo = "";
+
+  for (var i = 0; i < arrfunc.length; i++) {
+    var ITEMO = arrfunc[i];
+    var ITEMAFTERFUNC = funco(ITEMO);
+
+    if (ITEMAFTERFUNC) {
+      vallo = ITEMAFTERFUNC;
+      break;
+    }
+  }
+
+  return vallo;
 }
 
 function BearLink$1({
@@ -185,24 +843,6 @@ function BearLink$1({
   }
 
   return noLink ? textvar : /*#__PURE__*/React__default['default'].createElement(Rlasdow, null);
-}
-
-function _extends() {
-  _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
 }
 
 const alignItemsFlex = //
@@ -1329,7 +1969,13 @@ function BearListItem(coimswe, {
   }
 
   const sijfawe = dictvar ? dictTrue ? mainOso() : noShowItems ? "" : BearError(`No entry exists in '${BearPossess("dictionary", bearName, "this list")}' for "${coimswe}" `) : eixstso ? mainOso() : noShowItems ? "" : BearError("No list item declared!");
-  return containFunc ? containFunc(sijfawe, dgste) : sijfawe;
+
+  function xcjsd() {
+
+    return containFunc(sijfawe, dgste);
+  }
+
+  return containFunc ? xcjsd() : sijfawe;
 }
 
 function BearListMap(list, {
@@ -1376,7 +2022,7 @@ function getListComplex(listo, //
   const dictTrugo = useDictList && dictvar;
   let list = dictTrugo ? Object.keys(dictvar) : listo;
 
-  const jvsdr = list;
+  const jvsdr = turnarray(list);
   list = keepNull ? list : jvsdr.filter(function (el) {
     return el != null;
   });
@@ -1825,10 +2471,14 @@ function BearInputLabel({
   subtitleConfig = {},
   subtitlePlacement,
   //
+  labelFunc,
   addFunc,
   iconvar,
   newTrue,
   errorMessage,
+  //
+  checkbox,
+  checkboxConfig = {},
   //
   // 1popup
   infoPopup,
@@ -1900,16 +2550,26 @@ function BearInputLabel({
     };
     const sfdgr = BearIcon("info", ndgjtre);
     return sfdgr; // return <BearPopover {...jdfgrwe}>{sfdgr}</BearPopover>;
+  } // 1checkbox
+
+
+  function ceckcio(dfokewr) {
+    return /*#__PURE__*/React__default['default'].createElement(react.Checkbox, dfokewr);
   } // 1title
 
 
   function AllNo() {
     // required = true;
     const ijstewr = required && RendReq();
+    const xcvkdsijdew = BearIconText(iconvar, children);
+    const sdgr = checkbox ? ceckcio({
+      children: xcvkdsijdew,
+      ...checkboxConfig
+    }) : xcvkdsijdew;
     const okdsras = /*#__PURE__*/React__default['default'].createElement(BearDiv$1, {
       vertAlign: true,
       flex: true
-    }, BearIconText(iconvar, children), ijstewr);
+    }, sdgr, ijstewr);
     const idjfg = [//
     okdsras, poppoBas // { obj: okdsras },
     // { obj: poppoBas },
@@ -2001,12 +2661,8 @@ function BearInputLabel({
     style: kase,
     ...args
   }; // 1console
-
-  loggo("___ inputLabel BASE MAIN ___", {
-    infoPopup,
-    subtitle
-  });
-  return /*#__PURE__*/React__default['default'].createElement(BearTextMedia, isawqe);
+  const sdfewr = /*#__PURE__*/React__default['default'].createElement(BearTextMedia, isawqe);
+  return labelFunc ? labelFunc(sdfewr) : sdfewr;
 }
 
 function BearInputBase(ujsdqwe, {
@@ -2533,7 +3189,9 @@ function BearSpan(asdwe) {
 // }
 
 function BearBorder(color, radius, sdfr = {}) {
-  return cxadfa(color, radius, sdfr);
+  const okfg = objectTrue(sdfr);
+  const vijder = okfg ? cxadfa(color, radius, sdfr) : BearError("Third argument of 'BearBorder' must be an object");
+  return vijder;
 }
 function cxadfa(color, radius, {
   noPadding,
@@ -2751,14 +3409,6 @@ function BearDiv$1({
     ...linkConfig
   };
 
-  if (logtrue) {
-    loggo("___ okdas ___", okdas);
-  }
-
-  if (linkTrue) {
-    loggo("___ linkTrue ___", okdas);
-  }
-
   const xczaeewqa = //
   //
   linkTrue ? /*#__PURE__*/React__default['default'].createElement(BearLink$1, okdas) : endo;
@@ -2771,10 +3421,6 @@ function BearDiv$1({
   }
 
   const sadijqwe = loadTrue ? Lodio() : xczaeewqa;
-
-  if (logtrue) {
-    loggo("___ sijewr ___", sijewr); // logs.loggo("___ sadijqwe ___", sadijqwe);
-  }
 
   !sijewr && !ignoreNull ? BearError(bearName + " is empty") : sadijqwe; // return difjgerwas
 
@@ -3304,7 +3950,9 @@ function BearModel({
   //
   //
   onEdit,
+  editConfig,
   onShare,
+  shareConfig,
   onCancel,
   //
   onDelete,
@@ -3334,12 +3982,14 @@ function BearModel({
     edit: {
       iconvar: "edit",
       textvar: "Edit",
-      onClick: onEdit
+      onClick: onEdit,
+      ...editConfig
     },
     share: {
       iconvar: "share",
       textvar: "Share",
-      onClick: onShare
+      onClick: onShare,
+      ...shareConfig
     },
     cancel: {
       iconvar: "close",
@@ -3465,26 +4115,29 @@ function BearTextarea({
     padding: "20px",
     ...style
   };
-  loggo("djfo--zzz", djfo);
   const ijsdfasd = {
     rows,
     value,
     minRows: rows,
     // initialValue:
-    // defaultValue: value,
+    defaultValue: {
+      lable: initialValue,
+      value: initialValue
+    },
     ...chakResize,
     style: djfo,
     ...dfgre,
     onChange: sofkes
   };
+  loggo("___ ijsdfasd ___", ijsdfasd);
   const xcvbkf =
   /*#__PURE__*/
   //
   // <textarea {...ijsdfasd} />
   //  <TextareaAutosize {...ijsdfasd} />
   // <TextChak {...ijsdfasd}>{value}</TextChak>
-  React__default['default'].createElement(react.Textarea, ijsdfasd, initialValue) // <TextChak {...ijsdfasd} />
-  ;
+  // <TextChak {...ijsdfasd}>{initialValue}</TextChak>
+  React__default['default'].createElement(react.Textarea, ijsdfasd);
   return InputBaseCheck(xcvbkf, dfgre);
 }
 
@@ -3561,8 +4214,6 @@ function BearInputText({
     onChange: sdijfer // ...inputStyles(style),
 
   }; // 1console
-
-  loggo("___ BeaInputText ___", ijawe); // 1input
 
   const centFsow = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement(react.Input, ijawe));
   logPut("___ intput BASEO ___", xvbjdfr);
@@ -3731,6 +4382,485 @@ function BearRadio({
   return /*#__PURE__*/React__default['default'].createElement(BearDiv, args);
 }
 
+// import AsyncSelect, { makeAsyncSelect } from "react.-select/async";
+
+function BearSelect({
+  //
+  multi,
+  dictvar,
+  noMenu,
+  menuConfig,
+  typeSelect,
+  //
+  // 1options
+  options,
+  optionsArray,
+  optionStyle,
+  hoverStyle,
+  optionConfig,
+  initOptions,
+  optionBorder,
+  bearName,
+  //
+  //
+  maxSelect,
+  //
+  //
+  // 1value
+  onChangeSetValue = true,
+  initialValue,
+  // 1create
+  create,
+  onCreate,
+  onCreateValue,
+  createTop,
+  //
+  // 1blur
+  onBlurValue,
+  //
+  //
+  hideSearchIcon,
+  //
+  //
+  notClearable,
+  logtrue,
+  //
+  //
+  valueFormat,
+  valueFunc,
+  //
+  //
+  fontSize = "16px",
+  newLineTrue,
+  // 1none
+  noOptionsMessage,
+  //
+  //
+  // 1change
+  onChange,
+  //
+  // 1menu
+  introMessage,
+  showMenuIfValue,
+  menuStyle,
+  searchBarIcon,
+  noMenuBorder,
+  menuStick,
+  //
+  //
+  messvar = "",
+  name = "",
+  limitvar,
+  //
+  // 1ref
+  // ref,
+  // onInputChange,
+  //
+  // 1style
+  resultsStyle,
+  menuHeight,
+  width = "100%",
+  style = {},
+  noValueReturn,
+  ...args
+}) {
+  // 1baseargs
+  //
+  // bearName;
+  // 1const
+  const [inputBase, setinputBase] = React.useState();
+  const [type, setType] = React.useState("");
+  const sodkfre = overLen(type); // 1optionstyle
+
+  const waeaj = { ...optionStyle
+  };
+  width = width ? width : style["width"] ? style["width"] : "100%";
+
+  function DropdownIndicator(props) {
+    const ijsde = {
+      //
+      fontSize: "1.3em"
+    };
+    const asew = searchBarIcon && BearIcon(searchBarIcon, ijsde);
+    const isdjfew = /*#__PURE__*/React__default['default'].createElement(Select.components.DropdownIndicator, props, asew);
+    const uhfesa = //
+    hideSearchIcon ? "" : isdjfew; // "sdwqe";
+
+    return uhfesa;
+  }
+
+  function showTrue(inputValue, selectValue, selectOptions) {
+    if (!inputValue) {
+      return false;
+    }
+
+    let isValid = true; // for (let option of selectOptions) {
+    //   if (isOptionMatchesInputValue(option, inputValue)) {
+    //     isValid = false;
+    //     break;
+    //   }
+    // }
+
+    return isValid;
+  } // 1OPEN
+  //     ? type
+  //     :
+
+
+  let vbmofd = //
+  options ? options : optionsArray ? mapSelectValue(optionsArray, {}) : initOptions;
+  let dsfijaae = //
+  // optBase;
+  vbmofd; // 1option STYLE
+
+  function optRdio({
+    color,
+    width,
+    ...base
+  }, {
+    isDisabled
+  }) {
+    //
+    // 1border
+    const deqwease = //
+    // "";
+    optionBorder && BearBorder("grey", "5px", "0.5px");
+    const colorOpt = {
+      color: "black"
+    };
+    const ijsdr = { ...base,
+      textAlign: "left",
+      // fontSize: fontSize - 4,
+      ...waeaj,
+      ...deqwease,
+      ...vertAlign,
+      ...colorOpt
+    };
+    const sodk = //
+    hoverbase(ijsdr); // skwe(ijsdr);
+
+    return allSty(sodk);
+  } // 1hover
+
+
+  function hoverbase(sfdger) {
+    const ijsaew = {
+      // background: "white",
+      "&:hover": { ...waeaj,
+        ...hoverStyle // background: "red",
+        // border: "11px solid green",
+
+      },
+      "&active": {
+        color: "black"
+      }
+    };
+    return { ...sfdger,
+      ...ijsaew
+    };
+  } // 1menu
+
+
+  function rendMenu(bsao) {
+    const aaese = menuStick && {
+      marginTop: "0px"
+    };
+    const sdoewr = !noMenuBorder && bsao;
+    const misdfs = menuHeight && {
+      height: menuHeight // menuHeight:
+
+    };
+    const oasde = {
+      // paddingRight: "0 100px",
+      marginTop: "0px",
+      ...sdoewr,
+      ...menuStyle,
+      ...aaese,
+      ...misdfs
+    };
+    return allSty(oasde);
+  } // 1control
+
+
+  function rendCont(base) {
+    //
+    const iksdrqe = { ...base,
+      // maxHeight: 20,
+      // fontSize: fontSize,
+      ...style
+    };
+    return allSty(iksdrqe);
+  }
+
+  function allLios(styles) {
+    const oksdr = { ...styles //
+      // padding: "0 100px",
+      // WebkitOverflowScrolling: "",
+      // boxSizing: "",
+      // ...misdfs,
+      // paddingTop: "-30px",
+
+    };
+    return allSty(oksdr);
+  }
+
+  function allSty(adfwer, mesioa) {
+    // 1width
+    const fullWdh = {
+      fontSize,
+      ...adfwer,
+      width
+    };
+    return fullWdh;
+  } // 1nooption STYLE
+
+
+  function optNoos(base) {
+    const cvbf = {// ...base,
+      // ...introStyle,
+    };
+    return allSty(cvbf);
+  } //   1styles
+
+
+  const stylBasoe = {
+    control: rendCont,
+    option: optRdio,
+    menuList: allLios,
+    menu: rendMenu,
+    noOptionsMessage: optNoos // clearIndicator: (base) => ({
+    //   ...base,
+    //   paddingTop: 0,
+    //   paddingBottom: 0,
+    // }),
+
+  };
+  // isEmpty();
+  // 1empty
+
+  const fullOpts = // emptio &&
+  {
+    components: {
+      DropdownIndicator,
+      IndicatorSeparator: () => null // Menu: () => null,
+
+    }
+  }; //   1menu
+  //   newLineTrue
+
+  const mennoPIt = newLineTrue && {
+    classNamePrefix: "lp-copy-sel"
+  };
+  const asidjwe = multi && {
+    isMulti: true
+  };
+
+  function sijsad(sdfe) {
+    return sdfe && sdfe.value;
+  }
+
+  function changeos(params) {
+    //
+    const ijsdre = valueFormat ? valueFormat : sijsad;
+    let sovkoe = //
+    noValueReturn ? params : multi ? params.map(ijsdre) : params.value;
+
+    {
+      loggo(messvar + "__SELECT onChange____", params);
+    } // const ojsde = onChangeDict = onChangeDict
+
+
+    if (onChange) {
+      onChange(sovkoe);
+    }
+
+    if (valueFunc) {
+      valueFunc(params);
+    }
+  }
+
+  function overLen(xvfd) {
+    const dasf = maxSelect && xvfd && xvfd.length === maxSelect;
+    return dasf;
+  } // 1onchange maxSelect ?
+
+
+  function dfgoe(aewqe) {
+    overLen(aewqe);
+
+    {
+      changeos(aewqe);
+    } // setType(difjre);
+    // if (lenOver) {
+    // changeos(aewqe);
+    //   setType(aewqe)
+    // } else {
+    //   setType()
+    // }
+
+  } // limitvar ? sliceArray(vbmofd, limitvar) : vbmofd;
+  // 1id reffo
+
+
+  let ideoBasa = {
+    inputProps: name,
+    inputId: name,
+    name: name
+  }; // 1ref
+  const iasjdwe = !notClearable && {
+    isClearable: true
+  };
+  const xcvbfmg = {
+    // MENU
+    //
+    isSearchable: true,
+    ...iasjdwe,
+    ...mennoPIt,
+    ...asidjwe,
+    ...args,
+    ...ideoBasa
+  };
+  let toppoIos = //
+  // "first";
+  createTop ? "first" : "last";
+
+  const creatios = onCreate && {
+    onCreateOption: onCreate // value: type,
+
+  };
+
+  function Notspse(inputValue, sdsa) {
+    const svnsdfsr = typeof noOptionsMessage == "function";
+    const idjvsa = !svnsdfsr ? BearErrArgType$1("noOptionsMessage", "function", {
+      bearName
+    }) : noOptionsMessage(inputValue, sdsa);
+    return idjvsa;
+  } // 1nooptions
+
+
+  function Rendoa({
+    inputValue,
+    ...sdsa
+  }) {
+    noOptionsMessage ? Notspse(inputValue, sdsa) : sodkfre ? "You can only chooe" : "no options for '" + inputValue + "'";
+  } // 1create Daosm
+
+
+  const sdijer = { ...creatios,
+    createOptionPosition: toppoIos
+  };
+  const xockozd = onBlurValue && {
+    onBlur: sofad => onBlurValue(sofad.target.value)
+  };
+
+  const fsdogkdr = //
+  optionConfig && bijewwe;
+
+  function bijewwe({
+    value,
+    label,
+    customAbbreviation
+  }) {
+    const ijsras = { ...optionConfig
+    }; // return "asokqweq";
+
+    return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, ijsras, label);
+  }
+
+  const dfijger = !onChangeSetValue && {
+    value: ""
+  }; // 1input
+
+  const fgoktr = {
+    // initialValue: initialValue,
+    defaultInputValue: initialValue // inputValue: initialValue,
+
+  }; // 1blur
+
+  const nvxsads = noOptionsMessage && {
+    promptTextCreator: Notspse,
+    formatCreateLabel: Notspse,
+    noOptionsMessage: Rendoa
+  };
+
+  function ShowItMENU(zxcvok) {
+    setinputBase(zxcvok);
+  } // 1intro
+
+
+  const sdfer = showMenuIfValue && {
+    inputValue: inputBase,
+    options: inputBase ? dsfijaae : [],
+    noOptionsMessage: inputBase ? Rendoa : asd => introMessage,
+    // menuIsOpen: inputBase,
+    onInputChange: ShowItMENU
+  };
+  const fdgrt = {
+    // ...dfgjrt,
+    styles: stylBasoe,
+    onChange: dfgoe,
+    formatOptionLabel: fsdogkdr,
+    //
+    // STYLE
+    //
+    // 1blur
+    // ...blurBase,
+    //
+    //
+    // 1create
+    ...sdijer,
+    //
+    // 1nooptions
+    ...nvxsads,
+    // 1EMPTY
+    ...fullOpts,
+    isValidNewOption: showTrue,
+    options: dsfijaae,
+    ...dfijger,
+    ...xockozd,
+    ...fgoktr,
+    ...xcvbfmg,
+    ...sdfer // ...ogkfds,
+
+  }; // 1return 1args
+
+  let dfijew = //
+  // {};
+  fdgrt; // xcvbfmg;
+
+  typeSelect = !sodkfre && create ? "create" : typeSelect;
+  let endValue = ""; //
+
+  switch (typeSelect) {
+    case "create":
+      endValue = /*#__PURE__*/React__default['default'].createElement(CreatableSelect__default['default'], dfijew);
+      break;
+
+    case "async":
+      endValue = /*#__PURE__*/React__default['default'].createElement(AsyncCreatableSelect__default['default'], dfijew);
+      break;
+
+    default:
+      endValue =
+      /*#__PURE__*/
+      //
+      // <CreatableSelect {...dfijew} />
+      React__default['default'].createElement(Select__default['default'], dfijew);
+  }
+
+  return endValue;
+} // autoFocus - focus the control when it mounts
+// className - apply a className to the control
+// classNamePrefix - apply classNames to inner elements with the given prefix
+// isDisabled - disable the control
+// isMulti - allow the user to select multiple values
+// isSearchable - allow the user to search for matching options
+// name - generate an HTML input with this name, containing the current value
+// onChange - subscribe to change events
+// options - specify the options the user can select from
+// placeholder - change the text displayed when no option is selected
+// value - control the current value
+
 function BearInputNumber({
   //
   onlyPositive,
@@ -3893,7 +5023,8 @@ function BearFormInputCheck({
       case "select":
         const sfkwer = {// fontSize: "0.2em",
         };
-        ujsdqwe = goCont(BearSelect, sfkwer); // ujsdqwe = <Select {...objbase} />;
+        ujsdqwe = goCont(BearSelect, sfkwer); // ujsdqwe = sijdgdf(BearSelect);
+        // ujsdqwe = <Select {...objbase} />;
         // ujsdqwe = <AsyncCreatableSelect {...objbase} />;
         // ujsdqwe = <CreatableSelect {...objbase} />;
 
@@ -3951,6 +5082,23 @@ function BearFormInputCheck({
   function goCont(funcPush, aisjdwe) {
     //
     //
+    const difjgr = //
+    // Rendo
+    inEar; // funcPush(aisjdwe);
+    // inputFunction(objbase);
+    // BearSelect(testSelect)
+    // <Select {...testSelect} />
+
+    const xbvkf = { // as: inputFunction(objbase),
+      ...cntrMan,
+      render: difjgr
+    };
+    loggo("___ beform CONTROLLER ___", xbvkf);
+    let asod =
+    /*#__PURE__*/
+    //
+    React__default['default'].createElement(reactHookForm.Controller, xbvkf);
+
     function inEar({
       //
       field: {
@@ -3962,9 +5110,7 @@ function BearFormInputCheck({
     }) {
       const jodswre = { ...containerStyle,
         ...ashwe
-      }; //
-      //
-
+      };
       const sfeqwwe = { ...objbase,
         ...aisjdwe,
         inputRef: ref,
@@ -3980,23 +5126,6 @@ function BearFormInputCheck({
       return dfigjew;
     }
 
-    /*#__PURE__*/
-    //
-    // inputFunction(objbase)
-    // BearSelect(testSelect)
-    React__default['default'].createElement(Select, testSelect); // render
-
-    const difjgr = //
-    // Rendo;
-    inEar;
-    const xbvkf = { // as: inputFunction(objbase),
-      ...cntrMan,
-      render: difjgr
-    };
-    let asod =
-    /*#__PURE__*/
-    //
-    React__default['default'].createElement(reactHookForm.Controller, xbvkf);
     return asod;
   }
   ujsdqwe = inputObj ? inputObj : inputFunction ? goCont(inputFunction) : inputObjectFunction ? inputObjectFunction(retFunc()) : retFunc();
@@ -4022,7 +5151,7 @@ function _dictEmail() {
   return emalBaso;
 }
 
-function getFormPass(objsoa, asdwe = {} //   { dictvar, emailConfig, nameConfig, passwordConfig }
+function getFormPass(objsoa, asdwe = {} // { value, ...asdwe } = {}
 ) {
   let osakde = "";
 
@@ -4048,6 +5177,10 @@ function getFormPass(objsoa, asdwe = {} //   { dictvar, emailConfig, nameConfig,
 
     case "name":
       osakde = _dictName();
+      break;
+
+    case "datetime":
+      osakde = dictDate(asdwe);
       break;
 
     case "tags":
@@ -4086,11 +5219,47 @@ function getFormPass(objsoa, asdwe = {} //   { dictvar, emailConfig, nameConfig,
 
   const retier = {
     name: objsoa,
-    ...osakde,
-    ...asdwe
+    ...osakde // ...asdwe,
+
   };
   return retier;
+} // 1date
+
+function dictDate({
+  value,
+  containConfig,
+  defaultNow,
+  ...cvsd
+}) {
+  function xvkbdffs() {
+    // logs.loggo("___ vfdgd ___", vfdgd);
+    const sdifjer = value ? value : defaultNow && new Date();
+    const sidfjwer = {
+      disableCalendar: true,
+      disableClock: true,
+      isCalendarOpen: false,
+      isClockOpen: false,
+      value: sdifjer,
+      ...cvsd,
+      style: {
+        width: "100%"
+      }
+    };
+    const ijsdfewr = {
+      style: {
+        textAlign: "left",
+        padding: "0 10px"
+      },
+      ...containConfig
+    };
+    return /*#__PURE__*/React__default['default'].createElement("div", ijsdfewr, " ", /*#__PURE__*/React__default['default'].createElement(DateTimePicker__default['default'], sidfjwer));
+  }
+
+  return {
+    inputObjectFunction: xvkbdffs
+  };
 } // 1url 1link
+
 
 function _dictURL({
   register,
@@ -4236,9 +5405,9 @@ function BearFormSetup({
   const ijdfewr = inputType && { ...getFormPass(inputType, ndifjg),
     inputType
   };
-  const cxvijdsf = { ...getFormPass(name, ndifjg),
-    ...ijdfewr,
-    ...ndifjg
+  const cxvijdsf = { ...ndifjg,
+    ...getFormPass(name, ndifjg),
+    ...ijdfewr
   };
   const okasew = getRef(cxvijdsf);
   const hookArgs = { ...okasew
@@ -4276,29 +5445,6 @@ function BearFormSetup({
   // <InputChak {...odkasew} />
 
   return oiaswe;
-}
-
-function focusBase({
-  //
-  list,
-  onFocus
-}) {
-  const existo = //
-  Array.isArray(list) && list[0];
-  const ijdswer = //
-  existo && lodash.isObject(existo) ? existo.name : existo;
-  const kvdsf = //
-  ijdswer;
-  __.logs.loggo("___ focusBase ___", {
-    //
-    existo,
-    ijdswer,
-    kvdsf
-  });
-
-  if (kvdsf) {
-    onFocus(ijdswer);
-  }
 }
 
 function BearForm({
@@ -4389,18 +5535,8 @@ function BearForm({
     register
   }; // 1focus
 
-  function Faoksd() {
-    if (focusFirst) {
-      focusBase({
-        list,
-        onFocus: setFocus
-      });
-    }
-  } // 1useEffect
-
 
   React.useEffect(() => {
-    Faoksd();
   });
 
   function goSing(doksad) {
@@ -5617,6 +6753,194 @@ function BearSocialShare({
   return ijfdewr;
 }
 
+function BearSearchSelect({
+  //
+  seriesObj,
+  ...args
+}) {
+  // 1const
+  args = { // obj: okfdsd,
+    ...args
+  };
+  const kdserase =
+  /*#__PURE__*/
+  //
+  React__default['default'].createElement(BearSelect, args) // <SelectSearch {...args} />;
+  ;
+  return kdserase;
+}
+
+function BearSearchList({
+  //
+  onChange,
+  list,
+  dictvar,
+  bearName,
+  renderItem,
+  searchAttrs,
+  listConfig,
+  optionStyle,
+  // header
+  initialValue,
+  layoutList,
+  headerAtts,
+  headerConfig,
+  ...args
+}) {
+  // 1baseargs
+  const dfijgret = {
+    //
+    renderItem,
+    bearName,
+    list // ignoreEmpty: true
+
+  };
+  const baseargs = {
+    dictvar,
+    ...dfijgret,
+    ...args
+  }; // 1const
+
+  searchAttrs = searchAttrs ? searchAttrs : getListAll(list, {
+    //
+    listDictAdd: true,
+    dictvar
+  });
+  const [searchTerm, setsearchTerm] = //
+  // [initialValue, ""];
+  React.useState(initialValue);
+  const dfigre = {
+    inputValue: searchTerm
+  };
+  const extractSplit = //
+  "*";
+
+  function askdwew({
+    listItemName = "",
+    ...map
+  }) {
+    const sdfgoekse = //
+    // map;
+    listItemName + extractSplit + mapDictAttrToString(searchAttrs, " ", map);
+    return sdfgoekse;
+  }
+
+  function xvibjrg(sadofkwe) {
+    const stringios = typeof sadofkwe;
+    const doNot = stringios == "object";
+    const digjer = doNot ? sadofkwe : //
+    {
+      listItemName: sadofkwe
+    }; // BearError("Bearsearch is not an object");
+
+    const mdvokdfdsa = { ...digjer,
+      ...dfigre
+    };
+    const dibjgret = //
+    // digjer;
+    // "okweerq"
+    aassae(mdvokdfdsa);
+    return dibjgret;
+  }
+
+  function aassae({
+    listItemName,
+    ...mapase
+  }) {
+    const kjsad = { ...baseargs,
+      ...listConfig,
+      // ...asaes,
+      logtrue: true
+    };
+    const sdfje = lodash.isEmpty(mapase) ? listItemName : {
+      listItemName,
+      ...mapase
+    };
+    const oksaase = BearListItem(sdfje, kjsad);
+    const dfgijert = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, oksaase);
+    const ijsf = {//
+      // className: "buttonHover shadowHover",
+      // style: isjfer,
+    };
+    const sdifjwer = /*#__PURE__*/React__default['default'].createElement(BearDiv$1, ijsf, dfgijert);
+    return sdifjwer;
+  }
+
+  const vcxbfg = //
+  // isdae;
+  !list ? [] : mapSelectValue(list, {
+    dictvar: dictvar,
+    labelFunc: xvibjrg,
+    valueFunc: searchAttrs && askdwew,
+    // headerFunc:
+    isDisabled: true
+  }); // 1header
+
+  function DSIFJ() {
+    //
+    //
+    const sodfer = { ...dfijgret,
+      // list: layoutList,
+      bearName: nameComb(bearName, "searchList-HEADER"),
+      capitaliseTypeText: true,
+      // item: headerConfig,
+      // renderItem: aassae,
+      typeList: "div",
+      flex: true
+    };
+    return /*#__PURE__*/React__default['default'].createElement(BearList, sodfer);
+  }
+
+  const arrmode = //
+  vcxbfg; // headerAtts
+
+  function qe4ead(vcdfge) {
+    var nameos = vcdfge.substr(0, vcdfge.indexOf(extractSplit));
+
+    if (onChange) {
+      onChange(nameos);
+    }
+  }
+
+  const jsdrase = {
+    options: arrmode,
+    onChange: qe4ead
+  };
+  const hsdr = {
+    background: "transparent",
+    ...optionStyle
+  };
+
+  function asodkwe(zxcvdf) {
+    setsearchTerm(zxcvdf);
+  }
+
+  const vobkv = {
+    onInputChange: asodkwe
+  };
+  args = {
+    menuStick: true,
+    noMenuBorder: true,
+    optionStyle: hsdr,
+    menuIsOpen: true,
+    placeholder: "Search",
+    searchBarIcon: "search",
+    bearName,
+    onChangeSetValue: false,
+    ...jsdrase,
+    ...vobkv,
+    ...args
+  };
+
+  const qasds = headerAtts && DSIFJ();
+  const kdserase = //
+  // BearSearchBase(args);
+  BearSearchSelect(args); // <SelectSearch {...args} />;
+
+  const dfjgert = /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, qasds, kdserase);
+  return BearCheckList("BearSearchList", dfjgert, baseargs); // return kdserase;
+}
+
 exports.BearAttrNeeds = BearAttrNeeds;
 exports.BearAuthPortal = BearAuthPortal;
 exports.BearBackBorder = BearBackBorder;
@@ -5653,6 +6977,8 @@ exports.BearModel = BearModel;
 exports.BearPlural = BearPlural;
 exports.BearPossess = BearPossess;
 exports.BearQuote = BearQuote;
+exports.BearSearchList = BearSearchList;
+exports.BearSelect = BearSelect;
 exports.BearSocialBase = BearSocialBase;
 exports.BearSocialLinks = BearSocialLinks;
 exports.BearSocialShare = BearSocialShare;
@@ -5679,16 +7005,68 @@ exports.LoadMain = LoadMain;
 exports.PagePad = PagePad;
 exports.SliderMain = SliderMain;
 exports.SwitchComp = SwitchComp;
+exports.addArray = addArray;
+exports.addArrayNumber = addArrayNumber;
+exports.addRemoveArray = addRemoveArray;
 exports.argMiss = argMiss;
 exports.argPass = argPass;
+exports.checkAllArray = checkAllArray;
+exports.checkDict = checkDict;
+exports.checkEmptyArray = checkEmptyArray;
+exports.checkFullArray = checkFullArray;
+exports.checkLenArray = checkLenArray;
+exports.convertObjectDict = convertObjectDict;
+exports.createNewDictFromAttr = createNewDictFromAttr;
 exports.cxadfa = cxadfa;
 exports.dfkbijv = dfkbijv;
+exports.filterDictArray = filterDictArray;
 exports.firstInputCheck = firstInputCheck;
 exports.functioMa = functioMa;
 exports.getAnyDictValue = getAnyDictValue;
+exports.getEnchancedArray = getEnchancedArray;
+exports.getExtString = getExtString;
+exports.getFirstArr = getFirstArr;
+exports.getLength = getLength;
+exports.getListAll = getListAll;
+exports.joinString = joinString$1;
 exports.linkBase = linkBase;
 exports.logs = logFuncs;
+exports.mapArrFunc = mapArrFunc;
+exports.mapDictAttr = mapDictAttr;
+exports.mapDictAttrToString = mapDictAttrToString;
+exports.mapDictFunc = mapDictFunc;
+exports.mapDictKey = mapDictKey;
+exports.mapDictKeyToValue = mapDictKeyToValue;
+exports.mapDictMain = mapDictMain;
+exports.mapDictNew = mapDictNew;
+exports.mapDictVals = mapDictVals;
+exports.mapFunc = mapFunc;
+exports.mapFuncDict = mapFuncDict;
+exports.mapInnerAttr = mapInnerAttr;
+exports.mapInnerJoin = mapInnerJoin;
+exports.mapListDict = mapListDict;
+exports.mapReturn = mapReturn;
+exports.mapSelectEnd = mapSelectEnd;
+exports.mapSelectValue = mapSelectValue;
+exports.mapValue = mapValue;
+exports.matchDictAttr = matchDictAttr;
+exports.mipBase = mipBase;
+exports.moveItemArray = moveItemArray;
+exports.moveItemFront = moveItemFront;
+exports.moveItemToFront = moveItemToFront;
 exports.nameComb = nameComb;
 exports.objectTrue = objectTrue;
+exports.quoteSurround = quoteSurround;
+exports.removeArray = removeArray;
+exports.removeArrayArray = removeArrayArray;
+exports.removeEmptyArray = removeEmptyArray;
+exports.removeEmptyDict = removeEmptyDict;
+exports.removeItemArray = removeItemArray;
+exports.removeKeyDict = removeKeyDict;
+exports.removeKeyList = removeKeyList;
+exports.sliceArray = sliceArray;
+exports.spaceSurround = spaceSurround;
+exports.stringinarray = stringinarray;
+exports.turnDict = turnDict;
 exports.turnarray = turnarray;
 //# sourceMappingURL=index.cjs.js.map

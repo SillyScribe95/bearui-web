@@ -127,7 +127,12 @@ export function BearForm({
 
   // 1focus
   function Faoksd() {
-    if (focusFirst) {
+    const sdjfrwe =
+      //
+      "";
+    // focusFirst
+
+    if (sdjfrwe) {
       focusBase({
         list,
         onFocus: setFocus,
