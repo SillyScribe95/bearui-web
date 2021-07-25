@@ -95,6 +95,22 @@ function _objectSpread2(target) {
   return target;
 }
 
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function (obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function (obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
 function _defineProperty(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
@@ -319,12 +335,13 @@ function quoteSurround(stringVar) {
   // eeeeee
   return "'" + stringVar + "'";
 }
-function joinString$1(arrayo, strngo = "", first = "") {
+function joinString$1(arrayo) {
+  var strngo = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "";
   arrayo = turnarray(arrayo);
-  const okasd = arrayo ? arrayo.join(strngo) : "";
+  var okasd = arrayo ? arrayo.join(strngo) : "";
   return okasd;
 }
-const getExtString = sdfweq => {
+var getExtString = function getExtString(sdfweq) {
   var re = /(?:\.([^.]+))?$/;
   var ext = re.exec(sdfweq)[1];
   return ext;
@@ -334,12 +351,16 @@ function turnDict(dictvar) {
   return Object.entries(dictvar);
 }
 function objectTrue(dictvar) {
-  return typeof dictvar == "object";
+  return _typeof(dictvar) == "object";
 } // 1match
 
 function matchDictAttr(vlbdf, string, attr) {
-  for (const [key, value] of Object.entries(vlbdf)) {
-    const ndifvd = attr ? value[attr] : value;
+  for (var _i = 0, _Object$entries = Object.entries(vlbdf); _i < _Object$entries.length; _i++) {
+    var _Object$entries$_i = _slicedToArray(_Object$entries[_i], 2);
+        _Object$entries$_i[0];
+        var value = _Object$entries$_i[1];
+
+    var ndifvd = attr ? value[attr] : value;
 
     if (ndifvd == string) {
       return value;
@@ -348,7 +369,11 @@ function matchDictAttr(vlbdf, string, attr) {
 }
 function getAnyDictValue(vlbdf) {
   if (vlbdf) {
-    for (const [key, value] of Object.entries(vlbdf)) {
+    for (var _i2 = 0, _Object$entries2 = Object.entries(vlbdf); _i2 < _Object$entries2.length; _i2++) {
+      var _Object$entries2$_i = _slicedToArray(_Object$entries2[_i2], 2),
+          key = _Object$entries2$_i[0],
+          value = _Object$entries2$_i[1];
+
       if (!value) {
         return key;
       }
@@ -356,26 +381,32 @@ function getAnyDictValue(vlbdf) {
   }
 }
 function checkDict(dictvar, cxzvd) {
-  const asdrae = dictvar ? {
-    listItemName: cxzvd,
-    ...dictvar[cxzvd]
-  } : cxzvd;
+  var asdrae = dictvar ? _objectSpread2({
+    listItemName: cxzvd
+  }, dictvar[cxzvd]) : cxzvd;
   return asdrae;
 }
 function mapDictAttr(obj, dictvar) {
-  for (const [key, value] of Object.entries(dictvar)) {
+  for (var _i3 = 0, _Object$entries3 = Object.entries(dictvar); _i3 < _Object$entries3.length; _i3++) {
+    var _Object$entries3$_i = _slicedToArray(_Object$entries3[_i3], 2),
+        key = _Object$entries3$_i[0],
+        value = _Object$entries3$_i[1];
+
     obj[key] = value;
   }
 
   return obj;
 }
 function mapDictNew(dictvar, nqeo) {
-  const iase = {};
+  var iase = {};
 
-  for (const [key, value] of Object.entries(dictvar)) {
-    const sdoeae = { ...value,
-      ...nqeo
-    };
+  for (var _i4 = 0, _Object$entries4 = Object.entries(dictvar); _i4 < _Object$entries4.length; _i4++) {
+    var _Object$entries4$_i = _slicedToArray(_Object$entries4[_i4], 2),
+        key = _Object$entries4$_i[0],
+        value = _Object$entries4$_i[1];
+
+    var sdoeae = _objectSpread2(_objectSpread2({}, value), nqeo);
+
     iase[key] = sdoeae;
   }
 
@@ -384,18 +415,18 @@ function mapDictNew(dictvar, nqeo) {
 function mapDictAttrToString(listvar, join, dictvar) {
   //
   function sigjt(dfigjtr) {
-    const ijfge = typeof dfigjtr == "string";
-    const bifdre = ijfge ? dfigjtr : "";
+    var ijfge = typeof dfigjtr == "string";
+    var bifdre = ijfge ? dfigjtr : "";
     return bifdre;
   }
 
   function sidjfer(asda) {
-    const dfigjtr = dictvar && dictvar[asda];
+    var dfigjtr = dictvar && dictvar[asda];
     return turnarray(dfigjtr).map(sigjt);
   }
 
-  const okasasd = listvar.map(sidjfer);
-  const ofkew = joinString$1(okasasd, join);
+  var okasasd = listvar.map(sidjfer);
+  var ofkew = joinString$1(okasasd, join);
   return ofkew;
 }
 function removeEmptyDict(obj) {
@@ -407,7 +438,13 @@ function removeEmptyDict(obj) {
   //   }
   // }
   // return obj;
-  return Object.fromEntries(Object.entries(obj).filter(([_, v]) => v != null));
+  return Object.fromEntries(Object.entries(obj).filter(function (_ref) {
+    var _ref2 = _slicedToArray(_ref, 2);
+        _ref2[0];
+        var v = _ref2[1];
+
+    return v != null;
+  }));
 }
 function removeKeyDict(params, itemo) {
   delete params[itemo]; // omit(params, itemo)
@@ -421,18 +458,26 @@ function removeKeyList(parmas, listo) {
   return parmas;
 }
 function mapDictVals(dictvar) {
-  const toksaew = [];
+  var toksaew = [];
 
-  for (const [key, value] of Object.entries(dictvar)) {
+  for (var _i5 = 0, _Object$entries5 = Object.entries(dictvar); _i5 < _Object$entries5.length; _i5++) {
+    var _Object$entries5$_i = _slicedToArray(_Object$entries5[_i5], 2);
+        _Object$entries5$_i[0];
+        var value = _Object$entries5$_i[1];
+
     toksaew.push(value);
   }
 
   return toksaew;
 }
 function mapDictKey(dictvar) {
-  const toksaew = [];
+  var toksaew = [];
 
-  for (const [key, value] of Object.entries(dictvar)) {
+  for (var _i6 = 0, _Object$entries6 = Object.entries(dictvar); _i6 < _Object$entries6.length; _i6++) {
+    var _Object$entries6$_i = _slicedToArray(_Object$entries6[_i6], 2),
+        key = _Object$entries6$_i[0];
+        _Object$entries6$_i[1];
+
     toksaew.push(key);
   }
 
@@ -440,22 +485,28 @@ function mapDictKey(dictvar) {
 } // 1map
 
 function mapDictFunc(dictvar, dictfunc) {
-  const ijsdase = {};
+  var ijsdase = {};
 
-  for (const [key, value] of Object.entries(dictvar)) {
+  for (var _i7 = 0, _Object$entries7 = Object.entries(dictvar); _i7 < _Object$entries7.length; _i7++) {
+    var _Object$entries7$_i = _slicedToArray(_Object$entries7[_i7], 2),
+        key = _Object$entries7$_i[0],
+        value = _Object$entries7$_i[1];
+
     ijsdase[key] = dictfunc(value);
   }
 
   return ijsdase;
 }
 function mapDictKeyToValue(dict, attr) {
-  const sdjfer = {};
+  var sdjfer = {};
 
-  for (const [key, value] of Object.entries(dict)) {
-    const jsfer = {
-      [attr]: key,
-      ...value
-    };
+  for (var _i8 = 0, _Object$entries8 = Object.entries(dict); _i8 < _Object$entries8.length; _i8++) {
+    var _Object$entries8$_i = _slicedToArray(_Object$entries8[_i8], 2),
+        key = _Object$entries8$_i[0],
+        value = _Object$entries8$_i[1];
+
+    var jsfer = _objectSpread2(_defineProperty({}, attr, key), value);
+
     sdjfer[key] = jsfer;
   }
 
@@ -470,14 +521,12 @@ function createNewDictFromAttr(arrvar, attr) {
 }
 function convertObjectDict(obj) {
   function odkaeww(key) {
-    let okdsa = {
-      [key]: obj[key]
-    };
+    var okdsa = _defineProperty({}, key, obj[key]);
     return okdsa;
   }
 
-  let iase = Object.keys(obj);
-  let oaksde = iase.map(odkaeww);
+  var iase = Object.keys(obj);
+  var oaksde = iase.map(odkaeww);
 
   return oaksde;
 } // export function mapDictFunc(dictvar, dictfunc) {
@@ -3488,6 +3537,46 @@ function BearBackForward({
     vertAlign: true
   }, uawhe)));
   return ijwqeq;
+}
+
+function BearButtonDownload({
+  //
+  fileName,
+  json,
+  ...args
+}) {
+  const sdifjewr = //
+  fileName; // 1const
+  // 1json FON
+
+  function downJSON() {
+    var _myArray = JSON.stringify(json, null, 4); //indentation in json format, human readable
+
+
+    var vLink = document.createElement("a"),
+        vBlob = new Blob([_myArray], {
+      type: "octet/stream"
+    }),
+        vName = sdifjewr,
+        vUrl = window.URL.createObjectURL(vBlob);
+    vLink.setAttribute("href", vUrl);
+    vLink.setAttribute("download", vName);
+    vLink.click();
+  }
+
+  function downlood() {
+    if (json) {
+      downJSON();
+    }
+  }
+
+  const okfdsd = /*#__PURE__*/React.createElement(React.Fragment, null, "sssss");
+  args = {
+    obj: okfdsd,
+    onClick: downlood,
+    ...args
+  };
+  return /*#__PURE__*/React.createElement(BearButton, args);
 }
 
 const emojiDict = {
@@ -6927,5 +7016,5 @@ function BearSearchList({
   return BearCheckList("BearSearchList", dfjgert, baseargs); // return kdserase;
 }
 
-export { BearAttrNeeds, BearAuthPortal, BearBackBorder, BearBackForward, BearBlankLink, BearBorder, BearButton, BearButtonList, BearCheckMain, BearContextProvider, BearCopy, BearDiv$1 as BearDiv, BearDivMain, BearEmoji, BearErASDJIQWE, BearErrArgType$1 as BearErrArgType, BearErrMiss, BearError, BearFalseLog, BearFlex, BearFloat, BearForm, BearFormList, BearHideError, BearIcon, BearIconText, BearImage, BearLink, BearList, BearListComp, BearLog, BearMissing, BearModel, BearPlural, BearPossess, BearQuote, BearSearchList, BearSelect, BearSocialBase, BearSocialLinks, BearSocialShare, BearSpace, BearSpan, BearSurround, BearSwitch, BearTags, BearTextMedia, BearTitle, BearUpper, BearWrap, Exmapl, FlexHorz, FormBase, ImageAlign, ImageGroup, InputBaseCheck, InputForm, InputMain, ListFlex, ListReturn, LoadMain, PagePad, SliderMain, SwitchComp, addArray, addArrayNumber, addRemoveArray, argMiss, argPass, checkAllArray, checkDict, checkEmptyArray, checkFullArray, checkLenArray, convertObjectDict, createNewDictFromAttr, cxadfa, dfkbijv, filterDictArray, firstInputCheck, functioMa, getAnyDictValue, getEnchancedArray, getExtString, getFirstArr, getLength, getListAll, joinString$1 as joinString, linkBase, logFuncs as logs, mapArrFunc, mapDictAttr, mapDictAttrToString, mapDictFunc, mapDictKey, mapDictKeyToValue, mapDictMain, mapDictNew, mapDictVals, mapFunc, mapFuncDict, mapInnerAttr, mapInnerJoin, mapListDict, mapReturn, mapSelectEnd, mapSelectValue, mapValue, matchDictAttr, mipBase, moveItemArray, moveItemFront, moveItemToFront, nameComb, objectTrue, quoteSurround, removeArray, removeArrayArray, removeEmptyArray, removeEmptyDict, removeItemArray, removeKeyDict, removeKeyList, sliceArray, spaceSurround, stringinarray, turnDict, turnarray };
+export { BearAttrNeeds, BearAuthPortal, BearBackBorder, BearBackForward, BearBlankLink, BearBorder, BearButton, BearButtonDownload, BearButtonList, BearCheckMain, BearContextProvider, BearCopy, BearDiv$1 as BearDiv, BearDivMain, BearEmoji, BearErASDJIQWE, BearErrArgType$1 as BearErrArgType, BearErrMiss, BearError, BearFalseLog, BearFlex, BearFloat, BearForm, BearFormList, BearHideError, BearIcon, BearIconText, BearImage, BearLink, BearList, BearListComp, BearLog, BearMissing, BearModel, BearPlural, BearPossess, BearQuote, BearSearchList, BearSelect, BearSocialBase, BearSocialLinks, BearSocialShare, BearSpace, BearSpan, BearSurround, BearSwitch, BearTags, BearTextMedia, BearTitle, BearUpper, BearWrap, Exmapl, FlexHorz, FormBase, ImageAlign, ImageGroup, InputBaseCheck, InputForm, InputMain, ListFlex, ListReturn, LoadMain, PagePad, SliderMain, SwitchComp, addArray, addArrayNumber, addRemoveArray, argMiss, argPass, checkAllArray, checkDict, checkEmptyArray, checkFullArray, checkLenArray, convertObjectDict, createNewDictFromAttr, cxadfa, dfkbijv, filterDictArray, firstInputCheck, functioMa, getAnyDictValue, getEnchancedArray, getExtString, getFirstArr, getLength, getListAll, joinString$1 as joinString, linkBase, logFuncs as logs, mapArrFunc, mapDictAttr, mapDictAttrToString, mapDictFunc, mapDictKey, mapDictKeyToValue, mapDictMain, mapDictNew, mapDictVals, mapFunc, mapFuncDict, mapInnerAttr, mapInnerJoin, mapListDict, mapReturn, mapSelectEnd, mapSelectValue, mapValue, matchDictAttr, mipBase, moveItemArray, moveItemFront, moveItemToFront, nameComb, objectTrue, quoteSurround, removeArray, removeArrayArray, removeEmptyArray, removeEmptyDict, removeItemArray, removeKeyDict, removeKeyList, sliceArray, spaceSurround, stringinarray, turnDict, turnarray };
 //# sourceMappingURL=index.esm.js.map

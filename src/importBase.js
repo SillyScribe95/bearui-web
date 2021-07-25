@@ -1,4 +1,3 @@
-
 // 1components
 
 // 1div
@@ -21,6 +20,7 @@ export * from "./components/BearFloat";
 // 1button
 export * from "./components/button/BearButton";
 export * from "./components/button/BearBackForward";
+export * from "./components/button/BearButtonDownload";
 
 // 1list 1list
 export * from "./components/list/BearList";
@@ -38,7 +38,6 @@ export * from "./components/BearModel";
 // 1form
 export * from "./components/form/BearForm";
 export * from "./components/form/FormBase";
-
 
 // 1auth
 export * from "./components/user/BearAuthPortal";
