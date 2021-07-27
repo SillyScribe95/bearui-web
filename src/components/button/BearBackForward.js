@@ -11,7 +11,7 @@ import { BearFlex } from "../GlobalComps";
 import {
   //
   logs,
-} from "../../index"
+} from "../../index";
 
 export function BearBackForward({
   obj,
@@ -92,10 +92,10 @@ export function BearBackForward({
   }
 
   // 1float
-  function Flaoto(){
+  function Flaoto() {
     const ksdfasd = {
       // topLeft
-    }
+    };
   }
 
   const uawhe = {
@@ -108,21 +108,16 @@ export function BearBackForward({
       </>
     ),
     // list: [xcijsdf, children, dfgkmre],
-    // leftobj: xcijsdf,
-    // centerobj: children,
-    // rightobj: dfgkmre,
+    // left: xcijsdf,
+    // center: children,
+    // right: dfgkmre,
     padvar: "5px",
     ...argssdf,
   };
 
   const ijwqeq = (
     <>
-      <BearDiv
-        flex
-        vertAlign
-        {...uawhe}
-      />
-    
+      <BearDiv flex vertAlign {...uawhe} />
     </>
   );
 

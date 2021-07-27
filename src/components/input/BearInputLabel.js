@@ -210,8 +210,8 @@ export function BearInputLabel({
 
     const dfigjrt = <BearDiv {...cvobkof} />;
     const kcmdr = {
-      centerobj: ioakawe,
-      rightobj: dfigjrt,
+      center: ioakawe,
+      right: dfigjrt,
     };
 
     const ijcwe = BearFloat(kcmdr);

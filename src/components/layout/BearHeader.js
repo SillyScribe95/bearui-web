@@ -44,7 +44,7 @@ import HeaderCenter from "../containers/header/HeaderCenter";
 
 import BediaLogo from "../containers/bedia/BediaLogo";
 
-export default function HeaderContent({ stepTrue, centerobj, ...asdwew }) {
+export default function HeaderContent({ stepTrue, center, ...asdwew }) {
   //
 
   const {
@@ -399,7 +399,7 @@ export default function HeaderContent({ stepTrue, centerobj, ...asdwew }) {
   };
   const cbijdf = stepTrue && <BearDiv {...uahqwe} />;
 
-  // {/* <BearDiv obj={centerobj} /> */}
+  // {/* <BearDiv obj={center} /> */}
 
   let oaskwe = joinString(
     [
@@ -440,8 +440,8 @@ export default function HeaderContent({ stepTrue, centerobj, ...asdwew }) {
           > */}
         <Nav {...midHeada}>
           {/* asfdokwe */}
-          {/* {centerobj} */}
-          {centerobj ? centerobj : <HeadCenter />}
+          {/* {center} */}
+          {center ? center : <HeadCenter />}
         </Nav>
         <Nav
           //

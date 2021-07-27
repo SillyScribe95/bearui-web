@@ -90,7 +90,7 @@ export function BearSocialBase({
     };
 
     // textvar: toolText,
-    // leftobj: iconvar,
+    // left: iconvar,
     // popContent: toolText,
 
     const jsaease = {

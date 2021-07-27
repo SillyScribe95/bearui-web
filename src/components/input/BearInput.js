@@ -3,7 +3,7 @@ import React, {
   useState,
   useContext,
 } from "react";
-import { logs } from "../../index"
+import { logs } from "../../index";
 import {
   Button,
   NumberInputField,
@@ -29,7 +29,7 @@ export function BearInput({
 }
 
 export function RendGroup(
-  centerObj,
+  center,
   { renderInput, inputLeft, leftConfig, inputRight, rightConfig, ...asdsd }
 ) {
   const leftRendos = inputLeft && (
@@ -57,11 +57,11 @@ export function RendGroup(
     <InputGroup {...sdresar}>
       {/*  */}
       {leftRendos}
-      {centerObj}
+      {center}
       {rightRendos}
     </InputGroup>
   ) : (
-    centerObj
+    center
   );
 
   const dfgjer = renderInput ? renderInput(cvdfsoe) : cvdfsoe;

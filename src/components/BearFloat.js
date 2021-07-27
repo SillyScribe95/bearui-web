@@ -6,10 +6,10 @@ import React, {
 import {
   //
   logs,
-} from "../index"
+} from "../index";
 import { vertAlign } from "../consts/genStyle";
 import { BearDiv } from "./BearDiv";
-// import { Flex, Spacer } from "@chakra-ui/react";
+import { Flex, Spacer } from "@chakra-ui/react";
 
 export function BearFloat({
   //
@@ -41,12 +41,12 @@ export function BearFloat({
   bottomRightConfig = {},
   //
   //
-  leftobj,
+  left,
   leftConfig = {},
-  centerobj,
+  center,
   children,
   centerConfig = {},
-  rightobj,
+  right,
   rightConfig = {},
   noVertAlign,
   logtrue,
@@ -90,30 +90,30 @@ export function BearFloat({
 
   let sasease =
     //
-    // leftobj;
-    leftobj || showLeft;
+    // left;
+    left || showLeft;
 
   // 1left
   const lefto = sasease && (
     <>
       <div {...jndf}>
         {/*  */}
-        {leftobj}
+        {left}
       </div>
-      {/* {!noSpace && <Spacer />} */}
+      {!noSpace && <Spacer />}
     </>
   );
 
   const kdsdf = {
     ...centerConfig,
-    style: { textAlign: "center", ...centerConfig.style },
+    // style: { textAlign: "center", ...centerConfig.style },
   };
 
   const centio = (
     <div {...kdsdf}>
       {/*  */}
       {/* asdowe */}
-      {centerobj || children}
+      {center || children}
     </div>
   );
 
@@ -124,28 +124,27 @@ export function BearFloat({
   };
 
   // right
-  let askdw = rightobj || showRight;
+  let askdw = right || showRight;
   const rightos = (
     <>
-      {/* {!noSpace && <Spacer />} */}
+      {!noSpace && <Spacer />}
       <div {...ijsad}>
         {/* sdokw */}
-        {rightobj}
+        {right}
       </div>
     </>
   );
 
-      // position: "absolute",
+  // position: "absolute",
 
-  function sfewr(itemo, {style, ...adsf}, ...were) {
-
-   adsf = {
-     style: {
-      position: "absolute",
-      ...style
-    },
-    ...adsf,
-   }
+  function sfewr(itemo, { style, ...adsf }, ...were) {
+    adsf = {
+      style: {
+        position: "absolute",
+        ...style,
+      },
+      ...adsf,
+    };
 
     return itemo && eqweew(itemo, adsf, ...were);
   }
@@ -204,19 +203,19 @@ export function BearFloat({
   const ksaewe = (
     <>
       {/* {isjfwe} */}
-      {/* {lefto} */}
-      {eqweew(leftobj, leftConfig, {
+      {lefto}
+      {/* {eqweew(left, leftConfig, {
         padding: "0 10px",
         marginRight: "auto",
         // left: paddingHorz,
-      })}
+      })} */}
       {sokwerr}
-      {/* {rightos} */}
-      {eqweew(rightobj, rightConfig, {
+      {rightos}
+      {/* {eqweew(right, rightConfig, {
         padding: "0 10px",
         marginLeft: "auto",
         // right: paddingHorz,
-      })}
+      })} */}
     </>
   );
 
@@ -238,7 +237,7 @@ export function BearFloat({
   const noSides =
     //
     // "";
-    !leftobj && !rightobj;
+    !left && !right;
 
   disvar =
     //
@@ -269,8 +268,8 @@ export function BearFloat({
       layoutType,
       topLeft,
       topRight,
-      leftobj,
-      rightobj,
+      left,
+      right,
       ...args,
     });
   }

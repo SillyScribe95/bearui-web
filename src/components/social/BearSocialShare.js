@@ -100,7 +100,7 @@ export function BearSocialShare({
       ...mainIco,
       iconvar,
       // textvar: toolText,
-      // leftobj: iconvar,
+      // left: iconvar,
       noVertTop: true,
       // popContent: toolText,
       padvar: 5,

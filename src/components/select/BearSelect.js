@@ -10,6 +10,7 @@ import AsyncCreatableSelect from "react-select/async-creatable";
 import { logs } from "../../index";
 import {
   //
+  removeItemArray,
   mapSelectValue,
 } from "../../index";
 import { BearIcon } from "../BearIcon";
@@ -175,21 +176,29 @@ export function BearSelect({
     return dokdfew;
   }
 
-  // !sodkfre
-  //     ? type
-  //     :
+  const sdjfre =
+    //
+    optionsArray;
+  // !optionsArray
+  //   ? ""
+  //   : initialValue
+  //   ? removeItemArray(optionsArray, initialValue)
+  //   : optionsArray;
+
+  logs.logga("___ ARRAY sdjfre ___", sdjfre);
+
   let vbmofd =
     //
-    options
-      ? options
-      : optionsArray
-      ? mapSelectValue(optionsArray, {})
-      : initOptions;
+    options ? options : sdjfre ? asdiwje9(sdjfre) : initOptions;
 
   let dsfijaae =
     //
     // optBase;
     vbmofd;
+
+  function asdiwje9(xckjvf) {
+    return mapSelectValue(xckjvf, {});
+  }
 
   // 1option STYLE
   function optRdio({ color, width, ...base }, { isDisabled }) {
@@ -253,18 +262,13 @@ export function BearSelect({
 
     const sdoewr = !noMenuBorder && bsao;
 
-    const misdfs = menuHeight && {
-      height: menuHeight,
-      // menuHeight:
-    };
-
     const oasde = {
       // paddingRight: "0 100px",
       marginTop: "0px",
       ...sdoewr,
       ...menuStyle,
       ...aaese,
-      ...misdfs,
+      // ...misdfs,
     };
 
     logs.logga("___ beaselect MENU HEIGHT ___", oasde);
@@ -287,14 +291,15 @@ export function BearSelect({
     return allSty(iksdrqe, "control");
   }
 
-  function allLios(styles) {
+  // 1menulist
+  function allLios({ maxHeight, ...styles }) {
     const oksdr = {
       ...styles,
       //
       // padding: "0 100px",
       // WebkitOverflowScrolling: "",
       // boxSizing: "",
-      // ...misdfs,
+      ...misdfs,
       // paddingTop: "-30px",
     };
 
@@ -325,6 +330,12 @@ export function BearSelect({
 
     return allSty(cvbf, "noOptions");
   }
+
+  // 1height
+  const misdfs = menuHeight && {
+    height: menuHeight,
+    // menuHeight:
+  };
 
   //   1styles
   const stylBasoe = {
@@ -383,7 +394,7 @@ export function BearSelect({
       noValueReturn ? params : multi ? params.map(ijsdre) : params.value;
 
     if ("logtrue") {
-      logs.loggo(messvar + "__SELECT onChange____", params);
+      logs.logga(messvar + "__SELECT onChange____", params);
     }
 
     // const ojsde = onChangeDict = onChangeDict
@@ -545,9 +556,12 @@ export function BearSelect({
   };
 
   // 1input
-  const fgoktr = {
+  const fgoktr = initialValue && {
     // initialValue: initialValue,
-    defaultInputValue: initialValue,
+    // defaultInputValue: initialValue,
+    defaultValue: asdiwje9(initialValue),
+    // value: asdiwje9(initialValue),
+    // defaultValue: {label: initialValue, value: initialValue },
     // inputValue: initialValue,
   };
 

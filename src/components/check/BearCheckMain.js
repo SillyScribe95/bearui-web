@@ -3,7 +3,7 @@ import React, {
   useState,
   useContext,
 } from "react";
-import { logs, getAnyDictValue } from "../../index"
+import { logs, getAnyDictValue } from "../../index";
 import { BearTitle } from "../title/BearTitle";
 import { BearDiv } from "../BearDiv";
 import { BearFloat } from "../BearFloat";
@@ -15,9 +15,8 @@ import {
 } from "../GlobalComps";
 import { BearError } from "../BearError";
 
-
-export function BearCheckMain(asdf, zczx, sdfwe={}){
-  return dfkbijv(asdf, zczx, sdfwe)
+export function BearCheckMain(asdf, zczx, sdfwe = {}) {
+  return dfkbijv(asdf, zczx, sdfwe);
 }
 // bearbase
 export function dfkbijv(
@@ -144,7 +143,7 @@ export function dfkbijv(
 
   const jfdert = {
     topRight: advert && Adverto(advertConfig),
-    // centerobj: ,
+    // center: ,
     paddingVert: "5px",
     centerConfig: disjwe,
   };

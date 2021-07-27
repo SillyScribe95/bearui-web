@@ -257,7 +257,7 @@ export function mapSelectValue(arrBig, { dictvar, labelFunc, valueFunc, isDisabl
     dictvar: dictvar,
   });
 
-  const dretjer = arrBig.map(asijdwe);
+  const dretjer = mapFunc(arrBig, asijdwe);
 
   return dretjer;
 }

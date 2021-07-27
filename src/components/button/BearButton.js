@@ -7,7 +7,7 @@ import { BearDiv } from "../../components/BearDiv";
 import {
   //
   logs,
-} from "../../index"
+} from "../../index";
 
 export function BearButton({
   textConfig,
@@ -113,7 +113,7 @@ export function BearButton({
     width: "100%",
   };
 
-// 1style
+  // 1style
   const baseStlas = {
     cursor: "pointer",
     fontSize,
@@ -206,7 +206,7 @@ export function BearButton({
   // 1console
   logs.logga("___ sfasdokwe ___", sfasdokwe);
 
-  function GroupBase({ rightobj, leftobj, leftConfig, rightConfig, ...qwe }) {
+  function GroupBase({ right, left, leftConfig, rightConfig, ...qwe }) {
     const nidsfjer = {
       // size: "sm",
       // isAttached: true,
@@ -226,9 +226,9 @@ export function BearButton({
     const nsdijs =
       //
       "";
-    // rightobj && (
+    // right && (
     //   <Button {...rghtFunnp}>
-    //     <div {...nsidjew}>{rightobj}</div>{" "}
+    //     <div {...nsidjew}>{right}</div>{" "}
     //   </Button>
     // );
 

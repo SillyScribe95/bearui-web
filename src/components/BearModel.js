@@ -32,6 +32,8 @@ export function BearModel({
   warnDelete,
   deleteConfig,
   //
+  buttonLayout = "bottom",
+  //
   ...args
 }) {
   // 1const
@@ -80,25 +82,28 @@ export function BearModel({
 
   const kmfase = {
     // noText: onlyIcons && true,
-    ...buttonConfig,
   };
 
   const isdre = {
     bearName: "sodkwqe",
     list: ["delete"],
-    horiz: true,
     typeList: "button",
     // ...iconConfig,
     dictvar: { ...isdfewr, ...dictvar },
     ...argMiss(args),
-    itemConfig: kmfase,
+    // itemConfig: kmfase,
+    ...buttonConfig,
   };
+
+  // 1console
+  logs.logga("___ brModel isdre ___", isdre);
 
   const ijdwer = <BearList {...isdre} />;
 
   args = {
-    leftobj: okfdsd,
-    rightobj: ijdwer,
+    center: okfdsd,
+    // right: ijdwer,
+    [buttonLayout]: ijdwer,
     noVertAlign: true,
     // floatConfi:
     ...argPass(args),

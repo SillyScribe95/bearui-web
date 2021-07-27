@@ -1,6 +1,7 @@
 import prettyFormat from 'pretty-format';
 import { sortBy, filter, isEmpty, remove, chunk } from 'lodash';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { Spacer, Checkbox, ChakraProvider, Modal, Textarea, InputGroup, InputLeftElement, InputRightElement, Input, NumberInput, NumberInputField, NumberInputStepper, NumberIncrementStepper, NumberDecrementStepper } from '@chakra-ui/react';
 import { MdArrowBack, MdArrowForward, MdPlaylistPlay } from 'react-icons/md';
 import { TiStar } from 'react-icons/ti';
 import { BiExpand, BiShare, BiEditAlt, BiCommentDetail } from 'react-icons/bi';
@@ -11,7 +12,6 @@ import { AiOutlinePlus, AiOutlineInfoCircle, AiOutlineCloseCircle, AiFillDelete,
 import { FiSettings } from 'react-icons/fi';
 import { RiTimerLine } from 'react-icons/ri';
 import { FaCopy, FaCheck, FaSignOutAlt, FaPlay, FaQuoteLeft, FaQuoteRight, FaCode } from 'react-icons/fa';
-import { Checkbox, ChakraProvider, Modal, Textarea, InputGroup, InputLeftElement, InputRightElement, Input, NumberInput, NumberInputField, NumberInputStepper, NumberIncrementStepper, NumberDecrementStepper } from '@chakra-ui/react';
 import { Controller, useForm } from 'react-hook-form';
 import ResizeTextarea from 'react-textarea-autosize';
 import { passwordStrength } from 'check-password-strength';
@@ -57,262 +57,46 @@ function styleInject(css, ref) {
 var css_248z = ".item.selected{background:#177779;color:#fff;border-color:#206748}.lp-copy-sel__option,.lp-copy-sel__single-value{white-space:pre-wrap!important}.vidobbo::-webkit-scrollbar{display:none}.fadeOut{opacity:0;width:0;height:0;transition:width .5s .5s,height .5s .5s,opacity .5s}.fadeIn{opacity:1;width:100px;height:100px;transition:width .5s,height .5s,opacity .5s .5s}.noresize{resize:none}.vidobbo{-ms-overflow-style:none}.ant-btn-clicked:after,[ant-click-animating-without-extra-node]:after{-webkit-animation:none!important;-moz-animation:none!important;-o-animation:none!important;-ms-animation:none!important;animation:none!important}.ais-InstantSearch__root{display:flex;border:1px solid grey}.btn:hover{opacity:1}.selectHov:hover{background:green}.selectHov{transition:.3s}.selectHov:hover{background:red}.hoverMain{position:relative}.hoverMain.no-hover:hover{opacity:1}.hoverMain.no-hover{opacity:0}.hoverMain.hover{opacity:1}.hoverMain.hover:hover{opacity:0}.wrapQuotes:before{content:\"❝\"}.wrapQuotes:after{content:\"❞\"}.playText:hover{cursor:pointer}.playTextLight:hover{background-color:#e5e5e5;cursor:pointer}.playTextDark:hover{color:#00f;cursor:pointer}.playCurrent{background-color:purple}.ant-list-item{padding:0}.iconNum{padding:0 1px}.vertCont{align-items:center}.vertAlign,.vertBox{display:flex;align-items:center}.vertAlign{justify-content:\"center\";vertical-align:middle}.vertTop{display:flex;align-items:top;vertical-align:top}.lineBetween:after{content:\"\";height:100%;border-right:1px solid #d3d3d3}.nowap{white-space:nowap;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical}.wrap{-webkit-line-clamp:1}.wrap,.wrapTwo{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical}.wrapTwo{-webkit-line-clamp:2}.hiddenTrue{display:none;display:block}.hideSect{display:hidden}.scrollTrue{overflow:scroll}.overflow-scrolling{overflow:auto;-webkit-overflow-scrolling:touch}.pulseTrue{cursor:pointer;border:3px solid transparent;transition:.3s}.pulseTrue:hover{border:3px solid #add8e6}.greyHover,.pointer:hover{cursor:pointer}.greyHover:hover{cursor:pointer;background:radial-gradient(circle,#fff 0,hsla(0,0%,60.4%,.2) 100%,#fff 0)}.circleHover,.circleHover:hover{border-radius:50%;padding:5px}.shadowBottom{box-shadow:inset 0 4px 2px -2px grey}.lighthover{transition:.1s}.lightHover:hover{cursor:pointer;border:2px solid #00164d}.sdfaszxc{opacity:.8;padding-left:5px;transition:.1s}.sdfaszxc:hover{cursor:pointer;opacity:1}.buttonBase{background-color:initial;background-repeat:no-repeat;border:none;cursor:pointer;overflow:hidden;outline:none}.buttonHover,.buttonMain{cursor:pointer;border-radius:5px;border:2px solid transparent;transition:.1s;padding:2px 5px}.buttonHover:hover{border:2px solid #2c4179}.borderRound{border:2px solid #00008b;border-radius:5px}.borderHover,.borderMain{border:2px solid #d3d3d3;transition:.1s;border-radius:5px}.error{color:red}.error,.titleMain{font-weight:700}.shadowMain{border:2px solid #d3d3d3;transition:.1s;border-radius:5px}.bordeViddo{background:#000;border:2px solid #fff}.darkenBehind{text-shadow:0 0 10px #00f}.darkenOver{background:linear-gradient(180deg,transparent 0,#000)}.speakSelect{background:#add8e6;border:2px solid #00008b;transition:.3s}.buttonselect{border:15px solid red}.transitMain{transition:background-color 1s linear;-webkit-transition:background-color 1s linear;transition:color .3s linear;-webkit-transition:color .3s linear}.popAnim{-webkit-transition:color .25s;transition:color .25s}.popAnim:after,.popAnim:before{border:2px solid transparent;width:0;height:0}.popAnim:before{top:0;left:0}.popAnim:after{bottom:0;right:0}.popAnim:hover{color:#60daaa}.popAnim:hover:after,.popAnim:hover:before{width:100%;height:100%}.popAnim:hover:before{border-top-color:#60daaa;border-right-color:#60daaa;-webkit-transition:width .25s ease-out,height .25s ease-out .25s;transition:width .25s ease-out,height .25s ease-out .25s}.popAnim:hover:after{border-bottom-color:#60daaa;border-left-color:#60daaa;-webkit-transition:border-color 0s ease-out .5s,width .25s ease-out .5s,height .25s ease-out .75s;transition:border-color 0s ease-out .5s,width .25s ease-out .5s,height .25s ease-out .75s}.backMain{background-color:#f3f3f3}.flashBox{border:2px solid transparent}.flashBox:hover{border-color:red;animation-name:flash_border;animation-duration:2s;animation-timing-function:linear;animation-iteration-count:infinite;-webkit-animation-name:flash_border;-webkit-animation-duration:2s;-webkit-animation-timing-function:linear;-webkit-animation-iteration-count:infinite;-moz-animation-name:flash_border;-moz-animation-duration:2s;-moz-animation-timing-function:linear;-moz-animation-iteration-count:infinite}@keyframes flash_border{0%{border-color:transparent}50%{border-color:#00f}to{border-color:transparent}}.linkPlush{font-weight:10;color:#fff}.linkPlush:hover{text-decoration:underline}.linkPlush:active{color:#add8e6}.hoverPointer{cursor:pointer}.selectMain{background:red}.selectMain:hover{background-color:#00f}.highText{color:red;border-radius:50px}.textpopup{background:#00f;transition:3s;transform:translateY(-100%)}.animate-bottom{-webkit-animation-name:animatebottom;-webkit-animation-duration:.5s;animation-name:animatebottom;animation-duration:.5s}@keyframes animatebottom{0%{bottom:-50;opacity:0}to{bottom:0;opacity:1}}.textpopup:hover{transform:translateY(0)}.highText:hover{background-color:rgba(0,22,77,.2)}.disabled:hover{cursor:not-allowed}.shadeBorder{border:2px}.shadeBorder:hover{border:2px solid #00f}.shadeDisable{opacity:.3}.shadeDisable:hover{cursor:not-allowed}.shadeTrue{opacity:.6}.hoverOpac:hover,.shadeTrue:hover{opacity:1}.shadeReverse{opacity:.3}.shadeReverse:hover{opacity:1}.whiteHover:hover{background:#fff;color:#00164d}.expandHover{transition:transform .2s}.expandHover:hover{transform:scale(1.1)}.slick-prev{left:3%!important}.slick-next{right:3%!important}";
 styleInject(css_248z,{"insertAt":"top"});
 
-function ownKeys(object, enumerableOnly) {
-  var keys = Object.keys(object);
-
-  if (Object.getOwnPropertySymbols) {
-    var symbols = Object.getOwnPropertySymbols(object);
-
-    if (enumerableOnly) {
-      symbols = symbols.filter(function (sym) {
-        return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-      });
-    }
-
-    keys.push.apply(keys, symbols);
-  }
-
-  return keys;
-}
-
-function _objectSpread2(target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i] != null ? arguments[i] : {};
-
-    if (i % 2) {
-      ownKeys(Object(source), true).forEach(function (key) {
-        _defineProperty(target, key, source[key]);
-      });
-    } else if (Object.getOwnPropertyDescriptors) {
-      Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
-    } else {
-      ownKeys(Object(source)).forEach(function (key) {
-        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
-      });
-    }
-  }
-
-  return target;
-}
-
-function _typeof(obj) {
-  "@babel/helpers - typeof";
-
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof = function (obj) {
-      return typeof obj;
-    };
-  } else {
-    _typeof = function (obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-  }
-
-  return _typeof(obj);
-}
-
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-
-function _extends() {
-  _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
-}
-
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-
-function _objectWithoutProperties(source, excluded) {
-  if (source == null) return {};
-
-  var target = _objectWithoutPropertiesLoose(source, excluded);
-
-  var key, i;
-
-  if (Object.getOwnPropertySymbols) {
-    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-
-    for (i = 0; i < sourceSymbolKeys.length; i++) {
-      key = sourceSymbolKeys[i];
-      if (excluded.indexOf(key) >= 0) continue;
-      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
-      target[key] = source[key];
-    }
-  }
-
-  return target;
-}
-
-function _slicedToArray(arr, i) {
-  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
-}
-
-function _toConsumableArray(arr) {
-  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
-}
-
-function _arrayWithoutHoles(arr) {
-  if (Array.isArray(arr)) return _arrayLikeToArray(arr);
-}
-
-function _arrayWithHoles(arr) {
-  if (Array.isArray(arr)) return arr;
-}
-
-function _iterableToArray(iter) {
-  if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
-}
-
-function _iterableToArrayLimit(arr, i) {
-  var _i = arr && (typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]);
-
-  if (_i == null) return;
-  var _arr = [];
-  var _n = true;
-  var _d = false;
-
-  var _s, _e;
-
-  try {
-    for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) {
-      _arr.push(_s.value);
-
-      if (i && _arr.length === i) break;
-    }
-  } catch (err) {
-    _d = true;
-    _e = err;
-  } finally {
-    try {
-      if (!_n && _i["return"] != null) _i["return"]();
-    } finally {
-      if (_d) throw _e;
-    }
-  }
-
-  return _arr;
-}
-
-function _unsupportedIterableToArray(o, minLen) {
-  if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
-  var n = Object.prototype.toString.call(o).slice(8, -1);
-  if (n === "Object" && o.constructor) n = o.constructor.name;
-  if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
-}
-
-function _arrayLikeToArray(arr, len) {
-  if (len == null || len > arr.length) len = arr.length;
-
-  for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
-
-  return arr2;
-}
-
-function _nonIterableSpread() {
-  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-
-function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-
+// import * as logs from "../functions/logFuncs"
 function logga(messageIt, valY) {// logs.logga(messageIt, valY);
 }
-function loggo() {
-  var _console;
-
-  for (var _len = arguments.length, asw = new Array(_len), _key = 0; _key < _len; _key++) {
-    asw[_key] = arguments[_key];
-  }
-
+function loggo(...asw) {
   // console.log("loggo--", ...asw);
-  (_console = console).log.apply(_console, ["loggo--"].concat(asw)); // baseLog(asw)
+  console.log("loggo--", ...asw); // baseLog(asw)
   // logs.logga('logs.logga:', logs.logga)
-
 }
-function logCheck(name, first) {
-  var asuhw = //
+function logCheck(name, first, ...asw) {
+  const asuhw = //
   name == first; //
 
   if (asuhw) {
-    for (var _len2 = arguments.length, asw = new Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
-      asw[_key2 - 2] = arguments[_key2];
-    }
-
-    loggo.apply(void 0, asw);
+    loggo(...asw);
   }
 }
 
-function logge() {
-  loggo.apply(void 0, arguments); // logs.logga('logs.logga:', logs.logga)
+function logge(...sdf) {
+  loggo(...sdf); // logs.logga('logs.logga:', logs.logga)
 }
-function loggu() {// loggo(...sdf)
+function loggu(...sdf) {// loggo(...sdf)
 }
-function logJSON(messageIt, valY) {
-  var _console2;
-
-  var sodase = //
+function logJSON(messageIt, valY, ...asw) {
+  let sodase = //
   // JSON.stringify(valY)
   prettyFormat(valY);
-
-  for (var _len3 = arguments.length, asw = new Array(_len3 > 2 ? _len3 - 2 : 0), _key3 = 2; _key3 < _len3; _key3++) {
-    asw[_key3 - 2] = arguments[_key3];
-  }
-
-  (_console2 = console).log.apply(_console2, ["loggo--", messageIt, sodase].concat(asw)); // logs.logga('logs.logga:', logs.logga)
-
+  console.log("loggo--", messageIt, sodase, ...asw); // logs.logga('logs.logga:', logs.logga)
 } //   export function logga(messageIt, valY) {
 //     logs.logga(messageIt, valY);
 //   }
 
 function logLines(nubfd) {
-  var saodkwe = "-";
+  let saodkwe = "-";
 
-  for (var i = 0; i < nubfd; i++) {
+  for (let i = 0; i < nubfd; i++) {
     saodkwe += "-";
     loggo(saodkwe);
   }
 }
-function logLinas() {// loggo(...sdf)
+function logLinas(...sdf) {// loggo(...sdf)
 }
 
 var logFuncs = /*#__PURE__*/Object.freeze({
@@ -335,13 +119,12 @@ function quoteSurround(stringVar) {
   // eeeeee
   return "'" + stringVar + "'";
 }
-function joinString$1(arrayo) {
-  var strngo = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "";
+function joinString$1(arrayo, strngo = "", first = "") {
   arrayo = turnarray(arrayo);
-  var okasd = arrayo ? arrayo.join(strngo) : "";
+  const okasd = arrayo ? arrayo.join(strngo) : "";
   return okasd;
 }
-var getExtString = function getExtString(sdfweq) {
+const getExtString = sdfweq => {
   var re = /(?:\.([^.]+))?$/;
   var ext = re.exec(sdfweq)[1];
   return ext;
@@ -351,16 +134,12 @@ function turnDict(dictvar) {
   return Object.entries(dictvar);
 }
 function objectTrue(dictvar) {
-  return _typeof(dictvar) == "object";
+  return typeof dictvar == "object";
 } // 1match
 
 function matchDictAttr(vlbdf, string, attr) {
-  for (var _i = 0, _Object$entries = Object.entries(vlbdf); _i < _Object$entries.length; _i++) {
-    var _Object$entries$_i = _slicedToArray(_Object$entries[_i], 2);
-        _Object$entries$_i[0];
-        var value = _Object$entries$_i[1];
-
-    var ndifvd = attr ? value[attr] : value;
+  for (const [key, value] of Object.entries(vlbdf)) {
+    const ndifvd = attr ? value[attr] : value;
 
     if (ndifvd == string) {
       return value;
@@ -369,11 +148,7 @@ function matchDictAttr(vlbdf, string, attr) {
 }
 function getAnyDictValue(vlbdf) {
   if (vlbdf) {
-    for (var _i2 = 0, _Object$entries2 = Object.entries(vlbdf); _i2 < _Object$entries2.length; _i2++) {
-      var _Object$entries2$_i = _slicedToArray(_Object$entries2[_i2], 2),
-          key = _Object$entries2$_i[0],
-          value = _Object$entries2$_i[1];
-
+    for (const [key, value] of Object.entries(vlbdf)) {
       if (!value) {
         return key;
       }
@@ -381,32 +156,26 @@ function getAnyDictValue(vlbdf) {
   }
 }
 function checkDict(dictvar, cxzvd) {
-  var asdrae = dictvar ? _objectSpread2({
-    listItemName: cxzvd
-  }, dictvar[cxzvd]) : cxzvd;
+  const asdrae = dictvar ? {
+    listItemName: cxzvd,
+    ...dictvar[cxzvd]
+  } : cxzvd;
   return asdrae;
 }
 function mapDictAttr(obj, dictvar) {
-  for (var _i3 = 0, _Object$entries3 = Object.entries(dictvar); _i3 < _Object$entries3.length; _i3++) {
-    var _Object$entries3$_i = _slicedToArray(_Object$entries3[_i3], 2),
-        key = _Object$entries3$_i[0],
-        value = _Object$entries3$_i[1];
-
+  for (const [key, value] of Object.entries(dictvar)) {
     obj[key] = value;
   }
 
   return obj;
 }
 function mapDictNew(dictvar, nqeo) {
-  var iase = {};
+  const iase = {};
 
-  for (var _i4 = 0, _Object$entries4 = Object.entries(dictvar); _i4 < _Object$entries4.length; _i4++) {
-    var _Object$entries4$_i = _slicedToArray(_Object$entries4[_i4], 2),
-        key = _Object$entries4$_i[0],
-        value = _Object$entries4$_i[1];
-
-    var sdoeae = _objectSpread2(_objectSpread2({}, value), nqeo);
-
+  for (const [key, value] of Object.entries(dictvar)) {
+    const sdoeae = { ...value,
+      ...nqeo
+    };
     iase[key] = sdoeae;
   }
 
@@ -415,18 +184,18 @@ function mapDictNew(dictvar, nqeo) {
 function mapDictAttrToString(listvar, join, dictvar) {
   //
   function sigjt(dfigjtr) {
-    var ijfge = typeof dfigjtr == "string";
-    var bifdre = ijfge ? dfigjtr : "";
+    const ijfge = typeof dfigjtr == "string";
+    const bifdre = ijfge ? dfigjtr : "";
     return bifdre;
   }
 
   function sidjfer(asda) {
-    var dfigjtr = dictvar && dictvar[asda];
+    const dfigjtr = dictvar && dictvar[asda];
     return turnarray(dfigjtr).map(sigjt);
   }
 
-  var okasasd = listvar.map(sidjfer);
-  var ofkew = joinString$1(okasasd, join);
+  const okasasd = listvar.map(sidjfer);
+  const ofkew = joinString$1(okasasd, join);
   return ofkew;
 }
 function removeEmptyDict(obj) {
@@ -438,13 +207,7 @@ function removeEmptyDict(obj) {
   //   }
   // }
   // return obj;
-  return Object.fromEntries(Object.entries(obj).filter(function (_ref) {
-    var _ref2 = _slicedToArray(_ref, 2);
-        _ref2[0];
-        var v = _ref2[1];
-
-    return v != null;
-  }));
+  return Object.fromEntries(Object.entries(obj).filter(([_, v]) => v != null));
 }
 function removeKeyDict(params, itemo) {
   delete params[itemo]; // omit(params, itemo)
@@ -458,26 +221,18 @@ function removeKeyList(parmas, listo) {
   return parmas;
 }
 function mapDictVals(dictvar) {
-  var toksaew = [];
+  const toksaew = [];
 
-  for (var _i5 = 0, _Object$entries5 = Object.entries(dictvar); _i5 < _Object$entries5.length; _i5++) {
-    var _Object$entries5$_i = _slicedToArray(_Object$entries5[_i5], 2);
-        _Object$entries5$_i[0];
-        var value = _Object$entries5$_i[1];
-
+  for (const [key, value] of Object.entries(dictvar)) {
     toksaew.push(value);
   }
 
   return toksaew;
 }
 function mapDictKey(dictvar) {
-  var toksaew = [];
+  const toksaew = [];
 
-  for (var _i6 = 0, _Object$entries6 = Object.entries(dictvar); _i6 < _Object$entries6.length; _i6++) {
-    var _Object$entries6$_i = _slicedToArray(_Object$entries6[_i6], 2),
-        key = _Object$entries6$_i[0];
-        _Object$entries6$_i[1];
-
+  for (const [key, value] of Object.entries(dictvar)) {
     toksaew.push(key);
   }
 
@@ -485,28 +240,22 @@ function mapDictKey(dictvar) {
 } // 1map
 
 function mapDictFunc(dictvar, dictfunc) {
-  var ijsdase = {};
+  const ijsdase = {};
 
-  for (var _i7 = 0, _Object$entries7 = Object.entries(dictvar); _i7 < _Object$entries7.length; _i7++) {
-    var _Object$entries7$_i = _slicedToArray(_Object$entries7[_i7], 2),
-        key = _Object$entries7$_i[0],
-        value = _Object$entries7$_i[1];
-
+  for (const [key, value] of Object.entries(dictvar)) {
     ijsdase[key] = dictfunc(value);
   }
 
   return ijsdase;
 }
 function mapDictKeyToValue(dict, attr) {
-  var sdjfer = {};
+  const sdjfer = {};
 
-  for (var _i8 = 0, _Object$entries8 = Object.entries(dict); _i8 < _Object$entries8.length; _i8++) {
-    var _Object$entries8$_i = _slicedToArray(_Object$entries8[_i8], 2),
-        key = _Object$entries8$_i[0],
-        value = _Object$entries8$_i[1];
-
-    var jsfer = _objectSpread2(_defineProperty({}, attr, key), value);
-
+  for (const [key, value] of Object.entries(dict)) {
+    const jsfer = {
+      [attr]: key,
+      ...value
+    };
     sdjfer[key] = jsfer;
   }
 
@@ -521,12 +270,14 @@ function createNewDictFromAttr(arrvar, attr) {
 }
 function convertObjectDict(obj) {
   function odkaeww(key) {
-    var okdsa = _defineProperty({}, key, obj[key]);
+    let okdsa = {
+      [key]: obj[key]
+    };
     return okdsa;
   }
 
-  var iase = Object.keys(obj);
-  var oaksde = iase.map(odkaeww);
+  let iase = Object.keys(obj);
+  let oaksde = iase.map(odkaeww);
 
   return oaksde;
 } // export function mapDictFunc(dictvar, dictfunc) {
@@ -538,10 +289,9 @@ function convertObjectDict(obj) {
 // }
 
 function moveItemFront(listo, itemo) {
-  var jsdas = sortBy(listo, function (_ref) {
-    var type = _ref.type;
-    return type === itemo ? 0 : 1;
-  });
+  const jsdas = sortBy(listo, ({
+    type
+  }) => type === itemo ? 0 : 1);
   return jsdas;
 }
 function getFirstArr(dataVar) {
@@ -549,20 +299,20 @@ function getFirstArr(dataVar) {
   return dataVar;
 }
 function turnarray(arrVary) {
-  var checkArr = Array.isArray(arrVary) ? arrVary : [arrVary];
+  const checkArr = Array.isArray(arrVary) ? arrVary : [arrVary];
   return checkArr;
 }
 function mapFuncDict(arrVar, funcVar, dictvar) {
   function hereo(obj, indexvar) {
-    var obrar = dictvar ? dictvar[obj] : obj;
-    var vkbmdfs = //
+    const obrar = dictvar ? dictvar[obj] : obj;
+    const vkbmdfs = //
     // "opkcwqe";
     funcVar ? funcVar(obrar) : obrar;
     return vkbmdfs;
   } //
 
 
-  var asudjwe = //
+  const asudjwe = //
   // "asodkaewqe";
   arrVar.map(hereo);
   return asudjwe;
@@ -572,21 +322,22 @@ function mapListDict(arrvar, dictvar) {
 }
 function mapFunc(arrVar, funcVar, dictvar) {
   function hereo(obj, indexvar) {
-    var obrar = //
+    const obrar = //
     obj; //  dictvar ? dictvar[obj] : obj;
 
-    var ijadw = _objectSpread2({
-      indexvar: indexvar
-    }, obrar);
-    var vkbmdfs = //
+    const ijadw = {
+      indexvar: indexvar,
+      ...obrar
+    };
+    const vkbmdfs = //
     // "opkcwqe";
     funcVar ? funcVar(obj) : ijadw;
     return vkbmdfs;
   } //
 
 
-  var ndfigt = arrVar && removeEmptyArray(turnarray(arrVar));
-  var asudjwe = //
+  const ndfigt = arrVar && removeEmptyArray(turnarray(arrVar));
+  const asudjwe = //
   // "asodkaewqe";
   ndfigt && ndfigt.map(hereo);
   return asudjwe;
@@ -604,34 +355,33 @@ function moveItemArray(arr, old_index, new_index) {
   arr.splice(new_index, 0, arr.splice(old_index, 1)[0]);
   return arr; // for testing
 }
-function getEnchancedArray(arrayeo) {
+function getEnchancedArray(arrayeo, numVar = 0, endNum) {
   //
-  var oskew = getLength(arrayeo);
+  const oskew = getLength(arrayeo);
 
-  function sakdwe(_ref2) {
-    var indexvar = _ref2.indexvar,
-        obj = _objectWithoutProperties(_ref2, ["indexvar"]);
-
+  function sakdwe({
+    indexvar,
+    ...obj
+  }) {
     //
-    var nextNumo = indexvar + 1;
-    var okacve = indexvar < oskew;
-    var nexitos = //
+    const nextNumo = indexvar + 1;
+    const okacve = indexvar < oskew;
+    const nexitos = //
     // "";
     okacve ? arrayeo[nextNumo] : "";
-
-    var ladsa = _objectSpread2({
+    const ladsa = {
       // indexvar,
-      nextItem: nexitos
-    }, obj);
+      nextItem: nexitos,
+      ...obj
+    };
     return ladsa;
   }
 
-  var odsfr = //
+  const odsfr = //
   mapFunc(arrayeo, sakdwe);
   return odsfr;
 }
-function checkLenArray(dataVar) {
-  var numVar = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+function checkLenArray(dataVar, numVar = 0, endNum) {
   dataVar = getLength(dataVar) == numVar;
   return dataVar;
 }
@@ -640,9 +390,7 @@ function checkEmptyArray(arr) {
   return arr;
 }
 function removeEmptyArray(arr) {
-  var sofksd = turnarray(arr).filter(function (item) {
-    return item;
-  });
+  const sofksd = turnarray(arr).filter(item => item);
   return sofksd;
 }
 function addArray(obj, array) {
@@ -650,62 +398,62 @@ function addArray(obj, array) {
   return array;
 }
 function addArrayNumber(array) {
-  var endNum = array.reduce(function (a, b) {
-    return a + b;
-  }, 0);
+  const endNum = array.reduce((a, b) => a + b, 0);
   return endNum;
 }
 function getLength(arr) {
   arr = turnarray(arr).length;
   return arr;
 }
-function removeItemArray() {
-  return removeArray.apply(void 0, arguments);
+function removeItemArray(...asdf) {
+  return removeArray(...asdf);
 }
 function removeArray(array, obj, attr) {
   //   _.remove(obj.subTopics, {
   //     subTopicId: stToDelete
   // });
   function baseRem(currentObject) {
-    var asweas = //
+    let asweas = //
     attr ? currentObject[attr] != obj : currentObject != obj;
     return asweas;
   }
 
-  var okdsasd = filter(array, baseRem); // remove(
+  let okdsasd = filter(array, baseRem); // remove(
   return okdsasd;
 }
 function filterDictArray(myArr, sdofkewr) {
-  var okada = filter(myArr, sdofkewr);
+  const okada = filter(myArr, sdofkewr);
   return okada;
 }
 function mapSelectEnd(odsfe, asdfer) {
-  var sdore = asdfer && _defineProperty({}, odsfe, mapValue(asdfer));
+  let sdore = asdfer && {
+    [odsfe]: mapValue(asdfer)
+  };
   return sdore;
 }
-function mapSelectValue(arrBig, _ref4) {
-  var dictvar = _ref4.dictvar,
-      labelFunc = _ref4.labelFunc,
-      valueFunc = _ref4.valueFunc,
-      isDisabled = _ref4.isDisabled;
-      _objectWithoutProperties(_ref4, ["dictvar", "labelFunc", "valueFunc", "isDisabled"]);
-
+function mapSelectValue(arrBig, {
+  dictvar,
+  labelFunc,
+  valueFunc,
+  isDisabled,
+  ...sdas
+}) {
   //
   function asijdwe(asdae) {
-    var ndsire = //
+    const ndsire = //
     // asdae
     checkDict(dictvar, asdae);
-    var sidjf = //
+    const sidjf = //
     // asdae
     ndsire;
-    var sakde = {
+    let sakde = {
       label: labelFunc ? labelFunc(sidjf) : asdae,
       value: valueFunc ? valueFunc(ndsire) : asdae,
-      isDisabled: isDisabled
+      isDisabled
     };
     return sakde;
   }
-  var dretjer = arrBig.map(asijdwe);
+  const dretjer = mapFunc(arrBig, asijdwe);
   return dretjer;
 } // 1map
 
@@ -714,44 +462,33 @@ function mapDictMain(listo, dicto) {
 }
 function mapInnerJoin(arrVar, attrVar, connectVar) {
   connectVar = connectVar ? connectVar : " ";
-  return mapFunc(arrVar, function (linearray) {
-    return linearray[attrVar];
-  }).join(connectVar);
+  return mapFunc(arrVar, linearray => linearray[attrVar]).join(connectVar);
 }
 function mapInnerAttr(arrVar, attrVar) {
-  var enaso = mapFunc(arrVar, function (linearray) {
-    return linearray[attrVar];
-  }); // aijdwq.push(linearray[attrVar]));
+  const enaso = mapFunc(arrVar, linearray => linearray[attrVar]); // aijdwq.push(linearray[attrVar]));
 
   return enaso;
 }
 function mapValue(arrBig) {
-  return arrBig && arrBig.map(function (asdae) {
-    return asdae.value;
-  });
+  return arrBig && arrBig.map(asdae => asdae.value);
 } // 1map mapDict
 
 function mipBase(dictvar) {
-  var dfokg = new Set();
+  const dfokg = new Set();
 
-  for (var _i = 0, _Object$entries = Object.entries(dictvar); _i < _Object$entries.length; _i++) {
-    var _Object$entries$_i = _slicedToArray(_Object$entries[_i], 2);
-        _Object$entries$_i[0];
-        var value = _Object$entries$_i[1];
-
-    var xcbsfd = objectTrue(value) && Object.keys(value);
+  for (const [key, value] of Object.entries(dictvar)) {
+    const xcbsfd = objectTrue(value) && Object.keys(value);
 
     if (xcbsfd) {
-      xcbsfd.map(function (sfwew) {
-        return dfokg.add(sfwew);
-      });
+      xcbsfd.map(sfwew => dfokg.add(sfwew));
     }
   }
 
   return Array.from(dfokg);
 }
-function getListAll(arrvar, _ref5) {
-  var dictvar = _ref5.dictvar;
+function getListAll(arrvar, {
+  dictvar
+}) {
   return dictvar ? mipBase(dictvar) : arrvar;
 }
 function mapReturn(arrBig, arrSmall) {
@@ -760,41 +497,35 @@ function mapReturn(arrBig, arrSmall) {
 function sliceArray(arrBig, limmo) {
   return arrBig.slice(0, limmo);
 }
-function removeArrayArray(arrBig, arrSmall) {
-  for (var _len = arguments.length, sawe = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
-    sawe[_key - 2] = arguments[_key];
-  }
-
-  var arBiggo = []; //
+function removeArrayArray(arrBig, arrSmall, ...sawe) {
+  let arBiggo = []; //
   //
 
   function plusSpace(obj, indexvar) {
-    var saase = removeArray.apply(void 0, [arrBig, obj].concat(sawe));
-    arBiggo = checkFullArray(saase) ? [].concat(_toConsumableArray(arBiggo), _toConsumableArray(saase)) : arBiggo;
+    let saase = removeArray(arrBig, obj, ...sawe);
+    arBiggo = checkFullArray(saase) ? [...arBiggo, ...saase] : arBiggo;
     return arBiggo;
   }
-  var fullo = checkFullArray(arrSmall) ? arrSmall.map(plusSpace) : arrBig;
+  const fullo = checkFullArray(arrSmall) ? arrSmall.map(plusSpace) : arrBig;
   return fullo;
 }
 function moveItemToFront(arrBig, item) {
-  var okasdw = removeArray(arrBig, item);
+  let okasdw = removeArray(arrBig, item);
   okasdw.unshift(item);
   return okasdw;
 }
 function checkFullArray(arrBig, arrSmall) {
-  var okasdw = !isEmpty(removeEmptyArray(arrBig));
+  let okasdw = !isEmpty(removeEmptyArray(arrBig));
   return okasdw;
 }
 function stringinarray(stirngo, arreo) {
-  var okasdw = //
+  let okasdw = //
   arreo.includes(stirngo); // includes(col,go);
 
   return okasdw;
 }
 function checkAllArray(arr, item) {
-  return arr && arr.every(function (dsf) {
-    return dsf === item;
-  });
+  return arr && arr.every(dsf => dsf === item);
 }
 function addRemoveArray(pushArr, obj, attrVar) {
   //   pushArr = turnarray(pushArr);
@@ -816,8 +547,8 @@ function mapArrFunc(arrfunc, funco) {
   var vallo = "";
 
   for (var i = 0; i < arrfunc.length; i++) {
-    var ITEMO = arrfunc[i];
-    var ITEMAFTERFUNC = funco(ITEMO);
+    const ITEMO = arrfunc[i];
+    const ITEMAFTERFUNC = funco(ITEMO);
 
     if (ITEMAFTERFUNC) {
       vallo = ITEMAFTERFUNC;
@@ -880,6 +611,24 @@ function BearLink$1({
   return noLink ? textvar : /*#__PURE__*/React.createElement(Rlasdow, null);
 }
 
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
 const alignItemsFlex = //
 // ""
 // "flex-start";
@@ -940,12 +689,12 @@ function BearFloat({
   bottomRightConfig = {},
   //
   //
-  leftobj,
+  left,
   leftConfig = {},
-  centerobj,
+  center,
   children,
   centerConfig = {},
-  rightobj,
+  right,
   rightConfig = {},
   noVertAlign,
   logtrue,
@@ -973,17 +722,14 @@ function BearFloat({
 
   };
   let sasease = //
-  // leftobj;
-  leftobj || showLeft; // 1left
+  // left;
+  left || showLeft; // 1left
 
-  sasease && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", jndf, leftobj));
-  const kdsdf = { ...centerConfig,
-    style: {
-      textAlign: "center",
-      ...centerConfig.style
-    }
+  const lefto = sasease && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", jndf, left), !noSpace && /*#__PURE__*/React.createElement(Spacer, null));
+  const kdsdf = { ...centerConfig // style: { textAlign: "center", ...centerConfig.style },
+
   };
-  const centio = /*#__PURE__*/React.createElement("div", kdsdf, centerobj || children);
+  const centio = /*#__PURE__*/React.createElement("div", kdsdf, center || children);
   const ijsad = {
     marginLeft: "auto",
     style: alignTrue && {
@@ -991,7 +737,7 @@ function BearFloat({
     },
     class: "float-right"
   }; // right
-  /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", ijsad, rightobj)); // position: "absolute",
+  const rightos = /*#__PURE__*/React.createElement(React.Fragment, null, !noSpace && /*#__PURE__*/React.createElement(Spacer, null), /*#__PURE__*/React.createElement("div", ijsad, right)); // position: "absolute",
 
   function sfewr(itemo, {
     style,
@@ -1043,15 +789,7 @@ function BearFloat({
     bottom: paddingVert,
     right: paddingHorz
   }));
-  const ksaewe = /*#__PURE__*/React.createElement(React.Fragment, null, eqweew(leftobj, leftConfig, {
-    padding: "0 10px",
-    marginRight: "auto" // left: paddingHorz,
-
-  }), sokwerr, eqweew(rightobj, rightConfig, {
-    padding: "0 10px",
-    marginLeft: "auto" // right: paddingHorz,
-
-  }));
+  const ksaewe = /*#__PURE__*/React.createElement(React.Fragment, null, lefto, sokwerr, rightos);
   let endValue = "";
 
   switch (layoutType) {
@@ -1071,7 +809,7 @@ function BearFloat({
 
   const noSides = //
   // "";
-  !leftobj && !rightobj;
+  !left && !right;
   disvar = //
   disvar || noSides;
   const sdifjw = //
@@ -1251,14 +989,14 @@ function BearButton({
   }; // 1console
 
   function GroupBase({
-    rightobj,
-    leftobj,
+    right,
+    left,
     leftConfig,
     rightConfig,
     ...qwe
   }) {
     //   <Button {...rghtFunnp}>
-    //     <div {...nsidjew}>{rightobj}</div>{" "}
+    //     <div {...nsidjew}>{right}</div>{" "}
     //   </Button>
     // );
 
@@ -2228,7 +1966,7 @@ function dfkbijv(named, children, {
   };
   const jfdert = {
     topRight: advert && Adverto(advertConfig),
-    // centerobj: ,
+    // center: ,
     paddingVert: "5px",
     centerConfig: disjwe
   };
@@ -2649,8 +2387,8 @@ function BearInputLabel({
     };
     const dfigjrt = /*#__PURE__*/React.createElement(BearDiv$1, cvobkof);
     const kcmdr = {
-      centerobj: ioakawe,
-      rightobj: dfigjrt
+      center: ioakawe,
+      right: dfigjrt
     };
     const ijcwe = BearFloat(kcmdr);
     return ijcwe;
@@ -2806,8 +2544,8 @@ function BearInputBase(ujsdqwe, {
     obj: "YES"
   };
   const jaewdsr = {
-    rightobj: /*#__PURE__*/React.createElement(BearButton, confijre),
-    centerobj: ujsdqwe
+    right: /*#__PURE__*/React.createElement(BearButton, confijre),
+    center: ujsdqwe
   }; // rightSubmit = true;
 
   const asdijwe = rightSubmit ?
@@ -3018,8 +2756,8 @@ function BearFlex({
   list,
   itemStyle,
   style,
-  leftobj,
-  rightobj,
+  left,
+  right,
   noVertAlign,
   obj,
   ...sae
@@ -3057,10 +2795,10 @@ function BearFlex({
 
   function RendFlex() {
     const sdijrwe = {
-      obj: leftobj
+      obj: left
     };
     const ijasew = {
-      obj: rightobj,
+      obj: right,
       style: {
         marginLeft: "auto"
       }
@@ -3317,6 +3055,19 @@ function BearButtonList(sfkr) {
   };
   return BearList(sfkr);
 }
+function SwitchLayout({
+  children
+}) {
+  const skdfsa = {
+    height: ""
+  };
+  const zxcmsd = /*#__PURE__*/React.createElement(React.Fragment, null, "Hello!");
+  const kmxvs = {
+    obj: zxcmsd,
+    style: skdfsa
+  };
+  return /*#__PURE__*/React.createElement(BearDiv$1, kmxvs);
+}
 function nameComb(sfkr, oskdfr) {
   //
   // const ikasae
@@ -3526,9 +3277,9 @@ function BearBackForward({
     // iconvar
     obj: /*#__PURE__*/React.createElement(React.Fragment, null, xcijsdf, children, dfgkmre),
     // list: [xcijsdf, children, dfgkmre],
-    // leftobj: xcijsdf,
-    // centerobj: children,
-    // rightobj: dfgkmre,
+    // left: xcijsdf,
+    // center: children,
+    // right: dfgkmre,
     padvar: "5px",
     ...argssdf
   };
@@ -4034,6 +3785,8 @@ function BearModel({
   warnDelete,
   deleteConfig,
   //
+  buttonLayout = "bottom",
+  //
   ...args
 }) {
   // 1const
@@ -4078,25 +3831,23 @@ function BearModel({
       ...deleteConfig
     }
   };
-  const kmfase = { // noText: onlyIcons && true,
-    ...buttonConfig
-  };
   const isdre = {
     bearName: "sodkwqe",
     list: ["delete"],
-    horiz: true,
     typeList: "button",
     // ...iconConfig,
     dictvar: { ...isdfewr,
       ...dictvar
     },
     ...argMiss(args),
-    itemConfig: kmfase
-  };
+    // itemConfig: kmfase,
+    ...buttonConfig
+  }; // 1console
   const ijdwer = /*#__PURE__*/React.createElement(BearList, isdre);
   args = {
-    leftobj: okfdsd,
-    rightobj: ijdwer,
+    center: okfdsd,
+    // right: ijdwer,
+    [buttonLayout]: ijdwer,
     noVertAlign: true,
     // floatConfi:
     ...argPass(args)
@@ -4190,25 +3941,26 @@ function BearTextarea({
     padding: "20px",
     ...style
   };
-  const ijsdfasd = {
+  const sdfezd = value && {
+    value
+  };
+  const ijsdfasd = { ...sdfezd,
     rows,
-    value,
     minRows: rows,
     // initialValue:
-    defaultValue: {
-      lable: initialValue,
-      value: initialValue
-    },
+    // defaultValue: initialValue,
     ...chakResize,
     style: djfo,
     ...dfgre,
     onChange: sofkes
-  };
-  loggo("___ ijsdfasd ___", ijsdfasd);
+  }; // 1console
+
+  loggo("___ bertextarea FULL ___", ijsdfasd);
   const xcvbkf =
   /*#__PURE__*/
   //
-  // <textarea {...ijsdfasd} />
+  // <textarea {...ijsdfasd}/>
+  // <textarea {...ijsdfasd}>{initialValue}</textarea>
   //  <TextareaAutosize {...ijsdfasd} />
   // <TextChak {...ijsdfasd}>{value}</TextChak>
   // <TextChak {...ijsdfasd}>{initialValue}</TextChak>
@@ -4216,7 +3968,7 @@ function BearTextarea({
   return InputBaseCheck(xcvbkf, dfgre);
 }
 
-function RendGroup(centerObj, {
+function RendGroup(center, {
   renderInput,
   inputLeft,
   leftConfig,
@@ -4229,7 +3981,7 @@ function RendGroup(centerObj, {
   const sdijfr = inputRight || inputLeft;
   const sdresar = {//
   };
-  const cvdfsoe = sdijfr ? /*#__PURE__*/React.createElement(InputGroup, sdresar, leftRendos, centerObj, rightRendos) : centerObj;
+  const cvdfsoe = sdijfr ? /*#__PURE__*/React.createElement(InputGroup, sdresar, leftRendos, center, rightRendos) : center;
   const dfgjer = renderInput ? renderInput(cvdfsoe) : cvdfsoe;
   return InputBaseCheck(dfgjer, asdsd);
 } // 1input
@@ -4578,15 +4330,19 @@ function BearSelect({
 
     return isValid;
   } // 1OPEN
-  //     ? type
-  //     :
 
-
+  const sdjfre = //
+  optionsArray; // !optionsArray
   let vbmofd = //
-  options ? options : optionsArray ? mapSelectValue(optionsArray, {}) : initOptions;
+  options ? options : sdjfre ? asdiwje9(sdjfre) : initOptions;
   let dsfijaae = //
   // optBase;
-  vbmofd; // 1option STYLE
+  vbmofd;
+
+  function asdiwje9(xckjvf) {
+    return mapSelectValue(xckjvf, {});
+  } // 1option STYLE
+
 
   function optRdio({
     color,
@@ -4641,17 +4397,13 @@ function BearSelect({
       marginTop: "0px"
     };
     const sdoewr = !noMenuBorder && bsao;
-    const misdfs = menuHeight && {
-      height: menuHeight // menuHeight:
-
-    };
     const oasde = {
       // paddingRight: "0 100px",
       marginTop: "0px",
       ...sdoewr,
       ...menuStyle,
-      ...aaese,
-      ...misdfs
+      ...aaese // ...misdfs,
+
     };
     return allSty(oasde);
   } // 1control
@@ -4665,15 +4417,19 @@ function BearSelect({
       ...style
     };
     return allSty(iksdrqe);
-  }
+  } // 1menulist
 
-  function allLios(styles) {
-    const oksdr = { ...styles //
+
+  function allLios({
+    maxHeight,
+    ...styles
+  }) {
+    const oksdr = { ...styles,
+      //
       // padding: "0 100px",
       // WebkitOverflowScrolling: "",
       // boxSizing: "",
-      // ...misdfs,
-      // paddingTop: "-30px",
+      ...misdfs // paddingTop: "-30px",
 
     };
     return allSty(oksdr);
@@ -4695,8 +4451,13 @@ function BearSelect({
       // ...introStyle,
     };
     return allSty(cvbf);
-  } //   1styles
+  } // 1height
 
+
+  const misdfs = menuHeight && {
+    height: menuHeight // menuHeight:
+
+  }; //   1styles
 
   const stylBasoe = {
     control: rendCont,
@@ -4739,10 +4500,6 @@ function BearSelect({
     const ijsdre = valueFormat ? valueFormat : sijsad;
     let sovkoe = //
     noValueReturn ? params : multi ? params.map(ijsdre) : params.value;
-
-    {
-      loggo(messvar + "__SELECT onChange____", params);
-    } // const ojsde = onChangeDict = onChangeDict
 
 
     if (onChange) {
@@ -4846,9 +4603,12 @@ function BearSelect({
     value: ""
   }; // 1input
 
-  const fgoktr = {
+  const fgoktr = initialValue && {
     // initialValue: initialValue,
-    defaultInputValue: initialValue // inputValue: initialValue,
+    // defaultInputValue: initialValue,
+    defaultValue: asdiwje9(initialValue) // value: asdiwje9(initialValue),
+    // defaultValue: {label: initialValue, value: initialValue },
+    // inputValue: initialValue,
 
   }; // 1blur
 
@@ -5075,7 +4835,7 @@ function BearFormInputCheck({
     const kdfjg = //
     // "";
     "firstLast";
-    logCheck("sijdgdf", idjfr.name, kdfjg, idjfr.name, nameo, "___ BrFormInpCheck ___", idjfr);
+    logCheck("sijddf", idjfr.name, kdfjg, idjfr.name, nameo, "___ BrFormInpCheck ___", idjfr);
     return objer(idjfr);
   }
 
@@ -5168,7 +4928,6 @@ function BearFormInputCheck({
       ...cntrMan,
       render: difjgr
     };
-    loggo("___ beform CONTROLLER ___", xbvkf);
     let asod =
     /*#__PURE__*/
     //
@@ -5307,7 +5066,7 @@ function dictDate({
   ...cvsd
 }) {
   function xvkbdffs() {
-    // logs.loggo("___ vfdgd ___", vfdgd);
+    // logs.logga("___ vfdgd ___", vfdgd);
     const sdifjer = value ? value : defaultNow && new Date();
     const sidfjwer = {
       disableCalendar: true,
@@ -5581,39 +5340,6 @@ function BearForm({
   const [loadSetto, setloadSetto] = //
   ["", ""]; // useState();
 
-  const modeo = //
-  // "onBlur"
-  "onSubmit"; // "onChange";
-
-  const oksdaew = {
-    // validationSchema: asokew,
-    // resolver: asokew,
-    //
-    // reValidateMode: "onChange",
-    mode: modeo,
-    ...hookConfig
-  };
-  const {
-    //
-    handleSubmit,
-    register,
-    errors,
-    control,
-    setFocus,
-    // watch,
-    ...asdw
-  } = //
-  useForm(oksdaew);
-  const idjfe = {
-    errors,
-    control,
-    register
-  }; // 1focus
-
-
-  useEffect(() => {
-  });
-
   function goSing(doksad) {
     let sdifje = Object.values(doksad)[0];
     return sdifje;
@@ -5661,23 +5387,8 @@ function BearForm({
     }
   }
 
-  function onSubMain(fjdwe) {
-    subbTo(fjdwe, onSubmit);
-  }
-
-  const kasewse = //
-  handleSubmit(onSubMain); // handleSubmit(sease);
-  // subbTo;
-  // sease;
-
-  const noSumibt = //
-  !buttonList;
-  const jsidwer = noSumibt && {
-    onSubmit: kasewse
-  };
   const difjgr = { ...args,
-    id: formid,
-    ...jsidwer
+    id: formid
   };
   args = { ...args,
     bearName
@@ -5877,6 +5588,7 @@ function BearForm({
   const aidjwe = /*#__PURE__*/React.createElement(React.Fragment, null, topObj, mappit, betweenItem, buttio);
   const ijdfsr = //
   difjgr; // argPass
+
   const xcvsfs = loadSetto ? /*#__PURE__*/React.createElement(LoadMain, loadConfig) : noForm ? aidjwe : /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("form", ijdfsr, aidjwe));
   const nsdokfer = argPass(args);
   const isae = /*#__PURE__*/React.createElement("div", nsdokfer, xcvsfs);
@@ -6624,7 +6336,7 @@ function BearSocialBase({
         content: toolText
       }
     }; // textvar: toolText,
-    // leftobj: iconvar,
+    // left: iconvar,
     // popContent: toolText,
 
     const jsaease = { ...saewawe,
@@ -6789,7 +6501,7 @@ function BearSocialShare({
       ...mainIco,
       iconvar,
       // textvar: toolText,
-      // leftobj: iconvar,
+      // left: iconvar,
       noVertTop: true,
       // popContent: toolText,
       padvar: 5
@@ -7016,5 +6728,5 @@ function BearSearchList({
   return BearCheckList("BearSearchList", dfjgert, baseargs); // return kdserase;
 }
 
-export { BearAttrNeeds, BearAuthPortal, BearBackBorder, BearBackForward, BearBlankLink, BearBorder, BearButton, BearButtonDownload, BearButtonList, BearCheckMain, BearContextProvider, BearCopy, BearDiv$1 as BearDiv, BearDivMain, BearEmoji, BearErASDJIQWE, BearErrArgType$1 as BearErrArgType, BearErrMiss, BearError, BearFalseLog, BearFlex, BearFloat, BearForm, BearFormList, BearHideError, BearIcon, BearIconText, BearImage, BearLink, BearList, BearListComp, BearLog, BearMissing, BearModel, BearPlural, BearPossess, BearQuote, BearSearchList, BearSelect, BearSocialBase, BearSocialLinks, BearSocialShare, BearSpace, BearSpan, BearSurround, BearSwitch, BearTags, BearTextMedia, BearTitle, BearUpper, BearWrap, Exmapl, FlexHorz, FormBase, ImageAlign, ImageGroup, InputBaseCheck, InputForm, InputMain, ListFlex, ListReturn, LoadMain, PagePad, SliderMain, SwitchComp, addArray, addArrayNumber, addRemoveArray, argMiss, argPass, checkAllArray, checkDict, checkEmptyArray, checkFullArray, checkLenArray, convertObjectDict, createNewDictFromAttr, cxadfa, dfkbijv, filterDictArray, firstInputCheck, functioMa, getAnyDictValue, getEnchancedArray, getExtString, getFirstArr, getLength, getListAll, joinString$1 as joinString, linkBase, logFuncs as logs, mapArrFunc, mapDictAttr, mapDictAttrToString, mapDictFunc, mapDictKey, mapDictKeyToValue, mapDictMain, mapDictNew, mapDictVals, mapFunc, mapFuncDict, mapInnerAttr, mapInnerJoin, mapListDict, mapReturn, mapSelectEnd, mapSelectValue, mapValue, matchDictAttr, mipBase, moveItemArray, moveItemFront, moveItemToFront, nameComb, objectTrue, quoteSurround, removeArray, removeArrayArray, removeEmptyArray, removeEmptyDict, removeItemArray, removeKeyDict, removeKeyList, sliceArray, spaceSurround, stringinarray, turnDict, turnarray };
+export { BearAttrNeeds, BearAuthPortal, BearBackBorder, BearBackForward, BearBlankLink, BearBorder, BearButton, BearButtonDownload, BearButtonList, BearCheckMain, BearContextProvider, BearCopy, BearDiv$1 as BearDiv, BearDivMain, BearEmoji, BearErASDJIQWE, BearErrArgType$1 as BearErrArgType, BearErrMiss, BearError, BearFalseLog, BearFlex, BearFloat, BearForm, BearFormList, BearHideError, BearIcon, BearIconText, BearImage, BearLink, BearList, BearListComp, BearLog, BearMissing, BearModel, BearPlural, BearPossess, BearQuote, BearSearchList, BearSelect, BearSocialBase, BearSocialLinks, BearSocialShare, BearSpace, BearSpan, BearSurround, BearSwitch, BearTags, BearTextMedia, BearTitle, BearUpper, BearWrap, Exmapl, FlexHorz, FormBase, ImageAlign, ImageGroup, InputBaseCheck, InputForm, InputMain, ListFlex, ListReturn, LoadMain, PagePad, SliderMain, SwitchComp, SwitchLayout, addArray, addArrayNumber, addRemoveArray, argMiss, argPass, checkAllArray, checkDict, checkEmptyArray, checkFullArray, checkLenArray, convertObjectDict, createNewDictFromAttr, cxadfa, dfkbijv, filterDictArray, firstInputCheck, functioMa, getAnyDictValue, getEnchancedArray, getExtString, getFirstArr, getLength, getListAll, joinString$1 as joinString, linkBase, logFuncs as logs, mapArrFunc, mapDictAttr, mapDictAttrToString, mapDictFunc, mapDictKey, mapDictKeyToValue, mapDictMain, mapDictNew, mapDictVals, mapFunc, mapFuncDict, mapInnerAttr, mapInnerJoin, mapListDict, mapReturn, mapSelectEnd, mapSelectValue, mapValue, matchDictAttr, mipBase, moveItemArray, moveItemFront, moveItemToFront, nameComb, objectTrue, quoteSurround, removeArray, removeArrayArray, removeEmptyArray, removeEmptyDict, removeItemArray, removeKeyDict, removeKeyList, sliceArray, spaceSurround, stringinarray, turnDict, turnarray };
 //# sourceMappingURL=index.esm.js.map

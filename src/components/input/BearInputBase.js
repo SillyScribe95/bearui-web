@@ -240,8 +240,8 @@ export function BearInputBase(
   };
 
   const jaewdsr = {
-    rightobj: <BearButton {...confijre} />,
-    centerobj: ujsdqwe,
+    right: <BearButton {...confijre} />,
+    center: ujsdqwe,
   };
 
   // rightSubmit = true;

@@ -85,7 +85,7 @@ export function getFormPass(
 // 1date
 function dictDate({ value, containConfig, defaultNow, ...cvsd }) {
   function xvkbdffs() {
-    // logs.loggo("___ vfdgd ___", vfdgd);
+    // logs.logga("___ vfdgd ___", vfdgd);
 
     const sdifjer = value ? value : defaultNow && new Date();
     const sidfjwer = {

@@ -233,8 +233,8 @@ export function BearFlex({
   list,
   itemStyle,
   style,
-  leftobj,
-  rightobj,
+  left,
+  right,
   noVertAlign,
   obj,
   ...sae
@@ -276,11 +276,11 @@ export function BearFlex({
 
   function RendFlex() {
     const sdijrwe = {
-      obj: leftobj,
+      obj: left,
     };
 
     const ijasew = {
-      obj: rightobj,
+      obj: right,
       style: {
         marginLeft: "auto",
       },
@@ -637,6 +637,26 @@ export function BearButtonList(sfkr) {
   };
 
   return BearList(sfkr);
+}
+
+export function SwitchLayout({ children }) {
+  const skdfsa = {
+    height: "",
+  };
+
+  const zxcmsd = (
+    <>
+      {/* EXAMPLE TEXT  */}
+      Hello!
+    </>
+  );
+
+  const kmxvs = {
+    obj: zxcmsd,
+    style: skdfsa,
+  };
+
+  return <BearDiv {...kmxvs} />;
 }
 
 export function nameComb(sfkr, oskdfr) {

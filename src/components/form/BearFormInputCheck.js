@@ -152,7 +152,7 @@ export function BearFormInputCheck({
 
     logs.logga("___ idjfr ___", idjfr);
     logs.logCheck(
-      "sijdgdf",
+      "sijddf",
       idjfr.name,
       kdfjg,
       idjfr.name,
@@ -253,7 +253,7 @@ export function BearFormInputCheck({
       render: difjgr,
     };
 
-    logs.loggo("___ beform CONTROLLER ___", xbvkf);
+    logs.logga("___ beform CONTROLLER ___", xbvkf);
 
     let asod = (
       //
