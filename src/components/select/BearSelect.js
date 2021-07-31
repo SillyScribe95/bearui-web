@@ -42,6 +42,7 @@ export function BearSelect({
   //
   //
   maxSelect,
+  openEdit,
   //
   //
   // 1value
@@ -374,6 +375,7 @@ export function BearSelect({
     classNamePrefix: "lp-copy-sel",
   };
 
+  // 1true
   const asidjwe = multi && {
     isMulti: true,
   };
@@ -461,15 +463,31 @@ export function BearSelect({
     isClearable: true,
   };
 
+  // 1args 1base
+  const vsfewr = {
+    // STYLE
+    //
+    // 1blur
+    // ...blurBase,
+    //
+    //
+    // 1create
+    ...sdijer,
+    styles: stylBasoe,
+    formatOptionLabel: fsdogkdr,
+
+    isSearchable: true,
+    ...iasjdwe,
+    ...asidjwe,
+    ...ideoBasa,
+    ...args,
+  };
+
   const xcvbfmg = {
     // MENU
     //
-    isSearchable: true,
-    ...iasjdwe,
+    ...vsfewr,
     ...mennoPIt,
-    ...asidjwe,
-    ...args,
-    ...ideoBasa,
   };
 
   let toppoIos =
@@ -602,18 +620,8 @@ export function BearSelect({
 
   const fdgrt = {
     // ...dfgjrt,
-    styles: stylBasoe,
     onChange: dfgoe,
-    formatOptionLabel: fsdogkdr,
     //
-    // STYLE
-    //
-    // 1blur
-    // ...blurBase,
-    //
-    //
-    // 1create
-    ...sdijer,
     //
     // 1nooptions
     ...nvxsads,
@@ -629,11 +637,34 @@ export function BearSelect({
     // ...ogkfds,
   };
 
+  // 1test
+
+  function askdjwe(xcvod) {
+    return {
+      label: xcvod,
+      value: xcvod,
+    };
+  }
+
+  const xvbdfog = [
+    //
+    askdjwe("sdfokewr"),
+    askdjwe("oiqwe"),
+    askdjwe("sfkew0"),
+  ];
+
+  const cvbsd = {
+    options: xvbdfog,
+    // value: [askdjwe("oiqwe")],
+    ...vsfewr,
+  };
+
   // 1return 1args
   let dfijew =
     //
     // {};
-    fdgrt;
+    cvbsd;
+  // fdgrt;
   // xcvbfmg;
 
   let bmcvfd =
@@ -644,12 +675,12 @@ export function BearSelect({
   // logtrue;
   // messvar == "otherTitles";
 
-  logs.logga("options", dsfijaae);
+  // logs.loggo("bear", dsfijaae);
 
   // 1console
-  if (bmcvfd) {
+  if ("bmcvfd") {
     // logs.logga(name, messvar + "___ BeSelect BASE___", xcvbfmg);
-    logs.logga(name, messvar + "___ BeSelect ALL___", dfijew);
+    logs.loggo(name, messvar + "___ BeSelect ALL___", dfijew);
   }
 
   typeSelect = !sodkfre && create ? "create" : typeSelect;

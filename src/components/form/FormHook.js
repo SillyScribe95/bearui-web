@@ -8,25 +8,14 @@ import {
   logs,
 } from "../../index";
 import { useForm, Controller } from "react-hook-form";
-
-import {
-  //
-  BearUpper,
-  argMiss,
-  argPass,
-  BearErrMiss,
-  LoadMain,
-} from "../GlobalComps";
-import { BearError } from "../BearError";
-import { BearCheckMain } from "../check/BearCheckMain";
-import { BearFormInputCheck } from "./BearFormInputCheck";
-import { formValidPass } from "./formValidPass";
-import { BearFormSetup } from "./BearFormSetup";
-import { getFormPass } from "./getFormPass";
-import { BearInputBase } from "../input/BearInputBase";
 import { focusBase } from "../../functions/formFuncs";
 
-export function BearForm({ children, ...args }) {
+export default function FormHook({
+  buttonList,
+  onSubmit,
+  hookConfig,
+  ...args
+}) {
   //
   // 1const
 
@@ -86,7 +75,7 @@ export function BearForm({ children, ...args }) {
 
   const kasewse =
     //
-    handleSubmit(onSubMain);
+    handleSubmit(onSubmit);
   // handleSubmit(sease);
   // subbTo;
   // sease;
@@ -96,14 +85,9 @@ export function BearForm({ children, ...args }) {
     !buttonList;
 
   const jsidwer = noSumibt && {
+    ...idjfe,
     onSubmit: kasewse,
   };
 
-  const xcvsfs = (
-    <>
-      <form {...args}>{children}</form>
-    </>
-  );
-
-  return xcvsfs;
+  return jsidwer;
 }

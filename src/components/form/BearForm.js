@@ -23,6 +23,7 @@ import { BearFormSetup } from "./BearFormSetup";
 import { getFormPass } from "./getFormPass";
 import { BearInputBase } from "../input/BearInputBase";
 import { focusBase } from "../../functions/formFuncs";
+import FormHook from "./FormHook";
 
 export function BearForm({
   noButton,
@@ -55,7 +56,6 @@ export function BearForm({
   logtrue,
   tabConfig,
   schema,
-  hookConfig,
   typeForm,
   //
   topButtonConfig,
@@ -169,8 +169,14 @@ export function BearForm({
     subbTo(fjdwe, onSubmit);
   }
 
+  const sdjifwer = FormHook({
+    onSubmit: onSubMain,
+    ...args,
+  });
+
   const difjgr = {
     ...args,
+    ...sdjifwer,
     id: formid,
   };
 
@@ -262,7 +268,7 @@ export function BearForm({
       dictvar,
       inputItem: obj,
       name: obj,
-      ...idjfe,
+      ...sdjifwer,
       ...bfdg,
       ...inDict,
       ...argMiss(args),

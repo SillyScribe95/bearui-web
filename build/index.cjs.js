@@ -4245,6 +4245,7 @@ function BearSelect({
   //
   //
   maxSelect,
+  openEdit,
   //
   //
   // 1value
@@ -4309,7 +4310,7 @@ function BearSelect({
   //
   // bearName;
   // 1const
-  const [inputBase, setinputBase] = React.useState();
+  React.useState();
   const [type, setType] = React.useState("");
   const sodkfre = overLen(type); // 1optionstyle
 
@@ -4317,41 +4318,10 @@ function BearSelect({
   };
   width = width ? width : style["width"] ? style["width"] : "100%";
 
-  function DropdownIndicator(props) {
-    const ijsde = {
-      //
-      fontSize: "1.3em"
-    };
-    const asew = searchBarIcon && BearIcon(searchBarIcon, ijsde);
-    const isdjfew = /*#__PURE__*/React__default['default'].createElement(Select.components.DropdownIndicator, props, asew);
-    const uhfesa = //
-    hideSearchIcon ? "" : isdjfew; // "sdwqe";
-
-    return uhfesa;
-  }
-
-  function showTrue(inputValue, selectValue, selectOptions) {
-    if (!inputValue) {
-      return false;
-    }
-
-    let isValid = true; // for (let option of selectOptions) {
-    //   if (isOptionMatchesInputValue(option, inputValue)) {
-    //     isValid = false;
-    //     break;
-    //   }
-    // }
-
-    return isValid;
-  } // 1OPEN
-
   const sdjfre = //
   optionsArray; // !optionsArray
-  let vbmofd = //
+  //
   options ? options : sdjfre ? asdiwje9(sdjfre) : initOptions;
-  let dsfijaae = //
-  // optBase;
-  vbmofd;
 
   function asdiwje9(xckjvf) {
     return mapSelectValue(xckjvf, {});
@@ -4485,66 +4455,15 @@ function BearSelect({
     // }),
 
   };
-  // isEmpty();
-  // 1empty
 
-  const fullOpts = // emptio &&
-  {
-    components: {
-      DropdownIndicator,
-      IndicatorSeparator: () => null // Menu: () => null,
-
-    }
-  }; //   1menu
-  //   newLineTrue
-
-  const mennoPIt = newLineTrue && {
-    classNamePrefix: "lp-copy-sel"
-  };
   const asidjwe = multi && {
     isMulti: true
   };
-
-  function sijsad(sdfe) {
-    return sdfe && sdfe.value;
-  }
-
-  function changeos(params) {
-    //
-    const ijsdre = valueFormat ? valueFormat : sijsad;
-    let sovkoe = //
-    noValueReturn ? params : multi ? params.map(ijsdre) : params.value;
-
-
-    if (onChange) {
-      onChange(sovkoe);
-    }
-
-    if (valueFunc) {
-      valueFunc(params);
-    }
-  }
 
   function overLen(xvfd) {
     const dasf = maxSelect && xvfd && xvfd.length === maxSelect;
     return dasf;
   } // 1onchange maxSelect ?
-
-
-  function dfgoe(aewqe) {
-    overLen(aewqe);
-
-    {
-      changeos(aewqe);
-    } // setType(difjre);
-    // if (lenOver) {
-    // changeos(aewqe);
-    //   setType(aewqe)
-    // } else {
-    //   setType()
-    // }
-
-  } // limitvar ? sliceArray(vbmofd, limitvar) : vbmofd;
   // 1id reffo
 
 
@@ -4555,16 +4474,23 @@ function BearSelect({
   }; // 1ref
   const iasjdwe = !notClearable && {
     isClearable: true
-  };
-  const xcvbfmg = {
-    // MENU
+  }; // 1args 1base
+
+  const vsfewr = { // STYLE
     //
+    // 1blur
+    // ...blurBase,
+    //
+    //
+    // 1create
+    ...sdijer,
+    styles: stylBasoe,
+    formatOptionLabel: fsdogkdr,
     isSearchable: true,
     ...iasjdwe,
-    ...mennoPIt,
     ...asidjwe,
-    ...args,
-    ...ideoBasa
+    ...ideoBasa,
+    ...args
   };
   let toppoIos = //
   // "first";
@@ -4575,28 +4501,9 @@ function BearSelect({
 
   };
 
-  function Notspse(inputValue, sdsa) {
-    const svnsdfsr = typeof noOptionsMessage == "function";
-    const idjvsa = !svnsdfsr ? BearErrArgType$1("noOptionsMessage", "function", {
-      bearName
-    }) : noOptionsMessage(inputValue, sdsa);
-    return idjvsa;
-  } // 1nooptions
-
-
-  function Rendoa({
-    inputValue,
-    ...sdsa
-  }) {
-    noOptionsMessage ? Notspse(inputValue, sdsa) : sodkfre ? "You can only chooe" : "no options for '" + inputValue + "'";
-  } // 1create Daosm
-
 
   const sdijer = { ...creatios,
     createOptionPosition: toppoIos
-  };
-  const xockozd = onBlurValue && {
-    onBlur: sofad => onBlurValue(sofad.target.value)
   };
 
   const fsdogkdr = //
@@ -4613,11 +4520,7 @@ function BearSelect({
     return /*#__PURE__*/React__default['default'].createElement(BearDiv$1, ijsras, label);
   }
 
-  const dfijger = !onChangeSetValue && {
-    value: ""
-  }; // 1input
-
-  const fgoktr = initialValue && {
+  initialValue && {
     // initialValue: initialValue,
     // defaultInputValue: initialValue,
     defaultValue: asdiwje9(initialValue) // value: asdiwje9(initialValue),
@@ -4626,56 +4529,33 @@ function BearSelect({
 
   }; // 1blur
 
-  const nvxsads = noOptionsMessage && {
-    promptTextCreator: Notspse,
-    formatCreateLabel: Notspse,
-    noOptionsMessage: Rendoa
-  };
+  function askdjwe(xcvod) {
+    return {
+      label: xcvod,
+      value: xcvod
+    };
+  }
 
-  function ShowItMENU(zxcvok) {
-    setinputBase(zxcvok);
-  } // 1intro
-
-
-  const sdfer = showMenuIfValue && {
-    inputValue: inputBase,
-    options: inputBase ? dsfijaae : [],
-    noOptionsMessage: inputBase ? Rendoa : asd => introMessage,
-    // menuIsOpen: inputBase,
-    onInputChange: ShowItMENU
-  };
-  const fdgrt = {
-    // ...dfgjrt,
-    styles: stylBasoe,
-    onChange: dfgoe,
-    formatOptionLabel: fsdogkdr,
-    //
-    // STYLE
-    //
-    // 1blur
-    // ...blurBase,
-    //
-    //
-    // 1create
-    ...sdijer,
-    //
-    // 1nooptions
-    ...nvxsads,
-    // 1EMPTY
-    ...fullOpts,
-    isValidNewOption: showTrue,
-    options: dsfijaae,
-    ...dfijger,
-    ...xockozd,
-    ...fgoktr,
-    ...xcvbfmg,
-    ...sdfer // ...ogkfds,
-
+  const xvbdfog = [//
+  askdjwe("sdfokewr"), askdjwe("oiqwe"), askdjwe("sfkew0")];
+  const cvbsd = {
+    options: xvbdfog,
+    // value: [askdjwe("oiqwe")],
+    ...vsfewr
   }; // 1return 1args
 
   let dfijew = //
   // {};
-  fdgrt; // xcvbfmg;
+  cvbsd; // fdgrt;
+  // logtrue;
+  // messvar == "otherTitles";
+  // logs.loggo("bear", dsfijaae);
+  // 1console
+
+  {
+    // logs.logga(name, messvar + "___ BeSelect BASE___", xcvbfmg);
+    loggo(name, messvar + "___ BeSelect ALL___", dfijew);
+  }
 
   typeSelect = !sodkfre && create ? "create" : typeSelect;
   let endValue = ""; //
@@ -5295,6 +5175,59 @@ function BearFormSetup({
   return oiaswe;
 }
 
+function FormHook({
+  buttonList,
+  onSubmit,
+  hookConfig,
+  ...args
+}) {
+  //
+  // 1const
+  const modeo = //
+  // "onBlur"
+  "onSubmit"; // "onChange";
+
+  const oksdaew = {
+    // validationSchema: asokew,
+    // resolver: asokew,
+    //
+    // reValidateMode: "onChange",
+    mode: modeo,
+    ...hookConfig
+  };
+  const {
+    //
+    handleSubmit,
+    register,
+    errors,
+    control,
+    setFocus,
+    // watch,
+    ...asdw
+  } = //
+  reactHookForm.useForm(oksdaew);
+  const idjfe = {
+    errors,
+    control,
+    register
+  }; // 1focus
+
+
+  React.useEffect(() => {
+  });
+  const kasewse = //
+  handleSubmit(onSubmit); // handleSubmit(sease);
+  // subbTo;
+  // sease;
+
+  const noSumibt = //
+  !buttonList;
+  const jsidwer = noSumibt && { ...idjfe,
+    onSubmit: kasewse
+  };
+  return jsidwer;
+}
+
 function BearForm({
   noButton,
   noText,
@@ -5326,7 +5259,6 @@ function BearForm({
   logtrue,
   tabConfig,
   schema,
-  hookConfig,
   typeForm,
   //
   topButtonConfig,
@@ -5401,7 +5333,16 @@ function BearForm({
     }
   }
 
+  function onSubMain(fjdwe) {
+    subbTo(fjdwe, onSubmit);
+  }
+
+  const sdjifwer = FormHook({
+    onSubmit: onSubMain,
+    ...args
+  });
   const difjgr = { ...args,
+    ...sdjifwer,
     id: formid
   };
   args = { ...args,
@@ -5459,7 +5400,7 @@ function BearForm({
       dictvar,
       inputItem: obj,
       name: obj,
-      ...idjfe,
+      ...sdjifwer,
       ...bfdg,
       ...inDict,
       ...argMiss(args)
