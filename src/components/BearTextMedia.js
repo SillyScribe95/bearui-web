@@ -5,8 +5,8 @@ import React, {
 } from "react";
 import {
   //
-  logs,
-} from "../index"
+  bearlog,
+} from "../index";
 import { BearDiv } from "./BearDiv";
 import { BearIcon } from "./BearIcon";
 import { BearImage } from "./BearImage";
@@ -56,7 +56,7 @@ export function BearTextMedia({
       ...dsafe,
     };
 
-    logs.logga("___ ksease ___", ksease);
+    bearlog.lug("___ ksease ___", ksease);
 
     return ksease;
   }
@@ -70,7 +70,7 @@ export function BearTextMedia({
       ...dsfew,
     };
 
-    logs.logga("___ imgBaseText  IMAGE ___", fnkfg);
+    bearlog.lug("___ imgBaseText  IMAGE ___", fnkfg);
 
     const oksaw = <BearImage {...fnkfg} />;
 
@@ -98,7 +98,7 @@ export function BearTextMedia({
       ...ase,
     };
 
-    logs.logga("___ bertextmed ___", sdlf);
+    bearlog.lug("___ bertextmed ___", sdlf);
 
     const isajdawe = (
       //
@@ -173,7 +173,7 @@ export function BearTextMedia({
     ...args,
   };
 
-  logs.logga("___ BETEXTMEDIA args ___", args);
+  bearlog.lug("___ BETEXTMEDIA args ___", args);
 
   return SwitchComp(itemType, args);
 }

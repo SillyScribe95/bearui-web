@@ -3,7 +3,7 @@ import React, {
   useState,
   useContext,
 } from "react";
-import { logs, turnarray } from "../../index";
+import { bearlog, turnarray } from "../../index";
 import { BearError } from "../BearError";
 import { BearButton } from "../button/BearButton";
 import { BearTextMedia } from "../BearTextMedia";
@@ -180,7 +180,7 @@ export function BearListItemExpand(
       "logtrue";
 
     if (sidjas) {
-      logs.loggu(bearName, "BEARLST- CHOSEN ITEM ", {
+      bearlog.laggu(bearName, "BEARLST- CHOSEN ITEM ", {
         CURREITEM: itemBase,
         CHOSiTEM: cvokbsdf,
         SELECTTRUE: selectTrue,
@@ -192,7 +192,7 @@ export function BearListItemExpand(
   }
 
   function adojaqw(theoasd) {
-    logs.loggu("___ CHOOSING ITEM " + theoasd + ":", {
+    bearlog.laggu("___ CHOOSING ITEM " + theoasd + ":", {
       asdwe,
       listarr,
       choseAll,
@@ -221,7 +221,7 @@ export function BearListItemExpand(
     : dgste;
 
   if (logtrue) {
-    logs.loggu("___ endRet ___", endRet);
+    bearlog.laggu("___ endRet ___", endRet);
   }
 
   const dictRet = typeof endRet == "object";
@@ -238,7 +238,7 @@ export function BearListItemExpand(
   // logtrue = "oaskd";
 
   if (logtrue) {
-    logs.loggu(bearName + "___" + name + "---BrList---", asjds);
+    bearlog.laggu(bearName + "___" + name + "---BrList---", asjds);
   }
 
   function rettobjoo(objo, aokd) {
@@ -255,7 +255,7 @@ export function BearListItemExpand(
         };
 
     if (logtrue) {
-      logs.loggu(bearName, "___ dsifjw ___", {
+      bearlog.laggu(bearName, "___ dsifjw ___", {
         RENDERTYPE: typeList,
         ...dsifjw,
       });
@@ -299,7 +299,7 @@ export function BearListItemExpand(
       // dictRet && !findobj && !typeList && !containFunc;
 
       if (logtrue) {
-        logs.loggu("___ beListItem FINAL ___", {
+        bearlog.laggu("___ beListItem FINAL ___", {
           findobj,
           noContain,
         });
@@ -307,7 +307,7 @@ export function BearListItemExpand(
 
       function finLog(sdasd) {
         if (logItem) {
-          logs.logga(bearName, "_ BLIST ITEM RENDER__", sdasd);
+          bearlog.lug(bearName, "_ BLIST ITEM RENDER__", sdasd);
         }
 
         return findobj(sdasd);
@@ -317,7 +317,7 @@ export function BearListItemExpand(
         const jsdw = typeof findobj;
         const trueGo = jsdw == "function";
 
-        logs.logga("___ trueGo ___", { findobj, jsdw, trueGo });
+        bearlog.lug("___ trueGo ___", { findobj, jsdw, trueGo });
 
         return trueGo ? (
           <BearDiv {...endRet} obj={finLog(endRet)} />
@@ -365,7 +365,7 @@ export function BearListItemExpand(
     const clickEnd = endRet.onClick ? endRet.onClick : onClick;
 
     if ("logtrue") {
-      logs.loggu(bearName + "___ OCLICK FUNC ___", {
+      bearlog.laggu(bearName + "___ OCLICK FUNC ___", {
         FUNCTION: clickEnd,
         ITEM: fijsde,
         okgs,
@@ -389,7 +389,7 @@ export function BearListItemExpand(
 
   // 1console
   if (logtrue) {
-    logs.loggu(bearName, "___ itmExpand ___", {
+    bearlog.laggu(bearName, "___ itmExpand ___", {
       origItem,
       itemNameStyle,
       CLICK: filleoo,

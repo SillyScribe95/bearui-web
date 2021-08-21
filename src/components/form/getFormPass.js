@@ -5,7 +5,7 @@ import { _dictEmail } from "./_dictEmail";
 // import PhoneInput from "react-phone-number-input";
 import {
   //
-  logs,
+  bearlog,
 } from "../../index";
 import DateTimePicker from "react-datetime-picker";
 // import "react-datetime/css/react-datetime.css";
@@ -24,6 +24,10 @@ export function getFormPass(
     case "time":
       osakde = _dictTime();
       break;
+    // case "price":
+    //   osakde = {
+    //     inputLeft: "$"
+    //   }
     case "email":
       osakde = _dictEmail();
       break;
@@ -85,7 +89,7 @@ export function getFormPass(
 // 1date
 function dictDate({ value, containConfig, defaultNow, ...cvsd }) {
   function xvkbdffs() {
-    // logs.logga("___ vfdgd ___", vfdgd);
+    // bearlog.lug("___ vfdgd ___", vfdgd);
 
     const sdifjer = value ? value : defaultNow && new Date();
     const sidfjwer = {
@@ -123,7 +127,7 @@ function dictDate({ value, containConfig, defaultNow, ...cvsd }) {
 
 // 1url 1link
 function _dictURL({ register, ...asdf }) {
-  logs.logga("___ URL register, ...asdf ___", register, asdf);
+  bearlog.lug("___ URL register, ...asdf ___", register, asdf);
 
   const ijsdrase = {
     // adsfokew: "okdasdas",

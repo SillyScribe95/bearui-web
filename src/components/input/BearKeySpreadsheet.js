@@ -46,7 +46,7 @@
 //   };
 
 //   function imfasds(xcvz) {
-//     logs.logga("___ xcvz ___", xcvz);
+//     bearlog.lug("___ xcvz ___", xcvz);
 //   }
 
 //   const kxvdsd = {

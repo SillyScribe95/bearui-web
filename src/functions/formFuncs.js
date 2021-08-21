@@ -1,30 +1,28 @@
 import { isObject } from "lodash";
-import { logs } from "..";
+import { bearlog } from "..";
 
 export function focusBase({
   //
   list,
+  dictvar,
+  focusInput,
   onFocus,
 }) {
-  const existo =
-    //
-    Array.isArray(list) && list[0];
-  const ijdswer =
-    //
-    existo && isObject(existo) ? existo.name : existo;
-
   const kvdsf =
     //
-    ijdswer;
+    focusInput;
 
-  logs.logga("___ focusBase ___", {
+  bearlog.lug("___ focusBase ___", {
     //
-    existo,
-    ijdswer,
     kvdsf,
   });
 
   if (kvdsf) {
-    onFocus(ijdswer);
+    onFocus(kvdsf);
   }
 }
+
+// 1submit
+// export function formSubmit(){
+// //
+// }

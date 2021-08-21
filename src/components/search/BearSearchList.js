@@ -5,7 +5,7 @@ import React, {
 } from "react";
 // import SelectSearch from "react-select-search";
 
-import { logs } from "../../index"
+import { bearlog } from "../../index";
 
 import {
   //
@@ -26,7 +26,6 @@ import { BearSearchBase } from "./BearSearchBase";
 
 export function BearSearchList({
   //
-  onChange,
   list,
   dictvar,
   bearName,
@@ -86,7 +85,7 @@ export function BearSearchList({
       // map;
       listItemName + extractSplit + mapDictAttrToString(searchAttrs, " ", map);
 
-    logs.logga("___ sdfgoekse ___", {
+    bearlog.lug("___ sdfgoekse ___", {
       map: map,
       listItemName: listItemName,
       searchAttrs: searchAttrs,
@@ -97,7 +96,7 @@ export function BearSearchList({
   }
 
   function xvibjrg(sadofkwe) {
-    logs.logga("sadofkwe--zzz", sadofkwe);
+    bearlog.lug("sadofkwe--zzz", sadofkwe);
 
     const stringios = typeof sadofkwe;
     const doNot = stringios == "object";
@@ -113,7 +112,7 @@ export function BearSearchList({
       ...dfigre,
     };
 
-    logs.logga("___ mdvokdfdsa ___", mdvokdfdsa);
+    bearlog.lug("___ mdvokdfdsa ___", mdvokdfdsa);
 
     const dibjgret =
       //
@@ -132,8 +131,8 @@ export function BearSearchList({
       logtrue: true,
     };
 
-    logs.logLinas(10);
-    logs.logga("___ kjsad ___", {
+    bearlog.lugLinas(10);
+    bearlog.lug("___ kjsad ___", {
       listItemName,
       mapase: mapase,
       ...kjsad,
@@ -195,7 +194,7 @@ export function BearSearchList({
       flex: true,
     };
 
-    logs.logga("___ sodfer ___", sodfer);
+    bearlog.lug("___ sodfer ___", sodfer);
 
     return <BearList {...sodfer} />;
   }
@@ -212,27 +211,13 @@ export function BearSearchList({
 
   // 1list
   // 1console
-  logs.logga("___ brSeacrch LIST ___", {
+  bearlog.lug("___ brSeacrch LIST ___", {
     searchAttrs,
     arrmode,
   });
 
-  function qe4ead(vcdfge) {
-    var nameos = vcdfge.substr(0, vcdfge.indexOf(extractSplit));
-
-    logs.logga("___ BeSearchList  ___", {
-      mainValue: vcdfge,
-      actualItem: nameos,
-    });
-
-    if (onChange) {
-      onChange(nameos);
-    }
-  }
-
   const jsdrase = {
     options: arrmode,
-    onChange: qe4ead,
   };
 
   const hsdr = {
@@ -241,12 +226,13 @@ export function BearSearchList({
   };
 
   function asodkwe(zxcvdf) {
-    logs.logga("___ zxcvdf ___", zxcvdf);
+    bearlog.lug("___ zxcvdf ___", zxcvdf);
     setsearchTerm(zxcvdf);
   }
 
   const vobkv = {
     onInputChange: asodkwe,
+    valRemoveAfter: extractSplit,
   };
 
   args = {
@@ -263,7 +249,7 @@ export function BearSearchList({
     ...args,
   };
 
-  logs.logga("args-zz", args);
+  bearlog.lug("args-zz", args);
   // args = argPass(args);
 
   const qasds = headerAtts && DSIFJ();

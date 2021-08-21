@@ -6,7 +6,7 @@ import React, {
 
 import {
   //
-  logs,
+  bearlog,
 } from "../index";
 import { BearModalWarning } from "./modal/BearModalWarning";
 import { BearDiv } from "../components/BearDiv";

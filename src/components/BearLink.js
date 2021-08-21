@@ -8,7 +8,7 @@ import React, {
   useRef,
 } from "react";
 // import { Link } from "react-router-dom";
-import { logs } from "../index"
+import { bearlog } from "../index";
 
 export function BearLink({
   //
@@ -91,7 +91,7 @@ export function BearLink({
     // onClick: handleClick,
     ...isdaeqw,
   };
-  // logs.logga("___ aisdwq ___", aisdwq);
+  // bearlog.lug("___ aisdwq ___", aisdwq);
 
   function Rlasdow() {
     return outBlank ? (

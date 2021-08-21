@@ -7,7 +7,7 @@ import KeyValue from "react-key-value";
 
 import {
   //
-  logs,
+  bearlog,
 } from "../../index";
 import { BearList } from "../list/BearList";
 // import { BearButton } from "../button/";
@@ -72,7 +72,7 @@ export function BearKeyValue({
     };
 
     function vksdfA({ key, value }) {
-      logs.logga("___ key, value ___", key, value);
+      bearlog.lug("___ key, value ___", key, value);
     }
 
     const nissdfer = {
@@ -96,7 +96,7 @@ export function BearKeyValue({
     // 1key
     function ijsdfsd(asdf) {
       //   const
-      logs.logga("___ KEY___", asdf);
+      bearlog.lug("___ KEY___", asdf);
 
       //   cxvxc()
     }
@@ -105,7 +105,7 @@ export function BearKeyValue({
     function kxzfa(zxcvf) {
       //
 
-      logs.logga("___CREATE VALUE ___", zxcvf);
+      bearlog.lug("___CREATE VALUE ___", zxcvf);
 
       //
       cxvxc();
@@ -114,7 +114,7 @@ export function BearKeyValue({
 
     // 1create KEY
     function kcxz(xcvldsf) {
-      logs.logga("___ CREATE KEY ___", xcvldsf);
+      bearlog.lug("___ CREATE KEY ___", xcvldsf);
 
       if (onKeyCreate) {
         // onKeyCreate()

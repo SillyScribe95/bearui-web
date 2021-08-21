@@ -5,7 +5,7 @@ import { BearList } from "../list/BearList";
 import { BearButton } from "../button/BearButton";
 import {
   //
-  logs,
+  bearlog,
 } from "../../index";
 import { useForm, Controller } from "react-hook-form";
 import { focusBase } from "../../functions/formFuncs";
@@ -14,6 +14,8 @@ export default function FormHook({
   buttonList,
   onSubmit,
   hookConfig,
+  focusFirst,
+  focusInput,
   ...args
 }) {
   //
@@ -22,14 +24,14 @@ export default function FormHook({
   const modeo =
     //
     // "onBlur"
-    "onSubmit";
-  // "onChange";
+    // "onSubmit";
+    "onChange";
 
   const oksdaew = {
     // validationSchema: asokew,
     // resolver: asokew,
     //
-    // reValidateMode: "onChange",
+    reValidateMode: "onChange",
     mode: modeo,
     ...hookConfig,
   };
@@ -53,16 +55,27 @@ export default function FormHook({
     register,
   };
 
+  bearlog.lug("idjfe--", idjfe);
+
   // 1focus
   function Faoksd() {
     const sdjfrwe =
       //
-      "";
-    // focusFirst
+      // "";
+      focusInput;
+    // focusFirst || focusInput;
+
+    //   const existo =
+    //   //
+    //   Array.isArray(list) && list[0];
+    // const ijdswer =
+    //   //
+    //   existo && isObject(existo) ? existo.name : existo;
 
     if (sdjfrwe) {
       focusBase({
-        list,
+        focusInput,
+        ...args,
         onFocus: setFocus,
       });
     }

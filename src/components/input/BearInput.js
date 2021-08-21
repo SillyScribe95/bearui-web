@@ -3,7 +3,7 @@ import React, {
   useState,
   useContext,
 } from "react";
-import { logs } from "../../index";
+import { bearlog } from "../../index";
 import {
   Button,
   NumberInputField,
@@ -33,11 +33,13 @@ export function RendGroup(
   { renderInput, inputLeft, leftConfig, inputRight, rightConfig, ...asdsd }
 ) {
   const leftRendos = inputLeft && (
-    <InputLeftElement {...leftConfig}>
-      {inputLeft}
-      {/* <Button {...leftConfig}>{inputLeft}</Button> */}
-      {/* {inputLeft} */}
-    </InputLeftElement>
+    <div style={{ marginRight: "7px" }}>
+      <InputLeftElement {...leftConfig}>
+        {inputLeft}
+        {/* <Button {...leftConfig}>{inputLeft}</Button> */}
+        {/* {inputLeft} */}
+      </InputLeftElement>
+    </div>
   );
 
   const rightRendos = inputRight && (
@@ -53,7 +55,7 @@ export function RendGroup(
     //
   };
 
-  const cvdfsoe = sdijfr ? (
+  let cvdfsoe = sdijfr ? (
     <InputGroup {...sdresar}>
       {/*  */}
       {leftRendos}
@@ -63,6 +65,12 @@ export function RendGroup(
   ) : (
     center
   );
+
+  cvdfsoe =
+    //
+    // ""
+    cvdfsoe;
+  // center;
 
   const dfgjer = renderInput ? renderInput(cvdfsoe) : cvdfsoe;
 
@@ -85,7 +93,7 @@ export function inputChange(adowe, funcvra) {
     //
     funcvra && valows;
 
-  logs.logga("___Asidnw obj ___", {
+  bearlog.lug("___Asidnw obj ___", {
     MAIN: adowe,
     VALUE: valows,
     TRUE: undoas,

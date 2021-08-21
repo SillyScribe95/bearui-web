@@ -3,7 +3,7 @@ import React, {
   useState,
   useContext,
 } from "react";
-import { logs } from "../../index";
+import { bearlog } from "../../index";
 import * as soco from "../../consts/socialConst";
 import { BearTextMedia } from "../BearTextMedia";
 import { BearList } from "../list/BearList";
@@ -104,7 +104,7 @@ export function BearSocialBase({
       ...asswd,
     };
 
-    logs.logga("___ jsaease ___", jsaease);
+    bearlog.lug("___ jsaease ___", jsaease);
 
     const gfnmeir = (
       <>
@@ -121,8 +121,8 @@ export function BearSocialBase({
 
     if (sdjerw) {
       // 1console
-      logs.logga(typevar + "___ns Link Social FULL ___", jsaease);
-      logs.logga(typevar, "___ mainIco ___", mainIco);
+      bearlog.lug(typevar + "___ns Link Social FULL ___", jsaease);
+      bearlog.lug(typevar, "___ mainIco ___", mainIco);
     }
 
     return gfnmeir;
@@ -150,14 +150,14 @@ export function BearSocialBase({
           ...cvdfa,
         };
 
-    logs.logga("___ jweqwe ___", jweqwe);
+    bearlog.lug("___ jweqwe ___", jweqwe);
 
     let osdasew =
       //
       iasjde({ iconvar: itemName, ...jweqwe });
     // "qplwqe";
 
-    logs.logga("___ osdasew ___", osdasew);
+    bearlog.lug("___ osdasew ___", osdasew);
 
     return osdasew;
   }
@@ -185,7 +185,7 @@ export function BearSocialBase({
     ...sdfsrew,
   };
 
-  logs.logga("___ LISTSOCIAL ___", ijsadwe);
+  bearlog.lug("___ LISTSOCIAL ___", ijsadwe);
 
   const compBase = (
     <>

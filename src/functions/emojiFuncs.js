@@ -1,6 +1,6 @@
 import {
   //
-  logs,
+  bearlog,
 } from "../index";
 import { emojiDict } from "../consts/emojiConst";
 
@@ -27,7 +27,7 @@ function mainRet(cxsd) {
     LABEL: oiajew,
   };
 
-  logs.logga("___ emojilist--mainRet ___", oaksde);
+  bearlog.lug("___ emojilist--mainRet ___", oaksde);
 
   return oiajew;
 }
@@ -44,7 +44,7 @@ export function labelMoj(cxsd) {
 export function EmojiLabelMap(cxsd) {
   let sd9fwq = cxsd.map(labelMoj);
 
-  logs.logga("___ EmojiLabelMap ___", sd9fwq);
+  bearlog.lug("___ EmojiLabelMap ___", sd9fwq);
 
   return sd9fwq;
 }

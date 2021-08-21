@@ -3,7 +3,7 @@ import React, {
   useState,
   useContext,
 } from "react";
-import { logs } from "../../index";
+import { bearlog } from "../../index";
 import * as soco from "../../consts/socialConst";
 import { BearTextMedia } from "../BearTextMedia";
 import { BearList } from "../list/BearList";
@@ -27,11 +27,13 @@ export function BearSocialShare({
   ...sdfsrew
 }) {
   // 1const
-  const [type, setType] = useState("");
-  const [cosNamB, setcosNamB] = useState();
+  const [cosNamB, setcosNamB] =
+    //
+    "";
+  // useState();
   const sodkfwe = "asdqweqs";
 
-  userText = cosNamB ? cosNamB : userText;
+  // userText = cosNamB ? cosNamB : userText;
   // userText = "okwqeasd sodkdsfo";
   const sdokfwe = userText ? `&${linkuseNameProvide}=${userText}` : "";
 
@@ -106,6 +108,8 @@ export function BearSocialShare({
       padvar: 5,
     };
 
+    bearlog.lug("socShare", jsaease);
+
     return jsaease;
   }
 
@@ -115,11 +119,11 @@ export function BearSocialShare({
     ...sdfsrew,
   };
 
-  logs.logga("___ LISTSOCIAL ___", ijsadwe);
+  bearlog.lug("___ LISTSOCIAL ___", ijsadwe);
 
   function NameSingio() {
     function asokds(sdfer) {
-      logs.logga("___ setcosNamB ___", sdfer);
+      bearlog.lug("___ setcosNamB ___", sdfer);
 
       // setcosNamB(sdfer);
     }

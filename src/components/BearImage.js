@@ -5,8 +5,8 @@ import React, {
 } from "react";
 import {
   //
-  logs,
-} from "../index"
+  bearlog,
+} from "../index";
 
 export function BearImage({
   typevar,
@@ -32,7 +32,7 @@ export function BearImage({
     ...sae,
   };
 
-  logs.logga("___BearIamge tosdew ___", osdew);
+  bearlog.lug("___BearIamge tosdew ___", osdew);
 
   let endValue = "";
   switch (typevar) {

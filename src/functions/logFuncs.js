@@ -2,26 +2,34 @@
 
 import prettyFormat from "pretty-format";
 
-export function logga(messageIt, valY) {
-  // logs.logga(messageIt, valY);
+function lug(...sdf) {
+  // bearlog.lug(messageIt, valY);
 }
 
-export function loggo(...asw) {
-  // console.log("loggo--", ...asw);
-  console.log("loggo--", ...asw);
+function log(...sdf) {
+  luggo(...sdf);
+}
+
+function lugga(messageIt, valY) {
+  // bearlog.lug(messageIt, valY);
+}
+
+function luggo(...asw) {
+  // console.log("luggo--", ...asw);
+  console.log("🐻 loggo: ", ...asw);
   // baseLog(asw)
 
-  // logs.logga('logs.logga:', logs.logga)
+  // bearlog.lug('bearlog.lug:', bearlog.lug)
 }
 
-export function logCheck(name, first, ...asw) {
+function lugCheck(name, first, ...asw) {
   const asuhw =
     //
     name == first;
 
   //
   if (asuhw) {
-    loggo(...asw);
+    luggo(...asw);
   }
 }
 
@@ -33,7 +41,7 @@ function baseLog(o) {
     //
     arro || obkjo;
 
-  // console.log("loggo--aaaa", {
+  // console.log("luggo--aaaa", {
   //   o: o,
   //   doTable: doTable,
   // })
@@ -46,37 +54,49 @@ function baseLog(o) {
   // }
 }
 
-export function logge(...sdf) {
-  loggo(...sdf);
-  // logs.logga('logs.logga:', logs.logga)
+function lugge(...sdf) {
+  luggo(...sdf);
+  // bearlog.lug('bearlog.lug:', bearlog.lug)
 }
 
-export function loggu(...sdf) {
-  // loggo(...sdf)
+function laggu(...sdf) {
+  // luggo(...sdf)
 }
 
-export function logJSON(messageIt, valY, ...asw) {
+function lugJSON(messageIt, valY, ...asw) {
   let sodase =
     //
     // JSON.stringify(valY)
     prettyFormat(valY);
 
-  console.log("loggo--", messageIt, sodase, ...asw);
-  // logs.logga('logs.logga:', logs.logga)
+  console.log("luggo--", messageIt, sodase, ...asw);
+  // bearlog.lug('bearlog.lug:', bearlog.lug)
 }
 
-//   export function logga(messageIt, valY) {
-//     logs.logga(messageIt, valY);
+//   function logga(messageIt, valY) {
+//     bearlog.lug(messageIt, valY);
 //   }
 
-export function logLines(nubfd) {
+function lugLines(nubfd) {
   let saodkwe = "-";
   for (let i = 0; i < nubfd; i++) {
     saodkwe += "-";
-    loggo(saodkwe);
+    luggo(saodkwe);
   }
 }
 
-export function logLinas(...sdf) {
-  // loggo(...sdf)
+function lugLinas(...sdf) {
+  // luggo(...sdf)
 }
+
+export const bearlog = {
+  log,
+  lug,
+  laggu,
+  lugga,
+  lugge,
+  lugJSON,
+  lugLines,
+  lugLinas,
+  lugCheck,
+};

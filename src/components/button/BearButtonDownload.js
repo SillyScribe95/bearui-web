@@ -7,7 +7,7 @@ import React, {
 import { BearButton } from "./BearButton";
 import {
   //
-  logs,
+  bearlog,
 } from "../../index";
 
 export function BearButtonDownload({

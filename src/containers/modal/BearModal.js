@@ -19,7 +19,7 @@ import {
 
 import {
   //
-  logs,
+  bearlog,
 } from "../../index";
 import { BearList } from "../../components/list/BearList";
 
@@ -53,7 +53,7 @@ export function BearModal({
   };
 
   function asdkwe(afads) {
-    logs.logga("___ afads ___", afads);
+    bearlog.lug("___ afads ___", afads);
     // onClose();
   }
 
@@ -79,7 +79,7 @@ export function BearModal({
     ...buttonConfig,
   };
 
-  logs.logga("___ ifdse ___", ifdse);
+  bearlog.lug("___ ifdse ___", ifdse);
 
   const sidjfwer = footer ? footer : <BearList {...ifdse} />;
 

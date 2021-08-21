@@ -1,5 +1,5 @@
 import { useEffect, useRef, useReducer } from "react";
-import { logs } from "../../index";
+import { bearlog } from "../../index";
 import { fireDocs } from "../backendFuncs";
 //
 // Hook

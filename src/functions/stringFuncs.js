@@ -1,4 +1,4 @@
-import { turnarray } from "./arrayFuncs";
+import { removeEmptyArray, turnarray } from "./arrayFuncs";
 
 export function spaceSurround(stringVar) {
   // eeeeee
@@ -11,7 +11,7 @@ export function quoteSurround(stringVar) {
 }
 
 export function joinString(arrayo, strngo = "", first = "") {
-  arrayo = turnarray(arrayo);
+  arrayo = removeEmptyArray(arrayo);
   const okasd = arrayo ? arrayo.join(strngo) : "";
 
   return okasd;

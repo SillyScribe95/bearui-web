@@ -3,7 +3,7 @@ import React, {
   useState,
   useContext,
 } from "react";
-import { logs, getAnyDictValue } from "../../index";
+import { bearlog, getAnyDictValue } from "../../index";
 import { BearTitle } from "../title/BearTitle";
 import { BearDiv } from "../BearDiv";
 import { BearFloat } from "../BearFloat";
@@ -60,7 +60,7 @@ export function dfkbijv(
   // 1const
 
   function Titren(adfok = {}) {
-    logs.logga("___ adfok ___", adfok);
+    bearlog.lug("___ adfok ___", adfok);
 
     return Titoas(adfok);
   }
@@ -171,7 +171,7 @@ export function dfkbijv(
   const objDegrade = getAnyDictValue(degradedArgs);
 
   const objRequre = getAnyDictValue(requiredArgs);
-  logs.logga("___ objRequre ___", objRequre);
+  bearlog.lug("___ objRequre ___", objRequre);
 
   function sajwae(sdfer) {
     const goCHecko = true && !ignoreErrors;

@@ -6,7 +6,7 @@ import React, {
 import { BearDiv } from "../../components/BearDiv";
 import {
   //
-  logs,
+  bearlog,
 } from "../../index";
 
 export function BearButton({
@@ -147,7 +147,7 @@ export function BearButton({
 
   // 1onclick
   function asoke() {
-    logs.logga("___ bButton ONCLICK ___", {
+    bearlog.lug("___ bButton ONCLICK ___", {
       loadClick: loadClick,
       onClick: onClick,
     });
@@ -204,7 +204,7 @@ export function BearButton({
   };
 
   // 1console
-  logs.logga("___ sfasdokwe ___", sfasdokwe);
+  bearlog.lug("___ sfasdokwe ___", sfasdokwe);
 
   function GroupBase({ right, left, leftConfig, rightConfig, ...qwe }) {
     const nidsfjer = {
@@ -266,7 +266,7 @@ export function BearButton({
     ...divConfig,
   };
 
-  logs.logga("___ jawewe ___", jawewe);
+  bearlog.lug("___ jawewe ___", jawewe);
 
   const asdgvwe =
     //

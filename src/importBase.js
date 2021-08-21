@@ -37,7 +37,12 @@ export * from "./components/BearModel";
 
 // 1form
 export * from "./components/form/BearForm";
-export * from "./components/form/FormBase";
+export * from "./components/form/BearFormBase";
+export * from "./components/form/FormHook";
+
+export * from "./components/input/BearInput";
+export * from "./components/input/BearInputText";
+export * from "./components/input/BearInputNumber";
 
 // 1auth
 export * from "./components/user/BearAuthPortal";

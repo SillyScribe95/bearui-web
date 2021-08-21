@@ -3,7 +3,7 @@ import React, {
   useState,
   useContext,
 } from "react";
-import { logs } from "../../index";
+import { bearlog } from "../../index";
 import { useForm, Controller } from "react-hook-form";
 import { BearInputText } from "../input/BearInputText";
 import { BearPassword } from "../input/BearPassword";
@@ -40,7 +40,7 @@ export function BearFormInputCheck({
   //
   subtitle,
   subtitlePlacement,
-  placeholder,
+  // placeholder,
   obj,
   ref,
   containerStyle,
@@ -123,7 +123,7 @@ export function BearFormInputCheck({
       name == oisdkre;
 
     if (sdfijer) {
-      logs.loggu(name + "___BearForm--INPUT------zzz", ...asa);
+      bearlog.laggu(name + "___BearForm--INPUT------zzz", ...asa);
     }
   }
 
@@ -150,8 +150,8 @@ export function BearFormInputCheck({
       // "";
       "firstLast";
 
-    logs.logga("___ idjfr ___", idjfr);
-    logs.logCheck(
+    bearlog.lug("___ idjfr ___", idjfr);
+    bearlog.lugCheck(
       "sijddf",
       idjfr.name,
       kdfjg,
@@ -167,7 +167,7 @@ export function BearFormInputCheck({
   let ujsdqwe = "";
   let baseTop = true;
   function retFunc() {
-    logs.logga("___ retFunc-inputType ___", inputType);
+    bearlog.lug("___ retFunc-inputType ___", inputType);
 
     switch (inputType) {
       case "timeList":
@@ -179,6 +179,7 @@ export function BearFormInputCheck({
         };
         ujsdqwe = goCont(BearSelect, jsdrse);
         break;
+      // 1selec
       case "select":
         const sfkwer = {
           // fontSize: "0.2em",
@@ -189,6 +190,10 @@ export function BearFormInputCheck({
         // ujsdqwe = <AsyncCreatableSelect {...objbase} />;
         // ujsdqwe = <CreatableSelect {...objbase} />;
         break;
+      case "button":
+        ujsdqwe = sijdgdf(BearButton, {
+          type: "submit",
+        });
       case "radio":
         ujsdqwe = sijdgdf(BearRadio);
         break;
@@ -202,9 +207,9 @@ export function BearFormInputCheck({
         ujsdqwe = sijdgdf(BearTextarea);
         break;
       case "number":
-        baseTop = "";
+        // baseTop = "";
         const jidr = {
-          noBase: false,
+          // noBase: false,
         };
         ujsdqwe = sijdgdf(BearInputNumber, jidr);
         break;
@@ -253,7 +258,7 @@ export function BearFormInputCheck({
       render: difjgr,
     };
 
-    logs.logga("___ beform CONTROLLER ___", xbvkf);
+    bearlog.lug("___ beform CONTROLLER ___", xbvkf);
 
     let asod = (
       //
@@ -266,9 +271,13 @@ export function BearFormInputCheck({
         //
         ref,
         value,
+        // onChange,
+        // onBlur,
         ...field
       },
     }) {
+      bearlog.lug("brefeld", { field, objbase, aisjdwe });
+
       const jodswre = {
         ...containerStyle,
         ...ashwe,
@@ -277,15 +286,16 @@ export function BearFormInputCheck({
       const sfeqwwe = {
         ...objbase,
         ...aisjdwe,
+        ...field,
         inputRef: ref,
         ref,
-        ...field,
+        // ...field,
         style: jodswre,
       };
 
-      logs.logga("___ value ___", value);
+      bearlog.lug("___ value ___", value);
       logros("___ BearCont CONTROL fld ___", field);
-      logros("___ BerInot ___", sfeqwwe);
+      bearlog.lug("___ BerInot ___", sfeqwwe);
 
       const nfdgers =
         //

@@ -6,14 +6,15 @@ import React, {
 import { useForm, Controller } from "react-hook-form";
 import {
   //
-  logs,
-} from "../../index"
+  bearlog,
+} from "../../index";
 import { BearFormSetup } from "./BearFormSetup";
 // import { BearSelect } from "../select/BearSelect";
 
-export function FormBase({
+export function BearFormBase({
   //
   // seriesObj,
+  children,
   ...args
 }) {
   // 1const
@@ -38,52 +39,35 @@ export function FormBase({
     //
     handleSubmit,
     // watch,
+    register,
     ...asdw
   } =
     //
     useForm(oksdaew);
 
-  logs.logga("___ asdw ___", asdw);
+  bearlog.lug("___ FORM BASE ___", asdw);
 
   function fdijgg(okdfg) {
-    logs.logga("___ SUMIBT TRAP ___", okdfg);
+    bearlog.lug("___ SUMIBT TRAP ___", okdfg);
   }
   const cvkbdf = {
     onSubmit: handleSubmit(fdijgg),
+    // ...asdw
   };
-
-  const bkgfo = {
-    name: "password",
-    // required: true,
-    ...asdw,
-  };
-
-  const djfgt = {
-    name: "name",
-    ...asdw,
-  };
-
-  const ijsasr = [
-    //
-    "List",
-    "Base",
-  ];
-
-  const koerte = {
-    // inputFunction: BearSelect,
-    name: "dfgerr",
-    multi: true,
-    optionsArray: ijsasr,
-    ...asdw,
-  };
-
-  const idfgt = BearFormSetup(bkgfo);
-
-  logs.logga("___ bkgfo ___", bkgfo);
 
   const kdfgr = {
     type: "submit",
   };
+
+  const sidjfer = register("name", { required: true });
+
+  const sdfm = {
+    name: "name",
+    // ...register,
+    ...sidjfer,
+  };
+
+  const kvdsdr = <input {...sdfm} />;
 
   const okfdsd = (
     <>
@@ -91,7 +75,11 @@ export function FormBase({
       <form {...cvkbdf}>
         {/* {BearFormSetup(djfgt)} */}
         {/* {BearFormSetup(bkgfo)} */}
-        {BearFormSetup(koerte)}
+        {/* {BearFormSetup(koerte)} */}
+        {children}
+        {kvdsdr}
+        {/* <input type="text" placeholder="First name" {...register("First name", {required: true, maxLength: 80})} /> */}
+        {/* <input typje="text" placeholder="Last name" {...register("Last name", {required: true, maxLength: 100})} /> */}
         {/* <input {...idfgt} /> */}
         {/* <InputChak {...idfgt} /> */}
         <button {...kdfgr}>SUBMIT</button>

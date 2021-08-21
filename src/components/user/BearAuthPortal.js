@@ -15,7 +15,7 @@ import {
   MicrosoftLoginButton,
   LinkedInLoginButton,
 } from "react-social-login-buttons";
-import { logs } from "../../index";
+import { bearlog } from "../../index";
 import { BearForm } from "../form/BearForm";
 import { BearDiv } from "../BearDiv";
 import { BearButton } from "../button/BearButton";
@@ -52,7 +52,7 @@ export function BearAuthPortal({
   const [emaTrue, setemaTrue] = useState();
   const [sdfer, setsignType] = useState(typeSign);
 
-  logs.logga("___ emaTrue", emaTrue, setemaTrue, sdfer, setsignType);
+  bearlog.lug("___ emaTrue", emaTrue, setemaTrue, sdfer, setsignType);
 
   let signType =
     //
@@ -102,7 +102,7 @@ export function BearAuthPortal({
   // BearIconText("email", signCheck("Email"));
 
   function dskwad() {
-    logs.logga("asokdwqe");
+    bearlog.lug("asokdwqe");
   }
 
   const emBaso = {
@@ -179,7 +179,7 @@ export function BearAuthPortal({
 
   async function osadew({ itemType }) {
     const typevar = itemType;
-    logs.logga(typevar, "___ sinBas SOCIAL CLICK ___", {
+    bearlog.lug(typevar, "___ sinBas SOCIAL CLICK ___", {
       typevar,
       onSubmit,
       socialSubmit,
@@ -286,20 +286,20 @@ export function BearAuthPortal({
   };
 
   function dsafweR(asdfe) {
-    logs.logga("___ asdfe ___", asdfe);
+    bearlog.lug("___ asdfe ___", asdfe);
 
     return ASsfokse(asdfe);
     // return "gisdfoe";
   }
 
   function spfdewr({ email, password }) {
-    logs.logga("___ BearAuthPortal SIGNUP ___", email, password);
+    bearlog.lug("___ BearAuthPortal SIGNUP ___", email, password);
     //
     // userLogSign(email, password, funcvar);
   }
 
   // 1console
-  logs.logga("___ SignBsae SOCIAL ___", igfder);
+  bearlog.lug("___ SignBsae SOCIAL ___", igfder);
 
   //  TimHernandez : TimHernandez ,
 

@@ -5,7 +5,9 @@ import { BearList } from "../list/BearList";
 import { BearButton } from "../button/BearButton";
 import {
   //
-  logs,
+  bearlog,
+  mergeDict,
+  getDictvalues,
 } from "../../index";
 import {
   //
@@ -17,16 +19,14 @@ import {
 } from "../GlobalComps";
 import { BearError } from "../BearError";
 import { BearCheckMain } from "../check/BearCheckMain";
-import { BearFormInputCheck } from "./BearFormInputCheck";
 import { formValidPass } from "./formValidPass";
 import { BearFormSetup } from "./BearFormSetup";
-import { getFormPass } from "./getFormPass";
 import { BearInputBase } from "../input/BearInputBase";
 import { focusBase } from "../../functions/formFuncs";
 import FormHook from "./FormHook";
+import { removeEmptyArray } from "../../functions/arrayFuncs";
 
 export function BearForm({
-  noButton,
   noText,
   listDict,
   loadConfig,
@@ -34,17 +34,21 @@ export function BearForm({
   textConfig,
   list,
   //
+  inputStyle,
   inputConfig,
   //
   // 1button
+  noButton,
+  noButtonEnd,
   buttonConfig = {},
   buttonText = "Submit",
   buttonSize = "35px",
   betweenItem,
   //
   //
+  //
   // 1focus
-  focusFirst,
+  // focusFirst,
   //
   buttonList,
   toplist,
@@ -67,6 +71,9 @@ export function BearForm({
   requireAll,
   //
   // 1submit
+  formData,
+  extractValues,
+  // 1value
   loadSubmit,
   onSubmit,
   submitExtra,
@@ -120,7 +127,7 @@ export function BearForm({
       listIndex,
     };
 
-    logs.logga("___ ijsdr ___", ijsdr);
+    bearlog.lug("___ ijsdr ___", ijsdr);
 
     if (kjdsasd) {
       cxvbmf(values, funta);
@@ -145,44 +152,58 @@ export function BearForm({
       trudsoe,
     };
 
-    logs.logga("___ FORMAMAIN SUBMIT ___", gifhjer);
-    logs.logga("___ Fomain values ___", values);
+    bearlog.lug("___ FORMAMAIN SUBMIT ___", gifhjer);
+    bearlog.lug("___ Fomain values ___", values);
 
     if (trudsoe) {
       let dsifer = singleTrue ? goSing(values) : mainFI(values);
-
-      logs.logga("FORMA--MAIN Submit", dsifer);
+      dsifer = extPrep(dsifer);
 
       funta(dsifer);
       setloadSetto();
     }
   }
 
+  function extPrep(values) {
+    bearlog.lug("values-sbmit--AAAA", { values, formData });
+    values = mergeDict(values, formData);
+    values = extractValues ? getDictvalues(values) : values;
+    bearlog.lug("values-sbmit--BBBBB", values);
+
+    return values;
+  }
+
   function sease(e) {
     // e.preventDefault();
     // subbTo()
 
-    logs.logga("___ e ___", e);
+    bearlog.lug("___ e ___", e);
   }
 
   function onSubMain(fjdwe) {
     subbTo(fjdwe, onSubmit);
   }
 
-  const sdjifwer = FormHook({
+  // 1args
+  args = {
+    ...args,
+    list,
+    dictvar,
+    formData,
+    bearName,
+  };
+
+  const sdnfer = {
     onSubmit: onSubMain,
     ...args,
-  });
+  };
+  bearlog.lug("sdnfer---", sdnfer);
+  const { ...sdjifwer } = FormHook(sdnfer);
 
   const difjgr = {
     ...args,
     ...sdjifwer,
     id: formid,
-  };
-
-  args = {
-    ...args,
-    bearName,
   };
 
   // 1button
@@ -232,7 +253,7 @@ export function BearForm({
       // marginTop: ""
     };
 
-    logs.logga("___ bForm BUTTON ___", dvbijkrw);
+    bearlog.lug("___ bForm BUTTON ___", dvbijkrw);
 
     const adhwdse = (
       <>
@@ -252,7 +273,18 @@ export function BearForm({
     return dfbokerr;
   }
 
-  function sdfok(obj) {
+  function sdfok(sdfi) {
+    let sweas;
+    switch (sdfi) {
+      case "formButton":
+        sweas = bettios();
+        break;
+      default:
+        sweas = xcvbofd(sdfi);
+    }
+    return sweas;
+  }
+  function xcvbofd(obj) {
     const inDict = dictvar && dictvar[obj];
 
     const nissase = requireAll && {
@@ -262,6 +294,10 @@ export function BearForm({
     const bfdg = {
       ...nissase,
       ...inputConfig,
+      style: {
+        ...inputConfig.style,
+        ...inputStyle,
+      },
     };
 
     const baseObj = {
@@ -274,7 +310,7 @@ export function BearForm({
       ...argMiss(args),
     };
 
-    logs.logga("___ baseObj ___", baseObj);
+    bearlog.lug("___ baseObj ___", baseObj);
 
     const fdjgre = baseObj.obj;
     const obvdsaf = fdjgre
@@ -283,7 +319,7 @@ export function BearForm({
       ? FormError("no form Dictionary supplied - " + obj)
       : BearFormList(baseObj);
 
-    logs.logga("___ FORMAMIN - FIRST RUN OBJECT___", {
+    bearlog.lug("___ FORMAMIN - FIRST RUN OBJECT___", {
       dictvar,
       INITIAL: obj,
       baseObj,
@@ -304,7 +340,14 @@ export function BearForm({
   const initBase = topButtonTrue && list[0];
   const listRend = listDict && listDict[currForm];
   const atbosa = listRend ? listRend : currForm;
-  const listaros = topButtonTrue ? [atbosa] : list;
+  const xcvbo = topButtonTrue
+    ? [atbosa]
+    : [
+        //
+        ...list,
+        !noButtonEnd && "formButton",
+      ];
+  const listaros = removeEmptyArray(xcvbo);
 
   const ijawesdafr = {
     dictvar: dictvar,
@@ -320,7 +363,7 @@ export function BearForm({
   function sdijfwer({ onClick, ...sdf }) {
     function xcvase(adfad) {
       //
-      logs.logga("___BFORM BTTON CLICK VALS ___", adfad);
+      bearlog.lug("___BFORM BTTON CLICK VALS ___", adfad);
 
       subbTo(adfad, onClick);
     }
@@ -369,15 +412,14 @@ export function BearForm({
   }
 
   // 1button
-  const buttio =
-    //
-    //
-    !noButton && buttonList ? ajde() : Buttiona(buttonConfig);
+  function bettios() {
+    return !noButton && buttonList ? ajde() : Buttiona(buttonConfig);
+  }
 
   function vijsd9({ name, ...adaw }) {
     let as = name;
 
-    logs.logga("___ formMian TAB ONCLICK  ___", as);
+    bearlog.lug("___ formMian TAB ONCLICK  ___", as);
     // setcurrTab(as);
   }
 
@@ -416,7 +458,7 @@ export function BearForm({
     };
 
     function aidsjfew({ title, iconvar, style, ...zcvdf }) {
-      logs.logga("___ zcvdf ___", zcvdf);
+      bearlog.lug("___ zcvdf ___", zcvdf);
 
       const okawe = {
         style: { fontSize: "1.5em" },
@@ -457,7 +499,7 @@ export function BearForm({
       // obj: (adqq) => "aspdle",
     };
 
-    logs.logga("___formain TABS TOP ___", asodwe);
+    bearlog.lug("___formain TABS TOP ___", asodwe);
 
     const okfdsd = (
       <>
@@ -506,7 +548,7 @@ export function BearForm({
       {topObj}
       {mappit}
       {betweenItem}
-      {buttio}
+      {/* {bettios()} */}
     </>
   );
 
@@ -517,11 +559,12 @@ export function BearForm({
 
   // 1console
   let dskf = `${typeForm} ${bearName} ___ BearForm args ___`;
-  logs.logga(dskf, {
+  bearlog.lug(dskf, {
     ...ijdfsr,
     list,
     listaros,
   });
+  bearlog.lug("bform ALL HOOKS", sdjifwer);
 
   // 1form
   const xcvsfs = loadSetto ? (
@@ -569,9 +612,15 @@ export function BearFormList({ inputList, horizList, ...jdfsd }) {
         label,
       };
 
-      logs.logga("___ dfjsds ___", dfjsds);
+      bearlog.lug("___ dfjsds ___", dfjsds);
 
-      return firstInputCheck(dfjsds);
+      const sidjer =
+        //
+        // sdfok(dfjsds);
+        BearFormList(dfjsds);
+      // firstInputCheck(dfjsds);
+
+      return sidjer;
     }
 
     const jdfwea =
@@ -606,7 +655,7 @@ export function firstInputCheck({ addTrue, noName, inputItem, ...baseObj }) {
   //
   const nameeo = baseObj.name;
 
-  logs.loggu(nameeo, "___BeaForm firstInputCheck ___", {
+  bearlog.lug(nameeo, "___BeaForm firstInputCheck ___", {
     baseObj: baseObj,
     NAME: nameeo,
   });
@@ -623,7 +672,7 @@ export function firstInputCheck({ addTrue, noName, inputItem, ...baseObj }) {
 
   const isjdfe = {
     ...baseObj,
-    ...ijsre,
+    // ...ijsre,
   };
 
   // 1name

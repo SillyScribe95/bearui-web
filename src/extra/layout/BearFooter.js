@@ -6,7 +6,7 @@ import React, {
 
 import {
   //
-  logs,
+  bearlog,
 } from "../../index";
 import { BearDiv } from "../../components/BearDiv";
 
@@ -60,7 +60,7 @@ export function BearFooter({
     // }}
   };
 
-  logs.logga("ajsw---zzzz", ajsw, "asdi9hw");
+  bearlog.lug("ajsw---zzzz", ajsw, "asdi9hw");
 
   const iqjwe = <BearDiv {...ajsw} />;
   const gfnofkr = {

@@ -6,7 +6,7 @@ import React, {
 
 import {
   //
-  logs,
+  bearlog,
 } from "../../index";
 import { BearList } from "./BearList";
 
@@ -23,7 +23,7 @@ export function BearListBase(
     ...args,
   };
 
-  logs.logga("___ BearListBase args ___", args);
+  bearlog.lug("___ BearListBase args ___", args);
 
   return <BearList {...args} />;
 }

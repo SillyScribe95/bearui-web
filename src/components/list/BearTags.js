@@ -6,7 +6,7 @@ import React, {
 
 import {
   //
-  logs,
+  bearlog,
 } from "../../index";
 import { BearList } from "./BearList";
 import { BearButton } from "../button/BearButton";

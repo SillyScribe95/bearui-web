@@ -1,10 +1,10 @@
-import babel from "@rollup/plugin-babel";
-import external from "rollup-plugin-peer-deps-external";
-import del from "rollup-plugin-delete";
-import pkg from "./package.json";
-import css from "rollup-plugin-import-css";
-// import scss from "rollup-plugin-scss"
+import peerDepsExternal from "rollup-plugin-peer-deps-external";
+import resolve from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
 import postcss from "rollup-plugin-postcss";
+import pkg from "./package.json";
+import babel from "@rollup/plugin-babel";
+
 
 const isjfera = postcss({
   config: {
@@ -16,13 +16,7 @@ const isjfera = postcss({
     insertAt: "top",
   },
   // extract: true,
-});
-
-const dfijgret = css({
-  include: ["/**/*.css", "/**/*.scss", "/**/*.sass"],
-  output: "bearui.css",
-  failOnError: true,
-});
+})
 
 export default {
   input: pkg.source,
@@ -31,11 +25,10 @@ export default {
     { file: pkg.module, format: "esm", sourcemap: true },
   ],
   plugins: [
-    // dfijgret,
-    external(),
+    peerDepsExternal(),
     babel(),
-    // del({ targets: ["build/*"] }),
+    resolve(),
+    commonjs(),
     isjfera,
-  ],
-  external: Object.keys(pkg.peerDependencies || {}),
+  ]
 };

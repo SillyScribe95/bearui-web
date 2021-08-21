@@ -4,7 +4,7 @@ import React, {
   useContext,
 } from "react";
 
-export function SpeakAdd({
+export function BearCountry({
   //
   seriesObj,
   ...args

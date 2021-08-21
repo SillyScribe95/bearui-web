@@ -6,25 +6,22 @@ import React, {
 
 import {
   //
-  logs,
+  bearlog,
 } from "../../index";
 import { BearListItem } from "./BearListItem";
 import { BearError } from "../BearError";
 
-export function BearListMap(
-  list,
-  { logtrue,  bearName = "", ...sidwre }
-) {
+export function BearListMap(list, { logtrue, bearName = "", ...sidwre }) {
   //
   function mapoBap(saokae, indexvr) {
-    logs.logga("___ saokae ___", saokae);
+    bearlog.lug("___ saokae ___", saokae);
 
     const asidjwe =
       //
       saokae["renderItem"] ? saokae["renderItem"] : saokae;
 
     if (logtrue) {
-      logs.loggu(bearName + "___BearlistMAP ITEM ___", saokae);
+      bearlog.laggu(bearName + "___BearlistMAP ITEM ___", saokae);
     }
 
     const djfge = bearName + "__ITEM__" + indexvr;
@@ -37,7 +34,7 @@ export function BearListMap(
       ...sidwre,
     };
 
-    logs.logga("___ asidjwe, oskda ___", asidjwe, oskda);
+    bearlog.lug("___ asidjwe, oskda ___", asidjwe, oskda);
 
     const jcvbfd = BearListItem(asidjwe, oskda);
 
@@ -46,12 +43,12 @@ export function BearListMap(
     };
 
     // return "ajqeqw"
-    return jcvbfd
+    return jcvbfd;
   }
 
   const lytoLis = Array.isArray(list);
 
-  logs.logga("___ bListMap ___", {
+  bearlog.lug("___ bListMap ___", {
     list: list,
     ARRAY: lytoLis,
   });

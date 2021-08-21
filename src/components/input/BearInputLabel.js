@@ -9,7 +9,7 @@ import { BearIcon } from "../BearIcon";
 import { BearFloat } from "../BearFloat";
 // import { BearPopover } from "../BearPopover";
 import { BearTextMedia } from "../BearTextMedia";
-import * as logs from "../../functions/logFuncs";
+import { bearlog } from "../../index";
 import { Checkbox, CheckboxGroup } from "@chakra-ui/react";
 
 export function BearInputLabel({
@@ -33,6 +33,9 @@ export function BearInputLabel({
   infoPopup,
   infoPopupConfig = {},
   infoConfig,
+  //
+  // 1label
+  //
   //
   required,
   requiredFormat = "star",
@@ -130,20 +133,32 @@ export function BearInputLabel({
   function AllNo() {
     // required = true;
     const ijstewr = required && RendReq(requiredConfig);
-    const xcvkdsijdew = BearIconText(iconvar, children);
-    const sdgr = checkbox
-      ? ceckcio({
-          children: xcvkdsijdew,
-          ...checkboxConfig,
-        })
-      : xcvkdsijdew;
+    const xcvkdsijdew =
+      //
+      // "";
+      children;
+    // BearIconText(iconvar, children);
+
+    const sdgr =
+      //
+      xcvkdsijdew;
+    // checkbox
+    //   ? ceckcio({
+    //       children: xcvkdsijdew,
+    //       ...checkboxConfig,
+    //     })
+    //   : xcvkdsijdew;
 
     const okdsras = (
-      <BearDiv vertAlign flex>
+      <BearDiv
+      //
+      // align="left"
+      // vertAlign
+      // flex
+      >
         {/* aaaaaa */}
         {sdgr}
         {ijstewr}
-        {/* {iconvar} {title} */}
       </BearDiv>
     );
 
@@ -158,7 +173,6 @@ export function BearInputLabel({
     const sdfij = {
       //
       fontWeight: "bold",
-      fontSize: "1.2em",
     };
 
     const nisdjre = {
@@ -166,17 +180,17 @@ export function BearInputLabel({
       style: sdfij,
     };
 
-    logs.logga("___ nisdjre ___", nisdjre);
+    bearlog.lug("___ nisdjre ___", nisdjre);
 
-    const dijrw = (
+    const dijrw =
       //
       // ""
-      // BearFlex(nisdjre)
-      <BearDiv flex {...nisdjre}>
-        {okdsras}
-        {poppoBas}
-      </BearDiv>
-    );
+      okdsras;
+    // BearFlex(nisdjre);
+    // <BearDiv flex {...nisdjre}>
+    //   {okdsras}
+    //   {poppoBas}
+    // </BearDiv>
 
     return dijrw;
   }
@@ -236,7 +250,7 @@ export function BearInputLabel({
     // disVar: true,
   };
 
-  logs.logga(name + "___ inpuBase TITLE CONF ___", asdojwqs);
+  bearlog.lug(name + "___ inpuBase TITLE CONF ___", asdojwqs);
 
   const seokwer = (
     //
@@ -266,16 +280,18 @@ export function BearInputLabel({
 
   const sdfgret = (
     <>
-      {/* {okasde} */}
-      {seokwer}
-      {ijawe}
+      {/* heello */}
+      {okasde}
+      {/* {seokwer} */}
+      {/* {ijawe} */}
       {/* <hr /> */}
     </>
   );
 
   const kase = {
+    fontSize: "1.5em",
+    color: "blue",
     padding: "0 0 10px 5px",
-    textAlign: "left",
   };
 
   const isawqe = {
@@ -285,14 +301,16 @@ export function BearInputLabel({
   };
 
   // 1console
-
-  logs.logga("___ inputLabel BASE MAIN ___", {
+  bearlog.lug("___ isawqe ___", isawqe);
+  bearlog.lug("___ inputLabel BASE MAIN ___", {
     infoPopup,
     subtitle,
   });
 
-  logs.logga("___ isawqe ___", isawqe);
+  const sdfewr =
+    //
+    BearDiv(isawqe);
 
-  const sdfewr = <BearTextMedia {...isawqe} />;
+  //
   return labelFunc ? labelFunc(sdfewr) : sdfewr;
 }

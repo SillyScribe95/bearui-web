@@ -6,7 +6,7 @@ import React, {
 
 import {
   //
-  logs,
+  bearlog,
 } from "../index";
 import { BearList } from "./list/BearList";
 import { BearFloat } from "./BearFloat";
@@ -61,7 +61,7 @@ export function BearModel({
       }
     : { onClick: onDelete };
 
-  logs.logga("___ sidjfer ___", sidjfer);
+  bearlog.lug("___ sidjfer ___", sidjfer);
 
   const isdfewr = {
     edit: { iconvar: "edit", textvar: "Edit", onClick: onEdit, ...editConfig },
@@ -96,7 +96,7 @@ export function BearModel({
   };
 
   // 1console
-  logs.logga("___ brModel isdre ___", isdre);
+  bearlog.lug("___ brModel isdre ___", isdre);
 
   const ijdwer = <BearList {...isdre} />;
 

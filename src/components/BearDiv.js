@@ -5,12 +5,15 @@ import React, {
 } from "react";
 import { BearLink } from "./BearLink";
 import { LoadMain } from "./GlobalComps";
-import { logs } from "../index"
+import { bearlog } from "../index";
 
 import { BearCheckMain } from "./check/BearCheckMain";
 import { BearError } from "./BearError";
 
 export function BearDiv({
+  //
+  itemConfig,
+  //
   //
   obj,
   text,
@@ -39,6 +42,7 @@ export function BearDiv({
   //
   //
   style,
+  align,
   loadTrue,
   loadConfig,
   ...args
@@ -80,6 +84,11 @@ export function BearDiv({
     fontFamily: "Arial",
   };
 
+  const nvsse = align && {
+    textAlign: align,
+  };
+
+  // 1style
   const gibjr = {
     // ...centerConf,
     ...oksdae,
@@ -89,6 +98,7 @@ export function BearDiv({
     ...kdfr,
     ...sidjfr,
     ...baseFonto,
+    ...nvsse,
     ...style,
   };
 
@@ -137,11 +147,11 @@ export function BearDiv({
   };
 
   if (logtrue) {
-    logs.logga("___ okdas ___", okdas);
+    bearlog.lug("___ okdas ___", okdas);
   }
 
   if (linkTrue) {
-    logs.logga("___ linkTrue ___", okdas);
+    bearlog.lug("___ linkTrue ___", okdas);
   }
 
   const xczaeewqa =
@@ -166,8 +176,8 @@ export function BearDiv({
     // degr
   };
   if (logtrue) {
-    logs.logga("___ sijewr ___", sijewr);
-    // logs.logga("___ sadijqwe ___", sadijqwe);
+    bearlog.lug("___ sijewr ___", sijewr);
+    // bearlog.lug("___ sadijqwe ___", sadijqwe);
   }
 
   const difjgerwas =

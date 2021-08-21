@@ -1,4 +1,4 @@
-// import { logs } from "../../index";
+// import { bearlog } from "../../index";
 // import { useQuery, QueryClient, QueryClientProvider } from "react-query";
 // import { BearFetchFunc } from "./backend/BearFetchFunc";
 // import UseFirestoreQuery from "./backend/UseFirestoreQuery";
@@ -99,7 +99,7 @@
 
 // //   let asokwe = fireDocs(response);
 
-// //   logs.logga("___ queryData ___", {
+// //   bearlog.lug("___ queryData ___", {
 // //     response: response,
 // //     FILTERED: asokwe,
 // //   });

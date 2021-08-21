@@ -6,7 +6,7 @@ import React, {
 
 import {
   //
-  logs,
+  bearlog,
 } from "../../index";
 import { BearInputText } from "./BearInputText";
 import { BearFormButton } from "../button/BearFormButton";
@@ -67,7 +67,7 @@ export function BearPassword({
   function InRead(sdfgoekse) {
     const ijsdr = passwordStrength(strenghBase);
 
-    logs.logga("___ rendPass ___", {
+    bearlog.lug("___ rendPass ___", {
       PASSWORD: strenghBase,
       STRENGH: ijsdr,
     });
@@ -82,7 +82,7 @@ export function BearPassword({
       ? ndfke[ifjgewr]
       : "";
 
-    logs.logga("STRNCH GO--", {
+    bearlog.lug("STRNCH GO--", {
       ifjgewr,
       strenchVall,
     });
@@ -119,7 +119,7 @@ export function BearPassword({
   // }
 
   function aidjew(sdgfds) {
-    logs.logga("___ password check ___", sdgfds);
+    bearlog.lug("___ password check ___", sdgfds);
     setstrenghBase(sdgfds);
   }
 

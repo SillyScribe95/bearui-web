@@ -1,5 +1,5 @@
 // import { useQuery } from "react-query";
-import { logs } from "../../index";
+import { bearlog } from "../../index";
 let axios = require("axios");
 
 export function BearFetchFunc(
@@ -9,7 +9,7 @@ export function BearFetchFunc(
   //
   let funcveo = funcvar;
 
-  logs.logga("___BearFetchFunc ARGS ___", ase);
+  bearlog.lug("___BearFetchFunc ARGS ___", ase);
 
   async function saijdwe() {
     const okdssae = {
@@ -22,9 +22,9 @@ export function BearFetchFunc(
 
   funcveo = funcveo ? funcveo : saijdwe;
 
-  const { data, isLoading, ...dsokfe } = 
-  // 
-  ""
+  const { data, isLoading, ...dsokfe } =
+    //
+    "";
   // useQuery(name, funcveo);
 
   let sdifew =
@@ -40,7 +40,7 @@ export function BearFetchFunc(
     ...sdifew,
   };
 
-  logs.logga("___ queryFuncs ___", sodfkew);
+  bearlog.lug("___ queryFuncs ___", sodfkew);
 
   return sodfkew;
 }

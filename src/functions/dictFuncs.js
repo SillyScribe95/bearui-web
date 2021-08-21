@@ -1,5 +1,6 @@
 import { turnarray } from "./arrayFuncs";
-import * as logs from "./logFuncs";
+import { getType } from "./globalFuncs";
+import { bearlog } from "./logFuncs";
 import { joinString } from "./stringFuncs";
 
 export function turnDict(dictvar) {
@@ -44,6 +45,30 @@ export function checkDict(dictvar, cxzvd) {
   return asdrae;
 }
 
+// 1attr
+export function getDictvalues(dict, attr = "value") {
+  let obj = {};
+  for (const [key, value] of Object.entries(dict)) {
+    let inVal = "";
+    const sderase = getType(value);
+    bearlog.lug("getDictvalues TYPEODF-zzz", { value, sderase });
+
+    switch (sderase) {
+      case "array":
+        inVal = value.map((sdofr) => sdofr[attr]);
+        break;
+      case "object":
+        inVal = value[attr];
+        break;
+      default:
+        inVal = value;
+    }
+    obj[key] = inVal;
+  }
+
+  return obj;
+}
+
 export function mapDictAttr(obj, dictvar) {
   for (const [key, value] of Object.entries(dictvar)) {
     obj[key] = value;
@@ -71,11 +96,11 @@ export function mapDictAttrToString(listvar, join, dictvar) {
     const ijfge = typeof dfigjtr == "string";
     const bifdre = ijfge ? dfigjtr : "";
 
-    logs.logga("___ mapDictAttrToString ___", { dfigjtr, ijfge, bifdre });
+    bearlog.lug("___ mapDictAttrToString ___", { dfigjtr, ijfge, bifdre });
 
     return bifdre;
   }
-  
+
   function sidjfer(asda) {
     const dfigjtr = dictvar && dictvar[asda];
 
@@ -85,7 +110,7 @@ export function mapDictAttrToString(listvar, join, dictvar) {
   const okasasd = listvar.map(sidjfer);
   const ofkew = joinString(okasasd, join);
 
-  logs.logga("___ mapDictAttrToString ___", {
+  bearlog.lug("___ mapDictAttrToString ___", {
     ATTR_LIST: listvar,
     DICT: dictvar,
     ARRAY: okasasd,
@@ -95,18 +120,47 @@ export function mapDictAttrToString(listvar, join, dictvar) {
   return ofkew;
 }
 
-export function removeEmptyDict(obj) {
-  // obj = JSON.parse(JSON.stringify(obj));
-  // // listArray = _.pickBy(listArray, _.identity);
+export function mergeDict(values, formData) {
+  bearlog.lug("vlaos-sbmit--AAAA", values);
 
-  // for (var propName in obj) {
-  //   if (obj[propName] === null || obj[propName] === undefined) {
-  //     delete obj[propName];
-  //   }
-  // }
+  const jease =
+    //
+    // values;
+    removeEmptyDict(values);
 
-  // return obj;
-  return Object.fromEntries(Object.entries(obj).filter(([_, v]) => v != null));
+  bearlog.lug("vlaos-sbmit--BBBB", jease);
+
+  const nisjd = {
+    ...formData,
+    ...jease,
+  };
+
+  bearlog.lug("vlaos-sbmit--CCCC", nisjd);
+
+  return nisjd;
+}
+
+// 1removeempty
+export function removeEmptyDict(zxcvlsdf) {
+  //
+  bearlog.lug("remoEmptyDict-aaaa", zxcvlsdf);
+  const sdfer =
+    //
+    // zxcvlsdf;
+    Object.fromEntries(Object.entries(zxcvlsdf).filter(bestRem));
+
+  function bestRem(...zxcok) {
+    bearlog.lug("bestRem-zzz", ...zxcok);
+    return cvbos(...zxcok);
+  }
+
+  function cvbos([_, v]) {
+    return v;
+  }
+
+  bearlog.lug("remoEmptyDict-bbbb", sdfer);
+
+  return sdfer;
 }
 
 export function removeKeyDict(params, itemo) {
@@ -171,12 +225,12 @@ export function mapDictKeyToValue(dict, attr) {
 export function createNewDictFromAttr(arrvar, attr) {
   var oksae = {};
   arrvar.map(function (wewq) {
-    logs.logga("___ createNewDictFromAttr aaaa ___", oksae);
+    bearlog.lug("___ createNewDictFromAttr aaaa ___", oksae);
     oksae[wewq[attr]] = wewq;
-    logs.logga("___ createNewDictFromAttr BBBB ___", oksae);
+    bearlog.lug("___ createNewDictFromAttr BBBB ___", oksae);
   });
 
-  logs.logga("___ createNewDictFromAttr END ___", oksae);
+  bearlog.lug("___ createNewDictFromAttr END ___", oksae);
 
   return oksae;
 }
@@ -193,7 +247,7 @@ export function convertObjectDict(obj) {
       okdsa: okdsa,
     };
 
-    logs.logga("___ convertObjDict ORIG ___", ijadew);
+    bearlog.lug("___ convertObjDict ORIG ___", ijadew);
 
     return okdsa;
   }
@@ -209,7 +263,7 @@ export function convertObjectDict(obj) {
     FINAL: oaksde,
   };
 
-  logs.logga("___ convertObjectDict ___", oaskdew);
+  bearlog.lug("___ convertObjectDict ___", oaskdew);
 
   //   aodks
   return oaksde;

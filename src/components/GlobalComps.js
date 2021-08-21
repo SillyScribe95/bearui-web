@@ -11,7 +11,7 @@ import { BearButton } from "./button/BearButton";
 // import { ImageTextList } from "../functions/GlobalFunctions";
 // import { CopyToClipboard } from "react-copy-to-clipboard";
 
-import { logs, objectTrue } from "../index";
+import { bearlog, objectTrue } from "../index";
 import { vertAlign } from "../consts/genStyle";
 import { BearList } from "./list/BearList";
 import { getListComplex } from "./list/getListComplex";
@@ -19,9 +19,15 @@ import { BearTextMedia } from "./BearTextMedia";
 import { BearError } from "./BearError";
 import { BearListMap } from "./list/BearListMap";
 import { BearInputBase } from "./input/BearInputBase";
+import { BearCheckMain } from "./check/BearCheckMain";
 
 // import SearchKnowledge from "../containers/search/SearchKnowledge";
 // import { AlignMain } from "./AlignMain";
+
+export const bearMobileView =
+  //
+  "";
+// true;
 
 export function BearLog(...asdf) {
   console.log("___ BearLog ___", ...asdf);
@@ -44,6 +50,14 @@ export function BearQuote(sdofkr) {
 
   return vobdesa;
   // return <BearDiv span {...ijsdaw} />;
+}
+
+export function BearIconList(asdfds) {
+  const sjdrase = {
+    tye,
+    noText: true,
+    ...asdfds,
+  };
 }
 
 export function BearDivMain(asok, zxsd) {
@@ -259,7 +273,7 @@ export function BearFlex({
       ...asd,
     };
 
-    logs.logga("___ BearFlex ITEM ___", oksade);
+    bearlog.lug("___ BearFlex ITEM ___", oksade);
 
     return <div {...oksade}>{obj}</div>;
   }
@@ -364,7 +378,7 @@ export function ImageAlign({
     ...argo,
   };
 
-  logs.logga("argo-zzz", argo, "asd09js");
+  bearlog.lug("argo-zzz", argo, "asd09js");
 
   //
   return "";
@@ -406,7 +420,7 @@ export function BearCopy({ copyText, obj, copyMessage, ...asd }) {
 
   // function sajwe() {
   //   // const iewawe = <div>Copied!</div>;
-  //   logs.logga("___ CopyMain ___", "CopyMain");
+  //   bearlog.lug("___ CopyMain ___", "CopyMain");
 
   //   // ShowNote(copyMessage);
   //   // setcopssetot(iewawe);
@@ -435,7 +449,7 @@ export function BearCopy({ copyText, obj, copyMessage, ...asd }) {
 export function BearUpper(sdkrwe) {
   const typeoe = typeof sdkrwe == "string";
 
-  logs.logga("___ ijsdr ___", {
+  bearlog.lug("___ ijsdr ___", {
     sdkrwe: sdkrwe,
     typeoe: typeoe,
   });
@@ -508,6 +522,17 @@ export function BearSpace(dataVar, asdwe) {
   return <BearSpan {...kmxvs} />;
 }
 
+export function BearLine(asdfr) {
+  return <hr style={asdfr} />;
+}
+
+export function BearBlock({ children, ...asde }) {
+  return BearCheckMain("blboc", children, {
+    bearName: "qweoq",
+    ...asde,
+  });
+}
+
 export function BearSpan(asdwe) {
   return <BearDiv span {...asdwe} />;
 }
@@ -564,11 +589,11 @@ export function BearBackBorder(color, ...sdfew) {
 export function BearListComp(list, sdfwre) {
   const xcovk = getListComplex(list, sdfwre);
 
-  logs.logga("___ xcovk ___", xcovk);
+  bearlog.lug("___ xcovk ___", xcovk);
 
   const jadew = BearListMap(xcovk, sdfwre);
 
-  logs.logga("___ jadew ___", jadew);
+  bearlog.lug("___ jadew ___", jadew);
 
   return jadew;
 }
@@ -624,7 +649,7 @@ export function InputBaseCheck(sfkr, { noBase, ...asdw }) {
   //
   //
 
-  logs.logga("___InputBaseCheck asdw ___", { noBase, asdw });
+  bearlog.lug("___InputBaseCheck asdw ___", { noBase, asdw });
 
   return noBase ? sfkr : BearInputBase(sfkr, asdw);
 }

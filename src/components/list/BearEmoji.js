@@ -10,7 +10,7 @@ import { BearList } from "./BearList";
 import { emojiDict } from "../../consts/emojiConst";
 import {
   //
-  logs,
+  bearlog,
 } from "../../index";
 import {
   // EmojiLabel,
@@ -79,7 +79,7 @@ export function BearEmoji({
 
   // 1tick
   // function goTick() {
-  //   logs.logga("___ qweq ___", qweq);
+  //   bearlog.lug("___ qweq ___", qweq);
 
   //   const bocd = onlyEmoji ? emoji : <>{emoji}</>;
 
@@ -141,7 +141,7 @@ export function BearEmoji({
       ...qweq,
     };
 
-    logs.logga("___BearEmoji BASE EMOJI ___", aokdwe);
+    bearlog.lug("___BearEmoji BASE EMOJI ___", aokdwe);
 
     return <BearDiv {...oksaew} />;
     // return <BearPopover {...aokdwe} />;
@@ -171,7 +171,7 @@ export function BearEmoji({
     };
 
     function asdoke(sdfswe) {
-      logs.logga("___ asdoke ___", sdfswe);
+      bearlog.lug("___ asdoke ___", sdfswe);
 
       let oksadw =
         //
@@ -202,7 +202,7 @@ export function BearEmoji({
       ...ssdwedf,
     };
 
-    logs.logga("___ emojListo MAIN LIST  ___", dsjs);
+    bearlog.lug("___ emojListo MAIN LIST  ___", dsjs);
 
     return <BearList {...dsjs} />;
   }
@@ -239,7 +239,7 @@ export function BearEmoji({
       // fdogkre;
       ijsaew;
 
-    logs.logga("___ EmoijList MAIN ___", mssade);
+    bearlog.lug("___ EmoijList MAIN ___", mssade);
 
     const asiew =
       //

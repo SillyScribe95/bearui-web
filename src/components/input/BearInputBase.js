@@ -5,23 +5,26 @@ import React, {
 } from "react";
 import {
   //
-  logs,
+  bearlog,
 } from "../../index";
 import { BearButton } from "../button/BearButton";
 import { BearInputLabel } from "./BearInputLabel";
 import { BearFloat } from "../BearFloat";
 import { BearDiv } from "../BearDiv";
-import { argMiss } from "../GlobalComps";
-// import { Flex } from "@chakra-ui/layout";
+import { argMiss, BearFlex } from "../GlobalComps";
+import { Flex } from "@chakra-ui/layout";
 
 export function BearInputBase(
   ujsdqwe,
   {
-    // 1title
+    // 1title 1label
     noLabel,
+    containFunc,
     labelConfig,
     label,
-    labelWidth = "160px",
+    labelStyle,
+    title,
+    labelWidth = "460px",
     //
     // 1value
     initialValue,
@@ -67,6 +70,9 @@ export function BearInputBase(
 ) {
   logros("___ dfsgre ___", dfsgre);
 
+  errorMessage = errorMessage || error;
+  label = label || title;
+
   //
   //
   // 1baseargs
@@ -93,8 +99,8 @@ export function BearInputBase(
 
   // 1onchange
   function mainChange(valows) {
-    // logs.logga("___ adowe ___", adowe);
-    logs.logga("___ valows ___", valows);
+    // bearlog.lug("___ adowe ___", adowe);
+    bearlog.lug("___ valows ___", valows);
 
     setvalInit(valows);
 
@@ -170,7 +176,7 @@ export function BearInputBase(
     // name == oisdkre;
 
     if (sdfijer) {
-      logs.loggu(name + "___ BearForm--INPUT------zzz", ...asa);
+      bearlog.laggu(name + "___ BearForm--INPUT------zzz", ...asa);
     }
   }
 
@@ -196,6 +202,7 @@ export function BearInputBase(
           //
           fontSize: "1.15em",
           minWidth: labelWidth,
+          margin: "0px 10px",
           // marginTop: "-10px",
         }
       : {
@@ -207,15 +214,16 @@ export function BearInputBase(
       ...skdowqe,
       fontWeight: "bold",
       ...style,
+      ...labelStyle,
     };
 
-    const sdfkewr = argMiss({
+    const sdfkewr = {
       ...cxzv,
       ...ifdjsfd,
       style: iawqe,
-    });
+    };
 
-    logs.logga(name, "___ inptLabel ___", sdfkewr);
+    bearlog.lug(name, "___ inptLabel ___", sdfkewr);
 
     // return "sokere";
     return <BearInputLabel {...sdfkewr}>{label}</BearInputLabel>;
@@ -260,6 +268,7 @@ export function BearInputBase(
   logros("___ style ___", style);
 
   const asodkwqe = sameLine && {
+    textAlign: "center",
     alignItems: "center",
   };
 
@@ -288,7 +297,7 @@ export function BearInputBase(
       minHeight: "30px",
       color: "red",
       textAlign: "left",
-      // fontWeight: "bold",
+      fontWeight: "bold",
       padding: "5px 10px",
       fontSize: "0.8em",
       ...style,
@@ -310,10 +319,36 @@ export function BearInputBase(
 
   const xcbmd = !hideError && ErroBase(errorConfig);
 
-  const okaweasd = (
+  const inpMid = (
+    <>
+      {/* <div {...okdsae}> */}
+      {/*  */}
+      {asdijwe}
+      {/* </div> */}
+    </>
+  );
+
+  // 1sameline
+  const xcvkd =
+    //
+    false;
+  // sameLine;
+
+  const dksfds = xcvkd ? (
+    BearFloat({
+      left: oksdwqe,
+      center: inpMid,
+    })
+  ) : (
     <>
       {oksdwqe}
-      <div {...okdsae}>{asdijwe}</div>
+      {inpMid}
+    </>
+  );
+
+  const okaweasd = (
+    <>
+      {dksfds}
       {/* dgokdsf */}
       {xcbmd}
     </>
@@ -321,22 +356,48 @@ export function BearInputBase(
 
   // 1return
 
-  logs.logga("___ ashwe ___", ashwe);
-  // logs.logga("___ ijsa ___", ijsa);
+  // 1same
+  function SameRet() {
+    const kdfss = (
+      <>
+        {/* <BearFlex {...ijsa}> */}
+        <BearDiv
+          //
+          flex
+          {...ijsa}
+        >
+          {/*  */}
+          {okaweasd}
+        </BearDiv>
+        {/* </BearFlex> */}
+      </>
+    );
+    return kdfss;
+  }
 
-  const zxcvdf = sameLine ? (
-    <Flex {...ijsa}>{okaweasd}</Flex>
-  ) : (
-    <div {...ijsa}>{okaweasd}</div>
-  );
+  // 1console
+  bearlog.lug("___ ashwe ___", ashwe);
+  bearlog.lug("ijsa-zzz", ijsa);
+
+  const zxcvdf =
+    //
+    sameLine ? SameRet() : <div {...ijsa}>{okaweasd}</div>;
+
+  const jsidew = {
+    style: containerStyle,
+  };
 
   const kaosdew = (
     <>
+      {/* <div> */}
+      {/* <div {...jsidew}> */}
       {/*  */}
       {zxcvdf}
       {/* {xvcmfde} */}
+      {/* </div> */}
+      {/* </div> */}
     </>
   );
 
-  return kaosdew;
+  return containFunc ? containFunc(kaosdew) : kaosdew;
 }

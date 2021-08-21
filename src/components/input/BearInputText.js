@@ -9,9 +9,8 @@ import {
 } from "@chakra-ui/react";
 import {
   //
-  logs,
+  bearlog,
 } from "../../index";
-import { InputBaseCheck } from "../GlobalComps";
 import { BearTextarea } from "./BearTextarea";
 import { inputChange, inputStyles, RendGroup } from "./BearInput";
 
@@ -39,7 +38,7 @@ export function BearInputText({
     const idjfg = sfdgert.name;
     const hsdfer = idjfg == ndifjt;
     if (hsdfer) {
-      logs.loggu(bearName, idjfg, "___ bInput ___", ...adfsd);
+      bearlog.laggu(bearName, idjfg, "___ bInput ___", ...adfsd);
     }
   }
 
@@ -61,7 +60,7 @@ export function BearInputText({
 
   const sdkfewr = {
     // focusBorderColor: isjwqe,
-    // placeholder: "Here is a sample placeholder"
+    // placeholder: "Here is a sample placeholder",
   };
 
   // const nsidjfe
@@ -72,7 +71,7 @@ export function BearInputText({
   // true;
 
   function sdijfer(ghtrer) {
-    // logs.logga("___ ghtrer ___", ghtrer);
+    // bearlog.lug("___ ghtrer ___", ghtrer);
     // dfogkre(ghtrer);
   }
 
@@ -113,7 +112,7 @@ export function BearInputText({
   };
 
   // 1console
-  logs.logga("___ BeaInputText ___", ijawe);
+  bearlog.lug("___ BeaInputText ___", ijawe);
 
   // 1input
   const centFsow = (

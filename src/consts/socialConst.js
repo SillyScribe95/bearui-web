@@ -8,6 +8,7 @@ import {
   SiFacebook,
   SiGoogle,
   SiLinkedin,
+  SiTelegram,
   SiReddit,
   SiTwitter,
   SiWhatsapp,

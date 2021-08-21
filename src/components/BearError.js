@@ -5,8 +5,8 @@ import React, {
 } from "react";
 import {
   //
-  logs,
-} from "../index"
+  bearlog,
+} from "../index";
 import { BearDiv } from "./BearDiv";
 import { BearBorder, BearQuote } from "./GlobalComps";
 

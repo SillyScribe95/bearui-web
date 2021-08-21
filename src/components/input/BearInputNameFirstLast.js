@@ -6,7 +6,7 @@ import React, {
 
 import {
   //
-  logs,
+  bearlog,
 } from "../../index";
 import { BearDiv } from "../BearDiv";
 import { BearFormList } from "../form/BearForm";
@@ -72,7 +72,7 @@ export function BearInputNameFirstLast({
     ...args,
   };
 
-  logs.logga("___ ijsdae ___", ijsdae);
+  bearlog.lug("___ ijsdae ___", ijsdae);
 
   const ijdse = (
     //

@@ -4,10 +4,10 @@ import React, {
   useContext,
 } from "react";
 
-import { logs } from "../index"
+import { bearlog } from "../index";
 // import {
 //   //
-//   logs,
+//   bearlog,
 // } from "../../index";
 
 export function SpeakAdd({

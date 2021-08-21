@@ -6,7 +6,7 @@ import React, {
 import { BearDiv } from "../BearDiv";
 import {
   //
-  logs,
+  bearlog,
 } from "../../index";
 import { isEmpty, remove } from "lodash";
 import { BearError } from "../BearError";
@@ -77,7 +77,7 @@ export function BearList(
 ) {
   // 1list
   list = list && getListComplex(list, listArgs);
-  logs.logga("___Blist list ___", list);
+  bearlog.lug("___Blist list ___", list);
 
   // 1const
   // const [chosios, setchosios] = useState(chosenItem);
@@ -110,8 +110,8 @@ export function BearList(
     ...listArgs,
   };
 
-  logs.logga("___ list BBB___", list);
-  logs.logga("___ list CCC___", list);
+  bearlog.lug("___ list BBB___", list);
+  bearlog.lug("___ list CCC___", list);
 
   // 1style
   styleList = {
@@ -136,7 +136,7 @@ export function BearList(
     };
 
     // 1console
-    logs.logga("xxx-LIST-MAIN--args", messvar, list, "asd90u12321");
+    bearlog.lug("xxx-LIST-MAIN--args", messvar, list, "asd90u12321");
     // gens.messCheck("sd9jqwxas", listMess, "BearList --AAAA--", oaskdwq);
 
     const jisad =
@@ -207,11 +207,11 @@ export function BearList(
     const fullVar = !isEmpty(listio) || loadtrue;
 
     if (logtrue) {
-      logs.logLinas(5);
-      logs.loggu(bearName, "___ BEARLIST ___", listio);
-      logs.loggu("___ listArgs ___", listArgs);
-      logs.loggu("___ sidwre ___", sidwre);
-      logs.loggu("___ beList ___", sidjfwe);
+      bearlog.lugLinas(5);
+      bearlog.laggu(bearName, "___ BEARLIST ___", listio);
+      bearlog.laggu("___ listArgs ___", listArgs);
+      bearlog.laggu("___ sidwre ___", sidwre);
+      bearlog.laggu("___ beList ___", sidjfwe);
     }
 
     const ushdsa =

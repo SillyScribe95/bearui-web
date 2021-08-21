@@ -10,7 +10,7 @@ import { BearDiv } from "../BearDiv";
 import { BearFlex } from "../GlobalComps";
 import {
   //
-  logs,
+  bearlog,
 } from "../../index";
 
 export function BearBackForward({
@@ -80,7 +80,7 @@ export function BearBackForward({
       itemType: "button",
     };
 
-    logs.logga("___ zdsdar ___", zdsdar);
+    bearlog.lug("___ zdsdar ___", zdsdar);
 
     const uajwe =
       //

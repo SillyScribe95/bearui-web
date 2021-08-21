@@ -39,7 +39,7 @@
 //     // "elon musk";
 //     // "taylor swift"
 
-//     // logs.logga(
+//     // bearlog.lug(
 //     //   "TEST EXMAPLE",
 //     //   createNewDictFromAttr(
 //     //     [
@@ -71,7 +71,7 @@
 //     }
 
 //     function onCreat(okweqq) {
-//       logs.logga("___ CREAT TOPIC ___", okweqq);
+//       bearlog.lug("___ CREAT TOPIC ___", okweqq);
 
 //       let oksaew = checkFullArray(okweqq) && createIndex;
 
@@ -100,7 +100,7 @@
 //         onCreat(anyLeft);
 //       }
 
-//       logs.logga("___ asdwqe ___", saokdwe);
+//       bearlog.lug("___ asdwqe ___", saokdwe);
 //     }
 
 //     const asokdae = {
@@ -136,7 +136,7 @@
 //         // types: "Person",
 //       };
 
-//       logs.logga("___SEARCH getGooleLink ___", iawes);
+//       bearlog.lug("___SEARCH getGooleLink ___", iawes);
 
 //       return iawes;
 //     }
@@ -163,7 +163,7 @@
 //         exsentences: 1,
 //       };
 
-//       logs.logga("___ getWikiLink SEARCH   ___", InpTexto);
+//       bearlog.lug("___ getWikiLink SEARCH   ___", InpTexto);
 
 //       return {
 //         format: "json",
@@ -252,7 +252,7 @@
 //         // ...vxeew
 //       };
 
-//       logs.logga(typevar + "___ gentKnow ___", adwqe);
+//       bearlog.lug(typevar + "___ gentKnow ___", adwqe);
 
 //       return await axios.get(service_url, vxeew).then(asokdwe).catch(console.log);
 //     }
@@ -299,7 +299,7 @@
 //         // label: name,
 //       };
 
-//       logs.logga("___ Kowled OBJECT ___", dsoqw);
+//       bearlog.lug("___ Kowled OBJECT ___", dsoqw);
 
 //       return dsoqw;
 //     }
@@ -313,13 +313,13 @@
 //         imageAttr: image,
 //       };
 
-//       logs.logga("___ gooItem ___", ijisae);
+//       bearlog.lug("___ gooItem ___", ijisae);
 
 //       return selectRend(ijisae);
 //     }
 
 //     function returnGoogle({ itemListElement, ...asew }) {
-//       logs.logga("___ retuGoogle ___", asew);
+//       bearlog.lug("___ retuGoogle ___", asew);
 
 //       function saie(adsfwr) {
 //         let ksad = adsfwr.result;
@@ -341,8 +341,8 @@
 //         id: slugFunc(title, "_"),
 //       };
 
-//       logs.logga("___ WIKIPEDI AOTHER ___", asdw);
-//       logs.logga("___ wikItem ___", daease);
+//       bearlog.lug("___ WIKIPEDI AOTHER ___", asdw);
+//       bearlog.lug("___ wikItem ___", daease);
 
 //       return selectRend(daease);
 //     }
@@ -358,7 +358,7 @@
 //         //   Object.values(asduw);
 //         Object.values(asduw).map(wikItem);
 
-//       logs.logga(typevar + "___ retRsult ___", sidwq);
+//       bearlog.lug(typevar + "___ retRsult ___", sidwq);
 
 //       return sidwq;
 //     }
@@ -369,7 +369,7 @@
 //         adwq;
 //       //   adwq.target.value;
 
-//       // logs.logga("Search=---", mdsao);
+//       // bearlog.lug("Search=---", mdsao);
 
 //       setInpTexto(adwq);
 //     }
@@ -401,7 +401,7 @@
 //         createIndex: createIndex,
 //       };
 
-//       logs.logga("___ searcKnowl ONHANGE ___", asoke);
+//       bearlog.lug("___ searcKnowl ONHANGE ___", asoke);
 
 //       setoptios(endRes);
 //       // onCreat(endRes);
@@ -409,7 +409,7 @@
 //     }
 
 //     function changeos(aewqe) {
-//       logs.logga("___ OHANGE KOWLEDGE ___", aewqe);
+//       bearlog.lug("___ OHANGE KOWLEDGE ___", aewqe);
 
 //       chooesi(aewqe);
 //     }
@@ -442,12 +442,12 @@
 
 //     // 1console
 
-//     logs.logga("___ modelFinitos ___", {
+//     bearlog.lug("___ modelFinitos ___", {
 //       optios: optios,
 //       modelFinitos: modelFinitos,
 //     });
 
-//     logs.logga("___ SEAR KNowledge MAIN ___", asdyw);
+//     bearlog.lug("___ SEAR KNowledge MAIN ___", asdyw);
 
 //     const xcvear = <BearSelect {...asdyw} />;
 

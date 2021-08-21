@@ -8,7 +8,7 @@ import React, {
 //   //
 //   joinString,
 //   stringinarray,
-//   logs,
+//   bearlog,
 //   checkAllArray,
 // } from "../../index/";
 import validator from "validator";

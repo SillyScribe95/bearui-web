@@ -3,7 +3,7 @@ import React, {
   useState,
   useContext,
 } from "react";
-import { logs } from "../../index";
+import { bearlog } from "../../index";
 import { BearAuthPortal } from "./BearAuthPortal";
 import { BearDiv } from "../BearDiv";
 
@@ -203,7 +203,7 @@ export function BearUserPortal({
     messvar: "dokeq",
   };
 
-  // logs.logga("___ useSignin ___", fnkfg);
+  // bearlog.lug("___ useSignin ___", fnkfg);
 
   function AllBit() {
     const fnkfg = {
@@ -232,7 +232,7 @@ export function BearUserPortal({
       ...args,
     };
 
-    logs.logga("___ USER SIGN IN ___", aesdofwr);
+    bearlog.lug("___ USER SIGN IN ___", aesdofwr);
 
     const sewwad = (
       //

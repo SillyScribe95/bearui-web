@@ -2,7 +2,7 @@
 //
 //
 //
-import { logs } from "../index";
+import { bearlog } from "../index";
 
 export function slugFunc(sdrsdfe, asdok = "") {
   var slugify = require("slugify");
@@ -18,6 +18,13 @@ export function slugFunc(sdrsdfe, asdok = "") {
 
 export function getSlugName(sdrsdfe) {
   return slugFunc(sdrsdfe);
+}
+
+export function getType(sdrsdfe) {
+  let arrtrue = Array.isArray(sdrsdfe);
+  const getto = arrtrue ? "array" : typeof sdrsdfe;
+
+  return getto;
 }
 
 export function linkOrdse({
@@ -91,7 +98,7 @@ export function linkOrdse({
     sadije;
   // encodeURIComponent(sadije);
 
-  logs.logga("___ linkOrdse-zzz ___", didsfe);
+  bearlog.lug("___ linkOrdse-zzz ___", didsfe);
 
   return didsfe;
 }
@@ -103,7 +110,7 @@ export function onChangeFunc(inputAtts, { onChange, onChangeValue }) {
 
   const valueMain = inputAtts.target.value;
 
-  logs.logga("___ onChangeFunc ___", valueMain, {
+  bearlog.lug("___ onChangeFunc ___", valueMain, {
     valueMain,
     inputAtts,
     onChange,

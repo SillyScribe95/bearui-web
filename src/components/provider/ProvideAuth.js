@@ -10,7 +10,7 @@ import React, {
 // import "firebase/firestore";
 // import { useCollection, useDocumentOnce } from "react-firebase-hooks/firestore";
 // import { FireQuery } from "../../functions/backendFuncs";
-import { logs } from "../../index";
+import { bearlog } from "../../index";
 
 export function ProvideAuth({ apiKey, obj, firebaseConfig }) {
   //
@@ -28,7 +28,7 @@ export function ProvideAuth({ apiKey, obj, firebaseConfig }) {
   const elgnttioss =
     //
     "r";
-    // firebase.apps.length;
+  // firebase.apps.length;
 
   // if (!elgnttioss) {
   //   firebase.initializeApp(vsdkorewr);
@@ -52,11 +52,11 @@ export function ProvideAuth({ apiKey, obj, firebaseConfig }) {
   const { data, loading: loadUser, ...asdae } =
     //
     "";
-    // !apiKey
-    //   ? ""
-    //   : FireQuery(firebase.firestore().collection("users").doc(apiKey));
+  // !apiKey
+  //   ? ""
+  //   : FireQuery(firebase.firestore().collection("users").doc(apiKey));
 
-  logs.logga("___ Contioes ___", {
+  bearlog.lug("___ Contioes ___", {
     // firebase,
     elgnttioss: elgnttioss,
     asdae: asdae,

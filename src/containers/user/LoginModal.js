@@ -3,7 +3,7 @@ import React, {
   useState,
   useContext,
 } from "react";
-// import { logs } from "../../index/";
+// import { bearlog } from "../../index/";
 import { BearAuthPortal } from "../../components/user/BearAuthPortal";
 import { BearDiv } from "../../components/BearDiv";
 import { BearTitle } from "../../components/title/BearTitle";
@@ -60,7 +60,7 @@ export function LoginModal({
 
     function asdokew(type) {
       //
-      logs.logga("___ LoginMod CONNECT ___", type);
+      bearlog.lug("___ LoginMod CONNECT ___", type);
       BearUserConnect(type, loginFunc);
     }
 

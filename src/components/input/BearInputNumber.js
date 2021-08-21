@@ -13,14 +13,14 @@ import {
 
 import {
   //
-  logs,
+  bearlog,
 } from "../../index";
 import { inputStyles, RendGroup } from "./BearInput";
-import { BearInputText } from "./BearInputText";
 
 export function BearInputNumber({
   //
   onlyPositive,
+  positive,
   step,
   min,
   style,
@@ -28,9 +28,11 @@ export function BearInputNumber({
   ...vboret
 }) {
   // 1min
-  const zxcds = min ? min : onlyPositive && 0;
+  positive = positive || onlyPositive || min;
+
+  const zxcds = min || positive;
   const jsder = zxcds && {
-    min: zxcds,
+    min: min ? min : positive && 0,
   };
 
   const idfjew = {
@@ -44,15 +46,25 @@ export function BearInputNumber({
     ...style,
   };
 
+  function asjwe(asdfoke) {
+    // bearlog.lug("nCahnge PROPR", asdfoke);
+    let sjdfer = parseFloat(asdfoke);
+    if (onChange) {
+      //
+      onChange(sjdfer);
+    }
+  }
+
   const sfijwer = {
     ...jsder,
     ...vboret,
+    onChange: asjwe,
     style: nsdij,
     // ...inputStyles(nsdij),
     // defaultValue={15} max={30} clampValueOnBlur={false}
   };
 
-  logs.logga("___ bNumber ___", sfijwer);
+  bearlog.lug("___ bNumber ___", sfijwer);
 
   // onChange={(valueString) => setValue(parse(valueString))}
   // value={format(value)}
@@ -84,6 +96,5 @@ export function BearInputNumber({
   );
 
   // return serhhee;
-  // return BearInputText(sfijwer);
   return RendGroup(serhhee, sfijwer);
 }

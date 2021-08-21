@@ -17,7 +17,7 @@ import {
 } from "@chakra-ui/react";
 import {
   //
-  logs,
+  bearlog,
 } from "../../index";
 import { InputBaseCheck } from "../GlobalComps";
 import { onChangeFunc } from "../../functions/globalFuncs";
@@ -49,7 +49,7 @@ export function BearTextarea({
   };
 
   function sofkes(fdas) {
-    logs.logga("___ fdas ___", fdas);
+    bearlog.lug("___ fdas ___", fdas);
 
     onChangeFunc(fdas, dfgre);
   }
@@ -76,7 +76,7 @@ export function BearTextarea({
   };
 
   // 1console
-  logs.loggo("___ bertextarea FULL ___", ijsdfasd);
+  bearlog.lug("___ bertextarea FULL ___", ijsdfasd);
 
   const xcvbkf = (
     //

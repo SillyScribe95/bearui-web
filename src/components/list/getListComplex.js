@@ -5,11 +5,11 @@ import React, {
   useEffect,
 } from "react";
 
-import { turnarray } from "../../index"
+import { turnarray } from "../../index";
 import { isEmpty, remove } from "lodash";
 import {
   //
-  logs,
+  bearlog,
 } from "../../index";
 
 export function getListComplex(
@@ -35,8 +35,8 @@ export function getListComplex(
   const ijfgret = listDictAdd && dictvar;
 
   if (logtrue) {
-    logs.loggu("___ getListComplex ORIGINAL ___", listo);
-    logs.loggu("___ useDictList ___", {
+    bearlog.laggu("___ getListComplex ORIGINAL ___", listo);
+    bearlog.laggu("___ useDictList ___", {
       useDictList: useDictList,
       dictvar: dictvar,
       dictTrugo: dictTrugo,

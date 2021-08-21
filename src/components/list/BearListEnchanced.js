@@ -18,7 +18,7 @@ export function BearListEnchanced({
   function vxbmfg({ bediaTrue, style, ...obj }) {
     // const xcvmbdf = "sdvoksdfs";
 
-    logs.logga("___ vxbmfg ___", obj);
+    bearlog.lug("___ vxbmfg ___", obj);
 
     const iawesad = bediaTrue && gens.bediaMainStyle;
     const xkfs = {
@@ -42,11 +42,11 @@ export function BearListEnchanced({
 
     // logtrue = "sdwq";
     if (logtrue) {
-      logs.logga("___ ImageTexlist ITEM ___", asdije);
+      bearlog.lug("___ ImageTexlist ITEM ___", asdije);
     }
 
     function asdowqe() {
-      logs.logga("___ ImageTextList ___", "asdowqe");
+      bearlog.lug("___ ImageTextList ___", "asdowqe");
     }
 
     let endValue = "";
@@ -71,7 +71,7 @@ export function BearListEnchanced({
   }
 
   function osdkfewr({ mainObj, ...vncgf }) {
-    logs.logga("___ ImageTeList AAA ___", vncgf);
+    bearlog.lug("___ ImageTeList AAA ___", vncgf);
 
     // mainObj
     const ivcobkd = mainObj ? mainObj(vncgf) : vxbmfg(vncgf);
@@ -84,7 +84,7 @@ export function BearListEnchanced({
     ...fdsgssda,
   };
 
-  logs.logga("___ asijdwe ___", asijdwe);
+  bearlog.lug("___ asijdwe ___", asijdwe);
 
   return (
     <BearList

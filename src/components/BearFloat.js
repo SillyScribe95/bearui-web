@@ -5,7 +5,7 @@ import React, {
 } from "react";
 import {
   //
-  logs,
+  bearlog,
 } from "../index";
 import { vertAlign } from "../consts/genStyle";
 import { BearDiv } from "./BearDiv";
@@ -113,6 +113,7 @@ export function BearFloat({
     <div {...kdsdf}>
       {/*  */}
       {/* asdowe */}
+      {/* {center} */}
       {center || children}
     </div>
   );
@@ -263,7 +264,7 @@ export function BearFloat({
 
   // topRight
   if ("logtrue") {
-    logs.logga(bearName, " BEAR FLOAT", {
+    bearlog.lug(bearName, " BEAR FLOAT", {
       trueClass,
       layoutType,
       topLeft,

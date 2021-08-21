@@ -7,7 +7,7 @@ import React, {
 import Select, { components } from "react-select";
 import CreatableSelect from "react-select/creatable";
 import AsyncCreatableSelect from "react-select/async-creatable";
-import { logs } from "../../index";
+import { bearlog } from "../../index";
 import {
   //
   removeItemArray,
@@ -48,6 +48,7 @@ export function BearSelect({
   // 1value
   onChangeSetValue = true,
   initialValue,
+  valRemoveAfter,
   // 1create
   create,
   onCreate,
@@ -77,6 +78,7 @@ export function BearSelect({
   //
   // 1change
   onChange,
+  onChangeValue,
   //
   // 1menu
   introMessage,
@@ -98,6 +100,7 @@ export function BearSelect({
   // 1style
   resultsStyle,
   menuHeight,
+  margin,
   width = "100%",
   style = {},
   noValueReturn,
@@ -119,8 +122,9 @@ export function BearSelect({
 
   width = width ? width : style["width"] ? style["width"] : "100%";
 
+  // 1search 1icon
   function DropdownIndicator(props) {
-    logs.logga("___ Dropprops ___", props);
+    bearlog.lug("___ Dropprops ___", props);
 
     const ijsde = {
       //
@@ -172,7 +176,7 @@ export function BearSelect({
       // marginBottom: "-40px",
     };
 
-    // logs.logga("dropdownIndicator:", dokdfew);
+    // bearlog.lug("dropdownIndicator:", dokdfew);
 
     return dokdfew;
   }
@@ -186,7 +190,7 @@ export function BearSelect({
   //   ? removeItemArray(optionsArray, initialValue)
   //   : optionsArray;
 
-  logs.logga("___ ARRAY sdjfre ___", sdjfre);
+  bearlog.lug("___ ARRAY sdjfre ___", sdjfre);
 
   let vbmofd =
     //
@@ -224,7 +228,7 @@ export function BearSelect({
       ...colorOpt,
     };
 
-    logs.logga("___ Style OPTIONS ___", ijsdr);
+    bearlog.lug("___ Style OPTIONS ___", ijsdr);
 
     const sodk =
       //
@@ -272,7 +276,7 @@ export function BearSelect({
       // ...misdfs,
     };
 
-    logs.logga("___ beaselect MENU HEIGHT ___", oasde);
+    bearlog.lug("___ beaselect MENU HEIGHT ___", oasde);
 
     return allSty(oasde, "rendMenu");
   }
@@ -287,7 +291,7 @@ export function BearSelect({
       ...style,
     };
 
-    logs.logga("___ rendCont ___", iksdrqe);
+    bearlog.lug("___ rendCont ___", iksdrqe);
 
     return allSty(iksdrqe, "control");
   }
@@ -304,7 +308,7 @@ export function BearSelect({
       // paddingTop: "-30px",
     };
 
-    logs.logga("menuList:", oksdr);
+    bearlog.lug("menuList:", oksdr);
 
     return allSty(oksdr, "menuList");
   }
@@ -313,11 +317,12 @@ export function BearSelect({
     // 1width
     const fullWdh = {
       fontSize,
+      // margin,
       ...adfwer,
-      width,
+      minWidth: width,
     };
 
-    logs.logga(mesioa, "___ SELECT STYLES ___", fullWdh);
+    bearlog.lug(mesioa, "___ SELECT STYLES ___", fullWdh);
 
     return fullWdh;
   }
@@ -363,7 +368,10 @@ export function BearSelect({
     // emptio &&
     {
       components: {
+        // NoOptionsMessage:
+        // NoOptionsMessage: () => null,
         DropdownIndicator,
+        // ClearIndicator: () => null,
         IndicatorSeparator: () => null,
         // Menu: () => null,
       },
@@ -381,9 +389,18 @@ export function BearSelect({
   };
 
   function sijsad(sdfe) {
-    logs.logga("___ sdfe ___", sdfe);
+    bearlog.lug("___ sdfe ___", sdfe);
 
     return sdfe && sdfe.value;
+  }
+
+  // 1remove
+  function qe4ead(vcdfge) {
+    const nsdijre = vcdfge.indexOf(valRemoveAfter);
+    bearlog.lug = nsdijre;
+    var nameos = vcdfge.substr(0);
+
+    return nameos;
   }
 
   function changeos(params) {
@@ -391,18 +408,24 @@ export function BearSelect({
 
     const ijsdre = valueFormat ? valueFormat : sijsad;
 
-    let sovkoe =
+    let sdfgas =
       //
       noValueReturn ? params : multi ? params.map(ijsdre) : params.value;
 
+    let sovkoe = valRemoveAfter ? qe4ead(sdfgas) : sdfgas;
+
     if ("logtrue") {
-      logs.logga(messvar + "__SELECT onChange____", params);
+      bearlog.lug(messvar + "__SELECT onChange____", params);
     }
 
     // const ojsde = onChangeDict = onChangeDict
 
     if (onChange) {
       onChange(sovkoe);
+    }
+
+    if (onChangeValue) {
+      onChangeValue(sovkoe);
     }
 
     if (valueFunc) {
@@ -428,7 +451,7 @@ export function BearSelect({
     // aewqe;
     // lenOver ? aewqe : "";
 
-    logs.logga("___  ONCHANGE SELECmain  ___", { lenOver, VALUES: aewqe });
+    bearlog.lug("___  ONCHANGE SELECmain  ___", { lenOver, VALUES: aewqe });
 
     if (difjre) {
       changeos(aewqe);
@@ -463,6 +486,28 @@ export function BearSelect({
     isClearable: true,
   };
 
+  const creatios = onCreate && {
+    onCreateOption: onCreate,
+    // value: type,
+  };
+
+  // 1create Daosm
+
+  let toppoIos =
+    //
+    // "first";
+    createTop ? "first" : "last";
+
+  const sdijer = {
+    ...creatios,
+    createOptionPosition: toppoIos,
+  };
+
+  // 1options 1format
+  const fsdogkdr =
+    //
+    optionConfig && bijewwe;
+
   // 1args 1base
   const vsfewr = {
     // STYLE
@@ -475,7 +520,6 @@ export function BearSelect({
     ...sdijer,
     styles: stylBasoe,
     formatOptionLabel: fsdogkdr,
-
     isSearchable: true,
     ...iasjdwe,
     ...asidjwe,
@@ -490,15 +534,10 @@ export function BearSelect({
     ...mennoPIt,
   };
 
-  let toppoIos =
-    //
-    // "first";
-    createTop ? "first" : "last";
-
   function setBear(sfje) {}
 
   function odkqwe(asdfwe) {
-    logs.logga("___ BEASELECT onreate ___", {
+    bearlog.lug("___ BEASELECT onreate ___", {
       VALey: asdfwe,
     });
 
@@ -510,11 +549,6 @@ export function BearSelect({
 
     setType(asdfwe);
   }
-
-  const creatios = onCreate && {
-    onCreateOption: onCreate,
-    // value: type,
-  };
 
   function Notspse(inputValue, sdsa) {
     const svnsdfsr = typeof noOptionsMessage == "function";
@@ -534,12 +568,6 @@ export function BearSelect({
       : "no options for '" + inputValue + "'";
   }
 
-  // 1create Daosm
-  const sdijer = {
-    ...creatios,
-    createOptionPosition: toppoIos,
-  };
-
   const xockozd = onBlurValue && {
     onBlur: (sofad) => onBlurValue(sofad.target.value),
   };
@@ -547,11 +575,6 @@ export function BearSelect({
   const dfgjrt = {
     menuPlacement: "top",
   };
-
-  // 1options 1format
-  const fsdogkdr =
-    //
-    optionConfig && bijewwe;
 
   function bijewwe({ value, label, customAbbreviation }) {
     const ijsras = {
@@ -563,7 +586,7 @@ export function BearSelect({
   }
 
   function adsfwer(igje) {
-    logs.logga("___ igje ___", igje);
+    bearlog.lug("___ igje ___", igje);
 
     // return "asfwerk";
     return bijewwe;
@@ -573,12 +596,27 @@ export function BearSelect({
     value: "",
   };
 
-  // 1input
+  function fsfewr(sfdgasf) {
+    let faesdf = sfdgasf;
+    let tpform = typeof sfdgasf;
+    switch (tpform) {
+      case "string":
+        faesdf = asdiwje9(sfdgasf);
+        break;
+    }
+
+    bearlog.lug("faesdf-zz", { sfdgasf, tpform, faesdf });
+
+    return faesdf;
+  }
+
+  // 1default
   const fgoktr = initialValue && {
     // initialValue: initialValue,
     // defaultInputValue: initialValue,
-    defaultValue: asdiwje9(initialValue),
-    // value: asdiwje9(initialValue),
+    // defaultValue:  asdiwje9(initialValue),
+    defaultValue: fsfewr(initialValue),
+    // value: fsfewr(initialValue),
     // defaultValue: {label: initialValue, value: initialValue },
     // inputValue: initialValue,
   };
@@ -603,7 +641,7 @@ export function BearSelect({
   };
 
   function ShowItMENU(zxcvok) {
-    logs.logga("___ zxcvok ___", zxcvok);
+    bearlog.lug("___ zxcvok ___", zxcvok);
 
     setinputBase(zxcvok);
   }
@@ -614,11 +652,11 @@ export function BearSelect({
     inputValue: inputBase,
     options: inputBase ? dsfijaae : [],
     noOptionsMessage: inputBase ? Rendoa : (asd) => introMessage,
-    // menuIsOpen: inputBase,
+    menuIsOpen: inputBase,
     onInputChange: ShowItMENU,
   };
 
-  const fdgrt = {
+  const MAINRGS = {
     // ...dfgjrt,
     onChange: dfgoe,
     //
@@ -662,9 +700,9 @@ export function BearSelect({
   // 1return 1args
   let dfijew =
     //
-    // {};
-    cvbsd;
-  // fdgrt;
+    MAINRGS;
+  // {};
+  // cvbsd;
   // xcvbfmg;
 
   let bmcvfd =
@@ -675,15 +713,18 @@ export function BearSelect({
   // logtrue;
   // messvar == "otherTitles";
 
-  // logs.loggo("bear", dsfijaae);
+  // bearlog.lug("bear", dsfijaae);
 
   // 1console
+  bearlog.lug("MAINRGS---", MAINRGS);
   if ("bmcvfd") {
-    // logs.logga(name, messvar + "___ BeSelect BASE___", xcvbfmg);
-    logs.loggo(name, messvar + "___ BeSelect ALL___", dfijew);
+    // bearlog.lug(name, messvar + "___ BeSelect BASE___", xcvbfmg);
+    bearlog.lug(name, messvar + "___ BeSelect ALL___", dfijew);
   }
 
-  typeSelect = !sodkfre && create ? "create" : typeSelect;
+  const sdknsr = create || onCreate || onCreateValue;
+
+  typeSelect = !sodkfre && sdknsr ? "create" : typeSelect;
 
   let endValue = "";
 

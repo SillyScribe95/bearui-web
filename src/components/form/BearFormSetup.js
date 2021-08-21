@@ -5,7 +5,7 @@ import React, {
 } from "react";
 import {
   //
-  logs,
+  bearlog,
 } from "../../index";
 import { BearFormInputCheck } from "./BearFormInputCheck";
 import { argMiss, BearUpper } from "../GlobalComps";
@@ -32,30 +32,10 @@ export function BearFormSetup({
     ...baseObj,
   };
 
-  // 1log 1console
-  function logall(...asd) {
-    const ijdsrw =
-      //
-      // "card"
-      // "name"
-      "tsdlsae";
-    // "firstLastName";
-
-    const fhgsdf =
-      //
-      name == ijdsrw;
-    // logtrue;
-    // true;
-
-    if (fhgsdf) {
-      logs.loggu(...asd);
-    }
-  }
-
-  logs.loggu("___ REGISTER BASE  ___", baseObj);
+  bearlog.lug("___ REGISTER BASE  ___", ndifjg);
 
   function getRef(refDone) {
-    logs.logga("___ refDone ___", refDone);
+    bearlog.lug("___ refDone ___", refDone);
     return xcvdfe(refDone);
   }
 
@@ -86,11 +66,12 @@ export function BearFormSetup({
 
   const cxvijdsf = {
     ...ndifjg,
-    ...getFormPass(name, ndifjg),
     ...ijdfewr,
+    ...getFormPass(name, ndifjg),
   };
 
-  logs.logga("___ formFullRef ___", cxvijdsf);
+  bearlog.lug("___ afinptype ___", ijdfewr);
+  bearlog.lug("___ formFullRef ___", cxvijdsf);
 
   const okasew = getRef(cxvijdsf);
   const hookArgs = {
@@ -115,10 +96,10 @@ export function BearFormSetup({
     errors && errors[name] && errors[name]["message"];
 
   const fudger = {
+    ...hookArgs,
     ...cvbijv,
     name,
     errorMessage: asw,
-    ...hookArgs,
     // ...ndifjg,
     register,
     label: BearUpper(name),
@@ -135,7 +116,7 @@ export function BearFormSetup({
 
   // logall(name + "___ baseObj ___", baseObj);
   // logall(name + "___ STYLE ___", cadwee);
-  logs.logga(name + "___ InputBase TEXT ___", odkasew);
+  bearlog.lug(name + "___ InputBase TEXT ___", odkasew);
 
   // 1inputbase
   const oiaswe =

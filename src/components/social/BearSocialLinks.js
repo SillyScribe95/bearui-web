@@ -4,7 +4,7 @@ import React, {
   useContext,
 } from "react";
 
-import { logs } from "../../index";
+import { bearlog } from "../../index";
 import { BearSocialBase } from "./BearSocialBase";
 
 export function BearSocialLinks({
@@ -44,7 +44,7 @@ export function BearSocialLinks({
   }
   // const isjdre = mapDictFunc(isjdfer, asdhwe);
 
-  logs.logga("___ isjdre ___", isjdre);
+  bearlog.lug("___ isjdre ___", isjdre);
 
   args = {
     dictvar: isjdre,

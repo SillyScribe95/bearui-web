@@ -3,7 +3,7 @@
 // import "firebase/firestore";
 import {
   //
-  logs,
+  bearlog,
 } from "../index";
 
 export function fireConnect(
@@ -46,7 +46,7 @@ export function fireConnect(
     onSuccess(userBase);
   }
 
-  logs.logga("firease SIGN IN ", {
+  bearlog.lug("firease SIGN IN ", {
     authType,
     provider: dsofkes,
   });
@@ -64,7 +64,7 @@ export function fireConnect(
   }
 
   function asd9eiqw({ code, message, ...asdfkwer }) {
-    logs.logga("___ asdfkwer ___", {
+    bearlog.lug("___ asdfkwer ___", {
       code,
       message,
       ...asdfkwer,

@@ -4,7 +4,7 @@ import React, {
   useContext,
 } from "react";
 
-import { logs } from "../../index";
+import { bearlog } from "../../index";
 import { BearError } from "../BearError";
 import { BearListItemExpand } from "./BearListItemExpand";
 import { BearPossess } from "../GlobalComps";
@@ -40,7 +40,7 @@ export function BearListItem(
       ? emptyDictReplace
       : coimswe;
 
-    logs.loggu("CHCEK ITEMS", {
+    bearlog.laggu("CHCEK ITEMS", {
       ksdfew: ksdfew,
       emptyDictReplace: emptyDictReplace,
       //   emptyDictReplace,
@@ -64,7 +64,7 @@ export function BearListItem(
   logtrue = "asd";
 
   if (logtrue) {
-    logs.loggu(bearName, "___ BrListItem  DICT ___", {
+    bearlog.laggu(bearName, "___ BrListItem  DICT ___", {
       ORIGINAL: coimswe,
       ITEM: dgste,
       imetos: typovar,
@@ -83,7 +83,7 @@ export function BearListItem(
   };
 
   if (logtrue) {
-    logs.loggu(bearName, "___Blist Item ___", ijssr);
+    bearlog.laggu(bearName, "___Blist Item ___", ijssr);
   }
 
   function mainOso() {
@@ -109,7 +109,7 @@ export function BearListItem(
     : BearError("No list item declared!");
 
   function xcjsd() {
-    logs.logga("sijfawez--zz", sijfawe);
+    bearlog.lug("sijfawez--zz", sijfawe);
 
     // return ""
     return containFunc(sijfawe, dgste);

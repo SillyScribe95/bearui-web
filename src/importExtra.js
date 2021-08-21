@@ -12,7 +12,7 @@
 // export * from "./components/BearRouter";
 
 // // 1page
-// export * from "./components/page/BearPage";
+export * from "./extra/page/BearPage";
 // export * from "./components/page/BearMetaTags";
 
 // // 1payment

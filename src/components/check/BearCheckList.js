@@ -6,8 +6,8 @@ import React, {
 
 import {
   //
-  logs,
-} from "../../index"
+  bearlog,
+} from "../../index";
 import { BearCheckMain } from "./BearCheckMain";
 import { BearErrMiss, BearMissing, BearQuote } from "../GlobalComps";
 import { BearError } from "../BearError";
@@ -37,7 +37,7 @@ export function BearCheckList(
     ...args,
   };
 
-  logs.logga("___ BEARCHCKMAIN ___", skfwe);
+  bearlog.lug("___ BEARCHCKMAIN ___", skfwe);
 
   function renderCheck() {
     //
@@ -60,7 +60,7 @@ export function BearCheckList(
 
   // 1console
 
-  logs.logga("___ listFull ___", {
+  bearlog.lug("___ listFull ___", {
     //
     list,
     jsdawse,
@@ -71,16 +71,18 @@ export function BearCheckList(
 
   const idfjger = { bearName, hideError: "ignoreEmpty" };
 
-  const emptyall =  !list || !listFull
+  const emptyall = !list || !listFull;
 
-  const ijsfre = emptyall && !ignoreEmpty
-    ? BearError(
-BearMissing("list", bearName)
-    // "wtf is this mate"
-    , idfjger)
-    : !jsdawse
-    ? BearError("list attribute must be an array!")
-    : okfdsd;
+  const ijsfre =
+    emptyall && !ignoreEmpty
+      ? BearError(
+          BearMissing("list", bearName),
+          // "wtf is this mate"
+          idfjger
+        )
+      : !jsdawse
+      ? BearError("list attribute must be an array!")
+      : okfdsd;
 
   return BearCheckMain(named, ijsfre, skfwe);
 }

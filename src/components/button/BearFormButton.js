@@ -6,8 +6,8 @@ import React, {
 
 import {
   //
-  logs,
-} from "../../index"
+  bearlog,
+} from "../../index";
 // import { Button } from "@chakra-ui/react";
 
 export function BearFormButton({

@@ -5,7 +5,7 @@ import React, {
 } from "react";
 // import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { logs } from "../../index"
+import { bearlog } from "../../index";
 
 export function formValidPass({
   //
@@ -59,7 +59,7 @@ export function formValidPass({
   }
 
   function dssr(fgde) {
-    logs.logga("___ fgde ___", fgde);
+    bearlog.lug("___ fgde ___", fgde);
 
     if (fgde.validationType) {
       xcvibjdf(fgde);
@@ -78,9 +78,9 @@ export function formValidPass({
     schmeShape;
   // yupResolver(schmeShape);
 
-  logs.logga("___ schemavar ___", schemavar);
-  logs.logga("___ schmeShape ___", schmeShape);
-  logs.logga("___ schmResol ___", schmResol);
+  bearlog.lug("___ schemavar ___", schemavar);
+  bearlog.lug("___ schmeShape ___", schmeShape);
+  bearlog.lug("___ schmResol ___", schmResol);
 
   return schmResol;
 }

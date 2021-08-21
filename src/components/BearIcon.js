@@ -2,9 +2,8 @@ import { MdArrowBack, MdArrowForward, MdPlaylistPlay } from "react-icons/md";
 import { TiStar } from "react-icons/ti";
 import { BiExpand } from "react-icons/bi";
 import { BsChatQuote } from "react-icons/bs";
-import { IoArrowBack } from "react-icons/io";
 import { BiShare, BiCommentDetail, BiEditAlt, BiEdit } from "react-icons/bi";
-import { SiMicrosoftteams, SiNotion, SiSlack } from "react-icons/si";
+import { SiAmazon, SiMicrosoftteams, SiNotion, SiSlack } from "react-icons/si";
 import {
   AiOutlineLink,
   AiFillDelete,
@@ -190,6 +189,7 @@ export function BearIcon(sdfoger, sdfke) {
     whatsapp: <SiWhatsapp />,
     facebook: <SiFacebook />,
     teams: <SiMicrosoftteams />,
+    amazon: <SiAmazon />,
     slack: <SiSlack />,
     // 1notion
     notion: <SiNotion />,
