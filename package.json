@@ -1,5 +1,5 @@
 {
-  "name": "bear-ui-web",
+  "name": "@sillyscribe95/bear-ui-web",
   "version": "0.1.0",
   "main": "build/index.cjs.js",
   "module": "build/index.esm.js",
@@ -8,7 +8,7 @@
     "build"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@SillyScribe95"
+    "registry": "https://npm.pkg.github.com/"
   },
   "repository": "git://github.com/SillyScribe95/bearui-web",
   "dependencies": {
