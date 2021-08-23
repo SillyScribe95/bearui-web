@@ -13,9 +13,9 @@ export function BearPage({
   headerConfig,
   metaConfig,
   heightBottom,
-  // title,
-  // description,
-  // image,
+  title,
+  description,
+  image,
   style,
   ...orga
 }) {
@@ -85,6 +85,9 @@ export function BearPage({
     metaConfig = {
       //   formData: pageObj,
       //   ...ijasew,
+      title,
+      description,
+      image,
       ...asd,
       // ...orga,
     };

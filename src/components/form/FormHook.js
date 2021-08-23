@@ -27,11 +27,15 @@ export default function FormHook({
     // "onSubmit";
     "onChange";
 
+  const derter =
+    //
+    "onChange";
+
   const oksdaew = {
     // validationSchema: asokew,
     // resolver: asokew,
     //
-    reValidateMode: "onChange",
+    reValidateMode: derter,
     mode: modeo,
     ...hookConfig,
   };

@@ -6,8 +6,6 @@ import { BearButton } from "../button/BearButton";
 import {
   //
   bearlog,
-  mergeDict,
-  getDictvalues,
 } from "../../index";
 import {
   //
@@ -25,6 +23,7 @@ import { BearInputBase } from "../input/BearInputBase";
 import { focusBase } from "../../functions/formFuncs";
 import FormHook from "./FormHook";
 import { removeEmptyArray } from "../../functions/arrayFuncs";
+import { getDictvalues, mergeDict } from "../../functions/dictFuncs";
 
 export function BearForm({
   noText,
@@ -167,7 +166,9 @@ export function BearForm({
   function extPrep(values) {
     bearlog.lug("values-sbmit--AAAA", { values, formData });
     values = mergeDict(values, formData);
-    values = extractValues ? getDictvalues(values) : values;
+    values = extractValues
+      ? { data: values, values: getDictvalues(values) }
+      : values;
     bearlog.lug("values-sbmit--BBBBB", values);
 
     return values;

@@ -7,12 +7,10 @@ import React, {
 
 import { bearlog } from "../../index";
 
-import {
-  //
-  getListAll,
-  mapSelectValue,
-  mapDictAttrToString,
-} from "../../index";
+// getListAll,
+// mapSelectValue,
+// mapDictAttrToString,
+
 import { BearListItem } from "../../components/list/BearListItem";
 import { BearList } from "../../components/list/BearList";
 import { BearDiv } from "../../components/BearDiv";
@@ -23,6 +21,8 @@ import { BearCheckList } from "../../components/check/BearCheckList";
 import { getListComplex } from "../../components/list/getListComplex";
 import { BearSearchSelect } from "./BearSearchSelect";
 import { BearSearchBase } from "./BearSearchBase";
+import { getListAll, mapSelectValue } from "../../functions/arrayFuncs";
+import { mapDictAttrToString } from "../../functions/dictFuncs";
 
 export function BearSearchList({
   //

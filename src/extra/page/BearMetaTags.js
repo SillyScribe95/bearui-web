@@ -4,7 +4,7 @@ import React, {
   useContext,
 } from "react";
 import { Helmet } from "react-helmet";
-import { joinString } from "../../index";
+import { joinString } from "../../functions/stringFuncs";
 
 export function BearMetaTags({
   title,
@@ -29,6 +29,7 @@ export function BearMetaTags({
     return ikaew;
   }
 
+  // 1name
   const finalName = joinString([title, siteName], " - ");
   const finalDes = description;
   const finalKey = "";
@@ -39,12 +40,6 @@ export function BearMetaTags({
   // 1console
   //   logs.logga("helmeInfo-zz", samdsa);
 
-  //   const sidfjwer
-  //   <meta property="og:title" content={siteName} />
-  //   <meta property="og:description" content={finalDes} />
-  //   <meta property="og:site_name" content={siteName} />
-  //   <meta property="og:image" itemProp="image" content={image} />
-  //   <meta property="og:type" content="website" />
   //   {/* <meta property="og:url" content={siteFull} /> */}
   //   <meta property="twitter:title" content={finalName} />
   //   <meta property="twitter:description" content={finalDes} />
@@ -59,7 +54,12 @@ export function BearMetaTags({
       <meta name="description" content={finalDes} />
       <meta name="keywords" content={finalKey} />
       <link rel="icon" type="image/png" href={image} sizes="16x16" />
-      {playerExtra}
+      <meta property="og:title" content={finalName} />
+      <meta property="og:description" content={finalDes} />
+      <meta property="og:site_name" content={siteName} />
+      <meta property="og:image" itemProp="image" content={image} />
+      <meta property="og:type" content="website" />
+      {/* {playerExtra} */}
     </Helmet>
   );
 

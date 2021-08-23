@@ -25,6 +25,7 @@ export function BearInputNumber({
   min,
   style,
   onChange,
+  onChangeNumber,
   ...vboret
 }) {
   // 1min
@@ -47,11 +48,20 @@ export function BearInputNumber({
   };
 
   function asjwe(asdfoke) {
-    // bearlog.lug("nCahnge PROPR", asdfoke);
+    bearlog.lug("nCahnge PROPR NUMBER", { asdfoke, onChange });
+
     let sjdfer = parseFloat(asdfoke);
+    if (onChangeNumber) {
+      //
+      onChangeNumber(sjdfer);
+    }
+
     if (onChange) {
       //
-      onChange(sjdfer);
+      onChange({
+        //
+        target: { value: asdfoke },
+      });
     }
   }
 
@@ -60,10 +70,12 @@ export function BearInputNumber({
     ...vboret,
     onChange: asjwe,
     style: nsdij,
+    value: 0,
     // ...inputStyles(nsdij),
     // defaultValue={15} max={30} clampValueOnBlur={false}
   };
 
+  // 1console
   bearlog.lug("___ bNumber ___", sfijwer);
 
   // onChange={(valueString) => setValue(parse(valueString))}

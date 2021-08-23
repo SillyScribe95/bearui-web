@@ -3,7 +3,7 @@ import React, {
   useState,
   useContext,
 } from "react";
-import { bearlog, getAnyDictValue } from "../../index";
+import { bearlog } from "../../index";
 import { BearTitle } from "../title/BearTitle";
 import { BearDiv } from "../BearDiv";
 import { BearFloat } from "../BearFloat";
@@ -14,6 +14,7 @@ import {
   BearPossess,
 } from "../GlobalComps";
 import { BearError } from "../BearError";
+import { getAnyDictValue } from "../../functions/dictFuncs";
 
 export function BearCheckMain(asdf, zczx, sdfwe = {}) {
   return dfkbijv(asdf, zczx, sdfwe);

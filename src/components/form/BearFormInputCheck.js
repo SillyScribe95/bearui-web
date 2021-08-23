@@ -46,7 +46,7 @@ export function BearFormInputCheck({
   containerStyle,
   name,
   //
-  dictvar,
+  // dictvar,
   spaceBetween,
   //
   //
@@ -210,8 +210,15 @@ export function BearFormInputCheck({
         // baseTop = "";
         const jidr = {
           // noBase: false,
+          type: "number",
+          // onChange
+          // type: "currency",
         };
-        ujsdqwe = sijdgdf(BearInputNumber, jidr);
+        const ifqe =
+          //
+          // BearInputNumber
+          BearInputText;
+        ujsdqwe = sijdgdf(ifqe, jidr);
         break;
       // case "NAME ":
       //   ujsdqwe = Bear(objbase);

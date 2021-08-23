@@ -73,9 +73,9 @@ function lugJSON(messageIt, valY, ...asw) {
   // bearlog.lug('bearlog.lug:', bearlog.lug)
 }
 
-//   function logga(messageIt, valY) {
-//     bearlog.lug(messageIt, valY);
-//   }
+function logga(messageIt, valY) {
+  //
+}
 
 function lugLines(nubfd) {
   let saodkwe = "-";

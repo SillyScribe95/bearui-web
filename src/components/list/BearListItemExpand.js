@@ -3,12 +3,13 @@ import React, {
   useState,
   useContext,
 } from "react";
-import { bearlog, turnarray } from "../../index";
+import { bearlog } from "../../index";
 import { BearError } from "../BearError";
 import { BearButton } from "../button/BearButton";
 import { BearTextMedia } from "../BearTextMedia";
 import { BearDiv } from "../BearDiv";
 import { BearUpper, BearErrMiss } from "../GlobalComps";
+import { turnarray } from "../../functions/arrayFuncs";
 
 export function BearListItemExpand(
   cvbokfe,

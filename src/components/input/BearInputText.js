@@ -20,6 +20,7 @@ export function BearInputText({
   onChange,
   initialValue,
   bearName,
+  // id,
   onChangeValue,
   style,
   noBase,
@@ -70,9 +71,13 @@ export function BearInputText({
     "";
   // true;
 
+  function sjfqw(xcvbofd) {
+    bearlog.lug("xcvbofd", xcvbofd);
+  }
+
   function sdijfer(ghtrer) {
-    // bearlog.lug("___ ghtrer ___", ghtrer);
-    // dfogkre(ghtrer);
+    bearlog.lug("___ ghtrer ___", ghtrer);
+    dfogkre(ghtrer);
   }
 
   function dfogkre(asdofre) {
@@ -102,12 +107,14 @@ export function BearInputText({
     ...erroBase,
   };
 
+  // 1args
   const ijawe = {
     ...sjdfer,
     ...sdkfewr,
     ...baseo,
     ...sfdgert,
     onChange: sdijfer,
+    // onkeydown: sjfqw,
     // ...inputStyles(style),
   };
 

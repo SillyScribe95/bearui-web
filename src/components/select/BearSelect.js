@@ -8,16 +8,13 @@ import Select, { components } from "react-select";
 import CreatableSelect from "react-select/creatable";
 import AsyncCreatableSelect from "react-select/async-creatable";
 import { bearlog } from "../../index";
-import {
-  //
-  removeItemArray,
-  mapSelectValue,
-} from "../../index";
+
 import { BearIcon } from "../BearIcon";
 import { vertAlign } from "../../consts/genStyle";
 import { BearDiv } from "../BearDiv";
 import { BearBorder, BearErrArgType } from "../GlobalComps";
 import { BearError } from "../BearError";
+import { mapSelectValue } from "../../functions/arrayFuncs";
 
 // import { Input } from "reactstrap";
 // import AsyncSelect, { makeAsyncSelect } from "react.-select/async";
@@ -194,7 +191,26 @@ export function BearSelect({
 
   let vbmofd =
     //
-    options ? options : sdjfre ? asdiwje9(sdjfre) : initOptions;
+    options
+      ? options
+      : dictvar
+      ? mappodDict(dictvar)
+      : sdjfre
+      ? asdiwje9(sdjfre)
+      : initOptions;
+
+  function mappodDict(xcva) {
+    let arrro = [];
+
+    for (const [key, value] of Object.entries(xcva)) {
+      const iswae = { value: key, label: value };
+      arrro.push(iswae);
+    }
+
+    bearlog.lug("arrro-zz", arrro);
+
+    return arrro;
+  }
 
   let dsfijaae =
     //

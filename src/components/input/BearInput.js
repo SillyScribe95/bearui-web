@@ -30,17 +30,25 @@ export function BearInput({
 
 export function RendGroup(
   center,
-  { renderInput, inputLeft, leftConfig, inputRight, rightConfig, ...asdsd }
+  {
+    renderInput,
+    inputLeft,
+    leftMargin = "7px",
+    leftConfig,
+    inputRight,
+    rightConfig,
+    ...asdsd
+  }
 ) {
-  const leftRendos = inputLeft && (
-    <div style={{ marginRight: "7px" }}>
+  const leftRendos =
+    inputLeft &&
+    aswqe(
       <InputLeftElement {...leftConfig}>
         {inputLeft}
         {/* <Button {...leftConfig}>{inputLeft}</Button> */}
         {/* {inputLeft} */}
       </InputLeftElement>
-    </div>
-  );
+    );
 
   const rightRendos = inputRight && (
     <InputRightElement {...rightConfig}>
@@ -51,17 +59,35 @@ export function RendGroup(
 
   const sdijfr = inputRight || inputLeft;
 
-  const sdresar = {
-    //
-  };
+  function aswqe(xcvadf) {
+    const sdresar = (
+      <div
+        //
+        style={{
+          //
+          // paddingLeft: leftMargin,
+          marginRight: leftMargin,
+          // marginLeft: "20px",
+        }}
+      >
+        {xcvadf}
+      </div>
+    );
+
+    return sdresar;
+  }
 
   let cvdfsoe = sdijfr ? (
-    <InputGroup {...sdresar}>
-      {/*  */}
-      {leftRendos}
-      {center}
-      {rightRendos}
-    </InputGroup>
+    <>
+      <InputGroup>
+        {/*  */}
+        {leftRendos}
+        {/* {center} */}
+        {/* {sdresar} */}
+        {aswqe(center)}
+        {rightRendos}
+      </InputGroup>
+    </>
   ) : (
     center
   );

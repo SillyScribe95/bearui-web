@@ -13,12 +13,12 @@ import { bearlog } from "./functions/logFuncs";
 // import  const bearlog = { ...logs };
 export { bearlog };
 
-// 1shared
-// export * from "./index";
-export * from "./functions/arrayFuncs";
-export * from "./functions/dictFuncs";
-export * from "./functions/selectFuncs";
-export * from "./functions/stringFuncs";
-
 export * from "./importBase";
 export * from "./importExtra";
+
+// // 1shared 1functions
+// // export * from "./index";
+// export * from "./functions/arrayFuncs";
+// export * from "./functions/dictFuncs";
+// export * from "./functions/selectFuncs";
+// export * from "./functions/stringFuncs";

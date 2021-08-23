@@ -30,6 +30,7 @@ export function BearDiv({
   span,
   logtrue,
   fontSize,
+  bold,
   //
   // 1link
   linkParams,
@@ -84,6 +85,10 @@ export function BearDiv({
     fontFamily: "Arial",
   };
 
+  const dksf = bold && {
+    fontWeight: "bold",
+  };
+
   const nvsse = align && {
     textAlign: align,
   };
@@ -91,6 +96,7 @@ export function BearDiv({
   // 1style
   const gibjr = {
     // ...centerConf,
+    ...dksf,
     ...oksdae,
     ...centerConf,
     ...osdakew,

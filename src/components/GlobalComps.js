@@ -11,7 +11,7 @@ import { BearButton } from "./button/BearButton";
 // import { ImageTextList } from "../functions/GlobalFunctions";
 // import { CopyToClipboard } from "react-copy-to-clipboard";
 
-import { bearlog, objectTrue } from "../index";
+import { bearlog } from "../index";
 import { vertAlign } from "../consts/genStyle";
 import { BearList } from "./list/BearList";
 import { getListComplex } from "./list/getListComplex";
@@ -20,13 +20,40 @@ import { BearError } from "./BearError";
 import { BearListMap } from "./list/BearListMap";
 import { BearInputBase } from "./input/BearInputBase";
 import { BearCheckMain } from "./check/BearCheckMain";
+import { objectTrue } from "../functions/dictFuncs";
 
 // import SearchKnowledge from "../containers/search/SearchKnowledge";
 // import { AlignMain } from "./AlignMain";
 
+export const size = {
+  // viewL: "700px",
+  viewL: "780px",
+  custHeight: "650px",
+  //
+  mobileS: "320px",
+  mobileM: "375px",
+  mobileL: "425px",
+  tablet: "768px",
+  laptop: "1024px",
+  laptopL: "1440px",
+  desktop: "2560px",
+};
+
+// percentQu: `${percentPlayed}`,
+const MediaQueries = {
+  viewtype: "(min-width: 780px)",
+  customHeight: "(min-height: 650px)",
+};
+
+const widthVary = window.matchMedia(MediaQueries.viewtype);
+const heightVary = window.matchMedia(MediaQueries.customHeight);
+export const mobileView = !widthVary.matches;
+// export const mobileNot = widthVary.matches;
+
 export const bearMobileView =
   //
-  "";
+  // "";
+  mobileView;
 // true;
 
 export function BearLog(...asdf) {
@@ -522,8 +549,8 @@ export function BearSpace(dataVar, asdwe) {
   return <BearSpan {...kmxvs} />;
 }
 
-export function BearLine(asdfr) {
-  return <hr style={asdfr} />;
+export function BearLine(asbdfr) {
+  return <hr style={asbdfr} />;
 }
 
 export function BearBlock({ children, ...asde }) {
