@@ -5,12 +5,15 @@ import {
 } from "@stripe/react-stripe-js";
 import { bearlog } from "../../index";
 import { BearCheckoutStripeBase } from "./BearCheckoutStripeBase";
+import { BearError } from "../BearError";
 
 export function CheckPayStripe({
   totalPayment,
   paymentLabel,
   paymentConfig,
+  bearName,
   noPaymentMessage = "",
+  buttonConfig = "",
   noNativePaymentMessage = "",
   ...aaaaa
 }) {
@@ -58,9 +61,17 @@ export function CheckPayStripe({
 
   const paygo = payoitreu ? (
     <PaymentRequestButtonElement {...sdijfer} />
-  ) : (
+  ) : noNativePaymentMessage ? (
     noNativePaymentMessage
+  ) : (
+    BearError(
+      //
+      "Your site isn't secure to serve a native payment button. It will look like this.",
+      { bearName }
+    )
   );
 
-  return paygo;
+  const sodkfwe = <div {...buttonConfig}>{paygo}</div>;
+
+  return sodkfwe;
 }

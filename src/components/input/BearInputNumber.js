@@ -26,7 +26,7 @@ export function BearInputNumber({
   style,
   onChange,
   initialValue,
-  onChangeNumber,
+  onChangeValue,
   ...vboret
 }) {
   // 1min
@@ -52,9 +52,9 @@ export function BearInputNumber({
     bearlog.lug("nCahnge PROPR NUMBER", { asdfoke, onChange });
 
     let sjdfer = parseFloat(asdfoke);
-    if (onChangeNumber) {
+    if (onChangeValue) {
       //
-      onChangeNumber(sjdfer);
+      onChangeValue(sjdfer);
     }
 
     if (onChange) {
@@ -68,11 +68,11 @@ export function BearInputNumber({
 
   const sfijwer = {
     defaultValue: initialValue,
+    // value: 0,
     ...jsder,
     ...vboret,
     onChange: asjwe,
-    style: nsdij,
-    value: 0,
+    // style: nsdij,
     // ...inputStyles(nsdij),
     // defaultValue={15} max={30} clampValueOnBlur={false}
   };

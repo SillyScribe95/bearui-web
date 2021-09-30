@@ -61432,7 +61432,7 @@ function BearInputNumber({
   style,
   onChange,
   initialValue,
-  onChangeNumber,
+  onChangeValue,
   ...vboret
 }) {
   // 1min
@@ -61443,12 +61443,6 @@ function BearInputNumber({
   };
   const idfjew = {// style.fontSize;
   };
-  const nsdij = {
-    width: "100px",
-    paddingRight: "20px",
-    // fontSize:
-    ...style
-  };
 
   function asjwe(asdfoke) {
     bearlog.lug("nCahnge PROPR NUMBER", {
@@ -61457,9 +61451,9 @@ function BearInputNumber({
     });
     let sjdfer = parseFloat(asdfoke);
 
-    if (onChangeNumber) {
+    if (onChangeValue) {
       //
-      onChangeNumber(sjdfer);
+      onChangeValue(sjdfer);
     }
 
     if (onChange) {
@@ -61475,11 +61469,11 @@ function BearInputNumber({
 
   const sfijwer = {
     defaultValue: initialValue,
+    // value: 0,
     ...jsder,
     ...vboret,
-    onChange: asjwe,
-    style: nsdij,
-    value: 0 // ...inputStyles(nsdij),
+    onChange: asjwe // style: nsdij,
+    // ...inputStyles(nsdij),
     // defaultValue={15} max={30} clampValueOnBlur={false}
 
   }; // 1console
@@ -72390,6 +72384,7 @@ function BearForm({
   noText,
   listDict,
   name,
+  topItem,
   loadConfig,
   bearName = "",
   textConfig,
@@ -72785,7 +72780,7 @@ function BearForm({
   /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, sudhawe);
   const iterwr = toplist;
   const mappit = iterwr ? /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, maperlis(toplist), /*#__PURE__*/React__default$1['default'].createElement("br", null), sudhawe) : /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, sudhawe);
-  const aidjwe = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, hiddenItem, topFormItem, mappit, betweenItem, buttonItem, bottomFormItem);
+  const aidjwe = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, hiddenItem, topFormItem, topItem, mappit, betweenItem, buttonItem, bottomFormItem);
   const ijdfsr = //
   difjgr; // argPass
   // 1console
@@ -73996,7 +73991,9 @@ function CheckPayStripe({
   totalPayment,
   paymentLabel,
   paymentConfig,
+  bearName,
   noPaymentMessage = "",
+  buttonConfig = "",
   noNativePaymentMessage = "",
   ...aaaaa
 }) {
@@ -74037,8 +74034,12 @@ function CheckPayStripe({
       paymentRequest
     }
   };
-  const paygo = payoitreu ? /*#__PURE__*/React__default$1['default'].createElement(PaymentRequestButtonElement, sdijfer) : noNativePaymentMessage;
-  return paygo;
+  const paygo = payoitreu ? /*#__PURE__*/React__default$1['default'].createElement(PaymentRequestButtonElement, sdijfer) : noNativePaymentMessage ? noNativePaymentMessage : BearError( //
+  "Your site isn't secure to serve a native payment button. It will look like this.", {
+    bearName
+  });
+  const sodkfwe = /*#__PURE__*/React__default$1['default'].createElement("div", buttonConfig, paygo);
+  return sodkfwe;
 }
 
 function BearCheckoutStripe({
@@ -74047,6 +74048,7 @@ function BearCheckoutStripe({
   testsecKey,
   livesecKey,
   testTrue,
+  nativePayment,
   nativePaymentConfig,
   ...aaaaa
 }) {
@@ -74074,7 +74076,9 @@ function BearCheckoutStripe({
   };
   return /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(Elements, {
     stripe: stripePromise
-  }, /*#__PURE__*/React__default$1['default'].createElement(CheckPayStripe, saidjew), /*#__PURE__*/React__default$1['default'].createElement(BearCheckoutStripeBase, aaaaa)));
+  }, /*#__PURE__*/React__default$1['default'].createElement(BearCheckoutStripeBase, _extends$X({
+    topFormItem: nativePayment && /*#__PURE__*/React__default$1['default'].createElement(CheckPayStripe, saidjew)
+  }, aaaaa))));
 }
 
 function BearPayButton({

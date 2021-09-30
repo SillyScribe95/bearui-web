@@ -29,6 +29,7 @@ export function BearForm({
   noText,
   listDict,
   name,
+  topItem,
   loadConfig,
   bearName = "",
   textConfig,
@@ -560,6 +561,7 @@ export function BearForm({
     <>
       {hiddenItem}
       {topFormItem}
+      {topItem}
       {mappit}
       {betweenItem}
       {buttonItem}

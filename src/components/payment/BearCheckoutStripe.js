@@ -20,6 +20,7 @@ export function BearCheckoutStripe({
   testsecKey,
   livesecKey,
   testTrue,
+  nativePayment,
   nativePaymentConfig,
   ...aaaaa
 }) {
@@ -77,8 +78,10 @@ export function BearCheckoutStripe({
     <>
       <Elements stripe={stripePromise}>
         {/* <PayGo /> */}
-        <CheckPayStripe {...saidjew} />
-        <BearCheckoutStripeBase {...aaaaa} />
+        <BearCheckoutStripeBase
+          topFormItem={nativePayment && <CheckPayStripe {...saidjew} />}
+          {...aaaaa}
+        />
         {/* {CheckPayStripe(aaaaa)} */}
         {/* <BearCheckoutStripeBase /> */}
         {/* aaaa */}
