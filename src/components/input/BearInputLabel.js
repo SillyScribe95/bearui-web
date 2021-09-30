@@ -41,6 +41,13 @@ export function BearInputLabel({
   required,
   requiredFormat = "star",
   requiredConfig,
+
+  // 1remove
+  register,
+  innerRef,
+  ignoreErrors,
+  noTitle,
+  noAdvert,
   ...args
 }) {
   // 1const

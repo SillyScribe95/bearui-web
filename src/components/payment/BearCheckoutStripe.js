@@ -43,7 +43,7 @@ export function BearCheckoutStripe({
   // }, [stripe]);
 
   // 1console
-  bearlog.log("stricheck main ", {
+  bearlog.lug("stricheck main ", {
     stripePromise,
   });
 
@@ -64,7 +64,7 @@ export function BearCheckoutStripe({
     // getReq();
     const prMAIN = stripe.paymentRequest();
     const makeTrue = prMAIN.canMakePayment();
-    bearlog.log("---paybutton", { stripe, payMe, prMAIN, makeTrue });
+    bearlog.lug("---paybutton", { stripe, payMe, prMAIN, makeTrue });
 
     return "asdjwe";
   }
@@ -73,7 +73,7 @@ export function BearCheckoutStripe({
     ...aaaaa,
     ...nativePaymentConfig,
   };
-  bearlog.log("saidjew-zz", saidjew);
+  bearlog.lug("saidjew-zz", saidjew);
 
   return (
     <>

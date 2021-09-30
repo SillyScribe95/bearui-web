@@ -62,6 +62,24 @@ function styleInject(css, ref) {
 var css_248z$1 = ".item.selected{background:#177779;color:#fff;border-color:#206748}.lp-copy-sel__option,.lp-copy-sel__single-value{white-space:pre-wrap!important}.vidobbo::-webkit-scrollbar{display:none}.fadeOut{opacity:0;width:0;height:0;transition:width .5s .5s,height .5s .5s,opacity .5s}.fadeIn{opacity:1;width:100px;height:100px;transition:width .5s,height .5s,opacity .5s .5s}.noresize{resize:none}.vidobbo{-ms-overflow-style:none}.ant-btn-clicked:after,[ant-click-animating-without-extra-node]:after{-webkit-animation:none!important;-moz-animation:none!important;-o-animation:none!important;-ms-animation:none!important;animation:none!important}.ais-InstantSearch__root{display:flex;border:1px solid grey}.btn:hover{opacity:1}.selectHov:hover{background:green}.selectHov{transition:.3s}.selectHov:hover{background:red}.hoverMain{position:relative}.hoverMain.no-hover:hover{opacity:1}.hoverMain.no-hover{opacity:0}.hoverMain.hover{opacity:1}.hoverMain.hover:hover{opacity:0}.wrapQuotes:before{content:\"❝\"}.wrapQuotes:after{content:\"❞\"}.playText:hover{cursor:pointer}.playTextLight:hover{background-color:#e5e5e5;cursor:pointer}.playTextDark:hover{color:#00f;cursor:pointer}.playCurrent{background-color:purple}.ant-list-item{padding:0}.iconNum{padding:0 1px}.vertCont{align-items:center}.vertAlign,.vertBox{display:flex;align-items:center}.vertAlign{justify-content:\"center\";vertical-align:middle}.vertTop{display:flex;align-items:top;vertical-align:top}.lineBetween:after{content:\"\";height:100%;border-right:1px solid #d3d3d3}.nowap{white-space:nowap;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical}.wrap{-webkit-line-clamp:1}.wrap,.wrapTwo{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical}.wrapTwo{-webkit-line-clamp:2}.hiddenTrue{display:none;display:block}.hideSect{display:hidden}.scrollTrue{overflow:scroll}.overflow-scrolling{overflow:auto;-webkit-overflow-scrolling:touch}.pulseTrue{cursor:pointer;border:3px solid transparent;transition:.3s}.pulseTrue:hover{border:3px solid #add8e6}.greyHover,.pointer:hover{cursor:pointer}.greyHover:hover{cursor:pointer;background:radial-gradient(circle,#fff 0,hsla(0,0%,60.4%,.2) 100%,#fff 0)}.circleHover,.circleHover:hover{border-radius:50%;padding:5px}.shadowBottom{box-shadow:inset 0 4px 2px -2px grey}.lighthover{transition:.1s}.lightHover:hover{cursor:pointer;border:2px solid #00164d}.sdfaszxc{opacity:.8;padding-left:5px;transition:.1s}.sdfaszxc:hover{cursor:pointer;opacity:1}.buttonBase{background-color:initial;background-repeat:no-repeat;border:none;cursor:pointer;overflow:hidden;outline:none}.buttonHover,.buttonMain{cursor:pointer;border-radius:5px;border:2px solid transparent;transition:.1s;padding:2px 5px}.buttonHover:hover{border:2px solid #2c4179}.borderRound{border:2px solid #00008b;border-radius:5px}.borderHover,.borderMain{border:2px solid #d3d3d3;transition:.1s;border-radius:5px}.error{color:red}.error,.titleMain{font-weight:700}.shadowMain{border:2px solid #d3d3d3;transition:.1s;border-radius:5px}.bordeViddo{background:#000;border:2px solid #fff}.darkenBehind{text-shadow:0 0 10px #00f}.darkenOver{background:linear-gradient(180deg,transparent 0,#000)}.speakSelect{background:#add8e6;border:2px solid #00008b;transition:.3s}.buttonselect{border:15px solid red}.transitMain{transition:background-color 1s linear;-webkit-transition:background-color 1s linear;transition:color .3s linear;-webkit-transition:color .3s linear}.popAnim{-webkit-transition:color .25s;transition:color .25s}.popAnim:after,.popAnim:before{border:2px solid transparent;width:0;height:0}.popAnim:before{top:0;left:0}.popAnim:after{bottom:0;right:0}.popAnim:hover{color:#60daaa}.popAnim:hover:after,.popAnim:hover:before{width:100%;height:100%}.popAnim:hover:before{border-top-color:#60daaa;border-right-color:#60daaa;-webkit-transition:width .25s ease-out,height .25s ease-out .25s;transition:width .25s ease-out,height .25s ease-out .25s}.popAnim:hover:after{border-bottom-color:#60daaa;border-left-color:#60daaa;-webkit-transition:border-color 0s ease-out .5s,width .25s ease-out .5s,height .25s ease-out .75s;transition:border-color 0s ease-out .5s,width .25s ease-out .5s,height .25s ease-out .75s}.backMain{background-color:#f3f3f3}.flashBox{border:2px solid transparent}.flashBox:hover{border-color:red;animation-name:flash_border;animation-duration:2s;animation-timing-function:linear;animation-iteration-count:infinite;-webkit-animation-name:flash_border;-webkit-animation-duration:2s;-webkit-animation-timing-function:linear;-webkit-animation-iteration-count:infinite;-moz-animation-name:flash_border;-moz-animation-duration:2s;-moz-animation-timing-function:linear;-moz-animation-iteration-count:infinite}@keyframes flash_border{0%{border-color:transparent}50%{border-color:#00f}to{border-color:transparent}}.linkPlush{font-weight:10;color:#fff}.linkPlush:hover{text-decoration:underline}.linkPlush:active{color:#add8e6}.hoverPointer{cursor:pointer}.selectMain{background:red}.selectMain:hover{background-color:#00f}.highText{color:red;border-radius:50px}.textpopup{background:#00f;transition:3s;transform:translateY(-100%)}.animate-bottom{-webkit-animation-name:animatebottom;-webkit-animation-duration:.5s;animation-name:animatebottom;animation-duration:.5s}@keyframes animatebottom{0%{bottom:-50;opacity:0}to{bottom:0;opacity:1}}.textpopup:hover{transform:translateY(0)}.highText:hover{background-color:rgba(0,22,77,.2)}.disabled:hover{cursor:not-allowed}.shadeBorder{border:2px}.shadeBorder:hover{border:2px solid #00f}.shadeDisable{opacity:.3}.shadeDisable:hover{cursor:not-allowed}.shadeTrue{opacity:.6}.hoverOpac:hover,.shadeTrue:hover{opacity:1}.shadeReverse{opacity:.3}.shadeReverse:hover{opacity:1}.whiteHover:hover{background:#fff;color:#00164d}.expandHover{transition:transform .2s}.expandHover:hover{transform:scale(1.1)}.slick-prev{left:3%!important}.slick-next{right:3%!important}";
 styleInject(css_248z$1,{"insertAt":"top"});
 
+function _extends$X() {
+  _extends$X = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends$X.apply(this, arguments);
+}
+
 var commonjsGlobal$1 = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
 function getDefaultExportFromCjs (x) {
@@ -2136,7 +2154,7 @@ exports.default = _default;
  */
 
 var b$2 = 60103,
-    c$3 = 60106,
+    c$2 = 60106,
     d$1 = 60107,
     e$1 = 60108,
     f$1 = 60114,
@@ -2156,7 +2174,7 @@ var b$2 = 60103,
 if ("function" === typeof Symbol && Symbol.for) {
   var x$1 = Symbol.for;
   b$2 = x$1("react.element");
-  c$3 = x$1("react.portal");
+  c$2 = x$1("react.portal");
   d$1 = x$1("react.fragment");
   e$1 = x$1("react.strict_mode");
   f$1 = x$1("react.profiler");
@@ -2203,7 +2221,7 @@ function y$1(a) {
 
         }
 
-      case c$3:
+      case c$2:
         return t;
     }
   }
@@ -2215,7 +2233,7 @@ var z$1 = g$1,
     C = d$1,
     D = p$1,
     E = n$1,
-    F = c$3,
+    F = c$2,
     G = f$1,
     H = e$1,
     I = l$1;
@@ -2268,7 +2286,7 @@ var isMemo$1 = function (a) {
 };
 
 var isPortal$1 = function (a) {
-  return y$1(a) === c$3;
+  return y$1(a) === c$2;
 };
 
 var isProfiler$1 = function (a) {
@@ -3148,69 +3166,86 @@ prettyFormat.plugins = {
 };
 var build = prettyFormat;
 
-// import * as logs from "../functions/logFuncs"
-
-function lug(...sdf) {// bearlog.lug(messageIt, valY);
+function lug() {// bearlog.lug(messageIt, valY);
 }
 
-function log(...sdf) {
-  luggo(...sdf);
+function log() {
+  luggo.apply(void 0, arguments);
 }
 
 function lugga(messageIt, valY) {// bearlog.lug(messageIt, valY);
 }
 
-function luggo(...asw) {
+function luggo() {
+  var _console;
+
+  for (var _len = arguments.length, asw = new Array(_len), _key = 0; _key < _len; _key++) {
+    asw[_key] = arguments[_key];
+  }
+
   // console.log("luggo--", ...asw);
-  console.log("🐻 bearlog loggo: ", ...asw); // baseLog(asw)
+  (_console = console).log.apply(_console, ["🐻 bearlog loggo: "].concat(asw)); // baseLog(asw)
   // bearlog.lug('bearlog.lug:', bearlog.lug)
+
 }
 
-function lugCheck(name, first, ...asw) {
-  const asuhw = //
+function lugCheck(name, first) {
+  var asuhw = //
   name == first; //
 
   if (asuhw) {
-    luggo(...asw);
+    for (var _len2 = arguments.length, asw = new Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
+      asw[_key2 - 2] = arguments[_key2];
+    }
+
+    luggo.apply(void 0, asw);
   }
 }
 
-function lugge(...sdf) {
-  luggo(...sdf); // bearlog.lug('bearlog.lug:', bearlog.lug)
+function lugge() {
+  luggo.apply(void 0, arguments); // bearlog.lug('bearlog.lug:', bearlog.lug)
 }
 
-function laggu(...sdf) {// luggo(...sdf)
+function laggu() {// luggo(...sdf)
 }
 
-function lugJSON(messageIt, valY, ...asw) {
-  let sodase = //
+function lugJSON(messageIt, valY) {
+  var _console2;
+
+  var sodase = //
   // JSON.stringify(valY)
   build(valY);
-  console.log("luggo--", messageIt, sodase, ...asw); // bearlog.lug('bearlog.lug:', bearlog.lug)
+
+  for (var _len3 = arguments.length, asw = new Array(_len3 > 2 ? _len3 - 2 : 0), _key3 = 2; _key3 < _len3; _key3++) {
+    asw[_key3 - 2] = arguments[_key3];
+  }
+
+  (_console2 = console).log.apply(_console2, ["luggo--", messageIt, sodase].concat(asw)); // bearlog.lug('bearlog.lug:', bearlog.lug)
+
 }
 
 function lugLines(nubfd) {
-  let saodkwe = "-";
+  var saodkwe = "-";
 
-  for (let i = 0; i < nubfd; i++) {
+  for (var i = 0; i < nubfd; i++) {
     saodkwe += "-";
     luggo(saodkwe);
   }
 }
 
-function lugLinas(...sdf) {// luggo(...sdf)
+function lugLinas() {// luggo(...sdf)
 }
 
-const bearlog = {
-  log,
-  lug,
-  laggu,
-  lugga,
-  lugge,
-  lugJSON,
-  lugLines,
-  lugLinas,
-  lugCheck
+var bearlog = {
+  log: log,
+  lug: lug,
+  laggu: laggu,
+  lugga: lugga,
+  lugge: lugge,
+  lugJSON: lugJSON,
+  lugLines: lugLines,
+  lugLinas: lugLinas,
+  lugCheck: lugCheck
 };
 
 function BearLink$1({
@@ -3263,24 +3298,6 @@ function BearLink$1({
   }
 
   return noLink ? textvar : /*#__PURE__*/React__default$1['default'].createElement(Rlasdow, null);
-}
-
-function _extends$X() {
-  _extends$X = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends$X.apply(this, arguments);
 }
 
 const alignItemsFlex = //
@@ -4705,7 +4722,7 @@ function _extends$W() {
  */
 
 var b$1 = "function" === typeof Symbol && Symbol.for,
-    c$2 = b$1 ? Symbol.for("react.element") : 60103,
+    c$1 = b$1 ? Symbol.for("react.element") : 60103,
     d = b$1 ? Symbol.for("react.portal") : 60106,
     e = b$1 ? Symbol.for("react.fragment") : 60107,
     f = b$1 ? Symbol.for("react.strict_mode") : 60108,
@@ -4729,7 +4746,7 @@ function z(a) {
     var u = a.$$typeof;
 
     switch (u) {
-      case c$2:
+      case c$1:
         switch (a = a.type, a) {
           case l:
           case m:
@@ -4768,7 +4785,7 @@ var AsyncMode = l;
 var ConcurrentMode = m;
 var ContextConsumer = k;
 var ContextProvider = h;
-var Element$1 = c$2;
+var Element$1 = c$1;
 var ForwardRef = n;
 var Fragment = e;
 var Lazy = t$1;
@@ -4793,7 +4810,7 @@ var isContextProvider = function (a) {
 };
 
 var isElement = function (a) {
-  return "object" === typeof a && null !== a && a.$$typeof === c$2;
+  return "object" === typeof a && null !== a && a.$$typeof === c$1;
 };
 
 var isForwardRef = function (a) {
@@ -20705,16 +20722,16 @@ var b = function (a1, a2) {
   return 3.0 * a2 - 6.0 * a1;
 };
 
-var c$1 = function (a1) {
+var c = function (a1) {
   return 3.0 * a1;
 };
 
 var calcBezier = function (t, a1, a2) {
-  return ((a(a1, a2) * t + b(a1, a2)) * t + c$1(a1)) * t;
+  return ((a(a1, a2) * t + b(a1, a2)) * t + c(a1)) * t;
 };
 
 var getSlope = function (t, a1, a2) {
-  return 3.0 * a(a1, a2) * t * t + 2.0 * b(a1, a2) * t + c$1(a1);
+  return 3.0 * a(a1, a2) * t * t + 2.0 * b(a1, a2) * t + c(a1);
 };
 
 var subdivisionPrecision = 0.0000001;
@@ -45156,6 +45173,12 @@ function BearInputLabel({
   required,
   requiredFormat = "star",
   requiredConfig,
+  // 1remove
+  register,
+  innerRef,
+  ignoreErrors,
+  noTitle,
+  noAdvert,
   ...args
 }) {
   // 1const
@@ -73755,6 +73778,7 @@ function BearCheckoutStripeBase({
   // 1payment
   cardInputConfig,
   paymentConfig,
+  paymentLabel,
   onSubmit,
   //
   mode,
@@ -73791,6 +73815,11 @@ function BearCheckoutStripeBase({
   function Bearios() {
     const stripe = useStripe();
     const elements = useElements();
+    bearlog.log("STRIPE CHECKOUT---", {
+      //
+      stripe,
+      elements
+    });
 
 
     const wuheqw = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, "Click to open the record in your Stripe dashboard.", /*#__PURE__*/React__default$1['default'].createElement("br", null), "It may take a couple of minutes for the record to appear."); // 1submit
@@ -73801,13 +73830,13 @@ function BearCheckoutStripeBase({
         amount: totalPayment,
         currency: "usd",
         payment_method_types: ["card"],
-        ...c
+        ...paymentConfig
       };
       const sdfkewr = { ...sidjfer,
         stripeAPI: stripe,
         ...dvbdero
       };
-      bearlog.lug("---PAYMENT CHECK ALL DEETS", sdfkewr); // bearlog.lug("___ dvbdero ___", dvbdero);
+      bearlog.log("---PAYMENT CHECK ALL DEETS", sdfkewr); // bearlog.lug("___ dvbdero ___", dvbdero);
 
       if (onSubmit) {
         return onSubmit(dvbdero);
@@ -73826,7 +73855,7 @@ function BearCheckoutStripeBase({
       const ijsrew = {
         payment_method: cardDetails
       };
-      bearlog.lug("___ paymentIntents asdqw ___", {
+      bearlog.log("___ paymentIntents asdqw ___", {
         secretos,
         ijsrew
       });
@@ -73834,7 +73863,7 @@ function BearCheckoutStripeBase({
       } = //
       // await stripe.createPaymentMethod(rejweae);
       await stripe.confirmCardPayment(secretos, ijsrew);
-      bearlog.lug("CARDPAY ", asdf);
+      bearlog.log("CARDPAY ", asdf);
       const jdfesawe = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, "Stripe");
       let fdgok = {
         provider: jdfesawe,
@@ -73979,7 +74008,7 @@ function BearCheckoutStripeBase({
   true; // paymentRequest
   // 1console
 
-  bearlog.log("CHECKOUTSTRIPE-zzzz", {
+  bearlog.lug("CHECKOUTSTRIPE-zzzz", {
     //
     paymentRequest,
     findTrue
@@ -73992,11 +74021,18 @@ function CheckPayStripe({
   paymentLabel,
   loadingItem = "",
   paymentConfig,
+  nativePaymentConfig,
+  hideErrors,
   bearName,
-  onSuccess,
   noPaymentMessage = "",
   buttonConfig = "",
   noNativePaymentMessage = "",
+  //
+  //
+  onSuccess,
+  goCancel,
+  //
+  //
   style,
   className,
   ...aaaaa
@@ -74011,19 +74047,18 @@ function CheckPayStripe({
       label: paymentLabel,
       amount: totalPayment
     },
-    requestPayerName: true,
-    requestPayerEmail: true,
-    ...paymentConfig
+    ...paymentConfig,
+    ...nativePaymentConfig
   };
   React.useEffect(() => {
-    bearlog.log("stripe DONE-zz", stripe);
+    bearlog.lug("stripe DONE-zz", stripe);
 
     if (stripe) {
       const pr = stripe.paymentRequest(isjdfewe);
-      bearlog.log("prrrr-zz", pr); // Check the availability of the Payment Request API.
+      bearlog.lug("prrrr-zz", pr); // Check the availability of the Payment Request API.
 
       pr.canMakePayment().then(result => {
-        bearlog.log("result-zz", result);
+        bearlog.lug("result-zz", result);
 
         if (result) {
           setPaymentRequest(pr);
@@ -74039,64 +74074,64 @@ function CheckPayStripe({
   const sdijfer = {
     options: {
       //
-      paymentRequest,
-      paymentRequestButton: buttonConfig
+      paymentRequest // paymentRequestButton: buttonConfig,
+
     }
-  }; // 1cancel
+  };
 
-  paymentRequest.on("cancel", function () {
-    bearlog.log("--CANCELLED-xxx");
-  }); // 1token
+  if (paymentRequest) {
+    // 1cancel
+    paymentRequest.on("cancel", goCancel); // 1token
 
-  paymentRequest.on("token", function (event) {
-    bearlog.log("--token-xxx", event);
-  }); // 1source
+    paymentRequest.on("token", function (event) {
+      bearlog.log("--token-xxx", event);
+    }); // 1source
 
-  paymentRequest.on("source", function (event) {
-    bearlog.log("--source-xxx", event);
-  }); // 1success 1paymentmethod
+    paymentRequest.on("source", function (event) {
+      bearlog.log("--source-xxx", event);
+    }); // 1success 1paymentmethod
 
-  paymentRequest.on("paymentmethod", async function (event) {
-    bearlog.log("--paymentmethod-xxx", event);
-  }); // paymentRequest.on("paymentmethod", async (ev) => {
-  //   // Confirm the PaymentIntent without handling potential next actions (yet).
-  //   const { paymentIntent, error: confirmError } =
-  //     await stripe.confirmCardPayment(
-  //       clientSecret,
-  //       { payment_method: ev.paymentMethod.id },
-  //       { handleActions: false }
-  //     );
-  //   if (confirmError) {
-  //     // Report to the browser that the payment failed, prompting it to
-  //     // re-show the payment interface, or show an error message and close
-  //     // the payment interface.
-  //     ev.complete("fail");
-  //   } else {
-  //     // Report to the browser that the confirmation was successful, prompting
-  //     // it to close the browser payment method collection interface.
-  //     ev.complete("success");
-  //     // Check if the PaymentIntent requires any actions and if so let Stripe.js
-  //     // handle the flow. If using an API version older than "2019-02-11"
-  //     // instead check for: `paymentIntent.status === "requires_source_action"`.
-  //     if (paymentIntent.status === "requires_action") {
-  //       // Let Stripe.js handle the rest of the payment flow.
-  //       const { error } = await stripe.confirmCardPayment(clientSecret);
-  //       if (error) {
-  //         // The payment failed -- ask your customer for a new payment method.
-  //       } else {
-  //         // The payment has succeeded.
-  //       }
-  //     } else {
-  //       // The payment has succeeded.
-  //     }
-  //   }
-  // });
-  // onSuccess;
+    paymentRequest.on("paymentmethod", async function (event) {
+      bearlog.log("--paymentmethod-xxx", event);
+    }); // paymentRequest.on("paymentmethod", async (ev) => {
+    //   // Confirm the PaymentIntent without handling potential next actions (yet).
+    //   const { paymentIntent, error: confirmError } =
+    //     await stripe.confirmCardPayment(
+    //       clientSecret,
+    //       { payment_method: ev.paymentMethod.id },
+    //       { handleActions: false }
+    //     );
+    //   if (confirmError) {
+    //     // Report to the browser that the payment failed, prompting it to
+    //     // re-show the payment interface, or show an error message and close
+    //     // the payment interface.
+    //     ev.complete("fail");
+    //   } else {
+    //     // Report to the browser that the confirmation was successful, prompting
+    //     // it to close the browser payment method collection interface.
+    //     ev.complete("success");
+    //     // Check if the PaymentIntent requires any actions and if so let Stripe.js
+    //     // handle the flow. If using an API version older than "2019-02-11"
+    //     // instead check for: `paymentIntent.status === "requires_source_action"`.
+    //     if (paymentIntent.status === "requires_action") {
+    //       // Let Stripe.js handle the rest of the payment flow.
+    //       const { error } = await stripe.confirmCardPayment(clientSecret);
+    //       if (error) {
+    //         // The payment failed -- ask your customer for a new payment method.
+    //       } else {
+    //         // The payment has succeeded.
+    //       }
+    //     } else {
+    //       // The payment has succeeded.
+    //     }
+    //   }
+    // });
+  }
 
-  const paygo = loadPay ? loadingItem : payoitreu ? /*#__PURE__*/React__default$1['default'].createElement(PaymentRequestButtonElement, sdijfer) : noNativePaymentMessage ? noNativePaymentMessage : BearError( //
+  const paygo = loadPay ? loadingItem : payoitreu ? /*#__PURE__*/React__default$1['default'].createElement(PaymentRequestButtonElement, sdijfer) : !hideErrors ? BearError( //
   "Your site isn't secure to serve a native payment button. It will look like this.", {
     bearName
-  });
+  }) : noNativePaymentMessage;
   const sidjfre = {
     style,
     className
@@ -74130,14 +74165,14 @@ function BearCheckoutStripe({
   // }, [stripe]);
   // 1console
 
-  bearlog.log("stricheck main ", {
+  bearlog.lug("stricheck main ", {
     stripePromise
   });
 
   const saidjew = { ...aaaaa,
     ...nativePaymentConfig
   };
-  bearlog.log("saidjew-zz", saidjew);
+  bearlog.lug("saidjew-zz", saidjew);
   return /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(Elements, {
     stripe: stripePromise
   }, /*#__PURE__*/React__default$1['default'].createElement(BearCheckoutStripeBase, _extends$X({

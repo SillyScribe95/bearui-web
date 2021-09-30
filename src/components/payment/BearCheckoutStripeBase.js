@@ -37,6 +37,7 @@ export function BearCheckoutStripeBase({
   // 1payment
   cardInputConfig,
   paymentConfig,
+  paymentLabel,
   onSubmit,
   //
   mode,
@@ -104,6 +105,12 @@ export function BearCheckoutStripeBase({
     const stripe = useStripe();
     const elements = useElements();
 
+    bearlog.log("STRIPE CHECKOUT---", {
+      //
+      stripe,
+      elements,
+    });
+
     function handRes(keweqw) {
       // const oksdasd
     }
@@ -124,7 +131,7 @@ export function BearCheckoutStripeBase({
         amount: totalPayment,
         currency: "usd",
         payment_method_types: ["card"],
-        ...c,
+        ...paymentConfig,
       };
 
       const sdfkewr = {
@@ -133,7 +140,7 @@ export function BearCheckoutStripeBase({
         ...dvbdero,
       };
 
-      bearlog.lug("---PAYMENT CHECK ALL DEETS", sdfkewr);
+      bearlog.log("---PAYMENT CHECK ALL DEETS", sdfkewr);
       // bearlog.lug("___ dvbdero ___", dvbdero);
 
       if (onSubmit) {
@@ -153,7 +160,7 @@ export function BearCheckoutStripeBase({
         payment_method: cardDetails,
       };
 
-      bearlog.lug("___ paymentIntents asdqw ___", {
+      bearlog.log("___ paymentIntents asdqw ___", {
         secretos,
         ijsrew,
       });
@@ -163,7 +170,7 @@ export function BearCheckoutStripeBase({
         // await stripe.createPaymentMethod(rejweae);
         await stripe.confirmCardPayment(secretos, ijsrew);
 
-      bearlog.lug("CARDPAY ", asdf);
+      bearlog.log("CARDPAY ", asdf);
 
       const jdfesawe = (
         <>
@@ -371,7 +378,7 @@ export function BearCheckoutStripeBase({
   // paymentRequest
 
   // 1console
-  bearlog.log("CHECKOUTSTRIPE-zzzz", {
+  bearlog.lug("CHECKOUTSTRIPE-zzzz", {
     //
     paymentRequest,
     findTrue,
