@@ -73,6 +73,7 @@ export function BearCheckoutStripe({
     ...aaaaa,
     ...nativePaymentConfig,
   };
+  bearlog.log("saidjew-zz", saidjew);
 
   return (
     <>
