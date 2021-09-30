@@ -72,29 +72,25 @@ export function CheckPayStripe({
     options: {
       //
       paymentRequest,
-      // paymentRequestButton: buttonConfig,
+      paymentRequestButton: buttonConfig,
     },
   };
 
   if (paymentRequest) {
     // 1cancel
-    paymentRequest.on("cancel", onCancel);
-
+    // paymentRequest.on("cancel", onCancel);
     // 1token
-    paymentRequest.on("token", function (event) {
-      bearlog.log("--token-xxx", event);
-    });
-
+    // paymentRequest.on("token", function (event) {
+    //   bearlog.log("--token-xxx", event);
+    // });
     // 1source
-    paymentRequest.on("source", function (event) {
-      bearlog.log("--source-xxx", event);
-    });
-
+    // paymentRequest.on("source", function (event) {
+    //   bearlog.log("--source-xxx", event);
+    // });
     // 1success 1paymentmethod
-    paymentRequest.on("paymentmethod", async function (event) {
-      bearlog.log("--paymentmethod-xxx", event);
-    });
-
+    // paymentRequest.on("paymentmethod", async function (event) {
+    //   bearlog.log("--paymentmethod-xxx", event);
+    // });
     // paymentRequest.on("paymentmethod", async (ev) => {
     //   // Confirm the PaymentIntent without handling potential next actions (yet).
     //   const { paymentIntent, error: confirmError } =
@@ -103,7 +99,6 @@ export function CheckPayStripe({
     //       { payment_method: ev.paymentMethod.id },
     //       { handleActions: false }
     //     );
-
     //   if (confirmError) {
     //     // Report to the browser that the payment failed, prompting it to
     //     // re-show the payment interface, or show an error message and close
