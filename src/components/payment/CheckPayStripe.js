@@ -52,7 +52,7 @@ export function CheckPayStripe({
 
       // Check the availability of the Payment Request API.
       pr.canMakePayment().then((result) => {
-        bearlog.lug("result-zz", result);
+        bearlog.log("result-zz", result);
 
         if (result) {
           setPaymentRequest(pr);
@@ -76,7 +76,12 @@ export function CheckPayStripe({
     },
   };
 
-  if (paymentRequest) {
+  // if (paymentRequest) {
+  //   payFuncs()
+  // }
+
+  // 1paymentrequest
+  function payFuncs() {
     // 1cancel
     // paymentRequest.on("cancel", onCancel);
     // 1token

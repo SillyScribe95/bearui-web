@@ -74013,7 +74013,7 @@ function CheckPayStripe({
       bearlog.lug("prrrr-zz", pr); // Check the availability of the Payment Request API.
 
       pr.canMakePayment().then(result => {
-        bearlog.lug("result-zz", result);
+        bearlog.log("result-zz", result);
 
         if (result) {
           setPaymentRequest(pr);
@@ -74032,7 +74032,7 @@ function CheckPayStripe({
       paymentRequest,
       paymentRequestButton: buttonConfig
     }
-  };
+  }; // if (paymentRequest) {
 
   const paygo = loadPay ? loadingItem : payoitreu ? /*#__PURE__*/React__default$1.createElement(PaymentRequestButtonElement, sdijfer) : !hideErrors ? BearError( //
   "Your site isn't secure to serve a native payment button. It will look like this.", {
