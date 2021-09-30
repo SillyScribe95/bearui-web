@@ -299,12 +299,10 @@ export function BearListItemExpand(
       // dictRet && !findobj
       // dictRet && !findobj && !typeList && !containFunc;
 
-      if (logtrue) {
-        bearlog.laggu("___ beListItem FINAL ___", {
-          findobj,
-          noContain,
-        });
-      }
+      bearlog.lug("___ beListItem FINAL ___", {
+        findobj,
+        noContain,
+      });
 
       function finLog(sdasd) {
         if (logItem) {

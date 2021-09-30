@@ -2136,7 +2136,7 @@ exports.default = _default;
  */
 
 var b$2 = 60103,
-    c$2 = 60106,
+    c$3 = 60106,
     d$1 = 60107,
     e$1 = 60108,
     f$1 = 60114,
@@ -2156,7 +2156,7 @@ var b$2 = 60103,
 if ("function" === typeof Symbol && Symbol.for) {
   var x$1 = Symbol.for;
   b$2 = x$1("react.element");
-  c$2 = x$1("react.portal");
+  c$3 = x$1("react.portal");
   d$1 = x$1("react.fragment");
   e$1 = x$1("react.strict_mode");
   f$1 = x$1("react.profiler");
@@ -2203,7 +2203,7 @@ function y$1(a) {
 
         }
 
-      case c$2:
+      case c$3:
         return t;
     }
   }
@@ -2215,7 +2215,7 @@ var z$1 = g$1,
     C = d$1,
     D = p$1,
     E = n$1,
-    F = c$2,
+    F = c$3,
     G = f$1,
     H = e$1,
     I = l$1;
@@ -2268,7 +2268,7 @@ var isMemo$1 = function (a) {
 };
 
 var isPortal$1 = function (a) {
-  return y$1(a) === c$2;
+  return y$1(a) === c$3;
 };
 
 var isProfiler$1 = function (a) {
@@ -3162,7 +3162,7 @@ function lugga(messageIt, valY) {// bearlog.lug(messageIt, valY);
 
 function luggo(...asw) {
   // console.log("luggo--", ...asw);
-  console.log("🐻 loggo: ", ...asw); // baseLog(asw)
+  console.log("🐻 bearlog loggo: ", ...asw); // baseLog(asw)
   // bearlog.lug('bearlog.lug:', bearlog.lug)
 }
 
@@ -4705,7 +4705,7 @@ function _extends$W() {
  */
 
 var b$1 = "function" === typeof Symbol && Symbol.for,
-    c$1 = b$1 ? Symbol.for("react.element") : 60103,
+    c$2 = b$1 ? Symbol.for("react.element") : 60103,
     d = b$1 ? Symbol.for("react.portal") : 60106,
     e = b$1 ? Symbol.for("react.fragment") : 60107,
     f = b$1 ? Symbol.for("react.strict_mode") : 60108,
@@ -4729,7 +4729,7 @@ function z(a) {
     var u = a.$$typeof;
 
     switch (u) {
-      case c$1:
+      case c$2:
         switch (a = a.type, a) {
           case l:
           case m:
@@ -4768,7 +4768,7 @@ var AsyncMode = l;
 var ConcurrentMode = m;
 var ContextConsumer = k;
 var ContextProvider = h;
-var Element$1 = c$1;
+var Element$1 = c$2;
 var ForwardRef = n;
 var Fragment = e;
 var Lazy = t$1;
@@ -4793,7 +4793,7 @@ var isContextProvider = function (a) {
 };
 
 var isElement = function (a) {
-  return "object" === typeof a && null !== a && a.$$typeof === c$1;
+  return "object" === typeof a && null !== a && a.$$typeof === c$2;
 };
 
 var isForwardRef = function (a) {
@@ -8847,7 +8847,7 @@ function canUseDOM$5() {
 var isBrowser$6 = canUseDOM$5();
 
 /* eslint-disable no-nested-ternary */
-var noop$5 = () => {};
+var noop$6 = () => {};
 
 var classNames$1 = {
   light: "chakra-ui-light",
@@ -8859,8 +8859,8 @@ var classNames$1 = {
 
 var mockBody = {
   classList: {
-    add: noop$5,
-    remove: noop$5
+    add: noop$6,
+    remove: noop$6
   }
 };
 
@@ -8906,7 +8906,7 @@ function getColorScheme(fallback) {
 
 function addListener(fn) {
   if (!("matchMedia" in window)) {
-    return noop$5;
+    return noop$6;
   }
 
   var mediaQueryList = window.matchMedia(queries.dark);
@@ -9058,8 +9058,8 @@ function ColorModeProvider(props) {
 
   var context = React__namespace.useMemo(() => ({
     colorMode: value != null ? value : colorMode,
-    toggleColorMode: value ? noop$5 : toggleColorMode,
-    setColorMode: value ? noop$5 : setColorMode
+    toggleColorMode: value ? noop$6 : toggleColorMode,
+    setColorMode: value ? noop$6 : setColorMode
   }), [colorMode, setColorMode, toggleColorMode, value]);
   return /*#__PURE__*/React__namespace.createElement(ColorModeContext.Provider, {
     value: context
@@ -17492,7 +17492,7 @@ var doc = {
 };
 var ssrDocument = doc;
 
-var noop$4 = () => {};
+var noop$5 = () => {};
 
 var win = {
   document: ssrDocument,
@@ -17502,8 +17502,8 @@ var win = {
   CustomEvent: function CustomEvent() {
     return this;
   },
-  addEventListener: noop$4,
-  removeEventListener: noop$4,
+  addEventListener: noop$5,
+  removeEventListener: noop$5,
 
   getComputedStyle() {
     return {
@@ -17517,8 +17517,8 @@ var win = {
   matchMedia() {
     return {
       matches: false,
-      addListener: noop$4,
-      removeListener: noop$4
+      addListener: noop$5,
+      removeListener: noop$5
     };
   },
 
@@ -17537,9 +17537,9 @@ var win = {
   },
 
   setTimeout: () => 0,
-  clearTimeout: noop$4,
+  clearTimeout: noop$5,
   setInterval: () => 0,
-  clearInterval: noop$4
+  clearInterval: noop$5
 };
 var ssrWindow = win;
 
@@ -20705,16 +20705,16 @@ var b = function (a1, a2) {
   return 3.0 * a2 - 6.0 * a1;
 };
 
-var c = function (a1) {
+var c$1 = function (a1) {
   return 3.0 * a1;
 };
 
 var calcBezier = function (t, a1, a2) {
-  return ((a(a1, a2) * t + b(a1, a2)) * t + c(a1)) * t;
+  return ((a(a1, a2) * t + b(a1, a2)) * t + c$1(a1)) * t;
 };
 
 var getSlope = function (t, a1, a2) {
-  return 3.0 * a(a1, a2) * t * t + 2.0 * b(a1, a2) * t + c(a1);
+  return 3.0 * a(a1, a2) * t * t + 2.0 * b(a1, a2) * t + c$1(a1);
 };
 
 var subdivisionPrecision = 0.0000001;
@@ -22715,7 +22715,7 @@ function getVelocity(history, timeDelta) {
   return currentVelocity;
 }
 
-function noop$3(any) {
+function noop$4(any) {
   return any;
 }
 
@@ -22766,7 +22766,7 @@ function transformBoundingBox(_a, transformPoint) {
       right = _a.right;
 
   if (transformPoint === void 0) {
-    transformPoint = noop$3;
+    transformPoint = noop$4;
   }
 
   var topLeft = transformPoint({
@@ -29852,7 +29852,7 @@ function _inheritsLoose$1(subClass, superClass) {
   _setPrototypeOf$3(subClass, superClass);
 }
 
-function _defineProperty$i(obj, key, value) {
+function _defineProperty$j(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -29935,7 +29935,7 @@ function withSideEffect$1(reducePropsToState, handleStateChangeOnClient) {
       return SideEffect;
     }(React.PureComponent);
 
-    _defineProperty$i(SideEffect, "displayName", "SideEffect(" + getDisplayName(WrappedComponent) + ")");
+    _defineProperty$j(SideEffect, "displayName", "SideEffect(" + getDisplayName(WrappedComponent) + ")");
 
     return SideEffect;
   };
@@ -31637,7 +31637,7 @@ var hideOthers = function (originalTarget, parentNode, markerName) {
   };
 };
 
-function _defineProperty$h(obj, key, value) {
+function _defineProperty$i(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -31658,7 +31658,7 @@ function _defineProperty$h(obj, key, value) {
 
 class ModalManager {
   constructor() {
-    _defineProperty$h(this, "modals", void 0);
+    _defineProperty$i(this, "modals", void 0);
 
     this.modals = [];
   }
@@ -43564,7 +43564,7 @@ function BsChatQuote(props) {
 function SiAmazon(props){return GenIcon({"tag":"svg","attr":{"role":"img","viewBox":"0 0 24 24"},"child":[{"tag":"title","attr":{},"child":[]},{"tag":"path","attr":{"d":"M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.12.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726-1.53.406-3.045.61-4.516.61-2.265 0-4.41-.396-6.435-1.187-2.02-.794-3.82-1.91-5.43-3.35-.1-.074-.15-.15-.15-.22 0-.047.02-.09.05-.13zm6.565-6.218c0-1.005.247-1.863.743-2.577.495-.71 1.17-1.25 2.04-1.615.796-.335 1.756-.575 2.912-.72.39-.046 1.033-.103 1.92-.174v-.37c0-.93-.105-1.558-.3-1.875-.302-.43-.78-.65-1.44-.65h-.182c-.48.046-.896.196-1.246.46-.35.27-.575.63-.675 1.096-.06.3-.206.465-.435.51l-2.52-.315c-.248-.06-.372-.18-.372-.39 0-.046.007-.09.022-.15.247-1.29.855-2.25 1.82-2.88.976-.616 2.1-.975 3.39-1.05h.54c1.65 0 2.957.434 3.888 1.29.135.15.27.3.405.48.12.165.224.314.283.45.075.134.15.33.195.57.06.254.105.42.135.51.03.104.062.3.076.615.01.313.02.493.02.553v5.28c0 .376.06.72.165 1.036.105.313.21.54.315.674l.51.674c.09.136.136.256.136.36 0 .12-.06.226-.18.314-1.2 1.05-1.86 1.62-1.963 1.71-.165.135-.375.15-.63.045-.195-.166-.375-.332-.526-.496l-.31-.347c-.06-.074-.166-.21-.317-.42l-.3-.435c-.81.886-1.603 1.44-2.4 1.665-.494.15-1.093.227-1.83.227-1.11 0-2.04-.343-2.76-1.034-.72-.69-1.08-1.665-1.08-2.94l-.05-.076zm3.753-.438c0 .566.14 1.02.425 1.364.285.34.675.512 1.155.512.045 0 .106-.007.195-.02.09-.016.134-.023.166-.023.614-.16 1.08-.553 1.424-1.178.165-.28.285-.58.36-.91.09-.32.12-.59.135-.8.015-.195.015-.54.015-1.005v-.54c-.84 0-1.484.06-1.92.18-1.275.36-1.92 1.17-1.92 2.43l-.035-.02zm9.162 7.027c.03-.06.075-.11.132-.17.362-.243.714-.41 1.05-.5.55-.133 1.09-.222 1.612-.24.14-.012.28 0 .41.03.65.06 1.05.168 1.172.33.063.09.09.228.09.39v.15c0 .51-.14 1.11-.415 1.8-.278.69-.664 1.248-1.156 1.68-.073.06-.14.09-.197.09-.03 0-.06 0-.09-.012-.09-.044-.107-.12-.064-.24.54-1.26.806-2.143.806-2.64 0-.15-.03-.27-.087-.344-.145-.166-.55-.257-1.224-.257-.243 0-.533.016-.87.046-.363.045-.7.09-1 .135-.09 0-.148-.014-.18-.044-.03-.03-.036-.047-.02-.077 0-.017.006-.03.02-.063v-.06z"}}]})(props);}function SiFacebook(props){return GenIcon({"tag":"svg","attr":{"role":"img","viewBox":"0 0 24 24"},"child":[{"tag":"title","attr":{},"child":[]},{"tag":"path","attr":{"d":"M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"}}]})(props);}function SiGoogle(props){return GenIcon({"tag":"svg","attr":{"role":"img","viewBox":"0 0 24 24"},"child":[{"tag":"title","attr":{},"child":[]},{"tag":"path","attr":{"d":"M12.24 10.285V14.4h6.806c-.275 1.765-2.056 5.174-6.806 5.174-4.095 0-7.439-3.389-7.439-7.574s3.345-7.574 7.439-7.574c2.33 0 3.891.989 4.785 1.849l3.254-3.138C18.189 1.186 15.479 0 12.24 0c-6.635 0-12 5.365-12 12s5.365 12 12 12c6.926 0 11.52-4.869 11.52-11.726 0-.788-.085-1.39-.189-1.989H12.24z"}}]})(props);}function SiLinkedin(props){return GenIcon({"tag":"svg","attr":{"role":"img","viewBox":"0 0 24 24"},"child":[{"tag":"title","attr":{},"child":[]},{"tag":"path","attr":{"d":"M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"}}]})(props);}function SiMicrosoftteams(props){return GenIcon({"tag":"svg","attr":{"role":"img","viewBox":"0 0 24 24"},"child":[{"tag":"title","attr":{},"child":[]},{"tag":"path","attr":{"d":"M20.625 8.127q-.55 0-1.025-.205-.475-.205-.832-.563-.358-.357-.563-.832Q18 6.053 18 5.502q0-.54.205-1.02t.563-.837q.357-.358.832-.563.474-.205 1.025-.205.54 0 1.02.205t.837.563q.358.357.563.837.205.48.205 1.02 0 .55-.205 1.025-.205.475-.563.832-.357.358-.837.563-.48.205-1.02.205zm0-3.75q-.469 0-.797.328-.328.328-.328.797 0 .469.328.797.328.328.797.328.469 0 .797-.328.328-.328.328-.797 0-.469-.328-.797-.328-.328-.797-.328zM24 10.002v5.578q0 .774-.293 1.46-.293.685-.803 1.194-.51.51-1.195.803-.686.293-1.459.293-.445 0-.908-.105-.463-.106-.85-.329-.293.95-.855 1.729-.563.78-1.319 1.336-.756.557-1.67.861-.914.305-1.898.305-1.148 0-2.162-.398-1.014-.399-1.805-1.102-.79-.703-1.312-1.664t-.674-2.086h-5.8q-.411 0-.704-.293T0 16.881V6.873q0-.41.293-.703t.703-.293h8.59q-.34-.715-.34-1.5 0-.727.275-1.365.276-.639.75-1.114.475-.474 1.114-.75.638-.275 1.365-.275t1.365.275q.639.276 1.114.75.474.475.75 1.114.275.638.275 1.365t-.275 1.365q-.276.639-.75 1.113-.475.475-1.114.75-.638.276-1.365.276-.188 0-.375-.024-.188-.023-.375-.058v1.078h10.875q.469 0 .797.328.328.328.328.797zM12.75 2.373q-.41 0-.78.158-.368.158-.638.434-.27.275-.428.639-.158.363-.158.773 0 .41.158.78.159.368.428.638.27.27.639.428.369.158.779.158.41 0 .773-.158.364-.159.64-.428.274-.27.433-.639.158-.369.158-.779 0-.41-.158-.773-.159-.364-.434-.64-.275-.275-.639-.433-.363-.158-.773-.158zM6.937 9.814h2.25V7.94H2.814v1.875h2.25v6h1.875zm10.313 7.313v-6.75H12v6.504q0 .41-.293.703t-.703.293H8.309q.152.809.556 1.5.405.691.985 1.19.58.497 1.318.779.738.281 1.582.281.926 0 1.746-.352.82-.351 1.436-.966.615-.616.966-1.43.352-.815.352-1.752zm5.25-1.547v-5.203h-3.75v6.855q.305.305.691.452.387.146.809.146.469 0 .879-.176.41-.175.715-.48.304-.305.48-.715t.176-.879Z"}}]})(props);}function SiNotion(props){return GenIcon({"tag":"svg","attr":{"role":"img","viewBox":"0 0 24 24"},"child":[{"tag":"title","attr":{},"child":[]},{"tag":"path","attr":{"d":"M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.747.327-.747.933zm14.337.745c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952L12.21 19s0 .84-1.168.84l-3.222.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233 4.764 7.279v-6.44l-1.215-.139c-.093-.514.28-.887.747-.933zM1.936 1.035l13.31-.98c1.634-.14 2.055-.047 3.082.7l4.249 2.986c.7.513.934.653.934 1.213v16.378c0 1.026-.373 1.634-1.68 1.726l-15.458.934c-.98.047-1.448-.093-1.962-.747l-3.129-4.06c-.56-.747-.793-1.306-.793-1.96V2.667c0-.839.374-1.54 1.447-1.632z"}}]})(props);}function SiReddit(props){return GenIcon({"tag":"svg","attr":{"role":"img","viewBox":"0 0 24 24"},"child":[{"tag":"title","attr":{},"child":[]},{"tag":"path","attr":{"d":"M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"}}]})(props);}function SiSlack(props){return GenIcon({"tag":"svg","attr":{"role":"img","viewBox":"0 0 24 24"},"child":[{"tag":"title","attr":{},"child":[]},{"tag":"path","attr":{"d":"M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zM15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z"}}]})(props);}function SiTwitter(props){return GenIcon({"tag":"svg","attr":{"role":"img","viewBox":"0 0 24 24"},"child":[{"tag":"title","attr":{},"child":[]},{"tag":"path","attr":{"d":"M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"}}]})(props);}function SiWhatsapp(props){return GenIcon({"tag":"svg","attr":{"role":"img","viewBox":"0 0 24 24"},"child":[{"tag":"title","attr":{},"child":[]},{"tag":"path","attr":{"d":"M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"}}]})(props);}function SiYcombinator(props){return GenIcon({"tag":"svg","attr":{"role":"img","viewBox":"0 0 24 24"},"child":[{"tag":"title","attr":{},"child":[]},{"tag":"path","attr":{"d":"M0 24V0h24v24H0zM6.951 5.896l4.112 7.708v5.064h1.583v-4.972l4.148-7.799h-1.749l-2.457 4.875c-.372.745-.688 1.434-.688 1.434s-.297-.708-.651-1.434L8.831 5.896h-1.88z"}}]})(props);}
 
 // THIS FILE IS AUTO GENERATED
-function AiFillDelete(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"}}]})(props);}function AiOutlineCloseCircle(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M685.4 354.8c0-4.4-3.6-8-8-8l-66 .3L512 465.6l-99.3-118.4-66.1-.3c-4.4 0-8 3.5-8 8 0 1.9.7 3.7 1.9 5.2l130.1 155L340.5 670a8.32 8.32 0 0 0-1.9 5.2c0 4.4 3.6 8 8 8l66.1-.3L512 564.4l99.3 118.4 66 .3c4.4 0 8-3.5 8-8 0-1.9-.7-3.7-1.9-5.2L553.5 515l130.1-155c1.2-1.4 1.8-3.3 1.8-5.2z"}},{"tag":"path","attr":{"d":"M512 65C264.6 65 64 265.6 64 513s200.6 448 448 448 448-200.6 448-448S759.4 65 512 65zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"}}]})(props);}function AiOutlineCopy(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"}}]})(props);}function AiOutlineInfoCircle(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"}},{"tag":"path","attr":{"d":"M464 336a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm72 112h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V456c0-4.4-3.6-8-8-8z"}}]})(props);}function AiOutlineLink(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"}}]})(props);}function AiOutlineMail(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 110.8V792H136V270.8l-27.6-21.5 39.3-50.5 42.8 33.3h643.1l42.8-33.3 39.3 50.5-27.7 21.5zM833.6 232L512 482 190.4 232l-42.8-33.3-39.3 50.5 27.6 21.5 341.6 265.6a55.99 55.99 0 0 0 68.7 0L888 270.8l27.6-21.5-39.3-50.5-42.7 33.2z"}}]})(props);}function AiOutlinePlus(props){return GenIcon({"tag":"svg","attr":{"t":"1551322312294","style":"","viewBox":"0 0 1024 1024","version":"1.1"},"child":[{"tag":"defs","attr":{},"child":[]},{"tag":"path","attr":{"d":"M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z"}},{"tag":"path","attr":{"d":"M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z"}}]})(props);}function AiOutlineSearch(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"}}]})(props);}
+function AiFillDelete(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"}}]})(props);}function AiOutlineCloseCircle(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M685.4 354.8c0-4.4-3.6-8-8-8l-66 .3L512 465.6l-99.3-118.4-66.1-.3c-4.4 0-8 3.5-8 8 0 1.9.7 3.7 1.9 5.2l130.1 155L340.5 670a8.32 8.32 0 0 0-1.9 5.2c0 4.4 3.6 8 8 8l66.1-.3L512 564.4l99.3 118.4 66 .3c4.4 0 8-3.5 8-8 0-1.9-.7-3.7-1.9-5.2L553.5 515l130.1-155c1.2-1.4 1.8-3.3 1.8-5.2z"}},{"tag":"path","attr":{"d":"M512 65C264.6 65 64 265.6 64 513s200.6 448 448 448 448-200.6 448-448S759.4 65 512 65zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"}}]})(props);}function AiOutlineCopy(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"}}]})(props);}function AiOutlineEyeInvisible(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M942.2 486.2Q889.47 375.11 816.7 305l-50.88 50.88C807.31 395.53 843.45 447.4 874.7 512 791.5 684.2 673.4 766 512 766q-72.67 0-133.87-22.38L323 798.75Q408 838 512 838q288.3 0 430.2-300.3a60.29 60.29 0 0 0 0-51.5zm-63.57-320.64L836 122.88a8 8 0 0 0-11.32 0L715.31 232.2Q624.86 186 512 186q-288.3 0-430.2 300.3a60.3 60.3 0 0 0 0 51.5q56.69 119.4 136.5 191.41L112.48 835a8 8 0 0 0 0 11.31L155.17 889a8 8 0 0 0 11.31 0l712.15-712.12a8 8 0 0 0 0-11.32zM149.3 512C232.6 339.8 350.7 258 512 258c54.54 0 104.13 9.36 149.12 28.39l-70.3 70.3a176 176 0 0 0-238.13 238.13l-83.42 83.42C223.1 637.49 183.3 582.28 149.3 512zm246.7 0a112.11 112.11 0 0 1 146.2-106.69L401.31 546.2A112 112 0 0 1 396 512z"}},{"tag":"path","attr":{"d":"M508 624c-3.46 0-6.87-.16-10.25-.47l-52.82 52.82a176.09 176.09 0 0 0 227.42-227.42l-52.82 52.82c.31 3.38.47 6.79.47 10.25a111.94 111.94 0 0 1-112 112z"}}]})(props);}function AiOutlineEye(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 0 0 0 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z"}}]})(props);}function AiOutlineInfoCircle(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"}},{"tag":"path","attr":{"d":"M464 336a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm72 112h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V456c0-4.4-3.6-8-8-8z"}}]})(props);}function AiOutlineLink(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"}}]})(props);}function AiOutlineMail(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 110.8V792H136V270.8l-27.6-21.5 39.3-50.5 42.8 33.3h643.1l42.8-33.3 39.3 50.5-27.7 21.5zM833.6 232L512 482 190.4 232l-42.8-33.3-39.3 50.5 27.6 21.5 341.6 265.6a55.99 55.99 0 0 0 68.7 0L888 270.8l27.6-21.5-39.3-50.5-42.7 33.2z"}}]})(props);}function AiOutlinePlus(props){return GenIcon({"tag":"svg","attr":{"t":"1551322312294","style":"","viewBox":"0 0 1024 1024","version":"1.1"},"child":[{"tag":"defs","attr":{},"child":[]},{"tag":"path","attr":{"d":"M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z"}},{"tag":"path","attr":{"d":"M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z"}}]})(props);}function AiOutlineSearch(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"}}]})(props);}
 
 // THIS FILE IS AUTO GENERATED
 function FiSettings(props) {
@@ -44031,6 +44031,13 @@ function joinString$1(arrayo, strngo = "", first = "") {
   const okasd = arrayo ? arrayo.join(strngo) : "";
   return okasd;
 }
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+function removeLower(str) {
+  let sdre = str.toLowerCase().replace(/\s/g, "");
+  return sdre;
+}
 
 function objectTrue(dictvar) {
   return typeof dictvar == "object";
@@ -44152,68 +44159,10 @@ function turnarray(arrVary) {
   const checkArr = Array.isArray(arrVary) ? arrVary : [arrVary];
   return checkArr;
 }
-function mapFunc(arrVar, funcVar, dictvar) {
-  if (Array.isArray(arrVar)) {
-    return removeEmptyArray(arrVar).map(hereo);
-  } else {
-    return hereo(arrVar);
-  }
-
-  function hereo(obj, indexvar) {
-    const obrar = //
-    // obj;
-    dictvar ? dictvar[obj] : obj;
-    const ijadw = {
-      indexvar: indexvar,
-      ...obrar
-    };
-    bearlog.lug("___ ijadw ___", ijadw);
-    const vkbmdfs = //
-    // "opkcwqe";
-    funcVar ? funcVar(obj) : ijadw;
-    return vkbmdfs;
-  } //
-
-} // movearray
 function removeEmptyArray(arr) {
   const sofksd = turnarray(arr).filter(item => item);
   return sofksd;
 }
-function mapSelectValue(arrBig, {
-  dictvar,
-  labelFunc,
-  valueFunc,
-  isDisabled,
-  ...sdas
-}) {
-  //
-  function asijdwe(asdae) {
-    const ndsire = //
-    // asdae
-    checkDict(dictvar, asdae);
-    const sidjf = //
-    // asdae
-    ndsire;
-    let sakde = {
-      label: labelFunc ? labelFunc(sidjf) : asdae,
-      value: valueFunc ? valueFunc(ndsire) : asdae,
-      isDisabled
-    };
-    bearlog.lug("___ brSeacrch MAPPO ___", {
-      asdae: asdae,
-      sakde: sakde // dictvar: dictvar,
-
-    });
-    return sakde;
-  }
-
-  bearlog.lug("___ brSeacrch LIST ___", {
-    arrBig: arrBig,
-    dictvar: dictvar
-  });
-  const dretjer = mapFunc(arrBig, asijdwe);
-  return dretjer;
-} // 1map
 
 function mipBase(dictvar) {
   const dfokg = new Set();
@@ -44475,12 +44424,10 @@ function BearListItemExpand(cvbokfe, dasfjewr, {
       ""; // dictRet && !findobj
       // dictRet && !findobj && !typeList && !containFunc;
 
-      if (logtrue) {
-        bearlog.laggu("___ beListItem FINAL ___", {
-          findobj,
-          noContain
-        });
-      }
+      bearlog.lug("___ beListItem FINAL ___", {
+        findobj,
+        noContain
+      });
 
       function finLog(sdasd) {
         if (logItem) {
@@ -44964,8 +44911,8 @@ function BearCheckList(named, obj, {
 
   function renderCheck() {
     //
-    const ijsdfw = renderItem || typeList || containFunc;
-    const cisas = ijsdfw ? obj : BearErrMiss("'containFunc' or 'renderItem' or 'typeList'", bearName, named);
+    const ijsdfw = renderItem || typeList || containFunc || args.return;
+    const cisas = ijsdfw ? obj : BearErrMiss("'containFunc' or 'renderItem' or 'typeList' or 'return'", bearName, named);
     return cisas;
   }
 
@@ -45191,6 +45138,7 @@ function BearInputLabel({
   labelFunc,
   addFunc,
   iconvar,
+  name,
   newTrue,
   errorMessage,
   //
@@ -45344,15 +45292,7 @@ function BearInputLabel({
     return ijcwe;
   }
 
-  const ijsae = addFunc ? BswTi() : ioakawe; // 1icon
-  const asdojwqs = {
-    obj: ijsae // ...sdijr,
-    // textvar: ioakawe,
-    // noText: true,
-    // disVar: true,
-
-  };
-  bearlog.lug(name + "___ inpuBase TITLE CONF ___", asdojwqs);
+  addFunc ? BswTi() : ioakawe; // 1icon
 
   const sdfgret = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, okasde);
   const kase = {
@@ -45473,6 +45413,7 @@ function BearInputBase(ujsdqwe, {
       margin: "0px 0 10px 10px"
     };
     const iawqe = { ...skdowqe,
+      textAlign: "left",
       fontWeight: "bold",
       ...style,
       ...labelStyle
@@ -45588,13 +45529,11 @@ const MediaQueries = {
   viewtype: "(min-width: 780px)",
   customHeight: "(min-height: 650px)"
 };
-const widthVary = window.matchMedia(MediaQueries.viewtype);
-window.matchMedia(MediaQueries.customHeight);
-const mobileView = !widthVary.matches; // export const mobileNot = widthVary.matches;
-
-const bearMobileView = //
-// "";
-mobileView; // true;
+function bearMobileView() {
+  const widthVary = window.matchMedia(MediaQueries.viewtype);
+  window.matchMedia(MediaQueries.customHeight);
+  return !widthVary.matches;
+} // export const mobileNot = widthVary.matches;
 
 function BearLog(...asdf) {
   console.log("___ BearLog ___", ...asdf);
@@ -45670,6 +45609,16 @@ function BearIconText(icon, text, osdfds) {
   //
   const bodfg = {
     iconvar: icon,
+    textvar: text,
+    ...osdfds
+  };
+  const sadwew = /*#__PURE__*/React__default$1['default'].createElement(BearTextMedia, bodfg);
+  return sadwew;
+}
+function BearImageText(image, text, osdfds) {
+  //
+  const bodfg = {
+    imagevar: image,
     textvar: text,
     ...osdfds
   };
@@ -45791,9 +45740,14 @@ function BearFlex({
   }
 
   function redndo(asdwa) {
-    const ijase = asdwa.obj ? asdwa : {
+    const ijase = {
       obj: asdwa
-    };
+    }; // asdwa.obj
+    //   ? asdwa
+    //   : {
+    //       obj: asdwa,
+    //     };
+
     return dokesad(ijase);
   }
 
@@ -46268,414 +46222,6 @@ function BearDiv$1({
   !sijewr && !ignoreNull ? BearError(bearName + " is empty") : sadijqwe; // return difjgerwas
 
   return sadijqwe;
-}
-
-function BearBackForward({
-  obj,
-  onBack,
-  onForward,
-  disVar,
-  arrVar,
-  textTrue,
-  disBack,
-  children,
-  disForward,
-  hideBack,
-  hideForward,
-  genConfig,
-  backConfig,
-  forwardConfig,
-  buttonConfig = {},
-  ...argssdf
-}) {
-  //
-  //
-  // function asdjie(funco){
-  // }
-  const endLeftfsa = {
-    iconvar: "back",
-    onClick: onBack,
-    // disVar: disBack,
-    ...backConfig
-  };
-  const endRighto = {
-    iconvar: "forward",
-    onClick: onForward,
-    // disVar: disForward,
-    ...forwardConfig
-  };
-  const xcijsdf = //
-  // "BACK";
-  !hideBack && //
-  // "left"
-  saaoekwq(endLeftfsa);
-  const dfgkmre = //
-  // "FORWARD";
-  !hideForward && //
-  // "right"
-  saaoekwq(endRighto);
-
-  function saaoekwq(oskwe) {
-    const ijawe = {// className: gens.butClass,
-    };
-    const zdsdar = { ...oskwe,
-      ...ijawe,
-      ...buttonConfig,
-      itemType: "button"
-    };
-    bearlog.lug("___ zdsdar ___", zdsdar);
-    const uajwe = //
-    // "asdfeqws";
-    BearTextMedia(zdsdar); // BearList();
-
-    return uajwe;
-  } // 1float
-
-  const uawhe = {
-    // iconvar
-    obj: /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, xcijsdf, children, dfgkmre),
-    // list: [xcijsdf, children, dfgkmre],
-    // left: xcijsdf,
-    // center: children,
-    // right: dfgkmre,
-    padvar: "5px",
-    ...argssdf
-  };
-  const ijwqeq = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, _extends$X({
-    flex: true,
-    vertAlign: true
-  }, uawhe)));
-  return ijwqeq;
-}
-
-function BearButtonDownload({
-  //
-  fileName,
-  json,
-  ...args
-}) {
-  const sdifjewr = //
-  fileName; // 1const
-  // 1json FON
-
-  function downJSON() {
-    var _myArray = JSON.stringify(json, null, 4); //indentation in json format, human readable
-
-
-    var vLink = document.createElement("a"),
-        vBlob = new Blob([_myArray], {
-      type: "octet/stream"
-    }),
-        vName = sdifjewr,
-        vUrl = window.URL.createObjectURL(vBlob);
-    vLink.setAttribute("href", vUrl);
-    vLink.setAttribute("download", vName);
-    vLink.click();
-  }
-
-  function downlood() {
-    if (json) {
-      downJSON();
-    }
-  }
-
-  const okfdsd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, "sssss");
-  args = {
-    obj: okfdsd,
-    onClick: downlood,
-    ...args
-  };
-  return /*#__PURE__*/React__default$1['default'].createElement(BearButton$1, args);
-}
-
-const emojiDict = {
-  surprise: {
-    emoji: "😲",
-    textvar: "Surprised!"
-  },
-  angry: {
-    emoji: "😡",
-    textvar: "Angry"
-  },
-  happy: {
-    emoji: "😃",
-    textvar: "Happy"
-  },
-  sad: {
-    emoji: "😢",
-    textvar: "Sad"
-  },
-  funny: {
-    emoji: "🤣",
-    textvar: "Funny"
-  },
-  love: {
-    emoji: "😍",
-    textvar: "Love"
-  },
-  interest: {
-    emoji: "🤔",
-    textvar: "Interesting"
-  }
-};
-
-function getEMoj(asofkr) {
-  const idfwer = emojiDict[asofkr];
-  let side = idfwer && idfwer.emoji;
-  side = side ? side : "";
-  return side;
-}
-
-function mapEmojiFace(list) {
-  const iewase = list && list.map(getEMoj);
-  return iewase;
-}
-
-function mainRet(cxsd) {
-  const aijew = emojiDict[cxsd];
-  const oiajew = `${aijew["emoji"]} ${aijew["textvar"]} `;
-  let oaksde = {
-    DICT: emojiDict,
-    inits: cxsd,
-    LABEL: oiajew
-  };
-  bearlog.lug("___ emojilist--mainRet ___", oaksde);
-  return oiajew;
-}
-
-function labelMoj(cxsd) {
-  const xcokvse = {
-    value: cxsd,
-    label: mainRet(cxsd)
-  };
-  return xcokvse;
-}
-function EmojiLabelMap(cxsd) {
-  let sd9fwq = cxsd.map(labelMoj);
-  bearlog.lug("___ EmojiLabelMap ___", sd9fwq);
-  return sd9fwq;
-}
-
-function BearEmoji({
-  initialValue,
-  selectBlue,
-  selectTrue,
-  chooseFunc,
-  typevar,
-  list,
-  onlyEmoji,
-  itemConfig,
-  ...sdaa
-}) {
-  //
-  const ijsae = //
-  emojiDict;
-  const kjsijsa = [//
-  "funny", "happy", "interest", // "surprise",
-  "sad" // "angry",
-  ];
-  const [asdoe, setasdoe] = React.useState();
-  const jdfew = //
-  // kjsijsa
-  list ? list : kjsijsa; //
-  //
-
-  let plaqwe = //
-  // greyHover circleHover
-  "expandHover pointer";
-  const sadwqe = //
-  plaqwe; // selectBlue ? plaqwe : "pointer";
-
-  const oksae = {
-    // background: "red",
-    padding: "5px 10px",
-    borderRadius: "50%"
-  };
-  const sfjaw = {
-    className: sadwqe,
-    style: oksae,
-    ...itemConfig
-  }; // 1tick
-  // function goTick() {
-  //   bearlog.lug("___ qweq ___", qweq);
-  //   const bocd = onlyEmoji ? emoji : <>{emoji}</>;
-  //   const qwtgsa = chosenTrue && BearIcon("tick");
-  //   // 1emoji
-  //   const okaew = {
-  //     mainObj: bocd,
-  //     smallObj: qwtgsa,
-  //     alignvar: "topRight",
-  //   };
-  //   const lfdijg = (
-  //     <>
-  //       {bocd}
-  //       {qwtgsa}
-  //     </>
-  //   );
-  //   return lfdijg;
-  // }
-
-  function saokde({
-    chosenTrue,
-    emoji,
-    textvar,
-    ...qweq
-  }) {
-    const lsadwe = //
-    emoji; // textvar;
-    // lfdijg;
-    // bocd
-    // ureytue;
-
-    const dsfge = {
-      minWidth: "100px",
-      fontSize: "22px"
-    };
-    const xdffsd = {
-      obj: textvar,
-      style: dsfge
-    };
-    const sdfiewrw =
-    /*#__PURE__*/
-    //
-    // "sodkqeq"
-    React__default$1['default'].createElement(BearDiv$1, xdffsd);
-    const oksaew = {
-      obj: lsadwe,
-      flex: true,
-      ...sfjaw
-    };
-    const aokdwe = {
-      // style:
-      popConfig: {
-        content: sdfiewrw
-      },
-      ...qweq
-    };
-    bearlog.lug("___BearEmoji BASE EMOJI ___", aokdwe);
-    return /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, oksaew); // return <BearPopover {...aokdwe} />;
-  }
-
-  function Listso({ ...ssdwedf
-  }) {
-    //
-    // 1chosen
-    const djifwsare = {
-      style: {
-        border: "2px solid black",
-        borderRadius: "50%" // background: "blue",
-
-      },
-      className: "shadowBottom"
-    };
-    const ijdwq = {
-      // style: { background: "red" },
-      chosenItem: asdoe,
-      chosenConfig: djifwsare,
-      // chooseTick
-      chooseTrue: true,
-      returnArray: true,
-      clickSingle: true
-    };
-
-    function asdoke(sdfswe) {
-      bearlog.lug("___ asdoke ___", sdfswe);
-      let oksadw = //
-      // "dsfoker";
-      saokde(sdfswe);
-      return oksadw;
-    }
-    const logBaso = {
-      logtrue: "asdas",
-      messvar: "BEAEMOJI"
-    };
-    const dsjs = {
-      list: jdfew,
-      dictvar: ijsae,
-      // typeList: "div",
-      renderItem: asdoke,
-      horiz: true,
-      itemConfig: sfjaw,
-      ...logBaso,
-      ...ijdwq,
-      ...ssdwedf
-    };
-    bearlog.lug("___ emojListo MAIN LIST  ___", dsjs);
-    return /*#__PURE__*/React__default$1['default'].createElement(BearList, dsjs);
-  }
-
-  function Selectos() {
-    // const sidjew = {
-    //   value:
-    // }
-    const fdogkre = //
-    // jdfew
-    Object.keys(ijsae);
-    const awwsa = EmojiLabelMap(fdogkre);
-    const adsfw = EmojiLabelMap(initialValue);
-    const ijsaew = {
-      initOptions: awwsa,
-      limitvar: 3,
-      ...sdaa,
-      logtrue: false,
-      messvar: "emojListo",
-      value: adsfw
-    };
-    let mssade = //
-    // fdogkre;
-    ijsaew;
-    bearlog.lug("___ EmoijList MAIN ___", mssade);
-    const asiew = //
-    ""; //   <BearSelect {...ijsaew} />;
-
-    return asiew;
-  }
-
-  let endValue = "";
-
-  switch (typevar) {
-    case "select":
-      endValue = Selectos();
-      break;
-
-    case "base":
-      endValue = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, mapEmojiFace(jdfew));
-      break;
-
-    default:
-      endValue = /*#__PURE__*/React__default$1['default'].createElement(Listso, sdaa);
-  }
-
-  return endValue;
-}
-
-function BearTags({
-  //
-  itemConfig,
-  ...args
-}) {
-  // 1const
-  function rendios(itemo) {
-    const kasde = {
-      color: "black",
-      background: "lightgrey"
-    };
-    const djfwer = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, "# ", itemo);
-    const oksdewqsa = {
-      className: "shadowHover",
-      style: kasde,
-      obj: djfwer,
-      ...itemConfig
-    };
-    return /*#__PURE__*/React__default$1['default'].createElement(BearButton$1, oksdewqsa);
-  }
-
-  args = {
-    noError: true,
-    renderItem: rendios,
-    ...args
-  };
-  return /*#__PURE__*/React__default$1['default'].createElement(BearList, args);
 }
 
 function isAbsolute(pathname) {
@@ -48690,7 +48236,7 @@ function staticHandler(methodName) {
   };
 }
 
-function noop$2() {}
+function noop$3() {}
 /**
  * The public top-level API for a "static" <Router>, so-called because it
  * can't actually change the current location. Instead, it just records
@@ -48720,11 +48266,11 @@ var StaticRouter = /*#__PURE__*/function (_React$Component) {
     };
 
     _this.handleListen = function () {
-      return noop$2;
+      return noop$3;
     };
 
     _this.handleBlock = function () {
-      return noop$2;
+      return noop$3;
     };
 
     return _this;
@@ -49168,308 +48714,35 @@ if (process.env.NODE_ENV !== "production") {
   });
 }
 
-function ProvideMain({
+function BearRouter({
   //
-  reactRouter,
-  query,
+  list,
+  //   function,
   children,
-  chakra
-}) {
-  // const queryClient = query ? query : new QueryClient();
-  let asijew = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, children);
-  asijew = !chakra ? asijew : /*#__PURE__*/React__default$1['default'].createElement(ChakraProvider, null, children);
-  asijew = reactRouter ? /*#__PURE__*/React__default$1['default'].createElement(BrowserRouter, null, asijew) : asijew;
-  return asijew;
-}
-
-function BearContextProvider({ ...dsfer
-}) {
-  const sidjfewr = /*#__PURE__*/React__default$1['default'].createElement(ProvideMain, dsfer);
-  const jads = //
-  sidjfewr; // ProvideAuth({
-  //   obj: sidjfewr,
-  //   ...dsfer,
-  // });
-
-  return jads;
-}
-
-function BearModal({
-  //
-  open,
-  onClose,
-  height,
-  header,
-  noFooter,
-  footer,
-  footerConfig,
-  // message,
-  children,
-  buttonConfig,
+  homepage,
+  routeDict,
   ...args
 }) {
   // 1const
-  // const { isOpen, onOpen, onClose } = useDisclosure();
-  React__default$1['default'].useRef(); // 1footer
-  // 1antd
+  function sijaee({
+    path,
+    ...adsfr
+  }) {
+    const ijdrwe = //
+    // "/test";
+    path; // "/" + path;
 
-  const antGo = {
-    // title="Title"
-    visible: open,
-    onOk: onClose,
-    onCancel: onClose,
-    footer: ""
-  };
-
-  const sijdfe = {
-    //
-    bearName: "bearModalButtons",
-    list: ["close"],
-    dictvar: {
-      close: {
-        background: "blue",
-        textvar: "Close",
-        onClick: onClose
-      }
-    }
-  };
-  const ifdse = {
-    // onClick: asdkwe,
-    //   buttonLis
-    typeList: "button",
-    horiz: true,
-    ...sijdfe,
-    ...buttonConfig
-  };
-  bearlog.lug("___ ifdse ___", ifdse);
-  args = { // ...skdfer,
-    ...args
-  };
-  const sirew = {
-    isOpen: open,
-    onClose,
-    toggle: onClose,
-    ...antGo,
-    ...args
-  };
-  const okfdsd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(Modal, sirew, children)); //   args = {
-  //     obj: okfdsd,
-  //     ...args,
-  //   };
-  //   return "sdoksdf0";
-
-  return okfdsd; //   return <BearDiv {...args} />;
-}
-
-function BearModalWarning({
-  open,
-  children,
-  //
-  //
-  seriesObj,
-  onCancel,
-  onConfirm,
-  message,
-  confirmConfig,
-  cancelConfig,
-  //   buttonConfig,
-  ...args
-}) {
-  // 1const
-  // const [setto, setsetto] = useState(open);
-  const dgifsad = {
-    confirm: {
-      onClick: onConfirm,
-      ...confirmConfig
-    },
-    cancel: {
-      style: {
-        color: "black",
-        background: "transparent",
-        ...BearBorder("darkblue", "5px")
-      },
-      onClick: onCancel,
-      textvar: "Cancel",
-      ...cancelConfig
-    }
-  };
-  const cvxbfdg = {
-    list: ["confirm", "cancel"],
-    dictvar: dgifsad,
-    horiz: true,
-    bearName: "buttonGo",
-    itemConfig: {
-      style: {
-        fontSize: "20px"
-      }
-    }
-  };
-  const dfigjrt = {
-    style: {
-      height: "50vh"
-    }
-  };
-  const cvofdd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, dfigjrt, message), /*#__PURE__*/React__default$1['default'].createElement(BearButtonList, cvxbfdg));
-  const ijfgr = {
-    style: {
-      textAlign: "center",
-      fontSize: "20px",
-      padding: "3%"
-    }
-  };
-  const okfdsd =
-  /*#__PURE__*/
-  //
-  // cvofdd;
-  React__default$1['default'].createElement("div", ijfgr, " ", cvofdd); //   buttonConfig = {
-  //   }
-
-  args = {
-    // message: okfdsd,
-    open,
-    // children,
-    onClose: onCancel,
-    ...args
-  }; // return okfdsd;
-  // return open ? okfdsd : children;
-
-  return /*#__PURE__*/React__default$1['default'].createElement(BearModal, args, okfdsd);
-}
-
-//   const ijsde = "";
-//   return BearNotification();
-// }
-// export function BearErrNote(zcivjds, asdf = {}) {
-//   const ijsde = BearError(zcivjds);
-//   asdf["error"] = true;
-//   return BearNotification(ijsde, asdf);
-// }
-
-function BearWarnDelete({
-  onDelete,
-  children,
-  warnMessage,
-  ...args
-}) {
-  const nsidjfs = //
-  // true;
-  "";
-  const [warnTrue, setwarnTrue] = React.useState(nsidjfs);
-  const idjv = //
-  // true;
-  warnTrue;
-
-  function Modska() {
-    const sidjfewr = {
-      open: idjv,
-      message: warnMessage,
-      confirmConfig: {
-        textvar: "Delete",
-        background: "red",
-        color: "white"
-      },
-      onConfirm: onDelete,
-      onCancel: () => setwarnTrue()
-    };
-    return BearModalWarning(sidjfewr);
+    const ijsdfr = /*#__PURE__*/React__default$1['default'].createElement(Route, _extends$X({
+      path: ijdrwe
+    }, adsfr));
+    return ijsdfr;
   }
 
-  const ijsdfer = {
-    onClick: () => setwarnTrue(true)
-  };
-  const zxcmsd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(Modska, null), /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, ijsdfer, children));
-  return zxcmsd;
-} // // 1back 1forward
-
-function BearModel({
-  //
-  iconListConfig,
-  buttonConfig,
-  children,
-  dictvar,
-  //
-  //
-  onEdit,
-  editConfig,
-  onShare,
-  shareConfig,
-  onCancel,
-  //
-  onDelete,
-  warnDelete,
-  deleteConfig,
-  //
-  buttonLayout = "bottom",
-  //
-  ...args
-}) {
-  // 1const
-  const okfdsd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, children);
-
-  function asdsade(asdf) {
-    const dhfgr = {
-      onDelete,
-      ...deleteConfig
-    }; // return asdf;
-
-    return /*#__PURE__*/React__default$1['default'].createElement(BearWarnDelete, dhfgr, asdf);
-  }
-
-  const sidjfer = warnDelete ? {
-    divContainer: asdsade
-  } : {
-    onClick: onDelete
-  };
-  bearlog.lug("___ sidjfer ___", sidjfer);
-  const isdfewr = {
-    edit: {
-      iconvar: "edit",
-      textvar: "Edit",
-      onClick: onEdit,
-      ...editConfig
-    },
-    share: {
-      iconvar: "share",
-      textvar: "Share",
-      onClick: onShare,
-      ...shareConfig
-    },
-    cancel: {
-      iconvar: "close",
-      textvar: "Cancel",
-      onClick: onCancel
-    },
-    delete: {
-      iconvar: "delete",
-      textvar: "Delete",
-      ...sidjfer,
-      ...deleteConfig
-    }
-  };
-  const isdre = {
-    bearName: "sodkwqe",
-    list: ["delete"],
-    typeList: "button",
-    // ...iconConfig,
-    dictvar: { ...isdfewr,
-      ...dictvar
-    },
-    ...argMiss(args),
-    // itemConfig: kmfase,
-    ...buttonConfig
-  }; // 1console
-
-  bearlog.lug("___ brModel isdre ___", isdre);
-  const ijdwer = /*#__PURE__*/React__default$1['default'].createElement(BearList, isdre);
-  args = {
-    center: okfdsd,
-    // right: ijdwer,
-    [buttonLayout]: ijdwer,
-    noVertAlign: true,
-    // floatConfi:
-    ...argPass(args)
-  };
-  return /*#__PURE__*/React__default$1['default'].createElement(BearFloat, args);
+  const okfdsd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(BrowserRouter, null, /*#__PURE__*/React__default$1['default'].createElement(Switch, null, /*#__PURE__*/React__default$1['default'].createElement(Route, {
+    path: "/",
+    component: homepage
+  }), children.map(sijaee))));
+  return okfdsd;
 }
 
 // ES6 Map
@@ -51237,7 +50510,7 @@ var defineProperty = function () {
   } catch (e) {}
 }();
 
-var _defineProperty$g = defineProperty;
+var _defineProperty$h = defineProperty;
 
 /**
  * The base implementation of `assignValue` and `assignMergeValue` without
@@ -51251,8 +50524,8 @@ var _defineProperty$g = defineProperty;
 
 
 function baseAssignValue(object, key, value) {
-  if (key == '__proto__' && _defineProperty$g) {
-    _defineProperty$g(object, key, {
+  if (key == '__proto__' && _defineProperty$h) {
+    _defineProperty$h(object, key, {
       'configurable': true,
       'enumerable': true,
       'value': value,
@@ -55676,7 +54949,7 @@ function calculateNodeHeight(sizingData, value, minRows, maxRows) {
   return [height, rowHeight];
 }
 
-var noop$1 = function noop() {};
+var noop$2 = function noop() {};
 
 var pick = function pick(props, obj) {
   return props.reduce(function (acc, prop) {
@@ -55738,9 +55011,9 @@ var TextareaAutosize = function TextareaAutosize(_ref, userRef) {
       maxRows = _ref.maxRows,
       minRows = _ref.minRows,
       _ref$onChange = _ref.onChange,
-      onChange = _ref$onChange === void 0 ? noop$1 : _ref$onChange,
+      onChange = _ref$onChange === void 0 ? noop$2 : _ref$onChange,
       _ref$onHeightChange = _ref.onHeightChange,
-      onHeightChange = _ref$onHeightChange === void 0 ? noop$1 : _ref$onHeightChange,
+      onHeightChange = _ref$onHeightChange === void 0 ? noop$2 : _ref$onHeightChange,
       props = _objectWithoutPropertiesLoose$h(_ref, ["cacheMeasurements", "maxRows", "minRows", "onChange", "onHeightChange"]);
 
   if (process.env.NODE_ENV !== 'production' && props.style) {
@@ -55808,12 +55081,14 @@ function BearTextarea({
   //   default,
   value,
   rows,
+  lines,
   style,
   initialValue,
   expand = true,
   ...dfgre
 }) {
   // 1rows
+  rows = rows || lines;
   rows = rows ? rows : 3; // expand = "";
 
   const ijdfwer = expand && {
@@ -55884,16 +55159,10 @@ function RendGroup(center, {
   const sdijfr = inputRight || inputLeft;
 
   function aswqe(xcvadf) {
-    const sdresar = /*#__PURE__*/React__default$1['default'].createElement("div", {
-      //
-      style: {
-        //
-        // paddingLeft: leftMargin,
-        marginRight: leftMargin // marginLeft: "20px",
-
-      }
-    }, xcvadf);
-    return sdresar;
+    const ijsw = //
+    // sdresar
+    xcvadf;
+    return ijsw;
   }
 
   let cvdfsoe = sdijfr ? /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(InputGroup, null, leftRendos, aswqe(center), rightRendos)) : center;
@@ -56112,6 +55381,10 @@ var checkPasswordStrength = {
 
 function BearPassword({
   //
+  showItem,
+  hideItem,
+  showHideElement,
+  showHideConfig,
   requiredText,
   showStrenghBar,
   ...objaosdf
@@ -56165,21 +55438,11 @@ function BearPassword({
       ifjgewr,
       strenchVall
     });
-    const vcbmd = strenchVall && StrenchBarro(strenchVall);
-    const uhdfgr = {
-      obj: vcbmd,
-      style: {
-        //
-        fontSize: "0.9em",
-        width: "80px",
-        marginLeft: "10px"
-      }
-    };
-    const nsdijfe = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, sdfgoekse, /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, uhdfgr));
-    return /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, {
-      vertAlign: true,
-      flex: true
-    }, nsdijfe);
+    strenchVall && StrenchBarro(strenchVall);
+    const ijswqe = //
+    // nsdijfe;
+    sdfgoekse;
+    return ijswqe;
   } // function aidjew(){
   // }
 
@@ -56194,21 +55457,46 @@ function BearPassword({
     onChangeValue: aidjew,
     renderInput: InRead,
     type: typoFond
-  };
-  const isjda = show ? "Hide" : "Show";
-  const sdjfewr = {
-    h: "1.75rem",
-    size: "sm",
-    onClick: handleClick
-  };
-  const ijvsf = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(BearFormButton, sdjfewr, isjda));
+  }; // 1show 1hide
+
+  const sdfnwer = //
+  asdijew(); // showHideElement && asdijew();
+
+  function asdijew() {
+    const sdfgr = BearTextMedia({
+      // style: BearBackBorder()
+      iconvar: show ? /*#__PURE__*/React__default$1['default'].createElement(AiOutlineEyeInvisible, null) : /*#__PURE__*/React__default$1['default'].createElement(AiOutlineEye, null),
+      textvar: show ? "Hide" : "Show",
+      ...showHideConfig
+    });
+    const sidjf = //
+    // show ? showItem : hideItem;
+    // show ? "Hide" : "Show";
+    sdfgr;
+    const sdjfewr = {
+      h: "1.75rem",
+      size: "sm",
+      // style: {
+      //   //
+      //   // minWidth: "50px",
+      //   marginRight: "40px",
+      // },
+      onClick: handleClick
+    };
+    const ijvsf = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement("div", sdjfewr, sidjf));
+    return ijvsf;
+  }
+
   const dsfijsr = { ...ijsdae,
-    inputRight: ijvsf,
+    inputRight: sdfnwer,
     rightConfig: {
       width: "4.5rem"
     }
   };
-  return BearInputText(dsfijsr);
+  const sfwq = //
+  // "asdjkew";
+  BearInputText(dsfijsr);
+  return sfwq;
 }
 
 function BearCheckbox({
@@ -56298,20 +55586,20 @@ function _objectWithoutProperties$b(source, excluded) {
   return target;
 }
 
-function _typeof$6(obj) {
+function _typeof$7(obj) {
   "@babel/helpers - typeof";
 
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof$6 = function _typeof(obj) {
+    _typeof$7 = function _typeof(obj) {
       return typeof obj;
     };
   } else {
-    _typeof$6 = function _typeof(obj) {
+    _typeof$7 = function _typeof(obj) {
       return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
     };
   }
 
-  return _typeof$6(obj);
+  return _typeof$7(obj);
 }
 
 var _extends$e = Object.assign || function (target) {
@@ -56703,7 +55991,7 @@ function _inherits$3(subClass, superClass) {
   if (superClass) _setPrototypeOf$3(subClass, superClass);
 }
 
-function _defineProperty$f(obj, key, value) {
+function _defineProperty$g(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -56718,7 +56006,7 @@ function _defineProperty$f(obj, key, value) {
   return obj;
 }
 
-function ownKeys$d(object, enumerableOnly) {
+function ownKeys$e(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -56732,18 +56020,18 @@ function ownKeys$d(object, enumerableOnly) {
   return keys;
 }
 
-function _objectSpread2(target) {
+function _objectSpread2$1(target) {
   for (var i = 1; i < arguments.length; i++) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$d(Object(source), true).forEach(function (key) {
-        _defineProperty$f(target, key, source[key]);
+      ownKeys$e(Object(source), true).forEach(function (key) {
+        _defineProperty$g(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$d(Object(source)).forEach(function (key) {
+      ownKeys$e(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -56810,7 +56098,7 @@ function _createSuper$3(Derived) {
 // ==============================
 
 
-var noop = function noop() {}; // Class Name Prefixer
+var noop$1 = function noop() {}; // Class Name Prefixer
 // ==============================
 
 /**
@@ -56857,7 +56145,7 @@ function classNames(prefix, state, className) {
 
 var cleanValue = function cleanValue(value) {
   if (Array.isArray(value)) return value.filter(Boolean);
-  if (_typeof$6(value) === 'object' && value !== null) return [value];
+  if (_typeof$7(value) === 'object' && value !== null) return [value];
   return [];
 }; // ==============================
 // Clean Common Props
@@ -56882,7 +56170,7 @@ var cleanCommonProps = function cleanCommonProps(props) {
 
   var innerProps = _objectWithoutProperties$b(props, ["className", "clearValue", "cx", "getStyles", "getValue", "hasValue", "isMulti", "isRtl", "options", "selectOption", "selectProps", "setValue", "theme"]);
 
-  return _objectSpread2({}, innerProps);
+  return _objectSpread2$1({}, innerProps);
 }; // ==============================
 // Handle Input Change
 // ==============================
@@ -56964,7 +56252,7 @@ function easeOutCubic(t, b, c, d) {
 
 function animatedScrollTo(element, to) {
   var duration = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 200;
-  var callback = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : noop;
+  var callback = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : noop$1;
   var start = getScrollTop(element);
   var change = to - start;
   var increment = 10;
@@ -57052,8 +56340,8 @@ var options = {
 var w = typeof window !== 'undefined' ? window : {};
 
 if (w.addEventListener && w.removeEventListener) {
-  w.addEventListener('p', noop, options);
-  w.removeEventListener('p', noop, false);
+  w.addEventListener('p', noop$1, options);
+  w.removeEventListener('p', noop$1, false);
 }
 
 var supportsPassiveEvents = passiveOptionAccessed;
@@ -57248,7 +56536,7 @@ var menuCSS = function menuCSS(_ref2) {
       colors = _ref2$theme.colors;
   return _ref3 = {
     label: 'menu'
-  }, _defineProperty$i(_ref3, alignToControl(placement), '100%'), _defineProperty$i(_ref3, "backgroundColor", colors.neutral0), _defineProperty$i(_ref3, "borderRadius", borderRadius), _defineProperty$i(_ref3, "boxShadow", '0 0 0 1px hsla(0, 0%, 0%, 0.1), 0 4px 11px hsla(0, 0%, 0%, 0.1)'), _defineProperty$i(_ref3, "marginBottom", spacing.menuGutter), _defineProperty$i(_ref3, "marginTop", spacing.menuGutter), _defineProperty$i(_ref3, "position", 'absolute'), _defineProperty$i(_ref3, "width", '100%'), _defineProperty$i(_ref3, "zIndex", 1), _ref3;
+  }, _defineProperty$j(_ref3, alignToControl(placement), '100%'), _defineProperty$j(_ref3, "backgroundColor", colors.neutral0), _defineProperty$j(_ref3, "borderRadius", borderRadius), _defineProperty$j(_ref3, "boxShadow", '0 0 0 1px hsla(0, 0%, 0%, 0.1), 0 4px 11px hsla(0, 0%, 0%, 0.1)'), _defineProperty$j(_ref3, "marginBottom", spacing.menuGutter), _defineProperty$j(_ref3, "marginTop", spacing.menuGutter), _defineProperty$j(_ref3, "position", 'absolute'), _defineProperty$j(_ref3, "width", '100%'), _defineProperty$j(_ref3, "zIndex", 1), _ref3;
 };
 
 var PortalPlacementContext = /*#__PURE__*/React.createContext({
@@ -57305,7 +56593,7 @@ var MenuPlacer = /*#__PURE__*/function (_Component) {
     _this.getUpdatedProps = function () {
       var menuPlacement = _this.props.menuPlacement;
       var placement = _this.state.placement || coercePlacement(menuPlacement);
-      return _objectSpread2(_objectSpread2({}, _this.props), {}, {
+      return _objectSpread2$1(_objectSpread2$1({}, _this.props), {}, {
         placement: placement,
         maxHeight: _this.state.maxHeight
       });
@@ -58082,7 +57370,7 @@ var MultiValue = function MultiValue(props) {
         emotionCx = _ref6.cx;
     return jsx(Container, {
       data: data,
-      innerProps: _objectSpread2({
+      innerProps: _objectSpread2$1({
         className: emotionCx(css(getStyles('multiValue', props)), cx({
           'multi-value': true,
           'multi-value--is-disabled': isDisabled
@@ -58099,7 +57387,7 @@ var MultiValue = function MultiValue(props) {
       selectProps: selectProps
     }, children), jsx(Remove, {
       data: data,
-      innerProps: _objectSpread2({
+      innerProps: _objectSpread2$1({
         className: emotionCx(css(getStyles('multiValueRemove', props)), cx({
           'multi-value__remove': true
         }, className))
@@ -58254,10 +57542,10 @@ var components = {
 };
 
 var defaultComponents = function defaultComponents(props) {
-  return _objectSpread2(_objectSpread2({}, components), props.components);
+  return _objectSpread2$1(_objectSpread2$1({}, components), props.components);
 };
 
-function _arrayLikeToArray$6(arr, len) {
+function _arrayLikeToArray$7(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
 
   for (var i = 0, arr2 = new Array(len); i < len; i++) {
@@ -58268,20 +57556,20 @@ function _arrayLikeToArray$6(arr, len) {
 }
 
 function _arrayWithoutHoles$5(arr) {
-  if (Array.isArray(arr)) return _arrayLikeToArray$6(arr);
+  if (Array.isArray(arr)) return _arrayLikeToArray$7(arr);
 }
 
 function _iterableToArray$5(iter) {
   if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
 }
 
-function _unsupportedIterableToArray$6(o, minLen) {
+function _unsupportedIterableToArray$7(o, minLen) {
   if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray$6(o, minLen);
+  if (typeof o === "string") return _arrayLikeToArray$7(o, minLen);
   var n = Object.prototype.toString.call(o).slice(8, -1);
   if (n === "Object" && o.constructor) n = o.constructor.name;
   if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$6(o, minLen);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$7(o, minLen);
 }
 
 function _nonIterableSpread$5() {
@@ -58289,14 +57577,14 @@ function _nonIterableSpread$5() {
 }
 
 function _toConsumableArray$5(arr) {
-  return _arrayWithoutHoles$5(arr) || _iterableToArray$5(arr) || _unsupportedIterableToArray$6(arr) || _nonIterableSpread$5();
+  return _arrayWithoutHoles$5(arr) || _iterableToArray$5(arr) || _unsupportedIterableToArray$7(arr) || _nonIterableSpread$5();
 }
 
 var safeIsNaN = Number.isNaN || function ponyfill(value) {
   return typeof value === 'number' && value !== value;
 };
 
-function isEqual(first, second) {
+function isEqual$1(first, second) {
   if (first === second) {
     return true;
   }
@@ -58314,7 +57602,7 @@ function areInputsEqual(newInputs, lastInputs) {
   }
 
   for (var i = 0; i < newInputs.length; i++) {
-    if (!isEqual(newInputs[i], lastInputs[i])) {
+    if (!isEqual$1(newInputs[i], lastInputs[i])) {
       return false;
     }
   }
@@ -58470,7 +57758,7 @@ var LiveRegion = function LiveRegion(props) {
   var ariaLive = selectProps['aria-live']; // Update aria live message configuration when prop changes
 
   var messages = React.useMemo(function () {
-    return _objectSpread2(_objectSpread2({}, defaultAriaLiveMessages), ariaLiveMessages || {});
+    return _objectSpread2$1(_objectSpread2$1({}, defaultAriaLiveMessages), ariaLiveMessages || {});
   }, [ariaLiveMessages]); // Update aria live selected option when prop changes
 
   var ariaSelected = React.useMemo(function () {
@@ -58487,7 +57775,7 @@ var LiveRegion = function LiveRegion(props) {
 
       var selected = removedValue || option || asOption(value);
 
-      var onChangeProps = _objectSpread2({
+      var onChangeProps = _objectSpread2$1({
         isDisabled: selected && isOptionDisabled(selected),
         label: selected ? getOptionLabel(selected) : ''
       }, ariaSelection);
@@ -58845,7 +58133,7 @@ var defaultStringify = function defaultStringify(option) {
 
 var createFilter = function createFilter(config) {
   return function (option, rawInput) {
-    var _ignoreCase$ignoreAcc = _objectSpread2({
+    var _ignoreCase$ignoreAcc = _objectSpread2$1({
       ignoreCase: true,
       ignoreAccents: true,
       stringify: defaultStringify,
@@ -59713,7 +59001,7 @@ var Select = /*#__PURE__*/function (_Component) {
 
     _this.ariaOnChange = function (value, actionMeta) {
       _this.setState({
-        ariaSelection: _objectSpread2({
+        ariaSelection: _objectSpread2$1({
           value: value
         }, actionMeta)
       });
@@ -60361,7 +59649,7 @@ var Select = /*#__PURE__*/function (_Component) {
       // overlay it with the default theme.
 
 
-      return _objectSpread2(_objectSpread2({}, defaultTheme), this.props.theme);
+      return _objectSpread2$1(_objectSpread2$1({}, defaultTheme), this.props.theme);
     }
   }, {
     key: "getCommonProps",
@@ -60525,7 +59813,7 @@ var Select = /*#__PURE__*/function (_Component) {
           id: id,
           innerRef: this.getInputRef,
           onBlur: this.onInputBlur,
-          onChange: noop,
+          onChange: noop$1,
           onFocus: this.onInputFocus,
           readOnly: true,
           disabled: isDisabled,
@@ -61009,7 +60297,7 @@ var Select = /*#__PURE__*/function (_Component) {
         inputIsHidden: inputIsHiddenAfterUpdate,
         inputIsHiddenAfterUpdate: undefined
       } : {};
-      return _objectSpread2(_objectSpread2(_objectSpread2({}, newMenuOptionsState), newInputIsHiddenState), {}, {
+      return _objectSpread2$1(_objectSpread2$1(_objectSpread2$1({}, newMenuOptionsState), newInputIsHiddenState), {}, {
         prevProps: props
       });
     }
@@ -61183,7 +60471,7 @@ var builtins = {
   getOptionLabel: getOptionLabel
 };
 
-var defaultProps$1 = _objectSpread2({
+var defaultProps$1 = _objectSpread2$1({
   allowCreateWhileLoading: false,
   createOptionPosition: 'last'
 }, builtins);
@@ -61387,7 +60675,7 @@ var makeAsyncSelect = function makeAsyncSelect(SelectComponent) {
                   loadedInputValue: inputValue,
                   loadedOptions: options || [],
                   passEmptyOptions: false,
-                  optionsCache: options ? _objectSpread2(_objectSpread2({}, state.optionsCache), {}, _defineProperty$i({}, inputValue, options)) : state.optionsCache
+                  optionsCache: options ? _objectSpread2$1(_objectSpread2$1({}, state.optionsCache), {}, _defineProperty$j({}, inputValue, options)) : state.optionsCache
                 };
               });
             });
@@ -61498,7 +60786,7 @@ var makeAsyncSelect = function makeAsyncSelect(SelectComponent) {
           prevDefaultOptions: props.defaultOptions,
           defaultOptions: Array.isArray(props.defaultOptions) ? props.defaultOptions : undefined
         } : {};
-        return _objectSpread2(_objectSpread2({}, newCacheOptionsState), newDefaultOptionsState);
+        return _objectSpread2$1(_objectSpread2$1({}, newCacheOptionsState), newDefaultOptionsState);
       }
     }]);
 
@@ -61513,12 +60801,48 @@ var SelectCreatable = makeCreatableSelect(Select);
 var SelectCreatableState = manageState(SelectCreatable);
 var AsyncCreatable = makeAsyncSelect(SelectCreatableState);
 
+function mapSelectValue(arrBig, {
+  dictvar,
+  labelFunc,
+  valueFunc,
+  isDisabled,
+  ...sdas
+}) {
+  //
+  function asijdwe(asdae) {
+    const ndsire = //
+    // asdae
+    checkDict(dictvar, asdae);
+    const sidjf = //
+    // asdae
+    ndsire;
+    let sakde = {
+      label: labelFunc ? labelFunc(sidjf) : asdae,
+      value: valueFunc ? valueFunc(ndsire) : asdae,
+      isDisabled
+    };
+    bearlog.lug("___ brSeacrch MAPPO ___", {
+      asdae: asdae,
+      sakde: sakde // dictvar: dictvar,
+
+    });
+    return sakde;
+  }
+
+  bearlog.lug("___ brSeacrch LIST ___", {
+    arrBig: arrBig,
+    dictvar: dictvar
+  });
+  const dretjer = arrBig.map(asijdwe);
+  return dretjer;
+}
+
 // import AsyncSelect, { makeAsyncSelect } from "react.-select/async";
 
 function BearSelect({
   //
   multi,
-  dictvar,
+  optionsDict,
   noMenu,
   menuConfig,
   typeSelect,
@@ -61649,7 +60973,8 @@ function BearSelect({
 
   bearlog.lug("___ ARRAY sdjfre ___", sdjfre);
   let vbmofd = //
-  options ? options : dictvar ? mappodDict(dictvar) : sdjfre ? asdiwje9(sdjfre) : initOptions;
+  options ? options : optionsDict ? mappodDict(optionsDict) : optionsArray ? optionsArray.map(fsfewr) : initOptions;
+  bearlog.lug("___ ARRAY sdjfre ___", vbmofd);
 
   function mappodDict(xcva) {
     let arrro = [];
@@ -61670,8 +60995,29 @@ function BearSelect({
   // optBase;
   vbmofd;
 
+  function fsfewr(sfdgasf) {
+    let faesdf = sfdgasf;
+    let tpform = typeof sfdgasf;
+
+    switch (tpform) {
+      case "string":
+        faesdf = asdiwje9(sfdgasf);
+        break;
+    }
+
+    bearlog.lug("faesdf-zz", {
+      sfdgasf,
+      tpform,
+      faesdf
+    });
+    return faesdf;
+  }
+
   function asdiwje9(xckjvf) {
-    return mapSelectValue(xckjvf, {});
+    return {
+      value: xckjvf,
+      label: xckjvf
+    }; // return mapSelectValue(xckjvf, {});
   } // 1option STYLE
 
 
@@ -61977,26 +61323,7 @@ function BearSelect({
 
   const dfijger = !onChangeSetValue && {
     value: ""
-  };
-
-  function fsfewr(sfdgasf) {
-    let faesdf = sfdgasf;
-    let tpform = typeof sfdgasf;
-
-    switch (tpform) {
-      case "string":
-        faesdf = asdiwje9(sfdgasf);
-        break;
-    }
-
-    bearlog.lug("faesdf-zz", {
-      sfdgasf,
-      tpform,
-      faesdf
-    });
-    return faesdf;
-  } // 1default
-
+  }; // 1default
 
   const fgoktr = initialValue && {
     // initialValue: initialValue,
@@ -62018,6 +61345,8 @@ function BearSelect({
     bearlog.lug("___ zxcvok ___", zxcvok);
     setinputBase(zxcvok);
   } // 1intro
+  //
+  // 1value 1search
 
 
   const sdfer = showMenuIfValue && {
@@ -62102,6 +61431,7 @@ function BearInputNumber({
   min,
   style,
   onChange,
+  initialValue,
   onChangeNumber,
   ...vboret
 }) {
@@ -62143,7 +61473,9 @@ function BearInputNumber({
     }
   }
 
-  const sfijwer = { ...jsder,
+  const sfijwer = {
+    defaultValue: initialValue,
+    ...jsder,
     ...vboret,
     onChange: asjwe,
     style: nsdij,
@@ -62180,6 +61512,8 @@ function BearFormInputCheck({
   inputFunction,
   inputObjectFunction,
   //
+  //
+  passwordConfig,
   //
   //
   // 1style
@@ -62325,7 +61659,7 @@ function BearFormInputCheck({
         break;
 
       case "password":
-        ujsdqwe = sijdgdf(BearPassword);
+        ujsdqwe = sijdgdf(BearPassword, passwordConfig);
         break;
 
       case "textarea":
@@ -62445,10 +61779,11 @@ function BearFormInputCheck({
 
 function _dictEmail() {
   const emalBaso = {
-    required: true,
+    // required: true,
     // pattern: emailPatto,
     title: "Email address",
     // title: vbijdf9te,
+    // errorMessage:
     type: "email",
     iconvar: "email" // iconvar: "email",
 
@@ -63289,20 +62624,20 @@ var esm$3 = /*#__PURE__*/Object.freeze({
 var _CALENDAR_TYPE_LOCALE;
 
 function _toConsumableArray$4(arr) {
-  return _arrayWithoutHoles$4(arr) || _iterableToArray$4(arr) || _unsupportedIterableToArray$5(arr) || _nonIterableSpread$4();
+  return _arrayWithoutHoles$4(arr) || _iterableToArray$4(arr) || _unsupportedIterableToArray$6(arr) || _nonIterableSpread$4();
 }
 
 function _nonIterableSpread$4() {
   throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
-function _unsupportedIterableToArray$5(o, minLen) {
+function _unsupportedIterableToArray$6(o, minLen) {
   if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray$5(o, minLen);
+  if (typeof o === "string") return _arrayLikeToArray$6(o, minLen);
   var n = Object.prototype.toString.call(o).slice(8, -1);
   if (n === "Object" && o.constructor) n = o.constructor.name;
   if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$5(o, minLen);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$6(o, minLen);
 }
 
 function _iterableToArray$4(iter) {
@@ -63310,10 +62645,10 @@ function _iterableToArray$4(iter) {
 }
 
 function _arrayWithoutHoles$4(arr) {
-  if (Array.isArray(arr)) return _arrayLikeToArray$5(arr);
+  if (Array.isArray(arr)) return _arrayLikeToArray$6(arr);
 }
 
-function _arrayLikeToArray$5(arr, len) {
+function _arrayLikeToArray$6(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
 
   for (var i = 0, arr2 = new Array(len); i < len; i++) {
@@ -63323,7 +62658,7 @@ function _arrayLikeToArray$5(arr, len) {
   return arr2;
 }
 
-function _defineProperty$e(obj, key, value) {
+function _defineProperty$f(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -63344,8 +62679,8 @@ var CALENDAR_TYPES = {
   ISO_8601: 'ISO 8601',
   US: 'US'
 };
-var CALENDAR_TYPE_LOCALES = (_CALENDAR_TYPE_LOCALE = {}, _defineProperty$e(_CALENDAR_TYPE_LOCALE, CALENDAR_TYPES.US, ['en-CA', 'en-US', 'es-AR', 'es-BO', 'es-CL', 'es-CO', 'es-CR', 'es-DO', 'es-EC', 'es-GT', 'es-HN', 'es-MX', 'es-NI', 'es-PA', 'es-PE', 'es-PR', 'es-SV', 'es-VE', 'pt-BR']), _defineProperty$e(_CALENDAR_TYPE_LOCALE, CALENDAR_TYPES.ARABIC, [// ar-LB, ar-MA intentionally missing
-'ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LY', 'ar-OM', 'ar-QA', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-YE', 'dv', 'dv-MV', 'ps', 'ps-AR']), _defineProperty$e(_CALENDAR_TYPE_LOCALE, CALENDAR_TYPES.HEBREW, ['he', 'he-IL']), _CALENDAR_TYPE_LOCALE);
+var CALENDAR_TYPE_LOCALES = (_CALENDAR_TYPE_LOCALE = {}, _defineProperty$f(_CALENDAR_TYPE_LOCALE, CALENDAR_TYPES.US, ['en-CA', 'en-US', 'es-AR', 'es-BO', 'es-CL', 'es-CO', 'es-CR', 'es-DO', 'es-EC', 'es-GT', 'es-HN', 'es-MX', 'es-NI', 'es-PA', 'es-PE', 'es-PR', 'es-SV', 'es-VE', 'pt-BR']), _defineProperty$f(_CALENDAR_TYPE_LOCALE, CALENDAR_TYPES.ARABIC, [// ar-LB, ar-MA intentionally missing
+'ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LY', 'ar-OM', 'ar-QA', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-YE', 'dv', 'dv-MV', 'ps', 'ps-AR']), _defineProperty$f(_CALENDAR_TYPE_LOCALE, CALENDAR_TYPES.HEBREW, ['he', 'he-IL']), _CALENDAR_TYPE_LOCALE);
 var WEEKDAYS = _toConsumableArray$4(Array(7)).map(function (el, index) {
   return index;
 });
@@ -63746,20 +63081,20 @@ function isWeekend(date) {
   }
 }
 
-function _typeof$5(obj) {
+function _typeof$6(obj) {
   "@babel/helpers - typeof";
 
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof$5 = function _typeof(obj) {
+    _typeof$6 = function _typeof(obj) {
       return typeof obj;
     };
   } else {
-    _typeof$5 = function _typeof(obj) {
+    _typeof$6 = function _typeof(obj) {
       return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
     };
   }
 
-  return _typeof$5(obj);
+  return _typeof$6(obj);
 }
 var calendarTypes = Object.values(CALENDAR_TYPES);
 var allViews$1 = ['century', 'decade', 'year', 'month'];
@@ -63773,13 +63108,13 @@ var isMinDate = function isMinDate(props, propName, componentName) {
   }
 
   if (!(minDate instanceof Date)) {
-    return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$5(minDate), "` supplied to `").concat(componentName, "`, expected instance of `Date`."));
+    return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$6(minDate), "` supplied to `").concat(componentName, "`, expected instance of `Date`."));
   }
 
   var maxDate = props.maxDate;
 
   if (maxDate && minDate > maxDate) {
-    return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$5(minDate), "` supplied to `").concat(componentName, "`, minDate cannot be larger than maxDate."));
+    return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$6(minDate), "` supplied to `").concat(componentName, "`, minDate cannot be larger than maxDate."));
   }
 
   return null;
@@ -63792,13 +63127,13 @@ var isMaxDate = function isMaxDate(props, propName, componentName) {
   }
 
   if (!(maxDate instanceof Date)) {
-    return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$5(maxDate), "` supplied to `").concat(componentName, "`, expected instance of `Date`."));
+    return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$6(maxDate), "` supplied to `").concat(componentName, "`, expected instance of `Date`."));
   }
 
   var minDate = props.minDate;
 
   if (minDate && maxDate < minDate) {
-    return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$5(maxDate), "` supplied to `").concat(componentName, "`, maxDate cannot be smaller than minDate."));
+    return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$6(maxDate), "` supplied to `").concat(componentName, "`, maxDate cannot be smaller than minDate."));
   }
 
   return null;
@@ -64061,7 +63396,7 @@ function _extends$d() {
   return _extends$d.apply(this, arguments);
 }
 
-function ownKeys$c(object, enumerableOnly) {
+function ownKeys$d(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -64080,13 +63415,13 @@ function _objectSpread$c(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$c(Object(source), true).forEach(function (key) {
-        _defineProperty$d(target, key, source[key]);
+      ownKeys$d(Object(source), true).forEach(function (key) {
+        _defineProperty$e(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$c(Object(source)).forEach(function (key) {
+      ownKeys$d(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -64095,7 +63430,7 @@ function _objectSpread$c(target) {
   return target;
 }
 
-function _defineProperty$d(obj, key, value) {
+function _defineProperty$e(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -64189,20 +63524,20 @@ Flex.propTypes = {
 };
 
 function _toConsumableArray$3(arr) {
-  return _arrayWithoutHoles$3(arr) || _iterableToArray$3(arr) || _unsupportedIterableToArray$4(arr) || _nonIterableSpread$3();
+  return _arrayWithoutHoles$3(arr) || _iterableToArray$3(arr) || _unsupportedIterableToArray$5(arr) || _nonIterableSpread$3();
 }
 
 function _nonIterableSpread$3() {
   throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
-function _unsupportedIterableToArray$4(o, minLen) {
+function _unsupportedIterableToArray$5(o, minLen) {
   if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray$4(o, minLen);
+  if (typeof o === "string") return _arrayLikeToArray$5(o, minLen);
   var n = Object.prototype.toString.call(o).slice(8, -1);
   if (n === "Object" && o.constructor) n = o.constructor.name;
   if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$4(o, minLen);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$5(o, minLen);
 }
 
 function _iterableToArray$3(iter) {
@@ -64210,10 +63545,10 @@ function _iterableToArray$3(iter) {
 }
 
 function _arrayWithoutHoles$3(arr) {
-  if (Array.isArray(arr)) return _arrayLikeToArray$4(arr);
+  if (Array.isArray(arr)) return _arrayLikeToArray$5(arr);
 }
 
-function _arrayLikeToArray$4(arr, len) {
+function _arrayLikeToArray$5(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
 
   for (var i = 0, arr2 = new Array(len); i < len; i++) {
@@ -64330,7 +63665,7 @@ function getTileClasses() {
   return classes;
 }
 
-function ownKeys$b(object, enumerableOnly) {
+function ownKeys$c(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -64349,13 +63684,13 @@ function _objectSpread$b(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$b(Object(source), true).forEach(function (key) {
-        _defineProperty$c(target, key, source[key]);
+      ownKeys$c(Object(source), true).forEach(function (key) {
+        _defineProperty$d(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$b(Object(source)).forEach(function (key) {
+      ownKeys$c(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -64364,7 +63699,7 @@ function _objectSpread$b(target) {
   return target;
 }
 
-function _defineProperty$c(obj, key, value) {
+function _defineProperty$d(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -64484,7 +63819,7 @@ TileGroup.propTypes = _objectSpread$b(_objectSpread$b({}, tileGroupProps), {}, {
   tile: propTypes$4.func.isRequired
 });
 
-function ownKeys$a(object, enumerableOnly) {
+function ownKeys$b(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -64503,13 +63838,13 @@ function _objectSpread$a(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$a(Object(source), true).forEach(function (key) {
-        _defineProperty$b(target, key, source[key]);
+      ownKeys$b(Object(source), true).forEach(function (key) {
+        _defineProperty$c(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$a(Object(source)).forEach(function (key) {
+      ownKeys$b(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -64518,20 +63853,20 @@ function _objectSpread$a(target) {
   return target;
 }
 
-function _typeof$4(obj) {
+function _typeof$5(obj) {
   "@babel/helpers - typeof";
 
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof$4 = function _typeof(obj) {
+    _typeof$5 = function _typeof(obj) {
       return typeof obj;
     };
   } else {
-    _typeof$4 = function _typeof(obj) {
+    _typeof$5 = function _typeof(obj) {
       return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
     };
   }
 
-  return _typeof$4(obj);
+  return _typeof$5(obj);
 }
 
 function _classCallCheck$2(instance, Constructor) {
@@ -64600,7 +63935,7 @@ function _createSuper$2(Derived) {
 }
 
 function _possibleConstructorReturn$2(self, call) {
-  if (call && (_typeof$4(call) === "object" || typeof call === "function")) {
+  if (call && (_typeof$5(call) === "object" || typeof call === "function")) {
     return call;
   }
 
@@ -64635,7 +63970,7 @@ function _getPrototypeOf$2(o) {
   return _getPrototypeOf$2(o);
 }
 
-function _defineProperty$b(obj, key, value) {
+function _defineProperty$c(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -64677,7 +64012,7 @@ var Tile = /*#__PURE__*/function (_Component) {
 
     _this = _super.call.apply(_super, [this].concat(args));
 
-    _defineProperty$b(_assertThisInitialized$2(_this), "state", {});
+    _defineProperty$c(_assertThisInitialized$2(_this), "state", {});
 
     return _this;
   }
@@ -64756,7 +64091,7 @@ Tile.propTypes = _objectSpread$a(_objectSpread$a({}, tileProps), {}, {
   minDateTransform: propTypes$4.func.isRequired
 });
 
-function ownKeys$9(object, enumerableOnly) {
+function ownKeys$a(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -64775,13 +64110,13 @@ function _objectSpread$9(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$9(Object(source), true).forEach(function (key) {
-        _defineProperty$a(target, key, source[key]);
+      ownKeys$a(Object(source), true).forEach(function (key) {
+        _defineProperty$b(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$9(Object(source)).forEach(function (key) {
+      ownKeys$a(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -64790,7 +64125,7 @@ function _objectSpread$9(target) {
   return target;
 }
 
-function _defineProperty$a(obj, key, value) {
+function _defineProperty$b(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -64878,7 +64213,7 @@ Decade.propTypes = _objectSpread$9(_objectSpread$9({}, tileProps), {}, {
   formatYear: propTypes$4.func
 });
 
-function ownKeys$8(object, enumerableOnly) {
+function ownKeys$9(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -64897,13 +64232,13 @@ function _objectSpread$8(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$8(Object(source), true).forEach(function (key) {
-        _defineProperty$9(target, key, source[key]);
+      ownKeys$9(Object(source), true).forEach(function (key) {
+        _defineProperty$a(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$8(Object(source)).forEach(function (key) {
+      ownKeys$9(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -64912,7 +64247,7 @@ function _objectSpread$8(target) {
   return target;
 }
 
-function _defineProperty$9(obj, key, value) {
+function _defineProperty$a(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -64970,7 +64305,7 @@ function CenturyView(props) {
   }, renderDecades());
 }
 
-function ownKeys$7(object, enumerableOnly) {
+function ownKeys$8(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -64989,13 +64324,13 @@ function _objectSpread$7(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$7(Object(source), true).forEach(function (key) {
-        _defineProperty$8(target, key, source[key]);
+      ownKeys$8(Object(source), true).forEach(function (key) {
+        _defineProperty$9(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$7(Object(source)).forEach(function (key) {
+      ownKeys$8(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -65004,7 +64339,7 @@ function _objectSpread$7(target) {
   return target;
 }
 
-function _defineProperty$8(obj, key, value) {
+function _defineProperty$9(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -65092,7 +64427,7 @@ Year.propTypes = _objectSpread$7(_objectSpread$7({}, tileProps), {}, {
   formatYear: propTypes$4.func
 });
 
-function ownKeys$6(object, enumerableOnly) {
+function ownKeys$7(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -65111,13 +64446,13 @@ function _objectSpread$6(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$6(Object(source), true).forEach(function (key) {
-        _defineProperty$7(target, key, source[key]);
+      ownKeys$7(Object(source), true).forEach(function (key) {
+        _defineProperty$8(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$6(Object(source)).forEach(function (key) {
+      ownKeys$7(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -65126,7 +64461,7 @@ function _objectSpread$6(target) {
   return target;
 }
 
-function _defineProperty$7(obj, key, value) {
+function _defineProperty$8(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -65188,7 +64523,7 @@ function DecadeView(props) {
   }, renderYears());
 }
 
-function ownKeys$5(object, enumerableOnly) {
+function ownKeys$6(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -65207,13 +64542,13 @@ function _objectSpread$5(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$5(Object(source), true).forEach(function (key) {
-        _defineProperty$6(target, key, source[key]);
+      ownKeys$6(Object(source), true).forEach(function (key) {
+        _defineProperty$7(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$5(Object(source)).forEach(function (key) {
+      ownKeys$6(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -65222,7 +64557,7 @@ function _objectSpread$5(target) {
   return target;
 }
 
-function _defineProperty$6(obj, key, value) {
+function _defineProperty$7(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -65314,7 +64649,7 @@ Month.propTypes = _objectSpread$5(_objectSpread$5({}, tileProps), {}, {
   formatMonthYear: propTypes$4.func
 });
 
-function ownKeys$4(object, enumerableOnly) {
+function ownKeys$5(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -65333,13 +64668,13 @@ function _objectSpread$4(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$4(Object(source), true).forEach(function (key) {
-        _defineProperty$5(target, key, source[key]);
+      ownKeys$5(Object(source), true).forEach(function (key) {
+        _defineProperty$6(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$4(Object(source)).forEach(function (key) {
+      ownKeys$5(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -65348,7 +64683,7 @@ function _objectSpread$4(target) {
   return target;
 }
 
-function _defineProperty$5(obj, key, value) {
+function _defineProperty$6(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -65413,7 +64748,7 @@ function YearView(props) {
   }, renderMonths());
 }
 
-function ownKeys$3(object, enumerableOnly) {
+function ownKeys$4(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -65432,13 +64767,13 @@ function _objectSpread$3(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$3(Object(source), true).forEach(function (key) {
-        _defineProperty$4(target, key, source[key]);
+      ownKeys$4(Object(source), true).forEach(function (key) {
+        _defineProperty$5(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$3(Object(source)).forEach(function (key) {
+      ownKeys$4(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -65447,7 +64782,7 @@ function _objectSpread$3(target) {
   return target;
 }
 
-function _defineProperty$4(obj, key, value) {
+function _defineProperty$5(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -65542,7 +64877,7 @@ Day.propTypes = _objectSpread$3(_objectSpread$3({}, tileProps), {}, {
   formatLongDate: propTypes$4.func
 });
 
-function ownKeys$2(object, enumerableOnly) {
+function ownKeys$3(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -65561,13 +64896,13 @@ function _objectSpread$2(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$2(Object(source), true).forEach(function (key) {
-        _defineProperty$3(target, key, source[key]);
+      ownKeys$3(Object(source), true).forEach(function (key) {
+        _defineProperty$4(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$2(Object(source)).forEach(function (key) {
+      ownKeys$3(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -65576,7 +64911,7 @@ function _objectSpread$2(target) {
   return target;
 }
 
-function _defineProperty$3(obj, key, value) {
+function _defineProperty$4(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -65999,20 +65334,20 @@ function _extends$1() {
   return _extends$1.apply(this, arguments);
 }
 
-function _typeof$3(obj) {
+function _typeof$4(obj) {
   "@babel/helpers - typeof";
 
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof$3 = function _typeof(obj) {
+    _typeof$4 = function _typeof(obj) {
       return typeof obj;
     };
   } else {
-    _typeof$3 = function _typeof(obj) {
+    _typeof$4 = function _typeof(obj) {
       return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
     };
   }
 
-  return _typeof$3(obj);
+  return _typeof$4(obj);
 }
 
 function _classCallCheck$1(instance, Constructor) {
@@ -66081,7 +65416,7 @@ function _createSuper$1(Derived) {
 }
 
 function _possibleConstructorReturn$1(self, call) {
-  if (call && (_typeof$3(call) === "object" || typeof call === "function")) {
+  if (call && (_typeof$4(call) === "object" || typeof call === "function")) {
     return call;
   }
 
@@ -66116,7 +65451,7 @@ function _getPrototypeOf$1(o) {
   return _getPrototypeOf$1(o);
 }
 
-function ownKeys$1(object, enumerableOnly) {
+function ownKeys$2(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -66135,13 +65470,13 @@ function _objectSpread$1(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$1(Object(source), true).forEach(function (key) {
-        _defineProperty$2(target, key, source[key]);
+      ownKeys$2(Object(source), true).forEach(function (key) {
+        _defineProperty$3(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$1(Object(source)).forEach(function (key) {
+      ownKeys$2(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -66150,7 +65485,7 @@ function _objectSpread$1(target) {
   return target;
 }
 
-function _defineProperty$2(obj, key, value) {
+function _defineProperty$3(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -66202,20 +65537,20 @@ function _objectWithoutPropertiesLoose$1(source, excluded) {
 }
 
 function _toConsumableArray$2(arr) {
-  return _arrayWithoutHoles$2(arr) || _iterableToArray$2(arr) || _unsupportedIterableToArray$3(arr) || _nonIterableSpread$2();
+  return _arrayWithoutHoles$2(arr) || _iterableToArray$2(arr) || _unsupportedIterableToArray$4(arr) || _nonIterableSpread$2();
 }
 
 function _nonIterableSpread$2() {
   throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
-function _unsupportedIterableToArray$3(o, minLen) {
+function _unsupportedIterableToArray$4(o, minLen) {
   if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray$3(o, minLen);
+  if (typeof o === "string") return _arrayLikeToArray$4(o, minLen);
   var n = Object.prototype.toString.call(o).slice(8, -1);
   if (n === "Object" && o.constructor) n = o.constructor.name;
   if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$3(o, minLen);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$4(o, minLen);
 }
 
 function _iterableToArray$2(iter) {
@@ -66223,10 +65558,10 @@ function _iterableToArray$2(iter) {
 }
 
 function _arrayWithoutHoles$2(arr) {
-  if (Array.isArray(arr)) return _arrayLikeToArray$3(arr);
+  if (Array.isArray(arr)) return _arrayLikeToArray$4(arr);
 }
 
-function _arrayLikeToArray$3(arr, len) {
+function _arrayLikeToArray$4(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
 
   for (var i = 0, arr2 = new Array(len); i < len; i++) {
@@ -66408,7 +65743,7 @@ var Calendar = /*#__PURE__*/function (_Component) {
 
     _this = _super.call.apply(_super, [this].concat(_args));
 
-    _defineProperty$2(_assertThisInitialized$1(_this), "state", {
+    _defineProperty$3(_assertThisInitialized$1(_this), "state", {
       /* eslint-disable react/destructuring-assignment */
       activeStartDate: _this.props.defaultActiveStartDate,
       value: _this.props.defaultValue,
@@ -66417,7 +65752,7 @@ var Calendar = /*#__PURE__*/function (_Component) {
 
     });
 
-    _defineProperty$2(_assertThisInitialized$1(_this), "setStateAndCallCallbacks", function (nextState, event, callback) {
+    _defineProperty$3(_assertThisInitialized$1(_this), "setStateAndCallCallbacks", function (nextState, event, callback) {
       var _assertThisInitialize = _assertThisInitialized$1(_this),
           previousActiveStartDate = _assertThisInitialize.activeStartDate,
           previousView = _assertThisInitialize.view;
@@ -66443,7 +65778,7 @@ var Calendar = /*#__PURE__*/function (_Component) {
         function shouldUpdate(key) {
           return (// Key must exist, and…
             key in nextState && ( // …key changed from undefined to defined or the other way around, or…
-            _typeof$3(nextState[key]) !== _typeof$3(prevArgs[key]) // …value changed.
+            _typeof$4(nextState[key]) !== _typeof$4(prevArgs[key]) // …value changed.
             || (nextState[key] instanceof Date ? nextState[key].getTime() !== prevArgs[key].getTime() : nextState[key] !== prevArgs[key]))
           );
         }
@@ -66476,13 +65811,13 @@ var Calendar = /*#__PURE__*/function (_Component) {
       });
     });
 
-    _defineProperty$2(_assertThisInitialized$1(_this), "setActiveStartDate", function (activeStartDate) {
+    _defineProperty$3(_assertThisInitialized$1(_this), "setActiveStartDate", function (activeStartDate) {
       _this.setStateAndCallCallbacks({
         activeStartDate: activeStartDate
       });
     });
 
-    _defineProperty$2(_assertThisInitialized$1(_this), "drillDown", function (nextActiveStartDate, event) {
+    _defineProperty$3(_assertThisInitialized$1(_this), "drillDown", function (nextActiveStartDate, event) {
       if (!_this.drillDownAvailable) {
         return;
       }
@@ -66502,7 +65837,7 @@ var Calendar = /*#__PURE__*/function (_Component) {
       }, undefined, onDrillDown);
     });
 
-    _defineProperty$2(_assertThisInitialized$1(_this), "drillUp", function () {
+    _defineProperty$3(_assertThisInitialized$1(_this), "drillUp", function () {
       if (!_this.drillUpAvailable) {
         return;
       }
@@ -66522,7 +65857,7 @@ var Calendar = /*#__PURE__*/function (_Component) {
       }, undefined, onDrillUp);
     });
 
-    _defineProperty$2(_assertThisInitialized$1(_this), "onChange", function (value, event) {
+    _defineProperty$3(_assertThisInitialized$1(_this), "onChange", function (value, event) {
       var selectRange = _this.props.selectRange;
 
       _this.onClickTile(value, event);
@@ -66559,7 +65894,7 @@ var Calendar = /*#__PURE__*/function (_Component) {
       }, event);
     });
 
-    _defineProperty$2(_assertThisInitialized$1(_this), "onClickTile", function (value, event) {
+    _defineProperty$3(_assertThisInitialized$1(_this), "onClickTile", function (value, event) {
       var _assertThisInitialize5 = _assertThisInitialized$1(_this),
           view = _assertThisInitialize5.view;
 
@@ -66591,7 +65926,7 @@ var Calendar = /*#__PURE__*/function (_Component) {
       if (callback) callback(value, event);
     });
 
-    _defineProperty$2(_assertThisInitialized$1(_this), "onMouseOver", function (value) {
+    _defineProperty$3(_assertThisInitialized$1(_this), "onMouseOver", function (value) {
       _this.setState(function (prevState) {
         if (prevState.hover && prevState.hover.getTime() === value.getTime()) {
           return null;
@@ -66603,7 +65938,7 @@ var Calendar = /*#__PURE__*/function (_Component) {
       });
     });
 
-    _defineProperty$2(_assertThisInitialized$1(_this), "onMouseLeave", function () {
+    _defineProperty$3(_assertThisInitialized$1(_this), "onMouseLeave", function () {
       _this.setState({
         hover: null
       });
@@ -67091,7 +66426,7 @@ function _createSuper(Derived) {
 }
 
 function _possibleConstructorReturn(self, call) {
-  if (call && (_typeof$2(call) === "object" || typeof call === "function")) {
+  if (call && (_typeof$3(call) === "object" || typeof call === "function")) {
     return call;
   }
 
@@ -67162,7 +66497,7 @@ function _objectWithoutPropertiesLoose(source, excluded) {
   return target;
 }
 
-function ownKeys(object, enumerableOnly) {
+function ownKeys$1(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -67181,13 +66516,13 @@ function _objectSpread(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys(Object(source), true).forEach(function (key) {
-        _defineProperty$1(target, key, source[key]);
+      ownKeys$1(Object(source), true).forEach(function (key) {
+        _defineProperty$2(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys(Object(source)).forEach(function (key) {
+      ownKeys$1(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -67196,7 +66531,7 @@ function _objectSpread(target) {
   return target;
 }
 
-function _defineProperty$1(obj, key, value) {
+function _defineProperty$2(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -67211,20 +66546,20 @@ function _defineProperty$1(obj, key, value) {
   return obj;
 }
 
-function _typeof$2(obj) {
+function _typeof$3(obj) {
   "@babel/helpers - typeof";
 
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof$2 = function _typeof(obj) {
+    _typeof$3 = function _typeof(obj) {
       return typeof obj;
     };
   } else {
-    _typeof$2 = function _typeof(obj) {
+    _typeof$3 = function _typeof(obj) {
       return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
     };
   }
 
-  return _typeof$2(obj);
+  return _typeof$3(obj);
 }
 var isBrowser = typeof window !== 'undefined';
 var isDisplayContentsSupported = isBrowser && 'CSS' in window && 'supports' in window.CSS && CSS.supports('display', 'contents');
@@ -67281,9 +66616,9 @@ function alignAxis(_ref) {
   var clientSizeProperty = "client".concat(uppercasedSizeProperty);
   var minSizeProperty = "min-".concat(sizeProperty);
   var scrollbarWidth = scrollContainer[offsetSizeProperty] - scrollContainer[clientSizeProperty];
-  var startSpacing = _typeof$2(spacing) === 'object' ? spacing[startProperty] : spacing;
+  var startSpacing = _typeof$3(spacing) === 'object' ? spacing[startProperty] : spacing;
   var availableStartSpace = -Math.max(scrollContainerCollisions[overflowStartProperty], documentCollisions[overflowStartProperty] + document.documentElement[scrollProperty]) - startSpacing;
-  var endSpacing = _typeof$2(spacing) === 'object' ? spacing[endProperty] : spacing;
+  var endSpacing = _typeof$3(spacing) === 'object' ? spacing[endProperty] : spacing;
   var availableEndSpace = -Math.max(scrollContainerCollisions[overflowEndProperty], documentCollisions[overflowEndProperty] - document.documentElement[scrollProperty]) - endSpacing - scrollbarWidth;
 
   if (secondary) {
@@ -67397,13 +66732,13 @@ var Fit = /*#__PURE__*/function (_Component) {
 
     _this = _super.call.apply(_super, [this].concat(args));
 
-    _defineProperty$1(_assertThisInitialized(_this), "onMutation", function () {
+    _defineProperty$2(_assertThisInitialized(_this), "onMutation", function () {
       _this.fit();
     });
 
-    _defineProperty$1(_assertThisInitialized(_this), "mutationObserver", isMutationObserverSupported && new MutationObserver(_this.onMutation));
+    _defineProperty$2(_assertThisInitialized(_this), "mutationObserver", isMutationObserverSupported && new MutationObserver(_this.onMutation));
 
-    _defineProperty$1(_assertThisInitialized(_this), "fit", function () {
+    _defineProperty$2(_assertThisInitialized(_this), "fit", function () {
       var _assertThisInitialize = _assertThisInitialized(_this),
           scrollContainer = _assertThisInitialize.scrollContainer,
           container = _assertThisInitialize.container,
@@ -67555,20 +66890,20 @@ var isDefined = function isDefined(variable) {
   return typeof variable !== 'undefined';
 };
 
-function _typeof$1(obj) {
+function _typeof$2(obj) {
   "@babel/helpers - typeof";
 
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof$1 = function _typeof(obj) {
+    _typeof$2 = function _typeof(obj) {
       return typeof obj;
     };
   } else {
-    _typeof$1 = function _typeof(obj) {
+    _typeof$2 = function _typeof(obj) {
       return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
     };
   }
 
-  return _typeof$1(obj);
+  return _typeof$2(obj);
 }
 
 var isNumberBetween = function isNumberBetween(min, max) {
@@ -67577,11 +66912,11 @@ var isNumberBetween = function isNumberBetween(min, max) {
 
     if (isDefined(value)) {
       if (typeof value !== 'number') {
-        return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$1(value), "` supplied to `").concat(componentName, "`, expected `number`."));
+        return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$2(value), "` supplied to `").concat(componentName, "`, expected `number`."));
       }
 
       if (value < min || value > max) {
-        return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$1(value), "` supplied to `").concat(componentName, "`, length must be between ").concat(min, " and ").concat(max, "."));
+        return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$2(value), "` supplied to `").concat(componentName, "`, length must be between ").concat(min, " and ").concat(max, "."));
       }
     } // Everything is fine
 
@@ -67597,11 +66932,11 @@ var isHandWidth = function isHandWidth(props, propName, componentName) {
 
   if (isDefined(width)) {
     if (typeof width !== 'number') {
-      return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$1(width), "` supplied to `").concat(componentName, "`, expected `number`."));
+      return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$2(width), "` supplied to `").concat(componentName, "`, expected `number`."));
     }
 
     if (width < 0) {
-      return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$1(width), "` supplied to `").concat(componentName, "`, width must be greater or equal to 0."));
+      return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$2(width), "` supplied to `").concat(componentName, "`, width must be greater or equal to 0."));
     }
   } // Everything is fine
 
@@ -68293,20 +67628,20 @@ var safeMin_1$1 = safeMin$1;
 var safeMax_1$1 = safeMax$1;
 
 function _toConsumableArray$1(arr) {
-  return _arrayWithoutHoles$1(arr) || _iterableToArray$1(arr) || _unsupportedIterableToArray$2(arr) || _nonIterableSpread$1();
+  return _arrayWithoutHoles$1(arr) || _iterableToArray$1(arr) || _unsupportedIterableToArray$3(arr) || _nonIterableSpread$1();
 }
 
 function _nonIterableSpread$1() {
   throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
-function _unsupportedIterableToArray$2(o, minLen) {
+function _unsupportedIterableToArray$3(o, minLen) {
   if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray$2(o, minLen);
+  if (typeof o === "string") return _arrayLikeToArray$3(o, minLen);
   var n = Object.prototype.toString.call(o).slice(8, -1);
   if (n === "Object" && o.constructor) n = o.constructor.name;
   if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$2(o, minLen);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$3(o, minLen);
 }
 
 function _iterableToArray$1(iter) {
@@ -68314,10 +67649,10 @@ function _iterableToArray$1(iter) {
 }
 
 function _arrayWithoutHoles$1(arr) {
-  if (Array.isArray(arr)) return _arrayLikeToArray$2(arr);
+  if (Array.isArray(arr)) return _arrayLikeToArray$3(arr);
 }
 
-function _arrayLikeToArray$2(arr, len) {
+function _arrayLikeToArray$3(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
 
   for (var i = 0, arr2 = new Array(len); i < len; i++) {
@@ -69334,7 +68669,7 @@ var safeMax_1 = safeMax;
 
 
 function _toConsumableArray(arr) {
-  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray$1(arr) || _nonIterableSpread();
+  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray$2(arr) || _nonIterableSpread();
 }
 
 function _nonIterableSpread() {
@@ -69346,27 +68681,27 @@ function _iterableToArray(iter) {
 }
 
 function _arrayWithoutHoles(arr) {
-  if (Array.isArray(arr)) return _arrayLikeToArray$1(arr);
+  if (Array.isArray(arr)) return _arrayLikeToArray$2(arr);
 }
 
-function _slicedToArray$1(arr, i) {
-  return _arrayWithHoles$1(arr) || _iterableToArrayLimit$1(arr, i) || _unsupportedIterableToArray$1(arr, i) || _nonIterableRest$1();
+function _slicedToArray$2(arr, i) {
+  return _arrayWithHoles$2(arr) || _iterableToArrayLimit$2(arr, i) || _unsupportedIterableToArray$2(arr, i) || _nonIterableRest$2();
 }
 
-function _nonIterableRest$1() {
+function _nonIterableRest$2() {
   throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
-function _unsupportedIterableToArray$1(o, minLen) {
+function _unsupportedIterableToArray$2(o, minLen) {
   if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray$1(o, minLen);
+  if (typeof o === "string") return _arrayLikeToArray$2(o, minLen);
   var n = Object.prototype.toString.call(o).slice(8, -1);
   if (n === "Object" && o.constructor) n = o.constructor.name;
   if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$1(o, minLen);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$2(o, minLen);
 }
 
-function _arrayLikeToArray$1(arr, len) {
+function _arrayLikeToArray$2(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
 
   for (var i = 0, arr2 = new Array(len); i < len; i++) {
@@ -69376,7 +68711,7 @@ function _arrayLikeToArray$1(arr, len) {
   return arr2;
 }
 
-function _iterableToArrayLimit$1(arr, i) {
+function _iterableToArrayLimit$2(arr, i) {
   if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
   var _arr = [];
   var _n = true;
@@ -69403,7 +68738,7 @@ function _iterableToArrayLimit$1(arr, i) {
   return _arr;
 }
 
-function _arrayWithHoles$1(arr) {
+function _arrayWithHoles$2(arr) {
   if (Array.isArray(arr)) return arr;
 }
 
@@ -69418,12 +68753,12 @@ function getAmPmLabels$1(locale) {
   var pmString = amPmFormatter$1(locale, new Date(2017, 0, 1, 21));
 
   var _amString$split = amString.split(ninesRegExp$1),
-      _amString$split2 = _slicedToArray$1(_amString$split, 2),
+      _amString$split2 = _slicedToArray$2(_amString$split, 2),
       am1 = _amString$split2[0],
       am2 = _amString$split2[1];
 
   var _pmString$split = pmString.split(ninesRegExp$1),
-      _pmString$split2 = _slicedToArray$1(_pmString$split, 2),
+      _pmString$split2 = _slicedToArray$2(_pmString$split, 2),
       pm1 = _pmString$split2[0],
       pm2 = _pmString$split2[1];
 
@@ -70449,24 +69784,24 @@ var getAmPmLabels_1 = getAmPmLabels;
 
 
 
-function _slicedToArray(arr, i) {
-  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
+function _slicedToArray$1(arr, i) {
+  return _arrayWithHoles$1(arr) || _iterableToArrayLimit$1(arr, i) || _unsupportedIterableToArray$1(arr, i) || _nonIterableRest$1();
 }
 
-function _nonIterableRest() {
+function _nonIterableRest$1() {
   throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
-function _unsupportedIterableToArray(o, minLen) {
+function _unsupportedIterableToArray$1(o, minLen) {
   if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+  if (typeof o === "string") return _arrayLikeToArray$1(o, minLen);
   var n = Object.prototype.toString.call(o).slice(8, -1);
   if (n === "Object" && o.constructor) n = o.constructor.name;
   if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$1(o, minLen);
 }
 
-function _arrayLikeToArray(arr, len) {
+function _arrayLikeToArray$1(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
 
   for (var i = 0, arr2 = new Array(len); i < len; i++) {
@@ -70476,7 +69811,7 @@ function _arrayLikeToArray(arr, len) {
   return arr2;
 }
 
-function _iterableToArrayLimit(arr, i) {
+function _iterableToArrayLimit$1(arr, i) {
   if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
   var _arr = [];
   var _n = true;
@@ -70503,7 +69838,7 @@ function _iterableToArrayLimit(arr, i) {
   return _arr;
 }
 
-function _arrayWithHoles(arr) {
+function _arrayWithHoles$1(arr) {
   if (Array.isArray(arr)) return arr;
 }
 /**
@@ -70538,12 +69873,12 @@ function getAmPmLabels(locale) {
   var pmString = amPmFormatter(locale, new Date(2017, 0, 1, 21));
 
   var _amString$split = amString.split(ninesRegExp),
-      _amString$split2 = _slicedToArray(_amString$split, 2),
+      _amString$split2 = _slicedToArray$1(_amString$split, 2),
       am1 = _amString$split2[0],
       am2 = _amString$split2[1];
 
   var _pmString$split = pmString.split(ninesRegExp),
-      _pmString$split2 = _slicedToArray(_pmString$split, 2),
+      _pmString$split2 = _slicedToArray$1(_pmString$split, 2),
       pm1 = _pmString$split2[0],
       pm2 = _pmString$split2[1];
 
@@ -73054,6 +72389,7 @@ function FormHook({
 function BearForm({
   noText,
   listDict,
+  name,
   loadConfig,
   bearName = "",
   textConfig,
@@ -73096,16 +72432,24 @@ function BearForm({
   requireAll,
   //
   // 1submit
+  submitDisplay,
   formData,
   extractValues,
   // 1value
   loadSubmit,
   onSubmit,
   submitExtra,
-  topObj,
+  //
+  //
+  hiddenItem,
+  topFormItem,
+  bottomFormItem,
+  buttonItem,
   //
   // style,
   marginBetween,
+  //
+  //
   //
   //
   ...args
@@ -73207,10 +72551,12 @@ function BearForm({
   };
   bearlog.lug("sdnfer---", sdnfer);
   const { ...sdjifwer
-  } = FormHook(sdnfer);
+  } = FormHook(sdnfer); // 1args FORM
+
   const difjgr = { ...args,
     ...sdjifwer,
-    id: formid
+    id: formid,
+    name
   }; // 1button
 
   function Buttiona({
@@ -73275,12 +72621,13 @@ function BearForm({
     };
     const bfdg = { ...nissase,
       ...inputConfig,
-      style: { ...inputConfig.style,
+      style: { ...(inputConfig && inputConfig.style),
         ...inputStyle
       }
     };
     const baseObj = {
       dictvar,
+      // passwordConfig,
       inputItem: obj,
       name: obj,
       ...sdjifwer,
@@ -73288,7 +72635,7 @@ function BearForm({
       ...inDict,
       ...argMiss(args)
     };
-    bearlog.lug("___ baseObj ___", baseObj);
+    bearlog.lug("___ bsohbjo ___", baseObj);
     const fdjgre = baseObj.obj;
     const obvdsaf = fdjgre ? fdjgre : lodash.isEmpty(baseObj) ? FormError("no form Dictionary supplied - " + obj) : BearFormList(baseObj);
     bearlog.lug("___ FORMAMIN - FIRST RUN OBJECT___", {
@@ -73438,7 +72785,7 @@ function BearForm({
   /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, sudhawe);
   const iterwr = toplist;
   const mappit = iterwr ? /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, maperlis(toplist), /*#__PURE__*/React__default$1['default'].createElement("br", null), sudhawe) : /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, sudhawe);
-  const aidjwe = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, topObj, mappit, betweenItem);
+  const aidjwe = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, hiddenItem, topFormItem, mappit, betweenItem, buttonItem, bottomFormItem);
   const ijdfsr = //
   difjgr; // argPass
   // 1console
@@ -73484,8 +72831,7 @@ function BearFormList({
       bearlog.lug("___ dfjsds ___", dfjsds);
       const sidjer = //
       // sdfok(dfjsds);
-      BearFormList(dfjsds); // firstInputCheck(dfjsds);
-
+      BearFormList(dfjsds);
       return sidjer;
     }
 
@@ -73523,6 +72869,1936 @@ function firstInputCheck({
   // "oskdfwerw"
   noName ? BearFormSetup(isjdfe) : nameeo ? BearFormSetup(isjdfe) : BearErrMiss("name", baseObj.bearName + "'s input elementk");
   return okwaew;
+}
+
+// import { BearNotification } from "../BearNotification";
+
+function BearCheckout({
+  //
+  //
+  provider = "stripe",
+  providerConfig,
+  onSubmit,
+  testTrue,
+  billingDetails,
+  title,
+  // dictvar,
+  onSuccess,
+  onFailure,
+  typeComp = "BearCheckout",
+  bearName,
+  totalPayment,
+  messageConfig = {},
+  message,
+  disableNotification,
+  buttonConfig,
+  ...args
+}) {
+  //
+  args = {
+    bearName,
+    ...args
+  }; // const ijsdsae = {
+  //   ...providerConfig,
+  //   mode: testTrue ? "test" : "live",
+  //   testTrue,
+  //   ...args,
+  // };
+  // 1const
+
+  const [loadPay, setloadPay] = React.useState(); // 1list
+
+  const oiksaaa = ["card", "name", // "mobileNumber",
+  "address"]; // 1address
+  const jisdre = //
+  totalPayment < 0;
+
+
+  const ijsdfr = //
+  ""; // BearCurrency(totalPayment, { divContainer: asidje });
+  // "Pay " + totalPayment;
+  // paymentintentFunction
+  //   ? "Pay " + totalPayment
+  //   : BearError(BearMissing("paymentintentFunction", "provideConfig"));
+  // 1button
+
+  const usdjfwer = {
+    disabled: jisdre,
+    text: ijsdfr,
+    ...buttonConfig
+  };
+
+  function adsrew({
+    provider,
+    baseai,
+    ...sadre
+  }) {
+    const sidjwreed = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, provider, " payment ", baseai);
+    const ewurw = {
+      fontSize: "1.3em",
+      style: {
+        margin: "20px 0"
+      }
+    };
+    /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, ewurw, sidjwreed), message, /*#__PURE__*/React__default$1['default'].createElement("br", null), "To disable these notification, set the \"disableNotification\" attribute to \"true\" in your ", typeComp, " component.");
+    const odkeqd = //
+    ""; // BearNotification(ijdwewe, ijdfer);
+
+    return odkeqd;
+  }
+
+  function handStripeNote(vwer) {
+    const djfwe = //
+    !disableNotification; // && testTrue
+
+    if (djfwe) {
+      adsrew(vwer);
+    }
+  }
+
+  function handSuccess(sdfds) {
+    const idsfwe = {
+      //
+      baseai: "succeeded",
+      ...sdfds
+    };
+    handStripeNote(idsfwe);
+  }
+
+  function handFail(sdfds) {
+    const xifjsre = {
+      //
+      baseai: "failed",
+      noteType: "error",
+      ...sdfds
+    };
+    handStripeNote(xifjsre);
+  }
+
+  async function er9eras(dvbdero) {
+    setloadPay(true); //
+
+    const asdok = await onSubmit(dvbdero); //
+
+    if (asdok) {
+      if (asdok.error) {
+        handFail(asdok);
+        onFailure(asdok);
+      } else {
+        handSuccess(asdok);
+        onSuccess(asdok);
+      }
+    }
+
+    setloadPay(false);
+  }
+
+  const dfjgrt = {
+    list: oiksaaa,
+    buttonConfig: usdjfwer,
+    loading: loadPay,
+    bearName: "payment-Form",
+    formData: billingDetails,
+    onSubmit: er9eras,
+    noTitle: true,
+    ...args
+  };
+  bearlog.lug("___ dfjgrt ___", dfjgrt);
+  const okfdsd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(BearForm, _extends$X({
+    noAdvert: true
+  }, dfjgrt))); // let askjdew = "";
+  // switch (provider) {
+  //   case "stripe":
+  //     askjdew = (
+  //       <>
+  //         {/*  */}
+  //         {/* <Elements stripe={stripePromise}> */}
+  //         {BearCheckStripe(ijsdsae)}
+  //         {/* </Elements> */}
+  //       </>
+  //     );
+  // }
+
+  const missCheck = {
+    onFailure,
+    onSuccess,
+    totalPayment
+  };
+  const idjft = { ...args,
+    requiredArgs: missCheck,
+    title
+  };
+  bearlog.lug("___ idjft ___", idjft);
+  const qwejase = BearCheckMain(typeComp, okfdsd, idjft);
+  return qwejase;
+}
+
+function _typeof$1(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof$1 = function (obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof$1 = function (obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof$1(obj);
+}
+
+function _defineProperty$1(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function ownKeys(object, enumerableOnly) {
+  var keys = Object.keys(object);
+
+  if (Object.getOwnPropertySymbols) {
+    var symbols = Object.getOwnPropertySymbols(object);
+    if (enumerableOnly) symbols = symbols.filter(function (sym) {
+      return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+    });
+    keys.push.apply(keys, symbols);
+  }
+
+  return keys;
+}
+
+function _objectSpread2(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+
+    if (i % 2) {
+      ownKeys(Object(source), true).forEach(function (key) {
+        _defineProperty$1(target, key, source[key]);
+      });
+    } else if (Object.getOwnPropertyDescriptors) {
+      Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+      ownKeys(Object(source)).forEach(function (key) {
+        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+      });
+    }
+  }
+
+  return target;
+}
+
+function _slicedToArray(arr, i) {
+  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
+}
+
+function _arrayWithHoles(arr) {
+  if (Array.isArray(arr)) return arr;
+}
+
+function _iterableToArrayLimit(arr, i) {
+  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
+  var _arr = [];
+  var _n = true;
+  var _d = false;
+  var _e = undefined;
+
+  try {
+    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+      _arr.push(_s.value);
+
+      if (i && _arr.length === i) break;
+    }
+  } catch (err) {
+    _d = true;
+    _e = err;
+  } finally {
+    try {
+      if (!_n && _i["return"] != null) _i["return"]();
+    } finally {
+      if (_d) throw _e;
+    }
+  }
+
+  return _arr;
+}
+
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+}
+
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+
+  for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
+
+  return arr2;
+}
+
+function _nonIterableRest() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+var usePrevious = function usePrevious(value) {
+  var ref = React__default$1['default'].useRef(value);
+  React__default$1['default'].useEffect(function () {
+    ref.current = value;
+  }, [value]);
+  return ref.current;
+};
+
+var isUnknownObject = function isUnknownObject(raw) {
+  return raw !== null && _typeof$1(raw) === 'object';
+};
+
+var isPromise = function isPromise(raw) {
+  return isUnknownObject(raw) && typeof raw.then === 'function';
+}; // We are using types to enforce the `stripe` prop in this lib,
+// but in an untyped integration `stripe` could be anything, so we need
+// to do some sanity validation to prevent type errors.
+
+
+var isStripe = function isStripe(raw) {
+  return isUnknownObject(raw) && typeof raw.elements === 'function' && typeof raw.createToken === 'function' && typeof raw.createPaymentMethod === 'function' && typeof raw.confirmCardPayment === 'function';
+};
+
+var PLAIN_OBJECT_STR = '[object Object]';
+
+var isEqual = function isEqual(left, right) {
+  if (!isUnknownObject(left) || !isUnknownObject(right)) {
+    return left === right;
+  }
+
+  var leftArray = Array.isArray(left);
+  var rightArray = Array.isArray(right);
+  if (leftArray !== rightArray) return false;
+  var leftPlainObject = Object.prototype.toString.call(left) === PLAIN_OBJECT_STR;
+  var rightPlainObject = Object.prototype.toString.call(right) === PLAIN_OBJECT_STR;
+  if (leftPlainObject !== rightPlainObject) return false;
+  if (!leftPlainObject && !leftArray) return false;
+  var leftKeys = Object.keys(left);
+  var rightKeys = Object.keys(right);
+  if (leftKeys.length !== rightKeys.length) return false;
+  var keySet = {};
+
+  for (var i = 0; i < leftKeys.length; i += 1) {
+    keySet[leftKeys[i]] = true;
+  }
+
+  for (var _i = 0; _i < rightKeys.length; _i += 1) {
+    keySet[rightKeys[_i]] = true;
+  }
+
+  var allKeys = Object.keys(keySet);
+
+  if (allKeys.length !== leftKeys.length) {
+    return false;
+  }
+
+  var l = left;
+  var r = right;
+
+  var pred = function pred(key) {
+    return isEqual(l[key], r[key]);
+  };
+
+  return allKeys.every(pred);
+};
+
+var extractAllowedOptionsUpdates = function extractAllowedOptionsUpdates(options, prevOptions, immutableKeys) {
+  if (!isUnknownObject(options)) {
+    return null;
+  }
+
+  return Object.keys(options).reduce(function (newOptions, key) {
+    var isUpdated = !isUnknownObject(prevOptions) || !isEqual(options[key], prevOptions[key]);
+
+    if (immutableKeys.includes(key)) {
+      if (isUpdated) {
+        console.warn("Unsupported prop change: options.".concat(key, " is not a mutable property."));
+      }
+
+      return newOptions;
+    }
+
+    if (!isUpdated) {
+      return newOptions;
+    }
+
+    return _objectSpread2(_objectSpread2({}, newOptions || {}), {}, _defineProperty$1({}, key, options[key]));
+  }, null);
+};
+
+var INVALID_STRIPE_ERROR = 'Invalid prop `stripe` supplied to `Elements`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.'; // We are using types to enforce the `stripe` prop in this lib, but in a real
+// integration `stripe` could be anything, so we need to do some sanity
+// validation to prevent type errors.
+
+var validateStripe = function validateStripe(maybeStripe) {
+  if (maybeStripe === null || isStripe(maybeStripe)) {
+    return maybeStripe;
+  }
+
+  throw new Error(INVALID_STRIPE_ERROR);
+};
+
+var parseStripeProp = function parseStripeProp(raw) {
+  if (isPromise(raw)) {
+    return {
+      tag: 'async',
+      stripePromise: Promise.resolve(raw).then(validateStripe)
+    };
+  }
+
+  var stripe = validateStripe(raw);
+
+  if (stripe === null) {
+    return {
+      tag: 'empty'
+    };
+  }
+
+  return {
+    tag: 'sync',
+    stripe: stripe
+  };
+};
+
+var ElementsContext = /*#__PURE__*/React__default$1['default'].createContext(null);
+ElementsContext.displayName = 'ElementsContext';
+
+var parseElementsContext = function parseElementsContext(ctx, useCase) {
+  if (!ctx) {
+    throw new Error("Could not find Elements context; You need to wrap the part of your app that ".concat(useCase, " in an <Elements> provider."));
+  }
+
+  return ctx;
+};
+/**
+ * The `Elements` provider allows you to use [Element components](https://stripe.com/docs/stripe-js/react#element-components) and access the [Stripe object](https://stripe.com/docs/js/initializing) in any nested component.
+ * Render an `Elements` provider at the root of your React app so that it is available everywhere you need it.
+ *
+ * To use the `Elements` provider, call `loadStripe` from `@stripe/stripe-js` with your publishable key.
+ * The `loadStripe` function will asynchronously load the Stripe.js script and initialize a `Stripe` object.
+ * Pass the returned `Promise` to `Elements`.
+ *
+ * @docs https://stripe.com/docs/stripe-js/react#elements-provider
+ */
+
+
+var Elements = function Elements(_ref) {
+  var rawStripeProp = _ref.stripe,
+      options = _ref.options,
+      children = _ref.children;
+
+  var _final = React__default$1['default'].useRef(false);
+
+  var isMounted = React__default$1['default'].useRef(true);
+  var parsed = React__default$1['default'].useMemo(function () {
+    return parseStripeProp(rawStripeProp);
+  }, [rawStripeProp]);
+
+  var _React$useState = React__default$1['default'].useState(function () {
+    return {
+      stripe: null,
+      elements: null
+    };
+  }),
+      _React$useState2 = _slicedToArray(_React$useState, 2),
+      ctx = _React$useState2[0],
+      setContext = _React$useState2[1];
+
+  var prevStripe = usePrevious(rawStripeProp);
+
+  if (prevStripe !== null) {
+    if (prevStripe !== rawStripeProp) {
+      console.warn('Unsupported prop change on Elements: You cannot change the `stripe` prop after setting it.');
+    }
+  }
+
+  if (!_final.current) {
+    if (parsed.tag === 'sync') {
+      _final.current = true;
+      setContext({
+        stripe: parsed.stripe,
+        elements: parsed.stripe.elements(options)
+      });
+    }
+
+    if (parsed.tag === 'async') {
+      _final.current = true;
+      parsed.stripePromise.then(function (stripe) {
+        if (stripe && isMounted.current) {
+          // Only update Elements context if the component is still mounted
+          // and stripe is not null. We allow stripe to be null to make
+          // handling SSR easier.
+          setContext({
+            stripe: stripe,
+            elements: stripe.elements(options)
+          });
+        }
+      });
+    }
+  }
+
+  var prevOptions = usePrevious(options);
+  React__default$1['default'].useEffect(function () {
+    if (!ctx.elements) {
+      return;
+    }
+
+    var updates = extractAllowedOptionsUpdates(options, prevOptions, ['clientSecret', 'fonts']);
+
+    if (updates) {
+      ctx.elements.update(updates);
+    }
+  }, [options, prevOptions, ctx.elements]);
+  React__default$1['default'].useEffect(function () {
+    return function () {
+      isMounted.current = false;
+    };
+  }, []);
+  React__default$1['default'].useEffect(function () {
+    var anyStripe = ctx.stripe;
+
+    if (!anyStripe || !anyStripe._registerWrapper || !anyStripe.registerAppInfo) {
+      return;
+    }
+
+    anyStripe._registerWrapper({
+      name: 'react-stripe-js',
+      version: "1.5.0"
+    });
+
+    anyStripe.registerAppInfo({
+      name: 'react-stripe-js',
+      version: "1.5.0",
+      url: 'https://stripe.com/docs/stripe-js/react'
+    });
+  }, [ctx.stripe]);
+  return /*#__PURE__*/React__default$1['default'].createElement(ElementsContext.Provider, {
+    value: ctx
+  }, children);
+};
+
+Elements.propTypes = {
+  stripe: propTypes$4.any,
+  options: propTypes$4.object
+};
+
+var useElementsContextWithUseCase = function useElementsContextWithUseCase(useCaseMessage) {
+  var ctx = React__default$1['default'].useContext(ElementsContext);
+  return parseElementsContext(ctx, useCaseMessage);
+};
+/**
+ * @docs https://stripe.com/docs/stripe-js/react#useelements-hook
+ */
+
+
+var useElements = function useElements() {
+  var _useElementsContextWi = useElementsContextWithUseCase('calls useElements()'),
+      elements = _useElementsContextWi.elements;
+
+  return elements;
+};
+/**
+ * @docs https://stripe.com/docs/stripe-js/react#usestripe-hook
+ */
+
+
+var useStripe = function useStripe() {
+  var _useElementsContextWi2 = useElementsContextWithUseCase('calls useStripe()'),
+      stripe = _useElementsContextWi2.stripe;
+
+  return stripe;
+};
+
+({
+  children: propTypes$4.func.isRequired
+});
+
+var useCallbackReference = function useCallbackReference(cb) {
+  var ref = React__default$1['default'].useRef(cb);
+  React__default$1['default'].useEffect(function () {
+    ref.current = cb;
+  }, [cb]);
+  return function () {
+    if (ref.current) {
+      ref.current.apply(ref, arguments);
+    }
+  };
+};
+
+var noop = function noop() {};
+
+var capitalized = function capitalized(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+};
+
+var createElementComponent = function createElementComponent(type, isServer) {
+  var displayName = "".concat(capitalized(type), "Element");
+
+  var ClientElement = function ClientElement(_ref) {
+    var id = _ref.id,
+        className = _ref.className,
+        _ref$options = _ref.options,
+        options = _ref$options === void 0 ? {} : _ref$options,
+        _ref$onBlur = _ref.onBlur,
+        onBlur = _ref$onBlur === void 0 ? noop : _ref$onBlur,
+        _ref$onFocus = _ref.onFocus,
+        onFocus = _ref$onFocus === void 0 ? noop : _ref$onFocus,
+        _ref$onReady = _ref.onReady,
+        onReady = _ref$onReady === void 0 ? noop : _ref$onReady,
+        _ref$onChange = _ref.onChange,
+        onChange = _ref$onChange === void 0 ? noop : _ref$onChange,
+        _ref$onEscape = _ref.onEscape,
+        onEscape = _ref$onEscape === void 0 ? noop : _ref$onEscape,
+        _ref$onClick = _ref.onClick,
+        onClick = _ref$onClick === void 0 ? noop : _ref$onClick;
+
+    var _useElementsContextWi = useElementsContextWithUseCase("mounts <".concat(displayName, ">")),
+        elements = _useElementsContextWi.elements;
+
+    var elementRef = React__default$1['default'].useRef(null);
+    var domNode = React__default$1['default'].useRef(null);
+    var callOnReady = useCallbackReference(onReady);
+    var callOnBlur = useCallbackReference(onBlur);
+    var callOnFocus = useCallbackReference(onFocus);
+    var callOnClick = useCallbackReference(onClick);
+    var callOnChange = useCallbackReference(onChange);
+    var callOnEscape = useCallbackReference(onEscape);
+    React__default$1['default'].useLayoutEffect(function () {
+      if (elementRef.current == null && elements && domNode.current != null) {
+        var element = elements.create(type, options);
+        elementRef.current = element;
+        element.mount(domNode.current);
+        element.on('ready', function () {
+          return callOnReady(element);
+        });
+        element.on('change', callOnChange);
+        element.on('blur', callOnBlur);
+        element.on('focus', callOnFocus);
+        element.on('escape', callOnEscape); // Users can pass an an onClick prop on any Element component
+        // just as they could listen for the `click` event on any Element,
+        // but only the PaymentRequestButton will actually trigger the event.
+
+        element.on('click', callOnClick);
+      }
+    });
+    var prevOptions = usePrevious(options);
+    React__default$1['default'].useEffect(function () {
+      if (!elementRef.current) {
+        return;
+      }
+
+      var updates = extractAllowedOptionsUpdates(options, prevOptions, ['paymentRequest']);
+
+      if (updates) {
+        elementRef.current.update(updates);
+      }
+    }, [options, prevOptions]);
+    React__default$1['default'].useLayoutEffect(function () {
+      return function () {
+        if (elementRef.current) {
+          elementRef.current.destroy();
+        }
+      };
+    }, []);
+    return /*#__PURE__*/React__default$1['default'].createElement("div", {
+      id: id,
+      className: className,
+      ref: domNode
+    });
+  }; // Only render the Element wrapper in a server environment.
+
+
+  var ServerElement = function ServerElement(props) {
+    // Validate that we are in the right context by calling useElementsContextWithUseCase.
+    useElementsContextWithUseCase("mounts <".concat(displayName, ">"));
+    var id = props.id,
+        className = props.className;
+    return /*#__PURE__*/React__default$1['default'].createElement("div", {
+      id: id,
+      className: className
+    });
+  };
+
+  var Element = isServer ? ServerElement : ClientElement;
+  Element.propTypes = {
+    id: propTypes$4.string,
+    className: propTypes$4.string,
+    onChange: propTypes$4.func,
+    onBlur: propTypes$4.func,
+    onFocus: propTypes$4.func,
+    onReady: propTypes$4.func,
+    onClick: propTypes$4.func,
+    options: propTypes$4.object
+  };
+  Element.displayName = displayName;
+  Element.__elementType = type;
+  return Element;
+};
+
+var isServer = typeof window === 'undefined';
+/**
+ * Requires beta access:
+ * Contact [Stripe support](https://support.stripe.com/) for more information.
+ *
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
+
+createElementComponent('auBankAccount', isServer);
+/**
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
+
+var CardElement = createElementComponent('card', isServer);
+/**
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
+
+createElementComponent('cardNumber', isServer);
+/**
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
+
+createElementComponent('cardExpiry', isServer);
+/**
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
+
+createElementComponent('cardCvc', isServer);
+/**
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
+
+createElementComponent('fpxBank', isServer);
+/**
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
+
+createElementComponent('iban', isServer);
+/**
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
+
+createElementComponent('idealBank', isServer);
+/**
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
+
+createElementComponent('p24Bank', isServer);
+/**
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
+
+createElementComponent('epsBank', isServer);
+createElementComponent('payment', isServer);
+/**
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
+
+var PaymentRequestButtonElement = createElementComponent('paymentRequestButton', isServer);
+/**
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
+
+createElementComponent('afterpayClearpayMessage', isServer);
+
+var V3_URL = 'https://js.stripe.com/v3';
+var V3_URL_REGEX = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/;
+var EXISTING_SCRIPT_MESSAGE = 'loadStripe.setLoadParameters was called but an existing Stripe.js script already exists in the document; existing script parameters will be used';
+
+var findScript = function findScript() {
+  var scripts = document.querySelectorAll("script[src^=\"".concat(V3_URL, "\"]"));
+
+  for (var i = 0; i < scripts.length; i++) {
+    var script = scripts[i];
+
+    if (!V3_URL_REGEX.test(script.src)) {
+      continue;
+    }
+
+    return script;
+  }
+
+  return null;
+};
+
+var injectScript = function injectScript(params) {
+  var queryString = params && !params.advancedFraudSignals ? '?advancedFraudSignals=false' : '';
+  var script = document.createElement('script');
+  script.src = "".concat(V3_URL).concat(queryString);
+  var headOrBody = document.head || document.body;
+
+  if (!headOrBody) {
+    throw new Error('Expected document.body not to be null. Stripe.js requires a <body> element.');
+  }
+
+  headOrBody.appendChild(script);
+  return script;
+};
+
+var registerWrapper = function registerWrapper(stripe, startTime) {
+  if (!stripe || !stripe._registerWrapper) {
+    return;
+  }
+
+  stripe._registerWrapper({
+    name: 'stripe-js',
+    version: "1.18.0",
+    startTime: startTime
+  });
+};
+
+var stripePromise = null;
+
+var loadScript = function loadScript(params) {
+  // Ensure that we only attempt to load Stripe.js at most once
+  if (stripePromise !== null) {
+    return stripePromise;
+  }
+
+  stripePromise = new Promise(function (resolve, reject) {
+    if (typeof window === 'undefined') {
+      // Resolve to null when imported server side. This makes the module
+      // safe to import in an isomorphic code base.
+      resolve(null);
+      return;
+    }
+
+    if (window.Stripe && params) {
+      console.warn(EXISTING_SCRIPT_MESSAGE);
+    }
+
+    if (window.Stripe) {
+      resolve(window.Stripe);
+      return;
+    }
+
+    try {
+      var script = findScript();
+
+      if (script && params) {
+        console.warn(EXISTING_SCRIPT_MESSAGE);
+      } else if (!script) {
+        script = injectScript(params);
+      }
+
+      script.addEventListener('load', function () {
+        if (window.Stripe) {
+          resolve(window.Stripe);
+        } else {
+          reject(new Error('Stripe.js not available'));
+        }
+      });
+      script.addEventListener('error', function () {
+        reject(new Error('Failed to load Stripe.js'));
+      });
+    } catch (error) {
+      reject(error);
+      return;
+    }
+  });
+  return stripePromise;
+};
+
+var initStripe = function initStripe(maybeStripe, args, startTime) {
+  if (maybeStripe === null) {
+    return null;
+  }
+
+  var stripe = maybeStripe.apply(undefined, args);
+  registerWrapper(stripe, startTime);
+  return stripe;
+}; // own script injection.
+
+
+var stripePromise$1 = Promise.resolve().then(function () {
+  return loadScript(null);
+});
+var loadCalled = false;
+stripePromise$1["catch"](function (err) {
+  if (!loadCalled) {
+    console.warn(err);
+  }
+});
+
+var loadStripe = function loadStripe() {
+  for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+    args[_key] = arguments[_key];
+  }
+
+  loadCalled = true;
+  var startTime = Date.now();
+  return stripePromise$1.then(function (maybeStripe) {
+    return initStripe(maybeStripe, args, startTime);
+  });
+};
+
+function BearCheckoutStripeBase({
+  //
+  type,
+  //
+  bearName,
+  // 1button
+  payFirst,
+  // 1payment
+  cardInputConfig,
+  paymentConfig,
+  onSubmit,
+  //
+  mode,
+  ignoreErrors,
+  totalPayment,
+  hidePostalCode,
+  onCardInputError,
+  paymentintentFunction,
+  testTrue,
+  ...args
+}) {
+  args = {
+    totalPayment,
+    ignoreErrors,
+    bearName,
+    ...args
+  }; // 1const
+  // 1stripe
+
+  const [paymentRequest, setPaymentRequest] = React.useState(null);
+  const dsfgkr = testTrue ? "test/" : "";
+  const linkShow = //
+  `https://dashboard.stripe.com/${dsfgkr}bearlog`; // 1errro
+
+  const [errTexto, seterrTexto] = React.useState();
+  const [disablo, setdisablo] = React.useState();
+
+  function handleCardDetailsChange(sfa) {
+    bearlog.lug("cardeets", sfa); // hadsnwi(sfa);
+  } // https://dashboard.stripe.com/test/bearlog?object=pm_1IzkTtGy7WLw7ia52LTyKtml&created%5Bgte%5D=1622462400&dashboard=false&direction%5B%5D=self&direction%5B%5D=connect_out
+  // 1checkout
+
+
+  function Bearios() {
+    const stripe = useStripe();
+    const elements = useElements();
+
+
+    const wuheqw = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, "Click to open the record in your Stripe dashboard.", /*#__PURE__*/React__default$1['default'].createElement("br", null), "It may take a couple of minutes for the record to appear."); // 1submit
+
+    async function secPass(dvbdero) {
+      //
+      const sidjfer = {
+        amount: totalPayment,
+        currency: "usd",
+        payment_method_types: ["card"],
+        ...c
+      };
+      const sdfkewr = { ...sidjfer,
+        stripeAPI: stripe,
+        ...dvbdero
+      };
+      bearlog.lug("---PAYMENT CHECK ALL DEETS", sdfkewr); // bearlog.lug("___ dvbdero ___", dvbdero);
+
+      if (onSubmit) {
+        return onSubmit(dvbdero);
+      } else {
+        return await onDone(sdfkewr);
+      }
+    }
+
+    async function onDone({
+      cardDetails,
+      ...asdras
+    }) {
+      const secretos = //
+      // await stripe.paymentIntents.create(sidjfer);
+      await paymentintentFunction(asdras);
+      const ijsrew = {
+        payment_method: cardDetails
+      };
+      bearlog.lug("___ paymentIntents asdqw ___", {
+        secretos,
+        ijsrew
+      });
+      const { ...asdf
+      } = //
+      // await stripe.createPaymentMethod(rejweae);
+      await stripe.confirmCardPayment(secretos, ijsrew);
+      bearlog.lug("CARDPAY ", asdf);
+      const jdfesawe = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, "Stripe");
+      let fdgok = {
+        provider: jdfesawe,
+        ...asdf
+      };
+      return fdgok;
+    }
+
+    async function er9eras(dvbdero) {
+      const nsidfre = elements.getElement(CardElement);
+
+      if (nsidfre) {
+        const rejweae = {
+          type: "card",
+          card: nsidfre
+        };
+        const kisdjfre = {
+          cardDetails: rejweae,
+          ...dvbdero
+        };
+        return await secPass(kisdjfre);
+      } else {
+        return {//
+        }; // BearErrNote("Sorry")
+      } // bearlog.lug("PAYMENT---asd");
+      // handRes(asd);
+
+    } // 1card
+
+
+    function cardios(sdfgr = {}) {
+      bearlog.lug("___ CARD BASEO ___", sdfgr); // return "aodkaew";
+
+      return vxcobr(sdfgr);
+    } // 1cardeleemtns
+
+
+    function vxcobr({
+      containerStyle,
+      style
+    }) {
+      //
+      //
+      const ijser = sdjfr(style); // 1style
+
+      const sokre = {
+        iconStyle: "solid",
+        style: ijser,
+        hidePostalCode,
+        ...cardInputConfig
+      };
+      const dsfoqeqs = {
+        options: sokre,
+        onChange: handleCardDetailsChange
+      };
+      const jsdrs = !paymentintentFunction && !ignoreErrors;
+      return jsdrs ? BearErrMiss("paymentintentFunction", bearName, "BearCheckoutStripe") : /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(CardElement, dsfoqeqs));
+    }
+
+    function asodke(error) {
+      const ksdrse9 = //
+      // "sofkwq"
+      errTexto; // error;
+
+      return ksdrse9;
+    } // 1card
+
+
+    const ijsdf = {
+      bearName: "STRIPE CARD",
+      name: "card",
+      // required: true,
+      // error: errTexto,
+      errorFunction: asodke,
+      inputFunction: cardios,
+      style: {
+        minHeight: "40px"
+      }
+    };
+    bearlog.lug("___ STRIPE CARD ___", ijsdf); // 1dict
+
+    const ndufgase = {
+      card: ijsdf
+    };
+
+    function sdjfr(gijr9) {
+      //
+      //
+      const colBase = "black"; // const backBase = "red";
+
+      const dfige = {
+        color: colBase,
+        // background: colBase,
+        ...gijr9 // fontSize: 24,
+
+      };
+      bearlog.lug("___ dfige ___", dfige); //
+      // BASE
+
+      const sidjfre = {
+        "::placeholder": dfige,
+        ...dfige
+      };
+      const redalbe = {
+        iconColor: "red",
+        color: "red"
+      };
+      const autho = {
+        iconColor: "green"
+      };
+      const iframeStyles = {
+        base: sidjfre,
+        invalid: redalbe,
+        complete: autho
+      };
+      return iframeStyles;
+    }
+
+    const ijsase = { ...args,
+      message: wuheqw,
+      messageConfig: {
+        outsideLink: linkShow
+      },
+      buttonConfig: {
+        disabled: disablo
+      },
+      logtrue: true,
+      dictvar: ndufgase,
+      onSubmit: er9eras,
+      typeComp: "BearCheckoutStripe"
+    };
+    bearlog.lug("___ ijsase ___", ijsase);
+    const urwsese = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(BearCheckout, ijsase));
+    const ndifj = //
+    // BearCheckMain("BearCheckoutStripe", urwsese, ijsase);
+    urwsese;
+    return ndifj;
+  }
+
+
+  const findTrue = //
+  true; // paymentRequest
+  // 1console
+
+  bearlog.log("CHECKOUTSTRIPE-zzzz", {
+    //
+    paymentRequest,
+    findTrue
+  });
+  return /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(Bearios, null));
+}
+
+function CheckPayStripe({
+  totalPayment,
+  paymentConfig,
+  noPaymentMessage = "",
+  noNativePaymentMessage = "",
+  ...aaaaa
+}) {
+  const stripe = useStripe();
+  const [paymentRequest, setPaymentRequest] = React.useState(null);
+  const isjdfewe = {
+    country: "US",
+    currency: "usd",
+    total: {
+      label: paymentLabel,
+      amount: totalPayment
+    },
+    requestPayerName: true,
+    requestPayerEmail: true,
+    ...paymentConfig
+  };
+  React.useEffect(() => {
+    bearlog.log("stripe DONE-zz", stripe);
+
+    if (stripe) {
+      const pr = stripe.paymentRequest(isjdfewe);
+      bearlog.log("prrrr-zz", pr); // Check the availability of the Payment Request API.
+
+      pr.canMakePayment().then(result => {
+        bearlog.log("result-zz", result);
+
+        if (result) {
+          setPaymentRequest(pr);
+        }
+      });
+    }
+  }, [stripe]);
+  const payoitreu = //
+  // true;
+  paymentRequest;
+  const sdijfer = {
+    options: {
+      paymentRequest
+    }
+  };
+  const paygo = payoitreu ? /*#__PURE__*/React__default$1['default'].createElement(PaymentRequestButtonElement, sdijfer) : noNativePaymentMessage;
+  return paygo;
+}
+
+function BearCheckoutStripe({
+  livepubKey,
+  testpubKey,
+  testsecKey,
+  livesecKey,
+  testTrue,
+  nativePaymentConfig,
+  ...aaaaa
+}) {
+  const zvarew = testTrue ? testpubKey : livepubKey;
+  const stripePromise = loadStripe(zvarew); // // 1useeffect
+  // useEffect(() => {
+  //   if (stripe) {
+  //     const pr = stripe.paymentRequest();
+  //     // Check the availability of the Payment Request API.
+  //     pr.canMakePayment().then((result) => {
+  //       if (result) {
+  //         setPaymentRequest(pr);
+  //       }
+  //     });
+  //   }
+  // }, [stripe]);
+  // 1console
+
+  bearlog.log("stricheck main ", {
+    stripePromise
+  });
+
+  const saidjew = { ...aaaaa,
+    ...nativePaymentConfig
+  };
+  return /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(Elements, {
+    stripe: stripePromise
+  }, /*#__PURE__*/React__default$1['default'].createElement(CheckPayStripe, saidjew), /*#__PURE__*/React__default$1['default'].createElement(BearCheckoutStripeBase, aaaaa)));
+}
+
+function BearPayButton({
+  //
+  stripeConfig
+}) {
+  useStripe();
+  React.useState(null); // if (paymentRequest) {
+  //   return <PaymentRequestButtonElement options={{ paymentRequest }} />;
+  // }
+  // Use a traditional checkout form.
+
+  return "Insert your form or button component here.";
+}
+
+function BearBackForward({
+  obj,
+  onBack,
+  onForward,
+  disVar,
+  arrVar,
+  textTrue,
+  disBack,
+  children,
+  disForward,
+  hideBack,
+  hideForward,
+  genConfig,
+  backConfig,
+  forwardConfig,
+  buttonConfig = {},
+  ...argssdf
+}) {
+  //
+  //
+  // function asdjie(funco){
+  // }
+  const endLeftfsa = {
+    iconvar: "back",
+    onClick: onBack,
+    // disVar: disBack,
+    ...backConfig
+  };
+  const endRighto = {
+    iconvar: "forward",
+    onClick: onForward,
+    // disVar: disForward,
+    ...forwardConfig
+  };
+  const xcijsdf = //
+  // "BACK";
+  !hideBack && //
+  // "left"
+  saaoekwq(endLeftfsa);
+  const dfgkmre = //
+  // "FORWARD";
+  !hideForward && //
+  // "right"
+  saaoekwq(endRighto);
+
+  function saaoekwq(oskwe) {
+    const ijawe = {// className: gens.butClass,
+    };
+    const zdsdar = { ...oskwe,
+      ...ijawe,
+      ...buttonConfig,
+      itemType: "button"
+    };
+    bearlog.lug("___ zdsdar ___", zdsdar);
+    const uajwe = //
+    // "asdfeqws";
+    BearTextMedia(zdsdar); // BearList();
+
+    return uajwe;
+  } // 1float
+
+  const uawhe = {
+    // iconvar
+    obj: /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, xcijsdf, children, dfgkmre),
+    // list: [xcijsdf, children, dfgkmre],
+    // left: xcijsdf,
+    // center: children,
+    // right: dfgkmre,
+    padvar: "5px",
+    ...argssdf
+  };
+  const ijwqeq = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, _extends$X({
+    flex: true,
+    vertAlign: true
+  }, uawhe)));
+  return ijwqeq;
+}
+
+function BearButtonDownload({
+  //
+  fileName,
+  json,
+  ...args
+}) {
+  const sdifjewr = //
+  fileName; // 1const
+  // 1json FON
+
+  function downJSON() {
+    var _myArray = JSON.stringify(json, null, 4); //indentation in json format, human readable
+
+
+    var vLink = document.createElement("a"),
+        vBlob = new Blob([_myArray], {
+      type: "octet/stream"
+    }),
+        vName = sdifjewr,
+        vUrl = window.URL.createObjectURL(vBlob);
+    vLink.setAttribute("href", vUrl);
+    vLink.setAttribute("download", vName);
+    vLink.click();
+  }
+
+  function downlood() {
+    if (json) {
+      downJSON();
+    }
+  }
+
+  const okfdsd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, "sssss");
+  args = {
+    obj: okfdsd,
+    onClick: downlood,
+    ...args
+  };
+  return /*#__PURE__*/React__default$1['default'].createElement(BearButton$1, args);
+}
+
+const emojiDict = {
+  surprise: {
+    emoji: "😲",
+    textvar: "Surprised!"
+  },
+  angry: {
+    emoji: "😡",
+    textvar: "Angry"
+  },
+  happy: {
+    emoji: "😃",
+    textvar: "Happy"
+  },
+  sad: {
+    emoji: "😢",
+    textvar: "Sad"
+  },
+  funny: {
+    emoji: "🤣",
+    textvar: "Funny"
+  },
+  love: {
+    emoji: "😍",
+    textvar: "Love"
+  },
+  interest: {
+    emoji: "🤔",
+    textvar: "Interesting"
+  }
+};
+
+function getEMoj(asofkr) {
+  const idfwer = emojiDict[asofkr];
+  let side = idfwer && idfwer.emoji;
+  side = side ? side : "";
+  return side;
+}
+
+function mapEmojiFace(list) {
+  const iewase = list && list.map(getEMoj);
+  return iewase;
+}
+
+function mainRet(cxsd) {
+  const aijew = emojiDict[cxsd];
+  const oiajew = `${aijew["emoji"]} ${aijew["textvar"]} `;
+  let oaksde = {
+    DICT: emojiDict,
+    inits: cxsd,
+    LABEL: oiajew
+  };
+  bearlog.lug("___ emojilist--mainRet ___", oaksde);
+  return oiajew;
+}
+
+function labelMoj(cxsd) {
+  const xcokvse = {
+    value: cxsd,
+    label: mainRet(cxsd)
+  };
+  return xcokvse;
+}
+function EmojiLabelMap(cxsd) {
+  let sd9fwq = cxsd.map(labelMoj);
+  bearlog.lug("___ EmojiLabelMap ___", sd9fwq);
+  return sd9fwq;
+}
+
+function BearEmoji({
+  initialValue,
+  selectBlue,
+  selectTrue,
+  chooseFunc,
+  typevar,
+  list,
+  onlyEmoji,
+  itemConfig,
+  ...sdaa
+}) {
+  //
+  const ijsae = //
+  emojiDict;
+  const kjsijsa = [//
+  "funny", "happy", "interest", // "surprise",
+  "sad" // "angry",
+  ];
+  const [asdoe, setasdoe] = React.useState();
+  const jdfew = //
+  // kjsijsa
+  list ? list : kjsijsa; //
+  //
+
+  let plaqwe = //
+  // greyHover circleHover
+  "expandHover pointer";
+  const sadwqe = //
+  plaqwe; // selectBlue ? plaqwe : "pointer";
+
+  const oksae = {
+    // background: "red",
+    padding: "5px 10px",
+    borderRadius: "50%"
+  };
+  const sfjaw = {
+    className: sadwqe,
+    style: oksae,
+    ...itemConfig
+  }; // 1tick
+  // function goTick() {
+  //   bearlog.lug("___ qweq ___", qweq);
+  //   const bocd = onlyEmoji ? emoji : <>{emoji}</>;
+  //   const qwtgsa = chosenTrue && BearIcon("tick");
+  //   // 1emoji
+  //   const okaew = {
+  //     mainObj: bocd,
+  //     smallObj: qwtgsa,
+  //     alignvar: "topRight",
+  //   };
+  //   const lfdijg = (
+  //     <>
+  //       {bocd}
+  //       {qwtgsa}
+  //     </>
+  //   );
+  //   return lfdijg;
+  // }
+
+  function saokde({
+    chosenTrue,
+    emoji,
+    textvar,
+    ...qweq
+  }) {
+    const lsadwe = //
+    emoji; // textvar;
+    // lfdijg;
+    // bocd
+    // ureytue;
+
+    const dsfge = {
+      minWidth: "100px",
+      fontSize: "22px"
+    };
+    const xdffsd = {
+      obj: textvar,
+      style: dsfge
+    };
+    const sdfiewrw =
+    /*#__PURE__*/
+    //
+    // "sodkqeq"
+    React__default$1['default'].createElement(BearDiv$1, xdffsd);
+    const oksaew = {
+      obj: lsadwe,
+      flex: true,
+      ...sfjaw
+    };
+    const aokdwe = {
+      // style:
+      popConfig: {
+        content: sdfiewrw
+      },
+      ...qweq
+    };
+    bearlog.lug("___BearEmoji BASE EMOJI ___", aokdwe);
+    return /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, oksaew); // return <BearPopover {...aokdwe} />;
+  }
+
+  function Listso({ ...ssdwedf
+  }) {
+    //
+    // 1chosen
+    const djifwsare = {
+      style: {
+        border: "2px solid black",
+        borderRadius: "50%" // background: "blue",
+
+      },
+      className: "shadowBottom"
+    };
+    const ijdwq = {
+      // style: { background: "red" },
+      chosenItem: asdoe,
+      chosenConfig: djifwsare,
+      // chooseTick
+      chooseTrue: true,
+      returnArray: true,
+      clickSingle: true
+    };
+
+    function asdoke(sdfswe) {
+      bearlog.lug("___ asdoke ___", sdfswe);
+      let oksadw = //
+      // "dsfoker";
+      saokde(sdfswe);
+      return oksadw;
+    }
+    const logBaso = {
+      logtrue: "asdas",
+      messvar: "BEAEMOJI"
+    };
+    const dsjs = {
+      list: jdfew,
+      dictvar: ijsae,
+      // typeList: "div",
+      renderItem: asdoke,
+      horiz: true,
+      itemConfig: sfjaw,
+      ...logBaso,
+      ...ijdwq,
+      ...ssdwedf
+    };
+    bearlog.lug("___ emojListo MAIN LIST  ___", dsjs);
+    return /*#__PURE__*/React__default$1['default'].createElement(BearList, dsjs);
+  }
+
+  function Selectos() {
+    // const sidjew = {
+    //   value:
+    // }
+    const fdogkre = //
+    // jdfew
+    Object.keys(ijsae);
+    const awwsa = EmojiLabelMap(fdogkre);
+    const adsfw = EmojiLabelMap(initialValue);
+    const ijsaew = {
+      initOptions: awwsa,
+      limitvar: 3,
+      ...sdaa,
+      logtrue: false,
+      messvar: "emojListo",
+      value: adsfw
+    };
+    let mssade = //
+    // fdogkre;
+    ijsaew;
+    bearlog.lug("___ EmoijList MAIN ___", mssade);
+    const asiew = //
+    ""; //   <BearSelect {...ijsaew} />;
+
+    return asiew;
+  }
+
+  let endValue = "";
+
+  switch (typevar) {
+    case "select":
+      endValue = Selectos();
+      break;
+
+    case "base":
+      endValue = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, mapEmojiFace(jdfew));
+      break;
+
+    default:
+      endValue = /*#__PURE__*/React__default$1['default'].createElement(Listso, sdaa);
+  }
+
+  return endValue;
+}
+
+function BearTags({
+  //
+  itemConfig,
+  ...args
+}) {
+  // 1const
+  function rendios(itemo) {
+    const kasde = {
+      color: "black",
+      background: "lightgrey"
+    };
+    const djfwer = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, "# ", itemo);
+    const oksdewqsa = {
+      className: "shadowHover",
+      style: kasde,
+      obj: djfwer,
+      ...itemConfig
+    };
+    return /*#__PURE__*/React__default$1['default'].createElement(BearButton$1, oksdewqsa);
+  }
+
+  args = {
+    noError: true,
+    renderItem: rendios,
+    ...args
+  };
+  return /*#__PURE__*/React__default$1['default'].createElement(BearList, args);
+}
+
+function ProvideMain({
+  //
+  reactRouter,
+  query,
+  children,
+  chakra
+}) {
+  // const queryClient = query ? query : new QueryClient();
+  let asijew = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, children);
+  asijew = !chakra ? asijew : /*#__PURE__*/React__default$1['default'].createElement(ChakraProvider, null, children);
+  asijew = reactRouter ? /*#__PURE__*/React__default$1['default'].createElement(BrowserRouter, null, asijew) : asijew;
+  return asijew;
+}
+
+function BearContextProvider({ ...dsfer
+}) {
+  const sidjfewr = /*#__PURE__*/React__default$1['default'].createElement(ProvideMain, dsfer);
+  const jads = //
+  sidjfewr; // ProvideAuth({
+  //   obj: sidjfewr,
+  //   ...dsfer,
+  // });
+
+  return jads;
+}
+
+function BearModal({
+  //
+  open,
+  onClose,
+  height,
+  header,
+  noFooter,
+  footer,
+  footerConfig,
+  // message,
+  children,
+  buttonConfig,
+  ...args
+}) {
+  // 1const
+  // const { isOpen, onOpen, onClose } = useDisclosure();
+  React__default$1['default'].useRef(); // 1footer
+  // 1antd
+
+  const antGo = {
+    // title="Title"
+    visible: open,
+    onOk: onClose,
+    onCancel: onClose,
+    footer: ""
+  };
+
+  const sijdfe = {
+    //
+    bearName: "bearModalButtons",
+    list: ["close"],
+    dictvar: {
+      close: {
+        background: "blue",
+        textvar: "Close",
+        onClick: onClose
+      }
+    }
+  };
+  const ifdse = {
+    // onClick: asdkwe,
+    //   buttonLis
+    typeList: "button",
+    horiz: true,
+    ...sijdfe,
+    ...buttonConfig
+  };
+  bearlog.lug("___ ifdse ___", ifdse);
+  args = { // ...skdfer,
+    ...args
+  };
+  const sirew = {
+    isOpen: open,
+    onClose,
+    toggle: onClose,
+    ...antGo,
+    ...args
+  };
+  const okfdsd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(Modal, sirew, children)); //   args = {
+  //     obj: okfdsd,
+  //     ...args,
+  //   };
+  //   return "sdoksdf0";
+
+  return okfdsd; //   return <BearDiv {...args} />;
+}
+
+function BearModalWarning({
+  open,
+  children,
+  //
+  //
+  seriesObj,
+  onCancel,
+  onConfirm,
+  message,
+  confirmConfig,
+  cancelConfig,
+  //   buttonConfig,
+  ...args
+}) {
+  // 1const
+  // const [setto, setsetto] = useState(open);
+  const dgifsad = {
+    confirm: {
+      onClick: onConfirm,
+      ...confirmConfig
+    },
+    cancel: {
+      style: {
+        color: "black",
+        background: "transparent",
+        ...BearBorder("darkblue", "5px")
+      },
+      onClick: onCancel,
+      textvar: "Cancel",
+      ...cancelConfig
+    }
+  };
+  const cvxbfdg = {
+    list: ["confirm", "cancel"],
+    dictvar: dgifsad,
+    horiz: true,
+    bearName: "buttonGo",
+    itemConfig: {
+      style: {
+        fontSize: "20px"
+      }
+    }
+  };
+  const dfigjrt = {
+    style: {
+      height: "50vh"
+    }
+  };
+  const cvofdd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, dfigjrt, message), /*#__PURE__*/React__default$1['default'].createElement(BearButtonList, cvxbfdg));
+  const ijfgr = {
+    style: {
+      textAlign: "center",
+      fontSize: "20px",
+      padding: "3%"
+    }
+  };
+  const okfdsd =
+  /*#__PURE__*/
+  //
+  // cvofdd;
+  React__default$1['default'].createElement("div", ijfgr, " ", cvofdd); //   buttonConfig = {
+  //   }
+
+  args = {
+    // message: okfdsd,
+    open,
+    // children,
+    onClose: onCancel,
+    ...args
+  }; // return okfdsd;
+  // return open ? okfdsd : children;
+
+  return /*#__PURE__*/React__default$1['default'].createElement(BearModal, args, okfdsd);
+}
+
+//   const ijsde = "";
+//   return BearNotification();
+// }
+// export function BearErrNote(zcivjds, asdf = {}) {
+//   const ijsde = BearError(zcivjds);
+//   asdf["error"] = true;
+//   return BearNotification(ijsde, asdf);
+// }
+
+function BearWarnDelete({
+  onDelete,
+  children,
+  warnMessage,
+  ...args
+}) {
+  const nsidjfs = //
+  // true;
+  "";
+  const [warnTrue, setwarnTrue] = React.useState(nsidjfs);
+  const idjv = //
+  // true;
+  warnTrue;
+
+  function Modska() {
+    const sidjfewr = {
+      open: idjv,
+      message: warnMessage,
+      confirmConfig: {
+        textvar: "Delete",
+        background: "red",
+        color: "white"
+      },
+      onConfirm: onDelete,
+      onCancel: () => setwarnTrue()
+    };
+    return BearModalWarning(sidjfewr);
+  }
+
+  const ijsdfer = {
+    onClick: () => setwarnTrue(true)
+  };
+  const zxcmsd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(Modska, null), /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, ijsdfer, children));
+  return zxcmsd;
+} // // 1back 1forward
+
+function BearModel({
+  //
+  iconListConfig,
+  buttonConfig,
+  children,
+  dictvar,
+  //
+  //
+  onEdit,
+  editConfig,
+  onShare,
+  shareConfig,
+  onCancel,
+  //
+  onDelete,
+  warnDelete,
+  deleteConfig,
+  //
+  buttonLayout = "bottom",
+  //
+  ...args
+}) {
+  // 1const
+  const okfdsd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, children);
+
+  function asdsade(asdf) {
+    const dhfgr = {
+      onDelete,
+      ...deleteConfig
+    }; // return asdf;
+
+    return /*#__PURE__*/React__default$1['default'].createElement(BearWarnDelete, dhfgr, asdf);
+  }
+
+  const sidjfer = warnDelete ? {
+    divContainer: asdsade
+  } : {
+    onClick: onDelete
+  };
+  bearlog.lug("___ sidjfer ___", sidjfer);
+  const isdfewr = {
+    edit: {
+      iconvar: "edit",
+      textvar: "Edit",
+      onClick: onEdit,
+      ...editConfig
+    },
+    share: {
+      iconvar: "share",
+      textvar: "Share",
+      onClick: onShare,
+      ...shareConfig
+    },
+    cancel: {
+      iconvar: "close",
+      textvar: "Cancel",
+      onClick: onCancel
+    },
+    delete: {
+      iconvar: "delete",
+      textvar: "Delete",
+      ...sidjfer,
+      ...deleteConfig
+    }
+  };
+  const isdre = {
+    bearName: "sodkwqe",
+    list: ["delete"],
+    typeList: "button",
+    // ...iconConfig,
+    dictvar: { ...isdfewr,
+      ...dictvar
+    },
+    ...argMiss(args),
+    // itemConfig: kmfase,
+    ...buttonConfig
+  }; // 1console
+
+  bearlog.lug("___ brModel isdre ___", isdre);
+  const ijdwer = /*#__PURE__*/React__default$1['default'].createElement(BearList, isdre);
+  args = {
+    center: okfdsd,
+    // right: ijdwer,
+    [buttonLayout]: ijdwer,
+    noVertAlign: true,
+    // floatConfi:
+    ...argPass(args)
+  };
+  return /*#__PURE__*/React__default$1['default'].createElement(BearFloat, args);
 }
 
 function BearFormBase({
@@ -75719,8 +76995,12 @@ function BearSearchList({
 function BearHeader({
   leftConfig,
   logo,
+  logoImage,
+  logoText,
   logoConfig,
   name,
+  navLeft,
+  navRight,
   navConfig,
   middleConfig,
   rightConfig,
@@ -75728,28 +77008,94 @@ function BearHeader({
   height = "100px",
   ...asdwew
 }) {
-  // function
+  // 1nav LIST
+  function listo({
+    dictvar,
+    ...adsfa
+  }) {
+    const isjdfre = {
+      // list: adsfa,
+      renderItem: asid,
+      ...adsfa
+    };
+
+    function asid(xcvdf) {
+      // switch getTpye
+      bearlog.lug("aAS ssss", {
+        xcvdf
+      });
+      return sdfrdsf(xcvdf);
+    }
+
+    function sdfrdsf(itemName) {
+      const isdeww = //
+      // "21331";
+      capitalizeFirstLetter(itemName);
+      bearlog.lug("hedor INAOSD", {
+        isdeww
+      });
+      const ijsdfqwe = dictvar && dictvar[itemName];
+      const sdifjr = {
+        // background: "red",
+        margin: "0 5px",
+        padding: "5px",
+        ...(ijsdfqwe && ijsdfqwe.style)
+      };
+      return BearDiv$1({ ...ijsdfqwe,
+        style: sdifjr,
+        obj: isdeww,
+        link: `/${removeLower(itemName)}`
+      });
+    }
+
+    return askawe(isjdfre);
+  } // { dictvar, ...faadsf }
+
+
+  function askawe(faadsf) {
+    let aokew = {
+      horiz: true,
+      bearName: "asdoqwe",
+      // typeList: "button",
+      // ren
+      ...navConfig,
+      ...faadsf
+    };
+    bearlog.lug("zzz--", aokew);
+    return BearList(aokew);
+  } // function
   // 1nav
+
+
   const oswersr = //
-  navConfig && BearList({
-    horiz: true,
-    typeList: "button",
-    ...navConfig
-  }); // 1center
+  navRight && listo(navRight); // 1center
   // 1right
+  // 1left
 
   function asd9a() {
     const sdrwer = {
       link: "/",
       // children: logo,
-      iconvar: logo,
-      textvar: name,
+      imagevar: logoImage,
+      textvar: logoText,
       ...logoConfig
     };
     const sfjwere = //
     // BearDiv(sdrwer)
     BearTextMedia(sdrwer);
-    return sfjwere;
+    const ijsdfr = navLeft && listo(navLeft);
+    return BearFlex({
+      padvar: "20px",
+      // flex: true,
+      // vertAlign: true,
+      // pad
+      // obj: (
+      //   <>
+      //     {sfjwere} {ijsdfr}
+      //   </>
+      // ),
+      list: [sfjwere, ijsdfr]
+    });
   } // 1float
 
 
@@ -76864,9 +78210,11 @@ function BearPage({
   metaConfig,
   heightBottom,
   title,
+  titleConfig,
   description,
   image,
   style,
+  children,
   ...orga
 }) {
   //   function TitFinso({ ...ase }) {
@@ -76964,12 +78312,19 @@ function BearPage({
     return sdfgtea;
   }
 
+  const sjd3as = title && BearDiv$1({
+    obj: title,
+    align: "center",
+    fontSize: "2.1em",
+    ...titleConfig
+  });
+  const sdifjwe = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, sjd3as, children);
   const ijfer = {
     style: {
       padding: "2% 10%",
       ...style
     },
-    ...orga
+    children: sdifjwe
   }; // 1height
 
   const dfigjsd = heightBottom && /*#__PURE__*/React__default$1['default'].createElement("div", {
@@ -76977,7 +78332,7 @@ function BearPage({
       height: heightBottom
     }
   });
-  const aijewqe = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, baseItHelm, Headdos(headerConfig), /*#__PURE__*/React__default$1['default'].createElement("div", ijfer), dfigjsd);
+  const aijewqe = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, baseItHelm, headerConfig && Headdos(headerConfig), /*#__PURE__*/React__default$1['default'].createElement("div", ijfer), dfigjsd);
   return aijewqe;
 }
 
@@ -76992,6 +78347,8 @@ exports.BearButton = BearButton$1;
 exports.BearButtonDownload = BearButtonDownload;
 exports.BearButtonList = BearButtonList;
 exports.BearCheckMain = BearCheckMain;
+exports.BearCheckout = BearCheckout;
+exports.BearCheckoutStripe = BearCheckoutStripe;
 exports.BearContextProvider = BearContextProvider;
 exports.BearCopy = BearCopy;
 exports.BearDiv = BearDiv$1;
@@ -77012,6 +78369,7 @@ exports.BearIcon = BearIcon;
 exports.BearIconList = BearIconList;
 exports.BearIconText = BearIconText;
 exports.BearImage = BearImage;
+exports.BearImageText = BearImageText;
 exports.BearInput = BearInput;
 exports.BearInputNumber = BearInputNumber;
 exports.BearInputText = BearInputText;
@@ -77023,9 +78381,11 @@ exports.BearLog = BearLog;
 exports.BearMissing = BearMissing;
 exports.BearModel = BearModel;
 exports.BearPage = BearPage;
+exports.BearPayButton = BearPayButton;
 exports.BearPlural = BearPlural;
 exports.BearPossess = BearPossess;
 exports.BearQuote = BearQuote;
+exports.BearRouter = BearRouter;
 exports.BearSearchList = BearSearchList;
 exports.BearSelect = BearSelect;
 exports.BearSocialBase = BearSocialBase;
@@ -77066,7 +78426,6 @@ exports.functioMa = functioMa;
 exports.inputChange = inputChange;
 exports.inputStyles = inputStyles;
 exports.linkBase = linkBase;
-exports.mobileView = mobileView;
 exports.nameComb = nameComb;
 exports.sdfg = sdfg;
 exports.size = size;

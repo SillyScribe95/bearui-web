@@ -16,7 +16,7 @@ function lugga(messageIt, valY) {
 
 function luggo(...asw) {
   // console.log("luggo--", ...asw);
-  console.log("🐻 loggo: ", ...asw);
+  console.log("🐻 bearlog loggo: ", ...asw);
   // baseLog(asw)
 
   // bearlog.lug('bearlog.lug:', bearlog.lug)

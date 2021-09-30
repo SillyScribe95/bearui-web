@@ -13,9 +13,16 @@ import { BearFormButton } from "../button/BearFormButton";
 import { passwordStrength } from "check-password-strength";
 import { BearDiv } from "../BearDiv";
 import { BearButton } from "../button/BearButton";
+import { BearTextMedia } from "../BearTextMedia";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
+import { BearBackBorder } from "../GlobalComps";
 
 export function BearPassword({
   //
+  showItem,
+  hideItem,
+  showHideElement,
+  showHideConfig,
   requiredText,
   showStrenghBar,
   ...objaosdf
@@ -100,18 +107,19 @@ export function BearPassword({
     };
 
     const nsdijfe = (
-      <>
+      <BearDiv vertAlign flex>
         {/*  */}
         {sdfgoekse}
         <BearDiv {...uhdfgr} />
-      </>
-    );
-
-    return (
-      <BearDiv vertAlign flex>
-        {nsdijfe}
       </BearDiv>
     );
+
+    const ijswqe =
+      //
+      // nsdijfe;
+      sdfgoekse;
+
+    return ijswqe;
   }
 
   // function aidjew(){
@@ -131,28 +139,62 @@ export function BearPassword({
     type: typoFond,
   };
 
-  const isjda = show ? "Hide" : "Show";
+  // 1show 1hide
+  const sdfnwer =
+    //
+    asdijew();
+  // showHideElement && asdijew();
 
-  const sdjfewr = {
-    h: "1.75rem",
-    size: "sm",
-    onClick: handleClick,
-  };
+  function asdijew() {
+    const sdfgr = BearTextMedia({
+      // style: BearBackBorder()
+      iconvar: show ? <AiOutlineEyeInvisible /> : <AiOutlineEye />,
+      textvar: show ? "Hide" : "Show",
+      ...showHideConfig,
+    });
 
-  const ijvsf = (
-    <>
-      <BearFormButton {...sdjfewr}>{isjda}</BearFormButton>
-      {/* </ */}
-    </>
-  );
+    const sidjf =
+      //
+      // show ? showItem : hideItem;
+      // show ? "Hide" : "Show";
+      sdfgr;
+
+    const sdjfewr = {
+      h: "1.75rem",
+      size: "sm",
+      // style: {
+      //   //
+      //   // minWidth: "50px",
+      //   marginRight: "40px",
+      // },
+      onClick: handleClick,
+    };
+
+    const ijvsf = (
+      <>
+        <div {...sdjfewr}>
+          {sidjf}
+          {/* </BearFormButton> */}
+        </div>
+        {/* </ */}
+      </>
+    );
+
+    return ijvsf;
+  }
 
   const dsfijsr = {
     ...ijsdae,
-    inputRight: ijvsf,
+    inputRight: sdfnwer,
     rightConfig: {
       width: "4.5rem",
     },
   };
 
-  return BearInputText(dsfijsr);
+  const sfwq =
+    //
+    // "asdjkew";
+    BearInputText(dsfijsr);
+
+  return sfwq;
 }

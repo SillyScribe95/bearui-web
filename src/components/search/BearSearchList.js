@@ -21,8 +21,9 @@ import { BearCheckList } from "../../components/check/BearCheckList";
 import { getListComplex } from "../../components/list/getListComplex";
 import { BearSearchSelect } from "./BearSearchSelect";
 import { BearSearchBase } from "./BearSearchBase";
-import { getListAll, mapSelectValue } from "../../functions/arrayFuncs";
+import { getListAll } from "../../functions/arrayFuncs";
 import { mapDictAttrToString } from "../../functions/dictFuncs";
+import { mapSelectValue } from "../../functions/selectFuncs";
 
 export function BearSearchList({
   //

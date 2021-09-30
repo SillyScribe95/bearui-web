@@ -32,6 +32,8 @@ export function BearFormInputCheck({
   inputObjectFunction,
   //
   //
+  passwordConfig,
+  //
   //
   // 1style
   style,
@@ -201,7 +203,7 @@ export function BearFormInputCheck({
         ujsdqwe = sijdgdf(BearCheckbox);
         break;
       case "password":
-        ujsdqwe = sijdgdf(BearPassword);
+        ujsdqwe = sijdgdf(BearPassword, passwordConfig);
         break;
       case "textarea":
         ujsdqwe = sijdgdf(BearTextarea);

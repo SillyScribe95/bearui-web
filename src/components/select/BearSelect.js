@@ -14,7 +14,7 @@ import { vertAlign } from "../../consts/genStyle";
 import { BearDiv } from "../BearDiv";
 import { BearBorder, BearErrArgType } from "../GlobalComps";
 import { BearError } from "../BearError";
-import { mapSelectValue } from "../../functions/arrayFuncs";
+import { mapSelectValue } from "../../functions/selectFuncs";
 
 // import { Input } from "reactstrap";
 // import AsyncSelect, { makeAsyncSelect } from "react.-select/async";
@@ -22,7 +22,7 @@ import { mapSelectValue } from "../../functions/arrayFuncs";
 export function BearSelect({
   //
   multi,
-  dictvar,
+  optionsDict,
   noMenu,
   menuConfig,
   typeSelect,
@@ -193,11 +193,13 @@ export function BearSelect({
     //
     options
       ? options
-      : dictvar
-      ? mappodDict(dictvar)
-      : sdjfre
-      ? asdiwje9(sdjfre)
+      : optionsDict
+      ? mappodDict(optionsDict)
+      : optionsArray
+      ? optionsArray.map(fsfewr)
       : initOptions;
+
+  bearlog.lug("___ ARRAY sdjfre ___", vbmofd);
 
   function mappodDict(xcva) {
     let arrro = [];
@@ -217,8 +219,23 @@ export function BearSelect({
     // optBase;
     vbmofd;
 
+  function fsfewr(sfdgasf) {
+    let faesdf = sfdgasf;
+    let tpform = typeof sfdgasf;
+    switch (tpform) {
+      case "string":
+        faesdf = asdiwje9(sfdgasf);
+        break;
+    }
+
+    bearlog.lug("faesdf-zz", { sfdgasf, tpform, faesdf });
+
+    return faesdf;
+  }
+
   function asdiwje9(xckjvf) {
-    return mapSelectValue(xckjvf, {});
+    return { value: xckjvf, label: xckjvf };
+    // return mapSelectValue(xckjvf, {});
   }
 
   // 1option STYLE
@@ -612,20 +629,6 @@ export function BearSelect({
     value: "",
   };
 
-  function fsfewr(sfdgasf) {
-    let faesdf = sfdgasf;
-    let tpform = typeof sfdgasf;
-    switch (tpform) {
-      case "string":
-        faesdf = asdiwje9(sfdgasf);
-        break;
-    }
-
-    bearlog.lug("faesdf-zz", { sfdgasf, tpform, faesdf });
-
-    return faesdf;
-  }
-
   // 1default
   const fgoktr = initialValue && {
     // initialValue: initialValue,
@@ -663,7 +666,9 @@ export function BearSelect({
   }
 
   // 1intro
+  //
 
+  // 1value 1search
   const sdfer = showMenuIfValue && {
     inputValue: inputBase,
     options: inputBase ? dsfijaae : [],

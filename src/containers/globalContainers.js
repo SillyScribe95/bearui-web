@@ -4,10 +4,6 @@ import React, {
   useContext,
 } from "react";
 
-import {
-  //
-  bearlog,
-} from "../index";
 import { BearModalWarning } from "./modal/BearModalWarning";
 import { BearDiv } from "../components/BearDiv";
 

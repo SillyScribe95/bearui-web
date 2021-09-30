@@ -23,3 +23,13 @@ export const getExtString = (sdfweq) => {
 
   return ext;
 };
+
+export function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+export function removeLower(str) {
+  let sdre = str.toLowerCase().replace(/\s/g, "");
+
+  return sdre;
+}

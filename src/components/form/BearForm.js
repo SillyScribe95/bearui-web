@@ -28,6 +28,7 @@ import { getDictvalues, mergeDict } from "../../functions/dictFuncs";
 export function BearForm({
   noText,
   listDict,
+  name,
   loadConfig,
   bearName = "",
   textConfig,
@@ -70,16 +71,24 @@ export function BearForm({
   requireAll,
   //
   // 1submit
+  submitDisplay,
   formData,
   extractValues,
   // 1value
   loadSubmit,
   onSubmit,
   submitExtra,
-  topObj,
+  //
+  //
+  hiddenItem,
+  topFormItem,
+  bottomFormItem,
+  buttonItem,
   //
   // style,
   marginBetween,
+  //
+  //
   //
   //
   ...args
@@ -201,10 +210,12 @@ export function BearForm({
   bearlog.lug("sdnfer---", sdnfer);
   const { ...sdjifwer } = FormHook(sdnfer);
 
+  // 1args FORM
   const difjgr = {
     ...args,
     ...sdjifwer,
     id: formid,
+    name,
   };
 
   // 1button
@@ -296,13 +307,14 @@ export function BearForm({
       ...nissase,
       ...inputConfig,
       style: {
-        ...inputConfig.style,
+        ...(inputConfig && inputConfig.style),
         ...inputStyle,
       },
     };
 
     const baseObj = {
       dictvar,
+      // passwordConfig,
       inputItem: obj,
       name: obj,
       ...sdjifwer,
@@ -311,7 +323,7 @@ export function BearForm({
       ...argMiss(args),
     };
 
-    bearlog.lug("___ baseObj ___", baseObj);
+    bearlog.lug("___ bsohbjo ___", baseObj);
 
     const fdjgre = baseObj.obj;
     const obvdsaf = fdjgre
@@ -546,9 +558,12 @@ export function BearForm({
 
   const aidjwe = (
     <>
-      {topObj}
+      {hiddenItem}
+      {topFormItem}
       {mappit}
       {betweenItem}
+      {buttonItem}
+      {bottomFormItem}
       {/* {bettios()} */}
     </>
   );
@@ -619,7 +634,6 @@ export function BearFormList({ inputList, horizList, ...jdfsd }) {
         //
         // sdfok(dfjsds);
         BearFormList(dfjsds);
-      // firstInputCheck(dfjsds);
 
       return sidjer;
     }

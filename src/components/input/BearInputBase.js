@@ -212,6 +212,7 @@ export function BearInputBase(
 
     const iawqe = {
       ...skdowqe,
+      textAlign: "left",
       fontWeight: "bold",
       ...style,
       ...labelStyle,

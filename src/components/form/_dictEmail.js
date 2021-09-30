@@ -13,10 +13,11 @@ export function _dictEmail() {
   };
 
   const emalBaso = {
-    required: true,
+    // required: true,
     // pattern: emailPatto,
     title: "Email address",
     // title: vbijdf9te,
+    // errorMessage:
     type: "email",
     iconvar: "email",
     // iconvar: "email",

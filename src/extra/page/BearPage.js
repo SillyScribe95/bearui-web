@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useContext } from "react";
+import { BearDiv } from "../../components/BearDiv";
 import { bearlog } from "../../index";
 // import HelmetInfo from "../functions/HelmetInfo";
 import BearHeader from "../layout/BearHeader";
@@ -14,9 +15,11 @@ export function BearPage({
   metaConfig,
   heightBottom,
   title,
+  titleConfig,
   description,
   image,
   style,
+  children,
   ...orga
 }) {
   //   function TitFinso({ ...ase }) {
@@ -140,12 +143,29 @@ export function BearPage({
     return sdfgtea;
   }
 
+  const sjd3as =
+    title &&
+    BearDiv({
+      obj: title,
+      align: "center",
+      fontSize: "2.1em",
+      ...titleConfig,
+    });
+
+  const sdifjwe = (
+    <>
+      {/*  */}
+      {sjd3as}
+      {children}
+    </>
+  );
+
   const ijfer = {
     style: {
       padding: "2% 10%",
       ...style,
     },
-    ...orga,
+    children: sdifjwe,
   };
 
   // 1height
@@ -154,7 +174,7 @@ export function BearPage({
   const aijewqe = (
     <>
       {baseItHelm}
-      {Headdos(headerConfig)}
+      {headerConfig && Headdos(headerConfig)}
       <div {...ijfer} />
       {dfigjsd}
       {/* {eewewqw} */}

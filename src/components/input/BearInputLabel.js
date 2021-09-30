@@ -23,6 +23,7 @@ export function BearInputLabel({
   labelFunc,
   addFunc,
   iconvar,
+  name,
   newTrue,
   errorMessage,
   //
@@ -250,7 +251,7 @@ export function BearInputLabel({
     // disVar: true,
   };
 
-  bearlog.lug(name + "___ inpuBase TITLE CONF ___", asdojwqs);
+  // bearlog.lug(name + "___ inpuBase TITLE CONF ___", asdojwqs);
 
   const seokwer = (
     //

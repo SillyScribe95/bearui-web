@@ -7,7 +7,7 @@ import {
   //
   logs,
   BearDiv,
-} from "bearui-web";
+} from "@sillyscribe95/bear-ui-web";
 import { MainContext } from "../context/MainContext";
 
 export function Hookall({

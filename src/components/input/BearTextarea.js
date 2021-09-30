@@ -27,12 +27,14 @@ export function BearTextarea({
   //   default,
   value,
   rows,
+  lines,
   style,
   initialValue,
   expand = true,
   ...dfgre
 }) {
   // 1rows
+  rows = rows || lines;
   rows = rows ? rows : 3;
 
   // expand = "";

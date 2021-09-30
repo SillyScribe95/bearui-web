@@ -74,7 +74,12 @@ export function RendGroup(
       </div>
     );
 
-    return sdresar;
+    const ijsw =
+      //
+      // sdresar
+      xcvadf;
+
+    return ijsw;
   }
 
   let cvdfsoe = sdijfr ? (

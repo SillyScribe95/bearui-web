@@ -1,3 +1,5 @@
+import { bearlog } from "../index";
+
 import React, {
   //
   useState,
@@ -11,7 +13,6 @@ import { BearButton } from "./button/BearButton";
 // import { ImageTextList } from "../functions/GlobalFunctions";
 // import { CopyToClipboard } from "react-copy-to-clipboard";
 
-import { bearlog } from "../index";
 import { vertAlign } from "../consts/genStyle";
 import { BearList } from "./list/BearList";
 import { getListComplex } from "./list/getListComplex";
@@ -45,16 +46,12 @@ const MediaQueries = {
   customHeight: "(min-height: 650px)",
 };
 
-const widthVary = window.matchMedia(MediaQueries.viewtype);
-const heightVary = window.matchMedia(MediaQueries.customHeight);
-export const mobileView = !widthVary.matches;
+export function bearMobileView() {
+  const widthVary = window.matchMedia(MediaQueries.viewtype);
+  const heightVary = window.matchMedia(MediaQueries.customHeight);
+  return !widthVary.matches;
+}
 // export const mobileNot = widthVary.matches;
-
-export const bearMobileView =
-  //
-  // "";
-  mobileView;
-// true;
 
 export function BearLog(...asdf) {
   console.log("___ BearLog ___", ...asdf);
@@ -172,6 +169,19 @@ export function BearIconText(icon, text, osdfds) {
   //
   const bodfg = {
     iconvar: icon,
+    textvar: text,
+    ...osdfds,
+  };
+
+  const sadwew = <BearTextMedia {...bodfg} />;
+
+  return sadwew;
+}
+
+export function BearImageText(image, text, osdfds) {
+  //
+  const bodfg = {
+    imagevar: image,
     textvar: text,
     ...osdfds,
   };
@@ -306,11 +316,14 @@ export function BearFlex({
   }
 
   function redndo(asdwa) {
-    const ijase = asdwa.obj
-      ? asdwa
-      : {
-          obj: asdwa,
-        };
+    const ijase = {
+      obj: asdwa,
+    };
+    // asdwa.obj
+    //   ? asdwa
+    //   : {
+    //       obj: asdwa,
+    //     };
 
     return dokesad(ijase);
   }

@@ -41,12 +41,12 @@ export function BearCheckList(
 
   function renderCheck() {
     //
-    const ijsdfw = renderItem || typeList || containFunc;
+    const ijsdfw = renderItem || typeList || containFunc || args.return;
 
     const cisas = ijsdfw
       ? obj
       : BearErrMiss(
-          "'containFunc' or 'renderItem' or 'typeList'",
+          "'containFunc' or 'renderItem' or 'typeList' or 'return'",
           bearName,
           named
         );

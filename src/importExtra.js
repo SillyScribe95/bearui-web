@@ -9,16 +9,10 @@
 // export * from "./components/list/BearTabs";
 // export * from "./components/list/BearTabMain";
 // export * from "./components/BearNotification";
-// export * from "./components/BearRouter";
 
 // // 1page
 export * from "./extra/page/BearPage";
 // export * from "./components/page/BearMetaTags";
-
-// // 1payment
-// export * from "./components/payment/BearCheckout";
-// export * from "./components/payment/BearCheckoutStripe";
-// export * from "./components/payment/BearPayButton";
 
 // // 1user
 // export * from "./components/user/BearUserPortal";
@@ -59,7 +53,9 @@ export * from "./extra/page/BearPage";
 // export * from "./extra/search/BearSearchList";
 
 // // 1select
-// export * from "./components/select/BearSelect";
+
+// export * from "./components/select/BearAddress";
+// 1address
 
 // export * from "./components/list/BearCarousel";
 

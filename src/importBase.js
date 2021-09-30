@@ -7,6 +7,15 @@ export * from "./components/GlobalComps";
 
 export * from "./components/BearImage";
 
+export * from "./components/BearRouter";
+
+// // 1payment 1checkout
+export * from "./components/payment/BearCheckout";
+export * from "./components/payment/BearCheckoutStripe";
+export * from "./components/payment/BearPayButton";
+// export * from "./components/payment/BearGooglePay";
+// export * from "./components/payment/BearApplePay";
+
 // 1check
 export * from "./components/check/BearCheckMain";
 

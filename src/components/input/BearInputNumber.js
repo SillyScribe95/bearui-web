@@ -25,6 +25,7 @@ export function BearInputNumber({
   min,
   style,
   onChange,
+  initialValue,
   onChangeNumber,
   ...vboret
 }) {
@@ -66,6 +67,7 @@ export function BearInputNumber({
   }
 
   const sfijwer = {
+    defaultValue: initialValue,
     ...jsder,
     ...vboret,
     onChange: asjwe,
