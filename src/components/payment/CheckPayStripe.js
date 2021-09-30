@@ -21,7 +21,7 @@ export function CheckPayStripe({
   //
   //
   onSuccess,
-  goCancel,
+  onCancel,
   //
   //
   style,
@@ -78,7 +78,7 @@ export function CheckPayStripe({
 
   if (paymentRequest) {
     // 1cancel
-    paymentRequest.on("cancel", goCancel);
+    paymentRequest.on("cancel", onCancel);
 
     // 1token
     paymentRequest.on("token", function (event) {
