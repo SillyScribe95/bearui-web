@@ -8,6 +8,7 @@ import { BearCheckoutStripeBase } from "./BearCheckoutStripeBase";
 
 export function CheckPayStripe({
   totalPayment,
+  paymentLabel,
   paymentConfig,
   noPaymentMessage = "",
   noNativePaymentMessage = "",

@@ -73994,6 +73994,7 @@ function BearCheckoutStripeBase({
 
 function CheckPayStripe({
   totalPayment,
+  paymentLabel,
   paymentConfig,
   noPaymentMessage = "",
   noNativePaymentMessage = "",
