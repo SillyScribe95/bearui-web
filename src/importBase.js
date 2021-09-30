@@ -51,6 +51,7 @@ export * from "./components/form/FormHook";
 
 export * from "./components/input/BearInput";
 export * from "./components/input/BearInputText";
+export * from "./components/input/BearTextarea";
 export * from "./components/input/BearInputNumber";
 
 // 1auth

@@ -73962,6 +73962,7 @@ function BearCheckoutStripeBase({
 function CheckPayStripe({
   totalPayment,
   paymentLabel,
+  nativeLoading,
   paymentConfig,
   bearName,
   noPaymentMessage = "",
@@ -73971,6 +73972,7 @@ function CheckPayStripe({
 }) {
   const stripe = useStripe();
   const [paymentRequest, setPaymentRequest] = useState(null);
+  const [loadPay, setloadPay] = useState(true);
   const isjdfewe = {
     country: "US",
     currency: "usd",
@@ -73997,6 +73999,8 @@ function CheckPayStripe({
         }
       });
     }
+
+    setloadPay();
   }, [stripe]);
   const payoitreu = //
   // true;
@@ -74006,7 +74010,7 @@ function CheckPayStripe({
       paymentRequest
     }
   };
-  const paygo = payoitreu ? /*#__PURE__*/React__default$1.createElement(PaymentRequestButtonElement, sdijfer) : noNativePaymentMessage ? noNativePaymentMessage : BearError( //
+  const paygo = loadPay ? nativeLoading : payoitreu ? /*#__PURE__*/React__default$1.createElement(PaymentRequestButtonElement, sdijfer) : noNativePaymentMessage ? noNativePaymentMessage : BearError( //
   "Your site isn't secure to serve a native payment button. It will look like this.", {
     bearName
   });
@@ -78313,5 +78317,5 @@ function BearPage({
   return aijewqe;
 }
 
-export { BearAttrNeeds, BearAuthPortal, BearBackBorder, BearBackForward, BearBlankLink, BearBlock, BearBorder, BearButton$1 as BearButton, BearButtonDownload, BearButtonList, BearCheckMain, BearCheckout, BearCheckoutStripe, BearContextProvider, BearCopy, BearDiv$1 as BearDiv, BearDivMain, BearEmoji, BearErASDJIQWE, BearErrArgType$1 as BearErrArgType, BearErrMiss, BearError, BearFalseLog, BearFlex, BearFloat, BearForm, BearFormBase, BearFormList, BearHideError, BearIcon, BearIconList, BearIconText, BearImage, BearImageText, BearInput, BearInputNumber, BearInputText, BearLine, BearLink, BearList, BearListComp, BearLog, BearMissing, BearModel, BearPage, BearPayButton, BearPlural, BearPossess, BearQuote, BearRouter, BearSearchList, BearSelect, BearSocialBase, BearSocialLinks, BearSocialShare, BearSpace, BearSpan, BearSurround, BearSwitch, BearTags, BearTextMedia, BearTitle, BearUpper, BearWrap, Exmapl, FlexHorz, ImageAlign, ImageGroup, InputBaseCheck, InputForm, InputMain, ListFlex, ListReturn, LoadMain, PagePad, RendGroup, SliderMain, SwitchComp, SwitchLayout, argMiss, argPass, bearMobileView, bearlog, cxadfa, dfkbijv, firstInputCheck, functioMa, inputChange, inputStyles, linkBase, nameComb, sdfg, size };
+export { BearAttrNeeds, BearAuthPortal, BearBackBorder, BearBackForward, BearBlankLink, BearBlock, BearBorder, BearButton$1 as BearButton, BearButtonDownload, BearButtonList, BearCheckMain, BearCheckout, BearCheckoutStripe, BearContextProvider, BearCopy, BearDiv$1 as BearDiv, BearDivMain, BearEmoji, BearErASDJIQWE, BearErrArgType$1 as BearErrArgType, BearErrMiss, BearError, BearFalseLog, BearFlex, BearFloat, BearForm, BearFormBase, BearFormList, BearHideError, BearIcon, BearIconList, BearIconText, BearImage, BearImageText, BearInput, BearInputNumber, BearInputText, BearLine, BearLink, BearList, BearListComp, BearLog, BearMissing, BearModel, BearPage, BearPayButton, BearPlural, BearPossess, BearQuote, BearRouter, BearSearchList, BearSelect, BearSocialBase, BearSocialLinks, BearSocialShare, BearSpace, BearSpan, BearSurround, BearSwitch, BearTags, BearTextMedia, BearTextarea, BearTitle, BearUpper, BearWrap, Exmapl, FlexHorz, ImageAlign, ImageGroup, InputBaseCheck, InputForm, InputMain, ListFlex, ListReturn, LoadMain, PagePad, RendGroup, SliderMain, SwitchComp, SwitchLayout, argMiss, argPass, bearMobileView, bearlog, cxadfa, dfkbijv, firstInputCheck, functioMa, inputChange, inputStyles, linkBase, nameComb, sdfg, size };
 //# sourceMappingURL=index.esm.js.map

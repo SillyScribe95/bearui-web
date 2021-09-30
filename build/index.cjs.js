@@ -73990,6 +73990,7 @@ function BearCheckoutStripeBase({
 function CheckPayStripe({
   totalPayment,
   paymentLabel,
+  nativeLoading,
   paymentConfig,
   bearName,
   noPaymentMessage = "",
@@ -73999,6 +74000,7 @@ function CheckPayStripe({
 }) {
   const stripe = useStripe();
   const [paymentRequest, setPaymentRequest] = React.useState(null);
+  const [loadPay, setloadPay] = React.useState(true);
   const isjdfewe = {
     country: "US",
     currency: "usd",
@@ -74025,6 +74027,8 @@ function CheckPayStripe({
         }
       });
     }
+
+    setloadPay();
   }, [stripe]);
   const payoitreu = //
   // true;
@@ -74034,7 +74038,7 @@ function CheckPayStripe({
       paymentRequest
     }
   };
-  const paygo = payoitreu ? /*#__PURE__*/React__default$1['default'].createElement(PaymentRequestButtonElement, sdijfer) : noNativePaymentMessage ? noNativePaymentMessage : BearError( //
+  const paygo = loadPay ? nativeLoading : payoitreu ? /*#__PURE__*/React__default$1['default'].createElement(PaymentRequestButtonElement, sdijfer) : noNativePaymentMessage ? noNativePaymentMessage : BearError( //
   "Your site isn't secure to serve a native payment button. It will look like this.", {
     bearName
   });
@@ -78402,6 +78406,7 @@ exports.BearSurround = BearSurround;
 exports.BearSwitch = BearSwitch;
 exports.BearTags = BearTags;
 exports.BearTextMedia = BearTextMedia;
+exports.BearTextarea = BearTextarea;
 exports.BearTitle = BearTitle;
 exports.BearUpper = BearUpper;
 exports.BearWrap = BearWrap;

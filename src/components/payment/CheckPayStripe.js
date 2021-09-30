@@ -10,6 +10,7 @@ import { BearError } from "../BearError";
 export function CheckPayStripe({
   totalPayment,
   paymentLabel,
+  nativeLoading,
   paymentConfig,
   bearName,
   noPaymentMessage = "",
@@ -19,6 +20,7 @@ export function CheckPayStripe({
 }) {
   const stripe = useStripe();
   const [paymentRequest, setPaymentRequest] = useState(null);
+  const [loadPay, setloadPay] = useState(true);
 
   const isjdfewe = {
     country: "US",
@@ -48,6 +50,8 @@ export function CheckPayStripe({
         }
       });
     }
+
+    setloadPay();
   }, [stripe]);
 
   const payoitreu =
@@ -59,7 +63,9 @@ export function CheckPayStripe({
     options: { paymentRequest },
   };
 
-  const paygo = payoitreu ? (
+  const paygo = loadPay ? (
+    nativeLoading
+  ) : payoitreu ? (
     <PaymentRequestButtonElement {...sdijfer} />
   ) : noNativePaymentMessage ? (
     noNativePaymentMessage
