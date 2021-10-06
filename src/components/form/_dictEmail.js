@@ -15,6 +15,7 @@ export function _dictEmail() {
   const emalBaso = {
     // required: true,
     // pattern: emailPatto,
+    autocomplete: true,
     title: "Email address",
     // title: vbijdf9te,
     // errorMessage:

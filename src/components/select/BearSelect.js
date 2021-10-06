@@ -21,6 +21,9 @@ import { mapSelectValue } from "../../functions/selectFuncs";
 
 export function BearSelect({
   //
+  // MISS
+  //
+
   multi,
   optionsDict,
   noMenu,
@@ -67,6 +70,10 @@ export function BearSelect({
   valueFunc,
   //
   //
+  // 1input
+  inputStyle,
+  clearInputonExit,
+  //
   fontSize = "16px",
   newLineTrue,
   // 1none
@@ -92,7 +99,7 @@ export function BearSelect({
   //
   // 1ref
   // ref,
-  // onInputChange,
+  onInputChange,
   //
   // 1style
   resultsStyle,
@@ -314,6 +321,28 @@ export function BearSelect({
     return allSty(oasde, "rendMenu");
   }
 
+  // 1input
+  function rendInp(base) {
+    bearlog.lug("___ rendInp ___", base);
+
+    return allSty(
+      {
+        base,
+        textAlign: "left",
+        ...inputStyle,
+      },
+      "control"
+    );
+  }
+
+  // 1placeholder
+  function rendPlace(base) {
+    return {
+      ...base,
+      ...inputStyle,
+    };
+  }
+
   // 1control
   function rendCont(base) {
     //
@@ -321,7 +350,7 @@ export function BearSelect({
       ...base,
       // maxHeight: 20,
       // fontSize: fontSize,
-      ...style,
+      ...inputStyle,
     };
 
     bearlog.lug("___ rendCont ___", iksdrqe);
@@ -378,6 +407,8 @@ export function BearSelect({
 
   //   1styles
   const stylBasoe = {
+    input: rendInp,
+    placeholder: rendPlace,
     control: rendCont,
     option: optRdio,
     menuList: allLios,
@@ -550,6 +581,8 @@ export function BearSelect({
     //
     //
     // 1create
+    // 1style
+    style,
     ...sdijer,
     styles: stylBasoe,
     formatOptionLabel: fsdogkdr,
@@ -659,22 +692,35 @@ export function BearSelect({
     noOptionsMessage: Rendoa,
   };
 
-  function ShowItMENU(zxcvok) {
-    bearlog.lug("___ zxcvok ___", zxcvok);
+  function ShowItMENU(zxcvok, { action, ...res }) {
+    const noDo =
+      //
+      // true;
+      !clearInputonExit && action !== "input-blur" && action !== "menu-close";
 
-    setinputBase(zxcvok);
+    bearlog.lug("___ onMenuChange ___", { zxcvok, action, res });
+
+    if (noDo) {
+      setinputBase(zxcvok);
+    }
+
+    if (onInputChange) {
+      onInputChange(zxcvok);
+    }
   }
 
-  // 1intro
-  //
-
   // 1value 1search
-  const sdfer = showMenuIfValue && {
+  const mensio = {
     inputValue: inputBase,
+    onInputChange: ShowItMENU,
+  };
+
+  // 1menu
+  const sdfer = showMenuIfValue && {
+    ...mensio,
     options: inputBase ? dsfijaae : [],
     noOptionsMessage: inputBase ? Rendoa : (asd) => introMessage,
     menuIsOpen: inputBase,
-    onInputChange: ShowItMENU,
   };
 
   const MAINRGS = {
@@ -682,6 +728,7 @@ export function BearSelect({
     onChange: dfgoe,
     //
     //
+    ...mensio,
     // 1nooptions
     ...nvxsads,
     // 1EMPTY
@@ -737,6 +784,8 @@ export function BearSelect({
   // bearlog.lug("bear", dsfijaae);
 
   // 1console
+
+  bearlog.lug("___ mensio ___", mensio);
   bearlog.lug("MAINRGS---", MAINRGS);
   if ("bmcvfd") {
     // bearlog.lug(name, messvar + "___ BeSelect BASE___", xcvbfmg);

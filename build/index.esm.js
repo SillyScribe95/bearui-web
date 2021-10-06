@@ -3237,8 +3237,8 @@ function BearLink$1({
   return noLink ? textvar : /*#__PURE__*/React__default$1.createElement(Rlasdow, null);
 }
 
-function _extends$X() {
-  _extends$X = Object.assign || function (target) {
+function _extends$Y() {
+  _extends$Y = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -3252,7 +3252,7 @@ function _extends$X() {
     return target;
   };
 
-  return _extends$X.apply(this, arguments);
+  return _extends$Y.apply(this, arguments);
 }
 
 const alignItemsFlex = //
@@ -4649,8 +4649,8 @@ var createCache = function createCache(options) {
   return cache;
 };
 
-function _extends$W() {
-  _extends$W = Object.assign || function (target) {
+function _extends$X() {
+  _extends$X = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -4664,7 +4664,7 @@ function _extends$W() {
     return target;
   };
 
-  return _extends$W.apply(this, arguments);
+  return _extends$X.apply(this, arguments);
 }
 
 /** @license React v16.13.1
@@ -5590,7 +5590,7 @@ var getTheme = function getTheme(outerTheme, theme) {
     throw new Error('[ThemeProvider] Please make your theme prop a plain object');
   }
 
-  return _extends$W({}, outerTheme, theme);
+  return _extends$X({}, outerTheme, theme);
 };
 
 var createCacheWithTheme = /* #__PURE__ */weakMemoize(function (outerTheme) {
@@ -6102,7 +6102,7 @@ function invariant$1(condition, message) {
 }
 
 // Number assertions
-var __DEV__$d = process.env.NODE_ENV !== "production";
+var __DEV__$e = process.env.NODE_ENV !== "production";
 process.env.NODE_ENV === "test";
 
 /**
@@ -8419,7 +8419,7 @@ function PortalManager(props) {
   }, children);
 }
 
-if (__DEV__$d) {
+if (__DEV__$e) {
   PortalManager.displayName = "PortalManager";
 }
 
@@ -8648,8 +8648,8 @@ function useInterval(callback, delay) {
   }, [delay, fn]);
 }
 
-function _extends$V() {
-  _extends$V = Object.assign || function (target) {
+function _extends$W() {
+  _extends$W = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -8663,10 +8663,10 @@ function _extends$V() {
     return target;
   };
 
-  return _extends$V.apply(this, arguments);
+  return _extends$W.apply(this, arguments);
 }
 
-function _objectWithoutPropertiesLoose$v(source, excluded) {
+function _objectWithoutPropertiesLoose$w(source, excluded) {
   if (source == null) return {};
   var target = {};
   var sourceKeys = Object.keys(source);
@@ -8793,9 +8793,9 @@ function Portal(props) {
   var {
     containerRef
   } = props,
-      rest = _objectWithoutPropertiesLoose$v(props, ["containerRef"]);
+      rest = _objectWithoutPropertiesLoose$w(props, ["containerRef"]);
 
-  return containerRef ? /*#__PURE__*/React.createElement(ContainerPortal, _extends$V({
+  return containerRef ? /*#__PURE__*/React.createElement(ContainerPortal, _extends$W({
     containerRef: containerRef
   }, rest)) : /*#__PURE__*/React.createElement(DefaultPortal, rest);
 }
@@ -8805,12 +8805,12 @@ Portal.defaultProps = {
 Portal.className = PORTAL_CLASSNAME;
 Portal.selector = PORTAL_SELECTOR;
 
-if (__DEV__$d) {
+if (__DEV__$e) {
   Portal.displayName = "Portal";
 }
 
 // Number assertions
-var __DEV__$c = process.env.NODE_ENV !== "production";
+var __DEV__$d = process.env.NODE_ENV !== "production";
 process.env.NODE_ENV === "test";
 
 function canUseDOM$5() {
@@ -8918,7 +8918,7 @@ var localStorageManager = {
 
       return _value != null ? _value : init;
     } catch (error) {
-      if (__DEV__$c) {
+      if (__DEV__$d) {
         console.log(error);
       }
 
@@ -8932,7 +8932,7 @@ var localStorageManager = {
     try {
       localStorage.setItem(storageKey, value);
     } catch (error) {
-      if (__DEV__$c) {
+      if (__DEV__$d) {
         console.log(error);
       }
     }
@@ -8943,7 +8943,7 @@ var localStorageManager = {
 
 var ColorModeContext = /*#__PURE__*/React.createContext({});
 
-if (__DEV__$c) {
+if (__DEV__$d) {
   ColorModeContext.displayName = "ColorModeContext";
 }
 /**
@@ -9038,7 +9038,7 @@ function ColorModeProvider(props) {
   }, children);
 }
 
-if (__DEV__$c) {
+if (__DEV__$d) {
   ColorModeProvider.displayName = "ColorModeProvider";
 }
 
@@ -9761,8 +9761,8 @@ var isCSSFunction = value => {
   return isString$2(value) && value.includes("(") && value.includes(")");
 };
 
-function _extends$U() {
-  _extends$U = Object.assign || function (target) {
+function _extends$V() {
+  _extends$V = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -9776,7 +9776,7 @@ function _extends$U() {
     return target;
   };
 
-  return _extends$U.apply(this, arguments);
+  return _extends$V.apply(this, arguments);
 }
 var t = {
   borderWidths: toConfig("borderWidths"),
@@ -9795,7 +9795,7 @@ var t = {
   },
 
   prop(property, scale, transform) {
-    return _extends$U({
+    return _extends$V({
       property,
       scale
     }, scale && {
@@ -10667,8 +10667,8 @@ var pseudoSelectors = {
 };
 var pseudoPropNames = objectKeys(pseudoSelectors);
 
-function _extends$T() {
-  _extends$T = Object.assign || function (target) {
+function _extends$U() {
+  _extends$U = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -10682,13 +10682,13 @@ function _extends$T() {
     return target;
   };
 
-  return _extends$T.apply(this, arguments);
+  return _extends$U.apply(this, arguments);
 }
 var systemProps = lodash_mergewith({}, background, border, color$1, flexbox, layout, filter$1, ring, interactivity, grid, others, position, effect, space, typography$1, textDecoration, transform, list, transition$1);
 Object.assign({}, space, layout, flexbox, grid, position);
 var propNames = [...objectKeys(systemProps), ...pseudoPropNames];
 
-var styleProps = _extends$T({}, systemProps, pseudoSelectors);
+var styleProps = _extends$U({}, systemProps, pseudoSelectors);
 
 var isStyleProp = prop => prop in styleProps;
 
@@ -11048,8 +11048,8 @@ function cssVar(name, fallback, cssVarPrefix) {
   };
 }
 
-function _extends$S() {
-  _extends$S = Object.assign || function (target) {
+function _extends$T() {
+  _extends$T = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -11063,7 +11063,7 @@ function _extends$S() {
     return target;
   };
 
-  return _extends$S.apply(this, arguments);
+  return _extends$T.apply(this, arguments);
 }
 function createThemeVars(target, options) {
   var context = {
@@ -11103,7 +11103,7 @@ var tokenHandlerMap = {
     var varRef = calc.negate(reference);
     return {
       cssVars: properties.cssVars,
-      cssMap: _extends$S({}, properties.cssMap, {
+      cssMap: _extends$T({}, properties.cssMap, {
         [negativeLookupKey]: {
           value: "" + negativeValue,
           var: "" + variable,
@@ -11134,7 +11134,7 @@ var tokenHandlerMap = {
   }
 };
 
-function _objectWithoutPropertiesLoose$u(source, excluded) {
+function _objectWithoutPropertiesLoose$v(source, excluded) {
   if (source == null) return {};
   var target = {};
   var sourceKeys = Object.keys(source);
@@ -11154,13 +11154,13 @@ function extractTokens(theme) {
   return pick$1(theme, _tokens);
 }
 function omitVars(rawTheme) {
-  var cleanTheme = _objectWithoutPropertiesLoose$u(rawTheme, ["__cssMap", "__cssVars", "__breakpoints"]);
+  var cleanTheme = _objectWithoutPropertiesLoose$v(rawTheme, ["__cssMap", "__cssVars", "__breakpoints"]);
 
   return cleanTheme;
 }
 
-function _extends$R() {
-  _extends$R = Object.assign || function (target) {
+function _extends$S() {
+  _extends$S = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -11174,7 +11174,7 @@ function _extends$R() {
     return target;
   };
 
-  return _extends$R.apply(this, arguments);
+  return _extends$S.apply(this, arguments);
 }
 function toCSSVar(rawTheme) {
   var _theme$config;
@@ -11214,7 +11214,7 @@ function toCSSVar(rawTheme) {
     "--chakra-space-y-reverse": "0"
   };
   Object.assign(theme, {
-    __cssVars: _extends$R({}, defaultCssVars, cssVars),
+    __cssVars: _extends$S({}, defaultCssVars, cssVars),
     __cssMap: cssMap,
     __breakpoints: analyzeBreakpoints(theme.breakpoints)
   });
@@ -11229,7 +11229,7 @@ function isFunction$2(value) {
 process.env.NODE_ENV !== "production";
 process.env.NODE_ENV === "test";
 
-function omit$2(object, keys) {
+function omit$3(object, keys) {
   var result = {};
   Object.keys(object).forEach(key => {
     if (keys.includes(key)) return;
@@ -11504,11 +11504,11 @@ var GlobalStyle = () => {
 
 var domElements = ["a", "b", "article", "aside", "blockquote", "button", "caption", "cite", "circle", "code", "dd", "div", "dl", "dt", "fieldset", "figcaption", "figure", "footer", "form", "h1", "h2", "h3", "h4", "h5", "h6", "header", "hr", "img", "input", "kbd", "label", "li", "main", "mark", "nav", "ol", "p", "path", "pre", "q", "rect", "s", "svg", "section", "select", "strong", "small", "span", "sub", "sup", "table", "tbody", "td", "textarea", "tfoot", "th", "thead", "tr", "ul"];
 function omitThemingProps(props) {
-  return omit$2(props, ["styleConfig", "size", "variant", "colorScheme"]);
+  return omit$3(props, ["styleConfig", "size", "variant", "colorScheme"]);
 }
 
-function _extends$Q() {
-  _extends$Q = Object.assign || function (target) {
+function _extends$R() {
+  _extends$R = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -11522,12 +11522,12 @@ function _extends$Q() {
     return target;
   };
 
-  return _extends$Q.apply(this, arguments);
+  return _extends$R.apply(this, arguments);
 }
 function useChakra() {
   var colorModeResult = useColorMode();
   var theme = useTheme();
-  return _extends$Q({}, colorModeResult, {
+  return _extends$R({}, colorModeResult, {
     theme
   });
 }
@@ -12179,7 +12179,7 @@ var createStyled = function createStyled(tag, options) {
     });
 
     Styled.withComponent = function (nextTag, nextOptions) {
-      return createStyled(nextTag, _extends$W({}, options, nextOptions, {
+      return createStyled(nextTag, _extends$X({}, options, nextOptions, {
         shouldForwardProp: composeShouldForwardProps(Styled, nextOptions, true)
       })).apply(void 0, styles);
     };
@@ -12212,7 +12212,7 @@ var allPropNames = new Set([...propNames, "textStyle", "layerStyle", "apply", "i
 var validHTMLProps = new Set(["htmlWidth", "htmlHeight", "htmlSize"]);
 var shouldForwardProp = prop => validHTMLProps.has(prop) || !allPropNames.has(prop);
 
-function _objectWithoutPropertiesLoose$t(source, excluded) {
+function _objectWithoutPropertiesLoose$u(source, excluded) {
   if (source == null) return {};
   var target = {};
   var sourceKeys = Object.keys(source);
@@ -12250,7 +12250,7 @@ var toCSSObject = _ref => {
       __css,
       sx
     } = props,
-        rest = _objectWithoutPropertiesLoose$t(props, ["theme", "css", "__css", "sx"]);
+        rest = _objectWithoutPropertiesLoose$u(props, ["theme", "css", "__css", "sx"]);
 
     var styleProps = objectFilter(rest, (_, prop) => isStyleProp(prop));
     var finalBaseStyle = runIfFn(baseStyle, props);
@@ -12264,7 +12264,7 @@ function styled(component, options) {
       {
     baseStyle
   } = _ref2,
-      styledOptions = _objectWithoutPropertiesLoose$t(_ref2, ["baseStyle"]);
+      styledOptions = _objectWithoutPropertiesLoose$u(_ref2, ["baseStyle"]);
 
   if (!styledOptions.shouldForwardProp) {
     styledOptions.shouldForwardProp = shouldForwardProp;
@@ -12288,7 +12288,7 @@ function forwardRef$2(component) {
   return /*#__PURE__*/React.forwardRef(component);
 }
 
-function _objectWithoutPropertiesLoose$s(source, excluded) {
+function _objectWithoutPropertiesLoose$t(source, excluded) {
   if (source == null) return {};
   var target = {};
   var sourceKeys = Object.keys(source);
@@ -12316,7 +12316,7 @@ function useStyleConfig(themeKey, props, opts) {
   var {
     styleConfig: styleConfigProp
   } = props,
-      rest = _objectWithoutPropertiesLoose$s(props, ["styleConfig"]);
+      rest = _objectWithoutPropertiesLoose$t(props, ["styleConfig"]);
 
   var {
     theme,
@@ -12327,7 +12327,7 @@ function useStyleConfig(themeKey, props, opts) {
   var mergedProps = lodash_mergewith({
     theme,
     colorMode
-  }, (_styleConfig$defaultP = styleConfig == null ? void 0 : styleConfig.defaultProps) != null ? _styleConfig$defaultP : {}, filterUndefined(omit$2(rest, ["children"])));
+  }, (_styleConfig$defaultP = styleConfig == null ? void 0 : styleConfig.defaultProps) != null ? _styleConfig$defaultP : {}, filterUndefined(omit$3(rest, ["children"])));
   /**
    * Store the computed styles in a `ref` to avoid unneeded re-computation
    */
@@ -13719,7 +13719,7 @@ function isObject$3(value) {
 function isEmptyObject$1(value) {
   return isObject$3(value) && Object.keys(value).length === 0;
 }
-var __DEV__$b = process.env.NODE_ENV !== "production";
+var __DEV__$c = process.env.NODE_ENV !== "production";
 process.env.NODE_ENV === "test";
 
 /**
@@ -13789,7 +13789,7 @@ var warn$4 = once$5(options => () => {
     message
   } = options;
 
-  if (condition && __DEV__$b) {
+  if (condition && __DEV__$c) {
     console.warn(message);
   }
 });
@@ -13917,8 +13917,8 @@ function orient(options) {
   return orientation === "vertical" ? vertical : horizontal;
 }
 
-function _extends$P() {
-  _extends$P = Object.assign || function (target) {
+function _extends$Q() {
+  _extends$Q = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -13932,14 +13932,14 @@ function _extends$P() {
     return target;
   };
 
-  return _extends$P.apply(this, arguments);
+  return _extends$Q.apply(this, arguments);
 }
 var createBreakpoints = config => {
   warn$4({
     condition: true,
     message: ["[chakra-ui]: createBreakpoints(...) will be deprecated pretty soon", "simply pass the breakpoints as an object. Remove the createBreakpoint(..) call"].join("")
   });
-  return _extends$P({
+  return _extends$Q({
     base: "0em"
   }, config);
 };
@@ -14093,8 +14093,8 @@ var spacing$1 = {
  * Spacing tokens are a part of DefaultChakraTheme['sizes']
  */
 
-function _extends$O() {
-  _extends$O = Object.assign || function (target) {
+function _extends$P() {
+  _extends$P = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -14108,7 +14108,7 @@ function _extends$O() {
     return target;
   };
 
-  return _extends$O.apply(this, arguments);
+  return _extends$P.apply(this, arguments);
 }
 var largeSizes = {
   max: "max-content",
@@ -14136,7 +14136,7 @@ var container = {
   xl: "1280px"
 };
 
-var sizes$l = _extends$O({}, spacing$1, largeSizes, {
+var sizes$l = _extends$P({}, spacing$1, largeSizes, {
   container
 });
 
@@ -14307,8 +14307,8 @@ var Breadcrumb = {
   baseStyle: baseStyle$z
 };
 
-function _extends$N() {
-  _extends$N = Object.assign || function (target) {
+function _extends$O() {
+  _extends$O = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -14322,7 +14322,7 @@ function _extends$N() {
     return target;
   };
 
-  return _extends$N.apply(this, arguments);
+  return _extends$O.apply(this, arguments);
 }
 var baseStyle$y = {
   lineHeight: "1.2",
@@ -14382,7 +14382,7 @@ function variantOutline$1(props) {
     colorScheme: c
   } = props;
   var borderColor = mode("gray.200", "whiteAlpha.300")(props);
-  return _extends$N({
+  return _extends$O({
     border: "1px solid",
     borderColor: c === "gray" ? borderColor : "currentColor"
   }, variantGhost(props));
@@ -14854,8 +14854,8 @@ var Modal$1 = {
   defaultProps: defaultProps$j
 };
 
-function _extends$M() {
-  _extends$M = Object.assign || function (target) {
+function _extends$N() {
+  _extends$N = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -14869,7 +14869,7 @@ function _extends$M() {
     return target;
   };
 
-  return _extends$M.apply(this, arguments);
+  return _extends$N.apply(this, arguments);
 }
 var parts$h = Modal$1.parts;
 /**
@@ -14908,7 +14908,7 @@ function baseStyleDialog(props) {
   var {
     isFullHeight
   } = props;
-  return _extends$M({}, isFullHeight && {
+  return _extends$N({}, isFullHeight && {
     height: "100vh"
   }, {
     zIndex: "modal",
@@ -15496,8 +15496,8 @@ var typography = {
 
 var _Input$baseStyle;
 
-function _extends$L() {
-  _extends$L = Object.assign || function (target) {
+function _extends$M() {
+  _extends$M = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -15511,7 +15511,7 @@ function _extends$L() {
     return target;
   };
 
-  return _extends$L.apply(this, arguments);
+  return _extends$M.apply(this, arguments);
 }
 var parts$b = ["root", "field", "stepper", "stepperGroup"];
 var {
@@ -15559,7 +15559,7 @@ function getSize(size) {
   };
   var resolvedFontSize = typography.fontSizes[sizeStyle.field.fontSize];
   return {
-    field: _extends$L({}, sizeStyle.field, {
+    field: _extends$M({}, sizeStyle.field, {
       paddingInlineEnd: "var(--number-input-field-padding)",
       verticalAlign: "top"
     }),
@@ -15591,8 +15591,8 @@ var NumberInput$1 = {
   defaultProps: defaultProps$f
 };
 
-function _extends$K() {
-  _extends$K = Object.assign || function (target) {
+function _extends$L() {
+  _extends$L = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -15606,10 +15606,10 @@ function _extends$K() {
     return target;
   };
 
-  return _extends$K.apply(this, arguments);
+  return _extends$L.apply(this, arguments);
 }
 
-var baseStyle$g = _extends$K({}, Input$2.baseStyle.field, {
+var baseStyle$g = _extends$L({}, Input$2.baseStyle.field, {
   textAlign: "center"
 });
 
@@ -15708,8 +15708,8 @@ var Popover = {
   baseStyle: baseStyle$f
 };
 
-function _extends$J() {
-  _extends$J = Object.assign || function (target) {
+function _extends$K() {
+  _extends$K = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -15723,7 +15723,7 @@ function _extends$J() {
     return target;
   };
 
-  return _extends$J.apply(this, arguments);
+  return _extends$K.apply(this, arguments);
 }
 var parts$9 = ["track", "filledTrack", "label"];
 
@@ -15738,7 +15738,7 @@ function filledStyle(props) {
   var bgColor = mode(c + ".500", c + ".200")(props);
   var gradient = "linear-gradient(\n    to right,\n    transparent 0%,\n    " + getColor(t, bgColor) + " 50%,\n    transparent 100%\n  )";
   var addStripe = !isIndeterminate && hasStripe;
-  return _extends$J({}, addStripe && stripeStyle, isIndeterminate ? {
+  return _extends$K({}, addStripe && stripeStyle, isIndeterminate ? {
     bgImage: gradient
   } : {
     bgColor
@@ -15759,7 +15759,7 @@ function baseStyleTrack$2(props) {
 }
 
 function baseStyleFilledTrack$1(props) {
-  return _extends$J({
+  return _extends$K({
     transitionProperty: "common",
     transitionDuration: "slow"
   }, filledStyle(props));
@@ -15804,8 +15804,8 @@ var Progress = {
   defaultProps: defaultProps$d
 };
 
-function _extends$I() {
-  _extends$I = Object.assign || function (target) {
+function _extends$J() {
+  _extends$J = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -15819,7 +15819,7 @@ function _extends$I() {
     return target;
   };
 
-  return _extends$I.apply(this, arguments);
+  return _extends$J.apply(this, arguments);
 }
 var parts$8 = ["container", "control", "label"];
 
@@ -15827,9 +15827,9 @@ function baseStyleControl(props) {
   var {
     control
   } = Checkbox.baseStyle(props);
-  return _extends$I({}, control, {
+  return _extends$J({}, control, {
     borderRadius: "full",
-    _checked: _extends$I({}, control["_checked"], {
+    _checked: _extends$J({}, control["_checked"], {
       _before: {
         content: "\"\"",
         display: "inline-block",
@@ -15888,8 +15888,8 @@ var Radio = {
   defaultProps: defaultProps$c
 };
 
-function _extends$H() {
-  _extends$H = Object.assign || function (target) {
+function _extends$I() {
+  _extends$I = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -15903,12 +15903,12 @@ function _extends$H() {
     return target;
   };
 
-  return _extends$H.apply(this, arguments);
+  return _extends$I.apply(this, arguments);
 }
 var parts$7 = ["field", "icon"];
 
 function baseStyleField(props) {
-  return _extends$H({}, Input$2.baseStyle.field, {
+  return _extends$I({}, Input$2.baseStyle.field, {
     appearance: "none",
     paddingBottom: "1px",
     lineHeight: "normal",
@@ -16002,8 +16002,8 @@ var SkipLink = {
   baseStyle: baseStyle$a
 };
 
-function _extends$G() {
-  _extends$G = Object.assign || function (target) {
+function _extends$H() {
+  _extends$H = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -16017,7 +16017,7 @@ function _extends$G() {
     return target;
   };
 
-  return _extends$G.apply(this, arguments);
+  return _extends$H.apply(this, arguments);
 }
 var parts$6 = ["container", "thumb", "track", "filledTrack"];
 
@@ -16045,7 +16045,7 @@ var baseStyleContainer$1 = props => {
   var {
     orientation
   } = props;
-  return _extends$G({
+  return _extends$H({
     _disabled: {
       opacity: 0.6,
       cursor: "default",
@@ -16073,7 +16073,7 @@ function baseStyleTrack$1(props) {
 }
 
 function baseStyleThumb$1(props) {
-  return _extends$G({
+  return _extends$H({
     zIndex: 1,
     borderRadius: "full",
     bg: "white",
@@ -16336,8 +16336,8 @@ var Switch$1 = {
   defaultProps: defaultProps$8
 };
 
-function _extends$F() {
-  _extends$F = Object.assign || function (target) {
+function _extends$G() {
+  _extends$G = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -16351,7 +16351,7 @@ function _extends$F() {
     return target;
   };
 
-  return _extends$F.apply(this, arguments);
+  return _extends$G.apply(this, arguments);
 }
 var parts$3 = ["table", "thead", "tbody", "tr", "th", "td", "caption"];
 var baseStyle$5 = {
@@ -16388,12 +16388,12 @@ var simpleVariant = props => {
     colorScheme: c
   } = props;
   return {
-    th: _extends$F({
+    th: _extends$G({
       color: mode("gray.600", "gray.400")(props),
       borderBottom: "1px",
       borderColor: mode(c + ".100", c + ".700")(props)
     }, numericStyles),
-    td: _extends$F({
+    td: _extends$G({
       borderBottom: "1px",
       borderColor: mode(c + ".100", c + ".700")(props)
     }, numericStyles),
@@ -16417,12 +16417,12 @@ var stripedVariant = props => {
     colorScheme: c
   } = props;
   return {
-    th: _extends$F({
+    th: _extends$G({
       color: mode("gray.600", "gray.400")(props),
       borderBottom: "1px",
       borderColor: mode(c + ".100", c + ".700")(props)
     }, numericStyles),
-    td: _extends$F({
+    td: _extends$G({
       borderBottom: "1px",
       borderColor: mode(c + ".100", c + ".700")(props)
     }, numericStyles),
@@ -16846,8 +16846,8 @@ var Tag = {
   defaultProps: defaultProps$5
 };
 
-function _extends$E() {
-  _extends$E = Object.assign || function (target) {
+function _extends$F() {
+  _extends$F = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -16861,10 +16861,10 @@ function _extends$E() {
     return target;
   };
 
-  return _extends$E.apply(this, arguments);
+  return _extends$F.apply(this, arguments);
 }
 
-var baseStyle$2 = _extends$E({}, Input$2.baseStyle.field, {
+var baseStyle$2 = _extends$F({}, Input$2.baseStyle.field, {
   paddingY: "8px",
   minHeight: "80px",
   lineHeight: "short",
@@ -17315,8 +17315,8 @@ var blur = {
   "3xl": "64px"
 };
 
-function _extends$D() {
-  _extends$D = Object.assign || function (target) {
+function _extends$E() {
+  _extends$E = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -17330,10 +17330,10 @@ function _extends$D() {
     return target;
   };
 
-  return _extends$D.apply(this, arguments);
+  return _extends$E.apply(this, arguments);
 }
 
-var foundations = _extends$D({
+var foundations = _extends$E({
   breakpoints,
   zIndices,
   radii,
@@ -17367,8 +17367,8 @@ var styles = {
   })
 };
 
-function _extends$C() {
-  _extends$C = Object.assign || function (target) {
+function _extends$D() {
+  _extends$D = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -17382,7 +17382,7 @@ function _extends$C() {
     return target;
   };
 
-  return _extends$C.apply(this, arguments);
+  return _extends$D.apply(this, arguments);
 }
 var direction = "ltr";
 var config = {
@@ -17390,7 +17390,7 @@ var config = {
   initialColorMode: "light",
   cssVarPrefix: "chakra"
 };
-var theme = _extends$C({
+var theme = _extends$D({
   direction
 }, foundations, {
   components: components$1,
@@ -17399,7 +17399,7 @@ var theme = _extends$C({
 });
 
 // Number assertions
-var __DEV__$a = process.env.NODE_ENV !== "production";
+var __DEV__$b = process.env.NODE_ENV !== "production";
 process.env.NODE_ENV === "test";
 
 function canUseDOM$4() {
@@ -17525,7 +17525,7 @@ var defaultEnv = isBrowser$3 ? {
 } : mockEnv;
 var EnvironmentContext = /*#__PURE__*/createContext$1(defaultEnv);
 
-if (__DEV__$a) {
+if (__DEV__$b) {
   EnvironmentContext.displayName = "EnvironmentContext";
 }
 function EnvironmentProvider(props) {
@@ -17556,7 +17556,7 @@ function EnvironmentProvider(props) {
   }));
 }
 
-if (__DEV__$a) {
+if (__DEV__$b) {
   EnvironmentProvider.displayName = "EnvironmentProvider";
 }
 
@@ -17595,7 +17595,7 @@ var ChakraProvider = props => {
 function isNumber(value) {
   return typeof value === "number";
 }
-var __DEV__$9 = process.env.NODE_ENV !== "production";
+var __DEV__$a = process.env.NODE_ENV !== "production";
 process.env.NODE_ENV === "test";
 
 var cx$6 = function cx() {
@@ -26810,8 +26810,8 @@ var AnimatePresence = function (_a) {
   }));
 };
 
-function _extends$B() {
-  _extends$B = Object.assign || function (target) {
+function _extends$C() {
+  _extends$C = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -26825,7 +26825,7 @@ function _extends$B() {
     return target;
   };
 
-  return _extends$B.apply(this, arguments);
+  return _extends$C.apply(this, arguments);
 }
 var TransitionEasings = {
   ease: [0.25, 0.1, 0.25, 1],
@@ -26844,16 +26844,16 @@ var TransitionDefaults = {
   }
 };
 var withDelay = {
-  enter: (transition, delay) => _extends$B({}, transition, {
+  enter: (transition, delay) => _extends$C({}, transition, {
     delay: isNumber(delay) ? delay : delay == null ? void 0 : delay["enter"]
   }),
-  exit: (transition, delay) => _extends$B({}, transition, {
+  exit: (transition, delay) => _extends$C({}, transition, {
     delay: isNumber(delay) ? delay : delay == null ? void 0 : delay["exit"]
   })
 };
 
-function _extends$A() {
-  _extends$A = Object.assign || function (target) {
+function _extends$B() {
+  _extends$B = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -26867,10 +26867,10 @@ function _extends$A() {
     return target;
   };
 
-  return _extends$A.apply(this, arguments);
+  return _extends$B.apply(this, arguments);
 }
 
-function _objectWithoutPropertiesLoose$r(source, excluded) {
+function _objectWithoutPropertiesLoose$s(source, excluded) {
   if (source == null) return {};
   var target = {};
   var sourceKeys = Object.keys(source);
@@ -26929,7 +26929,7 @@ var Fade = /*#__PURE__*/React.forwardRef((props, ref) => {
     transitionEnd,
     delay
   } = props,
-      rest = _objectWithoutPropertiesLoose$r(props, ["unmountOnExit", "in", "className", "transition", "transitionEnd", "delay"]);
+      rest = _objectWithoutPropertiesLoose$s(props, ["unmountOnExit", "in", "className", "transition", "transitionEnd", "delay"]);
 
   var animate = isOpen || unmountOnExit ? "enter" : "exit";
   var show = unmountOnExit ? isOpen && unmountOnExit : true;
@@ -26940,7 +26940,7 @@ var Fade = /*#__PURE__*/React.forwardRef((props, ref) => {
   };
   return /*#__PURE__*/React.createElement(AnimatePresence, {
     custom: custom
-  }, show && /*#__PURE__*/React.createElement(motion.div, _extends$A({
+  }, show && /*#__PURE__*/React.createElement(motion.div, _extends$B({
     ref: ref,
     className: cx$6("chakra-fade", className),
     custom: custom
@@ -26949,11 +26949,11 @@ var Fade = /*#__PURE__*/React.forwardRef((props, ref) => {
   }, rest)));
 });
 
-if (__DEV__$9) {
+if (__DEV__$a) {
   Fade.displayName = "Fade";
 }
 
-function _objectWithoutPropertiesLoose$q(source, excluded) {
+function _objectWithoutPropertiesLoose$r(source, excluded) {
   if (source == null) return {};
   var target = {};
   var sourceKeys = Object.keys(source);
@@ -26968,8 +26968,8 @@ function _objectWithoutPropertiesLoose$q(source, excluded) {
   return target;
 }
 
-function _extends$z() {
-  _extends$z = Object.assign || function (target) {
+function _extends$A() {
+  _extends$A = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -26983,7 +26983,7 @@ function _extends$z() {
     return target;
   };
 
-  return _extends$z.apply(this, arguments);
+  return _extends$A.apply(this, arguments);
 }
 var variants$1 = {
   exit: _ref => {
@@ -26996,13 +26996,13 @@ var variants$1 = {
       transitionEnd,
       delay
     } = _ref;
-    return _extends$z({
+    return _extends$A({
       opacity: 0
     }, reverse ? {
       scale: initialScale,
       transitionEnd: transitionEnd == null ? void 0 : transitionEnd.exit
     } : {
-      transitionEnd: _extends$z({
+      transitionEnd: _extends$A({
         scale: initialScale
       }, transitionEnd == null ? void 0 : transitionEnd.exit)
     }, {
@@ -27042,7 +27042,7 @@ var ScaleFade = /*#__PURE__*/React.forwardRef((props, ref) => {
     transitionEnd,
     delay
   } = props,
-      rest = _objectWithoutPropertiesLoose$q(props, ["unmountOnExit", "in", "reverse", "initialScale", "className", "transition", "transitionEnd", "delay"]);
+      rest = _objectWithoutPropertiesLoose$r(props, ["unmountOnExit", "in", "reverse", "initialScale", "className", "transition", "transitionEnd", "delay"]);
 
   var show = unmountOnExit ? isOpen && unmountOnExit : true;
   var animate = isOpen || unmountOnExit ? "enter" : "exit";
@@ -27055,7 +27055,7 @@ var ScaleFade = /*#__PURE__*/React.forwardRef((props, ref) => {
   };
   return /*#__PURE__*/React.createElement(AnimatePresence, {
     custom: custom
-  }, show && /*#__PURE__*/React.createElement(motion.div, _extends$z({
+  }, show && /*#__PURE__*/React.createElement(motion.div, _extends$A({
     ref: ref,
     className: cx$6("chakra-offset-slide", className)
   }, scaleFadeConfig, {
@@ -27064,11 +27064,11 @@ var ScaleFade = /*#__PURE__*/React.forwardRef((props, ref) => {
   }, rest)));
 });
 
-if (__DEV__$9) {
+if (__DEV__$a) {
   ScaleFade.displayName = "ScaleFade";
 }
 
-function _objectWithoutPropertiesLoose$p(source, excluded) {
+function _objectWithoutPropertiesLoose$q(source, excluded) {
   if (source == null) return {};
   var target = {};
   var sourceKeys = Object.keys(source);
@@ -27083,8 +27083,8 @@ function _objectWithoutPropertiesLoose$p(source, excluded) {
   return target;
 }
 
-function _extends$y() {
-  _extends$y = Object.assign || function (target) {
+function _extends$z() {
+  _extends$z = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -27098,7 +27098,7 @@ function _extends$y() {
     return target;
   };
 
-  return _extends$y.apply(this, arguments);
+  return _extends$z.apply(this, arguments);
 }
 var variants = {
   initial: _ref => {
@@ -27150,13 +27150,13 @@ var variants = {
       x: offsetX,
       y: offsetY
     };
-    return _extends$y({
+    return _extends$z({
       opacity: 0,
       transition: (_transition$exit2 = transition == null ? void 0 : transition.exit) != null ? _transition$exit2 : withDelay.exit(TransitionDefaults.exit, delay)
-    }, reverse ? _extends$y({}, offset, {
+    }, reverse ? _extends$z({}, offset, {
       transitionEnd: transitionEnd == null ? void 0 : transitionEnd.exit
     }) : {
-      transitionEnd: _extends$y({}, offset, transitionEnd == null ? void 0 : transitionEnd.exit)
+      transitionEnd: _extends$z({}, offset, transitionEnd == null ? void 0 : transitionEnd.exit)
     });
   }
 };
@@ -27178,7 +27178,7 @@ var SlideFade = /*#__PURE__*/React.forwardRef((props, ref) => {
     transitionEnd,
     delay
   } = props,
-      rest = _objectWithoutPropertiesLoose$p(props, ["unmountOnExit", "in", "reverse", "className", "offsetX", "offsetY", "transition", "transitionEnd", "delay"]);
+      rest = _objectWithoutPropertiesLoose$q(props, ["unmountOnExit", "in", "reverse", "className", "offsetX", "offsetY", "transition", "transitionEnd", "delay"]);
 
   var show = unmountOnExit ? isOpen && unmountOnExit : true;
   var animate = isOpen || unmountOnExit ? "enter" : "exit";
@@ -27192,7 +27192,7 @@ var SlideFade = /*#__PURE__*/React.forwardRef((props, ref) => {
   };
   return /*#__PURE__*/React.createElement(AnimatePresence, {
     custom: custom
-  }, show && /*#__PURE__*/React.createElement(motion.div, _extends$y({
+  }, show && /*#__PURE__*/React.createElement(motion.div, _extends$z({
     ref: ref,
     className: cx$6("chakra-offset-slide", className),
     custom: custom
@@ -27201,8 +27201,226 @@ var SlideFade = /*#__PURE__*/React.forwardRef((props, ref) => {
   }, rest)));
 });
 
-if (__DEV__$9) {
+if (__DEV__$a) {
   SlideFade.displayName = "SlideFade";
+}
+
+// Number assertions
+var __DEV__$9 = process.env.NODE_ENV !== "production";
+process.env.NODE_ENV === "test";
+
+function omit$2(object, keys) {
+  var result = {};
+  Object.keys(object).forEach(key => {
+    if (keys.includes(key)) return;
+    result[key] = object[key];
+  });
+  return result;
+}
+
+/**
+ * React hook that loads an image in the browser,
+ * and let's us know the `status` so we can show image
+ * fallback if it is still `pending`
+ *
+ * @returns the status of the image loading progress
+ *
+ * @example
+ *
+ * ```jsx
+ * function App(){
+ *   const status = useImage({ src: "image.png" })
+ *   return status === "loaded" ? <img src="image.png" /> : <Placeholder />
+ * }
+ * ```
+ */
+
+function useImage(props) {
+  var {
+    src,
+    srcSet,
+    onLoad,
+    onError,
+    crossOrigin,
+    sizes,
+    ignoreFallback
+  } = props;
+  var [status, setStatus] = useState("pending");
+  useEffect(() => {
+    setStatus(src ? "loading" : "pending");
+  }, [src]);
+  var imageRef = useRef();
+  var load = useCallback(() => {
+    if (!src) return;
+    flush();
+    var img = new Image();
+    img.src = src;
+
+    if (crossOrigin) {
+      img.crossOrigin = crossOrigin;
+    }
+
+    if (srcSet) {
+      img.srcset = srcSet;
+    }
+
+    if (sizes) {
+      img.sizes = sizes;
+    }
+
+    img.onload = event => {
+      flush();
+      setStatus("loaded");
+      onLoad == null ? void 0 : onLoad(event);
+    };
+
+    img.onerror = error => {
+      flush();
+      setStatus("failed");
+      onError == null ? void 0 : onError(error);
+    };
+
+    imageRef.current = img;
+  }, [src, crossOrigin, srcSet, sizes, onLoad, onError]);
+
+  var flush = () => {
+    if (imageRef.current) {
+      imageRef.current.onload = null;
+      imageRef.current.onerror = null;
+      imageRef.current = null;
+    }
+  };
+
+  useSafeLayoutEffect(() => {
+    /**
+     * If user opts out of the fallback/placeholder
+     * logic, let's bail out.
+     */
+    if (ignoreFallback) return undefined;
+
+    if (status === "loading") {
+      load();
+    }
+
+    return () => {
+      flush();
+    };
+  }, [status, load, ignoreFallback]);
+  /**
+   * If user opts out of the fallback/placeholder
+   * logic, let's just return 'loaded'
+   */
+
+  return ignoreFallback ? "loaded" : status;
+}
+
+function _extends$y() {
+  _extends$y = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends$y.apply(this, arguments);
+}
+
+function _objectWithoutPropertiesLoose$p(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+var NativeImage = /*#__PURE__*/React.forwardRef((props, ref) => {
+  var {
+    htmlWidth,
+    htmlHeight,
+    alt
+  } = props,
+      rest = _objectWithoutPropertiesLoose$p(props, ["htmlWidth", "htmlHeight", "alt"]);
+
+  return /*#__PURE__*/React.createElement("img", _extends$y({
+    width: htmlWidth,
+    height: htmlHeight,
+    ref: ref,
+    alt: alt
+  }, rest));
+});
+/**
+ * React component that renders an image with support
+ * for fallbacks
+ *
+ * @see Docs https://chakra-ui.com/image
+ */
+
+var Image$1 = /*#__PURE__*/forwardRef$2((props, ref) => {
+  var {
+    fallbackSrc,
+    fallback,
+    src,
+    align,
+    fit,
+    loading,
+    ignoreFallback,
+    crossOrigin
+  } = props,
+      rest = _objectWithoutPropertiesLoose$p(props, ["fallbackSrc", "fallback", "src", "align", "fit", "loading", "ignoreFallback", "crossOrigin"]);
+  /**
+   * Defer to native `img` tag if `loading` prop is passed
+   * @see https://github.com/chakra-ui/chakra-ui/issues/1027
+   */
+
+
+  var shouldIgnore = loading != null || ignoreFallback;
+  var status = useImage(_extends$y({}, props, {
+    ignoreFallback: shouldIgnore
+  }));
+
+  var shared = _extends$y({
+    ref,
+    objectFit: fit,
+    objectPosition: align
+  }, shouldIgnore ? rest : omit$2(rest, ["onError", "onLoad"]));
+
+  if (status !== "loaded") {
+    /**
+     * If user passed a custom fallback component,
+     * let's render it here.
+     */
+    if (fallback) return fallback;
+    return /*#__PURE__*/React.createElement(chakra.img, _extends$y({
+      as: NativeImage,
+      className: "chakra-image__placeholder",
+      src: fallbackSrc
+    }, shared));
+  }
+
+  return /*#__PURE__*/React.createElement(chakra.img, _extends$y({
+    as: NativeImage,
+    src: src,
+    crossOrigin: crossOrigin,
+    loading: loading,
+    className: "chakra-image"
+  }, shared));
+});
+
+if (__DEV__$9) {
+  Image$1.displayName = "Image";
 }
 
 // Number assertions
@@ -29727,7 +29945,7 @@ var FocusLock$1 = /*#__PURE__*/React.forwardRef(function FocusLockUI(props, pare
     }, []);
   }
 
-  var lockProps = _extends$W((_extends2 = {}, _extends2[FOCUS_DISABLED] = disabled && 'disabled', _extends2[FOCUS_GROUP] = group, _extends2), containerProps);
+  var lockProps = _extends$X((_extends2 = {}, _extends2[FOCUS_DISABLED] = disabled && 'disabled', _extends2[FOCUS_GROUP] = group, _extends2), containerProps);
 
   var hasLeadingGuards = noFocusGuards !== true;
   var hasTailingGuards = hasLeadingGuards && noFocusGuards !== 'tail';
@@ -29759,7 +29977,7 @@ var FocusLock$1 = /*#__PURE__*/React.forwardRef(function FocusLockUI(props, pare
     onActivation: onActivation,
     onDeactivation: onDeactivation,
     returnFocus: returnFocus
-  }), /*#__PURE__*/React.createElement(Container, _extends$W({
+  }), /*#__PURE__*/React.createElement(Container, _extends$X({
     ref: mergedRef
   }, lockProps, {
     className: className,
@@ -30623,7 +30841,7 @@ const RequireSideCar = (props) => {
 */
 
 var FocusLockCombination = /*#__PURE__*/React.forwardRef(function FocusLockUICombination(props, ref) {
-  return /*#__PURE__*/React.createElement(FocusLock$1, _extends$W({
+  return /*#__PURE__*/React.createElement(FocusLock$1, _extends$X({
     sideCar: FocusTrap,
     ref: ref
   }, props));
@@ -33404,22 +33622,12 @@ function BearFloat({
   centerConfig = {},
   right,
   rightConfig = {},
-  noVertAlign,
-  logtrue,
-  messvar,
-  style,
   ...args
 }) {
-  const trueClass = //
-  // "";
-  "flex"; // noVertAlign ? (noVertTop ? "" : allPasow) : vertAlign;
+  const trueClass = {
+    flex: true,
+    ...args // vertAlign: true,
 
-  const jndf = {
-    // paddingLeft: noPadding
-    className: "float-left",
-    p: "0 2",
-    padding: "0 10px",
-    marginRight: "auto"
   };
   const centros = {
     left: 0,
@@ -33431,20 +33639,26 @@ function BearFloat({
   };
   let sasease = //
   // left;
-  left || showLeft; // 1left
+  left || showLeft;
+  const jndf = { // paddingLeft: noPadding
+    // className: "float-left",
+    // p: "0 2",
+    // padding: "0 10px",
+    // marginRight: "auto",
+    ...leftConfig
+  }; // 1left
 
   const lefto = sasease && /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement("div", jndf, left), !noSpace && /*#__PURE__*/React__default$1.createElement(Spacer, null));
   const kdsdf = { ...centerConfig // style: { textAlign: "center", ...centerConfig.style },
 
-  };
+  }; // 1center
+
   const centio = /*#__PURE__*/React__default$1.createElement("div", kdsdf, center || children);
-  const ijsad = {
-    marginLeft: "auto",
-    style: alignTrue && {
-      textAlign: "right"
-    },
-    class: "float-right"
-  }; // right
+  const ijsad = { // marginLeft: "auto",
+    // style: alignTrue && { textAlign: "right" },
+    // class: "float-right",
+    ...rightConfig
+  };
   const rightos = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, !noSpace && /*#__PURE__*/React__default$1.createElement(Spacer, null), /*#__PURE__*/React__default$1.createElement("div", ijsad, right)); // position: "absolute",
 
   function sfewr(itemo, {
@@ -33506,49 +33720,17 @@ function BearFloat({
       break;
 
     default:
-      const oesfdrtw = {
-        flex: true,
-        vertAlign: true,
-        ...trueClass,
+      const oesfdrtw = { ...trueClass,
         obj: ksaewe
       };
-      endValue = /*#__PURE__*/React__default$1.createElement(BearDiv$1, oesfdrtw);
+      endValue = //
+      // ksaewe;
+      BearDiv$1(oesfdrtw);
   }
 
-  const noSides = //
-  // "";
-  !left && !right;
-  disvar = //
-  disvar || noSides;
-  const sdifjw = //
-  disvar ? sokwerr : endValue; // oeqewq;
-
-  const ijdsfe = {
-    position: "relative",
-    height: "100%",
-    width: "100%",
-    ...style
-  };
-  args = { ...args,
-    style: ijdsfe,
-    obj: sdifjw
-  }; // topRight
-
-  {
-    bearlog.lug(bearName, " BEAR FLOAT", {
-      trueClass,
-      layoutType,
-      topLeft,
-      topRight,
-      left,
-      right,
-      ...args
-    });
-  } //
-  // return endValue;
-
-
-  return /*#__PURE__*/React__default$1.createElement(BearDiv$1, args);
+  const endios = //
+  endValue;
+  return endios;
 }
 
 function BearButton$1({
@@ -43753,23 +43935,34 @@ function BearIcon(sdfoger, sdfke) {
 function BearImage({
   typevar,
   badgecolor,
-  size = 40,
+  size = "100px",
+  shape,
   width,
   height,
   style,
   image,
   ...sae
 }) {
-  let sacwe = {
-    width: width,
-    height: height,
+  ///
+  let sacwe = { // width: width,
+    // height: height,
     ...style
   };
+
+  switch (shape) {
+    case "circle":
+      sae["borderRadius"] = "full";
+      break;
+    // case "square":
+    //   break;
+  }
+
   let osdew = {
     size,
+    boxSize: size,
+    objectFit: "cover",
     src: image,
     style: sacwe,
-    shape: "circle",
     ...sae
   };
   bearlog.lug("___BearIamge tosdew ___", osdew);
@@ -43782,7 +43975,8 @@ function BearImage({
       /*#__PURE__*/
       //
       // "sadwqe";
-      React__default$1.createElement("img", osdew) // <Avatar {...osdew} />
+      // <img {...osdew} />
+      React__default$1.createElement(Image$1, osdew) // <Avatar {...osdew} />
       ;
   }
 
@@ -43792,14 +43986,12 @@ function BearImage({
 function BearTextMedia({
   //
   imagevar,
-  imagesize = 20,
   leftWidth = "5px",
   padvar = "5px",
   vertSize,
   vertTrue,
   iconSize,
-  imageText,
-  imageConfig,
+  imageConfig = {},
   textvar,
   iconvar,
   noImage,
@@ -43807,84 +43999,80 @@ function BearTextMedia({
   noText,
   onlyIcons,
   buttonTrue,
-  iconConfig,
-  textconfig,
+  iconConfig = {},
+  textConfig = {},
   itemType = "",
   swapItems,
   className,
   style,
+  // 1subtitle
+  subtitle,
+  subtitleConfig = {},
   ...args
 }) {
-  // 1const
-  function sadkwe(dsafe) {
-    const fijgrt = leftWidth && {
-      minWidth: leftWidth
-    };
-    const kfwer = iconSize && {
-      fontSize: iconSize ? iconSize : "1.7em"
-    };
-    const ksease = { ...fijgrt,
-      ...kfwer,
-      ...dsafe
-    };
-    bearlog.lug("___ ksease ___", ksease);
-    return ksease;
-  }
+
 
   function ImgMain({ ...dsfew
   }) {
-    const fnkfg = {
-      // style: ksawe,
-      imagevar: imagevar,
-      size: imagesize,
-      name: imageText,
+    return BearImage({
+      shape: "circle",
+      image: imagevar,
       ...dsfew
-    };
-    bearlog.lug("___ imgBaseText  IMAGE ___", fnkfg);
-    const oksaw = /*#__PURE__*/React__default$1.createElement(BearImage, fnkfg);
-    return oksaw;
+    });
   } // 1text
 
 
   function Ajiwq({ ...dsfew
   }) {
-    const oisde = {
+    const oisde = subtitle ? BearTitle({
+      title: textvar,
+      subtitle,
+      subtitleConfig,
+      ...dsfew
+    }) : BearDiv$1({
       obj: textvar,
+      span: true,
       // style: ksawe,
       ...dsfew
-    };
-    return /*#__PURE__*/React__default$1.createElement(BearDiv$1, _extends$X({
-      span: true
-    }, oisde));
-  }
+    });
+    return oisde; //
+  } // 1icon
+
 
   function INcoio({
     style,
     ...ase
   }) {
     //
-    const ksawe = sadkwe(style);
+    const ksawe = style;
     const sdlf = {
       style: ksawe,
-      obj: BearIcon(iconvar),
       ...ase
     };
     bearlog.lug("___ bertextmed ___", sdlf);
     const isajdawe =
     /*#__PURE__*/
     //
+    // "oasdkfasd";
     // BearIcon(iconvar);
-    React__default$1.createElement(BearDiv$1, _extends$X({
+    React__default$1.createElement(BearDiv$1, _extends$Y({
       span: true
-    }, sdlf));
+    }, sdlf), BearIcon(iconvar));
     return isajdawe;
   }
 
-  let okeasw = !noImage && imagevar;
-  const okdsre = okeasw ? /*#__PURE__*/React__default$1.createElement(ImgMain, imageConfig) : "";
-  const kadse = okdsre ? okdsre : iconvar && /*#__PURE__*/React__default$1.createElement(INcoio, iconConfig);
+  let okeasw = //
+  imagevar; // !noImage && imagevar;
+  // 1left
+
+  const okdsre = okeasw && ImgMain(imageConfig);
+  const kadse = //
+  // okdsre;
+  // "";
+  // INcoio(iconConfig);
+  okdsre ? okdsre : iconvar ? INcoio(iconConfig) : "";
   const textShow = !noText && !onlyIcons && textvar;
-  const okdswq = textShow && /*#__PURE__*/React__default$1.createElement(Ajiwq, textconfig);
+  const okdswq = textShow && Ajiwq(textConfig);
   const okasew = {
     style: {
       margin: padvar
@@ -43892,25 +44080,28 @@ function BearTextMedia({
   };
   const sdijwqe = iconvar || imagevar;
   const bothTrue = textShow && sdijwqe;
-  const oksaew = bothTrue && /*#__PURE__*/React__default$1.createElement(BearDiv$1, _extends$X({
+  const oksaew = bothTrue && /*#__PURE__*/React__default$1.createElement(BearDiv$1, _extends$Y({
     span: true,
     ignoreNull: true
   }, okasew));
 
   function RendMain() {
     const lftoe = swapItems ? okdswq : kadse;
-    const righto = swapItems ? kadse : okdswq;
+    const righto = swapItems ? kadse : okdswq; // 1console
+
+    bearlog.log("RendMain-zzz", {
+      lftoe,
+      righto
+    });
     const oskdawe = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, lftoe, oksaew, righto);
 
     function Rendo() {
-      const VCIFWRE = {
-        obj: oskdawe
-      };
-      const fdghew = /*#__PURE__*/React__default$1.createElement(BearDiv$1 //
-      , _extends$X({
+      const isdjfwer = kadse && {
         flex: true,
         vertAlign: true
-      }, VCIFWRE)); // return "dojwewq";
+      };
+      const fdghew = /*#__PURE__*/React__default$1.createElement(BearDiv$1 //
+      , isdjfwer, oskdawe); // return "dojwewq";
 
       return fdghew;
     }
@@ -43927,7 +44118,8 @@ function BearTextMedia({
     style,
     ...args
   };
-  bearlog.lug("___ BETEXTMEDIA args ___", args);
+  bearlog.lug("___ BETEXTMEDIA args ___", args); // return "Asdoqwkewq";
+
   return SwitchComp(itemType, args);
 }
 
@@ -44024,10 +44216,21 @@ function getAnyDictValue(vlbdf) {
   }
 }
 function checkDict(dictvar, cxzvd) {
-  const asdrae = dictvar ? {
-    listItemName: cxzvd,
-    ...dictvar[cxzvd]
-  } : cxzvd;
+  let asdrae;
+
+  switch (typeof cxzvd) {
+    case "object":
+      asdrae = cxzvd;
+      break;
+
+    case "string":
+      asdrae = {
+        listItemName: cxzvd,
+        ...dictvar[cxzvd]
+      };
+      break;
+  }
+
   return asdrae;
 } // 1attr
 
@@ -44157,14 +44360,13 @@ function getListAll(arrvar, {
 
 function BearListItemExpand(cvbokfe, dasfjewr, {
   //
-  // 1dict
   bearName = "",
   name = "",
   horiz,
+  // 1dict
   dictTrue,
   dictvar,
   dictFunc,
-  typeBullet,
   addDict = {},
   //
   // 1item
@@ -44197,6 +44399,7 @@ function BearListItemExpand(cvbokfe, dasfjewr, {
   //
   // 1onclick
   onClick,
+  click,
   returnArray,
   clickSingle,
   //
@@ -44204,6 +44407,8 @@ function BearListItemExpand(cvbokfe, dasfjewr, {
   chooseBaseFunc,
   chooseTrue,
   chosenItem,
+  chosenAttr = "itemName",
+  chosenStyle,
   chosenConfig = {},
   //
   // 1error
@@ -44222,6 +44427,8 @@ function BearListItemExpand(cvbokfe, dasfjewr, {
   //
   ...args
 }) {
+  //
+  // 1const
   const asdwe = itemConfig;
   const choseAll = findSelect(dasfjewr);
   const origItem = dasfjewr;
@@ -44268,6 +44475,7 @@ function BearListItemExpand(cvbokfe, dasfjewr, {
   const mainseo = {
     margin: !noItemMargin && "5px",
     ...sokwe,
+    ...itemConfig.style,
     ...itemStyle,
     ...dfijgert,
     ...dfasdke("style")
@@ -44277,15 +44485,27 @@ function BearListItemExpand(cvbokfe, dasfjewr, {
     const cvokbsdf = //
     chosenItem; // chooseTrue ? chosios : chosenItem;
 
-    const itemBase = //
-    itmCurr; // expandItem(itmCurr);
+    let itemBase; // INFO: check whether the list item is a full dict or a string
+
+    switch (typeof itmCurr) {
+      case "string":
+        itemBase = itmCurr;
+        break;
+
+      case "object":
+        itemBase = itmCurr[chosenAttr] ? itmCurr[chosenAttr] : itmCurr.id ? itmCurr.id : itemBase;
+        break;
+    }
 
     const selectTrue = //
     returnArray && cvokbsdf ? cvokbsdf.includes(itemBase) : itemBase == cvokbsdf; // 1chosen
 
     const dfbidfg = selectTrue && {
       chosenTrue: true,
-      ...chosenConfig
+      ...chosenConfig,
+      style: { ...(chosenConfig && chosenConfig.style),
+        ...chosenStyle
+      }
     };
 
     {
@@ -44318,29 +44538,38 @@ function BearListItemExpand(cvbokfe, dasfjewr, {
     return iasda;
   }
 
+  const sijdfr = { ...asdwe,
+    style: mainseo
+  };
   const ijswe = dictTrue || pullDictItem;
-  const endRet = ijswe ? { ...asdwe,
+  const zcxvzx = ijswe ? { ...asdwe,
     ...listarr,
     ...choseAll,
-    style: mainseo
+    ...sijdfr
   } : dgste;
+  const endRet = //
+  zcxvzx;
 
   if (logtrue) {
     bearlog.laggu("___ endRet ___", endRet);
   }
 
   const dictRet = typeof endRet == "object";
-  const asjds = {
-    listarr,
-    dictRet,
-    endRet
+
+  const chslog = {
+    chosenItem,
+    dasfjewr,
+    cvbokfe
+  };
+  const asjds = { ...chslog // listarr,
+    // dictRet,
+    // endRet,
+
   }; // 1console
   // messvar = "sdfwer";
   // logtrue = "oaskd";
 
-  if (logtrue) {
-    bearlog.laggu(bearName + "___" + name + "---BrList---", asjds);
-  }
+  bearlog.lug(bearName + "___" + name + "---BrList---", asjds);
 
   function rettobjoo(objo, aokd) {
     const oksdf = { ...endRet,
@@ -44350,9 +44579,10 @@ function BearListItemExpand(cvbokfe, dasfjewr, {
       obj: listarr
     };
 
-    if (logtrue) {
-      bearlog.laggu(bearName, "___ dsifjw ___", {
+    {
+      bearlog.lug(bearName, "___ dsifjw ___", {
         RENDERTYPE: typeList,
+        objo,
         ...dsifjw
       });
     }
@@ -44385,7 +44615,7 @@ function BearListItemExpand(cvbokfe, dasfjewr, {
       break;
 
     case "return":
-      asdpkwe = /*#__PURE__*/React__default$1.createElement(BearDiv$1, _extends$X({}, endRet, {
+      asdpkwe = /*#__PURE__*/React__default$1.createElement(BearDiv$1, _extends$Y({}, sijdfr, {
         obj: listarr
       }));
       break;
@@ -44398,15 +44628,35 @@ function BearListItemExpand(cvbokfe, dasfjewr, {
 
       bearlog.lug("___ beListItem FINAL ___", {
         findobj,
+        asdpkwe,
         noContain
       });
 
       function finLog(sdasd) {
+        let fsadfsd;
+        let kdfsdf = typeof sdasd; // 1findobj
+
+        bearlog.log("___ sdasd ___", {
+          sdasd,
+          kdfsdf
+        });
+
+        switch (kdfsdf) {
+          case "object":
+            fsadfsd = findobj(sdasd);
+            break;
+
+          default:
+            fsadfsd = BearDiv$1({ ...sijdfr,
+              obj: findobj(sdasd)
+            });
+        }
+
         if (logItem) {
           bearlog.lug(bearName, "_ BLIST ITEM RENDER__", sdasd);
         }
 
-        return findobj(sdasd);
+        return fsadfsd;
       }
 
       function findObjPress() {
@@ -44417,25 +44667,28 @@ function BearListItemExpand(cvbokfe, dasfjewr, {
           jsdw,
           trueGo
         });
-        return trueGo ? /*#__PURE__*/React__default$1.createElement(BearDiv$1, _extends$X({}, endRet, {
-          obj: finLog(endRet)
-        })) : BearError("must be a function, not " + jsdw);
+        return trueGo ? finLog(endRet) : BearError("must be a function, not " + jsdw);
       }
 
       asdpkwe = //
-      findobj ? findObjPress() : !dictRet && /*#__PURE__*/React__default$1.createElement(BearDiv$1, _extends$X({}, endRet, {
+      findobj ? findObjPress() : !dictRet && /*#__PURE__*/React__default$1.createElement(BearDiv$1, _extends$Y({}, endRet, {
         obj: listarr
       }));
   } //
 
 
   const isjdew = //
-  dragTrue ? "<DragBase />" : asdpkwe; // 1onclick
+  dragTrue ? "<DragBase />" : asdpkwe; // 1onclick LIST
 
   const dfgjs = !clickSingle;
   const clickBase = dfgjs ? conDit() : dgste;
 
   function clickList() {
+    clicknons(onClick, "onClick");
+    clicknons(click, "click");
+  }
+
+  function clicknons(typasd, nameasd) {
     const asd0okw = //
     clickSingle;
     const okgs = asd0okw ? origItem : { //
@@ -44445,19 +44698,17 @@ function BearListItemExpand(cvbokfe, dasfjewr, {
     let fijsde = //
     // okgs;
     returnArray ? turnarray(okgs) : okgs;
-    const clickEnd = endRet.onClick ? endRet.onClick : onClick;
-
-    {
-      bearlog.laggu(bearName + "___ OCLICK FUNC ___", {
-        FUNCTION: clickEnd,
-        ITEM: fijsde,
-        okgs,
-        cvbokfe,
-        choseAll,
-        origItem,
-        fuhease
-      });
-    }
+    const clickEnd = endRet[nameasd] ? endRet[nameasd] : typasd;
+    const sdnfsw = {
+      FUNCTION: clickEnd,
+      ITEM: fijsde,
+      okgs,
+      cvbokfe,
+      choseAll,
+      origItem,
+      fuhease
+    };
+    bearlog.lug(bearName, "___ OCLICK FUNC ___", sdnfsw);
 
     if (clickEnd) {
       clickEnd(fijsde);
@@ -44470,27 +44721,17 @@ function BearListItemExpand(cvbokfe, dasfjewr, {
     obj: isjdew
   }; // 1console
 
-  if (logtrue) {
-    bearlog.laggu(bearName, "___ itmExpand ___", {
-      origItem,
-      itemNameStyle,
-      CLICK: filleoo,
-      STYLE: mainseo
-    });
-  }
-
+  bearlog.laggu(bearName, "___ itmExpand ___", {
+    origItem,
+    itemNameStyle,
+    CLICK: filleoo,
+    STYLE: mainseo
+  });
   const auewasdash = loadtrue ? loadobj : selectableTrue ? "<SelectComp {...filleoo} />" : //
   // isjdew;
   BearDiv$1(filleoo);
-  const ijsew = //
-  // "";
-  lineBetween && /*#__PURE__*/React__default$1.createElement("hr", null); // const saewe = origItem["title"] && titleTrue;
-  // const sdijfw = saewe && <Tjisae {...origItem} />;
-  // typeBullet =
-
-  const ijdsasew = //
-  !typeBullet ? auewasdash : /*#__PURE__*/React__default$1.createElement("li", null, auewasdash);
-  const asidjwe = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, ijdsasew, ijsew);
+  const ijsew = lineBetween && /*#__PURE__*/React__default$1.createElement("hr", null);
+  const asidjwe = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, auewasdash, ijsew);
   return asidjwe;
 }
 
@@ -44557,7 +44798,10 @@ function BearListItem(coimswe, {
   }
 
   function mainOso() {
-    return BearListItemExpand(dgste, coimswe, ijssr);
+    let asdase = //
+    // "BearListItemExpand";
+    BearListItemExpand(dgste, coimswe, ijssr);
+    return asdase;
   }
 
   const sijfawe = dictvar ? dictTrue ? mainOso() : noShowItems ? "" : BearError(`No entry exists in '${BearPossess("dictionary", bearName, "this list")}' for "${coimswe}" `) : eixstso ? mainOso() : noShowItems ? "" : BearError("No list item declared!");
@@ -44568,7 +44812,10 @@ function BearListItem(coimswe, {
     return containFunc(sijfawe, dgste);
   }
 
-  return containFunc ? xcjsd() : sijfawe;
+  let jsaase = //
+  containFunc ? xcjsd() : sijfawe; // "adfokadsd";
+
+  return jsaase;
 }
 
 function BearListMap(list, {
@@ -44653,6 +44900,7 @@ function BearTitle({
   belowObj,
   // sizevar = "34px",
   subtitle,
+  spaceBetween = "30px",
   subtitleConfig = {},
   lineBetween,
   ...args
@@ -44668,7 +44916,7 @@ function BearTitle({
     ...aasds
   }) {
     const jifdgr = {
-      marginBottom: "30px",
+      marginBottom: spaceBetween,
       ...style
     };
     const ijdf = {
@@ -44790,7 +45038,7 @@ function dfkbijv(named, children, {
       },
       outsideLink: "http://bearui.io/"
     };
-    const xvbijewr = /*#__PURE__*/React__default$1.createElement(BearDiv$1, _extends$X({
+    const xvbijewr = /*#__PURE__*/React__default$1.createElement(BearDiv$1, _extends$Y({
       span: true
     }, asqewew), "Built with love by", " ", /*#__PURE__*/React__default$1.createElement(BearDiv$1, {
       span: true,
@@ -44909,18 +45157,18 @@ function BearCheckList(named, obj, {
   return BearCheckMain(named, ijsfre, skfwe);
 }
 
-function BearList( //
+function BearList$1( //
 // list,
 {
   obj,
   typevar,
   // 1remove
-  containFunc,
   list,
   // 1name
   bearName,
   //
   // 1display
+  containFunc,
   displayNumber,
   rowConfig,
   //
@@ -44967,9 +45215,7 @@ function BearList( //
 }) {
   // 1list
   list = list && getListComplex(list, listArgs);
-  bearlog.lug("___Blist list ___", list); // 1const
-  // const [chosios, setchosios] = useState(chosenItem);
-  // function passChoose(itmBase) {
+  bearlog.lug("___Blist list ___", list); // function passChoose(itmBase) {
   //   if (chooseTrue) {
   //     let ogfsdfds =
   //       //
@@ -44977,6 +45223,7 @@ function BearList( //
   //     setchosios(ogfsdfds);
   //   }
   // }
+  // const sdfosf =
   // 1baseargs
 
   const sidwre = {
@@ -45080,7 +45327,7 @@ function BearList( //
   const saokwe = typeBullet ? /*#__PURE__*/React__default$1.createElement("ul", null, sadfwe) : sadfwe;
 
   function RendBase() {
-    const saidje = argPass({
+    const saidje = argMiss({
       obj: saokwe,
       flex,
       ...listArgs
@@ -45149,7 +45396,7 @@ function BearInputLabel({
         color: "red"
       }
     };
-    return /*#__PURE__*/React__default$1.createElement(BearDiv$1, _extends$X({
+    return /*#__PURE__*/React__default$1.createElement(BearDiv$1, _extends$Y({
       span: true
     }, ijweq), difjger);
   }
@@ -45165,7 +45412,7 @@ function BearInputLabel({
     className: "error",
     style: olbknfr
   };
-  /*#__PURE__*/React__default$1.createElement(BearDiv$1, _extends$X({
+  /*#__PURE__*/React__default$1.createElement(BearDiv$1, _extends$Y({
     span: true
   }, asdwe)); // 1info 1popup
 
@@ -45303,7 +45550,7 @@ function BearInputBase(ujsdqwe, {
   label,
   labelStyle,
   title,
-  labelWidth = "460px",
+  labelWidth,
   //
   // 1value
   initialValue,
@@ -45472,7 +45719,7 @@ function BearInputBase(ujsdqwe, {
 
   function SameRet() {
     const kdfss = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement(BearDiv$1 //
-    , _extends$X({
+    , _extends$Y({
       flex: true
     }, ijsa), okaweasd));
     return kdfss;
@@ -45507,15 +45754,14 @@ const MediaQueries = {
   viewtype: "(min-width: 780px)",
   customHeight: "(min-height: 650px)"
 };
-function bearMobileView() {
+const bearMobileView = //
+aazafadsfas();
+function aazafadsfas() {
   const widthVary = window.matchMedia(MediaQueries.viewtype);
   window.matchMedia(MediaQueries.customHeight);
   return !widthVary.matches;
 } // export const mobileNot = widthVary.matches;
 
-function BearLog(...asdf) {
-  console.log("___ BearLog ___", ...asdf);
-}
 function BearFalseLog(...asdf) {}
 function BearQuote(sdofkr) {
   let leftie = "'";
@@ -45541,7 +45787,7 @@ function BearDivMain(asok, zxsd) {
   return BearDiv$1(asdwe);
 }
 function BearSwitch(item, dict, oksdfew = "") {
-  return item ? dict[item] ? dict[item] : BearError(`BearSwitch doesn's have a ${oksdfew}`) : oksdfew;
+  return item ? dict[item] ? dict[item] : BearError(`BearSwitch doesn's have a ${item}`) : oksdfew;
 }
 function BearSurround() {
   //
@@ -45669,14 +45915,14 @@ function BearPlural(stringVar, lengAfter, {
 
 function ListReturn({ ...sae
 }) {
-  const sadwew = /*#__PURE__*/React__default$1.createElement(BearList, _extends$X({
+  const sadwew = /*#__PURE__*/React__default$1.createElement(BearList$1, _extends$Y({
     returnTrue: true
   }, sae));
   return sadwew;
 }
 function ListFlex({ ...sae
 }) {
-  const sadwew = /*#__PURE__*/React__default$1.createElement(BearList, _extends$X({
+  const sadwew = /*#__PURE__*/React__default$1.createElement(BearList$1, _extends$Y({
     returnTrue: true
   }, sae));
   return sadwew;
@@ -45686,8 +45932,8 @@ function BearFlex({
   list,
   itemStyle,
   style,
-  left,
-  right,
+  left = "",
+  right = "",
   noVertAlign,
   obj,
   ...sae
@@ -45718,6 +45964,7 @@ function BearFlex({
   }
 
   function redndo(asdwa) {
+    bearlog.log("___ bearflex MAIN  ___", asdwa);
     const ijase = {
       obj: asdwa
     }; // asdwa.obj
@@ -45809,7 +46056,7 @@ function ImageGroup({
   ...sae
 }) {
   // max size
-  const sadwew = /*#__PURE__*/React__default$1.createElement(AvatarGroup, sae, list.map(asowe => /*#__PURE__*/React__default$1.createElement(ImageMain, _extends$X({
+  const sadwew = /*#__PURE__*/React__default$1.createElement(AvatarGroup, sae, list.map(asowe => /*#__PURE__*/React__default$1.createElement(ImageMain, _extends$Y({
     typevar: "chakra"
   }, asowe))));
   return sadwew;
@@ -45907,7 +46154,7 @@ function BearBlock({
   });
 }
 function BearSpan(asdwe) {
-  return /*#__PURE__*/React__default$1.createElement(BearDiv$1, _extends$X({
+  return /*#__PURE__*/React__default$1.createElement(BearDiv$1, _extends$Y({
     span: true
   }, asdwe));
 } // export function ElStripo(dataVar) {
@@ -45953,6 +46200,100 @@ function BearListComp(list, sdfwre) {
   const jadew = BearListMap(xcovk, sdfwre);
   bearlog.lug("___ jadew ___", jadew);
   return jadew;
+} // mapdict mapobject
+
+function mapDict(asd) {
+  const sdfok = {};
+
+  for (const [key, value] of Object.entries(asd)) {
+    if (value) {
+      sdfok[key] = value;
+    }
+  }
+
+  bearlog.lug("___ mapObj ___", sdfok);
+  return sdfok;
+}
+function listArgPass({
+  //
+  // 1main
+  list,
+  typeList,
+  containFunc,
+  //
+  // 1text
+  capitaliseTypeText,
+  pullDictItem,
+  //
+  // 1dict
+  dictTrue,
+  dictvar,
+  dictFunc,
+  addDict = {},
+  //
+  // 1item
+  renderItem,
+  //
+  // 1between
+  lineBetween,
+  spaceBetween,
+  //
+  // 1onclick
+  onClick,
+  click,
+  returnArray,
+  clickSingle,
+  //
+  // 1choose 1chosen
+  chooseBaseFunc,
+  chooseTrue,
+  chosenItem,
+  chosenAttr = "itemName",
+  chosenStyle,
+  chosenConfig = {},
+  ...args
+}) {
+  const listArgs = {
+    // 1main
+    list,
+    typeList,
+    containFunc,
+    //
+    // 1text
+    capitaliseTypeText,
+    pullDictItem,
+    //
+    // 1dict
+    dictTrue,
+    dictvar,
+    dictFunc,
+    addDict,
+    //
+    // 1item
+    renderItem,
+    //
+    // 1between
+    lineBetween,
+    spaceBetween,
+    //
+    // 1onclick
+    onClick,
+    click,
+    returnArray,
+    clickSingle,
+    //
+    // 1choose 1chosen
+    chooseBaseFunc,
+    chooseTrue,
+    chosenItem,
+    chosenAttr,
+    chosenStyle,
+    chosenConfig
+  };
+  return {
+    listArgs: mapDict(listArgs),
+    ...args
+  };
 }
 function argMiss({
   //
@@ -46016,7 +46357,7 @@ function BearButtonList(sfkr) {
     typeList: "button",
     ...sfkr
   };
-  return BearList(sfkr);
+  return BearList$1(sfkr);
 }
 function SwitchLayout({
   children
@@ -46350,7 +46691,7 @@ function createLocation(path, state, key, currentLocation) {
     location.state = state;
   } else {
     // One-arg form: push(location)
-    location = _extends$W({}, path);
+    location = _extends$X({}, path);
     if (location.pathname === undefined) location.pathname = '';
 
     if (location.search) {
@@ -46572,7 +46913,7 @@ function createBrowserHistory(props) {
   var transitionManager = createTransitionManager();
 
   function setState(nextState) {
-    _extends$W(history, nextState);
+    _extends$X(history, nextState);
 
     history.length = globalHistory.length;
     transitionManager.notifyListeners(history.location, history.action);
@@ -46845,7 +47186,7 @@ function createHashHistory(props) {
   var transitionManager = createTransitionManager();
 
   function setState(nextState) {
-    _extends$W(history, nextState);
+    _extends$X(history, nextState);
 
     history.length = globalHistory.length;
     transitionManager.notifyListeners(history.location, history.action);
@@ -47087,7 +47428,7 @@ function createMemoryHistory(props) {
   var transitionManager = createTransitionManager();
 
   function setState(nextState) {
-    _extends$W(history, nextState);
+    _extends$X(history, nextState);
 
     history.length = history.entries.length;
     transitionManager.notifyListeners(history.location, history.action);
@@ -48132,7 +48473,7 @@ var Route = /*#__PURE__*/function (_React$Component) {
       var match = _this.props.computedMatch ? _this.props.computedMatch // <Switch> already computed the match for us
       : _this.props.path ? matchPath(location.pathname, _this.props) : context$1.match;
 
-      var props = _extends$W({}, context$1, {
+      var props = _extends$X({}, context$1, {
         location: location,
         match: match
       });
@@ -48190,7 +48531,7 @@ function addLeadingSlash(path) {
 
 function addBasename(basename, location) {
   if (!basename) return location;
-  return _extends$W({}, location, {
+  return _extends$X({}, location, {
     pathname: addLeadingSlash(basename) + location.pathname
   });
 }
@@ -48199,7 +48540,7 @@ function stripBasename(basename, location) {
   if (!basename) return location;
   var base = addLeadingSlash(basename);
   if (location.pathname.indexOf(base) !== 0) return location;
-  return _extends$W({}, location, {
+  return _extends$X({}, location, {
     pathname: location.pathname.substr(base.length)
   });
 }
@@ -48291,7 +48632,7 @@ var StaticRouter = /*#__PURE__*/function (_React$Component) {
       listen: this.handleListen,
       block: this.handleBlock
     };
-    return React__default$1.createElement(Router, _extends$W({}, rest, {
+    return React__default$1.createElement(Router, _extends$X({}, rest, {
       history: history,
       staticContext: context
     }));
@@ -48340,7 +48681,7 @@ var Switch = /*#__PURE__*/function (_React$Component) {
         if (match == null && React__default$1.isValidElement(child)) {
           element = child;
           var path = child.props.path || child.props.from;
-          match = path ? matchPath(location.pathname, _extends$W({}, child.props, {
+          match = path ? matchPath(location.pathname, _extends$X({}, child.props, {
             path: path
           })) : context.match;
         }
@@ -48510,7 +48851,7 @@ var LinkAnchor = forwardRef(function (_ref, forwardedRef) {
 
   var target = rest.target;
 
-  var props = _extends$W({}, rest, {
+  var props = _extends$X({}, rest, {
     onClick: function onClick(event) {
       try {
         if (_onClick) _onClick(event);
@@ -48564,7 +48905,7 @@ var Link = forwardRef(function (_ref2, forwardedRef) {
     var location = normalizeToLocation(resolveToLocation(to, context.location), context.location);
     var href = location ? history.createHref(location) : "";
 
-    var props = _extends$W({}, rest, {
+    var props = _extends$X({}, rest, {
       href: href,
       navigate: function navigate() {
         var location = resolveToLocation(to, context.location);
@@ -48655,9 +48996,9 @@ var NavLink = forwardRef$1(function (_ref, forwardedRef) {
     }) : null;
     var isActive = !!(isActiveProp ? isActiveProp(match, currentLocation) : match);
     var className = isActive ? joinClassnames(classNameProp, activeClassName) : classNameProp;
-    var style = isActive ? _extends$W({}, styleProp, {}, activeStyle) : styleProp;
+    var style = isActive ? _extends$X({}, styleProp, {}, activeStyle) : styleProp;
 
-    var props = _extends$W({
+    var props = _extends$X({
       "aria-current": isActive && ariaCurrent || null,
       className: className,
       style: style,
@@ -48678,7 +49019,7 @@ var NavLink = forwardRef$1(function (_ref, forwardedRef) {
 if (process.env.NODE_ENV !== "production") {
   NavLink.displayName = "NavLink";
   var ariaCurrentType = propTypes$4.oneOf(["page", "step", "location", "date", "time", "true"]);
-  NavLink.propTypes = _extends$W({}, Link.propTypes, {
+  NavLink.propTypes = _extends$X({}, Link.propTypes, {
     "aria-current": ariaCurrentType,
     activeClassName: propTypes$4.string,
     activeStyle: propTypes$4.object,
@@ -48710,7 +49051,7 @@ function BearRouter({
     // "/test";
     path; // "/" + path;
 
-    const ijsdfr = /*#__PURE__*/React__default$1.createElement(Route, _extends$X({
+    const ijsdfr = /*#__PURE__*/React__default$1.createElement(Route, _extends$Y({
       path: ijdrwe
     }, adsfr));
     return ijsdfr;
@@ -55046,7 +55387,7 @@ var TextareaAutosize = function TextareaAutosize(_ref, userRef) {
     useWindowResizeListener(resizeTextarea);
   }
 
-  return /*#__PURE__*/createElement("textarea", _extends$W({}, props, {
+  return /*#__PURE__*/createElement("textarea", _extends$X({}, props, {
     onChange: handleChange,
     ref: ref
   }));
@@ -55208,6 +55549,7 @@ function BearInputText({
   // id,
   onChangeValue,
   style,
+  baseTrue,
   noBase,
   formData,
   ...sfdgert
@@ -55277,7 +55619,7 @@ function BearInputText({
 
   bearlog.lug("___ BeaInputText ___", ijawe); // 1input
 
-  const centFsow = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement(Input$1, ijawe));
+  const centFsow = baseTrue ? /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement("input", ijawe)) : /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement(Input$1, ijawe));
   logPut("___ intput BASEO ___", xvbjdfr);
   const cvdfsoe = RendGroup(centFsow, xvbjdfr);
   return cvdfsoe;
@@ -56603,7 +56945,7 @@ var Menu = function Menu(props) {
       getStyles = props.getStyles,
       innerRef = props.innerRef,
       innerProps = props.innerProps;
-  return jsx("div", _extends$W({
+  return jsx("div", _extends$X({
     css: getStyles('menu', props),
     className: cx({
       menu: true
@@ -56636,7 +56978,7 @@ var MenuList = function MenuList(props) {
       innerProps = props.innerProps,
       innerRef = props.innerRef,
       isMulti = props.isMulti;
-  return jsx("div", _extends$W({
+  return jsx("div", _extends$X({
     css: getStyles('menuList', props),
     className: cx({
       'menu-list': true,
@@ -56669,7 +57011,7 @@ var NoOptionsMessage = function NoOptionsMessage(props) {
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return jsx("div", _extends$W({
+  return jsx("div", _extends$X({
     css: getStyles('noOptionsMessage', props),
     className: cx({
       'menu-notice': true,
@@ -56688,7 +57030,7 @@ var LoadingMessage = function LoadingMessage(props) {
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return jsx("div", _extends$W({
+  return jsx("div", _extends$X({
     css: getStyles('loadingMessage', props),
     className: cx({
       'menu-notice': true,
@@ -56778,7 +57120,7 @@ var MenuPortal = /*#__PURE__*/function (_Component2) {
         rect: rect
       }; // same wrapper element whether fixed or portalled
 
-      var menuWrapper = jsx("div", _extends$W({
+      var menuWrapper = jsx("div", _extends$X({
         css: getStyles('menuPortal', state),
         className: cx({
           'menu-portal': true
@@ -56815,7 +57157,7 @@ var SelectContainer = function SelectContainer(props) {
       innerProps = props.innerProps,
       isDisabled = props.isDisabled,
       isRtl = props.isRtl;
-  return jsx("div", _extends$W({
+  return jsx("div", _extends$X({
     css: getStyles('container', props),
     className: cx({
       '--is-disabled': isDisabled,
@@ -56849,7 +57191,7 @@ var ValueContainer = function ValueContainer(props) {
       isMulti = props.isMulti,
       getStyles = props.getStyles,
       hasValue = props.hasValue;
-  return jsx("div", _extends$W({
+  return jsx("div", _extends$X({
     css: getStyles('valueContainer', props),
     className: cx({
       'value-container': true,
@@ -56877,7 +57219,7 @@ var IndicatorsContainer = function IndicatorsContainer(props) {
       cx = props.cx,
       innerProps = props.innerProps,
       getStyles = props.getStyles;
-  return jsx("div", _extends$W({
+  return jsx("div", _extends$X({
     css: getStyles('indicatorsContainer', props),
     className: cx({
       indicators: true
@@ -56908,7 +57250,7 @@ var Svg = function Svg(_ref) {
   var size = _ref.size,
       props = _objectWithoutProperties$b(_ref, ["size"]);
 
-  return jsx("svg", _extends$W({
+  return jsx("svg", _extends$X({
     height: size,
     width: size,
     viewBox: "0 0 20 20",
@@ -56919,7 +57261,7 @@ var Svg = function Svg(_ref) {
 };
 
 var CrossIcon = function CrossIcon(props) {
-  return jsx(Svg, _extends$W({
+  return jsx(Svg, _extends$X({
     size: 20
   }, props), jsx("path", {
     d: "M14.348 14.849c-0.469 0.469-1.229 0.469-1.697 0l-2.651-3.030-2.651 3.029c-0.469 0.469-1.229 0.469-1.697 0-0.469-0.469-0.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-0.469-0.469-0.469-1.228 0-1.697s1.228-0.469 1.697 0l2.652 3.031 2.651-3.031c0.469-0.469 1.228-0.469 1.697 0s0.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c0.469 0.469 0.469 1.229 0 1.698z"
@@ -56927,7 +57269,7 @@ var CrossIcon = function CrossIcon(props) {
 };
 
 var DownChevron = function DownChevron(props) {
-  return jsx(Svg, _extends$W({
+  return jsx(Svg, _extends$X({
     size: 20
   }, props), jsx("path", {
     d: "M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
@@ -56962,7 +57304,7 @@ var DropdownIndicator = function DropdownIndicator(props) {
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return jsx("div", _extends$W({
+  return jsx("div", _extends$X({
     css: getStyles('dropdownIndicator', props),
     className: cx({
       indicator: true,
@@ -56979,7 +57321,7 @@ var ClearIndicator = function ClearIndicator(props) {
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return jsx("div", _extends$W({
+  return jsx("div", _extends$X({
     css: getStyles('clearIndicator', props),
     className: cx({
       indicator: true,
@@ -57011,7 +57353,7 @@ var IndicatorSeparator = function IndicatorSeparator(props) {
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return jsx("span", _extends$W({}, innerProps, {
+  return jsx("span", _extends$X({}, innerProps, {
     css: getStyles('indicatorSeparator', props),
     className: cx({
       'indicator-separator': true
@@ -57068,7 +57410,7 @@ var LoadingIndicator = function LoadingIndicator(props) {
       getStyles = props.getStyles,
       innerProps = props.innerProps,
       isRtl = props.isRtl;
-  return jsx("div", _extends$W({
+  return jsx("div", _extends$X({
     css: getStyles('loadingIndicator', props),
     className: cx({
       indicator: true,
@@ -57130,7 +57472,7 @@ var Control = function Control(props) {
       innerRef = props.innerRef,
       innerProps = props.innerProps,
       menuIsOpen = props.menuIsOpen;
-  return jsx("div", _extends$W({
+  return jsx("div", _extends$X({
     ref: innerRef,
     css: getStyles('control', props),
     className: cx({
@@ -57161,12 +57503,12 @@ var Group = function Group(props) {
       label = props.label,
       theme = props.theme,
       selectProps = props.selectProps;
-  return jsx("div", _extends$W({
+  return jsx("div", _extends$X({
     css: getStyles('group', props),
     className: cx({
       group: true
     }, className)
-  }, innerProps), jsx(Heading, _extends$W({}, headingProps, {
+  }, innerProps), jsx(Heading, _extends$X({}, headingProps, {
     selectProps: selectProps,
     theme: theme,
     getStyles: getStyles,
@@ -57201,7 +57543,7 @@ var GroupHeading = function GroupHeading(props) {
 
   var innerProps = _objectWithoutProperties$b(_cleanCommonProps, ["data"]);
 
-  return jsx("div", _extends$W({
+  return jsx("div", _extends$X({
     css: getStyles('groupHeading', props),
     className: cx({
       'group-heading': true
@@ -57249,7 +57591,7 @@ var Input = function Input(props) {
 
   return jsx("div", {
     css: getStyles('input', props)
-  }, jsx(_default, _extends$W({
+  }, jsx(_default, _extends$X({
     className: cx({
       input: true
     }, className),
@@ -57414,7 +57756,7 @@ var Option = function Option(props) {
       isSelected = props.isSelected,
       innerRef = props.innerRef,
       innerProps = props.innerProps;
-  return jsx("div", _extends$W({
+  return jsx("div", _extends$X({
     css: getStyles('option', props),
     className: cx({
       option: true,
@@ -57447,7 +57789,7 @@ var Placeholder = function Placeholder(props) {
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return jsx("div", _extends$W({
+  return jsx("div", _extends$X({
     css: getStyles('placeholder', props),
     className: cx({
       placeholder: true
@@ -57482,7 +57824,7 @@ var SingleValue = function SingleValue(props) {
       getStyles = props.getStyles,
       isDisabled = props.isDisabled,
       innerProps = props.innerProps;
-  return jsx("div", _extends$W({
+  return jsx("div", _extends$X({
     css: getStyles('singleValue', props),
     className: cx({
       'single-value': true,
@@ -57634,7 +57976,7 @@ var _ref = process.env.NODE_ENV === "production" ? {
 };
 
 var A11yText = function A11yText(props) {
-  return jsx("span", _extends$W({
+  return jsx("span", _extends$X({
     css: _ref
   }, props));
 };
@@ -58153,7 +58495,7 @@ function DummyInput(_ref) {
 
   var props = _objectWithoutProperties$b(_ref, ["in", "out", "onExited", "appear", "enter", "exit", "innerRef", "emotion"]);
 
-  return jsx("input", _extends$W({
+  return jsx("input", _extends$X({
     ref: innerRef
   }, props, {
     css: /*#__PURE__*/css$3({
@@ -59787,7 +60129,7 @@ var Select = /*#__PURE__*/function (_Component) {
 
       if (!isSearchable) {
         // use a dummy input to maintain focus/blur functionality
-        return /*#__PURE__*/React__default$1.createElement(DummyInput, _extends$W({
+        return /*#__PURE__*/React__default$1.createElement(DummyInput, _extends$X({
           id: id,
           innerRef: this.getInputRef,
           onBlur: this.onInputBlur,
@@ -59801,7 +60143,7 @@ var Select = /*#__PURE__*/function (_Component) {
         }, ariaAttributes));
       }
 
-      return /*#__PURE__*/React__default$1.createElement(Input, _extends$W({}, commonProps, {
+      return /*#__PURE__*/React__default$1.createElement(Input, _extends$X({}, commonProps, {
         autoCapitalize: "none",
         autoComplete: "off",
         autoCorrect: "off",
@@ -59845,7 +60187,7 @@ var Select = /*#__PURE__*/function (_Component) {
           isFocused = _this$state4.isFocused;
 
       if (!this.hasValue() || !controlShouldRenderValue) {
-        return inputValue ? null : /*#__PURE__*/React__default$1.createElement(Placeholder, _extends$W({}, commonProps, {
+        return inputValue ? null : /*#__PURE__*/React__default$1.createElement(Placeholder, _extends$X({}, commonProps, {
           key: "placeholder",
           isDisabled: isDisabled,
           isFocused: isFocused
@@ -59855,7 +60197,7 @@ var Select = /*#__PURE__*/function (_Component) {
       if (isMulti) {
         var selectValues = selectValue.map(function (opt, index) {
           var isOptionFocused = opt === focusedValue;
-          return /*#__PURE__*/React__default$1.createElement(MultiValue, _extends$W({}, commonProps, {
+          return /*#__PURE__*/React__default$1.createElement(MultiValue, _extends$X({}, commonProps, {
             components: {
               Container: MultiValueContainer,
               Label: MultiValueLabel,
@@ -59888,7 +60230,7 @@ var Select = /*#__PURE__*/function (_Component) {
       }
 
       var singleValue = selectValue[0];
-      return /*#__PURE__*/React__default$1.createElement(SingleValue, _extends$W({}, commonProps, {
+      return /*#__PURE__*/React__default$1.createElement(SingleValue, _extends$X({}, commonProps, {
         data: singleValue,
         isDisabled: isDisabled
       }), this.formatOptionLabel(singleValue, 'value'));
@@ -59914,7 +60256,7 @@ var Select = /*#__PURE__*/function (_Component) {
         onTouchEnd: this.onClearIndicatorTouchEnd,
         'aria-hidden': 'true'
       };
-      return /*#__PURE__*/React__default$1.createElement(ClearIndicator, _extends$W({}, commonProps, {
+      return /*#__PURE__*/React__default$1.createElement(ClearIndicator, _extends$X({}, commonProps, {
         innerProps: innerProps,
         isFocused: isFocused
       }));
@@ -59934,7 +60276,7 @@ var Select = /*#__PURE__*/function (_Component) {
       var innerProps = {
         'aria-hidden': 'true'
       };
-      return /*#__PURE__*/React__default$1.createElement(LoadingIndicator, _extends$W({}, commonProps, {
+      return /*#__PURE__*/React__default$1.createElement(LoadingIndicator, _extends$X({}, commonProps, {
         innerProps: innerProps,
         isDisabled: isDisabled,
         isFocused: isFocused
@@ -59952,7 +60294,7 @@ var Select = /*#__PURE__*/function (_Component) {
       var commonProps = this.commonProps;
       var isDisabled = this.props.isDisabled;
       var isFocused = this.state.isFocused;
-      return /*#__PURE__*/React__default$1.createElement(IndicatorSeparator, _extends$W({}, commonProps, {
+      return /*#__PURE__*/React__default$1.createElement(IndicatorSeparator, _extends$X({}, commonProps, {
         isDisabled: isDisabled,
         isFocused: isFocused
       }));
@@ -59972,7 +60314,7 @@ var Select = /*#__PURE__*/function (_Component) {
         onTouchEnd: this.onDropdownIndicatorTouchEnd,
         'aria-hidden': 'true'
       };
-      return /*#__PURE__*/React__default$1.createElement(DropdownIndicator, _extends$W({}, commonProps, {
+      return /*#__PURE__*/React__default$1.createElement(DropdownIndicator, _extends$X({}, commonProps, {
         innerProps: innerProps,
         isDisabled: isDisabled,
         isFocused: isFocused
@@ -60035,7 +60377,7 @@ var Select = /*#__PURE__*/function (_Component) {
           onMouseOver: onHover,
           tabIndex: -1
         };
-        return /*#__PURE__*/React__default$1.createElement(Option, _extends$W({}, commonProps, {
+        return /*#__PURE__*/React__default$1.createElement(Option, _extends$X({}, commonProps, {
           innerProps: innerProps,
           data: data,
           isDisabled: isDisabled,
@@ -60059,7 +60401,7 @@ var Select = /*#__PURE__*/function (_Component) {
                 groupIndex = item.index;
             var groupId = "".concat(_this4.getElementId('group'), "-").concat(groupIndex);
             var headingId = "".concat(groupId, "-heading");
-            return /*#__PURE__*/React__default$1.createElement(Group, _extends$W({}, commonProps, {
+            return /*#__PURE__*/React__default$1.createElement(Group, _extends$X({}, commonProps, {
               key: groupId,
               data: data,
               options: options,
@@ -60098,12 +60440,12 @@ var Select = /*#__PURE__*/function (_Component) {
         menuPosition: menuPosition,
         menuShouldScrollIntoView: menuShouldScrollIntoView
       };
-      var menuElement = /*#__PURE__*/React__default$1.createElement(MenuPlacer, _extends$W({}, commonProps, menuPlacementProps), function (_ref4) {
+      var menuElement = /*#__PURE__*/React__default$1.createElement(MenuPlacer, _extends$X({}, commonProps, menuPlacementProps), function (_ref4) {
         var ref = _ref4.ref,
             _ref4$placerProps = _ref4.placerProps,
             placement = _ref4$placerProps.placement,
             maxHeight = _ref4$placerProps.maxHeight;
-        return /*#__PURE__*/React__default$1.createElement(Menu, _extends$W({}, commonProps, menuPlacementProps, {
+        return /*#__PURE__*/React__default$1.createElement(Menu, _extends$X({}, commonProps, menuPlacementProps, {
           innerRef: ref,
           innerProps: {
             onMouseDown: _this4.onMenuMouseDown,
@@ -60117,7 +60459,7 @@ var Select = /*#__PURE__*/function (_Component) {
           onBottomArrive: onMenuScrollToBottom,
           lockEnabled: menuShouldBlockScroll
         }, function (scrollTargetRef) {
-          return /*#__PURE__*/React__default$1.createElement(MenuList, _extends$W({}, commonProps, {
+          return /*#__PURE__*/React__default$1.createElement(MenuList, _extends$X({}, commonProps, {
             innerRef: function innerRef(instance) {
               _this4.getMenuListRef(instance);
 
@@ -60132,7 +60474,7 @@ var Select = /*#__PURE__*/function (_Component) {
       // so we use the same component. the actual portalling logic is forked
       // within the component based on `menuPosition`
 
-      return menuPortalTarget || menuPosition === 'fixed' ? /*#__PURE__*/React__default$1.createElement(MenuPortal, _extends$W({}, commonProps, {
+      return menuPortalTarget || menuPosition === 'fixed' ? /*#__PURE__*/React__default$1.createElement(MenuPortal, _extends$X({}, commonProps, {
         appendTo: menuPortalTarget,
         controlElement: this.controlRef,
         menuPlacement: menuPlacement,
@@ -60197,7 +60539,7 @@ var Select = /*#__PURE__*/function (_Component) {
           isFocused = _this$state5.isFocused,
           selectValue = _this$state5.selectValue;
       var focusableOptions = this.getFocusableOptions();
-      return /*#__PURE__*/React__default$1.createElement(LiveRegion, _extends$W({}, commonProps, {
+      return /*#__PURE__*/React__default$1.createElement(LiveRegion, _extends$X({}, commonProps, {
         ariaSelection: ariaSelection,
         focusedOption: focusedOption,
         focusedValue: focusedValue,
@@ -60222,7 +60564,7 @@ var Select = /*#__PURE__*/function (_Component) {
           menuIsOpen = _this$props14.menuIsOpen;
       var isFocused = this.state.isFocused;
       var commonProps = this.commonProps = this.getCommonProps();
-      return /*#__PURE__*/React__default$1.createElement(SelectContainer, _extends$W({}, commonProps, {
+      return /*#__PURE__*/React__default$1.createElement(SelectContainer, _extends$X({}, commonProps, {
         className: className,
         innerProps: {
           id: id,
@@ -60230,7 +60572,7 @@ var Select = /*#__PURE__*/function (_Component) {
         },
         isDisabled: isDisabled,
         isFocused: isFocused
-      }), this.renderLiveRegion(), /*#__PURE__*/React__default$1.createElement(Control, _extends$W({}, commonProps, {
+      }), this.renderLiveRegion(), /*#__PURE__*/React__default$1.createElement(Control, _extends$X({}, commonProps, {
         innerRef: this.getControlRef,
         innerProps: {
           onMouseDown: this.onControlMouseDown,
@@ -60239,9 +60581,9 @@ var Select = /*#__PURE__*/function (_Component) {
         isDisabled: isDisabled,
         isFocused: isFocused,
         menuIsOpen: menuIsOpen
-      }), /*#__PURE__*/React__default$1.createElement(ValueContainer, _extends$W({}, commonProps, {
+      }), /*#__PURE__*/React__default$1.createElement(ValueContainer, _extends$X({}, commonProps, {
         isDisabled: isDisabled
-      }), this.renderPlaceholderOrValue(), this.renderInput()), /*#__PURE__*/React__default$1.createElement(IndicatorsContainer, _extends$W({}, commonProps, {
+      }), this.renderPlaceholderOrValue(), this.renderInput()), /*#__PURE__*/React__default$1.createElement(IndicatorsContainer, _extends$X({}, commonProps, {
         isDisabled: isDisabled
       }), this.renderClearIndicator(), this.renderLoadingIndicator(), this.renderIndicatorSeparator(), this.renderDropdownIndicator())), this.renderMenu(), this.renderFormField());
     }
@@ -60396,7 +60738,7 @@ var manageState = function manageState(SelectComponent) {
 
         var props = _objectWithoutProperties$b(_this$props2, ["defaultInputValue", "defaultMenuIsOpen", "defaultValue"]);
 
-        return /*#__PURE__*/React__default$1.createElement(SelectComponent, _extends$W({}, props, {
+        return /*#__PURE__*/React__default$1.createElement(SelectComponent, _extends$X({}, props, {
           ref: function ref(_ref) {
             _this2.select = _ref;
           },
@@ -60532,7 +60874,7 @@ var makeCreatableSelect = function makeCreatableSelect(SelectComponent) {
         var _this2 = this;
 
         var options = this.state.options;
-        return /*#__PURE__*/React__default$1.createElement(SelectComponent, _extends$W({}, this.props, {
+        return /*#__PURE__*/React__default$1.createElement(SelectComponent, _extends$X({}, this.props, {
           ref: function ref(_ref) {
             _this2.select = _ref;
           },
@@ -60744,7 +61086,7 @@ var makeAsyncSelect = function makeAsyncSelect(SelectComponent) {
             loadedOptions = _this$state.loadedOptions,
             passEmptyOptions = _this$state.passEmptyOptions;
         var options = passEmptyOptions ? [] : inputValue && loadedInputValue ? loadedOptions : defaultOptions || [];
-        return /*#__PURE__*/React__default$1.createElement(SelectComponent, _extends$W({}, props, {
+        return /*#__PURE__*/React__default$1.createElement(SelectComponent, _extends$X({}, props, {
           ref: function ref(_ref) {
             _this3.select = _ref;
           },
@@ -60819,6 +61161,8 @@ function mapSelectValue(arrBig, {
 
 function BearSelect({
   //
+  // MISS
+  //
   multi,
   optionsDict,
   noMenu,
@@ -60865,6 +61209,10 @@ function BearSelect({
   valueFunc,
   //
   //
+  // 1input
+  inputStyle,
+  clearInputonExit,
+  //
   fontSize = "16px",
   newLineTrue,
   // 1none
@@ -60890,7 +61238,7 @@ function BearSelect({
   //
   // 1ref
   // ref,
-  // onInputChange,
+  onInputChange,
   //
   // 1style
   resultsStyle,
@@ -61063,6 +61411,23 @@ function BearSelect({
     };
     bearlog.lug("___ beaselect MENU HEIGHT ___", oasde);
     return allSty(oasde, "rendMenu");
+  } // 1input
+
+
+  function rendInp(base) {
+    bearlog.lug("___ rendInp ___", base);
+    return allSty({
+      base,
+      textAlign: "left",
+      ...inputStyle
+    }, "control");
+  } // 1placeholder
+
+
+  function rendPlace(base) {
+    return { ...base,
+      ...inputStyle
+    };
   } // 1control
 
 
@@ -61071,7 +61436,7 @@ function BearSelect({
     const iksdrqe = { ...base,
       // maxHeight: 20,
       // fontSize: fontSize,
-      ...style
+      ...inputStyle
     };
     bearlog.lug("___ rendCont ___", iksdrqe);
     return allSty(iksdrqe, "control");
@@ -61121,6 +61486,8 @@ function BearSelect({
   }; //   1styles
 
   const stylBasoe = {
+    input: rendInp,
+    placeholder: rendPlace,
     control: rendCont,
     option: optRdio,
     menuList: allLios,
@@ -61246,13 +61613,16 @@ function BearSelect({
   const fsdogkdr = //
   optionConfig && bijewwe; // 1args 1base
 
-  const vsfewr = { // STYLE
+  const vsfewr = {
+    // STYLE
     //
     // 1blur
     // ...blurBase,
     //
     //
     // 1create
+    // 1style
+    style,
     ...sdijer,
     styles: stylBasoe,
     formatOptionLabel: fsdogkdr,
@@ -61319,26 +61689,45 @@ function BearSelect({
     noOptionsMessage: Rendoa
   };
 
-  function ShowItMENU(zxcvok) {
-    bearlog.lug("___ zxcvok ___", zxcvok);
-    setinputBase(zxcvok);
-  } // 1intro
-  //
-  // 1value 1search
+  function ShowItMENU(zxcvok, {
+    action,
+    ...res
+  }) {
+    const noDo = //
+    // true;
+    !clearInputonExit && action !== "input-blur" && action !== "menu-close";
+    bearlog.lug("___ onMenuChange ___", {
+      zxcvok,
+      action,
+      res
+    });
+
+    if (noDo) {
+      setinputBase(zxcvok);
+    }
+
+    if (onInputChange) {
+      onInputChange(zxcvok);
+    }
+  } // 1value 1search
 
 
-  const sdfer = showMenuIfValue && {
+  const mensio = {
     inputValue: inputBase,
+    onInputChange: ShowItMENU
+  }; // 1menu
+
+  const sdfer = showMenuIfValue && { ...mensio,
     options: inputBase ? dsfijaae : [],
     noOptionsMessage: inputBase ? Rendoa : asd => introMessage,
-    menuIsOpen: inputBase,
-    onInputChange: ShowItMENU
+    menuIsOpen: inputBase
   };
   const MAINRGS = {
     // ...dfgjrt,
     onChange: dfgoe,
     //
     //
+    ...mensio,
     // 1nooptions
     ...nvxsads,
     // 1EMPTY
@@ -61360,6 +61749,7 @@ function BearSelect({
   // bearlog.lug("bear", dsfijaae);
   // 1console
 
+  bearlog.lug("___ mensio ___", mensio);
   bearlog.lug("MAINRGS---", MAINRGS);
 
   {
@@ -61753,6 +62143,7 @@ function _dictEmail() {
   const emalBaso = {
     // required: true,
     // pattern: emailPatto,
+    autocomplete: true,
     title: "Email address",
     // title: vbijdf9te,
     // errorMessage:
@@ -71994,7 +72385,7 @@ function getFormPass(objsoa, asdwe = {} // { value, ...asdwe } = {}
 
     case "mobileNumber":
       osakde = //
-      _dictMobile(); //  _dictMobBase();
+      _dictMobile(asdwe); //  _dictMobBase();
 
       break;
 
@@ -72134,7 +72525,10 @@ function _dictPassword() {
   };
 }
 
-function _dictMobile() {
+function _dictMobile({
+  includeCountrySelector,
+  ...aaa
+}) {
   useState();
 
   function asdwease(sdfwer) {
@@ -72153,12 +72547,16 @@ function _dictMobile() {
     return dfjgr;
   }
 
-  return {
-    inputObjectFunction: asdwease,
+  const sidjfwe = includeCountrySelector && {
+    inputObjectFunction: asdwease
+  };
+  return { ...sidjfwe,
     name: "mobileNumber",
     label: "Mobile Number",
-    inputType: "number" // inputLeft: "+44",
-
+    // inputType: "number",
+    autocomplete: true,
+    // inputLeft: "+44",
+    ...aaa
   };
 }
 
@@ -72374,6 +72772,7 @@ function BearForm({
   // 1button
   noButton,
   noButtonEnd,
+  onCancel,
   buttonConfig = {},
   buttonText = "Submit",
   buttonSize = "35px",
@@ -72405,9 +72804,15 @@ function BearForm({
   requireAll,
   //
   // 1submit
+  disableSubmit,
+  preSubmit,
   submitDisplay,
   formData,
   extractValues,
+  //
+  // 1modal
+  confirmModal,
+  //
   // 1value
   loadSubmit,
   onSubmit,
@@ -72429,10 +72834,16 @@ function BearForm({
 }) {
   //
   // 1const
-  const [loadSetto, setloadSetto] = //
-  ["", ""]; // useState();
+  const [loadVars, setloadVars] = useState();
+  const [loadSetto, setloadSetto] = useState();
+  useState();
 
-  function goSing(doksad) {
+  function goSing({
+    //
+    itemName,
+    bearName,
+    ...doksad
+  }) {
     let sdifje = Object.values(doksad)[0];
     return sdifje;
   }
@@ -72465,24 +72876,68 @@ function BearForm({
     if (kjdsasd) {
       cxvbmf(values, funta);
     }
-  } // 1submit
+  } // 1modal 1presubmit
 
 
-  function cxvbmf(values, funta) {
-    //
-    if (loadSubmit) {
-      setloadSetto(true);
+  async function cxvbmf(...asd) {
+    bearlog.lug("preSubmit-zzz", {
+      preSubmit,
+      asd
+    });
+
+    if (preSubmit) {
+      const asokwe = await preSubmit(...asd);
+
+      if (asokwe) {
+        confirmOs(...asd);
+      }
+    } else {
+      confirmOs(...asd);
     }
+  } // 1submit MODAL
 
+
+  function confirmOs(values, funta) {
+    bearlog.lug("___ values ___", values);
+
+    if (confirmModal) {
+      switch (typeof confirmModal) {
+        case "string":
+          confirmModal = confirmModal;
+          break;
+
+        case "object":
+          confirmModal = confirmModal(values);
+          break;
+
+        default:
+          confirmModal = "Are you sure?";
+      }
+
+      if (window.confirm(confirmModal)) {
+        sdaseas(values, funta);
+      } else if (onCancel) {
+        onCancel(values);
+      }
+    } else {
+      sdaseas(values, funta);
+    }
+  } // 1submit BASIC
+
+
+  function sdaseas(values, funta) {
+    //
+    // setloadVars(true);
+    // setloadSetto(true);
     const emptiosa = !lodash.isEmpty(values);
     const trudsoe = onSubmit && emptiosa;
-    const gifhjer = {
+    bearlog.lug("___ FORMAMAIN SUBMIT ___", {
       loadSubmit,
+      loadSetto,
       values,
       emptiosa,
       trudsoe
-    };
-    bearlog.lug("___ FORMAMAIN SUBMIT ___", gifhjer);
+    });
     bearlog.lug("___ Fomain values ___", values);
 
     if (trudsoe) {
@@ -72533,15 +72988,28 @@ function BearForm({
   }; // 1button
 
   function Buttiona({
+    disabledConfig,
+    disabled,
+    loadingText = "Loading...",
     text,
     style,
+    onClick,
     ...siwerew
   }) {
-    const jsadcvx = {
-      // width: "100%",
+    disabled = disableSubmit || disabled; //
+    const ijda = disabled ? {
+      // style: { color: "greyscale" },
+      className: "disabled",
+      ...disabledConfig
+    } : {
+      onClick,
+      className: "buttonHover"
+    };
+    const jsadcvx = { // width: "100%",
       // padding: "60px",
+      ...BearBackBorder("green", "5px"),
       color: "white",
-      background: "green",
+      // background: "green",
       padding: "5px 10px",
       fontSize: buttonSize,
       // marginBottom: "20px",
@@ -72554,16 +73022,18 @@ function BearForm({
     const dvbijkrw = { // ...fghtr,
       ...nsdijfer,
       ...siwerew,
-      type: "submit",
+      type: !disabled && "submit",
       value: text,
       form: formid,
       style: jsadcvx,
       // genConfig: aewsadw,
-      className: "buttonHover" // marginTop: ""
+      ...ijda // marginTop: ""
 
     };
+    const sdijfwr = //
+    loadVars ? loadingText : text ? text : buttonText;
     bearlog.lug("___ bForm BUTTON ___", dvbijkrw);
-    const adhwdse = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement("button", dvbijkrw, text ? text : buttonText));
+    const adhwdse = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement("button", dvbijkrw, sdijfwr));
     return adhwdse;
   }
 
@@ -72671,13 +73141,13 @@ function BearForm({
       renderItem: sdijfwer
     }; // function
 
-    const ijsdrwe = BearList(xcvnsdf);
+    const ijsdrwe = BearList$1(xcvnsdf);
     return ijsdrwe;
   } // 1button
 
 
   function bettios() {
-    return !noButton && buttonList ? ajde() : Buttiona(buttonConfig);
+    return noButton ? "" : buttonList ? ajde() : Buttiona(buttonConfig);
   }
 
   function vijsd9({
@@ -72744,7 +73214,7 @@ function BearForm({
 
     };
     bearlog.lug("___formain TABS TOP ___", asodwe);
-    const okfdsd = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement(BearList, asodwe));
+    const okfdsd = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement(BearList$1, asodwe));
     return okfdsd;
   } // 1map
 
@@ -72948,10 +73418,14 @@ function BearCheckout({
     handStripeNote(xifjsre);
   }
 
-  async function er9eras(dvbdero) {
+  async function er9eras(origDct) {
     setloadPay(true); //
 
-    const asdok = await onSubmit(dvbdero); //
+    const asdok = await onSubmit(origDct);
+    bearlog.lug("bearCheckout -AFTER  onSubmit --", {
+      origDct,
+      asdok
+    }); //
 
     if (asdok) {
       if (asdok.error) {
@@ -72977,7 +73451,7 @@ function BearCheckout({
     ...args
   };
   bearlog.lug("___ dfjgrt ___", dfjgrt);
-  const okfdsd = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement(BearForm, _extends$X({
+  const okfdsd = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement(BearForm, _extends$Y({
     noAdvert: true
   }, dfjgrt))); // let askjdew = "";
   // switch (provider) {
@@ -73730,13 +74204,17 @@ function BearCheckoutStripeBase({
   bearName,
   // 1button
   payFirst,
+  dictvar,
   // 1payment
   cardInputConfig,
   paymentConfig,
   paymentLabel,
   onSubmit,
+  nativePayment,
   //
   mode,
+  // 1card
+  cardConfig,
   ignoreErrors,
   totalPayment,
   hidePostalCode,
@@ -73759,7 +74237,7 @@ function BearCheckoutStripeBase({
   `https://dashboard.stripe.com/${dsfgkr}bearlog`; // 1errro
 
   const [errTexto, seterrTexto] = useState();
-  const [disablo, setdisablo] = useState();
+  useState(true);
 
   function handleCardDetailsChange(sfa) {
     bearlog.lug("cardeets", sfa); // hadsnwi(sfa);
@@ -73770,7 +74248,7 @@ function BearCheckoutStripeBase({
   function Bearios() {
     const stripe = useStripe();
     const elements = useElements();
-    bearlog.log("STRIPE CHECKOUT---", {
+    bearlog.lug("STRIPE CHECKOUT---", {
       //
       stripe,
       elements
@@ -73791,7 +74269,7 @@ function BearCheckoutStripeBase({
         stripeAPI: stripe,
         ...dvbdero
       };
-      bearlog.log("---PAYMENT CHECK ALL DEETS", sdfkewr); // bearlog.lug("___ dvbdero ___", dvbdero);
+      bearlog.lug("---PAYMENT CHECK ALL DEETS", sdfkewr); // bearlog.lug("___ dvbdero ___", dvbdero);
 
       if (onSubmit) {
         return onSubmit(dvbdero);
@@ -73810,7 +74288,7 @@ function BearCheckoutStripeBase({
       const ijsrew = {
         payment_method: cardDetails
       };
-      bearlog.log("___ paymentIntents asdqw ___", {
+      bearlog.lug("___ paymentIntents asdqw ___", {
         secretos,
         ijsrew
       });
@@ -73818,17 +74296,42 @@ function BearCheckoutStripeBase({
       } = //
       // await stripe.createPaymentMethod(rejweae);
       await stripe.confirmCardPayment(secretos, ijsrew);
-      bearlog.log("CARDPAY ", asdf);
+      bearlog.lug("CARDPAY ", asdf);
       const jdfesawe = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, "Stripe");
       let fdgok = {
         provider: jdfesawe,
         ...asdf
       };
       return fdgok;
-    }
+    } // 1submit CHECK(){
+
+
+    async function checkoSub() {
+      const nsidfre = elements.getElement(CardElement);
+      const {
+        error,
+        paymentMethod
+      } = await stripe.createPaymentMethod({
+        type: "card",
+        card: nsidfre
+      });
+      bearlog.lug("___ check SUBMIT CARD ___", {
+        error,
+        nsidfre
+      });
+
+      if (!error) {
+        return true;
+      } else {
+        seterrTexto("Please add your card details");
+        return false;
+      }
+    } // 1submit FIRST
+
 
     async function er9eras(dvbdero) {
       const nsidfre = elements.getElement(CardElement);
+      bearlog.lug("___ submit FIRST CARD ___", nsidfre, dvbdero);
 
       if (nsidfre) {
         const rejweae = {
@@ -73841,8 +74344,7 @@ function BearCheckoutStripeBase({
         };
         return await secPass(kisdjfre);
       } else {
-        return {//
-        }; // BearErrNote("Sorry")
+        seterrTexto("Please add your card details");
       } // bearlog.lug("PAYMENT---asd");
       // handRes(asd);
 
@@ -73852,7 +74354,7 @@ function BearCheckoutStripeBase({
     function cardios(sdfgr = {}) {
       bearlog.lug("___ CARD BASEO ___", sdfgr); // return "aodkaew";
 
-      return vxcobr(sdfgr);
+      return /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, nativePayment, vxcobr(sdfgr));
     } // 1cardeleemtns
 
 
@@ -73884,24 +74386,29 @@ function BearCheckoutStripeBase({
       errTexto; // error;
 
       return ksdrse9;
-    } // 1card
+    } // 1card CONFIG
 
 
     const ijsdf = {
       bearName: "STRIPE CARD",
       name: "card",
+      label: "Credit / Debit card",
       // required: true,
       // error: errTexto,
       errorFunction: asodke,
       inputFunction: cardios,
       style: {
         minHeight: "40px"
-      }
+      },
+      ...cardConfig
     };
-    bearlog.lug("___ STRIPE CARD ___", ijsdf); // 1dict
+    bearlog.lug("___ STRIPE CARD ___", ijsdf); // 1dict 1card INLCUDE IN LIST
 
     const ndufgase = {
-      card: ijsdf
+      dictvar: {
+        card: ijsdf,
+        ...dictvar
+      }
     };
 
     function sdjfr(gijr9) {
@@ -73937,17 +74444,21 @@ function BearCheckoutStripeBase({
       return iframeStyles;
     }
 
-    const ijsase = { ...args,
+    const ijsase = {
+      logtrue: true,
+      confirmModal: true,
+      ...args,
+      // topFormItem: BearInputBase(cardios, ijsdf),
+      ...ndufgase,
       message: wuheqw,
       messageConfig: {
         outsideLink: linkShow
       },
-      buttonConfig: {
-        disabled: disablo
-      },
-      logtrue: true,
-      dictvar: ndufgase,
+      // buttonConfig: {
+      //   disabled: disablo,
+      // },
       onSubmit: er9eras,
+      preSubmit: checkoSub,
       typeComp: "BearCheckoutStripe"
     };
     bearlog.lug("___ ijsase ___", ijsase);
@@ -73974,6 +74485,7 @@ function BearCheckoutStripeBase({
 function CheckPayStripe({
   totalPayment,
   paymentLabel,
+  dividerObj,
   loadingItem = "",
   paymentConfig,
   nativePaymentConfig,
@@ -74013,7 +74525,7 @@ function CheckPayStripe({
       bearlog.lug("prrrr-zz", pr); // Check the availability of the Payment Request API.
 
       pr.canMakePayment().then(result => {
-        bearlog.log("result-zz", result);
+        bearlog.lug("result-zz", result);
 
         if (result) {
           setPaymentRequest(pr);
@@ -74034,14 +74546,26 @@ function CheckPayStripe({
     }
   }; // if (paymentRequest) {
 
-  const paygo = loadPay ? loadingItem : payoitreu ? /*#__PURE__*/React__default$1.createElement(PaymentRequestButtonElement, sdijfer) : !hideErrors ? BearError( //
+  const paygo = loadPay ? loadingItem : payoitreu ? /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement(PaymentRequestButtonElement, sdijfer), dividerObj ? dividerObj : Divideo()) : !hideErrors ? BearError( //
   "Your site isn't secure to serve a native payment button. It will look like this.", {
     bearName
   }) : noNativePaymentMessage;
   const sidjfre = {
     style,
     className
-  };
+  }; // 1divider
+
+  function Divideo() {
+    const sdkfr = {
+      style: {
+        margin: "10px 0",
+        textAlign: "center "
+      },
+      obj: "Or pay with card"
+    };
+    return BearDiv$1(sdkfr);
+  }
+
   const sodkfwe = /*#__PURE__*/React__default$1.createElement("div", sidjfre, paygo);
   return sodkfwe;
 }
@@ -74081,8 +74605,8 @@ function BearCheckoutStripe({
   bearlog.lug("saidjew-zz", saidjew);
   return /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement(Elements, {
     stripe: stripePromise
-  }, /*#__PURE__*/React__default$1.createElement(BearCheckoutStripeBase, _extends$X({
-    topFormItem: nativePayment && /*#__PURE__*/React__default$1.createElement(CheckPayStripe, saidjew)
+  }, /*#__PURE__*/React__default$1.createElement(BearCheckoutStripeBase, _extends$Y({
+    nativePayment: nativePayment && /*#__PURE__*/React__default$1.createElement(CheckPayStripe, saidjew)
   }, aaaaa))));
 }
 
@@ -74170,7 +74694,7 @@ function BearBackForward({
     padvar: "5px",
     ...argssdf
   };
-  const ijwqeq = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement(BearDiv$1, _extends$X({
+  const ijwqeq = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement(BearDiv$1, _extends$Y({
     flex: true,
     vertAlign: true
   }, uawhe)));
@@ -74430,7 +74954,7 @@ function BearEmoji({
       ...ssdwedf
     };
     bearlog.lug("___ emojListo MAIN LIST  ___", dsjs);
-    return /*#__PURE__*/React__default$1.createElement(BearList, dsjs);
+    return /*#__PURE__*/React__default$1.createElement(BearList$1, dsjs);
   }
 
   function Selectos() {
@@ -74504,7 +75028,45 @@ function BearTags({
     renderItem: rendios,
     ...args
   };
-  return /*#__PURE__*/React__default$1.createElement(BearList, args);
+  return /*#__PURE__*/React__default$1.createElement(BearList$1, args);
+}
+
+function BearTabs({
+  //
+  noStretch,
+  //   1tab
+  styleTab,
+  bottomContain,
+  itemConfig,
+  padTab,
+  linkTrue,
+  stepTrue,
+  chosenItem,
+  selectStyle,
+  list,
+  // onClick,
+  ...argsas
+}) {
+  const isjdr = { ...sijas,
+    horiz: true,
+    // bottomContain: dfsijgre,
+    list: yaswe,
+    dictvar: ijsde,
+    // leftObj,
+    // chosenItem: typeTab,
+    clickSingle: true,
+    // onClick: (sdodf) => erotea("tab", sdodf),
+    logtrue: "e",
+    bearName: "explore tabs --- ",
+    itemConfig: jfdgrw,
+    padTab: "10px",
+    style: {
+      margin: "2% 0",
+      padding: "0 3%"
+    } // noTabs: true,
+
+  };
+  return BearList(isjdr);
 }
 
 function ProvideMain({
@@ -74799,7 +75361,7 @@ function BearModel({
   }; // 1console
 
   bearlog.lug("___ brModel isdre ___", isdre);
-  const ijdwer = /*#__PURE__*/React__default$1.createElement(BearList, isdre);
+  const ijdwer = /*#__PURE__*/React__default$1.createElement(BearList$1, isdre);
   args = {
     center: okfdsd,
     // right: ijdwer,
@@ -74863,6 +75425,55 @@ function BearFormBase({
   const kvdsdr = /*#__PURE__*/React__default$1.createElement("input", sdfm);
   const okfdsd = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement("form", cvkbdf, children, kvdsdr, /*#__PURE__*/React__default$1.createElement("button", kdfgr, "SUBMIT")));
   return okfdsd;
+}
+
+function BearInputSubmit({
+  onSubmit,
+  ...dfdsf
+}) {
+  //
+  function difjsda(asdfa) {
+    if (onSubmit) {
+      onSubmit(asdfa);
+    }
+  }
+
+  const frmotest = BearForm({
+    noButton: true,
+    bearName: "asdfasd",
+    formid: "xzcvcxz",
+    onSubmit: asdwe,
+    // singleTrue: true,
+    dictvar: {
+      input: {
+        noLabel: true,
+        //   noLabel: true,
+        ...dfdsf
+      }
+    },
+    list: ["input"]
+  });
+
+  function asdwe(fadsfs) {
+    bearlog.log("___ fadsfs ___", fadsfs);
+    xcads(fadsfs);
+  }
+
+  function xcads({
+    itemName,
+    bearName,
+    ...doksad
+  }) {
+    let sdifje = Object.values(doksad);
+    bearlog.log("___ doksad ___", {
+      doksad,
+      sdifje
+    });
+    sdifje = sdifje[0];
+    difjsda(sdifje);
+  }
+
+  return frmotest;
 }
 
 var dist = function (e) {
@@ -76258,7 +76869,7 @@ function BearAuthPortal({
   /*#__PURE__*/
   //
   // {/* <BearTextMedia {...igfder} /> */}
-  React__default$1.createElement(BearList, igfder);
+  React__default$1.createElement(BearList$1, igfder);
 
   function FOrnaW() {
     //
@@ -76630,7 +77241,7 @@ function BearSocialBase({
     ...sdfsrew
   };
   bearlog.lug("___ LISTSOCIAL ___", ijsadwe);
-  const compBase = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement(BearList, ijsadwe)); //
+  const compBase = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement(BearList$1, ijsadwe)); //
 
   const ijfdewr = BearCheckMain("BearSocialShare", compBase, ijsadwe);
   return ijfdewr;
@@ -76813,34 +77424,35 @@ function BearSearchSelect({
 }
 
 function BearSearchList({
+  // 1args SELECT
+  searchAttrs,
   //
+  // 1args LIST
+  bearName,
   list,
   dictvar,
-  bearName,
-  renderItem,
-  searchAttrs,
+  //
   listConfig,
   optionStyle,
-  // header
   initialValue,
   layoutList,
   headerAtts,
   headerConfig,
-  ...args
+  ...aaaa
 }) {
-  // 1baseargs
+  // 1args LIST
+  // 1arg SELECT
   const dfijgret = {
     //
-    renderItem,
-    bearName,
-    list // ignoreEmpty: true
+    dictvar,
+    list,
+    bearName // ignoreEmpty: true
 
   };
-  const baseargs = {
-    dictvar,
-    ...dfijgret,
+  let {
+    listArgs,
     ...args
-  }; // 1const
+  } = listArgPass(aaaa); // 1const
 
   searchAttrs = searchAttrs ? searchAttrs : getListAll(list, {
     //
@@ -76870,61 +77482,47 @@ function BearSearchList({
       sdfgoekse: sdfgoekse
     });
     return sdfgoekse;
-  }
+  } // 1label
+
 
   function xvibjrg(sadofkwe) {
-    bearlog.lug("sadofkwe--zzz", sadofkwe);
-    const stringios = typeof sadofkwe;
-    const doNot = stringios == "object";
-    const digjer = doNot ? sadofkwe : //
-    {
-      listItemName: sadofkwe
-    }; // BearError("Bearsearch is not an object");
-
-    const mdvokdfdsa = { ...digjer,
+    const mdvokdfdsa = { ...sadofkwe,
       ...dfigre
     };
     bearlog.lug("___ mdvokdfdsa ___", mdvokdfdsa);
     const dibjgret = //
     // digjer;
-    // "okweerq"
+    // "SEARCH LIST ENTRY";
     aassae(mdvokdfdsa);
     return dibjgret;
   }
 
-  function aassae({
-    listItemName,
-    ...mapase
-  }) {
-    const kjsad = { ...baseargs,
-      ...listConfig,
-      // ...asaes,
-      logtrue: true
+  function aassae(mapase) {
+    const kjsad = { ...listConfig,
+      ...listArgs,
+      ...dfijgret
     };
     bearlog.lugLinas(10);
     bearlog.lug("___ kjsad ___", {
-      listItemName,
-      mapase: mapase,
+      mapase,
       ...kjsad
     });
-    const sdfje = lodash.isEmpty(mapase) ? listItemName : {
-      listItemName,
-      ...mapase
-    };
+    const sdfje = //
+    mapase; // isEmpty(mapase)
+    //   ? listItemName
+    //   : {
+    //       listItemName,
+    //       ...mapase,
+    //     };
+
     const oksaase = BearListItem(sdfje, kjsad);
-    const dfgijert = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, oksaase);
-    const ijsf = {//
-      // className: "buttonHover shadowHover",
-      // style: isjfer,
-    };
-    const sdifjwer = /*#__PURE__*/React__default$1.createElement(BearDiv$1, ijsf, dfgijert);
-    return sdifjwer;
+    return /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, oksaase);
   }
 
   const vcxbfg = //
   // isdae;
   !list ? [] : mapSelectValue(list, {
-    dictvar: dictvar,
+    dictvar,
     labelFunc: xvibjrg,
     valueFunc: searchAttrs && askdwew,
     // headerFunc:
@@ -76944,8 +77542,9 @@ function BearSearchList({
       flex: true
     };
     bearlog.lug("___ sodfer ___", sodfer);
-    return /*#__PURE__*/React__default$1.createElement(BearList, sodfer);
-  }
+    return /*#__PURE__*/React__default$1.createElement(BearList$1, sodfer);
+  } // 1options
+
 
   const arrmode = //
   vcxbfg; // headerAtts
@@ -76954,16 +77553,7 @@ function BearSearchList({
   //       options: vcxbfg,
   //     }
   //   : vcxbfg;
-  // 1list
-  // 1console
 
-  bearlog.lug("___ brSeacrch LIST ___", {
-    searchAttrs,
-    arrmode
-  });
-  const jsdrase = {
-    options: arrmode
-  };
   const hsdr = {
     background: "transparent",
     ...optionStyle
@@ -76979,27 +77569,31 @@ function BearSearchList({
     valRemoveAfter: extractSplit
   };
   args = {
+    options: arrmode,
     menuStick: true,
     noMenuBorder: true,
     optionStyle: hsdr,
     menuIsOpen: true,
     placeholder: "Search",
     searchBarIcon: "search",
-    bearName,
     onChangeSetValue: false,
-    ...jsdrase,
     ...vobkv,
+    ...dfijgret,
     ...args
-  };
-  bearlog.lug("args-zz", args); // args = argPass(args);
+  }; // 1list
+  // 1console
 
+  bearlog.lug("___ brSeacrch LIST ___", //
+  args // {
+  //   searchAttrs,
+  //   arrmode,
+  // }
+  );
   const qasds = headerAtts && DSIFJ();
-  const kdserase = //
-  // BearSearchBase(args);
-  BearSearchSelect(args); // <SelectSearch {...args} />;
-
-  const dfjgert = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, qasds, kdserase);
-  return BearCheckList("BearSearchList", dfjgert, baseargs); // return kdserase;
+  const dfjgert = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, qasds, BearSearchSelect(args));
+  return BearCheckList("BearSearchList", dfjgert, { ...dfijgret,
+    ...aaaa
+  }); // return kdserase;
 }
 
 function BearHeader({
@@ -77019,7 +77613,14 @@ function BearHeader({
   ...asdwew
 }) {
   // 1nav LIST
-  function listo({
+  function listo(sadfa, name) {
+    return sfdgf({
+      bearName: name,
+      ...sadfa
+    });
+  }
+
+  function sfdgf({
     dictvar,
     ...adsfa
   }) {
@@ -77031,9 +77632,10 @@ function BearHeader({
 
     function asid(xcvdf) {
       // switch getTpye
-      bearlog.lug("aAS ssss", {
+      bearlog.log("aAS ssss", {
         xcvdf
-      });
+      }); // return "forewa";
+
       return sdfrdsf(xcvdf);
     }
 
@@ -77065,20 +77667,19 @@ function BearHeader({
   function askawe(faadsf) {
     let aokew = {
       horiz: true,
-      bearName: "asdoqwe",
       // typeList: "button",
       // ren
       ...navConfig,
       ...faadsf
     };
     bearlog.lug("zzz--", aokew);
-    return BearList(aokew);
+    return BearList$1(aokew);
   } // function
   // 1nav
 
 
   const oswersr = //
-  navRight && listo(navRight); // 1center
+  navRight && listo(navRight, "navRight"); // 1center
   // 1right
   // 1left
 
@@ -77091,21 +77692,21 @@ function BearHeader({
       ...logoConfig
     };
     const sfjwere = //
-    // BearDiv(sdrwer)
+    // logoText;
+    // BearDiv(sdrwer);
     BearTextMedia(sdrwer);
-    const ijsdfr = navLeft && listo(navLeft);
-    return BearFlex({
-      padvar: "20px",
-      // flex: true,
-      // vertAlign: true,
-      // pad
+    const ijsdfr = navLeft && listo(navLeft, "navLeft");
+    const asds = {
+      // padvar: "20px",
+      flex: true,
+      vertAlign: true // pad
       // obj: (
-      //   <>
-      //     {sfjwere} {ijsdfr}
-      //   </>
+      //
       // ),
-      list: [sfjwere, ijsdfr]
-    });
+      // list: [sfjwere, ijsdfr],
+
+    };
+    return /*#__PURE__*/React__default$1.createElement(BearDiv$1, asds, /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, sfjwere, " ", ijsdfr));
   } // 1float
 
 
@@ -78346,5 +78947,5 @@ function BearPage({
   return aijewqe;
 }
 
-export { BearAttrNeeds, BearAuthPortal, BearBackBorder, BearBackForward, BearBlankLink, BearBlock, BearBorder, BearButton$1 as BearButton, BearButtonDownload, BearButtonList, BearCheckMain, BearCheckout, BearCheckoutStripe, BearContextProvider, BearCopy, BearDiv$1 as BearDiv, BearDivMain, BearEmoji, BearErASDJIQWE, BearErrArgType$1 as BearErrArgType, BearErrMiss, BearError, BearFalseLog, BearFlex, BearFloat, BearForm, BearFormBase, BearFormList, BearHideError, BearIcon, BearIconList, BearIconText, BearImage, BearImageText, BearInput, BearInputNumber, BearInputText, BearLine, BearLink, BearList, BearListComp, BearLog, BearMissing, BearModel, BearPage, BearPayButton, BearPlural, BearPossess, BearQuote, BearRouter, BearSearchList, BearSelect, BearSocialBase, BearSocialLinks, BearSocialShare, BearSpace, BearSpan, BearSurround, BearSwitch, BearTags, BearTextMedia, BearTextarea, BearTitle, BearUpper, BearWrap, Exmapl, FlexHorz, ImageAlign, ImageGroup, InputBaseCheck, InputForm, InputMain, ListFlex, ListReturn, LoadMain, PagePad, RendGroup, SliderMain, SwitchComp, SwitchLayout, argMiss, argPass, bearMobileView, bearlog, cxadfa, dfkbijv, firstInputCheck, functioMa, inputChange, inputStyles, linkBase, nameComb, sdfg, size };
+export { BearAttrNeeds, BearAuthPortal, BearBackBorder, BearBackForward, BearBlankLink, BearBlock, BearBorder, BearButton$1 as BearButton, BearButtonDownload, BearButtonList, BearCheckMain, BearCheckout, BearCheckoutStripe, BearContextProvider, BearCopy, BearDiv$1 as BearDiv, BearDivMain, BearEmoji, BearErASDJIQWE, BearErrArgType$1 as BearErrArgType, BearErrMiss, BearError, BearFalseLog, BearFlex, BearFloat, BearForm, BearFormBase, BearFormList, BearHideError, BearIcon, BearIconList, BearIconText, BearImage, BearImageText, BearInput, BearInputNumber, BearInputSubmit, BearInputText, BearLine, BearLink, BearList$1 as BearList, BearListComp, BearMissing, BearModel, BearPage, BearPayButton, BearPlural, BearPossess, BearQuote, BearRouter, BearSearchList, BearSelect, BearSocialBase, BearSocialLinks, BearSocialShare, BearSpace, BearSpan, BearSurround, BearSwitch, BearTabs, BearTags, BearTextMedia, BearTextarea, BearTitle, BearUpper, BearWrap, Exmapl, FlexHorz, ImageAlign, ImageGroup, InputBaseCheck, InputForm, InputMain, ListFlex, ListReturn, LoadMain, PagePad, RendGroup, SliderMain, SwitchComp, SwitchLayout, aazafadsfas, argMiss, argPass, bearMobileView, bearlog, cxadfa, dfkbijv, firstInputCheck, functioMa, inputChange, inputStyles, linkBase, listArgPass, mapDict, nameComb, sdfg, size };
 //# sourceMappingURL=index.esm.js.map

@@ -46,16 +46,15 @@ const MediaQueries = {
   customHeight: "(min-height: 650px)",
 };
 
-export function bearMobileView() {
+export const bearMobileView =
+  //
+  aazafadsfas();
+export function aazafadsfas() {
   const widthVary = window.matchMedia(MediaQueries.viewtype);
   const heightVary = window.matchMedia(MediaQueries.customHeight);
   return !widthVary.matches;
 }
 // export const mobileNot = widthVary.matches;
-
-export function BearLog(...asdf) {
-  console.log("___ BearLog ___", ...asdf);
-}
 
 export function BearFalseLog(...asdf) {}
 
@@ -100,7 +99,7 @@ export function BearSwitch(item, dict, oksdfew = "") {
   return item
     ? dict[item]
       ? dict[item]
-      : BearError(`BearSwitch doesn's have a ${oksdfew}`)
+      : BearError(`BearSwitch doesn's have a ${item}`)
     : oksdfew;
 }
 
@@ -284,8 +283,8 @@ export function BearFlex({
   list,
   itemStyle,
   style,
-  left,
-  right,
+  left = "",
+  right = "",
   noVertAlign,
   obj,
   ...sae
@@ -316,6 +315,8 @@ export function BearFlex({
   }
 
   function redndo(asdwa) {
+    bearlog.log("___ bearflex MAIN  ___", asdwa);
+
     const ijase = {
       obj: asdwa,
     };
@@ -636,6 +637,106 @@ export function BearListComp(list, sdfwre) {
   bearlog.lug("___ jadew ___", jadew);
 
   return jadew;
+}
+
+// mapdict mapobject
+export function mapDict(asd) {
+  const sdfok = {};
+  for (const [key, value] of Object.entries(asd)) {
+    if (value) {
+      sdfok[key] = value;
+    }
+  }
+
+  bearlog.lug("___ mapObj ___", sdfok);
+
+  return sdfok;
+}
+
+export function listArgPass({
+  //
+  // 1main
+  list,
+  typeList,
+  containFunc,
+  //
+  // 1text
+  capitaliseTypeText,
+  pullDictItem,
+  //
+  // 1dict
+  dictTrue,
+  dictvar,
+  dictFunc,
+  addDict = {},
+  //
+  // 1item
+  renderItem,
+
+  //
+  // 1between
+  lineBetween,
+  spaceBetween,
+  //
+  // 1onclick
+  onClick,
+  click,
+  returnArray,
+  clickSingle,
+  //
+  // 1choose 1chosen
+  chooseBaseFunc,
+  chooseTrue,
+  chosenItem,
+  chosenAttr = "itemName",
+  chosenStyle,
+  chosenConfig = {},
+
+  ...args
+}) {
+  const listArgs = {
+    // 1main
+    list,
+    typeList,
+    containFunc,
+    //
+    // 1text
+    capitaliseTypeText,
+    pullDictItem,
+    //
+    // 1dict
+    dictTrue,
+    dictvar,
+    dictFunc,
+    addDict,
+    //
+    // 1item
+    renderItem,
+
+    //
+    // 1between
+    lineBetween,
+    spaceBetween,
+    //
+    // 1onclick
+    onClick,
+    click,
+    returnArray,
+    clickSingle,
+    //
+    // 1choose 1chosen
+    chooseBaseFunc,
+    chooseTrue,
+    chosenItem,
+    chosenAttr,
+    chosenStyle,
+    chosenConfig,
+  };
+
+  return {
+    listArgs: mapDict(listArgs),
+    ...args,
+  };
 }
 
 export function argMiss({

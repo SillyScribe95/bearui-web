@@ -56,14 +56,14 @@ export function getFormPass(
     case "mobileNumber":
       osakde =
         //
-        _dictMobile();
+        _dictMobile(asdwe);
       //  _dictMobBase();
       break;
     case "password":
-      osakde = _dictPassword();
+      osakde = _dictPassword(asdwe);
       break;
     case "address":
-      osakde = _dictAddress();
+      osakde = _dictAddress(asdwe);
       break;
     case "description":
       osakde = {
@@ -226,7 +226,7 @@ function _dictMobBase() {
   return "idjfger";
 }
 
-function _dictMobile() {
+function _dictMobile({ includeCountrySelector, ...aaa }) {
   const [nubemr, setnubemr] = useState();
 
   function asdwease(sdfwer) {
@@ -256,11 +256,17 @@ function _dictMobile() {
     return dfjgr;
   }
 
-  return {
+  const sidjfwe = includeCountrySelector && {
     inputObjectFunction: asdwease,
+  };
+
+  return {
+    ...sidjfwe,
     name: "mobileNumber",
     label: "Mobile Number",
-    inputType: "number",
+    // inputType: "number",
+    autocomplete: true,
     // inputLeft: "+44",
+    ...aaa,
   };
 }

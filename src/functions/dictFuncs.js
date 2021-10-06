@@ -35,12 +35,18 @@ export function getAnyDictValue(vlbdf) {
 }
 
 export function checkDict(dictvar, cxzvd) {
-  const asdrae = dictvar
-    ? {
+  let asdrae;
+  switch (typeof cxzvd) {
+    case "object":
+      asdrae = cxzvd;
+      break;
+    case "string":
+      asdrae = {
         listItemName: cxzvd,
         ...dictvar[cxzvd],
-      }
-    : cxzvd;
+      };
+      break;
+  }
 
   return asdrae;
 }

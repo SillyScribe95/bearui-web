@@ -6,7 +6,6 @@
 // export * from "./components/code/BearCodeArgs";
 
 // // 1list
-// export * from "./components/list/BearTabs";
 // export * from "./components/list/BearTabMain";
 // export * from "./components/BearNotification";
 
@@ -57,10 +56,4 @@ export * from "./extra/page/BearPage";
 // export * from "./components/select/BearAddress";
 // 1address
 
-// export * from "./components/list/BearCarousel";
-
-// // 1input
-// export * from "./components/input/BearInputNumber";
-// export * from "./components/input/BearInput";
-// export * from "./components/input/BearTextarea";
 // export * from "./components/input/BearKeyValue";

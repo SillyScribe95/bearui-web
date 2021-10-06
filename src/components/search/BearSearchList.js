@@ -24,40 +24,39 @@ import { BearSearchBase } from "./BearSearchBase";
 import { getListAll } from "../../functions/arrayFuncs";
 import { mapDictAttrToString } from "../../functions/dictFuncs";
 import { mapSelectValue } from "../../functions/selectFuncs";
+import { listArgPass } from "../../importBase";
 
 export function BearSearchList({
+  // 1args SELECT
+  searchAttrs,
   //
+  // 1args LIST
+  bearName,
   list,
   dictvar,
-  bearName,
-  renderItem,
-  searchAttrs,
+  //
   listConfig,
   optionStyle,
-  // header
   initialValue,
   layoutList,
   headerAtts,
   headerConfig,
-  ...args
+  ...aaaa
 }) {
-  // 1baseargs
+  // 1args LIST
+
+  // 1arg SELECT
   const dfijgret = {
     //
-    renderItem,
-    bearName,
+    dictvar,
     list,
+    bearName,
     // ignoreEmpty: true
   };
 
-  const baseargs = {
-    dictvar,
-    ...dfijgret,
-    ...args,
-  };
+  let { listArgs, ...args } = listArgPass(aaaa);
 
   // 1const
-
   searchAttrs = searchAttrs
     ? searchAttrs
     : getListAll(list, {
@@ -96,75 +95,54 @@ export function BearSearchList({
     return sdfgoekse;
   }
 
+  // 1label
   function xvibjrg(sadofkwe) {
-    bearlog.lug("sadofkwe--zzz", sadofkwe);
-
-    const stringios = typeof sadofkwe;
-    const doNot = stringios == "object";
-
-    const digjer = doNot
-      ? sadofkwe
-      : //
-        { listItemName: sadofkwe };
-    // BearError("Bearsearch is not an object");
-
     const mdvokdfdsa = {
-      ...digjer,
+      ...sadofkwe,
       ...dfigre,
     };
-
     bearlog.lug("___ mdvokdfdsa ___", mdvokdfdsa);
-
     const dibjgret =
       //
       // digjer;
-      // "okweerq"
+      // "SEARCH LIST ENTRY";
       aassae(mdvokdfdsa);
 
     return dibjgret;
   }
 
-  function aassae({ listItemName, ...mapase }) {
+  function aassae(mapase) {
     const kjsad = {
-      ...baseargs,
       ...listConfig,
-      // ...asaes,
-      logtrue: true,
+      ...listArgs,
+      ...dfijgret,
     };
 
     bearlog.lugLinas(10);
     bearlog.lug("___ kjsad ___", {
-      listItemName,
-      mapase: mapase,
+      mapase,
       ...kjsad,
     });
 
-    const sdfje = isEmpty(mapase)
-      ? listItemName
-      : {
-          listItemName,
-          ...mapase,
-        };
+    const sdfje =
+      //
+      mapase;
+    // isEmpty(mapase)
+    //   ? listItemName
+    //   : {
+    //       listItemName,
+    //       ...mapase,
+    //     };
 
     const oksaase = BearListItem(sdfje, kjsad);
 
-    const dfgijert = (
+    return (
       <>
         {/* aaa */}
         {/*  */}
         {oksaase}
       </>
     );
-
-    const ijsf = {
-      //
-      // className: "buttonHover shadowHover",
-      // style: isjfer,
-    };
-
-    const sdifjwer = <BearDiv {...ijsf}>{dfgijert}</BearDiv>;
-
-    return sdifjwer;
   }
 
   const vcxbfg =
@@ -173,7 +151,7 @@ export function BearSearchList({
     !list
       ? []
       : mapSelectValue(list, {
-          dictvar: dictvar,
+          dictvar,
           labelFunc: xvibjrg,
           valueFunc: searchAttrs && askdwew,
           // headerFunc:
@@ -200,6 +178,7 @@ export function BearSearchList({
     return <BearList {...sodfer} />;
   }
 
+  // 1options
   const arrmode =
     //
     vcxbfg;
@@ -209,17 +188,6 @@ export function BearSearchList({
   //       options: vcxbfg,
   //     }
   //   : vcxbfg;
-
-  // 1list
-  // 1console
-  bearlog.lug("___ brSeacrch LIST ___", {
-    searchAttrs,
-    arrmode,
-  });
-
-  const jsdrase = {
-    options: arrmode,
-  };
 
   const hsdr = {
     background: "transparent",
@@ -237,38 +205,43 @@ export function BearSearchList({
   };
 
   args = {
+    options: arrmode,
     menuStick: true,
     noMenuBorder: true,
     optionStyle: hsdr,
     menuIsOpen: true,
     placeholder: "Search",
     searchBarIcon: "search",
-    bearName,
     onChangeSetValue: false,
-    ...jsdrase,
     ...vobkv,
+    ...dfijgret,
     ...args,
   };
 
-  bearlog.lug("args-zz", args);
-  // args = argPass(args);
+  // 1list
+  // 1console
+  bearlog.lug(
+    "___ brSeacrch LIST ___",
+    //
+    args
+    // {
+    //   searchAttrs,
+    //   arrmode,
+    // }
+  );
 
   const qasds = headerAtts && DSIFJ();
-
-  const kdserase =
-    //
-    // BearSearchBase(args);
-    BearSearchSelect(args);
-  // <SelectSearch {...args} />;
-
   const dfjgert = (
     <>
       {/*  */}
       {qasds}
-      {kdserase}
+      {BearSearchSelect(args)}
     </>
   );
 
-  return BearCheckList("BearSearchList", dfjgert, baseargs);
+  return BearCheckList("BearSearchList", dfjgert, {
+    ...dfijgret,
+    ...aaaa,
+  });
   // return kdserase;
 }

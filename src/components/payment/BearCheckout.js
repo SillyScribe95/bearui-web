@@ -165,12 +165,13 @@ export function BearCheckout({
     handStripeNote(xifjsre);
   }
 
-  async function er9eras(dvbdero) {
+  async function er9eras(origDct) {
     setloadPay(true);
 
     //
-    const asdok = await onSubmit(dvbdero);
+    const asdok = await onSubmit(origDct);
 
+    bearlog.lug("bearCheckout -AFTER  onSubmit --", { origDct, asdok });
     //
     if (asdok) {
       if (asdok.error) {

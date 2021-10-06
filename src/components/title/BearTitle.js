@@ -12,6 +12,7 @@ export function BearTitle({
   belowObj,
   // sizevar = "34px",
   subtitle,
+  spaceBetween = "30px",
   subtitleConfig = {},
   lineBetween,
   ...args
@@ -41,7 +42,7 @@ export function BearTitle({
 
   function sadfae({ style, ...aasds }) {
     const jifdgr = {
-      marginBottom: "30px",
+      marginBottom: spaceBetween,
       ...style,
     };
 

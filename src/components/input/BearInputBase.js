@@ -24,7 +24,7 @@ export function BearInputBase(
     label,
     labelStyle,
     title,
-    labelWidth = "460px",
+    labelWidth,
     //
     // 1value
     initialValue,
@@ -201,6 +201,7 @@ export function BearInputBase(
       ? {
           //
           fontSize: "1.15em",
+
           minWidth: labelWidth,
           margin: "0px 10px",
           // marginTop: "-10px",

@@ -80,7 +80,7 @@ export function BearCheckoutStripe({
       <Elements stripe={stripePromise}>
         {/* <PayGo /> */}
         <BearCheckoutStripeBase
-          topFormItem={nativePayment && <CheckPayStripe {...saidjew} />}
+          nativePayment={nativePayment && <CheckPayStripe {...saidjew} />}
           {...aaaaa}
         />
         {/* {CheckPayStripe(aaaaa)} */}

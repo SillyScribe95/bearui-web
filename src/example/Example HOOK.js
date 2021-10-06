@@ -5,17 +5,12 @@ import React, {
 } from "react";
 import {
   //
-  logs,
+  bearlog,
   BearDiv,
 } from "@sillyscribe95/bear-ui-web";
 import { MainContext } from "../context/MainContext";
 
-export function Hookall({
-  //
-  seriesObs,
-  ...args
-}) {
-  // 1const
+export function TestPayButton() {
   const { viewType, setviewType } = useContext(MainContext);
 
   const okfdsd = (
@@ -25,10 +20,5 @@ export function Hookall({
     </>
   );
 
-  args = {
-    obj: okfdsd,
-    ...args,
-  };
-
-  return <BearDiv {...args} />;
+  return okfdsd;
 }

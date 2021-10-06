@@ -1,3 +1,4 @@
+import { Image } from "@chakra-ui/image";
 import React, {
   //
   useState,
@@ -11,24 +12,35 @@ import {
 export function BearImage({
   typevar,
   badgecolor,
-  size = 40,
+  size = "100px",
+  shape,
   width,
   height,
   style,
   image,
   ...sae
 }) {
+  ///
   let sacwe = {
-    width: width,
-    height: height,
+    // width: width,
+    // height: height,
     ...style,
   };
 
+  switch (shape) {
+    case "circle":
+      sae["borderRadius"] = "full";
+      break;
+    // case "square":
+    //   break;
+  }
+
   let osdew = {
     size,
+    boxSize: size,
+    objectFit: "cover",
     src: image,
     style: sacwe,
-    shape: "circle",
     ...sae,
   };
 
@@ -41,7 +53,8 @@ export function BearImage({
       endValue = (
         //
         // "sadwqe";
-        <img {...osdew} />
+        // <img {...osdew} />
+        <Image {...osdew} />
         // <Avatar {...osdew} />
       );
   }

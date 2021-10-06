@@ -36,6 +36,14 @@ export * from "./components/list/BearList";
 export * from "./components/list/BearEmoji";
 export * from "./components/list/BearTags";
 
+// 1tabs
+export * from "./components/tabs/BearTabs";
+
+// 1carousel
+// export * from "./components/carousel/BearCarousel";
+
+export * from "./components/MainComps";
+
 // 1context
 export * from "./components/BearContextProvider";
 
@@ -49,10 +57,12 @@ export * from "./components/form/BearForm";
 export * from "./components/form/BearFormBase";
 export * from "./components/form/FormHook";
 
+// 1input
 export * from "./components/input/BearInput";
 export * from "./components/input/BearInputText";
 export * from "./components/input/BearTextarea";
 export * from "./components/input/BearInputNumber";
+export * from "./components/input/BearInputSubmit";
 
 // 1auth
 export * from "./components/user/BearAuthPortal";

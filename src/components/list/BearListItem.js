@@ -87,7 +87,12 @@ export function BearListItem(
   }
 
   function mainOso() {
-    return BearListItemExpand(dgste, coimswe, ijssr);
+    let asdase =
+      //
+      // "BearListItemExpand";
+      BearListItemExpand(dgste, coimswe, ijssr);
+
+    return asdase;
   }
 
   const sijfawe = dictvar
@@ -114,6 +119,10 @@ export function BearListItem(
     // return ""
     return containFunc(sijfawe, dgste);
   }
+  let jsaase =
+    //
+    containFunc ? xcjsd() : sijfawe;
+  // "adfokadsd";
 
-  return containFunc ? xcjsd() : sijfawe;
+  return jsaase;
 }

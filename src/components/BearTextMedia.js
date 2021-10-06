@@ -3,6 +3,7 @@ import React, {
   useState,
   useContext,
 } from "react";
+import { BearTitle } from "../importBase";
 import {
   //
   bearlog,
@@ -16,14 +17,12 @@ import { SwitchComp } from "./GlobalComps.js";
 export function BearTextMedia({
   //
   imagevar,
-  imagesize = 20,
   leftWidth = "5px",
   padvar = "5px",
   vertSize,
   vertTrue,
   iconSize,
-  imageText,
-  imageConfig,
+  imageConfig = {},
   textvar,
   iconvar,
   noImage,
@@ -31,12 +30,15 @@ export function BearTextMedia({
   noText,
   onlyIcons,
   buttonTrue,
-  iconConfig,
-  textconfig,
+  iconConfig = {},
+  textConfig = {},
   itemType = "",
   swapItems,
   className,
   style,
+  // 1subtitle
+  subtitle,
+  subtitleConfig = {},
   ...args
 }) {
   // 1const
@@ -61,40 +63,42 @@ export function BearTextMedia({
     return ksease;
   }
 
+  // 1image
   function ImgMain({ ...dsfew }) {
-    const fnkfg = {
-      // style: ksawe,
-      imagevar: imagevar,
-      size: imagesize,
-      name: imageText,
+    return BearImage({
+      shape: "circle",
+      image: imagevar,
       ...dsfew,
-    };
-
-    bearlog.lug("___ imgBaseText  IMAGE ___", fnkfg);
-
-    const oksaw = <BearImage {...fnkfg} />;
-
-    return oksaw;
+    });
   }
 
   // 1text
   function Ajiwq({ ...dsfew }) {
-    const oisde = {
-      obj: textvar,
-      // style: ksawe,
-      ...dsfew,
-    };
+    const oisde = subtitle
+      ? BearTitle({
+          title: textvar,
+          subtitle,
+          subtitleConfig,
+          ...dsfew,
+        })
+      : BearDiv({
+          obj: textvar,
+          span: true,
+          // style: ksawe,
+          ...dsfew,
+        });
 
-    return <BearDiv span {...oisde} />;
+    return oisde;
+    //
   }
 
+  // 1icon
   function INcoio({ style, ...ase }) {
     //
-    const ksawe = sadkwe(style);
+    const ksawe = style;
 
     const sdlf = {
       style: ksawe,
-      obj: BearIcon(iconvar),
       ...ase,
     };
 
@@ -102,19 +106,32 @@ export function BearTextMedia({
 
     const isajdawe = (
       //
+      // "oasdkfasd";
       // BearIcon(iconvar);
-      <BearDiv span {...sdlf} />
+      <BearDiv span {...sdlf}>
+        {BearIcon(iconvar)}
+      </BearDiv>
     );
 
     return isajdawe;
   }
 
-  let okeasw = !noImage && imagevar;
-  const okdsre = okeasw ? <ImgMain {...imageConfig} /> : "";
-  const kadse = okdsre ? okdsre : iconvar && <INcoio {...iconConfig} />;
+  let okeasw =
+    //
+    imagevar;
+  // !noImage && imagevar;
+
+  // 1left
+  const okdsre = okeasw && ImgMain(imageConfig);
+  const kadse =
+    //
+    // okdsre;
+    // "";
+    // INcoio(iconConfig);
+    okdsre ? okdsre : iconvar ? INcoio(iconConfig) : "";
 
   const textShow = !noText && !onlyIcons && textvar;
-  const okdswq = textShow && <Ajiwq {...textconfig} />;
+  const okdswq = textShow && Ajiwq(textConfig);
 
   const okasew = {
     style: {
@@ -129,6 +146,10 @@ export function BearTextMedia({
   function RendMain() {
     const lftoe = swapItems ? okdswq : kadse;
     const righto = swapItems ? kadse : okdswq;
+
+    // 1console
+    bearlog.log("RendMain-zzz", { lftoe, righto });
+
     const oskdawe = (
       <>
         {/* {kadse} */}
@@ -144,13 +165,18 @@ export function BearTextMedia({
         obj: oskdawe,
       };
 
+      const isdjfwer = kadse && {
+        flex: true,
+        vertAlign: true,
+      };
+
       const fdghew = (
         <BearDiv
           //
-          flex
-          vertAlign
-          {...VCIFWRE}
-        />
+          {...isdjfwer}
+        >
+          {oskdawe}
+        </BearDiv>
       );
 
       // return "dojwewq";
@@ -175,5 +201,6 @@ export function BearTextMedia({
 
   bearlog.lug("___ BETEXTMEDIA args ___", args);
 
+  // return "Asdoqwkewq";
   return SwitchComp(itemType, args);
 }

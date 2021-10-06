@@ -26,6 +26,7 @@ import {
 // import { BearNotification } from "../BearNotification.js";
 import { BearError } from "../BearError.js";
 import { BearCheckout } from "./BearCheckout.js";
+import { BearInputBase } from "../input/BearInputBase";
 
 export function BearCheckoutStripeBase({
   //
@@ -34,13 +35,17 @@ export function BearCheckoutStripeBase({
   bearName,
   // 1button
   payFirst,
+  dictvar,
   // 1payment
   cardInputConfig,
   paymentConfig,
   paymentLabel,
   onSubmit,
+  nativePayment,
   //
   mode,
+  // 1card
+  cardConfig,
   ignoreErrors,
   totalPayment,
   hidePostalCode,
@@ -66,7 +71,7 @@ export function BearCheckoutStripeBase({
 
   // 1errro
   const [errTexto, seterrTexto] = useState();
-  const [disablo, setdisablo] = useState();
+  const [disablo, setdisablo] = useState(true);
 
   function handError({ message }) {
     bearlog.luggu("___ hide ERROR ___", message);
@@ -105,7 +110,7 @@ export function BearCheckoutStripeBase({
     const stripe = useStripe();
     const elements = useElements();
 
-    bearlog.log("STRIPE CHECKOUT---", {
+    bearlog.lug("STRIPE CHECKOUT---", {
       //
       stripe,
       elements,
@@ -140,7 +145,7 @@ export function BearCheckoutStripeBase({
         ...dvbdero,
       };
 
-      bearlog.log("---PAYMENT CHECK ALL DEETS", sdfkewr);
+      bearlog.lug("---PAYMENT CHECK ALL DEETS", sdfkewr);
       // bearlog.lug("___ dvbdero ___", dvbdero);
 
       if (onSubmit) {
@@ -160,7 +165,7 @@ export function BearCheckoutStripeBase({
         payment_method: cardDetails,
       };
 
-      bearlog.log("___ paymentIntents asdqw ___", {
+      bearlog.lug("___ paymentIntents asdqw ___", {
         secretos,
         ijsrew,
       });
@@ -170,7 +175,7 @@ export function BearCheckoutStripeBase({
         // await stripe.createPaymentMethod(rejweae);
         await stripe.confirmCardPayment(secretos, ijsrew);
 
-      bearlog.log("CARDPAY ", asdf);
+      bearlog.lug("CARDPAY ", asdf);
 
       const jdfesawe = (
         <>
@@ -188,8 +193,30 @@ export function BearCheckoutStripeBase({
       return fdgok;
     }
 
+    // 1submit CHECK(){
+    async function checkoSub() {
+      const nsidfre = elements.getElement(CardElement);
+
+      const { error, paymentMethod } = await stripe.createPaymentMethod({
+        type: "card",
+        card: nsidfre,
+      });
+
+      bearlog.lug("___ check SUBMIT CARD ___", { error, nsidfre });
+
+      if (!error) {
+        return true;
+      } else {
+        seterrTexto("Please add your card details");
+        return false;
+      }
+    }
+
+    // 1submit FIRST
     async function er9eras(dvbdero) {
       const nsidfre = elements.getElement(CardElement);
+
+      bearlog.lug("___ submit FIRST CARD ___", nsidfre, dvbdero);
 
       if (nsidfre) {
         const rejweae = {
@@ -203,10 +230,7 @@ export function BearCheckoutStripeBase({
 
         return await secPass(kisdjfre);
       } else {
-        return {
-          //
-        };
-        // BearErrNote("Sorry")
+        seterrTexto("Please add your card details");
       }
       // bearlog.lug("PAYMENT---asd");
       // handRes(asd);
@@ -217,7 +241,13 @@ export function BearCheckoutStripeBase({
       bearlog.lug("___ CARD BASEO ___", sdfgr);
 
       // return "aodkaew";
-      return vxcobr(sdfgr);
+      return (
+        <>
+          {nativePayment}
+          {/*  */}
+          {vxcobr(sdfgr)}
+        </>
+      );
     }
 
     // 1cardeleemtns
@@ -247,6 +277,7 @@ export function BearCheckoutStripeBase({
       ) : (
         <>
           <CardElement {...dsfoqeqs} />
+          {/* {errTexto} */}
         </>
       );
     }
@@ -261,10 +292,11 @@ export function BearCheckoutStripeBase({
       return ksdrse9;
     }
 
-    // 1card
+    // 1card CONFIG
     const ijsdf = {
       bearName: "STRIPE CARD",
       name: "card",
+      label: "Credit / Debit card",
       // required: true,
       // error: errTexto,
       errorFunction: asodke,
@@ -272,13 +304,14 @@ export function BearCheckoutStripeBase({
       style: {
         minHeight: "40px",
       },
+      ...cardConfig,
     };
 
     bearlog.lug("___ STRIPE CARD ___", ijsdf);
 
-    // 1dict
+    // 1dict 1card INLCUDE IN LIST
     const ndufgase = {
-      card: ijsdf,
+      dictvar: { card: ijsdf, ...dictvar },
     };
 
     function errorbaso({ code, message, type }) {
@@ -335,17 +368,20 @@ export function BearCheckoutStripeBase({
     }
 
     const ijsase = {
+      logtrue: true,
+      confirmModal: true,
       ...args,
+      // topFormItem: BearInputBase(cardios, ijsdf),
+      ...ndufgase,
       message: wuheqw,
       messageConfig: {
         outsideLink: linkShow,
       },
-      buttonConfig: {
-        disabled: disablo,
-      },
-      logtrue: true,
-      dictvar: ndufgase,
+      // buttonConfig: {
+      //   disabled: disablo,
+      // },
       onSubmit: er9eras,
+      preSubmit: checkoSub,
       typeComp: "BearCheckoutStripe",
     };
 

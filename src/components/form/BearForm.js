@@ -14,6 +14,7 @@ import {
   argPass,
   BearErrMiss,
   LoadMain,
+  BearBackBorder,
 } from "../GlobalComps";
 import { BearError } from "../BearError";
 import { BearCheckMain } from "../check/BearCheckMain";
@@ -41,6 +42,7 @@ export function BearForm({
   // 1button
   noButton,
   noButtonEnd,
+  onCancel,
   buttonConfig = {},
   buttonText = "Submit",
   buttonSize = "35px",
@@ -72,9 +74,15 @@ export function BearForm({
   requireAll,
   //
   // 1submit
+  disableSubmit,
+  preSubmit,
   submitDisplay,
   formData,
   extractValues,
+  //
+  // 1modal
+  confirmModal,
+  //
   // 1value
   loadSubmit,
   onSubmit,
@@ -96,17 +104,21 @@ export function BearForm({
 }) {
   //
   // 1const
-  const [loadSetto, setloadSetto] =
-    //
-    ["", ""];
-  // useState();
+  const [loadVars, setloadVars] = useState();
+  const [loadSetto, setloadSetto] = useState();
+  const [modalConf, setmodalConf] = useState();
 
   const asokew =
     //
     "";
   // formValidPass({ list, dictvar });
 
-  function goSing(doksad) {
+  function goSing({
+    //
+    itemName,
+    bearName,
+    ...doksad
+  }) {
     let sdifje = Object.values(doksad)[0];
 
     return sdifje;
@@ -143,25 +155,62 @@ export function BearForm({
     }
   }
 
-  // 1submit
-  function cxvbmf(values, funta) {
+  // 1modal 1presubmit
+  async function cxvbmf(...asd) {
+    bearlog.lug("preSubmit-zzz", { preSubmit, asd });
+    if (preSubmit) {
+      const asokwe = await preSubmit(...asd);
+      if (asokwe) {
+        confirmOs(...asd);
+      }
+    } else {
+      confirmOs(...asd);
+    }
+  }
+
+  // 1submit MODAL
+  function confirmOs(values, funta) {
+    bearlog.lug("___ values ___", values);
+
+    if (confirmModal) {
+      switch (typeof confirmModal) {
+        case "string":
+          confirmModal = confirmModal;
+          break;
+        case "object":
+          confirmModal = confirmModal(values);
+          break;
+        default:
+          confirmModal = "Are you sure?";
+      }
+
+      if (window.confirm(confirmModal)) {
+        sdaseas(values, funta);
+      } else if (onCancel) {
+        onCancel(values);
+      }
+    } else {
+      sdaseas(values, funta);
+    }
+  }
+
+  // 1submit BASIC
+  function sdaseas(values, funta) {
     //
 
-    if (loadSubmit) {
-      setloadSetto(true);
-    }
+    // setloadVars(true);
+    // setloadSetto(true);
 
     const emptiosa = !isEmpty(values);
     const trudsoe = onSubmit && emptiosa;
 
-    const gifhjer = {
+    bearlog.lug("___ FORMAMAIN SUBMIT ___", {
       loadSubmit,
+      loadSetto,
       values,
       emptiosa,
       trudsoe,
-    };
-
-    bearlog.lug("___ FORMAMAIN SUBMIT ___", gifhjer);
+    });
     bearlog.lug("___ Fomain values ___", values);
 
     if (trudsoe) {
@@ -220,7 +269,16 @@ export function BearForm({
   };
 
   // 1button
-  function Buttiona({ text, style, ...siwerew }) {
+  function Buttiona({
+    disabledConfig,
+    disabled,
+    loadingText = "Loading...",
+    text,
+    style,
+    onClick,
+    ...siwerew
+  }) {
+    disabled = disableSubmit || disabled;
     //
     const aewsadw = {
       style: {
@@ -228,11 +286,23 @@ export function BearForm({
       },
     };
 
+    const ijda = disabled
+      ? {
+          // style: { color: "greyscale" },
+          className: "disabled",
+          ...disabledConfig,
+        }
+      : {
+          onClick,
+          className: "buttonHover",
+        };
+
     const jsadcvx = {
       // width: "100%",
       // padding: "60px",
+      ...BearBackBorder("green", "5px"),
       color: "white",
-      background: "green",
+      // background: "green",
       padding: "5px 10px",
       fontSize: buttonSize,
       // marginBottom: "20px",
@@ -257,14 +327,18 @@ export function BearForm({
       // ...fghtr,
       ...nsdijfer,
       ...siwerew,
-      type: "submit",
+      type: !disabled && "submit",
       value: text,
       form: formid,
       style: jsadcvx,
       // genConfig: aewsadw,
-      className: "buttonHover",
+      ...ijda,
       // marginTop: ""
     };
+
+    const sdijfwr =
+      //
+      loadVars ? loadingText : text ? text : buttonText;
 
     bearlog.lug("___ bForm BUTTON ___", dvbijkrw);
 
@@ -272,7 +346,10 @@ export function BearForm({
       <>
         {/* <BearButton {...dvbijkrw}>{buttonText}</BearButton> */}
         {/* <Button {...dvbijkrw}>{text}</Button> */}
-        <button {...dvbijkrw}>{text ? text : buttonText}</button>
+        <button {...dvbijkrw}>
+          {/*  */}
+          {sdijfwr}
+        </button>
         {/* <input {...dvbijkrw} /> */}
       </>
     );
@@ -427,7 +504,7 @@ export function BearForm({
 
   // 1button
   function bettios() {
-    return !noButton && buttonList ? ajde() : Buttiona(buttonConfig);
+    return noButton ? "" : buttonList ? ajde() : Buttiona(buttonConfig);
   }
 
   function vijsd9({ name, ...adaw }) {

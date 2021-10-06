@@ -16,14 +16,13 @@ export function BearListItemExpand(
   dasfjewr,
   {
     //
-    // 1dict
     bearName = "",
     name = "",
     horiz,
+    // 1dict
     dictTrue,
     dictvar,
     dictFunc,
-    typeBullet,
     addDict = {},
     //
     // 1item
@@ -57,6 +56,7 @@ export function BearListItemExpand(
     //
     // 1onclick
     onClick,
+    click,
     returnArray,
     clickSingle,
     //
@@ -64,6 +64,8 @@ export function BearListItemExpand(
     chooseBaseFunc,
     chooseTrue,
     chosenItem,
+    chosenAttr = "itemName",
+    chosenStyle,
     chosenConfig = {},
     //
     // 1error
@@ -85,8 +87,6 @@ export function BearListItemExpand(
 ) {
   //
   // 1const
-  const chosios = chosenItem;
-
   const asdwe = itemConfig;
   const choseAll = findSelect(dasfjewr);
 
@@ -145,6 +145,7 @@ export function BearListItemExpand(
   const mainseo = {
     margin: !noItemMargin && "5px",
     ...sokwe,
+    ...itemConfig.style,
     ...itemStyle,
     ...dfijgert,
     ...dfasdke("style"),
@@ -158,10 +159,20 @@ export function BearListItemExpand(
       chosenItem;
     // chooseTrue ? chosios : chosenItem;
 
-    const itemBase =
-      //
-      itmCurr;
-    // expandItem(itmCurr);
+    let itemBase;
+    // INFO: check whether the list item is a full dict or a string
+    switch (typeof itmCurr) {
+      case "string":
+        itemBase = itmCurr;
+        break;
+      case "object":
+        itemBase = itmCurr[chosenAttr]
+          ? itmCurr[chosenAttr]
+          : itmCurr.id
+          ? itmCurr.id
+          : itemBase;
+        break;
+    }
 
     const selectTrue =
       //
@@ -173,6 +184,10 @@ export function BearListItemExpand(
     const dfbidfg = selectTrue && {
       chosenTrue: true,
       ...chosenConfig,
+      style: {
+        ...(chosenConfig && chosenConfig.style),
+        ...chosenStyle,
+      },
     };
 
     const sidjas =
@@ -211,15 +226,23 @@ export function BearListItemExpand(
     return iasda;
   }
 
+  const sijdfr = {
+    ...asdwe,
+    style: mainseo,
+  };
+
   const ijswe = dictTrue || pullDictItem;
-  const endRet = ijswe
+  const zcxvzx = ijswe
     ? {
         ...asdwe,
         ...listarr,
         ...choseAll,
-        style: mainseo,
+        ...sijdfr,
       }
     : dgste;
+  const endRet =
+    //
+    zcxvzx;
 
   if (logtrue) {
     bearlog.laggu("___ endRet ___", endRet);
@@ -228,19 +251,21 @@ export function BearListItemExpand(
   const dictRet = typeof endRet == "object";
   const itmBase = dictRet ? listarr : "";
 
+  // 1chosen LOG
+  const chslog = { chosenItem, dasfjewr, cvbokfe };
+
   const asjds = {
-    listarr,
-    dictRet,
-    endRet,
+    ...chslog,
+    // listarr,
+    // dictRet,
+    // endRet,
   };
 
   // 1console
   // messvar = "sdfwer";
   // logtrue = "oaskd";
 
-  if (logtrue) {
-    bearlog.laggu(bearName + "___" + name + "---BrList---", asjds);
-  }
+  bearlog.lug(bearName + "___" + name + "---BrList---", asjds);
 
   function rettobjoo(objo, aokd) {
     const oksdf = {
@@ -255,9 +280,10 @@ export function BearListItemExpand(
           obj: listarr,
         };
 
-    if (logtrue) {
-      bearlog.laggu(bearName, "___ dsifjw ___", {
+    if ("a") {
+      bearlog.lug(bearName, "___ dsifjw ___", {
         RENDERTYPE: typeList,
+        objo,
         ...dsifjw,
       });
     }
@@ -288,7 +314,7 @@ export function BearListItemExpand(
       asdpkwe = endRet;
       break;
     case "return":
-      asdpkwe = <BearDiv {...endRet} obj={listarr} />;
+      asdpkwe = <BearDiv {...sijdfr} obj={listarr} />;
       break;
 
     default:
@@ -301,15 +327,32 @@ export function BearListItemExpand(
 
       bearlog.lug("___ beListItem FINAL ___", {
         findobj,
+        asdpkwe,
         noContain,
       });
 
       function finLog(sdasd) {
+        let fsadfsd;
+        let kdfsdf = typeof sdasd;
+
+        // 1findobj
+        bearlog.log("___ sdasd ___", { sdasd, kdfsdf });
+        switch (kdfsdf) {
+          case "object":
+            fsadfsd = findobj(sdasd);
+            break;
+          default:
+            fsadfsd = BearDiv({
+              ...sijdfr,
+              obj: findobj(sdasd),
+            });
+        }
+
         if (logItem) {
           bearlog.lug(bearName, "_ BLIST ITEM RENDER__", sdasd);
         }
 
-        return findobj(sdasd);
+        return fsadfsd;
       }
 
       function findObjPress() {
@@ -318,11 +361,9 @@ export function BearListItemExpand(
 
         bearlog.lug("___ trueGo ___", { findobj, jsdw, trueGo });
 
-        return trueGo ? (
-          <BearDiv {...endRet} obj={finLog(endRet)} />
-        ) : (
-          BearError("must be a function, not " + jsdw)
-        );
+        return trueGo
+          ? finLog(endRet)
+          : BearError("must be a function, not " + jsdw);
       }
 
       asdpkwe =
@@ -339,11 +380,16 @@ export function BearListItemExpand(
     //
     dragTrue ? "<DragBase />" : asdpkwe;
 
-  // 1onclick
+  // 1onclick LIST
   const dfgjs = !clickSingle;
   const clickBase = dfgjs ? conDit() : dgste;
 
   function clickList() {
+    clicknons(onClick, "onClick");
+    clicknons(click, "click");
+  }
+
+  function clicknons(typasd, nameasd) {
     const asd0okw =
       //
       clickSingle;
@@ -361,19 +407,19 @@ export function BearListItemExpand(
       // okgs;
       returnArray ? turnarray(okgs) : okgs;
 
-    const clickEnd = endRet.onClick ? endRet.onClick : onClick;
+    const clickEnd = endRet[nameasd] ? endRet[nameasd] : typasd;
 
-    if ("logtrue") {
-      bearlog.laggu(bearName + "___ OCLICK FUNC ___", {
-        FUNCTION: clickEnd,
-        ITEM: fijsde,
-        okgs,
-        cvbokfe,
-        choseAll,
-        origItem,
-        fuhease,
-      });
-    }
+    const sdnfsw = {
+      FUNCTION: clickEnd,
+      ITEM: fijsde,
+      okgs,
+      cvbokfe,
+      choseAll,
+      origItem,
+      fuhease,
+    };
+
+    bearlog.lug(bearName, "___ OCLICK FUNC ___", sdnfsw);
 
     if (clickEnd) {
       clickEnd(fijsde);
@@ -387,14 +433,12 @@ export function BearListItemExpand(
   };
 
   // 1console
-  if (logtrue) {
-    bearlog.laggu(bearName, "___ itmExpand ___", {
-      origItem,
-      itemNameStyle,
-      CLICK: filleoo,
-      STYLE: mainseo,
-    });
-  }
+  bearlog.laggu(bearName, "___ itmExpand ___", {
+    origItem,
+    itemNameStyle,
+    CLICK: filleoo,
+    STYLE: mainseo,
+  });
 
   const auewasdash = loadtrue
     ? loadobj
@@ -404,23 +448,10 @@ export function BearListItemExpand(
       // isjdew;
       BearDiv(filleoo);
 
-  const ijsew =
-    //
-    // "";
-    lineBetween && <hr />;
-
-  // const saewe = origItem["title"] && titleTrue;
-  // const sdijfw = saewe && <Tjisae {...origItem} />;
-
-  // typeBullet =
-  const ijdsasew =
-    //
-    !typeBullet ? auewasdash : <li>{auewasdash}</li>;
-
+  const ijsew = lineBetween && <hr />;
   const asidjwe = (
     <>
-      {/* {sdijfw} */}
-      {ijdsasew}
+      {auewasdash}
       {ijsew}
     </>
   );

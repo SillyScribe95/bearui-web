@@ -28,7 +28,14 @@ export default function BearHeader({
   ...asdwew
 }) {
   // 1nav LIST
-  function listo({ dictvar, ...adsfa }) {
+
+  function listo(sadfa, name) {
+    return sfdgf({
+      bearName: name,
+      ...sadfa,
+    });
+  }
+  function sfdgf({ dictvar, ...adsfa }) {
     const isjdfre = {
       // list: adsfa,
       renderItem: asid,
@@ -38,8 +45,9 @@ export default function BearHeader({
     function asid(xcvdf) {
       // switch getTpye
 
-      bearlog.lug("aAS ssss", { xcvdf });
+      bearlog.log("aAS ssss", { xcvdf });
 
+      // return "forewa";
       return sdfrdsf(xcvdf);
     }
 
@@ -73,7 +81,6 @@ export default function BearHeader({
   function askawe(faadsf) {
     let aokew = {
       horiz: true,
-      bearName: "asdoqwe",
       // typeList: "button",
       // ren
       ...navConfig,
@@ -89,7 +96,7 @@ export default function BearHeader({
   // 1nav
   const oswersr =
     //
-    navRight && listo(navRight);
+    navRight && listo(navRight, "navRight");
   // 1center
 
   // 1right
@@ -106,23 +113,30 @@ export default function BearHeader({
 
     const sfjwere =
       //
-      // BearDiv(sdrwer)
+      // logoText;
+      // BearDiv(sdrwer);
       BearTextMedia(sdrwer);
 
-    const ijsdfr = navLeft && listo(navLeft);
+    const ijsdfr = navLeft && listo(navLeft, "navLeft");
 
-    return BearFlex({
-      padvar: "20px",
-      // flex: true,
-      // vertAlign: true,
+    const asds = {
+      // padvar: "20px",
+      flex: true,
+      vertAlign: true,
       // pad
       // obj: (
-      //   <>
-      //     {sfjwere} {ijsdfr}
-      //   </>
+      //
       // ),
-      list: [sfjwere, ijsdfr],
-    });
+      // list: [sfjwere, ijsdfr],
+    };
+
+    return (
+      <BearDiv {...asds}>
+        <>
+          {sfjwere} {ijsdfr}
+        </>
+      </BearDiv>
+    );
   }
 
   // 1float

@@ -12,7 +12,7 @@ import { isEmpty, remove } from "lodash";
 import { BearError } from "../BearError";
 import { BearListMap } from "./BearListMap";
 import { BearListItem } from "./BearListItem";
-import { argPass, BearMissing, BearPossess } from "../GlobalComps";
+import { argMiss, argPass, BearMissing, BearPossess } from "../GlobalComps";
 import { getListComplex } from "./getListComplex";
 import { BearCheckList } from "../check/BearCheckList";
 import { chunk } from "lodash";
@@ -24,12 +24,12 @@ export function BearList(
     obj,
     typevar,
     // 1remove
-    containFunc,
     list,
     // 1name
     bearName,
     //
     // 1display
+    containFunc,
     displayNumber,
     rowConfig,
     //
@@ -72,15 +72,13 @@ export function BearList(
     collapseTrue,
     renderItem,
     typeList,
+
     ...listArgs
   }
 ) {
   // 1list
   list = list && getListComplex(list, listArgs);
   bearlog.lug("___Blist list ___", list);
-
-  // 1const
-  // const [chosios, setchosios] = useState(chosenItem);
 
   // function passChoose(itmBase) {
   //   if (chooseTrue) {
@@ -91,6 +89,8 @@ export function BearList(
   //     setchosios(ogfsdfds);
   //   }
   // }
+
+  // const sdfosf =
 
   // 1baseargs
   const sidwre = {
@@ -226,7 +226,7 @@ export function BearList(
   const saokwe = typeBullet ? <ul>{sadfwe}</ul> : sadfwe;
 
   function RendBase() {
-    const saidje = argPass({
+    const saidje = argMiss({
       obj: saokwe,
       flex,
       ...listArgs,

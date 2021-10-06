@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState, createContext } from "react";
-
+import { bearlog } from "@sillyscribe95/bear-ui-web";
 export const MainContext = createContext();
 
 const MainContextProvider = (props) => {
@@ -45,14 +45,13 @@ const MainContextProvider = (props) => {
     // FORM
   };
 
+  let isfas = {
+    value: xvokbcv,
+  };
+
   // 1return 1end
   return (
-    <MainContext.Provider
-      //
-      value={xvokbcv}
-    >
-      {props.children}
-    </MainContext.Provider>
+    <MainContext.Provider {...isfas}>{props.children}</MainContext.Provider>
   );
 };
 // }

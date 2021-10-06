@@ -6,10 +6,12 @@ import {
 import { bearlog } from "../../index";
 import { BearCheckoutStripeBase } from "./BearCheckoutStripeBase";
 import { BearError } from "../BearError";
+import { BearDiv } from "../BearDiv";
 
 export function CheckPayStripe({
   totalPayment,
   paymentLabel,
+  dividerObj,
   loadingItem = "",
   paymentConfig,
   nativePaymentConfig,
@@ -52,7 +54,7 @@ export function CheckPayStripe({
 
       // Check the availability of the Payment Request API.
       pr.canMakePayment().then((result) => {
-        bearlog.log("result-zz", result);
+        bearlog.lug("result-zz", result);
 
         if (result) {
           setPaymentRequest(pr);
@@ -86,15 +88,15 @@ export function CheckPayStripe({
     // paymentRequest.on("cancel", onCancel);
     // 1token
     // paymentRequest.on("token", function (event) {
-    //   bearlog.log("--token-xxx", event);
+    //   bearlog.lug("--token-xxx", event);
     // });
     // 1source
     // paymentRequest.on("source", function (event) {
-    //   bearlog.log("--source-xxx", event);
+    //   bearlog.lug("--source-xxx", event);
     // });
     // 1success 1paymentmethod
     // paymentRequest.on("paymentmethod", async function (event) {
-    //   bearlog.log("--paymentmethod-xxx", event);
+    //   bearlog.lug("--paymentmethod-xxx", event);
     // });
     // paymentRequest.on("paymentmethod", async (ev) => {
     //   // Confirm the PaymentIntent without handling potential next actions (yet).
@@ -134,7 +136,10 @@ export function CheckPayStripe({
   const paygo = loadPay ? (
     loadingItem
   ) : payoitreu ? (
-    <PaymentRequestButtonElement {...sdijfer} />
+    <>
+      <PaymentRequestButtonElement {...sdijfer} />
+      {dividerObj ? dividerObj : Divideo()}
+    </>
   ) : !hideErrors ? (
     BearError(
       //
@@ -149,7 +154,22 @@ export function CheckPayStripe({
     style,
     className,
   };
-  const sodkfwe = <div {...sidjfre}>{paygo}</div>;
+
+  // 1divider
+  function Divideo() {
+    const sdkfr = {
+      style: { margin: "10px 0", textAlign: "center " },
+      obj: "Or pay with card",
+    };
+    return BearDiv(sdkfr);
+  }
+
+  const sodkfwe = (
+    <div {...sidjfre}>
+      {/*  */}
+      {paygo}
+    </div>
+  );
 
   return sodkfwe;
 }

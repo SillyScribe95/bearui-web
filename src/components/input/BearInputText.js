@@ -23,6 +23,7 @@ export function BearInputText({
   // id,
   onChangeValue,
   style,
+  baseTrue,
   noBase,
   formData,
   ...sfdgert
@@ -122,10 +123,13 @@ export function BearInputText({
   bearlog.lug("___ BeaInputText ___", ijawe);
 
   // 1input
-  const centFsow = (
+  const centFsow = baseTrue ? (
+    <>
+      <input {...ijawe} />
+    </>
+  ) : (
     <>
       {/* <input {...ijawe}>{textvar}</input>
-    <input {...ijawe} />
     <textarea {...ijawe}>{textvar}</textarea>
     <gens.StInput {...ijawe} />
     <InputChak {...ijawe}>{changeVal}</InputChak>

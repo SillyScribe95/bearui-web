@@ -48,35 +48,12 @@ export function BearFloat({
   centerConfig = {},
   right,
   rightConfig = {},
-  noVertAlign,
-  logtrue,
-  messvar,
-  style,
   ...args
 }) {
-  //
-  const vertTop = {
-    display: "flex",
-    /* justify-content: center; */
-  };
-
-  const allPasow =
-    //
-    // {};
-    vertTop;
-
-  const trueClass =
-    //
-    // "";
-    "flex";
-  // noVertAlign ? (noVertTop ? "" : allPasow) : vertAlign;
-
-  const jndf = {
-    // paddingLeft: noPadding
-    className: "float-left",
-    p: "0 2",
-    padding: "0 10px",
-    marginRight: "auto",
+  const trueClass = {
+    flex: true,
+    ...args,
+    // vertAlign: true,
   };
 
   const centros = {
@@ -92,6 +69,15 @@ export function BearFloat({
     //
     // left;
     left || showLeft;
+
+  const jndf = {
+    // paddingLeft: noPadding
+    // className: "float-left",
+    // p: "0 2",
+    // padding: "0 10px",
+    // marginRight: "auto",
+    ...leftConfig,
+  };
 
   // 1left
   const lefto = sasease && (
@@ -109,6 +95,7 @@ export function BearFloat({
     // style: { textAlign: "center", ...centerConfig.style },
   };
 
+  // 1center
   const centio = (
     <div {...kdsdf}>
       {/*  */}
@@ -119,12 +106,12 @@ export function BearFloat({
   );
 
   const ijsad = {
-    marginLeft: "auto",
-    style: alignTrue && { textAlign: "right" },
-    class: "float-right",
+    // marginLeft: "auto",
+    // style: alignTrue && { textAlign: "right" },
+    // class: "float-right",
+    ...rightConfig,
   };
 
-  // right
   let askdw = right || showRight;
   const rightos = (
     <>
@@ -228,54 +215,18 @@ export function BearFloat({
 
     default:
       const oesfdrtw = {
-        flex: true,
-        vertAlign: true,
         ...trueClass,
         obj: ksaewe,
       };
-      endValue = <BearDiv {...oesfdrtw} />;
-  }
-  const noSides =
-    //
-    // "";
-    !left && !right;
-
-  disvar =
-    //
-    disvar || noSides;
-
-  const sdifjw =
-    //
-    disvar ? sokwerr : endValue;
-  // oeqewq;
-
-  const ijdsfe = {
-    position: "relative",
-    height: "100%",
-    width: "100%",
-    ...style,
-  };
-
-  args = {
-    ...args,
-    style: ijdsfe,
-    obj: sdifjw,
-  };
-
-  // topRight
-  if ("logtrue") {
-    bearlog.lug(bearName, " BEAR FLOAT", {
-      trueClass,
-      layoutType,
-      topLeft,
-      topRight,
-      left,
-      right,
-      ...args,
-    });
+      endValue =
+        //
+        // ksaewe;
+        BearDiv(oesfdrtw);
   }
 
-  //
-  // return endValue;
-  return <BearDiv {...args} />;
+  const endios =
+    //
+    endValue;
+
+  return endios;
 }
