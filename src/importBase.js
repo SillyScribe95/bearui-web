@@ -16,7 +16,7 @@ export * from "./components/payment/BearPayButton";
 
 // 1icon 1image 1textme
 export * from "./components/BearTextMedia";
-export * from "./components/BearIcon";
+// export * from "./components/BearIcon";
 export * from "./components/BearImage";
 
 // 1float

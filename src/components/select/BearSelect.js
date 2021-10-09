@@ -8,8 +8,6 @@ import Select, { components } from "react-select";
 import CreatableSelect from "react-select/creatable";
 import AsyncCreatableSelect from "react-select/async-creatable";
 import { bearlog } from "../../index";
-
-import { BearIcon } from "../BearIcon";
 import { vertAlign } from "../../consts/genStyle";
 import { BearDiv } from "../BearDiv";
 import { BearBorder } from "../InnerComps";
@@ -134,7 +132,10 @@ export function BearSelect({
       fontSize: "1.3em",
     };
 
-    const asew = searchBarIcon && BearIcon(searchBarIcon, ijsde);
+    const asew =
+      //
+      searchBarIcon;
+    // searchBarIcon && BearIcon(searchBarIcon, ijsde);
 
     const isdjfew = (
       <components.DropdownIndicator {...props}>

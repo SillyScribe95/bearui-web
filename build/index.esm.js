@@ -1,6 +1,9 @@
 import * as React from 'react';
 import React__default$1, { forwardRef as forwardRef$3, useContext, createContext as createContext$1, createElement, Fragment as Fragment$2, useRef, useLayoutEffect, useState, useCallback, useMemo, useEffect, Component } from 'react';
+import { AiOutlineEyeInvisible, AiOutlineEye, AiOutlineCopy } from 'react-icons/ai';
 import { createPortal, findDOMNode } from 'react-dom';
+import 'react-icons/si';
+import { FaCode } from 'react-icons/fa';
 
 function styleInject(css, ref) {
   if (ref === void 0) ref = {};
@@ -30657,478 +30660,6 @@ function getListComplex(listo, //
   return list;
 }
 
-var DefaultContext = {
-  color: undefined,
-  size: undefined,
-  className: undefined,
-  style: undefined,
-  attr: undefined
-};
-var IconContext = React__default$1.createContext && React__default$1.createContext(DefaultContext);
-
-var __assign = undefined && undefined.__assign || function () {
-  __assign = Object.assign || function (t) {
-    for (var s, i = 1, n = arguments.length; i < n; i++) {
-      s = arguments[i];
-
-      for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-    }
-
-    return t;
-  };
-
-  return __assign.apply(this, arguments);
-};
-
-var __rest = undefined && undefined.__rest || function (s, e) {
-  var t = {};
-
-  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
-
-  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
-  }
-  return t;
-};
-
-function Tree2Element(tree) {
-  return tree && tree.map(function (node, i) {
-    return React__default$1.createElement(node.tag, __assign({
-      key: i
-    }, node.attr), Tree2Element(node.child));
-  });
-}
-
-function GenIcon(data) {
-  return function (props) {
-    return React__default$1.createElement(IconBase, __assign({
-      attr: __assign({}, data.attr)
-    }, props), Tree2Element(data.child));
-  };
-}
-function IconBase(props) {
-  var elem = function (conf) {
-    var attr = props.attr,
-        size = props.size,
-        title = props.title,
-        svgProps = __rest(props, ["attr", "size", "title"]);
-
-    var computedSize = size || conf.size || "1em";
-    var className;
-    if (conf.className) className = conf.className;
-    if (props.className) className = (className ? className + ' ' : '') + props.className;
-    return React__default$1.createElement("svg", __assign({
-      stroke: "currentColor",
-      fill: "currentColor",
-      strokeWidth: "0"
-    }, conf.attr, attr, svgProps, {
-      className: className,
-      style: __assign(__assign({
-        color: props.color || conf.color
-      }, conf.style), props.style),
-      height: computedSize,
-      width: computedSize,
-      xmlns: "http://www.w3.org/2000/svg"
-    }), title && React__default$1.createElement("title", null, title), props.children);
-  };
-
-  return IconContext !== undefined ? React__default$1.createElement(IconContext.Consumer, null, function (conf) {
-    return elem(conf);
-  }) : elem(DefaultContext);
-}
-
-// THIS FILE IS AUTO GENERATED
-function MdPlaylistPlay(props) {
-  return GenIcon({
-    "tag": "svg",
-    "attr": {
-      "viewBox": "0 0 24 24"
-    },
-    "child": [{
-      "tag": "path",
-      "attr": {
-        "d": "M19 9H2v2h17V9zm0-4H2v2h17V5zM2 15h13v-2H2v2zm15-2v6l5-3-5-3z"
-      }
-    }]
-  })(props);
-}
-function MdArrowBack(props) {
-  return GenIcon({
-    "tag": "svg",
-    "attr": {
-      "viewBox": "0 0 24 24"
-    },
-    "child": [{
-      "tag": "path",
-      "attr": {
-        "d": "M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
-      }
-    }]
-  })(props);
-}
-function MdArrowForward(props) {
-  return GenIcon({
-    "tag": "svg",
-    "attr": {
-      "viewBox": "0 0 24 24"
-    },
-    "child": [{
-      "tag": "path",
-      "attr": {
-        "d": "M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-      }
-    }]
-  })(props);
-}
-
-// THIS FILE IS AUTO GENERATED
-function TiStar(props) {
-  return GenIcon({
-    "tag": "svg",
-    "attr": {
-      "version": "1.2",
-      "baseProfile": "tiny",
-      "viewBox": "0 0 24 24"
-    },
-    "child": [{
-      "tag": "path",
-      "attr": {
-        "d": "M9.362 9.158l-5.268.584c-.19.023-.358.15-.421.343s0 .394.14.521c1.566 1.429 3.919 3.569 3.919 3.569-.002 0-.646 3.113-1.074 5.19-.036.188.032.387.196.506.163.119.373.121.538.028 1.844-1.048 4.606-2.624 4.606-2.624l4.604 2.625c.168.092.378.09.541-.029.164-.119.232-.318.195-.505l-1.071-5.191 3.919-3.566c.14-.131.202-.332.14-.524s-.23-.319-.42-.341c-2.108-.236-5.269-.586-5.269-.586l-2.183-4.83c-.082-.173-.254-.294-.456-.294s-.375.122-.453.294l-2.183 4.83z"
-      }
-    }]
-  })(props);
-}
-
-// THIS FILE IS AUTO GENERATED
-function BiCommentDetail(props) {
-  return GenIcon({
-    "tag": "svg",
-    "attr": {
-      "viewBox": "0 0 24 24"
-    },
-    "child": [{
-      "tag": "path",
-      "attr": {
-        "d": "M7 7H17V9H7zM7 11H14V13H7z"
-      }
-    }, {
-      "tag": "path",
-      "attr": {
-        "d": "M20,2H4C2.897,2,2,2.897,2,4v18l5.333-4H20c1.103,0,2-0.897,2-2V4C22,2.897,21.103,2,20,2z M20,16H6.667L4,18V4h16V16z"
-      }
-    }]
-  })(props);
-}
-function BiEditAlt(props) {
-  return GenIcon({
-    "tag": "svg",
-    "attr": {
-      "viewBox": "0 0 24 24"
-    },
-    "child": [{
-      "tag": "path",
-      "attr": {
-        "d": "M19.045 7.401c.378-.378.586-.88.586-1.414s-.208-1.036-.586-1.414l-1.586-1.586c-.378-.378-.88-.586-1.414-.586s-1.036.208-1.413.585L4 13.585V18h4.413L19.045 7.401zM16.045 4.401l1.587 1.585-1.59 1.584-1.586-1.585L16.045 4.401zM6 16v-1.585l7.04-7.018 1.586 1.586L7.587 16H6zM4 20H20V22H4z"
-      }
-    }]
-  })(props);
-}
-function BiExpand(props) {
-  return GenIcon({
-    "tag": "svg",
-    "attr": {
-      "viewBox": "0 0 24 24"
-    },
-    "child": [{
-      "tag": "path",
-      "attr": {
-        "d": "M21 15.344L18.879 17.465 15.707 14.293 14.293 15.707 17.465 18.879 15.344 21 21 21zM3 8.656L5.121 6.535 8.293 9.707 9.707 8.293 6.535 5.121 8.656 3 3 3zM21 3L15.344 3 17.465 5.121 14.293 8.293 15.707 9.707 18.879 6.535 21 8.656zM3 21L8.656 21 6.535 18.879 9.707 15.707 8.293 14.293 5.121 17.465 3 15.344z"
-      }
-    }]
-  })(props);
-}
-function BiShare(props) {
-  return GenIcon({
-    "tag": "svg",
-    "attr": {
-      "viewBox": "0 0 24 24"
-    },
-    "child": [{
-      "tag": "path",
-      "attr": {
-        "fill": "none",
-        "d": "M10.025,9C9.474,9,9.003,8.552,9.003,8V6.414L4.417,11l4.586,4.586V14c0-0.501,0.371-0.925,0.868-0.991 c0.663-0.088,1.327-0.133,1.975-0.133c3.577,0,6.204,1.331,7.858,2.55C18.14,9.201,10.936,9,10.025,9z"
-      }
-    }, {
-      "tag": "path",
-      "attr": {
-        "d": "M11.003,7.054V4c0-0.404-0.243-0.769-0.617-0.924c-0.373-0.154-0.804-0.069-1.09,0.217l-7,7 c-0.391,0.391-0.391,1.023,0,1.414l7,7c0.287,0.287,0.717,0.372,1.09,0.217c0.374-0.155,0.617-0.52,0.617-0.924v-3.096 c0.284-0.02,0.565-0.029,0.843-0.029c5.426,0,8.239,3.572,8.362,3.73C20.4,18.859,20.697,19,21.003,19 c0.106,0,0.214-0.017,0.318-0.052c0.407-0.137,0.682-0.518,0.682-0.948C22.003,8.876,13.917,7.319,11.003,7.054z M11.846,12.875 c-0.647,0-1.312,0.045-1.975,0.133C9.374,13.075,9.003,13.499,9.003,14v1.586L4.417,11l4.586-4.586V8c0,0.552,0.471,1,1.022,1 c0.91,0,8.114,0.201,9.679,6.425C18.05,14.207,15.423,12.875,11.846,12.875z"
-      }
-    }]
-  })(props);
-}
-
-// THIS FILE IS AUTO GENERATED
-function BsChatQuote(props) {
-  return GenIcon({
-    "tag": "svg",
-    "attr": {
-      "viewBox": "0 0 16 16",
-      "fill": "currentColor"
-    },
-    "child": [{
-      "tag": "path",
-      "attr": {
-        "fillRule": "evenodd",
-        "d": "M2.678 11.894a1 1 0 01.287.801 10.97 10.97 0 01-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 01.71-.074A8.06 8.06 0 008 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 01-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 00.244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 01-2.347-.306c-.52.263-1.639.742-3.468 1.105z",
-        "clipRule": "evenodd"
-      }
-    }, {
-      "tag": "path",
-      "attr": {
-        "d": "M7.468 7.667c0 .92-.776 1.666-1.734 1.666S4 8.587 4 7.667C4 6.747 4.776 6 5.734 6s1.734.746 1.734 1.667z"
-      }
-    }, {
-      "tag": "path",
-      "attr": {
-        "fillRule": "evenodd",
-        "d": "M6.157 6.936a.438.438 0 01-.56.293.413.413 0 01-.274-.527c.08-.23.23-.44.477-.546a.891.891 0 01.698.014c.387.16.72.545.923.997.428.948.393 2.377-.942 3.706a.446.446 0 01-.612.01.405.405 0 01-.011-.59c1.093-1.087 1.058-2.158.77-2.794-.152-.336-.354-.514-.47-.563zm-.035-.012h-.001.001z",
-        "clipRule": "evenodd"
-      }
-    }, {
-      "tag": "path",
-      "attr": {
-        "d": "M11.803 7.667c0 .92-.776 1.666-1.734 1.666-.957 0-1.734-.746-1.734-1.666 0-.92.777-1.667 1.734-1.667.958 0 1.734.746 1.734 1.667z"
-      }
-    }, {
-      "tag": "path",
-      "attr": {
-        "fillRule": "evenodd",
-        "d": "M10.492 6.936a.438.438 0 01-.56.293.413.413 0 01-.274-.527c.08-.23.23-.44.477-.546a.891.891 0 01.698.014c.387.16.72.545.924.997.428.948.392 2.377-.942 3.706a.446.446 0 01-.613.01.405.405 0 01-.011-.59c1.093-1.087 1.058-2.158.77-2.794-.152-.336-.354-.514-.469-.563zm-.034-.012h-.002.002z",
-        "clipRule": "evenodd"
-      }
-    }]
-  })(props);
-}
-
-// THIS FILE IS AUTO GENERATED
-function SiAmazon(props){return GenIcon({"tag":"svg","attr":{"role":"img","viewBox":"0 0 24 24"},"child":[{"tag":"title","attr":{},"child":[]},{"tag":"path","attr":{"d":"M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.12.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726-1.53.406-3.045.61-4.516.61-2.265 0-4.41-.396-6.435-1.187-2.02-.794-3.82-1.91-5.43-3.35-.1-.074-.15-.15-.15-.22 0-.047.02-.09.05-.13zm6.565-6.218c0-1.005.247-1.863.743-2.577.495-.71 1.17-1.25 2.04-1.615.796-.335 1.756-.575 2.912-.72.39-.046 1.033-.103 1.92-.174v-.37c0-.93-.105-1.558-.3-1.875-.302-.43-.78-.65-1.44-.65h-.182c-.48.046-.896.196-1.246.46-.35.27-.575.63-.675 1.096-.06.3-.206.465-.435.51l-2.52-.315c-.248-.06-.372-.18-.372-.39 0-.046.007-.09.022-.15.247-1.29.855-2.25 1.82-2.88.976-.616 2.1-.975 3.39-1.05h.54c1.65 0 2.957.434 3.888 1.29.135.15.27.3.405.48.12.165.224.314.283.45.075.134.15.33.195.57.06.254.105.42.135.51.03.104.062.3.076.615.01.313.02.493.02.553v5.28c0 .376.06.72.165 1.036.105.313.21.54.315.674l.51.674c.09.136.136.256.136.36 0 .12-.06.226-.18.314-1.2 1.05-1.86 1.62-1.963 1.71-.165.135-.375.15-.63.045-.195-.166-.375-.332-.526-.496l-.31-.347c-.06-.074-.166-.21-.317-.42l-.3-.435c-.81.886-1.603 1.44-2.4 1.665-.494.15-1.093.227-1.83.227-1.11 0-2.04-.343-2.76-1.034-.72-.69-1.08-1.665-1.08-2.94l-.05-.076zm3.753-.438c0 .566.14 1.02.425 1.364.285.34.675.512 1.155.512.045 0 .106-.007.195-.02.09-.016.134-.023.166-.023.614-.16 1.08-.553 1.424-1.178.165-.28.285-.58.36-.91.09-.32.12-.59.135-.8.015-.195.015-.54.015-1.005v-.54c-.84 0-1.484.06-1.92.18-1.275.36-1.92 1.17-1.92 2.43l-.035-.02zm9.162 7.027c.03-.06.075-.11.132-.17.362-.243.714-.41 1.05-.5.55-.133 1.09-.222 1.612-.24.14-.012.28 0 .41.03.65.06 1.05.168 1.172.33.063.09.09.228.09.39v.15c0 .51-.14 1.11-.415 1.8-.278.69-.664 1.248-1.156 1.68-.073.06-.14.09-.197.09-.03 0-.06 0-.09-.012-.09-.044-.107-.12-.064-.24.54-1.26.806-2.143.806-2.64 0-.15-.03-.27-.087-.344-.145-.166-.55-.257-1.224-.257-.243 0-.533.016-.87.046-.363.045-.7.09-1 .135-.09 0-.148-.014-.18-.044-.03-.03-.036-.047-.02-.077 0-.017.006-.03.02-.063v-.06z"}}]})(props);}function SiFacebook(props){return GenIcon({"tag":"svg","attr":{"role":"img","viewBox":"0 0 24 24"},"child":[{"tag":"title","attr":{},"child":[]},{"tag":"path","attr":{"d":"M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"}}]})(props);}function SiGoogle(props){return GenIcon({"tag":"svg","attr":{"role":"img","viewBox":"0 0 24 24"},"child":[{"tag":"title","attr":{},"child":[]},{"tag":"path","attr":{"d":"M12.24 10.285V14.4h6.806c-.275 1.765-2.056 5.174-6.806 5.174-4.095 0-7.439-3.389-7.439-7.574s3.345-7.574 7.439-7.574c2.33 0 3.891.989 4.785 1.849l3.254-3.138C18.189 1.186 15.479 0 12.24 0c-6.635 0-12 5.365-12 12s5.365 12 12 12c6.926 0 11.52-4.869 11.52-11.726 0-.788-.085-1.39-.189-1.989H12.24z"}}]})(props);}function SiLinkedin(props){return GenIcon({"tag":"svg","attr":{"role":"img","viewBox":"0 0 24 24"},"child":[{"tag":"title","attr":{},"child":[]},{"tag":"path","attr":{"d":"M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"}}]})(props);}function SiMicrosoftteams(props){return GenIcon({"tag":"svg","attr":{"role":"img","viewBox":"0 0 24 24"},"child":[{"tag":"title","attr":{},"child":[]},{"tag":"path","attr":{"d":"M20.625 8.127q-.55 0-1.025-.205-.475-.205-.832-.563-.358-.357-.563-.832Q18 6.053 18 5.502q0-.54.205-1.02t.563-.837q.357-.358.832-.563.474-.205 1.025-.205.54 0 1.02.205t.837.563q.358.357.563.837.205.48.205 1.02 0 .55-.205 1.025-.205.475-.563.832-.357.358-.837.563-.48.205-1.02.205zm0-3.75q-.469 0-.797.328-.328.328-.328.797 0 .469.328.797.328.328.797.328.469 0 .797-.328.328-.328.328-.797 0-.469-.328-.797-.328-.328-.797-.328zM24 10.002v5.578q0 .774-.293 1.46-.293.685-.803 1.194-.51.51-1.195.803-.686.293-1.459.293-.445 0-.908-.105-.463-.106-.85-.329-.293.95-.855 1.729-.563.78-1.319 1.336-.756.557-1.67.861-.914.305-1.898.305-1.148 0-2.162-.398-1.014-.399-1.805-1.102-.79-.703-1.312-1.664t-.674-2.086h-5.8q-.411 0-.704-.293T0 16.881V6.873q0-.41.293-.703t.703-.293h8.59q-.34-.715-.34-1.5 0-.727.275-1.365.276-.639.75-1.114.475-.474 1.114-.75.638-.275 1.365-.275t1.365.275q.639.276 1.114.75.474.475.75 1.114.275.638.275 1.365t-.275 1.365q-.276.639-.75 1.113-.475.475-1.114.75-.638.276-1.365.276-.188 0-.375-.024-.188-.023-.375-.058v1.078h10.875q.469 0 .797.328.328.328.328.797zM12.75 2.373q-.41 0-.78.158-.368.158-.638.434-.27.275-.428.639-.158.363-.158.773 0 .41.158.78.159.368.428.638.27.27.639.428.369.158.779.158.41 0 .773-.158.364-.159.64-.428.274-.27.433-.639.158-.369.158-.779 0-.41-.158-.773-.159-.364-.434-.64-.275-.275-.639-.433-.363-.158-.773-.158zM6.937 9.814h2.25V7.94H2.814v1.875h2.25v6h1.875zm10.313 7.313v-6.75H12v6.504q0 .41-.293.703t-.703.293H8.309q.152.809.556 1.5.405.691.985 1.19.58.497 1.318.779.738.281 1.582.281.926 0 1.746-.352.82-.351 1.436-.966.615-.616.966-1.43.352-.815.352-1.752zm5.25-1.547v-5.203h-3.75v6.855q.305.305.691.452.387.146.809.146.469 0 .879-.176.41-.175.715-.48.304-.305.48-.715t.176-.879Z"}}]})(props);}function SiNotion(props){return GenIcon({"tag":"svg","attr":{"role":"img","viewBox":"0 0 24 24"},"child":[{"tag":"title","attr":{},"child":[]},{"tag":"path","attr":{"d":"M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.747.327-.747.933zm14.337.745c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952L12.21 19s0 .84-1.168.84l-3.222.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233 4.764 7.279v-6.44l-1.215-.139c-.093-.514.28-.887.747-.933zM1.936 1.035l13.31-.98c1.634-.14 2.055-.047 3.082.7l4.249 2.986c.7.513.934.653.934 1.213v16.378c0 1.026-.373 1.634-1.68 1.726l-15.458.934c-.98.047-1.448-.093-1.962-.747l-3.129-4.06c-.56-.747-.793-1.306-.793-1.96V2.667c0-.839.374-1.54 1.447-1.632z"}}]})(props);}function SiReddit(props){return GenIcon({"tag":"svg","attr":{"role":"img","viewBox":"0 0 24 24"},"child":[{"tag":"title","attr":{},"child":[]},{"tag":"path","attr":{"d":"M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"}}]})(props);}function SiSlack(props){return GenIcon({"tag":"svg","attr":{"role":"img","viewBox":"0 0 24 24"},"child":[{"tag":"title","attr":{},"child":[]},{"tag":"path","attr":{"d":"M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zM15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z"}}]})(props);}function SiTwitter(props){return GenIcon({"tag":"svg","attr":{"role":"img","viewBox":"0 0 24 24"},"child":[{"tag":"title","attr":{},"child":[]},{"tag":"path","attr":{"d":"M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z"}}]})(props);}function SiWhatsapp(props){return GenIcon({"tag":"svg","attr":{"role":"img","viewBox":"0 0 24 24"},"child":[{"tag":"title","attr":{},"child":[]},{"tag":"path","attr":{"d":"M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"}}]})(props);}function SiYcombinator(props){return GenIcon({"tag":"svg","attr":{"role":"img","viewBox":"0 0 24 24"},"child":[{"tag":"title","attr":{},"child":[]},{"tag":"path","attr":{"d":"M0 24V0h24v24H0zM6.951 5.896l4.112 7.708v5.064h1.583v-4.972l4.148-7.799h-1.749l-2.457 4.875c-.372.745-.688 1.434-.688 1.434s-.297-.708-.651-1.434L8.831 5.896h-1.88z"}}]})(props);}
-
-// THIS FILE IS AUTO GENERATED
-function AiFillDelete(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"}}]})(props);}function AiOutlineCloseCircle(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M685.4 354.8c0-4.4-3.6-8-8-8l-66 .3L512 465.6l-99.3-118.4-66.1-.3c-4.4 0-8 3.5-8 8 0 1.9.7 3.7 1.9 5.2l130.1 155L340.5 670a8.32 8.32 0 0 0-1.9 5.2c0 4.4 3.6 8 8 8l66.1-.3L512 564.4l99.3 118.4 66 .3c4.4 0 8-3.5 8-8 0-1.9-.7-3.7-1.9-5.2L553.5 515l130.1-155c1.2-1.4 1.8-3.3 1.8-5.2z"}},{"tag":"path","attr":{"d":"M512 65C264.6 65 64 265.6 64 513s200.6 448 448 448 448-200.6 448-448S759.4 65 512 65zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"}}]})(props);}function AiOutlineCopy(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M832 64H296c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h496v688c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8V96c0-17.7-14.3-32-32-32zM704 192H192c-17.7 0-32 14.3-32 32v530.7c0 8.5 3.4 16.6 9.4 22.6l173.3 173.3c2.2 2.2 4.7 4 7.4 5.5v1.9h4.2c3.5 1.3 7.2 2 11 2H704c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32zM350 856.2L263.9 770H350v86.2zM664 888H414V746c0-22.1-17.9-40-40-40H232V264h432v624z"}}]})(props);}function AiOutlineEyeInvisible(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M942.2 486.2Q889.47 375.11 816.7 305l-50.88 50.88C807.31 395.53 843.45 447.4 874.7 512 791.5 684.2 673.4 766 512 766q-72.67 0-133.87-22.38L323 798.75Q408 838 512 838q288.3 0 430.2-300.3a60.29 60.29 0 0 0 0-51.5zm-63.57-320.64L836 122.88a8 8 0 0 0-11.32 0L715.31 232.2Q624.86 186 512 186q-288.3 0-430.2 300.3a60.3 60.3 0 0 0 0 51.5q56.69 119.4 136.5 191.41L112.48 835a8 8 0 0 0 0 11.31L155.17 889a8 8 0 0 0 11.31 0l712.15-712.12a8 8 0 0 0 0-11.32zM149.3 512C232.6 339.8 350.7 258 512 258c54.54 0 104.13 9.36 149.12 28.39l-70.3 70.3a176 176 0 0 0-238.13 238.13l-83.42 83.42C223.1 637.49 183.3 582.28 149.3 512zm246.7 0a112.11 112.11 0 0 1 146.2-106.69L401.31 546.2A112 112 0 0 1 396 512z"}},{"tag":"path","attr":{"d":"M508 624c-3.46 0-6.87-.16-10.25-.47l-52.82 52.82a176.09 176.09 0 0 0 227.42-227.42l-52.82 52.82c.31 3.38.47 6.79.47 10.25a111.94 111.94 0 0 1-112 112z"}}]})(props);}function AiOutlineEye(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 0 0 0 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z"}}]})(props);}function AiOutlineInfoCircle(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372 372 166.6 372 372-166.6 372-372 372z"}},{"tag":"path","attr":{"d":"M464 336a48 48 0 1 0 96 0 48 48 0 1 0-96 0zm72 112h-48c-4.4 0-8 3.6-8 8v272c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V456c0-4.4-3.6-8-8-8z"}}]})(props);}function AiOutlineLink(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M574 665.4a8.03 8.03 0 0 0-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 0 0-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 0 0 0 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 0 0 0 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 0 0-11.3 0L372.3 598.7a8.03 8.03 0 0 0 0 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"}}]})(props);}function AiOutlineMail(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-40 110.8V792H136V270.8l-27.6-21.5 39.3-50.5 42.8 33.3h643.1l42.8-33.3 39.3 50.5-27.7 21.5zM833.6 232L512 482 190.4 232l-42.8-33.3-39.3 50.5 27.6 21.5 341.6 265.6a55.99 55.99 0 0 0 68.7 0L888 270.8l27.6-21.5-39.3-50.5-42.7 33.2z"}}]})(props);}function AiOutlinePlus(props){return GenIcon({"tag":"svg","attr":{"t":"1551322312294","style":"","viewBox":"0 0 1024 1024","version":"1.1"},"child":[{"tag":"defs","attr":{},"child":[]},{"tag":"path","attr":{"d":"M474 152m8 0l60 0q8 0 8 8l0 704q0 8-8 8l-60 0q-8 0-8-8l0-704q0-8 8-8Z"}},{"tag":"path","attr":{"d":"M168 474m8 0l672 0q8 0 8 8l0 60q0 8-8 8l-672 0q-8 0-8-8l0-60q0-8 8-8Z"}}]})(props);}function AiOutlineSearch(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 1024 1024"},"child":[{"tag":"path","attr":{"d":"M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"}}]})(props);}
-
-// THIS FILE IS AUTO GENERATED
-function FiSettings(props) {
-  return GenIcon({
-    "tag": "svg",
-    "attr": {
-      "viewBox": "0 0 24 24",
-      "fill": "none",
-      "stroke": "currentColor",
-      "strokeWidth": "2",
-      "strokeLinecap": "round",
-      "strokeLinejoin": "round"
-    },
-    "child": [{
-      "tag": "circle",
-      "attr": {
-        "cx": "12",
-        "cy": "12",
-        "r": "3"
-      }
-    }, {
-      "tag": "path",
-      "attr": {
-        "d": "M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
-      }
-    }]
-  })(props);
-}
-
-// THIS FILE IS AUTO GENERATED
-function RiTimerLine(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 24 24"},"child":[{"tag":"g","attr":{},"child":[{"tag":"path","attr":{"fill":"none","d":"M0 0h24v24H0z"}},{"tag":"path","attr":{"d":"M17.618 5.968l1.453-1.453 1.414 1.414-1.453 1.453a9 9 0 1 1-1.414-1.414zM12 20a7 7 0 1 0 0-14 7 7 0 0 0 0 14zM11 8h2v6h-2V8zM8 1h8v2H8V1z"}}]}]})(props);}
-
-// THIS FILE IS AUTO GENERATED
-function FaCheck(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 512 512"},"child":[{"tag":"path","attr":{"d":"M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"}}]})(props);}function FaCode(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 640 512"},"child":[{"tag":"path","attr":{"d":"M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"}}]})(props);}function FaCopy(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 448 512"},"child":[{"tag":"path","attr":{"d":"M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"}}]})(props);}function FaPlay(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 448 512"},"child":[{"tag":"path","attr":{"d":"M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"}}]})(props);}function FaQuoteLeft(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 512 512"},"child":[{"tag":"path","attr":{"d":"M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"}}]})(props);}function FaQuoteRight(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 512 512"},"child":[{"tag":"path","attr":{"d":"M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z"}}]})(props);}function FaSignOutAlt(props){return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 512 512"},"child":[{"tag":"path","attr":{"d":"M497 273L329 441c-15 15-41 4.5-41-17v-96H152c-13.3 0-24-10.7-24-24v-96c0-13.3 10.7-24 24-24h136V88c0-21.4 25.9-32 41-17l168 168c9.3 9.4 9.3 24.6 0 34zM192 436v-40c0-6.6-5.4-12-12-12H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h84c6.6 0 12-5.4 12-12V76c0-6.6-5.4-12-12-12H96c-53 0-96 43-96 96v192c0 53 43 96 96 96h84c6.6 0 12-5.4 12-12z"}}]})(props);}
-
-function BearIcon(sdfoger, sdfke) {
-  // 1tick
-  const lasew = {
-    style: {
-      // background: "green",
-      color: "green" // ...sdfke,
-
-    }
-  };
-  const okasdew =
-  /*#__PURE__*/
-  //
-  // <TiTickOutline />
-  React__default$1.createElement(FaCheck, lasew) // <AiOutlineCheckCircle {...lasew} />
-  ; // 1signout
-
-  const sduhfer =
-  /*#__PURE__*/
-  //
-  React__default$1.createElement(FaSignOutAlt, null); // 1time
-
-  const lasdew =
-  /*#__PURE__*/
-  //
-  React__default$1.createElement(RiTimerLine, null) // <AiOutlineClockCircle />
-  ; // 1info
-
-  const jdfgrt =
-  /*#__PURE__*/
-  //
-  React__default$1.createElement(AiOutlineInfoCircle, null); // 1play
-
-  const sfdgmr =
-  /*#__PURE__*/
-  //
-  React__default$1.createElement(FaPlay, null); // 1playlist
-
-  const asdkqe =
-  /*#__PURE__*/
-  //
-  React__default$1.createElement(MdPlaylistPlay, null); // 1share
-
-  const sjerw =
-  /*#__PURE__*/
-  //
-  React__default$1.createElement(BiShare, null); // 1edit
-
-  const sdiwer =
-  /*#__PURE__*/
-  //
-  // <FiEdit2 />
-  React__default$1.createElement(BiEditAlt, null) // <VscEdit />
-  // <BiEdit />
-  ; // 1star
-
-  const dfigjew =
-  /*#__PURE__*/
-  //
-  React__default$1.createElement(TiStar, null); // 1close
-
-  const kxmvs =
-  /*#__PURE__*/
-  //
-  React__default$1.createElement(AiOutlineCloseCircle, null);
-  const iosade =
-  /*#__PURE__*/
-  //
-  React__default$1.createElement(FaQuoteLeft, null);
-  const asdhgew =
-  /*#__PURE__*/
-  //
-  React__default$1.createElement(FaQuoteRight, null); // 1quote
-
-  const oksaew =
-  /*#__PURE__*/
-  //
-  React__default$1.createElement(BsChatQuote, null); // 1comment
-
-  const sowaseowq =
-  /*#__PURE__*/
-  //
-  React__default$1.createElement(BiCommentDetail, null); // 1delete
-
-  const asdfewr =
-  /*#__PURE__*/
-  //
-  React__default$1.createElement(AiFillDelete, null); // 1link
-
-  const linkios =
-  /*#__PURE__*/
-  //
-  React__default$1.createElement(AiOutlineLink, null) // <FiExternalLink />
-  ; // 1search
-
-  const sdfgorek =
-  /*#__PURE__*/
-  //
-  React__default$1.createElement(AiOutlineSearch, null) // < />
-  ; // 1settings
-
-  const sdijwqe =
-  /*#__PURE__*/
-  //
-  React__default$1.createElement(FiSettings, null); // 1email
-
-  const ijsfr =
-  /*#__PURE__*/
-  //
-  React__default$1.createElement(AiOutlineMail, null); // 1brands 1social
-
-  const brandCons = {
-    twitter: /*#__PURE__*/React__default$1.createElement(SiTwitter, null),
-    reddit: /*#__PURE__*/React__default$1.createElement(SiReddit, null),
-    ycombinator: /*#__PURE__*/React__default$1.createElement(SiYcombinator, null),
-    linkedin: /*#__PURE__*/React__default$1.createElement(SiLinkedin, null),
-    google: /*#__PURE__*/React__default$1.createElement(SiGoogle, null),
-    whatsapp: /*#__PURE__*/React__default$1.createElement(SiWhatsapp, null),
-    facebook: /*#__PURE__*/React__default$1.createElement(SiFacebook, null),
-    teams: /*#__PURE__*/React__default$1.createElement(SiMicrosoftteams, null),
-    amazon: /*#__PURE__*/React__default$1.createElement(SiAmazon, null),
-    slack: /*#__PURE__*/React__default$1.createElement(SiSlack, null),
-    // 1notion
-    notion: /*#__PURE__*/React__default$1.createElement(SiNotion, null)
-  }; // 1general 1icon
-
-  const ijsadwe = {
-    // left: <
-    // right:
-    back: /*#__PURE__*/React__default$1.createElement(MdArrowBack, null),
-    forward: /*#__PURE__*/React__default$1.createElement(MdArrowForward, null),
-    info: jdfgrt,
-    email: ijsfr,
-    search: sdfgorek,
-    signout: sduhfer,
-    copy: /*#__PURE__*/React__default$1.createElement(FaCopy, null),
-    expand: /*#__PURE__*/React__default$1.createElement(BiExpand, null),
-    tick: okasdew,
-    delete: asdfewr,
-    playlist: asdkqe,
-    settings: sdijwqe,
-    share: sjerw,
-    star: dfigjew,
-    plus: /*#__PURE__*/React__default$1.createElement(AiOutlinePlus, null),
-    comment: sowaseowq,
-    link: linkios,
-    play: sfdgmr,
-    edit: sdiwer,
-    quote: oksaew,
-    quoteLeft: iosade,
-    quoteRight: asdhgew,
-    //
-    time: lasdew,
-    clock: lasdew,
-    //
-    close: kxmvs,
-    ...brandCons
-  };
-  let oksdew = ijsadwe[sdfoger];
-  oksdew = oksdew ? oksdew : //
-  //
-  sdfoger; // BearError("No icon found in BearUI's libary for '" + sdfoger + "'.");
-
-  const okasde = {
-    span: true,
-    obj: oksdew,
-    ...sdfke
-  };
-  const cbnkfg = //
-  // oksdew
-  sdfke ? BearDiv$1(okasde) : oksdew; //   ? //
-  //     // Berios()
-  //     JAsds()
-  //   : //
-  //     oksdew;
-
-  return cbnkfg;
-}
-
 function BearImage({
   typevar,
   badgecolor,
@@ -31317,7 +30848,7 @@ function BearTextMedia({
     // BearIcon(iconvar);
     React__default$1.createElement(BearDiv$1, _extends$O({
       span: true
-    }, sdlf), BearIcon(iconvar));
+    }, sdlf), iconvar);
     return isajdawe;
   }
 
@@ -32002,18 +31533,9 @@ function BearInputLabel({
     style,
     ...aswe
   }) {
-    const fidje = {
-      //
-      fontSize: "1.2em",
-      marginTop: "10px"
-    };
-    const ndgjtre = {
-      //
-      className: "pointer",
-      style: fidje,
-      ...infoConfig
-    };
-    const sfdgr = BearIcon("info", ndgjtre);
+    const sfdgr = //
+    ""; // BearIcon("info", ndgjtre);
+
     return sfdgr; // return <BearPopover {...jdfgrwe}>{sfdgr}</BearPopover>;
   } // 1checkbox
 
@@ -32072,7 +31594,7 @@ function BearInputLabel({
     const cvobkof = {
       className: "shadowHover pointer",
       onClick: addFunc,
-      obj: BearIcon("➕", ""),
+      // obj: BearIcon("➕", ""),
       style: {
         padding: "5px",
         marginTop: "-5px",
@@ -46287,11 +45809,9 @@ function BearSelect({
 
   function DropdownIndicator(props) {
     bearlog.lug("___ Dropprops ___", props);
-    const ijsde = {
-      //
-      fontSize: "1.3em"
-    };
-    const asew = searchBarIcon && BearIcon(searchBarIcon, ijsde);
+    const asew = //
+    searchBarIcon; // searchBarIcon && BearIcon(searchBarIcon, ijsde);
+
     const isdjfew = /*#__PURE__*/React__default$1.createElement(components.DropdownIndicator, props, asew);
     const uhfesa = //
     hideSearchIcon ? "" : isdjfew; // "sdwqe";
@@ -63109,14 +62629,15 @@ function BearAuthPortal({
   onSubmit,
   renderButton,
   bearName = "BearAuthPortal",
-  emailSubmit,
   firebase,
   onSuccess,
   onFailure,
   list,
   title,
   authList,
+  submitEmail,
   emailConfig,
+  emailIcon,
   buttonConfig,
   formConfig,
   changeButton,
@@ -63153,7 +62674,8 @@ function BearAuthPortal({
   const Jfase = () => //
   // "telegram";
   // "google";
-  BearIcon("email"); // <BiShare />
+  emailIcon; // BearIcon("email");
+  // <BiShare />
   // 1emailbase
 
 
@@ -65489,5 +65011,5 @@ function BearNavigation({
   return jfease;
 }
 
-export { BearAttrNeeds, BearAuthPortal, BearBackBorder$1 as BearBackBorder, BearBackForward, BearBlankLink, BearBlock, BearBorder, BearButton$1 as BearButton, BearButtonDownload, BearButtonList, BearCheckoutStripe, BearContextProvider, BearCopy, BearDiv$1 as BearDiv, BearDivMain, BearEmoji, BearErASDJIQWE, BearError, BearFlex, BearFloat, BearForm, BearFormList, BearHideError, BearIcon, BearIconList, BearIconText, BearImage, BearImageText, BearInput, BearInputNumber, BearInputSubmit, BearInputText, BearLine, BearLink, BearList, BearNavigation, BearPage, BearPayButton, BearPlural, BearPossess, BearQuote, BearSearchList, BearSelect, BearSocialBase, BearSocialLinks, BearSocialShare, BearSpace, BearSpan, BearSurround, BearSwitch, BearTags, BearTextMedia, BearTextarea, BearTitle, BearUpper, BearWrap, RendGroup, bearMobileView, bearlog, cxadfa, firstInputCheck, inputChange, inputStyles, sdfg };
+export { BearAttrNeeds, BearAuthPortal, BearBackBorder$1 as BearBackBorder, BearBackForward, BearBlankLink, BearBlock, BearBorder, BearButton$1 as BearButton, BearButtonDownload, BearButtonList, BearCheckoutStripe, BearContextProvider, BearCopy, BearDiv$1 as BearDiv, BearDivMain, BearEmoji, BearErASDJIQWE, BearError, BearFlex, BearFloat, BearForm, BearFormList, BearHideError, BearIconList, BearIconText, BearImage, BearImageText, BearInput, BearInputNumber, BearInputSubmit, BearInputText, BearLine, BearLink, BearList, BearNavigation, BearPage, BearPayButton, BearPlural, BearPossess, BearQuote, BearSearchList, BearSelect, BearSocialBase, BearSocialLinks, BearSocialShare, BearSpace, BearSpan, BearSurround, BearSwitch, BearTags, BearTextMedia, BearTextarea, BearTitle, BearUpper, BearWrap, RendGroup, bearMobileView, bearlog, cxadfa, firstInputCheck, inputChange, inputStyles, sdfg };
 //# sourceMappingURL=index.esm.js.map

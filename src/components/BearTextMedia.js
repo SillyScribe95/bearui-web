@@ -8,7 +8,7 @@ import {
   bearlog,
 } from "../index";
 import { BearDiv } from "./BearDiv";
-import { BearIcon } from "./BearIcon";
+// import { BearIcon } from "./BearIcon";
 import { BearImage } from "./BearImage";
 import { BearButton } from "./button/BearButton";
 import { SwitchComp } from "./GlobalComps.js";
@@ -114,7 +114,8 @@ export function BearTextMedia({
       // "oasdkfasd";
       // BearIcon(iconvar);
       <BearDiv span {...sdlf}>
-        {BearIcon(iconvar)}
+        {iconvar}
+        {/* {BearIcon(iconvar)} */}
       </BearDiv>
     );
 

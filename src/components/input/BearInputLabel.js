@@ -5,7 +5,7 @@ import React, {
 } from "react";
 import { BearFlex, BearIconText } from "../GlobalComps";
 import { BearDiv } from "../BearDiv";
-import { BearIcon } from "../BearIcon";
+// import { BearIcon } from "../BearIcon";
 import { BearFloat } from "../BearFloat";
 // import { BearPopover } from "../BearPopover";
 import { BearTextMedia } from "../BearTextMedia";
@@ -126,7 +126,10 @@ export function BearInputLabel({
       style: fidje,
       ...infoConfig,
     };
-    const sfdgr = BearIcon("info", ndgjtre);
+    const sfdgr =
+      //
+      "";
+    // BearIcon("info", ndgjtre);
 
     return sfdgr;
     // return <BearPopover {...jdfgrwe}>{sfdgr}</BearPopover>;
@@ -221,7 +224,7 @@ export function BearInputLabel({
     const cvobkof = {
       className: "shadowHover pointer",
       onClick: addFunc,
-      obj: BearIcon("➕", ""),
+      // obj: BearIcon("➕", ""),
       style: {
         padding: "5px",
         marginTop: "-5px",

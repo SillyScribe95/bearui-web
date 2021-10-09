@@ -17,7 +17,7 @@ import {
   EmojiLabelMap,
   mapEmojiFace,
 } from "../../functions/emojiFuncs";
-import { BearIcon } from "../BearIcon";
+// import { BearIcon } from "../BearIcon";
 
 export function BearEmoji({
   initialValue,

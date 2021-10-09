@@ -21,7 +21,7 @@ import { BearDiv } from "../BearDiv";
 import { BearButton } from "../button/BearButton";
 import { BearCheckMain } from "../check/BearCheckMain";
 import { BearList } from "../list/BearList";
-import { BearIcon } from "../BearIcon";
+// import { BearIcon } from "../BearIcon";
 import { BearUserConnect } from "../../functions/authFuncs";
 import { argMiss, CheckListExist } from "../GlobalComps";
 import { BearUpper } from "../InnerComps";
@@ -35,14 +35,15 @@ export function BearAuthPortal({
   onSubmit,
   renderButton,
   bearName = "BearAuthPortal",
-  emailSubmit,
   firebase,
   onSuccess,
   onFailure,
   list,
   title,
   authList,
+  submitEmail,
   emailConfig,
+  emailIcon,
   buttonConfig,
   formConfig,
   changeButton,
@@ -87,7 +88,8 @@ export function BearAuthPortal({
     //
     // "telegram";
     // "google";
-    BearIcon("email");
+    emailIcon;
+  // BearIcon("email");
   // <BiShare />
 
   // 1emailbase
