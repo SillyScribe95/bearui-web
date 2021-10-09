@@ -123,16 +123,29 @@ export function BearList(
   // 1horiz
   function HozBar(lsoeas) {
     // align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
+    let oaksdas =
+      //
+      "asdas";
+    // centerItem;
 
-    const okaewq = centerItem && {
-      alignContent: "center",
-      justifyContent: "space-around",
+    const seqw = {
+      style: {
+        display: "flex",
+        justifyContent: "space-around",
+      },
     };
+
+    const okaewq = oaksdas && seqw;
+
+    let aoksda =
+      //
+      // donelist(lsoeas);
+      ["asdfasd", "Asdokqwe", "Asdqwke"].map((asdas) => asdas);
 
     const okadwe = {
       flex: true,
       style: okaewq,
-      obj: donelist(lsoeas),
+      obj: aoksda,
     };
 
     // 1console
@@ -141,6 +154,7 @@ export function BearList(
 
     const jisad =
       //
+      // <div {...seqw}>{aoksda}</div>
       BearDiv(okadwe);
     // "okafsdf";
     // EndListA();
@@ -205,15 +219,6 @@ export function BearList(
 
   function donelist(listio) {
     const fullVar = !isEmpty(listio) || loadtrue;
-
-    if (logtrue) {
-      bearlog.lugLinas(5);
-      bearlog.laggu(bearName, "___ BEARLIST ___", listio);
-      bearlog.laggu("___ listArgs ___", listArgs);
-      bearlog.laggu("___ sidwre ___", sidwre);
-      bearlog.laggu("___ beList ___", sidjfwe);
-    }
-
     const ushdsa =
       //
       hideList ? "" : BearListMap(listio, sidjfwe);
@@ -226,18 +231,29 @@ export function BearList(
   const saokwe = typeBullet ? <ul>{sadfwe}</ul> : sadfwe;
 
   function RendBase() {
-    const saidje = argMiss({
+    let saidje = {
       obj: saokwe,
-      flex,
+      // flex,
       ...listArgs,
-    });
+    };
+
+    saidje =
+      //
+      // saidje;
+      argMiss(saidje);
+
+    let kaasdaz =
+      //
+      BearDiv(saidje);
+    // saokwe;
 
     // return "sodkweeqw";
-    return BearDiv(saidje);
+    return kaasdaz;
   }
 
-  const idjsae = BearCheckList(compName, RendBase(), sidjfwe);
-  //
+  const idjsae =
+    //
+    BearCheckList(compName, RendBase(), sidjfwe);
   // BearDiv(saidje)
   // rendName();
   // renderCheck();

@@ -25,13 +25,13 @@ export function BearInputSubmit({ onSubmit, ...dfdsf }) {
   });
 
   function asdwe(fadsfs) {
-    bearlog.log("___ fadsfs ___", fadsfs);
+    bearlog.lug("___ fadsfs ___", fadsfs);
     xcads(fadsfs);
   }
 
   function xcads({ itemName, bearName, ...doksad }) {
     let sdifje = Object.values(doksad);
-    bearlog.log("___ doksad ___", { doksad, sdifje });
+    bearlog.lug("___ doksad ___", { doksad, sdifje });
     sdifje = sdifje[0];
 
     difjsda(sdifje);

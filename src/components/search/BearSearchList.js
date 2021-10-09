@@ -15,7 +15,7 @@ import { BearListItem } from "../../components/list/BearListItem";
 import { BearList } from "../../components/list/BearList";
 import { BearDiv } from "../../components/BearDiv";
 import { BearError } from "../../components/BearError";
-import { argPass, BearBorder, nameComb } from "../../components/GlobalComps";
+import { argPass, listArgPass, nameComb } from "../../components/GlobalComps";
 import { isEmpty } from "lodash";
 import { BearCheckList } from "../../components/check/BearCheckList";
 import { getListComplex } from "../../components/list/getListComplex";
@@ -24,7 +24,6 @@ import { BearSearchBase } from "./BearSearchBase";
 import { getListAll } from "../../functions/arrayFuncs";
 import { mapDictAttrToString } from "../../functions/dictFuncs";
 import { mapSelectValue } from "../../functions/selectFuncs";
-import { listArgPass } from "../../importBase";
 
 export function BearSearchList({
   // 1args SELECT

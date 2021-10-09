@@ -3,7 +3,6 @@ import React, {
   useState,
   useContext,
 } from "react";
-import { BearTitle } from "../importBase";
 import {
   //
   bearlog,
@@ -13,6 +12,7 @@ import { BearIcon } from "./BearIcon";
 import { BearImage } from "./BearImage";
 import { BearButton } from "./button/BearButton";
 import { SwitchComp } from "./GlobalComps.js";
+import { BearTitle } from "./title/BearTitle";
 
 export function BearTextMedia({
   //
@@ -22,8 +22,11 @@ export function BearTextMedia({
   vertSize,
   vertTrue,
   iconSize,
+  alignConfig,
   imageConfig = {},
   textvar,
+  renderText,
+  children,
   iconvar,
   noImage,
   noIcon,
@@ -42,6 +45,8 @@ export function BearTextMedia({
   ...args
 }) {
   // 1const
+  textvar = textvar ? textvar : children;
+  textvar = renderText ? renderText(textvar) : textvar;
 
   function sadkwe(dsafe) {
     const fijgrt = leftWidth && {
@@ -140,47 +145,50 @@ export function BearTextMedia({
   };
 
   const sdijwqe = iconvar || imagevar;
-  const bothTrue = textShow && sdijwqe;
-  const oksaew = bothTrue && <BearDiv span ignoreNull {...okasew}></BearDiv>;
+  const bothTrue =
+    //
+    true;
+  // textShow && sdijwqe;
+  const centro = bothTrue && <BearDiv span ignoreNull {...okasew}></BearDiv>;
 
   function RendMain() {
     const lftoe = swapItems ? okdswq : kadse;
     const righto = swapItems ? kadse : okdswq;
 
     // 1console
-    bearlog.log("RendMain-zzz", { lftoe, righto });
+    bearlog.lug("RendMain-zzz", { lftoe, righto });
 
     const oskdawe = (
       <>
         {/* {kadse} */}
         {/* {textvar} */}
         {lftoe}
-        {oksaew}
+        {centro}
         {righto}
       </>
     );
 
     function Rendo() {
-      const VCIFWRE = {
-        obj: oskdawe,
-      };
+      let xxvczc =
+        //
+        // "@";
+        kadse;
 
-      const isdjfwer = kadse && {
+      const aokdas = xxvczc && {
         flex: true,
         vertAlign: true,
       };
 
-      const fdghew = (
-        <BearDiv
-          //
-          {...isdjfwer}
-        >
-          {oskdawe}
-        </BearDiv>
-      );
+      let xcvasd =
+        //
+        // lftoe;
+        // centro
+        // righto
+        // oskdawe;
+        // "dojwewq";
+        BearDiv({ obj: oskdawe, ...aokdas, ...alignConfig });
 
-      // return "dojwewq";
-      return fdghew;
+      return xcvasd;
     }
 
     const okfdsd =

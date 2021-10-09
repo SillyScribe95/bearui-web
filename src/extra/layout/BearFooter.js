@@ -18,67 +18,20 @@ import { BearDiv } from "../../components/BearDiv";
 
 export function BearFooter({
   onClick,
-  heightVar,
-  disVar,
-  style,
   closeTrue,
+  sticky,
+  className = "",
   //   obj,
-  signText,
   ...argos
 }) {
-  heightVar = heightVar ? heightVar : "40px";
-
   // const [truShowa, settruShowa] = useState(true);
 
-  const styleo = {
-    position: "fixed",
-    bottom: 0,
-    left: 0,
-  };
-
-  const selSt = {
-    width: "100vw",
-    // zIndex: gens.indexz["footer"],
-    background: "white",
-    minHeight: heightVar,
-    //   // // width: widthGlobal,
-    ...styleo,
-    ...style,
-  };
+  let asdew = sticky ? "sticky" : "";
 
   const ajsw = {
-    // obj: obj ? obj : <SignUpDiv />,
-    style: selSt,
+    className: `footer ${asdew} ${className}`,
     ...argos,
-    // style={{
-    //   width: "100vw",
-    //   background: "white",
-    //   // // width: widthGlobal,
-    // }}
-    // onClick={() => {
-    //   setListView(!listView);
-    // }}
   };
 
-  bearlog.lug("ajsw---zzzz", ajsw, "asdi9hw");
-
-  const iqjwe = <BearDiv {...ajsw} />;
-  const gfnofkr = {
-    obj: iqjwe,
-    //   closeFunc: () => settruShowa(false),
-  };
-
-  const qkwead =
-    //
-    iqjwe;
-  // closeTrue ? <WithCloseBut {...gfnofkr} /> : iqjwe;
-
-  const saokdwe = (
-    <>
-      {/* <BlankWrap heightVar={heightVar} /> */}
-      {qkwead}
-    </>
-  );
-
-  return saokdwe;
+  return <BearDiv {...ajsw} />;
 }

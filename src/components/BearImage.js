@@ -13,7 +13,7 @@ export function BearImage({
   typevar,
   badgecolor,
   size = "100px",
-  shape,
+  shape = "",
   width,
   height,
   style,

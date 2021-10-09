@@ -8,8 +8,9 @@ import { BearError } from "../BearError";
 import { BearButton } from "../button/BearButton";
 import { BearTextMedia } from "../BearTextMedia";
 import { BearDiv } from "../BearDiv";
-import { BearUpper, BearErrMiss } from "../GlobalComps";
 import { turnarray } from "../../functions/arrayFuncs";
+import { BearUpper } from "../InnerComps";
+import { BearErrMiss } from "../ErrorComps";
 
 export function BearListItemExpand(
   cvbokfe,
@@ -42,6 +43,7 @@ export function BearListItemExpand(
     noItemMargin,
     itemNameStyle,
     itemStyle = {},
+    itemClass = "",
     itemConfig = {},
     //
     // 1logs
@@ -92,6 +94,8 @@ export function BearListItemExpand(
 
   const origItem = dasfjewr;
   const fuhease = typeof origItem == "object";
+
+  // 1object
   // 1capitalise
   const dgste = capitaliseTypeText ? BearUpper(cvbokfe) : cvbokfe;
 
@@ -226,9 +230,15 @@ export function BearListItemExpand(
     return iasda;
   }
 
+  const osdf = itemClass && {
+    className: itemClass,
+  };
+
+  // 1main
   const sijdfr = {
     ...asdwe,
     style: mainseo,
+    ...osdf,
   };
 
   const ijswe = dictTrue || pullDictItem;
@@ -240,6 +250,7 @@ export function BearListItemExpand(
         ...sijdfr,
       }
     : dgste;
+
   const endRet =
     //
     zcxvzx;
@@ -280,13 +291,11 @@ export function BearListItemExpand(
           obj: listarr,
         };
 
-    if ("a") {
-      bearlog.lug(bearName, "___ dsifjw ___", {
-        RENDERTYPE: typeList,
-        objo,
-        ...dsifjw,
-      });
-    }
+    bearlog.log(bearName, "___ dsifjw ___", {
+      RENDERTYPE: typeList,
+      objo,
+      ...dsifjw,
+    });
 
     return objo(dsifjw);
   }
@@ -314,6 +323,7 @@ export function BearListItemExpand(
       asdpkwe = endRet;
       break;
     case "return":
+      // asdpkwe = "adsfaswqreq";
       asdpkwe = <BearDiv {...sijdfr} obj={listarr} />;
       break;
 
@@ -336,7 +346,7 @@ export function BearListItemExpand(
         let kdfsdf = typeof sdasd;
 
         // 1findobj
-        bearlog.log("___ sdasd ___", { sdasd, kdfsdf });
+        bearlog.lug("___ sdasd ___", { sdasd, kdfsdf, sijdfr });
         switch (kdfsdf) {
           case "object":
             fsadfsd = findobj(sdasd);

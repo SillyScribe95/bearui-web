@@ -1,4 +1,5 @@
 import React, { useState, useReducer, Fragment, createRef } from "react";
+import { BearDiv } from "../../components/BearDiv";
 
 import { BearFloat } from "../../components/BearFloat";
 import { BearTextMedia } from "../../components/BearTextMedia";
@@ -9,7 +10,6 @@ import {
   capitalizeFirstLetter,
   removeLower,
 } from "../../functions/stringFuncs";
-import { BearDiv } from "../../importBase";
 
 export default function BearHeader({
   leftConfig,
@@ -45,7 +45,7 @@ export default function BearHeader({
     function asid(xcvdf) {
       // switch getTpye
 
-      bearlog.log("aAS ssss", { xcvdf });
+      bearlog.lug("aAS ssss", { xcvdf });
 
       // return "forewa";
       return sdfrdsf(xcvdf);

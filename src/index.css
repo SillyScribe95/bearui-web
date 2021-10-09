@@ -247,6 +247,19 @@
   vertical-align: top;
 }
 
+.sticky {
+  position: fixed;
+}
+.footer {
+  /*  */
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  background: rgba(207, 210, 206, 0.577);
+  min-height: 80px;
+  border-top: 1px solid black;
+}
+
 .lineBetween:after {
   content: "";
 

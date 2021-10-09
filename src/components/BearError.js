@@ -8,7 +8,7 @@ import {
   bearlog,
 } from "../index";
 import { BearDiv } from "./BearDiv";
-import { BearBorder, BearQuote } from "./GlobalComps";
+import { BearBorder, BearQuote } from "./InnerComps";
 
 // { inLineTrue, ...asdd }
 export function BearError(sdfjer, afijqwe = {}) {

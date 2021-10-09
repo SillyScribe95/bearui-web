@@ -10,7 +10,7 @@ import {
 } from "../../index";
 import { BearModal } from "./BearModal";
 import { BearDiv } from "../../components/BearDiv";
-import { BearButtonList, BearBorder } from "../../components/GlobalComps";
+import { BearButtonList } from "../../importBase";
 // import { BearButtonList } from "../../components/lis
 
 export function BearModalWarning({

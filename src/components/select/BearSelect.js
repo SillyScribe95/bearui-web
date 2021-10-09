@@ -12,9 +12,8 @@ import { bearlog } from "../../index";
 import { BearIcon } from "../BearIcon";
 import { vertAlign } from "../../consts/genStyle";
 import { BearDiv } from "../BearDiv";
-import { BearBorder, BearErrArgType } from "../GlobalComps";
-import { BearError } from "../BearError";
-import { mapSelectValue } from "../../functions/selectFuncs";
+import { BearBorder } from "../InnerComps";
+import { BearErrArgType } from "../ErrorComps";
 
 // import { Input } from "reactstrap";
 // import AsyncSelect, { makeAsyncSelect } from "react.-select/async";

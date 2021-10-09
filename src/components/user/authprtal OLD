@@ -1,0 +1,29 @@
+  function Bsaeosa({ typevar, iconvar, textvar, ...swe }) {
+    const dfid = {
+      // fontSize: "20px",
+      w: "full",
+      onClick: osadew,
+      leftIcon: iconvar,
+      ...swe,
+      // color: "black",
+      // background: "white",
+      // colorScheme: "white",
+    };
+
+    const ijdsf = (
+      <>
+        <Button {...dfid}>
+          <Center>
+            <Text>
+              {/* {iconvar} */}
+              {/* Continue with */}
+              {textvar}
+            </Text>
+          </Center>
+        </Button>
+        {/* <hr /> */}
+      </>
+    );
+
+    return ijdsf;
+  }

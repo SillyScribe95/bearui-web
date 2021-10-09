@@ -7,15 +7,7 @@ import {
   //
   bearlog,
 } from "../../index";
-import {
-  //
-  BearUpper,
-  argMiss,
-  argPass,
-  BearErrMiss,
-  LoadMain,
-  BearBackBorder,
-} from "../GlobalComps";
+import { argMiss, argPass, LoadMain } from "../GlobalComps";
 import { BearError } from "../BearError";
 import { BearCheckMain } from "../check/BearCheckMain";
 import { formValidPass } from "./formValidPass";
@@ -25,6 +17,7 @@ import { focusBase } from "../../functions/formFuncs";
 import FormHook from "./FormHook";
 import { removeEmptyArray } from "../../functions/arrayFuncs";
 import { getDictvalues, mergeDict } from "../../functions/dictFuncs";
+import { BearBackBorder } from "../InnerComps";
 
 export function BearForm({
   noText,

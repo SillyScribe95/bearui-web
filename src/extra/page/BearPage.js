@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import { BearDiv } from "../../components/BearDiv";
 import { bearlog } from "../../index";
+import { BearFooter } from "../layout/BearFooter";
 // import HelmetInfo from "../functions/HelmetInfo";
 import BearHeader from "../layout/BearHeader";
 // import Divo from "../components/Divo";
@@ -13,6 +14,8 @@ export function BearPage({
   pageArgs,
   headerConfig,
   metaConfig,
+  footer,
+  footerConfig,
   heightBottom,
   title,
   titleConfig,
@@ -171,6 +174,9 @@ export function BearPage({
   // 1height
   const dfigjsd = heightBottom && <div style={{ height: heightBottom }} />;
 
+  // 1footer
+  const aoksdae = footer && <BearFooter {...footerConfig}>{footer}</BearFooter>;
+
   const aijewqe = (
     <>
       {baseItHelm}
@@ -178,6 +184,7 @@ export function BearPage({
       <div {...ijfer} />
       {dfigjsd}
       {/* {eewewqw} */}
+      {aoksdae}
     </>
   );
 

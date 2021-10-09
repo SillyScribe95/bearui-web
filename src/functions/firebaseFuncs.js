@@ -12,6 +12,8 @@ export function fireConnect(
 ) {
   let dsofkes = "";
   switch (authType) {
+    case "email":
+      dsofkes = new fireObj.auth.GoogleAuthProvider();
     case "google":
       dsofkes = new fireObj.auth.GoogleAuthProvider();
       break;
@@ -41,9 +43,20 @@ export function fireConnect(
       dsofkes = new fireObj.auth.PhoneAuthProvider();
   }
 
-  function aokdw(userBase) {
+  // function aokdw(){
+
+  // }
+
+  function aokdw({
+    //
+    ...userBase
+  }) {
     // creatUseAfter(userBase, funcvar);
-    onSuccess(userBase);
+    onSuccess({
+      authType,
+      ...userBase,
+      //
+    });
   }
 
   bearlog.lug("firease SIGN IN ", {

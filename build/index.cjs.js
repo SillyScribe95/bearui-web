@@ -59,7 +59,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z$1 = ".item.selected{background:#177779;color:#fff;border-color:#206748}.lp-copy-sel__option,.lp-copy-sel__single-value{white-space:pre-wrap!important}.vidobbo::-webkit-scrollbar{display:none}.fadeOut{opacity:0;width:0;height:0;transition:width .5s .5s,height .5s .5s,opacity .5s}.fadeIn{opacity:1;width:100px;height:100px;transition:width .5s,height .5s,opacity .5s .5s}.noresize{resize:none}.vidobbo{-ms-overflow-style:none}.ant-btn-clicked:after,[ant-click-animating-without-extra-node]:after{-webkit-animation:none!important;-moz-animation:none!important;-o-animation:none!important;-ms-animation:none!important;animation:none!important}.ais-InstantSearch__root{display:flex;border:1px solid grey}.btn:hover{opacity:1}.selectHov:hover{background:green}.selectHov{transition:.3s}.selectHov:hover{background:red}.hoverMain{position:relative}.hoverMain.no-hover:hover{opacity:1}.hoverMain.no-hover{opacity:0}.hoverMain.hover{opacity:1}.hoverMain.hover:hover{opacity:0}.wrapQuotes:before{content:\"❝\"}.wrapQuotes:after{content:\"❞\"}.playText:hover{cursor:pointer}.playTextLight:hover{background-color:#e5e5e5;cursor:pointer}.playTextDark:hover{color:#00f;cursor:pointer}.playCurrent{background-color:purple}.ant-list-item{padding:0}.iconNum{padding:0 1px}.vertCont{align-items:center}.vertAlign,.vertBox{display:flex;align-items:center}.vertAlign{justify-content:\"center\";vertical-align:middle}.vertTop{display:flex;align-items:top;vertical-align:top}.lineBetween:after{content:\"\";height:100%;border-right:1px solid #d3d3d3}.nowap{white-space:nowap;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical}.wrap{-webkit-line-clamp:1}.wrap,.wrapTwo{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical}.wrapTwo{-webkit-line-clamp:2}.hiddenTrue{display:none;display:block}.hideSect{display:hidden}.scrollTrue{overflow:scroll}.overflow-scrolling{overflow:auto;-webkit-overflow-scrolling:touch}.pulseTrue{cursor:pointer;border:3px solid transparent;transition:.3s}.pulseTrue:hover{border:3px solid #add8e6}.greyHover,.pointer:hover{cursor:pointer}.greyHover:hover{cursor:pointer;background:radial-gradient(circle,#fff 0,hsla(0,0%,60.4%,.2) 100%,#fff 0)}.circleHover,.circleHover:hover{border-radius:50%;padding:5px}.shadowBottom{box-shadow:inset 0 4px 2px -2px grey}.lighthover{transition:.1s}.lightHover:hover{cursor:pointer;border:2px solid #00164d}.sdfaszxc{opacity:.8;padding-left:5px;transition:.1s}.sdfaszxc:hover{cursor:pointer;opacity:1}.buttonBase{background-color:initial;background-repeat:no-repeat;border:none;cursor:pointer;overflow:hidden;outline:none}.buttonHover,.buttonMain{cursor:pointer;border-radius:5px;border:2px solid transparent;transition:.1s;padding:2px 5px}.buttonHover:hover{border:2px solid #2c4179}.borderRound{border:2px solid #00008b;border-radius:5px}.borderHover,.borderMain{border:2px solid #d3d3d3;transition:.1s;border-radius:5px}.error{color:red}.error,.titleMain{font-weight:700}.shadowMain{border:2px solid #d3d3d3;transition:.1s;border-radius:5px}.bordeViddo{background:#000;border:2px solid #fff}.darkenBehind{text-shadow:0 0 10px #00f}.darkenOver{background:linear-gradient(180deg,transparent 0,#000)}.speakSelect{background:#add8e6;border:2px solid #00008b;transition:.3s}.buttonselect{border:15px solid red}.transitMain{transition:background-color 1s linear;-webkit-transition:background-color 1s linear;transition:color .3s linear;-webkit-transition:color .3s linear}.popAnim{-webkit-transition:color .25s;transition:color .25s}.popAnim:after,.popAnim:before{border:2px solid transparent;width:0;height:0}.popAnim:before{top:0;left:0}.popAnim:after{bottom:0;right:0}.popAnim:hover{color:#60daaa}.popAnim:hover:after,.popAnim:hover:before{width:100%;height:100%}.popAnim:hover:before{border-top-color:#60daaa;border-right-color:#60daaa;-webkit-transition:width .25s ease-out,height .25s ease-out .25s;transition:width .25s ease-out,height .25s ease-out .25s}.popAnim:hover:after{border-bottom-color:#60daaa;border-left-color:#60daaa;-webkit-transition:border-color 0s ease-out .5s,width .25s ease-out .5s,height .25s ease-out .75s;transition:border-color 0s ease-out .5s,width .25s ease-out .5s,height .25s ease-out .75s}.backMain{background-color:#f3f3f3}.flashBox{border:2px solid transparent}.flashBox:hover{border-color:red;animation-name:flash_border;animation-duration:2s;animation-timing-function:linear;animation-iteration-count:infinite;-webkit-animation-name:flash_border;-webkit-animation-duration:2s;-webkit-animation-timing-function:linear;-webkit-animation-iteration-count:infinite;-moz-animation-name:flash_border;-moz-animation-duration:2s;-moz-animation-timing-function:linear;-moz-animation-iteration-count:infinite}@keyframes flash_border{0%{border-color:transparent}50%{border-color:#00f}to{border-color:transparent}}.linkPlush{font-weight:10;color:#fff}.linkPlush:hover{text-decoration:underline}.linkPlush:active{color:#add8e6}.hoverPointer{cursor:pointer}.selectMain{background:red}.selectMain:hover{background-color:#00f}.highText{color:red;border-radius:50px}.textpopup{background:#00f;transition:3s;transform:translateY(-100%)}.animate-bottom{-webkit-animation-name:animatebottom;-webkit-animation-duration:.5s;animation-name:animatebottom;animation-duration:.5s}@keyframes animatebottom{0%{bottom:-50;opacity:0}to{bottom:0;opacity:1}}.textpopup:hover{transform:translateY(0)}.highText:hover{background-color:rgba(0,22,77,.2)}.disabled:hover{cursor:not-allowed}.shadeBorder{border:2px}.shadeBorder:hover{border:2px solid #00f}.shadeDisable{opacity:.3}.shadeDisable:hover{cursor:not-allowed}.shadeTrue{opacity:.6}.hoverOpac:hover,.shadeTrue:hover{opacity:1}.shadeReverse{opacity:.3}.shadeReverse:hover{opacity:1}.whiteHover:hover{background:#fff;color:#00164d}.expandHover{transition:transform .2s}.expandHover:hover{transform:scale(1.1)}.slick-prev{left:3%!important}.slick-next{right:3%!important}";
+var css_248z$1 = ".item.selected{background:#177779;color:#fff;border-color:#206748}.lp-copy-sel__option,.lp-copy-sel__single-value{white-space:pre-wrap!important}.vidobbo::-webkit-scrollbar{display:none}.fadeOut{opacity:0;width:0;height:0;transition:width .5s .5s,height .5s .5s,opacity .5s}.fadeIn{opacity:1;width:100px;height:100px;transition:width .5s,height .5s,opacity .5s .5s}.noresize{resize:none}.vidobbo{-ms-overflow-style:none}.ant-btn-clicked:after,[ant-click-animating-without-extra-node]:after{-webkit-animation:none!important;-moz-animation:none!important;-o-animation:none!important;-ms-animation:none!important;animation:none!important}.ais-InstantSearch__root{display:flex;border:1px solid grey}.btn:hover{opacity:1}.selectHov:hover{background:green}.selectHov{transition:.3s}.selectHov:hover{background:red}.hoverMain{position:relative}.hoverMain.no-hover:hover{opacity:1}.hoverMain.no-hover{opacity:0}.hoverMain.hover{opacity:1}.hoverMain.hover:hover{opacity:0}.wrapQuotes:before{content:\"❝\"}.wrapQuotes:after{content:\"❞\"}.playText:hover{cursor:pointer}.playTextLight:hover{background-color:#e5e5e5;cursor:pointer}.playTextDark:hover{color:#00f;cursor:pointer}.playCurrent{background-color:purple}.ant-list-item{padding:0}.iconNum{padding:0 1px}.vertCont{align-items:center}.vertAlign,.vertBox{display:flex;align-items:center}.vertAlign{justify-content:\"center\";vertical-align:middle}.vertTop{display:flex;align-items:top;vertical-align:top}.sticky{position:fixed}.footer{bottom:0;left:0;width:100vw;background:rgba(207,210,206,.577);min-height:80px;border-top:1px solid #000}.lineBetween:after{content:\"\";height:100%;border-right:1px solid #d3d3d3}.nowap{white-space:nowap;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical}.wrap{-webkit-line-clamp:1}.wrap,.wrapTwo{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient:vertical}.wrapTwo{-webkit-line-clamp:2}.hiddenTrue{display:none;display:block}.hideSect{display:hidden}.scrollTrue{overflow:scroll}.overflow-scrolling{overflow:auto;-webkit-overflow-scrolling:touch}.pulseTrue{cursor:pointer;border:3px solid transparent;transition:.3s}.pulseTrue:hover{border:3px solid #add8e6}.greyHover,.pointer:hover{cursor:pointer}.greyHover:hover{cursor:pointer;background:radial-gradient(circle,#fff 0,hsla(0,0%,60.4%,.2) 100%,#fff 0)}.circleHover,.circleHover:hover{border-radius:50%;padding:5px}.shadowBottom{box-shadow:inset 0 4px 2px -2px grey}.lighthover{transition:.1s}.lightHover:hover{cursor:pointer;border:2px solid #00164d}.sdfaszxc{opacity:.8;padding-left:5px;transition:.1s}.sdfaszxc:hover{cursor:pointer;opacity:1}.buttonBase{background-color:initial;background-repeat:no-repeat;border:none;cursor:pointer;overflow:hidden;outline:none}.buttonHover,.buttonMain{cursor:pointer;border-radius:5px;border:2px solid transparent;transition:.1s;padding:2px 5px}.buttonHover:hover{border:2px solid #2c4179}.borderRound{border:2px solid #00008b;border-radius:5px}.borderHover,.borderMain{border:2px solid #d3d3d3;transition:.1s;border-radius:5px}.error{color:red}.error,.titleMain{font-weight:700}.shadowMain{border:2px solid #d3d3d3;transition:.1s;border-radius:5px}.bordeViddo{background:#000;border:2px solid #fff}.darkenBehind{text-shadow:0 0 10px #00f}.darkenOver{background:linear-gradient(180deg,transparent 0,#000)}.speakSelect{background:#add8e6;border:2px solid #00008b;transition:.3s}.buttonselect{border:15px solid red}.transitMain{transition:background-color 1s linear;-webkit-transition:background-color 1s linear;transition:color .3s linear;-webkit-transition:color .3s linear}.popAnim{-webkit-transition:color .25s;transition:color .25s}.popAnim:after,.popAnim:before{border:2px solid transparent;width:0;height:0}.popAnim:before{top:0;left:0}.popAnim:after{bottom:0;right:0}.popAnim:hover{color:#60daaa}.popAnim:hover:after,.popAnim:hover:before{width:100%;height:100%}.popAnim:hover:before{border-top-color:#60daaa;border-right-color:#60daaa;-webkit-transition:width .25s ease-out,height .25s ease-out .25s;transition:width .25s ease-out,height .25s ease-out .25s}.popAnim:hover:after{border-bottom-color:#60daaa;border-left-color:#60daaa;-webkit-transition:border-color 0s ease-out .5s,width .25s ease-out .5s,height .25s ease-out .75s;transition:border-color 0s ease-out .5s,width .25s ease-out .5s,height .25s ease-out .75s}.backMain{background-color:#f3f3f3}.flashBox{border:2px solid transparent}.flashBox:hover{border-color:red;animation-name:flash_border;animation-duration:2s;animation-timing-function:linear;animation-iteration-count:infinite;-webkit-animation-name:flash_border;-webkit-animation-duration:2s;-webkit-animation-timing-function:linear;-webkit-animation-iteration-count:infinite;-moz-animation-name:flash_border;-moz-animation-duration:2s;-moz-animation-timing-function:linear;-moz-animation-iteration-count:infinite}@keyframes flash_border{0%{border-color:transparent}50%{border-color:#00f}to{border-color:transparent}}.linkPlush{font-weight:10;color:#fff}.linkPlush:hover{text-decoration:underline}.linkPlush:active{color:#add8e6}.hoverPointer{cursor:pointer}.selectMain{background:red}.selectMain:hover{background-color:#00f}.highText{color:red;border-radius:50px}.textpopup{background:#00f;transition:3s;transform:translateY(-100%)}.animate-bottom{-webkit-animation-name:animatebottom;-webkit-animation-duration:.5s;animation-name:animatebottom;animation-duration:.5s}@keyframes animatebottom{0%{bottom:-50;opacity:0}to{bottom:0;opacity:1}}.textpopup:hover{transform:translateY(0)}.highText:hover{background-color:rgba(0,22,77,.2)}.disabled:hover{cursor:not-allowed}.shadeBorder{border:2px}.shadeBorder:hover{border:2px solid #00f}.shadeDisable{opacity:.3}.shadeDisable:hover{cursor:not-allowed}.shadeTrue{opacity:.6}.hoverOpac:hover,.shadeTrue:hover{opacity:1}.shadeReverse{opacity:.3}.shadeReverse:hover{opacity:1}.whiteHover:hover{background:#fff;color:#00164d}.expandHover{transition:transform .2s}.expandHover:hover{transform:scale(1.1)}.slick-prev{left:3%!important}.slick-next{right:3%!important}";
 styleInject(css_248z$1,{"insertAt":"top"});
 
 var commonjsGlobal$1 = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
@@ -2135,8 +2135,8 @@ exports.default = _default;
  * LICENSE file in the root directory of this source tree.
  */
 
-var b$2 = 60103,
-    c$2 = 60106,
+var b$1 = 60103,
+    c$1 = 60106,
     d$1 = 60107,
     e$1 = 60108,
     f$1 = 60114,
@@ -2155,8 +2155,8 @@ var b$2 = 60103,
 
 if ("function" === typeof Symbol && Symbol.for) {
   var x$1 = Symbol.for;
-  b$2 = x$1("react.element");
-  c$2 = x$1("react.portal");
+  b$1 = x$1("react.element");
+  c$1 = x$1("react.portal");
   d$1 = x$1("react.fragment");
   e$1 = x$1("react.strict_mode");
   f$1 = x$1("react.profiler");
@@ -2179,7 +2179,7 @@ function y$1(a) {
     var t = a.$$typeof;
 
     switch (t) {
-      case b$2:
+      case b$1:
         switch (a = a.type, a) {
           case d$1:
           case f$1:
@@ -2203,19 +2203,19 @@ function y$1(a) {
 
         }
 
-      case c$2:
+      case c$1:
         return t;
     }
   }
 }
 
 var z$1 = g$1,
-    A$1 = b$2,
+    A$1 = b$1,
     B = k$1,
     C = d$1,
     D = p$1,
     E = n$1,
-    F = c$2,
+    F = c$1,
     G = f$1,
     H = e$1,
     I = l$1;
@@ -2226,7 +2226,7 @@ var ForwardRef$1 = B;
 var Fragment$1 = C;
 var Lazy$1 = D;
 var Memo$1 = E;
-var Portal$2 = F;
+var Portal$1 = F;
 var Profiler$1 = G;
 var StrictMode$1 = H;
 var Suspense$1 = I;
@@ -2248,7 +2248,7 @@ var isContextProvider$1 = function (a) {
 };
 
 var isElement$1 = function (a) {
-  return "object" === typeof a && null !== a && a.$$typeof === b$2;
+  return "object" === typeof a && null !== a && a.$$typeof === b$1;
 };
 
 var isForwardRef$1 = function (a) {
@@ -2268,7 +2268,7 @@ var isMemo$1 = function (a) {
 };
 
 var isPortal$1 = function (a) {
-  return y$1(a) === c$2;
+  return y$1(a) === c$1;
 };
 
 var isProfiler$1 = function (a) {
@@ -2297,7 +2297,7 @@ var reactIs_production_min$1 = {
 	Fragment: Fragment$1,
 	Lazy: Lazy$1,
 	Memo: Memo$1,
-	Portal: Portal$2,
+	Portal: Portal$1,
 	Profiler: Profiler$1,
 	StrictMode: StrictMode$1,
 	Suspense: Suspense$1,
@@ -3265,8 +3265,8 @@ function BearLink$1({
   return noLink ? textvar : /*#__PURE__*/React__default$1['default'].createElement(Rlasdow, null);
 }
 
-function _extends$Y() {
-  _extends$Y = Object.assign || function (target) {
+function _extends$O() {
+  _extends$O = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -3280,7 +3280,7 @@ function _extends$Y() {
     return target;
   };
 
-  return _extends$Y.apply(this, arguments);
+  return _extends$O.apply(this, arguments);
 }
 
 const alignItemsFlex = //
@@ -3818,7 +3818,7 @@ function identifier(index) {
  */
 
 function compile$1(value) {
-  return dealloc(parse$4('', null, null, null, [''], value = alloc(value), 0, [0], value));
+  return dealloc(parse$2('', null, null, null, [''], value = alloc(value), 0, [0], value));
 }
 /**
  * @param {string} value
@@ -3833,7 +3833,7 @@ function compile$1(value) {
  * @return {object}
  */
 
-function parse$4(value, root, parent, rule, rules, rulesets, pseudo, points, declarations) {
+function parse$2(value, root, parent, rule, rules, rulesets, pseudo, points, declarations) {
   var index = 0;
   var offset = 0;
   var length = pseudo;
@@ -3912,16 +3912,16 @@ function parse$4(value, root, parent, rule, rules, rulesets, pseudo, points, dec
 
         default:
           append(reference = ruleset(characters, root, parent, index, offset, rules, points, type, props = [], children = [], length), rulesets);
-          if (character === 123) if (offset === 0) parse$4(characters, root, reference, reference, props, rulesets, length, points, children);else switch (atrule) {
+          if (character === 123) if (offset === 0) parse$2(characters, root, reference, reference, props, rulesets, length, points, children);else switch (atrule) {
             // d m s
             case 100:
             case 109:
             case 115:
-              parse$4(value, reference, reference, rule && append(ruleset(value, reference, reference, 0, 0, rules, points, type, rules, props = [], length), children), rules, children, length, points, rule ? props : children);
+              parse$2(value, reference, reference, rule && append(ruleset(value, reference, reference, 0, 0, rules, points, type, rules, props = [], length), children), rules, children, length, points, rule ? props : children);
               break;
 
             default:
-              parse$4(characters, reference, reference, reference, [''], children, length, points, children);
+              parse$2(characters, reference, reference, reference, [''], children, length, points, children);
           }
       }
 
@@ -4479,8 +4479,8 @@ var incorrectImportAlarm = function incorrectImportAlarm(element, index, childre
   }
 };
 
-var isBrowser$c = typeof document !== 'undefined';
-var getServerStylisCache = isBrowser$c ? undefined : weakMemoize(function () {
+var isBrowser$a = typeof document !== 'undefined';
+var getServerStylisCache = isBrowser$a ? undefined : weakMemoize(function () {
   return memoize$6(function () {
     var cache = {};
     return function (name) {
@@ -4497,7 +4497,7 @@ var createCache = function createCache(options) {
     throw new Error("You have to configure `key` for your cache. Please make sure it's unique (and not equal to 'css') as it's used for linking styles to your cache.\n" + "If multiple caches share the same key they might \"fight\" for each other's style elements.");
   }
 
-  if (isBrowser$c && key === 'css') {
+  if (isBrowser$a && key === 'css') {
     var ssrStyles = document.querySelectorAll("style[data-emotion]:not([data-s])"); // get SSRed styles out of the way of React's hydration
     // document.head is a safe place to move them to(though note document.head is not necessarily the last place they will be)
     // note this very very intentionally targets all style elements regardless of the key to ensure
@@ -4535,7 +4535,7 @@ var createCache = function createCache(options) {
   var container;
   var nodesToHydrate = [];
 
-  if (isBrowser$c) {
+  if (isBrowser$a) {
     container = options.container || document.head;
     Array.prototype.forEach.call( // this means we will ignore elements which don't have a space in them which
     // means that the style elements we're looking at are only Emotion 11 server-rendered style elements
@@ -4563,7 +4563,7 @@ var createCache = function createCache(options) {
     }), incorrectImportAlarm);
   }
 
-  if (isBrowser$c) {
+  if (isBrowser$a) {
     var currentSheet;
     var finalizingPlugins = [stringify, process.env.NODE_ENV !== 'production' ? function (element) {
       if (!element.root) {
@@ -4677,8 +4677,8 @@ var createCache = function createCache(options) {
   return cache;
 };
 
-function _extends$X() {
-  _extends$X = Object.assign || function (target) {
+function _extends$N() {
+  _extends$N = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -4692,7 +4692,7 @@ function _extends$X() {
     return target;
   };
 
-  return _extends$X.apply(this, arguments);
+  return _extends$N.apply(this, arguments);
 }
 
 /** @license React v16.13.1
@@ -4704,32 +4704,32 @@ function _extends$X() {
  * LICENSE file in the root directory of this source tree.
  */
 
-var b$1 = "function" === typeof Symbol && Symbol.for,
-    c$1 = b$1 ? Symbol.for("react.element") : 60103,
-    d = b$1 ? Symbol.for("react.portal") : 60106,
-    e = b$1 ? Symbol.for("react.fragment") : 60107,
-    f = b$1 ? Symbol.for("react.strict_mode") : 60108,
-    g = b$1 ? Symbol.for("react.profiler") : 60114,
-    h = b$1 ? Symbol.for("react.provider") : 60109,
-    k = b$1 ? Symbol.for("react.context") : 60110,
-    l = b$1 ? Symbol.for("react.async_mode") : 60111,
-    m = b$1 ? Symbol.for("react.concurrent_mode") : 60111,
-    n = b$1 ? Symbol.for("react.forward_ref") : 60112,
-    p = b$1 ? Symbol.for("react.suspense") : 60113,
-    q = b$1 ? Symbol.for("react.suspense_list") : 60120,
-    r = b$1 ? Symbol.for("react.memo") : 60115,
-    t$1 = b$1 ? Symbol.for("react.lazy") : 60116,
-    v = b$1 ? Symbol.for("react.block") : 60121,
-    w$1 = b$1 ? Symbol.for("react.fundamental") : 60117,
-    x = b$1 ? Symbol.for("react.responder") : 60118,
-    y = b$1 ? Symbol.for("react.scope") : 60119;
+var b = "function" === typeof Symbol && Symbol.for,
+    c = b ? Symbol.for("react.element") : 60103,
+    d = b ? Symbol.for("react.portal") : 60106,
+    e = b ? Symbol.for("react.fragment") : 60107,
+    f = b ? Symbol.for("react.strict_mode") : 60108,
+    g = b ? Symbol.for("react.profiler") : 60114,
+    h = b ? Symbol.for("react.provider") : 60109,
+    k = b ? Symbol.for("react.context") : 60110,
+    l = b ? Symbol.for("react.async_mode") : 60111,
+    m = b ? Symbol.for("react.concurrent_mode") : 60111,
+    n = b ? Symbol.for("react.forward_ref") : 60112,
+    p = b ? Symbol.for("react.suspense") : 60113,
+    q = b ? Symbol.for("react.suspense_list") : 60120,
+    r = b ? Symbol.for("react.memo") : 60115,
+    t$1 = b ? Symbol.for("react.lazy") : 60116,
+    v = b ? Symbol.for("react.block") : 60121,
+    w$1 = b ? Symbol.for("react.fundamental") : 60117,
+    x = b ? Symbol.for("react.responder") : 60118,
+    y = b ? Symbol.for("react.scope") : 60119;
 
 function z(a) {
   if ("object" === typeof a && null !== a) {
     var u = a.$$typeof;
 
     switch (u) {
-      case c$1:
+      case c:
         switch (a = a.type, a) {
           case l:
           case m:
@@ -4768,12 +4768,12 @@ var AsyncMode = l;
 var ConcurrentMode = m;
 var ContextConsumer = k;
 var ContextProvider = h;
-var Element$1 = c$1;
+var Element$1 = c;
 var ForwardRef = n;
 var Fragment = e;
 var Lazy = t$1;
 var Memo = r;
-var Portal$1 = d;
+var Portal = d;
 var Profiler = g;
 var StrictMode = f;
 var Suspense = p;
@@ -4793,7 +4793,7 @@ var isContextProvider = function (a) {
 };
 
 var isElement = function (a) {
-  return "object" === typeof a && null !== a && a.$$typeof === c$1;
+  return "object" === typeof a && null !== a && a.$$typeof === c;
 };
 
 var isForwardRef = function (a) {
@@ -4844,7 +4844,7 @@ var reactIs_production_min = {
 	Fragment: Fragment,
 	Lazy: Lazy,
 	Memo: Memo,
-	Portal: Portal$1,
+	Portal: Portal,
 	Profiler: Profiler,
 	StrictMode: StrictMode,
 	Suspense: Suspense,
@@ -5084,7 +5084,7 @@ var TYPE_STATICS = {};
 TYPE_STATICS[reactIs.ForwardRef] = FORWARD_REF_STATICS;
 TYPE_STATICS[reactIs.Memo] = MEMO_STATICS;
 
-var isBrowser$b = typeof document !== 'undefined';
+var isBrowser$9 = typeof document !== 'undefined';
 
 function getRegisteredStyles$1(registered, registeredStyles, classNames) {
   var rawClassName = '';
@@ -5110,7 +5110,7 @@ var insertStyles$1 = function insertStyles(cache, serialized, isStringTag) {
   // in node since emotion-server relies on whether a style is in
   // the registered cache to know whether a style is global or not
   // also, note that this check will be dead code eliminated in the browser
-  isBrowser$b === false && cache.compat !== undefined) && cache.registered[className] === undefined) {
+  isBrowser$9 === false && cache.compat !== undefined) && cache.registered[className] === undefined) {
     cache.registered[className] = serialized.styles;
   }
 
@@ -5121,14 +5121,14 @@ var insertStyles$1 = function insertStyles(cache, serialized, isStringTag) {
     do {
       var maybeStyles = cache.insert(serialized === current ? "." + className : '', current, cache.sheet, true);
 
-      if (!isBrowser$b && maybeStyles !== undefined) {
+      if (!isBrowser$9 && maybeStyles !== undefined) {
         stylesForSSR += maybeStyles;
       }
 
       current = current.next;
     } while (current !== undefined);
 
-    if (!isBrowser$b && stylesForSSR.length !== 0) {
+    if (!isBrowser$9 && stylesForSSR.length !== 0) {
       return stylesForSSR;
     }
   }
@@ -5555,7 +5555,7 @@ var serializeStyles$1 = function serializeStyles(args, registered, mergedProps) 
   };
 };
 
-var isBrowser$a = typeof document !== 'undefined';
+var isBrowser$8 = typeof document !== 'undefined';
 var hasOwnProperty$b = Object.prototype.hasOwnProperty;
 var EmotionCacheContext = /* #__PURE__ */React.createContext( // we're doing this to avoid preconstruct's dead code elimination in this one case
 // because this module is primarily intended for the browser and node
@@ -5577,7 +5577,7 @@ var withEmotionCache = function withEmotionCache(func) {
   });
 };
 
-if (!isBrowser$a) {
+if (!isBrowser$8) {
   withEmotionCache = function withEmotionCache(func) {
     return function (props) {
       var cache = React.useContext(EmotionCacheContext);
@@ -5618,7 +5618,7 @@ var getTheme = function getTheme(outerTheme, theme) {
     throw new Error('[ThemeProvider] Please make your theme prop a plain object');
   }
 
-  return _extends$X({}, outerTheme, theme);
+  return _extends$N({}, outerTheme, theme);
 };
 
 var createCacheWithTheme = /* #__PURE__ */weakMemoize(function (outerTheme) {
@@ -5727,7 +5727,7 @@ var Emotion = /* #__PURE__ */withEmotionCache(function (props, cache, ref) {
   newProps.className = className;
   var ele = /*#__PURE__*/React.createElement(type, newProps);
 
-  if (!isBrowser$a && rules !== undefined) {
+  if (!isBrowser$8 && rules !== undefined) {
     var _ref;
 
     var serializedNames = serialized.name;
@@ -5849,7 +5849,7 @@ var Global = /* #__PURE__ */withEmotionCache(function (props, cache) {
   var styles = props.styles;
   var serialized = serializeStyles$1([styles], undefined, typeof styles === 'function' || Array.isArray(styles) ? React.useContext(ThemeContext) : undefined);
 
-  if (!isBrowser$a) {
+  if (!isBrowser$8) {
     var _ref;
 
     var serializedNames = serialized.name;
@@ -5949,7 +5949,7 @@ function css$3() {
   return serializeStyles$1(args);
 }
 
-var keyframes$2 = function keyframes() {
+var keyframes = function keyframes() {
   var insertable = css$3.apply(void 0, arguments);
   var name = "animation-" + insertable.name; // $FlowFixMe
 
@@ -6041,7 +6041,7 @@ var ClassNames = /* #__PURE__ */withEmotionCache(function (props, cache) {
 
     var serialized = serializeStyles$1(args, cache.registered);
 
-    if (isBrowser$a) {
+    if (isBrowser$8) {
       insertStyles$1(cache, serialized, false);
     } else {
       var res = insertStyles$1(cache, serialized, false);
@@ -6051,7 +6051,7 @@ var ClassNames = /* #__PURE__ */withEmotionCache(function (props, cache) {
       }
     }
 
-    if (!isBrowser$a) {
+    if (!isBrowser$8) {
       serializedHashes += " " + serialized.name;
     }
 
@@ -6078,7 +6078,7 @@ var ClassNames = /* #__PURE__ */withEmotionCache(function (props, cache) {
   var ele = props.children(content);
   hasRendered = true;
 
-  if (!isBrowser$a && rules.length !== 0) {
+  if (!isBrowser$8 && rules.length !== 0) {
     var _ref;
 
     return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("style", (_ref = {}, _ref["data-emotion"] = cache.key + " " + serializedHashes.substring(1), _ref.dangerouslySetInnerHTML = {
@@ -6094,12 +6094,12 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 if (process.env.NODE_ENV !== 'production') {
-  var isBrowser$9 = typeof document !== 'undefined'; // #1727 for some reason Jest evaluates modules twice if some consuming module gets mocked with jest.mock
+  var isBrowser$7 = typeof document !== 'undefined'; // #1727 for some reason Jest evaluates modules twice if some consuming module gets mocked with jest.mock
 
   var isJest = typeof jest !== 'undefined';
 
-  if (isBrowser$9 && !isJest) {
-    var globalContext = isBrowser$9 ? window : global;
+  if (isBrowser$7 && !isJest) {
+    var globalContext = isBrowser$7 ? window : global;
     var globalKey = "__EMOTION_REACT_" + pkg.version.split('.')[0] + "__";
 
     if (globalContext[globalKey]) {
@@ -6117,7 +6117,7 @@ var CSSReset = () => /*#__PURE__*/React__namespace.createElement(Global, {
 var isProduction$2 = process.env.NODE_ENV === 'production';
 var prefix = 'Invariant failed';
 
-function invariant$1(condition, message) {
+function invariant(condition, message) {
   if (condition) {
     return;
   }
@@ -6130,7 +6130,7 @@ function invariant$1(condition, message) {
 }
 
 // Number assertions
-var __DEV__$e = process.env.NODE_ENV !== "production";
+var __DEV__$a = process.env.NODE_ENV !== "production";
 process.env.NODE_ENV === "test";
 
 /**
@@ -8187,156 +8187,6 @@ function stubFalse() {
 module.exports = mergeWith;
 });
 
-function canUseDOM$7() {
-  return !!(typeof window !== "undefined" && window.document && window.document.createElement);
-}
-var isBrowser$8 = canUseDOM$7();
-
-var defaultTimestep = 1 / 60 * 1000;
-var getCurrentTime = typeof performance !== "undefined" ? function () {
-  return performance.now();
-} : function () {
-  return Date.now();
-};
-var onNextFrame = typeof window !== "undefined" ? function (callback) {
-  return window.requestAnimationFrame(callback);
-} : function (callback) {
-  return setTimeout(function () {
-    return callback(getCurrentTime());
-  }, defaultTimestep);
-};
-
-function createRenderStep(runNextFrame) {
-  var toRun = [];
-  var toRunNextFrame = [];
-  var numToRun = 0;
-  var isProcessing = false;
-  var toKeepAlive = new WeakSet();
-  var step = {
-    schedule: function (callback, keepAlive, immediate) {
-      if (keepAlive === void 0) {
-        keepAlive = false;
-      }
-
-      if (immediate === void 0) {
-        immediate = false;
-      }
-
-      var addToCurrentFrame = immediate && isProcessing;
-      var buffer = addToCurrentFrame ? toRun : toRunNextFrame;
-      if (keepAlive) toKeepAlive.add(callback);
-
-      if (buffer.indexOf(callback) === -1) {
-        buffer.push(callback);
-        if (addToCurrentFrame && isProcessing) numToRun = toRun.length;
-      }
-
-      return callback;
-    },
-    cancel: function (callback) {
-      var index = toRunNextFrame.indexOf(callback);
-      if (index !== -1) toRunNextFrame.splice(index, 1);
-      toKeepAlive.delete(callback);
-    },
-    process: function (frameData) {
-      var _a;
-
-      isProcessing = true;
-      _a = [toRunNextFrame, toRun], toRun = _a[0], toRunNextFrame = _a[1];
-      toRunNextFrame.length = 0;
-      numToRun = toRun.length;
-
-      if (numToRun) {
-        for (var i = 0; i < numToRun; i++) {
-          var callback = toRun[i];
-          callback(frameData);
-
-          if (toKeepAlive.has(callback)) {
-            step.schedule(callback);
-            runNextFrame();
-          }
-        }
-      }
-
-      isProcessing = false;
-    }
-  };
-  return step;
-}
-
-var maxElapsed = 40;
-var useDefaultElapsed = true;
-var runNextFrame = false;
-var isProcessing = false;
-var frame = {
-  delta: 0,
-  timestamp: 0
-};
-var stepsOrder = ["read", "update", "preRender", "render", "postRender"];
-var steps = /*#__PURE__*/stepsOrder.reduce(function (acc, key) {
-  acc[key] = createRenderStep(function () {
-    return runNextFrame = true;
-  });
-  return acc;
-}, {});
-var sync = /*#__PURE__*/stepsOrder.reduce(function (acc, key) {
-  var step = steps[key];
-
-  acc[key] = function (process, keepAlive, immediate) {
-    if (keepAlive === void 0) {
-      keepAlive = false;
-    }
-
-    if (immediate === void 0) {
-      immediate = false;
-    }
-
-    if (!runNextFrame) startLoop();
-    return step.schedule(process, keepAlive, immediate);
-  };
-
-  return acc;
-}, {});
-var cancelSync = /*#__PURE__*/stepsOrder.reduce(function (acc, key) {
-  acc[key] = steps[key].cancel;
-  return acc;
-}, {});
-var flushSync = /*#__PURE__*/stepsOrder.reduce(function (acc, key) {
-  acc[key] = function () {
-    return steps[key].process(frame);
-  };
-
-  return acc;
-}, {});
-
-var processStep = function (stepId) {
-  return steps[stepId].process(frame);
-};
-
-var processFrame = function (timestamp) {
-  runNextFrame = false;
-  frame.delta = useDefaultElapsed ? defaultTimestep : Math.max(Math.min(timestamp - frame.timestamp, maxElapsed), 1);
-  frame.timestamp = timestamp;
-  isProcessing = true;
-  stepsOrder.forEach(processStep);
-  isProcessing = false;
-
-  if (runNextFrame) {
-    useDefaultElapsed = false;
-    onNextFrame(processFrame);
-  }
-};
-
-var startLoop = function () {
-  runNextFrame = true;
-  useDefaultElapsed = true;
-  if (!isProcessing) onNextFrame(processFrame);
-};
-
-var getFrameData = function () {
-  return frame;
-};
-
 // Number assertions
 
 function isFunction$5(value) {
@@ -8352,7 +8202,7 @@ process.env.NODE_ENV === "test";
  * @param value the value
  */
 
-function assignRef$1(ref, value) {
+function assignRef(ref, value) {
   if (ref == null) return;
 
   if (isFunction$5(ref)) {
@@ -8381,7 +8231,7 @@ function mergeRefs() {
   }
 
   return node => {
-    refs.forEach(ref => assignRef$1(ref, node));
+    refs.forEach(ref => assignRef(ref, node));
   };
 }
 
@@ -8447,7 +8297,7 @@ function PortalManager(props) {
   }, children);
 }
 
-if (__DEV__$e) {
+if (__DEV__$a) {
   PortalManager.displayName = "PortalManager";
 }
 
@@ -8490,7 +8340,7 @@ process.env.NODE_ENV === "test";
 function canUseDOM$6() {
   return !!(typeof window !== "undefined" && window.document && window.document.createElement);
 }
-var isBrowser$7 = canUseDOM$6();
+var isBrowser$6 = canUseDOM$6();
 
 /* eslint-disable no-nested-ternary */
 function runIfFn$2(valueOrFn) {
@@ -8512,7 +8362,7 @@ function runIfFn$2(valueOrFn) {
  * @see https://gist.github.com/gaearon/e7d97cdf38a2907924ea12e4ebdf3c85
  */
 
-var useSafeLayoutEffect = isBrowser$7 ? React__namespace.useLayoutEffect : React__namespace.useEffect;
+var useSafeLayoutEffect = isBrowser$6 ? React__namespace.useLayoutEffect : React__namespace.useEffect;
 
 /**
  * React hook to persist any value between renders,
@@ -8521,7 +8371,7 @@ var useSafeLayoutEffect = isBrowser$7 ? React__namespace.useLayoutEffect : React
  * @param value the value or function to persist
  */
 
-function useCallbackRef$1(fn, deps) {
+function useCallbackRef(fn, deps) {
   if (deps === void 0) {
     deps = [];
   }
@@ -8571,32 +8421,6 @@ function useId(idProp, prefix) {
   return React__namespace.useMemo(() => idProp || [prefix, context.prefix, ++context.current].filter(Boolean).join("-"), // eslint-disable-next-line react-hooks/exhaustive-deps
   [idProp, prefix]);
 }
-/**
- * Reack hook to generate ids for use in compound components
- *
- * @param idProp the external id passed from the user
- * @param prefixes array of prefixes to use
- *
- * @example
- *
- * ```js
- * const [buttonId, menuId] = useIds("52", "button", "menu")
- *
- * // buttonId will be `button-52`
- * // menuId will be `menu-52`
- * ```
- */
-
-function useIds(idProp) {
-  for (var _len = arguments.length, prefixes = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-    prefixes[_key - 1] = arguments[_key];
-  }
-
-  var id = useId(idProp);
-  return React__namespace.useMemo(() => {
-    return prefixes.map(prefix => prefix + "-" + id);
-  }, [id, prefixes]);
-}
 
 /**
  * React hook to manage browser event listeners
@@ -8610,7 +8434,7 @@ function useIds(idProp) {
  */
 
 function useEventListener(event, handler, env, options) {
-  var listener = useCallbackRef$1(handler);
+  var listener = useCallbackRef(handler);
   React__namespace.useEffect(() => {
     var _runIfFn;
 
@@ -8628,26 +8452,13 @@ function useEventListener(event, handler, env, options) {
   };
 }
 
-function useUnmountEffect$1(fn, deps) {
+function useUnmountEffect(fn, deps) {
   if (deps === void 0) {
     deps = [];
   }
 
   return React__namespace.useEffect(() => () => fn(), // eslint-disable-next-line react-hooks/exhaustive-deps
   deps);
-}
-
-function useForceUpdate$1() {
-  var unloadingRef = React__namespace.useRef(false);
-  var [count, setCount] = React__namespace.useState(0);
-  useUnmountEffect$1(() => {
-    unloadingRef.current = true;
-  });
-  return React__namespace.useCallback(() => {
-    if (!unloadingRef.current) {
-      setCount(count + 1);
-    }
-  }, [count]);
 }
 
 /**
@@ -8658,7 +8469,7 @@ function useForceUpdate$1() {
  */
 
 function useInterval(callback, delay) {
-  var fn = useCallbackRef$1(callback);
+  var fn = useCallbackRef(callback);
   React__namespace.useEffect(() => {
     var intervalId = null;
 
@@ -8676,178 +8487,17 @@ function useInterval(callback, delay) {
   }, [delay, fn]);
 }
 
-function _extends$W() {
-  _extends$W = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends$W.apply(this, arguments);
-}
-
-function _objectWithoutPropertiesLoose$w(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-var [PortalContextProvider, usePortalContext] = createContext({
-  strict: false,
-  name: "PortalContext"
-});
-var PORTAL_CLASSNAME = "chakra-portal";
-var PORTAL_SELECTOR = ".chakra-portal";
-
-var Container$1 = props => /*#__PURE__*/React__namespace.createElement("div", {
-  className: "chakra-portal-zIndex",
-  style: {
-    position: "absolute",
-    zIndex: props.zIndex,
-    top: 0,
-    left: 0,
-    right: 0 // NB: Don't add `bottom: 0`, it makes the entire app unusable
-    // @see https://github.com/chakra-ui/chakra-ui/issues/3201
-
-  }
-}, props.children);
-/**
- * Portal that uses `document.body` as container
- */
-
-
-var DefaultPortal = props => {
-  var {
-    appendToParentPortal,
-    children
-  } = props;
-  var tempNode = React__namespace.useRef(null);
-  var portal = React__namespace.useRef(null);
-  var forceUpdate = useForceUpdate$1();
-  var parentPortal = usePortalContext();
-  var manager = usePortalManager();
-  useSafeLayoutEffect(() => {
-    if (!tempNode.current) return;
-    var doc = tempNode.current.ownerDocument;
-    var host = appendToParentPortal ? parentPortal != null ? parentPortal : doc.body : doc.body;
-    if (!host) return;
-    portal.current = doc.createElement("div");
-    portal.current.className = PORTAL_CLASSNAME;
-    host.appendChild(portal.current);
-    forceUpdate();
-    var portalNode = portal.current;
-    return () => {
-      if (host.contains(portalNode)) {
-        host.removeChild(portalNode);
-      }
-    };
-  }, []);
-
-  var _children = manager != null && manager.zIndex ? /*#__PURE__*/React__namespace.createElement(Container$1, {
-    zIndex: manager == null ? void 0 : manager.zIndex
-  }, children) : children;
-
-  return portal.current ? /*#__PURE__*/reactDom.createPortal( /*#__PURE__*/React__namespace.createElement(PortalContextProvider, {
-    value: portal.current
-  }, _children), portal.current) : /*#__PURE__*/React__namespace.createElement("span", {
-    ref: tempNode
-  });
-};
-/**
- * Portal that uses a custom container
- */
-
-
-var ContainerPortal = props => {
-  var {
-    children,
-    containerRef,
-    appendToParentPortal
-  } = props;
-  var containerEl = containerRef.current;
-  var host = containerEl != null ? containerEl : isBrowser$8 ? document.body : undefined;
-  var portal = React__namespace.useMemo(() => {
-    var node = containerEl == null ? void 0 : containerEl.ownerDocument.createElement("div");
-    if (node) node.className = PORTAL_CLASSNAME;
-    return node;
-  }, [containerEl]);
-  var forceUpdate = useForceUpdate$1();
-  useSafeLayoutEffect(() => {
-    forceUpdate();
-  }, []);
-  useSafeLayoutEffect(() => {
-    if (!portal || !host) return;
-    host.appendChild(portal);
-    return () => {
-      host.removeChild(portal);
-    };
-  }, [portal, host]);
-
-  if (host && portal) {
-    return /*#__PURE__*/reactDom.createPortal( /*#__PURE__*/React__namespace.createElement(PortalContextProvider, {
-      value: appendToParentPortal ? portal : null
-    }, children), portal);
-  }
-
-  return null;
-};
-/**
- * Portal
- *
- * Declarative component used to render children into a DOM node
- * that exists outside the DOM hierarchy of the parent component.
- *
- * @see Docs https://chakra-ui.com/portal
- */
-
-
-function Portal(props) {
-  var {
-    containerRef
-  } = props,
-      rest = _objectWithoutPropertiesLoose$w(props, ["containerRef"]);
-
-  return containerRef ? /*#__PURE__*/React__namespace.createElement(ContainerPortal, _extends$W({
-    containerRef: containerRef
-  }, rest)) : /*#__PURE__*/React__namespace.createElement(DefaultPortal, rest);
-}
-Portal.defaultProps = {
-  appendToParentPortal: true
-};
-Portal.className = PORTAL_CLASSNAME;
-Portal.selector = PORTAL_SELECTOR;
-
-if (__DEV__$e) {
-  Portal.displayName = "Portal";
-}
-
 // Number assertions
-var __DEV__$d = process.env.NODE_ENV !== "production";
+var __DEV__$9 = process.env.NODE_ENV !== "production";
 process.env.NODE_ENV === "test";
 
 function canUseDOM$5() {
   return !!(typeof window !== "undefined" && window.document && window.document.createElement);
 }
-var isBrowser$6 = canUseDOM$5();
+var isBrowser$5 = canUseDOM$5();
 
 /* eslint-disable no-nested-ternary */
-var noop$6 = () => {};
+var noop$5 = () => {};
 
 var classNames$1 = {
   light: "chakra-ui-light",
@@ -8859,12 +8509,12 @@ var classNames$1 = {
 
 var mockBody = {
   classList: {
-    add: noop$6,
-    remove: noop$6
+    add: noop$5,
+    remove: noop$5
   }
 };
 
-var getBody = () => isBrowser$6 ? document.body : mockBody;
+var getBody = () => isBrowser$5 ? document.body : mockBody;
 /**
  * Function to add/remove class from `body` based on color mode
  */
@@ -8906,7 +8556,7 @@ function getColorScheme(fallback) {
 
 function addListener(fn) {
   if (!("matchMedia" in window)) {
-    return noop$6;
+    return noop$5;
   }
 
   var mediaQueryList = window.matchMedia(queries.dark);
@@ -8924,7 +8574,7 @@ function addListener(fn) {
 var root$1 = {
   get: () => document.documentElement.style.getPropertyValue("--chakra-ui-color-mode"),
   set: mode => {
-    if (isBrowser$6) {
+    if (isBrowser$5) {
       document.documentElement.style.setProperty("--chakra-ui-color-mode", mode);
     }
   }
@@ -8946,7 +8596,7 @@ var localStorageManager = {
 
       return _value != null ? _value : init;
     } catch (error) {
-      if (__DEV__$d) {
+      if (__DEV__$9) {
         console.log(error);
       }
 
@@ -8960,7 +8610,7 @@ var localStorageManager = {
     try {
       localStorage.setItem(storageKey, value);
     } catch (error) {
-      if (__DEV__$d) {
+      if (__DEV__$9) {
         console.log(error);
       }
     }
@@ -8971,7 +8621,7 @@ var localStorageManager = {
 
 var ColorModeContext = /*#__PURE__*/React__namespace.createContext({});
 
-if (__DEV__$d) {
+if (__DEV__$9) {
   ColorModeContext.displayName = "ColorModeContext";
 }
 /**
@@ -9022,7 +8672,7 @@ function ColorModeProvider(props) {
      * - defined value on <ColorModeScript />, if present
      * - previously stored value
      */
-    if (isBrowser$6 && colorModeManager.type === "localStorage") {
+    if (isBrowser$5 && colorModeManager.type === "localStorage") {
       var mode = useSystemColorMode ? getColorScheme(initialColorMode) : root$1.get() || colorModeManager.get();
 
       if (mode) {
@@ -9058,15 +8708,15 @@ function ColorModeProvider(props) {
 
   var context = React__namespace.useMemo(() => ({
     colorMode: value != null ? value : colorMode,
-    toggleColorMode: value ? noop$6 : toggleColorMode,
-    setColorMode: value ? noop$6 : setColorMode
+    toggleColorMode: value ? noop$5 : toggleColorMode,
+    setColorMode: value ? noop$5 : setColorMode
   }), [colorMode, setColorMode, toggleColorMode, value]);
   return /*#__PURE__*/React__namespace.createElement(ColorModeContext.Provider, {
     value: context
   }, children);
 }
 
-if (__DEV__$d) {
+if (__DEV__$9) {
   ColorModeProvider.displayName = "ColorModeProvider";
 }
 
@@ -9076,7 +8726,7 @@ function getLastItem(array) {
 }
 
 // Number assertions
-function isNumber$1(value) {
+function isNumber(value) {
   return typeof value === "number";
 }
 
@@ -9093,7 +8743,7 @@ function isObject$4(value) {
   return value != null && (type === "object" || type === "function") && !isArray$2(value);
 }
 
-function isString$2(value) {
+function isString$1(value) {
   return Object.prototype.toString.call(value) === "[object String]";
 }
 function isCssVar(value) {
@@ -9176,12 +8826,12 @@ function analyzeCSSValue$1(value) {
   };
 }
 
-function px$1(value) {
+function px(value) {
   if (value == null) return value;
   var {
     unitless
   } = analyzeCSSValue$1(value);
-  return unitless || isNumber$1(value) ? value + "px" : value;
+  return unitless || isNumber(value) ? value + "px" : value;
 }
 
 var sortByBreakpointValue = (a, b) => parseInt(a[1], 10) > parseInt(b[1], 10) ? 1 : -1;
@@ -9202,17 +8852,17 @@ function subtract(value) {
   var _px;
 
   if (!value) return value;
-  value = (_px = px$1(value)) != null ? _px : value;
+  value = (_px = px(value)) != null ? _px : value;
   var factor = value.endsWith("px") ? -1 : // the equivalent of 1px in em using a 16px base
   -0.0635;
-  return isNumber$1(value) ? "" + (value + factor) : value.replace(/([0-9]+\.?[0-9]*)/, m => "" + (parseFloat(m) + factor));
+  return isNumber(value) ? "" + (value + factor) : value.replace(/([0-9]+\.?[0-9]*)/, m => "" + (parseFloat(m) + factor));
 }
 
 function queryString(min, max) {
   var query = [];
-  if (min) query.push("@media screen and (min-width: " + px$1(min) + ")");
+  if (min) query.push("@media screen and (min-width: " + px(min) + ")");
   if (query.length > 0 && max) query.push("and");
-  if (max) query.push("@media screen and (max-width: " + px$1(max) + ")");
+  if (max) query.push("@media screen and (max-width: " + px(max) + ")");
   return query.join(" ");
 }
 
@@ -9719,11 +9369,11 @@ var transformFunctions = {
     var {
       unitless
     } = analyzeCSSValue(value);
-    return unitless || isNumber$1(value) ? value + "px" : value;
+    return unitless || isNumber(value) ? value + "px" : value;
   },
 
   fraction(value) {
-    return !isNumber$1(value) || value > 1 ? value : value * 100 + "%";
+    return !isNumber(value) || value > 1 ? value : value * 100 + "%";
   },
 
   float(value, theme) {
@@ -9736,8 +9386,8 @@ var transformFunctions = {
 
   degree(value) {
     if (isCssVar(value) || value == null) return value;
-    var unitless = isString$2(value) && !value.endsWith("deg");
-    return isNumber$1(value) || unitless ? value + "deg" : value;
+    var unitless = isString$1(value) && !value.endsWith("deg");
+    return isNumber(value) || unitless ? value + "deg" : value;
   },
 
   gradient: gradientTransform,
@@ -9786,11 +9436,11 @@ var transformFunctions = {
 };
 
 var isCSSFunction = value => {
-  return isString$2(value) && value.includes("(") && value.includes(")");
+  return isString$1(value) && value.includes("(") && value.includes(")");
 };
 
-function _extends$V() {
-  _extends$V = Object.assign || function (target) {
+function _extends$M() {
+  _extends$M = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -9804,7 +9454,7 @@ function _extends$V() {
     return target;
   };
 
-  return _extends$V.apply(this, arguments);
+  return _extends$M.apply(this, arguments);
 }
 var t = {
   borderWidths: toConfig("borderWidths"),
@@ -9823,7 +9473,7 @@ var t = {
   },
 
   prop(property, scale, transform) {
-    return _extends$V({
+    return _extends$M({
       property,
       scale
     }, scale && {
@@ -10007,7 +9657,7 @@ Object.assign(border, {
  * The prop types for border properties listed above
  */
 
-var color$1 = {
+var color = {
   color: t.colors("color"),
   textColor: t.colors("color"),
   fill: t.colors("fill"),
@@ -10029,7 +9679,7 @@ Object.assign(effect, {
  * Types for box and text shadow properties
  */
 
-var filter$1 = {
+var filter = {
   filter: {
     transform: transformFunctions.filter
   },
@@ -10695,8 +10345,8 @@ var pseudoSelectors = {
 };
 var pseudoPropNames = objectKeys(pseudoSelectors);
 
-function _extends$U() {
-  _extends$U = Object.assign || function (target) {
+function _extends$L() {
+  _extends$L = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -10710,13 +10360,13 @@ function _extends$U() {
     return target;
   };
 
-  return _extends$U.apply(this, arguments);
+  return _extends$L.apply(this, arguments);
 }
-var systemProps = lodash_mergewith({}, background, border, color$1, flexbox, layout, filter$1, ring, interactivity, grid, others, position, effect, space, typography$1, textDecoration, transform, list, transition$1);
+var systemProps = lodash_mergewith({}, background, border, color, flexbox, layout, filter, ring, interactivity, grid, others, position, effect, space, typography$1, textDecoration, transform, list, transition$1);
 Object.assign({}, space, layout, flexbox, grid, position);
 var propNames = [...objectKeys(systemProps), ...pseudoPropNames];
 
-var styleProps = _extends$U({}, systemProps, pseudoSelectors);
+var styleProps = _extends$L({}, systemProps, pseudoSelectors);
 
 var isStyleProp = prop => prop in styleProps;
 
@@ -10781,7 +10431,7 @@ var expandResponsive = styles => theme => {
   return computedStyles;
 };
 
-var isCSSVariableTokenValue = (key, value) => key.startsWith("--") && isString$2(value) && !isCssVar(value);
+var isCSSVariableTokenValue = (key, value) => key.startsWith("--") && isString$1(value) && !isCssVar(value);
 
 var resolveTokenValue = (theme, value) => {
   var _ref, _getVar2;
@@ -11076,8 +10726,8 @@ function cssVar(name, fallback, cssVarPrefix) {
   };
 }
 
-function _extends$T() {
-  _extends$T = Object.assign || function (target) {
+function _extends$K() {
+  _extends$K = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -11091,7 +10741,7 @@ function _extends$T() {
     return target;
   };
 
-  return _extends$T.apply(this, arguments);
+  return _extends$K.apply(this, arguments);
 }
 function createThemeVars(target, options) {
   var context = {
@@ -11131,7 +10781,7 @@ var tokenHandlerMap = {
     var varRef = calc.negate(reference);
     return {
       cssVars: properties.cssVars,
-      cssMap: _extends$T({}, properties.cssMap, {
+      cssMap: _extends$K({}, properties.cssMap, {
         [negativeLookupKey]: {
           value: "" + negativeValue,
           var: "" + variable,
@@ -11162,7 +10812,7 @@ var tokenHandlerMap = {
   }
 };
 
-function _objectWithoutPropertiesLoose$v(source, excluded) {
+function _objectWithoutPropertiesLoose$o(source, excluded) {
   if (source == null) return {};
   var target = {};
   var sourceKeys = Object.keys(source);
@@ -11182,13 +10832,13 @@ function extractTokens(theme) {
   return pick$1(theme, _tokens);
 }
 function omitVars(rawTheme) {
-  var cleanTheme = _objectWithoutPropertiesLoose$v(rawTheme, ["__cssMap", "__cssVars", "__breakpoints"]);
+  var cleanTheme = _objectWithoutPropertiesLoose$o(rawTheme, ["__cssMap", "__cssVars", "__breakpoints"]);
 
   return cleanTheme;
 }
 
-function _extends$S() {
-  _extends$S = Object.assign || function (target) {
+function _extends$J() {
+  _extends$J = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -11202,7 +10852,7 @@ function _extends$S() {
     return target;
   };
 
-  return _extends$S.apply(this, arguments);
+  return _extends$J.apply(this, arguments);
 }
 function toCSSVar(rawTheme) {
   var _theme$config;
@@ -11242,7 +10892,7 @@ function toCSSVar(rawTheme) {
     "--chakra-space-y-reverse": "0"
   };
   Object.assign(theme, {
-    __cssVars: _extends$S({}, defaultCssVars, cssVars),
+    __cssVars: _extends$J({}, defaultCssVars, cssVars),
     __cssMap: cssMap,
     __breakpoints: analyzeBreakpoints(theme.breakpoints)
   });
@@ -11535,8 +11185,8 @@ function omitThemingProps(props) {
   return omit$3(props, ["styleConfig", "size", "variant", "colorScheme"]);
 }
 
-function _extends$R() {
-  _extends$R = Object.assign || function (target) {
+function _extends$I() {
+  _extends$I = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -11550,12 +11200,12 @@ function _extends$R() {
     return target;
   };
 
-  return _extends$R.apply(this, arguments);
+  return _extends$I.apply(this, arguments);
 }
 function useChakra() {
   var colorModeResult = useColorMode();
   var theme = useTheme();
-  return _extends$R({}, colorModeResult, {
+  return _extends$I({}, colorModeResult, {
     theme
   });
 }
@@ -11580,7 +11230,7 @@ var isPropValid = /* #__PURE__ */memoize$2(function (prop) {
 /* Z+1 */
 );
 
-var isBrowser$5 = typeof document !== 'undefined';
+var isBrowser$4 = typeof document !== 'undefined';
 
 function getRegisteredStyles(registered, registeredStyles, classNames) {
   var rawClassName = '';
@@ -11606,7 +11256,7 @@ var insertStyles = function insertStyles(cache, serialized, isStringTag) {
   // in node since emotion-server relies on whether a style is in
   // the registered cache to know whether a style is global or not
   // also, note that this check will be dead code eliminated in the browser
-  isBrowser$5 === false && cache.compat !== undefined) && cache.registered[className] === undefined) {
+  isBrowser$4 === false && cache.compat !== undefined) && cache.registered[className] === undefined) {
     cache.registered[className] = serialized.styles;
   }
 
@@ -11617,14 +11267,14 @@ var insertStyles = function insertStyles(cache, serialized, isStringTag) {
     do {
       var maybeStyles = cache.insert(serialized === current ? "." + className : '', current, cache.sheet, true);
 
-      if (!isBrowser$5 && maybeStyles !== undefined) {
+      if (!isBrowser$4 && maybeStyles !== undefined) {
         stylesForSSR += maybeStyles;
       }
 
       current = current.next;
     } while (current !== undefined);
 
-    if (!isBrowser$5 && stylesForSSR.length !== 0) {
+    if (!isBrowser$4 && stylesForSSR.length !== 0) {
       return stylesForSSR;
     }
   }
@@ -12074,7 +11724,7 @@ var composeShouldForwardProps = function composeShouldForwardProps(tag, options,
 };
 
 var ILLEGAL_ESCAPE_SEQUENCE_ERROR = "You have illegal escape sequence in your template literal, most likely inside content's property value.\nBecause you write your CSS inside a JavaScript string you actually have to do double escaping, so for example \"content: '\\00d7';\" should become \"content: '\\\\00d7';\".\nYou can read more about this here:\nhttps://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#ES2018_revision_of_illegal_escape_sequences";
-var isBrowser$4 = typeof document !== 'undefined';
+var isBrowser$3 = typeof document !== 'undefined';
 
 var createStyled = function createStyled(tag, options) {
   if (process.env.NODE_ENV !== 'production') {
@@ -12171,7 +11821,7 @@ var createStyled = function createStyled(tag, options) {
       newProps.ref = ref;
       var ele = /*#__PURE__*/React.createElement(finalTag, newProps);
 
-      if (!isBrowser$4 && rules !== undefined) {
+      if (!isBrowser$3 && rules !== undefined) {
         var _ref;
 
         var serializedNames = serialized.name;
@@ -12207,7 +11857,7 @@ var createStyled = function createStyled(tag, options) {
     });
 
     Styled.withComponent = function (nextTag, nextOptions) {
-      return createStyled(nextTag, _extends$X({}, options, nextOptions, {
+      return createStyled(nextTag, _extends$N({}, options, nextOptions, {
         shouldForwardProp: composeShouldForwardProps(Styled, nextOptions, true)
       })).apply(void 0, styles);
     };
@@ -12240,7 +11890,7 @@ var allPropNames = new Set([...propNames, "textStyle", "layerStyle", "apply", "i
 var validHTMLProps = new Set(["htmlWidth", "htmlHeight", "htmlSize"]);
 var shouldForwardProp = prop => validHTMLProps.has(prop) || !allPropNames.has(prop);
 
-function _objectWithoutPropertiesLoose$u(source, excluded) {
+function _objectWithoutPropertiesLoose$n(source, excluded) {
   if (source == null) return {};
   var target = {};
   var sourceKeys = Object.keys(source);
@@ -12278,7 +11928,7 @@ var toCSSObject = _ref => {
       __css,
       sx
     } = props,
-        rest = _objectWithoutPropertiesLoose$u(props, ["theme", "css", "__css", "sx"]);
+        rest = _objectWithoutPropertiesLoose$n(props, ["theme", "css", "__css", "sx"]);
 
     var styleProps = objectFilter(rest, (_, prop) => isStyleProp(prop));
     var finalBaseStyle = runIfFn(baseStyle, props);
@@ -12292,7 +11942,7 @@ function styled(component, options) {
       {
     baseStyle
   } = _ref2,
-      styledOptions = _objectWithoutPropertiesLoose$u(_ref2, ["baseStyle"]);
+      styledOptions = _objectWithoutPropertiesLoose$n(_ref2, ["baseStyle"]);
 
   if (!styledOptions.shouldForwardProp) {
     styledOptions.shouldForwardProp = shouldForwardProp;
@@ -12316,7 +11966,7 @@ function forwardRef$2(component) {
   return /*#__PURE__*/React__namespace.forwardRef(component);
 }
 
-function _objectWithoutPropertiesLoose$t(source, excluded) {
+function _objectWithoutPropertiesLoose$m(source, excluded) {
   if (source == null) return {};
   var target = {};
   var sourceKeys = Object.keys(source);
@@ -12344,7 +11994,7 @@ function useStyleConfig(themeKey, props, opts) {
   var {
     styleConfig: styleConfigProp
   } = props,
-      rest = _objectWithoutPropertiesLoose$t(props, ["styleConfig"]);
+      rest = _objectWithoutPropertiesLoose$m(props, ["styleConfig"]);
 
   var {
     theme,
@@ -13747,7 +13397,7 @@ function isObject$3(value) {
 function isEmptyObject$1(value) {
   return isObject$3(value) && Object.keys(value).length === 0;
 }
-var __DEV__$c = process.env.NODE_ENV !== "production";
+var __DEV__$8 = process.env.NODE_ENV !== "production";
 process.env.NODE_ENV === "test";
 
 /**
@@ -13796,7 +13446,7 @@ var memoize$1 = fn => {
 var memoizedGet = memoize$1(get$2);
 
 /* eslint-disable no-nested-ternary */
-function once$5(fn) {
+function once$4(fn) {
   var result;
   return function func() {
     if (fn) {
@@ -13811,13 +13461,13 @@ function once$5(fn) {
     return result;
   };
 }
-var warn$4 = once$5(options => () => {
+var warn$3 = once$4(options => () => {
   var {
     condition,
     message
   } = options;
 
-  if (condition && __DEV__$c) {
+  if (condition && __DEV__$8) {
     console.warn(message);
   }
 });
@@ -13945,8 +13595,8 @@ function orient(options) {
   return orientation === "vertical" ? vertical : horizontal;
 }
 
-function _extends$Q() {
-  _extends$Q = Object.assign || function (target) {
+function _extends$H() {
+  _extends$H = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -13960,14 +13610,14 @@ function _extends$Q() {
     return target;
   };
 
-  return _extends$Q.apply(this, arguments);
+  return _extends$H.apply(this, arguments);
 }
 var createBreakpoints = config => {
-  warn$4({
+  warn$3({
     condition: true,
     message: ["[chakra-ui]: createBreakpoints(...) will be deprecated pretty soon", "simply pass the breakpoints as an object. Remove the createBreakpoint(..) call"].join("")
   });
-  return _extends$Q({
+  return _extends$H({
     base: "0em"
   }, config);
 };
@@ -14064,7 +13714,7 @@ function variantSolid$3(props) {
   };
 }
 
-var variants$e = {
+var variants$b = {
   subtle: variantSubtle$1,
   "left-accent": variantLeftAccent,
   "top-accent": variantTopAccent,
@@ -14077,7 +13727,7 @@ var defaultProps$r = {
 var Alert = {
   parts: parts$m,
   baseStyle: baseStyle$C,
-  variants: variants$e,
+  variants: variants$b,
   defaultProps: defaultProps$r
 };
 
@@ -14121,8 +13771,8 @@ var spacing$1 = {
  * Spacing tokens are a part of DefaultChakraTheme['sizes']
  */
 
-function _extends$P() {
-  _extends$P = Object.assign || function (target) {
+function _extends$G() {
+  _extends$G = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -14136,7 +13786,7 @@ function _extends$P() {
     return target;
   };
 
-  return _extends$P.apply(this, arguments);
+  return _extends$G.apply(this, arguments);
 }
 var largeSizes = {
   max: "max-content",
@@ -14164,7 +13814,7 @@ var container = {
   xl: "1280px"
 };
 
-var sizes$l = _extends$P({}, spacing$1, largeSizes, {
+var sizes$l = _extends$G({}, spacing$1, largeSizes, {
   container
 });
 
@@ -14296,7 +13946,7 @@ function variantOutline$2(props) {
   };
 }
 
-var variants$d = {
+var variants$a = {
   solid: variantSolid$2,
   subtle: variantSubtle,
   outline: variantOutline$2
@@ -14307,7 +13957,7 @@ var defaultProps$p = {
 };
 var Badge = {
   baseStyle: baseStyle$A,
-  variants: variants$d,
+  variants: variants$a,
   defaultProps: defaultProps$p
 };
 
@@ -14335,8 +13985,8 @@ var Breadcrumb = {
   baseStyle: baseStyle$z
 };
 
-function _extends$O() {
-  _extends$O = Object.assign || function (target) {
+function _extends$F() {
+  _extends$F = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -14350,7 +14000,7 @@ function _extends$O() {
     return target;
   };
 
-  return _extends$O.apply(this, arguments);
+  return _extends$F.apply(this, arguments);
 }
 var baseStyle$y = {
   lineHeight: "1.2",
@@ -14410,7 +14060,7 @@ function variantOutline$1(props) {
     colorScheme: c
   } = props;
   var borderColor = mode("gray.200", "whiteAlpha.300")(props);
-  return _extends$O({
+  return _extends$F({
     border: "1px solid",
     borderColor: c === "gray" ? borderColor : "currentColor"
   }, variantGhost(props));
@@ -14507,7 +14157,7 @@ var variantUnstyled$2 = {
   m: 0,
   p: 0
 };
-var variants$c = {
+var variants$9 = {
   ghost: variantGhost,
   outline: variantOutline$1,
   solid: variantSolid$1,
@@ -14547,7 +14197,7 @@ var defaultProps$o = {
 };
 var Button = {
   baseStyle: baseStyle$y,
-  variants: variants$c,
+  variants: variants$9,
   sizes: sizes$j,
   defaultProps: defaultProps$o
 };
@@ -14708,14 +14358,14 @@ var sizes$h = {
 var defaultProps$m = {
   size: "md"
 };
-var CloseButton$1 = {
+var CloseButton = {
   baseStyle: baseStyle$w,
   sizes: sizes$h,
   defaultProps: defaultProps$m
 };
 
 var {
-  variants: variants$b,
+  variants: variants$8,
   defaultProps: defaultProps$l
 } = Badge;
 var baseStyle$v = {
@@ -14726,7 +14376,7 @@ var baseStyle$v = {
 };
 var Code = {
   baseStyle: baseStyle$v,
-  variants: variants$b,
+  variants: variants$8,
   defaultProps: defaultProps$l
 };
 
@@ -14750,7 +14400,7 @@ var variantSolid = {
 var variantDashed = {
   borderStyle: "dashed"
 };
-var variants$a = {
+var variants$7 = {
   solid: variantSolid,
   dashed: variantDashed
 };
@@ -14759,7 +14409,7 @@ var defaultProps$k = {
 };
 var Divider = {
   baseStyle: baseStyle$t,
-  variants: variants$a,
+  variants: variants$7,
   defaultProps: defaultProps$k
 };
 
@@ -14875,15 +14525,15 @@ var sizes$g = {
 var defaultProps$j = {
   size: "md"
 };
-var Modal$1 = {
+var Modal = {
   parts: parts$i,
   baseStyle: baseStyle$s,
   sizes: sizes$g,
   defaultProps: defaultProps$j
 };
 
-function _extends$N() {
-  _extends$N = Object.assign || function (target) {
+function _extends$E() {
+  _extends$E = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -14897,9 +14547,9 @@ function _extends$N() {
     return target;
   };
 
-  return _extends$N.apply(this, arguments);
+  return _extends$E.apply(this, arguments);
 }
-var parts$h = Modal$1.parts;
+var parts$h = Modal.parts;
 /**
  * Since the `maxWidth` prop references theme.sizes internally,
  * we can leverage that to size our modals.
@@ -14936,7 +14586,7 @@ function baseStyleDialog(props) {
   var {
     isFullHeight
   } = props;
-  return _extends$N({}, isFullHeight && {
+  return _extends$E({}, isFullHeight && {
     height: "100vh"
   }, {
     zIndex: "modal",
@@ -15129,7 +14779,7 @@ var baseStyle$m = {
     transitionDuration: "normal"
   }
 };
-var size$1 = {
+var size = {
   lg: {
     fontSize: "lg",
     px: 4,
@@ -15157,20 +14807,20 @@ var size$1 = {
 };
 var sizes$d = {
   lg: {
-    field: size$1.lg,
-    addon: size$1.lg
+    field: size.lg,
+    addon: size.lg
   },
   md: {
-    field: size$1.md,
-    addon: size$1.md
+    field: size.md,
+    addon: size.md
   },
   sm: {
-    field: size$1.sm,
-    addon: size$1.sm
+    field: size.sm,
+    addon: size.sm
   },
   xs: {
-    field: size$1.xs,
-    addon: size$1.xs
+    field: size.xs,
+    addon: size.xs
   }
 };
 
@@ -15317,7 +14967,7 @@ var variantUnstyled$1 = {
     height: "auto"
   }
 };
-var variants$9 = {
+var variants$6 = {
   outline: variantOutline,
   filled: variantFilled,
   flushed: variantFlushed,
@@ -15331,7 +14981,7 @@ var Input$2 = {
   parts: parts$e,
   baseStyle: baseStyle$m,
   sizes: sizes$d,
-  variants: variants$9,
+  variants: variants$6,
   defaultProps: defaultProps$g
 };
 
@@ -15524,8 +15174,8 @@ var typography = {
 
 var _Input$baseStyle;
 
-function _extends$M() {
-  _extends$M = Object.assign || function (target) {
+function _extends$D() {
+  _extends$D = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -15539,11 +15189,11 @@ function _extends$M() {
     return target;
   };
 
-  return _extends$M.apply(this, arguments);
+  return _extends$D.apply(this, arguments);
 }
 var parts$b = ["root", "field", "stepper", "stepperGroup"];
 var {
-  variants: variants$8,
+  variants: variants$5,
   defaultProps: defaultProps$f
 } = Input$2;
 var baseStyleRoot$1 = {
@@ -15587,7 +15237,7 @@ function getSize(size) {
   };
   var resolvedFontSize = typography.fontSizes[sizeStyle.field.fontSize];
   return {
-    field: _extends$M({}, sizeStyle.field, {
+    field: _extends$D({}, sizeStyle.field, {
       paddingInlineEnd: "var(--number-input-field-padding)",
       verticalAlign: "top"
     }),
@@ -15615,12 +15265,12 @@ var NumberInput$1 = {
   parts: parts$b,
   baseStyle: baseStyle$h,
   sizes: sizes$c,
-  variants: variants$8,
+  variants: variants$5,
   defaultProps: defaultProps$f
 };
 
-function _extends$L() {
-  _extends$L = Object.assign || function (target) {
+function _extends$C() {
+  _extends$C = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -15634,10 +15284,10 @@ function _extends$L() {
     return target;
   };
 
-  return _extends$L.apply(this, arguments);
+  return _extends$C.apply(this, arguments);
 }
 
-var baseStyle$g = _extends$L({}, Input$2.baseStyle.field, {
+var baseStyle$g = _extends$C({}, Input$2.baseStyle.field, {
   textAlign: "center"
 });
 
@@ -15667,7 +15317,7 @@ var sizes$b = {
     borderRadius: "sm"
   }
 };
-var variants$7 = {
+var variants$4 = {
   outline: props => Input$2.variants.outline(props).field,
   flushed: props => Input$2.variants.flushed(props).field,
   filled: props => Input$2.variants.filled(props).field,
@@ -15677,7 +15327,7 @@ var defaultProps$e = Input$2.defaultProps;
 var PinInput = {
   baseStyle: baseStyle$g,
   sizes: sizes$b,
-  variants: variants$7,
+  variants: variants$4,
   defaultProps: defaultProps$e
 };
 
@@ -15736,8 +15386,8 @@ var Popover = {
   baseStyle: baseStyle$f
 };
 
-function _extends$K() {
-  _extends$K = Object.assign || function (target) {
+function _extends$B() {
+  _extends$B = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -15751,7 +15401,7 @@ function _extends$K() {
     return target;
   };
 
-  return _extends$K.apply(this, arguments);
+  return _extends$B.apply(this, arguments);
 }
 var parts$9 = ["track", "filledTrack", "label"];
 
@@ -15766,7 +15416,7 @@ function filledStyle(props) {
   var bgColor = mode(c + ".500", c + ".200")(props);
   var gradient = "linear-gradient(\n    to right,\n    transparent 0%,\n    " + getColor(t, bgColor) + " 50%,\n    transparent 100%\n  )";
   var addStripe = !isIndeterminate && hasStripe;
-  return _extends$K({}, addStripe && stripeStyle, isIndeterminate ? {
+  return _extends$B({}, addStripe && stripeStyle, isIndeterminate ? {
     bgImage: gradient
   } : {
     bgColor
@@ -15787,7 +15437,7 @@ function baseStyleTrack$2(props) {
 }
 
 function baseStyleFilledTrack$1(props) {
-  return _extends$K({
+  return _extends$B({
     transitionProperty: "common",
     transitionDuration: "slow"
   }, filledStyle(props));
@@ -15832,8 +15482,8 @@ var Progress = {
   defaultProps: defaultProps$d
 };
 
-function _extends$J() {
-  _extends$J = Object.assign || function (target) {
+function _extends$A() {
+  _extends$A = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -15847,7 +15497,7 @@ function _extends$J() {
     return target;
   };
 
-  return _extends$J.apply(this, arguments);
+  return _extends$A.apply(this, arguments);
 }
 var parts$8 = ["container", "control", "label"];
 
@@ -15855,9 +15505,9 @@ function baseStyleControl(props) {
   var {
     control
   } = Checkbox.baseStyle(props);
-  return _extends$J({}, control, {
+  return _extends$A({}, control, {
     borderRadius: "full",
-    _checked: _extends$J({}, control["_checked"], {
+    _checked: _extends$A({}, control["_checked"], {
       _before: {
         content: "\"\"",
         display: "inline-block",
@@ -15916,8 +15566,8 @@ var Radio = {
   defaultProps: defaultProps$c
 };
 
-function _extends$I() {
-  _extends$I = Object.assign || function (target) {
+function _extends$z() {
+  _extends$z = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -15931,12 +15581,12 @@ function _extends$I() {
     return target;
   };
 
-  return _extends$I.apply(this, arguments);
+  return _extends$z.apply(this, arguments);
 }
 var parts$7 = ["field", "icon"];
 
 function baseStyleField(props) {
-  return _extends$I({}, Input$2.baseStyle.field, {
+  return _extends$z({}, Input$2.baseStyle.field, {
     appearance: "none",
     paddingBottom: "1px",
     lineHeight: "normal",
@@ -15978,7 +15628,7 @@ var Select$1 = {
   defaultProps: Input$2.defaultProps
 };
 
-var fade = (startColor, endColor) => keyframes$2({
+var fade = (startColor, endColor) => keyframes({
   from: {
     borderColor: startColor,
     background: startColor
@@ -16030,8 +15680,8 @@ var SkipLink = {
   baseStyle: baseStyle$a
 };
 
-function _extends$H() {
-  _extends$H = Object.assign || function (target) {
+function _extends$y() {
+  _extends$y = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -16045,7 +15695,7 @@ function _extends$H() {
     return target;
   };
 
-  return _extends$H.apply(this, arguments);
+  return _extends$y.apply(this, arguments);
 }
 var parts$6 = ["container", "thumb", "track", "filledTrack"];
 
@@ -16073,7 +15723,7 @@ var baseStyleContainer$1 = props => {
   var {
     orientation
   } = props;
-  return _extends$H({
+  return _extends$y({
     _disabled: {
       opacity: 0.6,
       cursor: "default",
@@ -16101,7 +15751,7 @@ function baseStyleTrack$1(props) {
 }
 
 function baseStyleThumb$1(props) {
-  return _extends$H({
+  return _extends$y({
     zIndex: 1,
     borderRadius: "full",
     bg: "white",
@@ -16364,8 +16014,8 @@ var Switch$1 = {
   defaultProps: defaultProps$8
 };
 
-function _extends$G() {
-  _extends$G = Object.assign || function (target) {
+function _extends$x() {
+  _extends$x = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -16379,7 +16029,7 @@ function _extends$G() {
     return target;
   };
 
-  return _extends$G.apply(this, arguments);
+  return _extends$x.apply(this, arguments);
 }
 var parts$3 = ["table", "thead", "tbody", "tr", "th", "td", "caption"];
 var baseStyle$5 = {
@@ -16416,12 +16066,12 @@ var simpleVariant = props => {
     colorScheme: c
   } = props;
   return {
-    th: _extends$G({
+    th: _extends$x({
       color: mode("gray.600", "gray.400")(props),
       borderBottom: "1px",
       borderColor: mode(c + ".100", c + ".700")(props)
     }, numericStyles),
-    td: _extends$G({
+    td: _extends$x({
       borderBottom: "1px",
       borderColor: mode(c + ".100", c + ".700")(props)
     }, numericStyles),
@@ -16445,12 +16095,12 @@ var stripedVariant = props => {
     colorScheme: c
   } = props;
   return {
-    th: _extends$G({
+    th: _extends$x({
       color: mode("gray.600", "gray.400")(props),
       borderBottom: "1px",
       borderColor: mode(c + ".100", c + ".700")(props)
     }, numericStyles),
-    td: _extends$G({
+    td: _extends$x({
       borderBottom: "1px",
       borderColor: mode(c + ".100", c + ".700")(props)
     }, numericStyles),
@@ -16482,7 +16132,7 @@ var stripedVariant = props => {
   };
 };
 
-var variants$6 = {
+var variants$3 = {
   simple: simpleVariant,
   striped: stripedVariant,
   unstyled: {}
@@ -16552,7 +16202,7 @@ var defaultProps$7 = {
 var Table = {
   parts: parts$3,
   baseStyle: baseStyle$5,
-  variants: variants$6,
+  variants: variants$3,
   sizes: sizes$3,
   defaultProps: defaultProps$7
 };
@@ -16755,7 +16405,7 @@ function variantSolidRounded(props) {
 }
 
 var variantUnstyled = {};
-var variants$5 = {
+var variants$2 = {
   line: variantLine,
   enclosed: variantEnclosed,
   "enclosed-colored": variantEnclosedColored,
@@ -16772,7 +16422,7 @@ var Tabs = {
   parts: parts$2,
   baseStyle: baseStyle$4,
   sizes: sizes$2,
-  variants: variants$5,
+  variants: variants$2,
   defaultProps: defaultProps$6
 };
 
@@ -16850,7 +16500,7 @@ var sizes$1 = {
     }
   }
 };
-var variants$4 = {
+var variants$1 = {
   subtle: props => ({
     container: Badge.variants.subtle(props)
   }),
@@ -16868,14 +16518,14 @@ var defaultProps$5 = {
 };
 var Tag = {
   parts: parts$1,
-  variants: variants$4,
+  variants: variants$1,
   baseStyle: baseStyle$3,
   sizes: sizes$1,
   defaultProps: defaultProps$5
 };
 
-function _extends$F() {
-  _extends$F = Object.assign || function (target) {
+function _extends$w() {
+  _extends$w = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -16889,17 +16539,17 @@ function _extends$F() {
     return target;
   };
 
-  return _extends$F.apply(this, arguments);
+  return _extends$w.apply(this, arguments);
 }
 
-var baseStyle$2 = _extends$F({}, Input$2.baseStyle.field, {
+var baseStyle$2 = _extends$w({}, Input$2.baseStyle.field, {
   paddingY: "8px",
   minHeight: "80px",
   lineHeight: "short",
   verticalAlign: "top"
 });
 
-var variants$3 = {
+var variants = {
   outline: props => Input$2.variants.outline(props).field,
   flushed: props => Input$2.variants.flushed(props).field,
   filled: props => Input$2.variants.filled(props).field,
@@ -16918,7 +16568,7 @@ var defaultProps$4 = {
 var Textarea$1 = {
   baseStyle: baseStyle$2,
   sizes,
-  variants: variants$3,
+  variants,
   defaultProps: defaultProps$4
 };
 
@@ -16979,7 +16629,7 @@ var components$1 = {
   Breadcrumb,
   Button,
   Checkbox,
-  CloseButton: CloseButton$1,
+  CloseButton,
   Code,
   Container,
   Divider,
@@ -16993,7 +16643,7 @@ var components$1 = {
   Link: Link$1,
   List,
   Menu: Menu$1,
-  Modal: Modal$1,
+  Modal,
   NumberInput: NumberInput$1,
   PinInput,
   Popover,
@@ -17343,8 +16993,8 @@ var blur = {
   "3xl": "64px"
 };
 
-function _extends$E() {
-  _extends$E = Object.assign || function (target) {
+function _extends$v() {
+  _extends$v = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -17358,10 +17008,10 @@ function _extends$E() {
     return target;
   };
 
-  return _extends$E.apply(this, arguments);
+  return _extends$v.apply(this, arguments);
 }
 
-var foundations = _extends$E({
+var foundations = _extends$v({
   breakpoints,
   zIndices,
   radii,
@@ -17395,8 +17045,8 @@ var styles = {
   })
 };
 
-function _extends$D() {
-  _extends$D = Object.assign || function (target) {
+function _extends$u() {
+  _extends$u = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -17410,7 +17060,7 @@ function _extends$D() {
     return target;
   };
 
-  return _extends$D.apply(this, arguments);
+  return _extends$u.apply(this, arguments);
 }
 var direction = "ltr";
 var config = {
@@ -17418,7 +17068,7 @@ var config = {
   initialColorMode: "light",
   cssVarPrefix: "chakra"
 };
-var theme = _extends$D({
+var theme = _extends$u({
   direction
 }, foundations, {
   components: components$1,
@@ -17427,13 +17077,13 @@ var theme = _extends$D({
 });
 
 // Number assertions
-var __DEV__$b = process.env.NODE_ENV !== "production";
+var __DEV__$7 = process.env.NODE_ENV !== "production";
 process.env.NODE_ENV === "test";
 
 function canUseDOM$4() {
   return !!(typeof window !== "undefined" && window.document && window.document.createElement);
 }
-var isBrowser$3 = canUseDOM$4();
+var isBrowser$2 = canUseDOM$4();
 
 var doc = {
   body: {
@@ -17492,7 +17142,7 @@ var doc = {
 };
 var ssrDocument = doc;
 
-var noop$5 = () => {};
+var noop$4 = () => {};
 
 var win = {
   document: ssrDocument,
@@ -17502,8 +17152,8 @@ var win = {
   CustomEvent: function CustomEvent() {
     return this;
   },
-  addEventListener: noop$5,
-  removeEventListener: noop$5,
+  addEventListener: noop$4,
+  removeEventListener: noop$4,
 
   getComputedStyle() {
     return {
@@ -17517,8 +17167,8 @@ var win = {
   matchMedia() {
     return {
       matches: false,
-      addListener: noop$5,
-      removeListener: noop$5
+      addListener: noop$4,
+      removeListener: noop$4
     };
   },
 
@@ -17537,9 +17187,9 @@ var win = {
   },
 
   setTimeout: () => 0,
-  clearTimeout: noop$5,
+  clearTimeout: noop$4,
   setInterval: () => 0,
-  clearInterval: noop$5
+  clearInterval: noop$4
 };
 var ssrWindow = win;
 
@@ -17547,13 +17197,13 @@ var mockEnv = {
   window: ssrWindow,
   document: ssrDocument
 };
-var defaultEnv = isBrowser$3 ? {
+var defaultEnv = isBrowser$2 ? {
   window,
   document
 } : mockEnv;
 var EnvironmentContext = /*#__PURE__*/React.createContext(defaultEnv);
 
-if (__DEV__$b) {
+if (__DEV__$7) {
   EnvironmentContext.displayName = "EnvironmentContext";
 }
 function EnvironmentProvider(props) {
@@ -17584,7 +17234,7 @@ function EnvironmentProvider(props) {
   }));
 }
 
-if (__DEV__$b) {
+if (__DEV__$7) {
   EnvironmentProvider.displayName = "EnvironmentProvider";
 }
 
@@ -17620,9621 +17270,7 @@ var ChakraProvider = props => {
 };
 
 // Number assertions
-function isNumber(value) {
-  return typeof value === "number";
-}
-var __DEV__$a = process.env.NODE_ENV !== "production";
-process.env.NODE_ENV === "test";
-
-var cx$6 = function cx() {
-  for (var _len = arguments.length, classNames = new Array(_len), _key = 0; _key < _len; _key++) {
-    classNames[_key] = arguments[_key];
-  }
-
-  return classNames.filter(Boolean).join(" ");
-};
-
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-
-/* global Reflect, Promise */
-var extendStatics = function (d, b) {
-  extendStatics = Object.setPrototypeOf || {
-    __proto__: []
-  } instanceof Array && function (d, b) {
-    d.__proto__ = b;
-  } || function (d, b) {
-    for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p];
-  };
-
-  return extendStatics(d, b);
-};
-
-function __extends(d, b) {
-  if (typeof b !== "function" && b !== null) throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-  extendStatics(d, b);
-
-  function __() {
-    this.constructor = d;
-  }
-
-  d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
-var __assign$4 = function () {
-  __assign$4 = Object.assign || function __assign(t) {
-    for (var s, i = 1, n = arguments.length; i < n; i++) {
-      s = arguments[i];
-
-      for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-    }
-
-    return t;
-  };
-
-  return __assign$4.apply(this, arguments);
-};
-function __rest$3(s, e) {
-  var t = {};
-
-  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
-
-  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
-  }
-  return t;
-}
-function __read(o, n) {
-  var m = typeof Symbol === "function" && o[Symbol.iterator];
-  if (!m) return o;
-  var i = m.call(o),
-      r,
-      ar = [],
-      e;
-
-  try {
-    while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
-  } catch (error) {
-    e = {
-      error: error
-    };
-  } finally {
-    try {
-      if (r && !r.done && (m = i["return"])) m.call(i);
-    } finally {
-      if (e) throw e.error;
-    }
-  }
-
-  return ar;
-}
-function __spreadArray$1(to, from) {
-  for (var i = 0, il = from.length, j = to.length; i < il; i++, j++) to[j] = from[i];
-
-  return to;
-}
-
-var createDefinition = function (propNames) {
-  return {
-    isEnabled: function (props) {
-      return propNames.some(function (name) {
-        return !!props[name];
-      });
-    }
-  };
-};
-
-var featureDefinitions = {
-  measureLayout: createDefinition(["layout", "layoutId", "drag", "_layoutResetTransform"]),
-  animation: createDefinition(["animate", "exit", "variants", "whileHover", "whileTap", "whileFocus", "whileDrag"]),
-  exit: createDefinition(["exit"]),
-  drag: createDefinition(["drag", "dragControls"]),
-  focus: createDefinition(["whileFocus"]),
-  hover: createDefinition(["whileHover", "onHoverStart", "onHoverEnd"]),
-  tap: createDefinition(["whileTap", "onTap", "onTapStart", "onTapCancel"]),
-  pan: createDefinition(["onPan", "onPanStart", "onPanSessionStart", "onPanEnd"]),
-  layoutAnimation: createDefinition(["layout", "layoutId"])
-};
-
-function loadFeatures(features) {
-  for (var key in features) {
-    var Component = features[key];
-    if (Component !== null) featureDefinitions[key].Component = Component;
-  }
-}
-
-var warning$1 = function () {};
-
-var invariant = function () {};
-
-if (process.env.NODE_ENV !== 'production') {
-  warning$1 = function (check, message) {
-    if (!check && typeof console !== 'undefined') {
-      console.warn(message);
-    }
-  };
-
-  invariant = function (check, message) {
-    if (!check) {
-      throw new Error(message);
-    }
-  };
-}
-
-var LazyContext = React.createContext({
-  strict: false
-});
-
-var featureNames = Object.keys(featureDefinitions);
-var numFeatures = featureNames.length;
-/**
- * Load features via renderless components based on the provided MotionProps.
- */
-
-function useFeatures(props, visualElement, preloadedFeatures) {
-  var features = [];
-  var lazyContext = React.useContext(LazyContext);
-  if (!visualElement) return null;
-  /**
-   * If we're in development mode, check to make sure we're not rendering a motion component
-   * as a child of LazyMotion, as this will break the file-size benefits of using it.
-   */
-
-  if (process.env.NODE_ENV !== "production" && preloadedFeatures && lazyContext.strict) {
-    invariant(false, "You have rendered a `motion` component within a `LazyMotion` component. This will break tree shaking. Import and render a `m` component instead.");
-  }
-
-  for (var i = 0; i < numFeatures; i++) {
-    var name_1 = featureNames[i];
-    var _a = featureDefinitions[name_1],
-        isEnabled = _a.isEnabled,
-        Component = _a.Component;
-    /**
-     * It might be possible in the future to use this moment to
-     * dynamically request functionality. In initial tests this
-     * was producing a lot of duplication amongst bundles.
-     */
-
-    if (isEnabled(props) && Component) {
-      features.push(React__namespace.createElement(Component, __assign$4({
-        key: name_1
-      }, props, {
-        visualElement: visualElement
-      })));
-    }
-  }
-
-  return features;
-}
-
-/**
- * @public
- */
-
-var MotionConfigContext = React.createContext({
-  transformPagePoint: function (p) {
-    return p;
-  },
-  isStatic: false
-});
-
-var MotionContext = React.createContext({});
-
-function useVisualElementContext() {
-  return React.useContext(MotionContext).visualElement;
-}
-
-/**
- * @public
- */
-
-var PresenceContext = React.createContext(null);
-
-/**
- * Creates a constant value over the lifecycle of a component.
- *
- * Even if `useMemo` is provided an empty array as its final argument, it doesn't offer
- * a guarantee that it won't re-run for performance reasons later on. By using `useConstant`
- * you can ensure that initialisers don't execute twice or more.
- */
-
-function useConstant(init) {
-  var ref = React.useRef(null);
-
-  if (ref.current === null) {
-    ref.current = init();
-  }
-
-  return ref.current;
-}
-
-/**
- * When a component is the child of `AnimatePresence`, it can use `usePresence`
- * to access information about whether it's still present in the React tree.
- *
- * ```jsx
- * import { usePresence } from "framer-motion"
- *
- * export const Component = () => {
- *   const [isPresent, safeToRemove] = usePresence()
- *
- *   useEffect(() => {
- *     !isPresent && setTimeout(safeToRemove, 1000)
- *   }, [isPresent])
- *
- *   return <div />
- * }
- * ```
- *
- * If `isPresent` is `false`, it means that a component has been removed the tree, but
- * `AnimatePresence` won't really remove it until `safeToRemove` has been called.
- *
- * @public
- */
-
-function usePresence() {
-  var context = React.useContext(PresenceContext);
-  if (context === null) return [true, null];
-  var isPresent = context.isPresent,
-      onExitComplete = context.onExitComplete,
-      register = context.register; // It's safe to call the following hooks conditionally (after an early return) because the context will always
-  // either be null or non-null for the lifespan of the component.
-  // Replace with useOpaqueId when released in React
-
-  var id = useUniqueId();
-  React.useEffect(function () {
-    return register(id);
-  }, []);
-
-  var safeToRemove = function () {
-    return onExitComplete === null || onExitComplete === void 0 ? void 0 : onExitComplete(id);
-  };
-
-  return !isPresent && onExitComplete ? [false, safeToRemove] : [true];
-}
-
-function isPresent(context) {
-  return context === null ? true : context.isPresent;
-}
-
-var counter = 0;
-
-var incrementId = function () {
-  return counter++;
-};
-
-var useUniqueId = function () {
-  return useConstant(incrementId);
-};
-
-/**
- * @internal
- */
-
-var LayoutGroupContext = React.createContext(null);
-
-var isBrowser$2 = typeof window !== "undefined";
-
-var useIsomorphicLayoutEffect = isBrowser$2 ? React.useLayoutEffect : React.useEffect;
-
-function useLayoutId(_a) {
-  var layoutId = _a.layoutId;
-  var layoutGroupId = React.useContext(LayoutGroupContext);
-  return layoutGroupId && layoutId !== undefined ? layoutGroupId + "-" + layoutId : layoutId;
-}
-
-function useVisualElement(Component, visualState, props, createVisualElement) {
-  var config = React.useContext(MotionConfigContext);
-  var lazyContext = React.useContext(LazyContext);
-  var parent = useVisualElementContext();
-  var presenceContext = React.useContext(PresenceContext);
-  var layoutId = useLayoutId(props);
-  var visualElementRef = React.useRef(undefined);
-  /**
-   * If we haven't preloaded a renderer, check to see if we have one lazy-loaded
-   */
-
-  if (!createVisualElement) createVisualElement = lazyContext.renderer;
-
-  if (!visualElementRef.current && createVisualElement) {
-    visualElementRef.current = createVisualElement(Component, {
-      visualState: visualState,
-      parent: parent,
-      props: __assign$4(__assign$4({}, props), {
-        layoutId: layoutId
-      }),
-      presenceId: presenceContext === null || presenceContext === void 0 ? void 0 : presenceContext.id,
-      blockInitialAnimation: (presenceContext === null || presenceContext === void 0 ? void 0 : presenceContext.initial) === false
-    });
-  }
-
-  var visualElement = visualElementRef.current;
-  useIsomorphicLayoutEffect(function () {
-    if (!visualElement) return;
-    visualElement.setProps(__assign$4(__assign$4(__assign$4({}, config), props), {
-      layoutId: layoutId
-    }));
-    visualElement.isPresent = isPresent(presenceContext);
-    visualElement.isPresenceRoot = !parent || parent.presenceId !== (presenceContext === null || presenceContext === void 0 ? void 0 : presenceContext.id);
-    /**
-     * Fire a render to ensure the latest state is reflected on-screen.
-     */
-
-    visualElement.syncRender();
-  });
-  React.useEffect(function () {
-    var _a;
-
-    if (!visualElement) return;
-    /**
-     * In a future refactor we can replace the features-as-components and
-     * have this loop through them all firing "effect" listeners
-     */
-
-    (_a = visualElement.animationState) === null || _a === void 0 ? void 0 : _a.animateChanges();
-  });
-  useIsomorphicLayoutEffect(function () {
-    return function () {
-      return visualElement === null || visualElement === void 0 ? void 0 : visualElement.notifyUnmount();
-    };
-  }, []);
-  return visualElement;
-}
-
-function isRefObject(ref) {
-  return typeof ref === "object" && Object.prototype.hasOwnProperty.call(ref, "current");
-}
-
-/**
- * Creates a ref function that, when called, hydrates the provided
- * external ref and VisualElement.
- */
-
-function useMotionRef(visualState, visualElement, externalRef) {
-  return React.useCallback(function (instance) {
-    var _a;
-
-    instance && ((_a = visualState.mount) === null || _a === void 0 ? void 0 : _a.call(visualState, instance));
-
-    if (visualElement) {
-      instance ? visualElement.mount(instance) : visualElement.unmount();
-    }
-
-    if (externalRef) {
-      if (typeof externalRef === "function") {
-        externalRef(instance);
-      } else if (isRefObject(externalRef)) {
-        externalRef.current = instance;
-      }
-    }
-  },
-  /**
-   * Only pass a new ref callback to React if we've received a visual element
-   * factory. Otherwise we'll be mounting/remounting every time externalRef
-   * or other dependencies change.
-   */
-  [visualElement]);
-}
-
-/**
- * Decides if the supplied variable is an array of variant labels
- */
-function isVariantLabels(v) {
-  return Array.isArray(v);
-}
-/**
- * Decides if the supplied variable is variant label
- */
-
-
-function isVariantLabel(v) {
-  return typeof v === "string" || isVariantLabels(v);
-}
-/**
- * Creates an object containing the latest state of every MotionValue on a VisualElement
- */
-
-
-function getCurrent(visualElement) {
-  var current = {};
-  visualElement.forEachValue(function (value, key) {
-    return current[key] = value.get();
-  });
-  return current;
-}
-/**
- * Creates an object containing the latest velocity of every MotionValue on a VisualElement
- */
-
-
-function getVelocity$1(visualElement) {
-  var velocity = {};
-  visualElement.forEachValue(function (value, key) {
-    return velocity[key] = value.getVelocity();
-  });
-  return velocity;
-}
-
-function resolveVariantFromProps(props, definition, custom, currentValues, currentVelocity) {
-  var _a;
-
-  if (currentValues === void 0) {
-    currentValues = {};
-  }
-
-  if (currentVelocity === void 0) {
-    currentVelocity = {};
-  }
-
-  if (typeof definition === "string") {
-    definition = (_a = props.variants) === null || _a === void 0 ? void 0 : _a[definition];
-  }
-
-  return typeof definition === "function" ? definition(custom !== null && custom !== void 0 ? custom : props.custom, currentValues, currentVelocity) : definition;
-}
-
-function resolveVariant(visualElement, definition, custom) {
-  var props = visualElement.getProps();
-  return resolveVariantFromProps(props, definition, custom !== null && custom !== void 0 ? custom : props.custom, getCurrent(visualElement), getVelocity$1(visualElement));
-}
-
-function checkIfControllingVariants(props) {
-  var _a;
-
-  return typeof ((_a = props.animate) === null || _a === void 0 ? void 0 : _a.start) === "function" || isVariantLabel(props.initial) || isVariantLabel(props.animate) || isVariantLabel(props.whileHover) || isVariantLabel(props.whileDrag) || isVariantLabel(props.whileTap) || isVariantLabel(props.whileFocus) || isVariantLabel(props.exit);
-}
-
-function checkIfVariantNode(props) {
-  return Boolean(checkIfControllingVariants(props) || props.variants);
-}
-
-function getCurrentTreeVariants(props, context) {
-  if (checkIfControllingVariants(props)) {
-    var initial = props.initial,
-        animate = props.animate;
-    return {
-      initial: initial === false || isVariantLabel(initial) ? initial : undefined,
-      animate: isVariantLabel(animate) ? animate : undefined
-    };
-  }
-
-  return props.inherit !== false ? context : {};
-}
-
-function useCreateMotionContext(props, isStatic) {
-  var _a = getCurrentTreeVariants(props, React.useContext(MotionContext)),
-      initial = _a.initial,
-      animate = _a.animate;
-
-  return React.useMemo(function () {
-    return {
-      initial: initial,
-      animate: animate
-    };
-  },
-  /**
-   * Only break memoisation in static mode
-   */
-  isStatic ? [variantLabelsAsDependency(initial), variantLabelsAsDependency(animate)] : []);
-}
-
-function variantLabelsAsDependency(prop) {
-  return Array.isArray(prop) ? prop.join(" ") : prop;
-}
-
-/**
- * Create a `motion` component.
- *
- * This function accepts a Component argument, which can be either a string (ie "div"
- * for `motion.div`), or an actual React component.
- *
- * Alongside this is a config option which provides a way of rendering the provided
- * component "offline", or outside the React render cycle.
- *
- * @internal
- */
-
-function createMotionComponent(_a) {
-  var preloadedFeatures = _a.preloadedFeatures,
-      createVisualElement = _a.createVisualElement,
-      useRender = _a.useRender,
-      useVisualState = _a.useVisualState,
-      Component = _a.Component;
-  preloadedFeatures && loadFeatures(preloadedFeatures);
-
-  function MotionComponent(props, externalRef) {
-    /**
-     * If we're rendering in a static environment, we only visually update the component
-     * as a result of a React-rerender rather than interactions or animations. This
-     * means we don't need to load additional memory structures like VisualElement,
-     * or any gesture/animation features.
-     */
-    var isStatic = React.useContext(MotionConfigContext).isStatic;
-    var features = null;
-    /**
-     * Create the tree context. This is memoized and will only trigger renders
-     * when the current tree variant changes in static mode.
-     */
-
-    var context = useCreateMotionContext(props, isStatic);
-    /**
-     *
-     */
-
-    var visualState = useVisualState(props, isStatic);
-
-    if (!isStatic && isBrowser$2) {
-      /**
-       * Create a VisualElement for this component. A VisualElement provides a common
-       * interface to renderer-specific APIs (ie DOM/Three.js etc) as well as
-       * providing a way of rendering to these APIs outside of the React render loop
-       * for more performant animations and interactions
-       */
-      context.visualElement = useVisualElement(Component, visualState, props, createVisualElement);
-      /**
-       * Load Motion gesture and animation features. These are rendered as renderless
-       * components so each feature can optionally make use of React lifecycle methods.
-       *
-       * TODO: The intention is to move these away from a React-centric to a
-       * VisualElement-centric lifecycle scheme.
-       */
-
-      features = useFeatures(props, context.visualElement, preloadedFeatures);
-    }
-    /**
-     * The mount order and hierarchy is specific to ensure our element ref
-     * is hydrated by the time features fire their effects.
-     */
-
-
-    return React__namespace.createElement(React__namespace.Fragment, null, React__namespace.createElement(MotionContext.Provider, {
-      value: context
-    }, useRender(Component, props, useMotionRef(visualState, context.visualElement, externalRef), visualState, isStatic)), features);
-  }
-
-  return React.forwardRef(MotionComponent);
-}
-
-/**
- * Convert any React component into a `motion` component. The provided component
- * **must** use `React.forwardRef` to the underlying DOM component you want to animate.
- *
- * ```jsx
- * const Component = React.forwardRef((props, ref) => {
- *   return <div ref={ref} />
- * })
- *
- * const MotionComponent = motion(Component)
- * ```
- *
- * @public
- */
-
-function createMotionProxy(createConfig) {
-  function custom(Component, customMotionComponentConfig) {
-    if (customMotionComponentConfig === void 0) {
-      customMotionComponentConfig = {};
-    }
-
-    return createMotionComponent(createConfig(Component, customMotionComponentConfig));
-  }
-  /**
-   * A cache of generated `motion` components, e.g `motion.div`, `motion.input` etc.
-   * Rather than generating them anew every render.
-   */
-
-
-  var componentCache = new Map();
-  return new Proxy(custom, {
-    /**
-     * Called when `motion` is referenced with a prop: `motion.div`, `motion.input` etc.
-     * The prop name is passed through as `key` and we can use that to generate a `motion`
-     * DOM component with that name.
-     */
-    get: function (_target, key) {
-      /**
-       * If this element doesn't exist in the component cache, create it and cache.
-       */
-      if (!componentCache.has(key)) {
-        componentCache.set(key, custom(key));
-      }
-
-      return componentCache.get(key);
-    }
-  });
-}
-
-/**
- * We keep these listed seperately as we use the lowercase tag names as part
- * of the runtime bundle to detect SVG components
- */
-var lowercaseSVGElements = ["animate", "circle", "defs", "desc", "ellipse", "g", "image", "line", "filter", "marker", "mask", "metadata", "path", "pattern", "polygon", "polyline", "rect", "stop", "svg", "switch", "symbol", "text", "tspan", "use", "view"];
-
-function isSVGComponent(Component) {
-  if (
-  /**
-   * If it's not a string, it's a custom React component. Currently we only support
-   * HTML custom React components.
-   */
-  typeof Component !== "string" ||
-  /**
-   * If it contains a dash, the element is a custom HTML webcomponent.
-   */
-  Component.includes("-")) {
-    return false;
-  } else if (
-  /**
-   * If it's in our list of lowercase SVG tags, it's an SVG component
-   */
-  lowercaseSVGElements.indexOf(Component) > -1 ||
-  /**
-   * If it contains a capital letter, it's an SVG component
-   */
-  /[A-Z]/.test(Component)) {
-    return true;
-  }
-
-  return false;
-}
-
-var valueScaleCorrection = {};
-/**
- * @internal
- */
-
-function addScaleCorrection(correctors) {
-  for (var key in correctors) {
-    valueScaleCorrection[key] = correctors[key];
-  }
-}
-
-/**
- * A list of all transformable axes. We'll use this list to generated a version
- * of each axes for each transform.
- */
-var transformAxes = ["", "X", "Y", "Z"];
-/**
- * An ordered array of each transformable value. By default, transform values
- * will be sorted to this order.
- */
-
-var order = ["translate", "scale", "rotate", "skew"];
-/**
- * Generate a list of every possible transform key.
- */
-
-var transformProps = ["transformPerspective", "x", "y", "z"];
-order.forEach(function (operationKey) {
-  return transformAxes.forEach(function (axesKey) {
-    return transformProps.push(operationKey + axesKey);
-  });
-});
-/**
- * A function to use with Array.sort to sort transform keys by their default order.
- */
-
-function sortTransformProps(a, b) {
-  return transformProps.indexOf(a) - transformProps.indexOf(b);
-}
-/**
- * A quick lookup for transform props.
- */
-
-
-var transformPropSet = new Set(transformProps);
-
-function isTransformProp(key) {
-  return transformPropSet.has(key);
-}
-/**
- * A quick lookup for transform origin props
- */
-
-
-var transformOriginProps = new Set(["originX", "originY", "originZ"]);
-
-function isTransformOriginProp(key) {
-  return transformOriginProps.has(key);
-}
-
-function isForcedMotionValue(key, _a) {
-  var layout = _a.layout,
-      layoutId = _a.layoutId;
-  return isTransformProp(key) || isTransformOriginProp(key) || (layout || layoutId !== undefined) && (!!valueScaleCorrection[key] || key === "opacity");
-}
-
-var isMotionValue = function (value) {
-  return value !== null && typeof value === "object" && value.getVelocity;
-};
-
-var translateAlias = {
-  x: "translateX",
-  y: "translateY",
-  z: "translateZ",
-  transformPerspective: "perspective"
-};
-/**
- * Build a CSS transform style from individual x/y/scale etc properties.
- *
- * This outputs with a default order of transforms/scales/rotations, this can be customised by
- * providing a transformTemplate function.
- */
-
-function buildTransform(_a, _b, transformIsDefault, transformTemplate) {
-  var transform = _a.transform,
-      transformKeys = _a.transformKeys;
-  var _c = _b.enableHardwareAcceleration,
-      enableHardwareAcceleration = _c === void 0 ? true : _c,
-      _d = _b.allowTransformNone,
-      allowTransformNone = _d === void 0 ? true : _d; // The transform string we're going to build into.
-
-  var transformString = ""; // Transform keys into their default order - this will determine the output order.
-
-  transformKeys.sort(sortTransformProps); // Track whether the defined transform has a defined z so we don't add a
-  // second to enable hardware acceleration
-
-  var transformHasZ = false; // Loop over each transform and build them into transformString
-
-  var numTransformKeys = transformKeys.length;
-
-  for (var i = 0; i < numTransformKeys; i++) {
-    var key = transformKeys[i];
-    transformString += (translateAlias[key] || key) + "(" + transform[key] + ") ";
-    if (key === "z") transformHasZ = true;
-  }
-
-  if (!transformHasZ && enableHardwareAcceleration) {
-    transformString += "translateZ(0)";
-  } else {
-    transformString = transformString.trim();
-  } // If we have a custom `transform` template, pass our transform values and
-  // generated transformString to that before returning
-
-
-  if (transformTemplate) {
-    transformString = transformTemplate(transform, transformIsDefault ? "" : transformString);
-  } else if (allowTransformNone && transformIsDefault) {
-    transformString = "none";
-  }
-
-  return transformString;
-}
-/**
- * Build a transformOrigin style. Uses the same defaults as the browser for
- * undefined origins.
- */
-
-
-function buildTransformOrigin(_a) {
-  var _b = _a.originX,
-      originX = _b === void 0 ? "50%" : _b,
-      _c = _a.originY,
-      originY = _c === void 0 ? "50%" : _c,
-      _d = _a.originZ,
-      originZ = _d === void 0 ? 0 : _d;
-  return originX + " " + originY + " " + originZ;
-}
-
-/**
- * Returns true if the provided key is a CSS variable
- */
-function isCSSVariable$1(key) {
-  return key.startsWith("--");
-}
-
-/**
- * Provided a value and a ValueType, returns the value as that value type.
- */
-var getValueAsType = function (value, type) {
-  return type && typeof value === "number" ? type.transform(value) : value;
-};
-
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-var __assign$3 = function () {
-  __assign$3 = Object.assign || function __assign(t) {
-    for (var s, i = 1, n = arguments.length; i < n; i++) {
-      s = arguments[i];
-
-      for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-    }
-
-    return t;
-  };
-
-  return __assign$3.apply(this, arguments);
-};
-
-var clamp$2 = function (min, max) {
-  return function (v) {
-    return Math.max(Math.min(v, max), min);
-  };
-};
-
-var sanitize$1 = function (v) {
-  return v % 1 ? Number(v.toFixed(5)) : v;
-};
-
-var floatRegex = /(-)?([\d]*\.?[\d])+/g;
-var colorRegex = /(#[0-9a-f]{6}|#[0-9a-f]{3}|#(?:[0-9a-f]{2}){2,4}|(rgb|hsl)a?\((-?[\d\.]+%?[,\s]+){2,3}\s*\/*\s*[\d\.]+%?\))/gi;
-var singleColorRegex = /^(#[0-9a-f]{3}|#(?:[0-9a-f]{2}){2,4}|(rgb|hsl)a?\((-?[\d\.]+%?[,\s]+){2,3}\s*\/*\s*[\d\.]+%?\))$/i;
-
-function isString$1(v) {
-  return typeof v === 'string';
-}
-
-var number$1 = {
-  test: function (v) {
-    return typeof v === 'number';
-  },
-  parse: parseFloat,
-  transform: function (v) {
-    return v;
-  }
-};
-
-var alpha = __assign$3(__assign$3({}, number$1), {
-  transform: clamp$2(0, 1)
-});
-
-var scale = __assign$3(__assign$3({}, number$1), {
-  default: 1
-});
-
-var createUnitType = function (unit) {
-  return {
-    test: function (v) {
-      return isString$1(v) && v.endsWith(unit) && v.split(' ').length === 1;
-    },
-    parse: parseFloat,
-    transform: function (v) {
-      return "" + v + unit;
-    }
-  };
-};
-
-var degrees = createUnitType('deg');
-var percent = createUnitType('%');
-var px = createUnitType('px');
-var vh = createUnitType('vh');
-var vw = createUnitType('vw');
-
-var progressPercentage = __assign$3(__assign$3({}, percent), {
-  parse: function (v) {
-    return percent.parse(v) / 100;
-  },
-  transform: function (v) {
-    return percent.transform(v * 100);
-  }
-});
-
-var isColorString = function (type, testProp) {
-  return function (v) {
-    return Boolean(isString$1(v) && singleColorRegex.test(v) && v.startsWith(type) || testProp && Object.prototype.hasOwnProperty.call(v, testProp));
-  };
-};
-
-var splitColor = function (aName, bName, cName) {
-  return function (v) {
-    var _a;
-
-    if (!isString$1(v)) return v;
-
-    var _b = v.match(floatRegex),
-        a = _b[0],
-        b = _b[1],
-        c = _b[2],
-        alpha = _b[3];
-
-    return _a = {}, _a[aName] = parseFloat(a), _a[bName] = parseFloat(b), _a[cName] = parseFloat(c), _a.alpha = alpha !== undefined ? parseFloat(alpha) : 1, _a;
-  };
-};
-
-var hsla = {
-  test: isColorString('hsl', 'hue'),
-  parse: splitColor('hue', 'saturation', 'lightness'),
-  transform: function (_a) {
-    var hue = _a.hue,
-        saturation = _a.saturation,
-        lightness = _a.lightness,
-        _b = _a.alpha,
-        alpha$1 = _b === void 0 ? 1 : _b;
-    return 'hsla(' + Math.round(hue) + ', ' + percent.transform(sanitize$1(saturation)) + ', ' + percent.transform(sanitize$1(lightness)) + ', ' + sanitize$1(alpha.transform(alpha$1)) + ')';
-  }
-};
-
-var clampRgbUnit = clamp$2(0, 255);
-
-var rgbUnit = __assign$3(__assign$3({}, number$1), {
-  transform: function (v) {
-    return Math.round(clampRgbUnit(v));
-  }
-});
-
-var rgba = {
-  test: isColorString('rgb', 'red'),
-  parse: splitColor('red', 'green', 'blue'),
-  transform: function (_a) {
-    var red = _a.red,
-        green = _a.green,
-        blue = _a.blue,
-        _b = _a.alpha,
-        alpha$1 = _b === void 0 ? 1 : _b;
-    return 'rgba(' + rgbUnit.transform(red) + ', ' + rgbUnit.transform(green) + ', ' + rgbUnit.transform(blue) + ', ' + sanitize$1(alpha.transform(alpha$1)) + ')';
-  }
-};
-
-function parseHex(v) {
-  var r = '';
-  var g = '';
-  var b = '';
-  var a = '';
-
-  if (v.length > 5) {
-    r = v.substr(1, 2);
-    g = v.substr(3, 2);
-    b = v.substr(5, 2);
-    a = v.substr(7, 2);
-  } else {
-    r = v.substr(1, 1);
-    g = v.substr(2, 1);
-    b = v.substr(3, 1);
-    a = v.substr(4, 1);
-    r += r;
-    g += g;
-    b += b;
-    a += a;
-  }
-
-  return {
-    red: parseInt(r, 16),
-    green: parseInt(g, 16),
-    blue: parseInt(b, 16),
-    alpha: a ? parseInt(a, 16) / 255 : 1
-  };
-}
-
-var hex = {
-  test: isColorString('#'),
-  parse: parseHex,
-  transform: rgba.transform
-};
-
-var color = {
-  test: function (v) {
-    return rgba.test(v) || hex.test(v) || hsla.test(v);
-  },
-  parse: function (v) {
-    if (rgba.test(v)) {
-      return rgba.parse(v);
-    } else if (hsla.test(v)) {
-      return hsla.parse(v);
-    } else {
-      return hex.parse(v);
-    }
-  },
-  transform: function (v) {
-    return isString$1(v) ? v : v.hasOwnProperty('red') ? rgba.transform(v) : hsla.transform(v);
-  }
-};
-
-var colorToken = '${c}';
-var numberToken = '${n}';
-
-function test(v) {
-  var _a, _b, _c, _d;
-
-  return isNaN(v) && isString$1(v) && ((_b = (_a = v.match(floatRegex)) === null || _a === void 0 ? void 0 : _a.length) !== null && _b !== void 0 ? _b : 0) + ((_d = (_c = v.match(colorRegex)) === null || _c === void 0 ? void 0 : _c.length) !== null && _d !== void 0 ? _d : 0) > 0;
-}
-
-function analyse$1(v) {
-  var values = [];
-  var numColors = 0;
-  var colors = v.match(colorRegex);
-
-  if (colors) {
-    numColors = colors.length;
-    v = v.replace(colorRegex, colorToken);
-    values.push.apply(values, colors.map(color.parse));
-  }
-
-  var numbers = v.match(floatRegex);
-
-  if (numbers) {
-    v = v.replace(floatRegex, numberToken);
-    values.push.apply(values, numbers.map(number$1.parse));
-  }
-
-  return {
-    values: values,
-    numColors: numColors,
-    tokenised: v
-  };
-}
-
-function parse$3(v) {
-  return analyse$1(v).values;
-}
-
-function createTransformer(v) {
-  var _a = analyse$1(v),
-      values = _a.values,
-      numColors = _a.numColors,
-      tokenised = _a.tokenised;
-
-  var numValues = values.length;
-  return function (v) {
-    var output = tokenised;
-
-    for (var i = 0; i < numValues; i++) {
-      output = output.replace(i < numColors ? colorToken : numberToken, i < numColors ? color.transform(v[i]) : sanitize$1(v[i]));
-    }
-
-    return output;
-  };
-}
-
-var convertNumbersToZero = function (v) {
-  return typeof v === 'number' ? 0 : v;
-};
-
-function getAnimatableNone$1(v) {
-  var parsed = parse$3(v);
-  var transformer = createTransformer(v);
-  return transformer(parsed.map(convertNumbersToZero));
-}
-
-var complex = {
-  test: test,
-  parse: parse$3,
-  createTransformer: createTransformer,
-  getAnimatableNone: getAnimatableNone$1
-};
-
-var maxDefaults = new Set(['brightness', 'contrast', 'saturate', 'opacity']);
-
-function applyDefaultFilter(v) {
-  var _a = v.slice(0, -1).split('('),
-      name = _a[0],
-      value = _a[1];
-
-  if (name === 'drop-shadow') return v;
-  var number = (value.match(floatRegex) || [])[0];
-  if (!number) return v;
-  var unit = value.replace(number, '');
-  var defaultValue = maxDefaults.has(name) ? 1 : 0;
-  if (number !== value) defaultValue *= 100;
-  return name + '(' + defaultValue + unit + ')';
-}
-
-var functionRegex = /([a-z-]*)\(.*?\)/g;
-
-var filter = __assign$3(__assign$3({}, complex), {
-  getAnimatableNone: function (v) {
-    var functions = v.match(functionRegex);
-    return functions ? functions.map(applyDefaultFilter).join(' ') : v;
-  }
-});
-
-var int = __assign$4(__assign$4({}, number$1), {
-  transform: Math.round
-});
-
-var numberValueTypes = {
-  // Border props
-  borderWidth: px,
-  borderTopWidth: px,
-  borderRightWidth: px,
-  borderBottomWidth: px,
-  borderLeftWidth: px,
-  borderRadius: px,
-  radius: px,
-  borderTopLeftRadius: px,
-  borderTopRightRadius: px,
-  borderBottomRightRadius: px,
-  borderBottomLeftRadius: px,
-  // Positioning props
-  width: px,
-  maxWidth: px,
-  height: px,
-  maxHeight: px,
-  size: px,
-  top: px,
-  right: px,
-  bottom: px,
-  left: px,
-  // Spacing props
-  padding: px,
-  paddingTop: px,
-  paddingRight: px,
-  paddingBottom: px,
-  paddingLeft: px,
-  margin: px,
-  marginTop: px,
-  marginRight: px,
-  marginBottom: px,
-  marginLeft: px,
-  // Transform props
-  rotate: degrees,
-  rotateX: degrees,
-  rotateY: degrees,
-  rotateZ: degrees,
-  scale: scale,
-  scaleX: scale,
-  scaleY: scale,
-  scaleZ: scale,
-  skew: degrees,
-  skewX: degrees,
-  skewY: degrees,
-  distance: px,
-  translateX: px,
-  translateY: px,
-  translateZ: px,
-  x: px,
-  y: px,
-  z: px,
-  perspective: px,
-  transformPerspective: px,
-  opacity: alpha,
-  originX: progressPercentage,
-  originY: progressPercentage,
-  originZ: px,
-  // Misc
-  zIndex: int,
-  // SVG
-  fillOpacity: alpha,
-  strokeOpacity: alpha,
-  numOctaves: int
-};
-
-function buildHTMLStyles(state, latestValues, projection, layoutState, options, transformTemplate, buildProjectionTransform, buildProjectionTransformOrigin) {
-  var _a;
-
-  var style = state.style,
-      vars = state.vars,
-      transform = state.transform,
-      transformKeys = state.transformKeys,
-      transformOrigin = state.transformOrigin; // Empty the transformKeys array. As we're throwing out refs to its items
-  // this might not be as cheap as suspected. Maybe using the array as a buffer
-  // with a manual incrementation would be better.
-
-  transformKeys.length = 0; // Track whether we encounter any transform or transformOrigin values.
-
-  var hasTransform = false;
-  var hasTransformOrigin = false; // Does the calculated transform essentially equal "none"?
-
-  var transformIsNone = true;
-  /**
-   * Loop over all our latest animated values and decide whether to handle them
-   * as a style or CSS variable.
-   *
-   * Transforms and transform origins are kept seperately for further processing.
-   */
-
-  for (var key in latestValues) {
-    var value = latestValues[key];
-    /**
-     * If this is a CSS variable we don't do any further processing.
-     */
-
-    if (isCSSVariable$1(key)) {
-      vars[key] = value;
-      continue;
-    } // Convert the value to its default value type, ie 0 -> "0px"
-
-
-    var valueType = numberValueTypes[key];
-    var valueAsType = getValueAsType(value, valueType);
-
-    if (isTransformProp(key)) {
-      // If this is a transform, flag to enable further transform processing
-      hasTransform = true;
-      transform[key] = valueAsType;
-      transformKeys.push(key); // If we already know we have a non-default transform, early return
-
-      if (!transformIsNone) continue; // Otherwise check to see if this is a default transform
-
-      if (value !== ((_a = valueType.default) !== null && _a !== void 0 ? _a : 0)) transformIsNone = false;
-    } else if (isTransformOriginProp(key)) {
-      transformOrigin[key] = valueAsType; // If this is a transform origin, flag and enable further transform-origin processing
-
-      hasTransformOrigin = true;
-    } else {
-      /**
-       * If layout projection is on, and we need to perform scale correction for this
-       * value type, perform it.
-       */
-      if ((projection === null || projection === void 0 ? void 0 : projection.isHydrated) && (layoutState === null || layoutState === void 0 ? void 0 : layoutState.isHydrated) && valueScaleCorrection[key]) {
-        var correctedValue = valueScaleCorrection[key].process(value, layoutState, projection);
-        /**
-         * Scale-correctable values can define a number of other values to break
-         * down into. For instance borderRadius needs applying to borderBottomLeftRadius etc
-         */
-
-        var applyTo = valueScaleCorrection[key].applyTo;
-
-        if (applyTo) {
-          var num = applyTo.length;
-
-          for (var i = 0; i < num; i++) {
-            style[applyTo[i]] = correctedValue;
-          }
-        } else {
-          style[key] = correctedValue;
-        }
-      } else {
-        style[key] = valueAsType;
-      }
-    }
-  }
-
-  if (layoutState && projection && buildProjectionTransform && buildProjectionTransformOrigin) {
-    style.transform = buildProjectionTransform(layoutState.deltaFinal, layoutState.treeScale, hasTransform ? transform : undefined);
-
-    if (transformTemplate) {
-      style.transform = transformTemplate(transform, style.transform);
-    }
-
-    style.transformOrigin = buildProjectionTransformOrigin(layoutState);
-  } else {
-    if (hasTransform) {
-      style.transform = buildTransform(state, options, transformIsNone, transformTemplate);
-    }
-
-    if (hasTransformOrigin) {
-      style.transformOrigin = buildTransformOrigin(transformOrigin);
-    }
-  }
-}
-
-var createHtmlRenderState = function () {
-  return {
-    style: {},
-    transform: {},
-    transformKeys: [],
-    transformOrigin: {},
-    vars: {}
-  };
-};
-
-function copyRawValuesOnly(target, source, props) {
-  for (var key in source) {
-    if (!isMotionValue(source[key]) && !isForcedMotionValue(key, props)) {
-      target[key] = source[key];
-    }
-  }
-}
-
-function useInitialMotionValues(_a, visualState, isStatic) {
-  var transformTemplate = _a.transformTemplate;
-  return React.useMemo(function () {
-    var state = createHtmlRenderState();
-    buildHTMLStyles(state, visualState, undefined, undefined, {
-      enableHardwareAcceleration: !isStatic
-    }, transformTemplate);
-    var vars = state.vars,
-        style = state.style;
-    return __assign$4(__assign$4({}, vars), style);
-  }, [visualState]);
-}
-
-function useStyle(props, visualState, isStatic) {
-  var styleProp = props.style || {};
-  var style = {};
-  /**
-   * Copy non-Motion Values straight into style
-   */
-
-  copyRawValuesOnly(style, styleProp, props);
-  Object.assign(style, useInitialMotionValues(props, visualState, isStatic));
-
-  if (props.transformValues) {
-    style = props.transformValues(style);
-  }
-
-  return style;
-}
-
-function useHTMLProps(props, visualState, isStatic) {
-  // The `any` isn't ideal but it is the type of createElement props argument
-  var htmlProps = {};
-  var style = useStyle(props, visualState, isStatic);
-
-  if (Boolean(props.drag)) {
-    // Disable the ghost element when a user drags
-    htmlProps.draggable = false; // Disable text selection
-
-    style.userSelect = style.WebkitUserSelect = style.WebkitTouchCallout = "none"; // Disable scrolling on the draggable direction
-
-    style.touchAction = props.drag === true ? "none" : "pan-" + (props.drag === "x" ? "y" : "x");
-  }
-
-  htmlProps.style = style;
-  return htmlProps;
-}
-
-/**
- * A list of all valid MotionProps.
- *
- * @internalremarks
- * This doesn't throw if a `MotionProp` name is missing - it should.
- */
-var validMotionProps = new Set(["initial", "animate", "exit", "style", "variants", "transition", "transformTemplate", "transformValues", "custom", "inherit", "layout", "layoutId", "_layoutResetTransform", "onLayoutAnimationComplete", "onViewportBoxUpdate", "onLayoutMeasure", "onBeforeLayoutMeasure", "onAnimationStart", "onAnimationComplete", "onUpdate", "onDragStart", "onDrag", "onDragEnd", "onMeasureDragConstraints", "onDirectionLock", "onDragTransitionEnd", "drag", "dragControls", "dragListener", "dragConstraints", "dragDirectionLock", "_dragX", "_dragY", "dragElastic", "dragMomentum", "dragPropagation", "dragTransition", "whileDrag", "onPan", "onPanStart", "onPanEnd", "onPanSessionStart", "onTap", "onTapStart", "onTapCancel", "onHoverStart", "onHoverEnd", "whileFocus", "whileTap", "whileHover"]);
-/**
- * Check whether a prop name is a valid `MotionProp` key.
- *
- * @param key - Name of the property to check
- * @returns `true` is key is a valid `MotionProp`.
- *
- * @public
- */
-
-function isValidMotionProp(key) {
-  return validMotionProps.has(key);
-}
-
-var shouldForward = function (key) {
-  return !isValidMotionProp(key);
-};
-/**
- * Emotion and Styled Components both allow users to pass through arbitrary props to their components
- * to dynamically generate CSS. They both use the `@emotion/is-prop-valid` package to determine which
- * of these should be passed to the underlying DOM node.
- *
- * However, when styling a Motion component `styled(motion.div)`, both packages pass through *all* props
- * as it's seen as an arbitrary component rather than a DOM node. Motion only allows arbitrary props
- * passed through the `custom` prop so it doesn't *need* the payload or computational overhead of
- * `@emotion/is-prop-valid`, however to fix this problem we need to use it.
- *
- * By making it an optionalDependency we can offer this functionality only in the situations where it's
- * actually required.
- */
-
-
-try {
-  var emotionIsPropValid_1 = require("@emotion/is-prop-valid").default;
-
-  shouldForward = function (key) {
-    // Handle events explicitly as Emotion validates them all as true
-    if (key.startsWith("on")) {
-      return !isValidMotionProp(key);
-    } else {
-      return emotionIsPropValid_1(key);
-    }
-  };
-} catch (_a) {// We don't need to actually do anything here - the fallback is the existing `isPropValid`.
-}
-
-function filterProps(props, isDom, forwardMotionProps) {
-  var filteredProps = {};
-
-  for (var key in props) {
-    if (shouldForward(key) || forwardMotionProps === true && isValidMotionProp(key) || !isDom && !isValidMotionProp(key)) {
-      filteredProps[key] = props[key];
-    }
-  }
-
-  return filteredProps;
-}
-
-function calcOrigin$1(origin, offset, size) {
-  return typeof origin === "string" ? origin : px.transform(offset + size * origin);
-}
-/**
- * The SVG transform origin defaults are different to CSS and is less intuitive,
- * so we use the measured dimensions of the SVG to reconcile these.
- */
-
-
-function calcSVGTransformOrigin(dimensions, originX, originY) {
-  var pxOriginX = calcOrigin$1(originX, dimensions.x, dimensions.width);
-  var pxOriginY = calcOrigin$1(originY, dimensions.y, dimensions.height);
-  return pxOriginX + " " + pxOriginY;
-}
-
-var progressToPixels = function (progress, length) {
-  return px.transform(progress * length);
-};
-
-var dashKeys = {
-  offset: "stroke-dashoffset",
-  array: "stroke-dasharray"
-};
-var camelKeys = {
-  offset: "strokeDashoffset",
-  array: "strokeDasharray"
-};
-/**
- * Build SVG path properties. Uses the path's measured length to convert
- * our custom pathLength, pathSpacing and pathOffset into stroke-dashoffset
- * and stroke-dasharray attributes.
- *
- * This function is mutative to reduce per-frame GC.
- */
-
-function buildSVGPath(attrs, totalLength, length, spacing, offset, useDashCase) {
-  if (spacing === void 0) {
-    spacing = 1;
-  }
-
-  if (offset === void 0) {
-    offset = 0;
-  }
-
-  if (useDashCase === void 0) {
-    useDashCase = true;
-  } // We use dash case when setting attributes directly to the DOM node and camel case
-  // when defining props on a React component.
-
-
-  var keys = useDashCase ? dashKeys : camelKeys; // Build the dash offset
-
-  attrs[keys.offset] = progressToPixels(-offset, totalLength); // Build the dash array
-
-  var pathLength = progressToPixels(length, totalLength);
-  var pathSpacing = progressToPixels(spacing, totalLength);
-  attrs[keys.array] = pathLength + " " + pathSpacing;
-}
-
-/**
- * Build SVG visual attrbutes, like cx and style.transform
- */
-
-function buildSVGAttrs(state, _a, projection, layoutState, options, transformTemplate, buildProjectionTransform, buildProjectionTransformOrigin) {
-  var attrX = _a.attrX,
-      attrY = _a.attrY,
-      originX = _a.originX,
-      originY = _a.originY,
-      pathLength = _a.pathLength,
-      _b = _a.pathSpacing,
-      pathSpacing = _b === void 0 ? 1 : _b,
-      _c = _a.pathOffset,
-      pathOffset = _c === void 0 ? 0 : _c,
-      // This is object creation, which we try to avoid per-frame.
-  latest = __rest$3(_a, ["attrX", "attrY", "originX", "originY", "pathLength", "pathSpacing", "pathOffset"]);
-
-  buildHTMLStyles(state, latest, projection, layoutState, options, transformTemplate, buildProjectionTransform, buildProjectionTransformOrigin);
-  state.attrs = state.style;
-  state.style = {};
-  var attrs = state.attrs,
-      style = state.style,
-      dimensions = state.dimensions,
-      totalPathLength = state.totalPathLength;
-  /**
-   * However, we apply transforms as CSS transforms. So if we detect a transform we take it from attrs
-   * and copy it into style.
-   */
-
-  if (attrs.transform) {
-    if (dimensions) style.transform = attrs.transform;
-    delete attrs.transform;
-  } // Parse transformOrigin
-
-
-  if (dimensions && (originX !== undefined || originY !== undefined || style.transform)) {
-    style.transformOrigin = calcSVGTransformOrigin(dimensions, originX !== undefined ? originX : 0.5, originY !== undefined ? originY : 0.5);
-  } // Treat x/y not as shortcuts but as actual attributes
-
-
-  if (attrX !== undefined) attrs.x = attrX;
-  if (attrY !== undefined) attrs.y = attrY; // Build SVG path if one has been measured
-
-  if (totalPathLength !== undefined && pathLength !== undefined) {
-    buildSVGPath(attrs, totalPathLength, pathLength, pathSpacing, pathOffset, false);
-  }
-}
-
-var createSvgRenderState = function () {
-  return __assign$4(__assign$4({}, createHtmlRenderState()), {
-    attrs: {}
-  });
-};
-
-function useSVGProps(props, visualState) {
-  var visualProps = React.useMemo(function () {
-    var state = createSvgRenderState();
-    buildSVGAttrs(state, visualState, undefined, undefined, {
-      enableHardwareAcceleration: false
-    }, props.transformTemplate);
-    return __assign$4(__assign$4({}, state.attrs), {
-      style: __assign$4({}, state.style)
-    });
-  }, [visualState]);
-
-  if (props.style) {
-    var rawStyles = {};
-    copyRawValuesOnly(rawStyles, props.style, props);
-    visualProps.style = __assign$4(__assign$4({}, rawStyles), visualProps.style);
-  }
-
-  return visualProps;
-}
-
-function createUseRender(forwardMotionProps) {
-  if (forwardMotionProps === void 0) {
-    forwardMotionProps = false;
-  }
-
-  var useRender = function (Component, props, ref, _a, isStatic) {
-    var latestValues = _a.latestValues;
-    var useVisualProps = isSVGComponent(Component) ? useSVGProps : useHTMLProps;
-    var visualProps = useVisualProps(props, latestValues, isStatic);
-    var filteredProps = filterProps(props, typeof Component === "string", forwardMotionProps);
-
-    var elementProps = __assign$4(__assign$4(__assign$4({}, filteredProps), visualProps), {
-      ref: ref
-    });
-
-    return React.createElement(Component, elementProps);
-  };
-
-  return useRender;
-}
-
-var CAMEL_CASE_PATTERN = /([a-z])([A-Z])/g;
-var REPLACE_TEMPLATE = "$1-$2";
-/**
- * Convert camelCase to dash-case properties.
- */
-
-var camelToDash = function (str) {
-  return str.replace(CAMEL_CASE_PATTERN, REPLACE_TEMPLATE).toLowerCase();
-};
-
-function renderHTML(element, _a) {
-  var style = _a.style,
-      vars = _a.vars; // Directly assign style into the Element's style prop. In tests Object.assign is the
-  // fastest way to assign styles.
-
-  Object.assign(element.style, style); // Loop over any CSS variables and assign those.
-
-  for (var key in vars) {
-    element.style.setProperty(key, vars[key]);
-  }
-}
-
-/**
- * A set of attribute names that are always read/written as camel case.
- */
-var camelCaseAttributes = new Set(["baseFrequency", "diffuseConstant", "kernelMatrix", "kernelUnitLength", "keySplines", "keyTimes", "limitingConeAngle", "markerHeight", "markerWidth", "numOctaves", "targetX", "targetY", "surfaceScale", "specularConstant", "specularExponent", "stdDeviation", "tableValues", "viewBox", "gradientTransform"]);
-
-function renderSVG(element, renderState) {
-  renderHTML(element, renderState);
-
-  for (var key in renderState.attrs) {
-    element.setAttribute(!camelCaseAttributes.has(key) ? camelToDash(key) : key, renderState.attrs[key]);
-  }
-}
-
-function scrapeMotionValuesFromProps$1(props) {
-  var style = props.style;
-  var newValues = {};
-
-  for (var key in style) {
-    if (isMotionValue(style[key]) || isForcedMotionValue(key, props)) {
-      newValues[key] = style[key];
-    }
-  }
-
-  return newValues;
-}
-
-function scrapeMotionValuesFromProps(props) {
-  var newValues = scrapeMotionValuesFromProps$1(props);
-
-  for (var key in props) {
-    if (isMotionValue(props[key])) {
-      var targetKey = key === "x" || key === "y" ? "attr" + key.toUpperCase() : key;
-      newValues[targetKey] = props[key];
-    }
-  }
-
-  return newValues;
-}
-
-function isAnimationControls(v) {
-  return typeof v === "object" && typeof v.start === "function";
-}
-
-var isKeyframesTarget = function (v) {
-  return Array.isArray(v);
-};
-
-var isCustomValue = function (v) {
-  return Boolean(v && typeof v === "object" && v.mix && v.toValue);
-};
-
-var resolveFinalValueInKeyframes = function (v) {
-  // TODO maybe throw if v.length - 1 is placeholder token?
-  return isKeyframesTarget(v) ? v[v.length - 1] || 0 : v;
-};
-
-/**
- * If the provided value is a MotionValue, this returns the actual value, otherwise just the value itself
- *
- * TODO: Remove and move to library
- *
- * @internal
- */
-
-function resolveMotionValue(value) {
-  var unwrappedValue = isMotionValue(value) ? value.get() : value;
-  return isCustomValue(unwrappedValue) ? unwrappedValue.toValue() : unwrappedValue;
-}
-
-function makeState(_a, props, context, presenceContext) {
-  var scrapeMotionValuesFromProps = _a.scrapeMotionValuesFromProps,
-      createRenderState = _a.createRenderState,
-      onMount = _a.onMount;
-  var state = {
-    latestValues: makeLatestValues(props, context, presenceContext, scrapeMotionValuesFromProps),
-    renderState: createRenderState()
-  };
-
-  if (onMount) {
-    state.mount = function (instance) {
-      return onMount(props, instance, state);
-    };
-  }
-
-  return state;
-}
-
-var makeUseVisualState = function (config) {
-  return function (props, isStatic) {
-    var context = React.useContext(MotionContext);
-    var presenceContext = React.useContext(PresenceContext);
-    return isStatic ? makeState(config, props, context, presenceContext) : useConstant(function () {
-      return makeState(config, props, context, presenceContext);
-    });
-  };
-};
-
-function makeLatestValues(props, context, presenceContext, scrapeMotionValues) {
-  var values = {};
-  var blockInitialAnimation = (presenceContext === null || presenceContext === void 0 ? void 0 : presenceContext.initial) === false;
-  var motionValues = scrapeMotionValues(props);
-
-  for (var key in motionValues) {
-    values[key] = resolveMotionValue(motionValues[key]);
-  }
-
-  var initial = props.initial,
-      animate = props.animate;
-  var isControllingVariants = checkIfControllingVariants(props);
-  var isVariantNode = checkIfVariantNode(props);
-
-  if (context && isVariantNode && !isControllingVariants && props.inherit !== false) {
-    initial !== null && initial !== void 0 ? initial : initial = context.initial;
-    animate !== null && animate !== void 0 ? animate : animate = context.animate;
-  }
-
-  var variantToSet = blockInitialAnimation || initial === false ? animate : initial;
-
-  if (variantToSet && typeof variantToSet !== "boolean" && !isAnimationControls(variantToSet)) {
-    var list = Array.isArray(variantToSet) ? variantToSet : [variantToSet];
-    list.forEach(function (definition) {
-      var resolved = resolveVariantFromProps(props, definition);
-      if (!resolved) return;
-      var transitionEnd = resolved.transitionEnd;
-      resolved.transition;
-
-      var target = __rest$3(resolved, ["transitionEnd", "transition"]);
-
-      for (var key in target) values[key] = target[key];
-
-      for (var key in transitionEnd) values[key] = transitionEnd[key];
-    });
-  }
-
-  return values;
-}
-
-var svgMotionConfig = {
-  useVisualState: makeUseVisualState({
-    scrapeMotionValuesFromProps: scrapeMotionValuesFromProps,
-    createRenderState: createSvgRenderState,
-    onMount: function (props, instance, _a) {
-      var renderState = _a.renderState,
-          latestValues = _a.latestValues;
-
-      try {
-        renderState.dimensions = typeof instance.getBBox === "function" ? instance.getBBox() : instance.getBoundingClientRect();
-      } catch (e) {
-        // Most likely trying to measure an unrendered element under Firefox
-        renderState.dimensions = {
-          x: 0,
-          y: 0,
-          width: 0,
-          height: 0
-        };
-      }
-
-      if (isPath(instance)) {
-        renderState.totalPathLength = instance.getTotalLength();
-      }
-
-      buildSVGAttrs(renderState, latestValues, undefined, undefined, {
-        enableHardwareAcceleration: false
-      }, props.transformTemplate); // TODO: Replace with direct assignment
-
-      renderSVG(instance, renderState);
-    }
-  })
-};
-
-function isPath(element) {
-  return element.tagName === "path";
-}
-
-var htmlMotionConfig = {
-  useVisualState: makeUseVisualState({
-    scrapeMotionValuesFromProps: scrapeMotionValuesFromProps$1,
-    createRenderState: createHtmlRenderState
-  })
-};
-
-function createDomMotionConfig(Component, _a, preloadedFeatures, createVisualElement) {
-  var _b = _a.forwardMotionProps,
-      forwardMotionProps = _b === void 0 ? false : _b;
-  var baseConfig = isSVGComponent(Component) ? svgMotionConfig : htmlMotionConfig;
-  return __assign$4(__assign$4({}, baseConfig), {
-    preloadedFeatures: preloadedFeatures,
-    useRender: createUseRender(forwardMotionProps),
-    createVisualElement: createVisualElement,
-    Component: Component
-  });
-}
-
-var AnimationType;
-
-(function (AnimationType) {
-  AnimationType["Animate"] = "animate";
-  AnimationType["Hover"] = "whileHover";
-  AnimationType["Tap"] = "whileTap";
-  AnimationType["Drag"] = "whileDrag";
-  AnimationType["Focus"] = "whileFocus";
-  AnimationType["Exit"] = "exit";
-})(AnimationType || (AnimationType = {}));
-
-function addDomEvent(target, eventName, handler, options) {
-  target.addEventListener(eventName, handler, options);
-  return function () {
-    return target.removeEventListener(eventName, handler, options);
-  };
-}
-/**
- * Attaches an event listener directly to the provided DOM element.
- *
- * Bypassing React's event system can be desirable, for instance when attaching non-passive
- * event handlers.
- *
- * ```jsx
- * const ref = useRef(null)
- *
- * useDomEvent(ref, 'wheel', onWheel, { passive: false })
- *
- * return <div ref={ref} />
- * ```
- *
- * @param ref - React.RefObject that's been provided to the element you want to bind the listener to.
- * @param eventName - Name of the event you want listen for.
- * @param handler - Function to fire when receiving the event.
- * @param options - Options to pass to `Event.addEventListener`.
- *
- * @public
- */
-
-
-function useDomEvent(ref, eventName, handler, options) {
-  React.useEffect(function () {
-    var element = ref.current;
-
-    if (handler && element) {
-      return addDomEvent(element, eventName, handler, options);
-    }
-  }, [ref, eventName, handler, options]);
-}
-
-/**
- *
- * @param props
- * @param ref
- * @internal
- */
-
-function useFocusGesture(_a) {
-  var whileFocus = _a.whileFocus,
-      visualElement = _a.visualElement;
-
-  var onFocus = function () {
-    var _a;
-
-    (_a = visualElement.animationState) === null || _a === void 0 ? void 0 : _a.setActive(AnimationType.Focus, true);
-  };
-
-  var onBlur = function () {
-    var _a;
-
-    (_a = visualElement.animationState) === null || _a === void 0 ? void 0 : _a.setActive(AnimationType.Focus, false);
-  };
-
-  useDomEvent(visualElement, "focus", whileFocus ? onFocus : undefined);
-  useDomEvent(visualElement, "blur", whileFocus ? onBlur : undefined);
-}
-
-function isMouseEvent(event) {
-  // PointerEvent inherits from MouseEvent so we can't use a straight instanceof check.
-  if (typeof PointerEvent !== "undefined" && event instanceof PointerEvent) {
-    return !!(event.pointerType === "mouse");
-  }
-
-  return event instanceof MouseEvent;
-}
-
-function isTouchEvent(event) {
-  var hasTouches = !!event.touches;
-  return hasTouches;
-}
-
-/**
- * Filters out events not attached to the primary pointer (currently left mouse button)
- * @param eventHandler
- */
-
-function filterPrimaryPointer(eventHandler) {
-  return function (event) {
-    var isMouseEvent = event instanceof MouseEvent;
-    var isPrimaryPointer = !isMouseEvent || isMouseEvent && event.button === 0;
-
-    if (isPrimaryPointer) {
-      eventHandler(event);
-    }
-  };
-}
-
-var defaultPagePoint = {
-  pageX: 0,
-  pageY: 0
-};
-
-function pointFromTouch(e, pointType) {
-  if (pointType === void 0) {
-    pointType = "page";
-  }
-
-  var primaryTouch = e.touches[0] || e.changedTouches[0];
-  var point = primaryTouch || defaultPagePoint;
-  return {
-    x: point[pointType + "X"],
-    y: point[pointType + "Y"]
-  };
-}
-
-function pointFromMouse(point, pointType) {
-  if (pointType === void 0) {
-    pointType = "page";
-  }
-
-  return {
-    x: point[pointType + "X"],
-    y: point[pointType + "Y"]
-  };
-}
-
-function extractEventInfo(event, pointType) {
-  if (pointType === void 0) {
-    pointType = "page";
-  }
-
-  return {
-    point: isTouchEvent(event) ? pointFromTouch(event, pointType) : pointFromMouse(event, pointType)
-  };
-}
-
-function getViewportPointFromEvent(event) {
-  return extractEventInfo(event, "client");
-}
-
-var wrapHandler = function (handler, shouldFilterPrimaryPointer) {
-  if (shouldFilterPrimaryPointer === void 0) {
-    shouldFilterPrimaryPointer = false;
-  }
-
-  var listener = function (event) {
-    return handler(event, extractEventInfo(event));
-  };
-
-  return shouldFilterPrimaryPointer ? filterPrimaryPointer(listener) : listener;
-};
-
-var supportsPointerEvents = function () {
-  return isBrowser$2 && window.onpointerdown === null;
-};
-
-var supportsTouchEvents = function () {
-  return isBrowser$2 && window.ontouchstart === null;
-};
-
-var supportsMouseEvents = function () {
-  return isBrowser$2 && window.onmousedown === null;
-};
-
-var mouseEventNames = {
-  pointerdown: "mousedown",
-  pointermove: "mousemove",
-  pointerup: "mouseup",
-  pointercancel: "mousecancel",
-  pointerover: "mouseover",
-  pointerout: "mouseout",
-  pointerenter: "mouseenter",
-  pointerleave: "mouseleave"
-};
-var touchEventNames = {
-  pointerdown: "touchstart",
-  pointermove: "touchmove",
-  pointerup: "touchend",
-  pointercancel: "touchcancel"
-};
-
-function getPointerEventName(name) {
-  if (supportsPointerEvents()) {
-    return name;
-  } else if (supportsTouchEvents()) {
-    return touchEventNames[name];
-  } else if (supportsMouseEvents()) {
-    return mouseEventNames[name];
-  }
-
-  return name;
-}
-
-function addPointerEvent(target, eventName, handler, options) {
-  return addDomEvent(target, getPointerEventName(eventName), wrapHandler(handler, eventName === "pointerdown"), options);
-}
-
-function usePointerEvent(ref, eventName, handler, options) {
-  return useDomEvent(ref, getPointerEventName(eventName), handler && wrapHandler(handler, eventName === "pointerdown"), options);
-}
-
-function createLock(name) {
-  var lock = null;
-  return function () {
-    var openLock = function () {
-      lock = null;
-    };
-
-    if (lock === null) {
-      lock = name;
-      return openLock;
-    }
-
-    return false;
-  };
-}
-
-var globalHorizontalLock = createLock("dragHorizontal");
-var globalVerticalLock = createLock("dragVertical");
-
-function getGlobalLock(drag) {
-  var lock = false;
-
-  if (drag === "y") {
-    lock = globalVerticalLock();
-  } else if (drag === "x") {
-    lock = globalHorizontalLock();
-  } else {
-    var openHorizontal_1 = globalHorizontalLock();
-    var openVertical_1 = globalVerticalLock();
-
-    if (openHorizontal_1 && openVertical_1) {
-      lock = function () {
-        openHorizontal_1();
-        openVertical_1();
-      };
-    } else {
-      // Release the locks because we don't use them
-      if (openHorizontal_1) openHorizontal_1();
-      if (openVertical_1) openVertical_1();
-    }
-  }
-
-  return lock;
-}
-
-function isDragActive() {
-  // Check the gesture lock - if we get it, it means no drag gesture is active
-  // and we can safely fire the tap gesture.
-  var openGestureLock = getGlobalLock(true);
-  if (!openGestureLock) return true;
-  openGestureLock();
-  return false;
-}
-
-function createHoverEvent(visualElement, isActive, callback) {
-  return function (event, info) {
-    var _a;
-
-    if (!isMouseEvent(event) || isDragActive()) return;
-    callback === null || callback === void 0 ? void 0 : callback(event, info);
-    (_a = visualElement.animationState) === null || _a === void 0 ? void 0 : _a.setActive(AnimationType.Hover, isActive);
-  };
-}
-
-function useHoverGesture(_a) {
-  var onHoverStart = _a.onHoverStart,
-      onHoverEnd = _a.onHoverEnd,
-      whileHover = _a.whileHover,
-      visualElement = _a.visualElement;
-  usePointerEvent(visualElement, "pointerenter", onHoverStart || whileHover ? createHoverEvent(visualElement, true, onHoverStart) : undefined);
-  usePointerEvent(visualElement, "pointerleave", onHoverEnd || whileHover ? createHoverEvent(visualElement, false, onHoverEnd) : undefined);
-}
-
-/**
- * Recursively traverse up the tree to check whether the provided child node
- * is the parent or a descendant of it.
- *
- * @param parent - Element to find
- * @param child - Element to test against parent
- */
-var isNodeOrChild = function (parent, child) {
-  if (!child) {
-    return false;
-  } else if (parent === child) {
-    return true;
-  } else {
-    return isNodeOrChild(parent, child.parentElement);
-  }
-};
-
-function useUnmountEffect(callback) {
-  return React.useEffect(function () {
-    return function () {
-      return callback();
-    };
-  }, []);
-}
-
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-var __assign$2 = function () {
-  __assign$2 = Object.assign || function __assign(t) {
-    for (var s, i = 1, n = arguments.length; i < n; i++) {
-      s = arguments[i];
-
-      for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-    }
-
-    return t;
-  };
-
-  return __assign$2.apply(this, arguments);
-};
-function __rest$2(s, e) {
-  var t = {};
-
-  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
-
-  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
-  }
-  return t;
-}
-function __spreadArray(to, from) {
-  for (var i = 0, il = from.length, j = to.length; i < il; i++, j++) to[j] = from[i];
-
-  return to;
-}
-
-var clamp$1 = function (min, max, v) {
-  return Math.min(Math.max(v, min), max);
-};
-
-var safeMin$2 = 0.001;
-var minDuration = 0.01;
-var maxDuration = 10.0;
-var minDamping = 0.05;
-var maxDamping = 1;
-
-function findSpring(_a) {
-  var _b = _a.duration,
-      duration = _b === void 0 ? 800 : _b,
-      _c = _a.bounce,
-      bounce = _c === void 0 ? 0.25 : _c,
-      _d = _a.velocity,
-      velocity = _d === void 0 ? 0 : _d,
-      _e = _a.mass,
-      mass = _e === void 0 ? 1 : _e;
-  var envelope;
-  var derivative;
-  warning$1(duration <= maxDuration * 1000, "Spring duration must be 10 seconds or less");
-  var dampingRatio = 1 - bounce;
-  dampingRatio = clamp$1(minDamping, maxDamping, dampingRatio);
-  duration = clamp$1(minDuration, maxDuration, duration / 1000);
-
-  if (dampingRatio < 1) {
-    envelope = function (undampedFreq) {
-      var exponentialDecay = undampedFreq * dampingRatio;
-      var delta = exponentialDecay * duration;
-      var a = exponentialDecay - velocity;
-      var b = calcAngularFreq(undampedFreq, dampingRatio);
-      var c = Math.exp(-delta);
-      return safeMin$2 - a / b * c;
-    };
-
-    derivative = function (undampedFreq) {
-      var exponentialDecay = undampedFreq * dampingRatio;
-      var delta = exponentialDecay * duration;
-      var d = delta * velocity + velocity;
-      var e = Math.pow(dampingRatio, 2) * Math.pow(undampedFreq, 2) * duration;
-      var f = Math.exp(-delta);
-      var g = calcAngularFreq(Math.pow(undampedFreq, 2), dampingRatio);
-      var factor = -envelope(undampedFreq) + safeMin$2 > 0 ? -1 : 1;
-      return factor * ((d - e) * f) / g;
-    };
-  } else {
-    envelope = function (undampedFreq) {
-      var a = Math.exp(-undampedFreq * duration);
-      var b = (undampedFreq - velocity) * duration + 1;
-      return -safeMin$2 + a * b;
-    };
-
-    derivative = function (undampedFreq) {
-      var a = Math.exp(-undampedFreq * duration);
-      var b = (velocity - undampedFreq) * (duration * duration);
-      return a * b;
-    };
-  }
-
-  var initialGuess = 5 / duration;
-  var undampedFreq = approximateRoot(envelope, derivative, initialGuess);
-  duration = duration * 1000;
-
-  if (isNaN(undampedFreq)) {
-    return {
-      stiffness: 100,
-      damping: 10,
-      duration: duration
-    };
-  } else {
-    var stiffness = Math.pow(undampedFreq, 2) * mass;
-    return {
-      stiffness: stiffness,
-      damping: dampingRatio * 2 * Math.sqrt(mass * stiffness),
-      duration: duration
-    };
-  }
-}
-
-var rootIterations = 12;
-
-function approximateRoot(envelope, derivative, initialGuess) {
-  var result = initialGuess;
-
-  for (var i = 1; i < rootIterations; i++) {
-    result = result - envelope(result) / derivative(result);
-  }
-
-  return result;
-}
-
-function calcAngularFreq(undampedFreq, dampingRatio) {
-  return undampedFreq * Math.sqrt(1 - dampingRatio * dampingRatio);
-}
-
-var durationKeys = ["duration", "bounce"];
-var physicsKeys = ["stiffness", "damping", "mass"];
-
-function isSpringType(options, keys) {
-  return keys.some(function (key) {
-    return options[key] !== undefined;
-  });
-}
-
-function getSpringOptions(options) {
-  var springOptions = __assign$2({
-    velocity: 0.0,
-    stiffness: 100,
-    damping: 10,
-    mass: 1.0,
-    isResolvedFromDuration: false
-  }, options);
-
-  if (!isSpringType(options, physicsKeys) && isSpringType(options, durationKeys)) {
-    var derived = findSpring(options);
-    springOptions = __assign$2(__assign$2(__assign$2({}, springOptions), derived), {
-      velocity: 0.0,
-      mass: 1.0
-    });
-    springOptions.isResolvedFromDuration = true;
-  }
-
-  return springOptions;
-}
-
-function spring(_a) {
-  var _b = _a.from,
-      from = _b === void 0 ? 0.0 : _b,
-      _c = _a.to,
-      to = _c === void 0 ? 1.0 : _c,
-      _d = _a.restSpeed,
-      restSpeed = _d === void 0 ? 2 : _d,
-      restDelta = _a.restDelta,
-      options = __rest$2(_a, ["from", "to", "restSpeed", "restDelta"]);
-
-  var state = {
-    done: false,
-    value: from
-  };
-
-  var _e = getSpringOptions(options),
-      stiffness = _e.stiffness,
-      damping = _e.damping,
-      mass = _e.mass,
-      velocity = _e.velocity,
-      duration = _e.duration,
-      isResolvedFromDuration = _e.isResolvedFromDuration;
-
-  var resolveSpring = zero;
-  var resolveVelocity = zero;
-
-  function createSpring() {
-    var initialVelocity = velocity ? -(velocity / 1000) : 0.0;
-    var initialDelta = to - from;
-    var dampingRatio = damping / (2 * Math.sqrt(stiffness * mass));
-    var undampedAngularFreq = Math.sqrt(stiffness / mass) / 1000;
-    restDelta !== null && restDelta !== void 0 ? restDelta : restDelta = Math.abs(to - from) <= 1 ? 0.01 : 0.4;
-
-    if (dampingRatio < 1) {
-      var angularFreq_1 = calcAngularFreq(undampedAngularFreq, dampingRatio);
-
-      resolveSpring = function (t) {
-        var envelope = Math.exp(-dampingRatio * undampedAngularFreq * t);
-        return to - envelope * ((initialVelocity + dampingRatio * undampedAngularFreq * initialDelta) / angularFreq_1 * Math.sin(angularFreq_1 * t) + initialDelta * Math.cos(angularFreq_1 * t));
-      };
-
-      resolveVelocity = function (t) {
-        var envelope = Math.exp(-dampingRatio * undampedAngularFreq * t);
-        return dampingRatio * undampedAngularFreq * envelope * (Math.sin(angularFreq_1 * t) * (initialVelocity + dampingRatio * undampedAngularFreq * initialDelta) / angularFreq_1 + initialDelta * Math.cos(angularFreq_1 * t)) - envelope * (Math.cos(angularFreq_1 * t) * (initialVelocity + dampingRatio * undampedAngularFreq * initialDelta) - angularFreq_1 * initialDelta * Math.sin(angularFreq_1 * t));
-      };
-    } else if (dampingRatio === 1) {
-      resolveSpring = function (t) {
-        return to - Math.exp(-undampedAngularFreq * t) * (initialDelta + (initialVelocity + undampedAngularFreq * initialDelta) * t);
-      };
-    } else {
-      var dampedAngularFreq_1 = undampedAngularFreq * Math.sqrt(dampingRatio * dampingRatio - 1);
-
-      resolveSpring = function (t) {
-        var envelope = Math.exp(-dampingRatio * undampedAngularFreq * t);
-        var freqForT = Math.min(dampedAngularFreq_1 * t, 300);
-        return to - envelope * ((initialVelocity + dampingRatio * undampedAngularFreq * initialDelta) * Math.sinh(freqForT) + dampedAngularFreq_1 * initialDelta * Math.cosh(freqForT)) / dampedAngularFreq_1;
-      };
-    }
-  }
-
-  createSpring();
-  return {
-    next: function (t) {
-      var current = resolveSpring(t);
-
-      if (!isResolvedFromDuration) {
-        var currentVelocity = resolveVelocity(t) * 1000;
-        var isBelowVelocityThreshold = Math.abs(currentVelocity) <= restSpeed;
-        var isBelowDisplacementThreshold = Math.abs(to - current) <= restDelta;
-        state.done = isBelowVelocityThreshold && isBelowDisplacementThreshold;
-      } else {
-        state.done = t >= duration;
-      }
-
-      state.value = state.done ? to : current;
-      return state;
-    },
-    flipTarget: function () {
-      var _a;
-
-      velocity = -velocity;
-      _a = [to, from], from = _a[0], to = _a[1];
-      createSpring();
-    }
-  };
-}
-
-spring.needsInterpolation = function (a, b) {
-  return typeof a === "string" || typeof b === "string";
-};
-
-var zero = function (_t) {
-  return 0;
-};
-
-var progress = function (from, to, value) {
-  var toFromDifference = to - from;
-  return toFromDifference === 0 ? 1 : (value - from) / toFromDifference;
-};
-
-var mix = function (from, to, progress) {
-  return -progress * from + progress * to + from;
-};
-
-var mixLinearColor = function (from, to, v) {
-  var fromExpo = from * from;
-  var toExpo = to * to;
-  return Math.sqrt(Math.max(0, v * (toExpo - fromExpo) + fromExpo));
-};
-
-var colorTypes = [hex, rgba, hsla];
-
-var getColorType = function (v) {
-  return colorTypes.find(function (type) {
-    return type.test(v);
-  });
-};
-
-var notAnimatable = function (color) {
-  return "'" + color + "' is not an animatable color. Use the equivalent color code instead.";
-};
-
-var mixColor = function (from, to) {
-  var fromColorType = getColorType(from);
-  var toColorType = getColorType(to);
-  invariant(!!fromColorType, notAnimatable(from));
-  invariant(!!toColorType, notAnimatable(to));
-  invariant(fromColorType.transform === toColorType.transform, "Both colors must be hex/RGBA, OR both must be HSLA.");
-  var fromColor = fromColorType.parse(from);
-  var toColor = toColorType.parse(to);
-
-  var blended = __assign$2({}, fromColor);
-
-  var mixFunc = fromColorType === hsla ? mix : mixLinearColor;
-  return function (v) {
-    for (var key in blended) {
-      if (key !== "alpha") {
-        blended[key] = mixFunc(fromColor[key], toColor[key], v);
-      }
-    }
-
-    blended.alpha = mix(fromColor.alpha, toColor.alpha, v);
-    return fromColorType.transform(blended);
-  };
-};
-
-var isNum = function (v) {
-  return typeof v === 'number';
-};
-
-var combineFunctions = function (a, b) {
-  return function (v) {
-    return b(a(v));
-  };
-};
-
-var pipe = function () {
-  var transformers = [];
-
-  for (var _i = 0; _i < arguments.length; _i++) {
-    transformers[_i] = arguments[_i];
-  }
-
-  return transformers.reduce(combineFunctions);
-};
-
-function getMixer(origin, target) {
-  if (isNum(origin)) {
-    return function (v) {
-      return mix(origin, target, v);
-    };
-  } else if (color.test(origin)) {
-    return mixColor(origin, target);
-  } else {
-    return mixComplex(origin, target);
-  }
-}
-
-var mixArray = function (from, to) {
-  var output = __spreadArray([], from);
-
-  var numValues = output.length;
-  var blendValue = from.map(function (fromThis, i) {
-    return getMixer(fromThis, to[i]);
-  });
-  return function (v) {
-    for (var i = 0; i < numValues; i++) {
-      output[i] = blendValue[i](v);
-    }
-
-    return output;
-  };
-};
-
-var mixObject = function (origin, target) {
-  var output = __assign$2(__assign$2({}, origin), target);
-
-  var blendValue = {};
-
-  for (var key in output) {
-    if (origin[key] !== undefined && target[key] !== undefined) {
-      blendValue[key] = getMixer(origin[key], target[key]);
-    }
-  }
-
-  return function (v) {
-    for (var key in blendValue) {
-      output[key] = blendValue[key](v);
-    }
-
-    return output;
-  };
-};
-
-function analyse(value) {
-  var parsed = complex.parse(value);
-  var numValues = parsed.length;
-  var numNumbers = 0;
-  var numRGB = 0;
-  var numHSL = 0;
-
-  for (var i = 0; i < numValues; i++) {
-    if (numNumbers || typeof parsed[i] === "number") {
-      numNumbers++;
-    } else {
-      if (parsed[i].hue !== undefined) {
-        numHSL++;
-      } else {
-        numRGB++;
-      }
-    }
-  }
-
-  return {
-    parsed: parsed,
-    numNumbers: numNumbers,
-    numRGB: numRGB,
-    numHSL: numHSL
-  };
-}
-
-var mixComplex = function (origin, target) {
-  var template = complex.createTransformer(target);
-  var originStats = analyse(origin);
-  var targetStats = analyse(target);
-  invariant(originStats.numHSL === targetStats.numHSL && originStats.numRGB === targetStats.numRGB && originStats.numNumbers >= targetStats.numNumbers, "Complex values '" + origin + "' and '" + target + "' too different to mix. Ensure all colors are of the same type.");
-  return pipe(mixArray(originStats.parsed, targetStats.parsed), template);
-};
-
-var mixNumber = function (from, to) {
-  return function (p) {
-    return mix(from, to, p);
-  };
-};
-
-function detectMixerFactory(v) {
-  if (typeof v === 'number') {
-    return mixNumber;
-  } else if (typeof v === 'string') {
-    if (color.test(v)) {
-      return mixColor;
-    } else {
-      return mixComplex;
-    }
-  } else if (Array.isArray(v)) {
-    return mixArray;
-  } else if (typeof v === 'object') {
-    return mixObject;
-  }
-}
-
-function createMixers(output, ease, customMixer) {
-  var mixers = [];
-  var mixerFactory = customMixer || detectMixerFactory(output[0]);
-  var numMixers = output.length - 1;
-
-  for (var i = 0; i < numMixers; i++) {
-    var mixer = mixerFactory(output[i], output[i + 1]);
-
-    if (ease) {
-      var easingFunction = Array.isArray(ease) ? ease[i] : ease;
-      mixer = pipe(easingFunction, mixer);
-    }
-
-    mixers.push(mixer);
-  }
-
-  return mixers;
-}
-
-function fastInterpolate(_a, _b) {
-  var from = _a[0],
-      to = _a[1];
-  var mixer = _b[0];
-  return function (v) {
-    return mixer(progress(from, to, v));
-  };
-}
-
-function slowInterpolate(input, mixers) {
-  var inputLength = input.length;
-  var lastInputIndex = inputLength - 1;
-  return function (v) {
-    var mixerIndex = 0;
-    var foundMixerIndex = false;
-
-    if (v <= input[0]) {
-      foundMixerIndex = true;
-    } else if (v >= input[lastInputIndex]) {
-      mixerIndex = lastInputIndex - 1;
-      foundMixerIndex = true;
-    }
-
-    if (!foundMixerIndex) {
-      var i = 1;
-
-      for (; i < inputLength; i++) {
-        if (input[i] > v || i === lastInputIndex) {
-          break;
-        }
-      }
-
-      mixerIndex = i - 1;
-    }
-
-    var progressInRange = progress(input[mixerIndex], input[mixerIndex + 1], v);
-    return mixers[mixerIndex](progressInRange);
-  };
-}
-
-function interpolate(input, output, _a) {
-  var _b = _a === void 0 ? {} : _a,
-      _c = _b.clamp,
-      isClamp = _c === void 0 ? true : _c,
-      ease = _b.ease,
-      mixer = _b.mixer;
-
-  var inputLength = input.length;
-  invariant(inputLength === output.length, 'Both input and output ranges must be the same length');
-  invariant(!ease || !Array.isArray(ease) || ease.length === inputLength - 1, 'Array of easing functions must be of length `input.length - 1`, as it applies to the transitions **between** the defined values.');
-
-  if (input[0] > input[inputLength - 1]) {
-    input = [].concat(input);
-    output = [].concat(output);
-    input.reverse();
-    output.reverse();
-  }
-
-  var mixers = createMixers(output, ease, mixer);
-  var interpolator = inputLength === 2 ? fastInterpolate(input, mixers) : slowInterpolate(input, mixers);
-  return isClamp ? function (v) {
-    return interpolator(clamp$1(input[0], input[inputLength - 1], v));
-  } : interpolator;
-}
-
-var reverseEasing = function (easing) {
-  return function (p) {
-    return 1 - easing(1 - p);
-  };
-};
-
-var mirrorEasing = function (easing) {
-  return function (p) {
-    return p <= 0.5 ? easing(2 * p) / 2 : (2 - easing(2 * (1 - p))) / 2;
-  };
-};
-
-var createExpoIn = function (power) {
-  return function (p) {
-    return Math.pow(p, power);
-  };
-};
-
-var createBackIn = function (power) {
-  return function (p) {
-    return p * p * ((power + 1) * p - power);
-  };
-};
-
-var createAnticipate = function (power) {
-  var backEasing = createBackIn(power);
-  return function (p) {
-    return (p *= 2) < 1 ? 0.5 * backEasing(p) : 0.5 * (2 - Math.pow(2, -10 * (p - 1)));
-  };
-};
-
-var DEFAULT_OVERSHOOT_STRENGTH = 1.525;
-var BOUNCE_FIRST_THRESHOLD = 4.0 / 11.0;
-var BOUNCE_SECOND_THRESHOLD = 8.0 / 11.0;
-var BOUNCE_THIRD_THRESHOLD = 9.0 / 10.0;
-
-var linear = function (p) {
-  return p;
-};
-
-var easeIn = createExpoIn(2);
-var easeOut = reverseEasing(easeIn);
-var easeInOut = mirrorEasing(easeIn);
-
-var circIn = function (p) {
-  return 1 - Math.sin(Math.acos(p));
-};
-
-var circOut = reverseEasing(circIn);
-var circInOut = mirrorEasing(circOut);
-var backIn = createBackIn(DEFAULT_OVERSHOOT_STRENGTH);
-var backOut = reverseEasing(backIn);
-var backInOut = mirrorEasing(backIn);
-var anticipate = createAnticipate(DEFAULT_OVERSHOOT_STRENGTH);
-var ca = 4356.0 / 361.0;
-var cb = 35442.0 / 1805.0;
-var cc = 16061.0 / 1805.0;
-
-var bounceOut = function (p) {
-  if (p === 1 || p === 0) return p;
-  var p2 = p * p;
-  return p < BOUNCE_FIRST_THRESHOLD ? 7.5625 * p2 : p < BOUNCE_SECOND_THRESHOLD ? 9.075 * p2 - 9.9 * p + 3.4 : p < BOUNCE_THIRD_THRESHOLD ? ca * p2 - cb * p + cc : 10.8 * p * p - 20.52 * p + 10.72;
-};
-
-var bounceIn = reverseEasing(bounceOut);
-
-var bounceInOut = function (p) {
-  return p < 0.5 ? 0.5 * (1.0 - bounceOut(1.0 - p * 2.0)) : 0.5 * bounceOut(p * 2.0 - 1.0) + 0.5;
-};
-
-function defaultEasing(values, easing) {
-  return values.map(function () {
-    return easing || easeInOut;
-  }).splice(0, values.length - 1);
-}
-
-function defaultOffset(values) {
-  var numValues = values.length;
-  return values.map(function (_value, i) {
-    return i !== 0 ? i / (numValues - 1) : 0;
-  });
-}
-
-function convertOffsetToTimes(offset, duration) {
-  return offset.map(function (o) {
-    return o * duration;
-  });
-}
-
-function keyframes$1(_a) {
-  var _b = _a.from,
-      from = _b === void 0 ? 0 : _b,
-      _c = _a.to,
-      to = _c === void 0 ? 1 : _c,
-      ease = _a.ease,
-      offset = _a.offset,
-      _d = _a.duration,
-      duration = _d === void 0 ? 300 : _d;
-  var state = {
-    done: false,
-    value: from
-  };
-  var values = Array.isArray(to) ? to : [from, to];
-  var times = convertOffsetToTimes(offset && offset.length === values.length ? offset : defaultOffset(values), duration);
-
-  function createInterpolator() {
-    return interpolate(times, values, {
-      ease: Array.isArray(ease) ? ease : defaultEasing(values, ease)
-    });
-  }
-
-  var interpolator = createInterpolator();
-  return {
-    next: function (t) {
-      state.value = interpolator(t);
-      state.done = t >= duration;
-      return state;
-    },
-    flipTarget: function () {
-      values.reverse();
-      interpolator = createInterpolator();
-    }
-  };
-}
-
-function decay(_a) {
-  var _b = _a.velocity,
-      velocity = _b === void 0 ? 0 : _b,
-      _c = _a.from,
-      from = _c === void 0 ? 0 : _c,
-      _d = _a.power,
-      power = _d === void 0 ? 0.8 : _d,
-      _e = _a.timeConstant,
-      timeConstant = _e === void 0 ? 350 : _e,
-      _f = _a.restDelta,
-      restDelta = _f === void 0 ? 0.5 : _f,
-      modifyTarget = _a.modifyTarget;
-  var state = {
-    done: false,
-    value: from
-  };
-  var amplitude = power * velocity;
-  var ideal = from + amplitude;
-  var target = modifyTarget === undefined ? ideal : modifyTarget(ideal);
-  if (target !== ideal) amplitude = target - from;
-  return {
-    next: function (t) {
-      var delta = -amplitude * Math.exp(-t / timeConstant);
-      state.done = !(delta > restDelta || delta < -restDelta);
-      state.value = state.done ? target : target + delta;
-      return state;
-    },
-    flipTarget: function () {}
-  };
-}
-
-var types = {
-  keyframes: keyframes$1,
-  spring: spring,
-  decay: decay
-};
-
-function detectAnimationFromOptions(config) {
-  if (Array.isArray(config.to)) {
-    return keyframes$1;
-  } else if (types[config.type]) {
-    return types[config.type];
-  }
-
-  var keys = new Set(Object.keys(config));
-
-  if (keys.has("ease") || keys.has("duration") && !keys.has("dampingRatio")) {
-    return keyframes$1;
-  } else if (keys.has("dampingRatio") || keys.has("stiffness") || keys.has("mass") || keys.has("damping") || keys.has("restSpeed") || keys.has("restDelta")) {
-    return spring;
-  }
-
-  return keyframes$1;
-}
-
-function loopElapsed(elapsed, duration, delay) {
-  if (delay === void 0) {
-    delay = 0;
-  }
-
-  return elapsed - duration - delay;
-}
-
-function reverseElapsed(elapsed, duration, delay, isForwardPlayback) {
-  if (delay === void 0) {
-    delay = 0;
-  }
-
-  if (isForwardPlayback === void 0) {
-    isForwardPlayback = true;
-  }
-
-  return isForwardPlayback ? loopElapsed(duration + -elapsed, duration, delay) : duration - (elapsed - duration) + delay;
-}
-
-function hasRepeatDelayElapsed(elapsed, duration, delay, isForwardPlayback) {
-  return isForwardPlayback ? elapsed >= duration + delay : elapsed <= -delay;
-}
-
-var framesync = function (update) {
-  var passTimestamp = function (_a) {
-    var delta = _a.delta;
-    return update(delta);
-  };
-
-  return {
-    start: function () {
-      return sync.update(passTimestamp, true);
-    },
-    stop: function () {
-      return cancelSync.update(passTimestamp);
-    }
-  };
-};
-
-function animate(_a) {
-  var _b, _c;
-
-  var from = _a.from,
-      _d = _a.autoplay,
-      autoplay = _d === void 0 ? true : _d,
-      _e = _a.driver,
-      driver = _e === void 0 ? framesync : _e,
-      _f = _a.elapsed,
-      elapsed = _f === void 0 ? 0 : _f,
-      _g = _a.repeat,
-      repeatMax = _g === void 0 ? 0 : _g,
-      _h = _a.repeatType,
-      repeatType = _h === void 0 ? "loop" : _h,
-      _j = _a.repeatDelay,
-      repeatDelay = _j === void 0 ? 0 : _j,
-      onPlay = _a.onPlay,
-      onStop = _a.onStop,
-      onComplete = _a.onComplete,
-      onRepeat = _a.onRepeat,
-      onUpdate = _a.onUpdate,
-      options = __rest$2(_a, ["from", "autoplay", "driver", "elapsed", "repeat", "repeatType", "repeatDelay", "onPlay", "onStop", "onComplete", "onRepeat", "onUpdate"]);
-
-  var to = options.to;
-  var driverControls;
-  var repeatCount = 0;
-  var computedDuration = options.duration;
-  var latest;
-  var isComplete = false;
-  var isForwardPlayback = true;
-  var interpolateFromNumber;
-  var animator = detectAnimationFromOptions(options);
-
-  if ((_c = (_b = animator).needsInterpolation) === null || _c === void 0 ? void 0 : _c.call(_b, from, to)) {
-    interpolateFromNumber = interpolate([0, 100], [from, to], {
-      clamp: false
-    });
-    from = 0;
-    to = 100;
-  }
-
-  var animation = animator(__assign$2(__assign$2({}, options), {
-    from: from,
-    to: to
-  }));
-
-  function repeat() {
-    repeatCount++;
-
-    if (repeatType === "reverse") {
-      isForwardPlayback = repeatCount % 2 === 0;
-      elapsed = reverseElapsed(elapsed, computedDuration, repeatDelay, isForwardPlayback);
-    } else {
-      elapsed = loopElapsed(elapsed, computedDuration, repeatDelay);
-      if (repeatType === "mirror") animation.flipTarget();
-    }
-
-    isComplete = false;
-    onRepeat && onRepeat();
-  }
-
-  function complete() {
-    driverControls.stop();
-    onComplete && onComplete();
-  }
-
-  function update(delta) {
-    if (!isForwardPlayback) delta = -delta;
-    elapsed += delta;
-
-    if (!isComplete) {
-      var state = animation.next(Math.max(0, elapsed));
-      latest = state.value;
-      if (interpolateFromNumber) latest = interpolateFromNumber(latest);
-      isComplete = isForwardPlayback ? state.done : elapsed <= 0;
-    }
-
-    onUpdate === null || onUpdate === void 0 ? void 0 : onUpdate(latest);
-
-    if (isComplete) {
-      if (repeatCount === 0) computedDuration !== null && computedDuration !== void 0 ? computedDuration : computedDuration = elapsed;
-
-      if (repeatCount < repeatMax) {
-        hasRepeatDelayElapsed(elapsed, computedDuration, repeatDelay, isForwardPlayback) && repeat();
-      } else {
-        complete();
-      }
-    }
-  }
-
-  function play() {
-    onPlay === null || onPlay === void 0 ? void 0 : onPlay();
-    driverControls = driver(update);
-    driverControls.start();
-  }
-
-  autoplay && play();
-  return {
-    stop: function () {
-      onStop === null || onStop === void 0 ? void 0 : onStop();
-      driverControls.stop();
-    }
-  };
-}
-
-function velocityPerSecond(velocity, frameDuration) {
-  return frameDuration ? velocity * (1000 / frameDuration) : 0;
-}
-
-function inertia(_a) {
-  var _b = _a.from,
-      from = _b === void 0 ? 0 : _b,
-      _c = _a.velocity,
-      velocity = _c === void 0 ? 0 : _c,
-      min = _a.min,
-      max = _a.max,
-      _d = _a.power,
-      power = _d === void 0 ? 0.8 : _d,
-      _e = _a.timeConstant,
-      timeConstant = _e === void 0 ? 750 : _e,
-      _f = _a.bounceStiffness,
-      bounceStiffness = _f === void 0 ? 500 : _f,
-      _g = _a.bounceDamping,
-      bounceDamping = _g === void 0 ? 10 : _g,
-      _h = _a.restDelta,
-      restDelta = _h === void 0 ? 1 : _h,
-      modifyTarget = _a.modifyTarget,
-      driver = _a.driver,
-      onUpdate = _a.onUpdate,
-      onComplete = _a.onComplete;
-  var currentAnimation;
-
-  function isOutOfBounds(v) {
-    return min !== undefined && v < min || max !== undefined && v > max;
-  }
-
-  function boundaryNearest(v) {
-    if (min === undefined) return max;
-    if (max === undefined) return min;
-    return Math.abs(min - v) < Math.abs(max - v) ? min : max;
-  }
-
-  function startAnimation(options) {
-    currentAnimation === null || currentAnimation === void 0 ? void 0 : currentAnimation.stop();
-    currentAnimation = animate(__assign$2(__assign$2({}, options), {
-      driver: driver,
-      onUpdate: function (v) {
-        var _a;
-
-        onUpdate === null || onUpdate === void 0 ? void 0 : onUpdate(v);
-        (_a = options.onUpdate) === null || _a === void 0 ? void 0 : _a.call(options, v);
-      },
-      onComplete: onComplete
-    }));
-  }
-
-  function startSpring(options) {
-    startAnimation(__assign$2({
-      type: "spring",
-      stiffness: bounceStiffness,
-      damping: bounceDamping,
-      restDelta: restDelta
-    }, options));
-  }
-
-  if (isOutOfBounds(from)) {
-    startSpring({
-      from: from,
-      velocity: velocity,
-      to: boundaryNearest(from)
-    });
-  } else {
-    var target = power * velocity + from;
-    if (typeof modifyTarget !== "undefined") target = modifyTarget(target);
-    var boundary_1 = boundaryNearest(target);
-    var heading_1 = boundary_1 === min ? -1 : 1;
-    var prev_1;
-    var current_1;
-
-    var checkBoundary = function (v) {
-      prev_1 = current_1;
-      current_1 = v;
-      velocity = velocityPerSecond(v - prev_1, getFrameData().delta);
-
-      if (heading_1 === 1 && v > boundary_1 || heading_1 === -1 && v < boundary_1) {
-        startSpring({
-          from: v,
-          to: boundary_1,
-          velocity: velocity
-        });
-      }
-    };
-
-    startAnimation({
-      type: "decay",
-      from: from,
-      velocity: velocity,
-      timeConstant: timeConstant,
-      power: power,
-      restDelta: restDelta,
-      modifyTarget: modifyTarget,
-      onUpdate: isOutOfBounds(target) ? checkBoundary : undefined
-    });
-  }
-
-  return {
-    stop: function () {
-      return currentAnimation === null || currentAnimation === void 0 ? void 0 : currentAnimation.stop();
-    }
-  };
-}
-
-var isPoint = function (point) {
-  return point.hasOwnProperty('x') && point.hasOwnProperty('y');
-};
-
-var isPoint3D = function (point) {
-  return isPoint(point) && point.hasOwnProperty('z');
-};
-
-var distance1D = function (a, b) {
-  return Math.abs(a - b);
-};
-
-function distance(a, b) {
-  if (isNum(a) && isNum(b)) {
-    return distance1D(a, b);
-  } else if (isPoint(a) && isPoint(b)) {
-    var xDelta = distance1D(a.x, b.x);
-    var yDelta = distance1D(a.y, b.y);
-    var zDelta = isPoint3D(a) && isPoint3D(b) ? distance1D(a.z, b.z) : 0;
-    return Math.sqrt(Math.pow(xDelta, 2) + Math.pow(yDelta, 2) + Math.pow(zDelta, 2));
-  }
-}
-
-var a = function (a1, a2) {
-  return 1.0 - 3.0 * a2 + 3.0 * a1;
-};
-
-var b = function (a1, a2) {
-  return 3.0 * a2 - 6.0 * a1;
-};
-
-var c = function (a1) {
-  return 3.0 * a1;
-};
-
-var calcBezier = function (t, a1, a2) {
-  return ((a(a1, a2) * t + b(a1, a2)) * t + c(a1)) * t;
-};
-
-var getSlope = function (t, a1, a2) {
-  return 3.0 * a(a1, a2) * t * t + 2.0 * b(a1, a2) * t + c(a1);
-};
-
-var subdivisionPrecision = 0.0000001;
-var subdivisionMaxIterations = 10;
-
-function binarySubdivide(aX, aA, aB, mX1, mX2) {
-  var currentX;
-  var currentT;
-  var i = 0;
-
-  do {
-    currentT = aA + (aB - aA) / 2.0;
-    currentX = calcBezier(currentT, mX1, mX2) - aX;
-
-    if (currentX > 0.0) {
-      aB = currentT;
-    } else {
-      aA = currentT;
-    }
-  } while (Math.abs(currentX) > subdivisionPrecision && ++i < subdivisionMaxIterations);
-
-  return currentT;
-}
-
-var newtonIterations = 8;
-var newtonMinSlope = 0.001;
-
-function newtonRaphsonIterate(aX, aGuessT, mX1, mX2) {
-  for (var i = 0; i < newtonIterations; ++i) {
-    var currentSlope = getSlope(aGuessT, mX1, mX2);
-
-    if (currentSlope === 0.0) {
-      return aGuessT;
-    }
-
-    var currentX = calcBezier(aGuessT, mX1, mX2) - aX;
-    aGuessT -= currentX / currentSlope;
-  }
-
-  return aGuessT;
-}
-
-var kSplineTableSize = 11;
-var kSampleStepSize = 1.0 / (kSplineTableSize - 1.0);
-
-function cubicBezier(mX1, mY1, mX2, mY2) {
-  if (mX1 === mY1 && mX2 === mY2) return linear;
-  var sampleValues = new Float32Array(kSplineTableSize);
-
-  for (var i = 0; i < kSplineTableSize; ++i) {
-    sampleValues[i] = calcBezier(i * kSampleStepSize, mX1, mX2);
-  }
-
-  function getTForX(aX) {
-    var intervalStart = 0.0;
-    var currentSample = 1;
-    var lastSample = kSplineTableSize - 1;
-
-    for (; currentSample !== lastSample && sampleValues[currentSample] <= aX; ++currentSample) {
-      intervalStart += kSampleStepSize;
-    }
-
-    --currentSample;
-    var dist = (aX - sampleValues[currentSample]) / (sampleValues[currentSample + 1] - sampleValues[currentSample]);
-    var guessForT = intervalStart + dist * kSampleStepSize;
-    var initialSlope = getSlope(guessForT, mX1, mX2);
-
-    if (initialSlope >= newtonMinSlope) {
-      return newtonRaphsonIterate(aX, guessForT, mX1, mX2);
-    } else if (initialSlope === 0.0) {
-      return guessForT;
-    } else {
-      return binarySubdivide(aX, intervalStart, intervalStart + kSampleStepSize, mX1, mX2);
-    }
-  }
-
-  return function (t) {
-    return t === 0 || t === 1 ? t : calcBezier(getTForX(t), mY1, mY2);
-  };
-}
-
-/**
- * @param handlers -
- * @internal
- */
-
-function useTapGesture(_a) {
-  var onTap = _a.onTap,
-      onTapStart = _a.onTapStart,
-      onTapCancel = _a.onTapCancel,
-      whileTap = _a.whileTap,
-      visualElement = _a.visualElement;
-  var hasPressListeners = onTap || onTapStart || onTapCancel || whileTap;
-  var isPressing = React.useRef(false);
-  var cancelPointerEndListeners = React.useRef(null);
-
-  function removePointerEndListener() {
-    var _a;
-
-    (_a = cancelPointerEndListeners.current) === null || _a === void 0 ? void 0 : _a.call(cancelPointerEndListeners);
-    cancelPointerEndListeners.current = null;
-  }
-
-  function checkPointerEnd() {
-    var _a;
-
-    removePointerEndListener();
-    isPressing.current = false;
-    (_a = visualElement.animationState) === null || _a === void 0 ? void 0 : _a.setActive(AnimationType.Tap, false);
-    return !isDragActive();
-  }
-
-  function onPointerUp(event, info) {
-    if (!checkPointerEnd()) return;
-    /**
-     * We only count this as a tap gesture if the event.target is the same
-     * as, or a child of, this component's element
-     */
-
-    !isNodeOrChild(visualElement.getInstance(), event.target) ? onTapCancel === null || onTapCancel === void 0 ? void 0 : onTapCancel(event, info) : onTap === null || onTap === void 0 ? void 0 : onTap(event, info);
-  }
-
-  function onPointerCancel(event, info) {
-    if (!checkPointerEnd()) return;
-    onTapCancel === null || onTapCancel === void 0 ? void 0 : onTapCancel(event, info);
-  }
-
-  function onPointerDown(event, info) {
-    var _a;
-
-    removePointerEndListener();
-    if (isPressing.current) return;
-    isPressing.current = true;
-    cancelPointerEndListeners.current = pipe(addPointerEvent(window, "pointerup", onPointerUp), addPointerEvent(window, "pointercancel", onPointerCancel));
-    onTapStart === null || onTapStart === void 0 ? void 0 : onTapStart(event, info);
-    (_a = visualElement.animationState) === null || _a === void 0 ? void 0 : _a.setActive(AnimationType.Tap, true);
-  }
-
-  usePointerEvent(visualElement, "pointerdown", hasPressListeners ? onPointerDown : undefined);
-  useUnmountEffect(removePointerEndListener);
-}
-
-var makeRenderlessComponent = function (hook) {
-  return function (props) {
-    hook(props);
-    return null;
-  };
-};
-
-var gestureAnimations = {
-  tap: makeRenderlessComponent(useTapGesture),
-  focus: makeRenderlessComponent(useFocusGesture),
-  hover: makeRenderlessComponent(useHoverGesture)
-};
-
-function shallowCompare(next, prev) {
-  if (!Array.isArray(prev)) return false;
-  var prevLength = prev.length;
-  if (prevLength !== next.length) return false;
-
-  for (var i = 0; i < prevLength; i++) {
-    if (prev[i] !== next[i]) return false;
-  }
-
-  return true;
-}
-
-/**
- * Converts seconds to milliseconds
- *
- * @param seconds - Time in seconds.
- * @return milliseconds - Converted time in milliseconds.
- */
-var secondsToMilliseconds = function (seconds) {
-  return seconds * 1000;
-};
-
-var easingLookup = {
-  linear: linear,
-  easeIn: easeIn,
-  easeInOut: easeInOut,
-  easeOut: easeOut,
-  circIn: circIn,
-  circInOut: circInOut,
-  circOut: circOut,
-  backIn: backIn,
-  backInOut: backInOut,
-  backOut: backOut,
-  anticipate: anticipate,
-  bounceIn: bounceIn,
-  bounceInOut: bounceInOut,
-  bounceOut: bounceOut
-};
-
-var easingDefinitionToFunction = function (definition) {
-  if (Array.isArray(definition)) {
-    // If cubic bezier definition, create bezier curve
-    invariant(definition.length === 4, "Cubic bezier arrays must contain four numerical values.");
-
-    var _a = __read(definition, 4),
-        x1 = _a[0],
-        y1 = _a[1],
-        x2 = _a[2],
-        y2 = _a[3];
-
-    return cubicBezier(x1, y1, x2, y2);
-  } else if (typeof definition === "string") {
-    // Else lookup from table
-    invariant(easingLookup[definition] !== undefined, "Invalid easing type '" + definition + "'");
-    return easingLookup[definition];
-  }
-
-  return definition;
-};
-
-var isEasingArray = function (ease) {
-  return Array.isArray(ease) && typeof ease[0] !== "number";
-};
-
-/**
- * Check if a value is animatable. Examples:
- *
- * ✅: 100, "100px", "#fff"
- * ❌: "block", "url(2.jpg)"
- * @param value
- *
- * @internal
- */
-
-var isAnimatable = function (key, value) {
-  // If the list of keys tat might be non-animatable grows, replace with Set
-  if (key === "zIndex") return false; // If it's a number or a keyframes array, we can animate it. We might at some point
-  // need to do a deep isAnimatable check of keyframes, or let Popmotion handle this,
-  // but for now lets leave it like this for performance reasons
-
-  if (typeof value === "number" || Array.isArray(value)) return true;
-
-  if (typeof value === "string" && // It's animatable if we have a string
-  complex.test(value) && // And it contains numbers and/or colors
-  !value.startsWith("url(") // Unless it starts with "url("
-  ) {
-      return true;
-    }
-
-  return false;
-};
-
-var underDampedSpring = function () {
-  return {
-    type: "spring",
-    stiffness: 500,
-    damping: 25,
-    restDelta: 0.5,
-    restSpeed: 10
-  };
-};
-
-var criticallyDampedSpring = function (to) {
-  return {
-    type: "spring",
-    stiffness: 550,
-    damping: to === 0 ? 2 * Math.sqrt(550) : 30,
-    restDelta: 0.01,
-    restSpeed: 10
-  };
-};
-
-var linearTween = function () {
-  return {
-    type: "keyframes",
-    ease: "linear",
-    duration: 0.3
-  };
-};
-
-var keyframes = function (values) {
-  return {
-    type: "keyframes",
-    duration: 0.8,
-    values: values
-  };
-};
-
-var defaultTransitions = {
-  x: underDampedSpring,
-  y: underDampedSpring,
-  z: underDampedSpring,
-  rotate: underDampedSpring,
-  rotateX: underDampedSpring,
-  rotateY: underDampedSpring,
-  rotateZ: underDampedSpring,
-  scaleX: criticallyDampedSpring,
-  scaleY: criticallyDampedSpring,
-  scale: criticallyDampedSpring,
-  opacity: linearTween,
-  backgroundColor: linearTween,
-  color: linearTween,
-  default: criticallyDampedSpring
-};
-
-var getDefaultTransition = function (valueKey, to) {
-  var transitionFactory;
-
-  if (isKeyframesTarget(to)) {
-    transitionFactory = keyframes;
-  } else {
-    transitionFactory = defaultTransitions[valueKey] || defaultTransitions.default;
-  }
-
-  return __assign$4({
-    to: to
-  }, transitionFactory(to));
-};
-
-/**
- * A map of default value types for common values
- */
-
-var defaultValueTypes = __assign$4(__assign$4({}, numberValueTypes), {
-  // Color props
-  color: color,
-  backgroundColor: color,
-  outlineColor: color,
-  fill: color,
-  stroke: color,
-  // Border props
-  borderColor: color,
-  borderTopColor: color,
-  borderRightColor: color,
-  borderBottomColor: color,
-  borderLeftColor: color,
-  filter: filter,
-  WebkitFilter: filter
-});
-/**
- * Gets the default ValueType for the provided value key
- */
-
-
-var getDefaultValueType = function (key) {
-  return defaultValueTypes[key];
-};
-
-function getAnimatableNone(key, value) {
-  var _a;
-
-  var defaultValueType = getDefaultValueType(key);
-  if (defaultValueType !== filter) defaultValueType = complex; // If value is not recognised as animatable, ie "none", create an animatable version origin based on the target
-
-  return (_a = defaultValueType.getAnimatableNone) === null || _a === void 0 ? void 0 : _a.call(defaultValueType, value);
-}
-
-/**
- * Decide whether a transition is defined on a given Transition.
- * This filters out orchestration options and returns true
- * if any options are left.
- */
-
-function isTransitionDefined(_a) {
-  _a.when;
-  _a.delay;
-  _a.delayChildren;
-  _a.staggerChildren;
-  _a.staggerDirection;
-  _a.repeat;
-  _a.repeatType;
-  _a.repeatDelay;
-  _a.from;
-
-  var transition = __rest$3(_a, ["when", "delay", "delayChildren", "staggerChildren", "staggerDirection", "repeat", "repeatType", "repeatDelay", "from"]);
-
-  return !!Object.keys(transition).length;
-}
-
-var legacyRepeatWarning = false;
-/**
- * Convert Framer Motion's Transition type into Popmotion-compatible options.
- */
-
-function convertTransitionToAnimationOptions(_a) {
-  var ease = _a.ease,
-      times = _a.times,
-      yoyo = _a.yoyo,
-      flip = _a.flip,
-      loop = _a.loop,
-      transition = __rest$3(_a, ["ease", "times", "yoyo", "flip", "loop"]);
-
-  var options = __assign$4({}, transition);
-
-  if (times) options["offset"] = times;
-  /**
-   * Convert any existing durations from seconds to milliseconds
-   */
-
-  if (transition.duration) options["duration"] = secondsToMilliseconds(transition.duration);
-  if (transition.repeatDelay) options.repeatDelay = secondsToMilliseconds(transition.repeatDelay);
-  /**
-   * Map easing names to Popmotion's easing functions
-   */
-
-  if (ease) {
-    options["ease"] = isEasingArray(ease) ? ease.map(easingDefinitionToFunction) : easingDefinitionToFunction(ease);
-  }
-  /**
-   * Support legacy transition API
-   */
-
-
-  if (transition.type === "tween") options.type = "keyframes";
-  /**
-   * TODO: These options are officially removed from the API.
-   */
-
-  if (yoyo || loop || flip) {
-    warning$1(!legacyRepeatWarning, "yoyo, loop and flip have been removed from the API. Replace with repeat and repeatType options.");
-    legacyRepeatWarning = true;
-
-    if (yoyo) {
-      options.repeatType = "reverse";
-    } else if (loop) {
-      options.repeatType = "loop";
-    } else if (flip) {
-      options.repeatType = "mirror";
-    }
-
-    options.repeat = loop || yoyo || flip || transition.repeat;
-  }
-  /**
-   * TODO: Popmotion 9 has the ability to automatically detect whether to use
-   * a keyframes or spring animation, but does so by detecting velocity and other spring options.
-   * It'd be good to introduce a similar thing here.
-   */
-
-
-  if (transition.type !== "spring") options.type = "keyframes";
-  return options;
-}
-/**
- * Get the delay for a value by checking Transition with decreasing specificity.
- */
-
-
-function getDelayFromTransition(transition, key) {
-  var _a;
-
-  var valueTransition = getValueTransition(transition, key) || {};
-  return (_a = valueTransition.delay) !== null && _a !== void 0 ? _a : 0;
-}
-
-function hydrateKeyframes(options) {
-  if (Array.isArray(options.to) && options.to[0] === null) {
-    options.to = __spreadArray$1([], __read(options.to));
-    options.to[0] = options.from;
-  }
-
-  return options;
-}
-
-function getPopmotionAnimationOptions(transition, options, key) {
-  var _a;
-
-  if (Array.isArray(options.to)) {
-    (_a = transition.duration) !== null && _a !== void 0 ? _a : transition.duration = 0.8;
-  }
-
-  hydrateKeyframes(options);
-  /**
-   * Get a default transition if none is determined to be defined.
-   */
-
-  if (!isTransitionDefined(transition)) {
-    transition = __assign$4(__assign$4({}, transition), getDefaultTransition(key, options.to));
-  }
-
-  return __assign$4(__assign$4({}, options), convertTransitionToAnimationOptions(transition));
-}
-/**
- *
- */
-
-
-function getAnimation(key, value, target, transition, onComplete) {
-  var _a;
-
-  var valueTransition = getValueTransition(transition, key);
-  var origin = (_a = valueTransition.from) !== null && _a !== void 0 ? _a : value.get();
-  var isTargetAnimatable = isAnimatable(key, target);
-
-  if (origin === "none" && isTargetAnimatable && typeof target === "string") {
-    /**
-     * If we're trying to animate from "none", try and get an animatable version
-     * of the target. This could be improved to work both ways.
-     */
-    origin = getAnimatableNone(key, target);
-  } else if (isZero(origin) && typeof target === "string") {
-    origin = getZeroUnit(target);
-  } else if (!Array.isArray(target) && isZero(target) && typeof origin === "string") {
-    target = getZeroUnit(origin);
-  }
-
-  var isOriginAnimatable = isAnimatable(key, origin);
-  warning$1(isOriginAnimatable === isTargetAnimatable, "You are trying to animate " + key + " from \"" + origin + "\" to \"" + target + "\". " + origin + " is not an animatable value - to enable this animation set " + origin + " to a value animatable to " + target + " via the `style` property.");
-
-  function start() {
-    var options = {
-      from: origin,
-      to: target,
-      velocity: value.getVelocity(),
-      onComplete: onComplete,
-      onUpdate: function (v) {
-        return value.set(v);
-      }
-    };
-    return valueTransition.type === "inertia" || valueTransition.type === "decay" ? inertia(__assign$4(__assign$4({}, options), valueTransition)) : animate(__assign$4(__assign$4({}, getPopmotionAnimationOptions(valueTransition, options, key)), {
-      onUpdate: function (v) {
-        var _a;
-
-        options.onUpdate(v);
-        (_a = valueTransition.onUpdate) === null || _a === void 0 ? void 0 : _a.call(valueTransition, v);
-      },
-      onComplete: function () {
-        var _a;
-
-        options.onComplete();
-        (_a = valueTransition.onComplete) === null || _a === void 0 ? void 0 : _a.call(valueTransition);
-      }
-    }));
-  }
-
-  function set() {
-    var _a;
-
-    value.set(target);
-    onComplete();
-    (_a = valueTransition === null || valueTransition === void 0 ? void 0 : valueTransition.onComplete) === null || _a === void 0 ? void 0 : _a.call(valueTransition);
-    return {
-      stop: function () {}
-    };
-  }
-
-  return !isOriginAnimatable || !isTargetAnimatable || valueTransition.type === false ? set : start;
-}
-
-function isZero(value) {
-  return value === 0 || typeof value === "string" && parseFloat(value) === 0 && value.indexOf(" ") === -1;
-}
-
-function getZeroUnit(potentialUnitType) {
-  return typeof potentialUnitType === "number" ? 0 : getAnimatableNone("", potentialUnitType);
-}
-
-function getValueTransition(transition, key) {
-  return transition[key] || transition["default"] || transition;
-}
-/**
- * Start animation on a MotionValue. This function is an interface between
- * Framer Motion and Popmotion
- *
- * @internal
- */
-
-
-function startAnimation(key, value, target, transition) {
-  if (transition === void 0) {
-    transition = {};
-  }
-
-  return value.start(function (onComplete) {
-    var delayTimer;
-    var controls;
-    var animation = getAnimation(key, value, target, transition, onComplete);
-    var delay = getDelayFromTransition(transition, key);
-
-    var start = function () {
-      return controls = animation();
-    };
-
-    if (delay) {
-      delayTimer = setTimeout(start, secondsToMilliseconds(delay));
-    } else {
-      start();
-    }
-
-    return function () {
-      clearTimeout(delayTimer);
-      controls === null || controls === void 0 ? void 0 : controls.stop();
-    };
-  });
-}
-
-/**
- * Check if value is a numerical string, ie a string that is purely a number eg "100" or "-100.1"
- */
-var isNumericalString = function (v) {
-  return /^\-?\d*\.?\d+$/.test(v);
-};
-
-function addUniqueItem(arr, item) {
-  arr.indexOf(item) === -1 && arr.push(item);
-}
-
-function removeItem(arr, item) {
-  var index = arr.indexOf(item);
-  index > -1 && arr.splice(index, 1);
-}
-
-var SubscriptionManager =
-/** @class */
-function () {
-  function SubscriptionManager() {
-    this.subscriptions = [];
-  }
-
-  SubscriptionManager.prototype.add = function (handler) {
-    var _this = this;
-
-    addUniqueItem(this.subscriptions, handler);
-    return function () {
-      return removeItem(_this.subscriptions, handler);
-    };
-  };
-
-  SubscriptionManager.prototype.notify = function (a, b, c) {
-    var numSubscriptions = this.subscriptions.length;
-    if (!numSubscriptions) return;
-
-    if (numSubscriptions === 1) {
-      /**
-       * If there's only a single handler we can just call it without invoking a loop.
-       */
-      this.subscriptions[0](a, b, c);
-    } else {
-      for (var i = 0; i < numSubscriptions; i++) {
-        /**
-         * Check whether the handler exists before firing as it's possible
-         * the subscriptions were modified during this loop running.
-         */
-        var handler = this.subscriptions[i];
-        handler && handler(a, b, c);
-      }
-    }
-  };
-
-  SubscriptionManager.prototype.getSize = function () {
-    return this.subscriptions.length;
-  };
-
-  SubscriptionManager.prototype.clear = function () {
-    this.subscriptions.length = 0;
-  };
-
-  return SubscriptionManager;
-}();
-
-var isFloat = function (value) {
-  return !isNaN(parseFloat(value));
-};
-/**
- * `MotionValue` is used to track the state and velocity of motion values.
- *
- * @public
- */
-
-
-var MotionValue =
-/** @class */
-function () {
-  /**
-   * @param init - The initiating value
-   * @param config - Optional configuration options
-   *
-   * -  `transformer`: A function to transform incoming values with.
-   *
-   * @internal
-   */
-  function MotionValue(init) {
-    var _this = this;
-    /**
-     * Duration, in milliseconds, since last updating frame.
-     *
-     * @internal
-     */
-
-
-    this.timeDelta = 0;
-    /**
-     * Timestamp of the last time this `MotionValue` was updated.
-     *
-     * @internal
-     */
-
-    this.lastUpdated = 0;
-    /**
-     * Functions to notify when the `MotionValue` updates.
-     *
-     * @internal
-     */
-
-    this.updateSubscribers = new SubscriptionManager();
-    /**
-     * Functions to notify when the velocity updates.
-     *
-     * @internal
-     */
-
-    this.velocityUpdateSubscribers = new SubscriptionManager();
-    /**
-     * Functions to notify when the `MotionValue` updates and `render` is set to `true`.
-     *
-     * @internal
-     */
-
-    this.renderSubscribers = new SubscriptionManager();
-    /**
-     * Tracks whether this value can output a velocity. Currently this is only true
-     * if the value is numerical, but we might be able to widen the scope here and support
-     * other value types.
-     *
-     * @internal
-     */
-
-    this.canTrackVelocity = false;
-
-    this.updateAndNotify = function (v, render) {
-      if (render === void 0) {
-        render = true;
-      }
-
-      _this.prev = _this.current;
-      _this.current = v; // Update timestamp
-
-      var _a = getFrameData(),
-          delta = _a.delta,
-          timestamp = _a.timestamp;
-
-      if (_this.lastUpdated !== timestamp) {
-        _this.timeDelta = delta;
-        _this.lastUpdated = timestamp;
-        sync.postRender(_this.scheduleVelocityCheck);
-      } // Update update subscribers
-
-
-      if (_this.prev !== _this.current) {
-        _this.updateSubscribers.notify(_this.current);
-      } // Update velocity subscribers
-
-
-      if (_this.velocityUpdateSubscribers.getSize()) {
-        _this.velocityUpdateSubscribers.notify(_this.getVelocity());
-      } // Update render subscribers
-
-
-      if (render) {
-        _this.renderSubscribers.notify(_this.current);
-      }
-    };
-    /**
-     * Schedule a velocity check for the next frame.
-     *
-     * This is an instanced and bound function to prevent generating a new
-     * function once per frame.
-     *
-     * @internal
-     */
-
-
-    this.scheduleVelocityCheck = function () {
-      return sync.postRender(_this.velocityCheck);
-    };
-    /**
-     * Updates `prev` with `current` if the value hasn't been updated this frame.
-     * This ensures velocity calculations return `0`.
-     *
-     * This is an instanced and bound function to prevent generating a new
-     * function once per frame.
-     *
-     * @internal
-     */
-
-
-    this.velocityCheck = function (_a) {
-      var timestamp = _a.timestamp;
-
-      if (timestamp !== _this.lastUpdated) {
-        _this.prev = _this.current;
-
-        _this.velocityUpdateSubscribers.notify(_this.getVelocity());
-      }
-    };
-
-    this.hasAnimated = false;
-    this.prev = this.current = init;
-    this.canTrackVelocity = isFloat(this.current);
-  }
-  /**
-   * Adds a function that will be notified when the `MotionValue` is updated.
-   *
-   * It returns a function that, when called, will cancel the subscription.
-   *
-   * When calling `onChange` inside a React component, it should be wrapped with the
-   * `useEffect` hook. As it returns an unsubscribe function, this should be returned
-   * from the `useEffect` function to ensure you don't add duplicate subscribers..
-   *
-   * @library
-   *
-   * ```jsx
-   * function MyComponent() {
-   *   const x = useMotionValue(0)
-   *   const y = useMotionValue(0)
-   *   const opacity = useMotionValue(1)
-   *
-   *   useEffect(() => {
-   *     function updateOpacity() {
-   *       const maxXY = Math.max(x.get(), y.get())
-   *       const newOpacity = transform(maxXY, [0, 100], [1, 0])
-   *       opacity.set(newOpacity)
-   *     }
-   *
-   *     const unsubscribeX = x.onChange(updateOpacity)
-   *     const unsubscribeY = y.onChange(updateOpacity)
-   *
-   *     return () => {
-   *       unsubscribeX()
-   *       unsubscribeY()
-   *     }
-   *   }, [])
-   *
-   *   return <Frame x={x} />
-   * }
-   * ```
-   *
-   * @motion
-   *
-   * ```jsx
-   * export const MyComponent = () => {
-   *   const x = useMotionValue(0)
-   *   const y = useMotionValue(0)
-   *   const opacity = useMotionValue(1)
-   *
-   *   useEffect(() => {
-   *     function updateOpacity() {
-   *       const maxXY = Math.max(x.get(), y.get())
-   *       const newOpacity = transform(maxXY, [0, 100], [1, 0])
-   *       opacity.set(newOpacity)
-   *     }
-   *
-   *     const unsubscribeX = x.onChange(updateOpacity)
-   *     const unsubscribeY = y.onChange(updateOpacity)
-   *
-   *     return () => {
-   *       unsubscribeX()
-   *       unsubscribeY()
-   *     }
-   *   }, [])
-   *
-   *   return <motion.div style={{ x }} />
-   * }
-   * ```
-   *
-   * @internalremarks
-   *
-   * We could look into a `useOnChange` hook if the above lifecycle management proves confusing.
-   *
-   * ```jsx
-   * useOnChange(x, () => {})
-   * ```
-   *
-   * @param subscriber - A function that receives the latest value.
-   * @returns A function that, when called, will cancel this subscription.
-   *
-   * @public
-   */
-
-
-  MotionValue.prototype.onChange = function (subscription) {
-    return this.updateSubscribers.add(subscription);
-  };
-
-  MotionValue.prototype.clearListeners = function () {
-    this.updateSubscribers.clear();
-  };
-  /**
-   * Adds a function that will be notified when the `MotionValue` requests a render.
-   *
-   * @param subscriber - A function that's provided the latest value.
-   * @returns A function that, when called, will cancel this subscription.
-   *
-   * @internal
-   */
-
-
-  MotionValue.prototype.onRenderRequest = function (subscription) {
-    // Render immediately
-    subscription(this.get());
-    return this.renderSubscribers.add(subscription);
-  };
-  /**
-   * Attaches a passive effect to the `MotionValue`.
-   *
-   * @internal
-   */
-
-
-  MotionValue.prototype.attach = function (passiveEffect) {
-    this.passiveEffect = passiveEffect;
-  };
-  /**
-   * Sets the state of the `MotionValue`.
-   *
-   * @remarks
-   *
-   * ```jsx
-   * const x = useMotionValue(0)
-   * x.set(10)
-   * ```
-   *
-   * @param latest - Latest value to set.
-   * @param render - Whether to notify render subscribers. Defaults to `true`
-   *
-   * @public
-   */
-
-
-  MotionValue.prototype.set = function (v, render) {
-    if (render === void 0) {
-      render = true;
-    }
-
-    if (!render || !this.passiveEffect) {
-      this.updateAndNotify(v, render);
-    } else {
-      this.passiveEffect(v, this.updateAndNotify);
-    }
-  };
-  /**
-   * Returns the latest state of `MotionValue`
-   *
-   * @returns - The latest state of `MotionValue`
-   *
-   * @public
-   */
-
-
-  MotionValue.prototype.get = function () {
-    return this.current;
-  };
-  /**
-   * @public
-   */
-
-
-  MotionValue.prototype.getPrevious = function () {
-    return this.prev;
-  };
-  /**
-   * Returns the latest velocity of `MotionValue`
-   *
-   * @returns - The latest velocity of `MotionValue`. Returns `0` if the state is non-numerical.
-   *
-   * @public
-   */
-
-
-  MotionValue.prototype.getVelocity = function () {
-    // This could be isFloat(this.prev) && isFloat(this.current), but that would be wasteful
-    return this.canTrackVelocity ? // These casts could be avoided if parseFloat would be typed better
-    velocityPerSecond(parseFloat(this.current) - parseFloat(this.prev), this.timeDelta) : 0;
-  };
-  /**
-   * Registers a new animation to control this `MotionValue`. Only one
-   * animation can drive a `MotionValue` at one time.
-   *
-   * ```jsx
-   * value.start()
-   * ```
-   *
-   * @param animation - A function that starts the provided animation
-   *
-   * @internal
-   */
-
-
-  MotionValue.prototype.start = function (animation) {
-    var _this = this;
-
-    this.stop();
-    return new Promise(function (resolve) {
-      _this.hasAnimated = true;
-      _this.stopAnimation = animation(resolve);
-    }).then(function () {
-      return _this.clearAnimation();
-    });
-  };
-  /**
-   * Stop the currently active animation.
-   *
-   * @public
-   */
-
-
-  MotionValue.prototype.stop = function () {
-    if (this.stopAnimation) this.stopAnimation();
-    this.clearAnimation();
-  };
-  /**
-   * Returns `true` if this value is currently animating.
-   *
-   * @public
-   */
-
-
-  MotionValue.prototype.isAnimating = function () {
-    return !!this.stopAnimation;
-  };
-
-  MotionValue.prototype.clearAnimation = function () {
-    this.stopAnimation = null;
-  };
-  /**
-   * Destroy and clean up subscribers to this `MotionValue`.
-   *
-   * The `MotionValue` hooks like `useMotionValue` and `useTransform` automatically
-   * handle the lifecycle of the returned `MotionValue`, so this method is only necessary if you've manually
-   * created a `MotionValue` via the `motionValue` function.
-   *
-   * @public
-   */
-
-
-  MotionValue.prototype.destroy = function () {
-    this.updateSubscribers.clear();
-    this.renderSubscribers.clear();
-    this.stop();
-  };
-
-  return MotionValue;
-}();
-/**
- * @internal
- */
-
-
-function motionValue(init) {
-  return new MotionValue(init);
-}
-
-/**
- * Tests a provided value against a ValueType
- */
-var testValueType = function (v) {
-  return function (type) {
-    return type.test(v);
-  };
-};
-
-/**
- * ValueType for "auto"
- */
-var auto = {
-  test: function (v) {
-    return v === "auto";
-  },
-  parse: function (v) {
-    return v;
-  }
-};
-
-/**
- * A list of value types commonly used for dimensions
- */
-
-var dimensionValueTypes = [number$1, px, percent, degrees, vw, vh, auto];
-/**
- * Tests a dimensional value against the list of dimension ValueTypes
- */
-
-var findDimensionValueType = function (v) {
-  return dimensionValueTypes.find(testValueType(v));
-};
-
-/**
- * A list of all ValueTypes
- */
-
-var valueTypes = __spreadArray$1(__spreadArray$1([], __read(dimensionValueTypes)), [color, complex]);
-/**
- * Tests a value against the list of ValueTypes
- */
-
-
-var findValueType = function (v) {
-  return valueTypes.find(testValueType(v));
-};
-
-/**
- * Set VisualElement's MotionValue, creating a new MotionValue for it if
- * it doesn't exist.
- */
-
-function setMotionValue(visualElement, key, value) {
-  if (visualElement.hasValue(key)) {
-    visualElement.getValue(key).set(value);
-  } else {
-    visualElement.addValue(key, motionValue(value));
-  }
-}
-
-function setTarget(visualElement, definition) {
-  var resolved = resolveVariant(visualElement, definition);
-
-  var _a = resolved ? visualElement.makeTargetAnimatable(resolved, false) : {},
-      _b = _a.transitionEnd,
-      transitionEnd = _b === void 0 ? {} : _b;
-
-  _a.transition;
-
-  var target = __rest$3(_a, ["transitionEnd", "transition"]);
-
-  target = __assign$4(__assign$4({}, target), transitionEnd);
-
-  for (var key in target) {
-    var value = resolveFinalValueInKeyframes(target[key]);
-    setMotionValue(visualElement, key, value);
-  }
-}
-
-function checkTargetForNewValues(visualElement, target, origin) {
-  var _a, _b, _c;
-
-  var _d;
-
-  var newValueKeys = Object.keys(target).filter(function (key) {
-    return !visualElement.hasValue(key);
-  });
-  var numNewValues = newValueKeys.length;
-  if (!numNewValues) return;
-
-  for (var i = 0; i < numNewValues; i++) {
-    var key = newValueKeys[i];
-    var targetValue = target[key];
-    var value = null;
-    /**
-     * If the target is a series of keyframes, we can use the first value
-     * in the array. If this first value is null, we'll still need to read from the DOM.
-     */
-
-    if (Array.isArray(targetValue)) {
-      value = targetValue[0];
-    }
-    /**
-     * If the target isn't keyframes, or the first keyframe was null, we need to
-     * first check if an origin value was explicitly defined in the transition as "from",
-     * if not read the value from the DOM. As an absolute fallback, take the defined target value.
-     */
-
-
-    if (value === null) {
-      value = (_b = (_a = origin[key]) !== null && _a !== void 0 ? _a : visualElement.readValue(key)) !== null && _b !== void 0 ? _b : target[key];
-    }
-    /**
-     * If value is still undefined or null, ignore it. Preferably this would throw,
-     * but this was causing issues in Framer.
-     */
-
-
-    if (value === undefined || value === null) continue;
-
-    if (typeof value === "string" && isNumericalString(value)) {
-      // If this is a number read as a string, ie "0" or "200", convert it to a number
-      value = parseFloat(value);
-    } else if (!findValueType(value) && complex.test(targetValue)) {
-      value = getAnimatableNone(key, targetValue);
-    }
-
-    visualElement.addValue(key, motionValue(value));
-    (_c = (_d = origin)[key]) !== null && _c !== void 0 ? _c : _d[key] = value;
-    visualElement.setBaseTarget(key, value);
-  }
-}
-
-function getOriginFromTransition(key, transition) {
-  if (!transition) return;
-  var valueTransition = transition[key] || transition["default"] || transition;
-  return valueTransition.from;
-}
-
-function getOrigin(target, transition, visualElement) {
-  var _a, _b;
-
-  var origin = {};
-
-  for (var key in target) {
-    origin[key] = (_a = getOriginFromTransition(key, transition)) !== null && _a !== void 0 ? _a : (_b = visualElement.getValue(key)) === null || _b === void 0 ? void 0 : _b.get();
-  }
-
-  return origin;
-}
-
-/**
- * @internal
- */
-
-function animateVisualElement(visualElement, definition, options) {
-  if (options === void 0) {
-    options = {};
-  }
-
-  visualElement.notifyAnimationStart();
-  var animation;
-
-  if (Array.isArray(definition)) {
-    var animations = definition.map(function (variant) {
-      return animateVariant(visualElement, variant, options);
-    });
-    animation = Promise.all(animations);
-  } else if (typeof definition === "string") {
-    animation = animateVariant(visualElement, definition, options);
-  } else {
-    var resolvedDefinition = typeof definition === "function" ? resolveVariant(visualElement, definition, options.custom) : definition;
-    animation = animateTarget(visualElement, resolvedDefinition, options);
-  }
-
-  return animation.then(function () {
-    return visualElement.notifyAnimationComplete(definition);
-  });
-}
-
-function animateVariant(visualElement, variant, options) {
-  var _a;
-
-  if (options === void 0) {
-    options = {};
-  }
-
-  var resolved = resolveVariant(visualElement, variant, options.custom);
-  var _b = (resolved || {}).transition,
-      transition = _b === void 0 ? visualElement.getDefaultTransition() || {} : _b;
-
-  if (options.transitionOverride) {
-    transition = options.transitionOverride;
-  }
-  /**
-   * If we have a variant, create a callback that runs it as an animation.
-   * Otherwise, we resolve a Promise immediately for a composable no-op.
-   */
-
-
-  var getAnimation = resolved ? function () {
-    return animateTarget(visualElement, resolved, options);
-  } : function () {
-    return Promise.resolve();
-  };
-  /**
-   * If we have children, create a callback that runs all their animations.
-   * Otherwise, we resolve a Promise immediately for a composable no-op.
-   */
-
-  var getChildAnimations = ((_a = visualElement.variantChildren) === null || _a === void 0 ? void 0 : _a.size) ? function (forwardDelay) {
-    if (forwardDelay === void 0) {
-      forwardDelay = 0;
-    }
-
-    var _a = transition.delayChildren,
-        delayChildren = _a === void 0 ? 0 : _a,
-        staggerChildren = transition.staggerChildren,
-        staggerDirection = transition.staggerDirection;
-    return animateChildren(visualElement, variant, delayChildren + forwardDelay, staggerChildren, staggerDirection, options);
-  } : function () {
-    return Promise.resolve();
-  };
-  /**
-   * If the transition explicitly defines a "when" option, we need to resolve either
-   * this animation or all children animations before playing the other.
-   */
-
-  var when = transition.when;
-
-  if (when) {
-    var _c = __read(when === "beforeChildren" ? [getAnimation, getChildAnimations] : [getChildAnimations, getAnimation], 2),
-        first = _c[0],
-        last = _c[1];
-
-    return first().then(last);
-  } else {
-    return Promise.all([getAnimation(), getChildAnimations(options.delay)]);
-  }
-}
-/**
- * @internal
- */
-
-
-function animateTarget(visualElement, definition, _a) {
-  var _b;
-
-  var _c = _a === void 0 ? {} : _a,
-      _d = _c.delay,
-      delay = _d === void 0 ? 0 : _d,
-      transitionOverride = _c.transitionOverride,
-      type = _c.type;
-
-  var _e = visualElement.makeTargetAnimatable(definition),
-      _f = _e.transition,
-      transition = _f === void 0 ? visualElement.getDefaultTransition() : _f,
-      transitionEnd = _e.transitionEnd,
-      target = __rest$3(_e, ["transition", "transitionEnd"]);
-
-  if (transitionOverride) transition = transitionOverride;
-  var animations = [];
-  var animationTypeState = type && ((_b = visualElement.animationState) === null || _b === void 0 ? void 0 : _b.getState()[type]);
-
-  for (var key in target) {
-    var value = visualElement.getValue(key);
-    var valueTarget = target[key];
-
-    if (!value || valueTarget === undefined || animationTypeState && shouldBlockAnimation(animationTypeState, key)) {
-      continue;
-    }
-
-    var animation = startAnimation(key, value, valueTarget, __assign$4({
-      delay: delay
-    }, transition));
-    animations.push(animation);
-  }
-
-  return Promise.all(animations).then(function () {
-    transitionEnd && setTarget(visualElement, transitionEnd);
-  });
-}
-
-function animateChildren(visualElement, variant, delayChildren, staggerChildren, staggerDirection, options) {
-  if (delayChildren === void 0) {
-    delayChildren = 0;
-  }
-
-  if (staggerChildren === void 0) {
-    staggerChildren = 0;
-  }
-
-  if (staggerDirection === void 0) {
-    staggerDirection = 1;
-  }
-
-  var animations = [];
-  var maxStaggerDuration = (visualElement.variantChildren.size - 1) * staggerChildren;
-  var generateStaggerDuration = staggerDirection === 1 ? function (i) {
-    if (i === void 0) {
-      i = 0;
-    }
-
-    return i * staggerChildren;
-  } : function (i) {
-    if (i === void 0) {
-      i = 0;
-    }
-
-    return maxStaggerDuration - i * staggerChildren;
-  };
-  Array.from(visualElement.variantChildren).sort(sortByTreeOrder).forEach(function (child, i) {
-    animations.push(animateVariant(child, variant, __assign$4(__assign$4({}, options), {
-      delay: delayChildren + generateStaggerDuration(i)
-    })).then(function () {
-      return child.notifyAnimationComplete(variant);
-    }));
-  });
-  return Promise.all(animations);
-}
-
-function sortByTreeOrder(a, b) {
-  return a.sortNodePosition(b);
-}
-/**
- * Decide whether we should block this animation. Previously, we achieved this
- * just by checking whether the key was listed in protectedKeys, but this
- * posed problems if an animation was triggered by afterChildren and protectedKeys
- * had been set to true in the meantime.
- */
-
-
-function shouldBlockAnimation(_a, key) {
-  var protectedKeys = _a.protectedKeys,
-      needsAnimating = _a.needsAnimating;
-  var shouldBlock = protectedKeys.hasOwnProperty(key) && needsAnimating[key] !== true;
-  needsAnimating[key] = false;
-  return shouldBlock;
-}
-
-var variantPriorityOrder = [AnimationType.Animate, AnimationType.Hover, AnimationType.Tap, AnimationType.Drag, AnimationType.Focus, AnimationType.Exit];
-
-var reversePriorityOrder = __spreadArray$1([], __read(variantPriorityOrder)).reverse();
-
-var numAnimationTypes = variantPriorityOrder.length;
-
-function animateList(visualElement) {
-  return function (animations) {
-    return Promise.all(animations.map(function (_a) {
-      var animation = _a.animation,
-          options = _a.options;
-      return animateVisualElement(visualElement, animation, options);
-    }));
-  };
-}
-
-function createAnimationState(visualElement) {
-  var animate = animateList(visualElement);
-  var state = createState();
-  var allAnimatedKeys = {};
-  var isInitialRender = true;
-  /**
-   * This function will be used to reduce the animation definitions for
-   * each active animation type into an object of resolved values for it.
-   */
-
-  var buildResolvedTypeValues = function (acc, definition) {
-    var resolved = resolveVariant(visualElement, definition);
-
-    if (resolved) {
-      resolved.transition;
-
-      var transitionEnd = resolved.transitionEnd,
-          target = __rest$3(resolved, ["transition", "transitionEnd"]);
-
-      acc = __assign$4(__assign$4(__assign$4({}, acc), target), transitionEnd);
-    }
-
-    return acc;
-  };
-
-  function isAnimated(key) {
-    return allAnimatedKeys[key] !== undefined;
-  }
-  /**
-   * This just allows us to inject mocked animation functions
-   * @internal
-   */
-
-
-  function setAnimateFunction(makeAnimator) {
-    animate = makeAnimator(visualElement);
-  }
-  /**
-   * When we receive new props, we need to:
-   * 1. Create a list of protected keys for each type. This is a directory of
-   *    value keys that are currently being "handled" by types of a higher priority
-   *    so that whenever an animation is played of a given type, these values are
-   *    protected from being animated.
-   * 2. Determine if an animation type needs animating.
-   * 3. Determine if any values have been removed from a type and figure out
-   *    what to animate those to.
-   */
-
-
-  function animateChanges(options, changedActiveType) {
-    var _a;
-
-    var props = visualElement.getProps();
-    var context = visualElement.getVariantContext(true) || {};
-    /**
-     * A list of animations that we'll build into as we iterate through the animation
-     * types. This will get executed at the end of the function.
-     */
-
-    var animations = [];
-    /**
-     * Keep track of which values have been removed. Then, as we hit lower priority
-     * animation types, we can check if they contain removed values and animate to that.
-     */
-
-    var removedKeys = new Set();
-    /**
-     * A dictionary of all encountered keys. This is an object to let us build into and
-     * copy it without iteration. Each time we hit an animation type we set its protected
-     * keys - the keys its not allowed to animate - to the latest version of this object.
-     */
-
-    var encounteredKeys = {};
-    /**
-     * If a variant has been removed at a given index, and this component is controlling
-     * variant animations, we want to ensure lower-priority variants are forced to animate.
-     */
-
-    var removedVariantIndex = Infinity;
-
-    var _loop_1 = function (i) {
-      var type = reversePriorityOrder[i];
-      var typeState = state[type];
-      var prop = (_a = props[type]) !== null && _a !== void 0 ? _a : context[type];
-      var propIsVariant = isVariantLabel(prop);
-      /**
-       * If this type has *just* changed isActive status, set activeDelta
-       * to that status. Otherwise set to null.
-       */
-
-      var activeDelta = type === changedActiveType ? typeState.isActive : null;
-      if (activeDelta === false) removedVariantIndex = i;
-      /**
-       * If this prop is an inherited variant, rather than been set directly on the
-       * component itself, we want to make sure we allow the parent to trigger animations.
-       *
-       * TODO: Can probably change this to a !isControllingVariants check
-       */
-
-      var isInherited = prop === context[type] && prop !== props[type] && propIsVariant;
-      /**
-       *
-       */
-
-      if (isInherited && isInitialRender && visualElement.manuallyAnimateOnMount) {
-        isInherited = false;
-      }
-      /**
-       * Set all encountered keys so far as the protected keys for this type. This will
-       * be any key that has been animated or otherwise handled by active, higher-priortiy types.
-       */
-
-
-      typeState.protectedKeys = __assign$4({}, encounteredKeys); // Check if we can skip analysing this prop early
-
-      if ( // If it isn't active and hasn't *just* been set as inactive
-      !typeState.isActive && activeDelta === null || // If we didn't and don't have any defined prop for this animation type
-      !prop && !typeState.prevProp || // Or if the prop doesn't define an animation
-      isAnimationControls(prop) || typeof prop === "boolean") {
-        return "continue";
-      }
-      /**
-       * As we go look through the values defined on this type, if we detect
-       * a changed value or a value that was removed in a higher priority, we set
-       * this to true and add this prop to the animation list.
-       */
-
-
-      var shouldAnimateType = variantsHaveChanged(typeState.prevProp, prop) || // If we're making this variant active, we want to always make it active
-      type === changedActiveType && typeState.isActive && !isInherited && propIsVariant || // If we removed a higher-priority variant (i is in reverse order)
-      i > removedVariantIndex && propIsVariant;
-      /**
-       * As animations can be set as variant lists, variants or target objects, we
-       * coerce everything to an array if it isn't one already
-       */
-
-      var definitionList = Array.isArray(prop) ? prop : [prop];
-      /**
-       * Build an object of all the resolved values. We'll use this in the subsequent
-       * animateChanges calls to determine whether a value has changed.
-       */
-
-      var resolvedValues = definitionList.reduce(buildResolvedTypeValues, {});
-      if (activeDelta === false) resolvedValues = {};
-      /**
-       * Now we need to loop through all the keys in the prev prop and this prop,
-       * and decide:
-       * 1. If the value has changed, and needs animating
-       * 2. If it has been removed, and needs adding to the removedKeys set
-       * 3. If it has been removed in a higher priority type and needs animating
-       * 4. If it hasn't been removed in a higher priority but hasn't changed, and
-       *    needs adding to the type's protectedKeys list.
-       */
-
-      var _b = typeState.prevResolvedValues,
-          prevResolvedValues = _b === void 0 ? {} : _b;
-
-      var allKeys = __assign$4(__assign$4({}, prevResolvedValues), resolvedValues);
-
-      var markToAnimate = function (key) {
-        shouldAnimateType = true;
-        removedKeys.delete(key);
-        typeState.needsAnimating[key] = true;
-      };
-
-      for (var key in allKeys) {
-        var next = resolvedValues[key];
-        var prev = prevResolvedValues[key]; // If we've already handled this we can just skip ahead
-
-        if (encounteredKeys.hasOwnProperty(key)) continue;
-        /**
-         * If the value has changed, we probably want to animate it.
-         */
-
-        if (next !== prev) {
-          /**
-           * If both values are keyframes, we need to shallow compare them to
-           * detect whether any value has changed. If it has, we animate it.
-           */
-          if (isKeyframesTarget(next) && isKeyframesTarget(prev)) {
-            if (!shallowCompare(next, prev)) {
-              markToAnimate(key);
-            } else {
-              /**
-               * If it hasn't changed, we want to ensure it doesn't animate by
-               * adding it to the list of protected keys.
-               */
-              typeState.protectedKeys[key] = true;
-            }
-          } else if (next !== undefined) {
-            // If next is defined and doesn't equal prev, it needs animating
-            markToAnimate(key);
-          } else {
-            // If it's undefined, it's been removed.
-            removedKeys.add(key);
-          }
-        } else if (next !== undefined && removedKeys.has(key)) {
-          /**
-           * If next hasn't changed and it isn't undefined, we want to check if it's
-           * been removed by a higher priority
-           */
-          markToAnimate(key);
-        } else {
-          /**
-           * If it hasn't changed, we add it to the list of protected values
-           * to ensure it doesn't get animated.
-           */
-          typeState.protectedKeys[key] = true;
-        }
-      }
-      /**
-       * Update the typeState so next time animateChanges is called we can compare the
-       * latest prop and resolvedValues to these.
-       */
-
-
-      typeState.prevProp = prop;
-      typeState.prevResolvedValues = resolvedValues;
-      /**
-       *
-       */
-
-      if (typeState.isActive) {
-        encounteredKeys = __assign$4(__assign$4({}, encounteredKeys), resolvedValues);
-      }
-
-      if (isInitialRender && visualElement.blockInitialAnimation) {
-        shouldAnimateType = false;
-      }
-      /**
-       * If this is an inherited prop we want to hard-block animations
-       * TODO: Test as this should probably still handle animations triggered
-       * by removed values?
-       */
-
-
-      if (shouldAnimateType && !isInherited) {
-        animations.push.apply(animations, __spreadArray$1([], __read(definitionList.map(function (animation) {
-          return {
-            animation: animation,
-            options: __assign$4({
-              type: type
-            }, options)
-          };
-        }))));
-      }
-    };
-    /**
-     * Iterate through all animation types in reverse priority order. For each, we want to
-     * detect which values it's handling and whether or not they've changed (and therefore
-     * need to be animated). If any values have been removed, we want to detect those in
-     * lower priority props and flag for animation.
-     */
-
-
-    for (var i = 0; i < numAnimationTypes; i++) {
-      _loop_1(i);
-    }
-
-    allAnimatedKeys = __assign$4({}, encounteredKeys);
-    /**
-     * If there are some removed value that haven't been dealt with,
-     * we need to create a new animation that falls back either to the value
-     * defined in the style prop, or the last read value.
-     */
-
-    if (removedKeys.size) {
-      var fallbackAnimation_1 = {};
-      removedKeys.forEach(function (key) {
-        var fallbackTarget = visualElement.getBaseTarget(key);
-
-        if (fallbackTarget !== undefined) {
-          fallbackAnimation_1[key] = fallbackTarget;
-        }
-      });
-      animations.push({
-        animation: fallbackAnimation_1
-      });
-    }
-
-    var shouldAnimate = Boolean(animations.length);
-
-    if (isInitialRender && props.initial === false && !visualElement.manuallyAnimateOnMount) {
-      shouldAnimate = false;
-    }
-
-    isInitialRender = false;
-    return shouldAnimate ? animate(animations) : Promise.resolve();
-  }
-  /**
-   * Change whether a certain animation type is active.
-   */
-
-
-  function setActive(type, isActive, options) {
-    var _a; // If the active state hasn't changed, we can safely do nothing here
-
-
-    if (state[type].isActive === isActive) return Promise.resolve(); // Propagate active change to children
-
-    (_a = visualElement.variantChildren) === null || _a === void 0 ? void 0 : _a.forEach(function (child) {
-      var _a;
-
-      return (_a = child.animationState) === null || _a === void 0 ? void 0 : _a.setActive(type, isActive);
-    });
-    state[type].isActive = isActive;
-    return animateChanges(options, type);
-  }
-
-  return {
-    isAnimated: isAnimated,
-    animateChanges: animateChanges,
-    setActive: setActive,
-    setAnimateFunction: setAnimateFunction,
-    getState: function () {
-      return state;
-    }
-  };
-}
-
-function variantsHaveChanged(prev, next) {
-  if (typeof next === "string") {
-    return next !== prev;
-  } else if (isVariantLabels(next)) {
-    return !shallowCompare(next, prev);
-  }
-
-  return false;
-}
-
-function createTypeState(isActive) {
-  if (isActive === void 0) {
-    isActive = false;
-  }
-
-  return {
-    isActive: isActive,
-    protectedKeys: {},
-    needsAnimating: {},
-    prevResolvedValues: {}
-  };
-}
-
-function createState() {
-  var _a;
-
-  return _a = {}, _a[AnimationType.Animate] = createTypeState(true), _a[AnimationType.Hover] = createTypeState(), _a[AnimationType.Tap] = createTypeState(), _a[AnimationType.Drag] = createTypeState(), _a[AnimationType.Focus] = createTypeState(), _a[AnimationType.Exit] = createTypeState(), _a;
-}
-
-var animations = {
-  animation: makeRenderlessComponent(function (_a) {
-    var visualElement = _a.visualElement,
-        animate = _a.animate;
-    /**
-     * We dynamically generate the AnimationState manager as it contains a reference
-     * to the underlying animation library. We only want to load that if we load this,
-     * so people can optionally code split it out using the `m` component.
-     */
-
-    visualElement.animationState || (visualElement.animationState = createAnimationState(visualElement));
-    /**
-     * Subscribe any provided AnimationControls to the component's VisualElement
-     */
-
-    if (isAnimationControls(animate)) {
-      React.useEffect(function () {
-        return animate.subscribe(visualElement);
-      }, [animate]);
-    }
-  }),
-  exit: makeRenderlessComponent(function (props) {
-    var custom = props.custom,
-        visualElement = props.visualElement;
-
-    var _a = __read(usePresence(), 2),
-        isPresent = _a[0],
-        onExitComplete = _a[1];
-
-    var presenceContext = React.useContext(PresenceContext);
-    React.useEffect(function () {
-      var _a, _b;
-
-      var animation = (_a = visualElement.animationState) === null || _a === void 0 ? void 0 : _a.setActive(AnimationType.Exit, !isPresent, {
-        custom: (_b = presenceContext === null || presenceContext === void 0 ? void 0 : presenceContext.custom) !== null && _b !== void 0 ? _b : custom
-      });
-      !isPresent && (animation === null || animation === void 0 ? void 0 : animation.then(onExitComplete));
-    }, [isPresent]);
-  })
-};
-
-/**
- * @internal
- */
-
-var PanSession =
-/** @class */
-function () {
-  function PanSession(event, handlers, _a) {
-    var _this = this;
-
-    var _b = _a === void 0 ? {} : _a,
-        transformPagePoint = _b.transformPagePoint;
-    /**
-     * @internal
-     */
-
-
-    this.startEvent = null;
-    /**
-     * @internal
-     */
-
-    this.lastMoveEvent = null;
-    /**
-     * @internal
-     */
-
-    this.lastMoveEventInfo = null;
-    /**
-     * @internal
-     */
-
-    this.handlers = {};
-
-    this.updatePoint = function () {
-      if (!(_this.lastMoveEvent && _this.lastMoveEventInfo)) return;
-      var info = getPanInfo(_this.lastMoveEventInfo, _this.history);
-      var isPanStarted = _this.startEvent !== null; // Only start panning if the offset is larger than 3 pixels. If we make it
-      // any larger than this we'll want to reset the pointer history
-      // on the first update to avoid visual snapping to the cursoe.
-
-      var isDistancePastThreshold = distance(info.offset, {
-        x: 0,
-        y: 0
-      }) >= 3;
-      if (!isPanStarted && !isDistancePastThreshold) return;
-      var point = info.point;
-      var timestamp = getFrameData().timestamp;
-
-      _this.history.push(__assign$4(__assign$4({}, point), {
-        timestamp: timestamp
-      }));
-
-      var _a = _this.handlers,
-          onStart = _a.onStart,
-          onMove = _a.onMove;
-
-      if (!isPanStarted) {
-        onStart && onStart(_this.lastMoveEvent, info);
-        _this.startEvent = _this.lastMoveEvent;
-      }
-
-      onMove && onMove(_this.lastMoveEvent, info);
-    };
-
-    this.handlePointerMove = function (event, info) {
-      _this.lastMoveEvent = event;
-      _this.lastMoveEventInfo = transformPoint(info, _this.transformPagePoint); // Because Safari doesn't trigger mouseup events when it's above a `<select>`
-
-      if (isMouseEvent(event) && event.buttons === 0) {
-        _this.handlePointerUp(event, info);
-
-        return;
-      } // Throttle mouse move event to once per frame
-
-
-      sync.update(_this.updatePoint, true);
-    };
-
-    this.handlePointerUp = function (event, info) {
-      _this.end();
-
-      var _a = _this.handlers,
-          onEnd = _a.onEnd,
-          onSessionEnd = _a.onSessionEnd;
-      var panInfo = getPanInfo(transformPoint(info, _this.transformPagePoint), _this.history);
-
-      if (_this.startEvent && onEnd) {
-        onEnd(event, panInfo);
-      }
-
-      onSessionEnd && onSessionEnd(event, panInfo);
-    }; // If we have more than one touch, don't start detecting this gesture
-
-
-    if (isTouchEvent(event) && event.touches.length > 1) return;
-    this.handlers = handlers;
-    this.transformPagePoint = transformPagePoint;
-    var info = extractEventInfo(event);
-    var initialInfo = transformPoint(info, this.transformPagePoint);
-    var point = initialInfo.point;
-    var timestamp = getFrameData().timestamp;
-    this.history = [__assign$4(__assign$4({}, point), {
-      timestamp: timestamp
-    })];
-    var onSessionStart = handlers.onSessionStart;
-    onSessionStart && onSessionStart(event, getPanInfo(initialInfo, this.history));
-    this.removeListeners = pipe(addPointerEvent(window, "pointermove", this.handlePointerMove), addPointerEvent(window, "pointerup", this.handlePointerUp), addPointerEvent(window, "pointercancel", this.handlePointerUp));
-  }
-
-  PanSession.prototype.updateHandlers = function (handlers) {
-    this.handlers = handlers;
-  };
-
-  PanSession.prototype.end = function () {
-    this.removeListeners && this.removeListeners();
-    cancelSync.update(this.updatePoint);
-  };
-
-  return PanSession;
-}();
-
-function transformPoint(info, transformPagePoint) {
-  return transformPagePoint ? {
-    point: transformPagePoint(info.point)
-  } : info;
-}
-
-function subtractPoint(a, b) {
-  return {
-    x: a.x - b.x,
-    y: a.y - b.y
-  };
-}
-
-function getPanInfo(_a, history) {
-  var point = _a.point;
-  return {
-    point: point,
-    delta: subtractPoint(point, lastDevicePoint(history)),
-    offset: subtractPoint(point, startDevicePoint(history)),
-    velocity: getVelocity(history, 0.1)
-  };
-}
-
-function startDevicePoint(history) {
-  return history[0];
-}
-
-function lastDevicePoint(history) {
-  return history[history.length - 1];
-}
-
-function getVelocity(history, timeDelta) {
-  if (history.length < 2) {
-    return {
-      x: 0,
-      y: 0
-    };
-  }
-
-  var i = history.length - 1;
-  var timestampedPoint = null;
-  var lastPoint = lastDevicePoint(history);
-
-  while (i >= 0) {
-    timestampedPoint = history[i];
-
-    if (lastPoint.timestamp - timestampedPoint.timestamp > secondsToMilliseconds(timeDelta)) {
-      break;
-    }
-
-    i--;
-  }
-
-  if (!timestampedPoint) {
-    return {
-      x: 0,
-      y: 0
-    };
-  }
-
-  var time = (lastPoint.timestamp - timestampedPoint.timestamp) / 1000;
-
-  if (time === 0) {
-    return {
-      x: 0,
-      y: 0
-    };
-  }
-
-  var currentVelocity = {
-    x: (lastPoint.x - timestampedPoint.x) / time,
-    y: (lastPoint.y - timestampedPoint.y) / time
-  };
-
-  if (currentVelocity.x === Infinity) {
-    currentVelocity.x = 0;
-  }
-
-  if (currentVelocity.y === Infinity) {
-    currentVelocity.y = 0;
-  }
-
-  return currentVelocity;
-}
-
-function noop$4(any) {
-  return any;
-}
-
-/**
- * Bounding boxes tend to be defined as top, left, right, bottom. For various operations
- * it's easier to consider each axis individually. This function returns a bounding box
- * as a map of single-axis min/max values.
- */
-
-function convertBoundingBoxToAxisBox(_a) {
-  var top = _a.top,
-      left = _a.left,
-      right = _a.right,
-      bottom = _a.bottom;
-  return {
-    x: {
-      min: left,
-      max: right
-    },
-    y: {
-      min: top,
-      max: bottom
-    }
-  };
-}
-
-function convertAxisBoxToBoundingBox(_a) {
-  var x = _a.x,
-      y = _a.y;
-  return {
-    top: y.min,
-    bottom: y.max,
-    left: x.min,
-    right: x.max
-  };
-}
-/**
- * Applies a TransformPoint function to a bounding box. TransformPoint is usually a function
- * provided by Framer to allow measured points to be corrected for device scaling. This is used
- * when measuring DOM elements and DOM event points.
- */
-
-
-function transformBoundingBox(_a, transformPoint) {
-  var top = _a.top,
-      left = _a.left,
-      bottom = _a.bottom,
-      right = _a.right;
-
-  if (transformPoint === void 0) {
-    transformPoint = noop$4;
-  }
-
-  var topLeft = transformPoint({
-    x: left,
-    y: top
-  });
-  var bottomRight = transformPoint({
-    x: right,
-    y: bottom
-  });
-  return {
-    top: topLeft.y,
-    left: topLeft.x,
-    bottom: bottomRight.y,
-    right: bottomRight.x
-  };
-}
-/**
- * Create an empty axis box of zero size
- */
-
-
-function axisBox() {
-  return {
-    x: {
-      min: 0,
-      max: 1
-    },
-    y: {
-      min: 0,
-      max: 1
-    }
-  };
-}
-
-function copyAxisBox(box) {
-  return {
-    x: __assign$4({}, box.x),
-    y: __assign$4({}, box.y)
-  };
-}
-/**
- * Create an empty box delta
- */
-
-
-var zeroDelta = {
-  translate: 0,
-  scale: 1,
-  origin: 0,
-  originPoint: 0
-};
-
-function delta() {
-  return {
-    x: __assign$4({}, zeroDelta),
-    y: __assign$4({}, zeroDelta)
-  };
-}
-
-// Call a handler once for each axis
-function eachAxis(handler) {
-  return [handler("x"), handler("y")];
-}
-
-/**
- * Apply constraints to a point. These constraints are both physical along an
- * axis, and an elastic factor that determines how much to constrain the point
- * by if it does lie outside the defined parameters.
- */
-
-function applyConstraints(point, _a, elastic) {
-  var min = _a.min,
-      max = _a.max;
-
-  if (min !== undefined && point < min) {
-    // If we have a min point defined, and this is outside of that, constrain
-    point = elastic ? mix(min, point, elastic.min) : Math.max(point, min);
-  } else if (max !== undefined && point > max) {
-    // If we have a max point defined, and this is outside of that, constrain
-    point = elastic ? mix(max, point, elastic.max) : Math.min(point, max);
-  }
-
-  return point;
-}
-/**
- * Calculates a min projection point based on a pointer, pointer progress
- * within the drag target, and constraints.
- *
- * For instance if an element was 100px width, we were dragging from 0.25
- * along this axis, the pointer is at 200px, and there were no constraints,
- * we would calculate a min projection point of 175px.
- */
-
-
-function calcConstrainedMinPoint(point, length, progress, constraints, elastic) {
-  // Calculate a min point for this axis and apply it to the current pointer
-  var min = point - length * progress;
-  return constraints ? applyConstraints(min, constraints, elastic) : min;
-}
-/**
- * Calculate constraints in terms of the viewport when defined relatively to the
- * measured axis. This is measured from the nearest edge, so a max constraint of 200
- * on an axis with a max value of 300 would return a constraint of 500 - axis length
- */
-
-
-function calcRelativeAxisConstraints(axis, min, max) {
-  return {
-    min: min !== undefined ? axis.min + min : undefined,
-    max: max !== undefined ? axis.max + max - (axis.max - axis.min) : undefined
-  };
-}
-/**
- * Calculate constraints in terms of the viewport when
- * defined relatively to the measured bounding box.
- */
-
-
-function calcRelativeConstraints(layoutBox, _a) {
-  var top = _a.top,
-      left = _a.left,
-      bottom = _a.bottom,
-      right = _a.right;
-  return {
-    x: calcRelativeAxisConstraints(layoutBox.x, left, right),
-    y: calcRelativeAxisConstraints(layoutBox.y, top, bottom)
-  };
-}
-/**
- * Calculate viewport constraints when defined as another viewport-relative axis
- */
-
-
-function calcViewportAxisConstraints(layoutAxis, constraintsAxis) {
-  var _a;
-
-  var min = constraintsAxis.min - layoutAxis.min;
-  var max = constraintsAxis.max - layoutAxis.max; // If the constraints axis is actually smaller than the layout axis then we can
-  // flip the constraints
-
-  if (constraintsAxis.max - constraintsAxis.min < layoutAxis.max - layoutAxis.min) {
-    _a = __read([max, min], 2), min = _a[0], max = _a[1];
-  }
-
-  return {
-    min: layoutAxis.min + min,
-    max: layoutAxis.min + max
-  };
-}
-/**
- * Calculate viewport constraints when defined as another viewport-relative box
- */
-
-
-function calcViewportConstraints(layoutBox, constraintsBox) {
-  return {
-    x: calcViewportAxisConstraints(layoutBox.x, constraintsBox.x),
-    y: calcViewportAxisConstraints(layoutBox.y, constraintsBox.y)
-  };
-}
-/**
- * Calculate the an axis position based on two axes and a progress value.
- */
-
-
-function calcPositionFromProgress(axis, constraints, progress) {
-  var axisLength = axis.max - axis.min;
-  var min = mix(constraints.min, constraints.max - axisLength, progress);
-  return {
-    min: min,
-    max: min + axisLength
-  };
-}
-/**
- * Rebase the calculated viewport constraints relative to the layout.min point.
- */
-
-
-function rebaseAxisConstraints(layout, constraints) {
-  var relativeConstraints = {};
-
-  if (constraints.min !== undefined) {
-    relativeConstraints.min = constraints.min - layout.min;
-  }
-
-  if (constraints.max !== undefined) {
-    relativeConstraints.max = constraints.max - layout.min;
-  }
-
-  return relativeConstraints;
-}
-
-var defaultElastic = 0.35;
-/**
- * Accepts a dragElastic prop and returns resolved elastic values for each axis.
- */
-
-function resolveDragElastic(dragElastic) {
-  if (dragElastic === false) {
-    dragElastic = 0;
-  } else if (dragElastic === true) {
-    dragElastic = defaultElastic;
-  }
-
-  return {
-    x: resolveAxisElastic(dragElastic, "left", "right"),
-    y: resolveAxisElastic(dragElastic, "top", "bottom")
-  };
-}
-
-function resolveAxisElastic(dragElastic, minLabel, maxLabel) {
-  return {
-    min: resolvePointElastic(dragElastic, minLabel),
-    max: resolvePointElastic(dragElastic, maxLabel)
-  };
-}
-
-function resolvePointElastic(dragElastic, label) {
-  var _a;
-
-  return typeof dragElastic === "number" ? dragElastic : (_a = dragElastic[label]) !== null && _a !== void 0 ? _a : 0;
-}
-
-/**
- * Measure and return the element bounding box.
- *
- * We convert the box into an AxisBox2D to make it easier to work with each axis
- * individually and programmatically.
- *
- * This function optionally accepts a transformPagePoint function which allows us to compensate
- * for, for instance, measuring the element within a scaled plane like a Framer devivce preview component.
- */
-
-function getBoundingBox(element, transformPagePoint) {
-  var box = element.getBoundingClientRect();
-  return convertBoundingBoxToAxisBox(transformBoundingBox(box, transformPagePoint));
-}
-
-var clampProgress = function (v) {
-  return clamp$1(0, 1, v);
-};
-/**
- * Returns true if the provided value is within maxDistance of the provided target
- */
-
-
-function isNear(value, target, maxDistance) {
-  if (target === void 0) {
-    target = 0;
-  }
-
-  if (maxDistance === void 0) {
-    maxDistance = 0.01;
-  }
-
-  return distance(value, target) < maxDistance;
-}
-
-function calcLength(axis) {
-  return axis.max - axis.min;
-}
-/**
- * Calculate a transform origin relative to the source axis, between 0-1, that results
- * in an asthetically pleasing scale/transform needed to project from source to target.
- */
-
-
-function calcOrigin(source, target) {
-  var origin = 0.5;
-  var sourceLength = calcLength(source);
-  var targetLength = calcLength(target);
-
-  if (targetLength > sourceLength) {
-    origin = progress(target.min, target.max - sourceLength, source.min);
-  } else if (sourceLength > targetLength) {
-    origin = progress(source.min, source.max - targetLength, target.min);
-  }
-
-  return clampProgress(origin);
-}
-/**
- * Update the AxisDelta with a transform that projects source into target.
- *
- * The transform `origin` is optional. If not provided, it'll be automatically
- * calculated based on the relative positions of the two bounding boxes.
- */
-
-
-function updateAxisDelta(delta, source, target, origin) {
-  if (origin === void 0) {
-    origin = 0.5;
-  }
-
-  delta.origin = origin;
-  delta.originPoint = mix(source.min, source.max, delta.origin);
-  delta.scale = calcLength(target) / calcLength(source);
-  if (isNear(delta.scale, 1, 0.0001)) delta.scale = 1;
-  delta.translate = mix(target.min, target.max, delta.origin) - delta.originPoint;
-  if (isNear(delta.translate)) delta.translate = 0;
-}
-/**
- * Update the BoxDelta with a transform that projects the source into the target.
- *
- * The transform `origin` is optional. If not provided, it'll be automatically
- * calculated based on the relative positions of the two bounding boxes.
- */
-
-
-function updateBoxDelta(delta, source, target, origin) {
-  updateAxisDelta(delta.x, source.x, target.x, defaultOrigin(origin.originX));
-  updateAxisDelta(delta.y, source.y, target.y, defaultOrigin(origin.originY));
-}
-/**
- * Currently this only accepts numerical origins, measured as 0-1, but could
- * accept pixel values by comparing to the target axis.
- */
-
-
-function defaultOrigin(origin) {
-  return typeof origin === "number" ? origin : 0.5;
-}
-
-function calcRelativeAxis(target, relative, parent) {
-  target.min = parent.min + relative.min;
-  target.max = target.min + calcLength(relative);
-}
-
-function calcRelativeBox(projection, parentProjection) {
-  calcRelativeAxis(projection.target.x, projection.relativeTarget.x, parentProjection.target.x);
-  calcRelativeAxis(projection.target.y, projection.relativeTarget.y, parentProjection.target.y);
-}
-
-var compareByDepth = function (a, b) {
-  return a.depth - b.depth;
-};
-
-function isProjecting(visualElement) {
-  var isEnabled = visualElement.projection.isEnabled;
-  return isEnabled || visualElement.shouldResetTransform();
-}
-
-function collectProjectingAncestors(visualElement, ancestors) {
-  if (ancestors === void 0) {
-    ancestors = [];
-  }
-
-  var parent = visualElement.parent;
-  if (parent) collectProjectingAncestors(parent, ancestors);
-  if (isProjecting(visualElement)) ancestors.push(visualElement);
-  return ancestors;
-}
-
-function collectProjectingChildren(visualElement) {
-  var children = [];
-
-  var addChild = function (child) {
-    if (isProjecting(child)) children.push(child);
-    child.children.forEach(addChild);
-  };
-
-  visualElement.children.forEach(addChild);
-  return children.sort(compareByDepth);
-}
-/**
- * Update the layoutState by measuring the DOM layout. This
- * should be called after resetting any layout-affecting transforms.
- */
-
-
-function updateLayoutMeasurement(visualElement) {
-  if (visualElement.shouldResetTransform()) return;
-  var layoutState = visualElement.getLayoutState();
-  visualElement.notifyBeforeLayoutMeasure(layoutState.layout);
-  layoutState.isHydrated = true;
-  layoutState.layout = visualElement.measureViewportBox();
-  layoutState.layoutCorrected = copyAxisBox(layoutState.layout);
-  visualElement.notifyLayoutMeasure(layoutState.layout, visualElement.prevViewportBox || layoutState.layout);
-  sync.update(function () {
-    return visualElement.rebaseProjectionTarget();
-  });
-}
-/**
- * Record the viewport box as it was before an expected mutation/re-render
- */
-
-
-function snapshotViewportBox(visualElement) {
-  if (visualElement.shouldResetTransform()) return;
-  visualElement.prevViewportBox = visualElement.measureViewportBox(false);
-  /**
-   * Update targetBox to match the prevViewportBox. This is just to ensure
-   * that targetBox is affected by scroll in the same way as the measured box
-   */
-
-  visualElement.rebaseProjectionTarget(false, visualElement.prevViewportBox);
-}
-
-function tweenAxis(target, prev, next, p) {
-  target.min = mix(prev.min, next.min, p);
-  target.max = mix(prev.max, next.max, p);
-}
-
-function calcRelativeOffsetAxis(parent, child) {
-  return {
-    min: child.min - parent.min,
-    max: child.max - parent.min
-  };
-}
-
-function calcRelativeOffset(parent, child) {
-  return {
-    x: calcRelativeOffsetAxis(parent.x, child.x),
-    y: calcRelativeOffsetAxis(parent.y, child.y)
-  };
-}
-
-function checkIfParentHasChanged(prev, next) {
-  var prevId = prev.getLayoutId();
-  var nextId = next.getLayoutId();
-  return prevId !== nextId || nextId === undefined && prev !== next;
-}
-
-function isDraggable(visualElement) {
-  var _a = visualElement.getProps(),
-      drag = _a.drag,
-      _dragX = _a._dragX;
-
-  return drag && !_dragX;
-}
-
-/**
- * Reset an axis to the provided origin box.
- *
- * This is a mutative operation.
- */
-
-function resetAxis(axis, originAxis) {
-  axis.min = originAxis.min;
-  axis.max = originAxis.max;
-}
-/**
- * Reset a box to the provided origin box.
- *
- * This is a mutative operation.
- */
-
-
-function resetBox(box, originBox) {
-  resetAxis(box.x, originBox.x);
-  resetAxis(box.y, originBox.y);
-}
-/**
- * Scales a point based on a factor and an originPoint
- */
-
-
-function scalePoint(point, scale, originPoint) {
-  var distanceFromOrigin = point - originPoint;
-  var scaled = scale * distanceFromOrigin;
-  return originPoint + scaled;
-}
-/**
- * Applies a translate/scale delta to a point
- */
-
-
-function applyPointDelta(point, translate, scale, originPoint, boxScale) {
-  if (boxScale !== undefined) {
-    point = scalePoint(point, boxScale, originPoint);
-  }
-
-  return scalePoint(point, scale, originPoint) + translate;
-}
-/**
- * Applies a translate/scale delta to an axis
- */
-
-
-function applyAxisDelta(axis, translate, scale, originPoint, boxScale) {
-  if (translate === void 0) {
-    translate = 0;
-  }
-
-  if (scale === void 0) {
-    scale = 1;
-  }
-
-  axis.min = applyPointDelta(axis.min, translate, scale, originPoint, boxScale);
-  axis.max = applyPointDelta(axis.max, translate, scale, originPoint, boxScale);
-}
-/**
- * Applies a translate/scale delta to a box
- */
-
-
-function applyBoxDelta(box, _a) {
-  var x = _a.x,
-      y = _a.y;
-  applyAxisDelta(box.x, x.translate, x.scale, x.originPoint);
-  applyAxisDelta(box.y, y.translate, y.scale, y.originPoint);
-}
-/**
- * Apply a transform to an axis from the latest resolved motion values.
- * This function basically acts as a bridge between a flat motion value map
- * and applyAxisDelta
- */
-
-
-function applyAxisTransforms(final, axis, transforms, _a) {
-  var _b = __read(_a, 3),
-      key = _b[0],
-      scaleKey = _b[1],
-      originKey = _b[2]; // Copy the current axis to the final axis before mutation
-
-
-  final.min = axis.min;
-  final.max = axis.max;
-  var axisOrigin = transforms[originKey] !== undefined ? transforms[originKey] : 0.5;
-  var originPoint = mix(axis.min, axis.max, axisOrigin); // Apply the axis delta to the final axis
-
-  applyAxisDelta(final, transforms[key], transforms[scaleKey], originPoint, transforms.scale);
-}
-/**
- * The names of the motion values we want to apply as translation, scale and origin.
- */
-
-
-var xKeys = ["x", "scaleX", "originX"];
-var yKeys = ["y", "scaleY", "originY"];
-/**
- * Apply a transform to a box from the latest resolved motion values.
- */
-
-function applyBoxTransforms(finalBox, box, transforms) {
-  applyAxisTransforms(finalBox.x, box.x, transforms, xKeys);
-  applyAxisTransforms(finalBox.y, box.y, transforms, yKeys);
-}
-/**
- * Remove a delta from a point. This is essentially the steps of applyPointDelta in reverse
- */
-
-
-function removePointDelta(point, translate, scale, originPoint, boxScale) {
-  point -= translate;
-  point = scalePoint(point, 1 / scale, originPoint);
-
-  if (boxScale !== undefined) {
-    point = scalePoint(point, 1 / boxScale, originPoint);
-  }
-
-  return point;
-}
-/**
- * Remove a delta from an axis. This is essentially the steps of applyAxisDelta in reverse
- */
-
-
-function removeAxisDelta(axis, translate, scale, origin, boxScale) {
-  if (translate === void 0) {
-    translate = 0;
-  }
-
-  if (scale === void 0) {
-    scale = 1;
-  }
-
-  if (origin === void 0) {
-    origin = 0.5;
-  }
-
-  var originPoint = mix(axis.min, axis.max, origin) - translate;
-  axis.min = removePointDelta(axis.min, translate, scale, originPoint, boxScale);
-  axis.max = removePointDelta(axis.max, translate, scale, originPoint, boxScale);
-}
-/**
- * Remove a transforms from an axis. This is essentially the steps of applyAxisTransforms in reverse
- * and acts as a bridge between motion values and removeAxisDelta
- */
-
-
-function removeAxisTransforms(axis, transforms, _a) {
-  var _b = __read(_a, 3),
-      key = _b[0],
-      scaleKey = _b[1],
-      originKey = _b[2];
-
-  removeAxisDelta(axis, transforms[key], transforms[scaleKey], transforms[originKey], transforms.scale);
-}
-/**
- * Remove a transforms from an box. This is essentially the steps of applyAxisBox in reverse
- * and acts as a bridge between motion values and removeAxisDelta
- */
-
-
-function removeBoxTransforms(box, transforms) {
-  removeAxisTransforms(box.x, transforms, xKeys);
-  removeAxisTransforms(box.y, transforms, yKeys);
-}
-/**
- * Apply a tree of deltas to a box. We do this to calculate the effect of all the transforms
- * in a tree upon our box before then calculating how to project it into our desired viewport-relative box
- *
- * This is the final nested loop within updateLayoutDelta for future refactoring
- */
-
-
-function applyTreeDeltas(box, treeScale, treePath) {
-  var treeLength = treePath.length;
-  if (!treeLength) return; // Reset the treeScale
-
-  treeScale.x = treeScale.y = 1;
-  var node;
-  var delta;
-
-  for (var i = 0; i < treeLength; i++) {
-    node = treePath[i];
-    delta = node.getLayoutState().delta; // Incoporate each ancestor's scale into a culmulative treeScale for this component
-
-    treeScale.x *= delta.x.scale;
-    treeScale.y *= delta.y.scale; // Apply each ancestor's calculated delta into this component's recorded layout box
-
-    applyBoxDelta(box, delta); // If this is a draggable ancestor, also incorporate the node's transform to the layout box
-
-    if (isDraggable(node)) {
-      applyBoxTransforms(box, box, node.getLatestValues());
-    }
-  }
-}
-
-/**
- * Returns a boolean stating whether or not we converted the projection
- * to relative projection.
- */
-
-function convertToRelativeProjection(visualElement, isLayoutDrag) {
-  if (isLayoutDrag === void 0) {
-    isLayoutDrag = true;
-  }
-
-  var projectionParent = visualElement.getProjectionParent();
-  if (!projectionParent) return false;
-  var offset;
-
-  if (isLayoutDrag) {
-    offset = calcRelativeOffset(projectionParent.projection.target, visualElement.projection.target);
-    removeBoxTransforms(offset, projectionParent.getLatestValues());
-  } else {
-    offset = calcRelativeOffset(projectionParent.getLayoutState().layout, visualElement.getLayoutState().layout);
-  }
-
-  eachAxis(function (axis) {
-    return visualElement.setProjectionTargetAxis(axis, offset[axis].min, offset[axis].max, true);
-  });
-  return true;
-}
-
-var unresolvedJobs = new Set();
-
-function pushJob(stack, job, pointer) {
-  if (!stack[pointer]) stack[pointer] = [];
-  stack[pointer].push(job);
-}
-
-function batchLayout(callback) {
-  unresolvedJobs.add(callback);
-  return function () {
-    return unresolvedJobs.delete(callback);
-  };
-}
-
-function flushLayout() {
-  if (!unresolvedJobs.size) return;
-  var pointer = 0;
-  var reads = [[]];
-  var writes = [];
-
-  var setRead = function (job) {
-    return pushJob(reads, job, pointer);
-  };
-
-  var setWrite = function (job) {
-    pushJob(writes, job, pointer);
-    pointer++;
-  };
-  /**
-   * Resolve jobs into their array stacks
-   */
-
-
-  unresolvedJobs.forEach(function (callback) {
-    callback(setRead, setWrite);
-    pointer = 0;
-  });
-  unresolvedJobs.clear();
-  /**
-   * Execute jobs
-   */
-
-  var numStacks = writes.length;
-
-  for (var i = 0; i <= numStacks; i++) {
-    reads[i] && reads[i].forEach(executeJob);
-    writes[i] && writes[i].forEach(executeJob);
-  }
-}
-
-var executeJob = function (job) {
-  return job();
-};
-
-var elementDragControls = new WeakMap();
-/**
- *
- */
-
-var lastPointerEvent;
-
-var VisualElementDragControls =
-/** @class */
-function () {
-  function VisualElementDragControls(_a) {
-    var visualElement = _a.visualElement;
-    /**
-     * Track whether we're currently dragging.
-     *
-     * @internal
-     */
-
-    this.isDragging = false;
-    /**
-     * The current direction of drag, or `null` if both.
-     *
-     * @internal
-     */
-
-    this.currentDirection = null;
-    /**
-     * The permitted boundaries of travel, in pixels.
-     *
-     * @internal
-     */
-
-    this.constraints = false;
-    /**
-     * The per-axis resolved elastic values.
-     *
-     * @internal
-     */
-
-    this.elastic = axisBox();
-    /**
-     * A reference to the host component's latest props.
-     *
-     * @internal
-     */
-
-    this.props = {};
-    /**
-     * @internal
-     */
-
-    this.hasMutatedConstraints = false;
-    /**
-     * Track the initial position of the cursor relative to the dragging element
-     * when dragging starts as a value of 0-1 on each axis. We then use this to calculate
-     * an ideal bounding box for the VisualElement renderer to project into every frame.
-     *
-     * @internal
-     */
-
-    this.cursorProgress = {
-      x: 0.5,
-      y: 0.5
-    }; // When updating _dragX, or _dragY instead of the VisualElement,
-    // persist their values between drag gestures.
-
-    this.originPoint = {}; // This is a reference to the global drag gesture lock, ensuring only one component
-    // can "capture" the drag of one or both axes.
-    // TODO: Look into moving this into pansession?
-
-    this.openGlobalLock = null;
-    /**
-     * @internal
-     */
-
-    this.panSession = null;
-    this.visualElement = visualElement;
-    this.visualElement.enableLayoutProjection();
-    elementDragControls.set(visualElement, this);
-  }
-  /**
-   * Instantiate a PanSession for the drag gesture
-   *
-   * @public
-   */
-
-
-  VisualElementDragControls.prototype.start = function (originEvent, _a) {
-    var _this = this;
-
-    var _b = _a === void 0 ? {} : _a,
-        _c = _b.snapToCursor,
-        snapToCursor = _c === void 0 ? false : _c,
-        cursorProgress = _b.cursorProgress;
-
-    var onSessionStart = function (event) {
-      var _a; // Stop any animations on both axis values immediately. This allows the user to throw and catch
-      // the component.
-
-
-      _this.stopMotion();
-      /**
-       * Save the initial point. We'll use this to calculate the pointer's position rather
-       * than the one we receive when the gesture actually starts. By then, the pointer will
-       * have already moved, and the perception will be of the pointer "slipping" across the element
-       */
-
-
-      var initialPoint = getViewportPointFromEvent(event).point;
-      (_a = _this.cancelLayout) === null || _a === void 0 ? void 0 : _a.call(_this);
-      _this.cancelLayout = batchLayout(function (read, write) {
-        var ancestors = collectProjectingAncestors(_this.visualElement);
-        var children = collectProjectingChildren(_this.visualElement);
-
-        var tree = __spreadArray$1(__spreadArray$1([], __read(ancestors)), __read(children));
-
-        var hasManuallySetCursorOrigin = false;
-        /**
-         * Apply a simple lock to the projection target. This ensures no animations
-         * can run on the projection box while this lock is active.
-         */
-
-        _this.isLayoutDrag() && _this.visualElement.lockProjectionTarget();
-        write(function () {
-          tree.forEach(function (element) {
-            return element.resetTransform();
-          });
-        });
-        read(function () {
-          updateLayoutMeasurement(_this.visualElement);
-          children.forEach(updateLayoutMeasurement);
-        });
-        write(function () {
-          tree.forEach(function (element) {
-            return element.restoreTransform();
-          });
-
-          if (snapToCursor) {
-            hasManuallySetCursorOrigin = _this.snapToCursor(initialPoint);
-          }
-        });
-        read(function () {
-          var isRelativeDrag = Boolean(_this.getAxisMotionValue("x") && !_this.isExternalDrag());
-
-          if (!isRelativeDrag) {
-            _this.visualElement.rebaseProjectionTarget(true, _this.visualElement.measureViewportBox(false));
-          }
-
-          _this.visualElement.scheduleUpdateLayoutProjection();
-          /**
-           * When dragging starts, we want to find where the cursor is relative to the bounding box
-           * of the element. Every frame, we calculate a new bounding box using this relative position
-           * and let the visualElement renderer figure out how to reproject the element into this bounding
-           * box.
-           *
-           * By doing it this way, rather than applying an x/y transform directly to the element,
-           * we can ensure the component always visually sticks to the cursor as we'd expect, even
-           * if the DOM element itself changes layout as a result of React updates the user might
-           * make based on the drag position.
-           */
-
-
-          var projection = _this.visualElement.projection;
-          eachAxis(function (axis) {
-            if (!hasManuallySetCursorOrigin) {
-              var _a = projection.target[axis],
-                  min = _a.min,
-                  max = _a.max;
-              _this.cursorProgress[axis] = cursorProgress ? cursorProgress[axis] : progress(min, max, initialPoint[axis]);
-            }
-            /**
-             * If we have external drag MotionValues, record their origin point. On pointermove
-             * we'll apply the pan gesture offset directly to this value.
-             */
-
-
-            var axisValue = _this.getAxisMotionValue(axis);
-
-            if (axisValue) {
-              _this.originPoint[axis] = axisValue.get();
-            }
-          });
-        });
-        write(function () {
-          flushSync.update();
-          flushSync.preRender();
-          flushSync.render();
-          flushSync.postRender();
-        });
-        read(function () {
-          return _this.resolveDragConstraints();
-        });
-      });
-    };
-
-    var onStart = function (event, info) {
-      var _a, _b, _c; // Attempt to grab the global drag gesture lock - maybe make this part of PanSession
-
-
-      var _d = _this.props,
-          drag = _d.drag,
-          dragPropagation = _d.dragPropagation;
-
-      if (drag && !dragPropagation) {
-        if (_this.openGlobalLock) _this.openGlobalLock();
-        _this.openGlobalLock = getGlobalLock(drag); // If we don 't have the lock, don't start dragging
-
-        if (!_this.openGlobalLock) return;
-      }
-
-      flushLayout(); // Set current drag status
-
-      _this.isDragging = true;
-      _this.currentDirection = null; // Fire onDragStart event
-
-      (_b = (_a = _this.props).onDragStart) === null || _b === void 0 ? void 0 : _b.call(_a, event, info);
-      (_c = _this.visualElement.animationState) === null || _c === void 0 ? void 0 : _c.setActive(AnimationType.Drag, true);
-    };
-
-    var onMove = function (event, info) {
-      var _a, _b, _c, _d;
-
-      var _e = _this.props,
-          dragPropagation = _e.dragPropagation,
-          dragDirectionLock = _e.dragDirectionLock; // If we didn't successfully receive the gesture lock, early return.
-
-      if (!dragPropagation && !_this.openGlobalLock) return;
-      var offset = info.offset; // Attempt to detect drag direction if directionLock is true
-
-      if (dragDirectionLock && _this.currentDirection === null) {
-        _this.currentDirection = getCurrentDirection(offset); // If we've successfully set a direction, notify listener
-
-        if (_this.currentDirection !== null) {
-          (_b = (_a = _this.props).onDirectionLock) === null || _b === void 0 ? void 0 : _b.call(_a, _this.currentDirection);
-        }
-
-        return;
-      } // Update each point with the latest position
-
-
-      _this.updateAxis("x", info.point, offset);
-
-      _this.updateAxis("y", info.point, offset); // Fire onDrag event
-
-
-      (_d = (_c = _this.props).onDrag) === null || _d === void 0 ? void 0 : _d.call(_c, event, info); // Update the last pointer event
-
-      lastPointerEvent = event;
-    };
-
-    var onSessionEnd = function (event, info) {
-      return _this.stop(event, info);
-    };
-
-    var transformPagePoint = this.props.transformPagePoint;
-    this.panSession = new PanSession(originEvent, {
-      onSessionStart: onSessionStart,
-      onStart: onStart,
-      onMove: onMove,
-      onSessionEnd: onSessionEnd
-    }, {
-      transformPagePoint: transformPagePoint
-    });
-  };
-
-  VisualElementDragControls.prototype.resolveDragConstraints = function () {
-    var _this = this;
-
-    var _a = this.props,
-        dragConstraints = _a.dragConstraints,
-        dragElastic = _a.dragElastic;
-    var layout = this.visualElement.getLayoutState().layoutCorrected;
-
-    if (dragConstraints) {
-      this.constraints = isRefObject(dragConstraints) ? this.resolveRefConstraints(layout, dragConstraints) : calcRelativeConstraints(layout, dragConstraints);
-    } else {
-      this.constraints = false;
-    }
-
-    this.elastic = resolveDragElastic(dragElastic);
-    /**
-     * If we're outputting to external MotionValues, we want to rebase the measured constraints
-     * from viewport-relative to component-relative.
-     */
-
-    if (this.constraints && !this.hasMutatedConstraints) {
-      eachAxis(function (axis) {
-        if (_this.getAxisMotionValue(axis)) {
-          _this.constraints[axis] = rebaseAxisConstraints(layout[axis], _this.constraints[axis]);
-        }
-      });
-    }
-  };
-
-  VisualElementDragControls.prototype.resolveRefConstraints = function (layoutBox, constraints) {
-    var _a = this.props,
-        onMeasureDragConstraints = _a.onMeasureDragConstraints,
-        transformPagePoint = _a.transformPagePoint;
-    var constraintsElement = constraints.current;
-    invariant(constraintsElement !== null, "If `dragConstraints` is set as a React ref, that ref must be passed to another component's `ref` prop.");
-    this.constraintsBox = getBoundingBox(constraintsElement, transformPagePoint);
-    var measuredConstraints = calcViewportConstraints(layoutBox, this.constraintsBox);
-    /**
-     * If there's an onMeasureDragConstraints listener we call it and
-     * if different constraints are returned, set constraints to that
-     */
-
-    if (onMeasureDragConstraints) {
-      var userConstraints = onMeasureDragConstraints(convertAxisBoxToBoundingBox(measuredConstraints));
-      this.hasMutatedConstraints = !!userConstraints;
-
-      if (userConstraints) {
-        measuredConstraints = convertBoundingBoxToAxisBox(userConstraints);
-      }
-    }
-
-    return measuredConstraints;
-  };
-
-  VisualElementDragControls.prototype.cancelDrag = function () {
-    var _a, _b;
-
-    this.visualElement.unlockProjectionTarget();
-    (_a = this.cancelLayout) === null || _a === void 0 ? void 0 : _a.call(this);
-    this.isDragging = false;
-    this.panSession && this.panSession.end();
-    this.panSession = null;
-
-    if (!this.props.dragPropagation && this.openGlobalLock) {
-      this.openGlobalLock();
-      this.openGlobalLock = null;
-    }
-
-    (_b = this.visualElement.animationState) === null || _b === void 0 ? void 0 : _b.setActive(AnimationType.Drag, false);
-  };
-
-  VisualElementDragControls.prototype.stop = function (event, info) {
-    var _a, _b, _c;
-
-    (_a = this.panSession) === null || _a === void 0 ? void 0 : _a.end();
-    this.panSession = null;
-    var isDragging = this.isDragging;
-    this.cancelDrag();
-    if (!isDragging) return;
-    var velocity = info.velocity;
-    this.animateDragEnd(velocity);
-    (_c = (_b = this.props).onDragEnd) === null || _c === void 0 ? void 0 : _c.call(_b, event, info);
-  };
-
-  VisualElementDragControls.prototype.snapToCursor = function (point) {
-    var _this = this;
-
-    return eachAxis(function (axis) {
-      var drag = _this.props.drag; // If we're not dragging this axis, do an early return.
-
-      if (!shouldDrag(axis, drag, _this.currentDirection)) return;
-
-      var axisValue = _this.getAxisMotionValue(axis);
-
-      if (axisValue) {
-        var box = _this.visualElement.getLayoutState().layout;
-
-        var length_1 = box[axis].max - box[axis].min;
-        var center = box[axis].min + length_1 / 2;
-        var offset = point[axis] - center;
-        _this.originPoint[axis] = point[axis];
-        axisValue.set(offset);
-      } else {
-        _this.cursorProgress[axis] = 0.5;
-        return true;
-      }
-    }).includes(true);
-  };
-  /**
-   * Update the specified axis with the latest pointer information.
-   */
-
-
-  VisualElementDragControls.prototype.updateAxis = function (axis, point, offset) {
-    var drag = this.props.drag; // If we're not dragging this axis, do an early return.
-
-    if (!shouldDrag(axis, drag, this.currentDirection)) return;
-    return this.getAxisMotionValue(axis) ? this.updateAxisMotionValue(axis, offset) : this.updateVisualElementAxis(axis, point);
-  };
-
-  VisualElementDragControls.prototype.updateAxisMotionValue = function (axis, offset) {
-    var axisValue = this.getAxisMotionValue(axis);
-    if (!offset || !axisValue) return;
-    var nextValue = this.originPoint[axis] + offset[axis];
-    var update = this.constraints ? applyConstraints(nextValue, this.constraints[axis], this.elastic[axis]) : nextValue;
-    axisValue.set(update);
-  };
-
-  VisualElementDragControls.prototype.updateVisualElementAxis = function (axis, point) {
-    var _a; // Get the actual layout bounding box of the element
-
-
-    var axisLayout = this.visualElement.getLayoutState().layout[axis]; // Calculate its current length. In the future we might want to lerp this to animate
-    // between lengths if the layout changes as we change the DOM
-
-    var axisLength = axisLayout.max - axisLayout.min; // Get the initial progress that the pointer sat on this axis on gesture start.
-
-    var axisProgress = this.cursorProgress[axis]; // Calculate a new min point based on the latest pointer position, constraints and elastic
-
-    var min = calcConstrainedMinPoint(point[axis], axisLength, axisProgress, (_a = this.constraints) === null || _a === void 0 ? void 0 : _a[axis], this.elastic[axis]); // Update the axis viewport target with this new min and the length
-
-    this.visualElement.setProjectionTargetAxis(axis, min, min + axisLength);
-  };
-
-  VisualElementDragControls.prototype.setProps = function (_a) {
-    var _b = _a.drag,
-        drag = _b === void 0 ? false : _b,
-        _c = _a.dragDirectionLock,
-        dragDirectionLock = _c === void 0 ? false : _c,
-        _d = _a.dragPropagation,
-        dragPropagation = _d === void 0 ? false : _d,
-        _e = _a.dragConstraints,
-        dragConstraints = _e === void 0 ? false : _e,
-        _f = _a.dragElastic,
-        dragElastic = _f === void 0 ? defaultElastic : _f,
-        _g = _a.dragMomentum,
-        dragMomentum = _g === void 0 ? true : _g,
-        remainingProps = __rest$3(_a, ["drag", "dragDirectionLock", "dragPropagation", "dragConstraints", "dragElastic", "dragMomentum"]);
-
-    this.props = __assign$4({
-      drag: drag,
-      dragDirectionLock: dragDirectionLock,
-      dragPropagation: dragPropagation,
-      dragConstraints: dragConstraints,
-      dragElastic: dragElastic,
-      dragMomentum: dragMomentum
-    }, remainingProps);
-  };
-  /**
-   * Drag works differently depending on which props are provided.
-   *
-   * - If _dragX and _dragY are provided, we output the gesture delta directly to those motion values.
-   * - If the component will perform layout animations, we output the gesture to the component's
-   *      visual bounding box
-   * - Otherwise, we apply the delta to the x/y motion values.
-   */
-
-
-  VisualElementDragControls.prototype.getAxisMotionValue = function (axis) {
-    var _a = this.props,
-        layout = _a.layout,
-        layoutId = _a.layoutId;
-    var dragKey = "_drag" + axis.toUpperCase();
-
-    if (this.props[dragKey]) {
-      return this.props[dragKey];
-    } else if (!layout && layoutId === undefined) {
-      return this.visualElement.getValue(axis, 0);
-    }
-  };
-
-  VisualElementDragControls.prototype.isLayoutDrag = function () {
-    return !this.getAxisMotionValue("x");
-  };
-
-  VisualElementDragControls.prototype.isExternalDrag = function () {
-    var _a = this.props,
-        _dragX = _a._dragX,
-        _dragY = _a._dragY;
-    return _dragX || _dragY;
-  };
-
-  VisualElementDragControls.prototype.animateDragEnd = function (velocity) {
-    var _this = this;
-
-    var _a = this.props,
-        drag = _a.drag,
-        dragMomentum = _a.dragMomentum,
-        dragElastic = _a.dragElastic,
-        dragTransition = _a.dragTransition;
-    /**
-     * Everything beyond the drag gesture should be performed with
-     * relative projection so children stay in sync with their parent element.
-     */
-
-    var isRelative = convertToRelativeProjection(this.visualElement, this.isLayoutDrag() && !this.isExternalDrag());
-    /**
-     * If we had previously resolved constraints relative to the viewport,
-     * we need to also convert those to a relative coordinate space for the animation
-     */
-
-    var constraints = this.constraints || {};
-
-    if (isRelative && Object.keys(constraints).length && this.isLayoutDrag()) {
-      var projectionParent = this.visualElement.getProjectionParent();
-
-      if (projectionParent) {
-        var relativeConstraints_1 = calcRelativeOffset(projectionParent.projection.targetFinal, constraints);
-        eachAxis(function (axis) {
-          var _a = relativeConstraints_1[axis],
-              min = _a.min,
-              max = _a.max;
-          constraints[axis] = {
-            min: isNaN(min) ? undefined : min,
-            max: isNaN(max) ? undefined : max
-          };
-        });
-      }
-    }
-
-    var momentumAnimations = eachAxis(function (axis) {
-      var _a;
-
-      if (!shouldDrag(axis, drag, _this.currentDirection)) {
-        return;
-      }
-
-      var transition = (_a = constraints === null || constraints === void 0 ? void 0 : constraints[axis]) !== null && _a !== void 0 ? _a : {};
-      /**
-       * Overdamp the boundary spring if `dragElastic` is disabled. There's still a frame
-       * of spring animations so we should look into adding a disable spring option to `inertia`.
-       * We could do something here where we affect the `bounceStiffness` and `bounceDamping`
-       * using the value of `dragElastic`.
-       */
-
-      var bounceStiffness = dragElastic ? 200 : 1000000;
-      var bounceDamping = dragElastic ? 40 : 10000000;
-
-      var inertia = __assign$4(__assign$4({
-        type: "inertia",
-        velocity: dragMomentum ? velocity[axis] : 0,
-        bounceStiffness: bounceStiffness,
-        bounceDamping: bounceDamping,
-        timeConstant: 750,
-        restDelta: 1,
-        restSpeed: 10
-      }, dragTransition), transition); // If we're not animating on an externally-provided `MotionValue` we can use the
-      // component's animation controls which will handle interactions with whileHover (etc),
-      // otherwise we just have to animate the `MotionValue` itself.
-
-
-      return _this.getAxisMotionValue(axis) ? _this.startAxisValueAnimation(axis, inertia) : _this.visualElement.startLayoutAnimation(axis, inertia, isRelative);
-    }); // Run all animations and then resolve the new drag constraints.
-
-    return Promise.all(momentumAnimations).then(function () {
-      var _a, _b;
-
-      (_b = (_a = _this.props).onDragTransitionEnd) === null || _b === void 0 ? void 0 : _b.call(_a);
-    });
-  };
-
-  VisualElementDragControls.prototype.stopMotion = function () {
-    var _this = this;
-
-    eachAxis(function (axis) {
-      var axisValue = _this.getAxisMotionValue(axis);
-
-      axisValue ? axisValue.stop() : _this.visualElement.stopLayoutAnimation();
-    });
-  };
-
-  VisualElementDragControls.prototype.startAxisValueAnimation = function (axis, transition) {
-    var axisValue = this.getAxisMotionValue(axis);
-    if (!axisValue) return;
-    var currentValue = axisValue.get();
-    axisValue.set(currentValue);
-    axisValue.set(currentValue); // Set twice to hard-reset velocity
-
-    return startAnimation(axis, axisValue, 0, transition);
-  };
-
-  VisualElementDragControls.prototype.scalePoint = function () {
-    var _this = this;
-
-    var _a = this.props,
-        drag = _a.drag,
-        dragConstraints = _a.dragConstraints;
-    if (!isRefObject(dragConstraints) || !this.constraintsBox) return; // Stop any current animations as there can be some visual glitching if we resize mid animation
-
-    this.stopMotion(); // Record the relative progress of the targetBox relative to the constraintsBox
-
-    var boxProgress = {
-      x: 0,
-      y: 0
-    };
-    eachAxis(function (axis) {
-      boxProgress[axis] = calcOrigin(_this.visualElement.projection.target[axis], _this.constraintsBox[axis]);
-    });
-    /**
-     * For each axis, calculate the current progress of the layout axis within the constraints.
-     * Then, using the latest layout and constraints measurements, reposition the new layout axis
-     * proportionally within the constraints.
-     */
-
-    this.updateConstraints(function () {
-      eachAxis(function (axis) {
-        if (!shouldDrag(axis, drag, null)) return; // Calculate the position of the targetBox relative to the constraintsBox using the
-        // previously calculated progress
-
-        var _a = calcPositionFromProgress(_this.visualElement.projection.target[axis], _this.constraintsBox[axis], boxProgress[axis]),
-            min = _a.min,
-            max = _a.max;
-
-        _this.visualElement.setProjectionTargetAxis(axis, min, max);
-      });
-    });
-    /**
-     * If any other draggable components are queuing the same tasks synchronously
-     * this will wait until they've all been scheduled before flushing.
-     */
-
-    setTimeout(flushLayout, 1);
-  };
-
-  VisualElementDragControls.prototype.updateConstraints = function (onReady) {
-    var _this = this;
-
-    this.cancelLayout = batchLayout(function (read, write) {
-      var ancestors = collectProjectingAncestors(_this.visualElement);
-      write(function () {
-        return ancestors.forEach(function (element) {
-          return element.resetTransform();
-        });
-      });
-      read(function () {
-        return updateLayoutMeasurement(_this.visualElement);
-      });
-      write(function () {
-        return ancestors.forEach(function (element) {
-          return element.restoreTransform();
-        });
-      });
-      read(function () {
-        _this.resolveDragConstraints();
-      });
-      if (onReady) write(onReady);
-    });
-  };
-
-  VisualElementDragControls.prototype.mount = function (visualElement) {
-    var _this = this;
-
-    var element = visualElement.getInstance();
-    /**
-     * Attach a pointerdown event listener on this DOM element to initiate drag tracking.
-     */
-
-    var stopPointerListener = addPointerEvent(element, "pointerdown", function (event) {
-      var _a = _this.props,
-          drag = _a.drag,
-          _b = _a.dragListener,
-          dragListener = _b === void 0 ? true : _b;
-      drag && dragListener && _this.start(event);
-    });
-    /**
-     * Attach a window resize listener to scale the draggable target within its defined
-     * constraints as the window resizes.
-     */
-
-    var stopResizeListener = addDomEvent(window, "resize", function () {
-      _this.scalePoint();
-    });
-    /**
-     * Ensure drag constraints are resolved correctly relative to the dragging element
-     * whenever its layout changes.
-     */
-
-    var stopLayoutUpdateListener = visualElement.onLayoutUpdate(function () {
-      if (_this.isDragging) {
-        _this.resolveDragConstraints();
-      }
-    });
-    /**
-     * If the previous component with this same layoutId was dragging at the time
-     * it was unmounted, we want to continue the same gesture on this component.
-     */
-
-    var prevDragCursor = visualElement.prevDragCursor;
-
-    if (prevDragCursor) {
-      this.start(lastPointerEvent, {
-        cursorProgress: prevDragCursor
-      });
-    }
-    /**
-     * Return a function that will teardown the drag gesture
-     */
-
-
-    return function () {
-      stopPointerListener === null || stopPointerListener === void 0 ? void 0 : stopPointerListener();
-      stopResizeListener === null || stopResizeListener === void 0 ? void 0 : stopResizeListener();
-      stopLayoutUpdateListener === null || stopLayoutUpdateListener === void 0 ? void 0 : stopLayoutUpdateListener();
-
-      _this.cancelDrag();
-    };
-  };
-
-  return VisualElementDragControls;
-}();
-
-function shouldDrag(direction, drag, currentDirection) {
-  return (drag === true || drag === direction) && (currentDirection === null || currentDirection === direction);
-}
-/**
- * Based on an x/y offset determine the current drag direction. If both axis' offsets are lower
- * than the provided threshold, return `null`.
- *
- * @param offset - The x/y offset from origin.
- * @param lockThreshold - (Optional) - the minimum absolute offset before we can determine a drag direction.
- */
-
-
-function getCurrentDirection(offset, lockThreshold) {
-  if (lockThreshold === void 0) {
-    lockThreshold = 10;
-  }
-
-  var direction = null;
-
-  if (Math.abs(offset.y) > lockThreshold) {
-    direction = "y";
-  } else if (Math.abs(offset.x) > lockThreshold) {
-    direction = "x";
-  }
-
-  return direction;
-}
-
-/**
- * A hook that allows an element to be dragged.
- *
- * @internal
- */
-
-function useDrag(props) {
-  var groupDragControls = props.dragControls,
-      visualElement = props.visualElement;
-  var transformPagePoint = React.useContext(MotionConfigContext).transformPagePoint;
-  var dragControls = useConstant(function () {
-    return new VisualElementDragControls({
-      visualElement: visualElement
-    });
-  });
-  dragControls.setProps(__assign$4(__assign$4({}, props), {
-    transformPagePoint: transformPagePoint
-  })); // If we've been provided a DragControls for manual control over the drag gesture,
-  // subscribe this component to it on mount.
-
-  React.useEffect(function () {
-    return groupDragControls && groupDragControls.subscribe(dragControls);
-  }, [dragControls]); // Mount the drag controls with the visualElement
-
-  React.useEffect(function () {
-    return dragControls.mount(visualElement);
-  }, []);
-}
-
-/**
- *
- * @param handlers -
- * @param ref -
- *
- * @internalremarks
- * Currently this sets new pan gesture functions every render. The memo route has been explored
- * in the past but ultimately we're still creating new functions every render. An optimisation
- * to explore is creating the pan gestures and loading them into a `ref`.
- *
- * @internal
- */
-
-function usePanGesture(_a) {
-  var onPan = _a.onPan,
-      onPanStart = _a.onPanStart,
-      onPanEnd = _a.onPanEnd,
-      onPanSessionStart = _a.onPanSessionStart,
-      visualElement = _a.visualElement;
-  var hasPanEvents = onPan || onPanStart || onPanEnd || onPanSessionStart;
-  var panSession = React.useRef(null);
-  var transformPagePoint = React.useContext(MotionConfigContext).transformPagePoint;
-  var handlers = {
-    onSessionStart: onPanSessionStart,
-    onStart: onPanStart,
-    onMove: onPan,
-    onEnd: function (event, info) {
-      panSession.current = null;
-      onPanEnd && onPanEnd(event, info);
-    }
-  };
-  React.useEffect(function () {
-    if (panSession.current !== null) {
-      panSession.current.updateHandlers(handlers);
-    }
-  });
-
-  function onPointerDown(event) {
-    panSession.current = new PanSession(event, handlers, {
-      transformPagePoint: transformPagePoint
-    });
-  }
-
-  usePointerEvent(visualElement, "pointerdown", hasPanEvents && onPointerDown);
-  useUnmountEffect(function () {
-    return panSession.current && panSession.current.end();
-  });
-}
-
-var drag = {
-  pan: makeRenderlessComponent(usePanGesture),
-  drag: makeRenderlessComponent(useDrag)
-};
-
-/**
- * @public
- */
-var Presence;
-
-(function (Presence) {
-  Presence[Presence["Entering"] = 0] = "Entering";
-  Presence[Presence["Present"] = 1] = "Present";
-  Presence[Presence["Exiting"] = 2] = "Exiting";
-})(Presence || (Presence = {}));
-/**
- * @public
- */
-
-
-var VisibilityAction;
-
-(function (VisibilityAction) {
-  VisibilityAction[VisibilityAction["Hide"] = 0] = "Hide";
-  VisibilityAction[VisibilityAction["Show"] = 1] = "Show";
-})(VisibilityAction || (VisibilityAction = {}));
-
-function isCSSVariable(value) {
-  return typeof value === "string" && value.startsWith("var(--");
-}
-/**
- * Parse Framer's special CSS variable format into a CSS token and a fallback.
- *
- * ```
- * `var(--foo, #fff)` => [`--foo`, '#fff']
- * ```
- *
- * @param current
- */
-
-
-var cssVariableRegex = /var\((--[a-zA-Z0-9-_]+),? ?([a-zA-Z0-9 ()%#.,-]+)?\)/;
-
-function parseCSSVariable(current) {
-  var match = cssVariableRegex.exec(current);
-  if (!match) return [,];
-
-  var _a = __read(match, 3),
-      token = _a[1],
-      fallback = _a[2];
-
-  return [token, fallback];
-}
-
-var maxDepth = 4;
-
-function getVariableValue(current, element, depth) {
-  if (depth === void 0) {
-    depth = 1;
-  }
-
-  invariant(depth <= maxDepth, "Max CSS variable fallback depth detected in property \"" + current + "\". This may indicate a circular fallback dependency.");
-
-  var _a = __read(parseCSSVariable(current), 2),
-      token = _a[0],
-      fallback = _a[1]; // No CSS variable detected
-
-
-  if (!token) return; // Attempt to read this CSS variable off the element
-
-  var resolved = window.getComputedStyle(element).getPropertyValue(token);
-
-  if (resolved) {
-    return resolved.trim();
-  } else if (isCSSVariable(fallback)) {
-    // The fallback might itself be a CSS variable, in which case we attempt to resolve it too.
-    return getVariableValue(fallback, element, depth + 1);
-  } else {
-    return fallback;
-  }
-}
-/**
- * Resolve CSS variables from
- *
- * @internal
- */
-
-
-function resolveCSSVariables(visualElement, _a, transitionEnd) {
-  var _b;
-
-  var target = __rest$3(_a, []);
-
-  var element = visualElement.getInstance();
-  if (!(element instanceof HTMLElement)) return {
-    target: target,
-    transitionEnd: transitionEnd
-  }; // If `transitionEnd` isn't `undefined`, clone it. We could clone `target` and `transitionEnd`
-  // only if they change but I think this reads clearer and this isn't a performance-critical path.
-
-  if (transitionEnd) {
-    transitionEnd = __assign$4({}, transitionEnd);
-  } // Go through existing `MotionValue`s and ensure any existing CSS variables are resolved
-
-
-  visualElement.forEachValue(function (value) {
-    var current = value.get();
-    if (!isCSSVariable(current)) return;
-    var resolved = getVariableValue(current, element);
-    if (resolved) value.set(resolved);
-  }); // Cycle through every target property and resolve CSS variables. Currently
-  // we only read single-var properties like `var(--foo)`, not `calc(var(--foo) + 20px)`
-
-  for (var key in target) {
-    var current = target[key];
-    if (!isCSSVariable(current)) continue;
-    var resolved = getVariableValue(current, element);
-    if (!resolved) continue; // Clone target if it hasn't already been
-
-    target[key] = resolved; // If the user hasn't already set this key on `transitionEnd`, set it to the unresolved
-    // CSS variable. This will ensure that after the animation the component will reflect
-    // changes in the value of the CSS variable.
-
-    if (transitionEnd) (_b = transitionEnd[key]) !== null && _b !== void 0 ? _b : transitionEnd[key] = current;
-  }
-
-  return {
-    target: target,
-    transitionEnd: transitionEnd
-  };
-}
-
-function pixelsToPercent(pixels, axis) {
-  return pixels / (axis.max - axis.min) * 100;
-}
-/**
- * We always correct borderRadius as a percentage rather than pixels to reduce paints.
- * For example, if you are projecting a box that is 100px wide with a 10px borderRadius
- * into a box that is 200px wide with a 20px borderRadius, that is actually a 10%
- * borderRadius in both states. If we animate between the two in pixels that will trigger
- * a paint each time. If we animate between the two in percentage we'll avoid a paint.
- */
-
-
-function correctBorderRadius(latest, _layoutState, _a) {
-  var target = _a.target;
-  /**
-   * If latest is a string, if it's a percentage we can return immediately as it's
-   * going to be stretched appropriately. Otherwise, if it's a pixel, convert it to a number.
-   */
-
-  if (typeof latest === "string") {
-    if (px.test(latest)) {
-      latest = parseFloat(latest);
-    } else {
-      return latest;
-    }
-  }
-  /**
-   * If latest is a number, it's a pixel value. We use the current viewportBox to calculate that
-   * pixel value as a percentage of each axis
-   */
-
-
-  var x = pixelsToPercent(latest, target.x);
-  var y = pixelsToPercent(latest, target.y);
-  return x + "% " + y + "%";
-}
-
-var varToken = "_$css";
-
-function correctBoxShadow(latest, _a) {
-  var delta = _a.delta,
-      treeScale = _a.treeScale;
-  var original = latest;
-  /**
-   * We need to first strip and store CSS variables from the string.
-   */
-
-  var containsCSSVariables = latest.includes("var(");
-  var cssVariables = [];
-
-  if (containsCSSVariables) {
-    latest = latest.replace(cssVariableRegex, function (match) {
-      cssVariables.push(match);
-      return varToken;
-    });
-  }
-
-  var shadow = complex.parse(latest); // TODO: Doesn't support multiple shadows
-
-  if (shadow.length > 5) return original;
-  var template = complex.createTransformer(latest);
-  var offset = typeof shadow[0] !== "number" ? 1 : 0; // Calculate the overall context scale
-
-  var xScale = delta.x.scale * treeScale.x;
-  var yScale = delta.y.scale * treeScale.y;
-  shadow[0 + offset] /= xScale;
-  shadow[1 + offset] /= yScale;
-  /**
-   * Ideally we'd correct x and y scales individually, but because blur and
-   * spread apply to both we have to take a scale average and apply that instead.
-   * We could potentially improve the outcome of this by incorporating the ratio between
-   * the two scales.
-   */
-
-  var averageScale = mix(xScale, yScale, 0.5); // Blur
-
-  if (typeof shadow[2 + offset] === "number") shadow[2 + offset] /= averageScale; // Spread
-
-  if (typeof shadow[3 + offset] === "number") shadow[3 + offset] /= averageScale;
-  var output = template(shadow);
-
-  if (containsCSSVariables) {
-    var i_1 = 0;
-    output = output.replace(varToken, function () {
-      var cssVariable = cssVariables[i_1];
-      i_1++;
-      return cssVariable;
-    });
-  }
-
-  return output;
-}
-
-var borderCorrectionDefinition = {
-  process: correctBorderRadius
-};
-var defaultScaleCorrectors = {
-  borderRadius: __assign$4(__assign$4({}, borderCorrectionDefinition), {
-    applyTo: ["borderTopLeftRadius", "borderTopRightRadius", "borderBottomLeftRadius", "borderBottomRightRadius"]
-  }),
-  borderTopLeftRadius: borderCorrectionDefinition,
-  borderTopRightRadius: borderCorrectionDefinition,
-  borderBottomLeftRadius: borderCorrectionDefinition,
-  borderBottomRightRadius: borderCorrectionDefinition,
-  boxShadow: {
-    process: correctBoxShadow
-  }
-};
-
-var progressTarget = 1000;
-
-var Animate =
-/** @class */
-function (_super) {
-  __extends(Animate, _super);
-
-  function Animate() {
-    var _this = _super !== null && _super.apply(this, arguments) || this;
-    /**
-     * A mutable object that tracks the target viewport box
-     * for the current animation frame.
-     */
-
-
-    _this.frameTarget = axisBox();
-    /**
-     * The current animation target, we use this to check whether to start
-     * a new animation or continue the existing one.
-     */
-
-    _this.currentAnimationTarget = axisBox();
-    /**
-     * Track whether we're animating this axis.
-     */
-
-    _this.isAnimating = {
-      x: false,
-      y: false
-    };
-    _this.stopAxisAnimation = {
-      x: undefined,
-      y: undefined
-    };
-    _this.isAnimatingTree = false;
-
-    _this.animate = function (target, origin, _a) {
-      if (_a === void 0) {
-        _a = {};
-      }
-
-      var originBox = _a.originBox,
-          targetBox = _a.targetBox,
-          visibilityAction = _a.visibilityAction,
-          shouldStackAnimate = _a.shouldStackAnimate,
-          onComplete = _a.onComplete,
-          prevParent = _a.prevParent,
-          config = __rest$3(_a, ["originBox", "targetBox", "visibilityAction", "shouldStackAnimate", "onComplete", "prevParent"]);
-
-      var _b = _this.props,
-          visualElement = _b.visualElement,
-          layout = _b.layout;
-      /**
-       * Early return if we've been instructed not to animate this render.
-       */
-
-      if (shouldStackAnimate === false) {
-        _this.isAnimatingTree = false;
-        return _this.safeToRemove();
-      }
-      /**
-       * Prioritise tree animations
-       */
-
-
-      if (_this.isAnimatingTree && shouldStackAnimate !== true) {
-        return;
-      } else if (shouldStackAnimate) {
-        _this.isAnimatingTree = true;
-      }
-      /**
-       * Allow the measured origin (prev bounding box) and target (actual layout) to be
-       * overridden by the provided config.
-       */
-
-
-      origin = originBox || origin;
-      target = targetBox || target;
-      /**
-       * If this element has a projecting parent, there's an opportunity to animate
-       * it relatively to that parent rather than relatively to the viewport. This
-       * allows us to add orchestrated animations.
-       */
-
-      var isRelative = false;
-      var projectionParent = visualElement.getProjectionParent();
-
-      if (projectionParent) {
-        var prevParentViewportBox = projectionParent.prevViewportBox;
-        var parentLayout = projectionParent.getLayoutState().layout;
-        /**
-         * If we're being provided a previous parent VisualElement by AnimateSharedLayout
-         */
-
-        if (prevParent) {
-          /**
-           * If we've been provided an explicit target box it means we're animating back
-           * to this previous parent. So we can make a relative box by comparing to the previous
-           * parent's layout
-           */
-          if (targetBox) {
-            parentLayout = prevParent.getLayoutState().layout;
-          }
-          /**
-           * Likewise if we've been provided an explicit origin box it means we're
-           * animating out from a different element. So we should figure out where that was
-           * on screen relative to the new parent element.
-           */
-
-
-          if (originBox && !checkIfParentHasChanged(prevParent, projectionParent) && prevParent.prevViewportBox) {
-            prevParentViewportBox = prevParent.prevViewportBox;
-          }
-        }
-
-        if (prevParentViewportBox && isProvidedCorrectDataForRelativeSharedLayout(prevParent, originBox, targetBox)) {
-          isRelative = true;
-          origin = calcRelativeOffset(prevParentViewportBox, origin);
-          target = calcRelativeOffset(parentLayout, target);
-        }
-      }
-
-      var boxHasMoved = hasMoved(origin, target);
-      var animations = eachAxis(function (axis) {
-        var _a, _b;
-        /**
-         * If layout is set to "position", we can resize the origin box based on the target
-         * box and only animate its position.
-         */
-
-
-        if (layout === "position") {
-          var targetLength = target[axis].max - target[axis].min;
-          origin[axis].max = origin[axis].min + targetLength;
-        }
-
-        if (visualElement.projection.isTargetLocked) {
-          return;
-        } else if (visibilityAction !== undefined) {
-          visualElement.setVisibility(visibilityAction === VisibilityAction.Show);
-        } else if (boxHasMoved) {
-          // If the box has moved, animate between it's current visual state and its
-          // final state
-          return _this.animateAxis(axis, target[axis], origin[axis], __assign$4(__assign$4({}, config), {
-            isRelative: isRelative
-          }));
-        } else {
-          (_b = (_a = _this.stopAxisAnimation)[axis]) === null || _b === void 0 ? void 0 : _b.call(_a); // If the box has remained in the same place, immediately set the axis target
-          // to the final desired state
-
-          return visualElement.setProjectionTargetAxis(axis, target[axis].min, target[axis].max, isRelative);
-        }
-      }); // Force a render to ensure there's no flash of uncorrected bounding box.
-
-      visualElement.syncRender();
-      /**
-       * If this visualElement isn't present (ie it's been removed from the tree by the user but
-       * kept in by the tree by AnimatePresence) then call safeToRemove when all axis animations
-       * have successfully finished.
-       */
-
-      return Promise.all(animations).then(function () {
-        _this.isAnimatingTree = false;
-        onComplete && onComplete();
-        visualElement.notifyLayoutAnimationComplete();
-      });
-    };
-
-    return _this;
-  }
-
-  Animate.prototype.componentDidMount = function () {
-    var _this = this;
-
-    var visualElement = this.props.visualElement;
-    visualElement.animateMotionValue = startAnimation;
-    visualElement.enableLayoutProjection();
-    this.unsubLayoutReady = visualElement.onLayoutUpdate(this.animate);
-
-    visualElement.layoutSafeToRemove = function () {
-      return _this.safeToRemove();
-    };
-
-    addScaleCorrection(defaultScaleCorrectors);
-  };
-
-  Animate.prototype.componentWillUnmount = function () {
-    var _this = this;
-
-    this.unsubLayoutReady();
-    eachAxis(function (axis) {
-      var _a, _b;
-
-      return (_b = (_a = _this.stopAxisAnimation)[axis]) === null || _b === void 0 ? void 0 : _b.call(_a);
-    });
-  };
-  /**
-   * TODO: This manually performs animations on the visualElement's layout progress
-   * values. It'd be preferable to amend the startLayoutAxisAnimation
-   * API to accept more custom animations like this.
-   */
-
-
-  Animate.prototype.animateAxis = function (axis, target, origin, _a) {
-    var _this = this;
-
-    var _b, _c;
-
-    var _d = _a === void 0 ? {} : _a,
-        transition = _d.transition,
-        isRelative = _d.isRelative;
-    /**
-     * If we're not animating to a new target, don't run this animation
-     */
-
-
-    if (this.isAnimating[axis] && axisIsEqual(target, this.currentAnimationTarget[axis])) {
-      return;
-    }
-
-    (_c = (_b = this.stopAxisAnimation)[axis]) === null || _c === void 0 ? void 0 : _c.call(_b);
-    this.isAnimating[axis] = true;
-    var visualElement = this.props.visualElement;
-    var frameTarget = this.frameTarget[axis];
-    var layoutProgress = visualElement.getProjectionAnimationProgress()[axis];
-    /**
-     * Set layout progress back to 0. We set it twice to hard-reset any velocity that might
-     * be re-incoporated into a subsequent spring animation.
-     */
-
-    layoutProgress.clearListeners();
-    layoutProgress.set(0);
-    layoutProgress.set(0);
-    /**
-     * Create an animation function to run once per frame. This will tween the visual bounding box from
-     * origin to target using the latest progress value.
-     */
-
-    var frame = function () {
-      // Convert the latest layoutProgress, which is a value from 0-1000, into a 0-1 progress
-      var p = layoutProgress.get() / progressTarget; // Tween the axis and update the visualElement with the latest values
-
-      tweenAxis(frameTarget, origin, target, p);
-      visualElement.setProjectionTargetAxis(axis, frameTarget.min, frameTarget.max, isRelative);
-    }; // Synchronously run a frame to ensure there's no flash of the uncorrected bounding box.
-
-
-    frame(); // Create a function to stop animation on this specific axis
-
-    var unsubscribeProgress = layoutProgress.onChange(frame);
-
-    this.stopAxisAnimation[axis] = function () {
-      _this.isAnimating[axis] = false;
-      layoutProgress.stop();
-      unsubscribeProgress();
-    };
-
-    this.currentAnimationTarget[axis] = target;
-    var layoutTransition = transition || visualElement.getDefaultTransition() || defaultLayoutTransition; // Start the animation on this axis
-
-    var animation = startAnimation(axis === "x" ? "layoutX" : "layoutY", layoutProgress, progressTarget, layoutTransition && getValueTransition(layoutTransition, "layout")).then(this.stopAxisAnimation[axis]);
-    return animation;
-  };
-
-  Animate.prototype.safeToRemove = function () {
-    var _a, _b;
-
-    (_b = (_a = this.props).safeToRemove) === null || _b === void 0 ? void 0 : _b.call(_a);
-  };
-
-  Animate.prototype.render = function () {
-    return null;
-  };
-
-  return Animate;
-}(React__namespace.Component);
-
-function AnimateLayoutContextProvider(props) {
-  var _a = __read(usePresence(), 2),
-      safeToRemove = _a[1];
-
-  return React__namespace.createElement(Animate, __assign$4({}, props, {
-    safeToRemove: safeToRemove
-  }));
-}
-
-function hasMoved(a, b) {
-  return !isZeroBox(a) && !isZeroBox(b) && (!axisIsEqual(a.x, b.x) || !axisIsEqual(a.y, b.y));
-}
-
-var zeroAxis = {
-  min: 0,
-  max: 0
-};
-
-function isZeroBox(a) {
-  return axisIsEqual(a.x, zeroAxis) && axisIsEqual(a.y, zeroAxis);
-}
-
-function axisIsEqual(a, b) {
-  return a.min === b.min && a.max === b.max;
-}
-
-var defaultLayoutTransition = {
-  duration: 0.45,
-  ease: [0.4, 0, 0.1, 1]
-};
-
-function isProvidedCorrectDataForRelativeSharedLayout(prevParent, originBox, targetBox) {
-  return prevParent || !prevParent && !(originBox || targetBox);
-}
-
-/**
- * Default handlers for batching VisualElements
- */
-
-var defaultHandler = {
-  layoutReady: function (child) {
-    return child.notifyLayoutReady();
-  }
-};
-/**
- * Create a batcher to process VisualElements
- */
-
-function createBatcher() {
-  var queue = new Set();
-  return {
-    add: function (child) {
-      return queue.add(child);
-    },
-    flush: function (_a) {
-      var _b = _a === void 0 ? defaultHandler : _a,
-          layoutReady = _b.layoutReady,
-          parent = _b.parent;
-
-      batchLayout(function (read, write) {
-        var order = Array.from(queue).sort(compareByDepth);
-        var ancestors = parent ? collectProjectingAncestors(parent) : [];
-        write(function () {
-          var allElements = __spreadArray$1(__spreadArray$1([], __read(ancestors)), __read(order));
-
-          allElements.forEach(function (element) {
-            return element.resetTransform();
-          });
-        });
-        read(function () {
-          order.forEach(updateLayoutMeasurement);
-        });
-        write(function () {
-          ancestors.forEach(function (element) {
-            return element.restoreTransform();
-          });
-          order.forEach(layoutReady);
-        });
-        read(function () {
-          /**
-           * After all children have started animating, ensure any Entering components are set to Present.
-           * If we add deferred animations (set up all animations and then start them in two loops) this
-           * could be moved to the start loop. But it needs to happen after all the animations configs
-           * are generated in AnimateSharedLayout as this relies on presence data
-           */
-          order.forEach(function (child) {
-            if (child.isPresent) child.presence = Presence.Present;
-          });
-        });
-        write(function () {
-          /**
-           * Starting these animations will have queued jobs on the frame loop. In some situations,
-           * like when removing an element, these will be processed too late after the DOM is manipulated,
-           * leaving a flash of incorrectly-projected content. By manually flushing these jobs
-           * we ensure there's no flash.
-           */
-          flushSync.preRender();
-          flushSync.render();
-        });
-        read(function () {
-          /**
-           * Schedule a callback at the end of the following frame to assign the latest projection
-           * box to the prevViewportBox snapshot. Once global batching is in place this could be run
-           * synchronously. But for now it ensures that if any nested `AnimateSharedLayout` top-level
-           * child attempts to calculate its previous relative position against a prevViewportBox
-           * it will be against its latest projection box instead, as the snapshot is useless beyond this
-           * render.
-           */
-          sync.postRender(function () {
-            return order.forEach(assignProjectionToSnapshot);
-          });
-          queue.clear();
-        });
-      }); // TODO: Need to find a layout-synchronous way of flushing this
-
-      flushLayout();
-    }
-  };
-}
-
-function assignProjectionToSnapshot(child) {
-  child.prevViewportBox = child.projection.target;
-}
-
-var SharedLayoutContext = React.createContext(createBatcher());
-/**
- * @internal
- */
-
-var FramerTreeLayoutContext = React.createContext(createBatcher());
-
-function isSharedLayout(context) {
-  return !!context.forceUpdate;
-}
-
-/**
- * This component is responsible for scheduling the measuring of the motion component
- */
-
-var Measure =
-/** @class */
-function (_super) {
-  __extends(Measure, _super);
-
-  function Measure() {
-    return _super !== null && _super.apply(this, arguments) || this;
-  }
-  /**
-   * If this is a child of a SyncContext, register the VisualElement with it on mount.
-   */
-
-
-  Measure.prototype.componentDidMount = function () {
-    var _a = this.props,
-        syncLayout = _a.syncLayout,
-        framerSyncLayout = _a.framerSyncLayout,
-        visualElement = _a.visualElement;
-    isSharedLayout(syncLayout) && syncLayout.register(visualElement);
-    isSharedLayout(framerSyncLayout) && framerSyncLayout.register(visualElement);
-    visualElement.onUnmount(function () {
-      if (isSharedLayout(syncLayout)) {
-        syncLayout.remove(visualElement);
-      }
-
-      if (isSharedLayout(framerSyncLayout)) {
-        framerSyncLayout.remove(visualElement);
-      }
-    });
-  };
-  /**
-   * If this is a child of a SyncContext, notify it that it needs to re-render. It will then
-   * handle the snapshotting.
-   *
-   * If it is stand-alone component, add it to the batcher.
-   */
-
-
-  Measure.prototype.getSnapshotBeforeUpdate = function () {
-    var _a = this.props,
-        syncLayout = _a.syncLayout,
-        visualElement = _a.visualElement;
-
-    if (isSharedLayout(syncLayout)) {
-      syncLayout.syncUpdate();
-    } else {
-      snapshotViewportBox(visualElement);
-      syncLayout.add(visualElement);
-    }
-
-    return null;
-  };
-
-  Measure.prototype.componentDidUpdate = function () {
-    var syncLayout = this.props.syncLayout;
-    if (!isSharedLayout(syncLayout)) syncLayout.flush();
-  };
-
-  Measure.prototype.render = function () {
-    return null;
-  };
-
-  return Measure;
-}(React__default$1['default'].Component);
-
-function MeasureContextProvider(props) {
-  var syncLayout = React.useContext(SharedLayoutContext);
-  var framerSyncLayout = React.useContext(FramerTreeLayoutContext);
-  return React__default$1['default'].createElement(Measure, __assign$4({}, props, {
-    syncLayout: syncLayout,
-    framerSyncLayout: framerSyncLayout
-  }));
-}
-
-var layoutAnimations = {
-  measureLayout: MeasureContextProvider,
-  layoutAnimation: AnimateLayoutContextProvider
-};
-
-var createProjectionState = function () {
-  return {
-    isEnabled: false,
-    isHydrated: false,
-    isTargetLocked: false,
-    target: axisBox(),
-    targetFinal: axisBox()
-  };
-};
-
-function createLayoutState() {
-  return {
-    isHydrated: false,
-    layout: axisBox(),
-    layoutCorrected: axisBox(),
-    treeScale: {
-      x: 1,
-      y: 1
-    },
-    delta: delta(),
-    deltaFinal: delta(),
-    deltaTransform: ""
-  };
-}
-
-var zeroLayout = createLayoutState();
-
-/**
- * Build a transform style that takes a calculated delta between the element's current
- * space on screen and projects it into the desired space.
- */
-
-function buildLayoutProjectionTransform(_a, treeScale, latestTransform) {
-  var x = _a.x,
-      y = _a.y;
-  /**
-   * The translations we use to calculate are always relative to the viewport coordinate space.
-   * But when we apply scales, we also scale the coordinate space of an element and its children.
-   * For instance if we have a treeScale (the culmination of all parent scales) of 0.5 and we need
-   * to move an element 100 pixels, we actually need to move it 200 in within that scaled space.
-   */
-
-  var xTranslate = x.translate / treeScale.x;
-  var yTranslate = y.translate / treeScale.y;
-  var transform = "translate3d(" + xTranslate + "px, " + yTranslate + "px, 0) ";
-
-  if (latestTransform) {
-    var rotate = latestTransform.rotate,
-        rotateX = latestTransform.rotateX,
-        rotateY = latestTransform.rotateY;
-    if (rotate) transform += "rotate(" + rotate + ") ";
-    if (rotateX) transform += "rotateX(" + rotateX + ") ";
-    if (rotateY) transform += "rotateY(" + rotateY + ") ";
-  }
-
-  transform += "scale(" + x.scale + ", " + y.scale + ")";
-  return !latestTransform && transform === identityProjection ? "" : transform;
-}
-/**
- * Take the calculated delta origin and apply it as a transform string.
- */
-
-
-function buildLayoutProjectionTransformOrigin(_a) {
-  var deltaFinal = _a.deltaFinal;
-  return deltaFinal.x.origin * 100 + "% " + deltaFinal.y.origin * 100 + "% 0";
-}
-
-var identityProjection = buildLayoutProjectionTransform(zeroLayout.delta, zeroLayout.treeScale, {
-  x: 1,
-  y: 1
-});
-
-var names = ["LayoutMeasure", "BeforeLayoutMeasure", "LayoutUpdate", "ViewportBoxUpdate", "Update", "Render", "AnimationComplete", "LayoutAnimationComplete", "AnimationStart", "SetAxisTarget", "Unmount"];
-
-function createLifecycles() {
-  var managers = names.map(function () {
-    return new SubscriptionManager();
-  });
-  var propSubscriptions = {};
-  var lifecycles = {
-    clearAllListeners: function () {
-      return managers.forEach(function (manager) {
-        return manager.clear();
-      });
-    },
-    updatePropListeners: function (props) {
-      return names.forEach(function (name) {
-        var _a;
-
-        (_a = propSubscriptions[name]) === null || _a === void 0 ? void 0 : _a.call(propSubscriptions);
-        var on = "on" + name;
-        var propListener = props[on];
-
-        if (propListener) {
-          propSubscriptions[name] = lifecycles[on](propListener);
-        }
-      });
-    }
-  };
-  managers.forEach(function (manager, i) {
-    lifecycles["on" + names[i]] = function (handler) {
-      return manager.add(handler);
-    };
-
-    lifecycles["notify" + names[i]] = function () {
-      var args = [];
-
-      for (var _i = 0; _i < arguments.length; _i++) {
-        args[_i] = arguments[_i];
-      }
-
-      return manager.notify.apply(manager, __spreadArray$1([], __read(args)));
-    };
-  });
-  return lifecycles;
-}
-
-function updateMotionValuesFromProps(element, next, prev) {
-  var _a;
-
-  for (var key in next) {
-    var nextValue = next[key];
-    var prevValue = prev[key];
-
-    if (isMotionValue(nextValue)) {
-      /**
-       * If this is a motion value found in props or style, we want to add it
-       * to our visual element's motion value map.
-       */
-      element.addValue(key, nextValue);
-    } else if (isMotionValue(prevValue)) {
-      /**
-       * If we're swapping to a new motion value, create a new motion value
-       * from that
-       */
-      element.addValue(key, motionValue(nextValue));
-    } else if (prevValue !== nextValue) {
-      /**
-       * If this is a flat value that has changed, update the motion value
-       * or create one if it doesn't exist. We only want to do this if we're
-       * not handling the value with our animation state.
-       */
-      if (element.hasValue(key)) {
-        var existingValue = element.getValue(key); // TODO: Only update values that aren't being animated or even looked at
-
-        !existingValue.hasAnimated && existingValue.set(nextValue);
-      } else {
-        element.addValue(key, motionValue((_a = element.getStaticValue(key)) !== null && _a !== void 0 ? _a : nextValue));
-      }
-    }
-  } // Handle removed values
-
-
-  for (var key in prev) {
-    if (next[key] === undefined) element.removeValue(key);
-  }
-
-  return next;
-}
-
-function updateLayoutDeltas(_a, _b, treePath, transformOrigin) {
-  var delta = _a.delta,
-      layout = _a.layout,
-      layoutCorrected = _a.layoutCorrected,
-      treeScale = _a.treeScale;
-  var target = _b.target;
-  /**
-   * Reset the corrected box with the latest values from box, as we're then going
-   * to perform mutative operations on it.
-   */
-
-  resetBox(layoutCorrected, layout);
-  /**
-   * Apply all the parent deltas to this box to produce the corrected box. This
-   * is the layout box, as it will appear on screen as a result of the transforms of its parents.
-   */
-
-  applyTreeDeltas(layoutCorrected, treeScale, treePath);
-  /**
-   * Update the delta between the corrected box and the target box before user-set transforms were applied.
-   * This will allow us to calculate the corrected borderRadius and boxShadow to compensate
-   * for our layout reprojection, but still allow them to be scaled correctly by the user.
-   * It might be that to simplify this we may want to accept that user-set scale is also corrected
-   * and we wouldn't have to keep and calc both deltas, OR we could support a user setting
-   * to allow people to choose whether these styles are corrected based on just the
-   * layout reprojection or the final bounding box.
-   */
-
-  updateBoxDelta(delta, layoutCorrected, target, transformOrigin);
-}
-
-var FlatTree =
-/** @class */
-function () {
-  function FlatTree() {
-    this.children = [];
-    this.isDirty = false;
-  }
-
-  FlatTree.prototype.add = function (child) {
-    addUniqueItem(this.children, child);
-    this.isDirty = true;
-  };
-
-  FlatTree.prototype.remove = function (child) {
-    removeItem(this.children, child);
-    this.isDirty = true;
-  };
-
-  FlatTree.prototype.forEach = function (callback) {
-    this.isDirty && this.children.sort(compareByDepth);
-    this.isDirty = false;
-    this.children.forEach(callback);
-  };
-
-  return FlatTree;
-}();
-
-function setCurrentViewportBox(visualElement) {
-  var projectionParent = visualElement.getProjectionParent();
-
-  if (!projectionParent) {
-    visualElement.rebaseProjectionTarget();
-    return;
-  }
-
-  var relativeOffset = calcRelativeOffset(projectionParent.getLayoutState().layout, visualElement.getLayoutState().layout);
-  eachAxis(function (axis) {
-    visualElement.setProjectionTargetAxis(axis, relativeOffset[axis].min, relativeOffset[axis].max, true);
-  });
-}
-
-var visualElement = function (_a) {
-  var _b = _a.treeType,
-      treeType = _b === void 0 ? "" : _b,
-      build = _a.build,
-      getBaseTarget = _a.getBaseTarget,
-      makeTargetAnimatable = _a.makeTargetAnimatable,
-      measureViewportBox = _a.measureViewportBox,
-      renderInstance = _a.render,
-      readValueFromInstance = _a.readValueFromInstance,
-      resetTransform = _a.resetTransform,
-      restoreTransform = _a.restoreTransform,
-      removeValueFromRenderState = _a.removeValueFromRenderState,
-      sortNodePosition = _a.sortNodePosition,
-      scrapeMotionValuesFromProps = _a.scrapeMotionValuesFromProps;
-  return function (_a, options) {
-    var parent = _a.parent,
-        props = _a.props,
-        presenceId = _a.presenceId,
-        blockInitialAnimation = _a.blockInitialAnimation,
-        visualState = _a.visualState;
-
-    if (options === void 0) {
-      options = {};
-    }
-
-    var latestValues = visualState.latestValues,
-        renderState = visualState.renderState;
-    /**
-     * The instance of the render-specific node that will be hydrated by the
-     * exposed React ref. So for example, this visual element can host a
-     * HTMLElement, plain object, or Three.js object. The functions provided
-     * in VisualElementConfig allow us to interface with this instance.
-     */
-
-    var instance;
-    /**
-     * Manages the subscriptions for a visual element's lifecycle, for instance
-     * onRender and onViewportBoxUpdate.
-     */
-
-    var lifecycles = createLifecycles();
-    /**
-     *
-     */
-
-    var projection = createProjectionState();
-    /**
-     * A reference to the nearest projecting parent. This is either
-     * undefined if we haven't looked for the nearest projecting parent,
-     * false if there is no parent performing layout projection, or a reference
-     * to the projecting parent.
-     */
-
-    var projectionParent;
-    /**
-     * This is a reference to the visual state of the "lead" visual element.
-     * Usually, this will be this visual element. But if it shares a layoutId
-     * with other visual elements, only one of them will be designated lead by
-     * AnimateSharedLayout. All the other visual elements will take on the visual
-     * appearance of the lead while they crossfade to it.
-     */
-
-    var leadProjection = projection;
-    var leadLatestValues = latestValues;
-    var unsubscribeFromLeadVisualElement;
-    /**
-     * The latest layout measurements and calculated projections. This
-     * is seperate from the target projection data in visualState as
-     * many visual elements might point to the same piece of visualState as
-     * a target, whereas they might each have different layouts and thus
-     * projection calculations needed to project into the same viewport box.
-     */
-
-    var layoutState = createLayoutState();
-    /**
-     *
-     */
-
-    var crossfader;
-    /**
-     * Keep track of whether the viewport box has been updated since the
-     * last time the layout projection was re-calculated.
-     */
-
-    var hasViewportBoxUpdated = false;
-    /**
-     * A map of all motion values attached to this visual element. Motion
-     * values are source of truth for any given animated value. A motion
-     * value might be provided externally by the component via props.
-     */
-
-    var values = new Map();
-    /**
-     * A map of every subscription that binds the provided or generated
-     * motion values onChange listeners to this visual element.
-     */
-
-    var valueSubscriptions = new Map();
-    /**
-     * A reference to the previously-provided motion values as returned
-     * from scrapeMotionValuesFromProps. We use the keys in here to determine
-     * if any motion values need to be removed after props are updated.
-     */
-
-    var prevMotionValues = {};
-    /**
-     * x/y motion values that track the progress of initiated layout
-     * animations.
-     *
-     * TODO: Target for removal
-     */
-
-    var projectionTargetProgress;
-    /**
-     * When values are removed from all animation props we need to search
-     * for a fallback value to animate to. These values are tracked in baseTarget.
-     */
-
-    var baseTarget = __assign$4({}, latestValues); // Internal methods ========================
-
-    /**
-     * On mount, this will be hydrated with a callback to disconnect
-     * this visual element from its parent on unmount.
-     */
-
-
-    var removeFromVariantTree;
-    /**
-     *
-     */
-
-    function render() {
-      if (!instance) return;
-
-      if (element.isProjectionReady()) {
-        /**
-         * Apply the latest user-set transforms to the targetBox to produce the targetBoxFinal.
-         * This is the final box that we will then project into by calculating a transform delta and
-         * applying it to the corrected box.
-         */
-        applyBoxTransforms(leadProjection.targetFinal, leadProjection.target, leadLatestValues);
-        /**
-         * Update the delta between the corrected box and the final target box, after
-         * user-set transforms are applied to it. This will be used by the renderer to
-         * create a transform style that will reproject the element from its actual layout
-         * into the desired bounding box.
-         */
-
-        updateBoxDelta(layoutState.deltaFinal, layoutState.layoutCorrected, leadProjection.targetFinal, latestValues);
-      }
-
-      triggerBuild();
-      renderInstance(instance, renderState);
-    }
-
-    function triggerBuild() {
-      var valuesToRender = latestValues;
-
-      if (crossfader && crossfader.isActive()) {
-        var crossfadedValues = crossfader.getCrossfadeState(element);
-        if (crossfadedValues) valuesToRender = crossfadedValues;
-      }
-
-      build(element, renderState, valuesToRender, leadProjection, layoutState, options, props);
-    }
-
-    function update() {
-      lifecycles.notifyUpdate(latestValues);
-    }
-
-    function updateLayoutProjection() {
-      if (!element.isProjectionReady()) return;
-      var delta = layoutState.delta,
-          treeScale = layoutState.treeScale;
-      var prevTreeScaleX = treeScale.x;
-      var prevTreeScaleY = treeScale.y;
-      var prevDeltaTransform = layoutState.deltaTransform;
-      updateLayoutDeltas(layoutState, leadProjection, element.path, latestValues);
-      hasViewportBoxUpdated && element.notifyViewportBoxUpdate(leadProjection.target, delta);
-      hasViewportBoxUpdated = false;
-      var deltaTransform = buildLayoutProjectionTransform(delta, treeScale);
-
-      if (deltaTransform !== prevDeltaTransform || // Also compare calculated treeScale, for values that rely on this only for scale correction
-      prevTreeScaleX !== treeScale.x || prevTreeScaleY !== treeScale.y) {
-        element.scheduleRender();
-      }
-
-      layoutState.deltaTransform = deltaTransform;
-    }
-
-    function updateTreeLayoutProjection() {
-      element.layoutTree.forEach(fireUpdateLayoutProjection);
-    }
-    /**
-     *
-     */
-
-
-    function bindToMotionValue(key, value) {
-      var removeOnChange = value.onChange(function (latestValue) {
-        latestValues[key] = latestValue;
-        props.onUpdate && sync.update(update, false, true);
-      });
-      var removeOnRenderRequest = value.onRenderRequest(element.scheduleRender);
-      valueSubscriptions.set(key, function () {
-        removeOnChange();
-        removeOnRenderRequest();
-      });
-    }
-    /**
-     * Any motion values that are provided to the element when created
-     * aren't yet bound to the element, as this would technically be impure.
-     * However, we iterate through the motion values and set them to the
-     * initial values for this component.
-     *
-     * TODO: This is impure and we should look at changing this to run on mount.
-     * Doing so will break some tests but this isn't neccessarily a breaking change,
-     * more a reflection of the test.
-     */
-
-
-    var initialMotionValues = scrapeMotionValuesFromProps(props);
-
-    for (var key in initialMotionValues) {
-      var value = initialMotionValues[key];
-
-      if (latestValues[key] !== undefined && isMotionValue(value)) {
-        value.set(latestValues[key], false);
-      }
-    }
-    /**
-     * Determine what role this visual element should take in the variant tree.
-     */
-
-
-    var isControllingVariants = checkIfControllingVariants(props);
-    var isVariantNode = checkIfVariantNode(props);
-
-    var element = __assign$4(__assign$4({
-      treeType: treeType,
-
-      /**
-       * This is a mirror of the internal instance prop, which keeps
-       * VisualElement type-compatible with React's RefObject.
-       */
-      current: null,
-
-      /**
-       * The depth of this visual element within the visual element tree.
-       */
-      depth: parent ? parent.depth + 1 : 0,
-      parent: parent,
-      children: new Set(),
-
-      /**
-       * An ancestor path back to the root visual element. This is used
-       * by layout projection to quickly recurse back up the tree.
-       */
-      path: parent ? __spreadArray$1(__spreadArray$1([], __read(parent.path)), [parent]) : [],
-      layoutTree: parent ? parent.layoutTree : new FlatTree(),
-
-      /**
-       *
-       */
-      presenceId: presenceId,
-      projection: projection,
-
-      /**
-       * If this component is part of the variant tree, it should track
-       * any children that are also part of the tree. This is essentially
-       * a shadow tree to simplify logic around how to stagger over children.
-       */
-      variantChildren: isVariantNode ? new Set() : undefined,
-
-      /**
-       * Whether this instance is visible. This can be changed imperatively
-       * by AnimateSharedLayout, is analogous to CSS's visibility in that
-       * hidden elements should take up layout, and needs enacting by the configured
-       * render function.
-       */
-      isVisible: undefined,
-
-      /**
-       * Normally, if a component is controlled by a parent's variants, it can
-       * rely on that ancestor to trigger animations further down the tree.
-       * However, if a component is created after its parent is mounted, the parent
-       * won't trigger that mount animation so the child needs to.
-       *
-       * TODO: This might be better replaced with a method isParentMounted
-       */
-      manuallyAnimateOnMount: Boolean(parent === null || parent === void 0 ? void 0 : parent.isMounted()),
-
-      /**
-       * This can be set by AnimatePresence to force components that mount
-       * at the same time as it to mount as if they have initial={false} set.
-       */
-      blockInitialAnimation: blockInitialAnimation,
-
-      /**
-       * Determine whether this component has mounted yet. This is mostly used
-       * by variant children to determine whether they need to trigger their
-       * own animations on mount.
-       */
-      isMounted: function () {
-        return Boolean(instance);
-      },
-      mount: function (newInstance) {
-        instance = element.current = newInstance;
-        element.pointTo(element);
-
-        if (isVariantNode && parent && !isControllingVariants) {
-          removeFromVariantTree = parent === null || parent === void 0 ? void 0 : parent.addVariantChild(element);
-        }
-
-        parent === null || parent === void 0 ? void 0 : parent.children.add(element);
-      },
-
-      /**
-       *
-       */
-      unmount: function () {
-        cancelSync.update(update);
-        cancelSync.render(render);
-        cancelSync.preRender(element.updateLayoutProjection);
-        valueSubscriptions.forEach(function (remove) {
-          return remove();
-        });
-        element.stopLayoutAnimation();
-        element.layoutTree.remove(element);
-        removeFromVariantTree === null || removeFromVariantTree === void 0 ? void 0 : removeFromVariantTree();
-        parent === null || parent === void 0 ? void 0 : parent.children.delete(element);
-        unsubscribeFromLeadVisualElement === null || unsubscribeFromLeadVisualElement === void 0 ? void 0 : unsubscribeFromLeadVisualElement();
-        lifecycles.clearAllListeners();
-      },
-
-      /**
-       * Add a child visual element to our set of children.
-       */
-      addVariantChild: function (child) {
-        var _a;
-
-        var closestVariantNode = element.getClosestVariantNode();
-
-        if (closestVariantNode) {
-          (_a = closestVariantNode.variantChildren) === null || _a === void 0 ? void 0 : _a.add(child);
-          return function () {
-            return closestVariantNode.variantChildren.delete(child);
-          };
-        }
-      },
-      sortNodePosition: function (other) {
-        /**
-         * If these nodes aren't even of the same type we can't compare their depth.
-         */
-        if (!sortNodePosition || treeType !== other.treeType) return 0;
-        return sortNodePosition(element.getInstance(), other.getInstance());
-      },
-
-      /**
-       * Returns the closest variant node in the tree starting from
-       * this visual element.
-       */
-      getClosestVariantNode: function () {
-        return isVariantNode ? element : parent === null || parent === void 0 ? void 0 : parent.getClosestVariantNode();
-      },
-
-      /**
-       * A method that schedules an update to layout projections throughout
-       * the tree. We inherit from the parent so there's only ever one
-       * job scheduled on the next frame - that of the root visual element.
-       */
-      scheduleUpdateLayoutProjection: parent ? parent.scheduleUpdateLayoutProjection : function () {
-        return sync.preRender(element.updateTreeLayoutProjection, false, true);
-      },
-
-      /**
-       * Expose the latest layoutId prop.
-       */
-      getLayoutId: function () {
-        return props.layoutId;
-      },
-
-      /**
-       * Returns the current instance.
-       */
-      getInstance: function () {
-        return instance;
-      },
-
-      /**
-       * Get/set the latest static values.
-       */
-      getStaticValue: function (key) {
-        return latestValues[key];
-      },
-      setStaticValue: function (key, value) {
-        return latestValues[key] = value;
-      },
-
-      /**
-       * Returns the latest motion value state. Currently only used to take
-       * a snapshot of the visual element - perhaps this can return the whole
-       * visual state
-       */
-      getLatestValues: function () {
-        return latestValues;
-      },
-
-      /**
-       * Set the visiblity of the visual element. If it's changed, schedule
-       * a render to reflect these changes.
-       */
-      setVisibility: function (visibility) {
-        if (element.isVisible === visibility) return;
-        element.isVisible = visibility;
-        element.scheduleRender();
-      },
-
-      /**
-       * Make a target animatable by Popmotion. For instance, if we're
-       * trying to animate width from 100px to 100vw we need to measure 100vw
-       * in pixels to determine what we really need to animate to. This is also
-       * pluggable to support Framer's custom value types like Color,
-       * and CSS variables.
-       */
-      makeTargetAnimatable: function (target, canMutate) {
-        if (canMutate === void 0) {
-          canMutate = true;
-        }
-
-        return makeTargetAnimatable(element, target, props, canMutate);
-      },
-      // Motion values ========================
-
-      /**
-       * Add a motion value and bind it to this visual element.
-       */
-      addValue: function (key, value) {
-        // Remove existing value if it exists
-        if (element.hasValue(key)) element.removeValue(key);
-        values.set(key, value);
-        latestValues[key] = value.get();
-        bindToMotionValue(key, value);
-      },
-
-      /**
-       * Remove a motion value and unbind any active subscriptions.
-       */
-      removeValue: function (key) {
-        var _a;
-
-        values.delete(key);
-        (_a = valueSubscriptions.get(key)) === null || _a === void 0 ? void 0 : _a();
-        valueSubscriptions.delete(key);
-        delete latestValues[key];
-        removeValueFromRenderState(key, renderState);
-      },
-
-      /**
-       * Check whether we have a motion value for this key
-       */
-      hasValue: function (key) {
-        return values.has(key);
-      },
-
-      /**
-       * Get a motion value for this key. If called with a default
-       * value, we'll create one if none exists.
-       */
-      getValue: function (key, defaultValue) {
-        var value = values.get(key);
-
-        if (value === undefined && defaultValue !== undefined) {
-          value = motionValue(defaultValue);
-          element.addValue(key, value);
-        }
-
-        return value;
-      },
-
-      /**
-       * Iterate over our motion values.
-       */
-      forEachValue: function (callback) {
-        return values.forEach(callback);
-      },
-
-      /**
-       * If we're trying to animate to a previously unencountered value,
-       * we need to check for it in our state and as a last resort read it
-       * directly from the instance (which might have performance implications).
-       */
-      readValue: function (key) {
-        var _a;
-
-        return (_a = latestValues[key]) !== null && _a !== void 0 ? _a : readValueFromInstance(instance, key, options);
-      },
-
-      /**
-       * Set the base target to later animate back to. This is currently
-       * only hydrated on creation and when we first read a value.
-       */
-      setBaseTarget: function (key, value) {
-        baseTarget[key] = value;
-      },
-
-      /**
-       * Find the base target for a value thats been removed from all animation
-       * props.
-       */
-      getBaseTarget: function (key) {
-        if (getBaseTarget) {
-          var target = getBaseTarget(props, key);
-          if (target !== undefined && !isMotionValue(target)) return target;
-        }
-
-        return baseTarget[key];
-      }
-    }, lifecycles), {
-      /**
-       * Build the renderer state based on the latest visual state.
-       */
-      build: function () {
-        triggerBuild();
-        return renderState;
-      },
-
-      /**
-       * Schedule a render on the next animation frame.
-       */
-      scheduleRender: function () {
-        sync.render(render, false, true);
-      },
-
-      /**
-       * Synchronously fire render. It's prefered that we batch renders but
-       * in many circumstances, like layout measurement, we need to run this
-       * synchronously. However in those instances other measures should be taken
-       * to batch reads/writes.
-       */
-      syncRender: render,
-
-      /**
-       * Update the provided props. Ensure any newly-added motion values are
-       * added to our map, old ones removed, and listeners updated.
-       */
-      setProps: function (newProps) {
-        props = newProps;
-        lifecycles.updatePropListeners(newProps);
-        prevMotionValues = updateMotionValuesFromProps(element, scrapeMotionValuesFromProps(props), prevMotionValues);
-      },
-      getProps: function () {
-        return props;
-      },
-      // Variants ==============================
-
-      /**
-       * Returns the variant definition with a given name.
-       */
-      getVariant: function (name) {
-        var _a;
-
-        return (_a = props.variants) === null || _a === void 0 ? void 0 : _a[name];
-      },
-
-      /**
-       * Returns the defined default transition on this component.
-       */
-      getDefaultTransition: function () {
-        return props.transition;
-      },
-
-      /**
-       * Used by child variant nodes to get the closest ancestor variant props.
-       */
-      getVariantContext: function (startAtParent) {
-        if (startAtParent === void 0) {
-          startAtParent = false;
-        }
-
-        if (startAtParent) return parent === null || parent === void 0 ? void 0 : parent.getVariantContext();
-
-        if (!isControllingVariants) {
-          var context_1 = (parent === null || parent === void 0 ? void 0 : parent.getVariantContext()) || {};
-
-          if (props.initial !== undefined) {
-            context_1.initial = props.initial;
-          }
-
-          return context_1;
-        }
-
-        var context = {};
-
-        for (var i = 0; i < numVariantProps; i++) {
-          var name_1 = variantProps[i];
-          var prop = props[name_1];
-
-          if (isVariantLabel(prop) || prop === false) {
-            context[name_1] = prop;
-          }
-        }
-
-        return context;
-      },
-      // Layout projection ==============================
-
-      /**
-       * Enable layout projection for this visual element. Won't actually
-       * occur until we also have hydrated layout measurements.
-       */
-      enableLayoutProjection: function () {
-        projection.isEnabled = true;
-        element.layoutTree.add(element);
-      },
-
-      /**
-       * Lock the projection target, for instance when dragging, so
-       * nothing else can try and animate it.
-       */
-      lockProjectionTarget: function () {
-        projection.isTargetLocked = true;
-      },
-      unlockProjectionTarget: function () {
-        element.stopLayoutAnimation();
-        projection.isTargetLocked = false;
-      },
-      getLayoutState: function () {
-        return layoutState;
-      },
-      setCrossfader: function (newCrossfader) {
-        crossfader = newCrossfader;
-      },
-      isProjectionReady: function () {
-        return projection.isEnabled && projection.isHydrated && layoutState.isHydrated;
-      },
-
-      /**
-       * Start a layout animation on a given axis.
-       */
-      startLayoutAnimation: function (axis, transition, isRelative) {
-        if (isRelative === void 0) {
-          isRelative = false;
-        }
-
-        var progress = element.getProjectionAnimationProgress()[axis];
-
-        var _a = isRelative ? projection.relativeTarget[axis] : projection.target[axis],
-            min = _a.min,
-            max = _a.max;
-
-        var length = max - min;
-        progress.clearListeners();
-        progress.set(min);
-        progress.set(min); // Set twice to hard-reset velocity
-
-        progress.onChange(function (v) {
-          element.setProjectionTargetAxis(axis, v, v + length, isRelative);
-        });
-        return element.animateMotionValue(axis, progress, 0, transition);
-      },
-
-      /**
-       * Stop layout animations.
-       */
-      stopLayoutAnimation: function () {
-        eachAxis(function (axis) {
-          return element.getProjectionAnimationProgress()[axis].stop();
-        });
-      },
-
-      /**
-       * Measure the current viewport box with or without transforms.
-       * Only measures axis-aligned boxes, rotate and skew must be manually
-       * removed with a re-render to work.
-       */
-      measureViewportBox: function (withTransform) {
-        if (withTransform === void 0) {
-          withTransform = true;
-        }
-
-        var viewportBox = measureViewportBox(instance, options);
-        if (!withTransform) removeBoxTransforms(viewportBox, latestValues);
-        return viewportBox;
-      },
-
-      /**
-       * Get the motion values tracking the layout animations on each
-       * axis. Lazy init if not already created.
-       */
-      getProjectionAnimationProgress: function () {
-        projectionTargetProgress || (projectionTargetProgress = {
-          x: motionValue(0),
-          y: motionValue(0)
-        });
-        return projectionTargetProgress;
-      },
-
-      /**
-       * Update the projection of a single axis. Schedule an update to
-       * the tree layout projection.
-       */
-      setProjectionTargetAxis: function (axis, min, max, isRelative) {
-        if (isRelative === void 0) {
-          isRelative = false;
-        }
-
-        var target;
-
-        if (isRelative) {
-          if (!projection.relativeTarget) {
-            projection.relativeTarget = axisBox();
-          }
-
-          target = projection.relativeTarget[axis];
-        } else {
-          projection.relativeTarget = undefined;
-          target = projection.target[axis];
-        }
-
-        projection.isHydrated = true;
-        target.min = min;
-        target.max = max; // Flag that we want to fire the onViewportBoxUpdate event handler
-
-        hasViewportBoxUpdated = true;
-        lifecycles.notifySetAxisTarget();
-      },
-
-      /**
-       * Rebase the projection target on top of the provided viewport box
-       * or the measured layout. This ensures that non-animating elements
-       * don't fall out of sync differences in measurements vs projections
-       * after a page scroll or other relayout.
-       */
-      rebaseProjectionTarget: function (force, box) {
-        if (box === void 0) {
-          box = layoutState.layout;
-        }
-
-        var _a = element.getProjectionAnimationProgress(),
-            x = _a.x,
-            y = _a.y;
-
-        var shouldRebase = !projection.relativeTarget && !projection.isTargetLocked && !x.isAnimating() && !y.isAnimating();
-
-        if (force || shouldRebase) {
-          eachAxis(function (axis) {
-            var _a = box[axis],
-                min = _a.min,
-                max = _a.max;
-            element.setProjectionTargetAxis(axis, min, max);
-          });
-        }
-      },
-
-      /**
-       * Notify the visual element that its layout is up-to-date.
-       * Currently Animate.tsx uses this to check whether a layout animation
-       * needs to be performed.
-       */
-      notifyLayoutReady: function (config) {
-        setCurrentViewportBox(element);
-        element.notifyLayoutUpdate(layoutState.layout, element.prevViewportBox || layoutState.layout, config);
-      },
-
-      /**
-       * Temporarily reset the transform of the instance.
-       */
-      resetTransform: function () {
-        return resetTransform(element, instance, props);
-      },
-      restoreTransform: function () {
-        return restoreTransform(instance, renderState);
-      },
-      updateLayoutProjection: updateLayoutProjection,
-      updateTreeLayoutProjection: function () {
-        element.layoutTree.forEach(fireResolveRelativeTargetBox);
-        /**
-         * Schedule the projection updates at the end of the current preRender
-         * step. This will ensure that all layout trees will first resolve
-         * relative projection boxes into viewport boxes, and *then*
-         * update projections.
-         */
-
-        sync.preRender(updateTreeLayoutProjection, false, true); // sync.postRender(() => element.scheduleUpdateLayoutProjection())
-      },
-      getProjectionParent: function () {
-        if (projectionParent === undefined) {
-          var foundParent = false; // Search backwards through the tree path
-
-          for (var i = element.path.length - 1; i >= 0; i--) {
-            var ancestor = element.path[i];
-
-            if (ancestor.projection.isEnabled) {
-              foundParent = ancestor;
-              break;
-            }
-          }
-
-          projectionParent = foundParent;
-        }
-
-        return projectionParent;
-      },
-      resolveRelativeTargetBox: function () {
-        var relativeParent = element.getProjectionParent();
-        if (!projection.relativeTarget || !relativeParent) return;
-        calcRelativeBox(projection, relativeParent.projection);
-
-        if (isDraggable(relativeParent)) {
-          var target = projection.target;
-          applyBoxTransforms(target, target, relativeParent.getLatestValues());
-        }
-      },
-      shouldResetTransform: function () {
-        return Boolean(props._layoutResetTransform);
-      },
-
-      /**
-       *
-       */
-      pointTo: function (newLead) {
-        leadProjection = newLead.projection;
-        leadLatestValues = newLead.getLatestValues();
-        /**
-         * Subscribe to lead component's layout animations
-         */
-
-        unsubscribeFromLeadVisualElement === null || unsubscribeFromLeadVisualElement === void 0 ? void 0 : unsubscribeFromLeadVisualElement();
-        unsubscribeFromLeadVisualElement = pipe(newLead.onSetAxisTarget(element.scheduleUpdateLayoutProjection), newLead.onLayoutAnimationComplete(function () {
-          var _a;
-
-          if (element.isPresent) {
-            element.presence = Presence.Present;
-          } else {
-            (_a = element.layoutSafeToRemove) === null || _a === void 0 ? void 0 : _a.call(element);
-          }
-        }));
-      },
-      // TODO: Clean this up
-      isPresent: true,
-      presence: Presence.Entering
-    });
-
-    return element;
-  };
-};
-
-function fireResolveRelativeTargetBox(child) {
-  child.resolveRelativeTargetBox();
-}
-
-function fireUpdateLayoutProjection(child) {
-  child.updateLayoutProjection();
-}
-
-var variantProps = __spreadArray$1(["initial"], __read(variantPriorityOrder));
-
-var numVariantProps = variantProps.length;
-
-var positionalKeys = new Set(["width", "height", "top", "left", "right", "bottom", "x", "y"]);
-
-var isPositionalKey = function (key) {
-  return positionalKeys.has(key);
-};
-
-var hasPositionalKey = function (target) {
-  return Object.keys(target).some(isPositionalKey);
-};
-
-var setAndResetVelocity = function (value, to) {
-  // Looks odd but setting it twice doesn't render, it'll just
-  // set both prev and current to the latest value
-  value.set(to, false);
-  value.set(to);
-};
-
-var isNumOrPxType = function (v) {
-  return v === number$1 || v === px;
-};
-
-var BoundingBoxDimension;
-
-(function (BoundingBoxDimension) {
-  BoundingBoxDimension["width"] = "width";
-  BoundingBoxDimension["height"] = "height";
-  BoundingBoxDimension["left"] = "left";
-  BoundingBoxDimension["right"] = "right";
-  BoundingBoxDimension["top"] = "top";
-  BoundingBoxDimension["bottom"] = "bottom";
-})(BoundingBoxDimension || (BoundingBoxDimension = {}));
-
-var getPosFromMatrix = function (matrix, pos) {
-  return parseFloat(matrix.split(", ")[pos]);
-};
-
-var getTranslateFromMatrix = function (pos2, pos3) {
-  return function (_bbox, _a) {
-    var transform = _a.transform;
-    if (transform === "none" || !transform) return 0;
-    var matrix3d = transform.match(/^matrix3d\((.+)\)$/);
-
-    if (matrix3d) {
-      return getPosFromMatrix(matrix3d[1], pos3);
-    } else {
-      var matrix = transform.match(/^matrix\((.+)\)$/);
-
-      if (matrix) {
-        return getPosFromMatrix(matrix[1], pos2);
-      } else {
-        return 0;
-      }
-    }
-  };
-};
-
-var transformKeys = new Set(["x", "y", "z"]);
-var nonTranslationalTransformKeys = transformProps.filter(function (key) {
-  return !transformKeys.has(key);
-});
-
-function removeNonTranslationalTransform(visualElement) {
-  var removedTransforms = [];
-  nonTranslationalTransformKeys.forEach(function (key) {
-    var value = visualElement.getValue(key);
-
-    if (value !== undefined) {
-      removedTransforms.push([key, value.get()]);
-      value.set(key.startsWith("scale") ? 1 : 0);
-    }
-  }); // Apply changes to element before measurement
-
-  if (removedTransforms.length) visualElement.syncRender();
-  return removedTransforms;
-}
-
-var positionalValues = {
-  // Dimensions
-  width: function (_a) {
-    var x = _a.x;
-    return x.max - x.min;
-  },
-  height: function (_a) {
-    var y = _a.y;
-    return y.max - y.min;
-  },
-  top: function (_bbox, _a) {
-    var top = _a.top;
-    return parseFloat(top);
-  },
-  left: function (_bbox, _a) {
-    var left = _a.left;
-    return parseFloat(left);
-  },
-  bottom: function (_a, _b) {
-    var y = _a.y;
-    var top = _b.top;
-    return parseFloat(top) + (y.max - y.min);
-  },
-  right: function (_a, _b) {
-    var x = _a.x;
-    var left = _b.left;
-    return parseFloat(left) + (x.max - x.min);
-  },
-  // Transform
-  x: getTranslateFromMatrix(4, 13),
-  y: getTranslateFromMatrix(5, 14)
-};
-
-var convertChangedValueTypes = function (target, visualElement, changedKeys) {
-  var originBbox = visualElement.measureViewportBox();
-  var element = visualElement.getInstance();
-  var elementComputedStyle = getComputedStyle(element);
-  var display = elementComputedStyle.display,
-      top = elementComputedStyle.top,
-      left = elementComputedStyle.left,
-      bottom = elementComputedStyle.bottom,
-      right = elementComputedStyle.right,
-      transform = elementComputedStyle.transform;
-  var originComputedStyle = {
-    top: top,
-    left: left,
-    bottom: bottom,
-    right: right,
-    transform: transform
-  }; // If the element is currently set to display: "none", make it visible before
-  // measuring the target bounding box
-
-  if (display === "none") {
-    visualElement.setStaticValue("display", target.display || "block");
-  } // Apply the latest values (as set in checkAndConvertChangedValueTypes)
-
-
-  visualElement.syncRender();
-  var targetBbox = visualElement.measureViewportBox();
-  changedKeys.forEach(function (key) {
-    // Restore styles to their **calculated computed style**, not their actual
-    // originally set style. This allows us to animate between equivalent pixel units.
-    var value = visualElement.getValue(key);
-    setAndResetVelocity(value, positionalValues[key](originBbox, originComputedStyle));
-    target[key] = positionalValues[key](targetBbox, elementComputedStyle);
-  });
-  return target;
-};
-
-var checkAndConvertChangedValueTypes = function (visualElement, target, origin, transitionEnd) {
-  if (origin === void 0) {
-    origin = {};
-  }
-
-  if (transitionEnd === void 0) {
-    transitionEnd = {};
-  }
-
-  target = __assign$4({}, target);
-  transitionEnd = __assign$4({}, transitionEnd);
-  var targetPositionalKeys = Object.keys(target).filter(isPositionalKey); // We want to remove any transform values that could affect the element's bounding box before
-  // it's measured. We'll reapply these later.
-
-  var removedTransformValues = [];
-  var hasAttemptedToRemoveTransformValues = false;
-  var changedValueTypeKeys = [];
-  targetPositionalKeys.forEach(function (key) {
-    var value = visualElement.getValue(key);
-    if (!visualElement.hasValue(key)) return;
-    var from = origin[key];
-    var to = target[key];
-    var fromType = findDimensionValueType(from);
-    var toType; // TODO: The current implementation of this basically throws an error
-    // if you try and do value conversion via keyframes. There's probably
-    // a way of doing this but the performance implications would need greater scrutiny,
-    // as it'd be doing multiple resize-remeasure operations.
-
-    if (isKeyframesTarget(to)) {
-      var numKeyframes = to.length;
-
-      for (var i = to[0] === null ? 1 : 0; i < numKeyframes; i++) {
-        if (!toType) {
-          toType = findDimensionValueType(to[i]);
-          invariant(toType === fromType || isNumOrPxType(fromType) && isNumOrPxType(toType), "Keyframes must be of the same dimension as the current value");
-        } else {
-          invariant(findDimensionValueType(to[i]) === toType, "All keyframes must be of the same type");
-        }
-      }
-    } else {
-      toType = findDimensionValueType(to);
-    }
-
-    if (fromType !== toType) {
-      // If they're both just number or px, convert them both to numbers rather than
-      // relying on resize/remeasure to convert (which is wasteful in this situation)
-      if (isNumOrPxType(fromType) && isNumOrPxType(toType)) {
-        var current = value.get();
-
-        if (typeof current === "string") {
-          value.set(parseFloat(current));
-        }
-
-        if (typeof to === "string") {
-          target[key] = parseFloat(to);
-        } else if (Array.isArray(to) && toType === px) {
-          target[key] = to.map(parseFloat);
-        }
-      } else if ((fromType === null || fromType === void 0 ? void 0 : fromType.transform) && (toType === null || toType === void 0 ? void 0 : toType.transform) && (from === 0 || to === 0)) {
-        // If one or the other value is 0, it's safe to coerce it to the
-        // type of the other without measurement
-        if (from === 0) {
-          value.set(toType.transform(from));
-        } else {
-          target[key] = fromType.transform(to);
-        }
-      } else {
-        // If we're going to do value conversion via DOM measurements, we first
-        // need to remove non-positional transform values that could affect the bbox measurements.
-        if (!hasAttemptedToRemoveTransformValues) {
-          removedTransformValues = removeNonTranslationalTransform(visualElement);
-          hasAttemptedToRemoveTransformValues = true;
-        }
-
-        changedValueTypeKeys.push(key);
-        transitionEnd[key] = transitionEnd[key] !== undefined ? transitionEnd[key] : target[key];
-        setAndResetVelocity(value, to);
-      }
-    }
-  });
-
-  if (changedValueTypeKeys.length) {
-    var convertedTarget = convertChangedValueTypes(target, visualElement, changedValueTypeKeys); // If we removed transform values, reapply them before the next render
-
-    if (removedTransformValues.length) {
-      removedTransformValues.forEach(function (_a) {
-        var _b = __read(_a, 2),
-            key = _b[0],
-            value = _b[1];
-
-        visualElement.getValue(key).set(value);
-      });
-    } // Reapply original values
-
-
-    visualElement.syncRender();
-    return {
-      target: convertedTarget,
-      transitionEnd: transitionEnd
-    };
-  } else {
-    return {
-      target: target,
-      transitionEnd: transitionEnd
-    };
-  }
-};
-/**
- * Convert value types for x/y/width/height/top/left/bottom/right
- *
- * Allows animation between `'auto'` -> `'100%'` or `0` -> `'calc(50% - 10vw)'`
- *
- * @internal
- */
-
-
-function unitConversion(visualElement, target, origin, transitionEnd) {
-  return hasPositionalKey(target) ? checkAndConvertChangedValueTypes(visualElement, target, origin, transitionEnd) : {
-    target: target,
-    transitionEnd: transitionEnd
-  };
-}
-
-/**
- * Parse a DOM variant to make it animatable. This involves resolving CSS variables
- * and ensuring animations like "20%" => "calc(50vw)" are performed in pixels.
- */
-
-var parseDomVariant = function (visualElement, target, origin, transitionEnd) {
-  var resolved = resolveCSSVariables(visualElement, target, transitionEnd);
-  target = resolved.target;
-  transitionEnd = resolved.transitionEnd;
-  return unitConversion(visualElement, target, origin, transitionEnd);
-};
-
-function getComputedStyle$1(element) {
-  return window.getComputedStyle(element);
-}
-
-var htmlConfig = {
-  treeType: "dom",
-  readValueFromInstance: function (domElement, key) {
-    if (isTransformProp(key)) {
-      var defaultType = getDefaultValueType(key);
-      return defaultType ? defaultType.default || 0 : 0;
-    } else {
-      var computedStyle = getComputedStyle$1(domElement);
-      return (isCSSVariable$1(key) ? computedStyle.getPropertyValue(key) : computedStyle[key]) || 0;
-    }
-  },
-  sortNodePosition: function (a, b) {
-    /**
-     * compareDocumentPosition returns a bitmask, by using the bitwise &
-     * we're returning true if 2 in that bitmask is set to true. 2 is set
-     * to true if b preceeds a.
-     */
-    return a.compareDocumentPosition(b) & 2 ? 1 : -1;
-  },
-  getBaseTarget: function (props, key) {
-    var _a;
-
-    return (_a = props.style) === null || _a === void 0 ? void 0 : _a[key];
-  },
-  measureViewportBox: function (element, _a) {
-    var transformPagePoint = _a.transformPagePoint;
-    return getBoundingBox(element, transformPagePoint);
-  },
-
-  /**
-   * Reset the transform on the current Element. This is called as part
-   * of a batched process across the entire layout tree. To remove this write
-   * cycle it'd be interesting to see if it's possible to "undo" all the current
-   * layout transforms up the tree in the same way this.getBoundingBoxWithoutTransforms
-   * works
-   */
-  resetTransform: function (element, domElement, props) {
-    var transformTemplate = props.transformTemplate;
-    domElement.style.transform = transformTemplate ? transformTemplate({}, "") : "none"; // Ensure that whatever happens next, we restore our transform on the next frame
-
-    element.scheduleRender();
-  },
-  restoreTransform: function (instance, mutableState) {
-    instance.style.transform = mutableState.style.transform;
-  },
-  removeValueFromRenderState: function (key, _a) {
-    var vars = _a.vars,
-        style = _a.style;
-    delete vars[key];
-    delete style[key];
-  },
-
-  /**
-   * Ensure that HTML and Framer-specific value types like `px`->`%` and `Color`
-   * can be animated by Motion.
-   */
-  makeTargetAnimatable: function (element, _a, _b, isMounted) {
-    var transformValues = _b.transformValues;
-
-    if (isMounted === void 0) {
-      isMounted = true;
-    }
-
-    var transition = _a.transition,
-        transitionEnd = _a.transitionEnd,
-        target = __rest$3(_a, ["transition", "transitionEnd"]);
-
-    var origin = getOrigin(target, transition || {}, element);
-    /**
-     * If Framer has provided a function to convert `Color` etc value types, convert them
-     */
-
-    if (transformValues) {
-      if (transitionEnd) transitionEnd = transformValues(transitionEnd);
-      if (target) target = transformValues(target);
-      if (origin) origin = transformValues(origin);
-    }
-
-    if (isMounted) {
-      checkTargetForNewValues(element, target, origin);
-      var parsed = parseDomVariant(element, target, origin, transitionEnd);
-      transitionEnd = parsed.transitionEnd;
-      target = parsed.target;
-    }
-
-    return __assign$4({
-      transition: transition,
-      transitionEnd: transitionEnd
-    }, target);
-  },
-  scrapeMotionValuesFromProps: scrapeMotionValuesFromProps$1,
-  build: function (element, renderState, latestValues, projection, layoutState, options, props) {
-    if (element.isVisible !== undefined) {
-      renderState.style.visibility = element.isVisible ? "visible" : "hidden";
-    }
-
-    var isProjectionTranform = projection.isEnabled && layoutState.isHydrated;
-    buildHTMLStyles(renderState, latestValues, projection, layoutState, options, props.transformTemplate, isProjectionTranform ? buildLayoutProjectionTransform : undefined, isProjectionTranform ? buildLayoutProjectionTransformOrigin : undefined);
-  },
-  render: renderHTML
-};
-var htmlVisualElement = visualElement(htmlConfig);
-
-var svgVisualElement = visualElement(__assign$4(__assign$4({}, htmlConfig), {
-  getBaseTarget: function (props, key) {
-    return props[key];
-  },
-  readValueFromInstance: function (domElement, key) {
-    var _a;
-
-    if (isTransformProp(key)) {
-      return ((_a = getDefaultValueType(key)) === null || _a === void 0 ? void 0 : _a.default) || 0;
-    }
-
-    key = !camelCaseAttributes.has(key) ? camelToDash(key) : key;
-    return domElement.getAttribute(key);
-  },
-  scrapeMotionValuesFromProps: scrapeMotionValuesFromProps,
-  build: function (_element, renderState, latestValues, projection, layoutState, options, props) {
-    var isProjectionTranform = projection.isEnabled && layoutState.isHydrated;
-    buildSVGAttrs(renderState, latestValues, projection, layoutState, options, props.transformTemplate, isProjectionTranform ? buildLayoutProjectionTransform : undefined, isProjectionTranform ? buildLayoutProjectionTransformOrigin : undefined);
-  },
-  render: renderSVG
-}));
-
-var createDomVisualElement = function (Component, options) {
-  return isSVGComponent(Component) ? svgVisualElement(options, {
-    enableHardwareAcceleration: false
-  }) : htmlVisualElement(options, {
-    enableHardwareAcceleration: true
-  });
-};
-
-var featureBundle = __assign$4(__assign$4(__assign$4(__assign$4({}, animations), gestureAnimations), drag), layoutAnimations);
-/**
- * HTML & SVG components, optimised for use with gestures and animation. These can be used as
- * drop-in replacements for any HTML & SVG component, all CSS & SVG properties are supported.
- *
- * @public
- */
-
-
-var motion = /*@__PURE__*/createMotionProxy(function (Component, config) {
-  return createDomMotionConfig(Component, config, featureBundle, createDomVisualElement);
-});
-
-function useForceUpdate() {
-  var unloadingRef = React.useRef(false);
-
-  var _a = __read(React.useState(0), 2),
-      forcedRenderCount = _a[0],
-      setForcedRenderCount = _a[1];
-
-  useUnmountEffect(function () {
-    return unloadingRef.current = true;
-  });
-  return React.useCallback(function () {
-    !unloadingRef.current && setForcedRenderCount(forcedRenderCount + 1);
-  }, [forcedRenderCount]);
-}
-
-var presenceId = 0;
-
-function getPresenceId() {
-  var id = presenceId;
-  presenceId++;
-  return id;
-}
-
-var PresenceChild = function (_a) {
-  var children = _a.children,
-      initial = _a.initial,
-      isPresent = _a.isPresent,
-      onExitComplete = _a.onExitComplete,
-      custom = _a.custom,
-      presenceAffectsLayout = _a.presenceAffectsLayout;
-  var presenceChildren = useConstant(newChildrenMap);
-  var id = useConstant(getPresenceId);
-  var context = React.useMemo(function () {
-    return {
-      id: id,
-      initial: initial,
-      isPresent: isPresent,
-      custom: custom,
-      onExitComplete: function (childId) {
-        presenceChildren.set(childId, true);
-        var allComplete = true;
-        presenceChildren.forEach(function (isComplete) {
-          if (!isComplete) allComplete = false;
-        });
-        allComplete && (onExitComplete === null || onExitComplete === void 0 ? void 0 : onExitComplete());
-      },
-      register: function (childId) {
-        presenceChildren.set(childId, false);
-        return function () {
-          return presenceChildren.delete(childId);
-        };
-      }
-    };
-  },
-  /**
-   * If the presence of a child affects the layout of the components around it,
-   * we want to make a new context value to ensure they get re-rendered
-   * so they can detect that layout change.
-   */
-  presenceAffectsLayout ? undefined : [isPresent]);
-  React.useMemo(function () {
-    presenceChildren.forEach(function (_, key) {
-      return presenceChildren.set(key, false);
-    });
-  }, [isPresent]);
-  /**
-   * If there's no `motion` components to fire exit animations, we want to remove this
-   * component immediately.
-   */
-
-  React__namespace.useEffect(function () {
-    !isPresent && !presenceChildren.size && (onExitComplete === null || onExitComplete === void 0 ? void 0 : onExitComplete());
-  }, [isPresent]);
-  return React__namespace.createElement(PresenceContext.Provider, {
-    value: context
-  }, children);
-};
-
-function newChildrenMap() {
-  return new Map();
-}
-
-function getChildKey(child) {
-  return child.key || "";
-}
-
-function updateChildLookup(children, allChildren) {
-  var seenChildren = process.env.NODE_ENV !== "production" ? new Set() : null;
-  children.forEach(function (child) {
-    var key = getChildKey(child);
-
-    if (process.env.NODE_ENV !== "production" && seenChildren) {
-      if (seenChildren.has(key)) {
-        console.warn("Children of AnimatePresence require unique keys. \"" + key + "\" is a duplicate.");
-      }
-
-      seenChildren.add(key);
-    }
-
-    allChildren.set(key, child);
-  });
-}
-
-function onlyElements(children) {
-  var filtered = []; // We use forEach here instead of map as map mutates the component key by preprending `.$`
-
-  React.Children.forEach(children, function (child) {
-    if (React.isValidElement(child)) filtered.push(child);
-  });
-  return filtered;
-}
-/**
- * `AnimatePresence` enables the animation of components that have been removed from the tree.
- *
- * When adding/removing more than a single child, every child **must** be given a unique `key` prop.
- *
- * @library
- *
- * Any `Frame` components that have an `exit` property defined will animate out when removed from
- * the tree.
- *
- * ```jsx
- * import { Frame, AnimatePresence } from 'framer'
- *
- * // As items are added and removed from `items`
- * export function Items({ items }) {
- *   return (
- *     <AnimatePresence>
- *       {items.map(item => (
- *         <Frame
- *           key={item.id}
- *           initial={{ opacity: 0 }}
- *           animate={{ opacity: 1 }}
- *           exit={{ opacity: 0 }}
- *         />
- *       ))}
- *     </AnimatePresence>
- *   )
- * }
- * ```
- *
- * You can sequence exit animations throughout a tree using variants.
- *
- * @motion
- *
- * Any `motion` components that have an `exit` property defined will animate out when removed from
- * the tree.
- *
- * ```jsx
- * import { motion, AnimatePresence } from 'framer-motion'
- *
- * export const Items = ({ items }) => (
- *   <AnimatePresence>
- *     {items.map(item => (
- *       <motion.div
- *         key={item.id}
- *         initial={{ opacity: 0 }}
- *         animate={{ opacity: 1 }}
- *         exit={{ opacity: 0 }}
- *       />
- *     ))}
- *   </AnimatePresence>
- * )
- * ```
- *
- * You can sequence exit animations throughout a tree using variants.
- *
- * If a child contains multiple `motion` components with `exit` props, it will only unmount the child
- * once all `motion` components have finished animating out. Likewise, any components using
- * `usePresence` all need to call `safeToRemove`.
- *
- * @public
- */
-
-
-var AnimatePresence = function (_a) {
-  var children = _a.children,
-      custom = _a.custom,
-      _b = _a.initial,
-      initial = _b === void 0 ? true : _b,
-      onExitComplete = _a.onExitComplete,
-      exitBeforeEnter = _a.exitBeforeEnter,
-      _c = _a.presenceAffectsLayout,
-      presenceAffectsLayout = _c === void 0 ? true : _c; // We want to force a re-render once all exiting animations have finished. We
-  // either use a local forceRender function, or one from a parent context if it exists.
-
-  var forceRender = useForceUpdate();
-  var layoutContext = React.useContext(SharedLayoutContext);
-
-  if (isSharedLayout(layoutContext)) {
-    forceRender = layoutContext.forceUpdate;
-  }
-
-  var isInitialRender = React.useRef(true); // Filter out any children that aren't ReactElements. We can only track ReactElements with a props.key
-
-  var filteredChildren = onlyElements(children); // Keep a living record of the children we're actually rendering so we
-  // can diff to figure out which are entering and exiting
-
-  var presentChildren = React.useRef(filteredChildren); // A lookup table to quickly reference components by key
-
-  var allChildren = React.useRef(new Map()).current; // A living record of all currently exiting components.
-
-  var exiting = React.useRef(new Set()).current;
-  updateChildLookup(filteredChildren, allChildren); // If this is the initial component render, just deal with logic surrounding whether
-  // we play onMount animations or not.
-
-  if (isInitialRender.current) {
-    isInitialRender.current = false;
-    return React__namespace.createElement(React__namespace.Fragment, null, filteredChildren.map(function (child) {
-      return React__namespace.createElement(PresenceChild, {
-        key: getChildKey(child),
-        isPresent: true,
-        initial: initial ? undefined : false,
-        presenceAffectsLayout: presenceAffectsLayout
-      }, child);
-    }));
-  } // If this is a subsequent render, deal with entering and exiting children
-
-
-  var childrenToRender = __spreadArray$1([], __read(filteredChildren)); // Diff the keys of the currently-present and target children to update our
-  // exiting list.
-
-
-  var presentKeys = presentChildren.current.map(getChildKey);
-  var targetKeys = filteredChildren.map(getChildKey); // Diff the present children with our target children and mark those that are exiting
-
-  var numPresent = presentKeys.length;
-
-  for (var i = 0; i < numPresent; i++) {
-    var key = presentKeys[i];
-
-    if (targetKeys.indexOf(key) === -1) {
-      exiting.add(key);
-    } else {
-      // In case this key has re-entered, remove from the exiting list
-      exiting.delete(key);
-    }
-  } // If we currently have exiting children, and we're deferring rendering incoming children
-  // until after all current children have exiting, empty the childrenToRender array
-
-
-  if (exitBeforeEnter && exiting.size) {
-    childrenToRender = [];
-  } // Loop through all currently exiting components and clone them to overwrite `animate`
-  // with any `exit` prop they might have defined.
-
-
-  exiting.forEach(function (key) {
-    // If this component is actually entering again, early return
-    if (targetKeys.indexOf(key) !== -1) return;
-    var child = allChildren.get(key);
-    if (!child) return;
-    var insertionIndex = presentKeys.indexOf(key);
-
-    var onExit = function () {
-      allChildren.delete(key);
-      exiting.delete(key); // Remove this child from the present children
-
-      var removeIndex = presentChildren.current.findIndex(function (presentChild) {
-        return presentChild.key === key;
-      });
-      presentChildren.current.splice(removeIndex, 1); // Defer re-rendering until all exiting children have indeed left
-
-      if (!exiting.size) {
-        presentChildren.current = filteredChildren;
-        forceRender();
-        onExitComplete && onExitComplete();
-      }
-    };
-
-    childrenToRender.splice(insertionIndex, 0, React__namespace.createElement(PresenceChild, {
-      key: getChildKey(child),
-      isPresent: false,
-      onExitComplete: onExit,
-      custom: custom,
-      presenceAffectsLayout: presenceAffectsLayout
-    }, child));
-  }); // Add `MotionContext` even to children that don't need it to ensure we're rendering
-  // the same tree between renders
-
-  childrenToRender = childrenToRender.map(function (child) {
-    var key = child.key;
-    return exiting.has(key) ? child : React__namespace.createElement(PresenceChild, {
-      key: getChildKey(child),
-      isPresent: true,
-      presenceAffectsLayout: presenceAffectsLayout
-    }, child);
-  });
-  presentChildren.current = childrenToRender;
-
-  if (process.env.NODE_ENV !== "production" && exitBeforeEnter && childrenToRender.length > 1) {
-    console.warn("You're attempting to animate multiple children within AnimatePresence, but its exitBeforeEnter prop is set to true. This will lead to odd visual behaviour.");
-  }
-
-  return React__namespace.createElement(React__namespace.Fragment, null, exiting.size ? childrenToRender : childrenToRender.map(function (child) {
-    return React.cloneElement(child);
-  }));
-};
-
-function _extends$C() {
-  _extends$C = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends$C.apply(this, arguments);
-}
-var TransitionEasings = {
-  ease: [0.25, 0.1, 0.25, 1],
-  easeIn: [0.4, 0, 1, 1],
-  easeOut: [0, 0, 0.2, 1],
-  easeInOut: [0.4, 0, 0.2, 1]
-};
-var TransitionDefaults = {
-  enter: {
-    duration: 0.2,
-    ease: TransitionEasings.easeOut
-  },
-  exit: {
-    duration: 0.1,
-    ease: TransitionEasings.easeIn
-  }
-};
-var withDelay = {
-  enter: (transition, delay) => _extends$C({}, transition, {
-    delay: isNumber(delay) ? delay : delay == null ? void 0 : delay["enter"]
-  }),
-  exit: (transition, delay) => _extends$C({}, transition, {
-    delay: isNumber(delay) ? delay : delay == null ? void 0 : delay["exit"]
-  })
-};
-
-function _extends$B() {
-  _extends$B = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends$B.apply(this, arguments);
-}
-
-function _objectWithoutPropertiesLoose$s(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-var variants$2 = {
-  enter: function enter(_temp) {
-    var _transition$enter;
-
-    var {
-      transition,
-      transitionEnd,
-      delay
-    } = _temp === void 0 ? {} : _temp;
-    return {
-      opacity: 1,
-      transition: (_transition$enter = transition == null ? void 0 : transition.enter) != null ? _transition$enter : withDelay.enter(TransitionDefaults.enter, delay),
-      transitionEnd: transitionEnd == null ? void 0 : transitionEnd.enter
-    };
-  },
-  exit: function exit(_temp2) {
-    var _transition$exit;
-
-    var {
-      transition,
-      transitionEnd,
-      delay
-    } = _temp2 === void 0 ? {} : _temp2;
-    return {
-      opacity: 0,
-      transition: (_transition$exit = transition == null ? void 0 : transition.exit) != null ? _transition$exit : withDelay.exit(TransitionDefaults.exit, delay),
-      transitionEnd: transitionEnd == null ? void 0 : transitionEnd.exit
-    };
-  }
-};
-var fadeConfig = {
-  initial: "exit",
-  animate: "enter",
-  exit: "exit",
-  variants: variants$2
-};
-var Fade = /*#__PURE__*/React__namespace.forwardRef((props, ref) => {
-  var {
-    unmountOnExit,
-    in: isOpen,
-    className,
-    transition,
-    transitionEnd,
-    delay
-  } = props,
-      rest = _objectWithoutPropertiesLoose$s(props, ["unmountOnExit", "in", "className", "transition", "transitionEnd", "delay"]);
-
-  var animate = isOpen || unmountOnExit ? "enter" : "exit";
-  var show = unmountOnExit ? isOpen && unmountOnExit : true;
-  var custom = {
-    transition,
-    transitionEnd,
-    delay
-  };
-  return /*#__PURE__*/React__namespace.createElement(AnimatePresence, {
-    custom: custom
-  }, show && /*#__PURE__*/React__namespace.createElement(motion.div, _extends$B({
-    ref: ref,
-    className: cx$6("chakra-fade", className),
-    custom: custom
-  }, fadeConfig, {
-    animate: animate
-  }, rest)));
-});
-
-if (__DEV__$a) {
-  Fade.displayName = "Fade";
-}
-
-function _objectWithoutPropertiesLoose$r(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-
-function _extends$A() {
-  _extends$A = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends$A.apply(this, arguments);
-}
-var variants$1 = {
-  exit: _ref => {
-    var _transition$exit;
-
-    var {
-      reverse,
-      initialScale,
-      transition,
-      transitionEnd,
-      delay
-    } = _ref;
-    return _extends$A({
-      opacity: 0
-    }, reverse ? {
-      scale: initialScale,
-      transitionEnd: transitionEnd == null ? void 0 : transitionEnd.exit
-    } : {
-      transitionEnd: _extends$A({
-        scale: initialScale
-      }, transitionEnd == null ? void 0 : transitionEnd.exit)
-    }, {
-      transition: (_transition$exit = transition == null ? void 0 : transition.exit) != null ? _transition$exit : withDelay.exit(TransitionDefaults.exit, delay)
-    });
-  },
-  enter: _ref2 => {
-    var _transition$enter;
-
-    var {
-      transitionEnd,
-      transition,
-      delay
-    } = _ref2;
-    return {
-      opacity: 1,
-      scale: 1,
-      transition: (_transition$enter = transition == null ? void 0 : transition.enter) != null ? _transition$enter : withDelay.enter(TransitionDefaults.enter, delay),
-      transitionEnd: transitionEnd == null ? void 0 : transitionEnd.enter
-    };
-  }
-};
-var scaleFadeConfig = {
-  initial: "exit",
-  animate: "enter",
-  exit: "exit",
-  variants: variants$1
-};
-var ScaleFade = /*#__PURE__*/React__namespace.forwardRef((props, ref) => {
-  var {
-    unmountOnExit,
-    in: isOpen,
-    reverse = true,
-    initialScale = 0.95,
-    className,
-    transition,
-    transitionEnd,
-    delay
-  } = props,
-      rest = _objectWithoutPropertiesLoose$r(props, ["unmountOnExit", "in", "reverse", "initialScale", "className", "transition", "transitionEnd", "delay"]);
-
-  var show = unmountOnExit ? isOpen && unmountOnExit : true;
-  var animate = isOpen || unmountOnExit ? "enter" : "exit";
-  var custom = {
-    initialScale,
-    reverse,
-    transition,
-    transitionEnd,
-    delay
-  };
-  return /*#__PURE__*/React__namespace.createElement(AnimatePresence, {
-    custom: custom
-  }, show && /*#__PURE__*/React__namespace.createElement(motion.div, _extends$A({
-    ref: ref,
-    className: cx$6("chakra-offset-slide", className)
-  }, scaleFadeConfig, {
-    animate: animate,
-    custom: custom
-  }, rest)));
-});
-
-if (__DEV__$a) {
-  ScaleFade.displayName = "ScaleFade";
-}
-
-function _objectWithoutPropertiesLoose$q(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-
-function _extends$z() {
-  _extends$z = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends$z.apply(this, arguments);
-}
-var variants = {
-  initial: _ref => {
-    var _transition$exit;
-
-    var {
-      offsetX,
-      offsetY,
-      transition,
-      transitionEnd,
-      delay
-    } = _ref;
-    return {
-      opacity: 0,
-      x: offsetX,
-      y: offsetY,
-      transition: (_transition$exit = transition == null ? void 0 : transition.exit) != null ? _transition$exit : withDelay.exit(TransitionDefaults.exit, delay),
-      transitionEnd: transitionEnd == null ? void 0 : transitionEnd.exit
-    };
-  },
-  enter: _ref2 => {
-    var _transition$enter;
-
-    var {
-      transition,
-      transitionEnd,
-      delay
-    } = _ref2;
-    return {
-      opacity: 1,
-      x: 0,
-      y: 0,
-      transition: (_transition$enter = transition == null ? void 0 : transition.enter) != null ? _transition$enter : withDelay.enter(TransitionDefaults.enter, delay),
-      transitionEnd: transitionEnd == null ? void 0 : transitionEnd.enter
-    };
-  },
-  exit: _ref3 => {
-    var _transition$exit2;
-
-    var {
-      offsetY,
-      offsetX,
-      transition,
-      transitionEnd,
-      reverse,
-      delay
-    } = _ref3;
-    var offset = {
-      x: offsetX,
-      y: offsetY
-    };
-    return _extends$z({
-      opacity: 0,
-      transition: (_transition$exit2 = transition == null ? void 0 : transition.exit) != null ? _transition$exit2 : withDelay.exit(TransitionDefaults.exit, delay)
-    }, reverse ? _extends$z({}, offset, {
-      transitionEnd: transitionEnd == null ? void 0 : transitionEnd.exit
-    }) : {
-      transitionEnd: _extends$z({}, offset, transitionEnd == null ? void 0 : transitionEnd.exit)
-    });
-  }
-};
-var slideFadeConfig = {
-  initial: "initial",
-  animate: "enter",
-  exit: "exit",
-  variants: variants
-};
-var SlideFade = /*#__PURE__*/React__namespace.forwardRef((props, ref) => {
-  var {
-    unmountOnExit,
-    in: isOpen,
-    reverse = true,
-    className,
-    offsetX = 0,
-    offsetY = 8,
-    transition,
-    transitionEnd,
-    delay
-  } = props,
-      rest = _objectWithoutPropertiesLoose$q(props, ["unmountOnExit", "in", "reverse", "className", "offsetX", "offsetY", "transition", "transitionEnd", "delay"]);
-
-  var show = unmountOnExit ? isOpen && unmountOnExit : true;
-  var animate = isOpen || unmountOnExit ? "enter" : "exit";
-  var custom = {
-    offsetX,
-    offsetY,
-    reverse,
-    transition,
-    transitionEnd,
-    delay
-  };
-  return /*#__PURE__*/React__namespace.createElement(AnimatePresence, {
-    custom: custom
-  }, show && /*#__PURE__*/React__namespace.createElement(motion.div, _extends$z({
-    ref: ref,
-    className: cx$6("chakra-offset-slide", className),
-    custom: custom
-  }, slideFadeConfig, {
-    animate: animate
-  }, rest)));
-});
-
-if (__DEV__$a) {
-  SlideFade.displayName = "SlideFade";
-}
-
-// Number assertions
-var __DEV__$9 = process.env.NODE_ENV !== "production";
+var __DEV__$6 = process.env.NODE_ENV !== "production";
 process.env.NODE_ENV === "test";
 
 function omit$2(object, keys) {
@@ -27342,8 +17378,8 @@ function useImage(props) {
   return ignoreFallback ? "loaded" : status;
 }
 
-function _extends$y() {
-  _extends$y = Object.assign || function (target) {
+function _extends$t() {
+  _extends$t = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -27357,10 +17393,10 @@ function _extends$y() {
     return target;
   };
 
-  return _extends$y.apply(this, arguments);
+  return _extends$t.apply(this, arguments);
 }
 
-function _objectWithoutPropertiesLoose$p(source, excluded) {
+function _objectWithoutPropertiesLoose$l(source, excluded) {
   if (source == null) return {};
   var target = {};
   var sourceKeys = Object.keys(source);
@@ -27380,9 +17416,9 @@ var NativeImage = /*#__PURE__*/React__namespace.forwardRef((props, ref) => {
     htmlHeight,
     alt
   } = props,
-      rest = _objectWithoutPropertiesLoose$p(props, ["htmlWidth", "htmlHeight", "alt"]);
+      rest = _objectWithoutPropertiesLoose$l(props, ["htmlWidth", "htmlHeight", "alt"]);
 
-  return /*#__PURE__*/React__namespace.createElement("img", _extends$y({
+  return /*#__PURE__*/React__namespace.createElement("img", _extends$t({
     width: htmlWidth,
     height: htmlHeight,
     ref: ref,
@@ -27407,7 +17443,7 @@ var Image$1 = /*#__PURE__*/forwardRef$2((props, ref) => {
     ignoreFallback,
     crossOrigin
   } = props,
-      rest = _objectWithoutPropertiesLoose$p(props, ["fallbackSrc", "fallback", "src", "align", "fit", "loading", "ignoreFallback", "crossOrigin"]);
+      rest = _objectWithoutPropertiesLoose$l(props, ["fallbackSrc", "fallback", "src", "align", "fit", "loading", "ignoreFallback", "crossOrigin"]);
   /**
    * Defer to native `img` tag if `loading` prop is passed
    * @see https://github.com/chakra-ui/chakra-ui/issues/1027
@@ -27415,11 +17451,11 @@ var Image$1 = /*#__PURE__*/forwardRef$2((props, ref) => {
 
 
   var shouldIgnore = loading != null || ignoreFallback;
-  var status = useImage(_extends$y({}, props, {
+  var status = useImage(_extends$t({}, props, {
     ignoreFallback: shouldIgnore
   }));
 
-  var shared = _extends$y({
+  var shared = _extends$t({
     ref,
     objectFit: fit,
     objectPosition: align
@@ -27431,14 +17467,14 @@ var Image$1 = /*#__PURE__*/forwardRef$2((props, ref) => {
      * let's render it here.
      */
     if (fallback) return fallback;
-    return /*#__PURE__*/React__namespace.createElement(chakra.img, _extends$y({
+    return /*#__PURE__*/React__namespace.createElement(chakra.img, _extends$t({
       as: NativeImage,
       className: "chakra-image__placeholder",
       src: fallbackSrc
     }, shared));
   }
 
-  return /*#__PURE__*/React__namespace.createElement(chakra.img, _extends$y({
+  return /*#__PURE__*/React__namespace.createElement(chakra.img, _extends$t({
     as: NativeImage,
     src: src,
     crossOrigin: crossOrigin,
@@ -27447,221 +17483,19 @@ var Image$1 = /*#__PURE__*/forwardRef$2((props, ref) => {
   }, shared));
 });
 
-if (__DEV__$9) {
+if (__DEV__$6) {
   Image$1.displayName = "Image";
-}
-
-// Number assertions
-var __DEV__$8 = process.env.NODE_ENV !== "production";
-process.env.NODE_ENV === "test";
-
-var cx$5 = function cx() {
-  for (var _len = arguments.length, classNames = new Array(_len), _key = 0; _key < _len; _key++) {
-    classNames[_key] = arguments[_key];
-  }
-
-  return classNames.filter(Boolean).join(" ");
-};
-
-function _extends$x() {
-  _extends$x = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends$x.apply(this, arguments);
-}
-
-function _objectWithoutPropertiesLoose$o(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-var fallbackIcon$1 = {
-  path: /*#__PURE__*/React__namespace.createElement("g", {
-    stroke: "currentColor",
-    strokeWidth: "1.5"
-  }, /*#__PURE__*/React__namespace.createElement("path", {
-    strokeLinecap: "round",
-    fill: "none",
-    d: "M9,9a3,3,0,1,1,4,2.829,1.5,1.5,0,0,0-1,1.415V14.25"
-  }), /*#__PURE__*/React__namespace.createElement("path", {
-    fill: "currentColor",
-    strokeLinecap: "round",
-    d: "M12,17.25a.375.375,0,1,0,.375.375A.375.375,0,0,0,12,17.25h0"
-  }), /*#__PURE__*/React__namespace.createElement("circle", {
-    fill: "none",
-    strokeMiterlimit: "10",
-    cx: "12",
-    cy: "12",
-    r: "11.25"
-  })),
-  viewBox: "0 0 24 24"
-};
-var Icon$1 = /*#__PURE__*/forwardRef$2((props, ref) => {
-  var {
-    as: element,
-    viewBox,
-    color = "currentColor",
-    focusable = false,
-    children,
-    className,
-    __css
-  } = props,
-      rest = _objectWithoutPropertiesLoose$o(props, ["as", "viewBox", "color", "focusable", "children", "className", "__css"]);
-
-  var _className = cx$5("chakra-icon", className);
-
-  var styles = _extends$x({
-    w: "1em",
-    h: "1em",
-    display: "inline-block",
-    lineHeight: "1em",
-    flexShrink: 0,
-    color
-  }, __css);
-
-  var shared = {
-    ref,
-    focusable,
-    className: _className,
-    __css: styles
-  };
-
-  var _viewBox = viewBox != null ? viewBox : fallbackIcon$1.viewBox;
-  /**
-   * If you're using an icon library like `react-icons`.
-   * Note: anyone passing the `as` prop, should manage the `viewBox` from the external component
-   */
-
-
-  if (element && typeof element !== "string") {
-    return /*#__PURE__*/React__namespace.createElement(chakra.svg, _extends$x({
-      as: element
-    }, shared, rest));
-  }
-
-  var _path = children != null ? children : fallbackIcon$1.path;
-
-  return /*#__PURE__*/React__namespace.createElement(chakra.svg, _extends$x({
-    verticalAlign: "middle",
-    viewBox: _viewBox
-  }, shared, rest), _path);
-});
-
-if (__DEV__$8) {
-  Icon$1.displayName = "Icon";
-}
-
-function _objectWithoutPropertiesLoose$n(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-
-function _extends$w() {
-  _extends$w = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends$w.apply(this, arguments);
-}
-
-var CloseIcon = props => /*#__PURE__*/React__namespace.createElement(Icon$1, _extends$w({
-  focusable: "false",
-  "aria-hidden": true
-}, props), /*#__PURE__*/React__namespace.createElement("path", {
-  fill: "currentColor",
-  d: "M.439,21.44a1.5,1.5,0,0,0,2.122,2.121L11.823,14.3a.25.25,0,0,1,.354,0l9.262,9.263a1.5,1.5,0,1,0,2.122-2.121L14.3,12.177a.25.25,0,0,1,0-.354l9.263-9.262A1.5,1.5,0,0,0,21.439.44L12.177,9.7a.25.25,0,0,1-.354,0L2.561.44A1.5,1.5,0,0,0,.439,2.561L9.7,11.823a.25.25,0,0,1,0,.354Z"
-}));
-/**
- * A button with a close icon.
- *
- * It is used to handle the close functionality in feedback and overlay components
- * like Alerts, Toasts, Drawers and Modals.
- */
-
-
-var CloseButton = /*#__PURE__*/forwardRef$2((props, ref) => {
-  var styles = useStyleConfig("CloseButton", props);
-
-  var _omitThemingProps = omitThemingProps(props),
-      {
-    children,
-    isDisabled,
-    __css
-  } = _omitThemingProps,
-      rest = _objectWithoutPropertiesLoose$n(_omitThemingProps, ["children", "isDisabled", "__css"]);
-
-  var baseStyle = {
-    outline: 0,
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    flexShrink: 0
-  };
-  return /*#__PURE__*/React__namespace.createElement(chakra.button, _extends$w({
-    type: "button",
-    "aria-label": "Close",
-    ref: ref,
-    disabled: isDisabled,
-    __css: _extends$w({}, baseStyle, styles, __css)
-  }, rest), children || /*#__PURE__*/React__namespace.createElement(CloseIcon, {
-    width: "1em",
-    height: "1em"
-  }));
-});
-
-if (__DEV__$8) {
-  CloseButton.displayName = "CloseButton";
 }
 
 // Number assertions
 function isNotNumber(value) {
   return typeof value !== "number" || Number.isNaN(value) || !Number.isFinite(value);
 }
-var __DEV__$7 = process.env.NODE_ENV !== "production";
+var __DEV__$5 = process.env.NODE_ENV !== "production";
 process.env.NODE_ENV === "test";
 
 /* eslint-disable no-nested-ternary */
-function once$4(fn) {
+function once$3(fn) {
   var result;
   return function func() {
     if (fn) {
@@ -27676,13 +17510,13 @@ function once$4(fn) {
     return result;
   };
 }
-var warn$3 = once$4(options => () => {
+var warn$2 = once$3(options => () => {
   var {
     condition,
     message
   } = options;
 
-  if (condition && __DEV__$7) {
+  if (condition && __DEV__$5) {
     console.warn(message);
   }
 });
@@ -27738,7 +17572,7 @@ function countDecimalPlaces(value) {
 
 function clampValue(value, min, max) {
   if (value == null) return value;
-  warn$3({
+  warn$2({
     condition: max < min,
     message: "clamp: max cannot be less than min"
   });
@@ -27760,7 +17594,7 @@ function useCounter(props) {
     max = maxSafeInteger$1,
     keepWithinRange = true
   } = props;
-  var onChangeProp = useCallbackRef$1(onChange);
+  var onChangeProp = useCallbackRef(onChange);
   var [valueState, setValue] = React.useState(() => {
     var _cast;
 
@@ -27773,7 +17607,7 @@ function useCounter(props) {
    */
 
   var [isControlled, value] = useControllableProp(valueProp, valueState);
-  var decimalPlaces = getDecimalPlaces(parse$2(value), stepProp);
+  var decimalPlaces = getDecimalPlaces(parse$1(value), stepProp);
   var precision = precisionProp != null ? precisionProp : decimalPlaces;
   var update = React.useCallback(next => {
     if (next === value) return;
@@ -27782,7 +17616,7 @@ function useCounter(props) {
       setValue(next.toString());
     }
 
-    onChangeProp == null ? void 0 : onChangeProp(next.toString(), parse$2(next));
+    onChangeProp == null ? void 0 : onChangeProp(next.toString(), parse$1(next));
   }, [onChangeProp, isControlled, value]); // Function to clamp the value and round it to the precision
 
   var clamp = React.useCallback(value => {
@@ -27810,9 +17644,9 @@ function useCounter(props) {
        * If `min` is set, native input, starts at the `min`.
        * Else, it starts at `step`
        */
-      next = parse$2(step);
+      next = parse$1(step);
     } else {
-      next = parse$2(value) + step;
+      next = parse$1(value) + step;
     }
 
     next = clamp(next);
@@ -27826,9 +17660,9 @@ function useCounter(props) {
     var next; // Same thing here. We'll follow native implementation
 
     if (value === "") {
-      next = parse$2(-step);
+      next = parse$1(-step);
     } else {
-      next = parse$2(value) - step;
+      next = parse$1(value) - step;
     }
 
     next = clamp(next);
@@ -27853,7 +17687,7 @@ function useCounter(props) {
     var nextValue = (_cast3 = cast(value, stepProp, precision)) != null ? _cast3 : min;
     update(nextValue);
   }, [precision, stepProp, update, min]);
-  var valueAsNumber = parse$2(value);
+  var valueAsNumber = parse$1(value);
   /**
    * Common range checks
    */
@@ -27878,7 +17712,7 @@ function useCounter(props) {
   };
 }
 
-function parse$2(value) {
+function parse$1(value) {
   return parseFloat(value.toString().replace(/[^\w.-]+/g, ""));
 }
 
@@ -27887,19 +17721,19 @@ function getDecimalPlaces(value, step) {
 }
 
 function cast(value, step, precision) {
-  var parsedValue = parse$2(value);
+  var parsedValue = parse$1(value);
   if (Number.isNaN(parsedValue)) return undefined;
   var decimalPlaces = getDecimalPlaces(parsedValue, step);
   return toPrecision(parsedValue, precision != null ? precision : decimalPlaces);
 }
 
 // Number assertions
-var __DEV__$6 = process.env.NODE_ENV !== "production";
+var __DEV__$4 = process.env.NODE_ENV !== "production";
 var __TEST__$1 = process.env.NODE_ENV === "test";
 
 var dataAttr = condition => condition ? "" : undefined;
 var ariaAttr$1 = condition => condition ? true : undefined;
-var cx$4 = function cx() {
+var cx$3 = function cx() {
   for (var _len = arguments.length, classNames = new Array(_len), _key = 0; _key < _len; _key++) {
     classNames[_key] = arguments[_key];
   }
@@ -27908,7 +17742,7 @@ var cx$4 = function cx() {
 };
 
 /* eslint-disable no-nested-ternary */
-function callAllHandlers$2() {
+function callAllHandlers$1() {
   for (var _len2 = arguments.length, fns = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
     fns[_key2] = arguments[_key2];
   }
@@ -27927,8 +17761,8 @@ var promiseMicrotask$1 = callback => {
 
 var scheduleMicrotask$1 = __TEST__$1 ? fn => fn() : typeof queueMicrotask === "function" ? queueMicrotask : promiseMicrotask$1;
 
-function _extends$v() {
-  _extends$v = Object.assign || function (target) {
+function _extends$s() {
+  _extends$s = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -27942,10 +17776,10 @@ function _extends$v() {
     return target;
   };
 
-  return _extends$v.apply(this, arguments);
+  return _extends$s.apply(this, arguments);
 }
 
-function _objectWithoutPropertiesLoose$m(source, excluded) {
+function _objectWithoutPropertiesLoose$k(source, excluded) {
   if (source == null) return {};
   var target = {};
   var sourceKeys = Object.keys(source);
@@ -27972,7 +17806,7 @@ function useFormControlProvider(props) {
     isDisabled,
     isReadOnly
   } = props,
-      htmlProps = _objectWithoutPropertiesLoose$m(props, ["id", "isRequired", "isInvalid", "isDisabled", "isReadOnly"]); // Generate all the required ids
+      htmlProps = _objectWithoutPropertiesLoose$k(props, ["id", "isRequired", "isInvalid", "isDisabled", "isReadOnly"]); // Generate all the required ids
 
 
   var uuid = useId();
@@ -28003,7 +17837,7 @@ function useFormControlProvider(props) {
       forwardedRef = null;
     }
 
-    return _extends$v({
+    return _extends$s({
       id: helpTextId
     }, props, {
       /**
@@ -28027,7 +17861,7 @@ function useFormControlProvider(props) {
       forwardedRef = null;
     }
 
-    return _extends$v({}, props, {
+    return _extends$s({}, props, {
       ref: forwardedRef,
       "data-focus": dataAttr(isFocused),
       "data-disabled": dataAttr(isDisabled),
@@ -28046,7 +17880,7 @@ function useFormControlProvider(props) {
       forwardedRef = null;
     }
 
-    return _extends$v({
+    return _extends$s({
       id: feedbackId
     }, props, {
       /**
@@ -28069,7 +17903,7 @@ function useFormControlProvider(props) {
       forwardedRef = null;
     }
 
-    return _extends$v({}, props, htmlProps, {
+    return _extends$s({}, props, htmlProps, {
       ref: forwardedRef,
       role: "group"
     });
@@ -28083,7 +17917,7 @@ function useFormControlProvider(props) {
       forwardedRef = null;
     }
 
-    return _extends$v({}, props, {
+    return _extends$s({}, props, {
       ref: forwardedRef,
       role: "presentation",
       "aria-hidden": true,
@@ -28134,15 +17968,15 @@ var FormControl = /*#__PURE__*/forwardRef$2((props, ref) => {
       {
     getRootProps
   } = _useFormControlProvid,
-      context = _objectWithoutPropertiesLoose$m(_useFormControlProvid, ["getRootProps", "htmlProps"]);
+      context = _objectWithoutPropertiesLoose$k(_useFormControlProvid, ["getRootProps", "htmlProps"]);
 
-  var className = cx$4("chakra-form-control", props.className);
+  var className = cx$3("chakra-form-control", props.className);
   var contextValue = React__namespace.useMemo(() => context, [context]);
   return /*#__PURE__*/React__namespace.createElement(FormControlProvider, {
     value: contextValue
   }, /*#__PURE__*/React__namespace.createElement(StylesProvider, {
     value: styles
-  }, /*#__PURE__*/React__namespace.createElement(chakra.div, _extends$v({}, getRootProps({}, ref), {
+  }, /*#__PURE__*/React__namespace.createElement(chakra.div, _extends$s({}, getRootProps({}, ref), {
     className: className,
     __css: {
       width: "100%",
@@ -28151,7 +17985,7 @@ var FormControl = /*#__PURE__*/forwardRef$2((props, ref) => {
   }))));
 });
 
-if (__DEV__$6) {
+if (__DEV__$4) {
   FormControl.displayName = "FormControl";
 }
 /**
@@ -28166,19 +18000,19 @@ if (__DEV__$6) {
 var FormHelperText = /*#__PURE__*/forwardRef$2((props, ref) => {
   var field = useFormControlContext();
   var styles = useStyles();
-  var className = cx$4("chakra-form__helper-text", props.className);
-  return /*#__PURE__*/React__namespace.createElement(chakra.div, _extends$v({}, field == null ? void 0 : field.getHelpTextProps(props, ref), {
+  var className = cx$3("chakra-form__helper-text", props.className);
+  return /*#__PURE__*/React__namespace.createElement(chakra.div, _extends$s({}, field == null ? void 0 : field.getHelpTextProps(props, ref), {
     __css: styles.helperText,
     className: className
   }));
 });
 
-if (__DEV__$6) {
+if (__DEV__$4) {
   FormHelperText.displayName = "FormHelperText";
 }
 
-function _extends$u() {
-  _extends$u = Object.assign || function (target) {
+function _extends$r() {
+  _extends$r = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -28192,10 +18026,10 @@ function _extends$u() {
     return target;
   };
 
-  return _extends$u.apply(this, arguments);
+  return _extends$r.apply(this, arguments);
 }
 
-function _objectWithoutPropertiesLoose$l(source, excluded) {
+function _objectWithoutPropertiesLoose$j(source, excluded) {
   if (source == null) return {};
   var target = {};
   var sourceKeys = Object.keys(source);
@@ -28225,9 +18059,9 @@ function useFormControl(props) {
     isReadOnly,
     isRequired
   } = _useFormControlProps,
-      rest = _objectWithoutPropertiesLoose$l(_useFormControlProps, ["isDisabled", "isInvalid", "isReadOnly", "isRequired"]);
+      rest = _objectWithoutPropertiesLoose$j(_useFormControlProps, ["isDisabled", "isInvalid", "isReadOnly", "isRequired"]);
 
-  return _extends$u({}, rest, {
+  return _extends$r({}, rest, {
     disabled: isDisabled,
     readOnly: isReadOnly,
     required: isRequired,
@@ -28253,7 +18087,7 @@ function useFormControlProps(props) {
     onFocus,
     onBlur
   } = props,
-      rest = _objectWithoutPropertiesLoose$l(props, ["id", "disabled", "readOnly", "required", "isRequired", "isInvalid", "isReadOnly", "isDisabled", "onFocus", "onBlur"]);
+      rest = _objectWithoutPropertiesLoose$j(props, ["id", "disabled", "readOnly", "required", "isRequired", "isInvalid", "isReadOnly", "isDisabled", "onFocus", "onBlur"]);
 
   var labelIds = []; // Error message must be described first in all scenarios.
 
@@ -28265,23 +18099,23 @@ function useFormControlProps(props) {
     labelIds.push(field.helpTextId);
   }
 
-  return _extends$u({}, rest, {
+  return _extends$r({}, rest, {
     "aria-describedby": labelIds.join(" ") || undefined,
     id: id != null ? id : field == null ? void 0 : field.id,
     isDisabled: (_ref = disabled != null ? disabled : isDisabled) != null ? _ref : field == null ? void 0 : field.isDisabled,
     isReadOnly: (_ref2 = readOnly != null ? readOnly : isReadOnly) != null ? _ref2 : field == null ? void 0 : field.isReadOnly,
     isRequired: (_ref3 = required != null ? required : isRequired) != null ? _ref3 : field == null ? void 0 : field.isRequired,
     isInvalid: isInvalid != null ? isInvalid : field == null ? void 0 : field.isInvalid,
-    onFocus: callAllHandlers$2(field == null ? void 0 : field.onFocus, onFocus),
-    onBlur: callAllHandlers$2(field == null ? void 0 : field.onBlur, onBlur)
+    onFocus: callAllHandlers$1(field == null ? void 0 : field.onFocus, onFocus),
+    onBlur: callAllHandlers$1(field == null ? void 0 : field.onBlur, onBlur)
   });
 }
 
 // Number assertions
-var __DEV__$5 = process.env.NODE_ENV !== "production";
+var __DEV__$3 = process.env.NODE_ENV !== "production";
 process.env.NODE_ENV === "test";
 
-var cx$3 = function cx() {
+var cx$2 = function cx() {
   for (var _len = arguments.length, classNames = new Array(_len), _key = 0; _key < _len; _key++) {
     classNames[_key] = arguments[_key];
   }
@@ -28289,8 +18123,8 @@ var cx$3 = function cx() {
   return classNames.filter(Boolean).join(" ");
 };
 
-function _extends$t() {
-  _extends$t = Object.assign || function (target) {
+function _extends$q() {
+  _extends$q = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -28304,7 +18138,7 @@ function _extends$t() {
     return target;
   };
 
-  return _extends$t.apply(this, arguments);
+  return _extends$q.apply(this, arguments);
 }
 /**
  * Input
@@ -28317,24 +18151,24 @@ var Input$1 = /*#__PURE__*/forwardRef$2((props, ref) => {
   var ownProps = omitThemingProps(props);
   var input = useFormControl(ownProps);
 
-  var _className = cx$3("chakra-input", props.className);
+  var _className = cx$2("chakra-input", props.className);
 
-  return /*#__PURE__*/React__namespace.createElement(chakra.input, _extends$t({}, input, {
+  return /*#__PURE__*/React__namespace.createElement(chakra.input, _extends$q({}, input, {
     __css: styles.field,
     ref: ref,
     className: _className
   }));
 });
 
-if (__DEV__$5) {
+if (__DEV__$3) {
   Input$1.displayName = "Input";
 } // This is used in `input-group.tsx`
 
 
 Input$1.id = "Input";
 
-function _extends$s() {
-  _extends$s = Object.assign || function (target) {
+function _extends$p() {
+  _extends$p = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -28348,10 +18182,10 @@ function _extends$s() {
     return target;
   };
 
-  return _extends$s.apply(this, arguments);
+  return _extends$p.apply(this, arguments);
 }
 
-function _objectWithoutPropertiesLoose$k(source, excluded) {
+function _objectWithoutPropertiesLoose$i(source, excluded) {
   if (source == null) return {};
   var target = {};
   var sourceKeys = Object.keys(source);
@@ -28373,9 +18207,9 @@ var InputGroup = /*#__PURE__*/forwardRef$2((props, ref) => {
     children,
     className
   } = _omitThemingProps,
-      rest = _objectWithoutPropertiesLoose$k(_omitThemingProps, ["children", "className"]);
+      rest = _objectWithoutPropertiesLoose$i(_omitThemingProps, ["children", "className"]);
 
-  var _className = cx$3("chakra-input__group", className);
+  var _className = cx$2("chakra-input__group", className);
 
   var groupStyles = {};
   var validChildren = getValidChildren(children);
@@ -28416,7 +18250,7 @@ var InputGroup = /*#__PURE__*/forwardRef$2((props, ref) => {
     };
     return child.type.id !== "Input" ? /*#__PURE__*/React__namespace.cloneElement(child, theming) : /*#__PURE__*/React__namespace.cloneElement(child, Object.assign(theming, groupStyles, child.props));
   });
-  return /*#__PURE__*/React__namespace.createElement(chakra.div, _extends$s({
+  return /*#__PURE__*/React__namespace.createElement(chakra.div, _extends$p({
     className: _className,
     ref: ref,
     __css: {
@@ -28429,12 +18263,12 @@ var InputGroup = /*#__PURE__*/forwardRef$2((props, ref) => {
   }, clones));
 });
 
-if (__DEV__$5) {
+if (__DEV__$3) {
   InputGroup.displayName = "InputGroup";
 }
 
-function _extends$r() {
-  _extends$r = Object.assign || function (target) {
+function _extends$o() {
+  _extends$o = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -28448,10 +18282,10 @@ function _extends$r() {
     return target;
   };
 
-  return _extends$r.apply(this, arguments);
+  return _extends$o.apply(this, arguments);
 }
 
-function _objectWithoutPropertiesLoose$j(source, excluded) {
+function _objectWithoutPropertiesLoose$h(source, excluded) {
   if (source == null) return {};
   var target = {};
   var sourceKeys = Object.keys(source);
@@ -28481,7 +18315,7 @@ var InputElement = /*#__PURE__*/forwardRef$2((props, ref) => {
   var {
     placement = "left"
   } = props,
-      rest = _objectWithoutPropertiesLoose$j(props, ["placement"]);
+      rest = _objectWithoutPropertiesLoose$h(props, ["placement"]);
 
   var styles = useStyles();
   var input = styles.field;
@@ -28492,7 +18326,7 @@ var InputElement = /*#__PURE__*/forwardRef$2((props, ref) => {
     height: (_input$height2 = input == null ? void 0 : input.height) != null ? _input$height2 : input == null ? void 0 : input.h,
     fontSize: input == null ? void 0 : input.fontSize
   };
-  return /*#__PURE__*/React__namespace.createElement(StyledElement, _extends$r({
+  return /*#__PURE__*/React__namespace.createElement(StyledElement, _extends$o({
     ref: ref,
     __css: elementStyles
   }, rest));
@@ -28500,7 +18334,7 @@ var InputElement = /*#__PURE__*/forwardRef$2((props, ref) => {
 
 InputElement.id = "InputElement";
 
-if (__DEV__$5) {
+if (__DEV__$3) {
   InputElement.displayName = "InputElement";
 }
 
@@ -28508,11 +18342,11 @@ var InputLeftElement = /*#__PURE__*/forwardRef$2((props, ref) => {
   var {
     className
   } = props,
-      rest = _objectWithoutPropertiesLoose$j(props, ["className"]);
+      rest = _objectWithoutPropertiesLoose$h(props, ["className"]);
 
-  var _className = cx$3("chakra-input__left-element", className);
+  var _className = cx$2("chakra-input__left-element", className);
 
-  return /*#__PURE__*/React__namespace.createElement(InputElement, _extends$r({
+  return /*#__PURE__*/React__namespace.createElement(InputElement, _extends$o({
     ref: ref,
     placement: "left",
     className: _className
@@ -28521,7 +18355,7 @@ var InputLeftElement = /*#__PURE__*/forwardRef$2((props, ref) => {
 
 InputLeftElement.id = "InputLeftElement";
 
-if (__DEV__$5) {
+if (__DEV__$3) {
   InputLeftElement.displayName = "InputLeftElement";
 }
 
@@ -28529,11 +18363,11 @@ var InputRightElement = /*#__PURE__*/forwardRef$2((props, ref) => {
   var {
     className
   } = props,
-      rest = _objectWithoutPropertiesLoose$j(props, ["className"]);
+      rest = _objectWithoutPropertiesLoose$h(props, ["className"]);
 
-  var _className = cx$3("chakra-input__right-element", className);
+  var _className = cx$2("chakra-input__right-element", className);
 
-  return /*#__PURE__*/React__namespace.createElement(InputElement, _extends$r({
+  return /*#__PURE__*/React__namespace.createElement(InputElement, _extends$o({
     ref: ref,
     placement: "right",
     className: _className
@@ -28542,16 +18376,16 @@ var InputRightElement = /*#__PURE__*/forwardRef$2((props, ref) => {
 
 InputRightElement.id = "InputRightElement";
 
-if (__DEV__$5) {
+if (__DEV__$3) {
   InputRightElement.displayName = "InputRightElement";
 }
 
 // Number assertions
-var __DEV__$4 = process.env.NODE_ENV !== "production";
+var __DEV__$2 = process.env.NODE_ENV !== "production";
 process.env.NODE_ENV === "test";
 
-function _extends$q() {
-  _extends$q = Object.assign || function (target) {
+function _extends$n() {
+  _extends$n = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -28565,10 +18399,10 @@ function _extends$q() {
     return target;
   };
 
-  return _extends$q.apply(this, arguments);
+  return _extends$n.apply(this, arguments);
 }
 
-function _objectWithoutPropertiesLoose$i(source, excluded) {
+function _objectWithoutPropertiesLoose$g(source, excluded) {
   if (source == null) return {};
   var target = {};
   var sourceKeys = Object.keys(source);
@@ -28601,7 +18435,7 @@ var Flex$1 = /*#__PURE__*/forwardRef$2((props, ref) => {
     grow,
     shrink
   } = props,
-      rest = _objectWithoutPropertiesLoose$i(props, ["direction", "align", "justify", "wrap", "basis", "grow", "shrink"]);
+      rest = _objectWithoutPropertiesLoose$g(props, ["direction", "align", "justify", "wrap", "basis", "grow", "shrink"]);
 
   var styles = {
     display: "flex",
@@ -28613,13 +18447,13 @@ var Flex$1 = /*#__PURE__*/forwardRef$2((props, ref) => {
     flexGrow: grow,
     flexShrink: shrink
   };
-  return /*#__PURE__*/React__namespace.createElement(chakra.div, _extends$q({
+  return /*#__PURE__*/React__namespace.createElement(chakra.div, _extends$n({
     ref: ref,
     __css: styles
   }, rest));
 });
 
-if (__DEV__$4) {
+if (__DEV__$2) {
   Flex$1.displayName = "Flex";
 }
 
@@ -28638,11 +18472,11 @@ var Spacer = chakra("div", {
   }
 });
 
-if (__DEV__$4) {
+if (__DEV__$2) {
   Spacer.displayName = "Spacer";
 }
 
-function _objectWithoutPropertiesLoose$h(source, excluded) {
+function _objectWithoutPropertiesLoose$f(source, excluded) {
   if (source == null) return {};
   var target = {};
   var sourceKeys = Object.keys(source);
@@ -29566,7 +19400,7 @@ var factoryWithThrowingShims = function () {
  * LICENSE file in the root directory of this source tree.
  */
 
-var propTypes$4 = createCommonjsModule(function (module) {
+var propTypes$3 = createCommonjsModule(function (module) {
 if (process.env.NODE_ENV !== 'production') {
   var ReactIs = reactIs; // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
@@ -29580,480 +19414,6 @@ if (process.env.NODE_ENV !== 'production') {
   module.exports = factoryWithThrowingShims();
 }
 });
-
-var FOCUS_GROUP = 'data-focus-lock';
-var FOCUS_DISABLED = 'data-focus-lock-disabled';
-var FOCUS_ALLOW = 'data-no-focus-lock';
-var FOCUS_AUTO = 'data-autofocus-inside';
-
-/**
- * Assigns a value for a given ref, no matter of the ref format
- * @param {RefObject} ref - a callback function or ref object
- * @param value - a new value
- *
- * @see https://github.com/theKashey/use-callback-ref#assignref
- * @example
- * const refObject = useRef();
- * const refFn = (ref) => {....}
- *
- * assignRef(refObject, "refValue");
- * assignRef(refFn, "refValue");
- */
-function assignRef(ref, value) {
-  if (typeof ref === 'function') {
-    ref(value);
-  } else if (ref) {
-    ref.current = value;
-  }
-
-  return ref;
-}
-
-/**
- * creates a MutableRef with ref change callback
- * @param initialValue - initial ref value
- * @param {Function} callback - a callback to run when value changes
- *
- * @example
- * const ref = useCallbackRef(0, (newValue, oldValue) => console.log(oldValue, '->', newValue);
- * ref.current = 1;
- * // prints 0 -> 1
- *
- * @see https://reactjs.org/docs/hooks-reference.html#useref
- * @see https://github.com/theKashey/use-callback-ref#usecallbackref---to-replace-reactuseref
- * @returns {MutableRefObject}
- */
-
-function useCallbackRef(initialValue, callback) {
-  var ref = React.useState(function () {
-    return {
-      // value
-      value: initialValue,
-      // last callback
-      callback: callback,
-      // "memoized" public interface
-      facade: {
-        get current() {
-          return ref.value;
-        },
-
-        set current(value) {
-          var last = ref.value;
-
-          if (last !== value) {
-            ref.value = value;
-            ref.callback(value, last);
-          }
-        }
-
-      }
-    };
-  })[0]; // update callback
-
-  ref.callback = callback;
-  return ref.facade;
-}
-
-/**
- * Merges two or more refs together providing a single interface to set their value
- * @param {RefObject|Ref} refs
- * @returns {MutableRefObject} - a new ref, which translates all changes to {refs}
- *
- * @see {@link mergeRefs} a version without buit-in memoization
- * @see https://github.com/theKashey/use-callback-ref#usemergerefs
- * @example
- * const Component = React.forwardRef((props, ref) => {
- *   const ownRef = useRef();
- *   const domRef = useMergeRefs([ref, ownRef]); // 👈 merge together
- *   return <div ref={domRef}>...</div>
- * }
- */
-
-function useMergeRefs(refs, defaultValue) {
-  return useCallbackRef(defaultValue, function (newValue) {
-    return refs.forEach(function (ref) {
-      return assignRef(ref, newValue);
-    });
-  });
-}
-
-var hiddenGuard = {
-  width: '1px',
-  height: '0px',
-  padding: 0,
-  overflow: 'hidden',
-  position: 'fixed',
-  top: '1px',
-  left: '1px'
-};
-
-process.env.NODE_ENV !== "production" ? {
-  children: propTypes$4.node
-} : {};
-
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation.
-
-Permission to use, copy, modify, and/or distribute this software for any
-purpose with or without fee is hereby granted.
-
-THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
-***************************************************************************** */
-var __assign$1 = function () {
-  __assign$1 = Object.assign || function __assign(t) {
-    for (var s, i = 1, n = arguments.length; i < n; i++) {
-      s = arguments[i];
-
-      for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-    }
-
-    return t;
-  };
-
-  return __assign$1.apply(this, arguments);
-};
-function __rest$1(s, e) {
-  var t = {};
-
-  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
-
-  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
-  }
-  return t;
-}
-
-function ItoI(a) {
-  return a;
-}
-
-function innerCreateMedium(defaults, middleware) {
-  if (middleware === void 0) {
-    middleware = ItoI;
-  }
-
-  var buffer = [];
-  var assigned = false;
-  var medium = {
-    read: function () {
-      if (assigned) {
-        throw new Error('Sidecar: could not `read` from an `assigned` medium. `read` could be used only with `useMedium`.');
-      }
-
-      if (buffer.length) {
-        return buffer[buffer.length - 1];
-      }
-
-      return defaults;
-    },
-    useMedium: function (data) {
-      var item = middleware(data, assigned);
-      buffer.push(item);
-      return function () {
-        buffer = buffer.filter(function (x) {
-          return x !== item;
-        });
-      };
-    },
-    assignSyncMedium: function (cb) {
-      assigned = true;
-
-      while (buffer.length) {
-        var cbs = buffer;
-        buffer = [];
-        cbs.forEach(cb);
-      }
-
-      buffer = {
-        push: function (x) {
-          return cb(x);
-        },
-        filter: function () {
-          return buffer;
-        }
-      };
-    },
-    assignMedium: function (cb) {
-      assigned = true;
-      var pendingQueue = [];
-
-      if (buffer.length) {
-        var cbs = buffer;
-        buffer = [];
-        cbs.forEach(cb);
-        pendingQueue = buffer;
-      }
-
-      var executeQueue = function () {
-        var cbs = pendingQueue;
-        pendingQueue = [];
-        cbs.forEach(cb);
-      };
-
-      var cycle = function () {
-        return Promise.resolve().then(executeQueue);
-      };
-
-      cycle();
-      buffer = {
-        push: function (x) {
-          pendingQueue.push(x);
-          cycle();
-        },
-        filter: function (filter) {
-          pendingQueue = pendingQueue.filter(filter);
-          return buffer;
-        }
-      };
-    }
-  };
-  return medium;
-}
-
-function createMedium(defaults, middleware) {
-  if (middleware === void 0) {
-    middleware = ItoI;
-  }
-
-  return innerCreateMedium(defaults, middleware);
-}
-function createSidecarMedium(options) {
-  if (options === void 0) {
-    options = {};
-  }
-
-  var medium = innerCreateMedium(null);
-  medium.options = __assign$1({
-    async: true,
-    ssr: false
-  }, options);
-  return medium;
-}
-
-var SideCar$1 = function (_a) {
-  var sideCar = _a.sideCar,
-      rest = __rest$1(_a, ["sideCar"]);
-
-  if (!sideCar) {
-    throw new Error('Sidecar: please provide `sideCar` property to import the right car');
-  }
-
-  var Target = sideCar.read();
-
-  if (!Target) {
-    throw new Error('Sidecar medium not found');
-  }
-
-  return React__namespace.createElement(Target, __assign$1({}, rest));
-};
-
-SideCar$1.isSideCarExport = true;
-function exportSidecar(medium, exported) {
-  medium.useMedium(exported);
-  return SideCar$1;
-}
-
-var mediumFocus = createMedium({}, function (_ref) {
-  var target = _ref.target,
-      currentTarget = _ref.currentTarget;
-  return {
-    target: target,
-    currentTarget: currentTarget
-  };
-});
-var mediumBlur = createMedium();
-var mediumEffect = createMedium();
-var mediumSidecar = createSidecarMedium({
-  async: true
-});
-
-var emptyArray = [];
-var FocusLock$1 = /*#__PURE__*/React__namespace.forwardRef(function FocusLockUI(props, parentRef) {
-  var _extends2;
-
-  var _React$useState = React__namespace.useState(),
-      realObserved = _React$useState[0],
-      setObserved = _React$useState[1];
-
-  var observed = React__namespace.useRef();
-  var isActive = React__namespace.useRef(false);
-  var originalFocusedElement = React__namespace.useRef(null);
-  var children = props.children,
-      disabled = props.disabled,
-      noFocusGuards = props.noFocusGuards,
-      persistentFocus = props.persistentFocus,
-      crossFrame = props.crossFrame,
-      autoFocus = props.autoFocus,
-      allowTextSelection = props.allowTextSelection,
-      group = props.group,
-      className = props.className,
-      whiteList = props.whiteList,
-      _props$shards = props.shards,
-      shards = _props$shards === void 0 ? emptyArray : _props$shards,
-      _props$as = props.as,
-      Container = _props$as === void 0 ? 'div' : _props$as,
-      _props$lockProps = props.lockProps,
-      containerProps = _props$lockProps === void 0 ? {} : _props$lockProps,
-      SideCar = props.sideCar,
-      shouldReturnFocus = props.returnFocus,
-      onActivationCallback = props.onActivation,
-      onDeactivationCallback = props.onDeactivation;
-
-  var _React$useState2 = React__namespace.useState({}),
-      id = _React$useState2[0]; // SIDE EFFECT CALLBACKS
-
-
-  var onActivation = React__namespace.useCallback(function () {
-    originalFocusedElement.current = originalFocusedElement.current || document && document.activeElement;
-
-    if (observed.current && onActivationCallback) {
-      onActivationCallback(observed.current);
-    }
-
-    isActive.current = true;
-  }, [onActivationCallback]);
-  var onDeactivation = React__namespace.useCallback(function () {
-    isActive.current = false;
-
-    if (onDeactivationCallback) {
-      onDeactivationCallback(observed.current);
-    }
-  }, [onDeactivationCallback]);
-  var returnFocus = React__namespace.useCallback(function (allowDefer) {
-    var current = originalFocusedElement.current;
-
-    if (Boolean(shouldReturnFocus) && current && current.focus) {
-      var focusOptions = typeof shouldReturnFocus === 'object' ? shouldReturnFocus : undefined;
-      originalFocusedElement.current = null;
-
-      if (allowDefer) {
-        // React might return focus after update
-        // it's safer to defer the action
-        Promise.resolve().then(function () {
-          return current.focus(focusOptions);
-        });
-      } else {
-        current.focus(focusOptions);
-      }
-    }
-  }, [shouldReturnFocus]); // MEDIUM CALLBACKS
-
-  var onFocus = React__namespace.useCallback(function (event) {
-    if (isActive.current) {
-      mediumFocus.useMedium(event);
-    }
-  }, []);
-  var onBlur = mediumBlur.useMedium; // REF PROPAGATION
-  // not using real refs due to race conditions
-
-  var setObserveNode = React__namespace.useCallback(function (newObserved) {
-    if (observed.current !== newObserved) {
-      observed.current = newObserved;
-      setObserved(newObserved);
-    }
-  }, []);
-
-  if (process.env.NODE_ENV !== 'production') {
-    if (typeof allowTextSelection !== 'undefined') {
-      // eslint-disable-next-line no-console
-      console.warn('React-Focus-Lock: allowTextSelection is deprecated and enabled by default');
-    }
-
-    React__namespace.useEffect(function () {
-      if (!observed.current) {
-        // eslint-disable-next-line no-console
-        console.error('FocusLock: could not obtain ref to internal node');
-      }
-    }, []);
-  }
-
-  var lockProps = _extends$X((_extends2 = {}, _extends2[FOCUS_DISABLED] = disabled && 'disabled', _extends2[FOCUS_GROUP] = group, _extends2), containerProps);
-
-  var hasLeadingGuards = noFocusGuards !== true;
-  var hasTailingGuards = hasLeadingGuards && noFocusGuards !== 'tail';
-  var mergedRef = useMergeRefs([parentRef, setObserveNode]);
-  return /*#__PURE__*/React__namespace.createElement(React__namespace.Fragment, null, hasLeadingGuards && [/*#__PURE__*/React__namespace.createElement("div", {
-    key: "guard-first",
-    "data-focus-guard": true,
-    tabIndex: disabled ? -1 : 0,
-    style: hiddenGuard
-  }),
-  /*#__PURE__*/
-  // nearest focus guard
-  React__namespace.createElement("div", {
-    key: "guard-nearest",
-    "data-focus-guard": true,
-    tabIndex: disabled ? -1 : 1,
-    style: hiddenGuard
-  }) // first tabbed element guard
-  ], !disabled && /*#__PURE__*/React__namespace.createElement(SideCar, {
-    id: id,
-    sideCar: mediumSidecar,
-    observed: realObserved,
-    disabled: disabled,
-    persistentFocus: persistentFocus,
-    crossFrame: crossFrame,
-    autoFocus: autoFocus,
-    whiteList: whiteList,
-    shards: shards,
-    onActivation: onActivation,
-    onDeactivation: onDeactivation,
-    returnFocus: returnFocus
-  }), /*#__PURE__*/React__namespace.createElement(Container, _extends$X({
-    ref: mergedRef
-  }, lockProps, {
-    className: className,
-    onBlur: onBlur,
-    onFocus: onFocus
-  }), children), hasTailingGuards && /*#__PURE__*/React__namespace.createElement("div", {
-    "data-focus-guard": true,
-    tabIndex: disabled ? -1 : 0,
-    style: hiddenGuard
-  }));
-});
-FocusLock$1.propTypes = process.env.NODE_ENV !== "production" ? {
-  children: propTypes$4.node,
-  disabled: propTypes$4.bool,
-  returnFocus: propTypes$4.oneOfType([propTypes$4.bool, propTypes$4.object]),
-  noFocusGuards: propTypes$4.bool,
-  allowTextSelection: propTypes$4.bool,
-  autoFocus: propTypes$4.bool,
-  persistentFocus: propTypes$4.bool,
-  crossFrame: propTypes$4.bool,
-  group: propTypes$4.string,
-  className: propTypes$4.string,
-  whiteList: propTypes$4.func,
-  shards: propTypes$4.arrayOf(propTypes$4.any),
-  as: propTypes$4.oneOfType([propTypes$4.string, propTypes$4.func, propTypes$4.object]),
-  lockProps: propTypes$4.object,
-  onActivation: propTypes$4.func,
-  onDeactivation: propTypes$4.func,
-  sideCar: propTypes$4.any.isRequired
-} : {};
-FocusLock$1.defaultProps = {
-  children: undefined,
-  disabled: false,
-  returnFocus: false,
-  noFocusGuards: false,
-  autoFocus: true,
-  persistentFocus: false,
-  crossFrame: true,
-  allowTextSelection: undefined,
-  group: undefined,
-  className: undefined,
-  whiteList: undefined,
-  shards: undefined,
-  as: 'div',
-  lockProps: {},
-  onActivation: undefined,
-  onDeactivation: undefined
-};
 
 function _setPrototypeOf$3(o, p) {
   _setPrototypeOf$3 = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
@@ -30070,1791 +19430,6 @@ function _inheritsLoose$1(subClass, superClass) {
   _setPrototypeOf$3(subClass, superClass);
 }
 
-function _defineProperty$j(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-
-function withSideEffect$1(reducePropsToState, handleStateChangeOnClient) {
-  if (process.env.NODE_ENV !== "production") {
-    if (typeof reducePropsToState !== 'function') {
-      throw new Error('Expected reducePropsToState to be a function.');
-    }
-
-    if (typeof handleStateChangeOnClient !== 'function') {
-      throw new Error('Expected handleStateChangeOnClient to be a function.');
-    }
-  }
-
-  function getDisplayName(WrappedComponent) {
-    return WrappedComponent.displayName || WrappedComponent.name || 'Component';
-  }
-
-  return function wrap(WrappedComponent) {
-    if (process.env.NODE_ENV !== "production") {
-      if (typeof WrappedComponent !== 'function') {
-        throw new Error('Expected WrappedComponent to be a React component.');
-      }
-    }
-
-    var mountedInstances = [];
-    var state;
-
-    function emitChange() {
-      state = reducePropsToState(mountedInstances.map(function (instance) {
-        return instance.props;
-      }));
-      handleStateChangeOnClient(state);
-    }
-
-    var SideEffect = /*#__PURE__*/function (_PureComponent) {
-      _inheritsLoose$1(SideEffect, _PureComponent);
-
-      function SideEffect() {
-        return _PureComponent.apply(this, arguments) || this;
-      } // Try to use displayName of wrapped component
-
-
-      SideEffect.peek = function peek() {
-        return state;
-      };
-
-      var _proto = SideEffect.prototype;
-
-      _proto.componentDidMount = function componentDidMount() {
-        mountedInstances.push(this);
-        emitChange();
-      };
-
-      _proto.componentDidUpdate = function componentDidUpdate() {
-        emitChange();
-      };
-
-      _proto.componentWillUnmount = function componentWillUnmount() {
-        var index = mountedInstances.indexOf(this);
-        mountedInstances.splice(index, 1);
-        emitChange();
-      };
-
-      _proto.render = function render() {
-        return /*#__PURE__*/React__default$1['default'].createElement(WrappedComponent, this.props);
-      };
-
-      return SideEffect;
-    }(React.PureComponent);
-
-    _defineProperty$j(SideEffect, "displayName", "SideEffect(" + getDisplayName(WrappedComponent) + ")");
-
-    return SideEffect;
-  };
-}
-
-var toArray$1 = function (a) {
-  var ret = Array(a.length);
-
-  for (var i = 0; i < a.length; ++i) {
-    ret[i] = a[i];
-  }
-
-  return ret;
-};
-var asArray = function (a) {
-  return Array.isArray(a) ? a : [a];
-};
-
-var filterNested = function (nodes) {
-  var contained = new Set();
-  var l = nodes.length;
-
-  for (var i = 0; i < l; i += 1) {
-    for (var j = i + 1; j < l; j += 1) {
-      var position = nodes[i].compareDocumentPosition(nodes[j]);
-
-      if ((position & Node.DOCUMENT_POSITION_CONTAINED_BY) > 0) {
-        contained.add(j);
-      }
-
-      if ((position & Node.DOCUMENT_POSITION_CONTAINS) > 0) {
-        contained.add(i);
-      }
-    }
-  }
-
-  return nodes.filter(function (_, index) {
-    return !contained.has(index);
-  });
-};
-
-var getTopParent = function (node) {
-  return node.parentNode ? getTopParent(node.parentNode) : node;
-};
-
-var getAllAffectedNodes = function (node) {
-  var nodes = asArray(node);
-  return nodes.filter(Boolean).reduce(function (acc, currentNode) {
-    var group = currentNode.getAttribute(FOCUS_GROUP);
-    acc.push.apply(acc, group ? filterNested(toArray$1(getTopParent(currentNode).querySelectorAll("[" + FOCUS_GROUP + "=\"" + group + "\"]:not([" + FOCUS_DISABLED + "=\"disabled\"])"))) : [currentNode]);
-    return acc;
-  }, []);
-};
-
-var isElementHidden = function (computedStyle) {
-  if (!computedStyle || !computedStyle.getPropertyValue) {
-    return false;
-  }
-
-  return computedStyle.getPropertyValue('display') === 'none' || computedStyle.getPropertyValue('visibility') === 'hidden';
-};
-
-var isVisible = function (node) {
-  return !node || node === document || node && node.nodeType === Node.DOCUMENT_NODE || !isElementHidden(window.getComputedStyle(node, null)) && isVisible(node.parentNode && node.parentNode.nodeType === Node.DOCUMENT_FRAGMENT_NODE ? node.parentNode.host : node.parentNode);
-};
-var notHiddenInput = function (node) {
-  return !((node.tagName === 'INPUT' || node.tagName === 'BUTTON') && (node.type === 'hidden' || node.disabled));
-};
-var isGuard = function (node) {
-  return Boolean(node && node.dataset && node.dataset.focusGuard);
-};
-var isNotAGuard = function (node) {
-  return !isGuard(node);
-};
-var isDefined$1 = function (x) {
-  return Boolean(x);
-};
-
-var tabSort = function (a, b) {
-  var tabDiff = a.tabIndex - b.tabIndex;
-  var indexDiff = a.index - b.index;
-
-  if (tabDiff) {
-    if (!a.tabIndex) {
-      return 1;
-    }
-
-    if (!b.tabIndex) {
-      return -1;
-    }
-  }
-
-  return tabDiff || indexDiff;
-};
-var orderByTabIndex = function (nodes, filterNegative, keepGuards) {
-  return toArray$1(nodes).map(function (node, index) {
-    return {
-      node: node,
-      index: index,
-      tabIndex: keepGuards && node.tabIndex === -1 ? (node.dataset || {}).focusGuard ? 0 : -1 : node.tabIndex
-    };
-  }).filter(function (data) {
-    return !filterNegative || data.tabIndex >= 0;
-  }).sort(tabSort);
-};
-
-var tabbables = ['button:enabled', 'select:enabled', 'textarea:enabled', 'input:enabled', 'a[href]', 'area[href]', 'summary', 'iframe', 'object', 'embed', 'audio[controls]', 'video[controls]', '[tabindex]', '[contenteditable]', '[autofocus]'];
-
-var queryTabbables = tabbables.join(',');
-var queryGuardTabbables = queryTabbables + ", [data-focus-guard]";
-var getFocusables = function (parents, withGuards) {
-  return parents.reduce(function (acc, parent) {
-    return acc.concat(toArray$1(parent.querySelectorAll(withGuards ? queryGuardTabbables : queryTabbables)), parent.parentNode ? toArray$1(parent.parentNode.querySelectorAll(queryTabbables)).filter(function (node) {
-      return node === parent;
-    }) : []);
-  }, []);
-};
-var getParentAutofocusables = function (parent) {
-  var parentFocus = parent.querySelectorAll("[" + FOCUS_AUTO + "]");
-  return toArray$1(parentFocus).map(function (node) {
-    return getFocusables([node]);
-  }).reduce(function (acc, nodes) {
-    return acc.concat(nodes);
-  }, []);
-};
-
-var filterFocusable = function (nodes) {
-  return toArray$1(nodes).filter(function (node) {
-    return isVisible(node);
-  }).filter(function (node) {
-    return notHiddenInput(node);
-  });
-};
-var getTabbableNodes = function (topNodes, withGuards) {
-  return orderByTabIndex(filterFocusable(getFocusables(topNodes, withGuards)), true, withGuards);
-};
-var getAllTabbableNodes = function (topNodes) {
-  return orderByTabIndex(filterFocusable(getFocusables(topNodes)), false);
-};
-var parentAutofocusables = function (topNode) {
-  return filterFocusable(getParentAutofocusables(topNode));
-};
-
-var getParents = function (node, parents) {
-  if (parents === void 0) {
-    parents = [];
-  }
-
-  parents.push(node);
-
-  if (node.parentNode) {
-    getParents(node.parentNode, parents);
-  }
-
-  return parents;
-};
-
-var getCommonParent = function (nodeA, nodeB) {
-  var parentsA = getParents(nodeA);
-  var parentsB = getParents(nodeB);
-
-  for (var i = 0; i < parentsA.length; i += 1) {
-    var currentParent = parentsA[i];
-
-    if (parentsB.indexOf(currentParent) >= 0) {
-      return currentParent;
-    }
-  }
-
-  return false;
-};
-var getTopCommonParent = function (baseActiveElement, leftEntry, rightEntries) {
-  var activeElements = asArray(baseActiveElement);
-  var leftEntries = asArray(leftEntry);
-  var activeElement = activeElements[0];
-  var topCommon = false;
-  leftEntries.filter(Boolean).forEach(function (entry) {
-    topCommon = getCommonParent(topCommon || entry, entry) || topCommon;
-    rightEntries.filter(Boolean).forEach(function (subEntry) {
-      var common = getCommonParent(activeElement, subEntry);
-
-      if (common) {
-        if (!topCommon || common.contains(topCommon)) {
-          topCommon = common;
-        } else {
-          topCommon = getCommonParent(common, topCommon);
-        }
-      }
-    });
-  });
-  return topCommon;
-};
-var allParentAutofocusables = function (entries) {
-  return entries.reduce(function (acc, node) {
-    return acc.concat(parentAutofocusables(node));
-  }, []);
-};
-
-var getFocusabledIn = function (topNode) {
-  var entries = getAllAffectedNodes(topNode).filter(isNotAGuard);
-  var commonParent = getTopCommonParent(topNode, topNode, entries);
-  var outerNodes = getTabbableNodes([commonParent], true);
-  var innerElements = getTabbableNodes(entries).filter(function (_a) {
-    var node = _a.node;
-    return isNotAGuard(node);
-  }).map(function (_a) {
-    var node = _a.node;
-    return node;
-  });
-  return outerNodes.map(function (_a) {
-    var node = _a.node,
-        index = _a.index;
-    return {
-      node: node,
-      index: index,
-      lockItem: innerElements.indexOf(node) >= 0,
-      guard: isGuard(node)
-    };
-  });
-};
-
-var focusInFrame = function (frame) {
-  return frame === document.activeElement;
-};
-
-var focusInsideIframe = function (topNode) {
-  return Boolean(toArray$1(topNode.querySelectorAll('iframe')).some(function (node) {
-    return focusInFrame(node);
-  }));
-};
-
-var focusInside = function (topNode) {
-  var activeElement = document && document.activeElement;
-
-  if (!activeElement || activeElement.dataset && activeElement.dataset.focusGuard) {
-    return false;
-  }
-
-  return getAllAffectedNodes(topNode).reduce(function (result, node) {
-    return result || node.contains(activeElement) || focusInsideIframe(node);
-  }, false);
-};
-
-var focusIsHidden = function () {
-  return document && toArray$1(document.querySelectorAll("[" + FOCUS_ALLOW + "]")).some(function (node) {
-    return node.contains(document.activeElement);
-  });
-};
-
-var isRadio = function (node) {
-  return node.tagName === 'INPUT' && node.type === 'radio';
-};
-
-var findSelectedRadio = function (node, nodes) {
-  return nodes.filter(isRadio).filter(function (el) {
-    return el.name === node.name;
-  }).filter(function (el) {
-    return el.checked;
-  })[0] || node;
-};
-
-var correctNode = function (node, nodes) {
-  if (isRadio(node) && node.name) {
-    return findSelectedRadio(node, nodes);
-  }
-
-  return node;
-};
-var correctNodes = function (nodes) {
-  var resultSet = new Set();
-  nodes.forEach(function (node) {
-    return resultSet.add(correctNode(node, nodes));
-  });
-  return nodes.filter(function (node) {
-    return resultSet.has(node);
-  });
-};
-
-var pickFirstFocus = function (nodes) {
-  if (nodes[0] && nodes.length > 1) {
-    return correctNode(nodes[0], nodes);
-  }
-
-  return nodes[0];
-};
-var pickFocusable = function (nodes, index) {
-  if (nodes.length > 1) {
-    return nodes.indexOf(correctNode(nodes[index], nodes));
-  }
-
-  return index;
-};
-
-var NEW_FOCUS = 'NEW_FOCUS';
-var newFocus = function (innerNodes, outerNodes, activeElement, lastNode) {
-  var cnt = innerNodes.length;
-  var firstFocus = innerNodes[0];
-  var lastFocus = innerNodes[cnt - 1];
-  var isOnGuard = isGuard(activeElement);
-
-  if (innerNodes.indexOf(activeElement) >= 0) {
-    return undefined;
-  }
-
-  var activeIndex = outerNodes.indexOf(activeElement);
-  var lastIndex = lastNode ? outerNodes.indexOf(lastNode) : activeIndex;
-  var lastNodeInside = lastNode ? innerNodes.indexOf(lastNode) : -1;
-  var indexDiff = activeIndex - lastIndex;
-  var firstNodeIndex = outerNodes.indexOf(firstFocus);
-  var lastNodeIndex = outerNodes.indexOf(lastFocus);
-  var correctedNodes = correctNodes(outerNodes);
-  var correctedIndexDiff = correctedNodes.indexOf(activeElement) - (lastNode ? correctedNodes.indexOf(lastNode) : activeIndex);
-  var returnFirstNode = pickFocusable(innerNodes, 0);
-  var returnLastNode = pickFocusable(innerNodes, cnt - 1);
-
-  if (activeIndex === -1 || lastNodeInside === -1) {
-    return NEW_FOCUS;
-  }
-
-  if (!indexDiff && lastNodeInside >= 0) {
-    return lastNodeInside;
-  }
-
-  if (activeIndex <= firstNodeIndex && isOnGuard && Math.abs(indexDiff) > 1) {
-    return returnLastNode;
-  }
-
-  if (activeIndex >= lastNodeIndex && isOnGuard && Math.abs(indexDiff) > 1) {
-    return returnFirstNode;
-  }
-
-  if (indexDiff && Math.abs(correctedIndexDiff) > 1) {
-    return lastNodeInside;
-  }
-
-  if (activeIndex <= firstNodeIndex) {
-    return returnLastNode;
-  }
-
-  if (activeIndex > lastNodeIndex) {
-    return returnFirstNode;
-  }
-
-  if (indexDiff) {
-    if (Math.abs(indexDiff) > 1) {
-      return lastNodeInside;
-    }
-
-    return (cnt + lastNodeInside + indexDiff) % cnt;
-  }
-
-  return undefined;
-};
-
-var findAutoFocused = function (autoFocusables) {
-  return function (node) {
-    return node.autofocus || node.dataset && !!node.dataset.autofocus || autoFocusables.indexOf(node) >= 0;
-  };
-};
-
-var reorderNodes = function (srcNodes, dstNodes) {
-  var remap = new Map();
-  dstNodes.forEach(function (entity) {
-    return remap.set(entity.node, entity);
-  });
-  return srcNodes.map(function (node) {
-    return remap.get(node);
-  }).filter(isDefined$1);
-};
-
-var getFocusMerge = function (topNode, lastNode) {
-  var activeElement = document && document.activeElement;
-  var entries = getAllAffectedNodes(topNode).filter(isNotAGuard);
-  var commonParent = getTopCommonParent(activeElement || topNode, topNode, entries);
-  var anyFocusable = getAllTabbableNodes(entries);
-  var innerElements = getTabbableNodes(entries).filter(function (_a) {
-    var node = _a.node;
-    return isNotAGuard(node);
-  });
-
-  if (!innerElements[0]) {
-    innerElements = anyFocusable;
-
-    if (!innerElements[0]) {
-      return undefined;
-    }
-  }
-
-  var outerNodes = getAllTabbableNodes([commonParent]).map(function (_a) {
-    var node = _a.node;
-    return node;
-  });
-  var orderedInnerElements = reorderNodes(outerNodes, innerElements);
-  var innerNodes = orderedInnerElements.map(function (_a) {
-    var node = _a.node;
-    return node;
-  });
-  var newId = newFocus(innerNodes, outerNodes, activeElement, lastNode);
-
-  if (newId === NEW_FOCUS) {
-    var autoFocusable = anyFocusable.map(function (_a) {
-      var node = _a.node;
-      return node;
-    }).filter(findAutoFocused(allParentAutofocusables(entries)));
-    return {
-      node: autoFocusable && autoFocusable.length ? pickFirstFocus(autoFocusable) : pickFirstFocus(innerNodes)
-    };
-  }
-
-  if (newId === undefined) {
-    return newId;
-  }
-
-  return orderedInnerElements[newId];
-};
-
-var focusOn = function (target) {
-  target.focus();
-
-  if ('contentWindow' in target && target.contentWindow) {
-    target.contentWindow.focus();
-  }
-};
-var guardCount = 0;
-var lockDisabled = false;
-var setFocus = function (topNode, lastNode) {
-  var focusable = getFocusMerge(topNode, lastNode);
-
-  if (lockDisabled) {
-    return;
-  }
-
-  if (focusable) {
-    if (guardCount > 2) {
-      console.error('FocusLock: focus-fighting detected. Only one focus management system could be active. ' + 'See https://github.com/theKashey/focus-lock/#focus-fighting');
-      lockDisabled = true;
-      setTimeout(function () {
-        lockDisabled = false;
-      }, 1);
-      return;
-    }
-
-    guardCount++;
-    focusOn(focusable.node);
-    guardCount--;
-  }
-};
-
-function deferAction(action) {
-  // Hidding setImmediate from Webpack to avoid inserting polyfill
-  var _window = window,
-      setImmediate = _window.setImmediate;
-
-  if (typeof setImmediate !== 'undefined') {
-    setImmediate(action);
-  } else {
-    setTimeout(action, 1);
-  }
-}
-
-var focusOnBody = function focusOnBody() {
-  return document && document.activeElement === document.body;
-};
-
-var isFreeFocus = function isFreeFocus() {
-  return focusOnBody() || focusIsHidden();
-};
-
-var lastActiveTrap = null;
-var lastActiveFocus = null;
-var lastPortaledElement = null;
-var focusWasOutsideWindow = false;
-
-var defaultWhitelist = function defaultWhitelist() {
-  return true;
-};
-
-var focusWhitelisted = function focusWhitelisted(activeElement) {
-  return (lastActiveTrap.whiteList || defaultWhitelist)(activeElement);
-};
-
-var recordPortal = function recordPortal(observerNode, portaledElement) {
-  lastPortaledElement = {
-    observerNode: observerNode,
-    portaledElement: portaledElement
-  };
-};
-
-var focusIsPortaledPair = function focusIsPortaledPair(element) {
-  return lastPortaledElement && lastPortaledElement.portaledElement === element;
-};
-
-function autoGuard(startIndex, end, step, allNodes) {
-  var lastGuard = null;
-  var i = startIndex;
-
-  do {
-    var item = allNodes[i];
-
-    if (item.guard) {
-      if (item.node.dataset.focusAutoGuard) {
-        lastGuard = item;
-      }
-    } else if (item.lockItem) {
-      if (i !== startIndex) {
-        // we will tab to the next element
-        return;
-      }
-
-      lastGuard = null;
-    } else {
-      break;
-    }
-  } while ((i += step) !== end);
-
-  if (lastGuard) {
-    lastGuard.node.tabIndex = 0;
-  }
-}
-
-var extractRef$1 = function extractRef(ref) {
-  return ref && 'current' in ref ? ref.current : ref;
-};
-
-var focusWasOutside = function focusWasOutside(crossFrameOption) {
-  if (crossFrameOption) {
-    // with cross frame return true for any value
-    return Boolean(focusWasOutsideWindow);
-  } // in other case return only of focus went a while aho
-
-
-  return focusWasOutsideWindow === 'meanwhile';
-};
-
-var activateTrap = function activateTrap() {
-  var result = false;
-
-  if (lastActiveTrap) {
-    var _lastActiveTrap = lastActiveTrap,
-        observed = _lastActiveTrap.observed,
-        persistentFocus = _lastActiveTrap.persistentFocus,
-        autoFocus = _lastActiveTrap.autoFocus,
-        shards = _lastActiveTrap.shards,
-        crossFrame = _lastActiveTrap.crossFrame;
-    var workingNode = observed || lastPortaledElement && lastPortaledElement.portaledElement;
-    var activeElement = document && document.activeElement;
-
-    if (workingNode) {
-      var workingArea = [workingNode].concat(shards.map(extractRef$1).filter(Boolean));
-
-      if (!activeElement || focusWhitelisted(activeElement)) {
-        if (persistentFocus || focusWasOutside(crossFrame) || !isFreeFocus() || !lastActiveFocus && autoFocus) {
-          if (workingNode && !(focusInside(workingArea) || focusIsPortaledPair(activeElement))) {
-            if (document && !lastActiveFocus && activeElement && !autoFocus) {
-              // Check if blur() exists, which is missing on certain elements on IE
-              if (activeElement.blur) {
-                activeElement.blur();
-              }
-
-              document.body.focus();
-            } else {
-              result = setFocus(workingArea, lastActiveFocus);
-              lastPortaledElement = {};
-            }
-          }
-
-          focusWasOutsideWindow = false;
-          lastActiveFocus = document && document.activeElement;
-        }
-      }
-
-      if (document) {
-        var newActiveElement = document && document.activeElement;
-        var allNodes = getFocusabledIn(workingArea);
-        var focusedIndex = allNodes.map(function (_ref) {
-          var node = _ref.node;
-          return node;
-        }).indexOf(newActiveElement);
-
-        if (focusedIndex > -1) {
-          // remove old focus
-          allNodes.filter(function (_ref2) {
-            var guard = _ref2.guard,
-                node = _ref2.node;
-            return guard && node.dataset.focusAutoGuard;
-          }).forEach(function (_ref3) {
-            var node = _ref3.node;
-            return node.removeAttribute('tabIndex');
-          });
-          autoGuard(focusedIndex, allNodes.length, +1, allNodes);
-          autoGuard(focusedIndex, -1, -1, allNodes);
-        }
-      }
-    }
-  }
-
-  return result;
-};
-
-var onTrap = function onTrap(event) {
-  if (activateTrap() && event) {
-    // prevent scroll jump
-    event.stopPropagation();
-    event.preventDefault();
-  }
-};
-
-var onBlur = function onBlur() {
-  return deferAction(activateTrap);
-};
-
-var onFocus = function onFocus(event) {
-  // detect portal
-  var source = event.target;
-  var currentNode = event.currentTarget;
-
-  if (!currentNode.contains(source)) {
-    recordPortal(currentNode, source);
-  }
-};
-
-var FocusWatcher = function FocusWatcher() {
-  return null;
-};
-
-process.env.NODE_ENV !== "production" ? {
-  children: propTypes$4.node.isRequired
-} : {};
-
-var onWindowBlur = function onWindowBlur() {
-  focusWasOutsideWindow = 'just'; // using setTimeout to set  this variable after React/sidecar reaction
-
-  setTimeout(function () {
-    focusWasOutsideWindow = 'meanwhile';
-  }, 0);
-};
-
-var attachHandler = function attachHandler() {
-  document.addEventListener('focusin', onTrap, true);
-  document.addEventListener('focusout', onBlur);
-  window.addEventListener('blur', onWindowBlur);
-};
-
-var detachHandler = function detachHandler() {
-  document.removeEventListener('focusin', onTrap, true);
-  document.removeEventListener('focusout', onBlur);
-  window.removeEventListener('blur', onWindowBlur);
-};
-
-function reducePropsToState$1(propsList) {
-  return propsList.filter(function (_ref5) {
-    var disabled = _ref5.disabled;
-    return !disabled;
-  });
-}
-
-function handleStateChangeOnClient(traps) {
-  var trap = traps.slice(-1)[0];
-
-  if (trap && !lastActiveTrap) {
-    attachHandler();
-  }
-
-  var lastTrap = lastActiveTrap;
-  var sameTrap = lastTrap && trap && trap.id === lastTrap.id;
-  lastActiveTrap = trap;
-
-  if (lastTrap && !sameTrap) {
-    lastTrap.onDeactivation(); // return focus only of last trap was removed
-
-    if (!traps.filter(function (_ref6) {
-      var id = _ref6.id;
-      return id === lastTrap.id;
-    }).length) {
-      // allow defer is no other trap is awaiting restore
-      lastTrap.returnFocus(!trap);
-    }
-  }
-
-  if (trap) {
-    lastActiveFocus = null;
-
-    if (!sameTrap || lastTrap.observed !== trap.observed) {
-      trap.onActivation();
-    }
-
-    activateTrap();
-    deferAction(activateTrap);
-  } else {
-    detachHandler();
-    lastActiveFocus = null;
-  }
-} // bind medium
-
-
-mediumFocus.assignSyncMedium(onFocus);
-mediumBlur.assignMedium(onBlur);
-mediumEffect.assignMedium(function (cb) {
-  return cb({
-    moveFocusInside: setFocus,
-    focusInside: focusInside
-  });
-});
-var FocusTrap = withSideEffect$1(reducePropsToState$1, handleStateChangeOnClient)(FocusWatcher);
-
-/* that would be a BREAKING CHANGE!
-// delaying sidecar execution till the first usage
-const RequireSideCar = (props) => {
-  // eslint-disable-next-line global-require
-  const SideCar = require('./Trap').default;
-  return <SideCar {...props} />;
-};
-*/
-
-var FocusLockCombination = /*#__PURE__*/React__namespace.forwardRef(function FocusLockUICombination(props, ref) {
-  return /*#__PURE__*/React__namespace.createElement(FocusLock$1, _extends$X({
-    sideCar: FocusTrap,
-    ref: ref
-  }, props));
-});
-
-var _ref$1 = FocusLock$1.propTypes || {};
-    _ref$1.sideCar;
-    var propTypes$3 = _objectWithoutPropertiesLoose$h(_ref$1, ["sideCar"]);
-
-FocusLockCombination.propTypes = process.env.NODE_ENV !== "production" ? propTypes$3 : {};
-
-// Number assertions
-var __DEV__$3 = process.env.NODE_ENV !== "production";
-process.env.NODE_ENV === "test";
-
-function getOwnerDocument$1(node) {
-  var _node$ownerDocument;
-
-  return node instanceof Element ? (_node$ownerDocument = node.ownerDocument) != null ? _node$ownerDocument : document : document;
-}
-
-// Really great work done by Diego Haz on this one
-var hasTabIndex = element => element.hasAttribute("tabindex");
-function isDisabled(element) {
-  return Boolean(element.getAttribute("disabled")) === true || Boolean(element.getAttribute("aria-disabled")) === true;
-}
-function isInputElement$1(element) {
-  return isHTMLElement$2(element) && element.tagName.toLowerCase() === "input" && "select" in element;
-}
-function isActiveElement$1(element) {
-  var doc = element instanceof HTMLElement ? getOwnerDocument$1(element) : document;
-  return doc.activeElement === element;
-}
-function isHTMLElement$2(element) {
-  return element instanceof HTMLElement;
-}
-function isHidden(element) {
-  if (element.parentElement && isHidden(element.parentElement)) return true;
-  return element.hidden;
-}
-function isContentEditable(element) {
-  var value = element.getAttribute("contenteditable");
-  return value !== "false" && value != null;
-}
-function isFocusable$1(element) {
-  if (!isHTMLElement$2(element) || isHidden(element) || isDisabled(element)) {
-    return false;
-  }
-
-  var {
-    localName
-  } = element;
-  var focusableTags = ["input", "select", "textarea", "button"];
-  if (focusableTags.indexOf(localName) >= 0) return true;
-  var others = {
-    a: () => element.hasAttribute("href"),
-    audio: () => element.hasAttribute("controls"),
-    video: () => element.hasAttribute("controls")
-  };
-
-  if (localName in others) {
-    return others[localName]();
-  }
-
-  if (isContentEditable(element)) return true;
-  return hasTabIndex(element);
-}
-
-var focusableElList = ["input:not([disabled])", "select:not([disabled])", "textarea:not([disabled])", "embed", "iframe", "object", "a[href]", "area[href]", "button:not([disabled])", "[tabindex]", "audio[controls]", "video[controls]", "*[tabindex]:not([aria-disabled])", "*[contenteditable]"];
-var focusableElSelector = focusableElList.join();
-function getAllFocusable(container) {
-  var focusableEls = Array.from(container.querySelectorAll(focusableElSelector));
-  focusableEls.unshift(container);
-  return focusableEls.filter(isFocusable$1).filter(el => window.getComputedStyle(el).display !== "none");
-}
-
-/* eslint-disable no-nested-ternary */
-function once$3(fn) {
-  var result;
-  return function func() {
-    if (fn) {
-      for (var _len5 = arguments.length, args = new Array(_len5), _key5 = 0; _key5 < _len5; _key5++) {
-        args[_key5] = arguments[_key5];
-      }
-
-      result = fn.apply(this, args);
-      fn = null;
-    }
-
-    return result;
-  };
-}
-var warn$2 = once$3(options => () => {
-  var {
-    condition,
-    message
-  } = options;
-
-  if (condition && __DEV__$3) {
-    console.warn(message);
-  }
-});
-
-// Original licensing for the following methods can be found in the
-function focus$1(element, options) {
-  if (options === void 0) {
-    options = {};
-  }
-
-  var {
-    isActive = isActiveElement$1,
-    nextTick,
-    preventScroll = true,
-    selectTextIfInput = true
-  } = options;
-  if (!element || isActive(element)) return -1;
-
-  function triggerFocus() {
-    if (!element) {
-      warn$2({
-        condition: true,
-        message: "[chakra-ui]: can't call focus() on `null` or `undefined` element"
-      });
-      return;
-    }
-
-    if (supportsPreventScroll$1()) {
-      element.focus({
-        preventScroll
-      });
-    } else {
-      element.focus();
-
-      if (preventScroll) {
-        var scrollableElements = getScrollableElements$1(element);
-        restoreScrollPosition$1(scrollableElements);
-      }
-    }
-
-    if (isInputElement$1(element) && selectTextIfInput) {
-      element.select();
-    }
-  }
-
-  if (nextTick) {
-    return requestAnimationFrame(triggerFocus);
-  }
-
-  triggerFocus();
-  return -1;
-}
-var supportsPreventScrollCached$1 = null;
-
-function supportsPreventScroll$1() {
-  if (supportsPreventScrollCached$1 == null) {
-    supportsPreventScrollCached$1 = false;
-
-    try {
-      var div = document.createElement("div");
-      div.focus({
-        get preventScroll() {
-          supportsPreventScrollCached$1 = true;
-          return true;
-        }
-
-      });
-    } catch (e) {// Ignore
-    }
-  }
-
-  return supportsPreventScrollCached$1;
-}
-
-function getScrollableElements$1(element) {
-  var doc = getOwnerDocument$1(element);
-  var parent = element.parentNode;
-  var scrollableElements = [];
-  var rootScrollingElement = doc.scrollingElement || doc.documentElement;
-
-  while (parent instanceof HTMLElement && parent !== rootScrollingElement) {
-    if (parent.offsetHeight < parent.scrollHeight || parent.offsetWidth < parent.scrollWidth) {
-      scrollableElements.push({
-        element: parent,
-        scrollTop: parent.scrollTop,
-        scrollLeft: parent.scrollLeft
-      });
-    }
-
-    parent = parent.parentNode;
-  }
-
-  if (rootScrollingElement instanceof HTMLElement) {
-    scrollableElements.push({
-      element: rootScrollingElement,
-      scrollTop: rootScrollingElement.scrollTop,
-      scrollLeft: rootScrollingElement.scrollLeft
-    });
-  }
-
-  return scrollableElements;
-}
-
-function restoreScrollPosition$1(scrollableElements) {
-  for (var {
-    element,
-    scrollTop,
-    scrollLeft
-  } of scrollableElements) {
-    element.scrollTop = scrollTop;
-    element.scrollLeft = scrollLeft;
-  }
-}
-
-var FocusLock = props => {
-  var {
-    initialFocusRef,
-    finalFocusRef,
-    contentRef,
-    restoreFocus,
-    children,
-    isDisabled,
-    autoFocus,
-    persistentFocus,
-    lockFocusAcrossFrames
-  } = props;
-  var onActivation = React__namespace.useCallback(() => {
-    if (initialFocusRef != null && initialFocusRef.current) {
-      initialFocusRef.current.focus();
-    } else if (contentRef != null && contentRef.current) {
-      var focusables = getAllFocusable(contentRef.current);
-
-      if (focusables.length === 0) {
-        focus$1(contentRef.current, {
-          nextTick: true
-        });
-      }
-    }
-  }, [initialFocusRef, contentRef]);
-  var onDeactivation = React__namespace.useCallback(() => {
-    var _finalFocusRef$curren;
-
-    finalFocusRef == null ? void 0 : (_finalFocusRef$curren = finalFocusRef.current) == null ? void 0 : _finalFocusRef$curren.focus();
-  }, [finalFocusRef]);
-  var returnFocus = restoreFocus && !finalFocusRef;
-  return /*#__PURE__*/React__namespace.createElement(FocusLockCombination, {
-    crossFrame: lockFocusAcrossFrames,
-    persistentFocus: persistentFocus,
-    autoFocus: autoFocus,
-    disabled: isDisabled,
-    onActivation: onActivation,
-    onDeactivation: onDeactivation,
-    returnFocus: returnFocus
-  }, children);
-};
-
-if (__DEV__$3) {
-  FocusLock.displayName = "FocusLock";
-}
-
-// Number assertions
-var __DEV__$2 = process.env.NODE_ENV !== "production";
-process.env.NODE_ENV === "test";
-
-var cx$2 = function cx() {
-  for (var _len = arguments.length, classNames = new Array(_len), _key = 0; _key < _len; _key++) {
-    classNames[_key] = arguments[_key];
-  }
-
-  return classNames.filter(Boolean).join(" ");
-};
-
-/* eslint-disable no-nested-ternary */
-function callAllHandlers$1() {
-  for (var _len2 = arguments.length, fns = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-    fns[_key2] = arguments[_key2];
-  }
-
-  return function func(event) {
-    fns.some(fn => {
-      fn == null ? void 0 : fn(event);
-      return event == null ? void 0 : event.defaultPrevented;
-    });
-  };
-}
-
-var zeroRightClassName = 'right-scroll-bar-position';
-var fullWidthClassName = 'width-before-scroll-bar';
-var noScrollbarsClassName = 'with-scroll-bars-hidden';
-var removedBarSizeVariable = '--removed-body-scroll-bar-size';
-
-var effectCar = createSidecarMedium();
-
-var nothing = function () {
-  return;
-};
-/**
- * Removes scrollbar from the page and contain the scroll within the Lock
- */
-
-
-var RemoveScroll = React__namespace.forwardRef(function (props, parentRef) {
-  var ref = React__namespace.useRef(null);
-
-  var _a = React__namespace.useState({
-    onScrollCapture: nothing,
-    onWheelCapture: nothing,
-    onTouchMoveCapture: nothing
-  }),
-      callbacks = _a[0],
-      setCallbacks = _a[1];
-
-  var forwardProps = props.forwardProps,
-      children = props.children,
-      className = props.className,
-      removeScrollBar = props.removeScrollBar,
-      enabled = props.enabled,
-      shards = props.shards,
-      sideCar = props.sideCar,
-      noIsolation = props.noIsolation,
-      inert = props.inert,
-      allowPinchZoom = props.allowPinchZoom,
-      _b = props.as,
-      Container = _b === void 0 ? 'div' : _b,
-      rest = __rest$1(props, ["forwardProps", "children", "className", "removeScrollBar", "enabled", "shards", "sideCar", "noIsolation", "inert", "allowPinchZoom", "as"]);
-
-  var SideCar = sideCar;
-  var containerRef = useMergeRefs([ref, parentRef]);
-
-  var containerProps = __assign$1({}, rest, callbacks);
-
-  return React__namespace.createElement(React__namespace.Fragment, null, enabled && React__namespace.createElement(SideCar, {
-    sideCar: effectCar,
-    removeScrollBar: removeScrollBar,
-    shards: shards,
-    noIsolation: noIsolation,
-    inert: inert,
-    setCallbacks: setCallbacks,
-    allowPinchZoom: !!allowPinchZoom,
-    lockRef: ref
-  }), forwardProps ? React__namespace.cloneElement(React__namespace.Children.only(children), __assign$1({}, containerProps, {
-    ref: containerRef
-  })) : React__namespace.createElement(Container, __assign$1({}, containerProps, {
-    className: className,
-    ref: containerRef
-  }), children));
-});
-RemoveScroll.defaultProps = {
-  enabled: true,
-  removeScrollBar: true,
-  inert: false
-};
-RemoveScroll.classNames = {
-  fullWidth: fullWidthClassName,
-  zeroRight: zeroRightClassName
-};
-
-var getNonce = function () {
-
-  if (typeof __webpack_nonce__ !== 'undefined') {
-    return __webpack_nonce__;
-  }
-
-  return undefined;
-};
-
-function makeStyleTag() {
-  if (!document) return null;
-  var tag = document.createElement('style');
-  tag.type = 'text/css';
-  var nonce = getNonce();
-
-  if (nonce) {
-    tag.setAttribute('nonce', nonce);
-  }
-
-  return tag;
-}
-
-function injectStyles(tag, css) {
-  if (tag.styleSheet) {
-    tag.styleSheet.cssText = css;
-  } else {
-    tag.appendChild(document.createTextNode(css));
-  }
-}
-
-function insertStyleTag(tag) {
-  var head = document.head || document.getElementsByTagName('head')[0];
-  head.appendChild(tag);
-}
-
-var stylesheetSingleton = function () {
-  var counter = 0;
-  var stylesheet = null;
-  return {
-    add: function (style) {
-      if (counter == 0) {
-        if (stylesheet = makeStyleTag()) {
-          injectStyles(stylesheet, style);
-          insertStyleTag(stylesheet);
-        }
-      }
-
-      counter++;
-    },
-    remove: function () {
-      counter--;
-
-      if (!counter && stylesheet) {
-        stylesheet.parentNode && stylesheet.parentNode.removeChild(stylesheet);
-        stylesheet = null;
-      }
-    }
-  };
-};
-
-var styleHookSingleton = function () {
-  var sheet = stylesheetSingleton();
-  return function (styles) {
-    React__namespace.useEffect(function () {
-      sheet.add(styles);
-      return function () {
-        sheet.remove();
-      };
-    }, []);
-  };
-};
-
-var styleSingleton = function () {
-  var useStyle = styleHookSingleton();
-
-  var Sheet = function (_a) {
-    var styles = _a.styles;
-    useStyle(styles);
-    return null;
-  };
-
-  return Sheet;
-};
-
-var zeroGap = {
-  left: 0,
-  top: 0,
-  right: 0,
-  gap: 0
-};
-
-var parse$1 = function (x) {
-  return parseInt(x || '', 10) || 0;
-};
-
-var getOffset = function (gapMode) {
-  var cs = window.getComputedStyle(document.body);
-  var left = cs[gapMode === 'padding' ? 'paddingLeft' : 'marginLeft'];
-  var top = cs[gapMode === 'padding' ? 'paddingTop' : 'marginTop'];
-  var right = cs[gapMode === 'padding' ? 'paddingRight' : 'marginRight'];
-  return [parse$1(left), parse$1(top), parse$1(right)];
-};
-
-var getGapWidth = function (gapMode) {
-  if (gapMode === void 0) {
-    gapMode = 'margin';
-  }
-
-  if (typeof window === 'undefined') {
-    return zeroGap;
-  }
-
-  var offsets = getOffset(gapMode);
-  var documentWidth = document.documentElement.clientWidth;
-  var windowWidth = window.innerWidth;
-  return {
-    left: offsets[0],
-    top: offsets[1],
-    right: offsets[2],
-    gap: Math.max(0, windowWidth - documentWidth + offsets[2] - offsets[0])
-  };
-};
-
-var Style = styleSingleton();
-
-var getStyles = function (_a, allowRelative, gapMode, important) {
-  var left = _a.left,
-      top = _a.top,
-      right = _a.right,
-      gap = _a.gap;
-
-  if (gapMode === void 0) {
-    gapMode = 'margin';
-  }
-
-  return "\n  ." + noScrollbarsClassName + " {\n   overflow: hidden " + important + ";\n   padding-right: " + gap + "px " + important + ";\n  }\n  body {\n    overflow: hidden " + important + ";\n    " + [allowRelative && "position: relative " + important + ";", gapMode === 'margin' && "\n    padding-left: " + left + "px;\n    padding-top: " + top + "px;\n    padding-right: " + right + "px;\n    margin-left:0;\n    margin-top:0;\n    margin-right: " + gap + "px " + important + ";\n    ", gapMode === 'padding' && "padding-right: " + gap + "px " + important + ";"].filter(Boolean).join('') + "\n  }\n  \n  ." + zeroRightClassName + " {\n    right: " + gap + "px " + important + ";\n  }\n  \n  ." + fullWidthClassName + " {\n    margin-right: " + gap + "px " + important + ";\n  }\n  \n  ." + zeroRightClassName + " ." + zeroRightClassName + " {\n    right: 0 " + important + ";\n  }\n  \n  ." + fullWidthClassName + " ." + fullWidthClassName + " {\n    margin-right: 0 " + important + ";\n  }\n  \n  body {\n    " + removedBarSizeVariable + ": " + gap + "px;\n  }\n";
-};
-
-var RemoveScrollBar = function (props) {
-  var _a = React__namespace.useState(getGapWidth(props.gapMode)),
-      gap = _a[0],
-      setGap = _a[1];
-
-  React__namespace.useEffect(function () {
-    setGap(getGapWidth(props.gapMode));
-  }, [props.gapMode]);
-  var noRelative = props.noRelative,
-      noImportant = props.noImportant,
-      _b = props.gapMode,
-      gapMode = _b === void 0 ? 'margin' : _b;
-  return React__namespace.createElement(Style, {
-    styles: getStyles(gap, !noRelative, gapMode, !noImportant ? "!important" : '')
-  });
-};
-
-var elementCouldBeVScrolled = function (node) {
-  var styles = window.getComputedStyle(node);
-  return styles.overflowY !== 'hidden' && // not-not-scrollable
-  !(styles.overflowY === styles.overflowX && styles.overflowY === 'visible') // scrollable
-  ;
-};
-
-var elementCouldBeHScrolled = function (node) {
-  var styles = window.getComputedStyle(node);
-  return styles.overflowX !== 'hidden' && // not-not-scrollable
-  !(styles.overflowY === styles.overflowX && styles.overflowX === 'visible') // scrollable
-  ;
-};
-
-var locationCouldBeScrolled = function (axis, node) {
-  var current = node;
-
-  do {
-    var isScrollable = elementCouldBeScrolled(axis, current);
-
-    if (isScrollable) {
-      var _a = getScrollVariables(axis, current),
-          s = _a[1],
-          d = _a[2];
-
-      if (s > d) {
-        return true;
-      }
-    }
-
-    current = current.parentNode;
-  } while (current && current !== document.body);
-
-  return false;
-};
-
-var getVScrollVariables = function (_a) {
-  var scrollTop = _a.scrollTop,
-      scrollHeight = _a.scrollHeight,
-      clientHeight = _a.clientHeight;
-  return [scrollTop, scrollHeight, clientHeight];
-};
-
-var getHScrollVariables = function (_a) {
-  var scrollLeft = _a.scrollLeft,
-      scrollWidth = _a.scrollWidth,
-      clientWidth = _a.clientWidth;
-  return [scrollLeft, scrollWidth, clientWidth];
-};
-
-var elementCouldBeScrolled = function (axis, node) {
-  return axis === 'v' ? elementCouldBeVScrolled(node) : elementCouldBeHScrolled(node);
-};
-
-var getScrollVariables = function (axis, node) {
-  return axis === 'v' ? getVScrollVariables(node) : getHScrollVariables(node);
-};
-
-var handleScroll = function (axis, endTarget, event, sourceDelta, noOverscroll) {
-  var delta = sourceDelta; // find scrollable target
-
-  var target = event.target;
-  var targetInLock = endTarget.contains(target);
-  var shouldCancelScroll = false;
-  var isDeltaPositive = delta > 0;
-  var availableScroll = 0;
-  var availableScrollTop = 0;
-
-  do {
-    var _a = getScrollVariables(axis, target),
-        position = _a[0],
-        scroll_1 = _a[1],
-        capacity = _a[2];
-
-    var elementScroll = scroll_1 - capacity - position;
-
-    if (position || elementScroll) {
-      if (elementCouldBeScrolled(axis, target)) {
-        availableScroll += elementScroll;
-        availableScrollTop += position;
-      }
-    }
-
-    target = target.parentNode;
-  } while ( // portaled content
-  !targetInLock && target !== document.body || // self content
-  targetInLock && (endTarget.contains(target) || endTarget === target));
-
-  if (isDeltaPositive && (noOverscroll && availableScroll === 0 || !noOverscroll && delta > availableScroll)) {
-    shouldCancelScroll = true;
-  } else if (!isDeltaPositive && (noOverscroll && availableScrollTop === 0 || !noOverscroll && -delta > availableScrollTop)) {
-    shouldCancelScroll = true;
-  }
-
-  return shouldCancelScroll;
-};
-
-var passiveSupported = false;
-
-if (typeof window !== 'undefined') {
-  try {
-    var options$1 = Object.defineProperty({}, 'passive', {
-      get: function () {
-        passiveSupported = true;
-        return true;
-      }
-    });
-    window.addEventListener('test', options$1, options$1);
-    window.removeEventListener('test', options$1, options$1);
-  } catch (err) {
-    passiveSupported = false;
-  }
-}
-
-var nonPassive = passiveSupported ? {
-  passive: false
-} : false;
-
-var getTouchXY = function (event) {
-  return 'changedTouches' in event ? [event.changedTouches[0].clientX, event.changedTouches[0].clientY] : [0, 0];
-};
-var getDeltaXY = function (event) {
-  return [event.deltaX, event.deltaY];
-};
-
-var extractRef = function (ref) {
-  return ref && 'current' in ref ? ref.current : ref;
-};
-
-var deltaCompare = function (x, y) {
-  return x[0] === y[0] && x[1] === y[1];
-};
-
-var generateStyle = function (id) {
-  return "\n  .block-interactivity-" + id + " {pointer-events: none;}\n  .allow-interactivity-" + id + " {pointer-events: all;}\n";
-};
-
-var idCounter = 0;
-var lockStack = [];
-function RemoveScrollSideCar(props) {
-  var shouldPreventQueue = React__namespace.useRef([]);
-  var touchStartRef = React__namespace.useRef([0, 0]);
-  var activeAxis = React__namespace.useRef();
-  var id = React__namespace.useState(idCounter++)[0];
-  var Style = React__namespace.useState(function () {
-    return styleSingleton();
-  })[0];
-  var lastProps = React__namespace.useRef(props);
-  React__namespace.useEffect(function () {
-    lastProps.current = props;
-  }, [props]);
-  React__namespace.useEffect(function () {
-    if (props.inert) {
-      document.body.classList.add("block-interactivity-" + id);
-      var allow_1 = [props.lockRef.current].concat((props.shards || []).map(extractRef)).filter(Boolean);
-      allow_1.forEach(function (el) {
-        return el.classList.add("allow-interactivity-" + id);
-      });
-      return function () {
-        document.body.classList.remove("block-interactivity-" + id);
-        allow_1.forEach(function (el) {
-          return el.classList.remove("allow-interactivity-" + id);
-        });
-      };
-    }
-
-    return;
-  }, [props.inert, props.lockRef.current, props.shards]);
-  var shouldCancelEvent = React__namespace.useCallback(function (event, parent) {
-    if ('touches' in event && event.touches.length === 2) {
-      return !lastProps.current.allowPinchZoom;
-    }
-
-    var touch = getTouchXY(event);
-    var touchStart = touchStartRef.current;
-    var deltaX = 'deltaX' in event ? event.deltaX : touchStart[0] - touch[0];
-    var deltaY = 'deltaY' in event ? event.deltaY : touchStart[1] - touch[1];
-    var currentAxis;
-    var target = event.target;
-    var moveDirection = Math.abs(deltaX) > Math.abs(deltaY) ? 'h' : 'v';
-    var canBeScrolledInMainDirection = locationCouldBeScrolled(moveDirection, target);
-
-    if (!canBeScrolledInMainDirection) {
-      return true;
-    }
-
-    if (canBeScrolledInMainDirection) {
-      currentAxis = moveDirection;
-    } else {
-      currentAxis = moveDirection === 'v' ? 'h' : 'v';
-      canBeScrolledInMainDirection = locationCouldBeScrolled(moveDirection, target); // other axis might be not scrollable
-    }
-
-    if (!canBeScrolledInMainDirection) {
-      return false;
-    }
-
-    if (!activeAxis.current && 'changedTouches' in event && (deltaX || deltaY)) {
-      activeAxis.current = currentAxis;
-    }
-
-    if (!currentAxis) {
-      return true;
-    }
-
-    var cancelingAxis = activeAxis.current || currentAxis;
-    return handleScroll(cancelingAxis, parent, event, cancelingAxis === 'h' ? deltaX : deltaY, true);
-  }, []);
-  var shouldPrevent = React__namespace.useCallback(function (_event) {
-    var event = _event;
-
-    if (!lockStack.length || lockStack[lockStack.length - 1] !== Style) {
-      // not the last active
-      return;
-    }
-
-    var delta = 'deltaY' in event ? getDeltaXY(event) : getTouchXY(event);
-    var sourceEvent = shouldPreventQueue.current.filter(function (e) {
-      return e.name === event.type && e.target === event.target && deltaCompare(e.delta, delta);
-    })[0]; // self event, and should be canceled
-
-    if (sourceEvent && sourceEvent.should) {
-      event.preventDefault();
-      return;
-    } // outside or shard event
-
-
-    if (!sourceEvent) {
-      var shardNodes = (lastProps.current.shards || []).map(extractRef).filter(Boolean).filter(function (node) {
-        return node.contains(event.target);
-      });
-      var shouldStop = shardNodes.length > 0 ? shouldCancelEvent(event, shardNodes[0]) : !lastProps.current.noIsolation;
-
-      if (shouldStop) {
-        event.preventDefault();
-      }
-    }
-  }, []);
-  var shouldCancel = React__namespace.useCallback(function (name, delta, target, should) {
-    var event = {
-      name: name,
-      delta: delta,
-      target: target,
-      should: should
-    };
-    shouldPreventQueue.current.push(event);
-    setTimeout(function () {
-      shouldPreventQueue.current = shouldPreventQueue.current.filter(function (e) {
-        return e !== event;
-      });
-    }, 1);
-  }, []);
-  var scrollTouchStart = React__namespace.useCallback(function (event) {
-    touchStartRef.current = getTouchXY(event);
-    activeAxis.current = undefined;
-  }, []);
-  var scrollWheel = React__namespace.useCallback(function (event) {
-    shouldCancel(event.type, getDeltaXY(event), event.target, shouldCancelEvent(event, props.lockRef.current));
-  }, []);
-  var scrollTouchMove = React__namespace.useCallback(function (event) {
-    shouldCancel(event.type, getTouchXY(event), event.target, shouldCancelEvent(event, props.lockRef.current));
-  }, []);
-  React__namespace.useEffect(function () {
-    lockStack.push(Style);
-    props.setCallbacks({
-      onScrollCapture: scrollWheel,
-      onWheelCapture: scrollWheel,
-      onTouchMoveCapture: scrollTouchMove
-    });
-    document.addEventListener('wheel', shouldPrevent, nonPassive);
-    document.addEventListener('touchmove', shouldPrevent, nonPassive);
-    document.addEventListener('touchstart', scrollTouchStart, nonPassive);
-    return function () {
-      lockStack = lockStack.filter(function (inst) {
-        return inst !== Style;
-      });
-      document.removeEventListener('wheel', shouldPrevent, nonPassive);
-      document.removeEventListener('touchmove', shouldPrevent, nonPassive);
-      document.removeEventListener('touchstart', scrollTouchStart, nonPassive);
-    };
-  }, []);
-  var removeScrollBar = props.removeScrollBar,
-      inert = props.inert;
-  return React__namespace.createElement(React__namespace.Fragment, null, inert ? React__namespace.createElement(Style, {
-    styles: generateStyle(id)
-  }) : null, removeScrollBar ? React__namespace.createElement(RemoveScrollBar, {
-    gapMode: "margin"
-  }) : null);
-}
-
-var SideCar = exportSidecar(effectCar, RemoveScrollSideCar);
-
-var ReactRemoveScroll = React__namespace.forwardRef(function (props, ref) {
-  return React__namespace.createElement(RemoveScroll, __assign$1({}, props, {
-    ref: ref,
-    sideCar: SideCar
-  }));
-});
-ReactRemoveScroll.classNames = RemoveScroll.classNames;
-
-function _objectWithoutPropertiesLoose$g(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-
-function _extends$p() {
-  _extends$p = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends$p.apply(this, arguments);
-}
-var transitions = {
-  slideInBottom: _extends$p({}, slideFadeConfig, {
-    custom: {
-      offsetY: 16,
-      reverse: true
-    }
-  }),
-  slideInRight: _extends$p({}, slideFadeConfig, {
-    custom: {
-      offsetX: 16,
-      reverse: true
-    }
-  }),
-  scale: _extends$p({}, scaleFadeConfig, {
-    custom: {
-      initialScale: 0.95,
-      reverse: true
-    }
-  }),
-  none: {}
-};
-var Motion = chakra(motion.section);
-var ModalTransition = /*#__PURE__*/React__namespace.forwardRef((props, ref) => {
-  var {
-    preset
-  } = props,
-      rest = _objectWithoutPropertiesLoose$g(props, ["preset"]);
-
-  var motionProps = transitions[preset];
-  return /*#__PURE__*/React__namespace.createElement(Motion, _extends$p({
-    ref: ref
-  }, motionProps, rest));
-});
-
-var getDefaultParent = function (originalTarget) {
-  if (typeof document === 'undefined') {
-    return null;
-  }
-
-  var sampleTarget = Array.isArray(originalTarget) ? originalTarget[0] : originalTarget;
-  return sampleTarget.ownerDocument.body;
-};
-
-var counterMap = new WeakMap();
-var uncontrolledNodes = new WeakMap();
-var markerMap = {};
-var lockCount = 0;
-var hideOthers = function (originalTarget, parentNode, markerName) {
-  if (parentNode === void 0) {
-    parentNode = getDefaultParent(originalTarget);
-  }
-
-  if (markerName === void 0) {
-    markerName = "data-aria-hidden";
-  }
-
-  var targets = Array.isArray(originalTarget) ? originalTarget : [originalTarget];
-
-  if (!markerMap[markerName]) {
-    markerMap[markerName] = new WeakMap();
-  }
-
-  var markerCounter = markerMap[markerName];
-  var hiddenNodes = [];
-  var elementsToKeep = new Set();
-
-  var keep = function (el) {
-    if (!el || elementsToKeep.has(el)) {
-      return;
-    }
-
-    elementsToKeep.add(el);
-    keep(el.parentNode);
-  };
-
-  targets.forEach(keep);
-
-  var deep = function (parent) {
-    if (!parent || targets.indexOf(parent) >= 0) {
-      return;
-    }
-
-    Array.prototype.forEach.call(parent.children, function (node) {
-      if (elementsToKeep.has(node)) {
-        deep(node);
-      } else {
-        var attr = node.getAttribute('aria-hidden');
-        var alreadyHidden = attr !== null && attr !== 'false';
-        var counterValue = (counterMap.get(node) || 0) + 1;
-        var markerValue = (markerCounter.get(node) || 0) + 1;
-        counterMap.set(node, counterValue);
-        markerCounter.set(node, markerValue);
-        hiddenNodes.push(node);
-
-        if (counterValue === 1 && alreadyHidden) {
-          uncontrolledNodes.set(node, true);
-        }
-
-        if (markerValue === 1) {
-          node.setAttribute(markerName, 'true');
-        }
-
-        if (!alreadyHidden) {
-          node.setAttribute('aria-hidden', 'true');
-        }
-      }
-    });
-  };
-
-  deep(parentNode);
-  elementsToKeep.clear();
-  lockCount++;
-  return function () {
-    hiddenNodes.forEach(function (node) {
-      var counterValue = counterMap.get(node) - 1;
-      var markerValue = markerCounter.get(node) - 1;
-      counterMap.set(node, counterValue);
-      markerCounter.set(node, markerValue);
-
-      if (!counterValue) {
-        if (!uncontrolledNodes.has(node)) {
-          node.removeAttribute('aria-hidden');
-        }
-
-        uncontrolledNodes.delete(node);
-      }
-
-      if (!markerValue) {
-        node.removeAttribute(markerName);
-      }
-    });
-    lockCount--;
-
-    if (!lockCount) {
-      counterMap = new WeakMap();
-      counterMap = new WeakMap();
-      uncontrolledNodes = new WeakMap();
-      markerMap = {};
-    }
-  };
-};
-
 function _defineProperty$i(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
@@ -31868,609 +19443,6 @@ function _defineProperty$i(obj, key, value) {
   }
 
   return obj;
-}
-/**
- * Proper state management for nested modals.
- * Simplified, but inspired by material-ui's ModalManager class.
- */
-
-class ModalManager {
-  constructor() {
-    _defineProperty$i(this, "modals", void 0);
-
-    this.modals = [];
-  }
-
-  add(modal) {
-    this.modals.push(modal);
-  }
-
-  remove(modal) {
-    this.modals = this.modals.filter(_modal => _modal !== modal);
-  }
-
-  isTopModal(modal) {
-    var topmostModal = this.modals[this.modals.length - 1];
-    return topmostModal === modal;
-  }
-
-}
-
-var manager = new ModalManager();
-function useModalManager(ref, isOpen) {
-  React.useEffect(() => {
-    if (isOpen) {
-      manager.add(ref);
-    }
-
-    return () => {
-      manager.remove(ref);
-    };
-  }, [isOpen, ref]);
-}
-
-function _extends$o() {
-  _extends$o = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends$o.apply(this, arguments);
-}
-/**
- * Modal hook that manages all the logic for the modal dialog widget
- * and returns prop getters, state and actions.
- *
- * @param props
- */
-
-function useModal(props) {
-  var {
-    isOpen,
-    onClose,
-    id,
-    closeOnOverlayClick = true,
-    closeOnEsc = true,
-    useInert = true,
-    onOverlayClick: onOverlayClickProp,
-    onEsc
-  } = props;
-  var dialogRef = React.useRef(null);
-  var overlayRef = React.useRef(null);
-  var [dialogId, headerId, bodyId] = useIds(id, "chakra-modal", "chakra-modal--header", "chakra-modal--body");
-  /**
-   * Hook used to polyfill `aria-modal` for older browsers.
-   * It uses `aria-hidden` to all other nodes.
-   *
-   * @see https://developer.paciellogroup.com/blog/2018/06/the-current-state-of-modal-dialog-accessibility/
-   */
-
-  useAriaHidden(dialogRef, isOpen && useInert);
-  /**
-   * Hook use to manage multiple or nested modals
-   */
-
-  useModalManager(dialogRef, isOpen);
-  var mouseDownTarget = React.useRef(null);
-  var onMouseDown = React.useCallback(event => {
-    mouseDownTarget.current = event.target;
-  }, []);
-  var onKeyDown = React.useCallback(event => {
-    if (event.key === "Escape") {
-      event.stopPropagation();
-
-      if (closeOnEsc) {
-        onClose == null ? void 0 : onClose();
-      }
-
-      onEsc == null ? void 0 : onEsc();
-    }
-  }, [closeOnEsc, onClose, onEsc]);
-  var [headerMounted, setHeaderMounted] = React.useState(false);
-  var [bodyMounted, setBodyMounted] = React.useState(false);
-  var getDialogProps = React.useCallback(function (props, ref) {
-    if (props === void 0) {
-      props = {};
-    }
-
-    if (ref === void 0) {
-      ref = null;
-    }
-
-    return _extends$o({
-      role: "dialog"
-    }, props, {
-      ref: mergeRefs(ref, dialogRef),
-      id: dialogId,
-      tabIndex: -1,
-      "aria-modal": true,
-      "aria-labelledby": headerMounted ? headerId : undefined,
-      "aria-describedby": bodyMounted ? bodyId : undefined,
-      onClick: callAllHandlers$1(props.onClick, event => event.stopPropagation())
-    });
-  }, [bodyId, bodyMounted, dialogId, headerId, headerMounted]);
-  var onOverlayClick = React.useCallback(event => {
-    event.stopPropagation();
-    /**
-     * Make sure the event starts and ends on the same DOM element.
-     *
-     * This is used to prevent the modal from closing when you
-     * start dragging from the content, and release drag outside the content.
-     *
-     * We prevent this because it is technically not a considered "click outside"
-     */
-
-    if (mouseDownTarget.current !== event.target) return;
-    /**
-     * When you click on the overlay, we want to remove only the topmost modal
-     */
-
-    if (!manager.isTopModal(dialogRef)) return;
-
-    if (closeOnOverlayClick) {
-      onClose == null ? void 0 : onClose();
-    }
-
-    onOverlayClickProp == null ? void 0 : onOverlayClickProp();
-  }, [onClose, closeOnOverlayClick, onOverlayClickProp]);
-  var getDialogContainerProps = React.useCallback(function (props, ref) {
-    if (props === void 0) {
-      props = {};
-    }
-
-    if (ref === void 0) {
-      ref = null;
-    }
-
-    return _extends$o({}, props, {
-      ref: mergeRefs(ref, overlayRef),
-      onClick: callAllHandlers$1(props.onClick, onOverlayClick),
-      onKeyDown: callAllHandlers$1(props.onKeyDown, onKeyDown),
-      onMouseDown: callAllHandlers$1(props.onMouseDown, onMouseDown)
-    });
-  }, [onKeyDown, onMouseDown, onOverlayClick]);
-  return {
-    isOpen,
-    onClose,
-    headerId,
-    bodyId,
-    setBodyMounted,
-    setHeaderMounted,
-    dialogRef,
-    overlayRef,
-    getDialogProps,
-    getDialogContainerProps
-  };
-}
-/**
- * Modal hook to polyfill `aria-modal`.
- *
- * It applies `aria-hidden` to elements behind the modal
- * to indicate that they're `inert`.
- *
- * @param ref React ref of the node
- * @param shouldHide whether `aria-hidden` should be applied
- */
-
-function useAriaHidden(ref, shouldHide) {
-  React.useEffect(() => {
-    if (!ref.current) return undefined;
-    var undo = null;
-
-    if (shouldHide && ref.current) {
-      undo = hideOthers(ref.current);
-    }
-
-    return () => {
-      if (shouldHide) {
-        undo == null ? void 0 : undo();
-      }
-    };
-  }, [shouldHide, ref]);
-}
-
-function _objectWithoutPropertiesLoose$f(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-
-function _extends$n() {
-  _extends$n = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends$n.apply(this, arguments);
-}
-var [ModalContextProvider, useModalContext] = createContext({
-  strict: true,
-  name: "ModalContext",
-  errorMessage: "useModalContext: `context` is undefined. Seems you forgot to wrap modal components in `<Modal />`"
-});
-/**
- * Modal provides context, theming, and accessibility properties
- * to all other modal components.
- *
- * It doesn't render any DOM node.
- */
-
-var Modal = props => {
-  var {
-    portalProps,
-    children,
-    autoFocus,
-    trapFocus,
-    initialFocusRef,
-    finalFocusRef,
-    returnFocusOnClose,
-    blockScrollOnMount,
-    allowPinchZoom,
-    preserveScrollBarGap,
-    motionPreset,
-    lockFocusAcrossFrames
-  } = props;
-  var styles = useMultiStyleConfig("Modal", props);
-  var modal = useModal(props);
-
-  var context = _extends$n({}, modal, {
-    autoFocus,
-    trapFocus,
-    initialFocusRef,
-    finalFocusRef,
-    returnFocusOnClose,
-    blockScrollOnMount,
-    allowPinchZoom,
-    preserveScrollBarGap,
-    motionPreset,
-    lockFocusAcrossFrames
-  });
-
-  return /*#__PURE__*/React__namespace.createElement(ModalContextProvider, {
-    value: context
-  }, /*#__PURE__*/React__namespace.createElement(StylesProvider, {
-    value: styles
-  }, /*#__PURE__*/React__namespace.createElement(AnimatePresence, null, context.isOpen && /*#__PURE__*/React__namespace.createElement(Portal, portalProps, children))));
-};
-Modal.defaultProps = {
-  lockFocusAcrossFrames: true,
-  returnFocusOnClose: true,
-  scrollBehavior: "outside",
-  trapFocus: true,
-  autoFocus: true,
-  blockScrollOnMount: true,
-  allowPinchZoom: false,
-  motionPreset: "scale"
-};
-
-if (__DEV__$2) {
-  Modal.displayName = "Modal";
-}
-
-var MotionDiv = chakra(motion.div);
-/**
- * ModalContent is used to group modal's content. It has all the
- * necessary `aria-*` properties to indicate that it is a modal
- */
-
-var ModalContent = /*#__PURE__*/forwardRef$2((props, ref) => {
-  var {
-    className,
-    children,
-    containerProps: rootProps
-  } = props,
-      rest = _objectWithoutPropertiesLoose$f(props, ["className", "children", "containerProps"]);
-
-  var {
-    getDialogProps,
-    getDialogContainerProps
-  } = useModalContext();
-  var dialogProps = getDialogProps(rest, ref);
-  var containerProps = getDialogContainerProps(rootProps);
-
-  var _className = cx$2("chakra-modal__content", className);
-
-  var styles = useStyles();
-
-  var dialogStyles = _extends$n({
-    display: "flex",
-    flexDirection: "column",
-    position: "relative",
-    width: "100%",
-    outline: 0
-  }, styles.dialog);
-
-  var dialogContainerStyles = _extends$n({
-    display: "flex",
-    width: "100vw",
-    height: "100vh",
-    "@supports(height: -webkit-fill-available)": {
-      height: "-webkit-fill-available"
-    },
-    position: "fixed",
-    left: 0,
-    top: 0
-  }, styles.dialogContainer);
-
-  var {
-    motionPreset
-  } = useModalContext();
-  return /*#__PURE__*/React__namespace.createElement(ModalFocusScope, null, /*#__PURE__*/React__namespace.createElement(chakra.div, _extends$n({}, containerProps, {
-    className: "chakra-modal__content-container",
-    __css: dialogContainerStyles
-  }), /*#__PURE__*/React__namespace.createElement(ModalTransition, _extends$n({
-    preset: motionPreset,
-    className: _className
-  }, dialogProps, {
-    __css: dialogStyles
-  }), children)));
-});
-
-if (__DEV__$2) {
-  ModalContent.displayName = "ModalContent";
-}
-
-function ModalFocusScope(props) {
-  var {
-    autoFocus,
-    trapFocus,
-    dialogRef,
-    initialFocusRef,
-    blockScrollOnMount,
-    allowPinchZoom,
-    finalFocusRef,
-    returnFocusOnClose,
-    preserveScrollBarGap,
-    lockFocusAcrossFrames
-  } = useModalContext();
-  var [isPresent, safeToRemove] = usePresence();
-  React__namespace.useEffect(() => {
-    if (!isPresent && safeToRemove) {
-      setTimeout(safeToRemove);
-    }
-  }, [isPresent, safeToRemove]);
-  return /*#__PURE__*/React__namespace.createElement(FocusLock, {
-    autoFocus: autoFocus,
-    isDisabled: !trapFocus,
-    initialFocusRef: initialFocusRef,
-    finalFocusRef: finalFocusRef,
-    restoreFocus: returnFocusOnClose,
-    contentRef: dialogRef,
-    lockFocusAcrossFrames: lockFocusAcrossFrames
-  }, /*#__PURE__*/React__namespace.createElement(ReactRemoveScroll, {
-    removeScrollBar: !preserveScrollBarGap,
-    allowPinchZoom: allowPinchZoom,
-    enabled: blockScrollOnMount,
-    forwardProps: true
-  }, props.children));
-}
-/**
- * ModalOverlay renders a backdrop behind the modal. It is
- * also used as a wrapper for the modal content for better positioning.
- *
- * @see Docs https://chakra-ui.com/modal
- */
-
-var ModalOverlay = /*#__PURE__*/forwardRef$2((props, ref) => {
-  var {
-    className
-  } = props,
-      rest = _objectWithoutPropertiesLoose$f(props, ["className", "transition"]);
-
-  var _className = cx$2("chakra-modal__overlay", className);
-
-  var styles = useStyles();
-
-  var overlayStyle = _extends$n({
-    pos: "fixed",
-    left: "0",
-    top: "0",
-    w: "100vw",
-    h: "100vh"
-  }, styles.overlay);
-
-  var {
-    motionPreset
-  } = useModalContext();
-  var motionProps = motionPreset === "none" ? {} : fadeConfig;
-  return /*#__PURE__*/React__namespace.createElement(MotionDiv, _extends$n({}, motionProps, {
-    __css: overlayStyle,
-    ref: ref,
-    className: _className
-  }, rest));
-});
-
-if (__DEV__$2) {
-  ModalOverlay.displayName = "ModalOverlay";
-}
-/**
- * ModalHeader
- *
- * React component that houses the title of the modal.
- *
- * @see Docs https://chakra-ui.com/modal
- */
-
-
-var ModalHeader = /*#__PURE__*/forwardRef$2((props, ref) => {
-  var {
-    className
-  } = props,
-      rest = _objectWithoutPropertiesLoose$f(props, ["className"]);
-
-  var {
-    headerId,
-    setHeaderMounted
-  } = useModalContext();
-  /**
-   * Notify us if this component was rendered or used
-   * so we can append `aria-labelledby` automatically
-   */
-
-  React__namespace.useEffect(() => {
-    setHeaderMounted(true);
-    return () => setHeaderMounted(false);
-  }, [setHeaderMounted]);
-
-  var _className = cx$2("chakra-modal__header", className);
-
-  var styles = useStyles();
-
-  var headerStyles = _extends$n({
-    flex: 0
-  }, styles.header);
-
-  return /*#__PURE__*/React__namespace.createElement(chakra.header, _extends$n({
-    ref: ref,
-    className: _className,
-    id: headerId
-  }, rest, {
-    __css: headerStyles
-  }));
-});
-
-if (__DEV__$2) {
-  ModalHeader.displayName = "ModalHeader";
-}
-/**
- * ModalBody
- *
- * React component that houses the main content of the modal.
- *
- * @see Docs https://chakra-ui.com/modal
- */
-
-
-var ModalBody = /*#__PURE__*/forwardRef$2((props, ref) => {
-  var {
-    className
-  } = props,
-      rest = _objectWithoutPropertiesLoose$f(props, ["className"]);
-
-  var {
-    bodyId,
-    setBodyMounted
-  } = useModalContext();
-  /**
-   * Notify us if this component was rendered or used
-   * so we can append `aria-describedby` automatically
-   */
-
-  React__namespace.useEffect(() => {
-    setBodyMounted(true);
-    return () => setBodyMounted(false);
-  }, [setBodyMounted]);
-
-  var _className = cx$2("chakra-modal__body", className);
-
-  var styles = useStyles();
-  return /*#__PURE__*/React__namespace.createElement(chakra.div, _extends$n({
-    ref: ref,
-    className: _className,
-    id: bodyId
-  }, rest, {
-    __css: styles.body
-  }));
-});
-
-if (__DEV__$2) {
-  ModalBody.displayName = "ModalBody";
-}
-/**
- * ModalFooter houses the action buttons of the modal.
- * @see Docs https://chakra-ui.com/modal
- */
-
-
-var ModalFooter = /*#__PURE__*/forwardRef$2((props, ref) => {
-  var {
-    className
-  } = props,
-      rest = _objectWithoutPropertiesLoose$f(props, ["className"]);
-
-  var _className = cx$2("chakra-modal__footer", className);
-
-  var styles = useStyles();
-
-  var footerStyles = _extends$n({
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "flex-end"
-  }, styles.footer);
-
-  return /*#__PURE__*/React__namespace.createElement(chakra.footer, _extends$n({
-    ref: ref
-  }, rest, {
-    __css: footerStyles,
-    className: _className
-  }));
-});
-
-if (__DEV__$2) {
-  ModalFooter.displayName = "ModalFooter";
-}
-/**
- * ModalCloseButton is used closes the modal.
- *
- * You don't need to pass the `onClick` to it, it reads the
- * `onClose` action from the modal context.
- */
-
-
-var ModalCloseButton = /*#__PURE__*/forwardRef$2((props, ref) => {
-  var {
-    onClick,
-    className
-  } = props,
-      rest = _objectWithoutPropertiesLoose$f(props, ["onClick", "className"]);
-
-  var {
-    onClose
-  } = useModalContext();
-
-  var _className = cx$2("chakra-modal__close-btn", className);
-
-  var styles = useStyles();
-  return /*#__PURE__*/React__namespace.createElement(CloseButton, _extends$n({
-    ref: ref,
-    __css: styles.closeButton,
-    className: _className,
-    onClick: callAllHandlers$1(onClick, event => {
-      event.stopPropagation();
-      onClose();
-    })
-  }, rest));
-});
-
-if (__DEV__$2) {
-  ModalCloseButton.displayName = "ModalCloseButton";
 }
 
 // Number assertions
@@ -32905,7 +19877,7 @@ function useSpinner(increment, decrement) {
    * let's clear the timeout as well
    */
 
-  useUnmountEffect$1(removeTimeout);
+  useUnmountEffect(removeTimeout);
   return {
     up,
     down,
@@ -33021,9 +19993,9 @@ function useNumberInput(props) {
   } = props,
       htmlProps = _objectWithoutPropertiesLoose$d(props, ["focusInputOnChange", "clampValueOnBlur", "keepWithinRange", "min", "max", "step", "isReadOnly", "isDisabled", "isRequired", "getAriaValueText", "isInvalid", "pattern", "inputMode", "allowMouseWheel", "id", "onChange", "precision", "name", "aria-describedby", "aria-label", "aria-labelledby", "onFocus", "onBlur"]);
 
-  var onFocusProp = useCallbackRef$1(onFocus);
-  var onBlurProp = useCallbackRef$1(onBlur);
-  var getAriaValueTextProp = useCallbackRef$1(getAriaValueText);
+  var onFocusProp = useCallbackRef(onFocus);
+  var onBlurProp = useCallbackRef(onBlur);
+  var getAriaValueTextProp = useCallbackRef(getAriaValueText);
   /**
    * Leverage the `useCounter` hook since it provides
    * the functionality to `increment`, `decrement` and `update`
@@ -43443,50 +30415,275 @@ freeExports._=_;}else {// Export to the global object.
 root._=_;}}).call(commonjsGlobal$1);
 });
 
-function BearError(sdfjer, afijqwe = {}) {
-  return BearErASDJIQWE(sdfjer, afijqwe);
+//
+function getType(sdrsdfe) {
+  let arrtrue = Array.isArray(sdrsdfe);
+  const getto = arrtrue ? "array" : typeof sdrsdfe;
+  return getto;
 }
-function BearErASDJIQWE(asdfower, {
-  bearName,
-  hideError,
-  ...asdd
+function linkOrdse({
+  //
+  typevar,
+  textvar,
+  link,
+  linkBase,
+  linkConnect,
+  textConnect
 }) {
-  // 1const
-  const ijsawe = asdfower && /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement("br", null), /*#__PURE__*/React__default$1['default'].createElement("br", null), asdfower);
-  const sidjfr = hideError && /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement("br", null), /*#__PURE__*/React__default$1['default'].createElement("br", null), BearHideError(hideError, bearName));
-  const okfdsd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, "\uD83D\uDC3B ERROR", ijsawe, sidjfr, /*#__PURE__*/React__default$1['default'].createElement("br", null), /*#__PURE__*/React__default$1['default'].createElement("br", null));
-  const ijsad = {
-    //
-    // width: "100%",
-    padding: "5px 20%",
-    fontSize: "16px",
-    margin: "20px",
-    background: "darkred",
-    color: "white",
-    textAlign: "center",
-    ...BearBorder("transparent", "5px"),
-    ...(asdd && asdd.style)
-  };
-  const adkease = {
-    // className: "buttonHover shadowHover bold",
-    obj: okfdsd,
-    ...asdd,
-    style: ijsad
-  };
-  const okasew = /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, adkease);
-  return okasew;
+  link = encodeURIComponent(link);
+  const twitTure = typevar == "twitter";
+  const noLink = twitTure;
+  const showLink = //
+  !noLink && linkConnect;
+  let tnstFinal = //
+  twitTure ? textvar + " " + link : textvar;
+  tnstFinal = encodeURIComponent(tnstFinal);
+  let linkeo = //
+  link; // encodeURIComponent(link)
+
+  const bsaeio = showLink && joinString([//
+  linkConnect, linkeo], "=");
+  const txtooeio = textConnect && joinString([//
+  textConnect, tnstFinal], "=");
+  const ihjtt = [//
+  txtooeio, bsaeio];
+  const linksiw = joinString(ihjtt, "&"); // const okasew = linkBase
+
+  const sadije = joinString([//
+  linkBase, "?", linksiw]);
+  const didsfe = //
+  sadije; // encodeURIComponent(sadije);
+
+  bearlog.lug("___ linkOrdse-zzz ___", didsfe);
+  return didsfe;
+} // 1onchange
+
+function onChangeFunc(inputAtts, {
+  onChange,
+  onChangeValue
+}) {
+  //
+  // const ikasae
+  const valueMain = inputAtts.target.value;
+  bearlog.lug("___ onChangeFunc ___", valueMain, {
+    valueMain,
+    inputAtts,
+    onChange,
+    onChangeValue
+  });
+
+  if (onChangeValue) {
+    onChangeValue(valueMain);
+  }
+
+  if (onChange) {
+    onChange(inputAtts);
+  }
 }
-function BearHideError(attr, name) {
-  const isjdfre = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, "To hide this error, set ", BearQuote(attr), " as true in ", BearQuote(name), "s", " ", "arguments.");
-  return isjdfre;
-} // export function BearErrMust(attr, name) {
-//   const isjdfre = (
-//     <>
-//      {attr} attribute must be {name}
-//     </>
-//   );
-//   return isjdfre;
+ // 1function
+
+function joinString$1(arrayo, strngo = "", first = "") {
+  arrayo = removeEmptyArray(arrayo);
+  const okasd = arrayo ? arrayo.join(strngo) : "";
+  return okasd;
+}
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+function removeLower(str) {
+  let sdre = str.toLowerCase().replace(/\s/g, "");
+  return sdre;
+}
+
+function objectTrue(dictvar) {
+  return typeof dictvar == "object";
+} // 1match
+function getAnyDictValue(vlbdf) {
+  if (vlbdf) {
+    for (const [key, value] of Object.entries(vlbdf)) {
+      if (!value) {
+        return key;
+      }
+    }
+  }
+}
+function checkDict(dictvar, cxzvd) {
+  let asdrae;
+
+  switch (typeof cxzvd) {
+    case "object":
+      asdrae = cxzvd;
+      break;
+
+    case "string":
+      asdrae = {
+        listItemName: cxzvd,
+        ...dictvar[cxzvd]
+      };
+      break;
+  }
+
+  return asdrae;
+} // 1attr
+
+function getDictvalues(dict, attr = "value") {
+  let obj = {};
+
+  for (const [key, value] of Object.entries(dict)) {
+    let inVal = "";
+    const sderase = getType(value);
+    bearlog.lug("getDictvalues TYPEODF-zzz", {
+      value,
+      sderase
+    });
+
+    switch (sderase) {
+      case "array":
+        inVal = value.map(sdofr => sdofr[attr]);
+        break;
+
+      case "object":
+        inVal = value[attr];
+        break;
+
+      default:
+        inVal = value;
+    }
+
+    obj[key] = inVal;
+  }
+
+  return obj;
+}
+function mapDictAttrToString(listvar, join, dictvar) {
+  //
+  function sigjt(dfigjtr) {
+    const ijfge = typeof dfigjtr == "string";
+    const bifdre = ijfge ? dfigjtr : "";
+    bearlog.lug("___ mapDictAttrToString ___", {
+      dfigjtr,
+      ijfge,
+      bifdre
+    });
+    return bifdre;
+  }
+
+  function sidjfer(asda) {
+    const dfigjtr = dictvar && dictvar[asda];
+    return turnarray(dfigjtr).map(sigjt);
+  }
+
+  const okasasd = listvar.map(sidjfer);
+  const ofkew = joinString$1(okasasd, join);
+  bearlog.lug("___ mapDictAttrToString ___", {
+    ATTR_LIST: listvar,
+    DICT: dictvar,
+    ARRAY: okasasd,
+    JOINED: ofkew
+  });
+  return ofkew;
+}
+function mergeDict(values, formData) {
+  bearlog.lug("vlaos-sbmit--AAAA", values);
+  const jease = //
+  // values;
+  removeEmptyDict(values);
+  bearlog.lug("vlaos-sbmit--BBBB", jease);
+  const nisjd = { ...formData,
+    ...jease
+  };
+  bearlog.lug("vlaos-sbmit--CCCC", nisjd);
+  return nisjd;
+} // 1removeempty
+
+function removeEmptyDict(zxcvlsdf) {
+  //
+  bearlog.lug("remoEmptyDict-aaaa", zxcvlsdf);
+  const sdfer = //
+  // zxcvlsdf;
+  Object.fromEntries(Object.entries(zxcvlsdf).filter(bestRem));
+
+  function bestRem(...zxcok) {
+    bearlog.lug("bestRem-zzz", ...zxcok);
+    return cvbos(...zxcok);
+  }
+
+  function cvbos([_, v]) {
+    return v;
+  }
+
+  bearlog.lug("remoEmptyDict-bbbb", sdfer);
+  return sdfer;
+}
+//   const ijsdase = {};
+//   for (const [key, value] of Object.entries(dictvar)) {
+//     ijsdase[key] = dictfunc(value);
+//   }
+//   return ijsdase;
 // }
+
+function turnarray(arrVary) {
+  const checkArr = Array.isArray(arrVary) ? arrVary : [arrVary];
+  return checkArr;
+}
+function removeEmptyArray(arr) {
+  const sofksd = turnarray(arr).filter(item => item);
+  return sofksd;
+}
+
+function mipBase(dictvar) {
+  const dfokg = new Set();
+
+  for (const [key, value] of Object.entries(dictvar)) {
+    const xcbsfd = objectTrue(value) && Object.keys(value);
+
+    if (xcbsfd) {
+      xcbsfd.map(sfwew => dfokg.add(sfwew));
+    }
+  }
+
+  return Array.from(dfokg);
+}
+function getListAll(arrvar, {
+  dictvar
+}) {
+  return dictvar ? mipBase(dictvar) : arrvar;
+}
+
+function getListComplex(listo, //
+{
+  logtrue,
+  listNumber,
+  listDictAdd,
+  removeItem,
+  keepNull,
+  useDictList,
+  dictvar
+}) {
+  // 1list PREPARE
+  const dictTrugo = useDictList && dictvar;
+  let list = dictTrugo ? Object.keys(dictvar) : listo;
+
+  if (logtrue) {
+    bearlog.laggu("___ getListComplex ORIGINAL ___", listo);
+    bearlog.laggu("___ useDictList ___", {
+      useDictList: useDictList,
+      dictvar: dictvar,
+      dictTrugo: dictTrugo,
+      list: list
+    });
+  }
+
+  const jvsdr = turnarray(list);
+  list = keepNull ? list : jvsdr.filter(function (el) {
+    return el != null;
+  });
+  list = removeItem ? lodash.remove(list, function (currentObject) {
+    return currentObject.id != removeItem.id;
+  }) : list;
+  list = listNumber ? list.slice(0, listNumber) : list;
+  return list;
+}
 
 var DefaultContext = {
   color: undefined,
@@ -43964,7 +31161,7 @@ function BearImage({
   typevar,
   badgecolor,
   size = "100px",
-  shape,
+  shape = "",
   width,
   height,
   style,
@@ -44011,6 +31208,63 @@ function BearImage({
   return endValue;
 }
 
+function BearTitle({
+  titleConfig = {},
+  title,
+  children,
+  belowObj,
+  // sizevar = "34px",
+  subtitle,
+  spaceBetween = "30px",
+  subtitleConfig = {},
+  lineBetween,
+  ...args
+}) {
+  //
+  title = children || title;
+  const aijsdwe = //
+  ""; // "shadowBottom";
+  const usdhfr = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, title, lineBetween && /*#__PURE__*/React__default$1['default'].createElement("hr", null));
+
+  function sadfae({
+    style,
+    ...aasds
+  }) {
+    const jifdgr = {
+      marginBottom: spaceBetween,
+      ...style
+    };
+    const ijdf = {
+      style: jifdgr,
+      ...aasds
+    };
+    return ijdf;
+  }
+
+  titleConfig = {
+    className: aijsdwe,
+    obj: usdhfr,
+    ...sadfae(titleConfig)
+  };
+  const sijwesae = {
+    style: {
+      fontSize: "0.8em"
+    },
+    obj: subtitle,
+    ...subtitleConfig
+  }; // BediaTextDiv
+
+  const oksd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, titleConfig), subtitle && /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, sijwesae), belowObj);
+  const iasjwe = {
+    obj: oksd,
+    style: {
+      width: "100%"
+    },
+    ...args
+  };
+  return /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, iasjwe);
+}
+
 function BearTextMedia({
   //
   imagevar,
@@ -44019,8 +31273,11 @@ function BearTextMedia({
   vertSize,
   vertTrue,
   iconSize,
+  alignConfig,
   imageConfig = {},
   textvar,
+  renderText,
+  children,
   iconvar,
   noImage,
   noIcon,
@@ -44038,6 +31295,9 @@ function BearTextMedia({
   subtitleConfig = {},
   ...args
 }) {
+  // 1const
+  textvar = textvar ? textvar : children;
+  textvar = renderText ? renderText(textvar) : textvar;
 
 
   function ImgMain({ ...dsfew
@@ -44083,7 +31343,7 @@ function BearTextMedia({
     //
     // "oasdkfasd";
     // BearIcon(iconvar);
-    React__default$1['default'].createElement(BearDiv$1, _extends$Y({
+    React__default$1['default'].createElement(BearDiv$1, _extends$O({
       span: true
     }, sdlf), BearIcon(iconvar));
     return isajdawe;
@@ -44106,9 +31366,8 @@ function BearTextMedia({
       margin: padvar
     }
   };
-  const sdijwqe = iconvar || imagevar;
-  const bothTrue = textShow && sdijwqe;
-  const oksaew = bothTrue && /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, _extends$Y({
+
+  const centro = /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, _extends$O({
     span: true,
     ignoreNull: true
   }, okasew));
@@ -44117,21 +31376,32 @@ function BearTextMedia({
     const lftoe = swapItems ? okdswq : kadse;
     const righto = swapItems ? kadse : okdswq; // 1console
 
-    bearlog.log("RendMain-zzz", {
+    bearlog.lug("RendMain-zzz", {
       lftoe,
       righto
     });
-    const oskdawe = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, lftoe, oksaew, righto);
+    const oskdawe = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, lftoe, centro, righto);
 
     function Rendo() {
-      const isdjfwer = kadse && {
+      let xxvczc = //
+      // "@";
+      kadse;
+      const aokdas = xxvczc && {
         flex: true,
         vertAlign: true
       };
-      const fdghew = /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1 //
-      , isdjfwer, oskdawe); // return "dojwewq";
-
-      return fdghew;
+      let xcvasd = //
+      // lftoe;
+      // centro
+      // righto
+      // oskdawe;
+      // "dojwewq";
+      BearDiv$1({
+        obj: oskdawe,
+        ...aokdas,
+        ...alignConfig
+      });
+      return xcvasd;
     }
 
     const okfdsd = //
@@ -44151,239 +31421,24 @@ function BearTextMedia({
   return SwitchComp(itemType, args);
 }
 
-//
-function getType(sdrsdfe) {
-  let arrtrue = Array.isArray(sdrsdfe);
-  const getto = arrtrue ? "array" : typeof sdrsdfe;
-  return getto;
-}
-function linkOrdse({
-  //
-  typevar,
-  textvar,
-  link,
-  linkBase,
-  linkConnect,
-  textConnect
-}) {
-  link = encodeURIComponent(link);
-  const twitTure = typevar == "twitter";
-  const noLink = twitTure;
-  const showLink = //
-  !noLink && linkConnect;
-  let tnstFinal = //
-  twitTure ? textvar + " " + link : textvar;
-  tnstFinal = encodeURIComponent(tnstFinal);
-  let linkeo = //
-  link; // encodeURIComponent(link)
-
-  const bsaeio = showLink && joinString([//
-  linkConnect, linkeo], "=");
-  const txtooeio = textConnect && joinString([//
-  textConnect, tnstFinal], "=");
-  const ihjtt = [//
-  txtooeio, bsaeio];
-  const linksiw = joinString(ihjtt, "&"); // const okasew = linkBase
-
-  const sadije = joinString([//
-  linkBase, "?", linksiw]);
-  const didsfe = //
-  sadije; // encodeURIComponent(sadije);
-
-  bearlog.lug("___ linkOrdse-zzz ___", didsfe);
-  return didsfe;
-} // 1onchange
-
-function onChangeFunc(inputAtts, {
-  onChange,
-  onChangeValue
+function BearErrArgType$1(arg, type, {
+  bearName,
+  ...asd
 }) {
   //
-  // const ikasae
-  const valueMain = inputAtts.target.value;
-  bearlog.lug("___ onChangeFunc ___", valueMain, {
-    valueMain,
-    inputAtts,
-    onChange,
-    onChangeValue
-  });
-
-  if (onChangeValue) {
-    onChangeValue(valueMain);
-  }
-
-  if (onChange) {
-    onChange(inputAtts);
-  }
+  return BearError(bearName + "'s " + BearQuote(arg) + " argument must be a " + type, asd);
 }
- // 1function
-
-function joinString$1(arrayo, strngo = "", first = "") {
-  arrayo = removeEmptyArray(arrayo);
-  const okasd = arrayo ? arrayo.join(strngo) : "";
-  return okasd;
-}
-function capitalizeFirstLetter(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
-function removeLower(str) {
-  let sdre = str.toLowerCase().replace(/\s/g, "");
-  return sdre;
-}
-
-function objectTrue(dictvar) {
-  return typeof dictvar == "object";
-} // 1match
-function getAnyDictValue(vlbdf) {
-  if (vlbdf) {
-    for (const [key, value] of Object.entries(vlbdf)) {
-      if (!value) {
-        return key;
-      }
-    }
-  }
-}
-function checkDict(dictvar, cxzvd) {
-  let asdrae;
-
-  switch (typeof cxzvd) {
-    case "object":
-      asdrae = cxzvd;
-      break;
-
-    case "string":
-      asdrae = {
-        listItemName: cxzvd,
-        ...dictvar[cxzvd]
-      };
-      break;
-  }
-
-  return asdrae;
-} // 1attr
-
-function getDictvalues(dict, attr = "value") {
-  let obj = {};
-
-  for (const [key, value] of Object.entries(dict)) {
-    let inVal = "";
-    const sderase = getType(value);
-    bearlog.lug("getDictvalues TYPEODF-zzz", {
-      value,
-      sderase
-    });
-
-    switch (sderase) {
-      case "array":
-        inVal = value.map(sdofr => sdofr[attr]);
-        break;
-
-      case "object":
-        inVal = value[attr];
-        break;
-
-      default:
-        inVal = value;
-    }
-
-    obj[key] = inVal;
-  }
-
-  return obj;
-}
-function mapDictAttrToString(listvar, join, dictvar) {
+function BearErrMiss$1(...asd) {
   //
-  function sigjt(dfigjtr) {
-    const ijfge = typeof dfigjtr == "string";
-    const bifdre = ijfge ? dfigjtr : "";
-    bearlog.lug("___ mapDictAttrToString ___", {
-      dfigjtr,
-      ijfge,
-      bifdre
-    });
-    return bifdre;
-  }
-
-  function sidjfer(asda) {
-    const dfigjtr = dictvar && dictvar[asda];
-    return turnarray(dfigjtr).map(sigjt);
-  }
-
-  const okasasd = listvar.map(sidjfer);
-  const ofkew = joinString$1(okasasd, join);
-  bearlog.lug("___ mapDictAttrToString ___", {
-    ATTR_LIST: listvar,
-    DICT: dictvar,
-    ARRAY: okasasd,
-    JOINED: ofkew
-  });
-  return ofkew;
+  return BearError(BearMissing(...asd));
 }
-function mergeDict(values, formData) {
-  bearlog.lug("vlaos-sbmit--AAAA", values);
-  const jease = //
-  // values;
-  removeEmptyDict(values);
-  bearlog.lug("vlaos-sbmit--BBBB", jease);
-  const nisjd = { ...formData,
-    ...jease
-  };
-  bearlog.lug("vlaos-sbmit--CCCC", nisjd);
-  return nisjd;
-} // 1removeempty
-
-function removeEmptyDict(zxcvlsdf) {
+function BearMissing(attr, mainnum, aseqwe = "Your component") {
   //
-  bearlog.lug("remoEmptyDict-aaaa", zxcvlsdf);
-  const sdfer = //
-  // zxcvlsdf;
-  Object.fromEntries(Object.entries(zxcvlsdf).filter(bestRem));
-
-  function bestRem(...zxcok) {
-    bearlog.lug("bestRem-zzz", ...zxcok);
-    return cvbos(...zxcok);
-  }
-
-  function cvbos([_, v]) {
-    return v;
-  }
-
-  bearlog.lug("remoEmptyDict-bbbb", sdfer);
-  return sdfer;
-}
-//   const ijsdase = {};
-//   for (const [key, value] of Object.entries(dictvar)) {
-//     ijsdase[key] = dictfunc(value);
-//   }
-//   return ijsdase;
-// }
-
-function turnarray(arrVary) {
-  const checkArr = Array.isArray(arrVary) ? arrVary : [arrVary];
-  return checkArr;
-}
-function removeEmptyArray(arr) {
-  const sofksd = turnarray(arr).filter(item => item);
-  return sofksd;
-}
-
-function mipBase(dictvar) {
-  const dfokg = new Set();
-
-  for (const [key, value] of Object.entries(dictvar)) {
-    const xcbsfd = objectTrue(value) && Object.keys(value);
-
-    if (xcbsfd) {
-      xcbsfd.map(sfwew => dfokg.add(sfwew));
-    }
-  }
-
-  return Array.from(dfokg);
-}
-function getListAll(arrvar, {
-  dictvar
-}) {
-  return dictvar ? mipBase(dictvar) : arrvar;
+  const nisdfrw = mainnum ? mainnum : aseqwe;
+  const kdsdae = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, BearQuote(nisdfrw), "'s", BearSpace(BearQuote(attr)), "attribute is empty or missing.");
+  const sadwew = //
+  kdsdae;
+  return sadwew;
 }
 
 function BearListItemExpand(cvbokfe, dasfjewr, {
@@ -44413,6 +31468,7 @@ function BearListItemExpand(cvbokfe, dasfjewr, {
   noItemMargin,
   itemNameStyle,
   itemStyle = {},
+  itemClass = "",
   itemConfig = {},
   //
   // 1logs
@@ -44460,7 +31516,8 @@ function BearListItemExpand(cvbokfe, dasfjewr, {
   const asdwe = itemConfig;
   const choseAll = findSelect(dasfjewr);
   const origItem = dasfjewr;
-  const fuhease = typeof origItem == "object"; // 1capitalise
+  const fuhease = typeof origItem == "object"; // 1object
+  // 1capitalise
 
   const dgste = capitaliseTypeText ? BearUpper(cvbokfe) : cvbokfe; //   1dict
 
@@ -44566,8 +31623,13 @@ function BearListItemExpand(cvbokfe, dasfjewr, {
     return iasda;
   }
 
+  const osdf = itemClass && {
+    className: itemClass
+  }; // 1main
+
   const sijdfr = { ...asdwe,
-    style: mainseo
+    style: mainseo,
+    ...osdf
   };
   const ijswe = dictTrue || pullDictItem;
   const zcxvzx = ijswe ? { ...asdwe,
@@ -44606,15 +31668,11 @@ function BearListItemExpand(cvbokfe, dasfjewr, {
     const dsifjw = dictRet ? oksdf : { ...oksdf,
       obj: listarr
     };
-
-    {
-      bearlog.lug(bearName, "___ dsifjw ___", {
-        RENDERTYPE: typeList,
-        objo,
-        ...dsifjw
-      });
-    }
-
+    bearlog.log(bearName, "___ dsifjw ___", {
+      RENDERTYPE: typeList,
+      objo,
+      ...dsifjw
+    });
     return objo(dsifjw);
   }
 
@@ -44643,7 +31701,8 @@ function BearListItemExpand(cvbokfe, dasfjewr, {
       break;
 
     case "return":
-      asdpkwe = /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, _extends$Y({}, sijdfr, {
+      // asdpkwe = "adsfaswqreq";
+      asdpkwe = /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, _extends$O({}, sijdfr, {
         obj: listarr
       }));
       break;
@@ -44664,9 +31723,10 @@ function BearListItemExpand(cvbokfe, dasfjewr, {
         let fsadfsd;
         let kdfsdf = typeof sdasd; // 1findobj
 
-        bearlog.log("___ sdasd ___", {
+        bearlog.lug("___ sdasd ___", {
           sdasd,
-          kdfsdf
+          kdfsdf,
+          sijdfr
         });
 
         switch (kdfsdf) {
@@ -44699,7 +31759,7 @@ function BearListItemExpand(cvbokfe, dasfjewr, {
       }
 
       asdpkwe = //
-      findobj ? findObjPress() : !dictRet && /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, _extends$Y({}, endRet, {
+      findobj ? findObjPress() : !dictRet && /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, _extends$O({}, endRet, {
         obj: listarr
       }));
   } //
@@ -44886,494 +31946,6 @@ function BearListMap(list, {
   return gjdfg; // return list.map(mapoBap)
 }
 
-function getListComplex(listo, //
-{
-  logtrue,
-  listNumber,
-  listDictAdd,
-  removeItem,
-  keepNull,
-  useDictList,
-  dictvar
-}) {
-  // 1list PREPARE
-  const dictTrugo = useDictList && dictvar;
-  let list = dictTrugo ? Object.keys(dictvar) : listo;
-
-  if (logtrue) {
-    bearlog.laggu("___ getListComplex ORIGINAL ___", listo);
-    bearlog.laggu("___ useDictList ___", {
-      useDictList: useDictList,
-      dictvar: dictvar,
-      dictTrugo: dictTrugo,
-      list: list
-    });
-  }
-
-  const jvsdr = turnarray(list);
-  list = keepNull ? list : jvsdr.filter(function (el) {
-    return el != null;
-  });
-  list = removeItem ? lodash.remove(list, function (currentObject) {
-    return currentObject.id != removeItem.id;
-  }) : list;
-  list = listNumber ? list.slice(0, listNumber) : list;
-  return list;
-}
-
-function BearTitle({
-  titleConfig = {},
-  title,
-  children,
-  belowObj,
-  // sizevar = "34px",
-  subtitle,
-  spaceBetween = "30px",
-  subtitleConfig = {},
-  lineBetween,
-  ...args
-}) {
-  //
-  title = children || title;
-  const aijsdwe = //
-  ""; // "shadowBottom";
-  const usdhfr = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, title, lineBetween && /*#__PURE__*/React__default$1['default'].createElement("hr", null));
-
-  function sadfae({
-    style,
-    ...aasds
-  }) {
-    const jifdgr = {
-      marginBottom: spaceBetween,
-      ...style
-    };
-    const ijdf = {
-      style: jifdgr,
-      ...aasds
-    };
-    return ijdf;
-  }
-
-  titleConfig = {
-    className: aijsdwe,
-    obj: usdhfr,
-    ...sadfae(titleConfig)
-  };
-  const sijwesae = {
-    style: {
-      fontSize: "0.8em"
-    },
-    obj: subtitle,
-    ...subtitleConfig
-  }; // BediaTextDiv
-
-  const oksd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, titleConfig), subtitle && /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, sijwesae), belowObj);
-  const iasjwe = {
-    obj: oksd,
-    style: {
-      width: "100%"
-    },
-    ...args
-  };
-  return /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, iasjwe);
-}
-
-function BearCheckMain(asdf, zczx, sdfwe = {}) {
-  return dfkbijv(asdf, zczx, sdfwe);
-} // bearbase
-
-function dfkbijv(named, children, {
-  //
-  // 1title
-  noTitle,
-  title,
-  titleConfig = {},
-  subtitle,
-  subtitleConfig = {},
-  //
-  //
-  bearName,
-  missName,
-  noNameNeeded,
-  //
-  //
-  advert,
-  advertConfig = {},
-  //
-  //
-  //
-  ignoreErrors,
-  requiredArgs = {},
-  //
-  //
-  degradedArgs = {},
-  //
-  topItem,
-  bottomItem,
-  //
-  //
-  style,
-  //
-  ...args
-}) {
-  // 1const
-  function Titren(adfok = {}) {
-    bearlog.lug("___ adfok ___", adfok);
-    return Titoas(adfok);
-  }
-
-  function Titoas({
-    style,
-    ...sdfok
-  }) {
-    const nsidjr = {
-      //
-      title,
-      subtitle,
-      subtitleConfig
-    };
-    const kjase = { ...nsidjr,
-      ...sdfok,
-      style: {
-        textAlign: "center",
-        fontSize: "1.5em",
-        marginBottom: "5px",
-        ...style
-      } // titleConfig: titleConfig,
-
-    };
-    const noisae = /*#__PURE__*/React__default$1['default'].createElement(BearTitle, kjase);
-    return noisae;
-  } // 1title
-
-
-  const dfjer = !noTitle && title;
-  const askew = dfjer && Titren(titleConfig); // 1love 1built 1avert
-
-  function Adverto({
-    style
-  }) {
-    //
-    //
-    const asqewew = {
-      className: "shadowHover",
-      style: { ...BearBackBorder("darkblue", "5px"),
-        color: "white",
-        // padding: "5px 10px",
-        fontSize: "16px",
-        // margin: "15px",
-        ...style
-      },
-      outsideLink: "http://bearui.io/"
-    };
-    const xvbijewr = /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, _extends$Y({
-      span: true
-    }, asqewew), "Built with love by", " ", /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, {
-      span: true,
-      className: "bold"
-    }, "\uD83D\uDC3B Bear UI"));
-    return xvbijewr;
-  }
-
-  const dfsigwer = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, askew, children);
-  const disjwe = {
-    style: advert ? { ...BearBorder("grey", "5px"),
-      paddingTop: "60px"
-    } : {}
-  };
-  const jfdert = {
-    topRight: advert && Adverto(advertConfig),
-    // center: ,
-    paddingVert: "5px",
-    centerConfig: disjwe
-  };
-  const ikjdwer = /*#__PURE__*/React__default$1['default'].createElement(BearFloat, jfdert, dfsigwer);
-  const okfdsd = //
-  ikjdwer; // dfsigwer;
-
-  const idfg = {
-    textAlign: "center",
-    ...style
-  };
-  args = {
-    obj: /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, {
-      obj: okfdsd
-    }),
-    style: idfg,
-    ...args
-  };
-  const sdufdsf = missName ? missName : named;
-  const objDegrade = getAnyDictValue(degradedArgs);
-  const objRequre = getAnyDictValue(requiredArgs);
-  bearlog.lug("___ objRequre ___", objRequre);
-
-  function sajwae(sdfer) {
-    const goCHecko = !ignoreErrors;
-    const uhfgewq = goCHecko ? sdfer : /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, args);
-    return uhfgewq;
-  }
-
-  function degradMess() {
-    const usdfer = //
-    "MISSING ARGUMENT GOO"; // objDegrade + " is missing "
-
-    const dfwewa = BearError(usdfer);
-    return dfwewa;
-  }
-
-  function rendName() {
-    return !bearName && !noNameNeeded ? sajwae(BearErrMiss("bearName", bearName, sdufdsf) // BearError(
-    //   `${BearPossess(
-    //     "argument",
-    //     bearName,
-    //     sdufdsf
-    //   )}' needs a 'bearName' attribute!`
-    // )
-    ) : objRequre ? sajwae(BearErrMiss(objRequre, bearName, sdufdsf)) : objDegrade ? sajwae(degradMess()) : /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, args);
-  }
-
-  return rendName();
-}
-
-function BearCheckList(named, obj, {
-  //
-  bearName,
-  list,
-  renderItem,
-  typeList,
-  noError,
-  ignoreEmpty,
-  containFunc,
-  ...args
-}) {
-  // 1const
-  const skfwe = {
-    list,
-    renderItem,
-    typeList,
-    noError,
-    bearName,
-    ...args
-  };
-  bearlog.lug("___ BEARCHCKMAIN ___", skfwe);
-
-  function renderCheck() {
-    //
-    const ijsdfw = renderItem || typeList || containFunc || args.return;
-    const cisas = ijsdfw ? obj : BearErrMiss("'containFunc' or 'renderItem' or 'typeList' or 'return'", bearName, named);
-    return cisas;
-  }
-
-  const okfdsd = renderCheck();
-  const jsdawse = Array.isArray(list);
-  const listFull = jsdawse && list.length > 0; // 1console
-
-  bearlog.lug("___ listFull ___", {
-    //
-    list,
-    jsdawse,
-    listFull
-  }); // function sajE
-
-  const idfjger = {
-    bearName,
-    hideError: "ignoreEmpty"
-  };
-  const emptyall = !list || !listFull;
-  const ijsfre = emptyall && !ignoreEmpty ? BearError(BearMissing("list", bearName), // "wtf is this mate"
-  idfjger) : !jsdawse ? BearError("list attribute must be an array!") : okfdsd;
-  return BearCheckMain(named, ijsfre, skfwe);
-}
-
-function BearList$1( //
-// list,
-{
-  obj,
-  typevar,
-  // 1remove
-  list,
-  // 1name
-  bearName,
-  //
-  // 1display
-  containFunc,
-  displayNumber,
-  rowConfig,
-  //
-  //
-  // 1list
-  //
-  compName = "BearList",
-  // 1log
-  messvar,
-  logtrue,
-  //
-  //
-  addTrue,
-  scrollTrue,
-  className,
-  // SELECT
-  selectableTrue,
-  selectableConfig,
-  // 1STYLE
-  styleList,
-  // 1load
-  loadtrue,
-  typeBullet,
-  emptyItem,
-  loadNumber = 10,
-  //
-  // 1error
-  noError,
-  //
-  //
-  //
-  // 1horizotal
-  centerItem = true,
-  horiz,
-  flex,
-  //
-  // 1list,
-  // COLLAPSeE
-  hideList,
-  collapseTrue,
-  renderItem,
-  typeList,
-  ...listArgs
-}) {
-  // 1list
-  list = list && getListComplex(list, listArgs);
-  bearlog.lug("___Blist list ___", list); // function passChoose(itmBase) {
-  //   if (chooseTrue) {
-  //     let ogfsdfds =
-  //       //
-  //       itmBase;
-  //     setchosios(ogfsdfds);
-  //   }
-  // }
-  // const sdfosf =
-  // 1baseargs
-
-  const sidwre = {
-    bearName,
-    horiz,
-    typeBullet,
-    logtrue,
-    loadtrue,
-    containFunc,
-    renderItem,
-    typeList,
-    list
-  };
-  const sidjfwe = { ...sidwre,
-    ...listArgs
-  };
-  bearlog.lug("___ list BBB___", list);
-  bearlog.lug("___ list CCC___", list); // 1style
-
-  styleList = {
-    overflowY: scrollTrue ? "scroll" : "",
-    // overflowY: "scroll",
-    ...styleList
-  }; // 1horiz
-
-  function HozBar(lsoeas) {
-    // align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
-    const okaewq = centerItem && {
-      alignContent: "center",
-      justifyContent: "space-around"
-    };
-    const okadwe = {
-      flex: true,
-      style: okaewq,
-      obj: donelist(lsoeas)
-    }; // 1console
-
-    bearlog.lug("xxx-LIST-MAIN--args", messvar, list, "asd90u12321"); // gens.messCheck("sd9jqwxas", listMess, "BearList --AAAA--", oaskdwq);
-
-    const jisad = //
-    BearDiv$1(okadwe); // "okafsdf";
-    // EndListA();
-    // mapoBap();
-    // <HorizChoiceBar {...endoa} />;
-
-    return jisad;
-  } // 1select
-
-
-  function Seletio() {
-    const as83asd = //
-    ""; // <SelectArray {...asikwe} />
-
-    return as83asd;
-  } // 1display
-
-
-  function ksajda() {
-    const sdidsf = displayNumber && Number.isInteger(displayNumber);
-    return sdidsf ? xvcbmf() : BearErrArgType("displayNumber", "integer", {
-      bearName
-    });
-  }
-
-  function xvcbmf() {
-    const domase = lodash.chunk(list, displayNumber);
-    const jfsdas = domase.map(sfjsd);
-
-    function sfjsd(xcvkm) {
-      const kseasd = { ...rowConfig
-      };
-      return /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, kseasd, HozBar(xcvkm));
-    }
-
-    return jfsdas;
-  } // 1name
-
-
-  const sadfwe = //
-  //
-  selectableTrue ? /*#__PURE__*/React__default$1['default'].createElement(Seletio, null) : displayNumber ? ksajda() : horiz ? HozBar(list) : donelist(list);
-
-  function donelist(listio) {
-    !lodash.isEmpty(listio) || loadtrue;
-
-    if (logtrue) {
-      bearlog.lugLinas(5);
-      bearlog.laggu(bearName, "___ BEARLIST ___", listio);
-      bearlog.laggu("___ listArgs ___", listArgs);
-      bearlog.laggu("___ sidwre ___", sidwre);
-      bearlog.laggu("___ beList ___", sidjfwe);
-    }
-
-    const ushdsa = //
-    hideList ? "" : BearListMap(listio, sidjfwe); // fullVar ? BearListMap(list, sidjfwe) : "";
-    // fullVar && list.map(mapoBap);
-
-    return ushdsa;
-  }
-
-  const saokwe = typeBullet ? /*#__PURE__*/React__default$1['default'].createElement("ul", null, sadfwe) : sadfwe;
-
-  function RendBase() {
-    const saidje = argMiss({
-      obj: saokwe,
-      flex,
-      ...listArgs
-    }); // return "sodkweeqw";
-
-    return BearDiv$1(saidje);
-  }
-
-  const idjsae = BearCheckList(compName, RendBase(), sidjfwe); //
-  // BearDiv(saidje)
-  // rendName();
-  // renderCheck();
-  // list ? renderCheck() :
-  // RendBase();
-
-  return idjsae;
-}
-
 function BearInputLabel({
   //
   children,
@@ -45424,7 +31996,7 @@ function BearInputLabel({
         color: "red"
       }
     };
-    return /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, _extends$Y({
+    return /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, _extends$O({
       span: true
     }, ijweq), difjger);
   }
@@ -45440,7 +32012,7 @@ function BearInputLabel({
     className: "error",
     style: olbknfr
   };
-  /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, _extends$Y({
+  /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, _extends$O({
     span: true
   }, asdwe)); // 1info 1popup
 
@@ -45747,7 +32319,7 @@ function BearInputBase(ujsdqwe, {
 
   function SameRet() {
     const kdfss = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1 //
-    , _extends$Y({
+    , _extends$O({
       flex: true
     }, ijsa), okaweasd));
     return kdfss;
@@ -45762,35 +32334,177 @@ function BearInputBase(ujsdqwe, {
   return containFunc ? containFunc(kaosdew) : kaosdew;
 }
 
-// import { AlignMain } from "./AlignMain";
+function BearCheckMain(asdf, zczx, sdfwe = {}) {
+  return dfkbijv(asdf, zczx, sdfwe);
+} // bearbase
 
-const size = {
-  // viewL: "700px",
-  viewL: "780px",
-  custHeight: "650px",
+function dfkbijv(named, children, {
   //
-  mobileS: "320px",
-  mobileM: "375px",
-  mobileL: "425px",
-  tablet: "768px",
-  laptop: "1024px",
-  laptopL: "1440px",
-  desktop: "2560px"
-}; // percentQu: `${percentPlayed}`,
+  // 1title
+  noTitle,
+  title,
+  titleConfig = {},
+  subtitle,
+  subtitleConfig = {},
+  //
+  //
+  bearName,
+  missName,
+  noNameNeeded,
+  //
+  //
+  advert,
+  advertConfig = {},
+  //
+  //
+  //
+  ignoreErrors,
+  requiredArgs = {},
+  //
+  //
+  degradedArgs = {},
+  //
+  topItem,
+  bottomItem,
+  //
+  //
+  style,
+  //
+  ...args
+}) {
+  // 1const
+  function Titren(adfok = {}) {
+    bearlog.lug("___ adfok ___", adfok);
+    return Titoas(adfok);
+  }
+
+  function Titoas({
+    style,
+    ...sdfok
+  }) {
+    const nsidjr = {
+      //
+      title,
+      subtitle,
+      subtitleConfig
+    };
+    const kjase = { ...nsidjr,
+      ...sdfok,
+      style: {
+        textAlign: "center",
+        fontSize: "1.5em",
+        marginBottom: "5px",
+        ...style
+      } // titleConfig: titleConfig,
+
+    };
+    const noisae = /*#__PURE__*/React__default$1['default'].createElement(BearTitle, kjase);
+    return noisae;
+  } // 1title
+
+
+  const dfjer = !noTitle && title;
+  const askew = dfjer && Titren(titleConfig); // 1love 1built 1avert
+
+  function Adverto({
+    style
+  }) {
+    //
+    //
+    const asqewew = {
+      className: "shadowHover",
+      style: { ...BearBackBorder("darkblue", "5px"),
+        color: "white",
+        // padding: "5px 10px",
+        fontSize: "16px",
+        // margin: "15px",
+        ...style
+      },
+      outsideLink: "http://bearui.io/"
+    };
+    const xvbijewr = /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, _extends$O({
+      span: true
+    }, asqewew), "Built with love by", " ", /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, {
+      span: true,
+      className: "bold"
+    }, "\uD83D\uDC3B Bear UI"));
+    return xvbijewr;
+  }
+
+  const dfsigwer = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, askew, children);
+  const disjwe = {
+    style: advert ? { ...BearBorder("grey", "5px"),
+      paddingTop: "60px"
+    } : {}
+  };
+  const jfdert = {
+    topRight: advert && Adverto(advertConfig),
+    // center: ,
+    paddingVert: "5px",
+    centerConfig: disjwe
+  };
+  const ikjdwer = /*#__PURE__*/React__default$1['default'].createElement(BearFloat, jfdert, dfsigwer);
+  const okfdsd = //
+  ikjdwer; // dfsigwer;
+
+  const idfg = {
+    textAlign: "center",
+    ...style
+  };
+  args = {
+    obj: /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, {
+      obj: okfdsd
+    }),
+    style: idfg,
+    ...args
+  };
+  const sdufdsf = missName ? missName : named;
+  const objDegrade = getAnyDictValue(degradedArgs);
+  const objRequre = getAnyDictValue(requiredArgs);
+  bearlog.lug("___ objRequre ___", objRequre);
+
+  function sajwae(sdfer) {
+    const goCHecko = !ignoreErrors;
+    const uhfgewq = goCHecko ? sdfer : /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, args);
+    return uhfgewq;
+  }
+
+  function degradMess() {
+    const usdfer = //
+    "MISSING ARGUMENT GOO"; // objDegrade + " is missing "
+
+    const dfwewa = BearError(usdfer);
+    return dfwewa;
+  }
+
+  function rendName() {
+    return !bearName && !noNameNeeded ? sajwae(BearErrMiss$1("bearName", bearName, sdufdsf) // BearError(
+    //   `${BearPossess(
+    //     "argument",
+    //     bearName,
+    //     sdufdsf
+    //   )}' needs a 'bearName' attribute!`
+    // )
+    ) : objRequre ? sajwae(BearErrMiss$1(objRequre, bearName, sdufdsf)) : objDegrade ? sajwae(degradMess()) : /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, args);
+  }
+
+  return rendName();
+}
 
 const MediaQueries = {
   viewtype: "(min-width: 780px)",
   customHeight: "(min-height: 650px)"
 };
-const bearMobileView = //
-aazafadsfas();
+
 function aazafadsfas() {
   const widthVary = window.matchMedia(MediaQueries.viewtype);
   window.matchMedia(MediaQueries.customHeight);
   return !widthVary.matches;
 } // export const mobileNot = widthVary.matches;
 
-function BearFalseLog(...asdf) {}
+
+const bearMobileView = //
+aazafadsfas();
 function BearQuote(sdofkr) {
   let leftie = "'";
   let rightie = "'";
@@ -45826,36 +32540,6 @@ function BearAttrNeeds(bearName) {
   //
   // const ikasae
   return "";
-} // 1must
-
-function BearErrArgType$1(arg, type, {
-  bearName,
-  ...asd
-}) {
-  //
-  return BearError(bearName + "'s " + BearQuote(arg) + " argument must be a " + type, asd);
-}
-function BearErrMiss(...asd) {
-  //
-  return BearError(BearMissing(...asd));
-}
-function BearMissing(attr, mainnum, aseqwe = "Your component") {
-  //
-  const nisdfrw = mainnum ? mainnum : aseqwe;
-  const kdsdae = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, BearQuote(nisdfrw), "'s", BearSpace(BearQuote(attr)), "attribute is empty or missing.");
-  const sadwew = //
-  kdsdae;
-  return sadwew;
-}
-function InputForm({ ...sae
-}) {
-  // size="xs"
-  // name="Kola Tioluwani"
-  // src="https://bit.ly/tioluwani-kolawole"
-  const sadwew = //
-  ""; // <Input {...sae} />;
-
-  return sadwew;
 }
 function BearIconText(icon, text, osdfds) {
   //
@@ -45875,15 +32559,6 @@ function BearImageText(image, text, osdfds) {
     ...osdfds
   };
   const sadwew = /*#__PURE__*/React__default$1['default'].createElement(BearTextMedia, bodfg);
-  return sadwew;
-}
-function linkBase(link, objvar, osdfds) {
-  const dkfdsfre = {
-    link: link,
-    obj: objvar,
-    ...osdfds
-  };
-  const sadwew = /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, dkfdsfre);
   return sadwew;
 }
 function BearWrap({
@@ -45939,21 +32614,6 @@ function BearPlural(stringVar, lengAfter, {
   var plT = pluralize(stringVar, lengAfter);
   var finalSt = noNumber ? plT : lengAfter + " " + plT;
   return finalSt;
-} // 1list
-
-function ListReturn({ ...sae
-}) {
-  const sadwew = /*#__PURE__*/React__default$1['default'].createElement(BearList$1, _extends$Y({
-    returnTrue: true
-  }, sae));
-  return sadwew;
-}
-function ListFlex({ ...sae
-}) {
-  const sadwew = /*#__PURE__*/React__default$1['default'].createElement(BearList$1, _extends$Y({
-    returnTrue: true
-  }, sae));
-  return sadwew;
 }
 function BearFlex({
   padvar = "20px",
@@ -45992,7 +32652,7 @@ function BearFlex({
   }
 
   function redndo(asdwa) {
-    bearlog.log("___ bearflex MAIN  ___", asdwa);
+    bearlog.lug("___ bearflex MAIN  ___", asdwa);
     const ijase = {
       obj: asdwa
     }; // asdwa.obj
@@ -46028,82 +32688,6 @@ function BearFlex({
   const sadwew = /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, vbdrewe);
   return sadwew;
 }
-function FlexHorz({
-  children,
-  horiz
-}) {
-  //
-  const ijdrwer = {
-    spacing: 10,
-    direction: horiz && "row"
-  };
-  return /*#__PURE__*/React__default$1['default'].createElement(Stack, ijdrwer, children);
-} // 1slider
-
-function SliderMain({ ...sae
-}) {
-  // size="xs"
-  // name="Kola Tioluwani"
-  // src="https://bit.ly/tioluwani-kolawole"
-  const sadwew = //
-  ""; // <Slider {...sae} />;
-  // <Slider marks={marks} step={null} defaultValue={37} />
-
-  return sadwew;
-} // 1input
-
-function InputMain({ ...sae
-}) {
-  // size="xs"
-  // name="Kola Tioluwani"
-  // src="https://bit.ly/tioluwani-kolawole"
-  const sadwew = //
-  ""; // <Input {...sae} />;
-
-  return sadwew;
-} // 1image
-
-function ImageAlign({
-  //
-  imageConfig,
-  ...argo
-}) {
-  //
-  //
-  const okswe = /*#__PURE__*/React__default$1['default'].createElement(ImageMain, imageConfig);
-  argo = {
-    mainObj: okswe,
-    ...argo
-  };
-  bearlog.lug("argo-zzz", argo, "asd09js"); //
-
-  return ""; //   return <AlignMain {...argo} />;
-}
-function ImageGroup({
-  list,
-  ...sae
-}) {
-  // max size
-  const sadwew = /*#__PURE__*/React__default$1['default'].createElement(AvatarGroup, sae, list.map(asowe => /*#__PURE__*/React__default$1['default'].createElement(ImageMain, _extends$Y({
-    typevar: "chakra"
-  }, asowe))));
-  return sadwew;
-}
-function PagePad({
-  left = "",
-  padvar = "38vw",
-  ...sae
-}) {
-  const oksae = left ? {
-    paddingRight: padvar
-  } : {
-    paddingLeft: padvar
-  };
-  const sadwew = { ...sae,
-    style: oksae
-  };
-  return /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, sadwew);
-}
 function BearCopy({
   copyText,
   obj,
@@ -46123,6 +32707,397 @@ function BearUpper(sdkrwe) {
   const idfjgr = typeoe ? sdkrwe.charAt(0).toUpperCase() + sdkrwe.slice(1) : sdkrwe;
   return idfjgr;
 }
+function BearSpace(dataVar, asdwe) {
+  const kmxvs = {
+    obj: " " + dataVar + " ",
+    ...asdwe
+  };
+  return /*#__PURE__*/React__default$1['default'].createElement(BearSpan, kmxvs);
+}
+function BearLine(asbdfr) {
+  return /*#__PURE__*/React__default$1['default'].createElement("hr", {
+    style: asbdfr
+  });
+}
+function BearBlock({
+  children,
+  ...asde
+}) {
+  return BearCheckMain("blboc", children, {
+    bearName: "qweoq",
+    ...asde
+  });
+}
+function BearSpan(asdwe) {
+  return /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, _extends$O({
+    span: true
+  }, asdwe));
+} // export function ElStripo(dataVar) {
+//   return         <Elements stripe={stripePromise}>
+//             {dataVar}
+//         </Elements>
+// }
+
+function BearBorder(color, radius, sdfr = {}) {
+  const okfg = objectTrue(sdfr);
+  const vijder = okfg ? cxadfa(color, radius, sdfr) : BearError("Third argument of 'BearBorder' must be an object");
+  return vijder;
+}
+function cxadfa(color, radius, {
+  noPadding,
+  borderSize = "2px",
+  ...asd
+} = {}) {
+  //
+  const sjdfrwe = noPadding ? {// padding: "0px",
+  } : {
+    padding: "5px"
+  };
+  const ijsde = {
+    border: borderSize + " solid " + color,
+    borderRadius: radius,
+    ...sjdfrwe,
+    ...asd // ...sjdfrwe,
+
+  };
+  return ijsde;
+}
+function BearBackBorder$1(color, ...sdfew) {
+  const ijsde = {
+    background: color,
+    ...BearBorder(color, ...sdfew)
+  };
+  return ijsde;
+}
+function BearButtonList(sfkr) {
+  //
+  sfkr = {
+    typeList: "button",
+    ...sfkr
+  };
+  return BearList(sfkr);
+}
+
+function BearError(sdfjer, afijqwe = {}) {
+  return BearErASDJIQWE(sdfjer, afijqwe);
+}
+function BearErASDJIQWE(asdfower, {
+  bearName,
+  hideError,
+  ...asdd
+}) {
+  // 1const
+  const ijsawe = asdfower && /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement("br", null), /*#__PURE__*/React__default$1['default'].createElement("br", null), asdfower);
+  const sidjfr = hideError && /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement("br", null), /*#__PURE__*/React__default$1['default'].createElement("br", null), BearHideError(hideError, bearName));
+  const okfdsd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, "\uD83D\uDC3B ERROR", ijsawe, sidjfr, /*#__PURE__*/React__default$1['default'].createElement("br", null), /*#__PURE__*/React__default$1['default'].createElement("br", null));
+  const ijsad = {
+    //
+    // width: "100%",
+    padding: "5px 20%",
+    fontSize: "16px",
+    margin: "20px",
+    background: "darkred",
+    color: "white",
+    textAlign: "center",
+    ...BearBorder("transparent", "5px"),
+    ...(asdd && asdd.style)
+  };
+  const adkease = {
+    // className: "buttonHover shadowHover bold",
+    obj: okfdsd,
+    ...asdd,
+    style: ijsad
+  };
+  const okasew = /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, adkease);
+  return okasew;
+}
+function BearHideError(attr, name) {
+  const isjdfre = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, "To hide this error, set ", BearQuote(attr), " as true in ", BearQuote(name), "s", " ", "arguments.");
+  return isjdfre;
+} // export function BearErrMust(attr, name) {
+//   const isjdfre = (
+//     <>
+//      {attr} attribute must be {name}
+//     </>
+//   );
+//   return isjdfre;
+// }
+
+function BearCheckList(named, obj, {
+  //
+  bearName,
+  list,
+  renderItem,
+  typeList,
+  noError,
+  ignoreEmpty,
+  containFunc,
+  ...args
+}) {
+  // 1const
+  const skfwe = {
+    list,
+    renderItem,
+    typeList,
+    noError,
+    bearName,
+    ...args
+  };
+  bearlog.lug("___ BEARCHCKMAIN ___", skfwe);
+
+  function renderCheck() {
+    //
+    const ijsdfw = renderItem || typeList || containFunc || args.return;
+    const cisas = ijsdfw ? obj : BearErrMiss$1("'containFunc' or 'renderItem' or 'typeList' or 'return'", bearName, named);
+    return cisas;
+  }
+
+  const okfdsd = renderCheck();
+  const jsdawse = Array.isArray(list);
+  const listFull = jsdawse && list.length > 0; // 1console
+
+  bearlog.lug("___ listFull ___", {
+    //
+    list,
+    jsdawse,
+    listFull
+  }); // function sajE
+
+  const idfjger = {
+    bearName,
+    hideError: "ignoreEmpty"
+  };
+  const emptyall = !list || !listFull;
+  const ijsfre = emptyall && !ignoreEmpty ? BearError(BearMissing("list", bearName), // "wtf is this mate"
+  idfjger) : !jsdawse ? BearError("list attribute must be an array!") : okfdsd;
+  return BearCheckMain(named, ijsfre, skfwe);
+}
+
+function BearList( //
+// list,
+{
+  obj,
+  typevar,
+  // 1remove
+  list,
+  // 1name
+  bearName,
+  //
+  // 1display
+  containFunc,
+  displayNumber,
+  rowConfig,
+  //
+  //
+  // 1list
+  //
+  compName = "BearList",
+  // 1log
+  messvar,
+  logtrue,
+  //
+  //
+  addTrue,
+  scrollTrue,
+  className,
+  // SELECT
+  selectableTrue,
+  selectableConfig,
+  // 1STYLE
+  styleList,
+  // 1load
+  loadtrue,
+  typeBullet,
+  emptyItem,
+  loadNumber = 10,
+  //
+  // 1error
+  noError,
+  //
+  //
+  //
+  // 1horizotal
+  centerItem = true,
+  horiz,
+  flex,
+  //
+  // 1list,
+  // COLLAPSeE
+  hideList,
+  collapseTrue,
+  renderItem,
+  typeList,
+  ...listArgs
+}) {
+  // 1list
+  list = list && getListComplex(list, listArgs);
+  bearlog.lug("___Blist list ___", list); // function passChoose(itmBase) {
+  //   if (chooseTrue) {
+  //     let ogfsdfds =
+  //       //
+  //       itmBase;
+  //     setchosios(ogfsdfds);
+  //   }
+  // }
+  // const sdfosf =
+  // 1baseargs
+
+  const sidwre = {
+    bearName,
+    horiz,
+    typeBullet,
+    logtrue,
+    loadtrue,
+    containFunc,
+    renderItem,
+    typeList,
+    list
+  };
+  const sidjfwe = { ...sidwre,
+    ...listArgs
+  };
+  bearlog.lug("___ list BBB___", list);
+  bearlog.lug("___ list CCC___", list); // 1style
+
+  styleList = {
+    overflowY: scrollTrue ? "scroll" : "",
+    // overflowY: "scroll",
+    ...styleList
+  }; // 1horiz
+
+  function HozBar(lsoeas) {
+
+    const seqw = {
+      style: {
+        display: "flex",
+        justifyContent: "space-around"
+      }
+    };
+    const okaewq = seqw;
+    let aoksda = //
+    // donelist(lsoeas);
+    ["asdfasd", "Asdokqwe", "Asdqwke"].map(asdas => asdas);
+    const okadwe = {
+      flex: true,
+      style: okaewq,
+      obj: aoksda
+    }; // 1console
+
+    bearlog.lug("xxx-LIST-MAIN--args", messvar, list, "asd90u12321"); // gens.messCheck("sd9jqwxas", listMess, "BearList --AAAA--", oaskdwq);
+
+    const jisad = //
+    // <div {...seqw}>{aoksda}</div>
+    BearDiv$1(okadwe); // "okafsdf";
+    // EndListA();
+    // mapoBap();
+    // <HorizChoiceBar {...endoa} />;
+
+    return jisad;
+  } // 1select
+
+
+  function Seletio() {
+    const as83asd = //
+    ""; // <SelectArray {...asikwe} />
+
+    return as83asd;
+  } // 1display
+
+
+  function ksajda() {
+    const sdidsf = displayNumber && Number.isInteger(displayNumber);
+    return sdidsf ? xvcbmf() : BearErrArgType("displayNumber", "integer", {
+      bearName
+    });
+  }
+
+  function xvcbmf() {
+    const domase = lodash.chunk(list, displayNumber);
+    const jfsdas = domase.map(sfjsd);
+
+    function sfjsd(xcvkm) {
+      const kseasd = { ...rowConfig
+      };
+      return /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, kseasd, HozBar());
+    }
+
+    return jfsdas;
+  } // 1name
+
+
+  const sadfwe = //
+  //
+  selectableTrue ? /*#__PURE__*/React__default$1['default'].createElement(Seletio, null) : displayNumber ? ksajda() : horiz ? HozBar() : donelist(list);
+
+  function donelist(listio) {
+    !lodash.isEmpty(listio) || loadtrue;
+    const ushdsa = //
+    hideList ? "" : BearListMap(listio, sidjfwe); // fullVar ? BearListMap(list, sidjfwe) : "";
+    // fullVar && list.map(mapoBap);
+
+    return ushdsa;
+  }
+
+  const saokwe = typeBullet ? /*#__PURE__*/React__default$1['default'].createElement("ul", null, sadfwe) : sadfwe;
+
+  function RendBase() {
+    let saidje = {
+      obj: saokwe,
+      // flex,
+      ...listArgs
+    };
+    saidje = //
+    // saidje;
+    argMiss(saidje);
+    let kaasdaz = //
+    BearDiv$1(saidje); // saokwe;
+    // return "sodkweeqw";
+
+    return kaasdaz;
+  }
+
+  const idjsae = //
+  BearCheckList(compName, RendBase(), sidjfwe); // BearDiv(saidje)
+  // rendName();
+  // renderCheck();
+  // list ? renderCheck() :
+  // RendBase();
+
+  return idjsae;
+}
+
+// import { AlignMain } from "./AlignMain";
+
+function CheckListExist({
+  list,
+  dictvar,
+  renderItem,
+  itemConfig,
+  ...aaaa
+}) {
+  return list.map(function (itemName) {
+    const sdijfwe = dictvar ? dictvar[itemName] : itemName;
+    const isdjfr = {
+      itemName,
+      ...itemConfig,
+      ...sdijfwe
+    }; //   const { textvar } = sdijfwe;
+
+    const okfdsd = renderItem(isdjfr);
+    return okfdsd;
+  });
+}
+function FlexHorz({
+  children,
+  horiz
+}) {
+  //
+  const ijdrwer = {
+    spacing: 10,
+    direction: horiz && "row"
+  };
+  return /*#__PURE__*/React__default$1['default'].createElement(Stack, ijdrwer, children);
+} // 1slider
 function SwitchComp(itemType, args) {
   let sokae = "";
 
@@ -46160,75 +33135,6 @@ function LoadMain({
 
   return endValue;
 }
-function BearSpace(dataVar, asdwe) {
-  const kmxvs = {
-    obj: " " + dataVar + " ",
-    ...asdwe
-  };
-  return /*#__PURE__*/React__default$1['default'].createElement(BearSpan, kmxvs);
-}
-function BearLine(asbdfr) {
-  return /*#__PURE__*/React__default$1['default'].createElement("hr", {
-    style: asbdfr
-  });
-}
-function BearBlock({
-  children,
-  ...asde
-}) {
-  return BearCheckMain("blboc", children, {
-    bearName: "qweoq",
-    ...asde
-  });
-}
-function BearSpan(asdwe) {
-  return /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, _extends$Y({
-    span: true
-  }, asdwe));
-} // export function ElStripo(dataVar) {
-//   return         <Elements stripe={stripePromise}>
-//             {dataVar}
-//         </Elements>
-// }
-
-function BearBorder(color, radius, sdfr = {}) {
-  const okfg = objectTrue(sdfr);
-  const vijder = okfg ? cxadfa(color, radius, sdfr) : BearError("Third argument of 'BearBorder' must be an object");
-  return vijder;
-}
-function cxadfa(color, radius, {
-  noPadding,
-  borderSize = "2px",
-  ...asd
-} = {}) {
-  //
-  const sjdfrwe = noPadding ? {// padding: "0px",
-  } : {
-    padding: "5px"
-  };
-  const ijsde = {
-    border: borderSize + " solid " + color,
-    borderRadius: radius,
-    ...sjdfrwe,
-    ...asd // ...sjdfrwe,
-
-  };
-  return ijsde;
-}
-function BearBackBorder(color, ...sdfew) {
-  const ijsde = {
-    background: color,
-    ...BearBorder(color, ...sdfew)
-  };
-  return ijsde;
-}
-function BearListComp(list, sdfwre) {
-  const xcovk = getListComplex(list, sdfwre);
-  bearlog.lug("___ xcovk ___", xcovk);
-  const jadew = BearListMap(xcovk, sdfwre);
-  bearlog.lug("___ jadew ___", jadew);
-  return jadew;
-} // mapdict mapobject
 
 function mapDict(asd) {
   const sdfok = {};
@@ -46357,16 +33263,6 @@ function argPass({
   };
   return dfigjt;
 } //
-//
-
-function functioMa({
-  pass,
-  ...sdf
-}) {
-  //
-  // const ikasae
-  return "";
-}
 function InputBaseCheck(sfkr, {
   noBase,
   ...asdw
@@ -46379,44 +33275,11 @@ function InputBaseCheck(sfkr, {
   });
   return noBase ? sfkr : BearInputBase(sfkr, asdw);
 }
-function BearButtonList(sfkr) {
-  //
-  sfkr = {
-    typeList: "button",
-    ...sfkr
-  };
-  return BearList$1(sfkr);
-}
-function SwitchLayout({
-  children
-}) {
-  const skdfsa = {
-    height: ""
-  };
-  const zxcmsd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, "Hello!");
-  const kmxvs = {
-    obj: zxcmsd,
-    style: skdfsa
-  };
-  return /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, kmxvs);
-}
 function nameComb(sfkr, oskdfr) {
   //
   // const ikasae
   return sfkr + "___" + oskdfr;
 } // 1function
-
-function Exmapl(dataVar) {
-  const skdfsa = {
-    height: ""
-  };
-  const zxcmsd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, "Hello!");
-  const kmxvs = {
-    obj: zxcmsd,
-    style: skdfsa
-  };
-  return /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, kmxvs);
-}
 
 function BearDiv$1({
   //
@@ -46434,7 +33297,7 @@ function BearDiv$1({
   vertAlign,
   ignoreNull,
   typeDiv,
-  centerTrue,
+  center,
   span,
   logtrue,
   fontSize,
@@ -46462,8 +33325,7 @@ function BearDiv$1({
     display: "flex"
   };
   const zxcsd = vertAlign && {
-    alignItems: "center" // justifyContent: "center",
-
+    alignItems: "center"
   };
   const sidjfr = !equalSpacing && {// alignItems: "flex-start",
   };
@@ -46475,10 +33337,11 @@ function BearDiv$1({
   const oksdae = fontSize && {
     fontSize: fontSize
   };
-  const centerConf = centerTrue && {
-    width: "100%",
-    margin: "auto",
-    textAlign: "center"
+  const centerConf = center && {
+    // width: "100%",
+    // margin: "auto",
+    // textAlign: "center",
+    justifyContent: "center"
   };
   const baseFonto = {
     fontFamily: "Arial"
@@ -46502,6 +33365,7 @@ function BearDiv$1({
     ...nvsse,
     ...style
   };
+  bearlog.log("___ gibjr ___", gibjr);
   const oksde = {
     style: gibjr,
     ...args
@@ -46571,2526 +33435,722 @@ function BearDiv$1({
   return sadijqwe;
 }
 
-function isAbsolute(pathname) {
-  return pathname.charAt(0) === '/';
-} // About 1.5x faster than the two-arg version of Array#splice()
+function _typeof$7(obj) {
+  "@babel/helpers - typeof";
 
-
-function spliceOne(list, index) {
-  for (var i = index, k = i + 1, n = list.length; k < n; i += 1, k += 1) {
-    list[i] = list[k];
-  }
-
-  list.pop();
-} // This implementation is based heavily on node's url.parse
-
-
-function resolvePathname(to, from) {
-  if (from === undefined) from = '';
-  var toParts = to && to.split('/') || [];
-  var fromParts = from && from.split('/') || [];
-  var isToAbs = to && isAbsolute(to);
-  var isFromAbs = from && isAbsolute(from);
-  var mustEndAbs = isToAbs || isFromAbs;
-
-  if (to && isAbsolute(to)) {
-    // to is absolute
-    fromParts = toParts;
-  } else if (toParts.length) {
-    // to is relative, drop the filename
-    fromParts.pop();
-    fromParts = fromParts.concat(toParts);
-  }
-
-  if (!fromParts.length) return '/';
-  var hasTrailingSlash;
-
-  if (fromParts.length) {
-    var last = fromParts[fromParts.length - 1];
-    hasTrailingSlash = last === '.' || last === '..' || last === '';
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof$7 = function (obj) {
+      return typeof obj;
+    };
   } else {
-    hasTrailingSlash = false;
+    _typeof$7 = function (obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
   }
 
-  var up = 0;
+  return _typeof$7(obj);
+}
 
-  for (var i = fromParts.length; i >= 0; i--) {
-    var part = fromParts[i];
+function _defineProperty$h(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
 
-    if (part === '.') {
-      spliceOne(fromParts, i);
-    } else if (part === '..') {
-      spliceOne(fromParts, i);
-      up++;
-    } else if (up) {
-      spliceOne(fromParts, i);
-      up--;
+  return obj;
+}
+
+function ownKeys$e(object, enumerableOnly) {
+  var keys = Object.keys(object);
+
+  if (Object.getOwnPropertySymbols) {
+    var symbols = Object.getOwnPropertySymbols(object);
+    if (enumerableOnly) symbols = symbols.filter(function (sym) {
+      return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+    });
+    keys.push.apply(keys, symbols);
+  }
+
+  return keys;
+}
+
+function _objectSpread2$1(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+
+    if (i % 2) {
+      ownKeys$e(Object(source), true).forEach(function (key) {
+        _defineProperty$h(target, key, source[key]);
+      });
+    } else if (Object.getOwnPropertyDescriptors) {
+      Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+      ownKeys$e(Object(source)).forEach(function (key) {
+        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+      });
     }
   }
 
-  if (!mustEndAbs) for (; up--; up) fromParts.unshift('..');
-  if (mustEndAbs && fromParts[0] !== '' && (!fromParts[0] || !isAbsolute(fromParts[0]))) fromParts.unshift('');
-  var result = fromParts.join('/');
-  if (hasTrailingSlash && result.substr(-1) !== '/') result += '/';
-  return result;
+  return target;
 }
 
-var isProduction$1 = process.env.NODE_ENV === 'production';
+function _slicedToArray$2(arr, i) {
+  return _arrayWithHoles$2(arr) || _iterableToArrayLimit$2(arr, i) || _unsupportedIterableToArray$7(arr, i) || _nonIterableRest$2();
+}
 
-function warning(condition, message) {
-  if (!isProduction$1) {
-    if (condition) {
+function _arrayWithHoles$2(arr) {
+  if (Array.isArray(arr)) return arr;
+}
+
+function _iterableToArrayLimit$2(arr, i) {
+  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
+  var _arr = [];
+  var _n = true;
+  var _d = false;
+  var _e = undefined;
+
+  try {
+    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+      _arr.push(_s.value);
+
+      if (i && _arr.length === i) break;
+    }
+  } catch (err) {
+    _d = true;
+    _e = err;
+  } finally {
+    try {
+      if (!_n && _i["return"] != null) _i["return"]();
+    } finally {
+      if (_d) throw _e;
+    }
+  }
+
+  return _arr;
+}
+
+function _unsupportedIterableToArray$7(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return _arrayLikeToArray$7(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$7(o, minLen);
+}
+
+function _arrayLikeToArray$7(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+
+  for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
+
+  return arr2;
+}
+
+function _nonIterableRest$2() {
+  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+var usePrevious = function usePrevious(value) {
+  var ref = React__default$1['default'].useRef(value);
+  React__default$1['default'].useEffect(function () {
+    ref.current = value;
+  }, [value]);
+  return ref.current;
+};
+
+var isUnknownObject = function isUnknownObject(raw) {
+  return raw !== null && _typeof$7(raw) === 'object';
+};
+
+var isPromise = function isPromise(raw) {
+  return isUnknownObject(raw) && typeof raw.then === 'function';
+}; // We are using types to enforce the `stripe` prop in this lib,
+// but in an untyped integration `stripe` could be anything, so we need
+// to do some sanity validation to prevent type errors.
+
+
+var isStripe = function isStripe(raw) {
+  return isUnknownObject(raw) && typeof raw.elements === 'function' && typeof raw.createToken === 'function' && typeof raw.createPaymentMethod === 'function' && typeof raw.confirmCardPayment === 'function';
+};
+
+var PLAIN_OBJECT_STR = '[object Object]';
+
+var isEqual$1 = function isEqual(left, right) {
+  if (!isUnknownObject(left) || !isUnknownObject(right)) {
+    return left === right;
+  }
+
+  var leftArray = Array.isArray(left);
+  var rightArray = Array.isArray(right);
+  if (leftArray !== rightArray) return false;
+  var leftPlainObject = Object.prototype.toString.call(left) === PLAIN_OBJECT_STR;
+  var rightPlainObject = Object.prototype.toString.call(right) === PLAIN_OBJECT_STR;
+  if (leftPlainObject !== rightPlainObject) return false;
+  if (!leftPlainObject && !leftArray) return false;
+  var leftKeys = Object.keys(left);
+  var rightKeys = Object.keys(right);
+  if (leftKeys.length !== rightKeys.length) return false;
+  var keySet = {};
+
+  for (var i = 0; i < leftKeys.length; i += 1) {
+    keySet[leftKeys[i]] = true;
+  }
+
+  for (var _i = 0; _i < rightKeys.length; _i += 1) {
+    keySet[rightKeys[_i]] = true;
+  }
+
+  var allKeys = Object.keys(keySet);
+
+  if (allKeys.length !== leftKeys.length) {
+    return false;
+  }
+
+  var l = left;
+  var r = right;
+
+  var pred = function pred(key) {
+    return isEqual(l[key], r[key]);
+  };
+
+  return allKeys.every(pred);
+};
+
+var extractAllowedOptionsUpdates = function extractAllowedOptionsUpdates(options, prevOptions, immutableKeys) {
+  if (!isUnknownObject(options)) {
+    return null;
+  }
+
+  return Object.keys(options).reduce(function (newOptions, key) {
+    var isUpdated = !isUnknownObject(prevOptions) || !isEqual$1(options[key], prevOptions[key]);
+
+    if (immutableKeys.includes(key)) {
+      if (isUpdated) {
+        console.warn("Unsupported prop change: options.".concat(key, " is not a mutable property."));
+      }
+
+      return newOptions;
+    }
+
+    if (!isUpdated) {
+      return newOptions;
+    }
+
+    return _objectSpread2$1(_objectSpread2$1({}, newOptions || {}), {}, _defineProperty$h({}, key, options[key]));
+  }, null);
+};
+
+var INVALID_STRIPE_ERROR = 'Invalid prop `stripe` supplied to `Elements`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.'; // We are using types to enforce the `stripe` prop in this lib, but in a real
+// integration `stripe` could be anything, so we need to do some sanity
+// validation to prevent type errors.
+
+var validateStripe = function validateStripe(maybeStripe) {
+  if (maybeStripe === null || isStripe(maybeStripe)) {
+    return maybeStripe;
+  }
+
+  throw new Error(INVALID_STRIPE_ERROR);
+};
+
+var parseStripeProp = function parseStripeProp(raw) {
+  if (isPromise(raw)) {
+    return {
+      tag: 'async',
+      stripePromise: Promise.resolve(raw).then(validateStripe)
+    };
+  }
+
+  var stripe = validateStripe(raw);
+
+  if (stripe === null) {
+    return {
+      tag: 'empty'
+    };
+  }
+
+  return {
+    tag: 'sync',
+    stripe: stripe
+  };
+};
+
+var ElementsContext = /*#__PURE__*/React__default$1['default'].createContext(null);
+ElementsContext.displayName = 'ElementsContext';
+
+var parseElementsContext = function parseElementsContext(ctx, useCase) {
+  if (!ctx) {
+    throw new Error("Could not find Elements context; You need to wrap the part of your app that ".concat(useCase, " in an <Elements> provider."));
+  }
+
+  return ctx;
+};
+/**
+ * The `Elements` provider allows you to use [Element components](https://stripe.com/docs/stripe-js/react#element-components) and access the [Stripe object](https://stripe.com/docs/js/initializing) in any nested component.
+ * Render an `Elements` provider at the root of your React app so that it is available everywhere you need it.
+ *
+ * To use the `Elements` provider, call `loadStripe` from `@stripe/stripe-js` with your publishable key.
+ * The `loadStripe` function will asynchronously load the Stripe.js script and initialize a `Stripe` object.
+ * Pass the returned `Promise` to `Elements`.
+ *
+ * @docs https://stripe.com/docs/stripe-js/react#elements-provider
+ */
+
+
+var Elements = function Elements(_ref) {
+  var rawStripeProp = _ref.stripe,
+      options = _ref.options,
+      children = _ref.children;
+
+  var _final = React__default$1['default'].useRef(false);
+
+  var isMounted = React__default$1['default'].useRef(true);
+  var parsed = React__default$1['default'].useMemo(function () {
+    return parseStripeProp(rawStripeProp);
+  }, [rawStripeProp]);
+
+  var _React$useState = React__default$1['default'].useState(function () {
+    return {
+      stripe: null,
+      elements: null
+    };
+  }),
+      _React$useState2 = _slicedToArray$2(_React$useState, 2),
+      ctx = _React$useState2[0],
+      setContext = _React$useState2[1];
+
+  var prevStripe = usePrevious(rawStripeProp);
+
+  if (prevStripe !== null) {
+    if (prevStripe !== rawStripeProp) {
+      console.warn('Unsupported prop change on Elements: You cannot change the `stripe` prop after setting it.');
+    }
+  }
+
+  if (!_final.current) {
+    if (parsed.tag === 'sync') {
+      _final.current = true;
+      setContext({
+        stripe: parsed.stripe,
+        elements: parsed.stripe.elements(options)
+      });
+    }
+
+    if (parsed.tag === 'async') {
+      _final.current = true;
+      parsed.stripePromise.then(function (stripe) {
+        if (stripe && isMounted.current) {
+          // Only update Elements context if the component is still mounted
+          // and stripe is not null. We allow stripe to be null to make
+          // handling SSR easier.
+          setContext({
+            stripe: stripe,
+            elements: stripe.elements(options)
+          });
+        }
+      });
+    }
+  }
+
+  var prevOptions = usePrevious(options);
+  React__default$1['default'].useEffect(function () {
+    if (!ctx.elements) {
       return;
     }
 
-    var text = "Warning: " + message;
+    var updates = extractAllowedOptionsUpdates(options, prevOptions, ['clientSecret', 'fonts']);
 
-    if (typeof console !== 'undefined') {
-      console.warn(text);
+    if (updates) {
+      ctx.elements.update(updates);
     }
-
-    try {
-      throw Error(text);
-    } catch (x) {}
-  }
-}
-
-function addLeadingSlash$1(path) {
-  return path.charAt(0) === '/' ? path : '/' + path;
-}
-
-function stripLeadingSlash(path) {
-  return path.charAt(0) === '/' ? path.substr(1) : path;
-}
-
-function hasBasename(path, prefix) {
-  return path.toLowerCase().indexOf(prefix.toLowerCase()) === 0 && '/?#'.indexOf(path.charAt(prefix.length)) !== -1;
-}
-
-function stripBasename$1(path, prefix) {
-  return hasBasename(path, prefix) ? path.substr(prefix.length) : path;
-}
-
-function stripTrailingSlash(path) {
-  return path.charAt(path.length - 1) === '/' ? path.slice(0, -1) : path;
-}
-
-function parsePath(path) {
-  var pathname = path || '/';
-  var search = '';
-  var hash = '';
-  var hashIndex = pathname.indexOf('#');
-
-  if (hashIndex !== -1) {
-    hash = pathname.substr(hashIndex);
-    pathname = pathname.substr(0, hashIndex);
-  }
-
-  var searchIndex = pathname.indexOf('?');
-
-  if (searchIndex !== -1) {
-    search = pathname.substr(searchIndex);
-    pathname = pathname.substr(0, searchIndex);
-  }
-
-  return {
-    pathname: pathname,
-    search: search === '?' ? '' : search,
-    hash: hash === '#' ? '' : hash
-  };
-}
-
-function createPath(location) {
-  var pathname = location.pathname,
-      search = location.search,
-      hash = location.hash;
-  var path = pathname || '/';
-  if (search && search !== '?') path += search.charAt(0) === '?' ? search : "?" + search;
-  if (hash && hash !== '#') path += hash.charAt(0) === '#' ? hash : "#" + hash;
-  return path;
-}
-
-function createLocation(path, state, key, currentLocation) {
-  var location;
-
-  if (typeof path === 'string') {
-    // Two-arg form: push(path, state)
-    location = parsePath(path);
-    location.state = state;
-  } else {
-    // One-arg form: push(location)
-    location = _extends$X({}, path);
-    if (location.pathname === undefined) location.pathname = '';
-
-    if (location.search) {
-      if (location.search.charAt(0) !== '?') location.search = '?' + location.search;
-    } else {
-      location.search = '';
-    }
-
-    if (location.hash) {
-      if (location.hash.charAt(0) !== '#') location.hash = '#' + location.hash;
-    } else {
-      location.hash = '';
-    }
-
-    if (state !== undefined && location.state === undefined) location.state = state;
-  }
-
-  try {
-    location.pathname = decodeURI(location.pathname);
-  } catch (e) {
-    if (e instanceof URIError) {
-      throw new URIError('Pathname "' + location.pathname + '" could not be decoded. ' + 'This is likely caused by an invalid percent-encoding.');
-    } else {
-      throw e;
-    }
-  }
-
-  if (key) location.key = key;
-
-  if (currentLocation) {
-    // Resolve incomplete/relative pathname relative to current location.
-    if (!location.pathname) {
-      location.pathname = currentLocation.pathname;
-    } else if (location.pathname.charAt(0) !== '/') {
-      location.pathname = resolvePathname(location.pathname, currentLocation.pathname);
-    }
-  } else {
-    // When there is no prior location and pathname is empty, set it to /
-    if (!location.pathname) {
-      location.pathname = '/';
-    }
-  }
-
-  return location;
-}
-
-function createTransitionManager() {
-  var prompt = null;
-
-  function setPrompt(nextPrompt) {
-    process.env.NODE_ENV !== "production" ? warning(prompt == null, 'A history supports only one prompt at a time') : void 0;
-    prompt = nextPrompt;
+  }, [options, prevOptions, ctx.elements]);
+  React__default$1['default'].useEffect(function () {
     return function () {
-      if (prompt === nextPrompt) prompt = null;
+      isMounted.current = false;
     };
-  }
+  }, []);
+  React__default$1['default'].useEffect(function () {
+    var anyStripe = ctx.stripe;
 
-  function confirmTransitionTo(location, action, getUserConfirmation, callback) {
-    // TODO: If another transition starts while we're still confirming
-    // the previous one, we may end up in a weird state. Figure out the
-    // best way to handle this.
-    if (prompt != null) {
-      var result = typeof prompt === 'function' ? prompt(location, action) : prompt;
-
-      if (typeof result === 'string') {
-        if (typeof getUserConfirmation === 'function') {
-          getUserConfirmation(result, callback);
-        } else {
-          process.env.NODE_ENV !== "production" ? warning(false, 'A history needs a getUserConfirmation function in order to use a prompt message') : void 0;
-          callback(true);
-        }
-      } else {
-        // Return false from a transition hook to cancel the transition.
-        callback(result !== false);
-      }
-    } else {
-      callback(true);
-    }
-  }
-
-  var listeners = [];
-
-  function appendListener(fn) {
-    var isActive = true;
-
-    function listener() {
-      if (isActive) fn.apply(void 0, arguments);
+    if (!anyStripe || !anyStripe._registerWrapper || !anyStripe.registerAppInfo) {
+      return;
     }
 
-    listeners.push(listener);
-    return function () {
-      isActive = false;
-      listeners = listeners.filter(function (item) {
-        return item !== listener;
-      });
-    };
-  }
-
-  function notifyListeners() {
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    listeners.forEach(function (listener) {
-      return listener.apply(void 0, args);
+    anyStripe._registerWrapper({
+      name: 'react-stripe-js',
+      version: "1.5.0"
     });
-  }
 
-  return {
-    setPrompt: setPrompt,
-    confirmTransitionTo: confirmTransitionTo,
-    appendListener: appendListener,
-    notifyListeners: notifyListeners
-  };
-}
-
-var canUseDOM$2 = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
-
-function getConfirmation(message, callback) {
-  callback(window.confirm(message)); // eslint-disable-line no-alert
-}
-/**
- * Returns true if the HTML5 history API is supported. Taken from Modernizr.
- *
- * https://github.com/Modernizr/Modernizr/blob/master/LICENSE
- * https://github.com/Modernizr/Modernizr/blob/master/feature-detects/history.js
- * changed to avoid false negatives for Windows Phones: https://github.com/reactjs/react-router/issues/586
- */
-
-
-function supportsHistory() {
-  var ua = window.navigator.userAgent;
-  if ((ua.indexOf('Android 2.') !== -1 || ua.indexOf('Android 4.0') !== -1) && ua.indexOf('Mobile Safari') !== -1 && ua.indexOf('Chrome') === -1 && ua.indexOf('Windows Phone') === -1) return false;
-  return window.history && 'pushState' in window.history;
-}
-/**
- * Returns true if browser fires popstate on hash change.
- * IE10 and IE11 do not.
- */
-
-
-function supportsPopStateOnHashChange() {
-  return window.navigator.userAgent.indexOf('Trident') === -1;
-}
-/**
- * Returns false if using go(n) with hash history causes a full page reload.
- */
-
-
-function supportsGoWithoutReloadUsingHash() {
-  return window.navigator.userAgent.indexOf('Firefox') === -1;
-}
-/**
- * Returns true if a given popstate event is an extraneous WebKit event.
- * Accounts for the fact that Chrome on iOS fires real popstate events
- * containing undefined state when pressing the back button.
- */
-
-
-function isExtraneousPopstateEvent(event) {
-  return event.state === undefined && navigator.userAgent.indexOf('CriOS') === -1;
-}
-
-var PopStateEvent = 'popstate';
-var HashChangeEvent = 'hashchange';
-
-function getHistoryState() {
-  try {
-    return window.history.state || {};
-  } catch (e) {
-    // IE 11 sometimes throws when accessing window.history.state
-    // See https://github.com/ReactTraining/history/pull/289
-    return {};
-  }
-}
-/**
- * Creates a history object that uses the HTML5 history API including
- * pushState, replaceState, and the popstate event.
- */
-
-
-function createBrowserHistory(props) {
-  if (props === void 0) {
-    props = {};
-  }
-
-  !canUseDOM$2 ? process.env.NODE_ENV !== "production" ? invariant$1(false, 'Browser history needs a DOM') : invariant$1(false) : void 0;
-  var globalHistory = window.history;
-  var canUseHistory = supportsHistory();
-  var needsHashChangeListener = !supportsPopStateOnHashChange();
-  var _props = props,
-      _props$forceRefresh = _props.forceRefresh,
-      forceRefresh = _props$forceRefresh === void 0 ? false : _props$forceRefresh,
-      _props$getUserConfirm = _props.getUserConfirmation,
-      getUserConfirmation = _props$getUserConfirm === void 0 ? getConfirmation : _props$getUserConfirm,
-      _props$keyLength = _props.keyLength,
-      keyLength = _props$keyLength === void 0 ? 6 : _props$keyLength;
-  var basename = props.basename ? stripTrailingSlash(addLeadingSlash$1(props.basename)) : '';
-
-  function getDOMLocation(historyState) {
-    var _ref = historyState || {},
-        key = _ref.key,
-        state = _ref.state;
-
-    var _window$location = window.location,
-        pathname = _window$location.pathname,
-        search = _window$location.search,
-        hash = _window$location.hash;
-    var path = pathname + search + hash;
-    process.env.NODE_ENV !== "production" ? warning(!basename || hasBasename(path, basename), 'You are attempting to use a basename on a page whose URL path does not begin ' + 'with the basename. Expected path "' + path + '" to begin with "' + basename + '".') : void 0;
-    if (basename) path = stripBasename$1(path, basename);
-    return createLocation(path, state, key);
-  }
-
-  function createKey() {
-    return Math.random().toString(36).substr(2, keyLength);
-  }
-
-  var transitionManager = createTransitionManager();
-
-  function setState(nextState) {
-    _extends$X(history, nextState);
-
-    history.length = globalHistory.length;
-    transitionManager.notifyListeners(history.location, history.action);
-  }
-
-  function handlePopState(event) {
-    // Ignore extraneous popstate events in WebKit.
-    if (isExtraneousPopstateEvent(event)) return;
-    handlePop(getDOMLocation(event.state));
-  }
-
-  function handleHashChange() {
-    handlePop(getDOMLocation(getHistoryState()));
-  }
-
-  var forceNextPop = false;
-
-  function handlePop(location) {
-    if (forceNextPop) {
-      forceNextPop = false;
-      setState();
-    } else {
-      var action = 'POP';
-      transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
-        if (ok) {
-          setState({
-            action: action,
-            location: location
-          });
-        } else {
-          revertPop(location);
-        }
-      });
-    }
-  }
-
-  function revertPop(fromLocation) {
-    var toLocation = history.location; // TODO: We could probably make this more reliable by
-    // keeping a list of keys we've seen in sessionStorage.
-    // Instead, we just default to 0 for keys we don't know.
-
-    var toIndex = allKeys.indexOf(toLocation.key);
-    if (toIndex === -1) toIndex = 0;
-    var fromIndex = allKeys.indexOf(fromLocation.key);
-    if (fromIndex === -1) fromIndex = 0;
-    var delta = toIndex - fromIndex;
-
-    if (delta) {
-      forceNextPop = true;
-      go(delta);
-    }
-  }
-
-  var initialLocation = getDOMLocation(getHistoryState());
-  var allKeys = [initialLocation.key]; // Public interface
-
-  function createHref(location) {
-    return basename + createPath(location);
-  }
-
-  function push(path, state) {
-    process.env.NODE_ENV !== "production" ? warning(!(typeof path === 'object' && path.state !== undefined && state !== undefined), 'You should avoid providing a 2nd state argument to push when the 1st ' + 'argument is a location-like object that already has state; it is ignored') : void 0;
-    var action = 'PUSH';
-    var location = createLocation(path, state, createKey(), history.location);
-    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
-      if (!ok) return;
-      var href = createHref(location);
-      var key = location.key,
-          state = location.state;
-
-      if (canUseHistory) {
-        globalHistory.pushState({
-          key: key,
-          state: state
-        }, null, href);
-
-        if (forceRefresh) {
-          window.location.href = href;
-        } else {
-          var prevIndex = allKeys.indexOf(history.location.key);
-          var nextKeys = allKeys.slice(0, prevIndex + 1);
-          nextKeys.push(location.key);
-          allKeys = nextKeys;
-          setState({
-            action: action,
-            location: location
-          });
-        }
-      } else {
-        process.env.NODE_ENV !== "production" ? warning(state === undefined, 'Browser history cannot push state in browsers that do not support HTML5 history') : void 0;
-        window.location.href = href;
-      }
+    anyStripe.registerAppInfo({
+      name: 'react-stripe-js',
+      version: "1.5.0",
+      url: 'https://stripe.com/docs/stripe-js/react'
     });
-  }
-
-  function replace(path, state) {
-    process.env.NODE_ENV !== "production" ? warning(!(typeof path === 'object' && path.state !== undefined && state !== undefined), 'You should avoid providing a 2nd state argument to replace when the 1st ' + 'argument is a location-like object that already has state; it is ignored') : void 0;
-    var action = 'REPLACE';
-    var location = createLocation(path, state, createKey(), history.location);
-    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
-      if (!ok) return;
-      var href = createHref(location);
-      var key = location.key,
-          state = location.state;
-
-      if (canUseHistory) {
-        globalHistory.replaceState({
-          key: key,
-          state: state
-        }, null, href);
-
-        if (forceRefresh) {
-          window.location.replace(href);
-        } else {
-          var prevIndex = allKeys.indexOf(history.location.key);
-          if (prevIndex !== -1) allKeys[prevIndex] = location.key;
-          setState({
-            action: action,
-            location: location
-          });
-        }
-      } else {
-        process.env.NODE_ENV !== "production" ? warning(state === undefined, 'Browser history cannot replace state in browsers that do not support HTML5 history') : void 0;
-        window.location.replace(href);
-      }
-    });
-  }
-
-  function go(n) {
-    globalHistory.go(n);
-  }
-
-  function goBack() {
-    go(-1);
-  }
-
-  function goForward() {
-    go(1);
-  }
-
-  var listenerCount = 0;
-
-  function checkDOMListeners(delta) {
-    listenerCount += delta;
-
-    if (listenerCount === 1 && delta === 1) {
-      window.addEventListener(PopStateEvent, handlePopState);
-      if (needsHashChangeListener) window.addEventListener(HashChangeEvent, handleHashChange);
-    } else if (listenerCount === 0) {
-      window.removeEventListener(PopStateEvent, handlePopState);
-      if (needsHashChangeListener) window.removeEventListener(HashChangeEvent, handleHashChange);
-    }
-  }
-
-  var isBlocked = false;
-
-  function block(prompt) {
-    if (prompt === void 0) {
-      prompt = false;
-    }
-
-    var unblock = transitionManager.setPrompt(prompt);
-
-    if (!isBlocked) {
-      checkDOMListeners(1);
-      isBlocked = true;
-    }
-
-    return function () {
-      if (isBlocked) {
-        isBlocked = false;
-        checkDOMListeners(-1);
-      }
-
-      return unblock();
-    };
-  }
-
-  function listen(listener) {
-    var unlisten = transitionManager.appendListener(listener);
-    checkDOMListeners(1);
-    return function () {
-      checkDOMListeners(-1);
-      unlisten();
-    };
-  }
-
-  var history = {
-    length: globalHistory.length,
-    action: 'POP',
-    location: initialLocation,
-    createHref: createHref,
-    push: push,
-    replace: replace,
-    go: go,
-    goBack: goBack,
-    goForward: goForward,
-    block: block,
-    listen: listen
-  };
-  return history;
-}
-
-var HashChangeEvent$1 = 'hashchange';
-var HashPathCoders = {
-  hashbang: {
-    encodePath: function encodePath(path) {
-      return path.charAt(0) === '!' ? path : '!/' + stripLeadingSlash(path);
-    },
-    decodePath: function decodePath(path) {
-      return path.charAt(0) === '!' ? path.substr(1) : path;
-    }
-  },
-  noslash: {
-    encodePath: stripLeadingSlash,
-    decodePath: addLeadingSlash$1
-  },
-  slash: {
-    encodePath: addLeadingSlash$1,
-    decodePath: addLeadingSlash$1
-  }
+  }, [ctx.stripe]);
+  return /*#__PURE__*/React__default$1['default'].createElement(ElementsContext.Provider, {
+    value: ctx
+  }, children);
 };
 
-function stripHash(url) {
-  var hashIndex = url.indexOf('#');
-  return hashIndex === -1 ? url : url.slice(0, hashIndex);
-}
-
-function getHashPath() {
-  // We can't use window.location.hash here because it's not
-  // consistent across browsers - Firefox will pre-decode it!
-  var href = window.location.href;
-  var hashIndex = href.indexOf('#');
-  return hashIndex === -1 ? '' : href.substring(hashIndex + 1);
-}
-
-function pushHashPath(path) {
-  window.location.hash = path;
-}
-
-function replaceHashPath(path) {
-  window.location.replace(stripHash(window.location.href) + '#' + path);
-}
-
-function createHashHistory(props) {
-  if (props === void 0) {
-    props = {};
-  }
-
-  !canUseDOM$2 ? process.env.NODE_ENV !== "production" ? invariant$1(false, 'Hash history needs a DOM') : invariant$1(false) : void 0;
-  var globalHistory = window.history;
-  var canGoWithoutReload = supportsGoWithoutReloadUsingHash();
-  var _props = props,
-      _props$getUserConfirm = _props.getUserConfirmation,
-      getUserConfirmation = _props$getUserConfirm === void 0 ? getConfirmation : _props$getUserConfirm,
-      _props$hashType = _props.hashType,
-      hashType = _props$hashType === void 0 ? 'slash' : _props$hashType;
-  var basename = props.basename ? stripTrailingSlash(addLeadingSlash$1(props.basename)) : '';
-  var _HashPathCoders$hashT = HashPathCoders[hashType],
-      encodePath = _HashPathCoders$hashT.encodePath,
-      decodePath = _HashPathCoders$hashT.decodePath;
-
-  function getDOMLocation() {
-    var path = decodePath(getHashPath());
-    process.env.NODE_ENV !== "production" ? warning(!basename || hasBasename(path, basename), 'You are attempting to use a basename on a page whose URL path does not begin ' + 'with the basename. Expected path "' + path + '" to begin with "' + basename + '".') : void 0;
-    if (basename) path = stripBasename$1(path, basename);
-    return createLocation(path);
-  }
-
-  var transitionManager = createTransitionManager();
-
-  function setState(nextState) {
-    _extends$X(history, nextState);
-
-    history.length = globalHistory.length;
-    transitionManager.notifyListeners(history.location, history.action);
-  }
-
-  var forceNextPop = false;
-  var ignorePath = null;
-
-  function locationsAreEqual$$1(a, b) {
-    return a.pathname === b.pathname && a.search === b.search && a.hash === b.hash;
-  }
-
-  function handleHashChange() {
-    var path = getHashPath();
-    var encodedPath = encodePath(path);
-
-    if (path !== encodedPath) {
-      // Ensure we always have a properly-encoded hash.
-      replaceHashPath(encodedPath);
-    } else {
-      var location = getDOMLocation();
-      var prevLocation = history.location;
-      if (!forceNextPop && locationsAreEqual$$1(prevLocation, location)) return; // A hashchange doesn't always == location change.
-
-      if (ignorePath === createPath(location)) return; // Ignore this change; we already setState in push/replace.
-
-      ignorePath = null;
-      handlePop(location);
-    }
-  }
-
-  function handlePop(location) {
-    if (forceNextPop) {
-      forceNextPop = false;
-      setState();
-    } else {
-      var action = 'POP';
-      transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
-        if (ok) {
-          setState({
-            action: action,
-            location: location
-          });
-        } else {
-          revertPop(location);
-        }
-      });
-    }
-  }
-
-  function revertPop(fromLocation) {
-    var toLocation = history.location; // TODO: We could probably make this more reliable by
-    // keeping a list of paths we've seen in sessionStorage.
-    // Instead, we just default to 0 for paths we don't know.
-
-    var toIndex = allPaths.lastIndexOf(createPath(toLocation));
-    if (toIndex === -1) toIndex = 0;
-    var fromIndex = allPaths.lastIndexOf(createPath(fromLocation));
-    if (fromIndex === -1) fromIndex = 0;
-    var delta = toIndex - fromIndex;
-
-    if (delta) {
-      forceNextPop = true;
-      go(delta);
-    }
-  } // Ensure the hash is encoded properly before doing anything else.
-
-
-  var path = getHashPath();
-  var encodedPath = encodePath(path);
-  if (path !== encodedPath) replaceHashPath(encodedPath);
-  var initialLocation = getDOMLocation();
-  var allPaths = [createPath(initialLocation)]; // Public interface
-
-  function createHref(location) {
-    var baseTag = document.querySelector('base');
-    var href = '';
-
-    if (baseTag && baseTag.getAttribute('href')) {
-      href = stripHash(window.location.href);
-    }
-
-    return href + '#' + encodePath(basename + createPath(location));
-  }
-
-  function push(path, state) {
-    process.env.NODE_ENV !== "production" ? warning(state === undefined, 'Hash history cannot push state; it is ignored') : void 0;
-    var action = 'PUSH';
-    var location = createLocation(path, undefined, undefined, history.location);
-    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
-      if (!ok) return;
-      var path = createPath(location);
-      var encodedPath = encodePath(basename + path);
-      var hashChanged = getHashPath() !== encodedPath;
-
-      if (hashChanged) {
-        // We cannot tell if a hashchange was caused by a PUSH, so we'd
-        // rather setState here and ignore the hashchange. The caveat here
-        // is that other hash histories in the page will consider it a POP.
-        ignorePath = path;
-        pushHashPath(encodedPath);
-        var prevIndex = allPaths.lastIndexOf(createPath(history.location));
-        var nextPaths = allPaths.slice(0, prevIndex + 1);
-        nextPaths.push(path);
-        allPaths = nextPaths;
-        setState({
-          action: action,
-          location: location
-        });
-      } else {
-        process.env.NODE_ENV !== "production" ? warning(false, 'Hash history cannot PUSH the same path; a new entry will not be added to the history stack') : void 0;
-        setState();
-      }
-    });
-  }
-
-  function replace(path, state) {
-    process.env.NODE_ENV !== "production" ? warning(state === undefined, 'Hash history cannot replace state; it is ignored') : void 0;
-    var action = 'REPLACE';
-    var location = createLocation(path, undefined, undefined, history.location);
-    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
-      if (!ok) return;
-      var path = createPath(location);
-      var encodedPath = encodePath(basename + path);
-      var hashChanged = getHashPath() !== encodedPath;
-
-      if (hashChanged) {
-        // We cannot tell if a hashchange was caused by a REPLACE, so we'd
-        // rather setState here and ignore the hashchange. The caveat here
-        // is that other hash histories in the page will consider it a POP.
-        ignorePath = path;
-        replaceHashPath(encodedPath);
-      }
-
-      var prevIndex = allPaths.indexOf(createPath(history.location));
-      if (prevIndex !== -1) allPaths[prevIndex] = path;
-      setState({
-        action: action,
-        location: location
-      });
-    });
-  }
-
-  function go(n) {
-    process.env.NODE_ENV !== "production" ? warning(canGoWithoutReload, 'Hash history go(n) causes a full page reload in this browser') : void 0;
-    globalHistory.go(n);
-  }
-
-  function goBack() {
-    go(-1);
-  }
-
-  function goForward() {
-    go(1);
-  }
-
-  var listenerCount = 0;
-
-  function checkDOMListeners(delta) {
-    listenerCount += delta;
-
-    if (listenerCount === 1 && delta === 1) {
-      window.addEventListener(HashChangeEvent$1, handleHashChange);
-    } else if (listenerCount === 0) {
-      window.removeEventListener(HashChangeEvent$1, handleHashChange);
-    }
-  }
-
-  var isBlocked = false;
-
-  function block(prompt) {
-    if (prompt === void 0) {
-      prompt = false;
-    }
-
-    var unblock = transitionManager.setPrompt(prompt);
-
-    if (!isBlocked) {
-      checkDOMListeners(1);
-      isBlocked = true;
-    }
-
-    return function () {
-      if (isBlocked) {
-        isBlocked = false;
-        checkDOMListeners(-1);
-      }
-
-      return unblock();
-    };
-  }
-
-  function listen(listener) {
-    var unlisten = transitionManager.appendListener(listener);
-    checkDOMListeners(1);
-    return function () {
-      checkDOMListeners(-1);
-      unlisten();
-    };
-  }
-
-  var history = {
-    length: globalHistory.length,
-    action: 'POP',
-    location: initialLocation,
-    createHref: createHref,
-    push: push,
-    replace: replace,
-    go: go,
-    goBack: goBack,
-    goForward: goForward,
-    block: block,
-    listen: listen
-  };
-  return history;
-}
-
-function clamp(n, lowerBound, upperBound) {
-  return Math.min(Math.max(n, lowerBound), upperBound);
-}
-/**
- * Creates a history object that stores locations in memory.
- */
-
-
-function createMemoryHistory(props) {
-  if (props === void 0) {
-    props = {};
-  }
-
-  var _props = props,
-      getUserConfirmation = _props.getUserConfirmation,
-      _props$initialEntries = _props.initialEntries,
-      initialEntries = _props$initialEntries === void 0 ? ['/'] : _props$initialEntries,
-      _props$initialIndex = _props.initialIndex,
-      initialIndex = _props$initialIndex === void 0 ? 0 : _props$initialIndex,
-      _props$keyLength = _props.keyLength,
-      keyLength = _props$keyLength === void 0 ? 6 : _props$keyLength;
-  var transitionManager = createTransitionManager();
-
-  function setState(nextState) {
-    _extends$X(history, nextState);
-
-    history.length = history.entries.length;
-    transitionManager.notifyListeners(history.location, history.action);
-  }
-
-  function createKey() {
-    return Math.random().toString(36).substr(2, keyLength);
-  }
-
-  var index = clamp(initialIndex, 0, initialEntries.length - 1);
-  var entries = initialEntries.map(function (entry) {
-    return typeof entry === 'string' ? createLocation(entry, undefined, createKey()) : createLocation(entry, undefined, entry.key || createKey());
-  }); // Public interface
-
-  var createHref = createPath;
-
-  function push(path, state) {
-    process.env.NODE_ENV !== "production" ? warning(!(typeof path === 'object' && path.state !== undefined && state !== undefined), 'You should avoid providing a 2nd state argument to push when the 1st ' + 'argument is a location-like object that already has state; it is ignored') : void 0;
-    var action = 'PUSH';
-    var location = createLocation(path, state, createKey(), history.location);
-    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
-      if (!ok) return;
-      var prevIndex = history.index;
-      var nextIndex = prevIndex + 1;
-      var nextEntries = history.entries.slice(0);
-
-      if (nextEntries.length > nextIndex) {
-        nextEntries.splice(nextIndex, nextEntries.length - nextIndex, location);
-      } else {
-        nextEntries.push(location);
-      }
-
-      setState({
-        action: action,
-        location: location,
-        index: nextIndex,
-        entries: nextEntries
-      });
-    });
-  }
-
-  function replace(path, state) {
-    process.env.NODE_ENV !== "production" ? warning(!(typeof path === 'object' && path.state !== undefined && state !== undefined), 'You should avoid providing a 2nd state argument to replace when the 1st ' + 'argument is a location-like object that already has state; it is ignored') : void 0;
-    var action = 'REPLACE';
-    var location = createLocation(path, state, createKey(), history.location);
-    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
-      if (!ok) return;
-      history.entries[history.index] = location;
-      setState({
-        action: action,
-        location: location
-      });
-    });
-  }
-
-  function go(n) {
-    var nextIndex = clamp(history.index + n, 0, history.entries.length - 1);
-    var action = 'POP';
-    var location = history.entries[nextIndex];
-    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
-      if (ok) {
-        setState({
-          action: action,
-          location: location,
-          index: nextIndex
-        });
-      } else {
-        // Mimic the behavior of DOM histories by
-        // causing a render after a cancelled POP.
-        setState();
-      }
-    });
-  }
-
-  function goBack() {
-    go(-1);
-  }
-
-  function goForward() {
-    go(1);
-  }
-
-  function canGo(n) {
-    var nextIndex = history.index + n;
-    return nextIndex >= 0 && nextIndex < history.entries.length;
-  }
-
-  function block(prompt) {
-    if (prompt === void 0) {
-      prompt = false;
-    }
-
-    return transitionManager.setPrompt(prompt);
-  }
-
-  function listen(listener) {
-    return transitionManager.appendListener(listener);
-  }
-
-  var history = {
-    length: entries.length,
-    action: 'POP',
-    location: entries[index],
-    index: index,
-    entries: entries,
-    createHref: createHref,
-    push: push,
-    replace: replace,
-    go: go,
-    goBack: goBack,
-    goForward: goForward,
-    canGo: canGo,
-    block: block,
-    listen: listen
-  };
-  return history;
-}
-
-var MAX_SIGNED_31_BIT_INT = 1073741823;
-var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : {};
-
-function getUniqueId() {
-  var key = '__global_unique_id__';
-  return commonjsGlobal[key] = (commonjsGlobal[key] || 0) + 1;
-}
-
-function objectIs(x, y) {
-  if (x === y) {
-    return x !== 0 || 1 / x === 1 / y;
-  } else {
-    return x !== x && y !== y;
-  }
-}
-
-function createEventEmitter(value) {
-  var handlers = [];
-  return {
-    on: function on(handler) {
-      handlers.push(handler);
-    },
-    off: function off(handler) {
-      handlers = handlers.filter(function (h) {
-        return h !== handler;
-      });
-    },
-    get: function get() {
-      return value;
-    },
-    set: function set(newValue, changedBits) {
-      value = newValue;
-      handlers.forEach(function (handler) {
-        return handler(value, changedBits);
-      });
-    }
-  };
-}
-
-function onlyChild(children) {
-  return Array.isArray(children) ? children[0] : children;
-}
-
-function createReactContext(defaultValue, calculateChangedBits) {
-  var _Provider$childContex, _Consumer$contextType;
-
-  var contextProp = '__create-react-context-' + getUniqueId() + '__';
-
-  var Provider = /*#__PURE__*/function (_Component) {
-    _inheritsLoose$1(Provider, _Component);
-
-    function Provider() {
-      var _this;
-
-      _this = _Component.apply(this, arguments) || this;
-      _this.emitter = createEventEmitter(_this.props.value);
-      return _this;
-    }
-
-    var _proto = Provider.prototype;
-
-    _proto.getChildContext = function getChildContext() {
-      var _ref;
-
-      return _ref = {}, _ref[contextProp] = this.emitter, _ref;
-    };
-
-    _proto.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
-      if (this.props.value !== nextProps.value) {
-        var oldValue = this.props.value;
-        var newValue = nextProps.value;
-        var changedBits;
-
-        if (objectIs(oldValue, newValue)) {
-          changedBits = 0;
-        } else {
-          changedBits = typeof calculateChangedBits === 'function' ? calculateChangedBits(oldValue, newValue) : MAX_SIGNED_31_BIT_INT;
-
-          if (process.env.NODE_ENV !== 'production') {
-            warning((changedBits & MAX_SIGNED_31_BIT_INT) === changedBits, 'calculateChangedBits: Expected the return value to be a ' + '31-bit integer. Instead received: ' + changedBits);
-          }
-
-          changedBits |= 0;
-
-          if (changedBits !== 0) {
-            this.emitter.set(nextProps.value, changedBits);
-          }
-        }
-      }
-    };
-
-    _proto.render = function render() {
-      return this.props.children;
-    };
-
-    return Provider;
-  }(React.Component);
-
-  Provider.childContextTypes = (_Provider$childContex = {}, _Provider$childContex[contextProp] = propTypes$4.object.isRequired, _Provider$childContex);
-
-  var Consumer = /*#__PURE__*/function (_Component2) {
-    _inheritsLoose$1(Consumer, _Component2);
-
-    function Consumer() {
-      var _this2;
-
-      _this2 = _Component2.apply(this, arguments) || this;
-      _this2.state = {
-        value: _this2.getValue()
-      };
-
-      _this2.onUpdate = function (newValue, changedBits) {
-        var observedBits = _this2.observedBits | 0;
-
-        if ((observedBits & changedBits) !== 0) {
-          _this2.setState({
-            value: _this2.getValue()
-          });
-        }
-      };
-
-      return _this2;
-    }
-
-    var _proto2 = Consumer.prototype;
-
-    _proto2.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
-      var observedBits = nextProps.observedBits;
-      this.observedBits = observedBits === undefined || observedBits === null ? MAX_SIGNED_31_BIT_INT : observedBits;
-    };
-
-    _proto2.componentDidMount = function componentDidMount() {
-      if (this.context[contextProp]) {
-        this.context[contextProp].on(this.onUpdate);
-      }
-
-      var observedBits = this.props.observedBits;
-      this.observedBits = observedBits === undefined || observedBits === null ? MAX_SIGNED_31_BIT_INT : observedBits;
-    };
-
-    _proto2.componentWillUnmount = function componentWillUnmount() {
-      if (this.context[contextProp]) {
-        this.context[contextProp].off(this.onUpdate);
-      }
-    };
-
-    _proto2.getValue = function getValue() {
-      if (this.context[contextProp]) {
-        return this.context[contextProp].get();
-      } else {
-        return defaultValue;
-      }
-    };
-
-    _proto2.render = function render() {
-      return onlyChild(this.props.children)(this.state.value);
-    };
-
-    return Consumer;
-  }(React.Component);
-
-  Consumer.contextTypes = (_Consumer$contextType = {}, _Consumer$contextType[contextProp] = propTypes$4.object, _Consumer$contextType);
-  return {
-    Provider: Provider,
-    Consumer: Consumer
-  };
-}
-
-var index$3 = React__default$1['default'].createContext || createReactContext;
-
-var isarray = Array.isArray || function (arr) {
-  return Object.prototype.toString.call(arr) == '[object Array]';
+Elements.propTypes = {
+  stripe: propTypes$3.any,
+  options: propTypes$3.object
 };
 
+var useElementsContextWithUseCase = function useElementsContextWithUseCase(useCaseMessage) {
+  var ctx = React__default$1['default'].useContext(ElementsContext);
+  return parseElementsContext(ctx, useCaseMessage);
+};
 /**
- * Expose `pathToRegexp`.
+ * @docs https://stripe.com/docs/stripe-js/react#useelements-hook
  */
 
 
-var pathToRegexp_1 = pathToRegexp;
-var parse_1 = parse;
-var compile_1 = compile;
-var tokensToFunction_1 = tokensToFunction;
-var tokensToRegExp_1 = tokensToRegExp;
+var useElements = function useElements() {
+  var _useElementsContextWi = useElementsContextWithUseCase('calls useElements()'),
+      elements = _useElementsContextWi.elements;
+
+  return elements;
+};
 /**
- * The main path matching regexp utility.
+ * @docs https://stripe.com/docs/stripe-js/react#usestripe-hook
+ */
+
+
+var useStripe = function useStripe() {
+  var _useElementsContextWi2 = useElementsContextWithUseCase('calls useStripe()'),
+      stripe = _useElementsContextWi2.stripe;
+
+  return stripe;
+};
+
+({
+  children: propTypes$3.func.isRequired
+});
+
+var useCallbackReference = function useCallbackReference(cb) {
+  var ref = React__default$1['default'].useRef(cb);
+  React__default$1['default'].useEffect(function () {
+    ref.current = cb;
+  }, [cb]);
+  return function () {
+    if (ref.current) {
+      ref.current.apply(ref, arguments);
+    }
+  };
+};
+
+var noop$3 = function noop() {};
+
+var capitalized = function capitalized(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+};
+
+var createElementComponent = function createElementComponent(type, isServer) {
+  var displayName = "".concat(capitalized(type), "Element");
+
+  var ClientElement = function ClientElement(_ref) {
+    var id = _ref.id,
+        className = _ref.className,
+        _ref$options = _ref.options,
+        options = _ref$options === void 0 ? {} : _ref$options,
+        _ref$onBlur = _ref.onBlur,
+        onBlur = _ref$onBlur === void 0 ? noop$3 : _ref$onBlur,
+        _ref$onFocus = _ref.onFocus,
+        onFocus = _ref$onFocus === void 0 ? noop$3 : _ref$onFocus,
+        _ref$onReady = _ref.onReady,
+        onReady = _ref$onReady === void 0 ? noop$3 : _ref$onReady,
+        _ref$onChange = _ref.onChange,
+        onChange = _ref$onChange === void 0 ? noop$3 : _ref$onChange,
+        _ref$onEscape = _ref.onEscape,
+        onEscape = _ref$onEscape === void 0 ? noop$3 : _ref$onEscape,
+        _ref$onClick = _ref.onClick,
+        onClick = _ref$onClick === void 0 ? noop$3 : _ref$onClick;
+
+    var _useElementsContextWi = useElementsContextWithUseCase("mounts <".concat(displayName, ">")),
+        elements = _useElementsContextWi.elements;
+
+    var elementRef = React__default$1['default'].useRef(null);
+    var domNode = React__default$1['default'].useRef(null);
+    var callOnReady = useCallbackReference(onReady);
+    var callOnBlur = useCallbackReference(onBlur);
+    var callOnFocus = useCallbackReference(onFocus);
+    var callOnClick = useCallbackReference(onClick);
+    var callOnChange = useCallbackReference(onChange);
+    var callOnEscape = useCallbackReference(onEscape);
+    React__default$1['default'].useLayoutEffect(function () {
+      if (elementRef.current == null && elements && domNode.current != null) {
+        var element = elements.create(type, options);
+        elementRef.current = element;
+        element.mount(domNode.current);
+        element.on('ready', function () {
+          return callOnReady(element);
+        });
+        element.on('change', callOnChange);
+        element.on('blur', callOnBlur);
+        element.on('focus', callOnFocus);
+        element.on('escape', callOnEscape); // Users can pass an an onClick prop on any Element component
+        // just as they could listen for the `click` event on any Element,
+        // but only the PaymentRequestButton will actually trigger the event.
+
+        element.on('click', callOnClick);
+      }
+    });
+    var prevOptions = usePrevious(options);
+    React__default$1['default'].useEffect(function () {
+      if (!elementRef.current) {
+        return;
+      }
+
+      var updates = extractAllowedOptionsUpdates(options, prevOptions, ['paymentRequest']);
+
+      if (updates) {
+        elementRef.current.update(updates);
+      }
+    }, [options, prevOptions]);
+    React__default$1['default'].useLayoutEffect(function () {
+      return function () {
+        if (elementRef.current) {
+          elementRef.current.destroy();
+        }
+      };
+    }, []);
+    return /*#__PURE__*/React__default$1['default'].createElement("div", {
+      id: id,
+      className: className,
+      ref: domNode
+    });
+  }; // Only render the Element wrapper in a server environment.
+
+
+  var ServerElement = function ServerElement(props) {
+    // Validate that we are in the right context by calling useElementsContextWithUseCase.
+    useElementsContextWithUseCase("mounts <".concat(displayName, ">"));
+    var id = props.id,
+        className = props.className;
+    return /*#__PURE__*/React__default$1['default'].createElement("div", {
+      id: id,
+      className: className
+    });
+  };
+
+  var Element = isServer ? ServerElement : ClientElement;
+  Element.propTypes = {
+    id: propTypes$3.string,
+    className: propTypes$3.string,
+    onChange: propTypes$3.func,
+    onBlur: propTypes$3.func,
+    onFocus: propTypes$3.func,
+    onReady: propTypes$3.func,
+    onClick: propTypes$3.func,
+    options: propTypes$3.object
+  };
+  Element.displayName = displayName;
+  Element.__elementType = type;
+  return Element;
+};
+
+var isServer = typeof window === 'undefined';
+/**
+ * Requires beta access:
+ * Contact [Stripe support](https://support.stripe.com/) for more information.
  *
- * @type {RegExp}
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
  */
 
-var PATH_REGEXP = new RegExp([// Match escaped characters that would otherwise appear in future matches.
-// This allows the user to escape special characters that won't transform.
-'(\\\\.)', // Match Express-style parameters and un-named parameters with a prefix
-// and optional suffixes. Matches appear as:
-//
-// "/:test(\\d+)?" => ["/", "test", "\d+", undefined, "?", undefined]
-// "/route(\\d+)"  => [undefined, undefined, undefined, "\d+", undefined, undefined]
-// "/*"            => ["/", undefined, undefined, undefined, undefined, "*"]
-'([\\/.])?(?:(?:\\:(\\w+)(?:\\(((?:\\\\.|[^\\\\()])+)\\))?|\\(((?:\\\\.|[^\\\\()])+)\\))([+*?])?|(\\*))'].join('|'), 'g');
+createElementComponent('auBankAccount', isServer);
 /**
- * Parse a string for the raw tokens.
- *
- * @param  {string}  str
- * @param  {Object=} options
- * @return {!Array}
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
  */
 
-function parse(str, options) {
-  var tokens = [];
-  var key = 0;
-  var index = 0;
-  var path = '';
-  var defaultDelimiter = options && options.delimiter || '/';
-  var res;
+var CardElement = createElementComponent('card', isServer);
+/**
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
 
-  while ((res = PATH_REGEXP.exec(str)) != null) {
-    var m = res[0];
-    var escaped = res[1];
-    var offset = res.index;
-    path += str.slice(index, offset);
-    index = offset + m.length; // Ignore already escaped sequences.
+createElementComponent('cardNumber', isServer);
+/**
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
 
-    if (escaped) {
-      path += escaped[1];
+createElementComponent('cardExpiry', isServer);
+/**
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
+
+createElementComponent('cardCvc', isServer);
+/**
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
+
+createElementComponent('fpxBank', isServer);
+/**
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
+
+createElementComponent('iban', isServer);
+/**
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
+
+createElementComponent('idealBank', isServer);
+/**
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
+
+createElementComponent('p24Bank', isServer);
+/**
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
+
+createElementComponent('epsBank', isServer);
+createElementComponent('payment', isServer);
+/**
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
+
+var PaymentRequestButtonElement = createElementComponent('paymentRequestButton', isServer);
+/**
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
+
+createElementComponent('afterpayClearpayMessage', isServer);
+
+var V3_URL = 'https://js.stripe.com/v3';
+var V3_URL_REGEX = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/;
+var EXISTING_SCRIPT_MESSAGE = 'loadStripe.setLoadParameters was called but an existing Stripe.js script already exists in the document; existing script parameters will be used';
+
+var findScript = function findScript() {
+  var scripts = document.querySelectorAll("script[src^=\"".concat(V3_URL, "\"]"));
+
+  for (var i = 0; i < scripts.length; i++) {
+    var script = scripts[i];
+
+    if (!V3_URL_REGEX.test(script.src)) {
       continue;
     }
 
-    var next = str[index];
-    var prefix = res[2];
-    var name = res[3];
-    var capture = res[4];
-    var group = res[5];
-    var modifier = res[6];
-    var asterisk = res[7]; // Push the current path onto the tokens.
-
-    if (path) {
-      tokens.push(path);
-      path = '';
-    }
-
-    var partial = prefix != null && next != null && next !== prefix;
-    var repeat = modifier === '+' || modifier === '*';
-    var optional = modifier === '?' || modifier === '*';
-    var delimiter = res[2] || defaultDelimiter;
-    var pattern = capture || group;
-    tokens.push({
-      name: name || key++,
-      prefix: prefix || '',
-      delimiter: delimiter,
-      optional: optional,
-      repeat: repeat,
-      partial: partial,
-      asterisk: !!asterisk,
-      pattern: pattern ? escapeGroup(pattern) : asterisk ? '.*' : '[^' + escapeString(delimiter) + ']+?'
-    });
-  } // Match any characters still remaining.
-
-
-  if (index < str.length) {
-    path += str.substr(index);
-  } // If the path exists, push it onto the end.
-
-
-  if (path) {
-    tokens.push(path);
+    return script;
   }
 
-  return tokens;
-}
-/**
- * Compile a string to a template function for the path.
- *
- * @param  {string}             str
- * @param  {Object=}            options
- * @return {!function(Object=, Object=)}
- */
-
-
-function compile(str, options) {
-  return tokensToFunction(parse(str, options), options);
-}
-/**
- * Prettier encoding of URI path segments.
- *
- * @param  {string}
- * @return {string}
- */
-
-
-function encodeURIComponentPretty(str) {
-  return encodeURI(str).replace(/[\/?#]/g, function (c) {
-    return '%' + c.charCodeAt(0).toString(16).toUpperCase();
-  });
-}
-/**
- * Encode the asterisk parameter. Similar to `pretty`, but allows slashes.
- *
- * @param  {string}
- * @return {string}
- */
-
-
-function encodeAsterisk(str) {
-  return encodeURI(str).replace(/[?#]/g, function (c) {
-    return '%' + c.charCodeAt(0).toString(16).toUpperCase();
-  });
-}
-/**
- * Expose a method for transforming tokens into the path function.
- */
-
-
-function tokensToFunction(tokens, options) {
-  // Compile all the tokens into regexps.
-  var matches = new Array(tokens.length); // Compile all the patterns before compilation.
-
-  for (var i = 0; i < tokens.length; i++) {
-    if (typeof tokens[i] === 'object') {
-      matches[i] = new RegExp('^(?:' + tokens[i].pattern + ')$', flags(options));
-    }
-  }
-
-  return function (obj, opts) {
-    var path = '';
-    var data = obj || {};
-    var options = opts || {};
-    var encode = options.pretty ? encodeURIComponentPretty : encodeURIComponent;
-
-    for (var i = 0; i < tokens.length; i++) {
-      var token = tokens[i];
-
-      if (typeof token === 'string') {
-        path += token;
-        continue;
-      }
-
-      var value = data[token.name];
-      var segment;
-
-      if (value == null) {
-        if (token.optional) {
-          // Prepend partial segment prefixes.
-          if (token.partial) {
-            path += token.prefix;
-          }
-
-          continue;
-        } else {
-          throw new TypeError('Expected "' + token.name + '" to be defined');
-        }
-      }
-
-      if (isarray(value)) {
-        if (!token.repeat) {
-          throw new TypeError('Expected "' + token.name + '" to not repeat, but received `' + JSON.stringify(value) + '`');
-        }
-
-        if (value.length === 0) {
-          if (token.optional) {
-            continue;
-          } else {
-            throw new TypeError('Expected "' + token.name + '" to not be empty');
-          }
-        }
-
-        for (var j = 0; j < value.length; j++) {
-          segment = encode(value[j]);
-
-          if (!matches[i].test(segment)) {
-            throw new TypeError('Expected all "' + token.name + '" to match "' + token.pattern + '", but received `' + JSON.stringify(segment) + '`');
-          }
-
-          path += (j === 0 ? token.prefix : token.delimiter) + segment;
-        }
-
-        continue;
-      }
-
-      segment = token.asterisk ? encodeAsterisk(value) : encode(value);
-
-      if (!matches[i].test(segment)) {
-        throw new TypeError('Expected "' + token.name + '" to match "' + token.pattern + '", but received "' + segment + '"');
-      }
-
-      path += token.prefix + segment;
-    }
-
-    return path;
-  };
-}
-/**
- * Escape a regular expression string.
- *
- * @param  {string} str
- * @return {string}
- */
-
-
-function escapeString(str) {
-  return str.replace(/([.+*?=^!:${}()[\]|\/\\])/g, '\\$1');
-}
-/**
- * Escape the capturing group by escaping special characters and meaning.
- *
- * @param  {string} group
- * @return {string}
- */
-
-
-function escapeGroup(group) {
-  return group.replace(/([=!:$\/()])/g, '\\$1');
-}
-/**
- * Attach the keys as a property of the regexp.
- *
- * @param  {!RegExp} re
- * @param  {Array}   keys
- * @return {!RegExp}
- */
-
-
-function attachKeys(re, keys) {
-  re.keys = keys;
-  return re;
-}
-/**
- * Get the flags for a regexp from the options.
- *
- * @param  {Object} options
- * @return {string}
- */
-
-
-function flags(options) {
-  return options && options.sensitive ? '' : 'i';
-}
-/**
- * Pull out keys from a regexp.
- *
- * @param  {!RegExp} path
- * @param  {!Array}  keys
- * @return {!RegExp}
- */
-
-
-function regexpToRegexp(path, keys) {
-  // Use a negative lookahead to match only capturing groups.
-  var groups = path.source.match(/\((?!\?)/g);
-
-  if (groups) {
-    for (var i = 0; i < groups.length; i++) {
-      keys.push({
-        name: i,
-        prefix: null,
-        delimiter: null,
-        optional: false,
-        repeat: false,
-        partial: false,
-        asterisk: false,
-        pattern: null
-      });
-    }
-  }
-
-  return attachKeys(path, keys);
-}
-/**
- * Transform an array into a regexp.
- *
- * @param  {!Array}  path
- * @param  {Array}   keys
- * @param  {!Object} options
- * @return {!RegExp}
- */
-
-
-function arrayToRegexp(path, keys, options) {
-  var parts = [];
-
-  for (var i = 0; i < path.length; i++) {
-    parts.push(pathToRegexp(path[i], keys, options).source);
-  }
-
-  var regexp = new RegExp('(?:' + parts.join('|') + ')', flags(options));
-  return attachKeys(regexp, keys);
-}
-/**
- * Create a path regexp from string input.
- *
- * @param  {string}  path
- * @param  {!Array}  keys
- * @param  {!Object} options
- * @return {!RegExp}
- */
-
-
-function stringToRegexp(path, keys, options) {
-  return tokensToRegExp(parse(path, options), keys, options);
-}
-/**
- * Expose a function for taking tokens and returning a RegExp.
- *
- * @param  {!Array}          tokens
- * @param  {(Array|Object)=} keys
- * @param  {Object=}         options
- * @return {!RegExp}
- */
-
-
-function tokensToRegExp(tokens, keys, options) {
-  if (!isarray(keys)) {
-    options =
-    /** @type {!Object} */
-    keys || options;
-    keys = [];
-  }
-
-  options = options || {};
-  var strict = options.strict;
-  var end = options.end !== false;
-  var route = ''; // Iterate over the tokens and create our regexp string.
-
-  for (var i = 0; i < tokens.length; i++) {
-    var token = tokens[i];
-
-    if (typeof token === 'string') {
-      route += escapeString(token);
-    } else {
-      var prefix = escapeString(token.prefix);
-      var capture = '(?:' + token.pattern + ')';
-      keys.push(token);
-
-      if (token.repeat) {
-        capture += '(?:' + prefix + capture + ')*';
-      }
-
-      if (token.optional) {
-        if (!token.partial) {
-          capture = '(?:' + prefix + '(' + capture + '))?';
-        } else {
-          capture = prefix + '(' + capture + ')?';
-        }
-      } else {
-        capture = prefix + '(' + capture + ')';
-      }
-
-      route += capture;
-    }
-  }
-
-  var delimiter = escapeString(options.delimiter || '/');
-  var endsWithDelimiter = route.slice(-delimiter.length) === delimiter; // In non-strict mode we allow a slash at the end of match. If the path to
-  // match already ends with a slash, we remove it for consistency. The slash
-  // is valid at the end of a path match, not in the middle. This is important
-  // in non-ending mode, where "/test/" shouldn't match "/test//route".
-
-  if (!strict) {
-    route = (endsWithDelimiter ? route.slice(0, -delimiter.length) : route) + '(?:' + delimiter + '(?=$))?';
-  }
-
-  if (end) {
-    route += '$';
-  } else {
-    // In non-ending mode, we need the capturing groups to match as much as
-    // possible by using a positive lookahead to the end or next path segment.
-    route += strict && endsWithDelimiter ? '' : '(?=' + delimiter + '|$)';
-  }
-
-  return attachKeys(new RegExp('^' + route, flags(options)), keys);
-}
-/**
- * Normalize the given path string, returning a regular expression.
- *
- * An empty array can be passed in for the keys, which will hold the
- * placeholder key descriptions. For example, using `/user/:id`, `keys` will
- * contain `[{ name: 'id', delimiter: '/', optional: false, repeat: false }]`.
- *
- * @param  {(string|RegExp|Array)} path
- * @param  {(Array|Object)=}       keys
- * @param  {Object=}               options
- * @return {!RegExp}
- */
-
-
-function pathToRegexp(path, keys, options) {
-  if (!isarray(keys)) {
-    options =
-    /** @type {!Object} */
-    keys || options;
-    keys = [];
-  }
-
-  options = options || {};
-
-  if (path instanceof RegExp) {
-    return regexpToRegexp(path,
-    /** @type {!Array} */
-    keys);
-  }
-
-  if (isarray(path)) {
-    return arrayToRegexp(
-    /** @type {!Array} */
-    path,
-    /** @type {!Array} */
-    keys, options);
-  }
-
-  return stringToRegexp(
-  /** @type {string} */
-  path,
-  /** @type {!Array} */
-  keys, options);
-}
-pathToRegexp_1.parse = parse_1;
-pathToRegexp_1.compile = compile_1;
-pathToRegexp_1.tokensToFunction = tokensToFunction_1;
-pathToRegexp_1.tokensToRegExp = tokensToRegExp_1;
-
-var createNamedContext = function createNamedContext(name) {
-  var context = index$3();
-  context.displayName = name;
-  return context;
+  return null;
 };
 
-var historyContext = /*#__PURE__*/createNamedContext("Router-History"); // TODO: Replace with React.createContext once we can assume React 16+
+var injectScript = function injectScript(params) {
+  var queryString = params && !params.advancedFraudSignals ? '?advancedFraudSignals=false' : '';
+  var script = document.createElement('script');
+  script.src = "".concat(V3_URL).concat(queryString);
+  var headOrBody = document.head || document.body;
 
-var createNamedContext$1 = function createNamedContext(name) {
-  var context = index$3();
-  context.displayName = name;
-  return context;
+  if (!headOrBody) {
+    throw new Error('Expected document.body not to be null. Stripe.js requires a <body> element.');
+  }
+
+  headOrBody.appendChild(script);
+  return script;
 };
 
-var context = /*#__PURE__*/createNamedContext$1("Router");
-/**
- * The public API for putting history on context.
- */
+var registerWrapper = function registerWrapper(stripe, startTime) {
+  if (!stripe || !stripe._registerWrapper) {
+    return;
+  }
 
-var Router = /*#__PURE__*/function (_React$Component) {
-  _inheritsLoose$1(Router, _React$Component);
+  stripe._registerWrapper({
+    name: 'stripe-js',
+    version: "1.18.0",
+    startTime: startTime
+  });
+};
 
-  Router.computeRootMatch = function computeRootMatch(pathname) {
-    return {
-      path: "/",
-      url: "/",
-      params: {},
-      isExact: pathname === "/"
-    };
-  };
+var stripePromise = null;
 
-  function Router(props) {
-    var _this;
+var loadScript = function loadScript(params) {
+  // Ensure that we only attempt to load Stripe.js at most once
+  if (stripePromise !== null) {
+    return stripePromise;
+  }
 
-    _this = _React$Component.call(this, props) || this;
-    _this.state = {
-      location: props.history.location
-    }; // This is a bit of a hack. We have to start listening for location
-    // changes here in the constructor in case there are any <Redirect>s
-    // on the initial render. If there are, they will replace/push when
-    // they mount and since cDM fires in children before parents, we may
-    // get a new location before the <Router> is mounted.
+  stripePromise = new Promise(function (resolve, reject) {
+    if (typeof window === 'undefined') {
+      // Resolve to null when imported server side. This makes the module
+      // safe to import in an isomorphic code base.
+      resolve(null);
+      return;
+    }
 
-    _this._isMounted = false;
-    _this._pendingLocation = null;
+    if (window.Stripe && params) {
+      console.warn(EXISTING_SCRIPT_MESSAGE);
+    }
 
-    if (!props.staticContext) {
-      _this.unlisten = props.history.listen(function (location) {
-        if (_this._isMounted) {
-          _this.setState({
-            location: location
-          });
+    if (window.Stripe) {
+      resolve(window.Stripe);
+      return;
+    }
+
+    try {
+      var script = findScript();
+
+      if (script && params) {
+        console.warn(EXISTING_SCRIPT_MESSAGE);
+      } else if (!script) {
+        script = injectScript(params);
+      }
+
+      script.addEventListener('load', function () {
+        if (window.Stripe) {
+          resolve(window.Stripe);
         } else {
-          _this._pendingLocation = location;
+          reject(new Error('Stripe.js not available'));
         }
       });
-    }
-
-    return _this;
-  }
-
-  var _proto = Router.prototype;
-
-  _proto.componentDidMount = function componentDidMount() {
-    this._isMounted = true;
-
-    if (this._pendingLocation) {
-      this.setState({
-        location: this._pendingLocation
+      script.addEventListener('error', function () {
+        reject(new Error('Failed to load Stripe.js'));
       });
+    } catch (error) {
+      reject(error);
+      return;
     }
-  };
+  });
+  return stripePromise;
+};
 
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    if (this.unlisten) this.unlisten();
-  };
-
-  _proto.render = function render() {
-    return React__default$1['default'].createElement(context.Provider, {
-      value: {
-        history: this.props.history,
-        location: this.state.location,
-        match: Router.computeRootMatch(this.state.location.pathname),
-        staticContext: this.props.staticContext
-      }
-    }, React__default$1['default'].createElement(historyContext.Provider, {
-      children: this.props.children || null,
-      value: this.props.history
-    }));
-  };
-
-  return Router;
-}(React__default$1['default'].Component);
-
-if (process.env.NODE_ENV !== "production") {
-  Router.propTypes = {
-    children: propTypes$4.node,
-    history: propTypes$4.object.isRequired,
-    staticContext: propTypes$4.object
-  };
-
-  Router.prototype.componentDidUpdate = function (prevProps) {
-    process.env.NODE_ENV !== "production" ? warning(prevProps.history === this.props.history, "You cannot change <Router history>") : void 0;
-  };
-}
-/**
- * The public API for a <Router> that stores location in memory.
- */
-
-
-var MemoryRouter = /*#__PURE__*/function (_React$Component) {
-  _inheritsLoose$1(MemoryRouter, _React$Component);
-
-  function MemoryRouter() {
-    var _this;
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _React$Component.call.apply(_React$Component, [this].concat(args)) || this;
-    _this.history = createMemoryHistory(_this.props);
-    return _this;
-  }
-
-  var _proto = MemoryRouter.prototype;
-
-  _proto.render = function render() {
-    return React__default$1['default'].createElement(Router, {
-      history: this.history,
-      children: this.props.children
-    });
-  };
-
-  return MemoryRouter;
-}(React__default$1['default'].Component);
-
-if (process.env.NODE_ENV !== "production") {
-  MemoryRouter.propTypes = {
-    initialEntries: propTypes$4.array,
-    initialIndex: propTypes$4.number,
-    getUserConfirmation: propTypes$4.func,
-    keyLength: propTypes$4.number,
-    children: propTypes$4.node
-  };
-
-  MemoryRouter.prototype.componentDidMount = function () {
-    process.env.NODE_ENV !== "production" ? warning(!this.props.history, "<MemoryRouter> ignores the history prop. To use a custom history, " + "use `import { Router }` instead of `import { MemoryRouter as Router }`.") : void 0;
-  };
-}
-
-/*#__PURE__*/(function (_React$Component) {
-  _inheritsLoose$1(Lifecycle, _React$Component);
-
-  function Lifecycle() {
-    return _React$Component.apply(this, arguments) || this;
-  }
-
-  var _proto = Lifecycle.prototype;
-
-  _proto.componentDidMount = function componentDidMount() {
-    if (this.props.onMount) this.props.onMount.call(this, this);
-  };
-
-  _proto.componentDidUpdate = function componentDidUpdate(prevProps) {
-    if (this.props.onUpdate) this.props.onUpdate.call(this, this, prevProps);
-  };
-
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    if (this.props.onUnmount) this.props.onUnmount.call(this, this);
-  };
-
-  _proto.render = function render() {
+var initStripe = function initStripe(maybeStripe, args, startTime) {
+  if (maybeStripe === null) {
     return null;
-  };
-
-  return Lifecycle;
-})(React__default$1['default'].Component);
-
-if (process.env.NODE_ENV !== "production") {
-  var messageType = propTypes$4.oneOfType([propTypes$4.func, propTypes$4.string]);
-  ({
-    when: propTypes$4.bool,
-    message: messageType.isRequired
-  });
-}
-
-if (process.env.NODE_ENV !== "production") {
-  ({
-    push: propTypes$4.bool,
-    from: propTypes$4.string,
-    to: propTypes$4.oneOfType([propTypes$4.string, propTypes$4.object]).isRequired
-  });
-}
-
-var cache$1 = {};
-var cacheLimit$1 = 10000;
-var cacheCount$1 = 0;
-
-function compilePath$1(path, options) {
-  var cacheKey = "" + options.end + options.strict + options.sensitive;
-  var pathCache = cache$1[cacheKey] || (cache$1[cacheKey] = {});
-  if (pathCache[path]) return pathCache[path];
-  var keys = [];
-  var regexp = pathToRegexp_1(path, keys, options);
-  var result = {
-    regexp: regexp,
-    keys: keys
-  };
-
-  if (cacheCount$1 < cacheLimit$1) {
-    pathCache[path] = result;
-    cacheCount$1++;
   }
 
-  return result;
-}
-/**
- * Public API for matching a URL pathname to a path.
- */
+  var stripe = maybeStripe.apply(undefined, args);
+  registerWrapper(stripe, startTime);
+  return stripe;
+}; // own script injection.
 
 
-function matchPath(pathname, options) {
-  if (options === void 0) {
-    options = {};
+var stripePromise$1 = Promise.resolve().then(function () {
+  return loadScript(null);
+});
+var loadCalled = false;
+stripePromise$1["catch"](function (err) {
+  if (!loadCalled) {
+    console.warn(err);
   }
-
-  if (typeof options === "string" || Array.isArray(options)) {
-    options = {
-      path: options
-    };
-  }
-
-  var _options = options,
-      path = _options.path,
-      _options$exact = _options.exact,
-      exact = _options$exact === void 0 ? false : _options$exact,
-      _options$strict = _options.strict,
-      strict = _options$strict === void 0 ? false : _options$strict,
-      _options$sensitive = _options.sensitive,
-      sensitive = _options$sensitive === void 0 ? false : _options$sensitive;
-  var paths = [].concat(path);
-  return paths.reduce(function (matched, path) {
-    if (!path && path !== "") return null;
-    if (matched) return matched;
-
-    var _compilePath = compilePath$1(path, {
-      end: exact,
-      strict: strict,
-      sensitive: sensitive
-    }),
-        regexp = _compilePath.regexp,
-        keys = _compilePath.keys;
-
-    var match = regexp.exec(pathname);
-    if (!match) return null;
-    var url = match[0],
-        values = match.slice(1);
-    var isExact = pathname === url;
-    if (exact && !isExact) return null;
-    return {
-      path: path,
-      // the path used to match
-      url: path === "/" && url === "" ? "/" : url,
-      // the matched portion of the URL
-      isExact: isExact,
-      // whether or not we matched exactly
-      params: keys.reduce(function (memo, key, index) {
-        memo[key.name] = values[index];
-        return memo;
-      }, {})
-    };
-  }, null);
-}
-
-function isEmptyChildren(children) {
-  return React__default$1['default'].Children.count(children) === 0;
-}
-
-function evalChildrenDev(children, props, path) {
-  var value = children(props);
-  process.env.NODE_ENV !== "production" ? warning(value !== undefined, "You returned `undefined` from the `children` function of " + ("<Route" + (path ? " path=\"" + path + "\"" : "") + ">, but you ") + "should have returned a React element or `null`") : void 0;
-  return value || null;
-}
-/**
- * The public API for matching a single path and rendering.
- */
-
-
-var Route = /*#__PURE__*/function (_React$Component) {
-  _inheritsLoose$1(Route, _React$Component);
-
-  function Route() {
-    return _React$Component.apply(this, arguments) || this;
-  }
-
-  var _proto = Route.prototype;
-
-  _proto.render = function render() {
-    var _this = this;
-
-    return React__default$1['default'].createElement(context.Consumer, null, function (context$1) {
-      !context$1 ? process.env.NODE_ENV !== "production" ? invariant$1(false, "You should not use <Route> outside a <Router>") : invariant$1(false) : void 0;
-      var location = _this.props.location || context$1.location;
-      var match = _this.props.computedMatch ? _this.props.computedMatch // <Switch> already computed the match for us
-      : _this.props.path ? matchPath(location.pathname, _this.props) : context$1.match;
-
-      var props = _extends$X({}, context$1, {
-        location: location,
-        match: match
-      });
-
-      var _this$props = _this.props,
-          children = _this$props.children,
-          component = _this$props.component,
-          render = _this$props.render; // Preact uses an empty array as children by
-      // default, so use null if that's the case.
-
-      if (Array.isArray(children) && children.length === 0) {
-        children = null;
-      }
-
-      return React__default$1['default'].createElement(context.Provider, {
-        value: props
-      }, props.match ? children ? typeof children === "function" ? process.env.NODE_ENV !== "production" ? evalChildrenDev(children, props, _this.props.path) : children(props) : children : component ? React__default$1['default'].createElement(component, props) : render ? render(props) : null : typeof children === "function" ? process.env.NODE_ENV !== "production" ? evalChildrenDev(children, props, _this.props.path) : children(props) : null);
-    });
-  };
-
-  return Route;
-}(React__default$1['default'].Component);
-
-if (process.env.NODE_ENV !== "production") {
-  Route.propTypes = {
-    children: propTypes$4.oneOfType([propTypes$4.func, propTypes$4.node]),
-    component: function component(props, propName) {
-      if (props[propName] && !reactIs.isValidElementType(props[propName])) {
-        return new Error("Invalid prop 'component' supplied to 'Route': the prop is not a valid React component");
-      }
-    },
-    exact: propTypes$4.bool,
-    location: propTypes$4.object,
-    path: propTypes$4.oneOfType([propTypes$4.string, propTypes$4.arrayOf(propTypes$4.string)]),
-    render: propTypes$4.func,
-    sensitive: propTypes$4.bool,
-    strict: propTypes$4.bool
-  };
-
-  Route.prototype.componentDidMount = function () {
-    process.env.NODE_ENV !== "production" ? warning(!(this.props.children && !isEmptyChildren(this.props.children) && this.props.component), "You should not use <Route component> and <Route children> in the same route; <Route component> will be ignored") : void 0;
-    process.env.NODE_ENV !== "production" ? warning(!(this.props.children && !isEmptyChildren(this.props.children) && this.props.render), "You should not use <Route render> and <Route children> in the same route; <Route render> will be ignored") : void 0;
-    process.env.NODE_ENV !== "production" ? warning(!(this.props.component && this.props.render), "You should not use <Route component> and <Route render> in the same route; <Route render> will be ignored") : void 0;
-  };
-
-  Route.prototype.componentDidUpdate = function (prevProps) {
-    process.env.NODE_ENV !== "production" ? warning(!(this.props.location && !prevProps.location), '<Route> elements should not change from uncontrolled to controlled (or vice versa). You initially used no "location" prop and then provided one on a subsequent render.') : void 0;
-    process.env.NODE_ENV !== "production" ? warning(!(!this.props.location && prevProps.location), '<Route> elements should not change from controlled to uncontrolled (or vice versa). You provided a "location" prop initially but omitted it on a subsequent render.') : void 0;
-  };
-}
-
-function addLeadingSlash(path) {
-  return path.charAt(0) === "/" ? path : "/" + path;
-}
-
-function addBasename(basename, location) {
-  if (!basename) return location;
-  return _extends$X({}, location, {
-    pathname: addLeadingSlash(basename) + location.pathname
-  });
-}
-
-function stripBasename(basename, location) {
-  if (!basename) return location;
-  var base = addLeadingSlash(basename);
-  if (location.pathname.indexOf(base) !== 0) return location;
-  return _extends$X({}, location, {
-    pathname: location.pathname.substr(base.length)
-  });
-}
-
-function createURL(location) {
-  return typeof location === "string" ? location : createPath(location);
-}
-
-function staticHandler(methodName) {
-  return function () {
-    process.env.NODE_ENV !== "production" ? invariant$1(false, "You cannot %s with <StaticRouter>") : invariant$1(false);
-  };
-}
-
-function noop$3() {}
-/**
- * The public top-level API for a "static" <Router>, so-called because it
- * can't actually change the current location. Instead, it just records
- * location changes in a context object. Useful mainly in testing and
- * server-rendering scenarios.
- */
-
-
-var StaticRouter = /*#__PURE__*/function (_React$Component) {
-  _inheritsLoose$1(StaticRouter, _React$Component);
-
-  function StaticRouter() {
-    var _this;
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _React$Component.call.apply(_React$Component, [this].concat(args)) || this;
-
-    _this.handlePush = function (location) {
-      return _this.navigateTo(location, "PUSH");
-    };
-
-    _this.handleReplace = function (location) {
-      return _this.navigateTo(location, "REPLACE");
-    };
-
-    _this.handleListen = function () {
-      return noop$3;
-    };
-
-    _this.handleBlock = function () {
-      return noop$3;
-    };
-
-    return _this;
-  }
-
-  var _proto = StaticRouter.prototype;
-
-  _proto.navigateTo = function navigateTo(location, action) {
-    var _this$props = this.props,
-        _this$props$basename = _this$props.basename,
-        basename = _this$props$basename === void 0 ? "" : _this$props$basename,
-        _this$props$context = _this$props.context,
-        context = _this$props$context === void 0 ? {} : _this$props$context;
-    context.action = action;
-    context.location = addBasename(basename, createLocation(location));
-    context.url = createURL(context.location);
-  };
-
-  _proto.render = function render() {
-    var _this$props2 = this.props,
-        _this$props2$basename = _this$props2.basename,
-        basename = _this$props2$basename === void 0 ? "" : _this$props2$basename,
-        _this$props2$context = _this$props2.context,
-        context = _this$props2$context === void 0 ? {} : _this$props2$context,
-        _this$props2$location = _this$props2.location,
-        location = _this$props2$location === void 0 ? "/" : _this$props2$location,
-        rest = _objectWithoutPropertiesLoose$h(_this$props2, ["basename", "context", "location"]);
-
-    var history = {
-      createHref: function createHref(path) {
-        return addLeadingSlash(basename + createURL(path));
-      },
-      action: "POP",
-      location: stripBasename(basename, createLocation(location)),
-      push: this.handlePush,
-      replace: this.handleReplace,
-      go: staticHandler(),
-      goBack: staticHandler(),
-      goForward: staticHandler(),
-      listen: this.handleListen,
-      block: this.handleBlock
-    };
-    return React__default$1['default'].createElement(Router, _extends$X({}, rest, {
-      history: history,
-      staticContext: context
-    }));
-  };
-
-  return StaticRouter;
-}(React__default$1['default'].Component);
-
-if (process.env.NODE_ENV !== "production") {
-  StaticRouter.propTypes = {
-    basename: propTypes$4.string,
-    context: propTypes$4.object,
-    location: propTypes$4.oneOfType([propTypes$4.string, propTypes$4.object])
-  };
-
-  StaticRouter.prototype.componentDidMount = function () {
-    process.env.NODE_ENV !== "production" ? warning(!this.props.history, "<StaticRouter> ignores the history prop. To use a custom history, " + "use `import { Router }` instead of `import { StaticRouter as Router }`.") : void 0;
-  };
-}
-/**
- * The public API for rendering the first <Route> that matches.
- */
-
-
-var Switch = /*#__PURE__*/function (_React$Component) {
-  _inheritsLoose$1(Switch, _React$Component);
-
-  function Switch() {
-    return _React$Component.apply(this, arguments) || this;
-  }
-
-  var _proto = Switch.prototype;
-
-  _proto.render = function render() {
-    var _this = this;
-
-    return React__default$1['default'].createElement(context.Consumer, null, function (context) {
-      !context ? process.env.NODE_ENV !== "production" ? invariant$1(false, "You should not use <Switch> outside a <Router>") : invariant$1(false) : void 0;
-      var location = _this.props.location || context.location;
-      var element, match; // We use React.Children.forEach instead of React.Children.toArray().find()
-      // here because toArray adds keys to all child elements and we do not want
-      // to trigger an unmount/remount for two <Route>s that render the same
-      // component at different URLs.
-
-      React__default$1['default'].Children.forEach(_this.props.children, function (child) {
-        if (match == null && React__default$1['default'].isValidElement(child)) {
-          element = child;
-          var path = child.props.path || child.props.from;
-          match = path ? matchPath(location.pathname, _extends$X({}, child.props, {
-            path: path
-          })) : context.match;
-        }
-      });
-      return match ? React__default$1['default'].cloneElement(element, {
-        location: location,
-        computedMatch: match
-      }) : null;
-    });
-  };
-
-  return Switch;
-}(React__default$1['default'].Component);
-
-if (process.env.NODE_ENV !== "production") {
-  Switch.propTypes = {
-    children: propTypes$4.node,
-    location: propTypes$4.object
-  };
-
-  Switch.prototype.componentDidUpdate = function (prevProps) {
-    process.env.NODE_ENV !== "production" ? warning(!(this.props.location && !prevProps.location), '<Switch> elements should not change from uncontrolled to controlled (or vice versa). You initially used no "location" prop and then provided one on a subsequent render.') : void 0;
-    process.env.NODE_ENV !== "production" ? warning(!(!this.props.location && prevProps.location), '<Switch> elements should not change from controlled to uncontrolled (or vice versa). You provided a "location" prop initially but omitted it on a subsequent render.') : void 0;
-  };
-}
-
-React__default$1['default'].useContext;
-
-if (process.env.NODE_ENV !== "production") {
-  if (typeof window !== "undefined") {
-    var global$1 = window;
-    var key = "__react_router_build__";
-    var buildNames = {
-      cjs: "CommonJS",
-      esm: "ES modules",
-      umd: "UMD"
-    };
-
-    if (global$1[key] && global$1[key] !== "esm") {
-      var initialBuildName = buildNames[global$1[key]];
-      var secondaryBuildName = buildNames["esm"]; // TODO: Add link to article that explains in detail how to avoid
-      // loading 2 different builds.
-
-      throw new Error("You are loading the " + secondaryBuildName + " build of React Router " + ("on a page that is already running the " + initialBuildName + " ") + "build, so things won't work right.");
-    }
-
-    global$1[key] = "esm";
-  }
-}
-
-/**
- * The public API for a <Router> that uses HTML5 history.
- */
-
-var BrowserRouter = /*#__PURE__*/function (_React$Component) {
-  _inheritsLoose$1(BrowserRouter, _React$Component);
-
-  function BrowserRouter() {
-    var _this;
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _React$Component.call.apply(_React$Component, [this].concat(args)) || this;
-    _this.history = createBrowserHistory(_this.props);
-    return _this;
-  }
-
-  var _proto = BrowserRouter.prototype;
-
-  _proto.render = function render() {
-    return React__default$1['default'].createElement(Router, {
-      history: this.history,
-      children: this.props.children
-    });
-  };
-
-  return BrowserRouter;
-}(React__default$1['default'].Component);
-
-if (process.env.NODE_ENV !== "production") {
-  BrowserRouter.propTypes = {
-    basename: propTypes$4.string,
-    children: propTypes$4.node,
-    forceRefresh: propTypes$4.bool,
-    getUserConfirmation: propTypes$4.func,
-    keyLength: propTypes$4.number
-  };
-
-  BrowserRouter.prototype.componentDidMount = function () {
-    process.env.NODE_ENV !== "production" ? warning(!this.props.history, "<BrowserRouter> ignores the history prop. To use a custom history, " + "use `import { Router }` instead of `import { BrowserRouter as Router }`.") : void 0;
-  };
-}
-/**
- * The public API for a <Router> that uses window.location.hash.
- */
-
-
-var HashRouter = /*#__PURE__*/function (_React$Component) {
-  _inheritsLoose$1(HashRouter, _React$Component);
-
-  function HashRouter() {
-    var _this;
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _React$Component.call.apply(_React$Component, [this].concat(args)) || this;
-    _this.history = createHashHistory(_this.props);
-    return _this;
-  }
-
-  var _proto = HashRouter.prototype;
-
-  _proto.render = function render() {
-    return React__default$1['default'].createElement(Router, {
-      history: this.history,
-      children: this.props.children
-    });
-  };
-
-  return HashRouter;
-}(React__default$1['default'].Component);
-
-if (process.env.NODE_ENV !== "production") {
-  HashRouter.propTypes = {
-    basename: propTypes$4.string,
-    children: propTypes$4.node,
-    getUserConfirmation: propTypes$4.func,
-    hashType: propTypes$4.oneOf(["hashbang", "noslash", "slash"])
-  };
-
-  HashRouter.prototype.componentDidMount = function () {
-    process.env.NODE_ENV !== "production" ? warning(!this.props.history, "<HashRouter> ignores the history prop. To use a custom history, " + "use `import { Router }` instead of `import { HashRouter as Router }`.") : void 0;
-  };
-}
-
-var resolveToLocation = function resolveToLocation(to, currentLocation) {
-  return typeof to === "function" ? to(currentLocation) : to;
-};
-
-var normalizeToLocation = function normalizeToLocation(to, currentLocation) {
-  return typeof to === "string" ? createLocation(to, null, null, currentLocation) : to;
-};
-
-var forwardRefShim = function forwardRefShim(C) {
-  return C;
-};
-
-var forwardRef = React__default$1['default'].forwardRef;
-
-if (typeof forwardRef === "undefined") {
-  forwardRef = forwardRefShim;
-}
-
-function isModifiedEvent(event) {
-  return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
-}
-
-var LinkAnchor = forwardRef(function (_ref, forwardedRef) {
-  var innerRef = _ref.innerRef,
-      navigate = _ref.navigate,
-      _onClick = _ref.onClick,
-      rest = _objectWithoutPropertiesLoose$h(_ref, ["innerRef", "navigate", "onClick"]);
-
-  var target = rest.target;
-
-  var props = _extends$X({}, rest, {
-    onClick: function onClick(event) {
-      try {
-        if (_onClick) _onClick(event);
-      } catch (ex) {
-        event.preventDefault();
-        throw ex;
-      }
-
-      if (!event.defaultPrevented && // onClick prevented default
-      event.button === 0 && ( // ignore everything but left clicks
-      !target || target === "_self") && // let browser handle "target=_blank" etc.
-      !isModifiedEvent(event) // ignore clicks with modifier keys
-      ) {
-          event.preventDefault();
-          navigate();
-        }
-    }
-  }); // React 15 compat
-
-
-  if (forwardRefShim !== forwardRef) {
-    props.ref = forwardedRef || innerRef;
-  } else {
-    props.ref = innerRef;
-  }
-  /* eslint-disable-next-line jsx-a11y/anchor-has-content */
-
-
-  return React__default$1['default'].createElement("a", props);
 });
 
-if (process.env.NODE_ENV !== "production") {
-  LinkAnchor.displayName = "LinkAnchor";
-}
-/**
- * The public API for rendering a history-aware <a>.
- */
+var loadStripe = function loadStripe() {
+  for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+    args[_key] = arguments[_key];
+  }
 
-
-var Link = forwardRef(function (_ref2, forwardedRef) {
-  var _ref2$component = _ref2.component,
-      component = _ref2$component === void 0 ? LinkAnchor : _ref2$component,
-      replace = _ref2.replace,
-      to = _ref2.to,
-      innerRef = _ref2.innerRef,
-      rest = _objectWithoutPropertiesLoose$h(_ref2, ["component", "replace", "to", "innerRef"]);
-
-  return React__default$1['default'].createElement(context.Consumer, null, function (context) {
-    !context ? process.env.NODE_ENV !== "production" ? invariant$1(false, "You should not use <Link> outside a <Router>") : invariant$1(false) : void 0;
-    var history = context.history;
-    var location = normalizeToLocation(resolveToLocation(to, context.location), context.location);
-    var href = location ? history.createHref(location) : "";
-
-    var props = _extends$X({}, rest, {
-      href: href,
-      navigate: function navigate() {
-        var location = resolveToLocation(to, context.location);
-        var method = replace ? history.replace : history.push;
-        method(location);
-      }
-    }); // React 15 compat
-
-
-    if (forwardRefShim !== forwardRef) {
-      props.ref = forwardedRef || innerRef;
-    } else {
-      props.innerRef = innerRef;
-    }
-
-    return React__default$1['default'].createElement(component, props);
+  loadCalled = true;
+  var startTime = Date.now();
+  return stripePromise$1.then(function (maybeStripe) {
+    return initStripe(maybeStripe, args, startTime);
   });
-});
-
-if (process.env.NODE_ENV !== "production") {
-  var toType = propTypes$4.oneOfType([propTypes$4.string, propTypes$4.object, propTypes$4.func]);
-  var refType = propTypes$4.oneOfType([propTypes$4.string, propTypes$4.func, propTypes$4.shape({
-    current: propTypes$4.any
-  })]);
-  Link.displayName = "Link";
-  Link.propTypes = {
-    innerRef: refType,
-    onClick: propTypes$4.func,
-    replace: propTypes$4.bool,
-    target: propTypes$4.string,
-    to: toType.isRequired
-  };
-}
-
-var forwardRefShim$1 = function forwardRefShim(C) {
-  return C;
 };
-
-var forwardRef$1 = React__default$1['default'].forwardRef;
-
-if (typeof forwardRef$1 === "undefined") {
-  forwardRef$1 = forwardRefShim$1;
-}
-
-function joinClassnames() {
-  for (var _len = arguments.length, classnames = new Array(_len), _key = 0; _key < _len; _key++) {
-    classnames[_key] = arguments[_key];
-  }
-
-  return classnames.filter(function (i) {
-    return i;
-  }).join(" ");
-}
-/**
- * A <Link> wrapper that knows if it's "active" or not.
- */
-
-
-var NavLink = forwardRef$1(function (_ref, forwardedRef) {
-  var _ref$ariaCurrent = _ref["aria-current"],
-      ariaCurrent = _ref$ariaCurrent === void 0 ? "page" : _ref$ariaCurrent,
-      _ref$activeClassName = _ref.activeClassName,
-      activeClassName = _ref$activeClassName === void 0 ? "active" : _ref$activeClassName,
-      activeStyle = _ref.activeStyle,
-      classNameProp = _ref.className,
-      exact = _ref.exact,
-      isActiveProp = _ref.isActive,
-      locationProp = _ref.location,
-      sensitive = _ref.sensitive,
-      strict = _ref.strict,
-      styleProp = _ref.style,
-      to = _ref.to,
-      innerRef = _ref.innerRef,
-      rest = _objectWithoutPropertiesLoose$h(_ref, ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive", "location", "sensitive", "strict", "style", "to", "innerRef"]);
-
-  return React__default$1['default'].createElement(context.Consumer, null, function (context) {
-    !context ? process.env.NODE_ENV !== "production" ? invariant$1(false, "You should not use <NavLink> outside a <Router>") : invariant$1(false) : void 0;
-    var currentLocation = locationProp || context.location;
-    var toLocation = normalizeToLocation(resolveToLocation(to, currentLocation), currentLocation);
-    var path = toLocation.pathname; // Regex taken from: https://github.com/pillarjs/path-to-regexp/blob/master/index.js#L202
-
-    var escapedPath = path && path.replace(/([.+*?=^!:${}()[\]|/\\])/g, "\\$1");
-    var match = escapedPath ? matchPath(currentLocation.pathname, {
-      path: escapedPath,
-      exact: exact,
-      sensitive: sensitive,
-      strict: strict
-    }) : null;
-    var isActive = !!(isActiveProp ? isActiveProp(match, currentLocation) : match);
-    var className = isActive ? joinClassnames(classNameProp, activeClassName) : classNameProp;
-    var style = isActive ? _extends$X({}, styleProp, {}, activeStyle) : styleProp;
-
-    var props = _extends$X({
-      "aria-current": isActive && ariaCurrent || null,
-      className: className,
-      style: style,
-      to: toLocation
-    }, rest); // React 15 compat
-
-
-    if (forwardRefShim$1 !== forwardRef$1) {
-      props.ref = forwardedRef || innerRef;
-    } else {
-      props.innerRef = innerRef;
-    }
-
-    return React__default$1['default'].createElement(Link, props);
-  });
-});
-
-if (process.env.NODE_ENV !== "production") {
-  NavLink.displayName = "NavLink";
-  var ariaCurrentType = propTypes$4.oneOf(["page", "step", "location", "date", "time", "true"]);
-  NavLink.propTypes = _extends$X({}, Link.propTypes, {
-    "aria-current": ariaCurrentType,
-    activeClassName: propTypes$4.string,
-    activeStyle: propTypes$4.object,
-    className: propTypes$4.string,
-    exact: propTypes$4.bool,
-    isActive: propTypes$4.func,
-    location: propTypes$4.object,
-    sensitive: propTypes$4.bool,
-    strict: propTypes$4.bool,
-    style: propTypes$4.object
-  });
-}
-
-function BearRouter({
-  //
-  list,
-  //   function,
-  children,
-  homepage,
-  routeDict,
-  ...args
-}) {
-  // 1const
-  function sijaee({
-    path,
-    ...adsfr
-  }) {
-    const ijdrwe = //
-    // "/test";
-    path; // "/" + path;
-
-    const ijsdfr = /*#__PURE__*/React__default$1['default'].createElement(Route, _extends$Y({
-      path: ijdrwe
-    }, adsfr));
-    return ijsdfr;
-  }
-
-  const okfdsd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(BrowserRouter, null, /*#__PURE__*/React__default$1['default'].createElement(Switch, null, /*#__PURE__*/React__default$1['default'].createElement(Route, {
-    path: "/",
-    component: homepage
-  }), children.map(sijaee))));
-  return okfdsd;
-}
 
 // ES6 Map
 var map;
@@ -50857,7 +35917,7 @@ var defineProperty = function () {
   } catch (e) {}
 }();
 
-var _defineProperty$h = defineProperty;
+var _defineProperty$g = defineProperty;
 
 /**
  * The base implementation of `assignValue` and `assignMergeValue` without
@@ -50871,8 +35931,8 @@ var _defineProperty$h = defineProperty;
 
 
 function baseAssignValue(object, key, value) {
-  if (key == '__proto__' && _defineProperty$h) {
-    _defineProperty$h(object, key, {
+  if (key == '__proto__' && _defineProperty$g) {
+    _defineProperty$g(object, key, {
       'configurable': true,
       'enumerable': true,
       'value': value,
@@ -55173,11 +40233,11 @@ function useForm({
   };
 }
 
-var index$2 = typeof document !== 'undefined' ? React.useLayoutEffect : React.useEffect;
+var index$3 = typeof document !== 'undefined' ? React.useLayoutEffect : React.useEffect;
 
 var useLatest = function useLatest(value) {
   var ref = React.useRef(value);
-  index$2(function () {
+  index$3(function () {
     ref.current = value;
   });
   return ref;
@@ -55361,7 +40421,7 @@ var TextareaAutosize = function TextareaAutosize(_ref, userRef) {
       onChange = _ref$onChange === void 0 ? noop$2 : _ref$onChange,
       _ref$onHeightChange = _ref.onHeightChange,
       onHeightChange = _ref$onHeightChange === void 0 ? noop$2 : _ref$onHeightChange,
-      props = _objectWithoutPropertiesLoose$h(_ref, ["cacheMeasurements", "maxRows", "minRows", "onChange", "onHeightChange"]);
+      props = _objectWithoutPropertiesLoose$f(_ref, ["cacheMeasurements", "maxRows", "minRows", "onChange", "onHeightChange"]);
 
   if (process.env.NODE_ENV !== 'production' && props.style) {
     if ('maxHeight' in props.style) {
@@ -55415,13 +40475,13 @@ var TextareaAutosize = function TextareaAutosize(_ref, userRef) {
     useWindowResizeListener(resizeTextarea);
   }
 
-  return /*#__PURE__*/React.createElement("textarea", _extends$X({}, props, {
+  return /*#__PURE__*/React.createElement("textarea", _extends$N({}, props, {
     onChange: handleChange,
     ref: ref
   }));
 };
 
-var index$1 = /* #__PURE__ */React.forwardRef(TextareaAutosize);
+var index$2 = /* #__PURE__ */React.forwardRef(TextareaAutosize);
 
 function BearTextarea({
   //
@@ -55439,7 +40499,7 @@ function BearTextarea({
   rows = rows ? rows : 3; // expand = "";
 
   const ijdfwer = expand && {
-    as: index$1
+    as: index$2
   };
   const chakResize = {
     minH: "unset",
@@ -55917,7 +40977,7 @@ function _taggedTemplateLiteral(strings, raw) {
 
 function _objectWithoutProperties$b(source, excluded) {
   if (source == null) return {};
-  var target = _objectWithoutPropertiesLoose$h(source, excluded);
+  var target = _objectWithoutPropertiesLoose$f(source, excluded);
   var key, i;
 
   if (Object.getOwnPropertySymbols) {
@@ -55934,20 +40994,20 @@ function _objectWithoutProperties$b(source, excluded) {
   return target;
 }
 
-function _typeof$7(obj) {
+function _typeof$6(obj) {
   "@babel/helpers - typeof";
 
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof$7 = function _typeof(obj) {
+    _typeof$6 = function _typeof(obj) {
       return typeof obj;
     };
   } else {
-    _typeof$7 = function _typeof(obj) {
+    _typeof$6 = function _typeof(obj) {
       return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
     };
   }
 
-  return _typeof$7(obj);
+  return _typeof$6(obj);
 }
 
 var _extends$e = Object.assign || function (target) {
@@ -55988,7 +41048,7 @@ var _react2 = _interopRequireDefault$1(React__default$1['default']);
 
 
 
-var _propTypes2 = _interopRequireDefault$1(propTypes$4);
+var _propTypes2 = _interopRequireDefault$1(propTypes$3);
 
 function _interopRequireDefault$1(obj) {
   return obj && obj.__esModule ? obj : {
@@ -56339,7 +41399,7 @@ function _inherits$3(subClass, superClass) {
   if (superClass) _setPrototypeOf$3(subClass, superClass);
 }
 
-function _defineProperty$g(obj, key, value) {
+function _defineProperty$f(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -56354,7 +41414,7 @@ function _defineProperty$g(obj, key, value) {
   return obj;
 }
 
-function ownKeys$e(object, enumerableOnly) {
+function ownKeys$d(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -56368,18 +41428,18 @@ function ownKeys$e(object, enumerableOnly) {
   return keys;
 }
 
-function _objectSpread2$1(target) {
+function _objectSpread2(target) {
   for (var i = 1; i < arguments.length; i++) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$e(Object(source), true).forEach(function (key) {
-        _defineProperty$g(target, key, source[key]);
+      ownKeys$d(Object(source), true).forEach(function (key) {
+        _defineProperty$f(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$e(Object(source)).forEach(function (key) {
+      ownKeys$d(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -56493,7 +41553,7 @@ function classNames(prefix, state, className) {
 
 var cleanValue = function cleanValue(value) {
   if (Array.isArray(value)) return value.filter(Boolean);
-  if (_typeof$7(value) === 'object' && value !== null) return [value];
+  if (_typeof$6(value) === 'object' && value !== null) return [value];
   return [];
 }; // ==============================
 // Clean Common Props
@@ -56518,7 +41578,7 @@ var cleanCommonProps = function cleanCommonProps(props) {
 
   var innerProps = _objectWithoutProperties$b(props, ["className", "clearValue", "cx", "getStyles", "getValue", "hasValue", "isMulti", "isRtl", "options", "selectOption", "selectProps", "setValue", "theme"]);
 
-  return _objectSpread2$1({}, innerProps);
+  return _objectSpread2({}, innerProps);
 }; // ==============================
 // Handle Input Change
 // ==============================
@@ -56884,7 +41944,7 @@ var menuCSS = function menuCSS(_ref2) {
       colors = _ref2$theme.colors;
   return _ref3 = {
     label: 'menu'
-  }, _defineProperty$j(_ref3, alignToControl(placement), '100%'), _defineProperty$j(_ref3, "backgroundColor", colors.neutral0), _defineProperty$j(_ref3, "borderRadius", borderRadius), _defineProperty$j(_ref3, "boxShadow", '0 0 0 1px hsla(0, 0%, 0%, 0.1), 0 4px 11px hsla(0, 0%, 0%, 0.1)'), _defineProperty$j(_ref3, "marginBottom", spacing.menuGutter), _defineProperty$j(_ref3, "marginTop", spacing.menuGutter), _defineProperty$j(_ref3, "position", 'absolute'), _defineProperty$j(_ref3, "width", '100%'), _defineProperty$j(_ref3, "zIndex", 1), _ref3;
+  }, _defineProperty$i(_ref3, alignToControl(placement), '100%'), _defineProperty$i(_ref3, "backgroundColor", colors.neutral0), _defineProperty$i(_ref3, "borderRadius", borderRadius), _defineProperty$i(_ref3, "boxShadow", '0 0 0 1px hsla(0, 0%, 0%, 0.1), 0 4px 11px hsla(0, 0%, 0%, 0.1)'), _defineProperty$i(_ref3, "marginBottom", spacing.menuGutter), _defineProperty$i(_ref3, "marginTop", spacing.menuGutter), _defineProperty$i(_ref3, "position", 'absolute'), _defineProperty$i(_ref3, "width", '100%'), _defineProperty$i(_ref3, "zIndex", 1), _ref3;
 };
 
 var PortalPlacementContext = /*#__PURE__*/React.createContext({
@@ -56941,7 +42001,7 @@ var MenuPlacer = /*#__PURE__*/function (_Component) {
     _this.getUpdatedProps = function () {
       var menuPlacement = _this.props.menuPlacement;
       var placement = _this.state.placement || coercePlacement(menuPlacement);
-      return _objectSpread2$1(_objectSpread2$1({}, _this.props), {}, {
+      return _objectSpread2(_objectSpread2({}, _this.props), {}, {
         placement: placement,
         maxHeight: _this.state.maxHeight
       });
@@ -56973,7 +42033,7 @@ var Menu = function Menu(props) {
       getStyles = props.getStyles,
       innerRef = props.innerRef,
       innerProps = props.innerProps;
-  return jsx("div", _extends$X({
+  return jsx("div", _extends$N({
     css: getStyles('menu', props),
     className: cx({
       menu: true
@@ -57006,7 +42066,7 @@ var MenuList = function MenuList(props) {
       innerProps = props.innerProps,
       innerRef = props.innerRef,
       isMulti = props.isMulti;
-  return jsx("div", _extends$X({
+  return jsx("div", _extends$N({
     css: getStyles('menuList', props),
     className: cx({
       'menu-list': true,
@@ -57039,7 +42099,7 @@ var NoOptionsMessage = function NoOptionsMessage(props) {
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return jsx("div", _extends$X({
+  return jsx("div", _extends$N({
     css: getStyles('noOptionsMessage', props),
     className: cx({
       'menu-notice': true,
@@ -57058,7 +42118,7 @@ var LoadingMessage = function LoadingMessage(props) {
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return jsx("div", _extends$X({
+  return jsx("div", _extends$N({
     css: getStyles('loadingMessage', props),
     className: cx({
       'menu-notice': true,
@@ -57148,7 +42208,7 @@ var MenuPortal = /*#__PURE__*/function (_Component2) {
         rect: rect
       }; // same wrapper element whether fixed or portalled
 
-      var menuWrapper = jsx("div", _extends$X({
+      var menuWrapper = jsx("div", _extends$N({
         css: getStyles('menuPortal', state),
         className: cx({
           'menu-portal': true
@@ -57185,7 +42245,7 @@ var SelectContainer = function SelectContainer(props) {
       innerProps = props.innerProps,
       isDisabled = props.isDisabled,
       isRtl = props.isRtl;
-  return jsx("div", _extends$X({
+  return jsx("div", _extends$N({
     css: getStyles('container', props),
     className: cx({
       '--is-disabled': isDisabled,
@@ -57219,7 +42279,7 @@ var ValueContainer = function ValueContainer(props) {
       isMulti = props.isMulti,
       getStyles = props.getStyles,
       hasValue = props.hasValue;
-  return jsx("div", _extends$X({
+  return jsx("div", _extends$N({
     css: getStyles('valueContainer', props),
     className: cx({
       'value-container': true,
@@ -57247,7 +42307,7 @@ var IndicatorsContainer = function IndicatorsContainer(props) {
       cx = props.cx,
       innerProps = props.innerProps,
       getStyles = props.getStyles;
-  return jsx("div", _extends$X({
+  return jsx("div", _extends$N({
     css: getStyles('indicatorsContainer', props),
     className: cx({
       indicators: true
@@ -57278,7 +42338,7 @@ var Svg = function Svg(_ref) {
   var size = _ref.size,
       props = _objectWithoutProperties$b(_ref, ["size"]);
 
-  return jsx("svg", _extends$X({
+  return jsx("svg", _extends$N({
     height: size,
     width: size,
     viewBox: "0 0 20 20",
@@ -57289,7 +42349,7 @@ var Svg = function Svg(_ref) {
 };
 
 var CrossIcon = function CrossIcon(props) {
-  return jsx(Svg, _extends$X({
+  return jsx(Svg, _extends$N({
     size: 20
   }, props), jsx("path", {
     d: "M14.348 14.849c-0.469 0.469-1.229 0.469-1.697 0l-2.651-3.030-2.651 3.029c-0.469 0.469-1.229 0.469-1.697 0-0.469-0.469-0.469-1.229 0-1.697l2.758-3.15-2.759-3.152c-0.469-0.469-0.469-1.228 0-1.697s1.228-0.469 1.697 0l2.652 3.031 2.651-3.031c0.469-0.469 1.228-0.469 1.697 0s0.469 1.229 0 1.697l-2.758 3.152 2.758 3.15c0.469 0.469 0.469 1.229 0 1.698z"
@@ -57297,7 +42357,7 @@ var CrossIcon = function CrossIcon(props) {
 };
 
 var DownChevron = function DownChevron(props) {
-  return jsx(Svg, _extends$X({
+  return jsx(Svg, _extends$N({
     size: 20
   }, props), jsx("path", {
     d: "M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
@@ -57332,7 +42392,7 @@ var DropdownIndicator = function DropdownIndicator(props) {
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return jsx("div", _extends$X({
+  return jsx("div", _extends$N({
     css: getStyles('dropdownIndicator', props),
     className: cx({
       indicator: true,
@@ -57349,7 +42409,7 @@ var ClearIndicator = function ClearIndicator(props) {
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return jsx("div", _extends$X({
+  return jsx("div", _extends$N({
     css: getStyles('clearIndicator', props),
     className: cx({
       indicator: true,
@@ -57381,7 +42441,7 @@ var IndicatorSeparator = function IndicatorSeparator(props) {
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return jsx("span", _extends$X({}, innerProps, {
+  return jsx("span", _extends$N({}, innerProps, {
     css: getStyles('indicatorSeparator', props),
     className: cx({
       'indicator-separator': true
@@ -57392,7 +42452,7 @@ var IndicatorSeparator = function IndicatorSeparator(props) {
 // ==============================
 
 
-var loadingDotAnimations = keyframes$2(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  0%, 80%, 100% { opacity: 0; }\n  40% { opacity: 1; }\n"])));
+var loadingDotAnimations = keyframes(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  0%, 80%, 100% { opacity: 0; }\n  40% { opacity: 1; }\n"])));
 
 var loadingIndicatorCSS = function loadingIndicatorCSS(_ref5) {
   var isFocused = _ref5.isFocused,
@@ -57438,7 +42498,7 @@ var LoadingIndicator = function LoadingIndicator(props) {
       getStyles = props.getStyles,
       innerProps = props.innerProps,
       isRtl = props.isRtl;
-  return jsx("div", _extends$X({
+  return jsx("div", _extends$N({
     css: getStyles('loadingIndicator', props),
     className: cx({
       indicator: true,
@@ -57500,7 +42560,7 @@ var Control = function Control(props) {
       innerRef = props.innerRef,
       innerProps = props.innerProps,
       menuIsOpen = props.menuIsOpen;
-  return jsx("div", _extends$X({
+  return jsx("div", _extends$N({
     ref: innerRef,
     css: getStyles('control', props),
     className: cx({
@@ -57531,12 +42591,12 @@ var Group = function Group(props) {
       label = props.label,
       theme = props.theme,
       selectProps = props.selectProps;
-  return jsx("div", _extends$X({
+  return jsx("div", _extends$N({
     css: getStyles('group', props),
     className: cx({
       group: true
     }, className)
-  }, innerProps), jsx(Heading, _extends$X({}, headingProps, {
+  }, innerProps), jsx(Heading, _extends$N({}, headingProps, {
     selectProps: selectProps,
     theme: theme,
     getStyles: getStyles,
@@ -57571,7 +42631,7 @@ var GroupHeading = function GroupHeading(props) {
 
   var innerProps = _objectWithoutProperties$b(_cleanCommonProps, ["data"]);
 
-  return jsx("div", _extends$X({
+  return jsx("div", _extends$N({
     css: getStyles('groupHeading', props),
     className: cx({
       'group-heading': true
@@ -57619,7 +42679,7 @@ var Input = function Input(props) {
 
   return jsx("div", {
     css: getStyles('input', props)
-  }, jsx(_default, _extends$X({
+  }, jsx(_default, _extends$N({
     className: cx({
       input: true
     }, className),
@@ -57718,7 +42778,7 @@ var MultiValue = function MultiValue(props) {
         emotionCx = _ref6.cx;
     return jsx(Container, {
       data: data,
-      innerProps: _objectSpread2$1({
+      innerProps: _objectSpread2({
         className: emotionCx(css(getStyles('multiValue', props)), cx({
           'multi-value': true,
           'multi-value--is-disabled': isDisabled
@@ -57735,7 +42795,7 @@ var MultiValue = function MultiValue(props) {
       selectProps: selectProps
     }, children), jsx(Remove, {
       data: data,
-      innerProps: _objectSpread2$1({
+      innerProps: _objectSpread2({
         className: emotionCx(css(getStyles('multiValueRemove', props)), cx({
           'multi-value__remove': true
         }, className))
@@ -57784,7 +42844,7 @@ var Option = function Option(props) {
       isSelected = props.isSelected,
       innerRef = props.innerRef,
       innerProps = props.innerProps;
-  return jsx("div", _extends$X({
+  return jsx("div", _extends$N({
     css: getStyles('option', props),
     className: cx({
       option: true,
@@ -57817,7 +42877,7 @@ var Placeholder = function Placeholder(props) {
       cx = props.cx,
       getStyles = props.getStyles,
       innerProps = props.innerProps;
-  return jsx("div", _extends$X({
+  return jsx("div", _extends$N({
     css: getStyles('placeholder', props),
     className: cx({
       placeholder: true
@@ -57852,7 +42912,7 @@ var SingleValue = function SingleValue(props) {
       getStyles = props.getStyles,
       isDisabled = props.isDisabled,
       innerProps = props.innerProps;
-  return jsx("div", _extends$X({
+  return jsx("div", _extends$N({
     css: getStyles('singleValue', props),
     className: cx({
       'single-value': true,
@@ -57890,10 +42950,10 @@ var components = {
 };
 
 var defaultComponents = function defaultComponents(props) {
-  return _objectSpread2$1(_objectSpread2$1({}, components), props.components);
+  return _objectSpread2(_objectSpread2({}, components), props.components);
 };
 
-function _arrayLikeToArray$7(arr, len) {
+function _arrayLikeToArray$6(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
 
   for (var i = 0, arr2 = new Array(len); i < len; i++) {
@@ -57904,20 +42964,20 @@ function _arrayLikeToArray$7(arr, len) {
 }
 
 function _arrayWithoutHoles$5(arr) {
-  if (Array.isArray(arr)) return _arrayLikeToArray$7(arr);
+  if (Array.isArray(arr)) return _arrayLikeToArray$6(arr);
 }
 
 function _iterableToArray$5(iter) {
   if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
 }
 
-function _unsupportedIterableToArray$7(o, minLen) {
+function _unsupportedIterableToArray$6(o, minLen) {
   if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray$7(o, minLen);
+  if (typeof o === "string") return _arrayLikeToArray$6(o, minLen);
   var n = Object.prototype.toString.call(o).slice(8, -1);
   if (n === "Object" && o.constructor) n = o.constructor.name;
   if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$7(o, minLen);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$6(o, minLen);
 }
 
 function _nonIterableSpread$5() {
@@ -57925,14 +42985,14 @@ function _nonIterableSpread$5() {
 }
 
 function _toConsumableArray$5(arr) {
-  return _arrayWithoutHoles$5(arr) || _iterableToArray$5(arr) || _unsupportedIterableToArray$7(arr) || _nonIterableSpread$5();
+  return _arrayWithoutHoles$5(arr) || _iterableToArray$5(arr) || _unsupportedIterableToArray$6(arr) || _nonIterableSpread$5();
 }
 
 var safeIsNaN = Number.isNaN || function ponyfill(value) {
   return typeof value === 'number' && value !== value;
 };
 
-function isEqual$1(first, second) {
+function isEqual(first, second) {
   if (first === second) {
     return true;
   }
@@ -57950,7 +43010,7 @@ function areInputsEqual(newInputs, lastInputs) {
   }
 
   for (var i = 0; i < newInputs.length; i++) {
-    if (!isEqual$1(newInputs[i], lastInputs[i])) {
+    if (!isEqual(newInputs[i], lastInputs[i])) {
       return false;
     }
   }
@@ -58004,7 +43064,7 @@ var _ref = process.env.NODE_ENV === "production" ? {
 };
 
 var A11yText = function A11yText(props) {
-  return jsx("span", _extends$X({
+  return jsx("span", _extends$N({
     css: _ref
   }, props));
 };
@@ -58106,7 +43166,7 @@ var LiveRegion = function LiveRegion(props) {
   var ariaLive = selectProps['aria-live']; // Update aria live message configuration when prop changes
 
   var messages = React.useMemo(function () {
-    return _objectSpread2$1(_objectSpread2$1({}, defaultAriaLiveMessages), ariaLiveMessages || {});
+    return _objectSpread2(_objectSpread2({}, defaultAriaLiveMessages), ariaLiveMessages || {});
   }, [ariaLiveMessages]); // Update aria live selected option when prop changes
 
   var ariaSelected = React.useMemo(function () {
@@ -58123,7 +43183,7 @@ var LiveRegion = function LiveRegion(props) {
 
       var selected = removedValue || option || asOption(value);
 
-      var onChangeProps = _objectSpread2$1({
+      var onChangeProps = _objectSpread2({
         isDisabled: selected && isOptionDisabled(selected),
         label: selected ? getOptionLabel(selected) : ''
       }, ariaSelection);
@@ -58481,7 +43541,7 @@ var defaultStringify = function defaultStringify(option) {
 
 var createFilter = function createFilter(config) {
   return function (option, rawInput) {
-    var _ignoreCase$ignoreAcc = _objectSpread2$1({
+    var _ignoreCase$ignoreAcc = _objectSpread2({
       ignoreCase: true,
       ignoreAccents: true,
       stringify: defaultStringify,
@@ -58523,7 +43583,7 @@ function DummyInput(_ref) {
 
   var props = _objectWithoutProperties$b(_ref, ["in", "out", "onExited", "appear", "enter", "exit", "innerRef", "emotion"]);
 
-  return jsx("input", _extends$X({
+  return jsx("input", _extends$N({
     ref: innerRef
   }, props, {
     css: /*#__PURE__*/css$3({
@@ -58702,7 +43762,7 @@ function isTouchDevice() {
   return 'ontouchstart' in window || navigator.maxTouchPoints;
 }
 
-var canUseDOM$1 = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
+var canUseDOM$2 = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
 var activeScrollLocks = 0;
 var listenerOptions = {
   capture: false,
@@ -58716,7 +43776,7 @@ function useScrollLock(_ref) {
   var originalStyles = React.useRef({});
   var scrollTarget = React.useRef(null);
   var addScrollLock = React.useCallback(function (touchScrollTarget) {
-    if (!canUseDOM$1) return;
+    if (!canUseDOM$2) return;
     var target = document.body;
     var targetStyle = target && target.style;
 
@@ -58761,7 +43821,7 @@ function useScrollLock(_ref) {
     activeScrollLocks += 1;
   }, []);
   var removeScrollLock = React.useCallback(function (touchScrollTarget) {
-    if (!canUseDOM$1) return;
+    if (!canUseDOM$2) return;
     var target = document.body;
     var targetStyle = target && target.style; // safely decrement active scroll locks
 
@@ -59349,7 +44409,7 @@ var Select = /*#__PURE__*/function (_Component) {
 
     _this.ariaOnChange = function (value, actionMeta) {
       _this.setState({
-        ariaSelection: _objectSpread2$1({
+        ariaSelection: _objectSpread2({
           value: value
         }, actionMeta)
       });
@@ -59997,7 +45057,7 @@ var Select = /*#__PURE__*/function (_Component) {
       // overlay it with the default theme.
 
 
-      return _objectSpread2$1(_objectSpread2$1({}, defaultTheme), this.props.theme);
+      return _objectSpread2(_objectSpread2({}, defaultTheme), this.props.theme);
     }
   }, {
     key: "getCommonProps",
@@ -60157,7 +45217,7 @@ var Select = /*#__PURE__*/function (_Component) {
 
       if (!isSearchable) {
         // use a dummy input to maintain focus/blur functionality
-        return /*#__PURE__*/React__default$1['default'].createElement(DummyInput, _extends$X({
+        return /*#__PURE__*/React__default$1['default'].createElement(DummyInput, _extends$N({
           id: id,
           innerRef: this.getInputRef,
           onBlur: this.onInputBlur,
@@ -60171,7 +45231,7 @@ var Select = /*#__PURE__*/function (_Component) {
         }, ariaAttributes));
       }
 
-      return /*#__PURE__*/React__default$1['default'].createElement(Input, _extends$X({}, commonProps, {
+      return /*#__PURE__*/React__default$1['default'].createElement(Input, _extends$N({}, commonProps, {
         autoCapitalize: "none",
         autoComplete: "off",
         autoCorrect: "off",
@@ -60215,7 +45275,7 @@ var Select = /*#__PURE__*/function (_Component) {
           isFocused = _this$state4.isFocused;
 
       if (!this.hasValue() || !controlShouldRenderValue) {
-        return inputValue ? null : /*#__PURE__*/React__default$1['default'].createElement(Placeholder, _extends$X({}, commonProps, {
+        return inputValue ? null : /*#__PURE__*/React__default$1['default'].createElement(Placeholder, _extends$N({}, commonProps, {
           key: "placeholder",
           isDisabled: isDisabled,
           isFocused: isFocused
@@ -60225,7 +45285,7 @@ var Select = /*#__PURE__*/function (_Component) {
       if (isMulti) {
         var selectValues = selectValue.map(function (opt, index) {
           var isOptionFocused = opt === focusedValue;
-          return /*#__PURE__*/React__default$1['default'].createElement(MultiValue, _extends$X({}, commonProps, {
+          return /*#__PURE__*/React__default$1['default'].createElement(MultiValue, _extends$N({}, commonProps, {
             components: {
               Container: MultiValueContainer,
               Label: MultiValueLabel,
@@ -60258,7 +45318,7 @@ var Select = /*#__PURE__*/function (_Component) {
       }
 
       var singleValue = selectValue[0];
-      return /*#__PURE__*/React__default$1['default'].createElement(SingleValue, _extends$X({}, commonProps, {
+      return /*#__PURE__*/React__default$1['default'].createElement(SingleValue, _extends$N({}, commonProps, {
         data: singleValue,
         isDisabled: isDisabled
       }), this.formatOptionLabel(singleValue, 'value'));
@@ -60284,7 +45344,7 @@ var Select = /*#__PURE__*/function (_Component) {
         onTouchEnd: this.onClearIndicatorTouchEnd,
         'aria-hidden': 'true'
       };
-      return /*#__PURE__*/React__default$1['default'].createElement(ClearIndicator, _extends$X({}, commonProps, {
+      return /*#__PURE__*/React__default$1['default'].createElement(ClearIndicator, _extends$N({}, commonProps, {
         innerProps: innerProps,
         isFocused: isFocused
       }));
@@ -60304,7 +45364,7 @@ var Select = /*#__PURE__*/function (_Component) {
       var innerProps = {
         'aria-hidden': 'true'
       };
-      return /*#__PURE__*/React__default$1['default'].createElement(LoadingIndicator, _extends$X({}, commonProps, {
+      return /*#__PURE__*/React__default$1['default'].createElement(LoadingIndicator, _extends$N({}, commonProps, {
         innerProps: innerProps,
         isDisabled: isDisabled,
         isFocused: isFocused
@@ -60322,7 +45382,7 @@ var Select = /*#__PURE__*/function (_Component) {
       var commonProps = this.commonProps;
       var isDisabled = this.props.isDisabled;
       var isFocused = this.state.isFocused;
-      return /*#__PURE__*/React__default$1['default'].createElement(IndicatorSeparator, _extends$X({}, commonProps, {
+      return /*#__PURE__*/React__default$1['default'].createElement(IndicatorSeparator, _extends$N({}, commonProps, {
         isDisabled: isDisabled,
         isFocused: isFocused
       }));
@@ -60342,7 +45402,7 @@ var Select = /*#__PURE__*/function (_Component) {
         onTouchEnd: this.onDropdownIndicatorTouchEnd,
         'aria-hidden': 'true'
       };
-      return /*#__PURE__*/React__default$1['default'].createElement(DropdownIndicator, _extends$X({}, commonProps, {
+      return /*#__PURE__*/React__default$1['default'].createElement(DropdownIndicator, _extends$N({}, commonProps, {
         innerProps: innerProps,
         isDisabled: isDisabled,
         isFocused: isFocused
@@ -60405,7 +45465,7 @@ var Select = /*#__PURE__*/function (_Component) {
           onMouseOver: onHover,
           tabIndex: -1
         };
-        return /*#__PURE__*/React__default$1['default'].createElement(Option, _extends$X({}, commonProps, {
+        return /*#__PURE__*/React__default$1['default'].createElement(Option, _extends$N({}, commonProps, {
           innerProps: innerProps,
           data: data,
           isDisabled: isDisabled,
@@ -60429,7 +45489,7 @@ var Select = /*#__PURE__*/function (_Component) {
                 groupIndex = item.index;
             var groupId = "".concat(_this4.getElementId('group'), "-").concat(groupIndex);
             var headingId = "".concat(groupId, "-heading");
-            return /*#__PURE__*/React__default$1['default'].createElement(Group, _extends$X({}, commonProps, {
+            return /*#__PURE__*/React__default$1['default'].createElement(Group, _extends$N({}, commonProps, {
               key: groupId,
               data: data,
               options: options,
@@ -60468,12 +45528,12 @@ var Select = /*#__PURE__*/function (_Component) {
         menuPosition: menuPosition,
         menuShouldScrollIntoView: menuShouldScrollIntoView
       };
-      var menuElement = /*#__PURE__*/React__default$1['default'].createElement(MenuPlacer, _extends$X({}, commonProps, menuPlacementProps), function (_ref4) {
+      var menuElement = /*#__PURE__*/React__default$1['default'].createElement(MenuPlacer, _extends$N({}, commonProps, menuPlacementProps), function (_ref4) {
         var ref = _ref4.ref,
             _ref4$placerProps = _ref4.placerProps,
             placement = _ref4$placerProps.placement,
             maxHeight = _ref4$placerProps.maxHeight;
-        return /*#__PURE__*/React__default$1['default'].createElement(Menu, _extends$X({}, commonProps, menuPlacementProps, {
+        return /*#__PURE__*/React__default$1['default'].createElement(Menu, _extends$N({}, commonProps, menuPlacementProps, {
           innerRef: ref,
           innerProps: {
             onMouseDown: _this4.onMenuMouseDown,
@@ -60487,7 +45547,7 @@ var Select = /*#__PURE__*/function (_Component) {
           onBottomArrive: onMenuScrollToBottom,
           lockEnabled: menuShouldBlockScroll
         }, function (scrollTargetRef) {
-          return /*#__PURE__*/React__default$1['default'].createElement(MenuList, _extends$X({}, commonProps, {
+          return /*#__PURE__*/React__default$1['default'].createElement(MenuList, _extends$N({}, commonProps, {
             innerRef: function innerRef(instance) {
               _this4.getMenuListRef(instance);
 
@@ -60502,7 +45562,7 @@ var Select = /*#__PURE__*/function (_Component) {
       // so we use the same component. the actual portalling logic is forked
       // within the component based on `menuPosition`
 
-      return menuPortalTarget || menuPosition === 'fixed' ? /*#__PURE__*/React__default$1['default'].createElement(MenuPortal, _extends$X({}, commonProps, {
+      return menuPortalTarget || menuPosition === 'fixed' ? /*#__PURE__*/React__default$1['default'].createElement(MenuPortal, _extends$N({}, commonProps, {
         appendTo: menuPortalTarget,
         controlElement: this.controlRef,
         menuPlacement: menuPlacement,
@@ -60567,7 +45627,7 @@ var Select = /*#__PURE__*/function (_Component) {
           isFocused = _this$state5.isFocused,
           selectValue = _this$state5.selectValue;
       var focusableOptions = this.getFocusableOptions();
-      return /*#__PURE__*/React__default$1['default'].createElement(LiveRegion, _extends$X({}, commonProps, {
+      return /*#__PURE__*/React__default$1['default'].createElement(LiveRegion, _extends$N({}, commonProps, {
         ariaSelection: ariaSelection,
         focusedOption: focusedOption,
         focusedValue: focusedValue,
@@ -60592,7 +45652,7 @@ var Select = /*#__PURE__*/function (_Component) {
           menuIsOpen = _this$props14.menuIsOpen;
       var isFocused = this.state.isFocused;
       var commonProps = this.commonProps = this.getCommonProps();
-      return /*#__PURE__*/React__default$1['default'].createElement(SelectContainer, _extends$X({}, commonProps, {
+      return /*#__PURE__*/React__default$1['default'].createElement(SelectContainer, _extends$N({}, commonProps, {
         className: className,
         innerProps: {
           id: id,
@@ -60600,7 +45660,7 @@ var Select = /*#__PURE__*/function (_Component) {
         },
         isDisabled: isDisabled,
         isFocused: isFocused
-      }), this.renderLiveRegion(), /*#__PURE__*/React__default$1['default'].createElement(Control, _extends$X({}, commonProps, {
+      }), this.renderLiveRegion(), /*#__PURE__*/React__default$1['default'].createElement(Control, _extends$N({}, commonProps, {
         innerRef: this.getControlRef,
         innerProps: {
           onMouseDown: this.onControlMouseDown,
@@ -60609,9 +45669,9 @@ var Select = /*#__PURE__*/function (_Component) {
         isDisabled: isDisabled,
         isFocused: isFocused,
         menuIsOpen: menuIsOpen
-      }), /*#__PURE__*/React__default$1['default'].createElement(ValueContainer, _extends$X({}, commonProps, {
+      }), /*#__PURE__*/React__default$1['default'].createElement(ValueContainer, _extends$N({}, commonProps, {
         isDisabled: isDisabled
-      }), this.renderPlaceholderOrValue(), this.renderInput()), /*#__PURE__*/React__default$1['default'].createElement(IndicatorsContainer, _extends$X({}, commonProps, {
+      }), this.renderPlaceholderOrValue(), this.renderInput()), /*#__PURE__*/React__default$1['default'].createElement(IndicatorsContainer, _extends$N({}, commonProps, {
         isDisabled: isDisabled
       }), this.renderClearIndicator(), this.renderLoadingIndicator(), this.renderIndicatorSeparator(), this.renderDropdownIndicator())), this.renderMenu(), this.renderFormField());
     }
@@ -60645,7 +45705,7 @@ var Select = /*#__PURE__*/function (_Component) {
         inputIsHidden: inputIsHiddenAfterUpdate,
         inputIsHiddenAfterUpdate: undefined
       } : {};
-      return _objectSpread2$1(_objectSpread2$1(_objectSpread2$1({}, newMenuOptionsState), newInputIsHiddenState), {}, {
+      return _objectSpread2(_objectSpread2(_objectSpread2({}, newMenuOptionsState), newInputIsHiddenState), {}, {
         prevProps: props
       });
     }
@@ -60766,7 +45826,7 @@ var manageState = function manageState(SelectComponent) {
 
         var props = _objectWithoutProperties$b(_this$props2, ["defaultInputValue", "defaultMenuIsOpen", "defaultValue"]);
 
-        return /*#__PURE__*/React__default$1['default'].createElement(SelectComponent, _extends$X({}, props, {
+        return /*#__PURE__*/React__default$1['default'].createElement(SelectComponent, _extends$N({}, props, {
           ref: function ref(_ref) {
             _this2.select = _ref;
           },
@@ -60785,7 +45845,7 @@ var manageState = function manageState(SelectComponent) {
   }(React.Component), _class.defaultProps = defaultProps$2, _temp;
 };
 
-var index = manageState(Select);
+var index$1 = manageState(Select);
 
 var compareOption = function compareOption() {
   var inputValue = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
@@ -60819,7 +45879,7 @@ var builtins = {
   getOptionLabel: getOptionLabel
 };
 
-var defaultProps$1 = _objectSpread2$1({
+var defaultProps$1 = _objectSpread2({
   allowCreateWhileLoading: false,
   createOptionPosition: 'last'
 }, builtins);
@@ -60902,7 +45962,7 @@ var makeCreatableSelect = function makeCreatableSelect(SelectComponent) {
         var _this2 = this;
 
         var options = this.state.options;
-        return /*#__PURE__*/React__default$1['default'].createElement(SelectComponent, _extends$X({}, this.props, {
+        return /*#__PURE__*/React__default$1['default'].createElement(SelectComponent, _extends$N({}, this.props, {
           ref: function ref(_ref) {
             _this2.select = _ref;
           },
@@ -61023,7 +46083,7 @@ var makeAsyncSelect = function makeAsyncSelect(SelectComponent) {
                   loadedInputValue: inputValue,
                   loadedOptions: options || [],
                   passEmptyOptions: false,
-                  optionsCache: options ? _objectSpread2$1(_objectSpread2$1({}, state.optionsCache), {}, _defineProperty$j({}, inputValue, options)) : state.optionsCache
+                  optionsCache: options ? _objectSpread2(_objectSpread2({}, state.optionsCache), {}, _defineProperty$i({}, inputValue, options)) : state.optionsCache
                 };
               });
             });
@@ -61114,7 +46174,7 @@ var makeAsyncSelect = function makeAsyncSelect(SelectComponent) {
             loadedOptions = _this$state.loadedOptions,
             passEmptyOptions = _this$state.passEmptyOptions;
         var options = passEmptyOptions ? [] : inputValue && loadedInputValue ? loadedOptions : defaultOptions || [];
-        return /*#__PURE__*/React__default$1['default'].createElement(SelectComponent, _extends$X({}, props, {
+        return /*#__PURE__*/React__default$1['default'].createElement(SelectComponent, _extends$N({}, props, {
           ref: function ref(_ref) {
             _this3.select = _ref;
           },
@@ -61134,7 +46194,7 @@ var makeAsyncSelect = function makeAsyncSelect(SelectComponent) {
           prevDefaultOptions: props.defaultOptions,
           defaultOptions: Array.isArray(props.defaultOptions) ? props.defaultOptions : undefined
         } : {};
-        return _objectSpread2$1(_objectSpread2$1({}, newCacheOptionsState), newDefaultOptionsState);
+        return _objectSpread2(_objectSpread2({}, newCacheOptionsState), newDefaultOptionsState);
       }
     }]);
 
@@ -61148,42 +46208,6 @@ makeAsyncSelect(SelectState);
 var SelectCreatable = makeCreatableSelect(Select);
 var SelectCreatableState = manageState(SelectCreatable);
 var AsyncCreatable = makeAsyncSelect(SelectCreatableState);
-
-function mapSelectValue(arrBig, {
-  dictvar,
-  labelFunc,
-  valueFunc,
-  isDisabled,
-  ...sdas
-}) {
-  //
-  function asijdwe(asdae) {
-    const ndsire = //
-    // asdae
-    checkDict(dictvar, asdae);
-    const sidjf = //
-    // asdae
-    ndsire;
-    let sakde = {
-      label: labelFunc ? labelFunc(sidjf) : asdae,
-      value: valueFunc ? valueFunc(ndsire) : asdae,
-      isDisabled
-    };
-    bearlog.lug("___ brSeacrch MAPPO ___", {
-      asdae: asdae,
-      sakde: sakde // dictvar: dictvar,
-
-    });
-    return sakde;
-  }
-
-  bearlog.lug("___ brSeacrch LIST ___", {
-    arrBig: arrBig,
-    dictvar: dictvar
-  });
-  const dretjer = arrBig.map(asijdwe);
-  return dretjer;
-}
 
 // import AsyncSelect, { makeAsyncSelect } from "react.-select/async";
 
@@ -61803,7 +46827,7 @@ function BearSelect({
       /*#__PURE__*/
       //
       // <CreatableSelect {...dfijew} />
-      React__default$1['default'].createElement(index, dfijew);
+      React__default$1['default'].createElement(index$1, dfijew);
   }
 
   return endValue;
@@ -63015,20 +48039,20 @@ var esm$3 = /*#__PURE__*/Object.freeze({
 var _CALENDAR_TYPE_LOCALE;
 
 function _toConsumableArray$4(arr) {
-  return _arrayWithoutHoles$4(arr) || _iterableToArray$4(arr) || _unsupportedIterableToArray$6(arr) || _nonIterableSpread$4();
+  return _arrayWithoutHoles$4(arr) || _iterableToArray$4(arr) || _unsupportedIterableToArray$5(arr) || _nonIterableSpread$4();
 }
 
 function _nonIterableSpread$4() {
   throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
-function _unsupportedIterableToArray$6(o, minLen) {
+function _unsupportedIterableToArray$5(o, minLen) {
   if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray$6(o, minLen);
+  if (typeof o === "string") return _arrayLikeToArray$5(o, minLen);
   var n = Object.prototype.toString.call(o).slice(8, -1);
   if (n === "Object" && o.constructor) n = o.constructor.name;
   if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$6(o, minLen);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$5(o, minLen);
 }
 
 function _iterableToArray$4(iter) {
@@ -63036,10 +48060,10 @@ function _iterableToArray$4(iter) {
 }
 
 function _arrayWithoutHoles$4(arr) {
-  if (Array.isArray(arr)) return _arrayLikeToArray$6(arr);
+  if (Array.isArray(arr)) return _arrayLikeToArray$5(arr);
 }
 
-function _arrayLikeToArray$6(arr, len) {
+function _arrayLikeToArray$5(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
 
   for (var i = 0, arr2 = new Array(len); i < len; i++) {
@@ -63049,7 +48073,7 @@ function _arrayLikeToArray$6(arr, len) {
   return arr2;
 }
 
-function _defineProperty$f(obj, key, value) {
+function _defineProperty$e(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -63070,8 +48094,8 @@ var CALENDAR_TYPES = {
   ISO_8601: 'ISO 8601',
   US: 'US'
 };
-var CALENDAR_TYPE_LOCALES = (_CALENDAR_TYPE_LOCALE = {}, _defineProperty$f(_CALENDAR_TYPE_LOCALE, CALENDAR_TYPES.US, ['en-CA', 'en-US', 'es-AR', 'es-BO', 'es-CL', 'es-CO', 'es-CR', 'es-DO', 'es-EC', 'es-GT', 'es-HN', 'es-MX', 'es-NI', 'es-PA', 'es-PE', 'es-PR', 'es-SV', 'es-VE', 'pt-BR']), _defineProperty$f(_CALENDAR_TYPE_LOCALE, CALENDAR_TYPES.ARABIC, [// ar-LB, ar-MA intentionally missing
-'ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LY', 'ar-OM', 'ar-QA', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-YE', 'dv', 'dv-MV', 'ps', 'ps-AR']), _defineProperty$f(_CALENDAR_TYPE_LOCALE, CALENDAR_TYPES.HEBREW, ['he', 'he-IL']), _CALENDAR_TYPE_LOCALE);
+var CALENDAR_TYPE_LOCALES = (_CALENDAR_TYPE_LOCALE = {}, _defineProperty$e(_CALENDAR_TYPE_LOCALE, CALENDAR_TYPES.US, ['en-CA', 'en-US', 'es-AR', 'es-BO', 'es-CL', 'es-CO', 'es-CR', 'es-DO', 'es-EC', 'es-GT', 'es-HN', 'es-MX', 'es-NI', 'es-PA', 'es-PE', 'es-PR', 'es-SV', 'es-VE', 'pt-BR']), _defineProperty$e(_CALENDAR_TYPE_LOCALE, CALENDAR_TYPES.ARABIC, [// ar-LB, ar-MA intentionally missing
+'ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG', 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LY', 'ar-OM', 'ar-QA', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-YE', 'dv', 'dv-MV', 'ps', 'ps-AR']), _defineProperty$e(_CALENDAR_TYPE_LOCALE, CALENDAR_TYPES.HEBREW, ['he', 'he-IL']), _CALENDAR_TYPE_LOCALE);
 var WEEKDAYS = _toConsumableArray$4(Array(7)).map(function (el, index) {
   return index;
 });
@@ -63472,25 +48496,25 @@ function isWeekend(date) {
   }
 }
 
-function _typeof$6(obj) {
+function _typeof$5(obj) {
   "@babel/helpers - typeof";
 
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof$6 = function _typeof(obj) {
+    _typeof$5 = function _typeof(obj) {
       return typeof obj;
     };
   } else {
-    _typeof$6 = function _typeof(obj) {
+    _typeof$5 = function _typeof(obj) {
       return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
     };
   }
 
-  return _typeof$6(obj);
+  return _typeof$5(obj);
 }
 var calendarTypes = Object.values(CALENDAR_TYPES);
 var allViews$1 = ['century', 'decade', 'year', 'month'];
-var isCalendarType = propTypes$4.oneOf(calendarTypes);
-var isClassName = propTypes$4.oneOfType([propTypes$4.string, propTypes$4.arrayOf(propTypes$4.string)]);
+var isCalendarType = propTypes$3.oneOf(calendarTypes);
+var isClassName = propTypes$3.oneOfType([propTypes$3.string, propTypes$3.arrayOf(propTypes$3.string)]);
 var isMinDate = function isMinDate(props, propName, componentName) {
   var minDate = props[propName];
 
@@ -63499,13 +48523,13 @@ var isMinDate = function isMinDate(props, propName, componentName) {
   }
 
   if (!(minDate instanceof Date)) {
-    return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$6(minDate), "` supplied to `").concat(componentName, "`, expected instance of `Date`."));
+    return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$5(minDate), "` supplied to `").concat(componentName, "`, expected instance of `Date`."));
   }
 
   var maxDate = props.maxDate;
 
   if (maxDate && minDate > maxDate) {
-    return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$6(minDate), "` supplied to `").concat(componentName, "`, minDate cannot be larger than maxDate."));
+    return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$5(minDate), "` supplied to `").concat(componentName, "`, minDate cannot be larger than maxDate."));
   }
 
   return null;
@@ -63518,23 +48542,23 @@ var isMaxDate = function isMaxDate(props, propName, componentName) {
   }
 
   if (!(maxDate instanceof Date)) {
-    return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$6(maxDate), "` supplied to `").concat(componentName, "`, expected instance of `Date`."));
+    return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$5(maxDate), "` supplied to `").concat(componentName, "`, expected instance of `Date`."));
   }
 
   var minDate = props.minDate;
 
   if (minDate && maxDate < minDate) {
-    return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$6(maxDate), "` supplied to `").concat(componentName, "`, maxDate cannot be smaller than minDate."));
+    return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$5(maxDate), "` supplied to `").concat(componentName, "`, maxDate cannot be smaller than minDate."));
   }
 
   return null;
 };
-var isRef = propTypes$4.oneOfType([propTypes$4.func, propTypes$4.shape({
+var isRef = propTypes$3.oneOfType([propTypes$3.func, propTypes$3.shape({
   // eslint-disable-next-line react/forbid-prop-types
-  current: propTypes$4.any
+  current: propTypes$3.any
 })]);
-var isValue = propTypes$4.oneOfType([propTypes$4.instanceOf(Date), propTypes$4.arrayOf(propTypes$4.instanceOf(Date))]);
-var isViews = propTypes$4.arrayOf(propTypes$4.oneOf(allViews$1));
+var isValue = propTypes$3.oneOfType([propTypes$3.instanceOf(Date), propTypes$3.arrayOf(propTypes$3.instanceOf(Date))]);
+var isViews = propTypes$3.arrayOf(propTypes$3.oneOf(allViews$1));
 var isView = function isView(props, propName, componentName) {
   var view = props[propName];
   var views = props.views;
@@ -63561,31 +48585,31 @@ isView.isRequired = function (props, propName, componentName) {
 };
 
 var tileGroupProps = {
-  activeStartDate: propTypes$4.instanceOf(Date).isRequired,
-  hover: propTypes$4.instanceOf(Date),
-  locale: propTypes$4.string,
+  activeStartDate: propTypes$3.instanceOf(Date).isRequired,
+  hover: propTypes$3.instanceOf(Date),
+  locale: propTypes$3.string,
   maxDate: isMaxDate,
   minDate: isMinDate,
-  onClick: propTypes$4.func,
-  onMouseOver: propTypes$4.func,
-  tileClassName: propTypes$4.oneOfType([propTypes$4.func, isClassName]),
-  tileContent: propTypes$4.oneOfType([propTypes$4.func, propTypes$4.node]),
+  onClick: propTypes$3.func,
+  onMouseOver: propTypes$3.func,
+  tileClassName: propTypes$3.oneOfType([propTypes$3.func, isClassName]),
+  tileContent: propTypes$3.oneOfType([propTypes$3.func, propTypes$3.node]),
   value: isValue,
-  valueType: propTypes$4.string
+  valueType: propTypes$3.string
 };
 var tileProps = {
-  activeStartDate: propTypes$4.instanceOf(Date).isRequired,
-  classes: propTypes$4.arrayOf(propTypes$4.string).isRequired,
-  date: propTypes$4.instanceOf(Date).isRequired,
-  locale: propTypes$4.string,
+  activeStartDate: propTypes$3.instanceOf(Date).isRequired,
+  classes: propTypes$3.arrayOf(propTypes$3.string).isRequired,
+  date: propTypes$3.instanceOf(Date).isRequired,
+  locale: propTypes$3.string,
   maxDate: isMaxDate,
   minDate: isMinDate,
-  onClick: propTypes$4.func,
-  onMouseOver: propTypes$4.func,
-  style: propTypes$4.objectOf(propTypes$4.oneOfType([propTypes$4.string, propTypes$4.number])),
-  tileClassName: propTypes$4.oneOfType([propTypes$4.func, isClassName]),
-  tileContent: propTypes$4.oneOfType([propTypes$4.func, propTypes$4.node]),
-  tileDisabled: propTypes$4.func
+  onClick: propTypes$3.func,
+  onMouseOver: propTypes$3.func,
+  style: propTypes$3.objectOf(propTypes$3.oneOfType([propTypes$3.string, propTypes$3.number])),
+  tileClassName: propTypes$3.oneOfType([propTypes$3.func, isClassName]),
+  tileContent: propTypes$3.oneOfType([propTypes$3.func, propTypes$3.node]),
+  tileDisabled: propTypes$3.func
 };
 
 var className$5 = 'react-calendar__navigation';
@@ -63746,25 +48770,25 @@ function Navigation(_ref) {
   }, next2Label));
 }
 Navigation.propTypes = {
-  activeStartDate: propTypes$4.instanceOf(Date).isRequired,
-  drillUp: propTypes$4.func.isRequired,
-  formatMonthYear: propTypes$4.func,
-  formatYear: propTypes$4.func,
-  locale: propTypes$4.string,
-  maxDate: propTypes$4.instanceOf(Date),
-  minDate: propTypes$4.instanceOf(Date),
-  navigationAriaLabel: propTypes$4.string,
-  navigationLabel: propTypes$4.func,
-  next2AriaLabel: propTypes$4.string,
-  next2Label: propTypes$4.node,
-  nextAriaLabel: propTypes$4.string,
-  nextLabel: propTypes$4.node,
-  prev2AriaLabel: propTypes$4.string,
-  prev2Label: propTypes$4.node,
-  prevAriaLabel: propTypes$4.string,
-  prevLabel: propTypes$4.node,
-  setActiveStartDate: propTypes$4.func.isRequired,
-  showDoubleView: propTypes$4.bool,
+  activeStartDate: propTypes$3.instanceOf(Date).isRequired,
+  drillUp: propTypes$3.func.isRequired,
+  formatMonthYear: propTypes$3.func,
+  formatYear: propTypes$3.func,
+  locale: propTypes$3.string,
+  maxDate: propTypes$3.instanceOf(Date),
+  minDate: propTypes$3.instanceOf(Date),
+  navigationAriaLabel: propTypes$3.string,
+  navigationLabel: propTypes$3.func,
+  next2AriaLabel: propTypes$3.string,
+  next2Label: propTypes$3.node,
+  nextAriaLabel: propTypes$3.string,
+  nextLabel: propTypes$3.node,
+  prev2AriaLabel: propTypes$3.string,
+  prev2Label: propTypes$3.node,
+  prevAriaLabel: propTypes$3.string,
+  prevLabel: propTypes$3.node,
+  setActiveStartDate: propTypes$3.func.isRequired,
+  showDoubleView: propTypes$3.bool,
   view: isView.isRequired,
   views: isViews.isRequired
 };
@@ -63787,7 +48811,7 @@ function _extends$d() {
   return _extends$d.apply(this, arguments);
 }
 
-function ownKeys$d(object, enumerableOnly) {
+function ownKeys$c(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -63806,13 +48830,13 @@ function _objectSpread$c(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$d(Object(source), true).forEach(function (key) {
-        _defineProperty$e(target, key, source[key]);
+      ownKeys$c(Object(source), true).forEach(function (key) {
+        _defineProperty$d(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$d(Object(source)).forEach(function (key) {
+      ownKeys$c(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -63821,7 +48845,7 @@ function _objectSpread$c(target) {
   return target;
 }
 
-function _defineProperty$e(obj, key, value) {
+function _defineProperty$d(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -63905,30 +48929,30 @@ function Flex(_ref) {
   }));
 }
 Flex.propTypes = {
-  children: propTypes$4.node,
-  className: propTypes$4.string,
-  count: propTypes$4.number.isRequired,
-  direction: propTypes$4.string,
-  offset: propTypes$4.number,
-  style: propTypes$4.objectOf(propTypes$4.oneOfType([propTypes$4.string, propTypes$4.number])),
-  wrap: propTypes$4.bool
+  children: propTypes$3.node,
+  className: propTypes$3.string,
+  count: propTypes$3.number.isRequired,
+  direction: propTypes$3.string,
+  offset: propTypes$3.number,
+  style: propTypes$3.objectOf(propTypes$3.oneOfType([propTypes$3.string, propTypes$3.number])),
+  wrap: propTypes$3.bool
 };
 
 function _toConsumableArray$3(arr) {
-  return _arrayWithoutHoles$3(arr) || _iterableToArray$3(arr) || _unsupportedIterableToArray$5(arr) || _nonIterableSpread$3();
+  return _arrayWithoutHoles$3(arr) || _iterableToArray$3(arr) || _unsupportedIterableToArray$4(arr) || _nonIterableSpread$3();
 }
 
 function _nonIterableSpread$3() {
   throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
-function _unsupportedIterableToArray$5(o, minLen) {
+function _unsupportedIterableToArray$4(o, minLen) {
   if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray$5(o, minLen);
+  if (typeof o === "string") return _arrayLikeToArray$4(o, minLen);
   var n = Object.prototype.toString.call(o).slice(8, -1);
   if (n === "Object" && o.constructor) n = o.constructor.name;
   if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$5(o, minLen);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$4(o, minLen);
 }
 
 function _iterableToArray$3(iter) {
@@ -63936,10 +48960,10 @@ function _iterableToArray$3(iter) {
 }
 
 function _arrayWithoutHoles$3(arr) {
-  if (Array.isArray(arr)) return _arrayLikeToArray$5(arr);
+  if (Array.isArray(arr)) return _arrayLikeToArray$4(arr);
 }
 
-function _arrayLikeToArray$5(arr, len) {
+function _arrayLikeToArray$4(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
 
   for (var i = 0, arr2 = new Array(len); i < len; i++) {
@@ -64056,7 +49080,7 @@ function getTileClasses() {
   return classes;
 }
 
-function ownKeys$c(object, enumerableOnly) {
+function ownKeys$b(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -64075,13 +49099,13 @@ function _objectSpread$b(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$c(Object(source), true).forEach(function (key) {
-        _defineProperty$d(target, key, source[key]);
+      ownKeys$b(Object(source), true).forEach(function (key) {
+        _defineProperty$c(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$c(Object(source)).forEach(function (key) {
+      ownKeys$b(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -64090,7 +49114,7 @@ function _objectSpread$b(target) {
   return target;
 }
 
-function _defineProperty$d(obj, key, value) {
+function _defineProperty$c(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -64201,16 +49225,16 @@ function TileGroup(_ref) {
   }, tiles);
 }
 TileGroup.propTypes = _objectSpread$b(_objectSpread$b({}, tileGroupProps), {}, {
-  activeStartDate: propTypes$4.instanceOf(Date),
-  count: propTypes$4.number,
-  dateTransform: propTypes$4.func.isRequired,
-  dateType: propTypes$4.string,
-  offset: propTypes$4.number,
-  step: propTypes$4.number,
-  tile: propTypes$4.func.isRequired
+  activeStartDate: propTypes$3.instanceOf(Date),
+  count: propTypes$3.number,
+  dateTransform: propTypes$3.func.isRequired,
+  dateType: propTypes$3.string,
+  offset: propTypes$3.number,
+  step: propTypes$3.number,
+  tile: propTypes$3.func.isRequired
 });
 
-function ownKeys$b(object, enumerableOnly) {
+function ownKeys$a(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -64229,13 +49253,13 @@ function _objectSpread$a(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$b(Object(source), true).forEach(function (key) {
-        _defineProperty$c(target, key, source[key]);
+      ownKeys$a(Object(source), true).forEach(function (key) {
+        _defineProperty$b(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$b(Object(source)).forEach(function (key) {
+      ownKeys$a(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -64244,20 +49268,20 @@ function _objectSpread$a(target) {
   return target;
 }
 
-function _typeof$5(obj) {
+function _typeof$4(obj) {
   "@babel/helpers - typeof";
 
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof$5 = function _typeof(obj) {
+    _typeof$4 = function _typeof(obj) {
       return typeof obj;
     };
   } else {
-    _typeof$5 = function _typeof(obj) {
+    _typeof$4 = function _typeof(obj) {
       return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
     };
   }
 
-  return _typeof$5(obj);
+  return _typeof$4(obj);
 }
 
 function _classCallCheck$2(instance, Constructor) {
@@ -64326,7 +49350,7 @@ function _createSuper$2(Derived) {
 }
 
 function _possibleConstructorReturn$2(self, call) {
-  if (call && (_typeof$5(call) === "object" || typeof call === "function")) {
+  if (call && (_typeof$4(call) === "object" || typeof call === "function")) {
     return call;
   }
 
@@ -64361,7 +49385,7 @@ function _getPrototypeOf$2(o) {
   return _getPrototypeOf$2(o);
 }
 
-function _defineProperty$c(obj, key, value) {
+function _defineProperty$b(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -64403,7 +49427,7 @@ var Tile = /*#__PURE__*/function (_Component) {
 
     _this = _super.call.apply(_super, [this].concat(args));
 
-    _defineProperty$c(_assertThisInitialized$2(_this), "state", {});
+    _defineProperty$b(_assertThisInitialized$2(_this), "state", {});
 
     return _this;
   }
@@ -64476,13 +49500,13 @@ var Tile = /*#__PURE__*/function (_Component) {
   return Tile;
 }(React.Component);
 Tile.propTypes = _objectSpread$a(_objectSpread$a({}, tileProps), {}, {
-  children: propTypes$4.node.isRequired,
-  formatAbbr: propTypes$4.func,
-  maxDateTransform: propTypes$4.func.isRequired,
-  minDateTransform: propTypes$4.func.isRequired
+  children: propTypes$3.node.isRequired,
+  formatAbbr: propTypes$3.func,
+  maxDateTransform: propTypes$3.func.isRequired,
+  minDateTransform: propTypes$3.func.isRequired
 });
 
-function ownKeys$a(object, enumerableOnly) {
+function ownKeys$9(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -64501,13 +49525,13 @@ function _objectSpread$9(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$a(Object(source), true).forEach(function (key) {
-        _defineProperty$b(target, key, source[key]);
+      ownKeys$9(Object(source), true).forEach(function (key) {
+        _defineProperty$a(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$a(Object(source)).forEach(function (key) {
+      ownKeys$9(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -64516,7 +49540,7 @@ function _objectSpread$9(target) {
   return target;
 }
 
-function _defineProperty$b(obj, key, value) {
+function _defineProperty$a(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -64601,10 +49625,10 @@ function Decade(_ref) {
   }), getDecadeLabel(locale, formatYear$1, date));
 }
 Decade.propTypes = _objectSpread$9(_objectSpread$9({}, tileProps), {}, {
-  formatYear: propTypes$4.func
+  formatYear: propTypes$3.func
 });
 
-function ownKeys$9(object, enumerableOnly) {
+function ownKeys$8(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -64623,13 +49647,13 @@ function _objectSpread$8(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$9(Object(source), true).forEach(function (key) {
-        _defineProperty$a(target, key, source[key]);
+      ownKeys$8(Object(source), true).forEach(function (key) {
+        _defineProperty$9(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$9(Object(source)).forEach(function (key) {
+      ownKeys$8(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -64638,7 +49662,7 @@ function _objectSpread$8(target) {
   return target;
 }
 
-function _defineProperty$a(obj, key, value) {
+function _defineProperty$9(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -64696,7 +49720,7 @@ function CenturyView(props) {
   }, renderDecades());
 }
 
-function ownKeys$8(object, enumerableOnly) {
+function ownKeys$7(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -64715,13 +49739,13 @@ function _objectSpread$7(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$8(Object(source), true).forEach(function (key) {
-        _defineProperty$9(target, key, source[key]);
+      ownKeys$7(Object(source), true).forEach(function (key) {
+        _defineProperty$8(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$8(Object(source)).forEach(function (key) {
+      ownKeys$7(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -64730,7 +49754,7 @@ function _objectSpread$7(target) {
   return target;
 }
 
-function _defineProperty$9(obj, key, value) {
+function _defineProperty$8(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -64815,10 +49839,10 @@ function Year(_ref) {
   }), formatYear$1(locale, date));
 }
 Year.propTypes = _objectSpread$7(_objectSpread$7({}, tileProps), {}, {
-  formatYear: propTypes$4.func
+  formatYear: propTypes$3.func
 });
 
-function ownKeys$7(object, enumerableOnly) {
+function ownKeys$6(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -64837,13 +49861,13 @@ function _objectSpread$6(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$7(Object(source), true).forEach(function (key) {
-        _defineProperty$8(target, key, source[key]);
+      ownKeys$6(Object(source), true).forEach(function (key) {
+        _defineProperty$7(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$7(Object(source)).forEach(function (key) {
+      ownKeys$6(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -64852,7 +49876,7 @@ function _objectSpread$6(target) {
   return target;
 }
 
-function _defineProperty$8(obj, key, value) {
+function _defineProperty$7(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -64914,7 +49938,7 @@ function DecadeView(props) {
   }, renderYears());
 }
 
-function ownKeys$6(object, enumerableOnly) {
+function ownKeys$5(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -64933,13 +49957,13 @@ function _objectSpread$5(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$6(Object(source), true).forEach(function (key) {
-        _defineProperty$7(target, key, source[key]);
+      ownKeys$5(Object(source), true).forEach(function (key) {
+        _defineProperty$6(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$6(Object(source)).forEach(function (key) {
+      ownKeys$5(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -64948,7 +49972,7 @@ function _objectSpread$5(target) {
   return target;
 }
 
-function _defineProperty$7(obj, key, value) {
+function _defineProperty$6(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -65036,11 +50060,11 @@ function Month(_ref) {
   }), formatMonth$1(locale, date));
 }
 Month.propTypes = _objectSpread$5(_objectSpread$5({}, tileProps), {}, {
-  formatMonth: propTypes$4.func,
-  formatMonthYear: propTypes$4.func
+  formatMonth: propTypes$3.func,
+  formatMonthYear: propTypes$3.func
 });
 
-function ownKeys$5(object, enumerableOnly) {
+function ownKeys$4(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -65059,13 +50083,13 @@ function _objectSpread$4(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$5(Object(source), true).forEach(function (key) {
-        _defineProperty$6(target, key, source[key]);
+      ownKeys$4(Object(source), true).forEach(function (key) {
+        _defineProperty$5(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$5(Object(source)).forEach(function (key) {
+      ownKeys$4(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -65074,7 +50098,7 @@ function _objectSpread$4(target) {
   return target;
 }
 
-function _defineProperty$6(obj, key, value) {
+function _defineProperty$5(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -65126,7 +50150,7 @@ function Months(props) {
   }));
 }
 Months.propTypes = _objectSpread$4(_objectSpread$4({}, tileGroupProps), {}, {
-  locale: propTypes$4.string
+  locale: propTypes$3.string
 });
 
 function YearView(props) {
@@ -65139,7 +50163,7 @@ function YearView(props) {
   }, renderMonths());
 }
 
-function ownKeys$4(object, enumerableOnly) {
+function ownKeys$3(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -65158,13 +50182,13 @@ function _objectSpread$3(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$4(Object(source), true).forEach(function (key) {
-        _defineProperty$5(target, key, source[key]);
+      ownKeys$3(Object(source), true).forEach(function (key) {
+        _defineProperty$4(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$4(Object(source)).forEach(function (key) {
+      ownKeys$3(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -65173,7 +50197,7 @@ function _objectSpread$3(target) {
   return target;
 }
 
-function _defineProperty$5(obj, key, value) {
+function _defineProperty$4(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -65263,12 +50287,12 @@ function Day(_ref) {
   }), formatDay$1(locale, date));
 }
 Day.propTypes = _objectSpread$3(_objectSpread$3({}, tileProps), {}, {
-  currentMonthIndex: propTypes$4.number.isRequired,
-  formatDay: propTypes$4.func,
-  formatLongDate: propTypes$4.func
+  currentMonthIndex: propTypes$3.number.isRequired,
+  formatDay: propTypes$3.func,
+  formatLongDate: propTypes$3.func
 });
 
-function ownKeys$3(object, enumerableOnly) {
+function ownKeys$2(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -65287,13 +50311,13 @@ function _objectSpread$2(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$3(Object(source), true).forEach(function (key) {
-        _defineProperty$4(target, key, source[key]);
+      ownKeys$2(Object(source), true).forEach(function (key) {
+        _defineProperty$3(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$3(Object(source)).forEach(function (key) {
+      ownKeys$2(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -65302,7 +50326,7 @@ function _objectSpread$2(target) {
   return target;
 }
 
-function _defineProperty$4(obj, key, value) {
+function _defineProperty$3(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -65434,8 +50458,8 @@ function Days(props) {
 }
 Days.propTypes = _objectSpread$2({
   calendarType: isCalendarType.isRequired,
-  showFixedNumberOfWeeks: propTypes$4.bool,
-  showNeighboringMonth: propTypes$4.bool
+  showFixedNumberOfWeeks: propTypes$3.bool,
+  showNeighboringMonth: propTypes$3.bool
 }, tileGroupProps);
 
 var className = 'react-calendar__month-view__weekdays';
@@ -65472,9 +50496,9 @@ function Weekdays(props) {
 }
 Weekdays.propTypes = {
   calendarType: isCalendarType.isRequired,
-  formatShortWeekday: propTypes$4.func,
-  locale: propTypes$4.string,
-  onMouseLeave: propTypes$4.func
+  formatShortWeekday: propTypes$3.func,
+  locale: propTypes$3.string,
+  onMouseLeave: propTypes$3.func
 };
 
 function _extends$3() {
@@ -65513,9 +50537,9 @@ function WeekNumber(_ref) {
   }), children) : /*#__PURE__*/React__default$1['default'].createElement("div", props, children);
 }
 WeekNumber.propTypes = {
-  date: propTypes$4.instanceOf(Date).isRequired,
-  onClickWeekNumber: propTypes$4.func,
-  weekNumber: propTypes$4.node.isRequired
+  date: propTypes$3.instanceOf(Date).isRequired,
+  onClickWeekNumber: propTypes$3.func,
+  weekNumber: propTypes$3.node.isRequired
 };
 
 function WeekNumbers(props) {
@@ -65572,11 +50596,11 @@ function WeekNumbers(props) {
   }));
 }
 WeekNumbers.propTypes = {
-  activeStartDate: propTypes$4.instanceOf(Date).isRequired,
+  activeStartDate: propTypes$3.instanceOf(Date).isRequired,
   calendarType: isCalendarType.isRequired,
-  onClickWeekNumber: propTypes$4.func,
-  onMouseLeave: propTypes$4.func,
-  showFixedNumberOfWeeks: propTypes$4.bool
+  onClickWeekNumber: propTypes$3.func,
+  onMouseLeave: propTypes$3.func,
+  showFixedNumberOfWeeks: propTypes$3.bool
 };
 
 function _extends$2() {
@@ -65697,14 +50721,14 @@ function MonthView(props) {
   }, renderWeekdays(), renderDays())));
 }
 MonthView.propTypes = {
-  activeStartDate: propTypes$4.instanceOf(Date).isRequired,
+  activeStartDate: propTypes$3.instanceOf(Date).isRequired,
   calendarType: isCalendarType,
-  formatShortWeekday: propTypes$4.func,
-  locale: propTypes$4.string,
-  onClickWeekNumber: propTypes$4.func,
-  onMouseLeave: propTypes$4.func,
-  showFixedNumberOfWeeks: propTypes$4.bool,
-  showWeekNumbers: propTypes$4.bool
+  formatShortWeekday: propTypes$3.func,
+  locale: propTypes$3.string,
+  onClickWeekNumber: propTypes$3.func,
+  onMouseLeave: propTypes$3.func,
+  showFixedNumberOfWeeks: propTypes$3.bool,
+  showWeekNumbers: propTypes$3.bool
 };
 
 function _extends$1() {
@@ -65725,20 +50749,20 @@ function _extends$1() {
   return _extends$1.apply(this, arguments);
 }
 
-function _typeof$4(obj) {
+function _typeof$3(obj) {
   "@babel/helpers - typeof";
 
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof$4 = function _typeof(obj) {
+    _typeof$3 = function _typeof(obj) {
       return typeof obj;
     };
   } else {
-    _typeof$4 = function _typeof(obj) {
+    _typeof$3 = function _typeof(obj) {
       return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
     };
   }
 
-  return _typeof$4(obj);
+  return _typeof$3(obj);
 }
 
 function _classCallCheck$1(instance, Constructor) {
@@ -65807,7 +50831,7 @@ function _createSuper$1(Derived) {
 }
 
 function _possibleConstructorReturn$1(self, call) {
-  if (call && (_typeof$4(call) === "object" || typeof call === "function")) {
+  if (call && (_typeof$3(call) === "object" || typeof call === "function")) {
     return call;
   }
 
@@ -65842,7 +50866,7 @@ function _getPrototypeOf$1(o) {
   return _getPrototypeOf$1(o);
 }
 
-function ownKeys$2(object, enumerableOnly) {
+function ownKeys$1(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -65861,13 +50885,13 @@ function _objectSpread$1(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$2(Object(source), true).forEach(function (key) {
-        _defineProperty$3(target, key, source[key]);
+      ownKeys$1(Object(source), true).forEach(function (key) {
+        _defineProperty$2(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$2(Object(source)).forEach(function (key) {
+      ownKeys$1(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -65876,7 +50900,7 @@ function _objectSpread$1(target) {
   return target;
 }
 
-function _defineProperty$3(obj, key, value) {
+function _defineProperty$2(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -65928,20 +50952,20 @@ function _objectWithoutPropertiesLoose$1(source, excluded) {
 }
 
 function _toConsumableArray$2(arr) {
-  return _arrayWithoutHoles$2(arr) || _iterableToArray$2(arr) || _unsupportedIterableToArray$4(arr) || _nonIterableSpread$2();
+  return _arrayWithoutHoles$2(arr) || _iterableToArray$2(arr) || _unsupportedIterableToArray$3(arr) || _nonIterableSpread$2();
 }
 
 function _nonIterableSpread$2() {
   throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
-function _unsupportedIterableToArray$4(o, minLen) {
+function _unsupportedIterableToArray$3(o, minLen) {
   if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray$4(o, minLen);
+  if (typeof o === "string") return _arrayLikeToArray$3(o, minLen);
   var n = Object.prototype.toString.call(o).slice(8, -1);
   if (n === "Object" && o.constructor) n = o.constructor.name;
   if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$4(o, minLen);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$3(o, minLen);
 }
 
 function _iterableToArray$2(iter) {
@@ -65949,10 +50973,10 @@ function _iterableToArray$2(iter) {
 }
 
 function _arrayWithoutHoles$2(arr) {
-  if (Array.isArray(arr)) return _arrayLikeToArray$4(arr);
+  if (Array.isArray(arr)) return _arrayLikeToArray$3(arr);
 }
 
-function _arrayLikeToArray$4(arr, len) {
+function _arrayLikeToArray$3(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
 
   for (var i = 0, arr2 = new Array(len); i < len; i++) {
@@ -66134,7 +51158,7 @@ var Calendar = /*#__PURE__*/function (_Component) {
 
     _this = _super.call.apply(_super, [this].concat(_args));
 
-    _defineProperty$3(_assertThisInitialized$1(_this), "state", {
+    _defineProperty$2(_assertThisInitialized$1(_this), "state", {
       /* eslint-disable react/destructuring-assignment */
       activeStartDate: _this.props.defaultActiveStartDate,
       value: _this.props.defaultValue,
@@ -66143,7 +51167,7 @@ var Calendar = /*#__PURE__*/function (_Component) {
 
     });
 
-    _defineProperty$3(_assertThisInitialized$1(_this), "setStateAndCallCallbacks", function (nextState, event, callback) {
+    _defineProperty$2(_assertThisInitialized$1(_this), "setStateAndCallCallbacks", function (nextState, event, callback) {
       var _assertThisInitialize = _assertThisInitialized$1(_this),
           previousActiveStartDate = _assertThisInitialize.activeStartDate,
           previousView = _assertThisInitialize.view;
@@ -66169,7 +51193,7 @@ var Calendar = /*#__PURE__*/function (_Component) {
         function shouldUpdate(key) {
           return (// Key must exist, and…
             key in nextState && ( // …key changed from undefined to defined or the other way around, or…
-            _typeof$4(nextState[key]) !== _typeof$4(prevArgs[key]) // …value changed.
+            _typeof$3(nextState[key]) !== _typeof$3(prevArgs[key]) // …value changed.
             || (nextState[key] instanceof Date ? nextState[key].getTime() !== prevArgs[key].getTime() : nextState[key] !== prevArgs[key]))
           );
         }
@@ -66202,13 +51226,13 @@ var Calendar = /*#__PURE__*/function (_Component) {
       });
     });
 
-    _defineProperty$3(_assertThisInitialized$1(_this), "setActiveStartDate", function (activeStartDate) {
+    _defineProperty$2(_assertThisInitialized$1(_this), "setActiveStartDate", function (activeStartDate) {
       _this.setStateAndCallCallbacks({
         activeStartDate: activeStartDate
       });
     });
 
-    _defineProperty$3(_assertThisInitialized$1(_this), "drillDown", function (nextActiveStartDate, event) {
+    _defineProperty$2(_assertThisInitialized$1(_this), "drillDown", function (nextActiveStartDate, event) {
       if (!_this.drillDownAvailable) {
         return;
       }
@@ -66228,7 +51252,7 @@ var Calendar = /*#__PURE__*/function (_Component) {
       }, undefined, onDrillDown);
     });
 
-    _defineProperty$3(_assertThisInitialized$1(_this), "drillUp", function () {
+    _defineProperty$2(_assertThisInitialized$1(_this), "drillUp", function () {
       if (!_this.drillUpAvailable) {
         return;
       }
@@ -66248,7 +51272,7 @@ var Calendar = /*#__PURE__*/function (_Component) {
       }, undefined, onDrillUp);
     });
 
-    _defineProperty$3(_assertThisInitialized$1(_this), "onChange", function (value, event) {
+    _defineProperty$2(_assertThisInitialized$1(_this), "onChange", function (value, event) {
       var selectRange = _this.props.selectRange;
 
       _this.onClickTile(value, event);
@@ -66285,7 +51309,7 @@ var Calendar = /*#__PURE__*/function (_Component) {
       }, event);
     });
 
-    _defineProperty$3(_assertThisInitialized$1(_this), "onClickTile", function (value, event) {
+    _defineProperty$2(_assertThisInitialized$1(_this), "onClickTile", function (value, event) {
       var _assertThisInitialize5 = _assertThisInitialized$1(_this),
           view = _assertThisInitialize5.view;
 
@@ -66317,7 +51341,7 @@ var Calendar = /*#__PURE__*/function (_Component) {
       if (callback) callback(value, event);
     });
 
-    _defineProperty$3(_assertThisInitialized$1(_this), "onMouseOver", function (value) {
+    _defineProperty$2(_assertThisInitialized$1(_this), "onMouseOver", function (value) {
       _this.setState(function (prevState) {
         if (prevState.hover && prevState.hover.getTime() === value.getTime()) {
           return null;
@@ -66329,7 +51353,7 @@ var Calendar = /*#__PURE__*/function (_Component) {
       });
     });
 
-    _defineProperty$3(_assertThisInitialized$1(_this), "onMouseLeave", function () {
+    _defineProperty$2(_assertThisInitialized$1(_this), "onMouseLeave", function () {
       _this.setState({
         hover: null
       });
@@ -66618,58 +51642,58 @@ Calendar.defaultProps = {
   showNavigation: true,
   showNeighboringMonth: true
 };
-var isActiveStartDate = propTypes$4.instanceOf(Date);
-var isLooseValue = propTypes$4.oneOfType([propTypes$4.string, isValue]);
+var isActiveStartDate = propTypes$3.instanceOf(Date);
+var isLooseValue = propTypes$3.oneOfType([propTypes$3.string, isValue]);
 Calendar.propTypes = {
   activeStartDate: isActiveStartDate,
-  allowPartialRange: propTypes$4.bool,
+  allowPartialRange: propTypes$3.bool,
   calendarType: isCalendarType,
   className: isClassName,
   defaultActiveStartDate: isActiveStartDate,
   defaultValue: isLooseValue,
   defaultView: isView,
-  formatDay: propTypes$4.func,
-  formatLongDate: propTypes$4.func,
-  formatMonth: propTypes$4.func,
-  formatMonthYear: propTypes$4.func,
-  formatShortWeekday: propTypes$4.func,
-  formatYear: propTypes$4.func,
+  formatDay: propTypes$3.func,
+  formatLongDate: propTypes$3.func,
+  formatMonth: propTypes$3.func,
+  formatMonthYear: propTypes$3.func,
+  formatShortWeekday: propTypes$3.func,
+  formatYear: propTypes$3.func,
   inputRef: isRef,
-  locale: propTypes$4.string,
+  locale: propTypes$3.string,
   maxDate: isMaxDate,
-  maxDetail: propTypes$4.oneOf(allViews),
+  maxDetail: propTypes$3.oneOf(allViews),
   minDate: isMinDate,
-  minDetail: propTypes$4.oneOf(allViews),
-  navigationAriaLabel: propTypes$4.string,
-  navigationLabel: propTypes$4.func,
-  next2AriaLabel: propTypes$4.string,
-  next2Label: propTypes$4.node,
-  nextAriaLabel: propTypes$4.string,
-  nextLabel: propTypes$4.node,
-  onActiveStartDateChange: propTypes$4.func,
-  onChange: propTypes$4.func,
-  onClickDay: propTypes$4.func,
-  onClickDecade: propTypes$4.func,
-  onClickMonth: propTypes$4.func,
-  onClickWeekNumber: propTypes$4.func,
-  onClickYear: propTypes$4.func,
-  onDrillDown: propTypes$4.func,
-  onDrillUp: propTypes$4.func,
-  onViewChange: propTypes$4.func,
-  prev2AriaLabel: propTypes$4.string,
-  prev2Label: propTypes$4.node,
-  prevAriaLabel: propTypes$4.string,
-  prevLabel: propTypes$4.node,
-  returnValue: propTypes$4.oneOf(['start', 'end', 'range']),
-  selectRange: propTypes$4.bool,
-  showDoubleView: propTypes$4.bool,
-  showFixedNumberOfWeeks: propTypes$4.bool,
-  showNavigation: propTypes$4.bool,
-  showNeighboringMonth: propTypes$4.bool,
-  showWeekNumbers: propTypes$4.bool,
-  tileClassName: propTypes$4.oneOfType([propTypes$4.func, isClassName]),
-  tileContent: propTypes$4.oneOfType([propTypes$4.func, propTypes$4.node]),
-  tileDisabled: propTypes$4.func,
+  minDetail: propTypes$3.oneOf(allViews),
+  navigationAriaLabel: propTypes$3.string,
+  navigationLabel: propTypes$3.func,
+  next2AriaLabel: propTypes$3.string,
+  next2Label: propTypes$3.node,
+  nextAriaLabel: propTypes$3.string,
+  nextLabel: propTypes$3.node,
+  onActiveStartDateChange: propTypes$3.func,
+  onChange: propTypes$3.func,
+  onClickDay: propTypes$3.func,
+  onClickDecade: propTypes$3.func,
+  onClickMonth: propTypes$3.func,
+  onClickWeekNumber: propTypes$3.func,
+  onClickYear: propTypes$3.func,
+  onDrillDown: propTypes$3.func,
+  onDrillUp: propTypes$3.func,
+  onViewChange: propTypes$3.func,
+  prev2AriaLabel: propTypes$3.string,
+  prev2Label: propTypes$3.node,
+  prevAriaLabel: propTypes$3.string,
+  prevLabel: propTypes$3.node,
+  returnValue: propTypes$3.oneOf(['start', 'end', 'range']),
+  selectRange: propTypes$3.bool,
+  showDoubleView: propTypes$3.bool,
+  showFixedNumberOfWeeks: propTypes$3.bool,
+  showNavigation: propTypes$3.bool,
+  showNeighboringMonth: propTypes$3.bool,
+  showWeekNumbers: propTypes$3.bool,
+  tileClassName: propTypes$3.oneOfType([propTypes$3.func, isClassName]),
+  tileContent: propTypes$3.oneOfType([propTypes$3.func, propTypes$3.node]),
+  tileDisabled: propTypes$3.func,
   value: isLooseValue,
   view: isView
 };
@@ -66728,10 +51752,10 @@ var detectElementOverflow = function detectElementOverflow(element, container) {
 /**
  * Checks whether we're running on a production build or not.
  */
-var isProduction = process.env.NODE_ENV === 'production';
+var isProduction$1 = process.env.NODE_ENV === 'production';
 
 var consoleOnDev = function consoleOnDev(method) {
-  if (!isProduction) {
+  if (!isProduction$1) {
     var _console;
 
     for (var _len = arguments.length, message = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
@@ -66817,7 +51841,7 @@ function _createSuper(Derived) {
 }
 
 function _possibleConstructorReturn(self, call) {
-  if (call && (_typeof$3(call) === "object" || typeof call === "function")) {
+  if (call && (_typeof$2(call) === "object" || typeof call === "function")) {
     return call;
   }
 
@@ -66888,7 +51912,7 @@ function _objectWithoutPropertiesLoose(source, excluded) {
   return target;
 }
 
-function ownKeys$1(object, enumerableOnly) {
+function ownKeys(object, enumerableOnly) {
   var keys = Object.keys(object);
 
   if (Object.getOwnPropertySymbols) {
@@ -66907,13 +51931,13 @@ function _objectSpread(target) {
     var source = arguments[i] != null ? arguments[i] : {};
 
     if (i % 2) {
-      ownKeys$1(Object(source), true).forEach(function (key) {
-        _defineProperty$2(target, key, source[key]);
+      ownKeys(Object(source), true).forEach(function (key) {
+        _defineProperty$1(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
     } else {
-      ownKeys$1(Object(source)).forEach(function (key) {
+      ownKeys(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
       });
     }
@@ -66922,7 +51946,7 @@ function _objectSpread(target) {
   return target;
 }
 
-function _defineProperty$2(obj, key, value) {
+function _defineProperty$1(obj, key, value) {
   if (key in obj) {
     Object.defineProperty(obj, key, {
       value: value,
@@ -66937,20 +51961,20 @@ function _defineProperty$2(obj, key, value) {
   return obj;
 }
 
-function _typeof$3(obj) {
+function _typeof$2(obj) {
   "@babel/helpers - typeof";
 
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof$3 = function _typeof(obj) {
+    _typeof$2 = function _typeof(obj) {
       return typeof obj;
     };
   } else {
-    _typeof$3 = function _typeof(obj) {
+    _typeof$2 = function _typeof(obj) {
       return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
     };
   }
 
-  return _typeof$3(obj);
+  return _typeof$2(obj);
 }
 var isBrowser = typeof window !== 'undefined';
 var isDisplayContentsSupported = isBrowser && 'CSS' in window && 'supports' in window.CSS && CSS.supports('display', 'contents');
@@ -67007,9 +52031,9 @@ function alignAxis(_ref) {
   var clientSizeProperty = "client".concat(uppercasedSizeProperty);
   var minSizeProperty = "min-".concat(sizeProperty);
   var scrollbarWidth = scrollContainer[offsetSizeProperty] - scrollContainer[clientSizeProperty];
-  var startSpacing = _typeof$3(spacing) === 'object' ? spacing[startProperty] : spacing;
+  var startSpacing = _typeof$2(spacing) === 'object' ? spacing[startProperty] : spacing;
   var availableStartSpace = -Math.max(scrollContainerCollisions[overflowStartProperty], documentCollisions[overflowStartProperty] + document.documentElement[scrollProperty]) - startSpacing;
-  var endSpacing = _typeof$3(spacing) === 'object' ? spacing[endProperty] : spacing;
+  var endSpacing = _typeof$2(spacing) === 'object' ? spacing[endProperty] : spacing;
   var availableEndSpace = -Math.max(scrollContainerCollisions[overflowEndProperty], documentCollisions[overflowEndProperty] - document.documentElement[scrollProperty]) - endSpacing - scrollbarWidth;
 
   if (secondary) {
@@ -67123,13 +52147,13 @@ var Fit = /*#__PURE__*/function (_Component) {
 
     _this = _super.call.apply(_super, [this].concat(args));
 
-    _defineProperty$2(_assertThisInitialized(_this), "onMutation", function () {
+    _defineProperty$1(_assertThisInitialized(_this), "onMutation", function () {
       _this.fit();
     });
 
-    _defineProperty$2(_assertThisInitialized(_this), "mutationObserver", isMutationObserverSupported && new MutationObserver(_this.onMutation));
+    _defineProperty$1(_assertThisInitialized(_this), "mutationObserver", isMutationObserverSupported && new MutationObserver(_this.onMutation));
 
-    _defineProperty$2(_assertThisInitialized(_this), "fit", function () {
+    _defineProperty$1(_assertThisInitialized(_this), "fit", function () {
       var _assertThisInitialize = _assertThisInitialized(_this),
           scrollContainer = _assertThisInitialize.scrollContainer,
           container = _assertThisInitialize.container,
@@ -67249,15 +52273,15 @@ var Fit = /*#__PURE__*/function (_Component) {
   return Fit;
 }(React.Component);
 Fit.propTypes = {
-  children: propTypes$4.node,
-  invertAxis: propTypes$4.bool,
-  invertSecondaryAxis: propTypes$4.bool,
-  mainAxis: propTypes$4.oneOf(['x', 'y']),
-  spacing: propTypes$4.oneOfType([propTypes$4.number, propTypes$4.shape({
-    bottom: propTypes$4.number.isRequired,
-    left: propTypes$4.number.isRequired,
-    right: propTypes$4.number.isRequired,
-    top: propTypes$4.number.isRequired
+  children: propTypes$3.node,
+  invertAxis: propTypes$3.bool,
+  invertSecondaryAxis: propTypes$3.bool,
+  mainAxis: propTypes$3.oneOf(['x', 'y']),
+  spacing: propTypes$3.oneOfType([propTypes$3.number, propTypes$3.shape({
+    bottom: propTypes$3.number.isRequired,
+    left: propTypes$3.number.isRequired,
+    right: propTypes$3.number.isRequired,
+    top: propTypes$3.number.isRequired
   })])
 };
 Fit.defaultProps = {
@@ -67281,20 +52305,20 @@ var isDefined = function isDefined(variable) {
   return typeof variable !== 'undefined';
 };
 
-function _typeof$2(obj) {
+function _typeof$1(obj) {
   "@babel/helpers - typeof";
 
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof$2 = function _typeof(obj) {
+    _typeof$1 = function _typeof(obj) {
       return typeof obj;
     };
   } else {
-    _typeof$2 = function _typeof(obj) {
+    _typeof$1 = function _typeof(obj) {
       return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
     };
   }
 
-  return _typeof$2(obj);
+  return _typeof$1(obj);
 }
 
 var isNumberBetween = function isNumberBetween(min, max) {
@@ -67303,11 +52327,11 @@ var isNumberBetween = function isNumberBetween(min, max) {
 
     if (isDefined(value)) {
       if (typeof value !== 'number') {
-        return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$2(value), "` supplied to `").concat(componentName, "`, expected `number`."));
+        return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$1(value), "` supplied to `").concat(componentName, "`, expected `number`."));
       }
 
       if (value < min || value > max) {
-        return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$2(value), "` supplied to `").concat(componentName, "`, length must be between ").concat(min, " and ").concat(max, "."));
+        return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$1(value), "` supplied to `").concat(componentName, "`, length must be between ").concat(min, " and ").concat(max, "."));
       }
     } // Everything is fine
 
@@ -67323,11 +52347,11 @@ var isHandWidth = function isHandWidth(props, propName, componentName) {
 
   if (isDefined(width)) {
     if (typeof width !== 'number') {
-      return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$2(width), "` supplied to `").concat(componentName, "`, expected `number`."));
+      return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$1(width), "` supplied to `").concat(componentName, "`, expected `number`."));
     }
 
     if (width < 0) {
-      return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$2(width), "` supplied to `").concat(componentName, "`, width must be greater or equal to 0."));
+      return new Error("Invalid prop `".concat(propName, "` of type `").concat(_typeof$1(width), "` supplied to `").concat(componentName, "`, width must be greater or equal to 0."));
     }
   } // Everything is fine
 
@@ -67362,11 +52386,11 @@ function Hand(_ref) {
   }));
 }
 Hand.propTypes = {
-  angle: propTypes$4.number,
+  angle: propTypes$3.number,
   length: isHandLength,
-  name: propTypes$4.string.isRequired,
+  name: propTypes$3.string.isRequired,
   oppositeLength: isHandLength,
-  width: propTypes$4.number
+  width: propTypes$3.number
 };
 
 function Mark(_ref) {
@@ -67399,10 +52423,10 @@ function Mark(_ref) {
   }, number));
 }
 Mark.propTypes = {
-  angle: propTypes$4.number,
+  angle: propTypes$3.number,
   length: isMarkLength,
-  name: propTypes$4.string.isRequired,
-  number: propTypes$4.number,
+  name: propTypes$3.string.isRequired,
+  number: propTypes$3.number,
   width: isMarkWidth
 };
 
@@ -67546,7 +52570,7 @@ function Clock(_ref) {
   }, renderFace(), renderHourHandFn(), renderMinuteHandFn(), renderSecondHandFn());
 }
 Clock.propTypes = {
-  className: propTypes$4.oneOfType([propTypes$4.string, propTypes$4.arrayOf(propTypes$4.string)]),
+  className: propTypes$3.oneOfType([propTypes$3.string, propTypes$3.arrayOf(propTypes$3.string)]),
   hourHandLength: isHandLength,
   hourHandOppositeLength: isOppositeHandLength,
   hourHandWidth: isHandWidth,
@@ -67557,16 +52581,16 @@ Clock.propTypes = {
   minuteHandWidth: isHandWidth,
   minuteMarksLength: isMarkLength,
   minuteMarksWidth: isMarkWidth,
-  renderHourMarks: propTypes$4.bool,
-  renderMinuteHand: propTypes$4.bool,
-  renderMinuteMarks: propTypes$4.bool,
-  renderNumbers: propTypes$4.bool,
-  renderSecondHand: propTypes$4.bool,
+  renderHourMarks: propTypes$3.bool,
+  renderMinuteHand: propTypes$3.bool,
+  renderMinuteMarks: propTypes$3.bool,
+  renderNumbers: propTypes$3.bool,
+  renderSecondHand: propTypes$3.bool,
   secondHandLength: isHandLength,
   secondHandOppositeLength: isOppositeHandLength,
   secondHandWidth: isHandWidth,
-  size: propTypes$4.number,
-  value: propTypes$4.oneOfType([propTypes$4.string, propTypes$4.instanceOf(Date)])
+  size: propTypes$3.number,
+  value: propTypes$3.oneOfType([propTypes$3.string, propTypes$3.instanceOf(Date)])
 };
 
 var esm$1 = /*#__PURE__*/Object.freeze({
@@ -67678,7 +52702,7 @@ exports["default"] = Input;
 
 var _react = _interopRequireDefault(React__default$1['default']);
 
-var _propTypes = _interopRequireDefault(propTypes$4);
+var _propTypes = _interopRequireDefault(propTypes$3);
 
 var _mergeClassNames = _interopRequireDefault(require$$3$1);
 
@@ -67903,7 +52927,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.isMaxDate = exports.isMinDate = exports.isValueType = void 0;
 
-var _propTypes = _interopRequireDefault(propTypes$4);
+var _propTypes = _interopRequireDefault(propTypes$3);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -68019,20 +53043,20 @@ var safeMin_1$1 = safeMin$1;
 var safeMax_1$1 = safeMax$1;
 
 function _toConsumableArray$1(arr) {
-  return _arrayWithoutHoles$1(arr) || _iterableToArray$1(arr) || _unsupportedIterableToArray$3(arr) || _nonIterableSpread$1();
+  return _arrayWithoutHoles$1(arr) || _iterableToArray$1(arr) || _unsupportedIterableToArray$2(arr) || _nonIterableSpread$1();
 }
 
 function _nonIterableSpread$1() {
   throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
-function _unsupportedIterableToArray$3(o, minLen) {
+function _unsupportedIterableToArray$2(o, minLen) {
   if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray$3(o, minLen);
+  if (typeof o === "string") return _arrayLikeToArray$2(o, minLen);
   var n = Object.prototype.toString.call(o).slice(8, -1);
   if (n === "Object" && o.constructor) n = o.constructor.name;
   if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$3(o, minLen);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$2(o, minLen);
 }
 
 function _iterableToArray$1(iter) {
@@ -68040,10 +53064,10 @@ function _iterableToArray$1(iter) {
 }
 
 function _arrayWithoutHoles$1(arr) {
-  if (Array.isArray(arr)) return _arrayLikeToArray$3(arr);
+  if (Array.isArray(arr)) return _arrayLikeToArray$2(arr);
 }
 
-function _arrayLikeToArray$3(arr, len) {
+function _arrayLikeToArray$2(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
 
   for (var i = 0, arr2 = new Array(len); i < len; i++) {
@@ -68110,7 +53134,7 @@ exports["default"] = DayInput;
 
 var _react = _interopRequireDefault(React__default$1['default']);
 
-var _propTypes = _interopRequireDefault(propTypes$4);
+var _propTypes = _interopRequireDefault(propTypes$3);
 
 
 
@@ -68236,7 +53260,7 @@ exports["default"] = MonthInput;
 
 var _react = _interopRequireDefault(React__default$1['default']);
 
-var _propTypes = _interopRequireDefault(propTypes$4);
+var _propTypes = _interopRequireDefault(propTypes$3);
 
 
 
@@ -68409,7 +53433,7 @@ exports["default"] = MonthSelect;
 
 var _react = _interopRequireDefault(React__default$1['default']);
 
-var _propTypes = _interopRequireDefault(propTypes$4);
+var _propTypes = _interopRequireDefault(propTypes$3);
 
 var _mergeClassNames = _interopRequireDefault(require$$3$1);
 
@@ -68595,7 +53619,7 @@ exports["default"] = YearInput;
 
 var _react = _interopRequireDefault(React__default$1['default']);
 
-var _propTypes = _interopRequireDefault(propTypes$4);
+var _propTypes = _interopRequireDefault(propTypes$3);
 
 
 
@@ -68735,7 +53759,7 @@ exports["default"] = Input;
 
 var _react = _interopRequireDefault(React__default$1['default']);
 
-var _propTypes = _interopRequireDefault(propTypes$4);
+var _propTypes = _interopRequireDefault(propTypes$3);
 
 var _mergeClassNames = _interopRequireDefault(require$$3$1);
 
@@ -68985,7 +54009,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.isValueType = exports.isTime = void 0;
 
-var _propTypes = _interopRequireDefault(propTypes$4);
+var _propTypes = _interopRequireDefault(propTypes$3);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -69060,7 +54084,7 @@ var safeMax_1 = safeMax;
 
 
 function _toConsumableArray(arr) {
-  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray$2(arr) || _nonIterableSpread();
+  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray$1(arr) || _nonIterableSpread();
 }
 
 function _nonIterableSpread() {
@@ -69072,27 +54096,27 @@ function _iterableToArray(iter) {
 }
 
 function _arrayWithoutHoles(arr) {
-  if (Array.isArray(arr)) return _arrayLikeToArray$2(arr);
+  if (Array.isArray(arr)) return _arrayLikeToArray$1(arr);
 }
 
-function _slicedToArray$2(arr, i) {
-  return _arrayWithHoles$2(arr) || _iterableToArrayLimit$2(arr, i) || _unsupportedIterableToArray$2(arr, i) || _nonIterableRest$2();
+function _slicedToArray$1(arr, i) {
+  return _arrayWithHoles$1(arr) || _iterableToArrayLimit$1(arr, i) || _unsupportedIterableToArray$1(arr, i) || _nonIterableRest$1();
 }
 
-function _nonIterableRest$2() {
+function _nonIterableRest$1() {
   throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
-function _unsupportedIterableToArray$2(o, minLen) {
+function _unsupportedIterableToArray$1(o, minLen) {
   if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray$2(o, minLen);
+  if (typeof o === "string") return _arrayLikeToArray$1(o, minLen);
   var n = Object.prototype.toString.call(o).slice(8, -1);
   if (n === "Object" && o.constructor) n = o.constructor.name;
   if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$2(o, minLen);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$1(o, minLen);
 }
 
-function _arrayLikeToArray$2(arr, len) {
+function _arrayLikeToArray$1(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
 
   for (var i = 0, arr2 = new Array(len); i < len; i++) {
@@ -69102,7 +54126,7 @@ function _arrayLikeToArray$2(arr, len) {
   return arr2;
 }
 
-function _iterableToArrayLimit$2(arr, i) {
+function _iterableToArrayLimit$1(arr, i) {
   if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
   var _arr = [];
   var _n = true;
@@ -69129,7 +54153,7 @@ function _iterableToArrayLimit$2(arr, i) {
   return _arr;
 }
 
-function _arrayWithHoles$2(arr) {
+function _arrayWithHoles$1(arr) {
   if (Array.isArray(arr)) return arr;
 }
 
@@ -69144,12 +54168,12 @@ function getAmPmLabels$1(locale) {
   var pmString = amPmFormatter$1(locale, new Date(2017, 0, 1, 21));
 
   var _amString$split = amString.split(ninesRegExp$1),
-      _amString$split2 = _slicedToArray$2(_amString$split, 2),
+      _amString$split2 = _slicedToArray$1(_amString$split, 2),
       am1 = _amString$split2[0],
       am2 = _amString$split2[1];
 
   var _pmString$split = pmString.split(ninesRegExp$1),
-      _pmString$split2 = _slicedToArray$2(_pmString$split, 2),
+      _pmString$split2 = _slicedToArray$1(_pmString$split, 2),
       pm1 = _pmString$split2[0],
       pm2 = _pmString$split2[1];
 
@@ -69207,7 +54231,7 @@ exports["default"] = Hour12Input;
 
 var _react = _interopRequireDefault(React__default$1['default']);
 
-var _propTypes = _interopRequireDefault(propTypes$4);
+var _propTypes = _interopRequireDefault(propTypes$3);
 
 
 
@@ -69410,7 +54434,7 @@ exports["default"] = Hour24Input;
 
 var _react = _interopRequireDefault(React__default$1['default']);
 
-var _propTypes = _interopRequireDefault(propTypes$4);
+var _propTypes = _interopRequireDefault(propTypes$3);
 
 
 
@@ -69523,7 +54547,7 @@ exports["default"] = MinuteInput;
 
 var _react = _interopRequireDefault(React__default$1['default']);
 
-var _propTypes = _interopRequireDefault(propTypes$4);
+var _propTypes = _interopRequireDefault(propTypes$3);
 
 
 
@@ -69642,7 +54666,7 @@ exports["default"] = SecondInput;
 
 var _react = _interopRequireDefault(React__default$1['default']);
 
-var _propTypes = _interopRequireDefault(propTypes$4);
+var _propTypes = _interopRequireDefault(propTypes$3);
 
 
 
@@ -69763,7 +54787,7 @@ exports["default"] = AmPm;
 
 var _react = _interopRequireDefault(React__default$1['default']);
 
-var _propTypes = _interopRequireDefault(propTypes$4);
+var _propTypes = _interopRequireDefault(propTypes$3);
 
 var _mergeClassNames = _interopRequireDefault(require$$3$1);
 
@@ -69906,7 +54930,7 @@ exports["default"] = Divider;
 
 var _react = _interopRequireDefault(React__default$1['default']);
 
-var _propTypes = _interopRequireDefault(propTypes$4);
+var _propTypes = _interopRequireDefault(propTypes$3);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -69933,7 +54957,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.isValueType = exports.isMaxDate = exports.isMinDate = void 0;
 
-var _propTypes = _interopRequireDefault(propTypes$4);
+var _propTypes = _interopRequireDefault(propTypes$3);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -70018,7 +55042,7 @@ exports["default"] = NativeInput;
 
 var _react = _interopRequireDefault(React__default$1['default']);
 
-var _propTypes = _interopRequireDefault(propTypes$4);
+var _propTypes = _interopRequireDefault(propTypes$3);
 
 
 
@@ -70175,24 +55199,24 @@ var getAmPmLabels_1 = getAmPmLabels;
 
 
 
-function _slicedToArray$1(arr, i) {
-  return _arrayWithHoles$1(arr) || _iterableToArrayLimit$1(arr, i) || _unsupportedIterableToArray$1(arr, i) || _nonIterableRest$1();
+function _slicedToArray(arr, i) {
+  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
 }
 
-function _nonIterableRest$1() {
+function _nonIterableRest() {
   throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
 
-function _unsupportedIterableToArray$1(o, minLen) {
+function _unsupportedIterableToArray(o, minLen) {
   if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray$1(o, minLen);
+  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
   var n = Object.prototype.toString.call(o).slice(8, -1);
   if (n === "Object" && o.constructor) n = o.constructor.name;
   if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$1(o, minLen);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
 }
 
-function _arrayLikeToArray$1(arr, len) {
+function _arrayLikeToArray(arr, len) {
   if (len == null || len > arr.length) len = arr.length;
 
   for (var i = 0, arr2 = new Array(len); i < len; i++) {
@@ -70202,7 +55226,7 @@ function _arrayLikeToArray$1(arr, len) {
   return arr2;
 }
 
-function _iterableToArrayLimit$1(arr, i) {
+function _iterableToArrayLimit(arr, i) {
   if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
   var _arr = [];
   var _n = true;
@@ -70229,7 +55253,7 @@ function _iterableToArrayLimit$1(arr, i) {
   return _arr;
 }
 
-function _arrayWithHoles$1(arr) {
+function _arrayWithHoles(arr) {
   if (Array.isArray(arr)) return arr;
 }
 /**
@@ -70264,12 +55288,12 @@ function getAmPmLabels(locale) {
   var pmString = amPmFormatter(locale, new Date(2017, 0, 1, 21));
 
   var _amString$split = amString.split(ninesRegExp),
-      _amString$split2 = _slicedToArray$1(_amString$split, 2),
+      _amString$split2 = _slicedToArray(_amString$split, 2),
       am1 = _amString$split2[0],
       am2 = _amString$split2[1];
 
   var _pmString$split = pmString.split(ninesRegExp),
-      _pmString$split2 = _slicedToArray$1(_pmString$split, 2),
+      _pmString$split2 = _slicedToArray(_pmString$split, 2),
       pm1 = _pmString$split2[0],
       pm2 = _pmString$split2[1];
 
@@ -70306,7 +55330,7 @@ exports["default"] = void 0;
 
 var _react = _interopRequireWildcard(React__default$1['default']);
 
-var _propTypes = _interopRequireDefault(propTypes$4);
+var _propTypes = _interopRequireDefault(propTypes$3);
 
 
 
@@ -71516,7 +56540,7 @@ exports["default"] = void 0;
 
 var _react = _interopRequireWildcard(React__default$1['default']);
 
-var _propTypes = _interopRequireDefault(propTypes$4);
+var _propTypes = _interopRequireDefault(propTypes$3);
 
 var _makeEventProps = _interopRequireDefault(entry$1);
 
@@ -73035,7 +58059,7 @@ function BearForm({
     };
     const jsadcvx = { // width: "100%",
       // padding: "60px",
-      ...BearBackBorder("green", "5px"),
+      ...BearBackBorder$1("green", "5px"),
       color: "white",
       // background: "green",
       padding: "5px 10px",
@@ -73169,7 +58193,7 @@ function BearForm({
       renderItem: sdijfwer
     }; // function
 
-    const ijsdrwe = BearList$1(xcvnsdf);
+    const ijsdrwe = BearList(xcvnsdf);
     return ijsdrwe;
   } // 1button
 
@@ -73242,7 +58266,7 @@ function BearForm({
 
     };
     bearlog.lug("___formain TABS TOP ___", asodwe);
-    const okfdsd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(BearList$1, asodwe));
+    const okfdsd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(BearList, asodwe));
     return okfdsd;
   } // 1map
 
@@ -73479,7 +58503,7 @@ function BearCheckout({
     ...args
   };
   bearlog.lug("___ dfjgrt ___", dfjgrt);
-  const okfdsd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(BearForm, _extends$Y({
+  const okfdsd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(BearForm, _extends$O({
     noAdvert: true
   }, dfjgrt))); // let askjdew = "";
   // switch (provider) {
@@ -73507,723 +58531,6 @@ function BearCheckout({
   const qwejase = BearCheckMain(typeComp, okfdsd, idjft);
   return qwejase;
 }
-
-function _typeof$1(obj) {
-  "@babel/helpers - typeof";
-
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof$1 = function (obj) {
-      return typeof obj;
-    };
-  } else {
-    _typeof$1 = function (obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-  }
-
-  return _typeof$1(obj);
-}
-
-function _defineProperty$1(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-
-function ownKeys(object, enumerableOnly) {
-  var keys = Object.keys(object);
-
-  if (Object.getOwnPropertySymbols) {
-    var symbols = Object.getOwnPropertySymbols(object);
-    if (enumerableOnly) symbols = symbols.filter(function (sym) {
-      return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-    });
-    keys.push.apply(keys, symbols);
-  }
-
-  return keys;
-}
-
-function _objectSpread2(target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i] != null ? arguments[i] : {};
-
-    if (i % 2) {
-      ownKeys(Object(source), true).forEach(function (key) {
-        _defineProperty$1(target, key, source[key]);
-      });
-    } else if (Object.getOwnPropertyDescriptors) {
-      Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
-    } else {
-      ownKeys(Object(source)).forEach(function (key) {
-        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
-      });
-    }
-  }
-
-  return target;
-}
-
-function _slicedToArray(arr, i) {
-  return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();
-}
-
-function _arrayWithHoles(arr) {
-  if (Array.isArray(arr)) return arr;
-}
-
-function _iterableToArrayLimit(arr, i) {
-  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
-  var _arr = [];
-  var _n = true;
-  var _d = false;
-  var _e = undefined;
-
-  try {
-    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
-      _arr.push(_s.value);
-
-      if (i && _arr.length === i) break;
-    }
-  } catch (err) {
-    _d = true;
-    _e = err;
-  } finally {
-    try {
-      if (!_n && _i["return"] != null) _i["return"]();
-    } finally {
-      if (_d) throw _e;
-    }
-  }
-
-  return _arr;
-}
-
-function _unsupportedIterableToArray(o, minLen) {
-  if (!o) return;
-  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
-  var n = Object.prototype.toString.call(o).slice(8, -1);
-  if (n === "Object" && o.constructor) n = o.constructor.name;
-  if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
-}
-
-function _arrayLikeToArray(arr, len) {
-  if (len == null || len > arr.length) len = arr.length;
-
-  for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
-
-  return arr2;
-}
-
-function _nonIterableRest() {
-  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-
-var usePrevious = function usePrevious(value) {
-  var ref = React__default$1['default'].useRef(value);
-  React__default$1['default'].useEffect(function () {
-    ref.current = value;
-  }, [value]);
-  return ref.current;
-};
-
-var isUnknownObject = function isUnknownObject(raw) {
-  return raw !== null && _typeof$1(raw) === 'object';
-};
-
-var isPromise = function isPromise(raw) {
-  return isUnknownObject(raw) && typeof raw.then === 'function';
-}; // We are using types to enforce the `stripe` prop in this lib,
-// but in an untyped integration `stripe` could be anything, so we need
-// to do some sanity validation to prevent type errors.
-
-
-var isStripe = function isStripe(raw) {
-  return isUnknownObject(raw) && typeof raw.elements === 'function' && typeof raw.createToken === 'function' && typeof raw.createPaymentMethod === 'function' && typeof raw.confirmCardPayment === 'function';
-};
-
-var PLAIN_OBJECT_STR = '[object Object]';
-
-var isEqual = function isEqual(left, right) {
-  if (!isUnknownObject(left) || !isUnknownObject(right)) {
-    return left === right;
-  }
-
-  var leftArray = Array.isArray(left);
-  var rightArray = Array.isArray(right);
-  if (leftArray !== rightArray) return false;
-  var leftPlainObject = Object.prototype.toString.call(left) === PLAIN_OBJECT_STR;
-  var rightPlainObject = Object.prototype.toString.call(right) === PLAIN_OBJECT_STR;
-  if (leftPlainObject !== rightPlainObject) return false;
-  if (!leftPlainObject && !leftArray) return false;
-  var leftKeys = Object.keys(left);
-  var rightKeys = Object.keys(right);
-  if (leftKeys.length !== rightKeys.length) return false;
-  var keySet = {};
-
-  for (var i = 0; i < leftKeys.length; i += 1) {
-    keySet[leftKeys[i]] = true;
-  }
-
-  for (var _i = 0; _i < rightKeys.length; _i += 1) {
-    keySet[rightKeys[_i]] = true;
-  }
-
-  var allKeys = Object.keys(keySet);
-
-  if (allKeys.length !== leftKeys.length) {
-    return false;
-  }
-
-  var l = left;
-  var r = right;
-
-  var pred = function pred(key) {
-    return isEqual(l[key], r[key]);
-  };
-
-  return allKeys.every(pred);
-};
-
-var extractAllowedOptionsUpdates = function extractAllowedOptionsUpdates(options, prevOptions, immutableKeys) {
-  if (!isUnknownObject(options)) {
-    return null;
-  }
-
-  return Object.keys(options).reduce(function (newOptions, key) {
-    var isUpdated = !isUnknownObject(prevOptions) || !isEqual(options[key], prevOptions[key]);
-
-    if (immutableKeys.includes(key)) {
-      if (isUpdated) {
-        console.warn("Unsupported prop change: options.".concat(key, " is not a mutable property."));
-      }
-
-      return newOptions;
-    }
-
-    if (!isUpdated) {
-      return newOptions;
-    }
-
-    return _objectSpread2(_objectSpread2({}, newOptions || {}), {}, _defineProperty$1({}, key, options[key]));
-  }, null);
-};
-
-var INVALID_STRIPE_ERROR = 'Invalid prop `stripe` supplied to `Elements`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.'; // We are using types to enforce the `stripe` prop in this lib, but in a real
-// integration `stripe` could be anything, so we need to do some sanity
-// validation to prevent type errors.
-
-var validateStripe = function validateStripe(maybeStripe) {
-  if (maybeStripe === null || isStripe(maybeStripe)) {
-    return maybeStripe;
-  }
-
-  throw new Error(INVALID_STRIPE_ERROR);
-};
-
-var parseStripeProp = function parseStripeProp(raw) {
-  if (isPromise(raw)) {
-    return {
-      tag: 'async',
-      stripePromise: Promise.resolve(raw).then(validateStripe)
-    };
-  }
-
-  var stripe = validateStripe(raw);
-
-  if (stripe === null) {
-    return {
-      tag: 'empty'
-    };
-  }
-
-  return {
-    tag: 'sync',
-    stripe: stripe
-  };
-};
-
-var ElementsContext = /*#__PURE__*/React__default$1['default'].createContext(null);
-ElementsContext.displayName = 'ElementsContext';
-
-var parseElementsContext = function parseElementsContext(ctx, useCase) {
-  if (!ctx) {
-    throw new Error("Could not find Elements context; You need to wrap the part of your app that ".concat(useCase, " in an <Elements> provider."));
-  }
-
-  return ctx;
-};
-/**
- * The `Elements` provider allows you to use [Element components](https://stripe.com/docs/stripe-js/react#element-components) and access the [Stripe object](https://stripe.com/docs/js/initializing) in any nested component.
- * Render an `Elements` provider at the root of your React app so that it is available everywhere you need it.
- *
- * To use the `Elements` provider, call `loadStripe` from `@stripe/stripe-js` with your publishable key.
- * The `loadStripe` function will asynchronously load the Stripe.js script and initialize a `Stripe` object.
- * Pass the returned `Promise` to `Elements`.
- *
- * @docs https://stripe.com/docs/stripe-js/react#elements-provider
- */
-
-
-var Elements = function Elements(_ref) {
-  var rawStripeProp = _ref.stripe,
-      options = _ref.options,
-      children = _ref.children;
-
-  var _final = React__default$1['default'].useRef(false);
-
-  var isMounted = React__default$1['default'].useRef(true);
-  var parsed = React__default$1['default'].useMemo(function () {
-    return parseStripeProp(rawStripeProp);
-  }, [rawStripeProp]);
-
-  var _React$useState = React__default$1['default'].useState(function () {
-    return {
-      stripe: null,
-      elements: null
-    };
-  }),
-      _React$useState2 = _slicedToArray(_React$useState, 2),
-      ctx = _React$useState2[0],
-      setContext = _React$useState2[1];
-
-  var prevStripe = usePrevious(rawStripeProp);
-
-  if (prevStripe !== null) {
-    if (prevStripe !== rawStripeProp) {
-      console.warn('Unsupported prop change on Elements: You cannot change the `stripe` prop after setting it.');
-    }
-  }
-
-  if (!_final.current) {
-    if (parsed.tag === 'sync') {
-      _final.current = true;
-      setContext({
-        stripe: parsed.stripe,
-        elements: parsed.stripe.elements(options)
-      });
-    }
-
-    if (parsed.tag === 'async') {
-      _final.current = true;
-      parsed.stripePromise.then(function (stripe) {
-        if (stripe && isMounted.current) {
-          // Only update Elements context if the component is still mounted
-          // and stripe is not null. We allow stripe to be null to make
-          // handling SSR easier.
-          setContext({
-            stripe: stripe,
-            elements: stripe.elements(options)
-          });
-        }
-      });
-    }
-  }
-
-  var prevOptions = usePrevious(options);
-  React__default$1['default'].useEffect(function () {
-    if (!ctx.elements) {
-      return;
-    }
-
-    var updates = extractAllowedOptionsUpdates(options, prevOptions, ['clientSecret', 'fonts']);
-
-    if (updates) {
-      ctx.elements.update(updates);
-    }
-  }, [options, prevOptions, ctx.elements]);
-  React__default$1['default'].useEffect(function () {
-    return function () {
-      isMounted.current = false;
-    };
-  }, []);
-  React__default$1['default'].useEffect(function () {
-    var anyStripe = ctx.stripe;
-
-    if (!anyStripe || !anyStripe._registerWrapper || !anyStripe.registerAppInfo) {
-      return;
-    }
-
-    anyStripe._registerWrapper({
-      name: 'react-stripe-js',
-      version: "1.5.0"
-    });
-
-    anyStripe.registerAppInfo({
-      name: 'react-stripe-js',
-      version: "1.5.0",
-      url: 'https://stripe.com/docs/stripe-js/react'
-    });
-  }, [ctx.stripe]);
-  return /*#__PURE__*/React__default$1['default'].createElement(ElementsContext.Provider, {
-    value: ctx
-  }, children);
-};
-
-Elements.propTypes = {
-  stripe: propTypes$4.any,
-  options: propTypes$4.object
-};
-
-var useElementsContextWithUseCase = function useElementsContextWithUseCase(useCaseMessage) {
-  var ctx = React__default$1['default'].useContext(ElementsContext);
-  return parseElementsContext(ctx, useCaseMessage);
-};
-/**
- * @docs https://stripe.com/docs/stripe-js/react#useelements-hook
- */
-
-
-var useElements = function useElements() {
-  var _useElementsContextWi = useElementsContextWithUseCase('calls useElements()'),
-      elements = _useElementsContextWi.elements;
-
-  return elements;
-};
-/**
- * @docs https://stripe.com/docs/stripe-js/react#usestripe-hook
- */
-
-
-var useStripe = function useStripe() {
-  var _useElementsContextWi2 = useElementsContextWithUseCase('calls useStripe()'),
-      stripe = _useElementsContextWi2.stripe;
-
-  return stripe;
-};
-
-({
-  children: propTypes$4.func.isRequired
-});
-
-var useCallbackReference = function useCallbackReference(cb) {
-  var ref = React__default$1['default'].useRef(cb);
-  React__default$1['default'].useEffect(function () {
-    ref.current = cb;
-  }, [cb]);
-  return function () {
-    if (ref.current) {
-      ref.current.apply(ref, arguments);
-    }
-  };
-};
-
-var noop = function noop() {};
-
-var capitalized = function capitalized(str) {
-  return str.charAt(0).toUpperCase() + str.slice(1);
-};
-
-var createElementComponent = function createElementComponent(type, isServer) {
-  var displayName = "".concat(capitalized(type), "Element");
-
-  var ClientElement = function ClientElement(_ref) {
-    var id = _ref.id,
-        className = _ref.className,
-        _ref$options = _ref.options,
-        options = _ref$options === void 0 ? {} : _ref$options,
-        _ref$onBlur = _ref.onBlur,
-        onBlur = _ref$onBlur === void 0 ? noop : _ref$onBlur,
-        _ref$onFocus = _ref.onFocus,
-        onFocus = _ref$onFocus === void 0 ? noop : _ref$onFocus,
-        _ref$onReady = _ref.onReady,
-        onReady = _ref$onReady === void 0 ? noop : _ref$onReady,
-        _ref$onChange = _ref.onChange,
-        onChange = _ref$onChange === void 0 ? noop : _ref$onChange,
-        _ref$onEscape = _ref.onEscape,
-        onEscape = _ref$onEscape === void 0 ? noop : _ref$onEscape,
-        _ref$onClick = _ref.onClick,
-        onClick = _ref$onClick === void 0 ? noop : _ref$onClick;
-
-    var _useElementsContextWi = useElementsContextWithUseCase("mounts <".concat(displayName, ">")),
-        elements = _useElementsContextWi.elements;
-
-    var elementRef = React__default$1['default'].useRef(null);
-    var domNode = React__default$1['default'].useRef(null);
-    var callOnReady = useCallbackReference(onReady);
-    var callOnBlur = useCallbackReference(onBlur);
-    var callOnFocus = useCallbackReference(onFocus);
-    var callOnClick = useCallbackReference(onClick);
-    var callOnChange = useCallbackReference(onChange);
-    var callOnEscape = useCallbackReference(onEscape);
-    React__default$1['default'].useLayoutEffect(function () {
-      if (elementRef.current == null && elements && domNode.current != null) {
-        var element = elements.create(type, options);
-        elementRef.current = element;
-        element.mount(domNode.current);
-        element.on('ready', function () {
-          return callOnReady(element);
-        });
-        element.on('change', callOnChange);
-        element.on('blur', callOnBlur);
-        element.on('focus', callOnFocus);
-        element.on('escape', callOnEscape); // Users can pass an an onClick prop on any Element component
-        // just as they could listen for the `click` event on any Element,
-        // but only the PaymentRequestButton will actually trigger the event.
-
-        element.on('click', callOnClick);
-      }
-    });
-    var prevOptions = usePrevious(options);
-    React__default$1['default'].useEffect(function () {
-      if (!elementRef.current) {
-        return;
-      }
-
-      var updates = extractAllowedOptionsUpdates(options, prevOptions, ['paymentRequest']);
-
-      if (updates) {
-        elementRef.current.update(updates);
-      }
-    }, [options, prevOptions]);
-    React__default$1['default'].useLayoutEffect(function () {
-      return function () {
-        if (elementRef.current) {
-          elementRef.current.destroy();
-        }
-      };
-    }, []);
-    return /*#__PURE__*/React__default$1['default'].createElement("div", {
-      id: id,
-      className: className,
-      ref: domNode
-    });
-  }; // Only render the Element wrapper in a server environment.
-
-
-  var ServerElement = function ServerElement(props) {
-    // Validate that we are in the right context by calling useElementsContextWithUseCase.
-    useElementsContextWithUseCase("mounts <".concat(displayName, ">"));
-    var id = props.id,
-        className = props.className;
-    return /*#__PURE__*/React__default$1['default'].createElement("div", {
-      id: id,
-      className: className
-    });
-  };
-
-  var Element = isServer ? ServerElement : ClientElement;
-  Element.propTypes = {
-    id: propTypes$4.string,
-    className: propTypes$4.string,
-    onChange: propTypes$4.func,
-    onBlur: propTypes$4.func,
-    onFocus: propTypes$4.func,
-    onReady: propTypes$4.func,
-    onClick: propTypes$4.func,
-    options: propTypes$4.object
-  };
-  Element.displayName = displayName;
-  Element.__elementType = type;
-  return Element;
-};
-
-var isServer = typeof window === 'undefined';
-/**
- * Requires beta access:
- * Contact [Stripe support](https://support.stripe.com/) for more information.
- *
- * @docs https://stripe.com/docs/stripe-js/react#element-components
- */
-
-createElementComponent('auBankAccount', isServer);
-/**
- * @docs https://stripe.com/docs/stripe-js/react#element-components
- */
-
-var CardElement = createElementComponent('card', isServer);
-/**
- * @docs https://stripe.com/docs/stripe-js/react#element-components
- */
-
-createElementComponent('cardNumber', isServer);
-/**
- * @docs https://stripe.com/docs/stripe-js/react#element-components
- */
-
-createElementComponent('cardExpiry', isServer);
-/**
- * @docs https://stripe.com/docs/stripe-js/react#element-components
- */
-
-createElementComponent('cardCvc', isServer);
-/**
- * @docs https://stripe.com/docs/stripe-js/react#element-components
- */
-
-createElementComponent('fpxBank', isServer);
-/**
- * @docs https://stripe.com/docs/stripe-js/react#element-components
- */
-
-createElementComponent('iban', isServer);
-/**
- * @docs https://stripe.com/docs/stripe-js/react#element-components
- */
-
-createElementComponent('idealBank', isServer);
-/**
- * @docs https://stripe.com/docs/stripe-js/react#element-components
- */
-
-createElementComponent('p24Bank', isServer);
-/**
- * @docs https://stripe.com/docs/stripe-js/react#element-components
- */
-
-createElementComponent('epsBank', isServer);
-createElementComponent('payment', isServer);
-/**
- * @docs https://stripe.com/docs/stripe-js/react#element-components
- */
-
-var PaymentRequestButtonElement = createElementComponent('paymentRequestButton', isServer);
-/**
- * @docs https://stripe.com/docs/stripe-js/react#element-components
- */
-
-createElementComponent('afterpayClearpayMessage', isServer);
-
-var V3_URL = 'https://js.stripe.com/v3';
-var V3_URL_REGEX = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/;
-var EXISTING_SCRIPT_MESSAGE = 'loadStripe.setLoadParameters was called but an existing Stripe.js script already exists in the document; existing script parameters will be used';
-
-var findScript = function findScript() {
-  var scripts = document.querySelectorAll("script[src^=\"".concat(V3_URL, "\"]"));
-
-  for (var i = 0; i < scripts.length; i++) {
-    var script = scripts[i];
-
-    if (!V3_URL_REGEX.test(script.src)) {
-      continue;
-    }
-
-    return script;
-  }
-
-  return null;
-};
-
-var injectScript = function injectScript(params) {
-  var queryString = params && !params.advancedFraudSignals ? '?advancedFraudSignals=false' : '';
-  var script = document.createElement('script');
-  script.src = "".concat(V3_URL).concat(queryString);
-  var headOrBody = document.head || document.body;
-
-  if (!headOrBody) {
-    throw new Error('Expected document.body not to be null. Stripe.js requires a <body> element.');
-  }
-
-  headOrBody.appendChild(script);
-  return script;
-};
-
-var registerWrapper = function registerWrapper(stripe, startTime) {
-  if (!stripe || !stripe._registerWrapper) {
-    return;
-  }
-
-  stripe._registerWrapper({
-    name: 'stripe-js',
-    version: "1.18.0",
-    startTime: startTime
-  });
-};
-
-var stripePromise = null;
-
-var loadScript = function loadScript(params) {
-  // Ensure that we only attempt to load Stripe.js at most once
-  if (stripePromise !== null) {
-    return stripePromise;
-  }
-
-  stripePromise = new Promise(function (resolve, reject) {
-    if (typeof window === 'undefined') {
-      // Resolve to null when imported server side. This makes the module
-      // safe to import in an isomorphic code base.
-      resolve(null);
-      return;
-    }
-
-    if (window.Stripe && params) {
-      console.warn(EXISTING_SCRIPT_MESSAGE);
-    }
-
-    if (window.Stripe) {
-      resolve(window.Stripe);
-      return;
-    }
-
-    try {
-      var script = findScript();
-
-      if (script && params) {
-        console.warn(EXISTING_SCRIPT_MESSAGE);
-      } else if (!script) {
-        script = injectScript(params);
-      }
-
-      script.addEventListener('load', function () {
-        if (window.Stripe) {
-          resolve(window.Stripe);
-        } else {
-          reject(new Error('Stripe.js not available'));
-        }
-      });
-      script.addEventListener('error', function () {
-        reject(new Error('Failed to load Stripe.js'));
-      });
-    } catch (error) {
-      reject(error);
-      return;
-    }
-  });
-  return stripePromise;
-};
-
-var initStripe = function initStripe(maybeStripe, args, startTime) {
-  if (maybeStripe === null) {
-    return null;
-  }
-
-  var stripe = maybeStripe.apply(undefined, args);
-  registerWrapper(stripe, startTime);
-  return stripe;
-}; // own script injection.
-
-
-var stripePromise$1 = Promise.resolve().then(function () {
-  return loadScript(null);
-});
-var loadCalled = false;
-stripePromise$1["catch"](function (err) {
-  if (!loadCalled) {
-    console.warn(err);
-  }
-});
-
-var loadStripe = function loadStripe() {
-  for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-    args[_key] = arguments[_key];
-  }
-
-  loadCalled = true;
-  var startTime = Date.now();
-  return stripePromise$1.then(function (maybeStripe) {
-    return initStripe(maybeStripe, args, startTime);
-  });
-};
 
 function BearCheckoutStripeBase({
   //
@@ -74405,7 +58712,7 @@ function BearCheckoutStripeBase({
         onChange: handleCardDetailsChange
       };
       const jsdrs = !paymentintentFunction && !ignoreErrors;
-      return jsdrs ? BearErrMiss("paymentintentFunction", bearName, "BearCheckoutStripe") : /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(CardElement, dsfoqeqs));
+      return jsdrs ? BearErrMiss$1("paymentintentFunction", bearName, "BearCheckoutStripe") : /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(CardElement, dsfoqeqs));
     }
 
     function asodke(error) {
@@ -74633,7 +58940,7 @@ function BearCheckoutStripe({
   bearlog.lug("saidjew-zz", saidjew);
   return /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(Elements, {
     stripe: stripePromise
-  }, /*#__PURE__*/React__default$1['default'].createElement(BearCheckoutStripeBase, _extends$Y({
+  }, /*#__PURE__*/React__default$1['default'].createElement(BearCheckoutStripeBase, _extends$O({
     nativePayment: nativePayment && /*#__PURE__*/React__default$1['default'].createElement(CheckPayStripe, saidjew)
   }, aaaaa))));
 }
@@ -74722,7 +59029,7 @@ function BearBackForward({
     padvar: "5px",
     ...argssdf
   };
-  const ijwqeq = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, _extends$Y({
+  const ijwqeq = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, _extends$O({
     flex: true,
     vertAlign: true
   }, uawhe)));
@@ -74982,7 +59289,7 @@ function BearEmoji({
       ...ssdwedf
     };
     bearlog.lug("___ emojListo MAIN LIST  ___", dsjs);
-    return /*#__PURE__*/React__default$1['default'].createElement(BearList$1, dsjs);
+    return /*#__PURE__*/React__default$1['default'].createElement(BearList, dsjs);
   }
 
   function Selectos() {
@@ -75056,45 +59363,2497 @@ function BearTags({
     renderItem: rendios,
     ...args
   };
-  return /*#__PURE__*/React__default$1['default'].createElement(BearList$1, args);
+  return /*#__PURE__*/React__default$1['default'].createElement(BearList, args);
 }
 
-function BearTabs({
-  //
-  noStretch,
-  //   1tab
-  styleTab,
-  bottomContain,
-  itemConfig,
-  padTab,
-  linkTrue,
-  stepTrue,
-  chosenItem,
-  selectStyle,
-  list,
-  // onClick,
-  ...argsas
-}) {
-  const isjdr = { ...sijas,
-    horiz: true,
-    // bottomContain: dfsijgre,
-    list: yaswe,
-    dictvar: ijsde,
-    // leftObj,
-    // chosenItem: typeTab,
-    clickSingle: true,
-    // onClick: (sdodf) => erotea("tab", sdodf),
-    logtrue: "e",
-    bearName: "explore tabs --- ",
-    itemConfig: jfdgrw,
-    padTab: "10px",
-    style: {
-      margin: "2% 0",
-      padding: "0 3%"
-    } // noTabs: true,
+function isAbsolute(pathname) {
+  return pathname.charAt(0) === '/';
+} // About 1.5x faster than the two-arg version of Array#splice()
 
+
+function spliceOne(list, index) {
+  for (var i = index, k = i + 1, n = list.length; k < n; i += 1, k += 1) {
+    list[i] = list[k];
+  }
+
+  list.pop();
+} // This implementation is based heavily on node's url.parse
+
+
+function resolvePathname(to, from) {
+  if (from === undefined) from = '';
+  var toParts = to && to.split('/') || [];
+  var fromParts = from && from.split('/') || [];
+  var isToAbs = to && isAbsolute(to);
+  var isFromAbs = from && isAbsolute(from);
+  var mustEndAbs = isToAbs || isFromAbs;
+
+  if (to && isAbsolute(to)) {
+    // to is absolute
+    fromParts = toParts;
+  } else if (toParts.length) {
+    // to is relative, drop the filename
+    fromParts.pop();
+    fromParts = fromParts.concat(toParts);
+  }
+
+  if (!fromParts.length) return '/';
+  var hasTrailingSlash;
+
+  if (fromParts.length) {
+    var last = fromParts[fromParts.length - 1];
+    hasTrailingSlash = last === '.' || last === '..' || last === '';
+  } else {
+    hasTrailingSlash = false;
+  }
+
+  var up = 0;
+
+  for (var i = fromParts.length; i >= 0; i--) {
+    var part = fromParts[i];
+
+    if (part === '.') {
+      spliceOne(fromParts, i);
+    } else if (part === '..') {
+      spliceOne(fromParts, i);
+      up++;
+    } else if (up) {
+      spliceOne(fromParts, i);
+      up--;
+    }
+  }
+
+  if (!mustEndAbs) for (; up--; up) fromParts.unshift('..');
+  if (mustEndAbs && fromParts[0] !== '' && (!fromParts[0] || !isAbsolute(fromParts[0]))) fromParts.unshift('');
+  var result = fromParts.join('/');
+  if (hasTrailingSlash && result.substr(-1) !== '/') result += '/';
+  return result;
+}
+
+var isProduction = process.env.NODE_ENV === 'production';
+
+function warning(condition, message) {
+  if (!isProduction) {
+    if (condition) {
+      return;
+    }
+
+    var text = "Warning: " + message;
+
+    if (typeof console !== 'undefined') {
+      console.warn(text);
+    }
+
+    try {
+      throw Error(text);
+    } catch (x) {}
+  }
+}
+
+function addLeadingSlash$1(path) {
+  return path.charAt(0) === '/' ? path : '/' + path;
+}
+
+function stripLeadingSlash(path) {
+  return path.charAt(0) === '/' ? path.substr(1) : path;
+}
+
+function hasBasename(path, prefix) {
+  return path.toLowerCase().indexOf(prefix.toLowerCase()) === 0 && '/?#'.indexOf(path.charAt(prefix.length)) !== -1;
+}
+
+function stripBasename$1(path, prefix) {
+  return hasBasename(path, prefix) ? path.substr(prefix.length) : path;
+}
+
+function stripTrailingSlash(path) {
+  return path.charAt(path.length - 1) === '/' ? path.slice(0, -1) : path;
+}
+
+function parsePath(path) {
+  var pathname = path || '/';
+  var search = '';
+  var hash = '';
+  var hashIndex = pathname.indexOf('#');
+
+  if (hashIndex !== -1) {
+    hash = pathname.substr(hashIndex);
+    pathname = pathname.substr(0, hashIndex);
+  }
+
+  var searchIndex = pathname.indexOf('?');
+
+  if (searchIndex !== -1) {
+    search = pathname.substr(searchIndex);
+    pathname = pathname.substr(0, searchIndex);
+  }
+
+  return {
+    pathname: pathname,
+    search: search === '?' ? '' : search,
+    hash: hash === '#' ? '' : hash
   };
-  return BearList(isjdr);
+}
+
+function createPath(location) {
+  var pathname = location.pathname,
+      search = location.search,
+      hash = location.hash;
+  var path = pathname || '/';
+  if (search && search !== '?') path += search.charAt(0) === '?' ? search : "?" + search;
+  if (hash && hash !== '#') path += hash.charAt(0) === '#' ? hash : "#" + hash;
+  return path;
+}
+
+function createLocation(path, state, key, currentLocation) {
+  var location;
+
+  if (typeof path === 'string') {
+    // Two-arg form: push(path, state)
+    location = parsePath(path);
+    location.state = state;
+  } else {
+    // One-arg form: push(location)
+    location = _extends$N({}, path);
+    if (location.pathname === undefined) location.pathname = '';
+
+    if (location.search) {
+      if (location.search.charAt(0) !== '?') location.search = '?' + location.search;
+    } else {
+      location.search = '';
+    }
+
+    if (location.hash) {
+      if (location.hash.charAt(0) !== '#') location.hash = '#' + location.hash;
+    } else {
+      location.hash = '';
+    }
+
+    if (state !== undefined && location.state === undefined) location.state = state;
+  }
+
+  try {
+    location.pathname = decodeURI(location.pathname);
+  } catch (e) {
+    if (e instanceof URIError) {
+      throw new URIError('Pathname "' + location.pathname + '" could not be decoded. ' + 'This is likely caused by an invalid percent-encoding.');
+    } else {
+      throw e;
+    }
+  }
+
+  if (key) location.key = key;
+
+  if (currentLocation) {
+    // Resolve incomplete/relative pathname relative to current location.
+    if (!location.pathname) {
+      location.pathname = currentLocation.pathname;
+    } else if (location.pathname.charAt(0) !== '/') {
+      location.pathname = resolvePathname(location.pathname, currentLocation.pathname);
+    }
+  } else {
+    // When there is no prior location and pathname is empty, set it to /
+    if (!location.pathname) {
+      location.pathname = '/';
+    }
+  }
+
+  return location;
+}
+
+function createTransitionManager() {
+  var prompt = null;
+
+  function setPrompt(nextPrompt) {
+    process.env.NODE_ENV !== "production" ? warning(prompt == null, 'A history supports only one prompt at a time') : void 0;
+    prompt = nextPrompt;
+    return function () {
+      if (prompt === nextPrompt) prompt = null;
+    };
+  }
+
+  function confirmTransitionTo(location, action, getUserConfirmation, callback) {
+    // TODO: If another transition starts while we're still confirming
+    // the previous one, we may end up in a weird state. Figure out the
+    // best way to handle this.
+    if (prompt != null) {
+      var result = typeof prompt === 'function' ? prompt(location, action) : prompt;
+
+      if (typeof result === 'string') {
+        if (typeof getUserConfirmation === 'function') {
+          getUserConfirmation(result, callback);
+        } else {
+          process.env.NODE_ENV !== "production" ? warning(false, 'A history needs a getUserConfirmation function in order to use a prompt message') : void 0;
+          callback(true);
+        }
+      } else {
+        // Return false from a transition hook to cancel the transition.
+        callback(result !== false);
+      }
+    } else {
+      callback(true);
+    }
+  }
+
+  var listeners = [];
+
+  function appendListener(fn) {
+    var isActive = true;
+
+    function listener() {
+      if (isActive) fn.apply(void 0, arguments);
+    }
+
+    listeners.push(listener);
+    return function () {
+      isActive = false;
+      listeners = listeners.filter(function (item) {
+        return item !== listener;
+      });
+    };
+  }
+
+  function notifyListeners() {
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    listeners.forEach(function (listener) {
+      return listener.apply(void 0, args);
+    });
+  }
+
+  return {
+    setPrompt: setPrompt,
+    confirmTransitionTo: confirmTransitionTo,
+    appendListener: appendListener,
+    notifyListeners: notifyListeners
+  };
+}
+
+var canUseDOM$1 = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
+
+function getConfirmation(message, callback) {
+  callback(window.confirm(message)); // eslint-disable-line no-alert
+}
+/**
+ * Returns true if the HTML5 history API is supported. Taken from Modernizr.
+ *
+ * https://github.com/Modernizr/Modernizr/blob/master/LICENSE
+ * https://github.com/Modernizr/Modernizr/blob/master/feature-detects/history.js
+ * changed to avoid false negatives for Windows Phones: https://github.com/reactjs/react-router/issues/586
+ */
+
+
+function supportsHistory() {
+  var ua = window.navigator.userAgent;
+  if ((ua.indexOf('Android 2.') !== -1 || ua.indexOf('Android 4.0') !== -1) && ua.indexOf('Mobile Safari') !== -1 && ua.indexOf('Chrome') === -1 && ua.indexOf('Windows Phone') === -1) return false;
+  return window.history && 'pushState' in window.history;
+}
+/**
+ * Returns true if browser fires popstate on hash change.
+ * IE10 and IE11 do not.
+ */
+
+
+function supportsPopStateOnHashChange() {
+  return window.navigator.userAgent.indexOf('Trident') === -1;
+}
+/**
+ * Returns false if using go(n) with hash history causes a full page reload.
+ */
+
+
+function supportsGoWithoutReloadUsingHash() {
+  return window.navigator.userAgent.indexOf('Firefox') === -1;
+}
+/**
+ * Returns true if a given popstate event is an extraneous WebKit event.
+ * Accounts for the fact that Chrome on iOS fires real popstate events
+ * containing undefined state when pressing the back button.
+ */
+
+
+function isExtraneousPopstateEvent(event) {
+  return event.state === undefined && navigator.userAgent.indexOf('CriOS') === -1;
+}
+
+var PopStateEvent = 'popstate';
+var HashChangeEvent = 'hashchange';
+
+function getHistoryState() {
+  try {
+    return window.history.state || {};
+  } catch (e) {
+    // IE 11 sometimes throws when accessing window.history.state
+    // See https://github.com/ReactTraining/history/pull/289
+    return {};
+  }
+}
+/**
+ * Creates a history object that uses the HTML5 history API including
+ * pushState, replaceState, and the popstate event.
+ */
+
+
+function createBrowserHistory(props) {
+  if (props === void 0) {
+    props = {};
+  }
+
+  !canUseDOM$1 ? process.env.NODE_ENV !== "production" ? invariant(false, 'Browser history needs a DOM') : invariant(false) : void 0;
+  var globalHistory = window.history;
+  var canUseHistory = supportsHistory();
+  var needsHashChangeListener = !supportsPopStateOnHashChange();
+  var _props = props,
+      _props$forceRefresh = _props.forceRefresh,
+      forceRefresh = _props$forceRefresh === void 0 ? false : _props$forceRefresh,
+      _props$getUserConfirm = _props.getUserConfirmation,
+      getUserConfirmation = _props$getUserConfirm === void 0 ? getConfirmation : _props$getUserConfirm,
+      _props$keyLength = _props.keyLength,
+      keyLength = _props$keyLength === void 0 ? 6 : _props$keyLength;
+  var basename = props.basename ? stripTrailingSlash(addLeadingSlash$1(props.basename)) : '';
+
+  function getDOMLocation(historyState) {
+    var _ref = historyState || {},
+        key = _ref.key,
+        state = _ref.state;
+
+    var _window$location = window.location,
+        pathname = _window$location.pathname,
+        search = _window$location.search,
+        hash = _window$location.hash;
+    var path = pathname + search + hash;
+    process.env.NODE_ENV !== "production" ? warning(!basename || hasBasename(path, basename), 'You are attempting to use a basename on a page whose URL path does not begin ' + 'with the basename. Expected path "' + path + '" to begin with "' + basename + '".') : void 0;
+    if (basename) path = stripBasename$1(path, basename);
+    return createLocation(path, state, key);
+  }
+
+  function createKey() {
+    return Math.random().toString(36).substr(2, keyLength);
+  }
+
+  var transitionManager = createTransitionManager();
+
+  function setState(nextState) {
+    _extends$N(history, nextState);
+
+    history.length = globalHistory.length;
+    transitionManager.notifyListeners(history.location, history.action);
+  }
+
+  function handlePopState(event) {
+    // Ignore extraneous popstate events in WebKit.
+    if (isExtraneousPopstateEvent(event)) return;
+    handlePop(getDOMLocation(event.state));
+  }
+
+  function handleHashChange() {
+    handlePop(getDOMLocation(getHistoryState()));
+  }
+
+  var forceNextPop = false;
+
+  function handlePop(location) {
+    if (forceNextPop) {
+      forceNextPop = false;
+      setState();
+    } else {
+      var action = 'POP';
+      transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+        if (ok) {
+          setState({
+            action: action,
+            location: location
+          });
+        } else {
+          revertPop(location);
+        }
+      });
+    }
+  }
+
+  function revertPop(fromLocation) {
+    var toLocation = history.location; // TODO: We could probably make this more reliable by
+    // keeping a list of keys we've seen in sessionStorage.
+    // Instead, we just default to 0 for keys we don't know.
+
+    var toIndex = allKeys.indexOf(toLocation.key);
+    if (toIndex === -1) toIndex = 0;
+    var fromIndex = allKeys.indexOf(fromLocation.key);
+    if (fromIndex === -1) fromIndex = 0;
+    var delta = toIndex - fromIndex;
+
+    if (delta) {
+      forceNextPop = true;
+      go(delta);
+    }
+  }
+
+  var initialLocation = getDOMLocation(getHistoryState());
+  var allKeys = [initialLocation.key]; // Public interface
+
+  function createHref(location) {
+    return basename + createPath(location);
+  }
+
+  function push(path, state) {
+    process.env.NODE_ENV !== "production" ? warning(!(typeof path === 'object' && path.state !== undefined && state !== undefined), 'You should avoid providing a 2nd state argument to push when the 1st ' + 'argument is a location-like object that already has state; it is ignored') : void 0;
+    var action = 'PUSH';
+    var location = createLocation(path, state, createKey(), history.location);
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+      var href = createHref(location);
+      var key = location.key,
+          state = location.state;
+
+      if (canUseHistory) {
+        globalHistory.pushState({
+          key: key,
+          state: state
+        }, null, href);
+
+        if (forceRefresh) {
+          window.location.href = href;
+        } else {
+          var prevIndex = allKeys.indexOf(history.location.key);
+          var nextKeys = allKeys.slice(0, prevIndex + 1);
+          nextKeys.push(location.key);
+          allKeys = nextKeys;
+          setState({
+            action: action,
+            location: location
+          });
+        }
+      } else {
+        process.env.NODE_ENV !== "production" ? warning(state === undefined, 'Browser history cannot push state in browsers that do not support HTML5 history') : void 0;
+        window.location.href = href;
+      }
+    });
+  }
+
+  function replace(path, state) {
+    process.env.NODE_ENV !== "production" ? warning(!(typeof path === 'object' && path.state !== undefined && state !== undefined), 'You should avoid providing a 2nd state argument to replace when the 1st ' + 'argument is a location-like object that already has state; it is ignored') : void 0;
+    var action = 'REPLACE';
+    var location = createLocation(path, state, createKey(), history.location);
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+      var href = createHref(location);
+      var key = location.key,
+          state = location.state;
+
+      if (canUseHistory) {
+        globalHistory.replaceState({
+          key: key,
+          state: state
+        }, null, href);
+
+        if (forceRefresh) {
+          window.location.replace(href);
+        } else {
+          var prevIndex = allKeys.indexOf(history.location.key);
+          if (prevIndex !== -1) allKeys[prevIndex] = location.key;
+          setState({
+            action: action,
+            location: location
+          });
+        }
+      } else {
+        process.env.NODE_ENV !== "production" ? warning(state === undefined, 'Browser history cannot replace state in browsers that do not support HTML5 history') : void 0;
+        window.location.replace(href);
+      }
+    });
+  }
+
+  function go(n) {
+    globalHistory.go(n);
+  }
+
+  function goBack() {
+    go(-1);
+  }
+
+  function goForward() {
+    go(1);
+  }
+
+  var listenerCount = 0;
+
+  function checkDOMListeners(delta) {
+    listenerCount += delta;
+
+    if (listenerCount === 1 && delta === 1) {
+      window.addEventListener(PopStateEvent, handlePopState);
+      if (needsHashChangeListener) window.addEventListener(HashChangeEvent, handleHashChange);
+    } else if (listenerCount === 0) {
+      window.removeEventListener(PopStateEvent, handlePopState);
+      if (needsHashChangeListener) window.removeEventListener(HashChangeEvent, handleHashChange);
+    }
+  }
+
+  var isBlocked = false;
+
+  function block(prompt) {
+    if (prompt === void 0) {
+      prompt = false;
+    }
+
+    var unblock = transitionManager.setPrompt(prompt);
+
+    if (!isBlocked) {
+      checkDOMListeners(1);
+      isBlocked = true;
+    }
+
+    return function () {
+      if (isBlocked) {
+        isBlocked = false;
+        checkDOMListeners(-1);
+      }
+
+      return unblock();
+    };
+  }
+
+  function listen(listener) {
+    var unlisten = transitionManager.appendListener(listener);
+    checkDOMListeners(1);
+    return function () {
+      checkDOMListeners(-1);
+      unlisten();
+    };
+  }
+
+  var history = {
+    length: globalHistory.length,
+    action: 'POP',
+    location: initialLocation,
+    createHref: createHref,
+    push: push,
+    replace: replace,
+    go: go,
+    goBack: goBack,
+    goForward: goForward,
+    block: block,
+    listen: listen
+  };
+  return history;
+}
+
+var HashChangeEvent$1 = 'hashchange';
+var HashPathCoders = {
+  hashbang: {
+    encodePath: function encodePath(path) {
+      return path.charAt(0) === '!' ? path : '!/' + stripLeadingSlash(path);
+    },
+    decodePath: function decodePath(path) {
+      return path.charAt(0) === '!' ? path.substr(1) : path;
+    }
+  },
+  noslash: {
+    encodePath: stripLeadingSlash,
+    decodePath: addLeadingSlash$1
+  },
+  slash: {
+    encodePath: addLeadingSlash$1,
+    decodePath: addLeadingSlash$1
+  }
+};
+
+function stripHash(url) {
+  var hashIndex = url.indexOf('#');
+  return hashIndex === -1 ? url : url.slice(0, hashIndex);
+}
+
+function getHashPath() {
+  // We can't use window.location.hash here because it's not
+  // consistent across browsers - Firefox will pre-decode it!
+  var href = window.location.href;
+  var hashIndex = href.indexOf('#');
+  return hashIndex === -1 ? '' : href.substring(hashIndex + 1);
+}
+
+function pushHashPath(path) {
+  window.location.hash = path;
+}
+
+function replaceHashPath(path) {
+  window.location.replace(stripHash(window.location.href) + '#' + path);
+}
+
+function createHashHistory(props) {
+  if (props === void 0) {
+    props = {};
+  }
+
+  !canUseDOM$1 ? process.env.NODE_ENV !== "production" ? invariant(false, 'Hash history needs a DOM') : invariant(false) : void 0;
+  var globalHistory = window.history;
+  var canGoWithoutReload = supportsGoWithoutReloadUsingHash();
+  var _props = props,
+      _props$getUserConfirm = _props.getUserConfirmation,
+      getUserConfirmation = _props$getUserConfirm === void 0 ? getConfirmation : _props$getUserConfirm,
+      _props$hashType = _props.hashType,
+      hashType = _props$hashType === void 0 ? 'slash' : _props$hashType;
+  var basename = props.basename ? stripTrailingSlash(addLeadingSlash$1(props.basename)) : '';
+  var _HashPathCoders$hashT = HashPathCoders[hashType],
+      encodePath = _HashPathCoders$hashT.encodePath,
+      decodePath = _HashPathCoders$hashT.decodePath;
+
+  function getDOMLocation() {
+    var path = decodePath(getHashPath());
+    process.env.NODE_ENV !== "production" ? warning(!basename || hasBasename(path, basename), 'You are attempting to use a basename on a page whose URL path does not begin ' + 'with the basename. Expected path "' + path + '" to begin with "' + basename + '".') : void 0;
+    if (basename) path = stripBasename$1(path, basename);
+    return createLocation(path);
+  }
+
+  var transitionManager = createTransitionManager();
+
+  function setState(nextState) {
+    _extends$N(history, nextState);
+
+    history.length = globalHistory.length;
+    transitionManager.notifyListeners(history.location, history.action);
+  }
+
+  var forceNextPop = false;
+  var ignorePath = null;
+
+  function locationsAreEqual$$1(a, b) {
+    return a.pathname === b.pathname && a.search === b.search && a.hash === b.hash;
+  }
+
+  function handleHashChange() {
+    var path = getHashPath();
+    var encodedPath = encodePath(path);
+
+    if (path !== encodedPath) {
+      // Ensure we always have a properly-encoded hash.
+      replaceHashPath(encodedPath);
+    } else {
+      var location = getDOMLocation();
+      var prevLocation = history.location;
+      if (!forceNextPop && locationsAreEqual$$1(prevLocation, location)) return; // A hashchange doesn't always == location change.
+
+      if (ignorePath === createPath(location)) return; // Ignore this change; we already setState in push/replace.
+
+      ignorePath = null;
+      handlePop(location);
+    }
+  }
+
+  function handlePop(location) {
+    if (forceNextPop) {
+      forceNextPop = false;
+      setState();
+    } else {
+      var action = 'POP';
+      transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+        if (ok) {
+          setState({
+            action: action,
+            location: location
+          });
+        } else {
+          revertPop(location);
+        }
+      });
+    }
+  }
+
+  function revertPop(fromLocation) {
+    var toLocation = history.location; // TODO: We could probably make this more reliable by
+    // keeping a list of paths we've seen in sessionStorage.
+    // Instead, we just default to 0 for paths we don't know.
+
+    var toIndex = allPaths.lastIndexOf(createPath(toLocation));
+    if (toIndex === -1) toIndex = 0;
+    var fromIndex = allPaths.lastIndexOf(createPath(fromLocation));
+    if (fromIndex === -1) fromIndex = 0;
+    var delta = toIndex - fromIndex;
+
+    if (delta) {
+      forceNextPop = true;
+      go(delta);
+    }
+  } // Ensure the hash is encoded properly before doing anything else.
+
+
+  var path = getHashPath();
+  var encodedPath = encodePath(path);
+  if (path !== encodedPath) replaceHashPath(encodedPath);
+  var initialLocation = getDOMLocation();
+  var allPaths = [createPath(initialLocation)]; // Public interface
+
+  function createHref(location) {
+    var baseTag = document.querySelector('base');
+    var href = '';
+
+    if (baseTag && baseTag.getAttribute('href')) {
+      href = stripHash(window.location.href);
+    }
+
+    return href + '#' + encodePath(basename + createPath(location));
+  }
+
+  function push(path, state) {
+    process.env.NODE_ENV !== "production" ? warning(state === undefined, 'Hash history cannot push state; it is ignored') : void 0;
+    var action = 'PUSH';
+    var location = createLocation(path, undefined, undefined, history.location);
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+      var path = createPath(location);
+      var encodedPath = encodePath(basename + path);
+      var hashChanged = getHashPath() !== encodedPath;
+
+      if (hashChanged) {
+        // We cannot tell if a hashchange was caused by a PUSH, so we'd
+        // rather setState here and ignore the hashchange. The caveat here
+        // is that other hash histories in the page will consider it a POP.
+        ignorePath = path;
+        pushHashPath(encodedPath);
+        var prevIndex = allPaths.lastIndexOf(createPath(history.location));
+        var nextPaths = allPaths.slice(0, prevIndex + 1);
+        nextPaths.push(path);
+        allPaths = nextPaths;
+        setState({
+          action: action,
+          location: location
+        });
+      } else {
+        process.env.NODE_ENV !== "production" ? warning(false, 'Hash history cannot PUSH the same path; a new entry will not be added to the history stack') : void 0;
+        setState();
+      }
+    });
+  }
+
+  function replace(path, state) {
+    process.env.NODE_ENV !== "production" ? warning(state === undefined, 'Hash history cannot replace state; it is ignored') : void 0;
+    var action = 'REPLACE';
+    var location = createLocation(path, undefined, undefined, history.location);
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+      var path = createPath(location);
+      var encodedPath = encodePath(basename + path);
+      var hashChanged = getHashPath() !== encodedPath;
+
+      if (hashChanged) {
+        // We cannot tell if a hashchange was caused by a REPLACE, so we'd
+        // rather setState here and ignore the hashchange. The caveat here
+        // is that other hash histories in the page will consider it a POP.
+        ignorePath = path;
+        replaceHashPath(encodedPath);
+      }
+
+      var prevIndex = allPaths.indexOf(createPath(history.location));
+      if (prevIndex !== -1) allPaths[prevIndex] = path;
+      setState({
+        action: action,
+        location: location
+      });
+    });
+  }
+
+  function go(n) {
+    process.env.NODE_ENV !== "production" ? warning(canGoWithoutReload, 'Hash history go(n) causes a full page reload in this browser') : void 0;
+    globalHistory.go(n);
+  }
+
+  function goBack() {
+    go(-1);
+  }
+
+  function goForward() {
+    go(1);
+  }
+
+  var listenerCount = 0;
+
+  function checkDOMListeners(delta) {
+    listenerCount += delta;
+
+    if (listenerCount === 1 && delta === 1) {
+      window.addEventListener(HashChangeEvent$1, handleHashChange);
+    } else if (listenerCount === 0) {
+      window.removeEventListener(HashChangeEvent$1, handleHashChange);
+    }
+  }
+
+  var isBlocked = false;
+
+  function block(prompt) {
+    if (prompt === void 0) {
+      prompt = false;
+    }
+
+    var unblock = transitionManager.setPrompt(prompt);
+
+    if (!isBlocked) {
+      checkDOMListeners(1);
+      isBlocked = true;
+    }
+
+    return function () {
+      if (isBlocked) {
+        isBlocked = false;
+        checkDOMListeners(-1);
+      }
+
+      return unblock();
+    };
+  }
+
+  function listen(listener) {
+    var unlisten = transitionManager.appendListener(listener);
+    checkDOMListeners(1);
+    return function () {
+      checkDOMListeners(-1);
+      unlisten();
+    };
+  }
+
+  var history = {
+    length: globalHistory.length,
+    action: 'POP',
+    location: initialLocation,
+    createHref: createHref,
+    push: push,
+    replace: replace,
+    go: go,
+    goBack: goBack,
+    goForward: goForward,
+    block: block,
+    listen: listen
+  };
+  return history;
+}
+
+function clamp(n, lowerBound, upperBound) {
+  return Math.min(Math.max(n, lowerBound), upperBound);
+}
+/**
+ * Creates a history object that stores locations in memory.
+ */
+
+
+function createMemoryHistory(props) {
+  if (props === void 0) {
+    props = {};
+  }
+
+  var _props = props,
+      getUserConfirmation = _props.getUserConfirmation,
+      _props$initialEntries = _props.initialEntries,
+      initialEntries = _props$initialEntries === void 0 ? ['/'] : _props$initialEntries,
+      _props$initialIndex = _props.initialIndex,
+      initialIndex = _props$initialIndex === void 0 ? 0 : _props$initialIndex,
+      _props$keyLength = _props.keyLength,
+      keyLength = _props$keyLength === void 0 ? 6 : _props$keyLength;
+  var transitionManager = createTransitionManager();
+
+  function setState(nextState) {
+    _extends$N(history, nextState);
+
+    history.length = history.entries.length;
+    transitionManager.notifyListeners(history.location, history.action);
+  }
+
+  function createKey() {
+    return Math.random().toString(36).substr(2, keyLength);
+  }
+
+  var index = clamp(initialIndex, 0, initialEntries.length - 1);
+  var entries = initialEntries.map(function (entry) {
+    return typeof entry === 'string' ? createLocation(entry, undefined, createKey()) : createLocation(entry, undefined, entry.key || createKey());
+  }); // Public interface
+
+  var createHref = createPath;
+
+  function push(path, state) {
+    process.env.NODE_ENV !== "production" ? warning(!(typeof path === 'object' && path.state !== undefined && state !== undefined), 'You should avoid providing a 2nd state argument to push when the 1st ' + 'argument is a location-like object that already has state; it is ignored') : void 0;
+    var action = 'PUSH';
+    var location = createLocation(path, state, createKey(), history.location);
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+      var prevIndex = history.index;
+      var nextIndex = prevIndex + 1;
+      var nextEntries = history.entries.slice(0);
+
+      if (nextEntries.length > nextIndex) {
+        nextEntries.splice(nextIndex, nextEntries.length - nextIndex, location);
+      } else {
+        nextEntries.push(location);
+      }
+
+      setState({
+        action: action,
+        location: location,
+        index: nextIndex,
+        entries: nextEntries
+      });
+    });
+  }
+
+  function replace(path, state) {
+    process.env.NODE_ENV !== "production" ? warning(!(typeof path === 'object' && path.state !== undefined && state !== undefined), 'You should avoid providing a 2nd state argument to replace when the 1st ' + 'argument is a location-like object that already has state; it is ignored') : void 0;
+    var action = 'REPLACE';
+    var location = createLocation(path, state, createKey(), history.location);
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (!ok) return;
+      history.entries[history.index] = location;
+      setState({
+        action: action,
+        location: location
+      });
+    });
+  }
+
+  function go(n) {
+    var nextIndex = clamp(history.index + n, 0, history.entries.length - 1);
+    var action = 'POP';
+    var location = history.entries[nextIndex];
+    transitionManager.confirmTransitionTo(location, action, getUserConfirmation, function (ok) {
+      if (ok) {
+        setState({
+          action: action,
+          location: location,
+          index: nextIndex
+        });
+      } else {
+        // Mimic the behavior of DOM histories by
+        // causing a render after a cancelled POP.
+        setState();
+      }
+    });
+  }
+
+  function goBack() {
+    go(-1);
+  }
+
+  function goForward() {
+    go(1);
+  }
+
+  function canGo(n) {
+    var nextIndex = history.index + n;
+    return nextIndex >= 0 && nextIndex < history.entries.length;
+  }
+
+  function block(prompt) {
+    if (prompt === void 0) {
+      prompt = false;
+    }
+
+    return transitionManager.setPrompt(prompt);
+  }
+
+  function listen(listener) {
+    return transitionManager.appendListener(listener);
+  }
+
+  var history = {
+    length: entries.length,
+    action: 'POP',
+    location: entries[index],
+    index: index,
+    entries: entries,
+    createHref: createHref,
+    push: push,
+    replace: replace,
+    go: go,
+    goBack: goBack,
+    goForward: goForward,
+    canGo: canGo,
+    block: block,
+    listen: listen
+  };
+  return history;
+}
+
+var MAX_SIGNED_31_BIT_INT = 1073741823;
+var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : {};
+
+function getUniqueId() {
+  var key = '__global_unique_id__';
+  return commonjsGlobal[key] = (commonjsGlobal[key] || 0) + 1;
+}
+
+function objectIs(x, y) {
+  if (x === y) {
+    return x !== 0 || 1 / x === 1 / y;
+  } else {
+    return x !== x && y !== y;
+  }
+}
+
+function createEventEmitter(value) {
+  var handlers = [];
+  return {
+    on: function on(handler) {
+      handlers.push(handler);
+    },
+    off: function off(handler) {
+      handlers = handlers.filter(function (h) {
+        return h !== handler;
+      });
+    },
+    get: function get() {
+      return value;
+    },
+    set: function set(newValue, changedBits) {
+      value = newValue;
+      handlers.forEach(function (handler) {
+        return handler(value, changedBits);
+      });
+    }
+  };
+}
+
+function onlyChild(children) {
+  return Array.isArray(children) ? children[0] : children;
+}
+
+function createReactContext(defaultValue, calculateChangedBits) {
+  var _Provider$childContex, _Consumer$contextType;
+
+  var contextProp = '__create-react-context-' + getUniqueId() + '__';
+
+  var Provider = /*#__PURE__*/function (_Component) {
+    _inheritsLoose$1(Provider, _Component);
+
+    function Provider() {
+      var _this;
+
+      _this = _Component.apply(this, arguments) || this;
+      _this.emitter = createEventEmitter(_this.props.value);
+      return _this;
+    }
+
+    var _proto = Provider.prototype;
+
+    _proto.getChildContext = function getChildContext() {
+      var _ref;
+
+      return _ref = {}, _ref[contextProp] = this.emitter, _ref;
+    };
+
+    _proto.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+      if (this.props.value !== nextProps.value) {
+        var oldValue = this.props.value;
+        var newValue = nextProps.value;
+        var changedBits;
+
+        if (objectIs(oldValue, newValue)) {
+          changedBits = 0;
+        } else {
+          changedBits = typeof calculateChangedBits === 'function' ? calculateChangedBits(oldValue, newValue) : MAX_SIGNED_31_BIT_INT;
+
+          if (process.env.NODE_ENV !== 'production') {
+            warning((changedBits & MAX_SIGNED_31_BIT_INT) === changedBits, 'calculateChangedBits: Expected the return value to be a ' + '31-bit integer. Instead received: ' + changedBits);
+          }
+
+          changedBits |= 0;
+
+          if (changedBits !== 0) {
+            this.emitter.set(nextProps.value, changedBits);
+          }
+        }
+      }
+    };
+
+    _proto.render = function render() {
+      return this.props.children;
+    };
+
+    return Provider;
+  }(React.Component);
+
+  Provider.childContextTypes = (_Provider$childContex = {}, _Provider$childContex[contextProp] = propTypes$3.object.isRequired, _Provider$childContex);
+
+  var Consumer = /*#__PURE__*/function (_Component2) {
+    _inheritsLoose$1(Consumer, _Component2);
+
+    function Consumer() {
+      var _this2;
+
+      _this2 = _Component2.apply(this, arguments) || this;
+      _this2.state = {
+        value: _this2.getValue()
+      };
+
+      _this2.onUpdate = function (newValue, changedBits) {
+        var observedBits = _this2.observedBits | 0;
+
+        if ((observedBits & changedBits) !== 0) {
+          _this2.setState({
+            value: _this2.getValue()
+          });
+        }
+      };
+
+      return _this2;
+    }
+
+    var _proto2 = Consumer.prototype;
+
+    _proto2.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
+      var observedBits = nextProps.observedBits;
+      this.observedBits = observedBits === undefined || observedBits === null ? MAX_SIGNED_31_BIT_INT : observedBits;
+    };
+
+    _proto2.componentDidMount = function componentDidMount() {
+      if (this.context[contextProp]) {
+        this.context[contextProp].on(this.onUpdate);
+      }
+
+      var observedBits = this.props.observedBits;
+      this.observedBits = observedBits === undefined || observedBits === null ? MAX_SIGNED_31_BIT_INT : observedBits;
+    };
+
+    _proto2.componentWillUnmount = function componentWillUnmount() {
+      if (this.context[contextProp]) {
+        this.context[contextProp].off(this.onUpdate);
+      }
+    };
+
+    _proto2.getValue = function getValue() {
+      if (this.context[contextProp]) {
+        return this.context[contextProp].get();
+      } else {
+        return defaultValue;
+      }
+    };
+
+    _proto2.render = function render() {
+      return onlyChild(this.props.children)(this.state.value);
+    };
+
+    return Consumer;
+  }(React.Component);
+
+  Consumer.contextTypes = (_Consumer$contextType = {}, _Consumer$contextType[contextProp] = propTypes$3.object, _Consumer$contextType);
+  return {
+    Provider: Provider,
+    Consumer: Consumer
+  };
+}
+
+var index = React__default$1['default'].createContext || createReactContext;
+
+var isarray = Array.isArray || function (arr) {
+  return Object.prototype.toString.call(arr) == '[object Array]';
+};
+
+/**
+ * Expose `pathToRegexp`.
+ */
+
+
+var pathToRegexp_1 = pathToRegexp;
+var parse_1 = parse;
+var compile_1 = compile;
+var tokensToFunction_1 = tokensToFunction;
+var tokensToRegExp_1 = tokensToRegExp;
+/**
+ * The main path matching regexp utility.
+ *
+ * @type {RegExp}
+ */
+
+var PATH_REGEXP = new RegExp([// Match escaped characters that would otherwise appear in future matches.
+// This allows the user to escape special characters that won't transform.
+'(\\\\.)', // Match Express-style parameters and un-named parameters with a prefix
+// and optional suffixes. Matches appear as:
+//
+// "/:test(\\d+)?" => ["/", "test", "\d+", undefined, "?", undefined]
+// "/route(\\d+)"  => [undefined, undefined, undefined, "\d+", undefined, undefined]
+// "/*"            => ["/", undefined, undefined, undefined, undefined, "*"]
+'([\\/.])?(?:(?:\\:(\\w+)(?:\\(((?:\\\\.|[^\\\\()])+)\\))?|\\(((?:\\\\.|[^\\\\()])+)\\))([+*?])?|(\\*))'].join('|'), 'g');
+/**
+ * Parse a string for the raw tokens.
+ *
+ * @param  {string}  str
+ * @param  {Object=} options
+ * @return {!Array}
+ */
+
+function parse(str, options) {
+  var tokens = [];
+  var key = 0;
+  var index = 0;
+  var path = '';
+  var defaultDelimiter = options && options.delimiter || '/';
+  var res;
+
+  while ((res = PATH_REGEXP.exec(str)) != null) {
+    var m = res[0];
+    var escaped = res[1];
+    var offset = res.index;
+    path += str.slice(index, offset);
+    index = offset + m.length; // Ignore already escaped sequences.
+
+    if (escaped) {
+      path += escaped[1];
+      continue;
+    }
+
+    var next = str[index];
+    var prefix = res[2];
+    var name = res[3];
+    var capture = res[4];
+    var group = res[5];
+    var modifier = res[6];
+    var asterisk = res[7]; // Push the current path onto the tokens.
+
+    if (path) {
+      tokens.push(path);
+      path = '';
+    }
+
+    var partial = prefix != null && next != null && next !== prefix;
+    var repeat = modifier === '+' || modifier === '*';
+    var optional = modifier === '?' || modifier === '*';
+    var delimiter = res[2] || defaultDelimiter;
+    var pattern = capture || group;
+    tokens.push({
+      name: name || key++,
+      prefix: prefix || '',
+      delimiter: delimiter,
+      optional: optional,
+      repeat: repeat,
+      partial: partial,
+      asterisk: !!asterisk,
+      pattern: pattern ? escapeGroup(pattern) : asterisk ? '.*' : '[^' + escapeString(delimiter) + ']+?'
+    });
+  } // Match any characters still remaining.
+
+
+  if (index < str.length) {
+    path += str.substr(index);
+  } // If the path exists, push it onto the end.
+
+
+  if (path) {
+    tokens.push(path);
+  }
+
+  return tokens;
+}
+/**
+ * Compile a string to a template function for the path.
+ *
+ * @param  {string}             str
+ * @param  {Object=}            options
+ * @return {!function(Object=, Object=)}
+ */
+
+
+function compile(str, options) {
+  return tokensToFunction(parse(str, options), options);
+}
+/**
+ * Prettier encoding of URI path segments.
+ *
+ * @param  {string}
+ * @return {string}
+ */
+
+
+function encodeURIComponentPretty(str) {
+  return encodeURI(str).replace(/[\/?#]/g, function (c) {
+    return '%' + c.charCodeAt(0).toString(16).toUpperCase();
+  });
+}
+/**
+ * Encode the asterisk parameter. Similar to `pretty`, but allows slashes.
+ *
+ * @param  {string}
+ * @return {string}
+ */
+
+
+function encodeAsterisk(str) {
+  return encodeURI(str).replace(/[?#]/g, function (c) {
+    return '%' + c.charCodeAt(0).toString(16).toUpperCase();
+  });
+}
+/**
+ * Expose a method for transforming tokens into the path function.
+ */
+
+
+function tokensToFunction(tokens, options) {
+  // Compile all the tokens into regexps.
+  var matches = new Array(tokens.length); // Compile all the patterns before compilation.
+
+  for (var i = 0; i < tokens.length; i++) {
+    if (typeof tokens[i] === 'object') {
+      matches[i] = new RegExp('^(?:' + tokens[i].pattern + ')$', flags(options));
+    }
+  }
+
+  return function (obj, opts) {
+    var path = '';
+    var data = obj || {};
+    var options = opts || {};
+    var encode = options.pretty ? encodeURIComponentPretty : encodeURIComponent;
+
+    for (var i = 0; i < tokens.length; i++) {
+      var token = tokens[i];
+
+      if (typeof token === 'string') {
+        path += token;
+        continue;
+      }
+
+      var value = data[token.name];
+      var segment;
+
+      if (value == null) {
+        if (token.optional) {
+          // Prepend partial segment prefixes.
+          if (token.partial) {
+            path += token.prefix;
+          }
+
+          continue;
+        } else {
+          throw new TypeError('Expected "' + token.name + '" to be defined');
+        }
+      }
+
+      if (isarray(value)) {
+        if (!token.repeat) {
+          throw new TypeError('Expected "' + token.name + '" to not repeat, but received `' + JSON.stringify(value) + '`');
+        }
+
+        if (value.length === 0) {
+          if (token.optional) {
+            continue;
+          } else {
+            throw new TypeError('Expected "' + token.name + '" to not be empty');
+          }
+        }
+
+        for (var j = 0; j < value.length; j++) {
+          segment = encode(value[j]);
+
+          if (!matches[i].test(segment)) {
+            throw new TypeError('Expected all "' + token.name + '" to match "' + token.pattern + '", but received `' + JSON.stringify(segment) + '`');
+          }
+
+          path += (j === 0 ? token.prefix : token.delimiter) + segment;
+        }
+
+        continue;
+      }
+
+      segment = token.asterisk ? encodeAsterisk(value) : encode(value);
+
+      if (!matches[i].test(segment)) {
+        throw new TypeError('Expected "' + token.name + '" to match "' + token.pattern + '", but received "' + segment + '"');
+      }
+
+      path += token.prefix + segment;
+    }
+
+    return path;
+  };
+}
+/**
+ * Escape a regular expression string.
+ *
+ * @param  {string} str
+ * @return {string}
+ */
+
+
+function escapeString(str) {
+  return str.replace(/([.+*?=^!:${}()[\]|\/\\])/g, '\\$1');
+}
+/**
+ * Escape the capturing group by escaping special characters and meaning.
+ *
+ * @param  {string} group
+ * @return {string}
+ */
+
+
+function escapeGroup(group) {
+  return group.replace(/([=!:$\/()])/g, '\\$1');
+}
+/**
+ * Attach the keys as a property of the regexp.
+ *
+ * @param  {!RegExp} re
+ * @param  {Array}   keys
+ * @return {!RegExp}
+ */
+
+
+function attachKeys(re, keys) {
+  re.keys = keys;
+  return re;
+}
+/**
+ * Get the flags for a regexp from the options.
+ *
+ * @param  {Object} options
+ * @return {string}
+ */
+
+
+function flags(options) {
+  return options && options.sensitive ? '' : 'i';
+}
+/**
+ * Pull out keys from a regexp.
+ *
+ * @param  {!RegExp} path
+ * @param  {!Array}  keys
+ * @return {!RegExp}
+ */
+
+
+function regexpToRegexp(path, keys) {
+  // Use a negative lookahead to match only capturing groups.
+  var groups = path.source.match(/\((?!\?)/g);
+
+  if (groups) {
+    for (var i = 0; i < groups.length; i++) {
+      keys.push({
+        name: i,
+        prefix: null,
+        delimiter: null,
+        optional: false,
+        repeat: false,
+        partial: false,
+        asterisk: false,
+        pattern: null
+      });
+    }
+  }
+
+  return attachKeys(path, keys);
+}
+/**
+ * Transform an array into a regexp.
+ *
+ * @param  {!Array}  path
+ * @param  {Array}   keys
+ * @param  {!Object} options
+ * @return {!RegExp}
+ */
+
+
+function arrayToRegexp(path, keys, options) {
+  var parts = [];
+
+  for (var i = 0; i < path.length; i++) {
+    parts.push(pathToRegexp(path[i], keys, options).source);
+  }
+
+  var regexp = new RegExp('(?:' + parts.join('|') + ')', flags(options));
+  return attachKeys(regexp, keys);
+}
+/**
+ * Create a path regexp from string input.
+ *
+ * @param  {string}  path
+ * @param  {!Array}  keys
+ * @param  {!Object} options
+ * @return {!RegExp}
+ */
+
+
+function stringToRegexp(path, keys, options) {
+  return tokensToRegExp(parse(path, options), keys, options);
+}
+/**
+ * Expose a function for taking tokens and returning a RegExp.
+ *
+ * @param  {!Array}          tokens
+ * @param  {(Array|Object)=} keys
+ * @param  {Object=}         options
+ * @return {!RegExp}
+ */
+
+
+function tokensToRegExp(tokens, keys, options) {
+  if (!isarray(keys)) {
+    options =
+    /** @type {!Object} */
+    keys || options;
+    keys = [];
+  }
+
+  options = options || {};
+  var strict = options.strict;
+  var end = options.end !== false;
+  var route = ''; // Iterate over the tokens and create our regexp string.
+
+  for (var i = 0; i < tokens.length; i++) {
+    var token = tokens[i];
+
+    if (typeof token === 'string') {
+      route += escapeString(token);
+    } else {
+      var prefix = escapeString(token.prefix);
+      var capture = '(?:' + token.pattern + ')';
+      keys.push(token);
+
+      if (token.repeat) {
+        capture += '(?:' + prefix + capture + ')*';
+      }
+
+      if (token.optional) {
+        if (!token.partial) {
+          capture = '(?:' + prefix + '(' + capture + '))?';
+        } else {
+          capture = prefix + '(' + capture + ')?';
+        }
+      } else {
+        capture = prefix + '(' + capture + ')';
+      }
+
+      route += capture;
+    }
+  }
+
+  var delimiter = escapeString(options.delimiter || '/');
+  var endsWithDelimiter = route.slice(-delimiter.length) === delimiter; // In non-strict mode we allow a slash at the end of match. If the path to
+  // match already ends with a slash, we remove it for consistency. The slash
+  // is valid at the end of a path match, not in the middle. This is important
+  // in non-ending mode, where "/test/" shouldn't match "/test//route".
+
+  if (!strict) {
+    route = (endsWithDelimiter ? route.slice(0, -delimiter.length) : route) + '(?:' + delimiter + '(?=$))?';
+  }
+
+  if (end) {
+    route += '$';
+  } else {
+    // In non-ending mode, we need the capturing groups to match as much as
+    // possible by using a positive lookahead to the end or next path segment.
+    route += strict && endsWithDelimiter ? '' : '(?=' + delimiter + '|$)';
+  }
+
+  return attachKeys(new RegExp('^' + route, flags(options)), keys);
+}
+/**
+ * Normalize the given path string, returning a regular expression.
+ *
+ * An empty array can be passed in for the keys, which will hold the
+ * placeholder key descriptions. For example, using `/user/:id`, `keys` will
+ * contain `[{ name: 'id', delimiter: '/', optional: false, repeat: false }]`.
+ *
+ * @param  {(string|RegExp|Array)} path
+ * @param  {(Array|Object)=}       keys
+ * @param  {Object=}               options
+ * @return {!RegExp}
+ */
+
+
+function pathToRegexp(path, keys, options) {
+  if (!isarray(keys)) {
+    options =
+    /** @type {!Object} */
+    keys || options;
+    keys = [];
+  }
+
+  options = options || {};
+
+  if (path instanceof RegExp) {
+    return regexpToRegexp(path,
+    /** @type {!Array} */
+    keys);
+  }
+
+  if (isarray(path)) {
+    return arrayToRegexp(
+    /** @type {!Array} */
+    path,
+    /** @type {!Array} */
+    keys, options);
+  }
+
+  return stringToRegexp(
+  /** @type {string} */
+  path,
+  /** @type {!Array} */
+  keys, options);
+}
+pathToRegexp_1.parse = parse_1;
+pathToRegexp_1.compile = compile_1;
+pathToRegexp_1.tokensToFunction = tokensToFunction_1;
+pathToRegexp_1.tokensToRegExp = tokensToRegExp_1;
+
+var createNamedContext = function createNamedContext(name) {
+  var context = index();
+  context.displayName = name;
+  return context;
+};
+
+var historyContext = /*#__PURE__*/createNamedContext("Router-History"); // TODO: Replace with React.createContext once we can assume React 16+
+
+var createNamedContext$1 = function createNamedContext(name) {
+  var context = index();
+  context.displayName = name;
+  return context;
+};
+
+var context = /*#__PURE__*/createNamedContext$1("Router");
+/**
+ * The public API for putting history on context.
+ */
+
+var Router = /*#__PURE__*/function (_React$Component) {
+  _inheritsLoose$1(Router, _React$Component);
+
+  Router.computeRootMatch = function computeRootMatch(pathname) {
+    return {
+      path: "/",
+      url: "/",
+      params: {},
+      isExact: pathname === "/"
+    };
+  };
+
+  function Router(props) {
+    var _this;
+
+    _this = _React$Component.call(this, props) || this;
+    _this.state = {
+      location: props.history.location
+    }; // This is a bit of a hack. We have to start listening for location
+    // changes here in the constructor in case there are any <Redirect>s
+    // on the initial render. If there are, they will replace/push when
+    // they mount and since cDM fires in children before parents, we may
+    // get a new location before the <Router> is mounted.
+
+    _this._isMounted = false;
+    _this._pendingLocation = null;
+
+    if (!props.staticContext) {
+      _this.unlisten = props.history.listen(function (location) {
+        if (_this._isMounted) {
+          _this.setState({
+            location: location
+          });
+        } else {
+          _this._pendingLocation = location;
+        }
+      });
+    }
+
+    return _this;
+  }
+
+  var _proto = Router.prototype;
+
+  _proto.componentDidMount = function componentDidMount() {
+    this._isMounted = true;
+
+    if (this._pendingLocation) {
+      this.setState({
+        location: this._pendingLocation
+      });
+    }
+  };
+
+  _proto.componentWillUnmount = function componentWillUnmount() {
+    if (this.unlisten) this.unlisten();
+  };
+
+  _proto.render = function render() {
+    return React__default$1['default'].createElement(context.Provider, {
+      value: {
+        history: this.props.history,
+        location: this.state.location,
+        match: Router.computeRootMatch(this.state.location.pathname),
+        staticContext: this.props.staticContext
+      }
+    }, React__default$1['default'].createElement(historyContext.Provider, {
+      children: this.props.children || null,
+      value: this.props.history
+    }));
+  };
+
+  return Router;
+}(React__default$1['default'].Component);
+
+if (process.env.NODE_ENV !== "production") {
+  Router.propTypes = {
+    children: propTypes$3.node,
+    history: propTypes$3.object.isRequired,
+    staticContext: propTypes$3.object
+  };
+
+  Router.prototype.componentDidUpdate = function (prevProps) {
+    process.env.NODE_ENV !== "production" ? warning(prevProps.history === this.props.history, "You cannot change <Router history>") : void 0;
+  };
+}
+/**
+ * The public API for a <Router> that stores location in memory.
+ */
+
+
+var MemoryRouter = /*#__PURE__*/function (_React$Component) {
+  _inheritsLoose$1(MemoryRouter, _React$Component);
+
+  function MemoryRouter() {
+    var _this;
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _React$Component.call.apply(_React$Component, [this].concat(args)) || this;
+    _this.history = createMemoryHistory(_this.props);
+    return _this;
+  }
+
+  var _proto = MemoryRouter.prototype;
+
+  _proto.render = function render() {
+    return React__default$1['default'].createElement(Router, {
+      history: this.history,
+      children: this.props.children
+    });
+  };
+
+  return MemoryRouter;
+}(React__default$1['default'].Component);
+
+if (process.env.NODE_ENV !== "production") {
+  MemoryRouter.propTypes = {
+    initialEntries: propTypes$3.array,
+    initialIndex: propTypes$3.number,
+    getUserConfirmation: propTypes$3.func,
+    keyLength: propTypes$3.number,
+    children: propTypes$3.node
+  };
+
+  MemoryRouter.prototype.componentDidMount = function () {
+    process.env.NODE_ENV !== "production" ? warning(!this.props.history, "<MemoryRouter> ignores the history prop. To use a custom history, " + "use `import { Router }` instead of `import { MemoryRouter as Router }`.") : void 0;
+  };
+}
+
+/*#__PURE__*/(function (_React$Component) {
+  _inheritsLoose$1(Lifecycle, _React$Component);
+
+  function Lifecycle() {
+    return _React$Component.apply(this, arguments) || this;
+  }
+
+  var _proto = Lifecycle.prototype;
+
+  _proto.componentDidMount = function componentDidMount() {
+    if (this.props.onMount) this.props.onMount.call(this, this);
+  };
+
+  _proto.componentDidUpdate = function componentDidUpdate(prevProps) {
+    if (this.props.onUpdate) this.props.onUpdate.call(this, this, prevProps);
+  };
+
+  _proto.componentWillUnmount = function componentWillUnmount() {
+    if (this.props.onUnmount) this.props.onUnmount.call(this, this);
+  };
+
+  _proto.render = function render() {
+    return null;
+  };
+
+  return Lifecycle;
+})(React__default$1['default'].Component);
+
+if (process.env.NODE_ENV !== "production") {
+  var messageType = propTypes$3.oneOfType([propTypes$3.func, propTypes$3.string]);
+  ({
+    when: propTypes$3.bool,
+    message: messageType.isRequired
+  });
+}
+
+if (process.env.NODE_ENV !== "production") {
+  ({
+    push: propTypes$3.bool,
+    from: propTypes$3.string,
+    to: propTypes$3.oneOfType([propTypes$3.string, propTypes$3.object]).isRequired
+  });
+}
+
+var cache$1 = {};
+var cacheLimit$1 = 10000;
+var cacheCount$1 = 0;
+
+function compilePath$1(path, options) {
+  var cacheKey = "" + options.end + options.strict + options.sensitive;
+  var pathCache = cache$1[cacheKey] || (cache$1[cacheKey] = {});
+  if (pathCache[path]) return pathCache[path];
+  var keys = [];
+  var regexp = pathToRegexp_1(path, keys, options);
+  var result = {
+    regexp: regexp,
+    keys: keys
+  };
+
+  if (cacheCount$1 < cacheLimit$1) {
+    pathCache[path] = result;
+    cacheCount$1++;
+  }
+
+  return result;
+}
+/**
+ * Public API for matching a URL pathname to a path.
+ */
+
+
+function matchPath(pathname, options) {
+  if (options === void 0) {
+    options = {};
+  }
+
+  if (typeof options === "string" || Array.isArray(options)) {
+    options = {
+      path: options
+    };
+  }
+
+  var _options = options,
+      path = _options.path,
+      _options$exact = _options.exact,
+      exact = _options$exact === void 0 ? false : _options$exact,
+      _options$strict = _options.strict,
+      strict = _options$strict === void 0 ? false : _options$strict,
+      _options$sensitive = _options.sensitive,
+      sensitive = _options$sensitive === void 0 ? false : _options$sensitive;
+  var paths = [].concat(path);
+  return paths.reduce(function (matched, path) {
+    if (!path && path !== "") return null;
+    if (matched) return matched;
+
+    var _compilePath = compilePath$1(path, {
+      end: exact,
+      strict: strict,
+      sensitive: sensitive
+    }),
+        regexp = _compilePath.regexp,
+        keys = _compilePath.keys;
+
+    var match = regexp.exec(pathname);
+    if (!match) return null;
+    var url = match[0],
+        values = match.slice(1);
+    var isExact = pathname === url;
+    if (exact && !isExact) return null;
+    return {
+      path: path,
+      // the path used to match
+      url: path === "/" && url === "" ? "/" : url,
+      // the matched portion of the URL
+      isExact: isExact,
+      // whether or not we matched exactly
+      params: keys.reduce(function (memo, key, index) {
+        memo[key.name] = values[index];
+        return memo;
+      }, {})
+    };
+  }, null);
+}
+
+function isEmptyChildren(children) {
+  return React__default$1['default'].Children.count(children) === 0;
+}
+
+function evalChildrenDev(children, props, path) {
+  var value = children(props);
+  process.env.NODE_ENV !== "production" ? warning(value !== undefined, "You returned `undefined` from the `children` function of " + ("<Route" + (path ? " path=\"" + path + "\"" : "") + ">, but you ") + "should have returned a React element or `null`") : void 0;
+  return value || null;
+}
+/**
+ * The public API for matching a single path and rendering.
+ */
+
+
+var Route = /*#__PURE__*/function (_React$Component) {
+  _inheritsLoose$1(Route, _React$Component);
+
+  function Route() {
+    return _React$Component.apply(this, arguments) || this;
+  }
+
+  var _proto = Route.prototype;
+
+  _proto.render = function render() {
+    var _this = this;
+
+    return React__default$1['default'].createElement(context.Consumer, null, function (context$1) {
+      !context$1 ? process.env.NODE_ENV !== "production" ? invariant(false, "You should not use <Route> outside a <Router>") : invariant(false) : void 0;
+      var location = _this.props.location || context$1.location;
+      var match = _this.props.computedMatch ? _this.props.computedMatch // <Switch> already computed the match for us
+      : _this.props.path ? matchPath(location.pathname, _this.props) : context$1.match;
+
+      var props = _extends$N({}, context$1, {
+        location: location,
+        match: match
+      });
+
+      var _this$props = _this.props,
+          children = _this$props.children,
+          component = _this$props.component,
+          render = _this$props.render; // Preact uses an empty array as children by
+      // default, so use null if that's the case.
+
+      if (Array.isArray(children) && children.length === 0) {
+        children = null;
+      }
+
+      return React__default$1['default'].createElement(context.Provider, {
+        value: props
+      }, props.match ? children ? typeof children === "function" ? process.env.NODE_ENV !== "production" ? evalChildrenDev(children, props, _this.props.path) : children(props) : children : component ? React__default$1['default'].createElement(component, props) : render ? render(props) : null : typeof children === "function" ? process.env.NODE_ENV !== "production" ? evalChildrenDev(children, props, _this.props.path) : children(props) : null);
+    });
+  };
+
+  return Route;
+}(React__default$1['default'].Component);
+
+if (process.env.NODE_ENV !== "production") {
+  Route.propTypes = {
+    children: propTypes$3.oneOfType([propTypes$3.func, propTypes$3.node]),
+    component: function component(props, propName) {
+      if (props[propName] && !reactIs.isValidElementType(props[propName])) {
+        return new Error("Invalid prop 'component' supplied to 'Route': the prop is not a valid React component");
+      }
+    },
+    exact: propTypes$3.bool,
+    location: propTypes$3.object,
+    path: propTypes$3.oneOfType([propTypes$3.string, propTypes$3.arrayOf(propTypes$3.string)]),
+    render: propTypes$3.func,
+    sensitive: propTypes$3.bool,
+    strict: propTypes$3.bool
+  };
+
+  Route.prototype.componentDidMount = function () {
+    process.env.NODE_ENV !== "production" ? warning(!(this.props.children && !isEmptyChildren(this.props.children) && this.props.component), "You should not use <Route component> and <Route children> in the same route; <Route component> will be ignored") : void 0;
+    process.env.NODE_ENV !== "production" ? warning(!(this.props.children && !isEmptyChildren(this.props.children) && this.props.render), "You should not use <Route render> and <Route children> in the same route; <Route render> will be ignored") : void 0;
+    process.env.NODE_ENV !== "production" ? warning(!(this.props.component && this.props.render), "You should not use <Route component> and <Route render> in the same route; <Route render> will be ignored") : void 0;
+  };
+
+  Route.prototype.componentDidUpdate = function (prevProps) {
+    process.env.NODE_ENV !== "production" ? warning(!(this.props.location && !prevProps.location), '<Route> elements should not change from uncontrolled to controlled (or vice versa). You initially used no "location" prop and then provided one on a subsequent render.') : void 0;
+    process.env.NODE_ENV !== "production" ? warning(!(!this.props.location && prevProps.location), '<Route> elements should not change from controlled to uncontrolled (or vice versa). You provided a "location" prop initially but omitted it on a subsequent render.') : void 0;
+  };
+}
+
+function addLeadingSlash(path) {
+  return path.charAt(0) === "/" ? path : "/" + path;
+}
+
+function addBasename(basename, location) {
+  if (!basename) return location;
+  return _extends$N({}, location, {
+    pathname: addLeadingSlash(basename) + location.pathname
+  });
+}
+
+function stripBasename(basename, location) {
+  if (!basename) return location;
+  var base = addLeadingSlash(basename);
+  if (location.pathname.indexOf(base) !== 0) return location;
+  return _extends$N({}, location, {
+    pathname: location.pathname.substr(base.length)
+  });
+}
+
+function createURL(location) {
+  return typeof location === "string" ? location : createPath(location);
+}
+
+function staticHandler(methodName) {
+  return function () {
+    process.env.NODE_ENV !== "production" ? invariant(false, "You cannot %s with <StaticRouter>") : invariant(false);
+  };
+}
+
+function noop() {}
+/**
+ * The public top-level API for a "static" <Router>, so-called because it
+ * can't actually change the current location. Instead, it just records
+ * location changes in a context object. Useful mainly in testing and
+ * server-rendering scenarios.
+ */
+
+
+var StaticRouter = /*#__PURE__*/function (_React$Component) {
+  _inheritsLoose$1(StaticRouter, _React$Component);
+
+  function StaticRouter() {
+    var _this;
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _React$Component.call.apply(_React$Component, [this].concat(args)) || this;
+
+    _this.handlePush = function (location) {
+      return _this.navigateTo(location, "PUSH");
+    };
+
+    _this.handleReplace = function (location) {
+      return _this.navigateTo(location, "REPLACE");
+    };
+
+    _this.handleListen = function () {
+      return noop;
+    };
+
+    _this.handleBlock = function () {
+      return noop;
+    };
+
+    return _this;
+  }
+
+  var _proto = StaticRouter.prototype;
+
+  _proto.navigateTo = function navigateTo(location, action) {
+    var _this$props = this.props,
+        _this$props$basename = _this$props.basename,
+        basename = _this$props$basename === void 0 ? "" : _this$props$basename,
+        _this$props$context = _this$props.context,
+        context = _this$props$context === void 0 ? {} : _this$props$context;
+    context.action = action;
+    context.location = addBasename(basename, createLocation(location));
+    context.url = createURL(context.location);
+  };
+
+  _proto.render = function render() {
+    var _this$props2 = this.props,
+        _this$props2$basename = _this$props2.basename,
+        basename = _this$props2$basename === void 0 ? "" : _this$props2$basename,
+        _this$props2$context = _this$props2.context,
+        context = _this$props2$context === void 0 ? {} : _this$props2$context,
+        _this$props2$location = _this$props2.location,
+        location = _this$props2$location === void 0 ? "/" : _this$props2$location,
+        rest = _objectWithoutPropertiesLoose$f(_this$props2, ["basename", "context", "location"]);
+
+    var history = {
+      createHref: function createHref(path) {
+        return addLeadingSlash(basename + createURL(path));
+      },
+      action: "POP",
+      location: stripBasename(basename, createLocation(location)),
+      push: this.handlePush,
+      replace: this.handleReplace,
+      go: staticHandler(),
+      goBack: staticHandler(),
+      goForward: staticHandler(),
+      listen: this.handleListen,
+      block: this.handleBlock
+    };
+    return React__default$1['default'].createElement(Router, _extends$N({}, rest, {
+      history: history,
+      staticContext: context
+    }));
+  };
+
+  return StaticRouter;
+}(React__default$1['default'].Component);
+
+if (process.env.NODE_ENV !== "production") {
+  StaticRouter.propTypes = {
+    basename: propTypes$3.string,
+    context: propTypes$3.object,
+    location: propTypes$3.oneOfType([propTypes$3.string, propTypes$3.object])
+  };
+
+  StaticRouter.prototype.componentDidMount = function () {
+    process.env.NODE_ENV !== "production" ? warning(!this.props.history, "<StaticRouter> ignores the history prop. To use a custom history, " + "use `import { Router }` instead of `import { StaticRouter as Router }`.") : void 0;
+  };
+}
+/**
+ * The public API for rendering the first <Route> that matches.
+ */
+
+
+var Switch = /*#__PURE__*/function (_React$Component) {
+  _inheritsLoose$1(Switch, _React$Component);
+
+  function Switch() {
+    return _React$Component.apply(this, arguments) || this;
+  }
+
+  var _proto = Switch.prototype;
+
+  _proto.render = function render() {
+    var _this = this;
+
+    return React__default$1['default'].createElement(context.Consumer, null, function (context) {
+      !context ? process.env.NODE_ENV !== "production" ? invariant(false, "You should not use <Switch> outside a <Router>") : invariant(false) : void 0;
+      var location = _this.props.location || context.location;
+      var element, match; // We use React.Children.forEach instead of React.Children.toArray().find()
+      // here because toArray adds keys to all child elements and we do not want
+      // to trigger an unmount/remount for two <Route>s that render the same
+      // component at different URLs.
+
+      React__default$1['default'].Children.forEach(_this.props.children, function (child) {
+        if (match == null && React__default$1['default'].isValidElement(child)) {
+          element = child;
+          var path = child.props.path || child.props.from;
+          match = path ? matchPath(location.pathname, _extends$N({}, child.props, {
+            path: path
+          })) : context.match;
+        }
+      });
+      return match ? React__default$1['default'].cloneElement(element, {
+        location: location,
+        computedMatch: match
+      }) : null;
+    });
+  };
+
+  return Switch;
+}(React__default$1['default'].Component);
+
+if (process.env.NODE_ENV !== "production") {
+  Switch.propTypes = {
+    children: propTypes$3.node,
+    location: propTypes$3.object
+  };
+
+  Switch.prototype.componentDidUpdate = function (prevProps) {
+    process.env.NODE_ENV !== "production" ? warning(!(this.props.location && !prevProps.location), '<Switch> elements should not change from uncontrolled to controlled (or vice versa). You initially used no "location" prop and then provided one on a subsequent render.') : void 0;
+    process.env.NODE_ENV !== "production" ? warning(!(!this.props.location && prevProps.location), '<Switch> elements should not change from controlled to uncontrolled (or vice versa). You provided a "location" prop initially but omitted it on a subsequent render.') : void 0;
+  };
+}
+
+React__default$1['default'].useContext;
+
+if (process.env.NODE_ENV !== "production") {
+  if (typeof window !== "undefined") {
+    var global$1 = window;
+    var key = "__react_router_build__";
+    var buildNames = {
+      cjs: "CommonJS",
+      esm: "ES modules",
+      umd: "UMD"
+    };
+
+    if (global$1[key] && global$1[key] !== "esm") {
+      var initialBuildName = buildNames[global$1[key]];
+      var secondaryBuildName = buildNames["esm"]; // TODO: Add link to article that explains in detail how to avoid
+      // loading 2 different builds.
+
+      throw new Error("You are loading the " + secondaryBuildName + " build of React Router " + ("on a page that is already running the " + initialBuildName + " ") + "build, so things won't work right.");
+    }
+
+    global$1[key] = "esm";
+  }
+}
+
+/**
+ * The public API for a <Router> that uses HTML5 history.
+ */
+
+var BrowserRouter = /*#__PURE__*/function (_React$Component) {
+  _inheritsLoose$1(BrowserRouter, _React$Component);
+
+  function BrowserRouter() {
+    var _this;
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _React$Component.call.apply(_React$Component, [this].concat(args)) || this;
+    _this.history = createBrowserHistory(_this.props);
+    return _this;
+  }
+
+  var _proto = BrowserRouter.prototype;
+
+  _proto.render = function render() {
+    return React__default$1['default'].createElement(Router, {
+      history: this.history,
+      children: this.props.children
+    });
+  };
+
+  return BrowserRouter;
+}(React__default$1['default'].Component);
+
+if (process.env.NODE_ENV !== "production") {
+  BrowserRouter.propTypes = {
+    basename: propTypes$3.string,
+    children: propTypes$3.node,
+    forceRefresh: propTypes$3.bool,
+    getUserConfirmation: propTypes$3.func,
+    keyLength: propTypes$3.number
+  };
+
+  BrowserRouter.prototype.componentDidMount = function () {
+    process.env.NODE_ENV !== "production" ? warning(!this.props.history, "<BrowserRouter> ignores the history prop. To use a custom history, " + "use `import { Router }` instead of `import { BrowserRouter as Router }`.") : void 0;
+  };
+}
+/**
+ * The public API for a <Router> that uses window.location.hash.
+ */
+
+
+var HashRouter = /*#__PURE__*/function (_React$Component) {
+  _inheritsLoose$1(HashRouter, _React$Component);
+
+  function HashRouter() {
+    var _this;
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _React$Component.call.apply(_React$Component, [this].concat(args)) || this;
+    _this.history = createHashHistory(_this.props);
+    return _this;
+  }
+
+  var _proto = HashRouter.prototype;
+
+  _proto.render = function render() {
+    return React__default$1['default'].createElement(Router, {
+      history: this.history,
+      children: this.props.children
+    });
+  };
+
+  return HashRouter;
+}(React__default$1['default'].Component);
+
+if (process.env.NODE_ENV !== "production") {
+  HashRouter.propTypes = {
+    basename: propTypes$3.string,
+    children: propTypes$3.node,
+    getUserConfirmation: propTypes$3.func,
+    hashType: propTypes$3.oneOf(["hashbang", "noslash", "slash"])
+  };
+
+  HashRouter.prototype.componentDidMount = function () {
+    process.env.NODE_ENV !== "production" ? warning(!this.props.history, "<HashRouter> ignores the history prop. To use a custom history, " + "use `import { Router }` instead of `import { HashRouter as Router }`.") : void 0;
+  };
+}
+
+var resolveToLocation = function resolveToLocation(to, currentLocation) {
+  return typeof to === "function" ? to(currentLocation) : to;
+};
+
+var normalizeToLocation = function normalizeToLocation(to, currentLocation) {
+  return typeof to === "string" ? createLocation(to, null, null, currentLocation) : to;
+};
+
+var forwardRefShim = function forwardRefShim(C) {
+  return C;
+};
+
+var forwardRef = React__default$1['default'].forwardRef;
+
+if (typeof forwardRef === "undefined") {
+  forwardRef = forwardRefShim;
+}
+
+function isModifiedEvent(event) {
+  return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
+}
+
+var LinkAnchor = forwardRef(function (_ref, forwardedRef) {
+  var innerRef = _ref.innerRef,
+      navigate = _ref.navigate,
+      _onClick = _ref.onClick,
+      rest = _objectWithoutPropertiesLoose$f(_ref, ["innerRef", "navigate", "onClick"]);
+
+  var target = rest.target;
+
+  var props = _extends$N({}, rest, {
+    onClick: function onClick(event) {
+      try {
+        if (_onClick) _onClick(event);
+      } catch (ex) {
+        event.preventDefault();
+        throw ex;
+      }
+
+      if (!event.defaultPrevented && // onClick prevented default
+      event.button === 0 && ( // ignore everything but left clicks
+      !target || target === "_self") && // let browser handle "target=_blank" etc.
+      !isModifiedEvent(event) // ignore clicks with modifier keys
+      ) {
+          event.preventDefault();
+          navigate();
+        }
+    }
+  }); // React 15 compat
+
+
+  if (forwardRefShim !== forwardRef) {
+    props.ref = forwardedRef || innerRef;
+  } else {
+    props.ref = innerRef;
+  }
+  /* eslint-disable-next-line jsx-a11y/anchor-has-content */
+
+
+  return React__default$1['default'].createElement("a", props);
+});
+
+if (process.env.NODE_ENV !== "production") {
+  LinkAnchor.displayName = "LinkAnchor";
+}
+/**
+ * The public API for rendering a history-aware <a>.
+ */
+
+
+var Link = forwardRef(function (_ref2, forwardedRef) {
+  var _ref2$component = _ref2.component,
+      component = _ref2$component === void 0 ? LinkAnchor : _ref2$component,
+      replace = _ref2.replace,
+      to = _ref2.to,
+      innerRef = _ref2.innerRef,
+      rest = _objectWithoutPropertiesLoose$f(_ref2, ["component", "replace", "to", "innerRef"]);
+
+  return React__default$1['default'].createElement(context.Consumer, null, function (context) {
+    !context ? process.env.NODE_ENV !== "production" ? invariant(false, "You should not use <Link> outside a <Router>") : invariant(false) : void 0;
+    var history = context.history;
+    var location = normalizeToLocation(resolveToLocation(to, context.location), context.location);
+    var href = location ? history.createHref(location) : "";
+
+    var props = _extends$N({}, rest, {
+      href: href,
+      navigate: function navigate() {
+        var location = resolveToLocation(to, context.location);
+        var method = replace ? history.replace : history.push;
+        method(location);
+      }
+    }); // React 15 compat
+
+
+    if (forwardRefShim !== forwardRef) {
+      props.ref = forwardedRef || innerRef;
+    } else {
+      props.innerRef = innerRef;
+    }
+
+    return React__default$1['default'].createElement(component, props);
+  });
+});
+
+if (process.env.NODE_ENV !== "production") {
+  var toType = propTypes$3.oneOfType([propTypes$3.string, propTypes$3.object, propTypes$3.func]);
+  var refType = propTypes$3.oneOfType([propTypes$3.string, propTypes$3.func, propTypes$3.shape({
+    current: propTypes$3.any
+  })]);
+  Link.displayName = "Link";
+  Link.propTypes = {
+    innerRef: refType,
+    onClick: propTypes$3.func,
+    replace: propTypes$3.bool,
+    target: propTypes$3.string,
+    to: toType.isRequired
+  };
+}
+
+var forwardRefShim$1 = function forwardRefShim(C) {
+  return C;
+};
+
+var forwardRef$1 = React__default$1['default'].forwardRef;
+
+if (typeof forwardRef$1 === "undefined") {
+  forwardRef$1 = forwardRefShim$1;
+}
+
+function joinClassnames() {
+  for (var _len = arguments.length, classnames = new Array(_len), _key = 0; _key < _len; _key++) {
+    classnames[_key] = arguments[_key];
+  }
+
+  return classnames.filter(function (i) {
+    return i;
+  }).join(" ");
+}
+/**
+ * A <Link> wrapper that knows if it's "active" or not.
+ */
+
+
+var NavLink = forwardRef$1(function (_ref, forwardedRef) {
+  var _ref$ariaCurrent = _ref["aria-current"],
+      ariaCurrent = _ref$ariaCurrent === void 0 ? "page" : _ref$ariaCurrent,
+      _ref$activeClassName = _ref.activeClassName,
+      activeClassName = _ref$activeClassName === void 0 ? "active" : _ref$activeClassName,
+      activeStyle = _ref.activeStyle,
+      classNameProp = _ref.className,
+      exact = _ref.exact,
+      isActiveProp = _ref.isActive,
+      locationProp = _ref.location,
+      sensitive = _ref.sensitive,
+      strict = _ref.strict,
+      styleProp = _ref.style,
+      to = _ref.to,
+      innerRef = _ref.innerRef,
+      rest = _objectWithoutPropertiesLoose$f(_ref, ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive", "location", "sensitive", "strict", "style", "to", "innerRef"]);
+
+  return React__default$1['default'].createElement(context.Consumer, null, function (context) {
+    !context ? process.env.NODE_ENV !== "production" ? invariant(false, "You should not use <NavLink> outside a <Router>") : invariant(false) : void 0;
+    var currentLocation = locationProp || context.location;
+    var toLocation = normalizeToLocation(resolveToLocation(to, currentLocation), currentLocation);
+    var path = toLocation.pathname; // Regex taken from: https://github.com/pillarjs/path-to-regexp/blob/master/index.js#L202
+
+    var escapedPath = path && path.replace(/([.+*?=^!:${}()[\]|/\\])/g, "\\$1");
+    var match = escapedPath ? matchPath(currentLocation.pathname, {
+      path: escapedPath,
+      exact: exact,
+      sensitive: sensitive,
+      strict: strict
+    }) : null;
+    var isActive = !!(isActiveProp ? isActiveProp(match, currentLocation) : match);
+    var className = isActive ? joinClassnames(classNameProp, activeClassName) : classNameProp;
+    var style = isActive ? _extends$N({}, styleProp, {}, activeStyle) : styleProp;
+
+    var props = _extends$N({
+      "aria-current": isActive && ariaCurrent || null,
+      className: className,
+      style: style,
+      to: toLocation
+    }, rest); // React 15 compat
+
+
+    if (forwardRefShim$1 !== forwardRef$1) {
+      props.ref = forwardedRef || innerRef;
+    } else {
+      props.innerRef = innerRef;
+    }
+
+    return React__default$1['default'].createElement(Link, props);
+  });
+});
+
+if (process.env.NODE_ENV !== "production") {
+  NavLink.displayName = "NavLink";
+  var ariaCurrentType = propTypes$3.oneOf(["page", "step", "location", "date", "time", "true"]);
+  NavLink.propTypes = _extends$N({}, Link.propTypes, {
+    "aria-current": ariaCurrentType,
+    activeClassName: propTypes$3.string,
+    activeStyle: propTypes$3.object,
+    className: propTypes$3.string,
+    exact: propTypes$3.bool,
+    isActive: propTypes$3.func,
+    location: propTypes$3.object,
+    sensitive: propTypes$3.bool,
+    strict: propTypes$3.bool,
+    style: propTypes$3.object
+  });
 }
 
 function ProvideMain({
@@ -75121,338 +61880,6 @@ function BearContextProvider({ ...dsfer
   // });
 
   return jads;
-}
-
-function BearModal({
-  //
-  open,
-  onClose,
-  height,
-  header,
-  noFooter,
-  footer,
-  footerConfig,
-  // message,
-  children,
-  buttonConfig,
-  ...args
-}) {
-  // 1const
-  // const { isOpen, onOpen, onClose } = useDisclosure();
-  React__default$1['default'].useRef(); // 1footer
-  // 1antd
-
-  const antGo = {
-    // title="Title"
-    visible: open,
-    onOk: onClose,
-    onCancel: onClose,
-    footer: ""
-  };
-
-  const sijdfe = {
-    //
-    bearName: "bearModalButtons",
-    list: ["close"],
-    dictvar: {
-      close: {
-        background: "blue",
-        textvar: "Close",
-        onClick: onClose
-      }
-    }
-  };
-  const ifdse = {
-    // onClick: asdkwe,
-    //   buttonLis
-    typeList: "button",
-    horiz: true,
-    ...sijdfe,
-    ...buttonConfig
-  };
-  bearlog.lug("___ ifdse ___", ifdse);
-  args = { // ...skdfer,
-    ...args
-  };
-  const sirew = {
-    isOpen: open,
-    onClose,
-    toggle: onClose,
-    ...antGo,
-    ...args
-  };
-  const okfdsd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(Modal, sirew, children)); //   args = {
-  //     obj: okfdsd,
-  //     ...args,
-  //   };
-  //   return "sdoksdf0";
-
-  return okfdsd; //   return <BearDiv {...args} />;
-}
-
-function BearModalWarning({
-  open,
-  children,
-  //
-  //
-  seriesObj,
-  onCancel,
-  onConfirm,
-  message,
-  confirmConfig,
-  cancelConfig,
-  //   buttonConfig,
-  ...args
-}) {
-  // 1const
-  // const [setto, setsetto] = useState(open);
-  const dgifsad = {
-    confirm: {
-      onClick: onConfirm,
-      ...confirmConfig
-    },
-    cancel: {
-      style: {
-        color: "black",
-        background: "transparent",
-        ...BearBorder("darkblue", "5px")
-      },
-      onClick: onCancel,
-      textvar: "Cancel",
-      ...cancelConfig
-    }
-  };
-  const cvxbfdg = {
-    list: ["confirm", "cancel"],
-    dictvar: dgifsad,
-    horiz: true,
-    bearName: "buttonGo",
-    itemConfig: {
-      style: {
-        fontSize: "20px"
-      }
-    }
-  };
-  const dfigjrt = {
-    style: {
-      height: "50vh"
-    }
-  };
-  const cvofdd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, dfigjrt, message), /*#__PURE__*/React__default$1['default'].createElement(BearButtonList, cvxbfdg));
-  const ijfgr = {
-    style: {
-      textAlign: "center",
-      fontSize: "20px",
-      padding: "3%"
-    }
-  };
-  const okfdsd =
-  /*#__PURE__*/
-  //
-  // cvofdd;
-  React__default$1['default'].createElement("div", ijfgr, " ", cvofdd); //   buttonConfig = {
-  //   }
-
-  args = {
-    // message: okfdsd,
-    open,
-    // children,
-    onClose: onCancel,
-    ...args
-  }; // return okfdsd;
-  // return open ? okfdsd : children;
-
-  return /*#__PURE__*/React__default$1['default'].createElement(BearModal, args, okfdsd);
-}
-
-//   const ijsde = "";
-//   return BearNotification();
-// }
-// export function BearErrNote(zcivjds, asdf = {}) {
-//   const ijsde = BearError(zcivjds);
-//   asdf["error"] = true;
-//   return BearNotification(ijsde, asdf);
-// }
-
-function BearWarnDelete({
-  onDelete,
-  children,
-  warnMessage,
-  ...args
-}) {
-  const nsidjfs = //
-  // true;
-  "";
-  const [warnTrue, setwarnTrue] = React.useState(nsidjfs);
-  const idjv = //
-  // true;
-  warnTrue;
-
-  function Modska() {
-    const sidjfewr = {
-      open: idjv,
-      message: warnMessage,
-      confirmConfig: {
-        textvar: "Delete",
-        background: "red",
-        color: "white"
-      },
-      onConfirm: onDelete,
-      onCancel: () => setwarnTrue()
-    };
-    return BearModalWarning(sidjfewr);
-  }
-
-  const ijsdfer = {
-    onClick: () => setwarnTrue(true)
-  };
-  const zxcmsd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(Modska, null), /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, ijsdfer, children));
-  return zxcmsd;
-} // // 1back 1forward
-
-function BearModel({
-  //
-  iconListConfig,
-  buttonConfig,
-  children,
-  dictvar,
-  //
-  //
-  onEdit,
-  editConfig,
-  onShare,
-  shareConfig,
-  onCancel,
-  //
-  onDelete,
-  warnDelete,
-  deleteConfig,
-  //
-  buttonLayout = "bottom",
-  //
-  ...args
-}) {
-  // 1const
-  const okfdsd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, children);
-
-  function asdsade(asdf) {
-    const dhfgr = {
-      onDelete,
-      ...deleteConfig
-    }; // return asdf;
-
-    return /*#__PURE__*/React__default$1['default'].createElement(BearWarnDelete, dhfgr, asdf);
-  }
-
-  const sidjfer = warnDelete ? {
-    divContainer: asdsade
-  } : {
-    onClick: onDelete
-  };
-  bearlog.lug("___ sidjfer ___", sidjfer);
-  const isdfewr = {
-    edit: {
-      iconvar: "edit",
-      textvar: "Edit",
-      onClick: onEdit,
-      ...editConfig
-    },
-    share: {
-      iconvar: "share",
-      textvar: "Share",
-      onClick: onShare,
-      ...shareConfig
-    },
-    cancel: {
-      iconvar: "close",
-      textvar: "Cancel",
-      onClick: onCancel
-    },
-    delete: {
-      iconvar: "delete",
-      textvar: "Delete",
-      ...sidjfer,
-      ...deleteConfig
-    }
-  };
-  const isdre = {
-    bearName: "sodkwqe",
-    list: ["delete"],
-    typeList: "button",
-    // ...iconConfig,
-    dictvar: { ...isdfewr,
-      ...dictvar
-    },
-    ...argMiss(args),
-    // itemConfig: kmfase,
-    ...buttonConfig
-  }; // 1console
-
-  bearlog.lug("___ brModel isdre ___", isdre);
-  const ijdwer = /*#__PURE__*/React__default$1['default'].createElement(BearList$1, isdre);
-  args = {
-    center: okfdsd,
-    // right: ijdwer,
-    [buttonLayout]: ijdwer,
-    noVertAlign: true,
-    // floatConfi:
-    ...argPass(args)
-  };
-  return /*#__PURE__*/React__default$1['default'].createElement(BearFloat, args);
-}
-
-function BearFormBase({
-  //
-  // seriesObj,
-  children,
-  ...args
-}) {
-  // 1const
-  const modeo = //
-  // "onBlur";
-  // "onSubmit";
-  // "onChange";
-  "all";
-  const oksdaew = {
-    // validationSchema: asokew,
-    // resolver: asokew,
-    //
-    reValidateMode: "onBlur",
-    mode: modeo // ...hookConfig,
-
-  };
-  const {
-    //
-    handleSubmit,
-    // watch,
-    register,
-    ...asdw
-  } = //
-  useForm(oksdaew);
-  bearlog.lug("___ FORM BASE ___", asdw);
-
-  function fdijgg(okdfg) {
-    bearlog.lug("___ SUMIBT TRAP ___", okdfg);
-  }
-
-  const cvkbdf = {
-    onSubmit: handleSubmit(fdijgg) // ...asdw
-
-  };
-  const kdfgr = {
-    type: "submit"
-  };
-  const sidjfer = register("name", {
-    required: true
-  });
-  const sdfm = {
-    name: "name",
-    // ...register,
-    ...sidjfer
-  };
-  const kvdsdr = /*#__PURE__*/React__default$1['default'].createElement("input", sdfm);
-  const okfdsd = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement("form", cvkbdf, children, kvdsdr, /*#__PURE__*/React__default$1['default'].createElement("button", kdfgr, "SUBMIT")));
-  return okfdsd;
 }
 
 function BearInputSubmit({
@@ -75483,7 +61910,7 @@ function BearInputSubmit({
   });
 
   function asdwe(fadsfs) {
-    bearlog.log("___ fadsfs ___", fadsfs);
+    bearlog.lug("___ fadsfs ___", fadsfs);
     xcads(fadsfs);
   }
 
@@ -75493,7 +61920,7 @@ function BearInputSubmit({
     ...doksad
   }) {
     let sdifje = Object.values(doksad);
-    bearlog.log("___ doksad ___", {
+    bearlog.lug("___ doksad ___", {
       doksad,
       sdifje
     });
@@ -76580,6 +63007,9 @@ function fireConnect(fireObj, {
   let dsofkes = "";
 
   switch (authType) {
+    case "email":
+      dsofkes = new fireObj.auth.GoogleAuthProvider();
+
     case "google":
       dsofkes = new fireObj.auth.GoogleAuthProvider();
       break;
@@ -76615,11 +63045,19 @@ function fireConnect(fireObj, {
 
     case "phone":
       dsofkes = new fireObj.auth.PhoneAuthProvider();
-  }
+  } // function aokdw(){
+  // }
 
-  function aokdw(userBase) {
+
+  function aokdw({ //
+    ...userBase
+  }) {
     // creatUseAfter(userBase, funcvar);
-    onSuccess(userBase);
+    onSuccess({
+      authType,
+      ...userBase //
+
+    });
   }
 
   bearlog.lug("firease SIGN IN ", {
@@ -76697,13 +63135,17 @@ function BearAuthPortal({
   socialConfig,
   socialSubmit,
   onSubmit,
+  renderButton,
   bearName = "BearAuthPortal",
   emailSubmit,
   firebase,
   onSuccess,
   onFailure,
   list,
+  title,
   authList,
+  emailConfig,
+  buttonConfig,
   formConfig,
   changeButton,
   ...sdse
@@ -76748,81 +63190,57 @@ function BearAuthPortal({
     icon: Jfase,
     // iconFormat: (name) => `fa fa-${name}`,
     style: {
-      background: "#FF5733"
+      //
+      background: "#FF5733" // width: "20px",
+
     },
     activeStyle: {
       background: "#ff6700"
     }
   };
-  /** My Facebook login button. */
-
   const EmailLoginButton = dist.createButton(emaCon);
-  const idfjgrt =
-  /*#__PURE__*/
-  ///
-  React__default$1['default'].createElement(EmailLoginButton, null); // BearIconText("email", signCheck("Email"));
-
-  function dskwad() {
-    bearlog.lug("asokdwqe");
-  }
-
   const emBaso = {
-    textvar: idfjgrt,
-    onClick: dskwad,
-    typevar: "email"
-  }; // function retto(typeo, button){
-  //   return
-  // }
-
+    button: EmailLoginButton
+  };
   const fdsogkret = {
     google: {
-      textvar: /*#__PURE__*/React__default$1['default'].createElement(dist.GoogleLoginButton, null, signCheck("Google")),
-      // textvar: "Google",
-      typevar: "google"
+      button: dist.GoogleLoginButton
     },
     instagram: {
-      textvar: /*#__PURE__*/React__default$1['default'].createElement(dist.InstagramLoginButton, null, signCheck("Instagram"))
+      button: dist.InstagramLoginButton
     },
     facebook: {
-      textvar: /*#__PURE__*/React__default$1['default'].createElement(dist.FacebookLoginButton, null, signCheck("Facebook")),
-      // textvar: "Facebook",
-      // iconvar: <SiFacebook />,
-      typevar: "facebook"
+      button: dist.FacebookLoginButton
     },
     email: emBaso,
     github: {
-      textvar: /*#__PURE__*/React__default$1['default'].createElement(dist.GithubLoginButton, null, signCheck("Github")),
-      // textvar: "Twitter",
-      // iconvar: <SiGithub />,
-      typevar: "github"
+      button: dist.GithubLoginButton
     },
     apple: {
-      textvar: /*#__PURE__*/React__default$1['default'].createElement(dist.AppleLoginButton, null, signCheck("Apple")),
-      typevar: "apple"
+      button: dist.AppleLoginButton
     },
     twitter: {
-      textvar: /*#__PURE__*/React__default$1['default'].createElement(dist.TwitterLoginButton, null, signCheck("Twitter")),
-      typevar: "github"
+      button: dist.TwitterLoginButton
     },
     linkedin: {
-      typevar: "linkedin",
-      textvar: /*#__PURE__*/React__default$1['default'].createElement(dist.LinkedInLoginButton, null, signCheck("Discord"))
+      button: dist.LinkedInLoginButton
     },
     microsoft: {
-      typevar: "microsoft",
-      textvar: /*#__PURE__*/React__default$1['default'].createElement(dist.MicrosoftLoginButton, null, signCheck("Discord"))
+      button: dist.MicrosoftLoginButton
     },
     discord: {
-      textvar: /*#__PURE__*/React__default$1['default'].createElement(dist.DiscordLoginButton, null, signCheck("Discord")),
-      typevar: "github"
+      button: dist.DiscordLoginButton
     } //
 
   };
 
-  async function osadew({
-    itemType
-  }) {
-    const typevar = itemType;
+  async function osadew(asdfas) {
+    bearlog.lug("___ asdfas ___", asdfas);
+    sdadfs(asdfas);
+  }
+
+  async function sdadfs(itemName) {
+    const typevar = itemName;
     bearlog.lug(typevar, "___ sinBas SOCIAL CLICK ___", {
       typevar,
       onSubmit,
@@ -76832,7 +63250,7 @@ function BearAuthPortal({
       firebase,
       onSuccess,
       onFailure,
-      authType: itemType
+      authType: itemName
     }; // isdfwer["authType"] = typevar;
 
     switch (typevar) {
@@ -76847,82 +63265,84 @@ function BearAuthPortal({
         if (ijsre) {
           BearUserConnect(isdfwer);
         } else if (onSubmit) {
-          onSubmit(itemType);
+          onSubmit(itemName);
         }
 
-      //
-      // socialSubmit(typevar);
     }
-  }
+  } // 1list
 
   function ASsfokse({
-    textvar
+    itemName,
+    button,
+    onClick,
+    ...asdfa
   }) {
     // const sdfke = { style: { margin: "20px 0" } };
     // const ijsder = <BearDiv {...sdfke}>{textvar}</BearDiv>;
-    return textvar; // return ijsder;
+    function adsf() {
+      osadew(itemName);
+    }
+
+    let ijasds = button({
+      children: signCheck(BearUpper(itemName)),
+      // onClick:
+      ...asdfa,
+      onClick: adsf,
+      ...buttonConfig
+    });
+    return renderButton ? renderButton(ijasds) : ijasds; // return ijsder;
   }
-
-  const difjewr = //
-  list; // authList ? authList : ifje;
-
-  const igfder = {
-    list: difjewr,
-    dictvar: fdsogkret,
-    onClick: osadew,
-    bearName: "BearAuthPortal - Social Authentication",
-    logtrue: true,
-    spaceBetween: "30px",
-    renderItem: dsafweR,
-    ...socialConfig
-  };
 
   function dsafweR(asdfe) {
     bearlog.lug("___ asdfe ___", asdfe);
     return ASsfokse(asdfe); // return "gisdfoe";
   }
 
-  function spfdewr({
-    email,
-    password
-  }) {
-    bearlog.lug("___ BearAuthPortal SIGNUP ___", email, password); //
-    // userLogSign(email, password, funcvar);
-  } // 1console
+  const igfder = {
+    list,
+    dictvar: fdsogkret,
+    onClick: osadew,
+    bearName: "BearAuthPortal - Social Authentication",
+    logtrue: true,
+    spaceBetween: "30px",
+    renderItem: dsafweR,
+    ...socialConfig,
+    ...argMiss(sdse)
+  }; // 1console
 
+  bearlog.lug("___ SignBsae SOCIAL ___", igfder);
 
-  bearlog.lug("___ SignBsae SOCIAL ___", igfder); //  TimHernandez : TimHernandez ,
+  function listo() {
+    const dsfijd = //
+    // BearTextMedia(igfder);
+    // BearList(igfder);
+    CheckListExist(igfder); // list.map((jiadas) => CheckListExist(jiadas, igfder));
 
-  const dsfijd =
-  /*#__PURE__*/
+    return dsfijd;
+  } //
   //
-  // {/* <BearTextMedia {...igfder} /> */}
-  React__default$1['default'].createElement(BearList$1, igfder);
 
-  function FOrnaW() {
-    //
-    //
-    const dfijd = [//
-    "email", "password"];
-    const klmi = //
-    // sofer;
-    spfdewr;
-    const dfgre = {
-      list: dfijd,
-      // dictvar:
-      // sameline
-      buttonText: "Register",
-      bearName: "register",
-      onSubmit: klmi,
-      ...sdse,
-      ...formConfig
-    };
-    const forso = /*#__PURE__*/React__default$1['default'].createElement(BearForm, dfgre);
-    return forso;
-  }
 
+  const dfijd = [//
+  "email", "password"]; // const klmi =
+  //   //
+  //   // sofer;
+  //   spfdewr;
+  // function adfasdf({email, password, ...asd}){
+  //   sdadfs()
+  // }
+
+  const dfgre = {
+    list: dfijd,
+    buttonText: "Register",
+    bearName: "register",
+    onSubmit,
+    formid: "Email Option ",
+    ...emailConfig
+  };
+  const FOrnaW = BearForm(dfgre);
   const jvsfeer = //
-  emaTrue ? /*#__PURE__*/React__default$1['default'].createElement(FOrnaW, null) : dsfijd;
+  emaTrue ? FOrnaW : listo();
 
   function OrCHekc() {
     let baseTEST = "";
@@ -76988,17 +63408,8 @@ function BearAuthPortal({
   const jdtre = sdfer && /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, jvsfeer, changeButton && /*#__PURE__*/React__default$1['default'].createElement(OrCHekc, null));
   const nsifjew = {
     // requiredArgs: { onSubmit },
-    titleConfig: {
-      // lineBetween: true,
-      // class: "shadowButton",
-      style: {
-        fontWeight: "bold",
-        // padding: "0 20%",
-        fontSize: "1.6em",
-        marginBottom: "30px"
-      }
-    },
     bearName,
+    title,
     ...sdse
   }; // return "aaaaaaaasdja";
 
@@ -77269,7 +63680,7 @@ function BearSocialBase({
     ...sdfsrew
   };
   bearlog.lug("___ LISTSOCIAL ___", ijsadwe);
-  const compBase = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(BearList$1, ijsadwe)); //
+  const compBase = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, /*#__PURE__*/React__default$1['default'].createElement(BearList, ijsadwe)); //
 
   const ijfdewr = BearCheckMain("BearSocialShare", compBase, ijsadwe);
   return ijfdewr;
@@ -77451,6 +63862,42 @@ function BearSearchSelect({
   return kdserase;
 }
 
+function mapSelectValue(arrBig, {
+  dictvar,
+  labelFunc,
+  valueFunc,
+  isDisabled,
+  ...sdas
+}) {
+  //
+  function asijdwe(asdae) {
+    const ndsire = //
+    // asdae
+    checkDict(dictvar, asdae);
+    const sidjf = //
+    // asdae
+    ndsire;
+    let sakde = {
+      label: labelFunc ? labelFunc(sidjf) : asdae,
+      value: valueFunc ? valueFunc(ndsire) : asdae,
+      isDisabled
+    };
+    bearlog.lug("___ brSeacrch MAPPO ___", {
+      asdae: asdae,
+      sakde: sakde // dictvar: dictvar,
+
+    });
+    return sakde;
+  }
+
+  bearlog.lug("___ brSeacrch LIST ___", {
+    arrBig: arrBig,
+    dictvar: dictvar
+  });
+  const dretjer = arrBig.map(asijdwe);
+  return dretjer;
+}
+
 function BearSearchList({
   // 1args SELECT
   searchAttrs,
@@ -77570,7 +64017,7 @@ function BearSearchList({
       flex: true
     };
     bearlog.lug("___ sodfer ___", sodfer);
-    return /*#__PURE__*/React__default$1['default'].createElement(BearList$1, sodfer);
+    return /*#__PURE__*/React__default$1['default'].createElement(BearList, sodfer);
   } // 1options
 
 
@@ -77624,6 +64071,28 @@ function BearSearchList({
   }); // return kdserase;
 }
 
+//     BlankWrap,
+//     setGlobalSource,
+//     //
+//   } from "../functions/GlobalFunctions";
+
+function BearFooter({
+  onClick,
+  closeTrue,
+  sticky,
+  className = "",
+  //   obj,
+  ...argos
+}) {
+  // const [truShowa, settruShowa] = useState(true);
+  let asdew = sticky ? "sticky" : "";
+  const ajsw = {
+    className: `footer ${asdew} ${className}`,
+    ...argos
+  };
+  return /*#__PURE__*/React__default$1['default'].createElement(BearDiv$1, ajsw);
+}
+
 function BearHeader({
   leftConfig,
   logo,
@@ -77660,7 +64129,7 @@ function BearHeader({
 
     function asid(xcvdf) {
       // switch getTpye
-      bearlog.log("aAS ssss", {
+      bearlog.lug("aAS ssss", {
         xcvdf
       }); // return "forewa";
 
@@ -77701,7 +64170,7 @@ function BearHeader({
       ...faadsf
     };
     bearlog.lug("zzz--", aokew);
-    return BearList$1(aokew);
+    return BearList(aokew);
   } // function
   // 1nav
 
@@ -78720,22 +65189,22 @@ var Helmet = function Helmet(Component) {
     }]);
     return HelmetWrapper;
   }(React__default$1['default'].Component), _class.propTypes = {
-    base: propTypes$4.object,
-    bodyAttributes: propTypes$4.object,
-    children: propTypes$4.oneOfType([propTypes$4.arrayOf(propTypes$4.node), propTypes$4.node]),
-    defaultTitle: propTypes$4.string,
-    defer: propTypes$4.bool,
-    encodeSpecialCharacters: propTypes$4.bool,
-    htmlAttributes: propTypes$4.object,
-    link: propTypes$4.arrayOf(propTypes$4.object),
-    meta: propTypes$4.arrayOf(propTypes$4.object),
-    noscript: propTypes$4.arrayOf(propTypes$4.object),
-    onChangeClientState: propTypes$4.func,
-    script: propTypes$4.arrayOf(propTypes$4.object),
-    style: propTypes$4.arrayOf(propTypes$4.object),
-    title: propTypes$4.string,
-    titleAttributes: propTypes$4.object,
-    titleTemplate: propTypes$4.string
+    base: propTypes$3.object,
+    bodyAttributes: propTypes$3.object,
+    children: propTypes$3.oneOfType([propTypes$3.arrayOf(propTypes$3.node), propTypes$3.node]),
+    defaultTitle: propTypes$3.string,
+    defer: propTypes$3.bool,
+    encodeSpecialCharacters: propTypes$3.bool,
+    htmlAttributes: propTypes$3.object,
+    link: propTypes$3.arrayOf(propTypes$3.object),
+    meta: propTypes$3.arrayOf(propTypes$3.object),
+    noscript: propTypes$3.arrayOf(propTypes$3.object),
+    onChangeClientState: propTypes$3.func,
+    script: propTypes$3.arrayOf(propTypes$3.object),
+    style: propTypes$3.arrayOf(propTypes$3.object),
+    title: propTypes$3.string,
+    titleAttributes: propTypes$3.object,
+    titleTemplate: propTypes$3.string
   }, _class.defaultProps = {
     defer: true,
     encodeSpecialCharacters: true
@@ -78847,6 +65316,8 @@ function BearPage({
   pageArgs,
   headerConfig,
   metaConfig,
+  footer,
+  footerConfig,
   heightBottom,
   title,
   titleConfig,
@@ -78970,14 +65441,85 @@ function BearPage({
     style: {
       height: heightBottom
     }
-  });
-  const aijewqe = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, baseItHelm, headerConfig && Headdos(headerConfig), /*#__PURE__*/React__default$1['default'].createElement("div", ijfer), dfigjsd);
+  }); // 1footer
+
+  const aoksdae = footer && /*#__PURE__*/React__default$1['default'].createElement(BearFooter, footerConfig, footer);
+  const aijewqe = /*#__PURE__*/React__default$1['default'].createElement(React__default$1['default'].Fragment, null, baseItHelm, headerConfig && Headdos(headerConfig), /*#__PURE__*/React__default$1['default'].createElement("div", ijfer), dfigjsd, aoksdae);
   return aijewqe;
+}
+
+function BearNavigation({
+  blankTrue,
+  ...aaaa
+}) {
+  //
+  function asid(xcvdf) {
+    // switch getTpye
+    bearlog.log("aAS ssss", xcvdf); // return "forewa";
+
+    return sdfrdsf(xcvdf);
+  }
+
+  function sdfrdsf({
+    itemName,
+    textvar,
+    ...xcvdf
+  }) {
+    // const itemName = textvar;
+    const isdeww = //
+    // "21331";
+    //   itemName;
+    BearUpper(textvar ? textvar : itemName);
+    bearlog.lug("hedor INAOSD", {
+      isdeww
+    });
+    let asokdas = //
+    itemName; //   "itemName";
+    // `/${removeLower(itemName)}`,
+
+    let kaszaa = {
+      children: isdeww,
+      link: asokdas,
+      ...xcvdf //   itemCon
+
+    };
+    bearlog.lug("___ kaszaa ___", kaszaa);
+    let soksase = //
+    // BearDiv(kaszaa);
+    BearTextMedia(kaszaa);
+    return soksase;
+  }
+
+  ({
+    typeList: "button",
+    itemConfig: {
+      renderText: asid,
+      outsideLink: true,
+      ...aaaa.itemConfig
+    }
+  });
+  const msddf = {
+    // itemConfig: {
+    //   // renderText: asid,
+    //   outsideLink: true,
+    //   alignConfig: { center: true },
+    //   ...aaaa.itemConfig,
+    // },
+    renderItem: asid
+  };
+  const jfease = BearList({ // ...nasase,
+    ...msddf,
+    // style: { textAlign: "right" },
+    // typeList: "return",
+    ...aaaa
+  }); //   const ijwe = list.map;
+
+  return jfease;
 }
 
 exports.BearAttrNeeds = BearAttrNeeds;
 exports.BearAuthPortal = BearAuthPortal;
-exports.BearBackBorder = BearBackBorder;
+exports.BearBackBorder = BearBackBorder$1;
 exports.BearBackForward = BearBackForward;
 exports.BearBlankLink = BearBlankLink;
 exports.BearBlock = BearBlock;
@@ -78985,8 +65527,6 @@ exports.BearBorder = BearBorder;
 exports.BearButton = BearButton$1;
 exports.BearButtonDownload = BearButtonDownload;
 exports.BearButtonList = BearButtonList;
-exports.BearCheckMain = BearCheckMain;
-exports.BearCheckout = BearCheckout;
 exports.BearCheckoutStripe = BearCheckoutStripe;
 exports.BearContextProvider = BearContextProvider;
 exports.BearCopy = BearCopy;
@@ -78994,14 +65534,10 @@ exports.BearDiv = BearDiv$1;
 exports.BearDivMain = BearDivMain;
 exports.BearEmoji = BearEmoji;
 exports.BearErASDJIQWE = BearErASDJIQWE;
-exports.BearErrArgType = BearErrArgType$1;
-exports.BearErrMiss = BearErrMiss;
 exports.BearError = BearError;
-exports.BearFalseLog = BearFalseLog;
 exports.BearFlex = BearFlex;
 exports.BearFloat = BearFloat;
 exports.BearForm = BearForm;
-exports.BearFormBase = BearFormBase;
 exports.BearFormList = BearFormList;
 exports.BearHideError = BearHideError;
 exports.BearIcon = BearIcon;
@@ -79015,16 +65551,13 @@ exports.BearInputSubmit = BearInputSubmit;
 exports.BearInputText = BearInputText;
 exports.BearLine = BearLine;
 exports.BearLink = BearLink;
-exports.BearList = BearList$1;
-exports.BearListComp = BearListComp;
-exports.BearMissing = BearMissing;
-exports.BearModel = BearModel;
+exports.BearList = BearList;
+exports.BearNavigation = BearNavigation;
 exports.BearPage = BearPage;
 exports.BearPayButton = BearPayButton;
 exports.BearPlural = BearPlural;
 exports.BearPossess = BearPossess;
 exports.BearQuote = BearQuote;
-exports.BearRouter = BearRouter;
 exports.BearSearchList = BearSearchList;
 exports.BearSelect = BearSelect;
 exports.BearSocialBase = BearSocialBase;
@@ -79034,43 +65567,18 @@ exports.BearSpace = BearSpace;
 exports.BearSpan = BearSpan;
 exports.BearSurround = BearSurround;
 exports.BearSwitch = BearSwitch;
-exports.BearTabs = BearTabs;
 exports.BearTags = BearTags;
 exports.BearTextMedia = BearTextMedia;
 exports.BearTextarea = BearTextarea;
 exports.BearTitle = BearTitle;
 exports.BearUpper = BearUpper;
 exports.BearWrap = BearWrap;
-exports.Exmapl = Exmapl;
-exports.FlexHorz = FlexHorz;
-exports.ImageAlign = ImageAlign;
-exports.ImageGroup = ImageGroup;
-exports.InputBaseCheck = InputBaseCheck;
-exports.InputForm = InputForm;
-exports.InputMain = InputMain;
-exports.ListFlex = ListFlex;
-exports.ListReturn = ListReturn;
-exports.LoadMain = LoadMain;
-exports.PagePad = PagePad;
 exports.RendGroup = RendGroup;
-exports.SliderMain = SliderMain;
-exports.SwitchComp = SwitchComp;
-exports.SwitchLayout = SwitchLayout;
-exports.aazafadsfas = aazafadsfas;
-exports.argMiss = argMiss;
-exports.argPass = argPass;
 exports.bearMobileView = bearMobileView;
 exports.bearlog = bearlog;
 exports.cxadfa = cxadfa;
-exports.dfkbijv = dfkbijv;
 exports.firstInputCheck = firstInputCheck;
-exports.functioMa = functioMa;
 exports.inputChange = inputChange;
 exports.inputStyles = inputStyles;
-exports.linkBase = linkBase;
-exports.listArgPass = listArgPass;
-exports.mapDict = mapDict;
-exports.nameComb = nameComb;
 exports.sdfg = sdfg;
-exports.size = size;
 //# sourceMappingURL=index.cjs.js.map

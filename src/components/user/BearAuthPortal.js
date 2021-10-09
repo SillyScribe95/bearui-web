@@ -23,6 +23,8 @@ import { BearCheckMain } from "../check/BearCheckMain";
 import { BearList } from "../list/BearList";
 import { BearIcon } from "../BearIcon";
 import { BearUserConnect } from "../../functions/authFuncs";
+import { argMiss, CheckListExist } from "../GlobalComps";
+import { BearUpper } from "../InnerComps";
 
 export function BearAuthPortal({
   //
@@ -31,13 +33,17 @@ export function BearAuthPortal({
   socialConfig,
   socialSubmit,
   onSubmit,
+  renderButton,
   bearName = "BearAuthPortal",
   emailSubmit,
   firebase,
   onSuccess,
   onFailure,
   list,
+  title,
   authList,
+  emailConfig,
+  buttonConfig,
   formConfig,
   changeButton,
   ...sdse
@@ -89,96 +95,58 @@ export function BearAuthPortal({
     text: signCheck("Email"),
     icon: Jfase,
     // iconFormat: (name) => `fa fa-${name}`,
-    style: { background: "#FF5733" },
+    style: {
+      //
+      background: "#FF5733",
+      // width: "20px",
+    },
     activeStyle: { background: "#ff6700" },
   };
 
-  /** My Facebook login button. */
   const EmailLoginButton = createButton(emaCon);
-  const idfjgrt = (
-    ///
-    <EmailLoginButton />
-  );
-  // BearIconText("email", signCheck("Email"));
-
-  function dskwad() {
-    bearlog.lug("asokdwqe");
-  }
 
   const emBaso = {
-    textvar: idfjgrt,
-    onClick: dskwad,
-    typevar: "email",
+    button: EmailLoginButton,
   };
-
-  // function retto(typeo, button){
-
-  //   return
-
-  // }
 
   const fdsogkret = {
     google: {
-      textvar: <GoogleLoginButton>{signCheck("Google")}</GoogleLoginButton>,
-      // textvar: "Google",
-      typevar: "google",
+      button: GoogleLoginButton,
     },
     instagram: {
-      textvar: (
-        <InstagramLoginButton>{signCheck("Instagram")}</InstagramLoginButton>
-      ),
+      button: InstagramLoginButton,
     },
     facebook: {
-      textvar: (
-        <FacebookLoginButton>{signCheck("Facebook")}</FacebookLoginButton>
-      ),
-      // textvar: "Facebook",
-      // iconvar: <SiFacebook />,
-      typevar: "facebook",
+      button: FacebookLoginButton,
     },
     email: emBaso,
     github: {
-      textvar: (
-        <GithubLoginButton>
-          {/*  */}
-          {signCheck("Github")}
-        </GithubLoginButton>
-      ),
-      // textvar: "Twitter",
-      // iconvar: <SiGithub />,
-      typevar: "github",
+      button: GithubLoginButton,
     },
     apple: {
-      textvar: <AppleLoginButton>{signCheck("Apple")}</AppleLoginButton>,
-      typevar: "apple",
+      button: AppleLoginButton,
     },
     twitter: {
-      textvar: <TwitterLoginButton>{signCheck("Twitter")}</TwitterLoginButton>,
-      typevar: "github",
+      button: TwitterLoginButton,
     },
     linkedin: {
-      typevar: "linkedin",
-      textvar: (
-        <LinkedInLoginButton>{signCheck("Discord")}</LinkedInLoginButton>
-      ),
+      button: LinkedInLoginButton,
     },
     microsoft: {
-      typevar: "microsoft",
-      textvar: (
-        <MicrosoftLoginButton>{signCheck("Discord")}</MicrosoftLoginButton>
-      ),
+      button: MicrosoftLoginButton,
     },
     discord: {
-      textvar: <DiscordLoginButton>{signCheck("Discord")}</DiscordLoginButton>,
-      typevar: "github",
+      button: DiscordLoginButton,
     },
     //
   };
 
-  let userBase = "";
-
-  async function osadew({ itemType }) {
-    const typevar = itemType;
+  async function osadew(asdfas) {
+    bearlog.lug("___ asdfas ___", asdfas);
+    sdadfs(asdfas);
+  }
+  async function sdadfs(itemName) {
+    const typevar = itemName;
     bearlog.lug(typevar, "___ sinBas SOCIAL CLICK ___", {
       typevar,
       onSubmit,
@@ -189,7 +157,7 @@ export function BearAuthPortal({
       firebase,
       onSuccess,
       onFailure,
-      authType: itemType,
+      authType: itemName,
     };
 
     // isdfwer["authType"] = typevar;
@@ -208,42 +176,9 @@ export function BearAuthPortal({
         if (ijsre) {
           BearUserConnect(isdfwer);
         } else if (onSubmit) {
-          onSubmit(itemType);
+          onSubmit(itemName);
         }
-
-      //
-      // socialSubmit(typevar);
     }
-  }
-
-  function Bsaeosa({ typevar, iconvar, textvar, ...swe }) {
-    const dfid = {
-      // fontSize: "20px",
-      w: "full",
-      onClick: osadew,
-      leftIcon: iconvar,
-      ...swe,
-      // color: "black",
-      // background: "white",
-      // colorScheme: "white",
-    };
-
-    const ijdsf = (
-      <>
-        <Button {...dfid}>
-          <Center>
-            <Text>
-              {/* {iconvar} */}
-              {/* Continue with */}
-              {textvar}
-            </Text>
-          </Center>
-        </Button>
-        {/* <hr /> */}
-      </>
-    );
-
-    return ijdsf;
   }
 
   // 1list
@@ -261,29 +196,28 @@ export function BearAuthPortal({
     // "";
     dfogre;
 
-  function ASsfokse({ textvar }) {
+  function ASsfokse({ itemName, button, onClick, ...asdfa }) {
     // const sdfke = { style: { margin: "20px 0" } };
     // const ijsder = <BearDiv {...sdfke}>{textvar}</BearDiv>;
+    function adsf() {
+      osadew(itemName);
+    }
 
-    return textvar;
+    let ijasds = button({
+      children: signCheck(BearUpper(itemName)),
+      // onClick:
+      ...asdfa,
+      onClick: adsf,
+      ...buttonConfig,
+    });
+
+    return renderButton ? renderButton(ijasds) : ijasds;
     // return ijsder;
   }
 
-  const difjewr =
-    //
-    list;
-  // authList ? authList : ifje;
-
-  const igfder = {
-    list: difjewr,
-    dictvar: fdsogkret,
-    onClick: osadew,
-    bearName: "BearAuthPortal - Social Authentication",
-    logtrue: true,
-    spaceBetween: "30px",
-    renderItem: dsafweR,
-    ...socialConfig,
-  };
+  function xcvxsfd(dsafokas) {
+    return ASsfokse({});
+  }
 
   function dsafweR(asdfe) {
     bearlog.lug("___ asdfe ___", asdfe);
@@ -292,56 +226,63 @@ export function BearAuthPortal({
     // return "gisdfoe";
   }
 
-  function spfdewr({ email, password }) {
-    bearlog.lug("___ BearAuthPortal SIGNUP ___", email, password);
-    //
-    // userLogSign(email, password, funcvar);
-  }
+  const igfder = {
+    list,
+    dictvar: fdsogkret,
+    onClick: osadew,
+    bearName: "BearAuthPortal - Social Authentication",
+    logtrue: true,
+    spaceBetween: "30px",
+    renderItem: dsafweR,
+    ...socialConfig,
+    ...argMiss(sdse),
+  };
 
   // 1console
   bearlog.lug("___ SignBsae SOCIAL ___", igfder);
 
-  //  TimHernandez : TimHernandez ,
-
-  const dsfijd = (
-    //
-    // {/* <BearTextMedia {...igfder} /> */}
-    <BearList {...igfder} />
-  );
-
-  function FOrnaW() {
-    //
-    //
-    const dfijd = [
+  function listo() {
+    const dsfijd =
       //
-      "email",
-      "password",
-    ];
+      // BearTextMedia(igfder);
+      // BearList(igfder);
+      CheckListExist(igfder);
+    // list.map((jiadas) => CheckListExist(jiadas, igfder));
 
-    const klmi =
-      //
-      // sofer;
-      spfdewr;
-
-    const dfgre = {
-      list: dfijd,
-      // dictvar:
-      // sameline
-      buttonText: "Register",
-      bearName: "register",
-      onSubmit: klmi,
-      ...sdse,
-      ...formConfig,
-    };
-
-    const forso = <BearForm {...dfgre} />;
-
-    return forso;
+    return dsfijd;
   }
+
+  //
+  //
+  const dfijd = [
+    //
+    "email",
+    "password",
+  ];
+
+  // const klmi =
+  //   //
+  //   // sofer;
+  //   spfdewr;
+
+  // function adfasdf({email, password, ...asd}){
+  //   sdadfs()
+  // }
+
+  const dfgre = {
+    list: dfijd,
+    buttonText: "Register",
+    bearName: "register",
+    onSubmit,
+    formid: "Email Option ",
+    ...emailConfig,
+  };
+
+  const FOrnaW = BearForm(dfgre);
 
   const jvsfeer =
     //
-    emaTrue ? <FOrnaW /> : dsfijd;
+    emaTrue ? FOrnaW : listo();
 
   function OrCHekc() {
     let baseTEST = "";
@@ -422,17 +363,8 @@ export function BearAuthPortal({
 
   const nsifjew = {
     // requiredArgs: { onSubmit },
-    titleConfig: {
-      // lineBetween: true,
-      // class: "shadowButton",
-      style: {
-        fontWeight: "bold",
-        // padding: "0 20%",
-        fontSize: "1.6em",
-        marginBottom: "30px",
-      },
-    },
     bearName,
+    title,
     ...sdse,
   };
 

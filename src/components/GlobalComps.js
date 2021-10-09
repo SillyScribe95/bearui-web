@@ -26,129 +26,27 @@ import { objectTrue } from "../functions/dictFuncs";
 // import SearchKnowledge from "../containers/search/SearchKnowledge";
 // import { AlignMain } from "./AlignMain";
 
-export const size = {
-  // viewL: "700px",
-  viewL: "780px",
-  custHeight: "650px",
-  //
-  mobileS: "320px",
-  mobileM: "375px",
-  mobileL: "425px",
-  tablet: "768px",
-  laptop: "1024px",
-  laptopL: "1440px",
-  desktop: "2560px",
-};
+export function CheckListExist({
+  list,
+  dictvar,
+  renderItem,
+  itemConfig,
+  ...aaaa
+}) {
+  return list.map(function (itemName) {
+    const sdijfwe = dictvar ? dictvar[itemName] : itemName;
 
-// percentQu: `${percentPlayed}`,
-const MediaQueries = {
-  viewtype: "(min-width: 780px)",
-  customHeight: "(min-height: 650px)",
-};
+    const isdjfr = {
+      itemName,
+      ...itemConfig,
+      ...sdijfwe,
+    };
+    //   const { textvar } = sdijfwe;
 
-export const bearMobileView =
-  //
-  aazafadsfas();
-export function aazafadsfas() {
-  const widthVary = window.matchMedia(MediaQueries.viewtype);
-  const heightVary = window.matchMedia(MediaQueries.customHeight);
-  return !widthVary.matches;
-}
-// export const mobileNot = widthVary.matches;
+    const okfdsd = renderItem(isdjfr);
 
-export function BearFalseLog(...asdf) {}
-
-export function BearQuote(sdofkr) {
-  let leftie = "'";
-  let rightie = "'";
-  const vobdesa =
-    //
-    // leftie;
-    leftie + sdofkr + rightie;
-
-  const ijsdaw = {
-    //
-    obj: vobdesa,
-  };
-
-  return vobdesa;
-  // return <BearDiv span {...ijsdaw} />;
-}
-
-export function BearIconList(asdfds) {
-  const sjdrase = {
-    tye,
-    noText: true,
-    ...asdfds,
-  };
-}
-
-export function BearDivMain(asok, zxsd) {
-  //
-
-  const asdwe = {
-    obj: asok,
-
-    ...zxsd,
-  };
-
-  return BearDiv(asdwe);
-}
-
-export function BearSwitch(item, dict, oksdfew = "") {
-  return item
-    ? dict[item]
-      ? dict[item]
-      : BearError(`BearSwitch doesn's have a ${item}`)
-    : oksdfew;
-}
-
-export function BearSurround() {
-  //
-  // const ikasae
-  return "";
-}
-
-export function BearAttrNeeds(bearName) {
-  //
-  // const ikasae
-  return "";
-}
-
-// 1must
-export function BearErrArgType(arg, type, { bearName, ...asd }) {
-  //
-
-  return BearError(
-    bearName + "'s " + BearQuote(arg) + " argument must be a " + type,
-    asd
-  );
-}
-
-export function BearErrMiss(...asd) {
-  //
-
-  return BearError(BearMissing(...asd));
-}
-
-export function BearMissing(attr, mainnum, aseqwe = "Your component") {
-  //
-  const nisdfrw = mainnum ? mainnum : aseqwe;
-  const kdsdae = (
-    <>
-      {/*  */}
-      {BearQuote(nisdfrw)}'s
-      {BearSpace(BearQuote(attr))}
-      attribute is empty or missing.
-      {/*  */}
-    </>
-  );
-
-  const sadwew =
-    //
-    kdsdae;
-
-  return sadwew;
+    return okfdsd;
+  });
 }
 
 export function InputForm({ ...sae }) {
@@ -164,32 +62,6 @@ export function InputForm({ ...sae }) {
   return sadwew;
 }
 
-export function BearIconText(icon, text, osdfds) {
-  //
-  const bodfg = {
-    iconvar: icon,
-    textvar: text,
-    ...osdfds,
-  };
-
-  const sadwew = <BearTextMedia {...bodfg} />;
-
-  return sadwew;
-}
-
-export function BearImageText(image, text, osdfds) {
-  //
-  const bodfg = {
-    imagevar: image,
-    textvar: text,
-    ...osdfds,
-  };
-
-  const sadwew = <BearTextMedia {...bodfg} />;
-
-  return sadwew;
-}
-
 export function linkBase(link, objvar, osdfds) {
   const dkfdsfre = {
     link: link,
@@ -201,70 +73,6 @@ export function linkBase(link, objvar, osdfds) {
 
   return sadwew;
 }
-
-export function BearWrap({
-  elipsisTrue,
-  obj,
-  pushTrue,
-  disVar,
-  className,
-  lineCount,
-  dropLine,
-  ...argos
-}) {
-  //
-  const xvobkvds = lineCount ? "wrapTwo" : "wrapMain";
-  const okxcvzx = xvobkvds;
-  const asdwem = xvobkvds + " " + okxcvzx;
-  const lokgos = {
-    className: asdwem + " " + className,
-    ...argos,
-  };
-
-  const pksdf = <div {...lokgos}>{obj}</div>;
-  return pksdf;
-
-  //
-}
-
-export function BearPossess(item, name, othername = "") {
-  const iksdwa = name ? name : othername;
-  const isjdfr = iksdwa ? iksdwa + "'s " : "";
-  const oasd = isjdfr + item;
-
-  return oasd;
-}
-
-export function BearLink(obj, link, ...sdsda) {
-  const ksdase = {
-    link: link,
-    obj: obj,
-    ...sdsda,
-  };
-
-  const jksdrwa = <BearDiv {...ksdase} />;
-
-  return jksdrwa;
-}
-
-export function BearBlankLink(obj, link, ...asd) {
-  const ksdase = {
-    linkConfig: { outsideTrue: true },
-    ...asd,
-  };
-
-  return BearLink(obj, link, ksdase);
-}
-
-export function BearPlural(stringVar, lengAfter, { noNumber }) {
-  var pluralize = require("pluralize");
-
-  var plT = pluralize(stringVar, lengAfter);
-  var finalSt = noNumber ? plT : lengAfter + " " + plT;
-
-  return finalSt;
-}
-
 // 1list
 export function ListReturn({ ...sae }) {
   const sadwew = <BearList returnTrue {...sae} />;
@@ -274,92 +82,6 @@ export function ListReturn({ ...sae }) {
 
 export function ListFlex({ ...sae }) {
   const sadwew = <BearList returnTrue {...sae} />;
-
-  return sadwew;
-}
-
-export function BearFlex({
-  padvar = "20px",
-  list,
-  itemStyle,
-  style,
-  left = "",
-  right = "",
-  noVertAlign,
-  obj,
-  ...sae
-}) {
-  const difreeq = !noVertAlign && vertAlign;
-
-  const kdsse = {
-    style: {
-      ...difreeq,
-      ...style,
-    },
-  };
-
-  function dokesad({ obj, width, ...asd }) {
-    const oksade = {
-      style: {
-        width: width,
-        textAlign: "left",
-        marginRight: padvar,
-        ...itemStyle,
-      },
-      ...asd,
-    };
-
-    bearlog.lug("___ BearFlex ITEM ___", oksade);
-
-    return <div {...oksade}>{obj}</div>;
-  }
-
-  function redndo(asdwa) {
-    bearlog.log("___ bearflex MAIN  ___", asdwa);
-
-    const ijase = {
-      obj: asdwa,
-    };
-    // asdwa.obj
-    //   ? asdwa
-    //   : {
-    //       obj: asdwa,
-    //     };
-
-    return dokesad(ijase);
-  }
-
-  function RendFlex() {
-    const sdijrwe = {
-      obj: left,
-    };
-
-    const ijasew = {
-      obj: right,
-      style: {
-        marginLeft: "auto",
-      },
-    };
-
-    const saijwe = (
-      <>
-        <BearDiv {...sdijrwe} />
-        <BearDiv {...ijasew} />
-      </>
-    );
-
-    return saijwe;
-  }
-
-  const okdsse = list ? list.map(redndo) : <RendFlex />;
-
-  const vbdrewe = {
-    obj: okdsse,
-    flex: true,
-    ...kdsse,
-    ...sae,
-  };
-  const sadwew = <BearDiv {...vbdrewe} />;
 
   return sadwew;
 }
@@ -456,52 +178,6 @@ export function PagePad({ left = "", padvar = "38vw", ...sae }) {
   return <BearDiv {...sadwew} />;
 }
 
-export function BearCopy({ copyText, obj, copyMessage, ...asd }) {
-  // const [copssetot, setcopssetot] = useState(obj);
-
-  // function sajwe() {
-  //   // const iewawe = <div>Copied!</div>;
-  //   bearlog.lug("___ CopyMain ___", "CopyMain");
-
-  //   // ShowNote(copyMessage);
-  //   // setcopssetot(iewawe);
-  // }
-
-  const ovkewwe = {
-    text: obj ? obj : copyText,
-    // onCopy: sajwe,
-    ...asd,
-  };
-
-  const iawe = (
-    <>
-      {/* <CopyToClipboard {...ovkewwe}> */}
-      {/*  */}
-      <span>{obj}</span>
-      {/* {copssetot} */}
-      {/* </CopyToClipboard> */}
-    </>
-  );
-
-  return iawe;
-}
-
-// 1capitalise
-export function BearUpper(sdkrwe) {
-  const typeoe = typeof sdkrwe == "string";
-
-  bearlog.lug("___ ijsdr ___", {
-    sdkrwe: sdkrwe,
-    typeoe: typeoe,
-  });
-
-  const idfjgr = typeoe
-    ? sdkrwe.charAt(0).toUpperCase() + sdkrwe.slice(1)
-    : sdkrwe;
-
-  return idfjgr;
-}
-
 export function SwitchComp(itemType, args) {
   let sokae = "";
   switch (itemType) {
@@ -553,78 +229,6 @@ export function LoadMain({
   }
 
   return endValue;
-}
-export function BearSpace(dataVar, asdwe) {
-  const kmxvs = {
-    obj: " " + dataVar + " ",
-    ...asdwe,
-  };
-
-  return <BearSpan {...kmxvs} />;
-}
-
-export function BearLine(asbdfr) {
-  return <hr style={asbdfr} />;
-}
-
-export function BearBlock({ children, ...asde }) {
-  return BearCheckMain("blboc", children, {
-    bearName: "qweoq",
-    ...asde,
-  });
-}
-
-export function BearSpan(asdwe) {
-  return <BearDiv span {...asdwe} />;
-}
-
-// export function ElStripo(dataVar) {
-//   return         <Elements stripe={stripePromise}>
-//             {dataVar}
-//         </Elements>
-// }
-
-export function BearBorder(color, radius, sdfr = {}) {
-  const okfg = objectTrue(sdfr);
-  const vijder = okfg
-    ? cxadfa(color, radius, sdfr)
-    : BearError("Third argument of 'BearBorder' must be an object");
-
-  return vijder;
-}
-
-export function cxadfa(
-  color,
-  radius,
-  { noPadding, borderSize = "2px", ...asd } = {}
-) {
-  //
-  const sjdfrwe = noPadding
-    ? {
-        // padding: "0px",
-      }
-    : {
-        padding: "5px",
-      };
-
-  const ijsde = {
-    border: borderSize + " solid " + color,
-    borderRadius: radius,
-    ...sjdfrwe,
-    ...asd,
-    // ...sjdfrwe,
-  };
-
-  return ijsde;
-}
-
-export function BearBackBorder(color, ...sdfew) {
-  const ijsde = {
-    background: color,
-    ...BearBorder(color, ...sdfew),
-  };
-
-  return ijsde;
 }
 
 export function BearListComp(list, sdfwre) {
@@ -795,16 +399,6 @@ export function InputBaseCheck(sfkr, { noBase, ...asdw }) {
   return noBase ? sfkr : BearInputBase(sfkr, asdw);
 }
 
-export function BearButtonList(sfkr) {
-  //
-  sfkr = {
-    typeList: "button",
-    ...sfkr,
-  };
-
-  return BearList(sfkr);
-}
-
 export function SwitchLayout({ children }) {
   const skdfsa = {
     height: "",
@@ -832,7 +426,6 @@ export function nameComb(sfkr, oskdfr) {
 }
 
 // 1function
-
 export function Exmapl(dataVar) {
   const skdfsa = {
     height: "",

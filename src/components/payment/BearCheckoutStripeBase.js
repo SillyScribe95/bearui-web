@@ -16,17 +16,12 @@ import {
   //
   bearlog,
 } from "../../index";
-import {
-  BearDivMain,
-  BearErrMiss,
-  BearErrNote,
-  BearMissing,
-  BearUpper,
-} from "../GlobalComps.js";
+
 // import { BearNotification } from "../BearNotification.js";
 import { BearError } from "../BearError.js";
 import { BearCheckout } from "./BearCheckout.js";
 import { BearInputBase } from "../input/BearInputBase";
+import { BearErrMiss } from "../ErrorComps";
 
 export function BearCheckoutStripeBase({
   //

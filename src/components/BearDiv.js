@@ -26,7 +26,7 @@ export function BearDiv({
   vertAlign,
   ignoreNull,
   typeDiv,
-  centerTrue,
+  center,
   span,
   logtrue,
   fontSize,
@@ -56,7 +56,6 @@ export function BearDiv({
 
   const zxcsd = vertAlign && {
     alignItems: "center",
-    // justifyContent: "center",
   };
 
   const sidjfr =
@@ -75,10 +74,11 @@ export function BearDiv({
     fontSize: fontSize,
   };
 
-  const centerConf = centerTrue && {
-    width: "100%",
-    margin: "auto",
-    textAlign: "center",
+  const centerConf = center && {
+    // width: "100%",
+    // margin: "auto",
+    // textAlign: "center",
+    justifyContent: "center",
   };
 
   const baseFonto = {
@@ -107,6 +107,8 @@ export function BearDiv({
     ...nvsse,
     ...style,
   };
+
+  bearlog.log("___ gibjr ___", gibjr);
 
   const oksde = {
     style: gibjr,

@@ -7,8 +7,8 @@ import {
   //
   bearlog,
 } from "../../index";
+import { BearUpper } from "../InnerComps";
 import { BearFormInputCheck } from "./BearFormInputCheck";
-import { argMiss, BearUpper } from "../GlobalComps";
 import { getFormPass } from "./getFormPass";
 
 export function BearFormSetup({

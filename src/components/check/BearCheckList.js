@@ -9,8 +9,8 @@ import {
   bearlog,
 } from "../../index";
 import { BearCheckMain } from "./BearCheckMain";
-import { BearErrMiss, BearMissing, BearQuote } from "../GlobalComps";
 import { BearError } from "../BearError";
+import { BearErrMiss, BearMissing } from "../ErrorComps";
 
 export function BearCheckList(
   named,
