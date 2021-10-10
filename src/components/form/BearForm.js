@@ -18,6 +18,7 @@ import FormHook from "./FormHook";
 import { removeEmptyArray } from "../../functions/arrayFuncs";
 import { getDictvalues, mergeDict } from "../../functions/dictFuncs";
 import { BearBackBorder } from "../InnerComps";
+import { BearErrMiss } from "../ErrorComps";
 
 export function BearForm({
   noText,
@@ -33,6 +34,7 @@ export function BearForm({
   inputConfig,
   //
   // 1button
+  renderButton,
   noButton,
   noButtonEnd,
   onCancel,
@@ -62,7 +64,7 @@ export function BearForm({
   ImageTextList,
   topButtonTrue,
   autofocus,
-  formid,
+  id,
   // 1required
   requireAll,
   //
@@ -95,6 +97,7 @@ export function BearForm({
   //
   ...args
 }) {
+  id = id ? id : bearName;
   //
   // 1const
   const [loadVars, setloadVars] = useState();
@@ -257,9 +260,20 @@ export function BearForm({
   const difjgr = {
     ...args,
     ...sdjifwer,
-    id: formid,
+    id,
     name,
   };
+
+  // 1args DIV
+  const nsdokfer = {
+    style: {
+      textAlign: "center",
+      ...style,
+    },
+    ...argPass(args),
+  };
+
+  bearlog.lug("___ nsdokfer ___", nsdokfer);
 
   // 1button
   function Buttiona({
@@ -322,7 +336,7 @@ export function BearForm({
       ...siwerew,
       type: !disabled && "submit",
       value: text,
-      form: formid,
+      form: id,
       style: jsadcvx,
       // genConfig: aewsadw,
       ...ijda,
@@ -335,16 +349,13 @@ export function BearForm({
 
     bearlog.lug("___ bForm BUTTON ___", dvbijkrw);
 
-    const adhwdse = (
-      <div>
-        {/* <BearButton {...dvbijkrw}>{buttonText}</BearButton> */}
-        {/* <Button {...dvbijkrw}>{text}</Button> */}
-        <button {...dvbijkrw}>
-          {/*  */}
-          {sdijfwr}
-        </button>
-        {/* <input {...dvbijkrw} /> */}
-      </div>
+    const adhwdse = renderButton ? (
+      renderButton(dvbijkrw)
+    ) : (
+      <button {...dvbijkrw}>
+        {/*  */}
+        {sdijfwr}
+      </button>
     );
 
     return adhwdse;
@@ -663,19 +674,18 @@ export function BearForm({
     aidjwe
   ) : (
     <>
-      <form style={style} {...ijdfsr}>
-        {aidjwe}
-      </form>
+      <form {...ijdfsr}>{aidjwe}</form>
     </>
   );
 
-  const nsdokfer = argPass(args);
+  bearlog.lug("___ nsdokfer ___", nsdokfer);
+
   const isae = <div {...nsdokfer}>{xcvsfs}</div>;
 
   const isjdwesdfoek =
     //   //
-    !formid
-      ? BearErrMiss("formid", bearName, "BearForm")
+    !id
+      ? BearErrMiss("bearName", bearName, "BearForm")
       : BearCheckMain("BearForm", isae, args);
   // // aweuw;
   // BearCheckMain("BearForm", <BearForm {...dfjgrt} />, args);

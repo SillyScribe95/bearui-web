@@ -21,7 +21,7 @@ import { BearError } from "./BearError";
 import { BearListMap } from "./list/BearListMap";
 import { BearInputBase } from "./input/BearInputBase";
 import { BearCheckMain } from "./check/BearCheckMain";
-import { objectTrue } from "../functions/dictFuncs";
+import { objectTrue, removeEmptyDict } from "../functions/dictFuncs";
 
 // import SearchKnowledge from "../containers/search/SearchKnowledge";
 // import { AlignMain } from "./AlignMain";
@@ -367,7 +367,7 @@ export function argPass({
   ...sdf
 }) {
   //
-  const dfigjt = {
+  const dfigjt = removeEmptyDict({
     ...genConfig,
     id,
     className,
@@ -376,7 +376,7 @@ export function argPass({
     children,
     name,
     flex,
-  };
+  });
 
   return dfigjt;
 }

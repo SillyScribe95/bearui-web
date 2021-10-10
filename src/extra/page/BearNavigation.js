@@ -10,7 +10,7 @@ export function BearNavigation({ blankTrue, ...aaaa }) {
   function asid(xcvdf) {
     // switch getTpye
 
-    bearlog.log("aAS ssss", xcvdf);
+    bearlog.lug("aAS ssss", xcvdf);
 
     // return "forewa";
     return sdfrdsf(xcvdf);

@@ -291,7 +291,7 @@ export function BearListItemExpand(
           obj: listarr,
         };
 
-    bearlog.log(bearName, "___ dsifjw ___", {
+    bearlog.lug(bearName, "___ dsifjw ___", {
       RENDERTYPE: typeList,
       objo,
       ...dsifjw,

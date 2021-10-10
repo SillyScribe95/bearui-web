@@ -108,7 +108,7 @@ export function BearDiv({
     ...style,
   };
 
-  bearlog.log("___ gibjr ___", gibjr);
+  bearlog.lug("___ gibjr ___", gibjr);
 
   const oksde = {
     style: gibjr,

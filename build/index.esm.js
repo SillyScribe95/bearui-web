@@ -29812,7 +29812,7 @@ function BearErrArgType$1(arg, type, {
   //
   return BearError(bearName + "'s " + BearQuote(arg) + " argument must be a " + type, asd);
 }
-function BearErrMiss$1(...asd) {
+function BearErrMiss(...asd) {
   //
   return BearError(BearMissing(...asd));
 }
@@ -30052,7 +30052,7 @@ function BearListItemExpand(cvbokfe, dasfjewr, {
     const dsifjw = dictRet ? oksdf : { ...oksdf,
       obj: listarr
     };
-    bearlog.log(bearName, "___ dsifjw ___", {
+    bearlog.lug(bearName, "___ dsifjw ___", {
       RENDERTYPE: typeList,
       objo,
       ...dsifjw
@@ -30936,14 +30936,14 @@ function dfkbijv(named, children, {
   }
 
   function rendName() {
-    return !bearName && !noNameNeeded ? sajwae(BearErrMiss$1("bearName", bearName, sdufdsf) // BearError(
+    return !bearName && !noNameNeeded ? sajwae(BearErrMiss("bearName", bearName, sdufdsf) // BearError(
     //   `${BearPossess(
     //     "argument",
     //     bearName,
     //     sdufdsf
     //   )}' needs a 'bearName' attribute!`
     // )
-    ) : objRequre ? sajwae(BearErrMiss$1(objRequre, bearName, sdufdsf)) : objDegrade ? sajwae(degradMess()) : /*#__PURE__*/React__default$1.createElement(BearDiv$1, args);
+    ) : objRequre ? sajwae(BearErrMiss(objRequre, bearName, sdufdsf)) : objDegrade ? sajwae(degradMess()) : /*#__PURE__*/React__default$1.createElement(BearDiv$1, args);
   }
 
   return rendName();
@@ -31318,7 +31318,7 @@ function BearCheckList(named, obj, {
   function renderCheck() {
     //
     const ijsdfw = renderItem || typeList || containFunc || args.return;
-    const cisas = ijsdfw ? obj : BearErrMiss$1("'containFunc' or 'renderItem' or 'typeList' or 'return'", bearName, named);
+    const cisas = ijsdfw ? obj : BearErrMiss("'containFunc' or 'renderItem' or 'typeList' or 'return'", bearName, named);
     return cisas;
   }
 
@@ -31732,7 +31732,7 @@ function argPass({
   ...sdf
 }) {
   //
-  const dfigjt = { ...genConfig,
+  const dfigjt = removeEmptyDict({ ...genConfig,
     id,
     className,
     style,
@@ -31740,7 +31740,7 @@ function argPass({
     children,
     name,
     flex
-  };
+  });
   return dfigjt;
 } //
 function InputBaseCheck(sfkr, {
@@ -31845,7 +31845,7 @@ function BearDiv$1({
     ...nvsse,
     ...style
   };
-  bearlog.log("___ gibjr ___", gibjr);
+  bearlog.lug("___ gibjr ___", gibjr);
   const oksde = {
     style: gibjr,
     ...args
@@ -56642,6 +56642,7 @@ function BearForm({
   inputConfig,
   //
   // 1button
+  renderButton,
   noButton,
   noButtonEnd,
   onCancel,
@@ -56671,7 +56672,7 @@ function BearForm({
   ImageTextList,
   topButtonTrue,
   autofocus,
-  formid,
+  id,
   // 1required
   requireAll,
   //
@@ -56704,8 +56705,9 @@ function BearForm({
   //
   ...args
 }) {
-  //
+  id = id ? id : bearName; //
   // 1const
+
   const [loadVars, setloadVars] = useState();
   const [loadSetto, setloadSetto] = useState();
   useState();
@@ -56855,9 +56857,18 @@ function BearForm({
 
   const difjgr = { ...args,
     ...sdjifwer,
-    id: formid,
+    id,
     name
-  }; // 1button
+  }; // 1args DIV
+
+  const nsdokfer = {
+    style: {
+      textAlign: "center",
+      ...style
+    },
+    ...argPass(args)
+  };
+  bearlog.lug("___ nsdokfer ___", nsdokfer); // 1button
 
   function Buttiona({
     disabledConfig,
@@ -56896,7 +56907,7 @@ function BearForm({
       ...siwerew,
       type: !disabled && "submit",
       value: text,
-      form: formid,
+      form: id,
       style: jsadcvx,
       // genConfig: aewsadw,
       ...ijda // marginTop: ""
@@ -56905,7 +56916,7 @@ function BearForm({
     const sdijfwr = //
     loadVars ? loadingText : text ? text : buttonText;
     bearlog.lug("___ bForm BUTTON ___", dvbijkrw);
-    const adhwdse = /*#__PURE__*/React__default$1.createElement("div", null, /*#__PURE__*/React__default$1.createElement("button", dvbijkrw, sdijfwr));
+    const adhwdse = renderButton ? renderButton(dvbijkrw) : /*#__PURE__*/React__default$1.createElement("button", dvbijkrw, sdijfwr);
     return adhwdse;
   }
 
@@ -57121,13 +57132,11 @@ function BearForm({
   });
   bearlog.lug("bform ALL HOOKS", sdjifwer); // 1form
 
-  const xcvsfs = loadSetto ? /*#__PURE__*/React__default$1.createElement(LoadMain, loadConfig) : noForm ? aidjwe : /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement("form", _extends$O({
-    style: style
-  }, ijdfsr), aidjwe));
-  const nsdokfer = argPass(args);
+  const xcvsfs = loadSetto ? /*#__PURE__*/React__default$1.createElement(LoadMain, loadConfig) : noForm ? aidjwe : /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement("form", ijdfsr, aidjwe));
+  bearlog.lug("___ nsdokfer ___", nsdokfer);
   const isae = /*#__PURE__*/React__default$1.createElement("div", nsdokfer, xcvsfs);
   const isjdwesdfoek = //   //
-  !formid ? BearErrMiss("formid", bearName, "BearForm") : BearCheckMain("BearForm", isae, args); // // aweuw;
+  !id ? BearErrMiss("bearName", bearName, "BearForm") : BearCheckMain("BearForm", isae, args); // // aweuw;
   // BearCheckMain("BearForm", <BearForm {...dfjgrt} />, args);
   // // <div {...genConfig}>{aweuw}</div>;
 
@@ -57546,7 +57555,7 @@ function BearCheckoutStripeBase({
         onChange: handleCardDetailsChange
       };
       const jsdrs = !paymentintentFunction && !ignoreErrors;
-      return jsdrs ? BearErrMiss$1("paymentintentFunction", bearName, "BearCheckoutStripe") : /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement(CardElement, dsfoqeqs));
+      return jsdrs ? BearErrMiss("paymentintentFunction", bearName, "BearCheckoutStripe") : /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement(CardElement, dsfoqeqs));
     }
 
     function asodke(error) {
@@ -64445,7 +64454,7 @@ function BearNavigation({
   //
   function asid(xcvdf) {
     // switch getTpye
-    bearlog.log("aAS ssss", xcvdf); // return "forewa";
+    bearlog.lug("aAS ssss", xcvdf); // return "forewa";
 
     return sdfrdsf(xcvdf);
   }
