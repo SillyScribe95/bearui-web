@@ -12,7 +12,7 @@ import { isEmpty, remove } from "lodash";
 import { BearError } from "../BearError";
 import { BearListMap } from "./BearListMap";
 import { BearListItem } from "./BearListItem";
-import { argMiss, argPass, BearMissing, BearPossess } from "../GlobalComps";
+import { argMiss, argPass } from "../GlobalComps";
 import { getListComplex } from "./getListComplex";
 import { BearCheckList } from "../check/BearCheckList";
 import { chunk } from "lodash";
@@ -24,12 +24,12 @@ export function BearList(
     obj,
     typevar,
     // 1remove
+    containFunc,
     list,
     // 1name
     bearName,
     //
     // 1display
-    containFunc,
     displayNumber,
     rowConfig,
     //
@@ -72,13 +72,15 @@ export function BearList(
     collapseTrue,
     renderItem,
     typeList,
-
     ...listArgs
   }
 ) {
   // 1list
   list = list && getListComplex(list, listArgs);
   bearlog.lug("___Blist list ___", list);
+
+  // 1const
+  // const [chosios, setchosios] = useState(chosenItem);
 
   // function passChoose(itmBase) {
   //   if (chooseTrue) {
@@ -89,8 +91,6 @@ export function BearList(
   //     setchosios(ogfsdfds);
   //   }
   // }
-
-  // const sdfosf =
 
   // 1baseargs
   const sidwre = {
@@ -123,29 +123,16 @@ export function BearList(
   // 1horiz
   function HozBar(lsoeas) {
     // align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
-    let oaksdas =
-      //
-      "asdas";
-    // centerItem;
 
-    const seqw = {
-      style: {
-        display: "flex",
-        justifyContent: "space-around",
-      },
+    const okaewq = true && {
+      alignContent: "center",
+      justifyContent: "space-around",
     };
-
-    const okaewq = oaksdas && seqw;
-
-    let aoksda =
-      //
-      // donelist(lsoeas);
-      ["asdfasd", "Asdokqwe", "Asdqwke"].map((asdas) => asdas);
 
     const okadwe = {
       flex: true,
       style: okaewq,
-      obj: aoksda,
+      obj: donelist(lsoeas),
     };
 
     // 1console
@@ -154,7 +141,6 @@ export function BearList(
 
     const jisad =
       //
-      // <div {...seqw}>{aoksda}</div>
       BearDiv(okadwe);
     // "okafsdf";
     // EndListA();
@@ -219,6 +205,15 @@ export function BearList(
 
   function donelist(listio) {
     const fullVar = !isEmpty(listio) || loadtrue;
+
+    if (logtrue) {
+      bearlog.lugLinas(5);
+      bearlog.laggu(bearName, "___ BEARLIST ___", listio);
+      bearlog.laggu("___ listArgs ___", listArgs);
+      bearlog.laggu("___ sidwre ___", sidwre);
+      bearlog.laggu("___ beList ___", sidjfwe);
+    }
+
     const ushdsa =
       //
       hideList ? "" : BearListMap(listio, sidjfwe);
@@ -231,29 +226,23 @@ export function BearList(
   const saokwe = typeBullet ? <ul>{sadfwe}</ul> : sadfwe;
 
   function RendBase() {
-    let saidje = {
+    const saidje = argPass({
       obj: saokwe,
-      // flex,
+      flex,
       ...listArgs,
-    };
-
-    saidje =
-      //
-      // saidje;
-      argMiss(saidje);
-
-    let kaasdaz =
-      //
-      BearDiv(saidje);
-    // saokwe;
+    });
 
     // return "sodkweeqw";
-    return kaasdaz;
+    return BearDiv(saidje);
   }
 
-  const idjsae =
+  const idjsae = BearCheckList(
+    compName,
+    RendBase(),
     //
-    BearCheckList(compName, RendBase(), sidjfwe);
+    argMiss(sidjfwe)
+  );
+  //
   // BearDiv(saidje)
   // rendName();
   // renderCheck();

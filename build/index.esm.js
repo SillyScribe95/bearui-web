@@ -1,5 +1,5 @@
 import * as React from 'react';
-import React__default$1, { forwardRef as forwardRef$3, useContext, createContext as createContext$1, createElement, Fragment as Fragment$2, useRef, useLayoutEffect, useState, useCallback, useMemo, useEffect, Component } from 'react';
+import React__default$1, { forwardRef as forwardRef$3, useContext, createElement, createContext as createContext$1, Fragment as Fragment$2, useRef, useLayoutEffect, useState, useCallback, useMemo, useEffect, Component } from 'react';
 import { AiOutlineEyeInvisible, AiOutlineEye, AiOutlineCopy } from 'react-icons/ai';
 import { createPortal, findDOMNode } from 'react-dom';
 import 'react-icons/si';
@@ -63,1260 +63,13 @@ function createCommonjsModule(fn) {
 	return fn(module, module.exports), module.exports;
 }
 
-var colorName = {
-  "aliceblue": [240, 248, 255],
-  "antiquewhite": [250, 235, 215],
-  "aqua": [0, 255, 255],
-  "aquamarine": [127, 255, 212],
-  "azure": [240, 255, 255],
-  "beige": [245, 245, 220],
-  "bisque": [255, 228, 196],
-  "black": [0, 0, 0],
-  "blanchedalmond": [255, 235, 205],
-  "blue": [0, 0, 255],
-  "blueviolet": [138, 43, 226],
-  "brown": [165, 42, 42],
-  "burlywood": [222, 184, 135],
-  "cadetblue": [95, 158, 160],
-  "chartreuse": [127, 255, 0],
-  "chocolate": [210, 105, 30],
-  "coral": [255, 127, 80],
-  "cornflowerblue": [100, 149, 237],
-  "cornsilk": [255, 248, 220],
-  "crimson": [220, 20, 60],
-  "cyan": [0, 255, 255],
-  "darkblue": [0, 0, 139],
-  "darkcyan": [0, 139, 139],
-  "darkgoldenrod": [184, 134, 11],
-  "darkgray": [169, 169, 169],
-  "darkgreen": [0, 100, 0],
-  "darkgrey": [169, 169, 169],
-  "darkkhaki": [189, 183, 107],
-  "darkmagenta": [139, 0, 139],
-  "darkolivegreen": [85, 107, 47],
-  "darkorange": [255, 140, 0],
-  "darkorchid": [153, 50, 204],
-  "darkred": [139, 0, 0],
-  "darksalmon": [233, 150, 122],
-  "darkseagreen": [143, 188, 143],
-  "darkslateblue": [72, 61, 139],
-  "darkslategray": [47, 79, 79],
-  "darkslategrey": [47, 79, 79],
-  "darkturquoise": [0, 206, 209],
-  "darkviolet": [148, 0, 211],
-  "deeppink": [255, 20, 147],
-  "deepskyblue": [0, 191, 255],
-  "dimgray": [105, 105, 105],
-  "dimgrey": [105, 105, 105],
-  "dodgerblue": [30, 144, 255],
-  "firebrick": [178, 34, 34],
-  "floralwhite": [255, 250, 240],
-  "forestgreen": [34, 139, 34],
-  "fuchsia": [255, 0, 255],
-  "gainsboro": [220, 220, 220],
-  "ghostwhite": [248, 248, 255],
-  "gold": [255, 215, 0],
-  "goldenrod": [218, 165, 32],
-  "gray": [128, 128, 128],
-  "green": [0, 128, 0],
-  "greenyellow": [173, 255, 47],
-  "grey": [128, 128, 128],
-  "honeydew": [240, 255, 240],
-  "hotpink": [255, 105, 180],
-  "indianred": [205, 92, 92],
-  "indigo": [75, 0, 130],
-  "ivory": [255, 255, 240],
-  "khaki": [240, 230, 140],
-  "lavender": [230, 230, 250],
-  "lavenderblush": [255, 240, 245],
-  "lawngreen": [124, 252, 0],
-  "lemonchiffon": [255, 250, 205],
-  "lightblue": [173, 216, 230],
-  "lightcoral": [240, 128, 128],
-  "lightcyan": [224, 255, 255],
-  "lightgoldenrodyellow": [250, 250, 210],
-  "lightgray": [211, 211, 211],
-  "lightgreen": [144, 238, 144],
-  "lightgrey": [211, 211, 211],
-  "lightpink": [255, 182, 193],
-  "lightsalmon": [255, 160, 122],
-  "lightseagreen": [32, 178, 170],
-  "lightskyblue": [135, 206, 250],
-  "lightslategray": [119, 136, 153],
-  "lightslategrey": [119, 136, 153],
-  "lightsteelblue": [176, 196, 222],
-  "lightyellow": [255, 255, 224],
-  "lime": [0, 255, 0],
-  "limegreen": [50, 205, 50],
-  "linen": [250, 240, 230],
-  "magenta": [255, 0, 255],
-  "maroon": [128, 0, 0],
-  "mediumaquamarine": [102, 205, 170],
-  "mediumblue": [0, 0, 205],
-  "mediumorchid": [186, 85, 211],
-  "mediumpurple": [147, 112, 219],
-  "mediumseagreen": [60, 179, 113],
-  "mediumslateblue": [123, 104, 238],
-  "mediumspringgreen": [0, 250, 154],
-  "mediumturquoise": [72, 209, 204],
-  "mediumvioletred": [199, 21, 133],
-  "midnightblue": [25, 25, 112],
-  "mintcream": [245, 255, 250],
-  "mistyrose": [255, 228, 225],
-  "moccasin": [255, 228, 181],
-  "navajowhite": [255, 222, 173],
-  "navy": [0, 0, 128],
-  "oldlace": [253, 245, 230],
-  "olive": [128, 128, 0],
-  "olivedrab": [107, 142, 35],
-  "orange": [255, 165, 0],
-  "orangered": [255, 69, 0],
-  "orchid": [218, 112, 214],
-  "palegoldenrod": [238, 232, 170],
-  "palegreen": [152, 251, 152],
-  "paleturquoise": [175, 238, 238],
-  "palevioletred": [219, 112, 147],
-  "papayawhip": [255, 239, 213],
-  "peachpuff": [255, 218, 185],
-  "peru": [205, 133, 63],
-  "pink": [255, 192, 203],
-  "plum": [221, 160, 221],
-  "powderblue": [176, 224, 230],
-  "purple": [128, 0, 128],
-  "rebeccapurple": [102, 51, 153],
-  "red": [255, 0, 0],
-  "rosybrown": [188, 143, 143],
-  "royalblue": [65, 105, 225],
-  "saddlebrown": [139, 69, 19],
-  "salmon": [250, 128, 114],
-  "sandybrown": [244, 164, 96],
-  "seagreen": [46, 139, 87],
-  "seashell": [255, 245, 238],
-  "sienna": [160, 82, 45],
-  "silver": [192, 192, 192],
-  "skyblue": [135, 206, 235],
-  "slateblue": [106, 90, 205],
-  "slategray": [112, 128, 144],
-  "slategrey": [112, 128, 144],
-  "snow": [255, 250, 250],
-  "springgreen": [0, 255, 127],
-  "steelblue": [70, 130, 180],
-  "tan": [210, 180, 140],
-  "teal": [0, 128, 128],
-  "thistle": [216, 191, 216],
-  "tomato": [255, 99, 71],
-  "turquoise": [64, 224, 208],
-  "violet": [238, 130, 238],
-  "wheat": [245, 222, 179],
-  "white": [255, 255, 255],
-  "whitesmoke": [245, 245, 245],
-  "yellow": [255, 255, 0],
-  "yellowgreen": [154, 205, 50]
-};
-
-/* MIT license */
-
-/* eslint-disable no-mixed-operators */
- // NOTE: conversions should only return primitive values (i.e. arrays, or
-//       values that give correct `typeof` results).
-//       do not use box values types (i.e. Number(), String(), etc.)
-
-
-const reverseKeywords = {};
-
-for (const key of Object.keys(colorName)) {
-  reverseKeywords[colorName[key]] = key;
-}
-
-const convert$1 = {
-  rgb: {
-    channels: 3,
-    labels: 'rgb'
-  },
-  hsl: {
-    channels: 3,
-    labels: 'hsl'
-  },
-  hsv: {
-    channels: 3,
-    labels: 'hsv'
-  },
-  hwb: {
-    channels: 3,
-    labels: 'hwb'
-  },
-  cmyk: {
-    channels: 4,
-    labels: 'cmyk'
-  },
-  xyz: {
-    channels: 3,
-    labels: 'xyz'
-  },
-  lab: {
-    channels: 3,
-    labels: 'lab'
-  },
-  lch: {
-    channels: 3,
-    labels: 'lch'
-  },
-  hex: {
-    channels: 1,
-    labels: ['hex']
-  },
-  keyword: {
-    channels: 1,
-    labels: ['keyword']
-  },
-  ansi16: {
-    channels: 1,
-    labels: ['ansi16']
-  },
-  ansi256: {
-    channels: 1,
-    labels: ['ansi256']
-  },
-  hcg: {
-    channels: 3,
-    labels: ['h', 'c', 'g']
-  },
-  apple: {
-    channels: 3,
-    labels: ['r16', 'g16', 'b16']
-  },
-  gray: {
-    channels: 1,
-    labels: ['gray']
-  }
-};
-var conversions = convert$1; // Hide .channels and .labels properties
-
-for (const model of Object.keys(convert$1)) {
-  if (!('channels' in convert$1[model])) {
-    throw new Error('missing channels property: ' + model);
-  }
-
-  if (!('labels' in convert$1[model])) {
-    throw new Error('missing channel labels property: ' + model);
-  }
-
-  if (convert$1[model].labels.length !== convert$1[model].channels) {
-    throw new Error('channel and label counts mismatch: ' + model);
-  }
-
-  const {
-    channels,
-    labels
-  } = convert$1[model];
-  delete convert$1[model].channels;
-  delete convert$1[model].labels;
-  Object.defineProperty(convert$1[model], 'channels', {
-    value: channels
-  });
-  Object.defineProperty(convert$1[model], 'labels', {
-    value: labels
-  });
-}
-
-convert$1.rgb.hsl = function (rgb) {
-  const r = rgb[0] / 255;
-  const g = rgb[1] / 255;
-  const b = rgb[2] / 255;
-  const min = Math.min(r, g, b);
-  const max = Math.max(r, g, b);
-  const delta = max - min;
-  let h;
-  let s;
-
-  if (max === min) {
-    h = 0;
-  } else if (r === max) {
-    h = (g - b) / delta;
-  } else if (g === max) {
-    h = 2 + (b - r) / delta;
-  } else if (b === max) {
-    h = 4 + (r - g) / delta;
-  }
-
-  h = Math.min(h * 60, 360);
-
-  if (h < 0) {
-    h += 360;
-  }
-
-  const l = (min + max) / 2;
-
-  if (max === min) {
-    s = 0;
-  } else if (l <= 0.5) {
-    s = delta / (max + min);
-  } else {
-    s = delta / (2 - max - min);
-  }
-
-  return [h, s * 100, l * 100];
-};
-
-convert$1.rgb.hsv = function (rgb) {
-  let rdif;
-  let gdif;
-  let bdif;
-  let h;
-  let s;
-  const r = rgb[0] / 255;
-  const g = rgb[1] / 255;
-  const b = rgb[2] / 255;
-  const v = Math.max(r, g, b);
-  const diff = v - Math.min(r, g, b);
-
-  const diffc = function (c) {
-    return (v - c) / 6 / diff + 1 / 2;
-  };
-
-  if (diff === 0) {
-    h = 0;
-    s = 0;
-  } else {
-    s = diff / v;
-    rdif = diffc(r);
-    gdif = diffc(g);
-    bdif = diffc(b);
-
-    if (r === v) {
-      h = bdif - gdif;
-    } else if (g === v) {
-      h = 1 / 3 + rdif - bdif;
-    } else if (b === v) {
-      h = 2 / 3 + gdif - rdif;
-    }
-
-    if (h < 0) {
-      h += 1;
-    } else if (h > 1) {
-      h -= 1;
-    }
-  }
-
-  return [h * 360, s * 100, v * 100];
-};
-
-convert$1.rgb.hwb = function (rgb) {
-  const r = rgb[0];
-  const g = rgb[1];
-  let b = rgb[2];
-  const h = convert$1.rgb.hsl(rgb)[0];
-  const w = 1 / 255 * Math.min(r, Math.min(g, b));
-  b = 1 - 1 / 255 * Math.max(r, Math.max(g, b));
-  return [h, w * 100, b * 100];
-};
-
-convert$1.rgb.cmyk = function (rgb) {
-  const r = rgb[0] / 255;
-  const g = rgb[1] / 255;
-  const b = rgb[2] / 255;
-  const k = Math.min(1 - r, 1 - g, 1 - b);
-  const c = (1 - r - k) / (1 - k) || 0;
-  const m = (1 - g - k) / (1 - k) || 0;
-  const y = (1 - b - k) / (1 - k) || 0;
-  return [c * 100, m * 100, y * 100, k * 100];
-};
-
-function comparativeDistance(x, y) {
-  /*
-  	See https://en.m.wikipedia.org/wiki/Euclidean_distance#Squared_Euclidean_distance
-  */
-  return (x[0] - y[0]) ** 2 + (x[1] - y[1]) ** 2 + (x[2] - y[2]) ** 2;
-}
-
-convert$1.rgb.keyword = function (rgb) {
-  const reversed = reverseKeywords[rgb];
-
-  if (reversed) {
-    return reversed;
-  }
-
-  let currentClosestDistance = Infinity;
-  let currentClosestKeyword;
-
-  for (const keyword of Object.keys(colorName)) {
-    const value = colorName[keyword]; // Compute comparative distance
-
-    const distance = comparativeDistance(rgb, value); // Check if its less, if so set as closest
-
-    if (distance < currentClosestDistance) {
-      currentClosestDistance = distance;
-      currentClosestKeyword = keyword;
-    }
-  }
-
-  return currentClosestKeyword;
-};
-
-convert$1.keyword.rgb = function (keyword) {
-  return colorName[keyword];
-};
-
-convert$1.rgb.xyz = function (rgb) {
-  let r = rgb[0] / 255;
-  let g = rgb[1] / 255;
-  let b = rgb[2] / 255; // Assume sRGB
-
-  r = r > 0.04045 ? ((r + 0.055) / 1.055) ** 2.4 : r / 12.92;
-  g = g > 0.04045 ? ((g + 0.055) / 1.055) ** 2.4 : g / 12.92;
-  b = b > 0.04045 ? ((b + 0.055) / 1.055) ** 2.4 : b / 12.92;
-  const x = r * 0.4124 + g * 0.3576 + b * 0.1805;
-  const y = r * 0.2126 + g * 0.7152 + b * 0.0722;
-  const z = r * 0.0193 + g * 0.1192 + b * 0.9505;
-  return [x * 100, y * 100, z * 100];
-};
-
-convert$1.rgb.lab = function (rgb) {
-  const xyz = convert$1.rgb.xyz(rgb);
-  let x = xyz[0];
-  let y = xyz[1];
-  let z = xyz[2];
-  x /= 95.047;
-  y /= 100;
-  z /= 108.883;
-  x = x > 0.008856 ? x ** (1 / 3) : 7.787 * x + 16 / 116;
-  y = y > 0.008856 ? y ** (1 / 3) : 7.787 * y + 16 / 116;
-  z = z > 0.008856 ? z ** (1 / 3) : 7.787 * z + 16 / 116;
-  const l = 116 * y - 16;
-  const a = 500 * (x - y);
-  const b = 200 * (y - z);
-  return [l, a, b];
-};
-
-convert$1.hsl.rgb = function (hsl) {
-  const h = hsl[0] / 360;
-  const s = hsl[1] / 100;
-  const l = hsl[2] / 100;
-  let t2;
-  let t3;
-  let val;
-
-  if (s === 0) {
-    val = l * 255;
-    return [val, val, val];
-  }
-
-  if (l < 0.5) {
-    t2 = l * (1 + s);
-  } else {
-    t2 = l + s - l * s;
-  }
-
-  const t1 = 2 * l - t2;
-  const rgb = [0, 0, 0];
-
-  for (let i = 0; i < 3; i++) {
-    t3 = h + 1 / 3 * -(i - 1);
-
-    if (t3 < 0) {
-      t3++;
-    }
-
-    if (t3 > 1) {
-      t3--;
-    }
-
-    if (6 * t3 < 1) {
-      val = t1 + (t2 - t1) * 6 * t3;
-    } else if (2 * t3 < 1) {
-      val = t2;
-    } else if (3 * t3 < 2) {
-      val = t1 + (t2 - t1) * (2 / 3 - t3) * 6;
-    } else {
-      val = t1;
-    }
-
-    rgb[i] = val * 255;
-  }
-
-  return rgb;
-};
-
-convert$1.hsl.hsv = function (hsl) {
-  const h = hsl[0];
-  let s = hsl[1] / 100;
-  let l = hsl[2] / 100;
-  let smin = s;
-  const lmin = Math.max(l, 0.01);
-  l *= 2;
-  s *= l <= 1 ? l : 2 - l;
-  smin *= lmin <= 1 ? lmin : 2 - lmin;
-  const v = (l + s) / 2;
-  const sv = l === 0 ? 2 * smin / (lmin + smin) : 2 * s / (l + s);
-  return [h, sv * 100, v * 100];
-};
-
-convert$1.hsv.rgb = function (hsv) {
-  const h = hsv[0] / 60;
-  const s = hsv[1] / 100;
-  let v = hsv[2] / 100;
-  const hi = Math.floor(h) % 6;
-  const f = h - Math.floor(h);
-  const p = 255 * v * (1 - s);
-  const q = 255 * v * (1 - s * f);
-  const t = 255 * v * (1 - s * (1 - f));
-  v *= 255;
-
-  switch (hi) {
-    case 0:
-      return [v, t, p];
-
-    case 1:
-      return [q, v, p];
-
-    case 2:
-      return [p, v, t];
-
-    case 3:
-      return [p, q, v];
-
-    case 4:
-      return [t, p, v];
-
-    case 5:
-      return [v, p, q];
-  }
-};
-
-convert$1.hsv.hsl = function (hsv) {
-  const h = hsv[0];
-  const s = hsv[1] / 100;
-  const v = hsv[2] / 100;
-  const vmin = Math.max(v, 0.01);
-  let sl;
-  let l;
-  l = (2 - s) * v;
-  const lmin = (2 - s) * vmin;
-  sl = s * vmin;
-  sl /= lmin <= 1 ? lmin : 2 - lmin;
-  sl = sl || 0;
-  l /= 2;
-  return [h, sl * 100, l * 100];
-}; // http://dev.w3.org/csswg/css-color/#hwb-to-rgb
-
-
-convert$1.hwb.rgb = function (hwb) {
-  const h = hwb[0] / 360;
-  let wh = hwb[1] / 100;
-  let bl = hwb[2] / 100;
-  const ratio = wh + bl;
-  let f; // Wh + bl cant be > 1
-
-  if (ratio > 1) {
-    wh /= ratio;
-    bl /= ratio;
-  }
-
-  const i = Math.floor(6 * h);
-  const v = 1 - bl;
-  f = 6 * h - i;
-
-  if ((i & 0x01) !== 0) {
-    f = 1 - f;
-  }
-
-  const n = wh + f * (v - wh); // Linear interpolation
-
-  let r;
-  let g;
-  let b;
-  /* eslint-disable max-statements-per-line,no-multi-spaces */
-
-  switch (i) {
-    default:
-    case 6:
-    case 0:
-      r = v;
-      g = n;
-      b = wh;
-      break;
-
-    case 1:
-      r = n;
-      g = v;
-      b = wh;
-      break;
-
-    case 2:
-      r = wh;
-      g = v;
-      b = n;
-      break;
-
-    case 3:
-      r = wh;
-      g = n;
-      b = v;
-      break;
-
-    case 4:
-      r = n;
-      g = wh;
-      b = v;
-      break;
-
-    case 5:
-      r = v;
-      g = wh;
-      b = n;
-      break;
-  }
-  /* eslint-enable max-statements-per-line,no-multi-spaces */
-
-
-  return [r * 255, g * 255, b * 255];
-};
-
-convert$1.cmyk.rgb = function (cmyk) {
-  const c = cmyk[0] / 100;
-  const m = cmyk[1] / 100;
-  const y = cmyk[2] / 100;
-  const k = cmyk[3] / 100;
-  const r = 1 - Math.min(1, c * (1 - k) + k);
-  const g = 1 - Math.min(1, m * (1 - k) + k);
-  const b = 1 - Math.min(1, y * (1 - k) + k);
-  return [r * 255, g * 255, b * 255];
-};
-
-convert$1.xyz.rgb = function (xyz) {
-  const x = xyz[0] / 100;
-  const y = xyz[1] / 100;
-  const z = xyz[2] / 100;
-  let r;
-  let g;
-  let b;
-  r = x * 3.2406 + y * -1.5372 + z * -0.4986;
-  g = x * -0.9689 + y * 1.8758 + z * 0.0415;
-  b = x * 0.0557 + y * -0.2040 + z * 1.0570; // Assume sRGB
-
-  r = r > 0.0031308 ? 1.055 * r ** (1.0 / 2.4) - 0.055 : r * 12.92;
-  g = g > 0.0031308 ? 1.055 * g ** (1.0 / 2.4) - 0.055 : g * 12.92;
-  b = b > 0.0031308 ? 1.055 * b ** (1.0 / 2.4) - 0.055 : b * 12.92;
-  r = Math.min(Math.max(0, r), 1);
-  g = Math.min(Math.max(0, g), 1);
-  b = Math.min(Math.max(0, b), 1);
-  return [r * 255, g * 255, b * 255];
-};
-
-convert$1.xyz.lab = function (xyz) {
-  let x = xyz[0];
-  let y = xyz[1];
-  let z = xyz[2];
-  x /= 95.047;
-  y /= 100;
-  z /= 108.883;
-  x = x > 0.008856 ? x ** (1 / 3) : 7.787 * x + 16 / 116;
-  y = y > 0.008856 ? y ** (1 / 3) : 7.787 * y + 16 / 116;
-  z = z > 0.008856 ? z ** (1 / 3) : 7.787 * z + 16 / 116;
-  const l = 116 * y - 16;
-  const a = 500 * (x - y);
-  const b = 200 * (y - z);
-  return [l, a, b];
-};
-
-convert$1.lab.xyz = function (lab) {
-  const l = lab[0];
-  const a = lab[1];
-  const b = lab[2];
-  let x;
-  let y;
-  let z;
-  y = (l + 16) / 116;
-  x = a / 500 + y;
-  z = y - b / 200;
-  const y2 = y ** 3;
-  const x2 = x ** 3;
-  const z2 = z ** 3;
-  y = y2 > 0.008856 ? y2 : (y - 16 / 116) / 7.787;
-  x = x2 > 0.008856 ? x2 : (x - 16 / 116) / 7.787;
-  z = z2 > 0.008856 ? z2 : (z - 16 / 116) / 7.787;
-  x *= 95.047;
-  y *= 100;
-  z *= 108.883;
-  return [x, y, z];
-};
-
-convert$1.lab.lch = function (lab) {
-  const l = lab[0];
-  const a = lab[1];
-  const b = lab[2];
-  let h;
-  const hr = Math.atan2(b, a);
-  h = hr * 360 / 2 / Math.PI;
-
-  if (h < 0) {
-    h += 360;
-  }
-
-  const c = Math.sqrt(a * a + b * b);
-  return [l, c, h];
-};
-
-convert$1.lch.lab = function (lch) {
-  const l = lch[0];
-  const c = lch[1];
-  const h = lch[2];
-  const hr = h / 360 * 2 * Math.PI;
-  const a = c * Math.cos(hr);
-  const b = c * Math.sin(hr);
-  return [l, a, b];
-};
-
-convert$1.rgb.ansi16 = function (args, saturation = null) {
-  const [r, g, b] = args;
-  let value = saturation === null ? convert$1.rgb.hsv(args)[2] : saturation; // Hsv -> ansi16 optimization
-
-  value = Math.round(value / 50);
-
-  if (value === 0) {
-    return 30;
-  }
-
-  let ansi = 30 + (Math.round(b / 255) << 2 | Math.round(g / 255) << 1 | Math.round(r / 255));
-
-  if (value === 2) {
-    ansi += 60;
-  }
-
-  return ansi;
-};
-
-convert$1.hsv.ansi16 = function (args) {
-  // Optimization here; we already know the value and don't need to get
-  // it converted for us.
-  return convert$1.rgb.ansi16(convert$1.hsv.rgb(args), args[2]);
-};
-
-convert$1.rgb.ansi256 = function (args) {
-  const r = args[0];
-  const g = args[1];
-  const b = args[2]; // We use the extended greyscale palette here, with the exception of
-  // black and white. normal palette only has 4 greyscale shades.
-
-  if (r === g && g === b) {
-    if (r < 8) {
-      return 16;
-    }
-
-    if (r > 248) {
-      return 231;
-    }
-
-    return Math.round((r - 8) / 247 * 24) + 232;
-  }
-
-  const ansi = 16 + 36 * Math.round(r / 255 * 5) + 6 * Math.round(g / 255 * 5) + Math.round(b / 255 * 5);
-  return ansi;
-};
-
-convert$1.ansi16.rgb = function (args) {
-  let color = args % 10; // Handle greyscale
-
-  if (color === 0 || color === 7) {
-    if (args > 50) {
-      color += 3.5;
-    }
-
-    color = color / 10.5 * 255;
-    return [color, color, color];
-  }
-
-  const mult = (~~(args > 50) + 1) * 0.5;
-  const r = (color & 1) * mult * 255;
-  const g = (color >> 1 & 1) * mult * 255;
-  const b = (color >> 2 & 1) * mult * 255;
-  return [r, g, b];
-};
-
-convert$1.ansi256.rgb = function (args) {
-  // Handle greyscale
-  if (args >= 232) {
-    const c = (args - 232) * 10 + 8;
-    return [c, c, c];
-  }
-
-  args -= 16;
-  let rem;
-  const r = Math.floor(args / 36) / 5 * 255;
-  const g = Math.floor((rem = args % 36) / 6) / 5 * 255;
-  const b = rem % 6 / 5 * 255;
-  return [r, g, b];
-};
-
-convert$1.rgb.hex = function (args) {
-  const integer = ((Math.round(args[0]) & 0xFF) << 16) + ((Math.round(args[1]) & 0xFF) << 8) + (Math.round(args[2]) & 0xFF);
-  const string = integer.toString(16).toUpperCase();
-  return '000000'.substring(string.length) + string;
-};
-
-convert$1.hex.rgb = function (args) {
-  const match = args.toString(16).match(/[a-f0-9]{6}|[a-f0-9]{3}/i);
-
-  if (!match) {
-    return [0, 0, 0];
-  }
-
-  let colorString = match[0];
-
-  if (match[0].length === 3) {
-    colorString = colorString.split('').map(char => {
-      return char + char;
-    }).join('');
-  }
-
-  const integer = parseInt(colorString, 16);
-  const r = integer >> 16 & 0xFF;
-  const g = integer >> 8 & 0xFF;
-  const b = integer & 0xFF;
-  return [r, g, b];
-};
-
-convert$1.rgb.hcg = function (rgb) {
-  const r = rgb[0] / 255;
-  const g = rgb[1] / 255;
-  const b = rgb[2] / 255;
-  const max = Math.max(Math.max(r, g), b);
-  const min = Math.min(Math.min(r, g), b);
-  const chroma = max - min;
-  let grayscale;
-  let hue;
-
-  if (chroma < 1) {
-    grayscale = min / (1 - chroma);
-  } else {
-    grayscale = 0;
-  }
-
-  if (chroma <= 0) {
-    hue = 0;
-  } else if (max === r) {
-    hue = (g - b) / chroma % 6;
-  } else if (max === g) {
-    hue = 2 + (b - r) / chroma;
-  } else {
-    hue = 4 + (r - g) / chroma;
-  }
-
-  hue /= 6;
-  hue %= 1;
-  return [hue * 360, chroma * 100, grayscale * 100];
-};
-
-convert$1.hsl.hcg = function (hsl) {
-  const s = hsl[1] / 100;
-  const l = hsl[2] / 100;
-  const c = l < 0.5 ? 2.0 * s * l : 2.0 * s * (1.0 - l);
-  let f = 0;
-
-  if (c < 1.0) {
-    f = (l - 0.5 * c) / (1.0 - c);
-  }
-
-  return [hsl[0], c * 100, f * 100];
-};
-
-convert$1.hsv.hcg = function (hsv) {
-  const s = hsv[1] / 100;
-  const v = hsv[2] / 100;
-  const c = s * v;
-  let f = 0;
-
-  if (c < 1.0) {
-    f = (v - c) / (1 - c);
-  }
-
-  return [hsv[0], c * 100, f * 100];
-};
-
-convert$1.hcg.rgb = function (hcg) {
-  const h = hcg[0] / 360;
-  const c = hcg[1] / 100;
-  const g = hcg[2] / 100;
-
-  if (c === 0.0) {
-    return [g * 255, g * 255, g * 255];
-  }
-
-  const pure = [0, 0, 0];
-  const hi = h % 1 * 6;
-  const v = hi % 1;
-  const w = 1 - v;
-  let mg = 0;
-  /* eslint-disable max-statements-per-line */
-
-  switch (Math.floor(hi)) {
-    case 0:
-      pure[0] = 1;
-      pure[1] = v;
-      pure[2] = 0;
-      break;
-
-    case 1:
-      pure[0] = w;
-      pure[1] = 1;
-      pure[2] = 0;
-      break;
-
-    case 2:
-      pure[0] = 0;
-      pure[1] = 1;
-      pure[2] = v;
-      break;
-
-    case 3:
-      pure[0] = 0;
-      pure[1] = w;
-      pure[2] = 1;
-      break;
-
-    case 4:
-      pure[0] = v;
-      pure[1] = 0;
-      pure[2] = 1;
-      break;
-
-    default:
-      pure[0] = 1;
-      pure[1] = 0;
-      pure[2] = w;
-  }
-  /* eslint-enable max-statements-per-line */
-
-
-  mg = (1.0 - c) * g;
-  return [(c * pure[0] + mg) * 255, (c * pure[1] + mg) * 255, (c * pure[2] + mg) * 255];
-};
-
-convert$1.hcg.hsv = function (hcg) {
-  const c = hcg[1] / 100;
-  const g = hcg[2] / 100;
-  const v = c + g * (1.0 - c);
-  let f = 0;
-
-  if (v > 0.0) {
-    f = c / v;
-  }
-
-  return [hcg[0], f * 100, v * 100];
-};
-
-convert$1.hcg.hsl = function (hcg) {
-  const c = hcg[1] / 100;
-  const g = hcg[2] / 100;
-  const l = g * (1.0 - c) + 0.5 * c;
-  let s = 0;
-
-  if (l > 0.0 && l < 0.5) {
-    s = c / (2 * l);
-  } else if (l >= 0.5 && l < 1.0) {
-    s = c / (2 * (1 - l));
-  }
-
-  return [hcg[0], s * 100, l * 100];
-};
-
-convert$1.hcg.hwb = function (hcg) {
-  const c = hcg[1] / 100;
-  const g = hcg[2] / 100;
-  const v = c + g * (1.0 - c);
-  return [hcg[0], (v - c) * 100, (1 - v) * 100];
-};
-
-convert$1.hwb.hcg = function (hwb) {
-  const w = hwb[1] / 100;
-  const b = hwb[2] / 100;
-  const v = 1 - b;
-  const c = v - w;
-  let g = 0;
-
-  if (c < 1) {
-    g = (v - c) / (1 - c);
-  }
-
-  return [hwb[0], c * 100, g * 100];
-};
-
-convert$1.apple.rgb = function (apple) {
-  return [apple[0] / 65535 * 255, apple[1] / 65535 * 255, apple[2] / 65535 * 255];
-};
-
-convert$1.rgb.apple = function (rgb) {
-  return [rgb[0] / 255 * 65535, rgb[1] / 255 * 65535, rgb[2] / 255 * 65535];
-};
-
-convert$1.gray.rgb = function (args) {
-  return [args[0] / 100 * 255, args[0] / 100 * 255, args[0] / 100 * 255];
-};
-
-convert$1.gray.hsl = function (args) {
-  return [0, 0, args[0]];
-};
-
-convert$1.gray.hsv = convert$1.gray.hsl;
-
-convert$1.gray.hwb = function (gray) {
-  return [0, 100, gray[0]];
-};
-
-convert$1.gray.cmyk = function (gray) {
-  return [0, 0, 0, gray[0]];
-};
-
-convert$1.gray.lab = function (gray) {
-  return [gray[0], 0, 0];
-};
-
-convert$1.gray.hex = function (gray) {
-  const val = Math.round(gray[0] / 100 * 255) & 0xFF;
-  const integer = (val << 16) + (val << 8) + val;
-  const string = integer.toString(16).toUpperCase();
-  return '000000'.substring(string.length) + string;
-};
-
-convert$1.rgb.gray = function (rgb) {
-  const val = (rgb[0] + rgb[1] + rgb[2]) / 3;
-  return [val / 255 * 100];
-};
-
-/*
-	This function routes a model to all other models.
-
-	all functions that are routed have a property `.conversion` attached
-	to the returned synthetic function. This property is an array
-	of strings, each with the steps in between the 'from' and 'to'
-	color models (inclusive).
-
-	conversions that are not possible simply are not included.
-*/
-
-
-function buildGraph() {
-  const graph = {}; // https://jsperf.com/object-keys-vs-for-in-with-closure/3
-
-  const models = Object.keys(conversions);
-
-  for (let len = models.length, i = 0; i < len; i++) {
-    graph[models[i]] = {
-      // http://jsperf.com/1-vs-infinity
-      // micro-opt, but this is simple.
-      distance: -1,
-      parent: null
-    };
-  }
-
-  return graph;
-} // https://en.wikipedia.org/wiki/Breadth-first_search
-
-
-function deriveBFS(fromModel) {
-  const graph = buildGraph();
-  const queue = [fromModel]; // Unshift -> queue -> pop
-
-  graph[fromModel].distance = 0;
-
-  while (queue.length) {
-    const current = queue.pop();
-    const adjacents = Object.keys(conversions[current]);
-
-    for (let len = adjacents.length, i = 0; i < len; i++) {
-      const adjacent = adjacents[i];
-      const node = graph[adjacent];
-
-      if (node.distance === -1) {
-        node.distance = graph[current].distance + 1;
-        node.parent = current;
-        queue.unshift(adjacent);
-      }
-    }
-  }
-
-  return graph;
-}
-
-function link(from, to) {
-  return function (args) {
-    return to(from(args));
-  };
-}
-
-function wrapConversion(toModel, graph) {
-  const path = [graph[toModel].parent, toModel];
-  let fn = conversions[graph[toModel].parent][toModel];
-  let cur = graph[toModel].parent;
-
-  while (graph[cur].parent) {
-    path.unshift(graph[cur].parent);
-    fn = link(conversions[graph[cur].parent][cur], fn);
-    cur = graph[cur].parent;
-  }
-
-  fn.conversion = path;
-  return fn;
-}
-
-var route = function (fromModel) {
-  const graph = deriveBFS(fromModel);
-  const conversion = {};
-  const models = Object.keys(graph);
-
-  for (let len = models.length, i = 0; i < len; i++) {
-    const toModel = models[i];
-    const node = graph[toModel];
-
-    if (node.parent === null) {
-      // No possible conversion, or this node is the source model.
-      continue;
-    }
-
-    conversion[toModel] = wrapConversion(toModel, graph);
-  }
-
-  return conversion;
-};
-
-const convert = {};
-const models = Object.keys(conversions);
-
-function wrapRaw(fn) {
-  const wrappedFn = function (...args) {
-    const arg0 = args[0];
-
-    if (arg0 === undefined || arg0 === null) {
-      return arg0;
-    }
-
-    if (arg0.length > 1) {
-      args = arg0;
-    }
-
-    return fn(args);
-  }; // Preserve .conversion property if there is one
-
-
-  if ('conversion' in fn) {
-    wrappedFn.conversion = fn.conversion;
-  }
-
-  return wrappedFn;
-}
-
-function wrapRounded(fn) {
-  const wrappedFn = function (...args) {
-    const arg0 = args[0];
-
-    if (arg0 === undefined || arg0 === null) {
-      return arg0;
-    }
-
-    if (arg0.length > 1) {
-      args = arg0;
-    }
-
-    const result = fn(args); // We're assuming the result is an array here.
-    // see notice in conversions.js; don't use box types
-    // in conversion functions.
-
-    if (typeof result === 'object') {
-      for (let len = result.length, i = 0; i < len; i++) {
-        result[i] = Math.round(result[i]);
-      }
-    }
-
-    return result;
-  }; // Preserve .conversion property if there is one
-
-
-  if ('conversion' in fn) {
-    wrappedFn.conversion = fn.conversion;
-  }
-
-  return wrappedFn;
-}
-
-models.forEach(fromModel => {
-  convert[fromModel] = {};
-  Object.defineProperty(convert[fromModel], 'channels', {
-    value: conversions[fromModel].channels
-  });
-  Object.defineProperty(convert[fromModel], 'labels', {
-    value: conversions[fromModel].labels
-  });
-  const routes = route(fromModel);
-  const routeModels = Object.keys(routes);
-  routeModels.forEach(toModel => {
-    const fn = routes[toModel];
-    convert[fromModel][toModel] = wrapRounded(fn);
-    convert[fromModel][toModel].raw = wrapRaw(fn);
-  });
-});
-var colorConvert = convert;
-
 var ansiStyles = createCommonjsModule(function (module) {
 
-const wrapAnsi16 = (fn, offset) => (...args) => {
-  const code = fn(...args);
-  return `\u001B[${code + offset}m`;
-};
+const ANSI_BACKGROUND_OFFSET = 10;
 
-const wrapAnsi256 = (fn, offset) => (...args) => {
-  const code = fn(...args);
-  return `\u001B[${38 + offset};5;${code}m`;
-};
+const wrapAnsi256 = (offset = 0) => code => `\u001B[${38 + offset};5;${code}m`;
 
-const wrapAnsi16m = (fn, offset) => (...args) => {
-  const rgb = fn(...args);
-  return `\u001B[${38 + offset};2;${rgb[0]};${rgb[1]};${rgb[2]}m`;
-};
-
-const ansi2ansi = n => n;
-
-const rgb2rgb = (r, g, b) => [r, g, b];
-
-const setLazyProperty = (object, property, get) => {
-  Object.defineProperty(object, property, {
-    get: () => {
-      const value = get();
-      Object.defineProperty(object, property, {
-        value,
-        enumerable: true,
-        configurable: true
-      });
-      return value;
-    },
-    enumerable: true,
-    configurable: true
-  });
-};
-/** @type {typeof import('color-convert')} */
-
-
-let colorConvert$1;
-
-const makeDynamicStyles = (wrap, targetSpace, identity, isBackground) => {
-  if (colorConvert$1 === undefined) {
-    colorConvert$1 = colorConvert;
-  }
-
-  const offset = isBackground ? 10 : 0;
-  const styles = {};
-
-  for (const [sourceSpace, suite] of Object.entries(colorConvert$1)) {
-    const name = sourceSpace === 'ansi16' ? 'ansi' : sourceSpace;
-
-    if (sourceSpace === targetSpace) {
-      styles[name] = wrap(identity, offset);
-    } else if (typeof suite === 'object') {
-      styles[name] = wrap(suite[targetSpace], offset);
-    }
-  }
-
-  return styles;
-};
+const wrapAnsi16m = (offset = 0) => (red, green, blue) => `\u001B[${38 + offset};2;${red};${green};${blue}m`;
 
 function assembleStyles() {
   const codes = new Map();
@@ -1328,6 +81,7 @@ function assembleStyles() {
       dim: [2, 22],
       italic: [3, 23],
       underline: [4, 24],
+      overline: [53, 55],
       inverse: [7, 27],
       hidden: [8, 28],
       strikethrough: [9, 29]
@@ -1399,12 +153,58 @@ function assembleStyles() {
   });
   styles.color.close = '\u001B[39m';
   styles.bgColor.close = '\u001B[49m';
-  setLazyProperty(styles.color, 'ansi', () => makeDynamicStyles(wrapAnsi16, 'ansi16', ansi2ansi, false));
-  setLazyProperty(styles.color, 'ansi256', () => makeDynamicStyles(wrapAnsi256, 'ansi256', ansi2ansi, false));
-  setLazyProperty(styles.color, 'ansi16m', () => makeDynamicStyles(wrapAnsi16m, 'rgb', rgb2rgb, false));
-  setLazyProperty(styles.bgColor, 'ansi', () => makeDynamicStyles(wrapAnsi16, 'ansi16', ansi2ansi, true));
-  setLazyProperty(styles.bgColor, 'ansi256', () => makeDynamicStyles(wrapAnsi256, 'ansi256', ansi2ansi, true));
-  setLazyProperty(styles.bgColor, 'ansi16m', () => makeDynamicStyles(wrapAnsi16m, 'rgb', rgb2rgb, true));
+  styles.color.ansi256 = wrapAnsi256();
+  styles.color.ansi16m = wrapAnsi16m();
+  styles.bgColor.ansi256 = wrapAnsi256(ANSI_BACKGROUND_OFFSET);
+  styles.bgColor.ansi16m = wrapAnsi16m(ANSI_BACKGROUND_OFFSET); // From https://github.com/Qix-/color-convert/blob/3f0e0d4e92e235796ccb17f6e85c72094a651f49/conversions.js
+
+  Object.defineProperties(styles, {
+    rgbToAnsi256: {
+      value: (red, green, blue) => {
+        // We use the extended greyscale palette here, with the exception of
+        // black and white. normal palette only has 4 greyscale shades.
+        if (red === green && green === blue) {
+          if (red < 8) {
+            return 16;
+          }
+
+          if (red > 248) {
+            return 231;
+          }
+
+          return Math.round((red - 8) / 247 * 24) + 232;
+        }
+
+        return 16 + 36 * Math.round(red / 255 * 5) + 6 * Math.round(green / 255 * 5) + Math.round(blue / 255 * 5);
+      },
+      enumerable: false
+    },
+    hexToRgb: {
+      value: hex => {
+        const matches = /(?<colorString>[a-f\d]{6}|[a-f\d]{3})/i.exec(hex.toString(16));
+
+        if (!matches) {
+          return [0, 0, 0];
+        }
+
+        let {
+          colorString
+        } = matches.groups;
+
+        if (colorString.length === 3) {
+          colorString = colorString.split('').map(character => character + character).join('');
+        }
+
+        const integer = Number.parseInt(colorString, 16);
+        return [integer >> 16 & 0xFF, integer >> 8 & 0xFF, integer & 0xFF];
+      },
+      enumerable: false
+    },
+    hexToAnsi256: {
+      value: hex => styles.rgbToAnsi256(...styles.hexToRgb(hex)),
+      enumerable: false
+    }
+  });
   return styles;
 } // Make the export immutable
 
@@ -1522,7 +322,11 @@ function printListItems(list, config, indentation, depth, refs, printer) {
     const indentationNext = indentation + config.indent;
 
     for (let i = 0; i < list.length; i++) {
-      result += indentationNext + printer(list[i], config, indentationNext, depth, refs);
+      result += indentationNext;
+
+      if (i in list) {
+        result += printer(list[i], config, indentationNext, depth, refs);
+      }
 
       if (i < list.length - 1) {
         result += ',' + config.spacingInner;
@@ -1586,7 +390,21 @@ exports.default = exports.test = exports.serialize = void 0;
 
 
 
-var Symbol = commonjsGlobal$1['jest-symbol-do-not-touch'] || commonjsGlobal$1.Symbol;
+var global = function () {
+  if (typeof globalThis !== 'undefined') {
+    return globalThis;
+  } else if (typeof global !== 'undefined') {
+    return global;
+  } else if (typeof self !== 'undefined') {
+    return self;
+  } else if (typeof window !== 'undefined') {
+    return window;
+  } else {
+    return Function('return this')();
+  }
+}();
+
+var Symbol = global['jest-symbol-do-not-touch'] || global.Symbol;
 const asymmetricMatcher = typeof Symbol === 'function' && Symbol.for ? Symbol.for('jest.asymmetricMatcher') : 0x1357a5;
 const SPACE = ' ';
 
@@ -1636,7 +454,7 @@ exports.default = _default;
 var ansiRegex = ({
   onlyFirst = false
 } = {}) => {
-  const pattern = ['[\\u001B\\u009B][[\\]()#;?]*(?:(?:(?:[a-zA-Z\\d]*(?:;[-a-zA-Z\\d\\/#&.:=?%@~_]*)*)?\\u0007)', '(?:(?:\\d{1,4}(?:;\\d{0,4})*)?[\\dA-PR-TZcf-ntqry=><~]))'].join('|');
+  const pattern = ['[\\u001B\\u009B][[\\]()#;?]*(?:(?:(?:(?:;[-a-zA-Z\\d\\/#&.:=?%@~_]+)*|[a-zA-Z\\d]+(?:;[-a-zA-Z\\d\\/#&.:=?%@~_]*)*)?\\u0007)', '(?:(?:\\d{1,4}(?:;\\d{0,4})*)?[\\dA-PR-TZcf-ntqry=><~]))'].join('|');
   return new RegExp(pattern, onlyFirst ? undefined : 'g');
 };
 
@@ -1911,15 +729,21 @@ const COMMENT_NODE = 8;
 const FRAGMENT_NODE = 11;
 const ELEMENT_REGEXP = /^((HTML|SVG)\w*)?Element$/;
 
-const testNode = val => {
-  var _val$hasAttribute;
+const testHasAttribute = val => {
+  try {
+    return typeof val.hasAttribute === 'function' && val.hasAttribute('is');
+  } catch {
+    return false;
+  }
+};
 
+const testNode = val => {
   const constructorName = val.constructor.name;
   const {
     nodeType,
     tagName
   } = val;
-  const isCustomElement = typeof tagName === 'string' && tagName.includes('-') || ((_val$hasAttribute = val.hasAttribute) === null || _val$hasAttribute === void 0 ? void 0 : _val$hasAttribute.call(val, 'is'));
+  const isCustomElement = typeof tagName === 'string' && tagName.includes('-') || testHasAttribute(val);
   return nodeType === ELEMENT_NODE && (ELEMENT_REGEXP.test(constructorName) || isCustomElement) || nodeType === TEXT_NODE && constructorName === 'Text' || nodeType === COMMENT_NODE && constructorName === 'Comment' || nodeType === FRAGMENT_NODE && constructorName === 'DocumentFragment';
 };
 
@@ -2048,8 +872,7 @@ const printImmutableSeq = (val, config, indentation, depth, refs, printer) => {
   }
 
   if (val[IS_KEYED_SENTINEL]) {
-    return name + SPACE + '{' + ( // from Immutable collection of entries or from ECMAScript object
-    val._iter || val._object ? (0, collections.printIteratorEntries)(val.entries(), config, indentation, depth, refs, printer) : LAZY) + '}';
+    return name + SPACE + '{' + (val._iter || val._object ? (0, collections.printIteratorEntries)(val.entries(), config, indentation, depth, refs, printer) : LAZY) + '}';
   }
 
   return name + SPACE + '[' + (val._iter || // from Immutable collection of values
@@ -2222,7 +1045,7 @@ var isContextProvider$1 = function (a) {
   return y$1(a) === g$1;
 };
 
-var isElement$1 = function (a) {
+var isElement$2 = function (a) {
   return "object" === typeof a && null !== a && a.$$typeof === b$1;
 };
 
@@ -2280,7 +1103,7 @@ var reactIs_production_min$1 = {
 	isConcurrentMode: isConcurrentMode$1,
 	isContextConsumer: isContextConsumer$1,
 	isContextProvider: isContextProvider$1,
-	isElement: isElement$1,
+	isElement: isElement$2,
 	isForwardRef: isForwardRef$1,
 	isFragment: isFragment$1,
 	isLazy: isLazy$1,
@@ -2546,19 +1369,17 @@ var ReactIs = _interopRequireWildcard(reactIs$1);
 
 
 
-function _getRequireWildcardCache() {
+function _getRequireWildcardCache(nodeInterop) {
   if (typeof WeakMap !== 'function') return null;
-  var cache = new WeakMap();
-
-  _getRequireWildcardCache = function () {
-    return cache;
-  };
-
-  return cache;
+  var cacheBabelInterop = new WeakMap();
+  var cacheNodeInterop = new WeakMap();
+  return (_getRequireWildcardCache = function (nodeInterop) {
+    return nodeInterop ? cacheNodeInterop : cacheBabelInterop;
+  })(nodeInterop);
 }
 
-function _interopRequireWildcard(obj) {
-  if (obj && obj.__esModule) {
+function _interopRequireWildcard(obj, nodeInterop) {
+  if (!nodeInterop && obj && obj.__esModule) {
     return obj;
   }
 
@@ -2568,7 +1389,7 @@ function _interopRequireWildcard(obj) {
     };
   }
 
-  var cache = _getRequireWildcardCache();
+  var cache = _getRequireWildcardCache(nodeInterop);
 
   if (cache && cache.has(obj)) {
     return cache.get(obj);
@@ -2578,7 +1399,7 @@ function _interopRequireWildcard(obj) {
   var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
 
   for (var key in obj) {
-    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+    if (key !== 'default' && Object.prototype.hasOwnProperty.call(obj, key)) {
       var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
 
       if (desc && (desc.get || desc.set)) {
@@ -2676,7 +1497,7 @@ const serialize = (element, config, indentation, depth, refs, printer) => ++dept
 
 exports.serialize = serialize;
 
-const test = val => val && ReactIs.isElement(val);
+const test = val => val != null && ReactIs.isElement(val);
 
 exports.test = test;
 const plugin = {
@@ -2696,7 +1517,21 @@ exports.default = exports.test = exports.serialize = void 0;
 
 
 
-var Symbol = commonjsGlobal$1['jest-symbol-do-not-touch'] || commonjsGlobal$1.Symbol;
+var global = function () {
+  if (typeof globalThis !== 'undefined') {
+    return globalThis;
+  } else if (typeof global !== 'undefined') {
+    return global;
+  } else if (typeof self !== 'undefined') {
+    return self;
+  } else if (typeof window !== 'undefined') {
+    return window;
+  } else {
+    return Function('return this')();
+  }
+}();
+
+var Symbol = global['jest-symbol-do-not-touch'] || global.Symbol;
 const testSymbol = typeof Symbol === 'function' && Symbol.for ? Symbol.for('react.test.json') : 0xea71357;
 
 const getPropKeys = object => {
@@ -2721,25 +1556,33 @@ var _default = plugin;
 exports.default = _default;
 });
 
-var _ansiStyles = _interopRequireDefault$2(ansiStyles);
+var build = createCommonjsModule(function (module, exports) {
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+exports.format = format;
+exports.default = exports.plugins = exports.DEFAULT_OPTIONS = void 0;
+
+var _ansiStyles = _interopRequireDefault(ansiStyles);
 
 
 
-var _AsymmetricMatcher = _interopRequireDefault$2(AsymmetricMatcher);
+var _AsymmetricMatcher = _interopRequireDefault(AsymmetricMatcher);
 
-var _ConvertAnsi = _interopRequireDefault$2(ConvertAnsi);
+var _ConvertAnsi = _interopRequireDefault(ConvertAnsi);
 
-var _DOMCollection = _interopRequireDefault$2(DOMCollection);
+var _DOMCollection = _interopRequireDefault(DOMCollection);
 
-var _DOMElement = _interopRequireDefault$2(DOMElement);
+var _DOMElement = _interopRequireDefault(DOMElement);
 
-var _Immutable = _interopRequireDefault$2(Immutable);
+var _Immutable = _interopRequireDefault(Immutable);
 
-var _ReactElement = _interopRequireDefault$2(ReactElement);
+var _ReactElement = _interopRequireDefault(ReactElement);
 
-var _ReactTestComponent = _interopRequireDefault$2(ReactTestComponent);
+var _ReactTestComponent = _interopRequireDefault(ReactTestComponent);
 
-function _interopRequireDefault$2(obj) {
+function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
     default: obj
   };
@@ -2754,10 +1597,10 @@ function _interopRequireDefault$2(obj) {
 /* eslint-disable local/ban-types-eventually */
 
 
-const toString$2 = Object.prototype.toString;
+const toString = Object.prototype.toString;
 const toISOString = Date.prototype.toISOString;
-const errorToString$1 = Error.prototype.toString;
-const regExpToString$1 = RegExp.prototype.toString;
+const errorToString = Error.prototype.toString;
+const regExpToString = RegExp.prototype.toString;
 /**
  * Explicitly comparing typeof constructor to function avoids undefined as name
  * when mock identity-obj-proxy returns the key as the value for any key.
@@ -2771,7 +1614,7 @@ const getConstructorName = val => typeof val.constructor === 'function' && val.c
 
 const isWindow = val => typeof window !== 'undefined' && val === window;
 
-const SYMBOL_REGEXP$1 = /^Symbol\((.*)\)(.*)$/;
+const SYMBOL_REGEXP = /^Symbol\((.*)\)(.*)$/;
 const NEWLINE_REGEXP = /\n/gi;
 
 class PrettyFormatPluginError extends Error {
@@ -2787,7 +1630,7 @@ function isToStringedArrayType(toStringed) {
   return toStringed === '[object Array]' || toStringed === '[object ArrayBuffer]' || toStringed === '[object DataView]' || toStringed === '[object Float32Array]' || toStringed === '[object Float64Array]' || toStringed === '[object Int8Array]' || toStringed === '[object Int16Array]' || toStringed === '[object Int32Array]' || toStringed === '[object Uint8Array]' || toStringed === '[object Uint8ClampedArray]' || toStringed === '[object Uint16Array]' || toStringed === '[object Uint32Array]';
 }
 
-function printNumber$1(val) {
+function printNumber(val) {
   return Object.is(val, -0) ? '-0' : String(val);
 }
 
@@ -2804,11 +1647,11 @@ function printFunction(val, printFunctionName) {
 }
 
 function printSymbol(val) {
-  return String(val).replace(SYMBOL_REGEXP$1, 'Symbol($1)');
+  return String(val).replace(SYMBOL_REGEXP, 'Symbol($1)');
 }
 
 function printError(val) {
-  return '[' + errorToString$1.call(val) + ']';
+  return '[' + errorToString.call(val) + ']';
 }
 /**
  * The first port of call for printing an object, handles most of the
@@ -2832,7 +1675,7 @@ function printBasicValue(val, printFunctionName, escapeRegex, escapeString) {
   const typeOf = typeof val;
 
   if (typeOf === 'number') {
-    return printNumber$1(val);
+    return printNumber(val);
   }
 
   if (typeOf === 'bigint') {
@@ -2855,7 +1698,7 @@ function printBasicValue(val, printFunctionName, escapeRegex, escapeString) {
     return printSymbol(val);
   }
 
-  const toStringed = toString$2.call(val);
+  const toStringed = toString.call(val);
 
   if (toStringed === '[object WeakMap]') {
     return 'WeakMap {}';
@@ -2883,11 +1726,11 @@ function printBasicValue(val, printFunctionName, escapeRegex, escapeString) {
 
   if (toStringed === '[object RegExp]') {
     if (escapeRegex) {
-      // https://github.com/benjamingr/RegExp.escape/blob/master/polyfill.js
-      return regExpToString$1.call(val).replace(/[\\^$*+?.()|[\]{}]/g, '\\$&');
+      // https://github.com/benjamingr/RegExp.escape/blob/main/polyfill.js
+      return regExpToString.call(val).replace(/[\\^$*+?.()|[\]{}]/g, '\\$&');
     }
 
-    return regExpToString$1.call(val);
+    return regExpToString.call(val);
   }
 
   if (val instanceof Error) {
@@ -2916,14 +1759,14 @@ function printComplexValue(val, config, indentation, depth, refs, hasCalledToJSO
     return printer(val.toJSON(), config, indentation, depth, refs, true);
   }
 
-  const toStringed = toString$2.call(val);
+  const toStringed = toString.call(val);
 
   if (toStringed === '[object Arguments]') {
     return hitMaxDepth ? '[Arguments]' : (min ? '' : 'Arguments ') + '[' + (0, collections.printListItems)(val, config, indentation, depth, refs, printer) + ']';
   }
 
   if (isToStringedArrayType(toStringed)) {
-    return hitMaxDepth ? '[' + val.constructor.name + ']' : (min ? '' : val.constructor.name + ' ') + '[' + (0, collections.printListItems)(val, config, indentation, depth, refs, printer) + ']';
+    return hitMaxDepth ? '[' + val.constructor.name + ']' : (min ? '' : !config.printBasicPrototype && val.constructor.name === 'Array' ? '' : val.constructor.name + ' ') + '[' + (0, collections.printListItems)(val, config, indentation, depth, refs, printer) + ']';
   }
 
   if (toStringed === '[object Map]') {
@@ -2936,7 +1779,7 @@ function printComplexValue(val, config, indentation, depth, refs, hasCalledToJSO
   // For example, not even relevant if window is prop of React element.
 
 
-  return hitMaxDepth || isWindow(val) ? '[' + getConstructorName(val) + ']' : (min ? '' : getConstructorName(val) + ' ') + '{' + (0, collections.printObjectProperties)(val, config, indentation, depth, refs, printer) + '}';
+  return hitMaxDepth || isWindow(val) ? '[' + getConstructorName(val) + ']' : (min ? '' : !config.printBasicPrototype && getConstructorName(val) === 'Object' ? '' : getConstructorName(val) + ' ') + '{' + (0, collections.printObjectProperties)(val, config, indentation, depth, refs, printer) + '}';
 }
 
 function isNewPlugin(plugin) {
@@ -3013,9 +1856,11 @@ const DEFAULT_OPTIONS = {
   maxDepth: Infinity,
   min: false,
   plugins: [],
+  printBasicPrototype: true,
   printFunctionName: true,
   theme: DEFAULT_THEME
 };
+exports.DEFAULT_OPTIONS = DEFAULT_OPTIONS;
 
 function validateOptions(options) {
   Object.keys(options).forEach(key => {
@@ -3066,19 +1911,24 @@ const getEscapeRegex = options => options && options.escapeRegex !== undefined ?
 
 const getEscapeString = options => options && options.escapeString !== undefined ? options.escapeString : DEFAULT_OPTIONS.escapeString;
 
-const getConfig = options => ({
-  callToJSON: options && options.callToJSON !== undefined ? options.callToJSON : DEFAULT_OPTIONS.callToJSON,
-  colors: options && options.highlight ? getColorsHighlight(options) : getColorsEmpty(),
-  escapeRegex: getEscapeRegex(options),
-  escapeString: getEscapeString(options),
-  indent: options && options.min ? '' : createIndent(options && options.indent !== undefined ? options.indent : DEFAULT_OPTIONS.indent),
-  maxDepth: options && options.maxDepth !== undefined ? options.maxDepth : DEFAULT_OPTIONS.maxDepth,
-  min: options && options.min !== undefined ? options.min : DEFAULT_OPTIONS.min,
-  plugins: options && options.plugins !== undefined ? options.plugins : DEFAULT_OPTIONS.plugins,
-  printFunctionName: getPrintFunctionName(options),
-  spacingInner: options && options.min ? ' ' : '\n',
-  spacingOuter: options && options.min ? '' : '\n'
-});
+const getConfig = options => {
+  var _options$printBasicPr;
+
+  return {
+    callToJSON: options && options.callToJSON !== undefined ? options.callToJSON : DEFAULT_OPTIONS.callToJSON,
+    colors: options && options.highlight ? getColorsHighlight(options) : getColorsEmpty(),
+    escapeRegex: getEscapeRegex(options),
+    escapeString: getEscapeString(options),
+    indent: options && options.min ? '' : createIndent(options && options.indent !== undefined ? options.indent : DEFAULT_OPTIONS.indent),
+    maxDepth: options && options.maxDepth !== undefined ? options.maxDepth : DEFAULT_OPTIONS.maxDepth,
+    min: options && options.min !== undefined ? options.min : DEFAULT_OPTIONS.min,
+    plugins: options && options.plugins !== undefined ? options.plugins : DEFAULT_OPTIONS.plugins,
+    printBasicPrototype: (_options$printBasicPr = options === null || options === void 0 ? void 0 : options.printBasicPrototype) !== null && _options$printBasicPr !== void 0 ? _options$printBasicPr : true,
+    printFunctionName: getPrintFunctionName(options),
+    spacingInner: options && options.min ? ' ' : '\n',
+    spacingOuter: options && options.min ? '' : '\n'
+  };
+};
 
 function createIndent(indent) {
   return new Array(indent + 1).join(' ');
@@ -3090,7 +1940,7 @@ function createIndent(indent) {
  */
 
 
-function prettyFormat(val, options) {
+function format(val, options) {
   if (options) {
     validateOptions(options);
 
@@ -3112,7 +1962,7 @@ function prettyFormat(val, options) {
   return printComplexValue(val, getConfig(options), '', 0, []);
 }
 
-prettyFormat.plugins = {
+const plugins = {
   AsymmetricMatcher: _AsymmetricMatcher.default,
   ConvertAnsi: _ConvertAnsi.default,
   DOMCollection: _DOMCollection.default,
@@ -3121,7 +1971,12 @@ prettyFormat.plugins = {
   ReactElement: _ReactElement.default,
   ReactTestComponent: _ReactTestComponent.default
 };
-var build = prettyFormat;
+exports.plugins = plugins;
+var _default = format;
+exports.default = _default;
+});
+
+var prettyFormat = /*@__PURE__*/getDefaultExportFromCjs(build);
 
 // import * as logs from "../functions/logFuncs"
 
@@ -3160,7 +2015,7 @@ function laggu(...sdf) {// luggo(...sdf)
 function lugJSON(messageIt, valY, ...asw) {
   let sodase = //
   // JSON.stringify(valY)
-  build(valY);
+  prettyFormat(valY);
   console.log("luggo--", messageIt, sodase, ...asw); // bearlog.lug('bearlog.lug:', bearlog.lug)
 }
 
@@ -3219,6 +2074,19 @@ function BearLink$1({
   toVar += nsdijfwer;
   const outBlank = outsideTrue || outsideLink || blankTrue;
   const noLink = disabled | !toVar;
+  let kmda = blackTrue && {
+    textDecoration: "none",
+    color: "black" // color: colorTextMain,
+
+  };
+  let okasdw = { ...kmda,
+    ...style
+  };
+  ({
+    style: okasdw,
+    className: className,
+    ...argso
+  });
   const sdjfwe = outBlank && {
     target: "_blank"
   };
@@ -3407,7 +2275,7 @@ var StyleSheet = /*#__PURE__*/function () {
         // the big drawback is that the css won't be editable in devtools
         sheet.insertRule(rule, sheet.cssRules.length);
       } catch (e) {
-        if (process.env.NODE_ENV !== 'production' && !/:(-moz-placeholder|-ms-input-placeholder|-moz-read-write|-moz-read-only){/.test(rule)) {
+        if (process.env.NODE_ENV !== 'production' && !/:(-moz-placeholder|-moz-focus-inner|-moz-focusring|-ms-input-placeholder|-moz-read-write|-moz-read-only|-ms-clear){/.test(rule)) {
           console.error("There was a problem inserting the following rule: \"" + rule + "\"", e);
         }
       }
@@ -4274,7 +3142,7 @@ var weakMemoize = function weakMemoize(func) {
   };
 };
 
-function memoize$6(fn) {
+function memoize$2(fn) {
   var cache = Object.create(null);
   return function (arg) {
     if (cache[arg] === undefined) cache[arg] = fn(arg);
@@ -4454,9 +3322,9 @@ var incorrectImportAlarm = function incorrectImportAlarm(element, index, childre
   }
 };
 
-var isBrowser$a = typeof document !== 'undefined';
-var getServerStylisCache = isBrowser$a ? undefined : weakMemoize(function () {
-  return memoize$6(function () {
+var isBrowser$6 = typeof document !== 'undefined';
+var getServerStylisCache = isBrowser$6 ? undefined : weakMemoize(function () {
+  return memoize$2(function () {
     var cache = {};
     return function (name) {
       return cache[name];
@@ -4472,7 +3340,7 @@ var createCache = function createCache(options) {
     throw new Error("You have to configure `key` for your cache. Please make sure it's unique (and not equal to 'css') as it's used for linking styles to your cache.\n" + "If multiple caches share the same key they might \"fight\" for each other's style elements.");
   }
 
-  if (isBrowser$a && key === 'css') {
+  if (isBrowser$6 && key === 'css') {
     var ssrStyles = document.querySelectorAll("style[data-emotion]:not([data-s])"); // get SSRed styles out of the way of React's hydration
     // document.head is a safe place to move them to(though note document.head is not necessarily the last place they will be)
     // note this very very intentionally targets all style elements regardless of the key to ensure
@@ -4510,7 +3378,7 @@ var createCache = function createCache(options) {
   var container;
   var nodesToHydrate = [];
 
-  if (isBrowser$a) {
+  if (isBrowser$6) {
     container = options.container || document.head;
     Array.prototype.forEach.call( // this means we will ignore elements which don't have a space in them which
     // means that the style elements we're looking at are only Emotion 11 server-rendered style elements
@@ -4538,7 +3406,7 @@ var createCache = function createCache(options) {
     }), incorrectImportAlarm);
   }
 
-  if (isBrowser$a) {
+  if (isBrowser$6) {
     var currentSheet;
     var finalizingPlugins = [stringify, process.env.NODE_ENV !== 'production' ? function (element) {
       if (!element.root) {
@@ -4767,7 +3635,7 @@ var isContextProvider = function (a) {
   return z(a) === h;
 };
 
-var isElement = function (a) {
+var isElement$1 = function (a) {
   return "object" === typeof a && null !== a && a.$$typeof === c;
 };
 
@@ -4827,7 +3695,7 @@ var reactIs_production_min = {
 	isConcurrentMode: isConcurrentMode,
 	isContextConsumer: isContextConsumer,
 	isContextProvider: isContextProvider,
-	isElement: isElement,
+	isElement: isElement$1,
 	isForwardRef: isForwardRef,
 	isFragment: isFragment,
 	isLazy: isLazy,
@@ -5059,9 +3927,9 @@ var TYPE_STATICS = {};
 TYPE_STATICS[reactIs.ForwardRef] = FORWARD_REF_STATICS;
 TYPE_STATICS[reactIs.Memo] = MEMO_STATICS;
 
-var isBrowser$9 = typeof document !== 'undefined';
+var isBrowser$5 = typeof document !== 'undefined';
 
-function getRegisteredStyles$1(registered, registeredStyles, classNames) {
+function getRegisteredStyles(registered, registeredStyles, classNames) {
   var rawClassName = '';
   classNames.split(' ').forEach(function (className) {
     if (registered[className] !== undefined) {
@@ -5073,7 +3941,7 @@ function getRegisteredStyles$1(registered, registeredStyles, classNames) {
   return rawClassName;
 }
 
-var insertStyles$1 = function insertStyles(cache, serialized, isStringTag) {
+var insertStyles = function insertStyles(cache, serialized, isStringTag) {
   var className = cache.key + "-" + serialized.name;
 
   if ( // we only need to add the styles to the registered cache if the
@@ -5085,7 +3953,7 @@ var insertStyles$1 = function insertStyles(cache, serialized, isStringTag) {
   // in node since emotion-server relies on whether a style is in
   // the registered cache to know whether a style is global or not
   // also, note that this check will be dead code eliminated in the browser
-  isBrowser$9 === false && cache.compat !== undefined) && cache.registered[className] === undefined) {
+  isBrowser$5 === false && cache.compat !== undefined) && cache.registered[className] === undefined) {
     cache.registered[className] = serialized.styles;
   }
 
@@ -5096,14 +3964,14 @@ var insertStyles$1 = function insertStyles(cache, serialized, isStringTag) {
     do {
       var maybeStyles = cache.insert(serialized === current ? "." + className : '', current, cache.sheet, true);
 
-      if (!isBrowser$9 && maybeStyles !== undefined) {
+      if (!isBrowser$5 && maybeStyles !== undefined) {
         stylesForSSR += maybeStyles;
       }
 
       current = current.next;
     } while (current !== undefined);
 
-    if (!isBrowser$9 && stylesForSSR.length !== 0) {
+    if (!isBrowser$5 && stylesForSSR.length !== 0) {
       return stylesForSSR;
     }
   }
@@ -5112,7 +3980,7 @@ var insertStyles$1 = function insertStyles(cache, serialized, isStringTag) {
 /* eslint-disable */
 // Inspired by https://github.com/garycourt/murmurhash-js
 // Ported from https://github.com/aappleby/smhasher/blob/61a0530f28277f2e850bfc39600ce61d02b518de/src/MurmurHash2.cpp#L37-L86
-function murmur2$1(str) {
+function murmur2(str) {
   // 'm' and 'r' are mixing constants generated offline.
   // They're not really 'magic', they just happen to work well.
   // const m = 0x5bd1e995;
@@ -5163,7 +4031,7 @@ function murmur2$1(str) {
   return ((h ^ h >>> 15) >>> 0).toString(36);
 }
 
-var unitlessKeys$1 = {
+var unitlessKeys = {
   animationIterationCount: 1,
   borderImageOutset: 1,
   borderImageSlice: 1,
@@ -5212,42 +4080,34 @@ var unitlessKeys$1 = {
   strokeWidth: 1
 };
 
-function memoize$5(fn) {
-  var cache = Object.create(null);
-  return function (arg) {
-    if (cache[arg] === undefined) cache[arg] = fn(arg);
-    return cache[arg];
-  };
-}
+var ILLEGAL_ESCAPE_SEQUENCE_ERROR$1 = "You have illegal escape sequence in your template literal, most likely inside content's property value.\nBecause you write your CSS inside a JavaScript string you actually have to do double escaping, so for example \"content: '\\00d7';\" should become \"content: '\\\\00d7';\".\nYou can read more about this here:\nhttps://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#ES2018_revision_of_illegal_escape_sequences";
+var UNDEFINED_AS_OBJECT_KEY_ERROR = "You have passed in falsy value as style object's key (can happen when in example you pass unexported component as computed key).";
+var hyphenateRegex = /[A-Z]|^ms/g;
+var animationRegex = /_EMO_([^_]+?)_([^]*?)_EMO_/g;
 
-var ILLEGAL_ESCAPE_SEQUENCE_ERROR$2 = "You have illegal escape sequence in your template literal, most likely inside content's property value.\nBecause you write your CSS inside a JavaScript string you actually have to do double escaping, so for example \"content: '\\00d7';\" should become \"content: '\\\\00d7';\".\nYou can read more about this here:\nhttps://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#ES2018_revision_of_illegal_escape_sequences";
-var UNDEFINED_AS_OBJECT_KEY_ERROR$1 = "You have passed in falsy value as style object's key (can happen when in example you pass unexported component as computed key).";
-var hyphenateRegex$1 = /[A-Z]|^ms/g;
-var animationRegex$1 = /_EMO_([^_]+?)_([^]*?)_EMO_/g;
-
-var isCustomProperty$1 = function isCustomProperty(property) {
+var isCustomProperty = function isCustomProperty(property) {
   return property.charCodeAt(1) === 45;
 };
 
-var isProcessableValue$1 = function isProcessableValue(value) {
+var isProcessableValue = function isProcessableValue(value) {
   return value != null && typeof value !== 'boolean';
 };
 
-var processStyleName$1 = /* #__PURE__ */memoize$5(function (styleName) {
-  return isCustomProperty$1(styleName) ? styleName : styleName.replace(hyphenateRegex$1, '-$&').toLowerCase();
+var processStyleName = /* #__PURE__ */memoize$2(function (styleName) {
+  return isCustomProperty(styleName) ? styleName : styleName.replace(hyphenateRegex, '-$&').toLowerCase();
 });
 
-var processStyleValue$1 = function processStyleValue(key, value) {
+var processStyleValue = function processStyleValue(key, value) {
   switch (key) {
     case 'animation':
     case 'animationName':
       {
         if (typeof value === 'string') {
-          return value.replace(animationRegex$1, function (match, p1, p2) {
-            cursor$1 = {
+          return value.replace(animationRegex, function (match, p1, p2) {
+            cursor = {
               name: p1,
               styles: p2,
-              next: cursor$1
+              next: cursor
             };
             return p1;
           });
@@ -5255,7 +4115,7 @@ var processStyleValue$1 = function processStyleValue(key, value) {
       }
   }
 
-  if (unitlessKeys$1[key] !== 1 && !isCustomProperty$1(key) && typeof value === 'number' && value !== 0) {
+  if (unitlessKeys[key] !== 1 && !isCustomProperty(key) && typeof value === 'number' && value !== 0) {
     return value + 'px';
   }
 
@@ -5263,25 +4123,25 @@ var processStyleValue$1 = function processStyleValue(key, value) {
 };
 
 if (process.env.NODE_ENV !== 'production') {
-  var contentValuePattern$1 = /(attr|counters?|url|(((repeating-)?(linear|radial))|conic)-gradient)\(|(no-)?(open|close)-quote/;
-  var contentValues$1 = ['normal', 'none', 'initial', 'inherit', 'unset'];
-  var oldProcessStyleValue$1 = processStyleValue$1;
-  var msPattern$1 = /^-ms-/;
-  var hyphenPattern$1 = /-(.)/g;
-  var hyphenatedCache$1 = {};
+  var contentValuePattern = /(attr|counters?|url|(((repeating-)?(linear|radial))|conic)-gradient)\(|(no-)?(open|close)-quote/;
+  var contentValues = ['normal', 'none', 'initial', 'inherit', 'unset'];
+  var oldProcessStyleValue = processStyleValue;
+  var msPattern = /^-ms-/;
+  var hyphenPattern = /-(.)/g;
+  var hyphenatedCache = {};
 
-  processStyleValue$1 = function processStyleValue(key, value) {
+  processStyleValue = function processStyleValue(key, value) {
     if (key === 'content') {
-      if (typeof value !== 'string' || contentValues$1.indexOf(value) === -1 && !contentValuePattern$1.test(value) && (value.charAt(0) !== value.charAt(value.length - 1) || value.charAt(0) !== '"' && value.charAt(0) !== "'")) {
+      if (typeof value !== 'string' || contentValues.indexOf(value) === -1 && !contentValuePattern.test(value) && (value.charAt(0) !== value.charAt(value.length - 1) || value.charAt(0) !== '"' && value.charAt(0) !== "'")) {
         throw new Error("You seem to be using a value for 'content' without quotes, try replacing it with `content: '\"" + value + "\"'`");
       }
     }
 
-    var processed = oldProcessStyleValue$1(key, value);
+    var processed = oldProcessStyleValue(key, value);
 
-    if (processed !== '' && !isCustomProperty$1(key) && key.indexOf('-') !== -1 && hyphenatedCache$1[key] === undefined) {
-      hyphenatedCache$1[key] = true;
-      console.error("Using kebab-case for css properties in objects is not supported. Did you mean " + key.replace(msPattern$1, 'ms-').replace(hyphenPattern$1, function (str, _char) {
+    if (processed !== '' && !isCustomProperty(key) && key.indexOf('-') !== -1 && hyphenatedCache[key] === undefined) {
+      hyphenatedCache[key] = true;
+      console.error("Using kebab-case for css properties in objects is not supported. Did you mean " + key.replace(msPattern, 'ms-').replace(hyphenPattern, function (str, _char) {
         return _char.toUpperCase();
       }) + "?");
     }
@@ -5290,7 +4150,7 @@ if (process.env.NODE_ENV !== 'production') {
   };
 }
 
-function handleInterpolation$1(mergedProps, registered, interpolation) {
+function handleInterpolation(mergedProps, registered, interpolation) {
   if (interpolation == null) {
     return '';
   }
@@ -5312,10 +4172,10 @@ function handleInterpolation$1(mergedProps, registered, interpolation) {
     case 'object':
       {
         if (interpolation.anim === 1) {
-          cursor$1 = {
+          cursor = {
             name: interpolation.name,
             styles: interpolation.styles,
-            next: cursor$1
+            next: cursor
           };
           return interpolation.name;
         }
@@ -5327,10 +4187,10 @@ function handleInterpolation$1(mergedProps, registered, interpolation) {
             // not the most efficient thing ever but this is a pretty rare case
             // and there will be very few iterations of this generally
             while (next !== undefined) {
-              cursor$1 = {
+              cursor = {
                 name: next.name,
                 styles: next.styles,
-                next: cursor$1
+                next: cursor
               };
               next = next.next;
             }
@@ -5345,16 +4205,16 @@ function handleInterpolation$1(mergedProps, registered, interpolation) {
           return styles;
         }
 
-        return createStringFromObject$1(mergedProps, registered, interpolation);
+        return createStringFromObject(mergedProps, registered, interpolation);
       }
 
     case 'function':
       {
         if (mergedProps !== undefined) {
-          var previousCursor = cursor$1;
+          var previousCursor = cursor;
           var result = interpolation(mergedProps);
-          cursor$1 = previousCursor;
-          return handleInterpolation$1(mergedProps, registered, result);
+          cursor = previousCursor;
+          return handleInterpolation(mergedProps, registered, result);
         } else if (process.env.NODE_ENV !== 'production') {
           console.error('Functions that are interpolated in css calls will be stringified.\n' + 'If you want to have a css call based on props, create a function that returns a css call like this\n' + 'let dynamicStyle = (props) => css`color: ${props.color}`\n' + 'It can be called directly with props or interpolated in a styled call like this\n' + "let SomeComponent = styled('div')`${dynamicStyle}`");
         }
@@ -5365,7 +4225,7 @@ function handleInterpolation$1(mergedProps, registered, interpolation) {
     case 'string':
       if (process.env.NODE_ENV !== 'production') {
         var matched = [];
-        var replaced = interpolation.replace(animationRegex$1, function (match, p1, p2) {
+        var replaced = interpolation.replace(animationRegex, function (match, p1, p2) {
           var fakeVarName = "animation" + matched.length;
           matched.push("const " + fakeVarName + " = keyframes`" + p2.replace(/^@keyframes animation-\w+/, '') + "`");
           return "${" + fakeVarName + "}";
@@ -5388,12 +4248,12 @@ function handleInterpolation$1(mergedProps, registered, interpolation) {
   return cached !== undefined ? cached : interpolation;
 }
 
-function createStringFromObject$1(mergedProps, registered, obj) {
+function createStringFromObject(mergedProps, registered, obj) {
   var string = '';
 
   if (Array.isArray(obj)) {
     for (var i = 0; i < obj.length; i++) {
-      string += handleInterpolation$1(mergedProps, registered, obj[i]) + ";";
+      string += handleInterpolation(mergedProps, registered, obj[i]) + ";";
     }
   } else {
     for (var _key in obj) {
@@ -5402,8 +4262,8 @@ function createStringFromObject$1(mergedProps, registered, obj) {
       if (typeof value !== 'object') {
         if (registered != null && registered[value] !== undefined) {
           string += _key + "{" + registered[value] + "}";
-        } else if (isProcessableValue$1(value)) {
-          string += processStyleName$1(_key) + ":" + processStyleValue$1(_key, value) + ";";
+        } else if (isProcessableValue(value)) {
+          string += processStyleName(_key) + ":" + processStyleValue(_key, value) + ";";
         }
       } else {
         if (_key === 'NO_COMPONENT_SELECTOR' && process.env.NODE_ENV !== 'production') {
@@ -5412,25 +4272,25 @@ function createStringFromObject$1(mergedProps, registered, obj) {
 
         if (Array.isArray(value) && typeof value[0] === 'string' && (registered == null || registered[value[0]] === undefined)) {
           for (var _i = 0; _i < value.length; _i++) {
-            if (isProcessableValue$1(value[_i])) {
-              string += processStyleName$1(_key) + ":" + processStyleValue$1(_key, value[_i]) + ";";
+            if (isProcessableValue(value[_i])) {
+              string += processStyleName(_key) + ":" + processStyleValue(_key, value[_i]) + ";";
             }
           }
         } else {
-          var interpolated = handleInterpolation$1(mergedProps, registered, value);
+          var interpolated = handleInterpolation(mergedProps, registered, value);
 
           switch (_key) {
             case 'animation':
             case 'animationName':
               {
-                string += processStyleName$1(_key) + ":" + interpolated + ";";
+                string += processStyleName(_key) + ":" + interpolated + ";";
                 break;
               }
 
             default:
               {
                 if (process.env.NODE_ENV !== 'production' && _key === 'undefined') {
-                  console.error(UNDEFINED_AS_OBJECT_KEY_ERROR$1);
+                  console.error(UNDEFINED_AS_OBJECT_KEY_ERROR);
                 }
 
                 string += _key + "{" + interpolated + "}";
@@ -5444,33 +4304,33 @@ function createStringFromObject$1(mergedProps, registered, obj) {
   return string;
 }
 
-var labelPattern$1 = /label:\s*([^\s;\n{]+)\s*(;|$)/g;
-var sourceMapPattern$1;
+var labelPattern = /label:\s*([^\s;\n{]+)\s*(;|$)/g;
+var sourceMapPattern;
 
 if (process.env.NODE_ENV !== 'production') {
-  sourceMapPattern$1 = /\/\*#\ssourceMappingURL=data:application\/json;\S+\s+\*\//g;
+  sourceMapPattern = /\/\*#\ssourceMappingURL=data:application\/json;\S+\s+\*\//g;
 } // this is the cursor for keyframes
 // keyframes are stored on the SerializedStyles object as a linked list
 
 
-var cursor$1;
+var cursor;
 
-var serializeStyles$1 = function serializeStyles(args, registered, mergedProps) {
+var serializeStyles = function serializeStyles(args, registered, mergedProps) {
   if (args.length === 1 && typeof args[0] === 'object' && args[0] !== null && args[0].styles !== undefined) {
     return args[0];
   }
 
   var stringMode = true;
   var styles = '';
-  cursor$1 = undefined;
+  cursor = undefined;
   var strings = args[0];
 
   if (strings == null || strings.raw === undefined) {
     stringMode = false;
-    styles += handleInterpolation$1(mergedProps, registered, strings);
+    styles += handleInterpolation(mergedProps, registered, strings);
   } else {
     if (process.env.NODE_ENV !== 'production' && strings[0] === undefined) {
-      console.error(ILLEGAL_ESCAPE_SEQUENCE_ERROR$2);
+      console.error(ILLEGAL_ESCAPE_SEQUENCE_ERROR$1);
     }
 
     styles += strings[0];
@@ -5478,11 +4338,11 @@ var serializeStyles$1 = function serializeStyles(args, registered, mergedProps) 
 
 
   for (var i = 1; i < args.length; i++) {
-    styles += handleInterpolation$1(mergedProps, registered, args[i]);
+    styles += handleInterpolation(mergedProps, registered, args[i]);
 
     if (stringMode) {
       if (process.env.NODE_ENV !== 'production' && strings[i] === undefined) {
-        console.error(ILLEGAL_ESCAPE_SEQUENCE_ERROR$2);
+        console.error(ILLEGAL_ESCAPE_SEQUENCE_ERROR$1);
       }
 
       styles += strings[i];
@@ -5492,23 +4352,23 @@ var serializeStyles$1 = function serializeStyles(args, registered, mergedProps) 
   var sourceMap;
 
   if (process.env.NODE_ENV !== 'production') {
-    styles = styles.replace(sourceMapPattern$1, function (match) {
+    styles = styles.replace(sourceMapPattern, function (match) {
       sourceMap = match;
       return '';
     });
   } // using a global regex with .exec is stateful so lastIndex has to be reset each time
 
 
-  labelPattern$1.lastIndex = 0;
+  labelPattern.lastIndex = 0;
   var identifierName = '';
   var match; // https://esbench.com/bench/5b809c2cf2949800a0f61fb5
 
-  while ((match = labelPattern$1.exec(styles)) !== null) {
+  while ((match = labelPattern.exec(styles)) !== null) {
     identifierName += '-' + // $FlowFixMe we know it's not null
     match[1];
   }
 
-  var name = murmur2$1(styles) + identifierName;
+  var name = murmur2(styles) + identifierName;
 
   if (process.env.NODE_ENV !== 'production') {
     // $FlowFixMe SerializedStyles type doesn't have toString property (and we don't want to add it)
@@ -5516,7 +4376,7 @@ var serializeStyles$1 = function serializeStyles(args, registered, mergedProps) 
       name: name,
       styles: styles,
       map: sourceMap,
-      next: cursor$1,
+      next: cursor,
       toString: function toString() {
         return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop).";
       }
@@ -5526,11 +4386,11 @@ var serializeStyles$1 = function serializeStyles(args, registered, mergedProps) 
   return {
     name: name,
     styles: styles,
-    next: cursor$1
+    next: cursor
   };
 };
 
-var isBrowser$8 = typeof document !== 'undefined';
+var isBrowser$4 = typeof document !== 'undefined';
 var hasOwnProperty$b = Object.prototype.hasOwnProperty;
 var EmotionCacheContext = /* #__PURE__ */createContext$1( // we're doing this to avoid preconstruct's dead code elimination in this one case
 // because this module is primarily intended for the browser and node
@@ -5541,6 +4401,11 @@ var EmotionCacheContext = /* #__PURE__ */createContext$1( // we're doing this to
 typeof HTMLElement !== 'undefined' ? /* #__PURE__ */createCache({
   key: 'css'
 }) : null);
+
+if (process.env.NODE_ENV !== 'production') {
+  EmotionCacheContext.displayName = 'EmotionCacheContext';
+}
+
 EmotionCacheContext.Provider;
 
 var withEmotionCache = function withEmotionCache(func) {
@@ -5552,7 +4417,7 @@ var withEmotionCache = function withEmotionCache(func) {
   });
 };
 
-if (!isBrowser$8) {
+if (!isBrowser$4) {
   withEmotionCache = function withEmotionCache(func) {
     return function (props) {
       var cache = useContext(EmotionCacheContext);
@@ -5577,6 +4442,10 @@ if (!isBrowser$8) {
 }
 
 var ThemeContext = /* #__PURE__ */createContext$1({});
+
+if (process.env.NODE_ENV !== 'production') {
+  ThemeContext.displayName = 'EmotionThemeContext';
+}
 
 var getTheme = function getTheme(outerTheme, theme) {
   if (typeof theme === 'function') {
@@ -5673,22 +4542,22 @@ var Emotion = /* #__PURE__ */withEmotionCache(function (props, cache, ref) {
   var className = '';
 
   if (typeof props.className === 'string') {
-    className = getRegisteredStyles$1(cache.registered, registeredStyles, props.className);
+    className = getRegisteredStyles(cache.registered, registeredStyles, props.className);
   } else if (props.className != null) {
     className = props.className + " ";
   }
 
-  var serialized = serializeStyles$1(registeredStyles, undefined, typeof cssProp === 'function' || Array.isArray(cssProp) ? useContext(ThemeContext) : undefined);
+  var serialized = serializeStyles(registeredStyles, undefined, useContext(ThemeContext));
 
   if (process.env.NODE_ENV !== 'production' && serialized.name.indexOf('-') === -1) {
     var labelFromStack = props[labelPropName];
 
     if (labelFromStack) {
-      serialized = serializeStyles$1([serialized, 'label:' + labelFromStack + ';']);
+      serialized = serializeStyles([serialized, 'label:' + labelFromStack + ';']);
     }
   }
 
-  var rules = insertStyles$1(cache, serialized, typeof type === 'string');
+  var rules = insertStyles(cache, serialized, typeof type === 'string');
   className += cache.key + "-" + serialized.name;
   var newProps = {};
 
@@ -5702,7 +4571,7 @@ var Emotion = /* #__PURE__ */withEmotionCache(function (props, cache, ref) {
   newProps.className = className;
   var ele = /*#__PURE__*/createElement(type, newProps);
 
-  if (!isBrowser$8 && rules !== undefined) {
+  if (!isBrowser$4 && rules !== undefined) {
     var _ref;
 
     var serializedNames = serialized.name;
@@ -5727,7 +4596,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 var pkg = {
   name: "@emotion/react",
-  version: "11.4.0",
+  version: "11.4.1",
   main: "dist/emotion-react.cjs.js",
   module: "dist/emotion-react.esm.js",
   browser: {
@@ -5746,7 +4615,7 @@ var pkg = {
     "@babel/runtime": "^7.13.10",
     "@emotion/cache": "^11.4.0",
     "@emotion/serialize": "^1.0.2",
-    "@emotion/sheet": "^1.0.1",
+    "@emotion/sheet": "^1.0.2",
     "@emotion/utils": "^1.0.0",
     "@emotion/weak-memoize": "^0.2.5",
     "hoist-non-react-statics": "^3.3.1"
@@ -5822,9 +4691,9 @@ var Global = /* #__PURE__ */withEmotionCache(function (props, cache) {
   }
 
   var styles = props.styles;
-  var serialized = serializeStyles$1([styles], undefined, typeof styles === 'function' || Array.isArray(styles) ? useContext(ThemeContext) : undefined);
+  var serialized = serializeStyles([styles], undefined, useContext(ThemeContext));
 
-  if (!isBrowser$8) {
+  if (!isBrowser$4) {
     var _ref;
 
     var serializedNames = serialized.name;
@@ -5897,7 +4766,7 @@ var Global = /* #__PURE__ */withEmotionCache(function (props, cache) {
 
     if (serialized.next !== undefined) {
       // insert keyframes
-      insertStyles$1(cache, serialized.next, true);
+      insertStyles(cache, serialized.next, true);
     }
 
     if (sheet.tags.length) {
@@ -5921,7 +4790,7 @@ function css$3() {
     args[_key] = arguments[_key];
   }
 
-  return serializeStyles$1(args);
+  return serializeStyles(args);
 }
 
 var keyframes = function keyframes() {
@@ -5991,7 +4860,7 @@ var classnames = function classnames(args) {
 
 function merge$1(registered, css, className) {
   var registeredStyles = [];
-  var rawClassName = getRegisteredStyles$1(registered, registeredStyles, className);
+  var rawClassName = getRegisteredStyles(registered, registeredStyles, className);
 
   if (registeredStyles.length < 2) {
     return className;
@@ -6014,19 +4883,19 @@ var ClassNames = /* #__PURE__ */withEmotionCache(function (props, cache) {
       args[_key] = arguments[_key];
     }
 
-    var serialized = serializeStyles$1(args, cache.registered);
+    var serialized = serializeStyles(args, cache.registered);
 
-    if (isBrowser$8) {
-      insertStyles$1(cache, serialized, false);
+    if (isBrowser$4) {
+      insertStyles(cache, serialized, false);
     } else {
-      var res = insertStyles$1(cache, serialized, false);
+      var res = insertStyles(cache, serialized, false);
 
       if (res !== undefined) {
         rules += res;
       }
     }
 
-    if (!isBrowser$8) {
+    if (!isBrowser$4) {
       serializedHashes += " " + serialized.name;
     }
 
@@ -6053,7 +4922,7 @@ var ClassNames = /* #__PURE__ */withEmotionCache(function (props, cache) {
   var ele = props.children(content);
   hasRendered = true;
 
-  if (!isBrowser$8 && rules.length !== 0) {
+  if (!isBrowser$4 && rules.length !== 0) {
     var _ref;
 
     return /*#__PURE__*/createElement(Fragment$2, null, /*#__PURE__*/createElement("style", (_ref = {}, _ref["data-emotion"] = cache.key + " " + serializedHashes.substring(1), _ref.dangerouslySetInnerHTML = {
@@ -6069,12 +4938,12 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 if (process.env.NODE_ENV !== 'production') {
-  var isBrowser$7 = typeof document !== 'undefined'; // #1727 for some reason Jest evaluates modules twice if some consuming module gets mocked with jest.mock
+  var isBrowser$3 = typeof document !== 'undefined'; // #1727 for some reason Jest evaluates modules twice if some consuming module gets mocked with jest.mock
 
   var isJest = typeof jest !== 'undefined';
 
-  if (isBrowser$7 && !isJest) {
-    var globalContext = isBrowser$7 ? window : global;
+  if (isBrowser$3 && !isJest) {
+    var globalContext = isBrowser$3 ? window : global;
     var globalKey = "__EMOTION_REACT_" + pkg.version.split('.')[0] + "__";
 
     if (globalContext[globalKey]) {
@@ -6088,6 +4957,7 @@ if (process.env.NODE_ENV !== 'production') {
 var CSSReset = () => /*#__PURE__*/React.createElement(Global, {
   styles: "\n      html {\n        line-height: 1.5;\n        -webkit-text-size-adjust: 100%;\n        font-family: system-ui, sans-serif;\n        -webkit-font-smoothing: antialiased;\n        text-rendering: optimizeLegibility;      \n        -moz-osx-font-smoothing: grayscale; \n        touch-action: manipulation; \n      }\n\n      body {\n        position: relative;\n        min-height: 100%;\n        font-feature-settings: 'kern';\n      }\n\n      *,\n      *::before,\n      *::after {\n        border-width: 0;\n        border-style: solid;\n        box-sizing: border-box;\n      }\n\n      main {\n        display: block;\n      }\n\n      hr {\n        border-top-width: 1px;\n        box-sizing: content-box;\n        height: 0;\n        overflow: visible;\n      }\n\n      pre,\n      code,\n      kbd,\n      samp {\n        font-family: SFMono-Regular,  Menlo, Monaco, Consolas, monospace;\n        font-size: 1em;\n      }\n\n      a {\n        background-color: transparent;\n        color: inherit;\n        text-decoration: inherit;\n      }\n\n      abbr[title] {\n        border-bottom: none;\n        text-decoration: underline;\n        -webkit-text-decoration: underline dotted;\n        text-decoration: underline dotted;\n      }\n\n      b,\n      strong {\n        font-weight: bold;\n      }\n\n      small {\n        font-size: 80%;\n      }\n\n      sub,\n      sup {\n        font-size: 75%;\n        line-height: 0;\n        position: relative;\n        vertical-align: baseline;\n      }\n\n      sub {\n        bottom: -0.25em;\n      }\n\n      sup {\n        top: -0.5em;\n      }\n\n      img {\n        border-style: none;\n      }\n\n      button,\n      input,\n      optgroup,\n      select,\n      textarea {\n        font-family: inherit;\n        font-size: 100%;\n        line-height: 1.15;\n        margin: 0;\n      }\n\n      button,\n      input {\n        overflow: visible;\n      }\n\n      button,\n      select {\n        text-transform: none;\n      }\n\n      button::-moz-focus-inner,\n      [type=\"button\"]::-moz-focus-inner,\n      [type=\"reset\"]::-moz-focus-inner,\n      [type=\"submit\"]::-moz-focus-inner {\n        border-style: none;\n        padding: 0;\n      }\n\n      fieldset {\n        padding: 0.35em 0.75em 0.625em;\n      }\n\n      legend {\n        box-sizing: border-box;\n        color: inherit;\n        display: table;\n        max-width: 100%;\n        padding: 0;\n        white-space: normal;\n      }\n\n      progress {\n        vertical-align: baseline;\n      }\n\n      textarea {\n        overflow: auto;\n      }\n\n      [type=\"checkbox\"],\n      [type=\"radio\"] {\n        box-sizing: border-box;\n        padding: 0;\n      }\n\n      [type=\"number\"]::-webkit-inner-spin-button,\n      [type=\"number\"]::-webkit-outer-spin-button {\n        -webkit-appearance: none !important;\n      }\n\n      input[type=\"number\"] {\n        -moz-appearance: textfield;\n      }\n\n      [type=\"search\"] {\n        -webkit-appearance: textfield;\n        outline-offset: -2px;\n      }\n\n      [type=\"search\"]::-webkit-search-decoration {\n        -webkit-appearance: none !important;\n      }\n\n      ::-webkit-file-upload-button {\n        -webkit-appearance: button;\n        font: inherit;\n      }\n\n      details {\n        display: block;\n      }\n\n      summary {\n        display: list-item;\n      }\n\n      template {\n        display: none;\n      }\n\n      [hidden] {\n        display: none !important;\n      }\n\n      body,\n      blockquote,\n      dl,\n      dd,\n      h1,\n      h2,\n      h3,\n      h4,\n      h5,\n      h6,\n      hr,\n      figure,\n      p,\n      pre {\n        margin: 0;\n      }\n\n      button {\n        background: transparent;\n        padding: 0;\n      }\n\n      fieldset {\n        margin: 0;\n        padding: 0;\n      }\n\n      ol,\n      ul {\n        margin: 0;\n        padding: 0;\n      }\n\n      textarea {\n        resize: vertical;\n      }\n\n      button,\n      [role=\"button\"] {\n        cursor: pointer;\n      }\n\n      button::-moz-focus-inner {\n        border: 0 !important;\n      }\n\n      table {\n        border-collapse: collapse;\n      }\n\n      h1,\n      h2,\n      h3,\n      h4,\n      h5,\n      h6 {\n        font-size: inherit;\n        font-weight: inherit;\n      }\n\n      button,\n      input,\n      optgroup,\n      select,\n      textarea {\n        padding: 0;\n        line-height: inherit;\n        color: inherit;\n      }\n\n      img,\n      svg,\n      video,\n      canvas,\n      audio,\n      iframe,\n      embed,\n      object {\n        display: block;\n        vertical-align: middle;\n      }\n\n      img,\n      video {\n        max-width: 100%;\n        height: auto;\n      }\n\n      [data-js-focus-visible] :focus:not([data-focus-visible-added]) {\n        outline: none;\n        box-shadow: none;\n      }\n\n      select::-ms-expand {\n        display: none;\n      }\n    "
 });
+var CSSReset$1 = CSSReset;
 
 var isProduction$2 = process.env.NODE_ENV === 'production';
 var prefix = 'Invariant failed';
@@ -6104,8 +4974,45 @@ function invariant(condition, message) {
   throw new Error(prefix + ": " + (message || ''));
 }
 
+function getLastItem(array) {
+  var length = array == null ? 0 : array.length;
+  return length ? array[length - 1] : undefined;
+}
+
 // Number assertions
-var __DEV__$a = process.env.NODE_ENV !== "production";
+function isNumber(value) {
+  return typeof value === "number";
+}
+function isNotNumber(value) {
+  return typeof value !== "number" || Number.isNaN(value) || !Number.isFinite(value);
+}
+
+function isArray$1(value) {
+  return Array.isArray(value);
+}
+
+function isFunction$2(value) {
+  return typeof value === "function";
+} // Generic assertions
+
+function isObject$3(value) {
+  var type = typeof value;
+  return value != null && (type === "object" || type === "function") && !isArray$1(value);
+}
+function isEmptyObject$1(value) {
+  return isObject$3(value) && Object.keys(value).length === 0;
+}
+function isNull(value) {
+  return value == null;
+} // String assertions
+
+function isString$1(value) {
+  return Object.prototype.toString.call(value) === "[object String]";
+}
+function isCssVar(value) {
+  return /^var\(--.+\)$/.test(value);
+} // Empty assertions
+var __DEV__ = process.env.NODE_ENV !== "production";
 process.env.NODE_ENV === "test";
 
 /**
@@ -8162,571 +7069,14 @@ function stubFalse() {
 module.exports = mergeWith;
 });
 
-// Number assertions
-
-function isFunction$5(value) {
-  return typeof value === "function";
-} // Generic assertions
-process.env.NODE_ENV !== "production";
-process.env.NODE_ENV === "test";
-
-/**
- * Assigns a value to a ref function or object
- *
- * @param ref the ref to assign to
- * @param value the value
- */
-
-function assignRef(ref, value) {
-  if (ref == null) return;
-
-  if (isFunction$5(ref)) {
-    ref(value);
-    return;
-  }
-
-  try {
-    // @ts-ignore
-    ref.current = value;
-  } catch (error) {
-    throw new Error("Cannot assign value '" + value + "' to ref '" + ref + "'");
-  }
+function omit$1(object, keys) {
+  var result = {};
+  Object.keys(object).forEach(key => {
+    if (keys.includes(key)) return;
+    result[key] = object[key];
+  });
+  return result;
 }
-/**
- * Combine multiple React refs into a single ref function.
- * This is used mostly when you need to allow consumers forward refs to
- * internal components
- *
- * @param refs refs to assign to value to
- */
-
-function mergeRefs() {
-  for (var _len = arguments.length, refs = new Array(_len), _key = 0; _key < _len; _key++) {
-    refs[_key] = arguments[_key];
-  }
-
-  return node => {
-    refs.forEach(ref => assignRef(ref, node));
-  };
-}
-
-/**
- * Creates a named context, provider, and hook.
- *
- * @param options create context options
- */
-
-function createContext(options) {
-  if (options === void 0) {
-    options = {};
-  }
-
-  var {
-    strict = true,
-    errorMessage = "useContext: `context` is undefined. Seems you forgot to wrap component within the Provider",
-    name
-  } = options;
-  var Context = /*#__PURE__*/React.createContext(undefined);
-  Context.displayName = name;
-
-  function useContext() {
-    var context = React.useContext(Context);
-
-    if (!context && strict) {
-      var error = new Error(errorMessage);
-      error.name = "ContextError";
-      Error.captureStackTrace == null ? void 0 : Error.captureStackTrace(error, useContext);
-      throw error;
-    }
-
-    return context;
-  }
-
-  return [Context.Provider, useContext, Context];
-}
-
-/**
- * Gets only the valid children of a component,
- * and ignores any nullish or falsy child.
- *
- * @param children the children
- */
-
-function getValidChildren(children) {
-  return React.Children.toArray(children).filter(child => /*#__PURE__*/React.isValidElement(child));
-}
-
-var [PortalManagerContextProvider, usePortalManager] = createContext({
-  strict: false,
-  name: "PortalManagerContext"
-});
-function PortalManager(props) {
-  var {
-    children,
-    zIndex
-  } = props;
-  return /*#__PURE__*/React.createElement(PortalManagerContextProvider, {
-    value: {
-      zIndex
-    }
-  }, children);
-}
-
-if (__DEV__$a) {
-  PortalManager.displayName = "PortalManager";
-}
-
-/**
- * React hook to manage boolean (on - off) states
- *
- * @param initialState the initial boolean state value
- */
-
-function useBoolean(initialState) {
-  if (initialState === void 0) {
-    initialState = false;
-  }
-
-  var [value, setValue] = useState(initialState);
-  var on = useCallback(() => {
-    setValue(true);
-  }, []);
-  var off = useCallback(() => {
-    setValue(false);
-  }, []);
-  var toggle = useCallback(() => {
-    setValue(prev => !prev);
-  }, []);
-  return [value, {
-    on,
-    off,
-    toggle
-  }];
-}
-
-// Number assertions
-
-function isFunction$4(value) {
-  return typeof value === "function";
-} // Generic assertions
-process.env.NODE_ENV !== "production";
-process.env.NODE_ENV === "test";
-
-function canUseDOM$6() {
-  return !!(typeof window !== "undefined" && window.document && window.document.createElement);
-}
-var isBrowser$6 = canUseDOM$6();
-
-/* eslint-disable no-nested-ternary */
-function runIfFn$2(valueOrFn) {
-  for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-    args[_key - 1] = arguments[_key];
-  }
-
-  return isFunction$4(valueOrFn) ? valueOrFn(...args) : valueOrFn;
-}
-
-/**
- * useSafeLayoutEffect enables us to safely call `useLayoutEffect` on the browser
- * (for SSR reasons)
- *
- * React currently throws a warning when using useLayoutEffect on the server.
- * To get around it, we can conditionally useEffect on the server (no-op) and
- * useLayoutEffect in the browser.
- *
- * @see https://gist.github.com/gaearon/e7d97cdf38a2907924ea12e4ebdf3c85
- */
-
-var useSafeLayoutEffect = isBrowser$6 ? React.useLayoutEffect : React.useEffect;
-
-/**
- * React hook to persist any value between renders,
- * but keeps it up-to-date if it changes.
- *
- * @param value the value or function to persist
- */
-
-function useCallbackRef(fn, deps) {
-  if (deps === void 0) {
-    deps = [];
-  }
-
-  var ref = React.useRef(fn);
-  useSafeLayoutEffect(() => {
-    ref.current = fn;
-  }); // eslint-disable-next-line react-hooks/exhaustive-deps
-
-  return React.useCallback(function () {
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    return ref.current == null ? void 0 : ref.current(...args);
-  }, deps);
-}
-
-function useControllableProp(prop, state) {
-  var isControlled = prop !== undefined;
-  var value = isControlled && typeof prop !== "undefined" ? prop : state;
-  return [isControlled, value];
-}
-
-// This implementation is heavily inspired by react-aria's implementation
-var defaultIdContext = {
-  prefix: Math.round(Math.random() * 10000000000),
-  current: 0
-};
-var IdContext = /*#__PURE__*/React.createContext(defaultIdContext);
-var IdProvider = /*#__PURE__*/React.memo(_ref => {
-  var {
-    children
-  } = _ref;
-  var currentContext = React.useContext(IdContext);
-  var isRoot = currentContext === defaultIdContext;
-  var context = React.useMemo(() => ({
-    prefix: isRoot ? 0 : ++currentContext.prefix,
-    current: 0
-  }), [isRoot, currentContext]);
-  return /*#__PURE__*/React.createElement(IdContext.Provider, {
-    value: context
-  }, children);
-});
-function useId(idProp, prefix) {
-  var context = React.useContext(IdContext);
-  return React.useMemo(() => idProp || [prefix, context.prefix, ++context.current].filter(Boolean).join("-"), // eslint-disable-next-line react-hooks/exhaustive-deps
-  [idProp, prefix]);
-}
-
-/**
- * React hook to manage browser event listeners
- *
- * @param event the event name
- * @param handler the event handler function to execute
- * @param doc the dom environment to execute against (defaults to `document`)
- * @param options the event listener options
- *
- * @internal
- */
-
-function useEventListener(event, handler, env, options) {
-  var listener = useCallbackRef(handler);
-  React.useEffect(() => {
-    var _runIfFn;
-
-    var node = (_runIfFn = runIfFn$2(env)) != null ? _runIfFn : document;
-    node.addEventListener(event, listener, options);
-    return () => {
-      node.removeEventListener(event, listener, options);
-    };
-  }, [event, env, options, listener]);
-  return () => {
-    var _runIfFn2;
-
-    var node = (_runIfFn2 = runIfFn$2(env)) != null ? _runIfFn2 : document;
-    node.removeEventListener(event, listener, options);
-  };
-}
-
-function useUnmountEffect(fn, deps) {
-  if (deps === void 0) {
-    deps = [];
-  }
-
-  return React.useEffect(() => () => fn(), // eslint-disable-next-line react-hooks/exhaustive-deps
-  deps);
-}
-
-/**
- * React Hook that provides a declarative `setInterval`
- *
- * @param callback the callback to execute at interval
- * @param delay the `setInterval` delay (in ms)
- */
-
-function useInterval(callback, delay) {
-  var fn = useCallbackRef(callback);
-  React.useEffect(() => {
-    var intervalId = null;
-
-    var tick = () => fn();
-
-    if (delay !== null) {
-      intervalId = window.setInterval(tick, delay);
-    }
-
-    return () => {
-      if (intervalId) {
-        window.clearInterval(intervalId);
-      }
-    };
-  }, [delay, fn]);
-}
-
-// Number assertions
-var __DEV__$9 = process.env.NODE_ENV !== "production";
-process.env.NODE_ENV === "test";
-
-function canUseDOM$5() {
-  return !!(typeof window !== "undefined" && window.document && window.document.createElement);
-}
-var isBrowser$5 = canUseDOM$5();
-
-/* eslint-disable no-nested-ternary */
-var noop$5 = () => {};
-
-var classNames$1 = {
-  light: "chakra-ui-light",
-  dark: "chakra-ui-dark"
-};
-/**
- * SSR: Graceful fallback for the `body` element
- */
-
-var mockBody = {
-  classList: {
-    add: noop$5,
-    remove: noop$5
-  }
-};
-
-var getBody = () => isBrowser$5 ? document.body : mockBody;
-/**
- * Function to add/remove class from `body` based on color mode
- */
-
-
-function syncBodyClassName(isDark) {
-  var body = getBody();
-  body.classList.add(isDark ? classNames$1.dark : classNames$1.light);
-  body.classList.remove(isDark ? classNames$1.light : classNames$1.dark);
-}
-/**
- * Check if JS media query matches the query string passed
- */
-
-function getMediaQuery(query) {
-  var mediaQueryList = window.matchMedia == null ? void 0 : window.matchMedia(query);
-
-  if (!mediaQueryList) {
-    return undefined;
-  }
-
-  return !!mediaQueryList.media === mediaQueryList.matches;
-}
-
-var queries = {
-  light: "(prefers-color-scheme: light)",
-  dark: "(prefers-color-scheme: dark)"
-};
-function getColorScheme(fallback) {
-  var _getMediaQuery;
-
-  var isDark = (_getMediaQuery = getMediaQuery(queries.dark)) != null ? _getMediaQuery : fallback === "dark";
-  return isDark ? "dark" : "light";
-}
-/**
- * Adds system os color mode listener, and run the callback
- * once preference changes
- */
-
-function addListener(fn) {
-  if (!("matchMedia" in window)) {
-    return noop$5;
-  }
-
-  var mediaQueryList = window.matchMedia(queries.dark);
-
-  var listener = () => {
-    fn(mediaQueryList.matches ? "dark" : "light");
-  };
-
-  listener();
-  mediaQueryList.addListener(listener);
-  return () => {
-    mediaQueryList.removeListener(listener);
-  };
-}
-var root$1 = {
-  get: () => document.documentElement.style.getPropertyValue("--chakra-ui-color-mode"),
-  set: mode => {
-    if (isBrowser$5) {
-      document.documentElement.style.setProperty("--chakra-ui-color-mode", mode);
-    }
-  }
-};
-
-var hasSupport = () => typeof Storage !== "undefined";
-
-var storageKey = "chakra-ui-color-mode";
-/**
- * Simple object to handle read-write to localStorage
- */
-
-var localStorageManager = {
-  get(init) {
-    if (!hasSupport()) return init;
-
-    try {
-      var _value = localStorage.getItem(storageKey);
-
-      return _value != null ? _value : init;
-    } catch (error) {
-      if (__DEV__$9) {
-        console.log(error);
-      }
-
-      return init;
-    }
-  },
-
-  set(value) {
-    if (!hasSupport()) return;
-
-    try {
-      localStorage.setItem(storageKey, value);
-    } catch (error) {
-      if (__DEV__$9) {
-        console.log(error);
-      }
-    }
-  },
-
-  type: "localStorage"
-};
-
-var ColorModeContext = /*#__PURE__*/React.createContext({});
-
-if (__DEV__$9) {
-  ColorModeContext.displayName = "ColorModeContext";
-}
-/**
- * React hook that reads from `ColorModeProvider` context
- * Returns the color mode and function to toggle it
- */
-
-
-var useColorMode = () => {
-  var context = React.useContext(ColorModeContext);
-
-  if (context === undefined) {
-    throw new Error("useColorMode must be used within a ColorModeProvider");
-  }
-
-  return context;
-};
-/**
- * Provides context for the color mode based on config in `theme`
- * Returns the color mode and function to toggle the color mode
- */
-
-function ColorModeProvider(props) {
-  var {
-    value,
-    children,
-    options: {
-      useSystemColorMode,
-      initialColorMode
-    },
-    colorModeManager = localStorageManager
-  } = props;
-  /**
-   * Only attempt to retrieve if we're on the server. Else this will result
-   * in a hydration mismatch warning and partially invalid visuals.
-   *
-   * Else fallback safely to `theme.config.initialColormode` (default light)
-   */
-
-  var [colorMode, rawSetColorMode] = React.useState(colorModeManager.type === "cookie" ? colorModeManager.get(initialColorMode) : initialColorMode);
-  React.useEffect(() => {
-    /**
-     * Since we cannot initially retrieve localStorage to due above mentioned
-     * reasons, do so after hydration.
-     *
-     * Priority:
-     * - system color mode
-     * - defined value on <ColorModeScript />, if present
-     * - previously stored value
-     */
-    if (isBrowser$5 && colorModeManager.type === "localStorage") {
-      var mode = useSystemColorMode ? getColorScheme(initialColorMode) : root$1.get() || colorModeManager.get();
-
-      if (mode) {
-        rawSetColorMode(mode);
-      }
-    }
-  }, [colorModeManager, useSystemColorMode, initialColorMode]);
-  React.useEffect(() => {
-    var isDark = colorMode === "dark";
-    syncBodyClassName(isDark);
-    root$1.set(isDark ? "dark" : "light");
-  }, [colorMode]);
-  var setColorMode = React.useCallback(value => {
-    colorModeManager.set(value);
-    rawSetColorMode(value);
-  }, [colorModeManager]);
-  var toggleColorMode = React.useCallback(() => {
-    setColorMode(colorMode === "light" ? "dark" : "light");
-  }, [colorMode, setColorMode]);
-  React.useEffect(() => {
-    var removeListener;
-
-    if (useSystemColorMode) {
-      removeListener = addListener(setColorMode);
-    }
-
-    return () => {
-      if (removeListener && useSystemColorMode) {
-        removeListener();
-      }
-    };
-  }, [setColorMode, useSystemColorMode]); // presence of `value` indicates a controlled context
-
-  var context = React.useMemo(() => ({
-    colorMode: value != null ? value : colorMode,
-    toggleColorMode: value ? noop$5 : toggleColorMode,
-    setColorMode: value ? noop$5 : setColorMode
-  }), [colorMode, setColorMode, toggleColorMode, value]);
-  return /*#__PURE__*/React.createElement(ColorModeContext.Provider, {
-    value: context
-  }, children);
-}
-
-if (__DEV__$9) {
-  ColorModeProvider.displayName = "ColorModeProvider";
-}
-
-function getLastItem(array) {
-  var length = array == null ? 0 : array.length;
-  return length ? array[length - 1] : undefined;
-}
-
-// Number assertions
-function isNumber(value) {
-  return typeof value === "number";
-}
-
-function isArray$2(value) {
-  return Array.isArray(value);
-}
-
-function isFunction$3(value) {
-  return typeof value === "function";
-} // Generic assertions
-
-function isObject$4(value) {
-  var type = typeof value;
-  return value != null && (type === "object" || type === "function") && !isArray$2(value);
-}
-
-function isString$1(value) {
-  return Object.prototype.toString.call(value) === "[object String]";
-}
-function isCssVar(value) {
-  return /^var\(--.+\)$/.test(value);
-} // Empty assertions
-process.env.NODE_ENV !== "production";
-process.env.NODE_ENV === "test";
-
 function pick$1(object, keys) {
   var result = {};
   keys.forEach(key => {
@@ -8744,7 +7094,7 @@ function pick$1(object, keys) {
  * @param def  - the fallback value
  */
 
-function get$4(obj, path, fallback, index) {
+function get$2(obj, path, fallback, index) {
   var key = typeof path === "string" ? path.split(".") : [path];
 
   for (index = 0; index < key.length; index += 1) {
@@ -8754,7 +7104,7 @@ function get$4(obj, path, fallback, index) {
 
   return obj === undefined ? fallback : obj;
 }
-var memoize$4 = fn => {
+var memoize$1 = fn => {
   var cache = new WeakMap();
 
   var memoizedFn = (obj, path, fallback, index) => {
@@ -8779,7 +7129,27 @@ var memoize$4 = fn => {
 
   return memoizedFn;
 };
-var memoizedGet$2 = memoize$4(get$4);
+var memoizedGet = memoize$1(get$2);
+/**
+ * Returns the items of an object that meet the condition specified in a callback function.
+ *
+ * @param object the object to loop through
+ * @param fn The filter function
+ */
+
+function objectFilter(object, fn) {
+  var result = {};
+  Object.keys(object).forEach(key => {
+    var value = object[key];
+    var shouldPass = fn(value, key, object);
+
+    if (shouldPass) {
+      result[key] = value;
+    }
+  });
+  return result;
+}
+var filterUndefined = object => objectFilter(object, val => val !== null && val !== undefined);
 var objectKeys = obj => Object.keys(obj);
 /**
  * Object.entries polyfill for Nodev10 compatibility
@@ -8882,7 +7252,7 @@ function analyzeBreakpoints(breakpoints) {
     media: [null, ...normalized.map(minW => queryString(minW)).slice(1)],
 
     toArrayValue(test) {
-      if (!isObject$4(test)) {
+      if (!isObject$3(test)) {
         throw new Error("toArrayValue: value must be an object");
       }
 
@@ -8914,13 +7284,277 @@ function analyzeBreakpoints(breakpoints) {
   };
 }
 
+function isElement(el) {
+  return el != null && typeof el == "object" && "nodeType" in el && el.nodeType === Node.ELEMENT_NODE;
+}
+function isHTMLElement$1(el) {
+  var _el$ownerDocument$def;
+
+  if (!isElement(el)) {
+    return false;
+  }
+
+  var win = (_el$ownerDocument$def = el.ownerDocument.defaultView) != null ? _el$ownerDocument$def : window;
+  return el instanceof win.HTMLElement;
+}
+function getOwnerDocument(node) {
+  var _node$ownerDocument;
+
+  return isElement(node) ? (_node$ownerDocument = node.ownerDocument) != null ? _node$ownerDocument : document : document;
+}
+function canUseDOM$3() {
+  return !!(typeof window !== "undefined" && window.document && window.document.createElement);
+}
+var isBrowser$2 = canUseDOM$3();
+var dataAttr = condition => condition ? "" : undefined;
+var ariaAttr = condition => condition ? true : undefined;
+var cx = function cx() {
+  for (var _len = arguments.length, classNames = new Array(_len), _key = 0; _key < _len; _key++) {
+    classNames[_key] = arguments[_key];
+  }
+
+  return classNames.filter(Boolean).join(" ");
+};
+/**
+ * Get the normalized event key across all browsers
+ * @param event keyboard event
+ */
+
+function normalizeEventKey(event) {
+  var {
+    key,
+    keyCode
+  } = event;
+  var isArrowKey = keyCode >= 37 && keyCode <= 40 && key.indexOf("Arrow") !== 0;
+  var eventKey = isArrowKey ? "Arrow" + key : key;
+  return eventKey;
+}
+
+// Really great work done by Diego Haz on this one
+function isInputElement(element) {
+  return isHTMLElement$1(element) && element.tagName.toLowerCase() === "input" && "select" in element;
+}
+function isActiveElement(element) {
+  var doc = isHTMLElement$1(element) ? getOwnerDocument(element) : document;
+  return doc.activeElement === element;
+}
+
 /* eslint-disable no-nested-ternary */
-function runIfFn$1(valueOrFn) {
+function runIfFn(valueOrFn) {
   for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
     args[_key - 1] = arguments[_key];
   }
 
-  return isFunction$3(valueOrFn) ? valueOrFn(...args) : valueOrFn;
+  return isFunction$2(valueOrFn) ? valueOrFn(...args) : valueOrFn;
+}
+function callAllHandlers() {
+  for (var _len2 = arguments.length, fns = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+    fns[_key2] = arguments[_key2];
+  }
+
+  return function func(event) {
+    fns.some(fn => {
+      fn == null ? void 0 : fn(event);
+      return event == null ? void 0 : event.defaultPrevented;
+    });
+  };
+}
+function once$3(fn) {
+  var result;
+  return function func() {
+    if (fn) {
+      for (var _len5 = arguments.length, args = new Array(_len5), _key5 = 0; _key5 < _len5; _key5++) {
+        args[_key5] = arguments[_key5];
+      }
+
+      result = fn.apply(this, args);
+      fn = null;
+    }
+
+    return result;
+  };
+}
+var noop$5 = () => {};
+var warn$1 = once$3(options => () => {
+  var {
+    condition,
+    message
+  } = options;
+
+  if (condition && __DEV__) {
+    console.warn(message);
+  }
+});
+
+// Original licensing for the following methods can be found in the
+function focus(element, options) {
+  if (options === void 0) {
+    options = {};
+  }
+
+  var {
+    isActive = isActiveElement,
+    nextTick,
+    preventScroll = true,
+    selectTextIfInput = true
+  } = options;
+  if (!element || isActive(element)) return -1;
+
+  function triggerFocus() {
+    if (!element) {
+      warn$1({
+        condition: true,
+        message: "[chakra-ui]: can't call focus() on `null` or `undefined` element"
+      });
+      return;
+    }
+
+    if (supportsPreventScroll()) {
+      element.focus({
+        preventScroll
+      });
+    } else {
+      element.focus();
+
+      if (preventScroll) {
+        var scrollableElements = getScrollableElements(element);
+        restoreScrollPosition(scrollableElements);
+      }
+    }
+
+    if (isInputElement(element) && selectTextIfInput) {
+      element.select();
+    }
+  }
+
+  if (nextTick) {
+    return requestAnimationFrame(triggerFocus);
+  }
+
+  triggerFocus();
+  return -1;
+}
+var supportsPreventScrollCached = null;
+
+function supportsPreventScroll() {
+  if (supportsPreventScrollCached == null) {
+    supportsPreventScrollCached = false;
+
+    try {
+      var div = document.createElement("div");
+      div.focus({
+        get preventScroll() {
+          supportsPreventScrollCached = true;
+          return true;
+        }
+
+      });
+    } catch (e) {// Ignore
+    }
+  }
+
+  return supportsPreventScrollCached;
+}
+
+function getScrollableElements(element) {
+  var _doc$defaultView;
+
+  var doc = getOwnerDocument(element);
+  var win = (_doc$defaultView = doc.defaultView) != null ? _doc$defaultView : window;
+  var parent = element.parentNode;
+  var scrollableElements = [];
+  var rootScrollingElement = doc.scrollingElement || doc.documentElement;
+
+  while (parent instanceof win.HTMLElement && parent !== rootScrollingElement) {
+    if (parent.offsetHeight < parent.scrollHeight || parent.offsetWidth < parent.scrollWidth) {
+      scrollableElements.push({
+        element: parent,
+        scrollTop: parent.scrollTop,
+        scrollLeft: parent.scrollLeft
+      });
+    }
+
+    parent = parent.parentNode;
+  }
+
+  if (rootScrollingElement instanceof win.HTMLElement) {
+    scrollableElements.push({
+      element: rootScrollingElement,
+      scrollTop: rootScrollingElement.scrollTop,
+      scrollLeft: rootScrollingElement.scrollLeft
+    });
+  }
+
+  return scrollableElements;
+}
+
+function restoreScrollPosition(scrollableElements) {
+  for (var {
+    element,
+    scrollTop,
+    scrollLeft
+  } of scrollableElements) {
+    element.scrollTop = scrollTop;
+    element.scrollLeft = scrollLeft;
+  }
+}
+
+var minSafeInteger = Number.MIN_SAFE_INTEGER || -9007199254740991;
+var maxSafeInteger = Number.MAX_SAFE_INTEGER || 9007199254740991;
+
+function toNumber$1(value) {
+  var num = parseFloat(value);
+  return isNotNumber(num) ? 0 : num;
+}
+/**
+ * Converts a value to a specific precision (or decimal points).
+ *
+ * Returns a string representing a number in fixed-point notation.
+ *
+ * @param value the value to convert
+ * @param precision the precision or decimal points
+ */
+
+
+function toPrecision(value, precision) {
+  var nextValue = toNumber$1(value);
+  var scaleFactor = 10 ** (precision != null ? precision : 10);
+  nextValue = Math.round(nextValue * scaleFactor) / scaleFactor;
+  return precision ? nextValue.toFixed(precision) : nextValue.toString();
+}
+/**
+ * Counts the number of decimal places a number has
+ *
+ * @param value the decimal value to count
+ */
+
+function countDecimalPlaces(value) {
+  if (!Number.isFinite(value)) return 0;
+  var e = 1;
+  var p = 0;
+
+  while (Math.round(value * e) / e !== value) {
+    e *= 10;
+    p += 1;
+  }
+
+  return p;
+}
+/**
+ * Clamps a value to ensure it stays within the min and max range.
+ *
+ * @param value the value to clamp
+ * @param min the minimum value
+ * @param max the maximum value
+ */
+
+function clampValue(value, min, max) {
+  if (value == null) return value;
+  warn$1({
+    condition: max < min,
+    message: "clamp: max cannot be less than min"
+  });
+  return Math.min(Math.max(value, min), max);
 }
 
 function walkObject(target, predicate) {
@@ -8929,11 +7563,11 @@ function walkObject(target, predicate) {
       path = [];
     }
 
-    if (isArray$2(value)) {
+    if (isArray$1(value)) {
       return value.map((item, index) => inner(item, [...path, String(index)]));
     }
 
-    if (isObject$4(value)) {
+    if (isObject$3(value)) {
       return Object.fromEntries(Object.entries(value).map(_ref => {
         var [key, child] = _ref;
         return [key, inner(child, [...path, key])];
@@ -8946,10 +7580,501 @@ function walkObject(target, predicate) {
   return inner(target);
 }
 
+/**
+ * Assigns a value to a ref function or object
+ *
+ * @param ref the ref to assign to
+ * @param value the value
+ */
+
+function assignRef(ref, value) {
+  if (ref == null) return;
+
+  if (isFunction$2(ref)) {
+    ref(value);
+    return;
+  }
+
+  try {
+    // @ts-ignore
+    ref.current = value;
+  } catch (error) {
+    throw new Error("Cannot assign value '" + value + "' to ref '" + ref + "'");
+  }
+}
+/**
+ * Combine multiple React refs into a single ref function.
+ * This is used mostly when you need to allow consumers forward refs to
+ * internal components
+ *
+ * @param refs refs to assign to value to
+ */
+
+function mergeRefs$1() {
+  for (var _len = arguments.length, refs = new Array(_len), _key = 0; _key < _len; _key++) {
+    refs[_key] = arguments[_key];
+  }
+
+  return node => {
+    refs.forEach(ref => assignRef(ref, node));
+  };
+}
+
+/**
+ * Creates a named context, provider, and hook.
+ *
+ * @param options create context options
+ */
+
+function createContext(options) {
+  if (options === void 0) {
+    options = {};
+  }
+
+  var {
+    strict = true,
+    errorMessage = "useContext: `context` is undefined. Seems you forgot to wrap component within the Provider",
+    name
+  } = options;
+  var Context = /*#__PURE__*/React.createContext(undefined);
+  Context.displayName = name;
+
+  function useContext() {
+    var context = React.useContext(Context);
+
+    if (!context && strict) {
+      var error = new Error(errorMessage);
+      error.name = "ContextError";
+      Error.captureStackTrace == null ? void 0 : Error.captureStackTrace(error, useContext);
+      throw error;
+    }
+
+    return context;
+  }
+
+  return [Context.Provider, useContext, Context];
+}
+
+/**
+ * Gets only the valid children of a component,
+ * and ignores any nullish or falsy child.
+ *
+ * @param children the children
+ */
+
+function getValidChildren(children) {
+  return React.Children.toArray(children).filter(child => /*#__PURE__*/React.isValidElement(child));
+}
+
+var [PortalManagerContextProvider, usePortalManager] = createContext({
+  strict: false,
+  name: "PortalManagerContext"
+});
+function PortalManager(props) {
+  var {
+    children,
+    zIndex
+  } = props;
+  return /*#__PURE__*/React.createElement(PortalManagerContextProvider, {
+    value: {
+      zIndex
+    }
+  }, children);
+}
+
+if (__DEV__) {
+  PortalManager.displayName = "PortalManager";
+}
+
+/**
+ * React hook to manage boolean (on - off) states
+ *
+ * @param initialState the initial boolean state value
+ */
+
+function useBoolean(initialState) {
+  if (initialState === void 0) {
+    initialState = false;
+  }
+
+  var [value, setValue] = useState(initialState);
+  var on = useCallback(() => {
+    setValue(true);
+  }, []);
+  var off = useCallback(() => {
+    setValue(false);
+  }, []);
+  var toggle = useCallback(() => {
+    setValue(prev => !prev);
+  }, []);
+  return [value, {
+    on,
+    off,
+    toggle
+  }];
+}
+
+/**
+ * useSafeLayoutEffect enables us to safely call `useLayoutEffect` on the browser
+ * (for SSR reasons)
+ *
+ * React currently throws a warning when using useLayoutEffect on the server.
+ * To get around it, we can conditionally useEffect on the server (no-op) and
+ * useLayoutEffect in the browser.
+ *
+ * @see https://gist.github.com/gaearon/e7d97cdf38a2907924ea12e4ebdf3c85
+ */
+
+var useSafeLayoutEffect = isBrowser$2 ? React.useLayoutEffect : React.useEffect;
+
+/**
+ * React hook to persist any value between renders,
+ * but keeps it up-to-date if it changes.
+ *
+ * @param value the value or function to persist
+ */
+
+function useCallbackRef(fn, deps) {
+  if (deps === void 0) {
+    deps = [];
+  }
+
+  var ref = React.useRef(fn);
+  useSafeLayoutEffect(() => {
+    ref.current = fn;
+  }); // eslint-disable-next-line react-hooks/exhaustive-deps
+
+  return React.useCallback(function () {
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return ref.current == null ? void 0 : ref.current(...args);
+  }, deps);
+}
+
+function useControllableProp(prop, state) {
+  var isControlled = prop !== undefined;
+  var value = isControlled && typeof prop !== "undefined" ? prop : state;
+  return [isControlled, value];
+}
+
+// This implementation is heavily inspired by react-aria's implementation
+var defaultIdContext = {
+  prefix: Math.round(Math.random() * 10000000000),
+  current: 0
+};
+var IdContext = /*#__PURE__*/React.createContext(defaultIdContext);
+var IdProvider = /*#__PURE__*/React.memo(_ref => {
+  var {
+    children
+  } = _ref;
+  var currentContext = React.useContext(IdContext);
+  var isRoot = currentContext === defaultIdContext;
+  var context = React.useMemo(() => ({
+    prefix: isRoot ? 0 : ++currentContext.prefix,
+    current: 0
+  }), [isRoot, currentContext]);
+  return /*#__PURE__*/React.createElement(IdContext.Provider, {
+    value: context
+  }, children);
+});
+function useId(idProp, prefix) {
+  var context = React.useContext(IdContext);
+  return React.useMemo(() => idProp || [prefix, context.prefix, ++context.current].filter(Boolean).join("-"), // eslint-disable-next-line react-hooks/exhaustive-deps
+  [idProp, prefix]);
+}
+
+/**
+ * React hook to manage browser event listeners
+ *
+ * @param event the event name
+ * @param handler the event handler function to execute
+ * @param doc the dom environment to execute against (defaults to `document`)
+ * @param options the event listener options
+ *
+ * @internal
+ */
+
+function useEventListener(event, handler, env, options) {
+  var listener = useCallbackRef(handler);
+  React.useEffect(() => {
+    var _runIfFn;
+
+    var node = (_runIfFn = runIfFn(env)) != null ? _runIfFn : document;
+    node.addEventListener(event, listener, options);
+    return () => {
+      node.removeEventListener(event, listener, options);
+    };
+  }, [event, env, options, listener]);
+  return () => {
+    var _runIfFn2;
+
+    var node = (_runIfFn2 = runIfFn(env)) != null ? _runIfFn2 : document;
+    node.removeEventListener(event, listener, options);
+  };
+}
+
+function useUnmountEffect(fn, deps) {
+  if (deps === void 0) {
+    deps = [];
+  }
+
+  return React.useEffect(() => () => fn(), // eslint-disable-next-line react-hooks/exhaustive-deps
+  deps);
+}
+
+/**
+ * React Hook that provides a declarative `setInterval`
+ *
+ * @param callback the callback to execute at interval
+ * @param delay the `setInterval` delay (in ms)
+ */
+
+function useInterval(callback, delay) {
+  var fn = useCallbackRef(callback);
+  React.useEffect(() => {
+    var intervalId = null;
+
+    var tick = () => fn();
+
+    if (delay !== null) {
+      intervalId = window.setInterval(tick, delay);
+    }
+
+    return () => {
+      if (intervalId) {
+        window.clearInterval(intervalId);
+      }
+    };
+  }, [delay, fn]);
+}
+
+var classNames$1 = {
+  light: "chakra-ui-light",
+  dark: "chakra-ui-dark"
+};
+/**
+ * SSR: Graceful fallback for the `body` element
+ */
+
+var mockBody = {
+  classList: {
+    add: noop$5,
+    remove: noop$5
+  }
+};
+
+var getBody = () => isBrowser$2 ? document.body : mockBody;
+/**
+ * Function to add/remove class from `body` based on color mode
+ */
+
+
+function syncBodyClassName(isDark) {
+  var body = getBody();
+  body.classList.add(isDark ? classNames$1.dark : classNames$1.light);
+  body.classList.remove(isDark ? classNames$1.light : classNames$1.dark);
+}
+/**
+ * Check if JS media query matches the query string passed
+ */
+
+function getMediaQuery(query) {
+  var mediaQueryList = window.matchMedia == null ? void 0 : window.matchMedia(query);
+
+  if (!mediaQueryList) {
+    return undefined;
+  }
+
+  return !!mediaQueryList.media === mediaQueryList.matches;
+}
+
+var queries = {
+  light: "(prefers-color-scheme: light)",
+  dark: "(prefers-color-scheme: dark)"
+};
+function getColorScheme(fallback) {
+  var _getMediaQuery;
+
+  var isDark = (_getMediaQuery = getMediaQuery(queries.dark)) != null ? _getMediaQuery : fallback === "dark";
+  return isDark ? "dark" : "light";
+}
+/**
+ * Adds system os color mode listener, and run the callback
+ * once preference changes
+ */
+
+function addListener(fn) {
+  if (!("matchMedia" in window)) {
+    return noop$5;
+  }
+
+  var mediaQueryList = window.matchMedia(queries.dark);
+
+  var listener = () => {
+    fn(mediaQueryList.matches ? "dark" : "light");
+  };
+
+  listener();
+  mediaQueryList.addListener(listener);
+  return () => {
+    mediaQueryList.removeListener(listener);
+  };
+}
+var root$1 = {
+  get: () => document.documentElement.style.getPropertyValue("--chakra-ui-color-mode"),
+  set: mode => {
+    if (isBrowser$2) {
+      document.documentElement.style.setProperty("--chakra-ui-color-mode", mode);
+    }
+  }
+};
+
+var hasSupport = () => typeof Storage !== "undefined";
+
+var storageKey = "chakra-ui-color-mode";
+/**
+ * Simple object to handle read-write to localStorage
+ */
+
+var localStorageManager = {
+  get(init) {
+    if (!hasSupport()) return init;
+
+    try {
+      var _value = localStorage.getItem(storageKey);
+
+      return _value != null ? _value : init;
+    } catch (error) {
+      if (__DEV__) {
+        console.log(error);
+      }
+
+      return init;
+    }
+  },
+
+  set(value) {
+    if (!hasSupport()) return;
+
+    try {
+      localStorage.setItem(storageKey, value);
+    } catch (error) {
+      if (__DEV__) {
+        console.log(error);
+      }
+    }
+  },
+
+  type: "localStorage"
+};
+
+var ColorModeContext = /*#__PURE__*/React.createContext({});
+
+if (__DEV__) {
+  ColorModeContext.displayName = "ColorModeContext";
+}
+/**
+ * React hook that reads from `ColorModeProvider` context
+ * Returns the color mode and function to toggle it
+ */
+
+
+var useColorMode = () => {
+  var context = React.useContext(ColorModeContext);
+
+  if (context === undefined) {
+    throw new Error("useColorMode must be used within a ColorModeProvider");
+  }
+
+  return context;
+};
+/**
+ * Provides context for the color mode based on config in `theme`
+ * Returns the color mode and function to toggle the color mode
+ */
+
+function ColorModeProvider(props) {
+  var {
+    value,
+    children,
+    options: {
+      useSystemColorMode,
+      initialColorMode
+    },
+    colorModeManager = localStorageManager
+  } = props;
+  /**
+   * Only attempt to retrieve if we're on the server. Else this will result
+   * in a hydration mismatch warning and partially invalid visuals.
+   *
+   * Else fallback safely to `theme.config.initialColormode` (default light)
+   */
+
+  var [colorMode, rawSetColorMode] = React.useState(colorModeManager.type === "cookie" ? colorModeManager.get(initialColorMode) : initialColorMode);
+  React.useEffect(() => {
+    /**
+     * Since we cannot initially retrieve localStorage to due above mentioned
+     * reasons, do so after hydration.
+     *
+     * Priority:
+     * - system color mode
+     * - defined value on <ColorModeScript />, if present
+     * - previously stored value
+     */
+    if (isBrowser$2 && colorModeManager.type === "localStorage") {
+      var mode = useSystemColorMode ? getColorScheme(initialColorMode) : root$1.get() || colorModeManager.get();
+
+      if (mode) {
+        rawSetColorMode(mode);
+      }
+    }
+  }, [colorModeManager, useSystemColorMode, initialColorMode]);
+  React.useEffect(() => {
+    var isDark = colorMode === "dark";
+    syncBodyClassName(isDark);
+    root$1.set(isDark ? "dark" : "light");
+  }, [colorMode]);
+  var setColorMode = React.useCallback(value => {
+    colorModeManager.set(value);
+    rawSetColorMode(value);
+  }, [colorModeManager]);
+  var toggleColorMode = React.useCallback(() => {
+    setColorMode(colorMode === "light" ? "dark" : "light");
+  }, [colorMode, setColorMode]);
+  React.useEffect(() => {
+    var removeListener;
+
+    if (useSystemColorMode) {
+      removeListener = addListener(setColorMode);
+    }
+
+    return () => {
+      if (removeListener && useSystemColorMode) {
+        removeListener();
+      }
+    };
+  }, [setColorMode, useSystemColorMode]); // presence of `value` indicates a controlled context
+
+  var context = React.useMemo(() => ({
+    colorMode: value != null ? value : colorMode,
+    toggleColorMode: value ? noop$5 : toggleColorMode,
+    setColorMode: value ? noop$5 : setColorMode
+  }), [colorMode, setColorMode, toggleColorMode, value]);
+  return /*#__PURE__*/React.createElement(ColorModeContext.Provider, {
+    value: context
+  }, children);
+}
+
+if (__DEV__) {
+  ColorModeProvider.displayName = "ColorModeProvider";
+}
+
 var tokenToCSSVar = (scale, value) => theme => {
   var valueStr = String(value);
   var key = scale ? scale + "." + valueStr : valueStr;
-  return isObject$4(theme.__cssMap) && key in theme.__cssMap ? theme.__cssMap[key].varRef : value;
+  return isObject$3(theme.__cssMap) && key in theme.__cssMap ? theme.__cssMap[key].varRef : value;
 };
 function createTransform(options) {
   var {
@@ -9245,7 +8370,6 @@ function _getPrototypeOf$4(o) {
   };
   return _getPrototypeOf$4(o);
 }
-
 var directionMap = {
   "to-t": "to top",
   "to-tr": "to top right",
@@ -9286,17 +8410,24 @@ function parseGradient(value, theme) {
 
   var _values = stops.map(stop => {
     // if stop is valid shorthand direction, return it
-    if (valueSet.has(stop)) return stop; // color stop could be `red.200 20%` based on css gradient spec
+    if (valueSet.has(stop)) return stop;
+    var firstStop = stop.indexOf(" "); // color stop could be `red.200 20%` based on css gradient spec
 
-    var [_color, _stop] = stop.split(" "); // else, get and transform the color token or css value
+    var [_color, _stop] = firstStop !== -1 ? [stop.substr(0, firstStop), stop.substr(firstStop + 1)] : [stop];
+
+    var _stopOrFunc = isCSSFunction(_stop) ? _stop : _stop && _stop.split(" "); // else, get and transform the color token or css value
+
 
     var key = "colors." + _color;
     var color = key in theme.__cssMap ? theme.__cssMap[key].varRef : _color;
-    return _stop ? [color, _stop].join(" ") : color;
+    return _stopOrFunc ? [color, _stopOrFunc].join(" ") : color;
   });
 
   return _type + "(" + _values.join(", ") + ")";
 }
+var isCSSFunction = value => {
+  return isString$1(value) && value.includes("(") && value.includes(")");
+};
 var gradientTransform = (value, theme) => parseGradient(value, theme != null ? theme : {});
 
 var analyzeCSSValue = value => {
@@ -9408,10 +8539,6 @@ var transformFunctions = {
     return result;
   }
 
-};
-
-var isCSSFunction = value => {
-  return isString$1(value) && value.includes("(") && value.includes(")");
 };
 
 function _extends$M() {
@@ -9830,7 +8957,7 @@ var srFocusable = {
 
 var getWithPriority = (theme, key, styles) => {
   var result = {};
-  var obj = memoizedGet$2(theme, key, {});
+  var obj = memoizedGet(theme, key, {});
 
   for (var prop in obj) {
     var isInStyles = prop in styles && styles[prop] != null;
@@ -9998,7 +9125,7 @@ var transform = {
   rotate: t.degreeT("--chakra-rotate")
 };
 
-var transition$1 = {
+var transition$2 = {
   transition: true,
   transitionDelay: true,
   animation: true,
@@ -10008,7 +9135,7 @@ var transition$1 = {
   transitionTimingFunction: t.prop("transitionTimingFunction", "transition.easing")
 };
 
-var typography$1 = {
+var typography$2 = {
   fontFamily: t.prop("fontFamily", "fonts"),
   fontSize: t.prop("fontSize", "fontSizes", transformFunctions.px),
   fontWeight: t.prop("fontWeight", "fontWeights"),
@@ -10337,7 +9464,7 @@ function _extends$L() {
 
   return _extends$L.apply(this, arguments);
 }
-var systemProps = lodash_mergewith({}, background, border, color, flexbox, layout, filter, ring, interactivity, grid, others, position, effect, space, typography$1, textDecoration, transform, list, transition$1);
+var systemProps = lodash_mergewith({}, background, border, color, flexbox, layout, filter, ring, interactivity, grid, others, position, effect, space, typography$2, textDecoration, transform, list, transition$2);
 Object.assign({}, space, layout, flexbox, grid, position);
 var propNames = [...objectKeys(systemProps), ...pseudoPropNames];
 
@@ -10373,10 +9500,10 @@ var expandResponsive = styles => theme => {
   var computedStyles = {};
 
   for (var key in styles) {
-    var value = runIfFn$1(styles[key], theme);
+    var value = runIfFn(styles[key], theme);
     if (value == null) continue; // converts the object responsive syntax to array syntax
 
-    value = isObject$4(value) && isResponsive(value) ? toArrayValue(value) : value;
+    value = isObject$3(value) && isResponsive(value) ? toArrayValue(value) : value;
 
     if (!Array.isArray(value)) {
       computedStyles[key] = value;
@@ -10443,7 +9570,7 @@ function getCss(options) {
       nested = false;
     }
 
-    var _styles = runIfFn$1(stylesOrFn, theme);
+    var _styles = runIfFn(stylesOrFn, theme);
 
     var styles = expandResponsive(_styles)(theme);
     var computedStyles = {};
@@ -10457,7 +9584,7 @@ function getCss(options) {
        * boxShadow: theme => `0 2px 2px ${theme.colors.red}`
        */
 
-      var value = runIfFn$1(valueOrFn, theme);
+      var value = runIfFn(valueOrFn, theme);
       /**
        * converts pseudo shorthands to valid selector
        * "_hover" => "&:hover"
@@ -10487,7 +9614,7 @@ function getCss(options) {
         };
       }
 
-      if (isObject$4(value)) {
+      if (isObject$3(value)) {
         var _computedStyles$key;
 
         computedStyles[key] = (_computedStyles$key = computedStyles[key]) != null ? _computedStyles$key : {};
@@ -10513,10 +9640,10 @@ function getCss(options) {
        * }
        */
 
-      var configProperty = runIfFn$1((_config3 = config) == null ? void 0 : _config3.property, theme);
+      var configProperty = runIfFn((_config3 = config) == null ? void 0 : _config3.property, theme);
 
       if (!nested && (_config4 = config) != null && _config4.static) {
-        var staticStyles = runIfFn$1(config.static, theme);
+        var staticStyles = runIfFn(config.static, theme);
         computedStyles = lodash_mergewith({}, computedStyles, staticStyles);
       }
 
@@ -10529,7 +9656,7 @@ function getCss(options) {
       }
 
       if (configProperty) {
-        if (configProperty === "&" && isObject$4(rawValue)) {
+        if (configProperty === "&" && isObject$3(rawValue)) {
           computedStyles = lodash_mergewith({}, computedStyles, rawValue);
         } else {
           computedStyles[configProperty] = rawValue;
@@ -10538,7 +9665,7 @@ function getCss(options) {
         continue;
       }
 
-      if (isObject$4(rawValue)) {
+      if (isObject$3(rawValue)) {
         computedStyles = lodash_mergewith({}, computedStyles, rawValue);
         continue;
       }
@@ -10565,7 +9692,7 @@ var css$2 = styles => theme => {
  */
 
 function resolveReference(operand) {
-  if (isObject$4(operand) && operand.reference) {
+  if (isObject$3(operand) && operand.reference) {
     return operand.reference;
   }
 
@@ -10580,7 +9707,7 @@ var toExpression = function toExpression(operator) {
   return operands.map(resolveReference).join(" " + operator + " ").replace(/calc/g, "");
 };
 
-var _add = function add() {
+var _add$1 = function add() {
   for (var _len2 = arguments.length, operands = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
     operands[_key2] = arguments[_key2];
   }
@@ -10588,7 +9715,7 @@ var _add = function add() {
   return "calc(" + toExpression("+", ...operands) + ")";
 };
 
-var _subtract = function subtract() {
+var _subtract$1 = function subtract() {
   for (var _len3 = arguments.length, operands = new Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
     operands[_key3] = arguments[_key3];
   }
@@ -10596,7 +9723,7 @@ var _subtract = function subtract() {
   return "calc(" + toExpression("-", ...operands) + ")";
 };
 
-var _multiply = function multiply() {
+var _multiply$1 = function multiply() {
   for (var _len4 = arguments.length, operands = new Array(_len4), _key4 = 0; _key4 < _len4; _key4++) {
     operands[_key4] = arguments[_key4];
   }
@@ -10604,7 +9731,7 @@ var _multiply = function multiply() {
   return "calc(" + toExpression("*", ...operands) + ")";
 };
 
-var _divide = function divide() {
+var _divide$1 = function divide() {
   for (var _len5 = arguments.length, operands = new Array(_len5), _key5 = 0; _key5 < _len5; _key5++) {
     operands[_key5] = arguments[_key5];
   }
@@ -10612,56 +9739,56 @@ var _divide = function divide() {
   return "calc(" + toExpression("/", ...operands) + ")";
 };
 
-var _negate = x => {
+var _negate$1 = x => {
   var value = resolveReference(x);
 
   if (value != null && !Number.isNaN(parseFloat(value))) {
     return String(value).startsWith("-") ? String(value).slice(1) : "-" + value;
   }
 
-  return _multiply(value, -1);
+  return _multiply$1(value, -1);
 };
 
-var calc = Object.assign(x => ({
+var calc$1 = Object.assign(x => ({
   add: function add() {
     for (var _len6 = arguments.length, operands = new Array(_len6), _key6 = 0; _key6 < _len6; _key6++) {
       operands[_key6] = arguments[_key6];
     }
 
-    return calc(_add(x, ...operands));
+    return calc$1(_add$1(x, ...operands));
   },
   subtract: function subtract() {
     for (var _len7 = arguments.length, operands = new Array(_len7), _key7 = 0; _key7 < _len7; _key7++) {
       operands[_key7] = arguments[_key7];
     }
 
-    return calc(_subtract(x, ...operands));
+    return calc$1(_subtract$1(x, ...operands));
   },
   multiply: function multiply() {
     for (var _len8 = arguments.length, operands = new Array(_len8), _key8 = 0; _key8 < _len8; _key8++) {
       operands[_key8] = arguments[_key8];
     }
 
-    return calc(_multiply(x, ...operands));
+    return calc$1(_multiply$1(x, ...operands));
   },
   divide: function divide() {
     for (var _len9 = arguments.length, operands = new Array(_len9), _key9 = 0; _key9 < _len9; _key9++) {
       operands[_key9] = arguments[_key9];
     }
 
-    return calc(_divide(x, ...operands));
+    return calc$1(_divide$1(x, ...operands));
   },
-  negate: () => calc(_negate(x)),
+  negate: () => calc$1(_negate$1(x)),
   toString: () => x.toString()
 }), {
-  add: _add,
-  subtract: _subtract,
-  multiply: _multiply,
-  divide: _divide,
-  negate: _negate
+  add: _add$1,
+  subtract: _subtract$1,
+  multiply: _multiply$1,
+  divide: _divide$1,
+  negate: _negate$1
 });
 
-function replaceWhiteSpace(value, replaceValue) {
+function replaceWhiteSpace$1(value, replaceValue) {
   if (replaceValue === void 0) {
     replaceValue = "-";
   }
@@ -10669,31 +9796,31 @@ function replaceWhiteSpace(value, replaceValue) {
   return value.replace(/\s+/g, replaceValue);
 }
 
-function escape(value) {
-  var valueStr = replaceWhiteSpace(value.toString());
+function escape$1(value) {
+  var valueStr = replaceWhiteSpace$1(value.toString());
   if (valueStr.includes("\\.")) return value;
   var isDecimal = !Number.isInteger(parseFloat(value.toString()));
   return isDecimal ? valueStr.replace(".", "\\.") : value;
 }
 
-function addPrefix(value, prefix) {
+function addPrefix$1(value, prefix) {
   if (prefix === void 0) {
     prefix = "";
   }
 
-  return [prefix, escape(value)].filter(Boolean).join("-");
+  return [prefix, escape$1(value)].filter(Boolean).join("-");
 }
 function toVarReference(name, fallback) {
-  return "var(" + escape(name) + (fallback ? ", " + fallback : "") + ")";
+  return "var(" + escape$1(name) + (fallback ? ", " + fallback : "") + ")";
 }
 function toVarDefinition(value, prefix) {
   if (prefix === void 0) {
     prefix = "";
   }
 
-  return "--" + addPrefix(value, prefix);
+  return "--" + addPrefix$1(value, prefix);
 }
-function cssVar(name, fallback, cssVarPrefix) {
+function cssVar$1(name, fallback, cssVarPrefix) {
   var cssVariable = toVarDefinition(name, cssVarPrefix);
   return {
     variable: cssVariable,
@@ -10751,9 +9878,9 @@ var tokenHandlerMap = {
     var {
       variable,
       reference
-    } = cssVar(negativeVarKey, undefined, options.cssVarPrefix);
-    var negativeValue = calc.negate(value);
-    var varRef = calc.negate(reference);
+    } = cssVar$1(negativeVarKey, undefined, options.cssVarPrefix);
+    var negativeValue = calc$1.negate(value);
+    var varRef = calc$1.negate(reference);
     return {
       cssVars: properties.cssVars,
       cssMap: _extends$K({}, properties.cssMap, {
@@ -10771,7 +9898,7 @@ var tokenHandlerMap = {
     var {
       variable,
       reference
-    } = cssVar(varKey, undefined, options.cssVarPrefix);
+    } = cssVar$1(varKey, undefined, options.cssVarPrefix);
     return {
       cssVars: {
         [variable]: value
@@ -10872,96 +9999,6 @@ function toCSSVar(rawTheme) {
     __breakpoints: analyzeBreakpoints(theme.breakpoints)
   });
   return theme;
-}
-
-// Number assertions
-
-function isFunction$2(value) {
-  return typeof value === "function";
-} // Generic assertions
-process.env.NODE_ENV !== "production";
-process.env.NODE_ENV === "test";
-
-function omit$3(object, keys) {
-  var result = {};
-  Object.keys(object).forEach(key => {
-    if (keys.includes(key)) return;
-    result[key] = object[key];
-  });
-  return result;
-}
-/**
- * Get value from a deeply nested object using a string path.
- * Memoizes the value.
- * @param obj - the object
- * @param path - the string path
- * @param def  - the fallback value
- */
-
-function get$3(obj, path, fallback, index) {
-  var key = typeof path === "string" ? path.split(".") : [path];
-
-  for (index = 0; index < key.length; index += 1) {
-    if (!obj) break;
-    obj = obj[key[index]];
-  }
-
-  return obj === undefined ? fallback : obj;
-}
-var memoize$3 = fn => {
-  var cache = new WeakMap();
-
-  var memoizedFn = (obj, path, fallback, index) => {
-    if (typeof obj === "undefined") {
-      return fn(obj, path, fallback);
-    }
-
-    if (!cache.has(obj)) {
-      cache.set(obj, new Map());
-    }
-
-    var map = cache.get(obj);
-
-    if (map.has(path)) {
-      return map.get(path);
-    }
-
-    var value = fn(obj, path, fallback, index);
-    map.set(path, value);
-    return value;
-  };
-
-  return memoizedFn;
-};
-var memoizedGet$1 = memoize$3(get$3);
-/**
- * Returns the items of an object that meet the condition specified in a callback function.
- *
- * @param object the object to loop through
- * @param fn The filter function
- */
-
-function objectFilter(object, fn) {
-  var result = {};
-  Object.keys(object).forEach(key => {
-    var value = object[key];
-    var shouldPass = fn(value, key, object);
-
-    if (shouldPass) {
-      result[key] = value;
-    }
-  });
-  return result;
-}
-var filterUndefined = object => objectFilter(object, val => val !== null && val !== undefined);
-
-/* eslint-disable no-nested-ternary */
-function runIfFn(valueOrFn) {
-  for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-    args[_key - 1] = arguments[_key];
-  }
-
-  return isFunction$2(valueOrFn) ? valueOrFn(...args) : valueOrFn;
 }
 
 /* global Map:readonly, Set:readonly, ArrayBuffer:readonly */
@@ -11138,7 +10175,7 @@ var GlobalStyle = () => {
   } = useColorMode();
   return /*#__PURE__*/React.createElement(Global, {
     styles: theme => {
-      var styleObjectOrFn = memoizedGet$1(theme, "styles.global");
+      var styleObjectOrFn = memoizedGet(theme, "styles.global");
       var globalStyles = runIfFn(styleObjectOrFn, {
         theme,
         colorMode
@@ -11157,7 +10194,7 @@ var GlobalStyle = () => {
 
 var domElements = ["a", "b", "article", "aside", "blockquote", "button", "caption", "cite", "circle", "code", "dd", "div", "dl", "dt", "fieldset", "figcaption", "figure", "footer", "form", "h1", "h2", "h3", "h4", "h5", "h6", "header", "hr", "img", "input", "kbd", "label", "li", "main", "mark", "nav", "ol", "p", "path", "pre", "q", "rect", "s", "svg", "section", "select", "strong", "small", "span", "sub", "sup", "table", "tbody", "td", "textarea", "tfoot", "th", "thead", "tr", "ul"];
 function omitThemingProps(props) {
-  return omit$3(props, ["styleConfig", "size", "variant", "colorScheme"]);
+  return omit$1(props, ["styleConfig", "size", "variant", "colorScheme"]);
 }
 
 function _extends$I() {
@@ -11185,14 +10222,6 @@ function useChakra() {
   });
 }
 
-function memoize$2(fn) {
-  var cache = Object.create(null);
-  return function (arg) {
-    if (cache[arg] === undefined) cache[arg] = fn(arg);
-    return cache[arg];
-  };
-}
-
 var reactPropsRegex = /^((children|dangerouslySetInnerHTML|key|ref|autoFocus|defaultValue|defaultChecked|innerHTML|suppressContentEditableWarning|suppressHydrationWarning|valueLink|accept|acceptCharset|accessKey|action|allow|allowUserMedia|allowPaymentRequest|allowFullScreen|allowTransparency|alt|async|autoComplete|autoPlay|capture|cellPadding|cellSpacing|challenge|charSet|checked|cite|classID|className|cols|colSpan|content|contentEditable|contextMenu|controls|controlsList|coords|crossOrigin|data|dateTime|decoding|default|defer|dir|disabled|disablePictureInPicture|download|draggable|encType|form|formAction|formEncType|formMethod|formNoValidate|formTarget|frameBorder|headers|height|hidden|high|href|hrefLang|htmlFor|httpEquiv|id|inputMode|integrity|is|keyParams|keyType|kind|label|lang|list|loading|loop|low|marginHeight|marginWidth|max|maxLength|media|mediaGroup|method|min|minLength|multiple|muted|name|nonce|noValidate|open|optimum|pattern|placeholder|playsInline|poster|preload|profile|radioGroup|readOnly|referrerPolicy|rel|required|reversed|role|rows|rowSpan|sandbox|scope|scoped|scrolling|seamless|selected|shape|size|sizes|slot|span|spellCheck|src|srcDoc|srcLang|srcSet|start|step|style|summary|tabIndex|target|title|translate|type|useMap|value|width|wmode|wrap|about|datatype|inlist|prefix|property|resource|typeof|vocab|autoCapitalize|autoCorrect|autoSave|color|fallback|inert|itemProp|itemScope|itemType|itemID|itemRef|on|option|results|security|unselectable|accentHeight|accumulate|additive|alignmentBaseline|allowReorder|alphabetic|amplitude|arabicForm|ascent|attributeName|attributeType|autoReverse|azimuth|baseFrequency|baselineShift|baseProfile|bbox|begin|bias|by|calcMode|capHeight|clip|clipPathUnits|clipPath|clipRule|colorInterpolation|colorInterpolationFilters|colorProfile|colorRendering|contentScriptType|contentStyleType|cursor|cx|cy|d|decelerate|descent|diffuseConstant|direction|display|divisor|dominantBaseline|dur|dx|dy|edgeMode|elevation|enableBackground|end|exponent|externalResourcesRequired|fill|fillOpacity|fillRule|filter|filterRes|filterUnits|floodColor|floodOpacity|focusable|fontFamily|fontSize|fontSizeAdjust|fontStretch|fontStyle|fontVariant|fontWeight|format|from|fr|fx|fy|g1|g2|glyphName|glyphOrientationHorizontal|glyphOrientationVertical|glyphRef|gradientTransform|gradientUnits|hanging|horizAdvX|horizOriginX|ideographic|imageRendering|in|in2|intercept|k|k1|k2|k3|k4|kernelMatrix|kernelUnitLength|kerning|keyPoints|keySplines|keyTimes|lengthAdjust|letterSpacing|lightingColor|limitingConeAngle|local|markerEnd|markerMid|markerStart|markerHeight|markerUnits|markerWidth|mask|maskContentUnits|maskUnits|mathematical|mode|numOctaves|offset|opacity|operator|order|orient|orientation|origin|overflow|overlinePosition|overlineThickness|panose1|paintOrder|pathLength|patternContentUnits|patternTransform|patternUnits|pointerEvents|points|pointsAtX|pointsAtY|pointsAtZ|preserveAlpha|preserveAspectRatio|primitiveUnits|r|radius|refX|refY|renderingIntent|repeatCount|repeatDur|requiredExtensions|requiredFeatures|restart|result|rotate|rx|ry|scale|seed|shapeRendering|slope|spacing|specularConstant|specularExponent|speed|spreadMethod|startOffset|stdDeviation|stemh|stemv|stitchTiles|stopColor|stopOpacity|strikethroughPosition|strikethroughThickness|string|stroke|strokeDasharray|strokeDashoffset|strokeLinecap|strokeLinejoin|strokeMiterlimit|strokeOpacity|strokeWidth|surfaceScale|systemLanguage|tableValues|targetX|targetY|textAnchor|textDecoration|textRendering|textLength|to|transform|u1|u2|underlinePosition|underlineThickness|unicode|unicodeBidi|unicodeRange|unitsPerEm|vAlphabetic|vHanging|vIdeographic|vMathematical|values|vectorEffect|version|vertAdvY|vertOriginX|vertOriginY|viewBox|viewTarget|visibility|widths|wordSpacing|writingMode|x|xHeight|x1|x2|xChannelSelector|xlinkActuate|xlinkArcrole|xlinkHref|xlinkRole|xlinkShow|xlinkTitle|xlinkType|xmlBase|xmlns|xmlnsXlink|xmlLang|xmlSpace|y|y1|y2|yChannelSelector|z|zoomAndPan|for|class|autofocus)|(([Dd][Aa][Tt][Aa]|[Aa][Rr][Ii][Aa]|x)-.*))$/; // https://esbench.com/bench/5bfee68a4cd7e6009ef61d23
 
 var isPropValid = /* #__PURE__ */memoize$2(function (prop) {
@@ -11204,469 +10233,6 @@ var isPropValid = /* #__PURE__ */memoize$2(function (prop) {
 }
 /* Z+1 */
 );
-
-var isBrowser$4 = typeof document !== 'undefined';
-
-function getRegisteredStyles(registered, registeredStyles, classNames) {
-  var rawClassName = '';
-  classNames.split(' ').forEach(function (className) {
-    if (registered[className] !== undefined) {
-      registeredStyles.push(registered[className] + ";");
-    } else {
-      rawClassName += className + " ";
-    }
-  });
-  return rawClassName;
-}
-
-var insertStyles = function insertStyles(cache, serialized, isStringTag) {
-  var className = cache.key + "-" + serialized.name;
-
-  if ( // we only need to add the styles to the registered cache if the
-  // class name could be used further down
-  // the tree but if it's a string tag, we know it won't
-  // so we don't have to add it to registered cache.
-  // this improves memory usage since we can avoid storing the whole style string
-  (isStringTag === false || // we need to always store it if we're in compat mode and
-  // in node since emotion-server relies on whether a style is in
-  // the registered cache to know whether a style is global or not
-  // also, note that this check will be dead code eliminated in the browser
-  isBrowser$4 === false && cache.compat !== undefined) && cache.registered[className] === undefined) {
-    cache.registered[className] = serialized.styles;
-  }
-
-  if (cache.inserted[serialized.name] === undefined) {
-    var stylesForSSR = '';
-    var current = serialized;
-
-    do {
-      var maybeStyles = cache.insert(serialized === current ? "." + className : '', current, cache.sheet, true);
-
-      if (!isBrowser$4 && maybeStyles !== undefined) {
-        stylesForSSR += maybeStyles;
-      }
-
-      current = current.next;
-    } while (current !== undefined);
-
-    if (!isBrowser$4 && stylesForSSR.length !== 0) {
-      return stylesForSSR;
-    }
-  }
-};
-
-/* eslint-disable */
-// Inspired by https://github.com/garycourt/murmurhash-js
-// Ported from https://github.com/aappleby/smhasher/blob/61a0530f28277f2e850bfc39600ce61d02b518de/src/MurmurHash2.cpp#L37-L86
-function murmur2(str) {
-  // 'm' and 'r' are mixing constants generated offline.
-  // They're not really 'magic', they just happen to work well.
-  // const m = 0x5bd1e995;
-  // const r = 24;
-  // Initialize the hash
-  var h = 0; // Mix 4 bytes at a time into the hash
-
-  var k,
-      i = 0,
-      len = str.length;
-
-  for (; len >= 4; ++i, len -= 4) {
-    k = str.charCodeAt(i) & 0xff | (str.charCodeAt(++i) & 0xff) << 8 | (str.charCodeAt(++i) & 0xff) << 16 | (str.charCodeAt(++i) & 0xff) << 24;
-    k =
-    /* Math.imul(k, m): */
-    (k & 0xffff) * 0x5bd1e995 + ((k >>> 16) * 0xe995 << 16);
-    k ^=
-    /* k >>> r: */
-    k >>> 24;
-    h =
-    /* Math.imul(k, m): */
-    (k & 0xffff) * 0x5bd1e995 + ((k >>> 16) * 0xe995 << 16) ^
-    /* Math.imul(h, m): */
-    (h & 0xffff) * 0x5bd1e995 + ((h >>> 16) * 0xe995 << 16);
-  } // Handle the last few bytes of the input array
-
-
-  switch (len) {
-    case 3:
-      h ^= (str.charCodeAt(i + 2) & 0xff) << 16;
-
-    case 2:
-      h ^= (str.charCodeAt(i + 1) & 0xff) << 8;
-
-    case 1:
-      h ^= str.charCodeAt(i) & 0xff;
-      h =
-      /* Math.imul(h, m): */
-      (h & 0xffff) * 0x5bd1e995 + ((h >>> 16) * 0xe995 << 16);
-  } // Do a few final mixes of the hash to ensure the last few
-  // bytes are well-incorporated.
-
-
-  h ^= h >>> 13;
-  h =
-  /* Math.imul(h, m): */
-  (h & 0xffff) * 0x5bd1e995 + ((h >>> 16) * 0xe995 << 16);
-  return ((h ^ h >>> 15) >>> 0).toString(36);
-}
-
-var unitlessKeys = {
-  animationIterationCount: 1,
-  borderImageOutset: 1,
-  borderImageSlice: 1,
-  borderImageWidth: 1,
-  boxFlex: 1,
-  boxFlexGroup: 1,
-  boxOrdinalGroup: 1,
-  columnCount: 1,
-  columns: 1,
-  flex: 1,
-  flexGrow: 1,
-  flexPositive: 1,
-  flexShrink: 1,
-  flexNegative: 1,
-  flexOrder: 1,
-  gridRow: 1,
-  gridRowEnd: 1,
-  gridRowSpan: 1,
-  gridRowStart: 1,
-  gridColumn: 1,
-  gridColumnEnd: 1,
-  gridColumnSpan: 1,
-  gridColumnStart: 1,
-  msGridRow: 1,
-  msGridRowSpan: 1,
-  msGridColumn: 1,
-  msGridColumnSpan: 1,
-  fontWeight: 1,
-  lineHeight: 1,
-  opacity: 1,
-  order: 1,
-  orphans: 1,
-  tabSize: 1,
-  widows: 1,
-  zIndex: 1,
-  zoom: 1,
-  WebkitLineClamp: 1,
-  // SVG-related properties
-  fillOpacity: 1,
-  floodOpacity: 1,
-  stopOpacity: 1,
-  strokeDasharray: 1,
-  strokeDashoffset: 1,
-  strokeMiterlimit: 1,
-  strokeOpacity: 1,
-  strokeWidth: 1
-};
-
-var ILLEGAL_ESCAPE_SEQUENCE_ERROR$1 = "You have illegal escape sequence in your template literal, most likely inside content's property value.\nBecause you write your CSS inside a JavaScript string you actually have to do double escaping, so for example \"content: '\\00d7';\" should become \"content: '\\\\00d7';\".\nYou can read more about this here:\nhttps://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#ES2018_revision_of_illegal_escape_sequences";
-var UNDEFINED_AS_OBJECT_KEY_ERROR = "You have passed in falsy value as style object's key (can happen when in example you pass unexported component as computed key).";
-var hyphenateRegex = /[A-Z]|^ms/g;
-var animationRegex = /_EMO_([^_]+?)_([^]*?)_EMO_/g;
-
-var isCustomProperty = function isCustomProperty(property) {
-  return property.charCodeAt(1) === 45;
-};
-
-var isProcessableValue = function isProcessableValue(value) {
-  return value != null && typeof value !== 'boolean';
-};
-
-var processStyleName = /* #__PURE__ */memoize$2(function (styleName) {
-  return isCustomProperty(styleName) ? styleName : styleName.replace(hyphenateRegex, '-$&').toLowerCase();
-});
-
-var processStyleValue = function processStyleValue(key, value) {
-  switch (key) {
-    case 'animation':
-    case 'animationName':
-      {
-        if (typeof value === 'string') {
-          return value.replace(animationRegex, function (match, p1, p2) {
-            cursor = {
-              name: p1,
-              styles: p2,
-              next: cursor
-            };
-            return p1;
-          });
-        }
-      }
-  }
-
-  if (unitlessKeys[key] !== 1 && !isCustomProperty(key) && typeof value === 'number' && value !== 0) {
-    return value + 'px';
-  }
-
-  return value;
-};
-
-if (process.env.NODE_ENV !== 'production') {
-  var contentValuePattern = /(attr|counters?|url|(((repeating-)?(linear|radial))|conic)-gradient)\(|(no-)?(open|close)-quote/;
-  var contentValues = ['normal', 'none', 'initial', 'inherit', 'unset'];
-  var oldProcessStyleValue = processStyleValue;
-  var msPattern = /^-ms-/;
-  var hyphenPattern = /-(.)/g;
-  var hyphenatedCache = {};
-
-  processStyleValue = function processStyleValue(key, value) {
-    if (key === 'content') {
-      if (typeof value !== 'string' || contentValues.indexOf(value) === -1 && !contentValuePattern.test(value) && (value.charAt(0) !== value.charAt(value.length - 1) || value.charAt(0) !== '"' && value.charAt(0) !== "'")) {
-        throw new Error("You seem to be using a value for 'content' without quotes, try replacing it with `content: '\"" + value + "\"'`");
-      }
-    }
-
-    var processed = oldProcessStyleValue(key, value);
-
-    if (processed !== '' && !isCustomProperty(key) && key.indexOf('-') !== -1 && hyphenatedCache[key] === undefined) {
-      hyphenatedCache[key] = true;
-      console.error("Using kebab-case for css properties in objects is not supported. Did you mean " + key.replace(msPattern, 'ms-').replace(hyphenPattern, function (str, _char) {
-        return _char.toUpperCase();
-      }) + "?");
-    }
-
-    return processed;
-  };
-}
-
-function handleInterpolation(mergedProps, registered, interpolation) {
-  if (interpolation == null) {
-    return '';
-  }
-
-  if (interpolation.__emotion_styles !== undefined) {
-    if (process.env.NODE_ENV !== 'production' && interpolation.toString() === 'NO_COMPONENT_SELECTOR') {
-      throw new Error('Component selectors can only be used in conjunction with @emotion/babel-plugin.');
-    }
-
-    return interpolation;
-  }
-
-  switch (typeof interpolation) {
-    case 'boolean':
-      {
-        return '';
-      }
-
-    case 'object':
-      {
-        if (interpolation.anim === 1) {
-          cursor = {
-            name: interpolation.name,
-            styles: interpolation.styles,
-            next: cursor
-          };
-          return interpolation.name;
-        }
-
-        if (interpolation.styles !== undefined) {
-          var next = interpolation.next;
-
-          if (next !== undefined) {
-            // not the most efficient thing ever but this is a pretty rare case
-            // and there will be very few iterations of this generally
-            while (next !== undefined) {
-              cursor = {
-                name: next.name,
-                styles: next.styles,
-                next: cursor
-              };
-              next = next.next;
-            }
-          }
-
-          var styles = interpolation.styles + ";";
-
-          if (process.env.NODE_ENV !== 'production' && interpolation.map !== undefined) {
-            styles += interpolation.map;
-          }
-
-          return styles;
-        }
-
-        return createStringFromObject(mergedProps, registered, interpolation);
-      }
-
-    case 'function':
-      {
-        if (mergedProps !== undefined) {
-          var previousCursor = cursor;
-          var result = interpolation(mergedProps);
-          cursor = previousCursor;
-          return handleInterpolation(mergedProps, registered, result);
-        } else if (process.env.NODE_ENV !== 'production') {
-          console.error('Functions that are interpolated in css calls will be stringified.\n' + 'If you want to have a css call based on props, create a function that returns a css call like this\n' + 'let dynamicStyle = (props) => css`color: ${props.color}`\n' + 'It can be called directly with props or interpolated in a styled call like this\n' + "let SomeComponent = styled('div')`${dynamicStyle}`");
-        }
-
-        break;
-      }
-
-    case 'string':
-      if (process.env.NODE_ENV !== 'production') {
-        var matched = [];
-        var replaced = interpolation.replace(animationRegex, function (match, p1, p2) {
-          var fakeVarName = "animation" + matched.length;
-          matched.push("const " + fakeVarName + " = keyframes`" + p2.replace(/^@keyframes animation-\w+/, '') + "`");
-          return "${" + fakeVarName + "}";
-        });
-
-        if (matched.length) {
-          console.error('`keyframes` output got interpolated into plain string, please wrap it with `css`.\n\n' + 'Instead of doing this:\n\n' + [].concat(matched, ["`" + replaced + "`"]).join('\n') + '\n\nYou should wrap it with `css` like this:\n\n' + ("css`" + replaced + "`"));
-        }
-      }
-
-      break;
-  } // finalize string values (regular strings and functions interpolated into css calls)
-
-
-  if (registered == null) {
-    return interpolation;
-  }
-
-  var cached = registered[interpolation];
-  return cached !== undefined ? cached : interpolation;
-}
-
-function createStringFromObject(mergedProps, registered, obj) {
-  var string = '';
-
-  if (Array.isArray(obj)) {
-    for (var i = 0; i < obj.length; i++) {
-      string += handleInterpolation(mergedProps, registered, obj[i]) + ";";
-    }
-  } else {
-    for (var _key in obj) {
-      var value = obj[_key];
-
-      if (typeof value !== 'object') {
-        if (registered != null && registered[value] !== undefined) {
-          string += _key + "{" + registered[value] + "}";
-        } else if (isProcessableValue(value)) {
-          string += processStyleName(_key) + ":" + processStyleValue(_key, value) + ";";
-        }
-      } else {
-        if (_key === 'NO_COMPONENT_SELECTOR' && process.env.NODE_ENV !== 'production') {
-          throw new Error('Component selectors can only be used in conjunction with @emotion/babel-plugin.');
-        }
-
-        if (Array.isArray(value) && typeof value[0] === 'string' && (registered == null || registered[value[0]] === undefined)) {
-          for (var _i = 0; _i < value.length; _i++) {
-            if (isProcessableValue(value[_i])) {
-              string += processStyleName(_key) + ":" + processStyleValue(_key, value[_i]) + ";";
-            }
-          }
-        } else {
-          var interpolated = handleInterpolation(mergedProps, registered, value);
-
-          switch (_key) {
-            case 'animation':
-            case 'animationName':
-              {
-                string += processStyleName(_key) + ":" + interpolated + ";";
-                break;
-              }
-
-            default:
-              {
-                if (process.env.NODE_ENV !== 'production' && _key === 'undefined') {
-                  console.error(UNDEFINED_AS_OBJECT_KEY_ERROR);
-                }
-
-                string += _key + "{" + interpolated + "}";
-              }
-          }
-        }
-      }
-    }
-  }
-
-  return string;
-}
-
-var labelPattern = /label:\s*([^\s;\n{]+)\s*(;|$)/g;
-var sourceMapPattern;
-
-if (process.env.NODE_ENV !== 'production') {
-  sourceMapPattern = /\/\*#\ssourceMappingURL=data:application\/json;\S+\s+\*\//g;
-} // this is the cursor for keyframes
-// keyframes are stored on the SerializedStyles object as a linked list
-
-
-var cursor;
-
-var serializeStyles = function serializeStyles(args, registered, mergedProps) {
-  if (args.length === 1 && typeof args[0] === 'object' && args[0] !== null && args[0].styles !== undefined) {
-    return args[0];
-  }
-
-  var stringMode = true;
-  var styles = '';
-  cursor = undefined;
-  var strings = args[0];
-
-  if (strings == null || strings.raw === undefined) {
-    stringMode = false;
-    styles += handleInterpolation(mergedProps, registered, strings);
-  } else {
-    if (process.env.NODE_ENV !== 'production' && strings[0] === undefined) {
-      console.error(ILLEGAL_ESCAPE_SEQUENCE_ERROR$1);
-    }
-
-    styles += strings[0];
-  } // we start at 1 since we've already handled the first arg
-
-
-  for (var i = 1; i < args.length; i++) {
-    styles += handleInterpolation(mergedProps, registered, args[i]);
-
-    if (stringMode) {
-      if (process.env.NODE_ENV !== 'production' && strings[i] === undefined) {
-        console.error(ILLEGAL_ESCAPE_SEQUENCE_ERROR$1);
-      }
-
-      styles += strings[i];
-    }
-  }
-
-  var sourceMap;
-
-  if (process.env.NODE_ENV !== 'production') {
-    styles = styles.replace(sourceMapPattern, function (match) {
-      sourceMap = match;
-      return '';
-    });
-  } // using a global regex with .exec is stateful so lastIndex has to be reset each time
-
-
-  labelPattern.lastIndex = 0;
-  var identifierName = '';
-  var match; // https://esbench.com/bench/5b809c2cf2949800a0f61fb5
-
-  while ((match = labelPattern.exec(styles)) !== null) {
-    identifierName += '-' + // $FlowFixMe we know it's not null
-    match[1];
-  }
-
-  var name = murmur2(styles) + identifierName;
-
-  if (process.env.NODE_ENV !== 'production') {
-    // $FlowFixMe SerializedStyles type doesn't have toString property (and we don't want to add it)
-    return {
-      name: name,
-      styles: styles,
-      map: sourceMap,
-      next: cursor,
-      toString: function toString() {
-        return "You have tried to stringify object returned from `css` function. It isn't supposed to be used directly (e.g. as value of the `className` prop), but rather handed to emotion so it can handle it (e.g. as value of `css` prop).";
-      }
-    };
-  }
-
-  return {
-    name: name,
-    styles: styles,
-    next: cursor
-  };
-};
 
 var testOmitPropsOnStringTag = isPropValid;
 
@@ -11699,7 +10265,7 @@ var composeShouldForwardProps = function composeShouldForwardProps(tag, options,
 };
 
 var ILLEGAL_ESCAPE_SEQUENCE_ERROR = "You have illegal escape sequence in your template literal, most likely inside content's property value.\nBecause you write your CSS inside a JavaScript string you actually have to do double escaping, so for example \"content: '\\00d7';\" should become \"content: '\\\\00d7';\".\nYou can read more about this here:\nhttps://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#ES2018_revision_of_illegal_escape_sequences";
-var isBrowser$3 = typeof document !== 'undefined';
+var isBrowser$1 = typeof document !== 'undefined';
 
 var createStyled = function createStyled(tag, options) {
   if (process.env.NODE_ENV !== 'production') {
@@ -11796,7 +10362,7 @@ var createStyled = function createStyled(tag, options) {
       newProps.ref = ref;
       var ele = /*#__PURE__*/createElement(finalTag, newProps);
 
-      if (!isBrowser$3 && rules !== undefined) {
+      if (!isBrowser$1 && rules !== undefined) {
         var _ref;
 
         var serializedNames = serialized.name;
@@ -11956,7 +10522,7 @@ function _objectWithoutPropertiesLoose$m(source, excluded) {
   return target;
 }
 function useStyleConfig(themeKey, props, opts) {
-  var _styleConfig$defaultP, _opts2;
+  var _styleConfig$defaultP;
 
   if (props === void 0) {
     props = {};
@@ -11975,43 +10541,42 @@ function useStyleConfig(themeKey, props, opts) {
     theme,
     colorMode
   } = useChakra();
-  var themeStyleConfig = memoizedGet$1(theme, "components." + themeKey);
+  var themeStyleConfig = memoizedGet(theme, "components." + themeKey);
   var styleConfig = styleConfigProp || themeStyleConfig;
   var mergedProps = lodash_mergewith({
     theme,
     colorMode
-  }, (_styleConfig$defaultP = styleConfig == null ? void 0 : styleConfig.defaultProps) != null ? _styleConfig$defaultP : {}, filterUndefined(omit$3(rest, ["children"])));
+  }, (_styleConfig$defaultP = styleConfig == null ? void 0 : styleConfig.defaultProps) != null ? _styleConfig$defaultP : {}, filterUndefined(omit$1(rest, ["children"])));
   /**
    * Store the computed styles in a `ref` to avoid unneeded re-computation
    */
 
   var stylesRef = useRef({});
-  return useMemo(() => {
-    if (styleConfig) {
-      var _styleConfig$baseStyl, _styleConfig$variants, _styleConfig$variants2, _styleConfig$sizes$me, _styleConfig$sizes, _opts;
 
-      var baseStyles = runIfFn((_styleConfig$baseStyl = styleConfig.baseStyle) != null ? _styleConfig$baseStyl : {}, mergedProps);
-      var variants = runIfFn((_styleConfig$variants = (_styleConfig$variants2 = styleConfig.variants) == null ? void 0 : _styleConfig$variants2[mergedProps.variant]) != null ? _styleConfig$variants : {}, mergedProps);
-      var sizes = runIfFn((_styleConfig$sizes$me = (_styleConfig$sizes = styleConfig.sizes) == null ? void 0 : _styleConfig$sizes[mergedProps.size]) != null ? _styleConfig$sizes$me : {}, mergedProps);
-      var styles = lodash_mergewith({}, baseStyles, sizes, variants);
+  if (styleConfig) {
+    var _styleConfig$baseStyl, _styleConfig$variants, _styleConfig$variants2, _styleConfig$sizes$me, _styleConfig$sizes, _opts;
 
-      if ((_opts = opts) != null && _opts.isMultiPart && styleConfig.parts) {
-        styleConfig.parts.forEach(part => {
-          var _styles$part;
+    var baseStyles = runIfFn((_styleConfig$baseStyl = styleConfig.baseStyle) != null ? _styleConfig$baseStyl : {}, mergedProps);
+    var variants = runIfFn((_styleConfig$variants = (_styleConfig$variants2 = styleConfig.variants) == null ? void 0 : _styleConfig$variants2[mergedProps.variant]) != null ? _styleConfig$variants : {}, mergedProps);
+    var sizes = runIfFn((_styleConfig$sizes$me = (_styleConfig$sizes = styleConfig.sizes) == null ? void 0 : _styleConfig$sizes[mergedProps.size]) != null ? _styleConfig$sizes$me : {}, mergedProps);
+    var styles = lodash_mergewith({}, baseStyles, sizes, variants);
 
-          styles[part] = (_styles$part = styles[part]) != null ? _styles$part : {};
-        });
-      }
+    if ((_opts = opts) != null && _opts.isMultiPart && styleConfig.parts) {
+      styleConfig.parts.forEach(part => {
+        var _styles$part;
 
-      var isStyleEqual = reactFastCompare(stylesRef.current, styles);
-
-      if (!isStyleEqual) {
-        stylesRef.current = styles;
-      }
+        styles[part] = (_styles$part = styles[part]) != null ? _styles$part : {};
+      });
     }
 
-    return stylesRef.current;
-  }, [styleConfig, mergedProps, (_opts2 = opts) == null ? void 0 : _opts2.isMultiPart]);
+    var isStyleEqual = reactFastCompare(stylesRef.current, styles);
+
+    if (!isStyleEqual) {
+      stylesRef.current = styles;
+    }
+  }
+
+  return stylesRef.current;
 }
 function useMultiStyleConfig(themeKey, props) {
   return useStyleConfig(themeKey, props, {
@@ -12019,817 +10584,1458 @@ function useMultiStyleConfig(themeKey, props) {
   });
 }
 
-var parts$n = ["container", "button", "panel", "icon"];
-var baseStyleContainer$4 = {
-  borderTopWidth: "1px",
-  borderColor: "inherit",
-  _last: {
-    borderBottomWidth: "1px"
+var doc = {
+  body: {
+    classList: {
+      add() {},
+
+      remove() {}
+
+    }
+  },
+
+  addEventListener() {},
+
+  removeEventListener() {},
+
+  activeElement: {
+    blur() {},
+
+    nodeName: ""
+  },
+
+  querySelector() {
+    return null;
+  },
+
+  querySelectorAll() {
+    return [];
+  },
+
+  getElementById() {
+    return null;
+  },
+
+  createEvent() {
+    return {
+      initEvent() {}
+
+    };
+  },
+
+  createElement() {
+    return {
+      children: [],
+      childNodes: [],
+      style: {},
+
+      setAttribute() {},
+
+      getElementsByTagName() {
+        return [];
+      }
+
+    };
   }
+
 };
-var baseStyleButton$1 = {
-  transitionProperty: "common",
-  transitionDuration: "normal",
-  fontSize: "1rem",
-  _focus: {
-    boxShadow: "outline"
+var ssrDocument = doc;
+
+var noop$4 = () => {};
+
+var win = {
+  document: ssrDocument,
+  navigator: {
+    userAgent: ""
   },
-  _hover: {
-    bg: "blackAlpha.50"
+  CustomEvent: function CustomEvent() {
+    return this;
   },
-  _disabled: {
-    opacity: 0.4,
-    cursor: "not-allowed"
+  addEventListener: noop$4,
+  removeEventListener: noop$4,
+
+  getComputedStyle() {
+    return {
+      getPropertyValue() {
+        return "";
+      }
+
+    };
   },
-  px: 4,
-  py: 2
-};
-var baseStylePanel = {
-  pt: 2,
-  px: 4,
-  pb: 5
-};
-var baseStyleIcon$5 = {
-  fontSize: "1.25em"
-};
-var baseStyle$D = {
-  container: baseStyleContainer$4,
-  button: baseStyleButton$1,
-  panel: baseStylePanel,
-  icon: baseStyleIcon$5
-};
-var Accordion = {
-  parts: parts$n,
-  baseStyle: baseStyle$D
-};
 
-var tinycolor = createCommonjsModule(function (module) {
-// TinyColor v1.4.2
-// https://github.com/bgrins/TinyColor
-// Brian Grinstead, MIT License
-(function (Math) {
-  var trimLeft = /^\s+/,
-      trimRight = /\s+$/,
-      tinyCounter = 0,
-      mathRound = Math.round,
-      mathMin = Math.min,
-      mathMax = Math.max,
-      mathRandom = Math.random;
+  matchMedia() {
+    return {
+      matches: false,
+      addListener: noop$4,
+      removeListener: noop$4
+    };
+  },
 
-  function tinycolor(color, opts) {
-    color = color ? color : '';
-    opts = opts || {}; // If input is already a tinycolor, return itself
-
-    if (color instanceof tinycolor) {
-      return color;
-    } // If we are called as a function, call using new instead
-
-
-    if (!(this instanceof tinycolor)) {
-      return new tinycolor(color, opts);
+  requestAnimationFrame(callback) {
+    if (typeof setTimeout === "undefined") {
+      callback();
+      return null;
     }
 
+    return setTimeout(callback, 0);
+  },
+
+  cancelAnimationFrame(id) {
+    if (typeof setTimeout === "undefined") return;
+    clearTimeout(id);
+  },
+
+  setTimeout: () => 0,
+  clearTimeout: noop$4,
+  setInterval: () => 0,
+  clearInterval: noop$4
+};
+var ssrWindow = win;
+
+var mockEnv = {
+  window: ssrWindow,
+  document: ssrDocument
+};
+var defaultEnv = isBrowser$2 ? {
+  window,
+  document
+} : mockEnv;
+var EnvironmentContext = /*#__PURE__*/createContext$1(defaultEnv);
+
+if (__DEV__) {
+  EnvironmentContext.displayName = "EnvironmentContext";
+}
+function EnvironmentProvider(props) {
+  var {
+    children,
+    environment: environmentProp
+  } = props;
+  var [node, setNode] = useState(null);
+  var context = useMemo(() => {
+    var _ref;
+
+    var doc = node == null ? void 0 : node.ownerDocument;
+    var win = node == null ? void 0 : node.ownerDocument.defaultView;
+    var nodeEnv = doc ? {
+      document: doc,
+      window: win
+    } : undefined;
+    var env = (_ref = environmentProp != null ? environmentProp : nodeEnv) != null ? _ref : defaultEnv;
+    return env;
+  }, [node, environmentProp]);
+  var showEnvGetter = !node && !environmentProp;
+  return /*#__PURE__*/React__default$1.createElement(EnvironmentContext.Provider, {
+    value: context
+  }, children, showEnvGetter && /*#__PURE__*/React__default$1.createElement("span", {
+    ref: el => {
+      if (el) setNode(el);
+    }
+  }));
+}
+
+if (__DEV__) {
+  EnvironmentProvider.displayName = "EnvironmentProvider";
+}
+
+/**
+ * The global provider that must be added to make all Chakra components
+ * work correctly
+ */
+
+var ChakraProvider$1 = props => {
+  var {
+    children,
+    colorModeManager,
+    portalZIndex,
+    resetCSS = true,
+    theme = {},
+    environment,
+    cssVarsRoot
+  } = props;
+
+  var _children = /*#__PURE__*/React.createElement(EnvironmentProvider, {
+    environment: environment
+  }, children);
+
+  return /*#__PURE__*/React.createElement(IdProvider, null, /*#__PURE__*/React.createElement(ThemeProvider, {
+    theme: theme,
+    cssVarsRoot: cssVarsRoot
+  }, /*#__PURE__*/React.createElement(ColorModeProvider, {
+    colorModeManager: colorModeManager,
+    options: theme.config
+  }, resetCSS && /*#__PURE__*/React.createElement(CSSReset$1, null), /*#__PURE__*/React.createElement(GlobalStyle, null), portalZIndex ? /*#__PURE__*/React.createElement(PortalManager, {
+    zIndex: portalZIndex
+  }, _children) : _children)));
+};
+
+/**
+ * Take input from [0, n] and return it as [0, 1]
+ * @hidden
+ */
+function bound01(n, max) {
+  if (isOnePointZero(n)) {
+    n = '100%';
+  }
+
+  var isPercent = isPercentage(n);
+  n = max === 360 ? n : Math.min(max, Math.max(0, parseFloat(n))); // Automatically convert percentage into number
+
+  if (isPercent) {
+    n = parseInt(String(n * max), 10) / 100;
+  } // Handle floating point rounding errors
+
+
+  if (Math.abs(n - max) < 0.000001) {
+    return 1;
+  } // Convert into [0, 1] range if it isn't already
+
+
+  if (max === 360) {
+    // If n is a hue given in degrees,
+    // wrap around out-of-range values into [0, 360] range
+    // then convert into [0, 1].
+    n = (n < 0 ? n % max + max : n % max) / parseFloat(String(max));
+  } else {
+    // If n not a hue given in degrees
+    // Convert into [0, 1] range if it isn't already.
+    n = n % max / parseFloat(String(max));
+  }
+
+  return n;
+}
+/**
+ * Force a number between 0 and 1
+ * @hidden
+ */
+
+function clamp01(val) {
+  return Math.min(1, Math.max(0, val));
+}
+/**
+ * Need to handle 1.0 as 100%, since once it is a number, there is no difference between it and 1
+ * <http://stackoverflow.com/questions/7422072/javascript-how-to-detect-number-as-a-decimal-including-1-0>
+ * @hidden
+ */
+
+function isOnePointZero(n) {
+  return typeof n === 'string' && n.indexOf('.') !== -1 && parseFloat(n) === 1;
+}
+/**
+ * Check to see if string passed in is a percentage
+ * @hidden
+ */
+
+function isPercentage(n) {
+  return typeof n === 'string' && n.indexOf('%') !== -1;
+}
+/**
+ * Return a valid alpha value [0,1] with all invalid values being set to 1
+ * @hidden
+ */
+
+function boundAlpha(a) {
+  a = parseFloat(a);
+
+  if (isNaN(a) || a < 0 || a > 1) {
+    a = 1;
+  }
+
+  return a;
+}
+/**
+ * Replace a decimal with it's percentage value
+ * @hidden
+ */
+
+function convertToPercentage(n) {
+  if (n <= 1) {
+    return Number(n) * 100 + "%";
+  }
+
+  return n;
+}
+/**
+ * Force a hex value to have 2 characters
+ * @hidden
+ */
+
+function pad2(c) {
+  return c.length === 1 ? '0' + c : String(c);
+}
+
+// <http://mjijackson.com/2008/02/rgb-to-hsl-and-rgb-to-hsv-color-model-conversion-algorithms-in-javascript>
+
+/**
+ * Handle bounds / percentage checking to conform to CSS color spec
+ * <http://www.w3.org/TR/css3-color/>
+ * *Assumes:* r, g, b in [0, 255] or [0, 1]
+ * *Returns:* { r, g, b } in [0, 255]
+ */
+
+function rgbToRgb(r, g, b) {
+  return {
+    r: bound01(r, 255) * 255,
+    g: bound01(g, 255) * 255,
+    b: bound01(b, 255) * 255
+  };
+}
+/**
+ * Converts an RGB color value to HSL.
+ * *Assumes:* r, g, and b are contained in [0, 255] or [0, 1]
+ * *Returns:* { h, s, l } in [0,1]
+ */
+
+function rgbToHsl(r, g, b) {
+  r = bound01(r, 255);
+  g = bound01(g, 255);
+  b = bound01(b, 255);
+  var max = Math.max(r, g, b);
+  var min = Math.min(r, g, b);
+  var h = 0;
+  var s = 0;
+  var l = (max + min) / 2;
+
+  if (max === min) {
+    s = 0;
+    h = 0; // achromatic
+  } else {
+    var d = max - min;
+    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+
+    switch (max) {
+      case r:
+        h = (g - b) / d + (g < b ? 6 : 0);
+        break;
+
+      case g:
+        h = (b - r) / d + 2;
+        break;
+
+      case b:
+        h = (r - g) / d + 4;
+        break;
+    }
+
+    h /= 6;
+  }
+
+  return {
+    h: h,
+    s: s,
+    l: l
+  };
+}
+
+function hue2rgb(p, q, t) {
+  if (t < 0) {
+    t += 1;
+  }
+
+  if (t > 1) {
+    t -= 1;
+  }
+
+  if (t < 1 / 6) {
+    return p + (q - p) * (6 * t);
+  }
+
+  if (t < 1 / 2) {
+    return q;
+  }
+
+  if (t < 2 / 3) {
+    return p + (q - p) * (2 / 3 - t) * 6;
+  }
+
+  return p;
+}
+/**
+ * Converts an HSL color value to RGB.
+ *
+ * *Assumes:* h is contained in [0, 1] or [0, 360] and s and l are contained [0, 1] or [0, 100]
+ * *Returns:* { r, g, b } in the set [0, 255]
+ */
+
+
+function hslToRgb(h, s, l) {
+  var r;
+  var g;
+  var b;
+  h = bound01(h, 360);
+  s = bound01(s, 100);
+  l = bound01(l, 100);
+
+  if (s === 0) {
+    // achromatic
+    g = l;
+    b = l;
+    r = l;
+  } else {
+    var q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+    var p = 2 * l - q;
+    r = hue2rgb(p, q, h + 1 / 3);
+    g = hue2rgb(p, q, h);
+    b = hue2rgb(p, q, h - 1 / 3);
+  }
+
+  return {
+    r: r * 255,
+    g: g * 255,
+    b: b * 255
+  };
+}
+/**
+ * Converts an RGB color value to HSV
+ *
+ * *Assumes:* r, g, and b are contained in the set [0, 255] or [0, 1]
+ * *Returns:* { h, s, v } in [0,1]
+ */
+
+function rgbToHsv(r, g, b) {
+  r = bound01(r, 255);
+  g = bound01(g, 255);
+  b = bound01(b, 255);
+  var max = Math.max(r, g, b);
+  var min = Math.min(r, g, b);
+  var h = 0;
+  var v = max;
+  var d = max - min;
+  var s = max === 0 ? 0 : d / max;
+
+  if (max === min) {
+    h = 0; // achromatic
+  } else {
+    switch (max) {
+      case r:
+        h = (g - b) / d + (g < b ? 6 : 0);
+        break;
+
+      case g:
+        h = (b - r) / d + 2;
+        break;
+
+      case b:
+        h = (r - g) / d + 4;
+        break;
+    }
+
+    h /= 6;
+  }
+
+  return {
+    h: h,
+    s: s,
+    v: v
+  };
+}
+/**
+ * Converts an HSV color value to RGB.
+ *
+ * *Assumes:* h is contained in [0, 1] or [0, 360] and s and v are contained in [0, 1] or [0, 100]
+ * *Returns:* { r, g, b } in the set [0, 255]
+ */
+
+function hsvToRgb(h, s, v) {
+  h = bound01(h, 360) * 6;
+  s = bound01(s, 100);
+  v = bound01(v, 100);
+  var i = Math.floor(h);
+  var f = h - i;
+  var p = v * (1 - s);
+  var q = v * (1 - f * s);
+  var t = v * (1 - (1 - f) * s);
+  var mod = i % 6;
+  var r = [v, q, p, p, t, v][mod];
+  var g = [t, v, v, q, p, p][mod];
+  var b = [p, p, t, v, v, q][mod];
+  return {
+    r: r * 255,
+    g: g * 255,
+    b: b * 255
+  };
+}
+/**
+ * Converts an RGB color to hex
+ *
+ * Assumes r, g, and b are contained in the set [0, 255]
+ * Returns a 3 or 6 character hex
+ */
+
+function rgbToHex(r, g, b, allow3Char) {
+  var hex = [pad2(Math.round(r).toString(16)), pad2(Math.round(g).toString(16)), pad2(Math.round(b).toString(16))]; // Return a 3 character hex if possible
+
+  if (allow3Char && hex[0].startsWith(hex[0].charAt(1)) && hex[1].startsWith(hex[1].charAt(1)) && hex[2].startsWith(hex[2].charAt(1))) {
+    return hex[0].charAt(0) + hex[1].charAt(0) + hex[2].charAt(0);
+  }
+
+  return hex.join('');
+}
+/**
+ * Converts an RGBA color plus alpha transparency to hex
+ *
+ * Assumes r, g, b are contained in the set [0, 255] and
+ * a in [0, 1]. Returns a 4 or 8 character rgba hex
+ */
+// eslint-disable-next-line max-params
+
+function rgbaToHex(r, g, b, a, allow4Char) {
+  var hex = [pad2(Math.round(r).toString(16)), pad2(Math.round(g).toString(16)), pad2(Math.round(b).toString(16)), pad2(convertDecimalToHex(a))]; // Return a 4 character hex if possible
+
+  if (allow4Char && hex[0].startsWith(hex[0].charAt(1)) && hex[1].startsWith(hex[1].charAt(1)) && hex[2].startsWith(hex[2].charAt(1)) && hex[3].startsWith(hex[3].charAt(1))) {
+    return hex[0].charAt(0) + hex[1].charAt(0) + hex[2].charAt(0) + hex[3].charAt(0);
+  }
+
+  return hex.join('');
+}
+/** Converts a decimal to a hex value */
+
+function convertDecimalToHex(d) {
+  return Math.round(parseFloat(d) * 255).toString(16);
+}
+/** Converts a hex value to a decimal */
+
+function convertHexToDecimal(h) {
+  return parseIntFromHex(h) / 255;
+}
+/** Parse a base-16 hex value into a base-10 integer */
+
+function parseIntFromHex(val) {
+  return parseInt(val, 16);
+}
+function numberInputToObject(color) {
+  return {
+    r: color >> 16,
+    g: (color & 0xff00) >> 8,
+    b: color & 0xff
+  };
+}
+
+// https://github.com/bahamas10/css-color-names/blob/master/css-color-names.json
+
+/**
+ * @hidden
+ */
+var names = {
+  aliceblue: '#f0f8ff',
+  antiquewhite: '#faebd7',
+  aqua: '#00ffff',
+  aquamarine: '#7fffd4',
+  azure: '#f0ffff',
+  beige: '#f5f5dc',
+  bisque: '#ffe4c4',
+  black: '#000000',
+  blanchedalmond: '#ffebcd',
+  blue: '#0000ff',
+  blueviolet: '#8a2be2',
+  brown: '#a52a2a',
+  burlywood: '#deb887',
+  cadetblue: '#5f9ea0',
+  chartreuse: '#7fff00',
+  chocolate: '#d2691e',
+  coral: '#ff7f50',
+  cornflowerblue: '#6495ed',
+  cornsilk: '#fff8dc',
+  crimson: '#dc143c',
+  cyan: '#00ffff',
+  darkblue: '#00008b',
+  darkcyan: '#008b8b',
+  darkgoldenrod: '#b8860b',
+  darkgray: '#a9a9a9',
+  darkgreen: '#006400',
+  darkgrey: '#a9a9a9',
+  darkkhaki: '#bdb76b',
+  darkmagenta: '#8b008b',
+  darkolivegreen: '#556b2f',
+  darkorange: '#ff8c00',
+  darkorchid: '#9932cc',
+  darkred: '#8b0000',
+  darksalmon: '#e9967a',
+  darkseagreen: '#8fbc8f',
+  darkslateblue: '#483d8b',
+  darkslategray: '#2f4f4f',
+  darkslategrey: '#2f4f4f',
+  darkturquoise: '#00ced1',
+  darkviolet: '#9400d3',
+  deeppink: '#ff1493',
+  deepskyblue: '#00bfff',
+  dimgray: '#696969',
+  dimgrey: '#696969',
+  dodgerblue: '#1e90ff',
+  firebrick: '#b22222',
+  floralwhite: '#fffaf0',
+  forestgreen: '#228b22',
+  fuchsia: '#ff00ff',
+  gainsboro: '#dcdcdc',
+  ghostwhite: '#f8f8ff',
+  goldenrod: '#daa520',
+  gold: '#ffd700',
+  gray: '#808080',
+  green: '#008000',
+  greenyellow: '#adff2f',
+  grey: '#808080',
+  honeydew: '#f0fff0',
+  hotpink: '#ff69b4',
+  indianred: '#cd5c5c',
+  indigo: '#4b0082',
+  ivory: '#fffff0',
+  khaki: '#f0e68c',
+  lavenderblush: '#fff0f5',
+  lavender: '#e6e6fa',
+  lawngreen: '#7cfc00',
+  lemonchiffon: '#fffacd',
+  lightblue: '#add8e6',
+  lightcoral: '#f08080',
+  lightcyan: '#e0ffff',
+  lightgoldenrodyellow: '#fafad2',
+  lightgray: '#d3d3d3',
+  lightgreen: '#90ee90',
+  lightgrey: '#d3d3d3',
+  lightpink: '#ffb6c1',
+  lightsalmon: '#ffa07a',
+  lightseagreen: '#20b2aa',
+  lightskyblue: '#87cefa',
+  lightslategray: '#778899',
+  lightslategrey: '#778899',
+  lightsteelblue: '#b0c4de',
+  lightyellow: '#ffffe0',
+  lime: '#00ff00',
+  limegreen: '#32cd32',
+  linen: '#faf0e6',
+  magenta: '#ff00ff',
+  maroon: '#800000',
+  mediumaquamarine: '#66cdaa',
+  mediumblue: '#0000cd',
+  mediumorchid: '#ba55d3',
+  mediumpurple: '#9370db',
+  mediumseagreen: '#3cb371',
+  mediumslateblue: '#7b68ee',
+  mediumspringgreen: '#00fa9a',
+  mediumturquoise: '#48d1cc',
+  mediumvioletred: '#c71585',
+  midnightblue: '#191970',
+  mintcream: '#f5fffa',
+  mistyrose: '#ffe4e1',
+  moccasin: '#ffe4b5',
+  navajowhite: '#ffdead',
+  navy: '#000080',
+  oldlace: '#fdf5e6',
+  olive: '#808000',
+  olivedrab: '#6b8e23',
+  orange: '#ffa500',
+  orangered: '#ff4500',
+  orchid: '#da70d6',
+  palegoldenrod: '#eee8aa',
+  palegreen: '#98fb98',
+  paleturquoise: '#afeeee',
+  palevioletred: '#db7093',
+  papayawhip: '#ffefd5',
+  peachpuff: '#ffdab9',
+  peru: '#cd853f',
+  pink: '#ffc0cb',
+  plum: '#dda0dd',
+  powderblue: '#b0e0e6',
+  purple: '#800080',
+  rebeccapurple: '#663399',
+  red: '#ff0000',
+  rosybrown: '#bc8f8f',
+  royalblue: '#4169e1',
+  saddlebrown: '#8b4513',
+  salmon: '#fa8072',
+  sandybrown: '#f4a460',
+  seagreen: '#2e8b57',
+  seashell: '#fff5ee',
+  sienna: '#a0522d',
+  silver: '#c0c0c0',
+  skyblue: '#87ceeb',
+  slateblue: '#6a5acd',
+  slategray: '#708090',
+  slategrey: '#708090',
+  snow: '#fffafa',
+  springgreen: '#00ff7f',
+  steelblue: '#4682b4',
+  tan: '#d2b48c',
+  teal: '#008080',
+  thistle: '#d8bfd8',
+  tomato: '#ff6347',
+  turquoise: '#40e0d0',
+  violet: '#ee82ee',
+  wheat: '#f5deb3',
+  white: '#ffffff',
+  whitesmoke: '#f5f5f5',
+  yellow: '#ffff00',
+  yellowgreen: '#9acd32'
+};
+
+/**
+ * Given a string or object, convert that input to RGB
+ *
+ * Possible string inputs:
+ * ```
+ * "red"
+ * "#f00" or "f00"
+ * "#ff0000" or "ff0000"
+ * "#ff000000" or "ff000000"
+ * "rgb 255 0 0" or "rgb (255, 0, 0)"
+ * "rgb 1.0 0 0" or "rgb (1, 0, 0)"
+ * "rgba (255, 0, 0, 1)" or "rgba 255, 0, 0, 1"
+ * "rgba (1.0, 0, 0, 1)" or "rgba 1.0, 0, 0, 1"
+ * "hsl(0, 100%, 50%)" or "hsl 0 100% 50%"
+ * "hsla(0, 100%, 50%, 1)" or "hsla 0 100% 50%, 1"
+ * "hsv(0, 100%, 100%)" or "hsv 0 100% 100%"
+ * ```
+ */
+
+function inputToRGB(color) {
+  var rgb = {
+    r: 0,
+    g: 0,
+    b: 0
+  };
+  var a = 1;
+  var s = null;
+  var v = null;
+  var l = null;
+  var ok = false;
+  var format = false;
+
+  if (typeof color === 'string') {
+    color = stringInputToObject(color);
+  }
+
+  if (typeof color === 'object') {
+    if (isValidCSSUnit(color.r) && isValidCSSUnit(color.g) && isValidCSSUnit(color.b)) {
+      rgb = rgbToRgb(color.r, color.g, color.b);
+      ok = true;
+      format = String(color.r).substr(-1) === '%' ? 'prgb' : 'rgb';
+    } else if (isValidCSSUnit(color.h) && isValidCSSUnit(color.s) && isValidCSSUnit(color.v)) {
+      s = convertToPercentage(color.s);
+      v = convertToPercentage(color.v);
+      rgb = hsvToRgb(color.h, s, v);
+      ok = true;
+      format = 'hsv';
+    } else if (isValidCSSUnit(color.h) && isValidCSSUnit(color.s) && isValidCSSUnit(color.l)) {
+      s = convertToPercentage(color.s);
+      l = convertToPercentage(color.l);
+      rgb = hslToRgb(color.h, s, l);
+      ok = true;
+      format = 'hsl';
+    }
+
+    if (Object.prototype.hasOwnProperty.call(color, 'a')) {
+      a = color.a;
+    }
+  }
+
+  a = boundAlpha(a);
+  return {
+    ok: ok,
+    format: color.format || format,
+    r: Math.min(255, Math.max(rgb.r, 0)),
+    g: Math.min(255, Math.max(rgb.g, 0)),
+    b: Math.min(255, Math.max(rgb.b, 0)),
+    a: a
+  };
+} // <http://www.w3.org/TR/css3-values/#integers>
+
+var CSS_INTEGER = '[-\\+]?\\d+%?'; // <http://www.w3.org/TR/css3-values/#number-value>
+
+var CSS_NUMBER = '[-\\+]?\\d*\\.\\d+%?'; // Allow positive/negative integer/number.  Don't capture the either/or, just the entire outcome.
+
+var CSS_UNIT = "(?:" + CSS_NUMBER + ")|(?:" + CSS_INTEGER + ")"; // Actual matching.
+// Parentheses and commas are optional, but not required.
+// Whitespace can take the place of commas or opening paren
+
+var PERMISSIVE_MATCH3 = "[\\s|\\(]+(" + CSS_UNIT + ")[,|\\s]+(" + CSS_UNIT + ")[,|\\s]+(" + CSS_UNIT + ")\\s*\\)?";
+var PERMISSIVE_MATCH4 = "[\\s|\\(]+(" + CSS_UNIT + ")[,|\\s]+(" + CSS_UNIT + ")[,|\\s]+(" + CSS_UNIT + ")[,|\\s]+(" + CSS_UNIT + ")\\s*\\)?";
+var matchers = {
+  CSS_UNIT: new RegExp(CSS_UNIT),
+  rgb: new RegExp('rgb' + PERMISSIVE_MATCH3),
+  rgba: new RegExp('rgba' + PERMISSIVE_MATCH4),
+  hsl: new RegExp('hsl' + PERMISSIVE_MATCH3),
+  hsla: new RegExp('hsla' + PERMISSIVE_MATCH4),
+  hsv: new RegExp('hsv' + PERMISSIVE_MATCH3),
+  hsva: new RegExp('hsva' + PERMISSIVE_MATCH4),
+  hex3: /^#?([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})$/,
+  hex6: /^#?([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/,
+  hex4: /^#?([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})$/,
+  hex8: /^#?([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/
+};
+/**
+ * Permissive string parsing.  Take in a number of formats, and output an object
+ * based on detected format.  Returns `{ r, g, b }` or `{ h, s, l }` or `{ h, s, v}`
+ */
+
+function stringInputToObject(color) {
+  color = color.trim().toLowerCase();
+
+  if (color.length === 0) {
+    return false;
+  }
+
+  var named = false;
+
+  if (names[color]) {
+    color = names[color];
+    named = true;
+  } else if (color === 'transparent') {
+    return {
+      r: 0,
+      g: 0,
+      b: 0,
+      a: 0,
+      format: 'name'
+    };
+  } // Try to match string input using regular expressions.
+  // Keep most of the number bounding out of this function - don't worry about [0,1] or [0,100] or [0,360]
+  // Just return an object and let the conversion functions handle that.
+  // This way the result will be the same whether the tinycolor is initialized with string or object.
+
+
+  var match = matchers.rgb.exec(color);
+
+  if (match) {
+    return {
+      r: match[1],
+      g: match[2],
+      b: match[3]
+    };
+  }
+
+  match = matchers.rgba.exec(color);
+
+  if (match) {
+    return {
+      r: match[1],
+      g: match[2],
+      b: match[3],
+      a: match[4]
+    };
+  }
+
+  match = matchers.hsl.exec(color);
+
+  if (match) {
+    return {
+      h: match[1],
+      s: match[2],
+      l: match[3]
+    };
+  }
+
+  match = matchers.hsla.exec(color);
+
+  if (match) {
+    return {
+      h: match[1],
+      s: match[2],
+      l: match[3],
+      a: match[4]
+    };
+  }
+
+  match = matchers.hsv.exec(color);
+
+  if (match) {
+    return {
+      h: match[1],
+      s: match[2],
+      v: match[3]
+    };
+  }
+
+  match = matchers.hsva.exec(color);
+
+  if (match) {
+    return {
+      h: match[1],
+      s: match[2],
+      v: match[3],
+      a: match[4]
+    };
+  }
+
+  match = matchers.hex8.exec(color);
+
+  if (match) {
+    return {
+      r: parseIntFromHex(match[1]),
+      g: parseIntFromHex(match[2]),
+      b: parseIntFromHex(match[3]),
+      a: convertHexToDecimal(match[4]),
+      format: named ? 'name' : 'hex8'
+    };
+  }
+
+  match = matchers.hex6.exec(color);
+
+  if (match) {
+    return {
+      r: parseIntFromHex(match[1]),
+      g: parseIntFromHex(match[2]),
+      b: parseIntFromHex(match[3]),
+      format: named ? 'name' : 'hex'
+    };
+  }
+
+  match = matchers.hex4.exec(color);
+
+  if (match) {
+    return {
+      r: parseIntFromHex(match[1] + match[1]),
+      g: parseIntFromHex(match[2] + match[2]),
+      b: parseIntFromHex(match[3] + match[3]),
+      a: convertHexToDecimal(match[4] + match[4]),
+      format: named ? 'name' : 'hex8'
+    };
+  }
+
+  match = matchers.hex3.exec(color);
+
+  if (match) {
+    return {
+      r: parseIntFromHex(match[1] + match[1]),
+      g: parseIntFromHex(match[2] + match[2]),
+      b: parseIntFromHex(match[3] + match[3]),
+      format: named ? 'name' : 'hex'
+    };
+  }
+
+  return false;
+}
+/**
+ * Check to see if it looks like a CSS unit
+ * (see `matchers` above for definition).
+ */
+
+function isValidCSSUnit(color) {
+  return Boolean(matchers.CSS_UNIT.exec(String(color)));
+}
+
+var TinyColor =
+/** @class */
+function () {
+  function TinyColor(color, opts) {
+    if (color === void 0) {
+      color = '';
+    }
+
+    if (opts === void 0) {
+      opts = {};
+    }
+
+    var _a; // If input is already a tinycolor, return itself
+
+
+    if (color instanceof TinyColor) {
+      // eslint-disable-next-line no-constructor-return
+      return color;
+    }
+
+    if (typeof color === 'number') {
+      color = numberInputToObject(color);
+    }
+
+    this.originalInput = color;
     var rgb = inputToRGB(color);
-    this._originalInput = color, this._r = rgb.r, this._g = rgb.g, this._b = rgb.b, this._a = rgb.a, this._roundA = mathRound(100 * this._a) / 100, this._format = opts.format || rgb.format;
-    this._gradientType = opts.gradientType; // Don't let the range of [0,255] come back in [0,1].
+    this.originalInput = color;
+    this.r = rgb.r;
+    this.g = rgb.g;
+    this.b = rgb.b;
+    this.a = rgb.a;
+    this.roundA = Math.round(100 * this.a) / 100;
+    this.format = (_a = opts.format) !== null && _a !== void 0 ? _a : rgb.format;
+    this.gradientType = opts.gradientType; // Don't let the range of [0,255] come back in [0,1].
     // Potentially lose a little bit of precision here, but will fix issues where
     // .5 gets interpreted as half of the total, instead of half of 1
     // If it was supposed to be 128, this was already taken care of by `inputToRgb`
 
-    if (this._r < 1) {
-      this._r = mathRound(this._r);
+    if (this.r < 1) {
+      this.r = Math.round(this.r);
     }
 
-    if (this._g < 1) {
-      this._g = mathRound(this._g);
+    if (this.g < 1) {
+      this.g = Math.round(this.g);
     }
 
-    if (this._b < 1) {
-      this._b = mathRound(this._b);
+    if (this.b < 1) {
+      this.b = Math.round(this.b);
     }
 
-    this._ok = rgb.ok;
-    this._tc_id = tinyCounter++;
+    this.isValid = rgb.ok;
   }
 
-  tinycolor.prototype = {
-    isDark: function () {
-      return this.getBrightness() < 128;
-    },
-    isLight: function () {
-      return !this.isDark();
-    },
-    isValid: function () {
-      return this._ok;
-    },
-    getOriginalInput: function () {
-      return this._originalInput;
-    },
-    getFormat: function () {
-      return this._format;
-    },
-    getAlpha: function () {
-      return this._a;
-    },
-    getBrightness: function () {
-      //http://www.w3.org/TR/AERT#color-contrast
-      var rgb = this.toRgb();
-      return (rgb.r * 299 + rgb.g * 587 + rgb.b * 114) / 1000;
-    },
-    getLuminance: function () {
-      //http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef
-      var rgb = this.toRgb();
-      var RsRGB, GsRGB, BsRGB, R, G, B;
-      RsRGB = rgb.r / 255;
-      GsRGB = rgb.g / 255;
-      BsRGB = rgb.b / 255;
+  TinyColor.prototype.isDark = function () {
+    return this.getBrightness() < 128;
+  };
 
-      if (RsRGB <= 0.03928) {
-        R = RsRGB / 12.92;
-      } else {
-        R = Math.pow((RsRGB + 0.055) / 1.055, 2.4);
-      }
-
-      if (GsRGB <= 0.03928) {
-        G = GsRGB / 12.92;
-      } else {
-        G = Math.pow((GsRGB + 0.055) / 1.055, 2.4);
-      }
-
-      if (BsRGB <= 0.03928) {
-        B = BsRGB / 12.92;
-      } else {
-        B = Math.pow((BsRGB + 0.055) / 1.055, 2.4);
-      }
-
-      return 0.2126 * R + 0.7152 * G + 0.0722 * B;
-    },
-    setAlpha: function (value) {
-      this._a = boundAlpha(value);
-      this._roundA = mathRound(100 * this._a) / 100;
-      return this;
-    },
-    toHsv: function () {
-      var hsv = rgbToHsv(this._r, this._g, this._b);
-      return {
-        h: hsv.h * 360,
-        s: hsv.s,
-        v: hsv.v,
-        a: this._a
-      };
-    },
-    toHsvString: function () {
-      var hsv = rgbToHsv(this._r, this._g, this._b);
-      var h = mathRound(hsv.h * 360),
-          s = mathRound(hsv.s * 100),
-          v = mathRound(hsv.v * 100);
-      return this._a == 1 ? "hsv(" + h + ", " + s + "%, " + v + "%)" : "hsva(" + h + ", " + s + "%, " + v + "%, " + this._roundA + ")";
-    },
-    toHsl: function () {
-      var hsl = rgbToHsl(this._r, this._g, this._b);
-      return {
-        h: hsl.h * 360,
-        s: hsl.s,
-        l: hsl.l,
-        a: this._a
-      };
-    },
-    toHslString: function () {
-      var hsl = rgbToHsl(this._r, this._g, this._b);
-      var h = mathRound(hsl.h * 360),
-          s = mathRound(hsl.s * 100),
-          l = mathRound(hsl.l * 100);
-      return this._a == 1 ? "hsl(" + h + ", " + s + "%, " + l + "%)" : "hsla(" + h + ", " + s + "%, " + l + "%, " + this._roundA + ")";
-    },
-    toHex: function (allow3Char) {
-      return rgbToHex(this._r, this._g, this._b, allow3Char);
-    },
-    toHexString: function (allow3Char) {
-      return '#' + this.toHex(allow3Char);
-    },
-    toHex8: function (allow4Char) {
-      return rgbaToHex(this._r, this._g, this._b, this._a, allow4Char);
-    },
-    toHex8String: function (allow4Char) {
-      return '#' + this.toHex8(allow4Char);
-    },
-    toRgb: function () {
-      return {
-        r: mathRound(this._r),
-        g: mathRound(this._g),
-        b: mathRound(this._b),
-        a: this._a
-      };
-    },
-    toRgbString: function () {
-      return this._a == 1 ? "rgb(" + mathRound(this._r) + ", " + mathRound(this._g) + ", " + mathRound(this._b) + ")" : "rgba(" + mathRound(this._r) + ", " + mathRound(this._g) + ", " + mathRound(this._b) + ", " + this._roundA + ")";
-    },
-    toPercentageRgb: function () {
-      return {
-        r: mathRound(bound01(this._r, 255) * 100) + "%",
-        g: mathRound(bound01(this._g, 255) * 100) + "%",
-        b: mathRound(bound01(this._b, 255) * 100) + "%",
-        a: this._a
-      };
-    },
-    toPercentageRgbString: function () {
-      return this._a == 1 ? "rgb(" + mathRound(bound01(this._r, 255) * 100) + "%, " + mathRound(bound01(this._g, 255) * 100) + "%, " + mathRound(bound01(this._b, 255) * 100) + "%)" : "rgba(" + mathRound(bound01(this._r, 255) * 100) + "%, " + mathRound(bound01(this._g, 255) * 100) + "%, " + mathRound(bound01(this._b, 255) * 100) + "%, " + this._roundA + ")";
-    },
-    toName: function () {
-      if (this._a === 0) {
-        return "transparent";
-      }
-
-      if (this._a < 1) {
-        return false;
-      }
-
-      return hexNames[rgbToHex(this._r, this._g, this._b, true)] || false;
-    },
-    toFilter: function (secondColor) {
-      var hex8String = '#' + rgbaToArgbHex(this._r, this._g, this._b, this._a);
-      var secondHex8String = hex8String;
-      var gradientType = this._gradientType ? "GradientType = 1, " : "";
-
-      if (secondColor) {
-        var s = tinycolor(secondColor);
-        secondHex8String = '#' + rgbaToArgbHex(s._r, s._g, s._b, s._a);
-      }
-
-      return "progid:DXImageTransform.Microsoft.gradient(" + gradientType + "startColorstr=" + hex8String + ",endColorstr=" + secondHex8String + ")";
-    },
-    toString: function (format) {
-      var formatSet = !!format;
-      format = format || this._format;
-      var formattedString = false;
-      var hasAlpha = this._a < 1 && this._a >= 0;
-      var needsAlphaFormat = !formatSet && hasAlpha && (format === "hex" || format === "hex6" || format === "hex3" || format === "hex4" || format === "hex8" || format === "name");
-
-      if (needsAlphaFormat) {
-        // Special case for "transparent", all other non-alpha formats
-        // will return rgba when there is transparency.
-        if (format === "name" && this._a === 0) {
-          return this.toName();
-        }
-
-        return this.toRgbString();
-      }
-
-      if (format === "rgb") {
-        formattedString = this.toRgbString();
-      }
-
-      if (format === "prgb") {
-        formattedString = this.toPercentageRgbString();
-      }
-
-      if (format === "hex" || format === "hex6") {
-        formattedString = this.toHexString();
-      }
-
-      if (format === "hex3") {
-        formattedString = this.toHexString(true);
-      }
-
-      if (format === "hex4") {
-        formattedString = this.toHex8String(true);
-      }
-
-      if (format === "hex8") {
-        formattedString = this.toHex8String();
-      }
-
-      if (format === "name") {
-        formattedString = this.toName();
-      }
-
-      if (format === "hsl") {
-        formattedString = this.toHslString();
-      }
-
-      if (format === "hsv") {
-        formattedString = this.toHsvString();
-      }
-
-      return formattedString || this.toHexString();
-    },
-    clone: function () {
-      return tinycolor(this.toString());
-    },
-    _applyModification: function (fn, args) {
-      var color = fn.apply(null, [this].concat([].slice.call(args)));
-      this._r = color._r;
-      this._g = color._g;
-      this._b = color._b;
-      this.setAlpha(color._a);
-      return this;
-    },
-    lighten: function () {
-      return this._applyModification(lighten, arguments);
-    },
-    brighten: function () {
-      return this._applyModification(brighten, arguments);
-    },
-    darken: function () {
-      return this._applyModification(darken, arguments);
-    },
-    desaturate: function () {
-      return this._applyModification(desaturate, arguments);
-    },
-    saturate: function () {
-      return this._applyModification(saturate, arguments);
-    },
-    greyscale: function () {
-      return this._applyModification(greyscale, arguments);
-    },
-    spin: function () {
-      return this._applyModification(spin, arguments);
-    },
-    _applyCombination: function (fn, args) {
-      return fn.apply(null, [this].concat([].slice.call(args)));
-    },
-    analogous: function () {
-      return this._applyCombination(analogous, arguments);
-    },
-    complement: function () {
-      return this._applyCombination(complement, arguments);
-    },
-    monochromatic: function () {
-      return this._applyCombination(monochromatic, arguments);
-    },
-    splitcomplement: function () {
-      return this._applyCombination(splitcomplement, arguments);
-    },
-    triad: function () {
-      return this._applyCombination(triad, arguments);
-    },
-    tetrad: function () {
-      return this._applyCombination(tetrad, arguments);
-    }
-  }; // If input is an object, force 1 into "1.0" to handle ratios properly
-  // String input requires "1.0" as input, so 1 will be treated as 1
-
-  tinycolor.fromRatio = function (color, opts) {
-    if (typeof color == "object") {
-      var newColor = {};
-
-      for (var i in color) {
-        if (color.hasOwnProperty(i)) {
-          if (i === "a") {
-            newColor[i] = color[i];
-          } else {
-            newColor[i] = convertToPercentage(color[i]);
-          }
-        }
-      }
-
-      color = newColor;
-    }
-
-    return tinycolor(color, opts);
-  }; // Given a string or object, convert that input to RGB
-  // Possible string inputs:
-  //
-  //     "red"
-  //     "#f00" or "f00"
-  //     "#ff0000" or "ff0000"
-  //     "#ff000000" or "ff000000"
-  //     "rgb 255 0 0" or "rgb (255, 0, 0)"
-  //     "rgb 1.0 0 0" or "rgb (1, 0, 0)"
-  //     "rgba (255, 0, 0, 1)" or "rgba 255, 0, 0, 1"
-  //     "rgba (1.0, 0, 0, 1)" or "rgba 1.0, 0, 0, 1"
-  //     "hsl(0, 100%, 50%)" or "hsl 0 100% 50%"
-  //     "hsla(0, 100%, 50%, 1)" or "hsla 0 100% 50%, 1"
-  //     "hsv(0, 100%, 100%)" or "hsv 0 100% 100%"
-  //
+  TinyColor.prototype.isLight = function () {
+    return !this.isDark();
+  };
+  /**
+   * Returns the perceived brightness of the color, from 0-255.
+   */
 
 
-  function inputToRGB(color) {
-    var rgb = {
-      r: 0,
-      g: 0,
-      b: 0
-    };
-    var a = 1;
-    var s = null;
-    var v = null;
-    var l = null;
-    var ok = false;
-    var format = false;
-
-    if (typeof color == "string") {
-      color = stringInputToObject(color);
-    }
-
-    if (typeof color == "object") {
-      if (isValidCSSUnit(color.r) && isValidCSSUnit(color.g) && isValidCSSUnit(color.b)) {
-        rgb = rgbToRgb(color.r, color.g, color.b);
-        ok = true;
-        format = String(color.r).substr(-1) === "%" ? "prgb" : "rgb";
-      } else if (isValidCSSUnit(color.h) && isValidCSSUnit(color.s) && isValidCSSUnit(color.v)) {
-        s = convertToPercentage(color.s);
-        v = convertToPercentage(color.v);
-        rgb = hsvToRgb(color.h, s, v);
-        ok = true;
-        format = "hsv";
-      } else if (isValidCSSUnit(color.h) && isValidCSSUnit(color.s) && isValidCSSUnit(color.l)) {
-        s = convertToPercentage(color.s);
-        l = convertToPercentage(color.l);
-        rgb = hslToRgb(color.h, s, l);
-        ok = true;
-        format = "hsl";
-      }
-
-      if (color.hasOwnProperty("a")) {
-        a = color.a;
-      }
-    }
-
-    a = boundAlpha(a);
-    return {
-      ok: ok,
-      format: color.format || format,
-      r: mathMin(255, mathMax(rgb.r, 0)),
-      g: mathMin(255, mathMax(rgb.g, 0)),
-      b: mathMin(255, mathMax(rgb.b, 0)),
-      a: a
-    };
-  } // Conversion Functions
-  // --------------------
-  // `rgbToHsl`, `rgbToHsv`, `hslToRgb`, `hsvToRgb` modified from:
-  // <http://mjijackson.com/2008/02/rgb-to-hsl-and-rgb-to-hsv-color-model-conversion-algorithms-in-javascript>
-  // `rgbToRgb`
-  // Handle bounds / percentage checking to conform to CSS color spec
-  // <http://www.w3.org/TR/css3-color/>
-  // *Assumes:* r, g, b in [0, 255] or [0, 1]
-  // *Returns:* { r, g, b } in [0, 255]
+  TinyColor.prototype.getBrightness = function () {
+    // http://www.w3.org/TR/AERT#color-contrast
+    var rgb = this.toRgb();
+    return (rgb.r * 299 + rgb.g * 587 + rgb.b * 114) / 1000;
+  };
+  /**
+   * Returns the perceived luminance of a color, from 0-1.
+   */
 
 
-  function rgbToRgb(r, g, b) {
-    return {
-      r: bound01(r, 255) * 255,
-      g: bound01(g, 255) * 255,
-      b: bound01(b, 255) * 255
-    };
-  } // `rgbToHsl`
-  // Converts an RGB color value to HSL.
-  // *Assumes:* r, g, and b are contained in [0, 255] or [0, 1]
-  // *Returns:* { h, s, l } in [0,1]
+  TinyColor.prototype.getLuminance = function () {
+    // http://www.w3.org/TR/2008/REC-WCAG20-20081211/#relativeluminancedef
+    var rgb = this.toRgb();
+    var R;
+    var G;
+    var B;
+    var RsRGB = rgb.r / 255;
+    var GsRGB = rgb.g / 255;
+    var BsRGB = rgb.b / 255;
 
-
-  function rgbToHsl(r, g, b) {
-    r = bound01(r, 255);
-    g = bound01(g, 255);
-    b = bound01(b, 255);
-    var max = mathMax(r, g, b),
-        min = mathMin(r, g, b);
-    var h,
-        s,
-        l = (max + min) / 2;
-
-    if (max == min) {
-      h = s = 0; // achromatic
+    if (RsRGB <= 0.03928) {
+      R = RsRGB / 12.92;
     } else {
-      var d = max - min;
-      s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-
-      switch (max) {
-        case r:
-          h = (g - b) / d + (g < b ? 6 : 0);
-          break;
-
-        case g:
-          h = (b - r) / d + 2;
-          break;
-
-        case b:
-          h = (r - g) / d + 4;
-          break;
-      }
-
-      h /= 6;
+      // eslint-disable-next-line prefer-exponentiation-operator
+      R = Math.pow((RsRGB + 0.055) / 1.055, 2.4);
     }
 
-    return {
-      h: h,
-      s: s,
-      l: l
-    };
-  } // `hslToRgb`
-  // Converts an HSL color value to RGB.
-  // *Assumes:* h is contained in [0, 1] or [0, 360] and s and l are contained [0, 1] or [0, 100]
-  // *Returns:* { r, g, b } in the set [0, 255]
-
-
-  function hslToRgb(h, s, l) {
-    var r, g, b;
-    h = bound01(h, 360);
-    s = bound01(s, 100);
-    l = bound01(l, 100);
-
-    function hue2rgb(p, q, t) {
-      if (t < 0) t += 1;
-      if (t > 1) t -= 1;
-      if (t < 1 / 6) return p + (q - p) * 6 * t;
-      if (t < 1 / 2) return q;
-      if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
-      return p;
-    }
-
-    if (s === 0) {
-      r = g = b = l; // achromatic
+    if (GsRGB <= 0.03928) {
+      G = GsRGB / 12.92;
     } else {
-      var q = l < 0.5 ? l * (1 + s) : l + s - l * s;
-      var p = 2 * l - q;
-      r = hue2rgb(p, q, h + 1 / 3);
-      g = hue2rgb(p, q, h);
-      b = hue2rgb(p, q, h - 1 / 3);
+      // eslint-disable-next-line prefer-exponentiation-operator
+      G = Math.pow((GsRGB + 0.055) / 1.055, 2.4);
     }
 
-    return {
-      r: r * 255,
-      g: g * 255,
-      b: b * 255
-    };
-  } // `rgbToHsv`
-  // Converts an RGB color value to HSV
-  // *Assumes:* r, g, and b are contained in the set [0, 255] or [0, 1]
-  // *Returns:* { h, s, v } in [0,1]
-
-
-  function rgbToHsv(r, g, b) {
-    r = bound01(r, 255);
-    g = bound01(g, 255);
-    b = bound01(b, 255);
-    var max = mathMax(r, g, b),
-        min = mathMin(r, g, b);
-    var h,
-        s,
-        v = max;
-    var d = max - min;
-    s = max === 0 ? 0 : d / max;
-
-    if (max == min) {
-      h = 0; // achromatic
+    if (BsRGB <= 0.03928) {
+      B = BsRGB / 12.92;
     } else {
-      switch (max) {
-        case r:
-          h = (g - b) / d + (g < b ? 6 : 0);
-          break;
-
-        case g:
-          h = (b - r) / d + 2;
-          break;
-
-        case b:
-          h = (r - g) / d + 4;
-          break;
-      }
-
-      h /= 6;
+      // eslint-disable-next-line prefer-exponentiation-operator
+      B = Math.pow((BsRGB + 0.055) / 1.055, 2.4);
     }
+
+    return 0.2126 * R + 0.7152 * G + 0.0722 * B;
+  };
+  /**
+   * Returns the alpha value of a color, from 0-1.
+   */
+
+
+  TinyColor.prototype.getAlpha = function () {
+    return this.a;
+  };
+  /**
+   * Sets the alpha value on the current color.
+   *
+   * @param alpha - The new alpha value. The accepted range is 0-1.
+   */
+
+
+  TinyColor.prototype.setAlpha = function (alpha) {
+    this.a = boundAlpha(alpha);
+    this.roundA = Math.round(100 * this.a) / 100;
+    return this;
+  };
+  /**
+   * Returns the object as a HSVA object.
+   */
+
+
+  TinyColor.prototype.toHsv = function () {
+    var hsv = rgbToHsv(this.r, this.g, this.b);
+    return {
+      h: hsv.h * 360,
+      s: hsv.s,
+      v: hsv.v,
+      a: this.a
+    };
+  };
+  /**
+   * Returns the hsva values interpolated into a string with the following format:
+   * "hsva(xxx, xxx, xxx, xx)".
+   */
+
+
+  TinyColor.prototype.toHsvString = function () {
+    var hsv = rgbToHsv(this.r, this.g, this.b);
+    var h = Math.round(hsv.h * 360);
+    var s = Math.round(hsv.s * 100);
+    var v = Math.round(hsv.v * 100);
+    return this.a === 1 ? "hsv(" + h + ", " + s + "%, " + v + "%)" : "hsva(" + h + ", " + s + "%, " + v + "%, " + this.roundA + ")";
+  };
+  /**
+   * Returns the object as a HSLA object.
+   */
+
+
+  TinyColor.prototype.toHsl = function () {
+    var hsl = rgbToHsl(this.r, this.g, this.b);
+    return {
+      h: hsl.h * 360,
+      s: hsl.s,
+      l: hsl.l,
+      a: this.a
+    };
+  };
+  /**
+   * Returns the hsla values interpolated into a string with the following format:
+   * "hsla(xxx, xxx, xxx, xx)".
+   */
+
+
+  TinyColor.prototype.toHslString = function () {
+    var hsl = rgbToHsl(this.r, this.g, this.b);
+    var h = Math.round(hsl.h * 360);
+    var s = Math.round(hsl.s * 100);
+    var l = Math.round(hsl.l * 100);
+    return this.a === 1 ? "hsl(" + h + ", " + s + "%, " + l + "%)" : "hsla(" + h + ", " + s + "%, " + l + "%, " + this.roundA + ")";
+  };
+  /**
+   * Returns the hex value of the color.
+   * @param allow3Char will shorten hex value to 3 char if possible
+   */
+
+
+  TinyColor.prototype.toHex = function (allow3Char) {
+    if (allow3Char === void 0) {
+      allow3Char = false;
+    }
+
+    return rgbToHex(this.r, this.g, this.b, allow3Char);
+  };
+  /**
+   * Returns the hex value of the color -with a # appened.
+   * @param allow3Char will shorten hex value to 3 char if possible
+   */
+
+
+  TinyColor.prototype.toHexString = function (allow3Char) {
+    if (allow3Char === void 0) {
+      allow3Char = false;
+    }
+
+    return '#' + this.toHex(allow3Char);
+  };
+  /**
+   * Returns the hex 8 value of the color.
+   * @param allow4Char will shorten hex value to 4 char if possible
+   */
+
+
+  TinyColor.prototype.toHex8 = function (allow4Char) {
+    if (allow4Char === void 0) {
+      allow4Char = false;
+    }
+
+    return rgbaToHex(this.r, this.g, this.b, this.a, allow4Char);
+  };
+  /**
+   * Returns the hex 8 value of the color -with a # appened.
+   * @param allow4Char will shorten hex value to 4 char if possible
+   */
+
+
+  TinyColor.prototype.toHex8String = function (allow4Char) {
+    if (allow4Char === void 0) {
+      allow4Char = false;
+    }
+
+    return '#' + this.toHex8(allow4Char);
+  };
+  /**
+   * Returns the object as a RGBA object.
+   */
+
+
+  TinyColor.prototype.toRgb = function () {
+    return {
+      r: Math.round(this.r),
+      g: Math.round(this.g),
+      b: Math.round(this.b),
+      a: this.a
+    };
+  };
+  /**
+   * Returns the RGBA values interpolated into a string with the following format:
+   * "RGBA(xxx, xxx, xxx, xx)".
+   */
+
+
+  TinyColor.prototype.toRgbString = function () {
+    var r = Math.round(this.r);
+    var g = Math.round(this.g);
+    var b = Math.round(this.b);
+    return this.a === 1 ? "rgb(" + r + ", " + g + ", " + b + ")" : "rgba(" + r + ", " + g + ", " + b + ", " + this.roundA + ")";
+  };
+  /**
+   * Returns the object as a RGBA object.
+   */
+
+
+  TinyColor.prototype.toPercentageRgb = function () {
+    var fmt = function (x) {
+      return Math.round(bound01(x, 255) * 100) + "%";
+    };
 
     return {
-      h: h,
-      s: s,
-      v: v
+      r: fmt(this.r),
+      g: fmt(this.g),
+      b: fmt(this.b),
+      a: this.a
     };
-  } // `hsvToRgb`
-  // Converts an HSV color value to RGB.
-  // *Assumes:* h is contained in [0, 1] or [0, 360] and s and v are contained in [0, 1] or [0, 100]
-  // *Returns:* { r, g, b } in the set [0, 255]
+  };
+  /**
+   * Returns the RGBA relative values interpolated into a string
+   */
 
 
-  function hsvToRgb(h, s, v) {
-    h = bound01(h, 360) * 6;
-    s = bound01(s, 100);
-    v = bound01(v, 100);
-    var i = Math.floor(h),
-        f = h - i,
-        p = v * (1 - s),
-        q = v * (1 - f * s),
-        t = v * (1 - (1 - f) * s),
-        mod = i % 6,
-        r = [v, q, p, p, t, v][mod],
-        g = [t, v, v, q, p, p][mod],
-        b = [p, p, t, v, v, q][mod];
-    return {
-      r: r * 255,
-      g: g * 255,
-      b: b * 255
+  TinyColor.prototype.toPercentageRgbString = function () {
+    var rnd = function (x) {
+      return Math.round(bound01(x, 255) * 100);
     };
-  } // `rgbToHex`
-  // Converts an RGB color to hex
-  // Assumes r, g, and b are contained in the set [0, 255]
-  // Returns a 3 or 6 character hex
+
+    return this.a === 1 ? "rgb(" + rnd(this.r) + "%, " + rnd(this.g) + "%, " + rnd(this.b) + "%)" : "rgba(" + rnd(this.r) + "%, " + rnd(this.g) + "%, " + rnd(this.b) + "%, " + this.roundA + ")";
+  };
+  /**
+   * The 'real' name of the color -if there is one.
+   */
 
 
-  function rgbToHex(r, g, b, allow3Char) {
-    var hex = [pad2(mathRound(r).toString(16)), pad2(mathRound(g).toString(16)), pad2(mathRound(b).toString(16))]; // Return a 3 character hex if possible
-
-    if (allow3Char && hex[0].charAt(0) == hex[0].charAt(1) && hex[1].charAt(0) == hex[1].charAt(1) && hex[2].charAt(0) == hex[2].charAt(1)) {
-      return hex[0].charAt(0) + hex[1].charAt(0) + hex[2].charAt(0);
+  TinyColor.prototype.toName = function () {
+    if (this.a === 0) {
+      return 'transparent';
     }
 
-    return hex.join("");
-  } // `rgbaToHex`
-  // Converts an RGBA color plus alpha transparency to hex
-  // Assumes r, g, b are contained in the set [0, 255] and
-  // a in [0, 1]. Returns a 4 or 8 character rgba hex
-
-
-  function rgbaToHex(r, g, b, a, allow4Char) {
-    var hex = [pad2(mathRound(r).toString(16)), pad2(mathRound(g).toString(16)), pad2(mathRound(b).toString(16)), pad2(convertDecimalToHex(a))]; // Return a 4 character hex if possible
-
-    if (allow4Char && hex[0].charAt(0) == hex[0].charAt(1) && hex[1].charAt(0) == hex[1].charAt(1) && hex[2].charAt(0) == hex[2].charAt(1) && hex[3].charAt(0) == hex[3].charAt(1)) {
-      return hex[0].charAt(0) + hex[1].charAt(0) + hex[2].charAt(0) + hex[3].charAt(0);
-    }
-
-    return hex.join("");
-  } // `rgbaToArgbHex`
-  // Converts an RGBA color to an ARGB Hex8 string
-  // Rarely used, but required for "toFilter()"
-
-
-  function rgbaToArgbHex(r, g, b, a) {
-    var hex = [pad2(convertDecimalToHex(a)), pad2(mathRound(r).toString(16)), pad2(mathRound(g).toString(16)), pad2(mathRound(b).toString(16))];
-    return hex.join("");
-  } // `equals`
-  // Can be called with any tinycolor input
-
-
-  tinycolor.equals = function (color1, color2) {
-    if (!color1 || !color2) {
+    if (this.a < 1) {
       return false;
     }
 
-    return tinycolor(color1).toRgbString() == tinycolor(color2).toRgbString();
+    var hex = '#' + rgbToHex(this.r, this.g, this.b, false);
+
+    for (var _i = 0, _a = Object.entries(names); _i < _a.length; _i++) {
+      var _b = _a[_i],
+          key = _b[0],
+          value = _b[1];
+
+      if (hex === value) {
+        return key;
+      }
+    }
+
+    return false;
   };
 
-  tinycolor.random = function () {
-    return tinycolor.fromRatio({
-      r: mathRandom(),
-      g: mathRandom(),
-      b: mathRandom()
-    });
-  }; // Modification Functions
-  // ----------------------
-  // Thanks to less.js for some of the basics here
-  // <https://github.com/cloudhead/less.js/blob/master/lib/less/functions.js>
+  TinyColor.prototype.toString = function (format) {
+    var formatSet = Boolean(format);
+    format = format !== null && format !== void 0 ? format : this.format;
+    var formattedString = false;
+    var hasAlpha = this.a < 1 && this.a >= 0;
+    var needsAlphaFormat = !formatSet && hasAlpha && (format.startsWith('hex') || format === 'name');
+
+    if (needsAlphaFormat) {
+      // Special case for "transparent", all other non-alpha formats
+      // will return rgba when there is transparency.
+      if (format === 'name' && this.a === 0) {
+        return this.toName();
+      }
+
+      return this.toRgbString();
+    }
+
+    if (format === 'rgb') {
+      formattedString = this.toRgbString();
+    }
+
+    if (format === 'prgb') {
+      formattedString = this.toPercentageRgbString();
+    }
+
+    if (format === 'hex' || format === 'hex6') {
+      formattedString = this.toHexString();
+    }
+
+    if (format === 'hex3') {
+      formattedString = this.toHexString(true);
+    }
+
+    if (format === 'hex4') {
+      formattedString = this.toHex8String(true);
+    }
+
+    if (format === 'hex8') {
+      formattedString = this.toHex8String();
+    }
+
+    if (format === 'name') {
+      formattedString = this.toName();
+    }
+
+    if (format === 'hsl') {
+      formattedString = this.toHslString();
+    }
+
+    if (format === 'hsv') {
+      formattedString = this.toHsvString();
+    }
+
+    return formattedString || this.toHexString();
+  };
+
+  TinyColor.prototype.toNumber = function () {
+    return (Math.round(this.r) << 16) + (Math.round(this.g) << 8) + Math.round(this.b);
+  };
+
+  TinyColor.prototype.clone = function () {
+    return new TinyColor(this.toString());
+  };
+  /**
+   * Lighten the color a given amount. Providing 100 will always return white.
+   * @param amount - valid between 1-100
+   */
 
 
-  function desaturate(color, amount) {
-    amount = amount === 0 ? 0 : amount || 10;
-    var hsl = tinycolor(color).toHsl();
-    hsl.s -= amount / 100;
-    hsl.s = clamp01(hsl.s);
-    return tinycolor(hsl);
-  }
+  TinyColor.prototype.lighten = function (amount) {
+    if (amount === void 0) {
+      amount = 10;
+    }
 
-  function saturate(color, amount) {
-    amount = amount === 0 ? 0 : amount || 10;
-    var hsl = tinycolor(color).toHsl();
-    hsl.s += amount / 100;
-    hsl.s = clamp01(hsl.s);
-    return tinycolor(hsl);
-  }
-
-  function greyscale(color) {
-    return tinycolor(color).desaturate(100);
-  }
-
-  function lighten(color, amount) {
-    amount = amount === 0 ? 0 : amount || 10;
-    var hsl = tinycolor(color).toHsl();
+    var hsl = this.toHsl();
     hsl.l += amount / 100;
     hsl.l = clamp01(hsl.l);
-    return tinycolor(hsl);
-  }
+    return new TinyColor(hsl);
+  };
+  /**
+   * Brighten the color a given amount, from 0 to 100.
+   * @param amount - valid between 1-100
+   */
 
-  function brighten(color, amount) {
-    amount = amount === 0 ? 0 : amount || 10;
-    var rgb = tinycolor(color).toRgb();
-    rgb.r = mathMax(0, mathMin(255, rgb.r - mathRound(255 * -(amount / 100))));
-    rgb.g = mathMax(0, mathMin(255, rgb.g - mathRound(255 * -(amount / 100))));
-    rgb.b = mathMax(0, mathMin(255, rgb.b - mathRound(255 * -(amount / 100))));
-    return tinycolor(rgb);
-  }
 
-  function darken(color, amount) {
-    amount = amount === 0 ? 0 : amount || 10;
-    var hsl = tinycolor(color).toHsl();
+  TinyColor.prototype.brighten = function (amount) {
+    if (amount === void 0) {
+      amount = 10;
+    }
+
+    var rgb = this.toRgb();
+    rgb.r = Math.max(0, Math.min(255, rgb.r - Math.round(255 * -(amount / 100))));
+    rgb.g = Math.max(0, Math.min(255, rgb.g - Math.round(255 * -(amount / 100))));
+    rgb.b = Math.max(0, Math.min(255, rgb.b - Math.round(255 * -(amount / 100))));
+    return new TinyColor(rgb);
+  };
+  /**
+   * Darken the color a given amount, from 0 to 100.
+   * Providing 100 will always return black.
+   * @param amount - valid between 1-100
+   */
+
+
+  TinyColor.prototype.darken = function (amount) {
+    if (amount === void 0) {
+      amount = 10;
+    }
+
+    var hsl = this.toHsl();
     hsl.l -= amount / 100;
     hsl.l = clamp01(hsl.l);
-    return tinycolor(hsl);
-  } // Spin takes a positive or negative amount within [-360, 360] indicating the change of hue.
-  // Values outside of this range will be wrapped into this range.
+    return new TinyColor(hsl);
+  };
+  /**
+   * Mix the color with pure white, from 0 to 100.
+   * Providing 0 will do nothing, providing 100 will always return white.
+   * @param amount - valid between 1-100
+   */
 
 
-  function spin(color, amount) {
-    var hsl = tinycolor(color).toHsl();
+  TinyColor.prototype.tint = function (amount) {
+    if (amount === void 0) {
+      amount = 10;
+    }
+
+    return this.mix('white', amount);
+  };
+  /**
+   * Mix the color with pure black, from 0 to 100.
+   * Providing 0 will do nothing, providing 100 will always return black.
+   * @param amount - valid between 1-100
+   */
+
+
+  TinyColor.prototype.shade = function (amount) {
+    if (amount === void 0) {
+      amount = 10;
+    }
+
+    return this.mix('black', amount);
+  };
+  /**
+   * Desaturate the color a given amount, from 0 to 100.
+   * Providing 100 will is the same as calling greyscale
+   * @param amount - valid between 1-100
+   */
+
+
+  TinyColor.prototype.desaturate = function (amount) {
+    if (amount === void 0) {
+      amount = 10;
+    }
+
+    var hsl = this.toHsl();
+    hsl.s -= amount / 100;
+    hsl.s = clamp01(hsl.s);
+    return new TinyColor(hsl);
+  };
+  /**
+   * Saturate the color a given amount, from 0 to 100.
+   * @param amount - valid between 1-100
+   */
+
+
+  TinyColor.prototype.saturate = function (amount) {
+    if (amount === void 0) {
+      amount = 10;
+    }
+
+    var hsl = this.toHsl();
+    hsl.s += amount / 100;
+    hsl.s = clamp01(hsl.s);
+    return new TinyColor(hsl);
+  };
+  /**
+   * Completely desaturates a color into greyscale.
+   * Same as calling `desaturate(100)`
+   */
+
+
+  TinyColor.prototype.greyscale = function () {
+    return this.desaturate(100);
+  };
+  /**
+   * Spin takes a positive or negative amount within [-360, 360] indicating the change of hue.
+   * Values outside of this range will be wrapped into this range.
+   */
+
+
+  TinyColor.prototype.spin = function (amount) {
+    var hsl = this.toHsl();
     var hue = (hsl.h + amount) % 360;
     hsl.h = hue < 0 ? 360 + hue : hue;
-    return tinycolor(hsl);
-  } // Combination Functions
-  // ---------------------
-  // Thanks to jQuery xColor for some of the ideas behind these
-  // <https://github.com/infusion/jQuery-xcolor/blob/master/jquery.xcolor.js>
+    return new TinyColor(hsl);
+  };
+  /**
+   * Mix the current color a given amount with another color, from 0 to 100.
+   * 0 means no mixing (return current color).
+   */
 
 
-  function complement(color) {
-    var hsl = tinycolor(color).toHsl();
-    hsl.h = (hsl.h + 180) % 360;
-    return tinycolor(hsl);
-  }
-
-  function triad(color) {
-    var hsl = tinycolor(color).toHsl();
-    var h = hsl.h;
-    return [tinycolor(color), tinycolor({
-      h: (h + 120) % 360,
-      s: hsl.s,
-      l: hsl.l
-    }), tinycolor({
-      h: (h + 240) % 360,
-      s: hsl.s,
-      l: hsl.l
-    })];
-  }
-
-  function tetrad(color) {
-    var hsl = tinycolor(color).toHsl();
-    var h = hsl.h;
-    return [tinycolor(color), tinycolor({
-      h: (h + 90) % 360,
-      s: hsl.s,
-      l: hsl.l
-    }), tinycolor({
-      h: (h + 180) % 360,
-      s: hsl.s,
-      l: hsl.l
-    }), tinycolor({
-      h: (h + 270) % 360,
-      s: hsl.s,
-      l: hsl.l
-    })];
-  }
-
-  function splitcomplement(color) {
-    var hsl = tinycolor(color).toHsl();
-    var h = hsl.h;
-    return [tinycolor(color), tinycolor({
-      h: (h + 72) % 360,
-      s: hsl.s,
-      l: hsl.l
-    }), tinycolor({
-      h: (h + 216) % 360,
-      s: hsl.s,
-      l: hsl.l
-    })];
-  }
-
-  function analogous(color, results, slices) {
-    results = results || 6;
-    slices = slices || 30;
-    var hsl = tinycolor(color).toHsl();
-    var part = 360 / slices;
-    var ret = [tinycolor(color)];
-
-    for (hsl.h = (hsl.h - (part * results >> 1) + 720) % 360; --results;) {
-      hsl.h = (hsl.h + part) % 360;
-      ret.push(tinycolor(hsl));
+  TinyColor.prototype.mix = function (color, amount) {
+    if (amount === void 0) {
+      amount = 50;
     }
 
-    return ret;
-  }
-
-  function monochromatic(color, results) {
-    results = results || 6;
-    var hsv = tinycolor(color).toHsv();
-    var h = hsv.h,
-        s = hsv.s,
-        v = hsv.v;
-    var ret = [];
-    var modification = 1 / results;
-
-    while (results--) {
-      ret.push(tinycolor({
-        h: h,
-        s: s,
-        v: v
-      }));
-      v = (v + modification) % 1;
-    }
-
-    return ret;
-  } // Utility Functions
-  // ---------------------
-
-
-  tinycolor.mix = function (color1, color2, amount) {
-    amount = amount === 0 ? 0 : amount || 50;
-    var rgb1 = tinycolor(color1).toRgb();
-    var rgb2 = tinycolor(color2).toRgb();
+    var rgb1 = this.toRgb();
+    var rgb2 = new TinyColor(color).toRgb();
     var p = amount / 100;
     var rgba = {
       r: (rgb2.r - rgb1.r) * p + rgb1.r,
@@ -12837,615 +12043,386 @@ var tinycolor = createCommonjsModule(function (module) {
       b: (rgb2.b - rgb1.b) * p + rgb1.b,
       a: (rgb2.a - rgb1.a) * p + rgb1.a
     };
-    return tinycolor(rgba);
-  }; // Readability Functions
-  // ---------------------
-  // <http://www.w3.org/TR/2008/REC-WCAG20-20081211/#contrast-ratiodef (WCAG Version 2)
-  // `contrast`
-  // Analyze the 2 colors and returns the color contrast defined by (WCAG Version 2)
-
-
-  tinycolor.readability = function (color1, color2) {
-    var c1 = tinycolor(color1);
-    var c2 = tinycolor(color2);
-    return (Math.max(c1.getLuminance(), c2.getLuminance()) + 0.05) / (Math.min(c1.getLuminance(), c2.getLuminance()) + 0.05);
-  }; // `isReadable`
-  // Ensure that foreground and background color combinations meet WCAG2 guidelines.
-  // The third argument is an optional Object.
-  //      the 'level' property states 'AA' or 'AAA' - if missing or invalid, it defaults to 'AA';
-  //      the 'size' property states 'large' or 'small' - if missing or invalid, it defaults to 'small'.
-  // If the entire object is absent, isReadable defaults to {level:"AA",size:"small"}.
-  // *Example*
-  //    tinycolor.isReadable("#000", "#111") => false
-  //    tinycolor.isReadable("#000", "#111",{level:"AA",size:"large"}) => false
-
-
-  tinycolor.isReadable = function (color1, color2, wcag2) {
-    var readability = tinycolor.readability(color1, color2);
-    var wcag2Parms, out;
-    out = false;
-    wcag2Parms = validateWCAG2Parms(wcag2);
-
-    switch (wcag2Parms.level + wcag2Parms.size) {
-      case "AAsmall":
-      case "AAAlarge":
-        out = readability >= 4.5;
-        break;
-
-      case "AAlarge":
-        out = readability >= 3;
-        break;
-
-      case "AAAsmall":
-        out = readability >= 7;
-        break;
-    }
-
-    return out;
-  }; // `mostReadable`
-  // Given a base color and a list of possible foreground or background
-  // colors for that base, returns the most readable color.
-  // Optionally returns Black or White if the most readable color is unreadable.
-  // *Example*
-  //    tinycolor.mostReadable(tinycolor.mostReadable("#123", ["#124", "#125"],{includeFallbackColors:false}).toHexString(); // "#112255"
-  //    tinycolor.mostReadable(tinycolor.mostReadable("#123", ["#124", "#125"],{includeFallbackColors:true}).toHexString();  // "#ffffff"
-  //    tinycolor.mostReadable("#a8015a", ["#faf3f3"],{includeFallbackColors:true,level:"AAA",size:"large"}).toHexString(); // "#faf3f3"
-  //    tinycolor.mostReadable("#a8015a", ["#faf3f3"],{includeFallbackColors:true,level:"AAA",size:"small"}).toHexString(); // "#ffffff"
-
-
-  tinycolor.mostReadable = function (baseColor, colorList, args) {
-    var bestColor = null;
-    var bestScore = 0;
-    var readability;
-    var includeFallbackColors, level, size;
-    args = args || {};
-    includeFallbackColors = args.includeFallbackColors;
-    level = args.level;
-    size = args.size;
-
-    for (var i = 0; i < colorList.length; i++) {
-      readability = tinycolor.readability(baseColor, colorList[i]);
-
-      if (readability > bestScore) {
-        bestScore = readability;
-        bestColor = tinycolor(colorList[i]);
-      }
-    }
-
-    if (tinycolor.isReadable(baseColor, bestColor, {
-      "level": level,
-      "size": size
-    }) || !includeFallbackColors) {
-      return bestColor;
-    } else {
-      args.includeFallbackColors = false;
-      return tinycolor.mostReadable(baseColor, ["#fff", "#000"], args);
-    }
-  }; // Big List of Colors
-  // ------------------
-  // <http://www.w3.org/TR/css3-color/#svg-color>
-
-
-  var names = tinycolor.names = {
-    aliceblue: "f0f8ff",
-    antiquewhite: "faebd7",
-    aqua: "0ff",
-    aquamarine: "7fffd4",
-    azure: "f0ffff",
-    beige: "f5f5dc",
-    bisque: "ffe4c4",
-    black: "000",
-    blanchedalmond: "ffebcd",
-    blue: "00f",
-    blueviolet: "8a2be2",
-    brown: "a52a2a",
-    burlywood: "deb887",
-    burntsienna: "ea7e5d",
-    cadetblue: "5f9ea0",
-    chartreuse: "7fff00",
-    chocolate: "d2691e",
-    coral: "ff7f50",
-    cornflowerblue: "6495ed",
-    cornsilk: "fff8dc",
-    crimson: "dc143c",
-    cyan: "0ff",
-    darkblue: "00008b",
-    darkcyan: "008b8b",
-    darkgoldenrod: "b8860b",
-    darkgray: "a9a9a9",
-    darkgreen: "006400",
-    darkgrey: "a9a9a9",
-    darkkhaki: "bdb76b",
-    darkmagenta: "8b008b",
-    darkolivegreen: "556b2f",
-    darkorange: "ff8c00",
-    darkorchid: "9932cc",
-    darkred: "8b0000",
-    darksalmon: "e9967a",
-    darkseagreen: "8fbc8f",
-    darkslateblue: "483d8b",
-    darkslategray: "2f4f4f",
-    darkslategrey: "2f4f4f",
-    darkturquoise: "00ced1",
-    darkviolet: "9400d3",
-    deeppink: "ff1493",
-    deepskyblue: "00bfff",
-    dimgray: "696969",
-    dimgrey: "696969",
-    dodgerblue: "1e90ff",
-    firebrick: "b22222",
-    floralwhite: "fffaf0",
-    forestgreen: "228b22",
-    fuchsia: "f0f",
-    gainsboro: "dcdcdc",
-    ghostwhite: "f8f8ff",
-    gold: "ffd700",
-    goldenrod: "daa520",
-    gray: "808080",
-    green: "008000",
-    greenyellow: "adff2f",
-    grey: "808080",
-    honeydew: "f0fff0",
-    hotpink: "ff69b4",
-    indianred: "cd5c5c",
-    indigo: "4b0082",
-    ivory: "fffff0",
-    khaki: "f0e68c",
-    lavender: "e6e6fa",
-    lavenderblush: "fff0f5",
-    lawngreen: "7cfc00",
-    lemonchiffon: "fffacd",
-    lightblue: "add8e6",
-    lightcoral: "f08080",
-    lightcyan: "e0ffff",
-    lightgoldenrodyellow: "fafad2",
-    lightgray: "d3d3d3",
-    lightgreen: "90ee90",
-    lightgrey: "d3d3d3",
-    lightpink: "ffb6c1",
-    lightsalmon: "ffa07a",
-    lightseagreen: "20b2aa",
-    lightskyblue: "87cefa",
-    lightslategray: "789",
-    lightslategrey: "789",
-    lightsteelblue: "b0c4de",
-    lightyellow: "ffffe0",
-    lime: "0f0",
-    limegreen: "32cd32",
-    linen: "faf0e6",
-    magenta: "f0f",
-    maroon: "800000",
-    mediumaquamarine: "66cdaa",
-    mediumblue: "0000cd",
-    mediumorchid: "ba55d3",
-    mediumpurple: "9370db",
-    mediumseagreen: "3cb371",
-    mediumslateblue: "7b68ee",
-    mediumspringgreen: "00fa9a",
-    mediumturquoise: "48d1cc",
-    mediumvioletred: "c71585",
-    midnightblue: "191970",
-    mintcream: "f5fffa",
-    mistyrose: "ffe4e1",
-    moccasin: "ffe4b5",
-    navajowhite: "ffdead",
-    navy: "000080",
-    oldlace: "fdf5e6",
-    olive: "808000",
-    olivedrab: "6b8e23",
-    orange: "ffa500",
-    orangered: "ff4500",
-    orchid: "da70d6",
-    palegoldenrod: "eee8aa",
-    palegreen: "98fb98",
-    paleturquoise: "afeeee",
-    palevioletred: "db7093",
-    papayawhip: "ffefd5",
-    peachpuff: "ffdab9",
-    peru: "cd853f",
-    pink: "ffc0cb",
-    plum: "dda0dd",
-    powderblue: "b0e0e6",
-    purple: "800080",
-    rebeccapurple: "663399",
-    red: "f00",
-    rosybrown: "bc8f8f",
-    royalblue: "4169e1",
-    saddlebrown: "8b4513",
-    salmon: "fa8072",
-    sandybrown: "f4a460",
-    seagreen: "2e8b57",
-    seashell: "fff5ee",
-    sienna: "a0522d",
-    silver: "c0c0c0",
-    skyblue: "87ceeb",
-    slateblue: "6a5acd",
-    slategray: "708090",
-    slategrey: "708090",
-    snow: "fffafa",
-    springgreen: "00ff7f",
-    steelblue: "4682b4",
-    tan: "d2b48c",
-    teal: "008080",
-    thistle: "d8bfd8",
-    tomato: "ff6347",
-    turquoise: "40e0d0",
-    violet: "ee82ee",
-    wheat: "f5deb3",
-    white: "fff",
-    whitesmoke: "f5f5f5",
-    yellow: "ff0",
-    yellowgreen: "9acd32"
-  }; // Make it easy to access colors via `hexNames[hex]`
-
-  var hexNames = tinycolor.hexNames = flip(names); // Utilities
-  // ---------
-  // `{ 'name1': 'val1' }` becomes `{ 'val1': 'name1' }`
-
-  function flip(o) {
-    var flipped = {};
-
-    for (var i in o) {
-      if (o.hasOwnProperty(i)) {
-        flipped[o[i]] = i;
-      }
-    }
-
-    return flipped;
-  } // Return a valid alpha value [0,1] with all invalid values being set to 1
-
-
-  function boundAlpha(a) {
-    a = parseFloat(a);
-
-    if (isNaN(a) || a < 0 || a > 1) {
-      a = 1;
-    }
-
-    return a;
-  } // Take input from [0, n] and return it as [0, 1]
-
-
-  function bound01(n, max) {
-    if (isOnePointZero(n)) {
-      n = "100%";
-    }
-
-    var processPercent = isPercentage(n);
-    n = mathMin(max, mathMax(0, parseFloat(n))); // Automatically convert percentage into number
-
-    if (processPercent) {
-      n = parseInt(n * max, 10) / 100;
-    } // Handle floating point rounding errors
-
-
-    if (Math.abs(n - max) < 0.000001) {
-      return 1;
-    } // Convert into [0, 1] range if it isn't already
-
-
-    return n % max / parseFloat(max);
-  } // Force a number between 0 and 1
-
-
-  function clamp01(val) {
-    return mathMin(1, mathMax(0, val));
-  } // Parse a base-16 hex value into a base-10 integer
-
-
-  function parseIntFromHex(val) {
-    return parseInt(val, 16);
-  } // Need to handle 1.0 as 100%, since once it is a number, there is no difference between it and 1
-  // <http://stackoverflow.com/questions/7422072/javascript-how-to-detect-number-as-a-decimal-including-1-0>
-
-
-  function isOnePointZero(n) {
-    return typeof n == "string" && n.indexOf('.') != -1 && parseFloat(n) === 1;
-  } // Check to see if string passed in is a percentage
-
-
-  function isPercentage(n) {
-    return typeof n === "string" && n.indexOf('%') != -1;
-  } // Force a hex value to have 2 characters
-
-
-  function pad2(c) {
-    return c.length == 1 ? '0' + c : '' + c;
-  } // Replace a decimal with it's percentage value
-
-
-  function convertToPercentage(n) {
-    if (n <= 1) {
-      n = n * 100 + "%";
-    }
-
-    return n;
-  } // Converts a decimal to a hex value
-
-
-  function convertDecimalToHex(d) {
-    return Math.round(parseFloat(d) * 255).toString(16);
-  } // Converts a hex value to a decimal
-
-
-  function convertHexToDecimal(h) {
-    return parseIntFromHex(h) / 255;
-  }
-
-  var matchers = function () {
-    // <http://www.w3.org/TR/css3-values/#integers>
-    var CSS_INTEGER = "[-\\+]?\\d+%?"; // <http://www.w3.org/TR/css3-values/#number-value>
-
-    var CSS_NUMBER = "[-\\+]?\\d*\\.\\d+%?"; // Allow positive/negative integer/number.  Don't capture the either/or, just the entire outcome.
-
-    var CSS_UNIT = "(?:" + CSS_NUMBER + ")|(?:" + CSS_INTEGER + ")"; // Actual matching.
-    // Parentheses and commas are optional, but not required.
-    // Whitespace can take the place of commas or opening paren
-
-    var PERMISSIVE_MATCH3 = "[\\s|\\(]+(" + CSS_UNIT + ")[,|\\s]+(" + CSS_UNIT + ")[,|\\s]+(" + CSS_UNIT + ")\\s*\\)?";
-    var PERMISSIVE_MATCH4 = "[\\s|\\(]+(" + CSS_UNIT + ")[,|\\s]+(" + CSS_UNIT + ")[,|\\s]+(" + CSS_UNIT + ")[,|\\s]+(" + CSS_UNIT + ")\\s*\\)?";
-    return {
-      CSS_UNIT: new RegExp(CSS_UNIT),
-      rgb: new RegExp("rgb" + PERMISSIVE_MATCH3),
-      rgba: new RegExp("rgba" + PERMISSIVE_MATCH4),
-      hsl: new RegExp("hsl" + PERMISSIVE_MATCH3),
-      hsla: new RegExp("hsla" + PERMISSIVE_MATCH4),
-      hsv: new RegExp("hsv" + PERMISSIVE_MATCH3),
-      hsva: new RegExp("hsva" + PERMISSIVE_MATCH4),
-      hex3: /^#?([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})$/,
-      hex6: /^#?([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/,
-      hex4: /^#?([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})([0-9a-fA-F]{1})$/,
-      hex8: /^#?([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/
-    };
-  }(); // `isValidCSSUnit`
-  // Take in a single string / number and check to see if it looks like a CSS unit
-  // (see `matchers` above for definition).
-
-
-  function isValidCSSUnit(color) {
-    return !!matchers.CSS_UNIT.exec(color);
-  } // `stringInputToObject`
-  // Permissive string parsing.  Take in a number of formats, and output an object
-  // based on detected format.  Returns `{ r, g, b }` or `{ h, s, l }` or `{ h, s, v}`
-
-
-  function stringInputToObject(color) {
-    color = color.replace(trimLeft, '').replace(trimRight, '').toLowerCase();
-    var named = false;
-
-    if (names[color]) {
-      color = names[color];
-      named = true;
-    } else if (color == 'transparent') {
-      return {
-        r: 0,
-        g: 0,
-        b: 0,
-        a: 0,
-        format: "name"
-      };
-    } // Try to match string input using regular expressions.
-    // Keep most of the number bounding out of this function - don't worry about [0,1] or [0,100] or [0,360]
-    // Just return an object and let the conversion functions handle that.
-    // This way the result will be the same whether the tinycolor is initialized with string or object.
-
-
-    var match;
-
-    if (match = matchers.rgb.exec(color)) {
-      return {
-        r: match[1],
-        g: match[2],
-        b: match[3]
-      };
-    }
-
-    if (match = matchers.rgba.exec(color)) {
-      return {
-        r: match[1],
-        g: match[2],
-        b: match[3],
-        a: match[4]
-      };
-    }
-
-    if (match = matchers.hsl.exec(color)) {
-      return {
-        h: match[1],
-        s: match[2],
-        l: match[3]
-      };
-    }
-
-    if (match = matchers.hsla.exec(color)) {
-      return {
-        h: match[1],
-        s: match[2],
-        l: match[3],
-        a: match[4]
-      };
-    }
-
-    if (match = matchers.hsv.exec(color)) {
-      return {
-        h: match[1],
-        s: match[2],
-        v: match[3]
-      };
-    }
-
-    if (match = matchers.hsva.exec(color)) {
-      return {
-        h: match[1],
-        s: match[2],
-        v: match[3],
-        a: match[4]
-      };
-    }
-
-    if (match = matchers.hex8.exec(color)) {
-      return {
-        r: parseIntFromHex(match[1]),
-        g: parseIntFromHex(match[2]),
-        b: parseIntFromHex(match[3]),
-        a: convertHexToDecimal(match[4]),
-        format: named ? "name" : "hex8"
-      };
-    }
-
-    if (match = matchers.hex6.exec(color)) {
-      return {
-        r: parseIntFromHex(match[1]),
-        g: parseIntFromHex(match[2]),
-        b: parseIntFromHex(match[3]),
-        format: named ? "name" : "hex"
-      };
-    }
-
-    if (match = matchers.hex4.exec(color)) {
-      return {
-        r: parseIntFromHex(match[1] + '' + match[1]),
-        g: parseIntFromHex(match[2] + '' + match[2]),
-        b: parseIntFromHex(match[3] + '' + match[3]),
-        a: convertHexToDecimal(match[4] + '' + match[4]),
-        format: named ? "name" : "hex8"
-      };
-    }
-
-    if (match = matchers.hex3.exec(color)) {
-      return {
-        r: parseIntFromHex(match[1] + '' + match[1]),
-        g: parseIntFromHex(match[2] + '' + match[2]),
-        b: parseIntFromHex(match[3] + '' + match[3]),
-        format: named ? "name" : "hex"
-      };
-    }
-
-    return false;
-  }
-
-  function validateWCAG2Parms(parms) {
-    // return valid WCAG2 parms for isReadable.
-    // If input parms are invalid, return {"level":"AA", "size":"small"}
-    var level, size;
-    parms = parms || {
-      "level": "AA",
-      "size": "small"
-    };
-    level = (parms.level || "AA").toUpperCase();
-    size = (parms.size || "small").toLowerCase();
-
-    if (level !== "AA" && level !== "AAA") {
-      level = "AA";
-    }
-
-    if (size !== "small" && size !== "large") {
-      size = "small";
-    }
-
-    return {
-      "level": level,
-      "size": size
-    };
-  } // Node: Export function
-
-
-  if (module.exports) {
-    module.exports = tinycolor;
-  } // AMD/requirejs: Define the module
-  else {
-        window.tinycolor = tinycolor;
-      }
-})(Math);
-});
-
-// Number assertions
-
-function isArray$1(value) {
-  return Array.isArray(value);
-}
-
-function isObject$3(value) {
-  var type = typeof value;
-  return value != null && (type === "object" || type === "function") && !isArray$1(value);
-}
-function isEmptyObject$1(value) {
-  return isObject$3(value) && Object.keys(value).length === 0;
-}
-var __DEV__$8 = process.env.NODE_ENV !== "production";
-process.env.NODE_ENV === "test";
-
-/**
- * Get value from a deeply nested object using a string path.
- * Memoizes the value.
- * @param obj - the object
- * @param path - the string path
- * @param def  - the fallback value
- */
-
-function get$2(obj, path, fallback, index) {
-  var key = typeof path === "string" ? path.split(".") : [path];
-
-  for (index = 0; index < key.length; index += 1) {
-    if (!obj) break;
-    obj = obj[key[index]];
-  }
-
-  return obj === undefined ? fallback : obj;
-}
-var memoize$1 = fn => {
-  var cache = new WeakMap();
-
-  var memoizedFn = (obj, path, fallback, index) => {
-    if (typeof obj === "undefined") {
-      return fn(obj, path, fallback);
-    }
-
-    if (!cache.has(obj)) {
-      cache.set(obj, new Map());
-    }
-
-    var map = cache.get(obj);
-
-    if (map.has(path)) {
-      return map.get(path);
-    }
-
-    var value = fn(obj, path, fallback, index);
-    map.set(path, value);
-    return value;
+    return new TinyColor(rgba);
   };
 
-  return memoizedFn;
-};
-var memoizedGet = memoize$1(get$2);
+  TinyColor.prototype.analogous = function (results, slices) {
+    if (results === void 0) {
+      results = 6;
+    }
 
-/* eslint-disable no-nested-ternary */
-function once$4(fn) {
-  var result;
-  return function func() {
-    if (fn) {
-      for (var _len5 = arguments.length, args = new Array(_len5), _key5 = 0; _key5 < _len5; _key5++) {
-        args[_key5] = arguments[_key5];
-      }
+    if (slices === void 0) {
+      slices = 30;
+    }
 
-      result = fn.apply(this, args);
-      fn = null;
+    var hsl = this.toHsl();
+    var part = 360 / slices;
+    var ret = [this];
+
+    for (hsl.h = (hsl.h - (part * results >> 1) + 720) % 360; --results;) {
+      hsl.h = (hsl.h + part) % 360;
+      ret.push(new TinyColor(hsl));
+    }
+
+    return ret;
+  };
+  /**
+   * taken from https://github.com/infusion/jQuery-xcolor/blob/master/jquery.xcolor.js
+   */
+
+
+  TinyColor.prototype.complement = function () {
+    var hsl = this.toHsl();
+    hsl.h = (hsl.h + 180) % 360;
+    return new TinyColor(hsl);
+  };
+
+  TinyColor.prototype.monochromatic = function (results) {
+    if (results === void 0) {
+      results = 6;
+    }
+
+    var hsv = this.toHsv();
+    var h = hsv.h;
+    var s = hsv.s;
+    var v = hsv.v;
+    var res = [];
+    var modification = 1 / results;
+
+    while (results--) {
+      res.push(new TinyColor({
+        h: h,
+        s: s,
+        v: v
+      }));
+      v = (v + modification) % 1;
+    }
+
+    return res;
+  };
+
+  TinyColor.prototype.splitcomplement = function () {
+    var hsl = this.toHsl();
+    var h = hsl.h;
+    return [this, new TinyColor({
+      h: (h + 72) % 360,
+      s: hsl.s,
+      l: hsl.l
+    }), new TinyColor({
+      h: (h + 216) % 360,
+      s: hsl.s,
+      l: hsl.l
+    })];
+  };
+  /**
+   * Compute how the color would appear on a background
+   */
+
+
+  TinyColor.prototype.onBackground = function (background) {
+    var fg = this.toRgb();
+    var bg = new TinyColor(background).toRgb();
+    return new TinyColor({
+      r: bg.r + (fg.r - bg.r) * fg.a,
+      g: bg.g + (fg.g - bg.g) * fg.a,
+      b: bg.b + (fg.b - bg.b) * fg.a
+    });
+  };
+  /**
+   * Alias for `polyad(3)`
+   */
+
+
+  TinyColor.prototype.triad = function () {
+    return this.polyad(3);
+  };
+  /**
+   * Alias for `polyad(4)`
+   */
+
+
+  TinyColor.prototype.tetrad = function () {
+    return this.polyad(4);
+  };
+  /**
+   * Get polyad colors, like (for 1, 2, 3, 4, 5, 6, 7, 8, etc...)
+   * monad, dyad, triad, tetrad, pentad, hexad, heptad, octad, etc...
+   */
+
+
+  TinyColor.prototype.polyad = function (n) {
+    var hsl = this.toHsl();
+    var h = hsl.h;
+    var result = [this];
+    var increment = 360 / n;
+
+    for (var i = 1; i < n; i++) {
+      result.push(new TinyColor({
+        h: (h + i * increment) % 360,
+        s: hsl.s,
+        l: hsl.l
+      }));
     }
 
     return result;
   };
-}
-var warn$3 = once$4(options => () => {
-  var {
-    condition,
-    message
-  } = options;
+  /**
+   * compare color vs current color
+   */
 
-  if (condition && __DEV__$8) {
-    console.warn(message);
+
+  TinyColor.prototype.equals = function (color) {
+    return this.toRgbString() === new TinyColor(color).toRgbString();
+  };
+
+  return TinyColor;
+}();
+
+// randomColor by David Merfield under the CC0 license
+function random(options) {
+  if (options === void 0) {
+    options = {};
+  } // Check if we need to generate multiple colors
+
+
+  if (options.count !== undefined && options.count !== null) {
+    var totalColors = options.count;
+    var colors = [];
+    options.count = undefined;
+
+    while (totalColors > colors.length) {
+      // Since we're generating multiple colors,
+      // incremement the seed. Otherwise we'd just
+      // generate the same color each time...
+      options.count = null;
+
+      if (options.seed) {
+        options.seed += 1;
+      }
+
+      colors.push(random(options));
+    }
+
+    options.count = totalColors;
+    return colors;
+  } // First we pick a hue (H)
+
+
+  var h = pickHue(options.hue, options.seed); // Then use H to determine saturation (S)
+
+  var s = pickSaturation(h, options); // Then use S and H to determine brightness (B).
+
+  var v = pickBrightness(h, s, options);
+  var res = {
+    h: h,
+    s: s,
+    v: v
+  };
+
+  if (options.alpha !== undefined) {
+    res.a = options.alpha;
+  } // Then we return the HSB color in the desired format
+
+
+  return new TinyColor(res);
+}
+
+function pickHue(hue, seed) {
+  var hueRange = getHueRange(hue);
+  var res = randomWithin(hueRange, seed); // Instead of storing red as two seperate ranges,
+  // we group them, using negative numbers
+
+  if (res < 0) {
+    res = 360 + res;
   }
-});
+
+  return res;
+}
+
+function pickSaturation(hue, options) {
+  if (options.hue === 'monochrome') {
+    return 0;
+  }
+
+  if (options.luminosity === 'random') {
+    return randomWithin([0, 100], options.seed);
+  }
+
+  var saturationRange = getColorInfo(hue).saturationRange;
+  var sMin = saturationRange[0];
+  var sMax = saturationRange[1];
+
+  switch (options.luminosity) {
+    case 'bright':
+      sMin = 55;
+      break;
+
+    case 'dark':
+      sMin = sMax - 10;
+      break;
+
+    case 'light':
+      sMax = 55;
+      break;
+  }
+
+  return randomWithin([sMin, sMax], options.seed);
+}
+
+function pickBrightness(H, S, options) {
+  var bMin = getMinimumBrightness(H, S);
+  var bMax = 100;
+
+  switch (options.luminosity) {
+    case 'dark':
+      bMax = bMin + 20;
+      break;
+
+    case 'light':
+      bMin = (bMax + bMin) / 2;
+      break;
+
+    case 'random':
+      bMin = 0;
+      bMax = 100;
+      break;
+  }
+
+  return randomWithin([bMin, bMax], options.seed);
+}
+
+function getMinimumBrightness(H, S) {
+  var lowerBounds = getColorInfo(H).lowerBounds;
+
+  for (var i = 0; i < lowerBounds.length - 1; i++) {
+    var s1 = lowerBounds[i][0];
+    var v1 = lowerBounds[i][1];
+    var s2 = lowerBounds[i + 1][0];
+    var v2 = lowerBounds[i + 1][1];
+
+    if (S >= s1 && S <= s2) {
+      var m = (v2 - v1) / (s2 - s1);
+      var b = v1 - m * s1;
+      return m * S + b;
+    }
+  }
+
+  return 0;
+}
+
+function getHueRange(colorInput) {
+  var num = parseInt(colorInput, 10);
+
+  if (!Number.isNaN(num) && num < 360 && num > 0) {
+    return [num, num];
+  }
+
+  if (typeof colorInput === 'string') {
+    var namedColor = bounds.find(function (n) {
+      return n.name === colorInput;
+    });
+
+    if (namedColor) {
+      var color = defineColor(namedColor);
+
+      if (color.hueRange) {
+        return color.hueRange;
+      }
+    }
+
+    var parsed = new TinyColor(colorInput);
+
+    if (parsed.isValid) {
+      var hue = parsed.toHsv().h;
+      return [hue, hue];
+    }
+  }
+
+  return [0, 360];
+}
+
+function getColorInfo(hue) {
+  // Maps red colors to make picking hue easier
+  if (hue >= 334 && hue <= 360) {
+    hue -= 360;
+  }
+
+  for (var _i = 0, bounds_1 = bounds; _i < bounds_1.length; _i++) {
+    var bound = bounds_1[_i];
+    var color = defineColor(bound);
+
+    if (color.hueRange && hue >= color.hueRange[0] && hue <= color.hueRange[1]) {
+      return color;
+    }
+  }
+
+  throw Error('Color not found');
+}
+
+function randomWithin(range, seed) {
+  if (seed === undefined) {
+    return Math.floor(range[0] + Math.random() * (range[1] + 1 - range[0]));
+  } // Seeded random algorithm from http://indiegamr.com/generate-repeatable-random-numbers-in-js/
+
+
+  var max = range[1] || 1;
+  var min = range[0] || 0;
+  seed = (seed * 9301 + 49297) % 233280;
+  var rnd = seed / 233280.0;
+  return Math.floor(min + rnd * (max - min));
+}
+
+function defineColor(bound) {
+  var sMin = bound.lowerBounds[0][0];
+  var sMax = bound.lowerBounds[bound.lowerBounds.length - 1][0];
+  var bMin = bound.lowerBounds[bound.lowerBounds.length - 1][1];
+  var bMax = bound.lowerBounds[0][1];
+  return {
+    name: bound.name,
+    hueRange: bound.hueRange,
+    lowerBounds: bound.lowerBounds,
+    saturationRange: [sMin, sMax],
+    brightnessRange: [bMin, bMax]
+  };
+}
+/**
+ * @hidden
+ */
+
+
+var bounds = [{
+  name: 'monochrome',
+  hueRange: null,
+  lowerBounds: [[0, 0], [100, 0]]
+}, {
+  name: 'red',
+  hueRange: [-26, 18],
+  lowerBounds: [[20, 100], [30, 92], [40, 89], [50, 85], [60, 78], [70, 70], [80, 60], [90, 55], [100, 50]]
+}, {
+  name: 'orange',
+  hueRange: [19, 46],
+  lowerBounds: [[20, 100], [30, 93], [40, 88], [50, 86], [60, 85], [70, 70], [100, 70]]
+}, {
+  name: 'yellow',
+  hueRange: [47, 62],
+  lowerBounds: [[25, 100], [40, 94], [50, 89], [60, 86], [70, 84], [80, 82], [90, 80], [100, 75]]
+}, {
+  name: 'green',
+  hueRange: [63, 178],
+  lowerBounds: [[30, 100], [40, 90], [50, 85], [60, 81], [70, 74], [80, 64], [90, 50], [100, 40]]
+}, {
+  name: 'blue',
+  hueRange: [179, 257],
+  lowerBounds: [[20, 100], [30, 86], [40, 80], [50, 74], [60, 60], [70, 52], [80, 44], [90, 39], [100, 35]]
+}, {
+  name: 'purple',
+  hueRange: [258, 282],
+  lowerBounds: [[20, 100], [30, 87], [40, 79], [50, 70], [60, 65], [70, 59], [80, 52], [90, 45], [100, 42]]
+}, {
+  name: 'pink',
+  hueRange: [283, 334],
+  lowerBounds: [[20, 100], [30, 90], [40, 86], [60, 84], [80, 80], [90, 75], [100, 73]]
+}];
 
 /**
  * Get the color raw value from theme
@@ -13456,7 +12433,9 @@ var warn$3 = once$4(options => () => {
 
 var getColor = (theme, color, fallback) => {
   var hex = memoizedGet(theme, "colors." + color, color);
-  var isValid = tinycolor(hex).isValid();
+  var {
+    isValid
+  } = new TinyColor(hex);
   return isValid ? hex : fallback;
 };
 /**
@@ -13466,7 +12445,7 @@ var getColor = (theme, color, fallback) => {
 
 var tone = color => theme => {
   var hex = getColor(theme, color);
-  var isDark = tinycolor(hex).isDark();
+  var isDark = new TinyColor(hex).isDark();
   return isDark ? "dark" : "light";
 };
 /**
@@ -13483,7 +12462,7 @@ var isDark = color => theme => tone(color)(theme) === "dark";
 
 var transparentize = (color, opacity) => theme => {
   var raw = getColor(theme, color);
-  return tinycolor(raw).setAlpha(opacity).toRgbString();
+  return new TinyColor(raw).setAlpha(opacity).toRgbString();
 };
 function generateStripe(size, color) {
   if (size === void 0) {
@@ -13500,7 +12479,7 @@ function generateStripe(size, color) {
   };
 }
 function randomColor(opts) {
-  var fallback = tinycolor.random().toHexString();
+  var fallback = random().toHexString();
 
   if (!opts || isEmptyObject$1(opts)) {
     return fallback;
@@ -13588,7 +12567,7 @@ function _extends$H() {
   return _extends$H.apply(this, arguments);
 }
 var createBreakpoints = config => {
-  warn$3({
+  warn$1({
     condition: true,
     message: ["[chakra-ui]: createBreakpoints(...) will be deprecated pretty soon", "simply pass the breakpoints as an object. Remove the createBreakpoint(..) call"].join("")
   });
@@ -13597,7 +12576,388 @@ var createBreakpoints = config => {
   }, config);
 };
 
-var parts$m = ["container", "title", "description", "icon"];
+function _defineProperty$j(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+/**
+ * Used to define the anatomy/parts of a component in a way that provides
+ * a consistent API for `className`, css selector and `theming`.
+ */
+
+
+class Anatomy {
+  constructor(name) {
+    var _this = this;
+
+    this.name = name;
+
+    _defineProperty$j(this, "map", {});
+
+    _defineProperty$j(this, "called", false);
+
+    _defineProperty$j(this, "assert", () => {
+      if (!this.called) {
+        this.called = true;
+        return;
+      }
+
+      throw new Error("[anatomy] .part(...) should only be called once. Did you mean to use .extend(...) ?");
+    });
+
+    _defineProperty$j(this, "parts", function () {
+      _this.assert();
+
+      for (var _len = arguments.length, values = new Array(_len), _key = 0; _key < _len; _key++) {
+        values[_key] = arguments[_key];
+      }
+
+      for (var part of values) {
+        _this.map[part] = _this.toPart(part);
+      }
+
+      return _this;
+    });
+
+    _defineProperty$j(this, "extend", function () {
+      for (var _len2 = arguments.length, parts = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+        parts[_key2] = arguments[_key2];
+      }
+
+      for (var part of parts) {
+        if (part in _this.map) continue;
+        _this.map[part] = _this.toPart(part);
+      }
+
+      return _this;
+    });
+
+    _defineProperty$j(this, "toPart", part => {
+      var el = ["container", "root"].includes(part != null ? part : "") ? [this.name] : [this.name, part];
+      var attr = el.filter(Boolean).join("__");
+      var className = "chakra-" + attr;
+      var partObj = {
+        className,
+        selector: "." + className,
+        toString: () => part
+      };
+      return partObj;
+    });
+
+    _defineProperty$j(this, "__type", {});
+  }
+  /**
+   * Prevents user from calling `.parts` multiple times.
+   * It should only be called once.
+   */
+
+  /**
+   * Get all selectors for the component anatomy
+   */
+
+
+  get selectors() {
+    var value = Object.fromEntries(Object.entries(this.map).map(_ref => {
+      var [key, part] = _ref;
+      return [key, part.selector];
+    }));
+    return value;
+  }
+  /**
+   * Get all classNames for the component anatomy
+   */
+
+
+  get classNames() {
+    var value = Object.fromEntries(Object.entries(this.map).map(_ref2 => {
+      var [key, part] = _ref2;
+      return [key, part.className];
+    }));
+    return value;
+  }
+  /**
+   * Get all parts as array of string
+   */
+
+
+  get keys() {
+    return Object.keys(this.map);
+  }
+  /**
+   * Creates the part object for the given part
+   */
+
+
+}
+function anatomy(name) {
+  return new Anatomy(name);
+}
+
+function toRef(operand) {
+  if (isObject$3(operand) && operand.reference) {
+    return operand.reference;
+  }
+
+  return String(operand);
+}
+
+var toExpr = function toExpr(operator) {
+  for (var _len = arguments.length, operands = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    operands[_key - 1] = arguments[_key];
+  }
+
+  return operands.map(toRef).join(" " + operator + " ").replace(/calc/g, "");
+};
+
+var _add = function add() {
+  for (var _len2 = arguments.length, operands = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+    operands[_key2] = arguments[_key2];
+  }
+
+  return "calc(" + toExpr("+", ...operands) + ")";
+};
+
+var _subtract = function subtract() {
+  for (var _len3 = arguments.length, operands = new Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
+    operands[_key3] = arguments[_key3];
+  }
+
+  return "calc(" + toExpr("-", ...operands) + ")";
+};
+
+var _multiply = function multiply() {
+  for (var _len4 = arguments.length, operands = new Array(_len4), _key4 = 0; _key4 < _len4; _key4++) {
+    operands[_key4] = arguments[_key4];
+  }
+
+  return "calc(" + toExpr("*", ...operands) + ")";
+};
+
+var _divide = function divide() {
+  for (var _len5 = arguments.length, operands = new Array(_len5), _key5 = 0; _key5 < _len5; _key5++) {
+    operands[_key5] = arguments[_key5];
+  }
+
+  return "calc(" + toExpr("/", ...operands) + ")";
+};
+
+var _negate = x => {
+  var value = toRef(x);
+
+  if (value != null && !Number.isNaN(parseFloat(value))) {
+    return String(value).startsWith("-") ? String(value).slice(1) : "-" + value;
+  }
+
+  return _multiply(value, -1);
+};
+
+var calc = Object.assign(x => ({
+  add: function add() {
+    for (var _len6 = arguments.length, operands = new Array(_len6), _key6 = 0; _key6 < _len6; _key6++) {
+      operands[_key6] = arguments[_key6];
+    }
+
+    return calc(_add(x, ...operands));
+  },
+  subtract: function subtract() {
+    for (var _len7 = arguments.length, operands = new Array(_len7), _key7 = 0; _key7 < _len7; _key7++) {
+      operands[_key7] = arguments[_key7];
+    }
+
+    return calc(_subtract(x, ...operands));
+  },
+  multiply: function multiply() {
+    for (var _len8 = arguments.length, operands = new Array(_len8), _key8 = 0; _key8 < _len8; _key8++) {
+      operands[_key8] = arguments[_key8];
+    }
+
+    return calc(_multiply(x, ...operands));
+  },
+  divide: function divide() {
+    for (var _len9 = arguments.length, operands = new Array(_len9), _key9 = 0; _key9 < _len9; _key9++) {
+      operands[_key9] = arguments[_key9];
+    }
+
+    return calc(_divide(x, ...operands));
+  },
+  negate: () => calc(_negate(x)),
+  toString: () => x.toString()
+}), {
+  add: _add,
+  subtract: _subtract,
+  multiply: _multiply,
+  divide: _divide,
+  negate: _negate
+});
+
+function isDecimal(value) {
+  return !Number.isInteger(parseFloat(value.toString()));
+}
+
+function replaceWhiteSpace(value, replaceValue) {
+  if (replaceValue === void 0) {
+    replaceValue = "-";
+  }
+
+  return value.replace(/\s+/g, replaceValue);
+}
+
+function escape(value) {
+  var valueStr = replaceWhiteSpace(value.toString());
+  if (valueStr.includes("\\.")) return value;
+  return isDecimal(value) ? valueStr.replace(".", "\\.") : value;
+}
+
+function addPrefix(value, prefix) {
+  if (prefix === void 0) {
+    prefix = "";
+  }
+
+  return [prefix, escape(value)].filter(Boolean).join("-");
+}
+function toVarRef(name, fallback) {
+  return "var(" + escape(name) + (fallback ? ", " + fallback : "") + ")";
+}
+function toVar(value, prefix) {
+  if (prefix === void 0) {
+    prefix = "";
+  }
+
+  return "--" + addPrefix(value, prefix);
+}
+function cssVar(name, options) {
+  var cssVariable = toVar(name, options == null ? void 0 : options.prefix);
+  return {
+    variable: cssVariable,
+    reference: toVarRef(cssVariable, getFallback(options == null ? void 0 : options.fallback))
+  };
+}
+
+function getFallback(fallback) {
+  if (typeof fallback === "string") return fallback;
+  return fallback == null ? void 0 : fallback.reference;
+}
+
+/**
+ * **Accordion anatomy**
+ * - Item: the accordion item contains the button and panel
+ * - Button: the button is the trigger for the panel
+ * - Panel: the panel is the content of the accordion item
+ * - Icon: the expanded/collapsed icon
+ */
+
+var accordionAnatomy = anatomy("accordion").parts("container", "item", "button", "panel").extend("icon");
+/**
+ * **Alert anatomy**
+ * - Title: the alert's title
+ * - Description: the alert's description
+ * - Icon: the alert's icon
+ */
+
+var alertAnatomy = anatomy("alert").parts("title", "description", "container").extend("icon");
+/**
+ * **Avatar anatomy**
+ * - Container: the container for the avatar
+ * - Label: the avatar initials text
+ * - Excess Label: the label or text that represents excess avatar count.
+ * Typically used in avatar groups.
+ * - Group: the container for the avatar group
+ */
+
+var avatarAnatomy = anatomy("avatar").parts("label", "badge", "container").extend("excessLabel", "group");
+/**
+ * **Breadcrumb anatomy**
+ * - Item: the container for a breadcrumb item
+ * - Link: the element that represents the breadcrumb link
+ * - Container: the container for the breadcrumb items
+ * - Separator: the separator between breadcrumb items
+ */
+
+var breadcrumbAnatomy = anatomy("breadcrumb").parts("link", "item", "container").extend("separator");
+anatomy("button").parts();
+var checkboxAnatomy = anatomy("checkbox").parts("control", "icon", "container").extend("label");
+anatomy("progress").parts("track", "filledTrack").extend("label");
+var drawerAnatomy = anatomy("drawer").parts("overlay", "dialogContainer", "dialog").extend("header", "closeButton", "body", "footer");
+var editableAnatomy = anatomy("editable").parts("preview", "input");
+var formAnatomy = anatomy("form").parts("container", "requiredIndicator", "helperText");
+var formErrorAnatomy = anatomy("formError").parts("text", "icon");
+var inputAnatomy = anatomy("input").parts("addon", "field", "element");
+var listAnatomy = anatomy("list").parts("container", "item", "icon");
+var menuAnatomy = anatomy("menu").parts("button", "list", "item").extend("groupTitle", "command", "divider");
+var modalAnatomy = anatomy("modal").parts("overlay", "dialogContainer", "dialog").extend("header", "closeButton", "body", "footer");
+var numberInputAnatomy = anatomy("numberinput").parts("root", "field", "stepperGroup", "stepper");
+anatomy("pininput").parts("field");
+var popoverAnatomy = anatomy("popover").parts("content", "header", "body", "footer").extend("popper", "arrow");
+var progressAnatomy = anatomy("progress").parts("label", "filledTrack", "track");
+var radioAnatomy = anatomy("radio").parts("container", "control", "label");
+var selectAnatomy = anatomy("select").parts("field", "icon");
+var sliderAnatomy = anatomy("slider").parts("container", "track", "thumb", "filledTrack");
+var statAnatomy = anatomy("stat").parts("container", "label", "helpText", "number", "icon");
+var switchAnatomy = anatomy("switch").parts("container", "track", "thumb");
+var tableAnatomy = anatomy("table").parts("table", "thead", "tbody", "tr", "th", "td", "tfoot", "caption");
+var tabsAnatomy = anatomy("tabs").parts("root", "tab", "tablist", "tabpanel", "tabpanels", "indicator");
+/**
+ * **Tag anatomy**
+ * - Container: the container for the tag
+ * - Label: the text content of the tag
+ * - closeButton: the close button for the tag
+ */
+
+var tagAnatomy = anatomy("tag").parts("container", "label", "closeButton");
+
+var baseStyleContainer$3 = {
+  borderTopWidth: "1px",
+  borderColor: "inherit",
+  _last: {
+    borderBottomWidth: "1px"
+  }
+};
+var baseStyleButton$1 = {
+  transitionProperty: "common",
+  transitionDuration: "normal",
+  fontSize: "1rem",
+  _focus: {
+    boxShadow: "outline"
+  },
+  _hover: {
+    bg: "blackAlpha.50"
+  },
+  _disabled: {
+    opacity: 0.4,
+    cursor: "not-allowed"
+  },
+  px: 4,
+  py: 2
+};
+var baseStylePanel = {
+  pt: 2,
+  px: 4,
+  pb: 5
+};
+var baseStyleIcon$5 = {
+  fontSize: "1.25em"
+};
+var baseStyle$D = {
+  container: baseStyleContainer$3,
+  button: baseStyleButton$1,
+  panel: baseStylePanel,
+  icon: baseStyleIcon$5
+};
+var Accordion = {
+  parts: accordionAnatomy.keys,
+  baseStyle: baseStyle$D
+};
+
 var baseStyle$C = {
   container: {
     px: 4,
@@ -13629,7 +12989,7 @@ function getBg(props) {
   return mode(lightBg, darkBg)(props);
 }
 
-function variantSubtle$1(props) {
+var variantSubtle$1 = props => {
   var {
     colorScheme: c
   } = props;
@@ -13641,9 +13001,9 @@ function variantSubtle$1(props) {
       color: mode(c + ".500", c + ".200")(props)
     }
   };
-}
+};
 
-function variantLeftAccent(props) {
+var variantLeftAccent = props => {
   var {
     colorScheme: c
   } = props;
@@ -13658,9 +13018,9 @@ function variantLeftAccent(props) {
       color: mode(c + ".500", c + ".200")(props)
     }
   };
-}
+};
 
-function variantTopAccent(props) {
+var variantTopAccent = props => {
   var {
     colorScheme: c
   } = props;
@@ -13675,9 +13035,9 @@ function variantTopAccent(props) {
       color: mode(c + ".500", c + ".200")(props)
     }
   };
-}
+};
 
-function variantSolid$3(props) {
+var variantSolid$3 = props => {
   var {
     colorScheme: c
   } = props;
@@ -13687,7 +13047,7 @@ function variantSolid$3(props) {
       color: mode("white", "gray.900")(props)
     }
   };
-}
+};
 
 var variants$b = {
   subtle: variantSubtle$1,
@@ -13700,7 +13060,7 @@ var defaultProps$r = {
   colorScheme: "blue"
 };
 var Alert = {
-  parts: parts$m,
+  parts: alertAnatomy.keys,
   baseStyle: baseStyle$C,
   variants: variants$b,
   defaultProps: defaultProps$r
@@ -13792,25 +13152,32 @@ var container = {
 var sizes$l = _extends$G({}, spacing$1, largeSizes, {
   container
 });
+/**
+ * @deprecated
+ * You can derive the Sizes type from the DefaultChakraTheme
+ *
+ * type Sizes = DefaultChakraTheme['sizes']
+ */
 
-var parts$l = ["container", "excessLabel", "badge", "label"];
 
-function baseStyleBadge(props) {
+var sizes$m = sizes$l;
+
+var baseStyleBadge = props => {
   return {
     transform: "translate(25%, 25%)",
     borderRadius: "full",
     border: "0.2em solid",
     borderColor: mode("white", "gray.800")(props)
   };
-}
+};
 
-function baseStyleExcessLabel(props) {
+var baseStyleExcessLabel = props => {
   return {
     bg: mode("gray.200", "whiteAlpha.400")(props)
   };
-}
+};
 
-function baseStyleContainer$3(props) {
+var baseStyleContainer$2 = props => {
   var {
     name,
     theme
@@ -13828,16 +13195,16 @@ function baseStyleContainer$3(props) {
     borderColor,
     verticalAlign: "top"
   };
-}
+};
 
 var baseStyle$B = props => ({
   badge: baseStyleBadge(props),
   excessLabel: baseStyleExcessLabel(props),
-  container: baseStyleContainer$3(props)
+  container: baseStyleContainer$2(props)
 });
 
 function getSize$3(size) {
-  var themeSize = sizes$l[size];
+  var themeSize = sizes$m[size];
   return {
     container: {
       width: size,
@@ -13869,7 +13236,7 @@ var defaultProps$q = {
   size: "md"
 };
 var Avatar = {
-  parts: parts$l,
+  parts: avatarAnatomy.keys,
   baseStyle: baseStyle$B,
   sizes: sizes$k,
   defaultProps: defaultProps$q
@@ -13883,7 +13250,7 @@ var baseStyle$A = {
   fontWeight: "bold"
 };
 
-function variantSolid$2(props) {
+var variantSolid$2 = props => {
   var {
     colorScheme: c,
     theme
@@ -13893,9 +13260,9 @@ function variantSolid$2(props) {
     bg: mode(c + ".500", dark)(props),
     color: mode("white", "whiteAlpha.800")(props)
   };
-}
+};
 
-function variantSubtle(props) {
+var variantSubtle = props => {
   var {
     colorScheme: c,
     theme
@@ -13905,9 +13272,9 @@ function variantSubtle(props) {
     bg: mode(c + ".100", darkBg)(props),
     color: mode(c + ".800", c + ".200")(props)
   };
-}
+};
 
-function variantOutline$2(props) {
+var variantOutline$2 = props => {
   var {
     colorScheme: c,
     theme
@@ -13919,7 +13286,7 @@ function variantOutline$2(props) {
     color,
     boxShadow: "inset 0 0 0px 1px " + color
   };
-}
+};
 
 var variants$a = {
   solid: variantSolid$2,
@@ -13936,7 +13303,6 @@ var Badge = {
   defaultProps: defaultProps$p
 };
 
-var parts$k = ["container", "item", "link", "separator"];
 var baseStyleLink = {
   transitionProperty: "common",
   transitionDuration: "fast",
@@ -13956,7 +13322,7 @@ var baseStyle$z = {
   link: baseStyleLink
 };
 var Breadcrumb = {
-  parts: parts$k,
+  parts: breadcrumbAnatomy.keys,
   baseStyle: baseStyle$z
 };
 
@@ -13998,7 +13364,7 @@ var baseStyle$y = {
   }
 };
 
-function variantGhost(props) {
+var variantGhost = props => {
   var {
     colorScheme: c,
     theme
@@ -14028,9 +13394,9 @@ function variantGhost(props) {
       bg: mode(c + ".100", darkActiveBg)(props)
     }
   };
-}
+};
 
-function variantOutline$1(props) {
+var variantOutline$1 = props => {
   var {
     colorScheme: c
   } = props;
@@ -14039,7 +13405,7 @@ function variantOutline$1(props) {
     border: "1px solid",
     borderColor: c === "gray" ? borderColor : "currentColor"
   }, variantGhost(props));
-}
+};
 /** Accessible color overrides for less accessible colors. */
 
 
@@ -14058,7 +13424,9 @@ var accessibleColorMap = {
   }
 };
 
-function variantSolid$1(props) {
+var variantSolid$1 = props => {
+  var _accessibleColorMap$c;
+
   var {
     colorScheme: c
   } = props;
@@ -14085,7 +13453,7 @@ function variantSolid$1(props) {
     color = "white",
     hoverBg = c + ".600",
     activeBg = c + ".700"
-  } = accessibleColorMap[c] || {};
+  } = (_accessibleColorMap$c = accessibleColorMap[c]) != null ? _accessibleColorMap$c : {};
   var background = mode(bg, c + ".200")(props);
   return {
     bg: background,
@@ -14100,9 +13468,9 @@ function variantSolid$1(props) {
       bg: mode(activeBg, c + ".400")(props)
     }
   };
-}
+};
 
-function variantLink(props) {
+var variantLink = props => {
   var {
     colorScheme: c
   } = props;
@@ -14122,7 +13490,7 @@ function variantLink(props) {
       color: mode(c + ".700", c + ".500")(props)
     }
   };
-}
+};
 
 var variantUnstyled$2 = {
   bg: "none",
@@ -14177,9 +13545,7 @@ var Button = {
   defaultProps: defaultProps$o
 };
 
-var parts$j = ["container", "control", "label", "icon"];
-
-function baseStyleControl$1(props) {
+var baseStyleControl$1 = props => {
   var {
     colorScheme: c
   } = props;
@@ -14221,7 +13587,7 @@ function baseStyleControl$1(props) {
       borderColor: mode("red.500", "red.300")(props)
     }
   };
-}
+};
 
 var baseStyleLabel$3 = {
   userSelect: "none",
@@ -14283,16 +13649,20 @@ var defaultProps$n = {
   colorScheme: "blue"
 };
 var Checkbox = {
-  parts: parts$j,
+  parts: checkboxAnatomy.keys,
   baseStyle: baseStyle$x,
   sizes: sizes$i,
   defaultProps: defaultProps$n
 };
 
-function baseStyle$w(props) {
+var $size$1 = cssVar("close-button-size");
+
+var baseStyle$w = props => {
   var hoverBg = mode("blackAlpha.100", "whiteAlpha.100")(props);
   var activeBg = mode("blackAlpha.200", "whiteAlpha.200")(props);
   return {
+    w: [$size$1.reference],
+    h: [$size$1.reference],
     borderRadius: "md",
     transitionProperty: "common",
     transitionDuration: "normal",
@@ -14311,22 +13681,19 @@ function baseStyle$w(props) {
       boxShadow: "outline"
     }
   };
-}
+};
 
 var sizes$h = {
   lg: {
-    w: "40px",
-    h: "40px",
+    [$size$1.variable]: "40px",
     fontSize: "16px"
   },
   md: {
-    w: "32px",
-    h: "32px",
+    [$size$1.variable]: "32px",
     fontSize: "12px"
   },
   sm: {
-    w: "24px",
-    h: "24px",
+    [$size$1.variable]: "24px",
     fontSize: "10px"
   }
 };
@@ -14388,125 +13755,6 @@ var Divider = {
   defaultProps: defaultProps$k
 };
 
-var parts$i = ["overlay", "dialogContainer", "dialog", "header", "closeButton", "body", "footer"];
-var baseStyleOverlay$1 = {
-  bg: "blackAlpha.600",
-  zIndex: "modal"
-};
-
-function baseStyleDialogContainer$1(props) {
-  var {
-    isCentered,
-    scrollBehavior
-  } = props;
-  return {
-    display: "flex",
-    zIndex: "modal",
-    justifyContent: "center",
-    alignItems: isCentered ? "center" : "flex-start",
-    overflow: scrollBehavior === "inside" ? "hidden" : "auto"
-  };
-}
-
-function baseStyleDialog$1(props) {
-  var {
-    scrollBehavior
-  } = props;
-  return {
-    borderRadius: "md",
-    bg: mode("white", "gray.700")(props),
-    color: "inherit",
-    my: "3.75rem",
-    zIndex: "modal",
-    maxH: scrollBehavior === "inside" ? "calc(100% - 7.5rem)" : undefined,
-    boxShadow: mode("lg", "dark-lg")(props)
-  };
-}
-
-var baseStyleHeader$2 = {
-  px: 6,
-  py: 4,
-  fontSize: "xl",
-  fontWeight: "semibold"
-};
-var baseStyleCloseButton$2 = {
-  position: "absolute",
-  top: 2,
-  insetEnd: 3
-};
-
-function baseStyleBody$2(props) {
-  var {
-    scrollBehavior
-  } = props;
-  return {
-    px: 6,
-    py: 2,
-    flex: 1,
-    overflow: scrollBehavior === "inside" ? "auto" : undefined
-  };
-}
-
-var baseStyleFooter$2 = {
-  px: 6,
-  py: 4
-};
-
-var baseStyle$s = props => ({
-  overlay: baseStyleOverlay$1,
-  dialogContainer: baseStyleDialogContainer$1(props),
-  dialog: baseStyleDialog$1(props),
-  header: baseStyleHeader$2,
-  closeButton: baseStyleCloseButton$2,
-  body: baseStyleBody$2(props),
-  footer: baseStyleFooter$2
-});
-/**
- * Since the `maxWidth` prop references theme.sizes internally,
- * we can leverage that to size our modals.
- */
-
-
-function getSize$2(value) {
-  if (value === "full") {
-    return {
-      dialog: {
-        maxW: "100vw",
-        minH: "100vh"
-      }
-    };
-  }
-
-  return {
-    dialog: {
-      maxW: value
-    }
-  };
-}
-
-var sizes$g = {
-  xs: getSize$2("xs"),
-  sm: getSize$2("sm"),
-  md: getSize$2("md"),
-  lg: getSize$2("lg"),
-  xl: getSize$2("xl"),
-  "2xl": getSize$2("2xl"),
-  "3xl": getSize$2("3xl"),
-  "4xl": getSize$2("4xl"),
-  "5xl": getSize$2("5xl"),
-  "6xl": getSize$2("6xl"),
-  full: getSize$2("full")
-};
-var defaultProps$j = {
-  size: "md"
-};
-var Modal = {
-  parts: parts$i,
-  baseStyle: baseStyle$s,
-  sizes: sizes$g,
-  defaultProps: defaultProps$j
-};
-
 function _extends$E() {
   _extends$E = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -14524,13 +13772,12 @@ function _extends$E() {
 
   return _extends$E.apply(this, arguments);
 }
-var parts$h = Modal.parts;
 /**
  * Since the `maxWidth` prop references theme.sizes internally,
  * we can leverage that to size our modals.
  */
 
-function getSize$1(value) {
+function getSize$2(value) {
   if (value === "full") {
     return {
       dialog: {
@@ -14547,17 +13794,17 @@ function getSize$1(value) {
   };
 }
 
-var baseStyleOverlay = {
+var baseStyleOverlay$1 = {
   bg: "blackAlpha.600",
   zIndex: "overlay"
 };
-var baseStyleDialogContainer = {
+var baseStyleDialogContainer$1 = {
   display: "flex",
   zIndex: "modal",
   justifyContent: "center"
 };
 
-function baseStyleDialog(props) {
+var baseStyleDialog$1 = props => {
   var {
     isFullHeight
   } = props;
@@ -14570,59 +13817,58 @@ function baseStyleDialog(props) {
     color: "inherit",
     boxShadow: mode("lg", "dark-lg")(props)
   });
-}
+};
 
-var baseStyleHeader$1 = {
+var baseStyleHeader$2 = {
   px: 6,
   py: 4,
   fontSize: "xl",
   fontWeight: "semibold"
 };
-var baseStyleCloseButton$1 = {
+var baseStyleCloseButton$2 = {
   position: "absolute",
   top: 2,
   insetEnd: 3
 };
-var baseStyleBody$1 = {
+var baseStyleBody$2 = {
   px: 6,
   py: 2,
   flex: 1,
   overflow: "auto"
 };
-var baseStyleFooter$1 = {
+var baseStyleFooter$2 = {
   px: 6,
   py: 4
 };
 
-var baseStyle$r = props => ({
-  overlay: baseStyleOverlay,
-  dialogContainer: baseStyleDialogContainer,
-  dialog: baseStyleDialog(props),
-  header: baseStyleHeader$1,
-  closeButton: baseStyleCloseButton$1,
-  body: baseStyleBody$1,
-  footer: baseStyleFooter$1
+var baseStyle$s = props => ({
+  overlay: baseStyleOverlay$1,
+  dialogContainer: baseStyleDialogContainer$1,
+  dialog: baseStyleDialog$1(props),
+  header: baseStyleHeader$2,
+  closeButton: baseStyleCloseButton$2,
+  body: baseStyleBody$2,
+  footer: baseStyleFooter$2
 });
 
-var sizes$f = {
-  xs: getSize$1("xs"),
-  sm: getSize$1("md"),
-  md: getSize$1("lg"),
-  lg: getSize$1("2xl"),
-  xl: getSize$1("4xl"),
-  full: getSize$1("full")
+var sizes$g = {
+  xs: getSize$2("xs"),
+  sm: getSize$2("md"),
+  md: getSize$2("lg"),
+  lg: getSize$2("2xl"),
+  xl: getSize$2("4xl"),
+  full: getSize$2("full")
 };
-var defaultProps$i = {
+var defaultProps$j = {
   size: "xs"
 };
 var Drawer = {
-  parts: parts$h,
-  baseStyle: baseStyle$r,
-  sizes: sizes$f,
-  defaultProps: defaultProps$i
+  parts: drawerAnatomy.keys,
+  baseStyle: baseStyle$s,
+  sizes: sizes$g,
+  defaultProps: defaultProps$j
 };
 
-var parts$g = ["preview", "input"];
 var baseStylePreview = {
   borderRadius: "md",
   py: "3px",
@@ -14642,44 +13888,46 @@ var baseStyleInput = {
     opacity: 0.6
   }
 };
-var baseStyle$q = {
+var baseStyle$r = {
   preview: baseStylePreview,
   input: baseStyleInput
 };
 var Editable = {
-  parts: parts$g,
-  baseStyle: baseStyle$q
+  parts: editableAnatomy.keys,
+  baseStyle: baseStyle$r
 };
 
-var parts$f = ["requiredIndicator", "helperText"];
-
-function baseStyleRequiredIndicator(props) {
+var baseStyleRequiredIndicator = props => {
   return {
     marginStart: 1,
     color: mode("red.500", "red.300")(props)
   };
-}
+};
 
-function baseStyleHelperText(props) {
+var baseStyleHelperText = props => {
   return {
     mt: 2,
     color: mode("gray.500", "whiteAlpha.600")(props),
     lineHeight: "normal",
     fontSize: "sm"
   };
-}
+};
 
-var baseStyle$p = props => ({
+var baseStyle$q = props => ({
+  container: {
+    width: "100%",
+    position: "relative"
+  },
   requiredIndicator: baseStyleRequiredIndicator(props),
   helperText: baseStyleHelperText(props)
 });
 
 var Form = {
-  parts: parts$f,
-  baseStyle: baseStyle$p
+  parts: formAnatomy.keys,
+  baseStyle: baseStyle$q
 };
 
-var baseStyle$o = {
+var baseStyle$p = {
   fontSize: "md",
   marginEnd: 3,
   mb: 2,
@@ -14692,14 +13940,14 @@ var baseStyle$o = {
   }
 };
 var FormLabel = {
-  baseStyle: baseStyle$o
+  baseStyle: baseStyle$p
 };
 
-var baseStyle$n = {
+var baseStyle$o = {
   fontFamily: "heading",
   fontWeight: "bold"
 };
-var sizes$e = {
+var sizes$f = {
   "4xl": {
     fontSize: ["6xl", null, "7xl"],
     lineHeight: 1
@@ -14733,17 +13981,16 @@ var sizes$e = {
     lineHeight: 1.2
   }
 };
-var defaultProps$h = {
+var defaultProps$i = {
   size: "xl"
 };
 var Heading = {
-  baseStyle: baseStyle$n,
-  sizes: sizes$e,
-  defaultProps: defaultProps$h
+  baseStyle: baseStyle$o,
+  sizes: sizes$f,
+  defaultProps: defaultProps$i
 };
 
-var parts$e = ["field", "addon"];
-var baseStyle$m = {
+var baseStyle$n = {
   field: {
     width: "100%",
     minWidth: 0,
@@ -14780,7 +14027,7 @@ var size = {
     borderRadius: "sm"
   }
 };
-var sizes$d = {
+var sizes$e = {
   lg: {
     field: size.lg,
     addon: size.lg
@@ -14810,7 +14057,7 @@ function getDefaults(props) {
   };
 }
 
-function variantOutline(props) {
+var variantOutline = props => {
   var {
     theme
   } = props;
@@ -14850,9 +14097,9 @@ function variantOutline(props) {
       bg: mode("gray.100", "whiteAlpha.300")(props)
     }
   };
-}
+};
 
-function variantFilled(props) {
+var variantFilled = props => {
   var {
     theme
   } = props;
@@ -14890,9 +14137,9 @@ function variantFilled(props) {
       bg: mode("gray.100", "whiteAlpha.50")(props)
     }
   };
-}
+};
 
-function variantFlushed(props) {
+var variantFlushed = props => {
   var {
     theme
   } = props;
@@ -14928,7 +14175,7 @@ function variantFlushed(props) {
       bg: "transparent"
     }
   };
-}
+};
 
 var variantUnstyled$1 = {
   field: {
@@ -14948,19 +14195,19 @@ var variants$6 = {
   flushed: variantFlushed,
   unstyled: variantUnstyled$1
 };
-var defaultProps$g = {
+var defaultProps$h = {
   size: "md",
   variant: "outline"
 };
 var Input$2 = {
-  parts: parts$e,
-  baseStyle: baseStyle$m,
-  sizes: sizes$d,
+  parts: inputAnatomy.keys,
+  baseStyle: baseStyle$n,
+  sizes: sizes$e,
   variants: variants$6,
-  defaultProps: defaultProps$g
+  defaultProps: defaultProps$h
 };
 
-function baseStyle$l(props) {
+var baseStyle$m = props => {
   return {
     bg: mode("gray.100", "whiteAlpha")(props),
     borderRadius: "md",
@@ -14972,13 +14219,13 @@ function baseStyle$l(props) {
     px: "0.4em",
     whiteSpace: "nowrap"
   };
-}
-
-var Kbd = {
-  baseStyle: baseStyle$l
 };
 
-var baseStyle$k = {
+var Kbd = {
+  baseStyle: baseStyle$m
+};
+
+var baseStyle$l = {
   transitionProperty: "common",
   transitionDuration: "fast",
   transitionTimingFunction: "ease-out",
@@ -14994,30 +14241,25 @@ var baseStyle$k = {
   }
 };
 var Link$1 = {
-  baseStyle: baseStyle$k
+  baseStyle: baseStyle$l
 };
 
-var parts$d = ["container", "item", "icon"];
-var baseStyleContainer$2 = {};
-var baseStyleItem$1 = {};
 var baseStyleIcon$3 = {
   marginEnd: "0.5rem",
   display: "inline",
   verticalAlign: "text-bottom"
 };
-var baseStyle$j = {
-  container: baseStyleContainer$2,
-  item: baseStyleItem$1,
+var baseStyle$k = {
+  container: {},
+  item: {},
   icon: baseStyleIcon$3
 };
 var List = {
-  parts: parts$d,
-  baseStyle: baseStyle$j
+  parts: listAnatomy.keys,
+  baseStyle: baseStyle$k
 };
 
-var parts$c = ["item", "command", "list", "button", "groupTitle", "divider"];
-
-function baseStyleList(props) {
+var baseStyleList = props => {
   return {
     bg: mode("#fff", "gray.700")(props),
     boxShadow: mode("sm", "dark-lg")(props),
@@ -15028,9 +14270,9 @@ function baseStyleList(props) {
     borderRadius: "md",
     borderWidth: "1px"
   };
-}
+};
 
-function baseStyleItem(props) {
+var baseStyleItem = props => {
   return {
     py: "0.4rem",
     px: "0.8rem",
@@ -15051,7 +14293,7 @@ function baseStyleItem(props) {
       cursor: "not-allowed"
     }
   };
-}
+};
 
 var baseStyleGroupTitle = {
   mx: 4,
@@ -15074,7 +14316,7 @@ var baseStyleButton = {
   transitionDuration: "normal"
 };
 
-var baseStyle$i = props => ({
+var baseStyle$j = props => ({
   button: baseStyleButton,
   list: baseStyleList(props),
   item: baseStyleItem(props),
@@ -15084,8 +14326,127 @@ var baseStyle$i = props => ({
 });
 
 var Menu$1 = {
-  parts: parts$c,
-  baseStyle: baseStyle$i
+  parts: menuAnatomy.keys,
+  baseStyle: baseStyle$j
+};
+
+var baseStyleOverlay = {
+  bg: "blackAlpha.600",
+  zIndex: "modal"
+};
+
+var baseStyleDialogContainer = props => {
+  var {
+    isCentered,
+    scrollBehavior
+  } = props;
+  return {
+    display: "flex",
+    zIndex: "modal",
+    justifyContent: "center",
+    alignItems: isCentered ? "center" : "flex-start",
+    overflow: scrollBehavior === "inside" ? "hidden" : "auto"
+  };
+};
+
+var baseStyleDialog = props => {
+  var {
+    scrollBehavior
+  } = props;
+  return {
+    borderRadius: "md",
+    bg: mode("white", "gray.700")(props),
+    color: "inherit",
+    my: "3.75rem",
+    zIndex: "modal",
+    maxH: scrollBehavior === "inside" ? "calc(100% - 7.5rem)" : undefined,
+    boxShadow: mode("lg", "dark-lg")(props)
+  };
+};
+
+var baseStyleHeader$1 = {
+  px: 6,
+  py: 4,
+  fontSize: "xl",
+  fontWeight: "semibold"
+};
+var baseStyleCloseButton$1 = {
+  position: "absolute",
+  top: 2,
+  insetEnd: 3
+};
+
+var baseStyleBody$1 = props => {
+  var {
+    scrollBehavior
+  } = props;
+  return {
+    px: 6,
+    py: 2,
+    flex: 1,
+    overflow: scrollBehavior === "inside" ? "auto" : undefined
+  };
+};
+
+var baseStyleFooter$1 = {
+  px: 6,
+  py: 4
+};
+
+var baseStyle$i = props => ({
+  overlay: baseStyleOverlay,
+  dialogContainer: baseStyleDialogContainer(props),
+  dialog: baseStyleDialog(props),
+  header: baseStyleHeader$1,
+  closeButton: baseStyleCloseButton$1,
+  body: baseStyleBody$1(props),
+  footer: baseStyleFooter$1
+});
+/**
+ * Since the `maxWidth` prop references theme.sizes internally,
+ * we can leverage that to size our modals.
+ */
+
+
+function getSize$1(value) {
+  if (value === "full") {
+    return {
+      dialog: {
+        maxW: "100vw",
+        minH: "100vh",
+        my: 0
+      }
+    };
+  }
+
+  return {
+    dialog: {
+      maxW: value
+    }
+  };
+}
+
+var sizes$d = {
+  xs: getSize$1("xs"),
+  sm: getSize$1("sm"),
+  md: getSize$1("md"),
+  lg: getSize$1("lg"),
+  xl: getSize$1("xl"),
+  "2xl": getSize$1("2xl"),
+  "3xl": getSize$1("3xl"),
+  "4xl": getSize$1("4xl"),
+  "5xl": getSize$1("5xl"),
+  "6xl": getSize$1("6xl"),
+  full: getSize$1("full")
+};
+var defaultProps$g = {
+  size: "md"
+};
+var Modal = {
+  parts: modalAnatomy.keys,
+  baseStyle: baseStyle$i,
+  sizes: sizes$d,
+  defaultProps: defaultProps$g
 };
 
 var typography = {
@@ -15146,8 +14507,23 @@ var typography = {
     "9xl": "8rem"
   }
 };
+/**
+ * @deprecated
+ * You can derive the Typography type from the DefaultChakraTheme
+ *
+ * type Typography = Pick<
+ *   DefaultChakraTheme,
+ *   | "letterSpacings"
+ *   | "lineHeights"
+ *   | "fontWeights"
+ *   | "fonts"
+ *   | "fontSizes"
+ *  >
+ */
 
-var _Input$baseStyle;
+var typography$1 = typography;
+
+var _Input$baseStyle$fiel, _Input$baseStyle;
 
 function _extends$D() {
   _extends$D = Object.assign || function (target) {
@@ -15166,21 +14542,23 @@ function _extends$D() {
 
   return _extends$D.apply(this, arguments);
 }
-var parts$b = ["root", "field", "stepper", "stepperGroup"];
 var {
   variants: variants$5,
   defaultProps: defaultProps$f
 } = Input$2;
+var $stepperWidth = cssVar("number-input-stepper-width");
+var $inputPadding = cssVar("number-input-input-padding");
+var inputPaddingValue = calc($stepperWidth).add("0.5rem").toString();
 var baseStyleRoot$1 = {
-  "--number-input-stepper-width": "24px",
-  "--number-input-field-padding": "calc(var(--number-input-stepper-width) + 0.5rem)"
+  [$stepperWidth.variable]: "24px",
+  [$inputPadding.variable]: inputPaddingValue
 };
-var baseStyleField$1 = (_Input$baseStyle = Input$2.baseStyle) == null ? void 0 : _Input$baseStyle.field;
+var baseStyleField$1 = (_Input$baseStyle$fiel = (_Input$baseStyle = Input$2.baseStyle) == null ? void 0 : _Input$baseStyle.field) != null ? _Input$baseStyle$fiel : {};
 var baseStyleStepperGroup = {
-  width: "var(--number-input-stepper-width)"
+  width: [$stepperWidth.reference]
 };
 
-function baseStyleStepper(props) {
+var baseStyleStepper = props => {
   return {
     borderStart: "1px solid",
     borderStartColor: mode("inherit", "whiteAlpha.300")(props),
@@ -15193,7 +14571,7 @@ function baseStyleStepper(props) {
       cursor: "not-allowed"
     }
   };
-}
+};
 
 var baseStyle$h = props => ({
   root: baseStyleRoot$1,
@@ -15203,6 +14581,8 @@ var baseStyle$h = props => ({
 });
 
 function getSize(size) {
+  var _sizeStyle$field$font, _sizeStyle$field;
+
   var sizeStyle = Input$2.sizes[size];
   var radius = {
     lg: "md",
@@ -15210,14 +14590,18 @@ function getSize(size) {
     sm: "sm",
     xs: "sm"
   };
-  var resolvedFontSize = typography.fontSizes[sizeStyle.field.fontSize];
+
+  var _fontSize = (_sizeStyle$field$font = (_sizeStyle$field = sizeStyle.field) == null ? void 0 : _sizeStyle$field.fontSize) != null ? _sizeStyle$field$font : "md";
+
+  var fontSize = typography$1.fontSizes[_fontSize.toString()];
+
   return {
     field: _extends$D({}, sizeStyle.field, {
-      paddingInlineEnd: "var(--number-input-field-padding)",
+      paddingInlineEnd: $inputPadding.reference,
       verticalAlign: "top"
     }),
     stepper: {
-      fontSize: "calc(" + resolvedFontSize + " * 0.75)",
+      fontSize: calc(fontSize).multiply(0.75).toString(),
       _first: {
         borderTopEndRadius: radius[size]
       },
@@ -15237,12 +14621,14 @@ var sizes$c = {
   lg: getSize("lg")
 };
 var NumberInput$1 = {
-  parts: parts$b,
+  parts: numberInputAnatomy.keys,
   baseStyle: baseStyle$h,
   sizes: sizes$c,
   variants: variants$5,
   defaultProps: defaultProps$f
 };
+
+var _Input$variants$unsty$1;
 
 function _extends$C() {
   _extends$C = Object.assign || function (target) {
@@ -15293,10 +14679,22 @@ var sizes$b = {
   }
 };
 var variants$4 = {
-  outline: props => Input$2.variants.outline(props).field,
-  flushed: props => Input$2.variants.flushed(props).field,
-  filled: props => Input$2.variants.filled(props).field,
-  unstyled: Input$2.variants.unstyled.field
+  outline: props => {
+    var _Input$variants$outli;
+
+    return (_Input$variants$outli = Input$2.variants.outline(props).field) != null ? _Input$variants$outli : {};
+  },
+  flushed: props => {
+    var _Input$variants$flush;
+
+    return (_Input$variants$flush = Input$2.variants.flushed(props).field) != null ? _Input$variants$flush : {};
+  },
+  filled: props => {
+    var _Input$variants$fille;
+
+    return (_Input$variants$fille = Input$2.variants.filled(props).field) != null ? _Input$variants$fille : {};
+  },
+  unstyled: (_Input$variants$unsty$1 = Input$2.variants.unstyled.field) != null ? _Input$variants$unsty$1 : {}
 };
 var defaultProps$e = Input$2.defaultProps;
 var PinInput = {
@@ -15306,19 +14704,21 @@ var PinInput = {
   defaultProps: defaultProps$e
 };
 
-var parts$a = ["popper", "content", "header", "body", "footer", "arrow"];
+var $popperBg = cssVar("popper-bg");
+var $arrowBg$1 = cssVar("popper-arrow-bg");
+var $arrowShadowColor = cssVar("popper-arrow-shadow-color");
 var baseStylePopper = {
   zIndex: 10
 };
 
-function baseStyleContent(props) {
+var baseStyleContent = props => {
   var bg = mode("white", "gray.700")(props);
   var shadowColor = mode("gray.200", "whiteAlpha.300")(props);
   return {
-    "--popover-bg": "colors." + bg,
-    bg: "var(--popover-bg)",
-    "--popper-arrow-bg": "var(--popover-bg)",
-    "--popper-arrow-shadow-color": "colors." + shadowColor,
+    [$popperBg.variable]: "colors." + bg,
+    bg: $popperBg.reference,
+    [$arrowBg$1.variable]: $popperBg.reference,
+    [$arrowShadowColor.variable]: "colors." + shadowColor,
     width: "xs",
     border: "1px solid",
     borderColor: "inherit",
@@ -15330,7 +14730,7 @@ function baseStyleContent(props) {
       boxShadow: "outline"
     }
   };
-}
+};
 
 var baseStyleHeader = {
   px: 3,
@@ -15357,7 +14757,7 @@ var baseStyle$f = props => ({
 });
 
 var Popover = {
-  parts: parts$a,
+  parts: popoverAnatomy.keys,
   baseStyle: baseStyle$f
 };
 
@@ -15378,7 +14778,6 @@ function _extends$B() {
 
   return _extends$B.apply(this, arguments);
 }
-var parts$9 = ["track", "filledTrack", "label"];
 
 function filledStyle(props) {
   var {
@@ -15405,18 +14804,18 @@ var baseStyleLabel$2 = {
   color: "white"
 };
 
-function baseStyleTrack$2(props) {
+var baseStyleTrack$2 = props => {
   return {
     bg: mode("gray.100", "whiteAlpha.300")(props)
   };
-}
+};
 
-function baseStyleFilledTrack$1(props) {
+var baseStyleFilledTrack$1 = props => {
   return _extends$B({
     transitionProperty: "common",
     transitionDuration: "slow"
   }, filledStyle(props));
-}
+};
 
 var baseStyle$e = props => ({
   label: baseStyleLabel$2,
@@ -15451,7 +14850,7 @@ var defaultProps$d = {
   colorScheme: "blue"
 };
 var Progress = {
-  parts: parts$9,
+  parts: progressAnatomy.keys,
   sizes: sizes$a,
   baseStyle: baseStyle$e,
   defaultProps: defaultProps$d
@@ -15474,11 +14873,10 @@ function _extends$A() {
 
   return _extends$A.apply(this, arguments);
 }
-var parts$8 = ["container", "control", "label"];
 
-function baseStyleControl(props) {
+var baseStyleControl = props => {
   var {
-    control
+    control = {}
   } = Checkbox.baseStyle(props);
   return _extends$A({}, control, {
     borderRadius: "full",
@@ -15494,7 +14892,7 @@ function baseStyleControl(props) {
       }
     })
   });
-}
+};
 
 var baseStyle$d = props => ({
   label: Checkbox.baseStyle(props).label,
@@ -15535,7 +14933,7 @@ var defaultProps$c = {
   colorScheme: "blue"
 };
 var Radio = {
-  parts: parts$8,
+  parts: radioAnatomy.keys,
   baseStyle: baseStyle$d,
   sizes: sizes$9,
   defaultProps: defaultProps$c
@@ -15558,10 +14956,10 @@ function _extends$z() {
 
   return _extends$z.apply(this, arguments);
 }
-var parts$7 = ["field", "icon"];
 
-function baseStyleField(props) {
+var baseStyleField = props => {
   return _extends$z({}, Input$2.baseStyle.field, {
+    bg: mode("white", "gray.700")(props),
     appearance: "none",
     paddingBottom: "1px",
     lineHeight: "normal",
@@ -15569,7 +14967,7 @@ function baseStyleField(props) {
       bg: mode("white", "gray.700")(props)
     }
   });
-}
+};
 
 var baseStyleIcon$2 = {
   width: "1.5rem",
@@ -15588,15 +14986,16 @@ var baseStyle$c = props => ({
   icon: baseStyleIcon$2
 });
 
-var sizes$8 = lodash_mergewith({}, Input$2.sizes, {
-  xs: {
+var sizes$8 = _extends$z({}, Input$2.sizes, {
+  xs: _extends$z({}, Input$2.sizes.xs, {
     icon: {
       insetEnd: "0.25rem"
     }
-  }
+  })
 });
-var Select$1 = {
-  parts: parts$7,
+
+var Select$2 = {
+  parts: selectAnatomy.keys,
   baseStyle: baseStyle$c,
   sizes: sizes$8,
   variants: Input$2.variants,
@@ -15672,7 +15071,6 @@ function _extends$y() {
 
   return _extends$y.apply(this, arguments);
 }
-var parts$6 = ["container", "thumb", "track", "filledTrack"];
 
 function thumbOrientation(props) {
   return orient({
@@ -15699,6 +15097,9 @@ var baseStyleContainer$1 = props => {
     orientation
   } = props;
   return _extends$y({
+    display: "inline-block",
+    position: "relative",
+    cursor: "pointer",
     _disabled: {
       opacity: 0.6,
       cursor: "default",
@@ -15715,18 +15116,24 @@ var baseStyleContainer$1 = props => {
   }));
 };
 
-function baseStyleTrack$1(props) {
+var baseStyleTrack$1 = props => {
   return {
+    overflow: "hidden",
     borderRadius: "sm",
     bg: mode("gray.200", "whiteAlpha.200")(props),
     _disabled: {
       bg: mode("gray.300", "whiteAlpha.300")(props)
     }
   };
-}
+};
 
-function baseStyleThumb$1(props) {
+var baseStyleThumb$1 = props => {
   return _extends$y({
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    position: "absolute",
+    outline: 0,
     zIndex: 1,
     borderRadius: "full",
     bg: "white",
@@ -15742,16 +15149,18 @@ function baseStyleThumb$1(props) {
       bg: "gray.300"
     }
   }, thumbOrientation(props));
-}
+};
 
-function baseStyleFilledTrack(props) {
+var baseStyleFilledTrack = props => {
   var {
     colorScheme: c
   } = props;
   return {
+    width: "inherit",
+    height: "inherit",
     bg: mode(c + ".500", c + ".200")(props)
   };
-}
+};
 
 var baseStyle$9 = props => ({
   container: baseStyleContainer$1(props),
@@ -15760,7 +15169,7 @@ var baseStyle$9 = props => ({
   filledTrack: baseStyleFilledTrack(props)
 });
 
-function sizeLg(props) {
+var sizeLg = props => {
   return {
     thumb: {
       w: "16px",
@@ -15776,9 +15185,9 @@ function sizeLg(props) {
       }
     })
   };
-}
+};
 
-function sizeMd(props) {
+var sizeMd = props => {
   return {
     thumb: {
       w: "14px",
@@ -15794,9 +15203,9 @@ function sizeMd(props) {
       }
     })
   };
-}
+};
 
-function sizeSm(props) {
+var sizeSm = props => {
   return {
     thumb: {
       w: "10px",
@@ -15812,7 +15221,7 @@ function sizeSm(props) {
       }
     })
   };
-}
+};
 
 var sizes$7 = {
   lg: sizeLg,
@@ -15824,31 +15233,32 @@ var defaultProps$b = {
   colorScheme: "blue"
 };
 var Slider = {
-  parts: parts$6,
+  parts: sliderAnatomy.keys,
   sizes: sizes$7,
   baseStyle: baseStyle$9,
   defaultProps: defaultProps$b
 };
 
+var $size = cssVar("spinner-size");
 var baseStyle$8 = {
-  width: "var(--spinner-size)",
-  height: "var(--spinner-size)"
+  width: [$size.reference],
+  height: [$size.reference]
 };
 var sizes$6 = {
   xs: {
-    "--spinner-size": "0.75rem"
+    [$size.variable]: "0.75rem"
   },
   sm: {
-    "--spinner-size": "1rem"
+    [$size.variable]: "1rem"
   },
   md: {
-    "--spinner-size": "1.5rem"
+    [$size.variable]: "1.5rem"
   },
   lg: {
-    "--spinner-size": "2rem"
+    [$size.variable]: "2rem"
   },
   xl: {
-    "--spinner-size": "3rem"
+    [$size.variable]: "3rem"
   }
 };
 var defaultProps$a = {
@@ -15860,7 +15270,6 @@ var Spinner = {
   defaultProps: defaultProps$a
 };
 
-var parts$5 = ["label", "number", "icon", "helpText"];
 var baseStyleLabel$1 = {
   fontWeight: "medium"
 };
@@ -15879,6 +15288,7 @@ var baseStyleIcon$1 = {
   verticalAlign: "middle"
 };
 var baseStyle$7 = {
+  container: {},
   label: baseStyleLabel$1,
   helpText: baseStyleHelpText,
   number: baseStyleNumber,
@@ -15901,23 +15311,27 @@ var defaultProps$9 = {
   size: "md"
 };
 var Stat = {
-  parts: parts$5,
+  parts: statAnatomy.keys,
   baseStyle: baseStyle$7,
   sizes: sizes$5,
   defaultProps: defaultProps$9
 };
 
-var parts$4 = ["container", "track", "thumb"];
+var $width = cssVar("switch-track-width");
+var $height = cssVar("switch-track-height");
+var $diff = cssVar("switch-track-diff");
+var diffValue = calc.subtract($width, $height);
+var $translateX = cssVar("switch-thumb-x");
 
-function baseStyleTrack(props) {
+var baseStyleTrack = props => {
   var {
     colorScheme: c
   } = props;
   return {
     borderRadius: "full",
     p: "2px",
-    width: "var(--slider-track-width)",
-    height: "var(--slider-track-height)",
+    width: [$width.reference],
+    height: [$height.reference],
     transitionProperty: "common",
     transitionDuration: "fast",
     bg: mode("gray.300", "whiteAlpha.400")(props),
@@ -15932,26 +15346,26 @@ function baseStyleTrack(props) {
       bg: mode(c + ".500", c + ".200")(props)
     }
   };
-}
+};
 
 var baseStyleThumb = {
   bg: "white",
   transitionProperty: "transform",
   transitionDuration: "normal",
   borderRadius: "inherit",
-  width: "var(--slider-track-height)",
-  height: "var(--slider-track-height)",
+  width: [$height.reference],
+  height: [$height.reference],
   _checked: {
-    transform: "translateX(var(--slider-thumb-x))"
+    transform: "translateX(" + $translateX.reference + ")"
   }
 };
 
 var baseStyle$6 = props => ({
   container: {
-    "--slider-track-diff": "calc(var(--slider-track-width) - var(--slider-track-height))",
-    "--slider-thumb-x": "var(--slider-track-diff)",
+    [$diff.variable]: diffValue,
+    [$translateX.variable]: $diff.reference,
     _rtl: {
-      "--slider-thumb-x": "calc(-1 * var(--slider-track-diff))"
+      [$translateX.variable]: calc($diff).negate().toString()
     }
   },
   track: baseStyleTrack(props),
@@ -15961,20 +15375,20 @@ var baseStyle$6 = props => ({
 var sizes$4 = {
   sm: {
     container: {
-      "--slider-track-width": "1.375rem",
-      "--slider-track-height": "0.75rem"
+      [$width.variable]: "1.375rem",
+      [$height.variable]: "0.75rem"
     }
   },
   md: {
     container: {
-      "--slider-track-width": "1.875rem",
-      "--slider-track-height": "1rem"
+      [$width.variable]: "1.875rem",
+      [$height.variable]: "1rem"
     }
   },
   lg: {
     container: {
-      "--slider-track-width": "2.875rem",
-      "--slider-track-height": "1.5rem"
+      [$width.variable]: "2.875rem",
+      [$height.variable]: "1.5rem"
     }
   }
 };
@@ -15983,7 +15397,7 @@ var defaultProps$8 = {
   colorScheme: "blue"
 };
 var Switch$1 = {
-  parts: parts$4,
+  parts: switchAnatomy.keys,
   baseStyle: baseStyle$6,
   sizes: sizes$4,
   defaultProps: defaultProps$8
@@ -16006,7 +15420,6 @@ function _extends$x() {
 
   return _extends$x.apply(this, arguments);
 }
-var parts$3 = ["table", "thead", "tbody", "tr", "th", "td", "caption"];
 var baseStyle$5 = {
   table: {
     fontVariantNumeric: "lining-nums tabular-nums",
@@ -16036,7 +15449,7 @@ var numericStyles = {
   }
 };
 
-var simpleVariant = props => {
+var variantSimple = props => {
   var {
     colorScheme: c
   } = props;
@@ -16065,7 +15478,7 @@ var simpleVariant = props => {
   };
 };
 
-var stripedVariant = props => {
+var variantStripe = props => {
   var {
     colorScheme: c
   } = props;
@@ -16108,8 +15521,8 @@ var stripedVariant = props => {
 };
 
 var variants$3 = {
-  simple: simpleVariant,
-  striped: stripedVariant,
+  simple: variantSimple,
+  striped: variantStripe,
   unstyled: {}
 };
 var sizes$3 = {
@@ -16175,25 +15588,23 @@ var defaultProps$7 = {
   colorScheme: "gray"
 };
 var Table = {
-  parts: parts$3,
+  parts: tableAnatomy.keys,
   baseStyle: baseStyle$5,
   variants: variants$3,
   sizes: sizes$3,
   defaultProps: defaultProps$7
 };
 
-var parts$2 = ["root", "tablist", "tab", "tabpanels", "tabpanel", "indicator"];
-
-function baseStyleRoot(props) {
+var baseStyleRoot = props => {
   var {
     orientation
   } = props;
   return {
     display: orientation === "vertical" ? "flex" : "block"
   };
-}
+};
 
-function baseStyleTab(props) {
+var baseStyleTab = props => {
   var {
     isFitted
   } = props;
@@ -16206,9 +15617,9 @@ function baseStyleTab(props) {
       boxShadow: "outline"
     }
   };
-}
+};
 
-function baseStyleTablist(props) {
+var baseStyleTablist = props => {
   var {
     align = "start",
     orientation
@@ -16222,7 +15633,7 @@ function baseStyleTablist(props) {
     justifyContent: alignments[align],
     flexDirection: orientation === "vertical" ? "column" : "row"
   };
-}
+};
 
 var baseStyleTabpanel = {
   p: 4
@@ -16259,7 +15670,7 @@ var sizes$2 = {
   }
 };
 
-function variantLine(props) {
+var variantLine = props => {
   var {
     colorScheme: c,
     orientation
@@ -16289,9 +15700,9 @@ function variantLine(props) {
       }
     }
   };
-}
+};
 
-function variantEnclosed(props) {
+var variantEnclosed = props => {
   var {
     colorScheme: c
   } = props;
@@ -16313,9 +15724,9 @@ function variantEnclosed(props) {
       borderColor: "inherit"
     }
   };
-}
+};
 
-function variantEnclosedColored(props) {
+var variantEnclosedColored = props => {
   var {
     colorScheme: c
   } = props;
@@ -16342,9 +15753,9 @@ function variantEnclosedColored(props) {
       borderColor: "inherit"
     }
   };
-}
+};
 
-function variantSoftRounded(props) {
+var variantSoftRounded = props => {
   var {
     colorScheme: c,
     theme
@@ -16360,9 +15771,9 @@ function variantSoftRounded(props) {
       }
     }
   };
-}
+};
 
-function variantSolidRounded(props) {
+var variantSolidRounded = props => {
   var {
     colorScheme: c
   } = props;
@@ -16377,7 +15788,7 @@ function variantSolidRounded(props) {
       }
     }
   };
-}
+};
 
 var variantUnstyled = {};
 var variants$2 = {
@@ -16394,14 +15805,13 @@ var defaultProps$6 = {
   colorScheme: "blue"
 };
 var Tabs = {
-  parts: parts$2,
+  parts: tabsAnatomy.keys,
   baseStyle: baseStyle$4,
   sizes: sizes$2,
   variants: variants$2,
   defaultProps: defaultProps$6
 };
 
-var parts$1 = ["container", "label", "closeButton"];
 var baseStyleContainer = {
   fontWeight: "medium",
   lineHeight: 1.2,
@@ -16411,7 +15821,8 @@ var baseStyleContainer = {
   }
 };
 var baseStyleLabel = {
-  lineHeight: 1.2
+  lineHeight: 1.2,
+  overflow: "visible"
 };
 var baseStyleCloseButton = {
   fontSize: "18px",
@@ -16492,12 +15903,14 @@ var defaultProps$5 = {
   colorScheme: "gray"
 };
 var Tag = {
-  parts: parts$1,
+  parts: tagAnatomy.keys,
   variants: variants$1,
   baseStyle: baseStyle$3,
   sizes: sizes$1,
   defaultProps: defaultProps$5
 };
+
+var _Input$variants$unsty, _Input$sizes$xs$field, _Input$sizes$sm$field, _Input$sizes$md$field, _Input$sizes$lg$field;
 
 function _extends$w() {
   _extends$w = Object.assign || function (target) {
@@ -16525,16 +15938,28 @@ var baseStyle$2 = _extends$w({}, Input$2.baseStyle.field, {
 });
 
 var variants = {
-  outline: props => Input$2.variants.outline(props).field,
-  flushed: props => Input$2.variants.flushed(props).field,
-  filled: props => Input$2.variants.filled(props).field,
-  unstyled: Input$2.variants.unstyled.field
+  outline: props => {
+    var _Input$variants$outli;
+
+    return (_Input$variants$outli = Input$2.variants.outline(props).field) != null ? _Input$variants$outli : {};
+  },
+  flushed: props => {
+    var _Input$variants$flush;
+
+    return (_Input$variants$flush = Input$2.variants.flushed(props).field) != null ? _Input$variants$flush : {};
+  },
+  filled: props => {
+    var _Input$variants$fille;
+
+    return (_Input$variants$fille = Input$2.variants.filled(props).field) != null ? _Input$variants$fille : {};
+  },
+  unstyled: (_Input$variants$unsty = Input$2.variants.unstyled.field) != null ? _Input$variants$unsty : {}
 };
 var sizes = {
-  xs: Input$2.sizes.xs.field,
-  sm: Input$2.sizes.sm.field,
-  md: Input$2.sizes.md.field,
-  lg: Input$2.sizes.lg.field
+  xs: (_Input$sizes$xs$field = Input$2.sizes.xs.field) != null ? _Input$sizes$xs$field : {},
+  sm: (_Input$sizes$sm$field = Input$2.sizes.sm.field) != null ? _Input$sizes$sm$field : {},
+  md: (_Input$sizes$md$field = Input$2.sizes.md.field) != null ? _Input$sizes$md$field : {},
+  lg: (_Input$sizes$lg$field = Input$2.sizes.lg.field) != null ? _Input$sizes$lg$field : {}
 };
 var defaultProps$4 = {
   size: "md",
@@ -16547,14 +15972,17 @@ var Textarea$1 = {
   defaultProps: defaultProps$4
 };
 
-function baseStyle$1(props) {
+var $bg = cssVar("tooltip-bg");
+var $arrowBg = cssVar("popper-arrow-bg");
+
+var baseStyle$1 = props => {
   var bg = mode("gray.700", "gray.300")(props);
   return {
-    "--tooltip-bg": "colors." + bg,
+    [$bg.variable]: "colors." + bg,
     px: "8px",
     py: "2px",
-    bg: "var(--tooltip-bg)",
-    "--popper-arrow-bg": "var(--tooltip-bg)",
+    bg: [$bg.reference],
+    [$arrowBg.variable]: [$bg.reference],
     color: mode("whiteAlpha.900", "gray.900")(props),
     borderRadius: "sm",
     fontWeight: "medium",
@@ -16563,28 +15991,26 @@ function baseStyle$1(props) {
     maxW: "320px",
     zIndex: "tooltip"
   };
-}
+};
 
 var Tooltip = {
   baseStyle: baseStyle$1
 };
 
-var parts = ["text", "icon"];
-
-function baseStyleText(props) {
+var baseStyleText = props => {
   return {
     color: mode("red.500", "red.300")(props),
     mt: 2,
     fontSize: "sm"
   };
-}
+};
 
-function baseStyleIcon(props) {
+var baseStyleIcon = props => {
   return {
     marginEnd: "0.5em",
     color: mode("red.500", "red.300")(props)
   };
-}
+};
 
 var baseStyle = props => ({
   text: baseStyleText(props),
@@ -16592,7 +16018,7 @@ var baseStyle = props => ({
 });
 
 var FormError = {
-  parts,
+  parts: formErrorAnatomy.keys,
   baseStyle
 };
 
@@ -16624,7 +16050,7 @@ var components$1 = {
   Popover,
   Progress,
   Radio,
-  Select: Select$1,
+  Select: Select$2,
   Skeleton,
   SkipLink,
   Slider,
@@ -16646,6 +16072,7 @@ var borders = {
   "4px": "4px solid",
   "8px": "8px solid"
 };
+var borders$1 = borders;
 
 /**
  * Breakpoints for responsive design
@@ -16658,6 +16085,7 @@ var breakpoints = createBreakpoints({
   xl: "80em",
   "2xl": "96em"
 });
+var breakpoints$1 = breakpoints;
 
 /**
  * @deprecated
@@ -16887,6 +16315,7 @@ var colors$1 = {
     900: "#003F5E"
   }
 };
+var colors$2 = colors$1;
 
 var radii = {
   none: "0",
@@ -16899,6 +16328,14 @@ var radii = {
   "3xl": "1.5rem",
   full: "9999px"
 };
+/**
+ * @deprecated
+ * You can derive the Radii type from the DefaultChakraTheme
+ *
+ * type Radii = DefaultChakraTheme['radii']
+ */
+
+var radii$1 = radii;
 
 var shadows = {
   xs: "0 0 0 1px rgba(0, 0, 0, 0.05)",
@@ -16913,6 +16350,14 @@ var shadows = {
   none: "none",
   "dark-lg": "rgba(0, 0, 0, 0.1) 0px 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px 5px 10px, rgba(0, 0, 0, 0.4) 0px 15px 40px"
 };
+/**
+ * @deprecated
+ * You can derive the Shadows type from the DefaultChakraTheme
+ *
+ * type Shadows = DefaultChakraTheme['shadows']
+ */
+
+var shadows$1 = shadows;
 
 var transitionProperty = {
   common: "background-color, border-color, color, fill, stroke, opacity, box-shadow, transform",
@@ -16940,6 +16385,7 @@ var transition = {
   easing: transitionTimingFunction,
   duration: transitionDuration
 };
+var transition$1 = transition;
 
 var zIndices = {
   hide: -1,
@@ -16956,6 +16402,14 @@ var zIndices = {
   toast: 1700,
   tooltip: 1800
 };
+/**
+ * @deprecated
+ * You can derive the ZIndices type from the DefaultChakraTheme
+ *
+ * type ZIndices = DefaultChakraTheme['zIndices']
+ */
+
+var zIndices$1 = zIndices;
 
 var blur = {
   none: 0,
@@ -16967,6 +16421,7 @@ var blur = {
   "2xl": "40px",
   "3xl": "64px"
 };
+var blur$1 = blur;
 
 function _extends$v() {
   _extends$v = Object.assign || function (target) {
@@ -16987,18 +16442,20 @@ function _extends$v() {
 }
 
 var foundations = _extends$v({
-  breakpoints,
-  zIndices,
-  radii,
-  blur,
-  colors: colors$1
-}, typography, {
-  sizes: sizes$l,
-  shadows,
+  breakpoints: breakpoints$1,
+  zIndices: zIndices$1,
+  radii: radii$1,
+  blur: blur$1,
+  colors: colors$2
+}, typography$1, {
+  sizes: sizes$m,
+  shadows: shadows$1,
   space: spacing$1,
-  borders,
-  transition
+  borders: borders$1,
+  transition: transition$1
 });
+
+var foundations$1 = foundations;
 
 var styles = {
   global: props => ({
@@ -17019,6 +16476,7 @@ var styles = {
     }
   })
 };
+var styles$1 = styles;
 
 function _extends$u() {
   _extends$u = Object.assign || function (target) {
@@ -17045,313 +16503,17 @@ var config = {
 };
 var theme = _extends$u({
   direction
-}, foundations, {
+}, foundations$1, {
   components: components$1,
-  styles,
+  styles: styles$1,
   config
 });
+var defaultTheme$1 = theme;
 
-// Number assertions
-var __DEV__$7 = process.env.NODE_ENV !== "production";
-process.env.NODE_ENV === "test";
-
-function canUseDOM$4() {
-  return !!(typeof window !== "undefined" && window.document && window.document.createElement);
-}
-var isBrowser$2 = canUseDOM$4();
-
-var doc = {
-  body: {
-    classList: {
-      add() {},
-
-      remove() {}
-
-    }
-  },
-
-  addEventListener() {},
-
-  removeEventListener() {},
-
-  activeElement: {
-    blur() {},
-
-    nodeName: ""
-  },
-
-  querySelector() {
-    return null;
-  },
-
-  querySelectorAll() {
-    return [];
-  },
-
-  getElementById() {
-    return null;
-  },
-
-  createEvent() {
-    return {
-      initEvent() {}
-
-    };
-  },
-
-  createElement() {
-    return {
-      children: [],
-      childNodes: [],
-      style: {},
-
-      setAttribute() {},
-
-      getElementsByTagName() {
-        return [];
-      }
-
-    };
-  }
-
+var ChakraProvider = ChakraProvider$1;
+ChakraProvider.defaultProps = {
+  theme: defaultTheme$1
 };
-var ssrDocument = doc;
-
-var noop$4 = () => {};
-
-var win = {
-  document: ssrDocument,
-  navigator: {
-    userAgent: ""
-  },
-  CustomEvent: function CustomEvent() {
-    return this;
-  },
-  addEventListener: noop$4,
-  removeEventListener: noop$4,
-
-  getComputedStyle() {
-    return {
-      getPropertyValue() {
-        return "";
-      }
-
-    };
-  },
-
-  matchMedia() {
-    return {
-      matches: false,
-      addListener: noop$4,
-      removeListener: noop$4
-    };
-  },
-
-  requestAnimationFrame(callback) {
-    if (typeof setTimeout === "undefined") {
-      callback();
-      return null;
-    }
-
-    return setTimeout(callback, 0);
-  },
-
-  cancelAnimationFrame(id) {
-    if (typeof setTimeout === "undefined") return;
-    clearTimeout(id);
-  },
-
-  setTimeout: () => 0,
-  clearTimeout: noop$4,
-  setInterval: () => 0,
-  clearInterval: noop$4
-};
-var ssrWindow = win;
-
-var mockEnv = {
-  window: ssrWindow,
-  document: ssrDocument
-};
-var defaultEnv = isBrowser$2 ? {
-  window,
-  document
-} : mockEnv;
-var EnvironmentContext = /*#__PURE__*/createContext$1(defaultEnv);
-
-if (__DEV__$7) {
-  EnvironmentContext.displayName = "EnvironmentContext";
-}
-function EnvironmentProvider(props) {
-  var {
-    children,
-    environment: environmentProp
-  } = props;
-  var [node, setNode] = useState(null);
-  var context = useMemo(() => {
-    var _ref;
-
-    var doc = node == null ? void 0 : node.ownerDocument;
-    var win = node == null ? void 0 : node.ownerDocument.defaultView;
-    var nodeEnv = doc ? {
-      document: doc,
-      window: win
-    } : undefined;
-    var env = (_ref = environmentProp != null ? environmentProp : nodeEnv) != null ? _ref : defaultEnv;
-    return env;
-  }, [node, environmentProp]);
-  var showEnvGetter = !node && !environmentProp;
-  return /*#__PURE__*/React__default$1.createElement(EnvironmentContext.Provider, {
-    value: context
-  }, children, showEnvGetter && /*#__PURE__*/React__default$1.createElement("span", {
-    ref: el => {
-      if (el) setNode(el);
-    }
-  }));
-}
-
-if (__DEV__$7) {
-  EnvironmentProvider.displayName = "EnvironmentProvider";
-}
-
-/**
- * The global provider that must be added to make all Chakra components
- * work correctly
- */
-
-var ChakraProvider = props => {
-  var {
-    children,
-    colorModeManager,
-    portalZIndex,
-    resetCSS = true,
-    theme: theme$1 = theme,
-    environment,
-    cssVarsRoot
-  } = props;
-
-  var _children = /*#__PURE__*/React.createElement(EnvironmentProvider, {
-    environment: environment
-  }, children);
-
-  return /*#__PURE__*/React.createElement(IdProvider, null, /*#__PURE__*/React.createElement(ThemeProvider, {
-    theme: theme$1,
-    cssVarsRoot: cssVarsRoot
-  }, /*#__PURE__*/React.createElement(ColorModeProvider, {
-    colorModeManager: colorModeManager,
-    options: theme$1.config
-  }, resetCSS && /*#__PURE__*/React.createElement(CSSReset, null), /*#__PURE__*/React.createElement(GlobalStyle, null), portalZIndex ? /*#__PURE__*/React.createElement(PortalManager, {
-    zIndex: portalZIndex
-  }, _children) : _children)));
-};
-
-// Number assertions
-var __DEV__$6 = process.env.NODE_ENV !== "production";
-process.env.NODE_ENV === "test";
-
-function omit$2(object, keys) {
-  var result = {};
-  Object.keys(object).forEach(key => {
-    if (keys.includes(key)) return;
-    result[key] = object[key];
-  });
-  return result;
-}
-
-/**
- * React hook that loads an image in the browser,
- * and let's us know the `status` so we can show image
- * fallback if it is still `pending`
- *
- * @returns the status of the image loading progress
- *
- * @example
- *
- * ```jsx
- * function App(){
- *   const status = useImage({ src: "image.png" })
- *   return status === "loaded" ? <img src="image.png" /> : <Placeholder />
- * }
- * ```
- */
-
-function useImage(props) {
-  var {
-    src,
-    srcSet,
-    onLoad,
-    onError,
-    crossOrigin,
-    sizes,
-    ignoreFallback
-  } = props;
-  var [status, setStatus] = useState("pending");
-  useEffect(() => {
-    setStatus(src ? "loading" : "pending");
-  }, [src]);
-  var imageRef = useRef();
-  var load = useCallback(() => {
-    if (!src) return;
-    flush();
-    var img = new Image();
-    img.src = src;
-
-    if (crossOrigin) {
-      img.crossOrigin = crossOrigin;
-    }
-
-    if (srcSet) {
-      img.srcset = srcSet;
-    }
-
-    if (sizes) {
-      img.sizes = sizes;
-    }
-
-    img.onload = event => {
-      flush();
-      setStatus("loaded");
-      onLoad == null ? void 0 : onLoad(event);
-    };
-
-    img.onerror = error => {
-      flush();
-      setStatus("failed");
-      onError == null ? void 0 : onError(error);
-    };
-
-    imageRef.current = img;
-  }, [src, crossOrigin, srcSet, sizes, onLoad, onError]);
-
-  var flush = () => {
-    if (imageRef.current) {
-      imageRef.current.onload = null;
-      imageRef.current.onerror = null;
-      imageRef.current = null;
-    }
-  };
-
-  useSafeLayoutEffect(() => {
-    /**
-     * If user opts out of the fallback/placeholder
-     * logic, let's bail out.
-     */
-    if (ignoreFallback) return undefined;
-
-    if (status === "loading") {
-      load();
-    }
-
-    return () => {
-      flush();
-    };
-  }, [status, load, ignoreFallback]);
-  /**
-   * If user opts out of the fallback/placeholder
-   * logic, let's just return 'loaded'
-   */
-
-  return ignoreFallback ? "loaded" : status;
-}
 
 function _extends$t() {
   _extends$t = Object.assign || function (target) {
@@ -17385,15 +16547,212 @@ function _objectWithoutPropertiesLoose$l(source, excluded) {
 
   return target;
 }
+var fallbackIcon = {
+  path: /*#__PURE__*/React.createElement("g", {
+    stroke: "currentColor",
+    strokeWidth: "1.5"
+  }, /*#__PURE__*/React.createElement("path", {
+    strokeLinecap: "round",
+    fill: "none",
+    d: "M9,9a3,3,0,1,1,4,2.829,1.5,1.5,0,0,0-1,1.415V14.25"
+  }), /*#__PURE__*/React.createElement("path", {
+    fill: "currentColor",
+    strokeLinecap: "round",
+    d: "M12,17.25a.375.375,0,1,0,.375.375A.375.375,0,0,0,12,17.25h0"
+  }), /*#__PURE__*/React.createElement("circle", {
+    fill: "none",
+    strokeMiterlimit: "10",
+    cx: "12",
+    cy: "12",
+    r: "11.25"
+  })),
+  viewBox: "0 0 24 24"
+};
+var Icon = /*#__PURE__*/forwardRef$2((props, ref) => {
+  var {
+    as: element,
+    viewBox,
+    color = "currentColor",
+    focusable = false,
+    children,
+    className,
+    __css
+  } = props,
+      rest = _objectWithoutPropertiesLoose$l(props, ["as", "viewBox", "color", "focusable", "children", "className", "__css"]);
+
+  var _className = cx("chakra-icon", className);
+
+  var styles = _extends$t({
+    w: "1em",
+    h: "1em",
+    display: "inline-block",
+    lineHeight: "1em",
+    flexShrink: 0,
+    color
+  }, __css);
+
+  var shared = {
+    ref,
+    focusable,
+    className: _className,
+    __css: styles
+  };
+
+  var _viewBox = viewBox != null ? viewBox : fallbackIcon.viewBox;
+  /**
+   * If you're using an icon library like `react-icons`.
+   * Note: anyone passing the `as` prop, should manage the `viewBox` from the external component
+   */
+
+
+  if (element && typeof element !== "string") {
+    return /*#__PURE__*/React.createElement(chakra.svg, _extends$t({
+      as: element
+    }, shared, rest));
+  }
+
+  var _path = children != null ? children : fallbackIcon.path;
+
+  return /*#__PURE__*/React.createElement(chakra.svg, _extends$t({
+    verticalAlign: "middle",
+    viewBox: _viewBox
+  }, shared, rest), _path);
+});
+
+if (__DEV__) {
+  Icon.displayName = "Icon";
+}
+
+/**
+ * React hook that loads an image in the browser,
+ * and let's us know the `status` so we can show image
+ * fallback if it is still `pending`
+ *
+ * @returns the status of the image loading progress
+ *
+ * @example
+ *
+ * ```jsx
+ * function App(){
+ *   const status = useImage({ src: "image.png" })
+ *   return status === "loaded" ? <img src="image.png" /> : <Placeholder />
+ * }
+ * ```
+ */
+
+function useImage(props) {
+  var {
+    loading,
+    src,
+    srcSet,
+    onLoad,
+    onError,
+    crossOrigin,
+    sizes,
+    ignoreFallback
+  } = props;
+  var [status, setStatus] = useState("pending");
+  useEffect(() => {
+    setStatus(src ? "loading" : "pending");
+  }, [src]);
+  var imageRef = useRef();
+  var load = useCallback(() => {
+    if (!src) return;
+    flush();
+    var img = new Image();
+    img.src = src;
+    if (crossOrigin) img.crossOrigin = crossOrigin;
+    if (srcSet) img.srcset = srcSet;
+    if (sizes) img.sizes = sizes;
+    if (loading) img.loading = loading;
+
+    img.onload = event => {
+      flush();
+      setStatus("loaded");
+      onLoad == null ? void 0 : onLoad(event);
+    };
+
+    img.onerror = error => {
+      flush();
+      setStatus("failed");
+      onError == null ? void 0 : onError(error);
+    };
+
+    imageRef.current = img;
+  }, [src, crossOrigin, srcSet, sizes, onLoad, onError, loading]);
+
+  var flush = () => {
+    if (imageRef.current) {
+      imageRef.current.onload = null;
+      imageRef.current.onerror = null;
+      imageRef.current = null;
+    }
+  };
+
+  useSafeLayoutEffect(() => {
+    /**
+     * If user opts out of the fallback/placeholder
+     * logic, let's bail out.
+     */
+    if (ignoreFallback) return undefined;
+
+    if (status === "loading") {
+      load();
+    }
+
+    return () => {
+      flush();
+    };
+  }, [status, load, ignoreFallback]);
+  /**
+   * If user opts out of the fallback/placeholder
+   * logic, let's just return 'loaded'
+   */
+
+  return ignoreFallback ? "loaded" : status;
+}
+
+function _extends$s() {
+  _extends$s = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends$s.apply(this, arguments);
+}
+
+function _objectWithoutPropertiesLoose$k(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
 var NativeImage = /*#__PURE__*/React.forwardRef((props, ref) => {
   var {
     htmlWidth,
     htmlHeight,
     alt
   } = props,
-      rest = _objectWithoutPropertiesLoose$l(props, ["htmlWidth", "htmlHeight", "alt"]);
+      rest = _objectWithoutPropertiesLoose$k(props, ["htmlWidth", "htmlHeight", "alt"]);
 
-  return /*#__PURE__*/React.createElement("img", _extends$t({
+  return /*#__PURE__*/React.createElement("img", _extends$s({
     width: htmlWidth,
     height: htmlHeight,
     ref: ref,
@@ -17412,29 +16771,31 @@ var Image$1 = /*#__PURE__*/forwardRef$2((props, ref) => {
     fallbackSrc,
     fallback,
     src,
+    srcSet,
     align,
     fit,
     loading,
     ignoreFallback,
     crossOrigin
   } = props,
-      rest = _objectWithoutPropertiesLoose$l(props, ["fallbackSrc", "fallback", "src", "align", "fit", "loading", "ignoreFallback", "crossOrigin"]);
+      rest = _objectWithoutPropertiesLoose$k(props, ["fallbackSrc", "fallback", "src", "srcSet", "align", "fit", "loading", "ignoreFallback", "crossOrigin"]);
   /**
    * Defer to native `img` tag if `loading` prop is passed
    * @see https://github.com/chakra-ui/chakra-ui/issues/1027
    */
 
 
-  var shouldIgnore = loading != null || ignoreFallback;
-  var status = useImage(_extends$t({}, props, {
+  var shouldIgnore = loading != null || ignoreFallback || fallbackSrc === undefined && fallback === undefined; // if the user doesn't provide any kind of fallback we should ignore it
+
+  var status = useImage(_extends$s({}, props, {
     ignoreFallback: shouldIgnore
   }));
 
-  var shared = _extends$t({
+  var shared = _extends$s({
     ref,
     objectFit: fit,
     objectPosition: align
-  }, shouldIgnore ? rest : omit$2(rest, ["onError", "onLoad"]));
+  }, shouldIgnore ? rest : omit$1(rest, ["onError", "onLoad"]));
 
   if (status !== "loaded") {
     /**
@@ -17442,116 +16803,25 @@ var Image$1 = /*#__PURE__*/forwardRef$2((props, ref) => {
      * let's render it here.
      */
     if (fallback) return fallback;
-    return /*#__PURE__*/React.createElement(chakra.img, _extends$t({
+    return /*#__PURE__*/React.createElement(chakra.img, _extends$s({
       as: NativeImage,
       className: "chakra-image__placeholder",
       src: fallbackSrc
     }, shared));
   }
 
-  return /*#__PURE__*/React.createElement(chakra.img, _extends$t({
+  return /*#__PURE__*/React.createElement(chakra.img, _extends$s({
     as: NativeImage,
     src: src,
+    srcSet: srcSet,
     crossOrigin: crossOrigin,
     loading: loading,
     className: "chakra-image"
   }, shared));
 });
 
-if (__DEV__$6) {
+if (__DEV__) {
   Image$1.displayName = "Image";
-}
-
-// Number assertions
-function isNotNumber(value) {
-  return typeof value !== "number" || Number.isNaN(value) || !Number.isFinite(value);
-}
-var __DEV__$5 = process.env.NODE_ENV !== "production";
-process.env.NODE_ENV === "test";
-
-/* eslint-disable no-nested-ternary */
-function once$3(fn) {
-  var result;
-  return function func() {
-    if (fn) {
-      for (var _len5 = arguments.length, args = new Array(_len5), _key5 = 0; _key5 < _len5; _key5++) {
-        args[_key5] = arguments[_key5];
-      }
-
-      result = fn.apply(this, args);
-      fn = null;
-    }
-
-    return result;
-  };
-}
-var warn$2 = once$3(options => () => {
-  var {
-    condition,
-    message
-  } = options;
-
-  if (condition && __DEV__$5) {
-    console.warn(message);
-  }
-});
-
-var minSafeInteger$1 = Number.MIN_SAFE_INTEGER || -9007199254740991;
-var maxSafeInteger$1 = Number.MAX_SAFE_INTEGER || 9007199254740991;
-
-function toNumber$1(value) {
-  var num = parseFloat(value);
-  return isNotNumber(num) ? 0 : num;
-}
-/**
- * Converts a value to a specific precision (or decimal points).
- *
- * Returns a string representing a number in fixed-point notation.
- *
- * @param value the value to convert
- * @param precision the precision or decimal points
- */
-
-
-function toPrecision(value, precision) {
-  var nextValue = toNumber$1(value);
-  var scaleFactor = 10 ** (precision != null ? precision : 10);
-  nextValue = Math.round(nextValue * scaleFactor) / scaleFactor;
-  return precision ? nextValue.toFixed(precision) : nextValue.toString();
-}
-/**
- * Counts the number of decimal places a number has
- *
- * @param value the decimal value to count
- */
-
-function countDecimalPlaces(value) {
-  if (!Number.isFinite(value)) return 0;
-  var e = 1;
-  var p = 0;
-
-  while (Math.round(value * e) / e !== value) {
-    e *= 10;
-    p += 1;
-  }
-
-  return p;
-}
-/**
- * Clamps a value to ensure it stays within the min and max range.
- *
- * @param value the value to clamp
- * @param min the minimum value
- * @param max the maximum value
- */
-
-function clampValue(value, min, max) {
-  if (value == null) return value;
-  warn$2({
-    condition: max < min,
-    message: "clamp: max cannot be less than min"
-  });
-  return Math.min(Math.max(value, min), max);
 }
 
 function useCounter(props) {
@@ -17565,8 +16835,8 @@ function useCounter(props) {
     defaultValue,
     value: valueProp,
     step: stepProp = 1,
-    min = minSafeInteger$1,
-    max = maxSafeInteger$1,
+    min = minSafeInteger,
+    max = maxSafeInteger,
     keepWithinRange = true
   } = props;
   var onChangeProp = useCallbackRef(onChange);
@@ -17702,42 +16972,8 @@ function cast(value, step, precision) {
   return toPrecision(parsedValue, precision != null ? precision : decimalPlaces);
 }
 
-// Number assertions
-var __DEV__$4 = process.env.NODE_ENV !== "production";
-var __TEST__$1 = process.env.NODE_ENV === "test";
-
-var dataAttr = condition => condition ? "" : undefined;
-var ariaAttr$1 = condition => condition ? true : undefined;
-var cx$3 = function cx() {
-  for (var _len = arguments.length, classNames = new Array(_len), _key = 0; _key < _len; _key++) {
-    classNames[_key] = arguments[_key];
-  }
-
-  return classNames.filter(Boolean).join(" ");
-};
-
-/* eslint-disable no-nested-ternary */
-function callAllHandlers$1() {
-  for (var _len2 = arguments.length, fns = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-    fns[_key2] = arguments[_key2];
-  }
-
-  return function func(event) {
-    fns.some(fn => {
-      fn == null ? void 0 : fn(event);
-      return event == null ? void 0 : event.defaultPrevented;
-    });
-  };
-}
-
-var promiseMicrotask$1 = callback => {
-  Promise.resolve().then(callback);
-};
-
-var scheduleMicrotask$1 = __TEST__$1 ? fn => fn() : typeof queueMicrotask === "function" ? queueMicrotask : promiseMicrotask$1;
-
-function _extends$s() {
-  _extends$s = Object.assign || function (target) {
+function _extends$r() {
+  _extends$r = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -17751,10 +16987,10 @@ function _extends$s() {
     return target;
   };
 
-  return _extends$s.apply(this, arguments);
+  return _extends$r.apply(this, arguments);
 }
 
-function _objectWithoutPropertiesLoose$k(source, excluded) {
+function _objectWithoutPropertiesLoose$j(source, excluded) {
   if (source == null) return {};
   var target = {};
   var sourceKeys = Object.keys(source);
@@ -17781,7 +17017,7 @@ function useFormControlProvider(props) {
     isDisabled,
     isReadOnly
   } = props,
-      htmlProps = _objectWithoutPropertiesLoose$k(props, ["id", "isRequired", "isInvalid", "isDisabled", "isReadOnly"]); // Generate all the required ids
+      htmlProps = _objectWithoutPropertiesLoose$j(props, ["id", "isRequired", "isInvalid", "isDisabled", "isReadOnly"]); // Generate all the required ids
 
 
   var uuid = useId();
@@ -17812,14 +17048,14 @@ function useFormControlProvider(props) {
       forwardedRef = null;
     }
 
-    return _extends$s({
+    return _extends$r({
       id: helpTextId
     }, props, {
       /**
        * Notify the field context when the help text is rendered on screen,
        * so we can apply the correct `aria-describedby` to the field (e.g. input, textarea).
        */
-      ref: mergeRefs(forwardedRef, node => {
+      ref: mergeRefs$1(forwardedRef, node => {
         if (!node) return;
         setHasHelpText(true);
       })
@@ -17836,7 +17072,7 @@ function useFormControlProvider(props) {
       forwardedRef = null;
     }
 
-    return _extends$s({}, props, {
+    return _extends$r({}, props, {
       ref: forwardedRef,
       "data-focus": dataAttr(isFocused),
       "data-disabled": dataAttr(isDisabled),
@@ -17855,14 +17091,14 @@ function useFormControlProvider(props) {
       forwardedRef = null;
     }
 
-    return _extends$s({
+    return _extends$r({
       id: feedbackId
     }, props, {
       /**
        * Notify the field context when the error message is rendered on screen,
        * so we can apply the correct `aria-describedby` to the field (e.g. input, textarea).
        */
-      ref: mergeRefs(forwardedRef, node => {
+      ref: mergeRefs$1(forwardedRef, node => {
         if (!node) return;
         setHasFeedbackText(true);
       }),
@@ -17878,7 +17114,7 @@ function useFormControlProvider(props) {
       forwardedRef = null;
     }
 
-    return _extends$s({}, props, htmlProps, {
+    return _extends$r({}, props, htmlProps, {
       ref: forwardedRef,
       role: "group"
     });
@@ -17892,23 +17128,20 @@ function useFormControlProvider(props) {
       forwardedRef = null;
     }
 
-    return _extends$s({}, props, {
+    return _extends$r({}, props, {
       ref: forwardedRef,
       role: "presentation",
       "aria-hidden": true,
       children: props.children || "*"
     });
   }, []);
-  var onFocus = React.useCallback(() => {
-    scheduleMicrotask$1(setFocus.on);
-  }, [setFocus]);
   return {
     isRequired: !!isRequired,
     isInvalid: !!isInvalid,
     isReadOnly: !!isReadOnly,
     isDisabled: !!isDisabled,
     isFocused: !!isFocused,
-    onFocus,
+    onFocus: setFocus.on,
     onBlur: setFocus.off,
     hasFeedbackText,
     setHasFeedbackText,
@@ -17943,24 +17176,21 @@ var FormControl = /*#__PURE__*/forwardRef$2((props, ref) => {
       {
     getRootProps
   } = _useFormControlProvid,
-      context = _objectWithoutPropertiesLoose$k(_useFormControlProvid, ["getRootProps", "htmlProps"]);
+      context = _objectWithoutPropertiesLoose$j(_useFormControlProvid, ["getRootProps", "htmlProps"]);
 
-  var className = cx$3("chakra-form-control", props.className);
+  var className = cx("chakra-form-control", props.className);
   var contextValue = React.useMemo(() => context, [context]);
   return /*#__PURE__*/React.createElement(FormControlProvider, {
     value: contextValue
   }, /*#__PURE__*/React.createElement(StylesProvider, {
     value: styles
-  }, /*#__PURE__*/React.createElement(chakra.div, _extends$s({}, getRootProps({}, ref), {
+  }, /*#__PURE__*/React.createElement(chakra.div, _extends$r({}, getRootProps({}, ref), {
     className: className,
-    __css: {
-      width: "100%",
-      position: "relative"
-    }
+    __css: styles["container"]
   }))));
 });
 
-if (__DEV__$4) {
+if (__DEV__) {
   FormControl.displayName = "FormControl";
 }
 /**
@@ -17975,19 +17205,19 @@ if (__DEV__$4) {
 var FormHelperText = /*#__PURE__*/forwardRef$2((props, ref) => {
   var field = useFormControlContext();
   var styles = useStyles();
-  var className = cx$3("chakra-form__helper-text", props.className);
-  return /*#__PURE__*/React.createElement(chakra.div, _extends$s({}, field == null ? void 0 : field.getHelpTextProps(props, ref), {
+  var className = cx("chakra-form__helper-text", props.className);
+  return /*#__PURE__*/React.createElement(chakra.div, _extends$r({}, field == null ? void 0 : field.getHelpTextProps(props, ref), {
     __css: styles.helperText,
     className: className
   }));
 });
 
-if (__DEV__$4) {
+if (__DEV__) {
   FormHelperText.displayName = "FormHelperText";
 }
 
-function _extends$r() {
-  _extends$r = Object.assign || function (target) {
+function _extends$q() {
+  _extends$q = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
 
@@ -18001,10 +17231,10 @@ function _extends$r() {
     return target;
   };
 
-  return _extends$r.apply(this, arguments);
+  return _extends$q.apply(this, arguments);
 }
 
-function _objectWithoutPropertiesLoose$j(source, excluded) {
+function _objectWithoutPropertiesLoose$i(source, excluded) {
   if (source == null) return {};
   var target = {};
   var sourceKeys = Object.keys(source);
@@ -18034,15 +17264,15 @@ function useFormControl(props) {
     isReadOnly,
     isRequired
   } = _useFormControlProps,
-      rest = _objectWithoutPropertiesLoose$j(_useFormControlProps, ["isDisabled", "isInvalid", "isReadOnly", "isRequired"]);
+      rest = _objectWithoutPropertiesLoose$i(_useFormControlProps, ["isDisabled", "isInvalid", "isReadOnly", "isRequired"]);
 
-  return _extends$r({}, rest, {
+  return _extends$q({}, rest, {
     disabled: isDisabled,
     readOnly: isReadOnly,
     required: isRequired,
-    "aria-invalid": ariaAttr$1(isInvalid),
-    "aria-required": ariaAttr$1(isRequired),
-    "aria-readonly": ariaAttr$1(isReadOnly)
+    "aria-invalid": ariaAttr(isInvalid),
+    "aria-required": ariaAttr(isRequired),
+    "aria-readonly": ariaAttr(isReadOnly)
   });
 }
 function useFormControlProps(props) {
@@ -18062,9 +17292,9 @@ function useFormControlProps(props) {
     onFocus,
     onBlur
   } = props,
-      rest = _objectWithoutPropertiesLoose$j(props, ["id", "disabled", "readOnly", "required", "isRequired", "isInvalid", "isReadOnly", "isDisabled", "onFocus", "onBlur"]);
+      rest = _objectWithoutPropertiesLoose$i(props, ["id", "disabled", "readOnly", "required", "isRequired", "isInvalid", "isReadOnly", "isDisabled", "onFocus", "onBlur"]);
 
-  var labelIds = []; // Error message must be described first in all scenarios.
+  var labelIds = props["aria-describedby"] ? [props["aria-describedby"]] : []; // Error message must be described first in all scenarios.
 
   if (field != null && field.hasFeedbackText && field != null && field.isInvalid) {
     labelIds.push(field.feedbackId);
@@ -18074,73 +17304,17 @@ function useFormControlProps(props) {
     labelIds.push(field.helpTextId);
   }
 
-  return _extends$r({}, rest, {
+  return _extends$q({}, rest, {
     "aria-describedby": labelIds.join(" ") || undefined,
     id: id != null ? id : field == null ? void 0 : field.id,
     isDisabled: (_ref = disabled != null ? disabled : isDisabled) != null ? _ref : field == null ? void 0 : field.isDisabled,
     isReadOnly: (_ref2 = readOnly != null ? readOnly : isReadOnly) != null ? _ref2 : field == null ? void 0 : field.isReadOnly,
     isRequired: (_ref3 = required != null ? required : isRequired) != null ? _ref3 : field == null ? void 0 : field.isRequired,
     isInvalid: isInvalid != null ? isInvalid : field == null ? void 0 : field.isInvalid,
-    onFocus: callAllHandlers$1(field == null ? void 0 : field.onFocus, onFocus),
-    onBlur: callAllHandlers$1(field == null ? void 0 : field.onBlur, onBlur)
+    onFocus: callAllHandlers(field == null ? void 0 : field.onFocus, onFocus),
+    onBlur: callAllHandlers(field == null ? void 0 : field.onBlur, onBlur)
   });
 }
-
-// Number assertions
-var __DEV__$3 = process.env.NODE_ENV !== "production";
-process.env.NODE_ENV === "test";
-
-var cx$2 = function cx() {
-  for (var _len = arguments.length, classNames = new Array(_len), _key = 0; _key < _len; _key++) {
-    classNames[_key] = arguments[_key];
-  }
-
-  return classNames.filter(Boolean).join(" ");
-};
-
-function _extends$q() {
-  _extends$q = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends$q.apply(this, arguments);
-}
-/**
- * Input
- *
- * Element that allows users enter single valued data.
- */
-
-var Input$1 = /*#__PURE__*/forwardRef$2((props, ref) => {
-  var styles = useMultiStyleConfig("Input", props);
-  var ownProps = omitThemingProps(props);
-  var input = useFormControl(ownProps);
-
-  var _className = cx$2("chakra-input", props.className);
-
-  return /*#__PURE__*/React.createElement(chakra.input, _extends$q({}, input, {
-    __css: styles.field,
-    ref: ref,
-    className: _className
-  }));
-});
-
-if (__DEV__$3) {
-  Input$1.displayName = "Input";
-} // This is used in `input-group.tsx`
-
-
-Input$1.id = "Input";
 
 function _extends$p() {
   _extends$p = Object.assign || function (target) {
@@ -18159,8 +17333,52 @@ function _extends$p() {
 
   return _extends$p.apply(this, arguments);
 }
+/**
+ * Input
+ *
+ * Element that allows users enter single valued data.
+ */
 
-function _objectWithoutPropertiesLoose$i(source, excluded) {
+var Input$1 = /*#__PURE__*/forwardRef$2((props, ref) => {
+  var styles = useMultiStyleConfig("Input", props);
+  var ownProps = omitThemingProps(props);
+  var input = useFormControl(ownProps);
+
+  var _className = cx("chakra-input", props.className);
+
+  return /*#__PURE__*/React.createElement(chakra.input, _extends$p({}, input, {
+    __css: styles.field,
+    ref: ref,
+    className: _className
+  }));
+});
+
+if (__DEV__) {
+  Input$1.displayName = "Input";
+} // This is used in `input-group.tsx`
+
+
+Input$1.id = "Input";
+
+function _extends$o() {
+  _extends$o = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends$o.apply(this, arguments);
+}
+
+function _objectWithoutPropertiesLoose$h(source, excluded) {
   if (source == null) return {};
   var target = {};
   var sourceKeys = Object.keys(source);
@@ -18182,9 +17400,9 @@ var InputGroup = /*#__PURE__*/forwardRef$2((props, ref) => {
     children,
     className
   } = _omitThemingProps,
-      rest = _objectWithoutPropertiesLoose$i(_omitThemingProps, ["children", "className"]);
+      rest = _objectWithoutPropertiesLoose$h(_omitThemingProps, ["children", "className"]);
 
-  var _className = cx$2("chakra-input__group", className);
+  var _className = cx("chakra-input__group", className);
 
   var groupStyles = {};
   var validChildren = getValidChildren(children);
@@ -18225,7 +17443,7 @@ var InputGroup = /*#__PURE__*/forwardRef$2((props, ref) => {
     };
     return child.type.id !== "Input" ? /*#__PURE__*/React.cloneElement(child, theming) : /*#__PURE__*/React.cloneElement(child, Object.assign(theming, groupStyles, child.props));
   });
-  return /*#__PURE__*/React.createElement(chakra.div, _extends$p({
+  return /*#__PURE__*/React.createElement(chakra.div, _extends$o({
     className: _className,
     ref: ref,
     __css: {
@@ -18238,126 +17456,9 @@ var InputGroup = /*#__PURE__*/forwardRef$2((props, ref) => {
   }, clones));
 });
 
-if (__DEV__$3) {
+if (__DEV__) {
   InputGroup.displayName = "InputGroup";
 }
-
-function _extends$o() {
-  _extends$o = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends$o.apply(this, arguments);
-}
-
-function _objectWithoutPropertiesLoose$h(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-var StyledElement = chakra("div", {
-  baseStyle: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    position: "absolute",
-    top: "0",
-    zIndex: 2
-  }
-});
-var InputElement = /*#__PURE__*/forwardRef$2((props, ref) => {
-  var _input$height, _input$height2;
-
-  var {
-    placement = "left"
-  } = props,
-      rest = _objectWithoutPropertiesLoose$h(props, ["placement"]);
-
-  var styles = useStyles();
-  var input = styles.field;
-  var attr = placement === "left" ? "insetStart" : "insetEnd";
-  var elementStyles = {
-    [attr]: "0",
-    width: (_input$height = input == null ? void 0 : input.height) != null ? _input$height : input == null ? void 0 : input.h,
-    height: (_input$height2 = input == null ? void 0 : input.height) != null ? _input$height2 : input == null ? void 0 : input.h,
-    fontSize: input == null ? void 0 : input.fontSize
-  };
-  return /*#__PURE__*/React.createElement(StyledElement, _extends$o({
-    ref: ref,
-    __css: elementStyles
-  }, rest));
-}); // This is used in `input-group.tsx`
-
-InputElement.id = "InputElement";
-
-if (__DEV__$3) {
-  InputElement.displayName = "InputElement";
-}
-
-var InputLeftElement = /*#__PURE__*/forwardRef$2((props, ref) => {
-  var {
-    className
-  } = props,
-      rest = _objectWithoutPropertiesLoose$h(props, ["className"]);
-
-  var _className = cx$2("chakra-input__left-element", className);
-
-  return /*#__PURE__*/React.createElement(InputElement, _extends$o({
-    ref: ref,
-    placement: "left",
-    className: _className
-  }, rest));
-}); // This is used in `input-group.tsx`
-
-InputLeftElement.id = "InputLeftElement";
-
-if (__DEV__$3) {
-  InputLeftElement.displayName = "InputLeftElement";
-}
-
-var InputRightElement = /*#__PURE__*/forwardRef$2((props, ref) => {
-  var {
-    className
-  } = props,
-      rest = _objectWithoutPropertiesLoose$h(props, ["className"]);
-
-  var _className = cx$2("chakra-input__right-element", className);
-
-  return /*#__PURE__*/React.createElement(InputElement, _extends$o({
-    ref: ref,
-    placement: "right",
-    className: _className
-  }, rest));
-}); // This is used in `input-group.tsx`
-
-InputRightElement.id = "InputRightElement";
-
-if (__DEV__$3) {
-  InputRightElement.displayName = "InputRightElement";
-}
-
-// Number assertions
-var __DEV__$2 = process.env.NODE_ENV !== "production";
-process.env.NODE_ENV === "test";
 
 function _extends$n() {
   _extends$n = Object.assign || function (target) {
@@ -18391,6 +17492,119 @@ function _objectWithoutPropertiesLoose$g(source, excluded) {
 
   return target;
 }
+var StyledElement = chakra("div", {
+  baseStyle: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    position: "absolute",
+    top: "0",
+    zIndex: 2
+  }
+});
+var InputElement = /*#__PURE__*/forwardRef$2((props, ref) => {
+  var _input$height, _input$height2;
+
+  var {
+    placement = "left"
+  } = props,
+      rest = _objectWithoutPropertiesLoose$g(props, ["placement"]);
+
+  var styles = useStyles();
+  var input = styles.field;
+  var attr = placement === "left" ? "insetStart" : "insetEnd";
+  var elementStyles = {
+    [attr]: "0",
+    width: (_input$height = input == null ? void 0 : input.height) != null ? _input$height : input == null ? void 0 : input.h,
+    height: (_input$height2 = input == null ? void 0 : input.height) != null ? _input$height2 : input == null ? void 0 : input.h,
+    fontSize: input == null ? void 0 : input.fontSize
+  };
+  return /*#__PURE__*/React.createElement(StyledElement, _extends$n({
+    ref: ref,
+    __css: elementStyles
+  }, rest));
+}); // This is used in `input-group.tsx`
+
+InputElement.id = "InputElement";
+
+if (__DEV__) {
+  InputElement.displayName = "InputElement";
+}
+
+var InputLeftElement = /*#__PURE__*/forwardRef$2((props, ref) => {
+  var {
+    className
+  } = props,
+      rest = _objectWithoutPropertiesLoose$g(props, ["className"]);
+
+  var _className = cx("chakra-input__left-element", className);
+
+  return /*#__PURE__*/React.createElement(InputElement, _extends$n({
+    ref: ref,
+    placement: "left",
+    className: _className
+  }, rest));
+}); // This is used in `input-group.tsx`
+
+InputLeftElement.id = "InputLeftElement";
+
+if (__DEV__) {
+  InputLeftElement.displayName = "InputLeftElement";
+}
+
+var InputRightElement = /*#__PURE__*/forwardRef$2((props, ref) => {
+  var {
+    className
+  } = props,
+      rest = _objectWithoutPropertiesLoose$g(props, ["className"]);
+
+  var _className = cx("chakra-input__right-element", className);
+
+  return /*#__PURE__*/React.createElement(InputElement, _extends$n({
+    ref: ref,
+    placement: "right",
+    className: _className
+  }, rest));
+}); // This is used in `input-group.tsx`
+
+InputRightElement.id = "InputRightElement";
+
+if (__DEV__) {
+  InputRightElement.displayName = "InputRightElement";
+}
+
+function _extends$m() {
+  _extends$m = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends$m.apply(this, arguments);
+}
+
+function _objectWithoutPropertiesLoose$f(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
 /**
  * React component used to create flexbox layouts.
  *
@@ -18410,7 +17624,7 @@ var Flex$1 = /*#__PURE__*/forwardRef$2((props, ref) => {
     grow,
     shrink
   } = props,
-      rest = _objectWithoutPropertiesLoose$g(props, ["direction", "align", "justify", "wrap", "basis", "grow", "shrink"]);
+      rest = _objectWithoutPropertiesLoose$f(props, ["direction", "align", "justify", "wrap", "basis", "grow", "shrink"]);
 
   var styles = {
     display: "flex",
@@ -18422,13 +17636,13 @@ var Flex$1 = /*#__PURE__*/forwardRef$2((props, ref) => {
     flexGrow: grow,
     flexShrink: shrink
   };
-  return /*#__PURE__*/React.createElement(chakra.div, _extends$n({
+  return /*#__PURE__*/React.createElement(chakra.div, _extends$m({
     ref: ref,
     __css: styles
   }, rest));
 });
 
-if (__DEV__$2) {
+if (__DEV__) {
   Flex$1.displayName = "Flex";
 }
 
@@ -18447,11 +17661,11 @@ var Spacer = chakra("div", {
   }
 });
 
-if (__DEV__$2) {
+if (__DEV__) {
   Spacer.displayName = "Spacer";
 }
 
-function _objectWithoutPropertiesLoose$f(source, excluded) {
+function _objectWithoutPropertiesLoose$e(source, excluded) {
   if (source == null) return {};
   var target = {};
   var sourceKeys = Object.keys(source);
@@ -19420,323 +18634,6 @@ function _defineProperty$i(obj, key, value) {
   return obj;
 }
 
-// Number assertions
-function isNull(value) {
-  return value == null;
-} // String assertions
-var __DEV__$1 = process.env.NODE_ENV !== "production";
-var __TEST__ = process.env.NODE_ENV === "test";
-
-function getOwnerDocument(node) {
-  var _node$ownerDocument;
-
-  return node instanceof Element ? (_node$ownerDocument = node.ownerDocument) != null ? _node$ownerDocument : document : document;
-}
-function canUseDOM$3() {
-  return !!(typeof window !== "undefined" && window.document && window.document.createElement);
-}
-var isBrowser$1 = canUseDOM$3();
-var ariaAttr = condition => condition ? true : undefined;
-var cx$1 = function cx() {
-  for (var _len = arguments.length, classNames = new Array(_len), _key = 0; _key < _len; _key++) {
-    classNames[_key] = arguments[_key];
-  }
-
-  return classNames.filter(Boolean).join(" ");
-};
-/**
- * Get the normalized event key across all browsers
- * @param event keyboard event
- */
-
-function normalizeEventKey(event) {
-  var {
-    key,
-    keyCode
-  } = event;
-  var isArrowKey = keyCode >= 37 && keyCode <= 40 && key.indexOf("Arrow") !== 0;
-  var eventKey = isArrowKey ? "Arrow" + key : key;
-  return eventKey;
-}
-
-// Really great work done by Diego Haz on this one
-function isInputElement(element) {
-  return isHTMLElement$1(element) && element.tagName.toLowerCase() === "input" && "select" in element;
-}
-function isActiveElement(element) {
-  var doc = element instanceof HTMLElement ? getOwnerDocument(element) : document;
-  return doc.activeElement === element;
-}
-function isHTMLElement$1(element) {
-  return element instanceof HTMLElement;
-}
-
-/* eslint-disable no-nested-ternary */
-function callAllHandlers() {
-  for (var _len2 = arguments.length, fns = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
-    fns[_key2] = arguments[_key2];
-  }
-
-  return function func(event) {
-    fns.some(fn => {
-      fn == null ? void 0 : fn(event);
-      return event == null ? void 0 : event.defaultPrevented;
-    });
-  };
-}
-function once$2(fn) {
-  var result;
-  return function func() {
-    if (fn) {
-      for (var _len5 = arguments.length, args = new Array(_len5), _key5 = 0; _key5 < _len5; _key5++) {
-        args[_key5] = arguments[_key5];
-      }
-
-      result = fn.apply(this, args);
-      fn = null;
-    }
-
-    return result;
-  };
-}
-var warn$1 = once$2(options => () => {
-  var {
-    condition,
-    message
-  } = options;
-
-  if (condition && __DEV__$1) {
-    console.warn(message);
-  }
-});
-
-var promiseMicrotask = callback => {
-  Promise.resolve().then(callback);
-};
-
-var scheduleMicrotask = __TEST__ ? fn => fn() : typeof queueMicrotask === "function" ? queueMicrotask : promiseMicrotask;
-
-// Original licensing for the following methods can be found in the
-function focus(element, options) {
-  if (options === void 0) {
-    options = {};
-  }
-
-  var {
-    isActive = isActiveElement,
-    nextTick,
-    preventScroll = true,
-    selectTextIfInput = true
-  } = options;
-  if (!element || isActive(element)) return -1;
-
-  function triggerFocus() {
-    if (!element) {
-      warn$1({
-        condition: true,
-        message: "[chakra-ui]: can't call focus() on `null` or `undefined` element"
-      });
-      return;
-    }
-
-    if (supportsPreventScroll()) {
-      element.focus({
-        preventScroll
-      });
-    } else {
-      element.focus();
-
-      if (preventScroll) {
-        var scrollableElements = getScrollableElements(element);
-        restoreScrollPosition(scrollableElements);
-      }
-    }
-
-    if (isInputElement(element) && selectTextIfInput) {
-      element.select();
-    }
-  }
-
-  if (nextTick) {
-    return requestAnimationFrame(triggerFocus);
-  }
-
-  triggerFocus();
-  return -1;
-}
-var supportsPreventScrollCached = null;
-
-function supportsPreventScroll() {
-  if (supportsPreventScrollCached == null) {
-    supportsPreventScrollCached = false;
-
-    try {
-      var div = document.createElement("div");
-      div.focus({
-        get preventScroll() {
-          supportsPreventScrollCached = true;
-          return true;
-        }
-
-      });
-    } catch (e) {// Ignore
-    }
-  }
-
-  return supportsPreventScrollCached;
-}
-
-function getScrollableElements(element) {
-  var doc = getOwnerDocument(element);
-  var parent = element.parentNode;
-  var scrollableElements = [];
-  var rootScrollingElement = doc.scrollingElement || doc.documentElement;
-
-  while (parent instanceof HTMLElement && parent !== rootScrollingElement) {
-    if (parent.offsetHeight < parent.scrollHeight || parent.offsetWidth < parent.scrollWidth) {
-      scrollableElements.push({
-        element: parent,
-        scrollTop: parent.scrollTop,
-        scrollLeft: parent.scrollLeft
-      });
-    }
-
-    parent = parent.parentNode;
-  }
-
-  if (rootScrollingElement instanceof HTMLElement) {
-    scrollableElements.push({
-      element: rootScrollingElement,
-      scrollTop: rootScrollingElement.scrollTop,
-      scrollLeft: rootScrollingElement.scrollLeft
-    });
-  }
-
-  return scrollableElements;
-}
-
-function restoreScrollPosition(scrollableElements) {
-  for (var {
-    element,
-    scrollTop,
-    scrollLeft
-  } of scrollableElements) {
-    element.scrollTop = scrollTop;
-    element.scrollLeft = scrollLeft;
-  }
-}
-
-var minSafeInteger = Number.MIN_SAFE_INTEGER || -9007199254740991;
-var maxSafeInteger = Number.MAX_SAFE_INTEGER || 9007199254740991;
-
-function _extends$m() {
-  _extends$m = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends$m.apply(this, arguments);
-}
-
-function _objectWithoutPropertiesLoose$e(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-var fallbackIcon = {
-  path: /*#__PURE__*/React.createElement("g", {
-    stroke: "currentColor",
-    strokeWidth: "1.5"
-  }, /*#__PURE__*/React.createElement("path", {
-    strokeLinecap: "round",
-    fill: "none",
-    d: "M9,9a3,3,0,1,1,4,2.829,1.5,1.5,0,0,0-1,1.415V14.25"
-  }), /*#__PURE__*/React.createElement("path", {
-    fill: "currentColor",
-    strokeLinecap: "round",
-    d: "M12,17.25a.375.375,0,1,0,.375.375A.375.375,0,0,0,12,17.25h0"
-  }), /*#__PURE__*/React.createElement("circle", {
-    fill: "none",
-    strokeMiterlimit: "10",
-    cx: "12",
-    cy: "12",
-    r: "11.25"
-  })),
-  viewBox: "0 0 24 24"
-};
-var Icon = /*#__PURE__*/forwardRef$2((props, ref) => {
-  var {
-    as: element,
-    viewBox,
-    color = "currentColor",
-    focusable = false,
-    children,
-    className,
-    __css
-  } = props,
-      rest = _objectWithoutPropertiesLoose$e(props, ["as", "viewBox", "color", "focusable", "children", "className", "__css"]);
-
-  var _className = cx$1("chakra-icon", className);
-
-  var styles = _extends$m({
-    w: "1em",
-    h: "1em",
-    display: "inline-block",
-    lineHeight: "1em",
-    flexShrink: 0,
-    color
-  }, __css);
-
-  var shared = {
-    ref,
-    focusable,
-    className: _className,
-    __css: styles
-  };
-
-  var _viewBox = viewBox != null ? viewBox : fallbackIcon.viewBox;
-  /**
-   * If you're using an icon library like `react-icons`.
-   * Note: anyone passing the `as` prop, should manage the `viewBox` from the external component
-   */
-
-
-  if (element && typeof element !== "string") {
-    return /*#__PURE__*/React.createElement(chakra.svg, _extends$m({
-      as: element
-    }, shared, rest));
-  }
-
-  var _path = children != null ? children : fallbackIcon.path;
-
-  return /*#__PURE__*/React.createElement(chakra.svg, _extends$m({
-    verticalAlign: "middle",
-    viewBox: _viewBox
-  }, shared, rest), _path);
-});
-
-if (__DEV__$1) {
-  Icon.displayName = "Icon";
-}
-
 function _extends$l() {
   _extends$l = Object.assign || function (target) {
     for (var i = 1; i < arguments.length; i++) {
@@ -20153,7 +19050,7 @@ function useNumberInput(props) {
     spinner.down();
     focusInput();
   }, [focusInput, spinner]);
-  var pointerDown = isBrowser$1 && !!document.documentElement.ontouchstart ? "onTouchStart" : "onMouseDown";
+  var pointerDown = isBrowser$2 && !!document.documentElement.ontouchstart ? "onTouchStart" : "onMouseDown";
   useEventListener("wheel", event => {
     var isInputFocused = document.activeElement === inputRef.current;
     if (!allowMouseWheel || !isInputFocused) return;
@@ -20239,7 +19136,7 @@ function useNumberInput(props) {
       "aria-readonly": (_props$readOnly2 = props.readOnly) != null ? _props$readOnly2 : isReadOnly,
       "aria-required": (_props$required = props.required) != null ? _props$required : isRequired,
       required: (_props$required2 = props.required) != null ? _props$required2 : isRequired,
-      ref: mergeRefs(inputRef, ref),
+      ref: mergeRefs$1(inputRef, ref),
       value: counter.value,
       role: "spinbutton",
       "aria-valuemin": min,
@@ -20251,7 +19148,7 @@ function useNumberInput(props) {
       autoCorrect: "off",
       onChange: callAllHandlers(props.onChange, onChange),
       onKeyDown: callAllHandlers(props.onKeyDown, onKeyDown),
-      onFocus: callAllHandlers(props.onFocus, onFocusProp, () => scheduleMicrotask(setFocused.on)),
+      onFocus: callAllHandlers(props.onFocus, onFocusProp, setFocused.on),
       onBlur: callAllHandlers(props.onBlur, onBlurProp, onInputBlur)
     });
   }, [name, inputMode, pattern, ariaLabelledBy, ariaLabel, ariaDescBy, id, isDisabled, isRequired, isReadOnly, isInvalid, counter.value, counter.valueAsNumber, counter.isOutOfRange, min, max, ariaValueText, onChange, onKeyDown, onFocusProp, setFocused.on, onBlurProp, onInputBlur]);
@@ -20337,7 +19234,7 @@ var NumberInput = /*#__PURE__*/forwardRef$2((props, ref) => {
     value: styles
   }, /*#__PURE__*/React.createElement(chakra.div, _extends$j({}, htmlProps, {
     ref: ref,
-    className: cx$1("chakra-numberinput", props.className),
+    className: cx("chakra-numberinput", props.className),
     __css: _extends$j({
       position: "relative",
       zIndex: 0
@@ -20345,7 +19242,7 @@ var NumberInput = /*#__PURE__*/forwardRef$2((props, ref) => {
   }))));
 });
 
-if (__DEV__$1) {
+if (__DEV__) {
   NumberInput.displayName = "NumberInput";
 }
 /**
@@ -20379,7 +19276,7 @@ var NumberInputStepper = /*#__PURE__*/forwardRef$2((props, ref) => {
   }));
 });
 
-if (__DEV__$1) {
+if (__DEV__) {
   NumberInputStepper.displayName = "NumberInputStepper";
 }
 /**
@@ -20402,14 +19299,14 @@ var NumberInputField = /*#__PURE__*/forwardRef$2((props, ref) => {
   var input = getInputProps(props, ref);
   var styles = useStyles();
   return /*#__PURE__*/React.createElement(chakra.input, _extends$j({}, input, {
-    className: cx$1("chakra-numberinput__field", props.className),
+    className: cx("chakra-numberinput__field", props.className),
     __css: _extends$j({
       width: "100%"
     }, styles.field)
   }));
 });
 
-if (__DEV__$1) {
+if (__DEV__) {
   NumberInputField.displayName = "NumberInputField";
 }
 
@@ -20447,7 +19344,7 @@ var NumberDecrementStepper = /*#__PURE__*/forwardRef$2((props, ref) => {
   }), (_props$children = props.children) != null ? _props$children : /*#__PURE__*/React.createElement(TriangleDownIcon, null));
 });
 
-if (__DEV__$1) {
+if (__DEV__) {
   NumberDecrementStepper.displayName = "NumberDecrementStepper";
 }
 /**
@@ -20472,30 +19369,9 @@ var NumberIncrementStepper = /*#__PURE__*/forwardRef$2((props, ref) => {
   }), (_props$children2 = props.children) != null ? _props$children2 : /*#__PURE__*/React.createElement(TriangleUpIcon, null));
 });
 
-if (__DEV__$1) {
+if (__DEV__) {
   NumberIncrementStepper.displayName = "NumberIncrementStepper";
 }
-
-// Number assertions
-var __DEV__ = process.env.NODE_ENV !== "production";
-process.env.NODE_ENV === "test";
-
-function omit$1(object, keys) {
-  var result = {};
-  Object.keys(object).forEach(key => {
-    if (keys.includes(key)) return;
-    result[key] = object[key];
-  });
-  return result;
-}
-
-var cx = function cx() {
-  for (var _len = arguments.length, classNames = new Array(_len), _key = 0; _key < _len; _key++) {
-    classNames[_key] = arguments[_key];
-  }
-
-  return classNames.filter(Boolean).join(" ");
-};
 
 function _extends$i() {
   _extends$i = Object.assign || function (target) {
@@ -20878,6 +19754,14 @@ function BearButton$1({
     rightConfig,
     ...qwe
   }) {
+    ({ // size: "sm",
+      // isAttached: true,
+      // variant: "outline",
+      ...qwe
+    });
+    ({ ...sfasdokwe,
+      ...rightConfig
+    });
     //   <Button {...rghtFunnp}>
     //     <div {...nsidjew}>{right}</div>{" "}
     //   </Button>
@@ -31434,6 +30318,8 @@ function BearListMap(list, {
     };
     bearlog.lug("___ asidjwe, oskda ___", asidjwe, oskda);
     const jcvbfd = BearListItem(asidjwe, oskda);
+    ({ ...oskda
+    }); // return "ajqeqw"
 
     return jcvbfd;
   }
@@ -31533,6 +30419,24 @@ function BearInputLabel({
     style,
     ...aswe
   }) {
+    ({
+      style: {
+        maxWidth: "250px",
+        ...style
+      },
+      ...aswe
+    });
+    const fidje = {
+      //
+      fontSize: "1.2em",
+      marginTop: "10px"
+    };
+    ({
+      //
+      className: "pointer",
+      style: fidje,
+      ...infoConfig
+    });
     const sfdgr = //
     ""; // BearIcon("info", ndgjtre);
 
@@ -31612,6 +30516,21 @@ function BearInputLabel({
   }
 
   addFunc ? BswTi() : ioakawe; // 1icon
+  const skdae = subtitle;
+  skdae && Subtoter(subtitleConfig);
+
+  function Subtoter(asdxc) {
+    const ikawed = {
+      fontSize: "0.8em"
+    };
+    const okawe = {
+      obj: subtitle,
+      style: ikawed,
+      ...asdxc
+    };
+    const uiajwe = /*#__PURE__*/React__default$1.createElement(BearDiv$1, okawe);
+    return uiajwe;
+  }
 
   const sdfgret = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, okasde);
   const kase = {
@@ -31705,8 +30624,55 @@ function BearInputBase(ujsdqwe, {
     ...containerStyle,
     ...style
   };
+  const ijdsew = //
+  required; // requireClass && required;
 
-  useState(initialValue);
+  const slasso = ijdsew ? "required" : ""; // 1onchange
+
+  const [valInit, setvalInit] = useState(initialValue);
+  const changBssoe = {
+    value: valInit,
+    valueFunc: setvalInit
+  };
+  const isjdfr = //
+  ""; // { onChange: inputFunction };
+
+  const changeAll = { ...changBssoe,
+    ...isjdfr
+  };
+  const nsijqwe = //
+  // isjdfr;
+  changeGlobal && isjdfr; // 1ref
+
+  function getRef(rfo) {
+    return {
+      ref: rfo,
+      inputRef: rfo,
+      innerRef: rfo
+    };
+  }
+
+  const sdweew = {
+    name,
+    required,
+    id: name,
+    className: slasso,
+    ...getRef(ref)
+  };
+  const nfijgr = {
+    style: ashwe
+  };
+  const dfijgr = {
+    fontSize
+  };
+  ({ ...sdweew,
+    ...dfsgre,
+    ...changeAll,
+    ...nfijgr,
+    // ...changBssoe,
+    ...nsijqwe,
+    ...dfijgr
+  }); // 1console
 
   function logros(...asa) {
 
@@ -31931,18 +30897,19 @@ function dfkbijv(named, children, {
       paddingTop: "60px"
     } : {}
   };
-  const jfdert = {
+  ({
     topRight: advert && Adverto(advertConfig),
     // center: ,
     paddingVert: "5px",
     centerConfig: disjwe
-  };
-  const ikjdwer = /*#__PURE__*/React__default$1.createElement(BearFloat, jfdert, dfsigwer);
+  });
+  const ikjdwer = //
+  dfsigwer; // BearFloat {...jfdert}>{dfsigwer}</BearFloat>;
+
   const okfdsd = //
   ikjdwer; // dfsigwer;
 
-  const idfg = {
-    textAlign: "center",
+  const idfg = { // textAlign: "center",
     ...style
   };
   args = {
@@ -32188,6 +31155,18 @@ function BearCopy({
   copyMessage,
   ...asd
 }) {
+  // const [copssetot, setcopssetot] = useState(obj);
+  // function sajwe() {
+  //   // const iewawe = <div>Copied!</div>;
+  //   bearlog.lug("___ CopyMain ___", "CopyMain");
+  //   // ShowNote(copyMessage);
+  //   // setcopssetot(iewawe);
+  // }
+  ({
+    text: obj ? obj : copyText,
+    // onCopy: sajwe,
+    ...asd
+  });
   const iawe = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement("span", null, obj));
   return iawe;
 } // 1capitalise
@@ -32373,12 +31352,12 @@ function BearList( //
   obj,
   typevar,
   // 1remove
+  containFunc,
   list,
   // 1name
   bearName,
   //
   // 1display
-  containFunc,
   displayNumber,
   rowConfig,
   //
@@ -32425,7 +31404,9 @@ function BearList( //
 }) {
   // 1list
   list = list && getListComplex(list, listArgs);
-  bearlog.lug("___Blist list ___", list); // function passChoose(itmBase) {
+  bearlog.lug("___Blist list ___", list); // 1const
+  // const [chosios, setchosios] = useState(chosenItem);
+  // function passChoose(itmBase) {
   //   if (chooseTrue) {
   //     let ogfsdfds =
   //       //
@@ -32433,7 +31414,6 @@ function BearList( //
   //     setchosios(ogfsdfds);
   //   }
   // }
-  // const sdfosf =
   // 1baseargs
 
   const sidwre = {
@@ -32460,27 +31440,20 @@ function BearList( //
   }; // 1horiz
 
   function HozBar(lsoeas) {
-
-    const seqw = {
-      style: {
-        display: "flex",
-        justifyContent: "space-around"
-      }
+    // align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
+    const okaewq = {
+      alignContent: "center",
+      justifyContent: "space-around"
     };
-    const okaewq = seqw;
-    let aoksda = //
-    // donelist(lsoeas);
-    ["asdfasd", "Asdokqwe", "Asdqwke"].map(asdas => asdas);
     const okadwe = {
       flex: true,
       style: okaewq,
-      obj: aoksda
+      obj: donelist(lsoeas)
     }; // 1console
 
     bearlog.lug("xxx-LIST-MAIN--args", messvar, list, "asd90u12321"); // gens.messCheck("sd9jqwxas", listMess, "BearList --AAAA--", oaskdwq);
 
     const jisad = //
-    // <div {...seqw}>{aoksda}</div>
     BearDiv$1(okadwe); // "okafsdf";
     // EndListA();
     // mapoBap();
@@ -32491,6 +31464,10 @@ function BearList( //
 
 
   function Seletio() {
+    ({ // ...selectableContext,
+      // renderItem:
+      ...selectableConfig
+    });
     const as83asd = //
     ""; // <SelectArray {...asikwe} />
 
@@ -32512,7 +31489,7 @@ function BearList( //
     function sfjsd(xcvkm) {
       const kseasd = { ...rowConfig
       };
-      return /*#__PURE__*/React__default$1.createElement(BearDiv$1, kseasd, HozBar());
+      return /*#__PURE__*/React__default$1.createElement(BearDiv$1, kseasd, HozBar(xcvkm));
     }
 
     return jfsdas;
@@ -32521,10 +31498,19 @@ function BearList( //
 
   const sadfwe = //
   //
-  selectableTrue ? /*#__PURE__*/React__default$1.createElement(Seletio, null) : displayNumber ? ksajda() : horiz ? HozBar() : donelist(list);
+  selectableTrue ? /*#__PURE__*/React__default$1.createElement(Seletio, null) : displayNumber ? ksajda() : horiz ? HozBar(list) : donelist(list);
 
   function donelist(listio) {
     !lodash.isEmpty(listio) || loadtrue;
+
+    if (logtrue) {
+      bearlog.lugLinas(5);
+      bearlog.laggu(bearName, "___ BEARLIST ___", listio);
+      bearlog.laggu("___ listArgs ___", listArgs);
+      bearlog.laggu("___ sidwre ___", sidwre);
+      bearlog.laggu("___ beList ___", sidjfwe);
+    }
+
     const ushdsa = //
     hideList ? "" : BearListMap(listio, sidjfwe); // fullVar ? BearListMap(list, sidjfwe) : "";
     // fullVar && list.map(mapoBap);
@@ -32535,23 +31521,18 @@ function BearList( //
   const saokwe = typeBullet ? /*#__PURE__*/React__default$1.createElement("ul", null, sadfwe) : sadfwe;
 
   function RendBase() {
-    let saidje = {
+    const saidje = argPass({
       obj: saokwe,
-      // flex,
+      flex,
       ...listArgs
-    };
-    saidje = //
-    // saidje;
-    argMiss(saidje);
-    let kaasdaz = //
-    BearDiv$1(saidje); // saokwe;
-    // return "sodkweeqw";
+    }); // return "sodkweeqw";
 
-    return kaasdaz;
+    return BearDiv$1(saidje);
   }
 
-  const idjsae = //
-  BearCheckList(compName, RendBase(), sidjfwe); // BearDiv(saidje)
+  const idjsae = BearCheckList(compName, RendBase(), //
+  argMiss(sidjfwe)); //
+  // BearDiv(saidje)
   // rendName();
   // renderCheck();
   // list ? renderCheck() :
@@ -32616,6 +31597,14 @@ function LoadMain({
   rowvar = 10,
   ...sadww
 }) {
+  ({ // ...style,
+    ...sadww,
+    title: false,
+    paragraph: {
+      rows: rowvar
+    } // height: "200px"
+
+  });
   let endValue = "";
 
   switch (typevar) {
@@ -33277,12 +32266,12 @@ var Elements = function Elements(_ref) {
 
     anyStripe._registerWrapper({
       name: 'react-stripe-js',
-      version: "1.5.0"
+      version: "1.6.0"
     });
 
     anyStripe.registerAppInfo({
       name: 'react-stripe-js',
-      version: "1.5.0",
+      version: "1.6.0",
       url: 'https://stripe.com/docs/stripe-js/react'
     });
   }, [ctx.stripe]);
@@ -33510,6 +32499,22 @@ createElementComponent('payment', isServer);
 
 var PaymentRequestButtonElement = createElementComponent('paymentRequestButton', isServer);
 /**
+ * Requires beta access:
+ * Contact [Stripe support](https://support.stripe.com/) for more information.
+ *
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
+
+createElementComponent('linkAuthentication', isServer);
+/**
+ * Requires beta access:
+ * Contact [Stripe support](https://support.stripe.com/) for more information.
+ *
+ * @docs https://stripe.com/docs/stripe-js/react#element-components
+ */
+
+createElementComponent('shippingAddress', isServer);
+/**
  * @docs https://stripe.com/docs/stripe-js/react#element-components
  */
 
@@ -33556,7 +32561,7 @@ var registerWrapper = function registerWrapper(stripe, startTime) {
 
   stripe._registerWrapper({
     name: 'stripe-js',
-    version: "1.18.0",
+    version: "1.19.1",
     startTime: startTime
   });
 };
@@ -34916,8 +33921,8 @@ var stringToPath$1 = _memoizeCapped(function (string) {
   if (string.charCodeAt(0) === 46
   /* . */
   ) {
-      result.push('');
-    }
+    result.push('');
+  }
 
   string.replace(rePropName, function (match, number, quote, subString) {
     result.push(quote ? subString.replace(reEscapeChar, '$1') : number || match);
@@ -35342,7 +34347,7 @@ class ValidationError extends Error {
 
 }
 
-const once$1 = cb => {
+const once$2 = cb => {
   let fired = false;
   return (...args) => {
     if (fired) return;
@@ -35361,7 +34366,7 @@ function runTests(options, cb) {
     sort,
     path
   } = options;
-  let callback = once$1(cb);
+  let callback = once$2(cb);
   let count = tests.length;
   const nestedErrors = [];
   errors = errors ? errors : [];
@@ -38169,17 +37174,15 @@ for (const alias of ['not', 'nope']) BaseSchema.prototype[alias] = BaseSchema.pr
 
 BaseSchema.prototype.optional = BaseSchema.prototype.notRequired;
 
-({}).toString();
-// String Interfaces
-//
-
 var isCheckBoxInput = element => element.type === 'checkbox';
+
+var isDateObject = data => data instanceof Date;
 
 var isNullOrUndefined = value => value == null;
 
 const isObjectType = value => typeof value === 'object';
 
-var isObject$1 = value => !isNullOrUndefined(value) && !Array.isArray(value) && isObjectType(value) && !(value instanceof Date);
+var isObject$1 = value => !isNullOrUndefined(value) && !Array.isArray(value) && isObjectType(value) && !isDateObject(value);
 
 var getControllerValue = event => isObject$1(event) && event.target ? isCheckBoxInput(event.target) ? event.target.checked : event.target.value : event;
 
@@ -38191,9 +37194,13 @@ var compact = value => value.filter(Boolean);
 
 var isUndefined = val => val === undefined;
 
-var get = (obj = {}, path, defaultValue) => {
-  const result = compact(path.split(/[,[\].]+?/)).reduce((result, key) => isNullOrUndefined(result) ? result : result[key], obj);
-  return isUndefined(result) || result === obj ? isUndefined(obj[path]) ? defaultValue : obj[path] : result;
+var get = (obj, path, defaultValue) => {
+  if (isObject$1(obj) && path) {
+    const result = compact(path.split(/[,[\].]+?/)).reduce((result, key) => isNullOrUndefined(result) ? result : result[key], obj);
+    return isUndefined(result) || result === obj ? isUndefined(obj[path]) ? defaultValue : obj[path] : result;
+  }
+
+  return undefined;
 };
 
 const EVENTS = {
@@ -38207,8 +37214,6 @@ const VALIDATION_MODE = {
   onTouched: 'onTouched',
   all: 'all'
 };
-const SELECT = 'select';
-const UNDEFINED = 'undefined';
 const INPUT_VALIDATION_RULES = {
   max: 'max',
   min: 'min',
@@ -38225,53 +37230,94 @@ var omit = (source, key) => {
   return copy;
 };
 
-const FormContext = React.createContext(null);
-FormContext.displayName = 'RHFContext';
+const HookFormContext = React.createContext(null);
 
-const useFormContext = () => React.useContext(FormContext);
+const useFormContext = () => React.useContext(HookFormContext);
 
-var getProxyFormState = (isProxyEnabled, formState, readFormStateRef, localReadFormStateRef, isRoot = true) => isProxyEnabled ? new Proxy(formState, {
-  get: (obj, prop) => {
-    if (prop in obj) {
-      if (readFormStateRef.current[prop] !== VALIDATION_MODE.all) {
-        readFormStateRef.current[prop] = isRoot ? VALIDATION_MODE.all : true;
+var getProxyFormState = (formState, _proxyFormState, localProxyFormState, isRoot = true) => {
+  function createGetter(prop) {
+    return () => {
+      if (prop in formState) {
+        if (_proxyFormState[prop] !== VALIDATION_MODE.all) {
+          _proxyFormState[prop] = !isRoot || VALIDATION_MODE.all;
+        }
+
+        localProxyFormState && (localProxyFormState[prop] = true);
+        return formState[prop];
       }
 
-      localReadFormStateRef && (localReadFormStateRef.current[prop] = true);
-      return obj[prop];
-    }
-
-    return undefined;
+      return undefined;
+    };
   }
-}) : formState;
+
+  const result = {};
+
+  for (const key in formState) {
+    Object.defineProperty(result, key, {
+      get: createGetter(key)
+    });
+  }
+
+  return result;
+};
 
 var isEmptyObject = value => isObject$1(value) && !Object.keys(value).length;
 
-var shouldRenderFormState = (formStateData, readFormStateRef, isRoot) => {
+var shouldRenderFormState = (formStateData, _proxyFormState, isRoot) => {
   const formState = omit(formStateData, 'name');
-  return isEmptyObject(formState) || Object.keys(formState).length >= Object.keys(readFormStateRef).length || Object.keys(formState).find(key => readFormStateRef[key] === (isRoot ? VALIDATION_MODE.all : true));
+  return isEmptyObject(formState) || Object.keys(formState).length >= Object.keys(_proxyFormState).length || Object.keys(formState).find(key => _proxyFormState[key] === (!isRoot || VALIDATION_MODE.all));
 };
 
 var convertToArrayPayload = value => Array.isArray(value) ? value : [value];
 
-var isWeb = typeof window !== UNDEFINED && typeof window.HTMLElement !== UNDEFINED && typeof document !== UNDEFINED;
-const isProxyEnabled = isWeb ? 'Proxy' in window : typeof Proxy !== UNDEFINED;
+const tearDown = _unsubscribe => {
+  if (_unsubscribe.current) {
+    _unsubscribe.current.unsubscribe();
+
+    _unsubscribe.current = undefined;
+  }
+};
+
+const updateSubscriptionProps = ({
+  _unsubscribe,
+  props
+}) => () => {
+  if (props.disabled) {
+    tearDown(_unsubscribe);
+  } else if (!_unsubscribe.current) {
+    _unsubscribe.current = props.subject.subscribe({
+      next: props.callback
+    });
+  }
+};
+
+function useSubscribe(props) {
+  const _unsubscribe = React.useRef();
+
+  const _updateSubscription = React.useRef(() => {});
+
+  _updateSubscription.current = updateSubscriptionProps({
+    _unsubscribe,
+    props
+  });
+  !props.skipEarlySubscription && _updateSubscription.current();
+  React.useEffect(() => {
+    _updateSubscription.current();
+
+    return () => tearDown(_unsubscribe);
+  }, []);
+}
 
 function useFormState(props) {
-  const {
-    control,
-    name
-  } = props || {};
   const methods = useFormContext();
   const {
-    formStateRef,
-    formStateSubjectRef,
-    readFormStateRef
-  } = control || methods.control;
-  const nameRef = React.useRef(name);
-  nameRef.current = name;
-  const [formState, updateFormState] = React.useState(formStateRef.current);
-  const readFormState = React.useRef({
+    control = methods.control,
+    disabled,
+    name
+  } = props || {};
+  const [formState, updateFormState] = React.useState(control._formState);
+
+  const _localProxyFormState = React.useRef({
     isDirty: false,
     dirtyFields: false,
     touchedFields: false,
@@ -38279,63 +37325,66 @@ function useFormState(props) {
     isValid: false,
     errors: false
   });
-  React.useEffect(() => {
-    const formStateSubscription = formStateSubjectRef.current.subscribe({
-      next: formState => (!nameRef.current || !formState.name || convertToArrayPayload(nameRef.current).includes(formState.name)) && shouldRenderFormState(formState, readFormState.current) && updateFormState(Object.assign(Object.assign({}, formStateRef.current), formState))
-    });
-    return () => formStateSubscription.unsubscribe();
-  }, []);
-  return getProxyFormState(isProxyEnabled, formState, readFormStateRef, readFormState, false);
+
+  const _name = React.useRef(name);
+
+  _name.current = name;
+  useSubscribe({
+    disabled,
+    callback: formState => (!_name.current || !formState.name || convertToArrayPayload(_name.current).includes(formState.name)) && shouldRenderFormState(formState, _localProxyFormState.current) && updateFormState(Object.assign(Object.assign({}, control._formState), formState)),
+    subject: control._subjects.state
+  });
+  return getProxyFormState(formState, control._proxyFormState, _localProxyFormState.current, false);
 }
 
-function useController({
-  name,
-  rules,
-  defaultValue,
-  control,
-  shouldUnregister
-}) {
+function useController(props) {
   const methods = useFormContext();
   const {
-    defaultValuesRef,
-    register,
-    fieldsRef,
-    unregister,
-    fieldArrayNamesRef,
-    controllerSubjectRef,
-    shouldUnmountUnregister
-  } = control || methods.control;
-  const {
-    onChange,
-    onBlur,
-    ref
-  } = register(name, rules);
-  const [value, setInputStateValue] = React.useState(isUndefined(get(fieldsRef.current, name)._f.value) || isNameInFieldArray(fieldArrayNamesRef.current, name) ? isUndefined(defaultValue) ? get(defaultValuesRef.current, name) : defaultValue : get(fieldsRef.current, name)._f.value);
+    name,
+    control = methods.control,
+    shouldUnregister
+  } = props;
+  const [value, setInputStateValue] = React.useState(get(control._formValues, name, get(control._defaultValues, name, props.defaultValue)));
   const formState = useFormState({
     control: control || methods.control,
     name
   });
-  get(fieldsRef.current, name)._f.value = value;
-  React.useEffect(() => {
-    const controllerSubscription = controllerSubjectRef.current.subscribe({
-      next: data => (!data.name || name === data.name) && setInputStateValue(get(data.values, name))
-    });
-    return () => {
-      controllerSubscription.unsubscribe();
 
-      if (shouldUnmountUnregister || shouldUnregister) {
-        unregister(name);
-      } else if (get(fieldsRef.current, name)) {
-        get(fieldsRef.current, name)._f.mount = false;
+  const _name = React.useRef(name);
+
+  _name.current = name;
+  useSubscribe({
+    subject: control._subjects.control,
+    callback: data => (!data.name || _name.current === data.name) && setInputStateValue(get(data.values, _name.current))
+  });
+  const registerProps = control.register(name, Object.assign(Object.assign({}, props.rules), {
+    value
+  }));
+  const updateMounted = React.useCallback((name, value) => {
+    const field = get(control._fields, name);
+
+    if (field) {
+      field._f.mount = value;
+    }
+  }, [control]);
+  React.useEffect(() => {
+    updateMounted(name, true);
+    return () => {
+      const _shouldUnregisterField = control._options.shouldUnregister || shouldUnregister;
+
+      if (isNameInFieldArray(control._names.array, name) ? _shouldUnregisterField && !control._stateFlags.action : _shouldUnregisterField) {
+        control.unregister(name);
+      } else {
+        updateMounted(name, false);
       }
     };
-  }, [name]);
+  }, [name, control, shouldUnregister, updateMounted]);
   return {
     field: {
       onChange: event => {
         const value = getControllerValue(event);
         setInputStateValue(value);
-        onChange({
+        registerProps.onChange({
           target: {
             value,
             name: name
@@ -38344,8 +37393,9 @@ function useController({
         });
       },
       onBlur: () => {
-        onBlur({
+        registerProps.onBlur({
           target: {
+            value,
             name: name
           },
           type: EVENTS.BLUR
@@ -38353,35 +37403,25 @@ function useController({
       },
       name,
       value,
-      ref: elm => elm && ref(elm)
+      ref: elm => {
+        const field = get(control._fields, name);
+
+        if (elm && field && elm.focus) {
+          field._f.ref = {
+            focus: () => elm.focus(),
+            setCustomValidity: message => elm.setCustomValidity(message),
+            reportValidity: () => elm.reportValidity()
+          };
+        }
+      }
     },
     formState,
-    fieldState: Object.defineProperties({}, {
-      invalid: {
-        get() {
-          return !!get(formState.errors, name);
-        }
-
-      },
-      isDirty: {
-        get() {
-          return !!get(formState.dirtyFields, name);
-        }
-
-      },
-      isTouched: {
-        get() {
-          return !!get(formState.touchedFields, name);
-        }
-
-      },
-      error: {
-        get() {
-          return get(formState.errors, name);
-        }
-
-      }
-    })
+    fieldState: {
+      invalid: !!get(formState.errors, name),
+      isDirty: !!get(formState.dirtyFields, name),
+      isTouched: !!get(formState.touchedFields, name),
+      error: get(formState.errors, name)
+    }
   };
 }
 
@@ -38442,472 +37482,70 @@ const focusFieldBy = (fields, callback, fieldsNames) => {
   }
 };
 
-const getFieldsValues = (fieldsRef, defaultValuesRef, output = {}) => {
-  for (const name in fieldsRef.current) {
-    const field = fieldsRef.current[name];
+var isFunction = value => typeof value === 'function';
 
-    if (field) {
-      const _f = field._f;
-      const current = omit(field, '_f');
-      set(output, name, _f ? _f.ref.disabled || _f.refs && _f.refs.every(ref => ref.disabled) ? undefined : _f.value : Array.isArray(field) ? [] : {});
+function cloneObject(data) {
+  let copy;
+  const isArray = Array.isArray(data);
 
-      if (current) {
-        getFieldsValues({
-          current
-        }, defaultValuesRef, output[name]);
+  if (data instanceof Date) {
+    copy = new Date(data);
+  } else if (data instanceof Set) {
+    copy = new Set(data);
+  } else if (isArray || isObject$1(data)) {
+    copy = isArray ? [] : {};
+
+    for (const key in data) {
+      if (isFunction(data[key])) {
+        copy = data;
+        break;
       }
+
+      copy[key] = cloneObject(data[key]);
     }
+  } else {
+    return data;
   }
 
-  return Object.assign(Object.assign({}, defaultValuesRef), output);
-};
+  return copy;
+}
 
 var isPrimitive = value => isNullOrUndefined(value) || !isObjectType(value);
 
-function deepEqual(object1, object2, isErrorObject) {
-  if (isPrimitive(object1) || isPrimitive(object2) || object1 instanceof Date || object2 instanceof Date) {
+function deepEqual(object1, object2) {
+  if (isPrimitive(object1) || isPrimitive(object2)) {
     return object1 === object2;
   }
 
-  if (!React.isValidElement(object1)) {
-    const keys1 = Object.keys(object1);
-    const keys2 = Object.keys(object2);
+  if (isDateObject(object1) && isDateObject(object2)) {
+    return object1.getTime() === object2.getTime();
+  }
 
-    if (keys1.length !== keys2.length) {
+  const keys1 = Object.keys(object1);
+  const keys2 = Object.keys(object2);
+
+  if (keys1.length !== keys2.length) {
+    return false;
+  }
+
+  for (const key of keys1) {
+    const val1 = object1[key];
+
+    if (!keys2.includes(key)) {
       return false;
     }
 
-    for (const key of keys1) {
-      const val1 = object1[key];
+    if (key !== 'ref') {
+      const val2 = object2[key];
 
-      if (!(isErrorObject && key === 'ref')) {
-        const val2 = object2[key];
-
-        if ((isObject$1(val1) || Array.isArray(val1)) && (isObject$1(val2) || Array.isArray(val2)) ? !deepEqual(val1, val2, isErrorObject) : val1 !== val2) {
-          return false;
-        }
+      if (isDateObject(val1) && isDateObject(val2) || isObject$1(val1) && isObject$1(val2) || Array.isArray(val1) && Array.isArray(val2) ? !deepEqual(val1, val2) : val1 !== val2) {
+        return false;
       }
     }
   }
 
   return true;
 }
-
-function deepMerge(target, source) {
-  if (isPrimitive(target) || isPrimitive(source)) {
-    return source;
-  }
-
-  for (const key in source) {
-    const targetValue = target[key];
-    const sourceValue = source[key];
-
-    try {
-      target[key] = isObject$1(targetValue) && isObject$1(sourceValue) || Array.isArray(targetValue) && Array.isArray(sourceValue) ? deepMerge(targetValue, sourceValue) : sourceValue;
-    } catch (_a) {}
-  }
-
-  return target;
-}
-
-function setDirtyFields(values, defaultValues, dirtyFields, parentNode, parentName) {
-  let index = -1;
-
-  while (++index < values.length) {
-    for (const key in values[index]) {
-      if (Array.isArray(values[index][key])) {
-        !dirtyFields[index] && (dirtyFields[index] = {});
-        dirtyFields[index][key] = [];
-        setDirtyFields(values[index][key], get(defaultValues[index] || {}, key, []), dirtyFields[index][key], dirtyFields[index], key);
-      } else {
-        deepEqual(get(defaultValues[index] || {}, key), values[index][key]) ? set(dirtyFields[index] || {}, key) : dirtyFields[index] = Object.assign(Object.assign({}, dirtyFields[index]), {
-          [key]: true
-        });
-      }
-    }
-
-    parentNode && !dirtyFields.length && delete parentNode[parentName];
-  }
-
-  return dirtyFields;
-}
-
-var setFieldArrayDirtyFields = (values, defaultValues, dirtyFields) => deepMerge(setDirtyFields(values, defaultValues, dirtyFields.slice(0, values.length)), setDirtyFields(defaultValues, values, dirtyFields.slice(0, values.length)));
-
-var isBoolean = value => typeof value === 'boolean';
-
-function baseGet(object, updatePath) {
-  const length = updatePath.slice(0, -1).length;
-  let index = 0;
-
-  while (index < length) {
-    object = isUndefined(object) ? index++ : object[updatePath[index++]];
-  }
-
-  return object;
-}
-
-function unset(object, path) {
-  const updatePath = isKey(path) ? [path] : stringToPath(path);
-  const childObject = updatePath.length == 1 ? object : baseGet(object, updatePath);
-  const key = updatePath[updatePath.length - 1];
-  let previousObjRef;
-
-  if (childObject) {
-    delete childObject[key];
-  }
-
-  for (let k = 0; k < updatePath.slice(0, -1).length; k++) {
-    let index = -1;
-    let objectRef;
-    const currentPaths = updatePath.slice(0, -(k + 1));
-    const currentPathsLength = currentPaths.length - 1;
-
-    if (k > 0) {
-      previousObjRef = object;
-    }
-
-    while (++index < currentPaths.length) {
-      const item = currentPaths[index];
-      objectRef = objectRef ? objectRef[item] : object[item];
-
-      if (currentPathsLength === index && (isObject$1(objectRef) && isEmptyObject(objectRef) || Array.isArray(objectRef) && !objectRef.filter(data => isObject$1(data) && !isEmptyObject(data) || isBoolean(data)).length)) {
-        previousObjRef ? delete previousObjRef[item] : delete object[item];
-      }
-
-      previousObjRef = objectRef;
-    }
-  }
-
-  return object;
-}
-
-function getFields(fieldsNames, fieldsRefs) {
-  const currentFields = {};
-
-  for (const name of fieldsNames) {
-    const field = get(fieldsRefs, name);
-
-    if (field) {
-      !isKey(name) ? set(currentFields, name, field._f) : currentFields[name] = field._f;
-    }
-  }
-
-  return currentFields;
-}
-
-var isFileInput = element => element.type === 'file';
-
-var isMultipleSelect = element => element.type === `${SELECT}-multiple`;
-
-var isRadioInput = element => element.type === 'radio';
-
-const defaultResult = {
-  value: false,
-  isValid: false
-};
-const validResult = {
-  value: true,
-  isValid: true
-};
-
-var getCheckboxValue = options => {
-  if (Array.isArray(options)) {
-    if (options.length > 1) {
-      const values = options.filter(option => option && option.checked && !option.disabled).map(option => option.value);
-      return {
-        value: values,
-        isValid: !!values.length
-      };
-    }
-
-    return options[0].checked && !options[0].disabled ? // @ts-expect-error expected to work in the browser
-    options[0].attributes && !isUndefined(options[0].attributes.value) ? isUndefined(options[0].value) || options[0].value === '' ? validResult : {
-      value: options[0].value,
-      isValid: true
-    } : validResult : defaultResult;
-  }
-
-  return defaultResult;
-};
-
-var getFieldValueAs = (value, {
-  valueAsNumber,
-  valueAsDate,
-  setValueAs
-}) => valueAsNumber ? value === '' ? NaN : +value : valueAsDate ? new Date(value) : setValueAs ? setValueAs(value) : value;
-
-var getMultipleSelectValue = options => [...options].filter(({
-  selected
-}) => selected).map(({
-  value
-}) => value);
-
-const defaultReturn = {
-  isValid: false,
-  value: null
-};
-
-var getRadioValue = options => Array.isArray(options) ? options.reduce((previous, option) => option && option.checked && !option.disabled ? {
-  isValid: true,
-  value: option.value
-} : previous, defaultReturn) : defaultReturn;
-
-function getFieldValue(field) {
-  if (field && field._f) {
-    const ref = field._f.ref;
-
-    if (ref.disabled) {
-      return;
-    }
-
-    if (isFileInput(ref)) {
-      return ref.files;
-    }
-
-    if (isRadioInput(ref)) {
-      return getRadioValue(field._f.refs).value;
-    }
-
-    if (isMultipleSelect(ref)) {
-      return getMultipleSelectValue(ref.options);
-    }
-
-    if (isCheckBoxInput(ref)) {
-      return getCheckboxValue(field._f.refs).value;
-    }
-
-    return getFieldValueAs(isUndefined(ref.value) ? field._f.ref.value : ref.value, field._f);
-  }
-}
-
-var hasValidation = (options, mounted) => options && mounted && (options.required || options.min || options.max || options.maxLength || options.minLength || options.pattern || options.validate);
-
-var skipValidation = ({
-  isOnBlur,
-  isOnChange,
-  isOnTouch,
-  isTouched,
-  isReValidateOnBlur,
-  isReValidateOnChange,
-  isBlurEvent,
-  isSubmitted,
-  isOnAll
-}) => {
-  if (isOnAll) {
-    return false;
-  } else if (!isSubmitted && isOnTouch) {
-    return !(isTouched || isBlurEvent);
-  } else if (isSubmitted ? isReValidateOnBlur : isOnBlur) {
-    return !isBlurEvent;
-  } else if (isSubmitted ? isReValidateOnChange : isOnChange) {
-    return isBlurEvent;
-  }
-
-  return true;
-};
-
-var isFunction = value => typeof value === 'function';
-
-var isString = value => typeof value === 'string';
-
-var isMessage = value => isString(value) || React.isValidElement(value);
-
-var isRegex = value => value instanceof RegExp;
-
-function getValidateError(result, ref, type = 'validate') {
-  if (isMessage(result) || Array.isArray(result) && result.every(isMessage) || isBoolean(result) && !result) {
-    return {
-      type,
-      message: isMessage(result) ? result : '',
-      ref
-    };
-  }
-}
-
-var getValueAndMessage = validationData => isObject$1(validationData) && !isRegex(validationData) ? validationData : {
-  value: validationData,
-  message: ''
-};
-
-var validateField = async ({
-  _f: {
-    ref,
-    refs,
-    required,
-    maxLength,
-    minLength,
-    min,
-    max,
-    pattern,
-    validate,
-    name,
-    value: inputValue,
-    valueAsNumber,
-    mount
-  }
-}, validateAllFieldCriteria) => {
-  if (!mount) {
-    return {};
-  }
-
-  const error = {};
-  const isRadio = isRadioInput(ref);
-  const isCheckBox = isCheckBoxInput(ref);
-  const isRadioOrCheckbox = isRadio || isCheckBox;
-  const isEmpty = (valueAsNumber || isFileInput(ref)) && !ref.value || inputValue === '' || Array.isArray(inputValue) && !inputValue.length;
-  const appendErrorsCurry = appendErrors.bind(null, name, validateAllFieldCriteria, error);
-
-  const getMinMaxMessage = (exceedMax, maxLengthMessage, minLengthMessage, maxType = INPUT_VALIDATION_RULES.maxLength, minType = INPUT_VALIDATION_RULES.minLength) => {
-    const message = exceedMax ? maxLengthMessage : minLengthMessage;
-    error[name] = Object.assign({
-      type: exceedMax ? maxType : minType,
-      message,
-      ref
-    }, appendErrorsCurry(exceedMax ? maxType : minType, message));
-  };
-
-  if (required && (!isRadio && !isCheckBox && (isEmpty || isNullOrUndefined(inputValue)) || isBoolean(inputValue) && !inputValue || isCheckBox && !getCheckboxValue(refs).isValid || isRadio && !getRadioValue(refs).isValid)) {
-    const {
-      value,
-      message
-    } = isMessage(required) ? {
-      value: !!required,
-      message: required
-    } : getValueAndMessage(required);
-
-    if (value) {
-      error[name] = Object.assign({
-        type: INPUT_VALIDATION_RULES.required,
-        message,
-        ref: isRadioOrCheckbox ? (refs || [])[0] || {} : ref
-      }, appendErrorsCurry(INPUT_VALIDATION_RULES.required, message));
-
-      if (!validateAllFieldCriteria) {
-        return error;
-      }
-    }
-  }
-
-  if ((!isNullOrUndefined(min) || !isNullOrUndefined(max)) && inputValue !== '') {
-    let exceedMax;
-    let exceedMin;
-    const maxOutput = getValueAndMessage(max);
-    const minOutput = getValueAndMessage(min);
-
-    if (!isNaN(inputValue)) {
-      const valueNumber = ref.valueAsNumber || parseFloat(inputValue);
-
-      if (!isNullOrUndefined(maxOutput.value)) {
-        exceedMax = valueNumber > maxOutput.value;
-      }
-
-      if (!isNullOrUndefined(minOutput.value)) {
-        exceedMin = valueNumber < minOutput.value;
-      }
-    } else {
-      const valueDate = ref.valueAsDate || new Date(inputValue);
-
-      if (isString(maxOutput.value)) {
-        exceedMax = valueDate > new Date(maxOutput.value);
-      }
-
-      if (isString(minOutput.value)) {
-        exceedMin = valueDate < new Date(minOutput.value);
-      }
-    }
-
-    if (exceedMax || exceedMin) {
-      getMinMaxMessage(!!exceedMax, maxOutput.message, minOutput.message, INPUT_VALIDATION_RULES.max, INPUT_VALIDATION_RULES.min);
-
-      if (!validateAllFieldCriteria) {
-        return error;
-      }
-    }
-  }
-
-  if (isString(inputValue) && !isEmpty && (maxLength || minLength)) {
-    const maxLengthOutput = getValueAndMessage(maxLength);
-    const minLengthOutput = getValueAndMessage(minLength);
-    const exceedMax = !isNullOrUndefined(maxLengthOutput.value) && inputValue.length > maxLengthOutput.value;
-    const exceedMin = !isNullOrUndefined(minLengthOutput.value) && inputValue.length < minLengthOutput.value;
-
-    if (exceedMax || exceedMin) {
-      getMinMaxMessage(exceedMax, maxLengthOutput.message, minLengthOutput.message);
-
-      if (!validateAllFieldCriteria) {
-        return error;
-      }
-    }
-  }
-
-  if (isString(inputValue) && pattern && !isEmpty) {
-    const {
-      value: patternValue,
-      message
-    } = getValueAndMessage(pattern);
-
-    if (isRegex(patternValue) && !inputValue.match(patternValue)) {
-      error[name] = Object.assign({
-        type: INPUT_VALIDATION_RULES.pattern,
-        message,
-        ref
-      }, appendErrorsCurry(INPUT_VALIDATION_RULES.pattern, message));
-
-      if (!validateAllFieldCriteria) {
-        return error;
-      }
-    }
-  }
-
-  if (validate) {
-    const validateRef = isRadioOrCheckbox && refs ? refs[0] : ref;
-
-    if (isFunction(validate)) {
-      const result = await validate(inputValue);
-      const validateError = getValidateError(result, validateRef);
-
-      if (validateError) {
-        error[name] = Object.assign(Object.assign({}, validateError), appendErrorsCurry(INPUT_VALIDATION_RULES.validate, validateError.message));
-
-        if (!validateAllFieldCriteria) {
-          return error;
-        }
-      }
-    } else if (isObject$1(validate)) {
-      let validationResult = {};
-
-      for (const [key, validateFunction] of Object.entries(validate)) {
-        if (!isEmptyObject(validationResult) && !validateAllFieldCriteria) {
-          break;
-        }
-
-        const validateResult = await validateFunction(inputValue);
-        const validateError = getValidateError(validateResult, validateRef, key);
-
-        if (validateError) {
-          validationResult = Object.assign(Object.assign({}, validateError), appendErrorsCurry(key, validateError.message));
-
-          if (validateAllFieldCriteria) {
-            error[name] = validationResult;
-          }
-        }
-      }
-
-      if (!isEmptyObject(validationResult)) {
-        error[name] = Object.assign({
-          ref: validateRef
-        }, validationResult);
-
-        if (!validateAllFieldCriteria) {
-          return error;
-        }
-      }
-    }
-  }
-
-  return error;
-};
 
 var getValidationModes = mode => ({
   isOnSubmit: !mode || mode === VALIDATION_MODE.onSubmit,
@@ -38917,9 +37555,21 @@ var getValidationModes = mode => ({
   isOnTouch: mode === VALIDATION_MODE.onTouched
 });
 
+var isBoolean = value => typeof value === 'boolean';
+
 var isHTMLElement = value => value instanceof HTMLElement;
 
+var isMultipleSelect = element => element.type === `select-multiple`;
+
+var isRadioInput = element => element.type === 'radio';
+
 var isRadioOrCheckboxFunction = ref => isRadioInput(ref) || isCheckBoxInput(ref);
+
+var isString = value => typeof value === 'string';
+
+var isWeb = typeof window !== 'undefined' && typeof window.HTMLElement !== 'undefined' && typeof document !== 'undefined';
+
+var live = ref => !isHTMLElement(ref) || !document.contains(ref);
 
 class Subscription {
   constructor() {
@@ -38979,37 +37629,1203 @@ class Subject {
 
 }
 
-const isWindowUndefined = typeof window === UNDEFINED;
+function baseGet(object, updatePath) {
+  const length = updatePath.slice(0, -1).length;
+  let index = 0;
 
-function useForm({
-  mode = VALIDATION_MODE.onSubmit,
-  reValidateMode = VALIDATION_MODE.onChange,
-  resolver,
-  context,
-  defaultValues = {},
-  shouldFocusError = true,
-  shouldUnregister,
-  criteriaMode
-} = {}) {
-  const fieldsRef = React.useRef({});
-  const fieldsNamesRef = React.useRef(new Set());
-  const formStateSubjectRef = React.useRef(new Subject());
-  const unregisterFieldsNamesRef = React.useRef(new Set());
-  const watchSubjectRef = React.useRef(new Subject());
-  const controllerSubjectRef = React.useRef(new Subject());
-  const fieldArraySubjectRef = React.useRef(new Subject());
-  const fieldArrayDefaultValuesRef = React.useRef({});
-  const watchFieldsRef = React.useRef(new Set());
-  const isMountedRef = React.useRef(false);
-  const fieldsWithValidationRef = React.useRef({});
-  const validFieldsRef = React.useRef({});
-  const defaultValuesRef = React.useRef(defaultValues);
-  const isWatchAllRef = React.useRef(false);
-  const contextRef = React.useRef(context);
-  const resolverRef = React.useRef(resolver);
-  const fieldArrayNamesRef = React.useRef(new Set());
-  const validationMode = getValidationModes(mode);
-  const isValidateAllFieldCriteria = criteriaMode === VALIDATION_MODE.all;
+  while (index < length) {
+    object = isUndefined(object) ? index++ : object[updatePath[index++]];
+  }
+
+  return object;
+}
+
+function unset(object, path) {
+  const updatePath = isKey(path) ? [path] : stringToPath(path);
+  const childObject = updatePath.length == 1 ? object : baseGet(object, updatePath);
+  const key = updatePath[updatePath.length - 1];
+  let previousObjRef;
+
+  if (childObject) {
+    delete childObject[key];
+  }
+
+  for (let k = 0; k < updatePath.slice(0, -1).length; k++) {
+    let index = -1;
+    let objectRef;
+    const currentPaths = updatePath.slice(0, -(k + 1));
+    const currentPathsLength = currentPaths.length - 1;
+
+    if (k > 0) {
+      previousObjRef = object;
+    }
+
+    while (++index < currentPaths.length) {
+      const item = currentPaths[index];
+      objectRef = objectRef ? objectRef[item] : object[item];
+
+      if (currentPathsLength === index && (isObject$1(objectRef) && isEmptyObject(objectRef) || Array.isArray(objectRef) && !objectRef.filter(data => isObject$1(data) && !isEmptyObject(data) || isBoolean(data)).length)) {
+        previousObjRef ? delete previousObjRef[item] : delete object[item];
+      }
+
+      previousObjRef = objectRef;
+    }
+  }
+
+  return object;
+}
+
+var isFileInput = element => element.type === 'file';
+
+const defaultResult = {
+  value: false,
+  isValid: false
+};
+const validResult = {
+  value: true,
+  isValid: true
+};
+
+var getCheckboxValue = options => {
+  if (Array.isArray(options)) {
+    if (options.length > 1) {
+      const values = options.filter(option => option && option.checked && !option.disabled).map(option => option.value);
+      return {
+        value: values,
+        isValid: !!values.length
+      };
+    }
+
+    return options[0].checked && !options[0].disabled ? // @ts-expect-error expected to work in the browser
+    options[0].attributes && !isUndefined(options[0].attributes.value) ? isUndefined(options[0].value) || options[0].value === '' ? validResult : {
+      value: options[0].value,
+      isValid: true
+    } : validResult : defaultResult;
+  }
+
+  return defaultResult;
+};
+
+var getFieldValueAs = (value, {
+  valueAsNumber,
+  valueAsDate,
+  setValueAs
+}) => isUndefined(value) ? value : valueAsNumber ? value === '' ? NaN : +value : valueAsDate ? new Date(value) : setValueAs ? setValueAs(value) : value;
+
+const defaultReturn = {
+  isValid: false,
+  value: null
+};
+
+var getRadioValue = options => Array.isArray(options) ? options.reduce((previous, option) => option && option.checked && !option.disabled ? {
+  isValid: true,
+  value: option.value
+} : previous, defaultReturn) : defaultReturn;
+
+function getFieldValue(_f) {
+  const ref = _f.ref;
+
+  if (_f.refs ? _f.refs.every(ref => ref.disabled) : ref.disabled) {
+    return;
+  }
+
+  if (isFileInput(ref)) {
+    return ref.files;
+  }
+
+  if (isRadioInput(ref)) {
+    return getRadioValue(_f.refs).value;
+  }
+
+  if (isMultipleSelect(ref)) {
+    return [...ref.selectedOptions].map(({
+      value
+    }) => value);
+  }
+
+  if (isCheckBoxInput(ref)) {
+    return getCheckboxValue(_f.refs).value;
+  }
+
+  return getFieldValueAs(isUndefined(ref.value) ? _f.ref.value : ref.value, _f);
+}
+
+var getResolverOptions = (fieldsNames, _fields, criteriaMode, shouldUseNativeValidation) => {
+  const fields = {};
+
+  for (const name of fieldsNames) {
+    const field = get(_fields, name);
+    field && set(fields, name, field._f);
+  }
+
+  return {
+    criteriaMode,
+    names: [...fieldsNames],
+    fields,
+    shouldUseNativeValidation
+  };
+};
+
+var hasValidation = options => options.mount && (options.required || options.min || options.max || options.maxLength || options.minLength || options.pattern || options.validate);
+
+function deepMerge(target, source) {
+  if (isPrimitive(target) || isPrimitive(source)) {
+    return source;
+  }
+
+  for (const key in source) {
+    const targetValue = target[key];
+    const sourceValue = source[key];
+
+    try {
+      target[key] = isObject$1(targetValue) && isObject$1(sourceValue) || Array.isArray(targetValue) && Array.isArray(sourceValue) ? deepMerge(targetValue, sourceValue) : sourceValue;
+    } catch (_a) {}
+  }
+
+  return target;
+}
+
+function setDirtyFields(values, defaultValues, dirtyFields, parentNode, parentName) {
+  let index = -1;
+
+  while (++index < values.length) {
+    for (const key in values[index]) {
+      if (Array.isArray(values[index][key])) {
+        !dirtyFields[index] && (dirtyFields[index] = {});
+        dirtyFields[index][key] = [];
+        setDirtyFields(values[index][key], get(defaultValues[index] || {}, key, []), dirtyFields[index][key], dirtyFields[index], key);
+      } else {
+        !isNullOrUndefined(defaultValues) && deepEqual(get(defaultValues[index] || {}, key), values[index][key]) ? set(dirtyFields[index] || {}, key) : dirtyFields[index] = Object.assign(Object.assign({}, dirtyFields[index]), {
+          [key]: true
+        });
+      }
+    }
+
+    parentNode && !dirtyFields.length && delete parentNode[parentName];
+  }
+
+  return dirtyFields;
+}
+
+var setFieldArrayDirtyFields = (values, defaultValues, dirtyFields) => deepMerge(setDirtyFields(values, defaultValues, dirtyFields.slice(0, values.length)), setDirtyFields(defaultValues, values, dirtyFields.slice(0, values.length)));
+
+var skipValidation = (isBlurEvent, isTouched, isSubmitted, reValidateMode, mode) => {
+  if (mode.isOnAll) {
+    return false;
+  } else if (!isSubmitted && mode.isOnTouch) {
+    return !(isTouched || isBlurEvent);
+  } else if (isSubmitted ? reValidateMode.isOnBlur : mode.isOnBlur) {
+    return !isBlurEvent;
+  } else if (isSubmitted ? reValidateMode.isOnChange : mode.isOnChange) {
+    return isBlurEvent;
+  }
+
+  return true;
+};
+
+var unsetEmptyArray = (ref, name) => !compact(get(ref, name, [])).length && unset(ref, name);
+
+var isMessage = value => isString(value) || React.isValidElement(value);
+
+var isRegex = value => value instanceof RegExp;
+
+function getValidateError(result, ref, type = 'validate') {
+  if (isMessage(result) || Array.isArray(result) && result.every(isMessage) || isBoolean(result) && !result) {
+    return {
+      type,
+      message: isMessage(result) ? result : '',
+      ref
+    };
+  }
+}
+
+var getValueAndMessage = validationData => isObject$1(validationData) && !isRegex(validationData) ? validationData : {
+  value: validationData,
+  message: ''
+};
+
+var validateField = async (field, inputValue, validateAllFieldCriteria, shouldUseNativeValidation) => {
+  const {
+    ref,
+    refs,
+    required,
+    maxLength,
+    minLength,
+    min,
+    max,
+    pattern,
+    validate,
+    name,
+    valueAsNumber,
+    mount,
+    disabled
+  } = field._f;
+
+  if (!mount || disabled) {
+    return {};
+  }
+
+  const inputRef = refs ? refs[0] : ref;
+
+  const setCustomValidty = message => {
+    if (shouldUseNativeValidation && inputRef.reportValidity) {
+      inputRef.setCustomValidity(isBoolean(message) ? '' : message || ' ');
+      inputRef.reportValidity();
+    }
+  };
+
+  const error = {};
+  const isRadio = isRadioInput(ref);
+  const isCheckBox = isCheckBoxInput(ref);
+  const isRadioOrCheckbox = isRadio || isCheckBox;
+  const isEmpty = (valueAsNumber || isFileInput(ref)) && !ref.value || inputValue === '' || Array.isArray(inputValue) && !inputValue.length;
+  const appendErrorsCurry = appendErrors.bind(null, name, validateAllFieldCriteria, error);
+
+  const getMinMaxMessage = (exceedMax, maxLengthMessage, minLengthMessage, maxType = INPUT_VALIDATION_RULES.maxLength, minType = INPUT_VALIDATION_RULES.minLength) => {
+    const message = exceedMax ? maxLengthMessage : minLengthMessage;
+    error[name] = Object.assign({
+      type: exceedMax ? maxType : minType,
+      message,
+      ref
+    }, appendErrorsCurry(exceedMax ? maxType : minType, message));
+  };
+
+  if (required && (!isRadioOrCheckbox && (isEmpty || isNullOrUndefined(inputValue)) || isBoolean(inputValue) && !inputValue || isCheckBox && !getCheckboxValue(refs).isValid || isRadio && !getRadioValue(refs).isValid)) {
+    const {
+      value,
+      message
+    } = isMessage(required) ? {
+      value: !!required,
+      message: required
+    } : getValueAndMessage(required);
+
+    if (value) {
+      error[name] = Object.assign({
+        type: INPUT_VALIDATION_RULES.required,
+        message,
+        ref: inputRef
+      }, appendErrorsCurry(INPUT_VALIDATION_RULES.required, message));
+
+      if (!validateAllFieldCriteria) {
+        setCustomValidty(message);
+        return error;
+      }
+    }
+  }
+
+  if (!isEmpty && (!isNullOrUndefined(min) || !isNullOrUndefined(max))) {
+    let exceedMax;
+    let exceedMin;
+    const maxOutput = getValueAndMessage(max);
+    const minOutput = getValueAndMessage(min);
+
+    if (!isNaN(inputValue)) {
+      const valueNumber = ref.valueAsNumber || parseFloat(inputValue);
+
+      if (!isNullOrUndefined(maxOutput.value)) {
+        exceedMax = valueNumber > maxOutput.value;
+      }
+
+      if (!isNullOrUndefined(minOutput.value)) {
+        exceedMin = valueNumber < minOutput.value;
+      }
+    } else {
+      const valueDate = ref.valueAsDate || new Date(inputValue);
+
+      if (isString(maxOutput.value)) {
+        exceedMax = valueDate > new Date(maxOutput.value);
+      }
+
+      if (isString(minOutput.value)) {
+        exceedMin = valueDate < new Date(minOutput.value);
+      }
+    }
+
+    if (exceedMax || exceedMin) {
+      getMinMaxMessage(!!exceedMax, maxOutput.message, minOutput.message, INPUT_VALIDATION_RULES.max, INPUT_VALIDATION_RULES.min);
+
+      if (!validateAllFieldCriteria) {
+        setCustomValidty(error[name].message);
+        return error;
+      }
+    }
+  }
+
+  if ((maxLength || minLength) && !isEmpty && isString(inputValue)) {
+    const maxLengthOutput = getValueAndMessage(maxLength);
+    const minLengthOutput = getValueAndMessage(minLength);
+    const exceedMax = !isNullOrUndefined(maxLengthOutput.value) && inputValue.length > maxLengthOutput.value;
+    const exceedMin = !isNullOrUndefined(minLengthOutput.value) && inputValue.length < minLengthOutput.value;
+
+    if (exceedMax || exceedMin) {
+      getMinMaxMessage(exceedMax, maxLengthOutput.message, minLengthOutput.message);
+
+      if (!validateAllFieldCriteria) {
+        setCustomValidty(error[name].message);
+        return error;
+      }
+    }
+  }
+
+  if (pattern && !isEmpty && isString(inputValue)) {
+    const {
+      value: patternValue,
+      message
+    } = getValueAndMessage(pattern);
+
+    if (isRegex(patternValue) && !inputValue.match(patternValue)) {
+      error[name] = Object.assign({
+        type: INPUT_VALIDATION_RULES.pattern,
+        message,
+        ref
+      }, appendErrorsCurry(INPUT_VALIDATION_RULES.pattern, message));
+
+      if (!validateAllFieldCriteria) {
+        setCustomValidty(message);
+        return error;
+      }
+    }
+  }
+
+  if (validate) {
+    if (isFunction(validate)) {
+      const result = await validate(inputValue);
+      const validateError = getValidateError(result, inputRef);
+
+      if (validateError) {
+        error[name] = Object.assign(Object.assign({}, validateError), appendErrorsCurry(INPUT_VALIDATION_RULES.validate, validateError.message));
+
+        if (!validateAllFieldCriteria) {
+          setCustomValidty(validateError.message);
+          return error;
+        }
+      }
+    } else if (isObject$1(validate)) {
+      let validationResult = {};
+
+      for (const key in validate) {
+        if (!isEmptyObject(validationResult) && !validateAllFieldCriteria) {
+          break;
+        }
+
+        const validateError = getValidateError(await validate[key](inputValue), inputRef, key);
+
+        if (validateError) {
+          validationResult = Object.assign(Object.assign({}, validateError), appendErrorsCurry(key, validateError.message));
+          setCustomValidty(validateError.message);
+
+          if (validateAllFieldCriteria) {
+            error[name] = validationResult;
+          }
+        }
+      }
+
+      if (!isEmptyObject(validationResult)) {
+        error[name] = Object.assign({
+          ref: inputRef
+        }, validationResult);
+
+        if (!validateAllFieldCriteria) {
+          return error;
+        }
+      }
+    }
+  }
+
+  setCustomValidty(true);
+  return error;
+};
+
+const defaultOptions$1 = {
+  mode: VALIDATION_MODE.onSubmit,
+  reValidateMode: VALIDATION_MODE.onChange,
+  shouldFocusError: true
+};
+const isWindowUndefined = typeof window === 'undefined';
+
+function createFormControl(props = {}) {
+  let _options = Object.assign(Object.assign({}, defaultOptions$1), props);
+
+  let _formState = {
+    isDirty: false,
+    isValidating: false,
+    dirtyFields: {},
+    isSubmitted: false,
+    submitCount: 0,
+    touchedFields: {},
+    isSubmitting: false,
+    isSubmitSuccessful: false,
+    isValid: false,
+    errors: {}
+  };
+  let _fields = {};
+
+  let _defaultValues = _options.defaultValues || {};
+
+  let _formValues = _options.shouldUnregister ? {} : cloneObject(_defaultValues);
+
+  let _stateFlags = {
+    action: false,
+    mount: false,
+    watch: false
+  };
+  let _names = {
+    mount: new Set(),
+    unMount: new Set(),
+    array: new Set(),
+    watch: new Set()
+  };
+  let delayErrorCallback;
+  let timer = 0;
+  let validateFields = {};
+  const _proxyFormState = {
+    isDirty: false,
+    dirtyFields: false,
+    touchedFields: false,
+    isValidating: false,
+    isValid: false,
+    errors: false
+  };
+  const _subjects = {
+    watch: new Subject(),
+    control: new Subject(),
+    array: new Subject(),
+    state: new Subject()
+  };
+  const validationModeBeforeSubmit = getValidationModes(_options.mode);
+  const validationModeAfterSubmit = getValidationModes(_options.reValidateMode);
+  const shouldDisplayAllAssociatedErrors = _options.criteriaMode === VALIDATION_MODE.all;
+
+  const debounce = (callback, wait) => (...args) => {
+    clearTimeout(timer);
+    timer = window.setTimeout(() => callback(...args), wait);
+  };
+
+  const isFieldWatched = (name, isBlurEvent) => !isBlurEvent && (_names.watchAll || _names.watch.has(name) || _names.watch.has((name.match(/\w+/) || [])[0]));
+
+  const _updateValid = async shouldSkipRender => {
+    let isValid = false;
+
+    if (_proxyFormState.isValid) {
+      isValid = _options.resolver ? isEmptyObject((await executeResolver()).errors) : await executeBuildInValidation(_fields, true);
+
+      if (!shouldSkipRender && isValid !== _formState.isValid) {
+        _formState.isValid = isValid;
+
+        _subjects.state.next({
+          isValid
+        });
+      }
+    }
+
+    return isValid;
+  };
+
+  const _updateFieldArray = (name, method, args, values = [], shouldSetValues = true, shouldSetFields = true) => {
+    _stateFlags.action = true;
+
+    if (shouldSetFields && get(_fields, name)) {
+      const fieldValues = method(get(_fields, name), args.argA, args.argB);
+      shouldSetValues && set(_fields, name, fieldValues);
+    }
+
+    if (Array.isArray(get(_formState.errors, name))) {
+      const errors = method(get(_formState.errors, name), args.argA, args.argB);
+      shouldSetValues && set(_formState.errors, name, errors);
+      unsetEmptyArray(_formState.errors, name);
+    }
+
+    if (_proxyFormState.touchedFields && get(_formState.touchedFields, name)) {
+      const touchedFields = method(get(_formState.touchedFields, name), args.argA, args.argB);
+      shouldSetValues && set(_formState.touchedFields, name, touchedFields);
+      unsetEmptyArray(_formState.touchedFields, name);
+    }
+
+    if (_proxyFormState.dirtyFields || _proxyFormState.isDirty) {
+      updateFieldArrayDirty(name, values);
+    }
+
+    _subjects.state.next({
+      isDirty: _getDirty(name, values),
+      dirtyFields: _formState.dirtyFields,
+      errors: _formState.errors,
+      isValid: _formState.isValid
+    });
+  };
+
+  const updateErrors = (name, error) => (set(_formState.errors, name, error), _subjects.state.next({
+    errors: _formState.errors
+  }));
+
+  const updateValidAndValue = (name, shouldSkipSetValueAs, ref) => {
+    const field = get(_fields, name);
+
+    if (field) {
+      const defaultValue = get(_formValues, name, get(_defaultValues, name));
+      isUndefined(defaultValue) || ref && ref.defaultChecked || shouldSkipSetValueAs ? set(_formValues, name, shouldSkipSetValueAs ? defaultValue : getFieldValue(field._f)) : setFieldValue(name, defaultValue);
+    }
+
+    _stateFlags.mount && _updateValid();
+  };
+
+  const updateTouchAndDirty = (name, fieldValue, isCurrentTouched, shouldRender = true) => {
+    let isFieldDirty = false;
+    const output = {
+      name
+    };
+    const isPreviousFieldTouched = get(_formState.touchedFields, name);
+
+    if (_proxyFormState.isDirty) {
+      const isPreviousFormDirty = _formState.isDirty;
+      _formState.isDirty = output.isDirty = _getDirty();
+      isFieldDirty = isPreviousFormDirty !== output.isDirty;
+    }
+
+    if (_proxyFormState.dirtyFields && !isCurrentTouched) {
+      const isPreviousFieldDirty = get(_formState.dirtyFields, name);
+      const isCurrentFieldPristine = deepEqual(get(_defaultValues, name), fieldValue);
+      isCurrentFieldPristine ? unset(_formState.dirtyFields, name) : set(_formState.dirtyFields, name, true);
+      output.dirtyFields = _formState.dirtyFields;
+      isFieldDirty = isFieldDirty || isPreviousFieldDirty !== get(_formState.dirtyFields, name);
+    }
+
+    if (isCurrentTouched && !isPreviousFieldTouched) {
+      set(_formState.touchedFields, name, isCurrentTouched);
+      output.touchedFields = _formState.touchedFields;
+      isFieldDirty = isFieldDirty || _proxyFormState.touchedFields && isPreviousFieldTouched !== isCurrentTouched;
+    }
+
+    isFieldDirty && shouldRender && _subjects.state.next(output);
+    return isFieldDirty ? output : {};
+  };
+
+  const updateFieldArrayDirty = (name, value) => (set(_formState.dirtyFields, name, setFieldArrayDirtyFields(value, get(_defaultValues, name, []), get(_formState.dirtyFields, name, []))), unsetEmptyArray(_formState.dirtyFields, name));
+
+  const shouldRenderByError = async (shouldSkipRender, name, isValid, error, fieldState) => {
+    const previousFieldError = get(_formState.errors, name);
+    const shouldUpdateValid = _proxyFormState.isValid && _formState.isValid !== isValid;
+
+    if (props.delayError && error) {
+      delayErrorCallback = delayErrorCallback || debounce(updateErrors, props.delayError);
+      delayErrorCallback(name, error);
+    } else {
+      clearTimeout(timer);
+      error ? set(_formState.errors, name, error) : unset(_formState.errors, name);
+    }
+
+    if (((error ? !deepEqual(previousFieldError, error) : previousFieldError) || !isEmptyObject(fieldState) || shouldUpdateValid) && !shouldSkipRender) {
+      const updatedFormState = Object.assign(Object.assign(Object.assign({}, fieldState), shouldUpdateValid ? {
+        isValid
+      } : {}), {
+        errors: _formState.errors,
+        name
+      });
+      _formState = Object.assign(Object.assign({}, _formState), updatedFormState);
+
+      _subjects.state.next(updatedFormState);
+    }
+
+    validateFields[name]--;
+
+    if (_proxyFormState.isValidating && !validateFields[name]) {
+      _subjects.state.next({
+        isValidating: false
+      });
+
+      validateFields = {};
+    }
+  };
+
+  const executeResolver = async name => _options.resolver ? await _options.resolver(Object.assign({}, _formValues), _options.context, getResolverOptions(name || _names.mount, _fields, _options.criteriaMode, _options.shouldUseNativeValidation)) : {};
+
+  const executeResolverValidation = async names => {
+    const {
+      errors
+    } = await executeResolver();
+
+    if (names) {
+      for (const name of names) {
+        const error = get(errors, name);
+        error ? set(_formState.errors, name, error) : unset(_formState.errors, name);
+      }
+    } else {
+      _formState.errors = errors;
+    }
+
+    return errors;
+  };
+
+  const executeBuildInValidation = async (fields, shouldOnlyCheckValid, context = {
+    valid: true
+  }) => {
+    for (const name in fields) {
+      const field = fields[name];
+
+      if (field) {
+        const fieldReference = field._f;
+        const fieldValue = omit(field, '_f');
+
+        if (fieldReference) {
+          const fieldError = await validateField(field, get(_formValues, fieldReference.name), shouldDisplayAllAssociatedErrors, _options.shouldUseNativeValidation);
+
+          if (fieldError[fieldReference.name]) {
+            context.valid = false;
+
+            if (shouldOnlyCheckValid) {
+              break;
+            }
+          }
+
+          if (!shouldOnlyCheckValid) {
+            fieldError[fieldReference.name] ? set(_formState.errors, fieldReference.name, fieldError[fieldReference.name]) : unset(_formState.errors, fieldReference.name);
+          }
+        }
+
+        fieldValue && (await executeBuildInValidation(fieldValue, shouldOnlyCheckValid, context));
+      }
+    }
+
+    return context.valid;
+  };
+
+  const _removeUnmounted = () => {
+    for (const name of _names.unMount) {
+      const field = get(_fields, name);
+      field && (field._f.refs ? field._f.refs.every(live) : live(field._f.ref)) && unregister(name);
+    }
+
+    _names.unMount = new Set();
+  };
+
+  const _getDirty = (name, data) => (name && data && set(_formValues, name, data), !deepEqual(getValues(), _defaultValues));
+
+  const _getWatch = (names, defaultValue, isGlobal) => {
+    const fieldValues = Object.assign({}, _stateFlags.mount ? _formValues : isUndefined(defaultValue) ? _defaultValues : isString(names) ? {
+      [names]: defaultValue
+    } : defaultValue);
+
+    if (names) {
+      const result = convertToArrayPayload(names).map(fieldName => (isGlobal && _names.watch.add(fieldName), get(fieldValues, fieldName)));
+      return Array.isArray(names) ? result : result[0];
+    }
+
+    isGlobal && (_names.watchAll = true);
+    return fieldValues;
+  };
+
+  const _getFieldArray = name => get(_stateFlags.mount ? _formValues : _defaultValues, name, []);
+
+  const setFieldValue = (name, value, options = {}, shouldRender) => {
+    const field = get(_fields, name);
+    let fieldValue = value;
+
+    if (field) {
+      const fieldReference = field._f;
+
+      if (fieldReference) {
+        set(_formValues, name, getFieldValueAs(value, fieldReference));
+        fieldValue = isWeb && isHTMLElement(fieldReference.ref) && isNullOrUndefined(value) ? '' : value;
+
+        if (isMultipleSelect(fieldReference.ref)) {
+          [...fieldReference.ref.options].forEach(selectRef => selectRef.selected = fieldValue.includes(selectRef.value));
+        } else if (fieldReference.refs) {
+          if (isCheckBoxInput(fieldReference.ref)) {
+            fieldReference.refs.length > 1 ? fieldReference.refs.forEach(checkboxRef => checkboxRef.checked = Array.isArray(fieldValue) ? !!fieldValue.find(data => data === checkboxRef.value) : fieldValue === checkboxRef.value) : fieldReference.refs[0].checked = !!fieldValue;
+          } else {
+            fieldReference.refs.forEach(radioRef => radioRef.checked = radioRef.value === fieldValue);
+          }
+        } else {
+          fieldReference.ref.value = fieldValue;
+        }
+
+        shouldRender && _subjects.control.next({
+          values: _formValues,
+          name
+        });
+      }
+    }
+
+    (options.shouldDirty || options.shouldTouch) && updateTouchAndDirty(name, fieldValue, options.shouldTouch);
+    options.shouldValidate && trigger(name);
+  };
+
+  const setValues = (name, value, options) => {
+    for (const fieldKey in value) {
+      const fieldValue = value[fieldKey];
+      const fieldName = `${name}.${fieldKey}`;
+      const field = get(_fields, fieldName);
+      (_names.array.has(name) || !isPrimitive(fieldValue) || field && !field._f) && !isDateObject(fieldValue) ? setValues(fieldName, fieldValue, options) : setFieldValue(fieldName, fieldValue, options, true);
+    }
+  };
+
+  const setValue = (name, value, options = {}) => {
+    const field = get(_fields, name);
+
+    const isFieldArray = _names.array.has(name);
+
+    set(_formValues, name, value);
+
+    if (isFieldArray) {
+      _subjects.array.next({
+        name,
+        values: _formValues
+      });
+
+      if ((_proxyFormState.isDirty || _proxyFormState.dirtyFields) && options.shouldDirty) {
+        updateFieldArrayDirty(name, value);
+
+        _subjects.state.next({
+          name,
+          dirtyFields: _formState.dirtyFields,
+          isDirty: _getDirty(name, value)
+        });
+      }
+    } else {
+      field && !field._f && !isNullOrUndefined(value) ? setValues(name, value, options) : setFieldValue(name, value, options, true);
+    }
+
+    isFieldWatched(name) && _subjects.state.next({});
+
+    _subjects.watch.next({
+      name
+    });
+  };
+
+  const handleChange = async event => {
+    const target = event.target;
+    let name = target.name;
+    const field = get(_fields, name);
+
+    if (field) {
+      let error;
+      let isValid;
+      const fieldValue = target.type ? getFieldValue(field._f) : target.value;
+      const isBlurEvent = event.type === EVENTS.BLUR;
+      const shouldSkipValidation = !hasValidation(field._f) && !_options.resolver && !get(_formState.errors, name) && !field._f.deps || skipValidation(isBlurEvent, get(_formState.touchedFields, name), _formState.isSubmitted, validationModeAfterSubmit, validationModeBeforeSubmit);
+      const isWatched = isFieldWatched(name, isBlurEvent);
+
+      if (isBlurEvent) {
+        field._f.onBlur && field._f.onBlur(event);
+      } else if (field._f.onChange) {
+        field._f.onChange(event);
+      }
+
+      set(_formValues, name, fieldValue);
+      const fieldState = updateTouchAndDirty(name, fieldValue, isBlurEvent, false);
+      const shouldRender = !isEmptyObject(fieldState) || isWatched;
+      !isBlurEvent && _subjects.watch.next({
+        name,
+        type: event.type
+      });
+
+      if (shouldSkipValidation) {
+        return shouldRender && _subjects.state.next(Object.assign({
+          name
+        }, isWatched ? {} : fieldState));
+      }
+
+      !isBlurEvent && isWatched && _subjects.state.next({});
+      validateFields[name] = validateFields[name] ? +1 : 1;
+      _proxyFormState.isValidating && _subjects.state.next({
+        isValidating: true
+      });
+
+      if (_options.resolver) {
+        const {
+          errors
+        } = await executeResolver([name]);
+        error = get(errors, name);
+
+        if (isCheckBoxInput(target) && !error) {
+          const parentNodeName = getNodeParentName(name);
+          const parentField = get(_fields, parentNodeName);
+
+          if (Array.isArray(parentField) && parentField.every(field => field._f && isCheckBoxInput(field._f.ref))) {
+            const parentError = get(errors, parentNodeName, {});
+            parentError.type && (error = parentError);
+            name = parentNodeName;
+          }
+        }
+
+        isValid = isEmptyObject(errors);
+      } else {
+        error = (await validateField(field, get(_formValues, name), shouldDisplayAllAssociatedErrors, _options.shouldUseNativeValidation))[name];
+        isValid = await _updateValid(true);
+      }
+
+      field._f.deps && trigger(field._f.deps);
+      shouldRenderByError(false, name, isValid, error, fieldState);
+    }
+  };
+
+  const trigger = async (name, options = {}) => {
+    let isValid;
+    let validationResult;
+    const fieldNames = convertToArrayPayload(name);
+
+    _subjects.state.next({
+      isValidating: true
+    });
+
+    if (_options.resolver) {
+      const errors = await executeResolverValidation(isUndefined(name) ? name : fieldNames);
+      isValid = isEmptyObject(errors);
+      validationResult = name ? !fieldNames.some(name => get(errors, name)) : isValid;
+    } else if (name) {
+      validationResult = (await Promise.all(fieldNames.map(async fieldName => {
+        const field = get(_fields, fieldName);
+        return await executeBuildInValidation(field && field._f ? {
+          [fieldName]: field
+        } : field);
+      }))).every(Boolean);
+
+      _updateValid();
+    } else {
+      validationResult = isValid = await executeBuildInValidation(_fields);
+    }
+
+    _subjects.state.next(Object.assign(Object.assign({}, !isString(name) || isValid !== _formState.isValid ? {} : {
+      name
+    }), {
+      errors: _formState.errors,
+      isValid,
+      isValidating: false
+    }));
+
+    options.shouldFocus && !validationResult && focusFieldBy(_fields, key => get(_formState.errors, key), name ? fieldNames : _names.mount);
+    return validationResult;
+  };
+
+  const getValues = fieldNames => {
+    const values = Object.assign(Object.assign({}, _defaultValues), _stateFlags.mount ? _formValues : {});
+    return isUndefined(fieldNames) ? values : isString(fieldNames) ? get(values, fieldNames) : fieldNames.map(name => get(values, name));
+  };
+
+  const clearErrors = name => {
+    name ? convertToArrayPayload(name).forEach(inputName => unset(_formState.errors, inputName)) : _formState.errors = {};
+
+    _subjects.state.next({
+      errors: _formState.errors
+    });
+  };
+
+  const setError = (name, error, options) => {
+    const ref = (get(_fields, name, {
+      _f: {}
+    })._f || {}).ref;
+    set(_formState.errors, name, Object.assign(Object.assign({}, error), {
+      ref
+    }));
+
+    _subjects.state.next({
+      name,
+      errors: _formState.errors,
+      isValid: false
+    });
+
+    options && options.shouldFocus && ref && ref.focus && ref.focus();
+  };
+
+  const watch = (name, defaultValue) => isFunction(name) ? _subjects.watch.subscribe({
+    next: info => name(_getWatch(undefined, defaultValue), info)
+  }) : _getWatch(name, defaultValue, true);
+
+  const unregister = (name, options = {}) => {
+    for (const fieldName of name ? convertToArrayPayload(name) : _names.mount) {
+      _names.mount.delete(fieldName);
+
+      _names.array.delete(fieldName);
+
+      if (get(_fields, fieldName)) {
+        if (!options.keepValue) {
+          unset(_fields, fieldName);
+          unset(_formValues, fieldName);
+        }
+
+        !options.keepError && unset(_formState.errors, fieldName);
+        !options.keepDirty && unset(_formState.dirtyFields, fieldName);
+        !options.keepTouched && unset(_formState.touchedFields, fieldName);
+        !_options.shouldUnregister && !options.keepDefaultValue && unset(_defaultValues, fieldName);
+      }
+    }
+
+    _subjects.watch.next({});
+
+    _subjects.state.next(Object.assign(Object.assign({}, _formState), !options.keepDirty ? {} : {
+      isDirty: _getDirty()
+    }));
+
+    !options.keepIsValid && _updateValid();
+  };
+
+  const register = (name, options = {}) => {
+    const field = get(_fields, name);
+    set(_fields, name, {
+      _f: Object.assign(Object.assign(Object.assign({}, field && field._f ? field._f : {
+        ref: {
+          name
+        }
+      }), {
+        name,
+        mount: true
+      }), options)
+    });
+
+    _names.mount.add(name);
+
+    !isUndefined(options.value) && set(_formValues, name, options.value);
+    field ? isBoolean(options.disabled) && set(_formValues, name, options.disabled ? undefined : get(_formValues, name, getFieldValue(field._f))) : updateValidAndValue(name, true);
+    return isWindowUndefined ? {
+      name: name
+    } : Object.assign(Object.assign({
+      name
+    }, isBoolean(options.disabled) ? {
+      disabled: options.disabled
+    } : {}), {
+      onChange: handleChange,
+      onBlur: handleChange,
+      ref: ref => {
+        if (ref) {
+          register(name, options);
+          let field = get(_fields, name);
+          const fieldRef = isUndefined(ref.value) ? ref.querySelectorAll ? ref.querySelectorAll('input,select,textarea')[0] || ref : ref : ref;
+          const isRadioOrCheckbox = isRadioOrCheckboxFunction(fieldRef);
+
+          if (fieldRef === field._f.ref || isRadioOrCheckbox && compact(field._f.refs || []).find(option => option === fieldRef)) {
+            return;
+          }
+
+          field = {
+            _f: isRadioOrCheckbox ? Object.assign(Object.assign({}, field._f), {
+              refs: [...compact(field._f.refs || []).filter(ref => isHTMLElement(ref) && document.contains(ref)), fieldRef],
+              ref: {
+                type: fieldRef.type,
+                name
+              }
+            }) : Object.assign(Object.assign({}, field._f), {
+              ref: fieldRef
+            })
+          };
+          set(_fields, name, field);
+          (!options || !options.disabled) && updateValidAndValue(name, false, fieldRef);
+        } else {
+          const field = get(_fields, name, {});
+          const shouldUnregister = _options.shouldUnregister || options.shouldUnregister;
+
+          if (field._f) {
+            field._f.mount = false;
+          }
+
+          shouldUnregister && !(isNameInFieldArray(_names.array, name) && _stateFlags.action) && _names.unMount.add(name);
+        }
+      }
+    });
+  };
+
+  const handleSubmit = (onValid, onInvalid) => async e => {
+    if (e) {
+      e.preventDefault && e.preventDefault();
+      e.persist && e.persist();
+    }
+
+    let hasNoPromiseError = true;
+    let fieldValues = Object.assign({}, _formValues);
+
+    _subjects.state.next({
+      isSubmitting: true
+    });
+
+    try {
+      if (_options.resolver) {
+        const {
+          errors,
+          values
+        } = await executeResolver();
+        _formState.errors = errors;
+        fieldValues = values;
+      } else {
+        await executeBuildInValidation(_fields);
+      }
+
+      if (isEmptyObject(_formState.errors) && Object.keys(_formState.errors).every(name => get(fieldValues, name))) {
+        _subjects.state.next({
+          errors: {},
+          isSubmitting: true
+        });
+
+        await onValid(fieldValues, e);
+      } else {
+        onInvalid && (await onInvalid(_formState.errors, e));
+        _options.shouldFocusError && focusFieldBy(_fields, key => get(_formState.errors, key), _names.mount);
+      }
+    } catch (err) {
+      hasNoPromiseError = false;
+      throw err;
+    } finally {
+      _formState.isSubmitted = true;
+
+      _subjects.state.next({
+        isSubmitted: true,
+        isSubmitting: false,
+        isSubmitSuccessful: isEmptyObject(_formState.errors) && hasNoPromiseError,
+        submitCount: _formState.submitCount + 1,
+        errors: _formState.errors
+      });
+    }
+  };
+
+  const reset = (formValues, keepStateOptions = {}) => {
+    const hasUpdatedFormValues = !isEmptyObject(formValues);
+    const updatedValues = formValues || _defaultValues;
+    const cloneUpdatedValues = cloneObject(updatedValues);
+
+    if (!keepStateOptions.keepDefaultValues) {
+      _defaultValues = updatedValues;
+    }
+
+    if (!keepStateOptions.keepValues) {
+      if (isWeb) {
+        for (const name of _names.mount) {
+          const field = get(_fields, name);
+
+          if (field && field._f) {
+            const fieldReference = Array.isArray(field._f.refs) ? field._f.refs[0] : field._f.ref;
+
+            try {
+              isHTMLElement(fieldReference) && fieldReference.closest('form').reset();
+              break;
+            } catch (_a) {}
+          }
+        }
+      }
+
+      _formValues = props.shouldUnregister ? {} : cloneUpdatedValues;
+      _fields = {};
+
+      _subjects.control.next({
+        values: hasUpdatedFormValues ? cloneUpdatedValues : _defaultValues
+      });
+
+      _subjects.watch.next({});
+
+      _subjects.array.next({
+        values: cloneUpdatedValues
+      });
+    }
+
+    _names = {
+      mount: new Set(),
+      unMount: new Set(),
+      array: new Set(),
+      watch: new Set(),
+      watchAll: false,
+      focus: ''
+    };
+
+    _subjects.state.next({
+      submitCount: keepStateOptions.keepSubmitCount ? _formState.submitCount : 0,
+      isDirty: keepStateOptions.keepDirty ? _formState.isDirty : keepStateOptions.keepDefaultValues ? deepEqual(formValues, _defaultValues) : false,
+      isSubmitted: keepStateOptions.keepIsSubmitted ? _formState.isSubmitted : false,
+      dirtyFields: keepStateOptions.keepDirty ? _formState.dirtyFields : {},
+      touchedFields: keepStateOptions.keepTouched ? _formState.touchedFields : {},
+      errors: keepStateOptions.keepErrors ? _formState.errors : {},
+      isSubmitting: false,
+      isSubmitSuccessful: false
+    });
+
+    _stateFlags.mount = !_proxyFormState.isValid || !!keepStateOptions.keepIsValid;
+    _stateFlags.watch = !!props.shouldUnregister;
+  };
+
+  const setFocus = name => get(_fields, name)._f.ref.focus();
+
+  return {
+    control: {
+      register,
+      unregister,
+      _getWatch,
+      _getDirty,
+      _updateValid,
+      _removeUnmounted,
+      _updateFieldArray,
+      _getFieldArray,
+      _subjects,
+      _proxyFormState,
+
+      get _fields() {
+        return _fields;
+      },
+
+      set _fields(value) {
+        _fields = value;
+      },
+
+      get _formValues() {
+        return _formValues;
+      },
+
+      set _formValues(value) {
+        _formValues = value;
+      },
+
+      get _stateFlags() {
+        return _stateFlags;
+      },
+
+      set _stateFlags(value) {
+        _stateFlags = value;
+      },
+
+      get _defaultValues() {
+        return _defaultValues;
+      },
+
+      set _defaultValues(value) {
+        _defaultValues = value;
+      },
+
+      get _names() {
+        return _names;
+      },
+
+      set _names(value) {
+        _names = value;
+      },
+
+      get _formState() {
+        return _formState;
+      },
+
+      set _formState(value) {
+        _formState = value;
+      },
+
+      get _options() {
+        return _options;
+      },
+
+      set _options(value) {
+        _options = Object.assign(Object.assign({}, _options), value);
+      }
+
+    },
+    trigger,
+    register,
+    handleSubmit,
+    watch,
+    setValue,
+    getValues,
+    reset,
+    clearErrors,
+    unregister,
+    setError,
+    setFocus
+  };
+}
+
+function useForm(props = {}) {
+  const _formControl = React.useRef();
+
   const [formState, updateFormState] = React.useState({
     isDirty: false,
     isValidating: false,
@@ -39019,712 +38835,44 @@ function useForm({
     touchedFields: {},
     isSubmitting: false,
     isSubmitSuccessful: false,
-    isValid: !validationMode.isOnSubmit,
+    isValid: false,
     errors: {}
   });
-  const readFormStateRef = React.useRef({
-    isDirty: !isProxyEnabled,
-    dirtyFields: !isProxyEnabled,
-    touchedFields: !isProxyEnabled,
-    isValidating: !isProxyEnabled,
-    isValid: !isProxyEnabled,
-    errors: !isProxyEnabled
+
+  if (_formControl.current) {
+    _formControl.current.control._options = props;
+  } else {
+    _formControl.current = Object.assign(Object.assign({}, createFormControl(props)), {
+      formState
+    });
+  }
+
+  const control = _formControl.current.control;
+  useSubscribe({
+    subject: control._subjects.state,
+    callback: formState => {
+      if (shouldRenderFormState(formState, control._proxyFormState, true)) {
+        control._formState = Object.assign(Object.assign({}, control._formState), formState);
+        updateFormState(Object.assign({}, control._formState));
+      }
+    }
   });
-  const formStateRef = React.useRef(formState);
-  contextRef.current = context;
-  resolverRef.current = resolver;
-
-  const getIsValid = () => formStateRef.current.isValid = deepEqual(validFieldsRef.current, fieldsWithValidationRef.current) && isEmptyObject(formStateRef.current.errors);
-
-  const shouldRenderBaseOnError = React.useCallback((name, error, shouldRender = false, state = {}, isValid, isWatched) => {
-    const previousError = get(formStateRef.current.errors, name);
-    let shouldReRender = shouldRender || !deepEqual(previousError, error, true) || readFormStateRef.current.isValid && isUndefined(error) && get(fieldsWithValidationRef.current, name) && !get(validFieldsRef.current, name);
-
-    if (error) {
-      unset(validFieldsRef.current, name);
-      shouldReRender = shouldReRender || !previousError || !deepEqual(previousError, error, true);
-      set(formStateRef.current.errors, name, error);
-    } else {
-      if (get(fieldsWithValidationRef.current, name) || resolverRef.current) {
-        set(validFieldsRef.current, name, true);
-        shouldReRender = shouldReRender || previousError;
-      }
-
-      unset(formStateRef.current.errors, name);
-    }
-
-    if (shouldReRender && !isNullOrUndefined(shouldRender) || !isEmptyObject(state) || isWatched) {
-      const updatedFormState = Object.assign(Object.assign({}, state), {
-        isValid: resolverRef.current ? !!isValid : getIsValid(),
-        errors: formStateRef.current.errors,
-        name
-      });
-      formStateRef.current = Object.assign(Object.assign({}, formStateRef.current), updatedFormState);
-      formStateSubjectRef.current.next(isWatched ? {
-        name
-      } : updatedFormState);
-    }
-
-    formStateSubjectRef.current.next({
-      isValidating: false
-    });
-  }, []);
-  const setFieldValue = React.useCallback((name, rawValue, options = {}, shouldRender, shouldRegister) => {
-    shouldRegister && register(name);
-
-    const _f = get(fieldsRef.current, name, {})._f;
-
-    if (_f) {
-      const value = isWeb && isHTMLElement(_f.ref) && isNullOrUndefined(rawValue) ? '' : rawValue;
-      _f.value = getFieldValueAs(rawValue, _f);
-
-      if (isRadioInput(_f.ref)) {
-        (_f.refs || []).forEach(radioRef => radioRef.checked = radioRef.value === value);
-      } else if (isFileInput(_f.ref) && !isString(value)) {
-        _f.ref.files = value;
-      } else if (isMultipleSelect(_f.ref)) {
-        [..._f.ref.options].forEach(selectRef => selectRef.selected = value.includes(selectRef.value));
-      } else if (isCheckBoxInput(_f.ref) && _f.refs) {
-        _f.refs.length > 1 ? _f.refs.forEach(checkboxRef => checkboxRef.checked = Array.isArray(value) ? !!value.find(data => data === checkboxRef.value) : value === checkboxRef.value) : _f.refs[0].checked = !!value;
-      } else {
-        _f.ref.value = value;
-      }
-
-      if (shouldRender) {
-        const values = getFieldsValues(fieldsRef);
-        set(values, name, rawValue);
-        controllerSubjectRef.current.next({
-          values: Object.assign(Object.assign({}, defaultValuesRef.current), values),
-          name
-        });
-      }
-
-      options.shouldDirty && updateAndGetDirtyState(name, value);
-      options.shouldValidate && trigger(name);
-    }
-  }, []);
-  const getIsDirty = React.useCallback((name, data) => {
-    const formValues = getFieldsValues(fieldsRef);
-    name && data && set(formValues, name, data);
-    return !deepEqual(formValues, defaultValuesRef.current);
-  }, []);
-  const updateAndGetDirtyState = React.useCallback((name, inputValue, shouldRender = true) => {
-    if (readFormStateRef.current.isDirty || readFormStateRef.current.dirtyFields) {
-      const isFieldDirty = !deepEqual(get(defaultValuesRef.current, name), inputValue);
-      const isDirtyFieldExist = get(formStateRef.current.dirtyFields, name);
-      const previousIsDirty = formStateRef.current.isDirty;
-      isFieldDirty ? set(formStateRef.current.dirtyFields, name, true) : unset(formStateRef.current.dirtyFields, name);
-      formStateRef.current.isDirty = getIsDirty();
-      const state = {
-        isDirty: formStateRef.current.isDirty,
-        dirtyFields: formStateRef.current.dirtyFields,
-        name
-      };
-      const isChanged = readFormStateRef.current.isDirty && previousIsDirty !== state.isDirty || readFormStateRef.current.dirtyFields && isDirtyFieldExist !== get(formStateRef.current.dirtyFields, name);
-      isChanged && shouldRender && formStateSubjectRef.current.next(state);
-      return isChanged ? state : {};
-    }
-
-    return {};
-  }, []);
-  const executeValidation = React.useCallback(async (name, skipReRender) => {
-    const error = (await validateField(get(fieldsRef.current, name), isValidateAllFieldCriteria))[name];
-    shouldRenderBaseOnError(name, error, skipReRender);
-    return isUndefined(error);
-  }, [isValidateAllFieldCriteria]);
-  const executeSchemaOrResolverValidation = React.useCallback(async (names, currentNames = []) => {
-    const {
-      errors
-    } = await resolverRef.current(getFieldsValues(fieldsRef, shouldUnregister ? {} : defaultValuesRef.current), contextRef.current, {
-      criteriaMode,
-      names: currentNames,
-      fields: getFields(fieldsNamesRef.current, fieldsRef.current)
-    });
-
-    for (const name of names) {
-      const error = get(errors, name);
-      error ? set(formStateRef.current.errors, name, error) : unset(formStateRef.current.errors, name);
-    }
-
-    return errors;
-  }, [criteriaMode]);
-
-  const validateForm = async fieldsRef => {
-    let isValid = true;
-
-    for (const name in fieldsRef) {
-      const field = fieldsRef[name];
-
-      if (field) {
-        const _f = field._f;
-        const current = omit(field, '_f');
-
-        if (_f) {
-          const fieldError = await validateField(field, isValidateAllFieldCriteria);
-
-          if (fieldError[_f.name]) {
-            isValid = false;
-            set(formStateRef.current.errors, _f.name, fieldError[_f.name]);
-            unset(validFieldsRef.current, _f.name);
-          } else if (get(fieldsWithValidationRef.current, _f.name)) {
-            set(validFieldsRef.current, _f.name, true);
-            unset(formStateRef.current.errors, _f.name);
-          }
-        }
-
-        current && (await validateForm(current));
-      }
-    }
-
-    return isValid;
-  };
-
-  const trigger = React.useCallback(async name => {
-    const fields = isUndefined(name) ? Object.keys(fieldsRef.current) : convertToArrayPayload(name);
-    let isValid;
-    let schemaResult = {};
-    formStateSubjectRef.current.next({
-      isValidating: true
-    });
-
-    if (resolverRef.current) {
-      schemaResult = await executeSchemaOrResolverValidation(fields, isUndefined(name) ? undefined : fields);
-      isValid = fields.every(name => !get(schemaResult, name));
-    } else {
-      isValid = isUndefined(name) ? await validateForm(fieldsRef.current) : (await Promise.all(fields.filter(fieldName => get(fieldsRef.current, fieldName)).map(async fieldName => await executeValidation(fieldName, null)))).every(Boolean);
-    }
-
-    formStateSubjectRef.current.next(Object.assign(Object.assign({}, isString(name) ? {
-      name
-    } : {}), {
-      errors: formStateRef.current.errors,
-      isValidating: false,
-      isValid: resolverRef.current ? isEmptyObject(schemaResult) : getIsValid()
-    }));
-    return isValid;
-  }, [executeSchemaOrResolverValidation, executeValidation]);
-  const setInternalValues = React.useCallback((name, value, options) => Object.entries(value).forEach(([inputKey, inputValue]) => {
-    const fieldName = `${name}.${inputKey}`;
-    const field = get(fieldsRef.current, fieldName);
-    const isFieldArray = fieldArrayNamesRef.current.has(name);
-    isFieldArray || field && !field._f ? setInternalValues(fieldName, inputValue, options) : setFieldValue(fieldName, inputValue, options, true, !field);
-  }), [trigger]);
-
-  const isFieldWatched = name => isWatchAllRef.current || watchFieldsRef.current.has(name) || watchFieldsRef.current.has((name.match(/\w+/) || [])[0]);
-
-  const updateValidAndValue = (name, options, ref, isWithinRefCallback) => {
-    const field = get(fieldsRef.current, name);
-    const defaultValue = isUndefined(field._f.value) ? get(defaultValuesRef.current, name) : field._f.value;
-
-    if (field && !isUndefined(defaultValue)) {
-      if (ref && ref.defaultChecked) {
-        field._f.value = getFieldValue(field);
-      } else if (!isNameInFieldArray(fieldArrayNamesRef.current, name)) {
-        setFieldValue(name, defaultValue);
-      } else {
-        field._f.value = defaultValue;
-      }
-    }
-
-    if ((!isUndefined(defaultValue) || isWithinRefCallback) && hasValidation(options, field._f.mount) && !validationMode.isOnSubmit && field && readFormStateRef.current.isValid) {
-      validateField(field, isValidateAllFieldCriteria).then(error => {
-        isEmptyObject(error) ? set(validFieldsRef.current, name, true) : unset(validFieldsRef.current, name);
-        formStateRef.current.isValid !== getIsValid() && updateFormState(Object.assign(Object.assign({}, formStateRef.current), {
-          isValid: getIsValid()
-        }));
-      });
-    }
-
-    return defaultValue;
-  };
-
-  const setValue = (name, value, options = {}) => {
-    const field = get(fieldsRef.current, name);
-    const isFieldArray = fieldArrayNamesRef.current.has(name);
-
-    if (isFieldArray) {
-      fieldArraySubjectRef.current.next({
-        fields: value,
-        name,
-        isReset: true
-      });
-
-      if ((readFormStateRef.current.isDirty || readFormStateRef.current.dirtyFields) && options.shouldDirty) {
-        set(formStateRef.current.dirtyFields, name, setFieldArrayDirtyFields(value, get(defaultValuesRef.current, name, []), get(formStateRef.current.dirtyFields, name, [])));
-        formStateSubjectRef.current.next({
-          name,
-          dirtyFields: formStateRef.current.dirtyFields,
-          isDirty: getIsDirty(name, value)
-        });
-      }
-
-      !value.length && set(fieldsRef.current, name, []) && set(fieldArrayDefaultValuesRef.current, name, []);
-    }
-
-    field && !field._f || isFieldArray ? setInternalValues(name, value, isFieldArray ? {} : options) : setFieldValue(name, value, options, true, !field);
-    isFieldWatched(name) && formStateSubjectRef.current.next({});
-    watchSubjectRef.current.next({
-      name,
-      value
-    });
-  };
-
-  const handleChange = React.useCallback(async ({
-    type,
-    target,
-    target: {
-      value,
-      type: inputType
-    }
-  }) => {
-    let name = target.name;
-    let error;
-    let isValid;
-    const field = get(fieldsRef.current, name);
-
-    if (field) {
-      let inputValue = inputType ? getFieldValue(field) : undefined;
-      inputValue = isUndefined(inputValue) ? value : inputValue;
-      const isBlurEvent = type === EVENTS.BLUR;
-      const {
-        isOnBlur: isReValidateOnBlur,
-        isOnChange: isReValidateOnChange
-      } = getValidationModes(reValidateMode);
-      const shouldSkipValidation = !hasValidation(field._f, field._f.mount) && !resolverRef.current && !get(formStateRef.current.errors, name) || skipValidation(Object.assign({
-        isBlurEvent,
-        isTouched: !!get(formStateRef.current.touchedFields, name),
-        isSubmitted: formStateRef.current.isSubmitted,
-        isReValidateOnBlur,
-        isReValidateOnChange
-      }, validationMode));
-      const isWatched = !isBlurEvent && isFieldWatched(name);
-
-      if (!isUndefined(inputValue)) {
-        field._f.value = inputValue;
-      }
-
-      const state = updateAndGetDirtyState(name, field._f.value, false);
-
-      if (isBlurEvent && !get(formStateRef.current.touchedFields, name)) {
-        set(formStateRef.current.touchedFields, name, true);
-        readFormStateRef.current.touchedFields && (state.touchedFields = formStateRef.current.touchedFields);
-      }
-
-      let shouldRender = !isEmptyObject(state) || isWatched;
-
-      if (shouldSkipValidation) {
-        !isBlurEvent && watchSubjectRef.current.next({
-          name,
-          type,
-          value: inputValue
-        });
-        return shouldRender && formStateSubjectRef.current.next(isWatched ? {
-          name
-        } : Object.assign(Object.assign({}, state), {
-          name
-        }));
-      }
-
-      formStateSubjectRef.current.next({
-        isValidating: true
-      });
-
-      if (resolverRef.current) {
-        const {
-          errors
-        } = await resolverRef.current(getFieldsValues(fieldsRef, shouldUnregister ? {} : defaultValuesRef.current), contextRef.current, {
-          criteriaMode,
-          fields: getFields([name], fieldsRef.current),
-          names: [name]
-        });
-        const previousFormIsValid = formStateRef.current.isValid;
-        error = get(errors, name);
-
-        if (isCheckBoxInput(target) && !error) {
-          const parentNodeName = getNodeParentName(name);
-          const currentError = get(errors, parentNodeName, {});
-          currentError.type && currentError.message && (error = currentError);
-
-          if (currentError || get(formStateRef.current.errors, parentNodeName)) {
-            name = parentNodeName;
-          }
-        }
-
-        isValid = isEmptyObject(errors);
-        previousFormIsValid !== isValid && (shouldRender = true);
-      } else {
-        error = (await validateField(field, isValidateAllFieldCriteria))[name];
-      }
-
-      !isBlurEvent && watchSubjectRef.current.next({
-        name,
-        type,
-        value: inputValue
-      });
-      shouldRenderBaseOnError(name, error, shouldRender, state, isValid, isWatched);
-    }
-  }, []);
-
-  const getValues = fieldNames => {
-    const values = isMountedRef.current ? getFieldsValues(fieldsRef, shouldUnregister ? {} : defaultValuesRef.current) : defaultValuesRef.current;
-    return isUndefined(fieldNames) ? values : isString(fieldNames) ? get(values, fieldNames) : fieldNames.map(name => get(values, name));
-  };
-
-  const updateIsValid = React.useCallback(async (values = {}) => {
-    const previousIsValid = formStateRef.current.isValid;
-
-    if (resolver) {
-      const {
-        errors
-      } = await resolverRef.current(Object.assign(Object.assign({}, getFieldsValues(fieldsRef, shouldUnregister ? {} : defaultValuesRef.current)), values), contextRef.current, {
-        criteriaMode,
-        fields: getFields(fieldsNamesRef.current, fieldsRef.current)
-      });
-      formStateRef.current.isValid = isEmptyObject(errors);
-    } else {
-      getIsValid();
-    }
-
-    previousIsValid !== formStateRef.current.isValid && formStateSubjectRef.current.next({
-      isValid: formStateRef.current.isValid
-    });
-  }, [criteriaMode]);
-
-  const clearErrors = name => {
-    name ? convertToArrayPayload(name).forEach(inputName => unset(formStateRef.current.errors, inputName)) : formStateRef.current.errors = {};
-    formStateSubjectRef.current.next({
-      errors: formStateRef.current.errors
-    });
-  };
-
-  const setError = (name, error, options) => {
-    const ref = ((get(fieldsRef.current, name) || {
-      _f: {}
-    })._f || {}).ref;
-    set(formStateRef.current.errors, name, Object.assign(Object.assign({}, error), {
-      ref
-    }));
-    formStateSubjectRef.current.next({
-      name,
-      errors: formStateRef.current.errors,
-      isValid: false
-    });
-    options && options.shouldFocus && ref && ref.focus && ref.focus();
-  };
-
-  const watchInternal = React.useCallback((fieldNames, defaultValue, isGlobal) => {
-    const isArrayNames = Array.isArray(fieldNames);
-    const fieldValues = isMountedRef.current ? getFieldsValues(fieldsRef, defaultValuesRef.current) : isUndefined(defaultValue) ? defaultValuesRef.current : isArrayNames ? defaultValue || {} : {
-      [fieldNames]: defaultValue
-    };
-
-    if (isUndefined(fieldNames)) {
-      isGlobal && (isWatchAllRef.current = true);
-      return fieldValues;
-    }
-
-    const result = [];
-
-    for (const fieldName of isArrayNames ? fieldNames : [fieldNames]) {
-      isGlobal && watchFieldsRef.current.add(fieldName);
-      result.push(get(fieldValues, fieldName));
-    }
-
-    return isArrayNames ? result : result[0];
-  }, []);
-
-  const watch = (fieldName, defaultValue) => isFunction(fieldName) ? watchSubjectRef.current.subscribe({
-    next: info => fieldName(watchInternal(undefined, defaultValue), info)
-  }) : watchInternal(fieldName, defaultValue, true);
-
-  const unregister = (name, options = {}) => {
-    for (const inputName of name ? convertToArrayPayload(name) : Object.keys(fieldsNamesRef.current)) {
-      fieldsNamesRef.current.delete(inputName);
-      fieldArrayNamesRef.current.delete(inputName);
-
-      if (get(fieldsRef.current, inputName)) {
-        if (!options.keepIsValid) {
-          unset(fieldsWithValidationRef.current, inputName);
-          unset(validFieldsRef.current, inputName);
-        }
-
-        !options.keepError && unset(formStateRef.current.errors, inputName);
-        !options.keepValue && unset(fieldsRef.current, inputName);
-        !options.keepDirty && unset(formStateRef.current.dirtyFields, inputName);
-        !options.keepTouched && unset(formStateRef.current.touchedFields, inputName);
-        !shouldUnregister && !options.keepDefaultValue && unset(defaultValuesRef.current, inputName);
-        watchSubjectRef.current.next({
-          name: inputName
-        });
-      }
-    }
-
-    formStateSubjectRef.current.next(Object.assign(Object.assign(Object.assign({}, formStateRef.current), !options.keepDirty ? {} : {
-      isDirty: getIsDirty()
-    }), resolverRef.current ? {} : {
-      isValid: getIsValid()
-    }));
-    !options.keepIsValid && updateIsValid();
-  };
-
-  const registerFieldRef = (name, ref, options) => {
-    register(name, options);
-    let field = get(fieldsRef.current, name);
-    const isRadioOrCheckbox = isRadioOrCheckboxFunction(ref);
-
-    if (ref === field._f.ref || isWeb && isHTMLElement(field._f.ref) && !isHTMLElement(ref) || isRadioOrCheckbox && Array.isArray(field._f.refs) && compact(field._f.refs).find(option => option === ref)) {
-      return;
-    }
-
-    field = {
-      _f: isRadioOrCheckbox ? Object.assign(Object.assign({}, field._f), {
-        refs: [...compact(field._f.refs || []).filter(ref => isHTMLElement(ref) && document.contains(ref)), ref],
-        ref: {
-          type: ref.type,
-          name
-        }
-      }) : Object.assign(Object.assign({}, field._f), {
-        ref
-      })
-    };
-    set(fieldsRef.current, name, field);
-    const defaultValue = updateValidAndValue(name, options, ref, true);
-
-    if (isRadioOrCheckbox && Array.isArray(defaultValue) ? !deepEqual(get(fieldsRef.current, name)._f.value, defaultValue) : isUndefined(get(fieldsRef.current, name)._f.value)) {
-      get(fieldsRef.current, name)._f.value = getFieldValue(get(fieldsRef.current, name));
-    }
-  };
-
-  const register = React.useCallback((name, options) => {
-    const isInitialRegister = !get(fieldsRef.current, name);
-    set(fieldsRef.current, name, {
-      _f: Object.assign(Object.assign(Object.assign({}, isInitialRegister ? {
-        ref: {
-          name
-        }
-      } : Object.assign({
-        ref: (get(fieldsRef.current, name)._f || {}).ref
-      }, get(fieldsRef.current, name)._f)), {
-        name,
-        mount: true
-      }), options)
-    });
-    hasValidation(options, true) && set(fieldsWithValidationRef.current, name, true);
-    fieldsNamesRef.current.add(name);
-    isInitialRegister && updateValidAndValue(name, options);
-    return isWindowUndefined ? {
-      name: name
-    } : {
-      name,
-      onChange: handleChange,
-      onBlur: handleChange,
-      ref: ref => {
-        if (ref) {
-          registerFieldRef(name, ref, options);
-        } else {
-          const field = get(fieldsRef.current, name);
-          field && (field._f.mount = false);
-
-          if (isWeb && (shouldUnregister || options && options.shouldUnregister)) {
-            unregisterFieldsNamesRef.current.add(name);
-          }
-        }
-      }
-    };
-  }, [defaultValuesRef.current]);
-  const handleSubmit = React.useCallback((onValid, onInvalid) => async e => {
-    if (e) {
-      e.preventDefault && e.preventDefault();
-      e.persist && e.persist();
-    }
-
-    let hasNoPromiseError = true;
-    let fieldValues = getFieldsValues(fieldsRef, shouldUnregister ? {} : defaultValuesRef.current);
-    formStateSubjectRef.current.next({
-      isSubmitting: true
-    });
-
-    try {
-      if (resolverRef.current) {
-        const {
-          errors,
-          values
-        } = await resolverRef.current(fieldValues, contextRef.current, {
-          criteriaMode,
-          fields: getFields(fieldsNamesRef.current, fieldsRef.current)
-        });
-        formStateRef.current.errors = errors;
-        fieldValues = values;
-      } else {
-        await validateForm(fieldsRef.current);
-      }
-
-      if (isEmptyObject(formStateRef.current.errors) && Object.keys(formStateRef.current.errors).every(name => get(fieldValues, name))) {
-        formStateSubjectRef.current.next({
-          errors: {},
-          isSubmitting: true
-        });
-        await onValid(fieldValues, e);
-      } else {
-        onInvalid && (await onInvalid(formStateRef.current.errors, e));
-        shouldFocusError && focusFieldBy(fieldsRef.current, key => get(formStateRef.current.errors, key), fieldsNamesRef.current);
-      }
-    } catch (_a) {
-      hasNoPromiseError = false;
-    } finally {
-      formStateRef.current.isSubmitted = true;
-      formStateSubjectRef.current.next({
-        isSubmitted: true,
-        isSubmitting: false,
-        isSubmitSuccessful: isEmptyObject(formStateRef.current.errors) && hasNoPromiseError,
-        submitCount: formStateRef.current.submitCount + 1,
-        errors: formStateRef.current.errors
-      });
-    }
-  }, [shouldFocusError, isValidateAllFieldCriteria, criteriaMode]);
-  const resetFromState = React.useCallback(({
-    keepErrors,
-    keepDirty,
-    keepIsSubmitted,
-    keepTouched,
-    keepDefaultValues,
-    keepIsValid,
-    keepSubmitCount
-  }, values) => {
-    if (!keepIsValid) {
-      validFieldsRef.current = {};
-      fieldsWithValidationRef.current = {};
-    }
-
-    watchFieldsRef.current = new Set();
-    isWatchAllRef.current = false;
-    formStateSubjectRef.current.next({
-      submitCount: keepSubmitCount ? formStateRef.current.submitCount : 0,
-      isDirty: keepDirty ? formStateRef.current.isDirty : keepDefaultValues ? deepEqual(values, defaultValuesRef.current) : false,
-      isSubmitted: keepIsSubmitted ? formStateRef.current.isSubmitted : false,
-      isValid: keepIsValid ? formStateRef.current.isValid : !!updateIsValid(values),
-      dirtyFields: keepDirty ? formStateRef.current.dirtyFields : {},
-      touchedFields: keepTouched ? formStateRef.current.touchedFields : {},
-      errors: keepErrors ? formStateRef.current.errors : {},
-      isSubmitting: false,
-      isSubmitSuccessful: false
-    });
-  }, []);
-
-  const reset = (values, keepStateOptions = {}) => {
-    const updatedValues = values || defaultValuesRef.current;
-
-    if (isWeb && !keepStateOptions.keepValues) {
-      for (const name of fieldsNamesRef.current) {
-        const field = get(fieldsRef.current, name);
-
-        if (field && field._f) {
-          const inputRef = Array.isArray(field._f.refs) ? field._f.refs[0] : field._f.ref;
-
-          if (isHTMLElement(inputRef)) {
-            try {
-              inputRef.closest('form').reset();
-              break;
-            } catch (_a) {}
-          }
-        }
-      }
-    }
-
-    !keepStateOptions.keepDefaultValues && (defaultValuesRef.current = Object.assign({}, updatedValues));
-
-    if (!keepStateOptions.keepValues) {
-      fieldsRef.current = {};
-      controllerSubjectRef.current.next({
-        values: Object.assign({}, updatedValues)
-      });
-      watchSubjectRef.current.next({
-        value: Object.assign({}, updatedValues)
-      });
-      fieldArraySubjectRef.current.next({
-        fields: Object.assign({}, updatedValues),
-        isReset: true
-      });
-    }
-
-    resetFromState(keepStateOptions, values);
-    isMountedRef.current = false;
-  };
-
-  const setFocus = name => get(fieldsRef.current, name)._f.ref.focus();
-
   React.useEffect(() => {
-    const formStateSubscription = formStateSubjectRef.current.subscribe({
-      next(formState) {
-        if (shouldRenderFormState(formState, readFormStateRef.current, true)) {
-          formStateRef.current = Object.assign(Object.assign({}, formStateRef.current), formState);
-          updateFormState(formStateRef.current);
-        }
-      }
+    if (!control._stateFlags.mount) {
+      control._proxyFormState.isValid && control._updateValid();
+      control._stateFlags.mount = true;
+    }
 
-    });
-    const useFieldArraySubscription = fieldArraySubjectRef.current.subscribe({
-      next(state) {
-        if (state.fields && state.name && readFormStateRef.current.isValid) {
-          const values = getFieldsValues(fieldsRef);
-          set(values, state.name, state.fields);
-          updateIsValid(values);
-        }
-      }
+    if (control._stateFlags.watch) {
+      control._stateFlags.watch = false;
 
-    });
-    resolverRef.current && readFormStateRef.current.isValid && updateIsValid();
-    return () => {
-      watchSubjectRef.current.unsubscribe();
-      formStateSubscription.unsubscribe();
-      useFieldArraySubscription.unsubscribe();
-    };
-  }, []);
-  React.useEffect(() => {
-    const isLiveInDom = ref => !isHTMLElement(ref) || !document.contains(ref);
+      control._subjects.state.next({});
+    }
 
-    isMountedRef.current = true;
-    unregisterFieldsNamesRef.current.forEach(name => {
-      const field = get(fieldsRef.current, name);
-      field && (field._f.refs ? field._f.refs.every(isLiveInDom) : isLiveInDom(field._f.ref)) && unregister(name);
-    });
-    unregisterFieldsNamesRef.current = new Set();
+    control._removeUnmounted();
   });
-  return {
-    control: React.useMemo(() => ({
-      register,
-      isWatchAllRef,
-      watchFieldsRef,
-      getIsDirty,
-      formStateSubjectRef,
-      fieldArraySubjectRef,
-      controllerSubjectRef,
-      watchSubjectRef,
-      watchInternal,
-      fieldsRef,
-      validFieldsRef,
-      fieldsWithValidationRef,
-      fieldArrayNamesRef,
-      readFormStateRef,
-      formStateRef,
-      defaultValuesRef,
-      fieldArrayDefaultValuesRef,
-      unregister,
-      shouldUnmountUnregister: shouldUnregister
-    }), []),
-    formState: getProxyFormState(isProxyEnabled, formState, readFormStateRef),
-    trigger,
-    register,
-    handleSubmit,
-    watch: React.useCallback(watch, []),
-    setValue: React.useCallback(setValue, [setInternalValues]),
-    getValues: React.useCallback(getValues, []),
-    reset: React.useCallback(reset, []),
-    clearErrors: React.useCallback(clearErrors, []),
-    unregister: React.useCallback(unregister, []),
-    setError: React.useCallback(setError, []),
-    setFocus: React.useCallback(setFocus, [])
-  };
+  _formControl.current.formState = getProxyFormState(formState, control._proxyFormState);
+  return _formControl.current;
 }
 
 var index$3 = typeof document !== 'undefined' ? useLayoutEffect : useEffect;
@@ -39810,7 +38958,7 @@ function calculateNodeHeight(sizingData, value, minRows, maxRows) {
 
   if (!hiddenTextarea) {
     hiddenTextarea = document.createElement('textarea');
-    hiddenTextarea.setAttribute('tab-index', '-1');
+    hiddenTextarea.setAttribute('tabindex', '-1');
     hiddenTextarea.setAttribute('aria-hidden', 'true');
     forceHiddenStyles(hiddenTextarea);
   }
@@ -39861,7 +39009,7 @@ var pick = function pick(props, obj) {
 
 var SIZING_STYLE = ['borderBottomWidth', 'borderLeftWidth', 'borderRightWidth', 'borderTopWidth', 'boxSizing', 'fontFamily', 'fontSize', 'fontStyle', 'fontWeight', 'letterSpacing', 'lineHeight', 'paddingBottom', 'paddingLeft', 'paddingRight', 'paddingTop', // non-standard
 'tabSize', 'textIndent', // non-standard
-'textRendering', 'textTransform', 'width'];
+'textRendering', 'textTransform', 'width', 'wordBreak'];
 var isIE$1 = typeof document !== 'undefined' ? !!document.documentElement.currentStyle : false;
 
 var getSizingData = function getSizingData(node) {
@@ -39915,7 +39063,7 @@ var TextareaAutosize = function TextareaAutosize(_ref, userRef) {
       onChange = _ref$onChange === void 0 ? noop$2 : _ref$onChange,
       _ref$onHeightChange = _ref.onHeightChange,
       onHeightChange = _ref$onHeightChange === void 0 ? noop$2 : _ref$onHeightChange,
-      props = _objectWithoutPropertiesLoose$f(_ref, ["cacheMeasurements", "maxRows", "minRows", "onChange", "onHeightChange"]);
+      props = _objectWithoutPropertiesLoose$e(_ref, ["cacheMeasurements", "maxRows", "minRows", "onChange", "onHeightChange"]);
 
   if (process.env.NODE_ENV !== 'production' && props.style) {
     if ('maxHeight' in props.style) {
@@ -39976,6 +39124,7 @@ var TextareaAutosize = function TextareaAutosize(_ref, userRef) {
 };
 
 var index$2 = /* #__PURE__ */forwardRef$3(TextareaAutosize);
+var ResizeTextarea = index$2;
 
 function BearTextarea({
   //
@@ -39993,7 +39142,7 @@ function BearTextarea({
   rows = rows ? rows : 3; // expand = "";
 
   const ijdfwer = expand && {
-    as: index$2
+    as: ResizeTextarea
   };
   const chakResize = {
     minH: "unset",
@@ -40412,6 +39561,14 @@ function BearCheckbox({
   // defaulTrue,
   ...xcvbojd
 }) {
+  ({
+    type: "checkbox",
+    isDisabled: disabled,
+    colorScheme: color,
+    // defaultIsChecked: defaulT
+    // onChange: (e) => setchekBxTrue(!chekBxTrue),
+    ...xcvbojd
+  }); // const ijasdwe = {
   //   // obj: textvar,
   //   style: {
   //     marginRight: "10px",
@@ -40471,7 +39628,7 @@ function _taggedTemplateLiteral(strings, raw) {
 
 function _objectWithoutProperties$b(source, excluded) {
   if (source == null) return {};
-  var target = _objectWithoutPropertiesLoose$f(source, excluded);
+  var target = _objectWithoutPropertiesLoose$e(source, excluded);
   var key, i;
 
   if (Object.getOwnPropertySymbols) {
@@ -43665,7 +42822,7 @@ var shouldHideSelectedOptions = function shouldHideSelectedOptions(props) {
 
 var instanceId = 1;
 
-var Select = /*#__PURE__*/function (_Component) {
+var Select$1 = /*#__PURE__*/function (_Component) {
   _inherits$3(Select, _Component);
 
   var _super = _createSuper$3(Select); // Misc. Instance Properties
@@ -45208,7 +44365,7 @@ var Select = /*#__PURE__*/function (_Component) {
   return Select;
 }(Component);
 
-Select.defaultProps = defaultProps$3;
+Select$1.defaultProps = defaultProps$3;
 
 var defaultProps$2 = {
   defaultInputValue: '',
@@ -45339,7 +44496,8 @@ var manageState = function manageState(SelectComponent) {
   }(Component), _class.defaultProps = defaultProps$2, _temp;
 };
 
-var index$1 = manageState(Select);
+var index$1 = manageState(Select$1);
+var Select = index$1;
 
 var compareOption = function compareOption() {
   var inputValue = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
@@ -45501,7 +44659,7 @@ var makeCreatableSelect = function makeCreatableSelect(SelectComponent) {
 }; // TODO: do this in package entrypoint
 
 
-var SelectCreatable$1 = makeCreatableSelect(Select);
+var SelectCreatable$1 = makeCreatableSelect(Select$1);
 var Creatable = manageState(SelectCreatable$1);
 
 var defaultProps = {
@@ -45696,10 +44854,10 @@ var makeAsyncSelect = function makeAsyncSelect(SelectComponent) {
   }(Component), _class.defaultProps = defaultProps, _temp;
 };
 
-var SelectState = manageState(Select);
+var SelectState = manageState(Select$1);
 makeAsyncSelect(SelectState);
 
-var SelectCreatable = makeCreatableSelect(Select);
+var SelectCreatable = makeCreatableSelect(Select$1);
 var SelectCreatableState = manageState(SelectCreatable);
 var AsyncCreatable = makeAsyncSelect(SelectCreatableState);
 
@@ -46319,7 +45477,7 @@ function BearSelect({
       /*#__PURE__*/
       //
       // <CreatableSelect {...dfijew} />
-      React__default$1.createElement(index$1, dfijew);
+      React__default$1.createElement(Select, dfijew);
   }
 
   return endValue;
@@ -46355,6 +45513,12 @@ function BearInputNumber({
   };
   const idfjew = {// style.fontSize;
   };
+  ({
+    width: "100px",
+    paddingRight: "20px",
+    // fontSize:
+    ...style
+  });
 
   function asjwe(asdfoke) {
     bearlog.lug("nCahnge PROPR NUMBER", {
@@ -46525,6 +45689,7 @@ function BearFormInputCheck({
   }
 
   let ujsdqwe = "";
+  let baseTop = true;
 
   function retFunc() {
     bearlog.lug("___ retFunc-inputType ___", inputType);
@@ -46679,7 +45844,7 @@ function BearFormInputCheck({
   zdssdire;
   const nidferw = //
   // ujsdqwe
-  BearInputBase(ujsdqwe, xsdd) ;
+  baseTop ? BearInputBase(ujsdqwe, xsdd) : ujsdqwe;
   return nidferw;
 }
 
@@ -46698,23 +45863,25 @@ function _dictEmail() {
   return emalBaso;
 }
 
-var entry$1 = createCommonjsModule(function (module, exports) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = exports.focusEvents = exports.keyboardEvents = exports.touchEvents = exports.mouseEvents = void 0; // As defined on the list of supported mouse events: https://reactjs.org/docs/events.html#mouse-events
-
-var mouseEvents = ['onClick', 'onContextMenu', 'onDoubleClick', 'onDrag', 'onDragEnd', 'onDragEnter', 'onDragExit', 'onDragLeave', 'onDragOver', 'onDragStart', 'onDrop', 'onMouseDown', 'onMouseEnter', 'onMouseLeave', 'onMouseMove', 'onMouseOut', 'onMouseOver', 'onMouseUp']; // As defined on the list of supported touch events: https://reactjs.org/docs/events.html#touch-events
-
-exports.mouseEvents = mouseEvents;
-var touchEvents = ['onTouchCancel', 'onTouchEnd', 'onTouchMove', 'onTouchStart']; // As defined on the list of supported keyboard events: https://reactjs.org/docs/events.html#keyboard-events
-
-exports.touchEvents = touchEvents;
-var keyboardEvents = ['onKeyDown', 'onKeyPress', 'onKeyUp']; // As defined on the list of supported keyboard events: https://reactjs.org/docs/events.html#focus-events
-
-exports.keyboardEvents = keyboardEvents;
+// As defined on the list of supported events: https://reactjs.org/docs/events.html
+var clipboardEvents = ['onCopy', 'onCut', 'onPaste'];
+var compositionEvents = ['onCompositionEnd', 'onCompositionStart', 'onCompositionUpdate'];
+var keyboardEvents = ['onKeyDown', 'onKeyPress', 'onKeyUp'];
 var focusEvents = ['onFocus', 'onBlur'];
+var formEvents = ['onChange', 'onInput', 'onInvalid', 'onReset', 'onSubmit'];
+var genericEvents = ['onError', 'onLoad'];
+var mouseEvents = ['onClick', 'onContextMenu', 'onDoubleClick', 'onDrag', 'onDragEnd', 'onDragEnter', 'onDragExit', 'onDragLeave', 'onDragOver', 'onDragStart', 'onDrop', 'onMouseDown', 'onMouseEnter', 'onMouseLeave', 'onMouseMove', 'onMouseOut', 'onMouseOver', 'onMouseUp'];
+var pointerEvents = ['onPointerDown', 'onPointerMove', 'onPointerUp', 'onPointerCancel', 'onGotPointerCapture', 'onLostPointerCapture', 'onPointerEnter', 'onPointerLeave', 'onPointerOver', 'onPointerOut'];
+var selectionEvents = ['onSelect'];
+var touchEvents = ['onTouchCancel', 'onTouchEnd', 'onTouchMove', 'onTouchStart'];
+var uiEvents = ['onScroll'];
+var wheelEvents = ['onWheel'];
+var mediaEvents = ['onAbort', 'onCanPlay', 'onCanPlayThrough', 'onDurationChange', 'onEmptied', 'onEncrypted', 'onEnded', 'onError', 'onLoadedData', 'onLoadedMetadata', 'onLoadStart', 'onPause', 'onPlay', 'onPlaying', 'onProgress', 'onRateChange', 'onSeeked', 'onSeeking', 'onStalled', 'onSuspend', 'onTimeUpdate', 'onVolumeChange', 'onWaiting'];
+var imageEvents = ['onLoad', 'onError'];
+var animationEvents = ['onAnimationStart', 'onAnimationEnd', 'onAnimationIteration'];
+var transitionEvents = ['onTransitionEnd'];
+var otherEvents = ['onToggle'];
+var allEvents = [].concat(clipboardEvents, compositionEvents, keyboardEvents, focusEvents, formEvents, genericEvents, mouseEvents, pointerEvents, selectionEvents, touchEvents, uiEvents, wheelEvents, mediaEvents, imageEvents, animationEvents, transitionEvents, otherEvents);
 /**
  * Returns an object with on-event callback props curried with provided args.
  * @param {Object} props Props passed to a component.
@@ -46722,31 +45889,57 @@ var focusEvents = ['onFocus', 'onBlur'];
  *   shall be curried with.
  */
 
-exports.focusEvents = focusEvents;
-
 var makeEventProps = function makeEventProps(props, getArgs) {
   var eventProps = {};
-  [].concat(mouseEvents, touchEvents, keyboardEvents, focusEvents).forEach(function (eventName) {
-    if (props[eventName]) {
-      eventProps[eventName] = function (event) {
-        return getArgs ? props[eventName](event, getArgs(eventName)) : props[eventName](event);
-      };
+  allEvents.forEach(function (eventName) {
+    if (!(eventName in props)) {
+      return;
     }
+
+    if (!getArgs) {
+      eventProps[eventName] = props[eventName];
+      return;
+    }
+
+    eventProps[eventName] = function (event) {
+      return props[eventName](event, getArgs(eventName));
+    };
   });
   return eventProps;
 };
 
-var _default = makeEventProps;
-exports.default = _default;
+var esm$7 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  clipboardEvents: clipboardEvents,
+  compositionEvents: compositionEvents,
+  keyboardEvents: keyboardEvents,
+  focusEvents: focusEvents,
+  formEvents: formEvents,
+  genericEvents: genericEvents,
+  mouseEvents: mouseEvents,
+  pointerEvents: pointerEvents,
+  selectionEvents: selectionEvents,
+  touchEvents: touchEvents,
+  uiEvents: uiEvents,
+  wheelEvents: wheelEvents,
+  mediaEvents: mediaEvents,
+  imageEvents: imageEvents,
+  animationEvents: animationEvents,
+  transitionEvents: transitionEvents,
+  otherEvents: otherEvents,
+  allEvents: allEvents,
+  'default': makeEventProps
 });
 
 function mergeClassNames() {
   return Array.prototype.slice.call(arguments).reduce(function (classList, arg) {
-    return typeof arg === 'string' || Array.isArray(arg) ? classList.concat(arg) : classList;
-  }, []).filter(Boolean).join(' ');
+    return classList.concat(arg);
+  }, []).filter(function (arg) {
+    return typeof arg === 'string';
+  }).join(' ');
 }
 
-var esm$5 = /*#__PURE__*/Object.freeze({
+var esm$6 = /*#__PURE__*/Object.freeze({
   __proto__: null,
   'default': mergeClassNames
 });
@@ -47059,6 +46252,8 @@ function toNumber(value) {
 
 var lodash_once = once;
 
+var once$1 = lodash_once;
+
 function filterDuplicates(arr) {
   return arr.filter(function (el, index, self) {
     return self.indexOf(el) === index;
@@ -47106,15 +46301,15 @@ function getUserLocalesInternal() {
   return fixLowercaseProperties(filterDuplicates(languageList));
 }
 
-var getUserLocales = lodash_once(getUserLocalesInternal);
+var getUserLocales = once$1(getUserLocalesInternal);
 
 function getUserLocaleInternal() {
   return getUserLocales()[0];
 }
 
-var getUserLocale = lodash_once(getUserLocaleInternal);
+var getUserLocale = once$1(getUserLocaleInternal);
 
-var esm$4 = /*#__PURE__*/Object.freeze({
+var esm$5 = /*#__PURE__*/Object.freeze({
   __proto__: null,
   getUserLocales: getUserLocales,
   getUserLocale: getUserLocale,
@@ -47476,7 +46671,7 @@ function getISOLocalDateTime(date) {
   return "".concat(getISOLocalDate(date), "T").concat(getHoursMinutesSeconds(date));
 }
 
-var esm$3 = /*#__PURE__*/Object.freeze({
+var esm$4 = /*#__PURE__*/Object.freeze({
   __proto__: null,
   getYear: getYear,
   getMonth: getMonth,
@@ -51190,7 +50385,7 @@ Calendar.propTypes = {
   view: isView
 };
 
-var esm$2 = /*#__PURE__*/Object.freeze({
+var esm$3 = /*#__PURE__*/Object.freeze({
   __proto__: null,
   'default': Calendar,
   Calendar: Calendar,
@@ -51241,6 +50436,8 @@ var detectElementOverflow = function detectElementOverflow(element, container) {
   };
 };
 
+var detectElementOverflow$1 = detectElementOverflow;
+
 /**
  * Checks whether we're running on a production build or not.
  */
@@ -51266,6 +50463,8 @@ var warnOnDev = function warnOnDev() {
 
   return consoleOnDev.apply(void 0, ['warn'].concat(message));
 };
+
+var _excluded = ["invertAxis", "invertSecondaryAxis"];
 
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
@@ -51335,6 +50534,8 @@ function _createSuper(Derived) {
 function _possibleConstructorReturn(self, call) {
   if (call && (_typeof$2(call) === "object" || typeof call === "function")) {
     return call;
+  } else if (call !== void 0) {
+    throw new TypeError("Derived constructors may only return object or undefined");
   }
 
   return _assertThisInitialized(self);
@@ -51354,7 +50555,7 @@ function _isNativeReflectConstruct() {
   if (typeof Proxy === "function") return true;
 
   try {
-    Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
+    Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {}));
     return true;
   } catch (e) {
     return false;
@@ -51409,9 +50610,13 @@ function ownKeys(object, enumerableOnly) {
 
   if (Object.getOwnPropertySymbols) {
     var symbols = Object.getOwnPropertySymbols(object);
-    if (enumerableOnly) symbols = symbols.filter(function (sym) {
-      return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-    });
+
+    if (enumerableOnly) {
+      symbols = symbols.filter(function (sym) {
+        return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+      });
+    }
+
     keys.push.apply(keys, symbols);
   }
 
@@ -51509,8 +50714,8 @@ function alignAxis(_ref) {
       spacing = _ref.spacing;
   var style = window.getComputedStyle(element);
   var parent = container.parentElement;
-  var scrollContainerCollisions = detectElementOverflow(parent, scrollContainer);
-  var documentCollisions = detectElementOverflow(parent, document.documentElement);
+  var scrollContainerCollisions = detectElementOverflow$1(parent, scrollContainer);
+  var documentCollisions = detectElementOverflow$1(parent, document.documentElement);
   var isX = axis === 'x';
   var startProperty = isX ? 'left' : 'top';
   var endProperty = isX ? 'right' : 'bottom';
@@ -51536,13 +50741,13 @@ function alignAxis(_ref) {
   var offsetSize = element[offsetSizeProperty];
 
   function displayStart() {
-    element.style[startProperty] = 'unset';
+    element.style[startProperty] = 'auto';
     element.style[endProperty] = secondary ? '0' : '100%';
   }
 
   function displayEnd() {
     element.style[startProperty] = secondary ? '0' : '100%';
-    element.style[endProperty] = 'unset';
+    element.style[endProperty] = 'auto';
   }
 
   function displayIfFits(availableSpace, display) {
@@ -51613,7 +50818,7 @@ function alignSecondaryAxis(args) {
 function alignBothAxis(args) {
   var invertAxis = args.invertAxis,
       invertSecondaryAxis = args.invertSecondaryAxis,
-      commonArgs = _objectWithoutProperties(args, ["invertAxis", "invertSecondaryAxis"]);
+      commonArgs = _objectWithoutProperties(args, _excluded);
 
   alignMainAxis(_objectSpread(_objectSpread({}, commonArgs), {}, {
     invertAxis: invertAxis
@@ -52085,9 +51290,49 @@ Clock.propTypes = {
   value: propTypes$3.oneOfType([propTypes$3.string, propTypes$3.instanceOf(Date)])
 };
 
-var esm$1 = /*#__PURE__*/Object.freeze({
+var esm$2 = /*#__PURE__*/Object.freeze({
   __proto__: null,
   'default': Clock
+});
+
+/**
+ * A function that merges React refs into one.
+ * Supports both functions and ref objects created using createRef() and useRef().
+ *
+ * Usage:
+ * ```jsx
+ * <div ref={mergeRefs(ref1, ref2, ref3)} />
+ * ```
+ *
+ * @param {...Array<Function|object>} inputRefs Array of refs
+ * @returns {Function} Merged refs
+ */
+function mergeRefs() {
+  for (var _len = arguments.length, inputRefs = new Array(_len), _key = 0; _key < _len; _key++) {
+    inputRefs[_key] = arguments[_key];
+  }
+
+  var filteredInputRefs = inputRefs.filter(Boolean);
+
+  if (filteredInputRefs.length <= 1) {
+    return filteredInputRefs[0];
+  }
+
+  return function mergedRefs(ref) {
+    filteredInputRefs.forEach(function (inputRef) {
+      if (typeof inputRef === 'function') {
+        inputRef(ref);
+      } else {
+        // eslint-disable-next-line no-param-reassign
+        inputRef.current = ref;
+      }
+    });
+  };
+}
+
+var esm$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  'default': mergeRefs
 });
 
 var allowedVariants = ['normal', 'small-caps'];
@@ -52098,6 +51343,10 @@ var allowedVariants = ['normal', 'small-caps'];
  */
 
 function getFontShorthand(element) {
+  if (!element) {
+    return '';
+  }
+
   var style = window.getComputedStyle(element);
 
   if (style.font) {
@@ -52116,8 +51365,8 @@ function getFontShorthand(element) {
 /**
  * Measures text width given text and font CSS shorthand.
  *
- * @param {String} text Text to measure
- * @param {String} font Font to use when measuring the text
+ * @param {string} text Text to measure
+ * @param {string} font Font to use when measuring the text
  */
 
 function measureText(text, font) {
@@ -52141,7 +51390,7 @@ function measureText(text, font) {
  */
 
 function updateInputWidth(element) {
-  if (typeof window === 'undefined') {
+  if (typeof window === 'undefined' || !element) {
     return null;
   }
 
@@ -52165,259 +51414,12 @@ var esm = /*#__PURE__*/Object.freeze({
   'default': updateInputWidth
 });
 
-var require$$3$1 = /*@__PURE__*/getAugmentedNamespace(esm$5);
-
-var require$$3 = /*@__PURE__*/getAugmentedNamespace(esm);
-
-var Input_1$1 = createCommonjsModule(function (module, exports) {
-
-function _typeof(obj) {
-  "@babel/helpers - typeof";
-
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof = function _typeof(obj) {
-      return typeof obj;
-    };
-  } else {
-    _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-  }
-
-  return _typeof(obj);
-}
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = Input;
-
-var _react = _interopRequireDefault(React__default$1);
-
-var _propTypes = _interopRequireDefault(propTypes$3);
-
-var _mergeClassNames = _interopRequireDefault(require$$3$1);
-
-var _updateInputWidth = _interopRequireWildcard(require$$3);
-
-function _getRequireWildcardCache() {
-  if (typeof WeakMap !== "function") return null;
-  var cache = new WeakMap();
-
-  _getRequireWildcardCache = function _getRequireWildcardCache() {
-    return cache;
-  };
-
-  return cache;
-}
-
-function _interopRequireWildcard(obj) {
-  if (obj && obj.__esModule) {
-    return obj;
-  }
-
-  if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") {
-    return {
-      "default": obj
-    };
-  }
-
-  var cache = _getRequireWildcardCache();
-
-  if (cache && cache.has(obj)) {
-    return cache.get(obj);
-  }
-
-  var newObj = {};
-  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
-
-  for (var key in obj) {
-    if (Object.prototype.hasOwnProperty.call(obj, key)) {
-      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
-
-      if (desc && (desc.get || desc.set)) {
-        Object.defineProperty(newObj, key, desc);
-      } else {
-        newObj[key] = obj[key];
-      }
-    }
-  }
-
-  newObj["default"] = obj;
-
-  if (cache) {
-    cache.set(obj, newObj);
-  }
-
-  return newObj;
-}
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : {
-    "default": obj
-  };
-}
-/* eslint-disable jsx-a11y/no-autofocus */
-
-
-var isEdgeLegacy = typeof window !== 'undefined' && 'navigator' in window && navigator.userAgent.match(/ Edge\/1/);
-
-function onFocus(event) {
-  var target = event.target;
-
-  if (isEdgeLegacy) {
-    requestAnimationFrame(function () {
-      return target.select();
-    });
-  } else {
-    target.select();
-  }
-}
-
-function updateInputWidthOnFontLoad(element) {
-  if (!document.fonts) {
-    return;
-  }
-
-  var font = (0, _updateInputWidth.getFontShorthand)(element);
-
-  if (!font) {
-    return;
-  }
-
-  var isFontLoaded = document.fonts.check(font);
-
-  if (isFontLoaded) {
-    return;
-  }
-
-  function onLoadingDone() {
-    (0, _updateInputWidth["default"])(element);
-  }
-
-  document.fonts.addEventListener('loadingdone', onLoadingDone);
-}
-
-function getSelectionString() {
-  if (typeof window === 'undefined') {
-    return null;
-  }
-
-  return window.getSelection().toString();
-}
-
-function makeOnKeyPress(maxLength) {
-  /**
-   * Prevents keystrokes that would not produce a number or when value after keystroke would
-   * exceed maxLength.
-   */
-  return function onKeyPress(event) {
-    var key = event.key,
-        input = event.target;
-    var value = input.value;
-    var isNumberKey = !isNaN(parseInt(key, 10));
-    var selection = getSelectionString();
-
-    if (isNumberKey && (selection || value.length < maxLength)) {
-      return;
-    }
-
-    event.preventDefault();
-  };
-}
-
-function Input(_ref) {
-  var ariaLabel = _ref.ariaLabel,
-      autoFocus = _ref.autoFocus,
-      className = _ref.className,
-      disabled = _ref.disabled,
-      itemRef = _ref.itemRef,
-      max = _ref.max,
-      min = _ref.min,
-      name = _ref.name,
-      nameForClass = _ref.nameForClass,
-      onChange = _ref.onChange,
-      onKeyDown = _ref.onKeyDown,
-      _onKeyUp = _ref.onKeyUp,
-      _ref$placeholder = _ref.placeholder,
-      placeholder = _ref$placeholder === void 0 ? '--' : _ref$placeholder,
-      required = _ref.required,
-      showLeadingZeros = _ref.showLeadingZeros,
-      step = _ref.step,
-      value = _ref.value;
-  var hasLeadingZero = showLeadingZeros && value && value < 10 && (value === '0' || !value.toString().startsWith('0'));
-  var maxLength = max ? max.toString().length : null;
-  return [hasLeadingZero && /*#__PURE__*/_react["default"].createElement("span", {
-    key: "leadingZero",
-    className: "".concat(className, "__leadingZero")
-  }, "0"), /*#__PURE__*/_react["default"].createElement("input", {
-    key: "input",
-    "aria-label": ariaLabel,
-    autoComplete: "off",
-    autoFocus: autoFocus,
-    className: (0, _mergeClassNames["default"])("".concat(className, "__input"), "".concat(className, "__").concat(nameForClass || name), hasLeadingZero && "".concat(className, "__input--hasLeadingZero")),
-    "data-input": "true",
-    disabled: disabled,
-    inputMode: "numeric",
-    max: max,
-    min: min,
-    name: name,
-    onChange: onChange,
-    onFocus: onFocus,
-    onKeyDown: onKeyDown,
-    onKeyPress: makeOnKeyPress(maxLength),
-    onKeyUp: function onKeyUp(event) {
-      (0, _updateInputWidth["default"])(event.target);
-
-      if (_onKeyUp) {
-        _onKeyUp(event);
-      }
-    },
-    placeholder: placeholder,
-    ref: function ref(_ref2) {
-      if (_ref2) {
-        (0, _updateInputWidth["default"])(_ref2);
-        updateInputWidthOnFontLoad(_ref2);
-      }
-
-      if (itemRef) {
-        itemRef(_ref2, name);
-      }
-    },
-    required: required,
-    step: step,
-    type: "number",
-    value: value !== null ? value : ''
-  })];
-}
-
-Input.propTypes = {
-  ariaLabel: _propTypes["default"].string,
-  autoFocus: _propTypes["default"].bool,
-  className: _propTypes["default"].string.isRequired,
-  disabled: _propTypes["default"].bool,
-  itemRef: _propTypes["default"].func,
-  max: _propTypes["default"].number,
-  min: _propTypes["default"].number,
-  name: _propTypes["default"].string,
-  nameForClass: _propTypes["default"].string,
-  onChange: _propTypes["default"].func,
-  onKeyDown: _propTypes["default"].func,
-  onKeyUp: _propTypes["default"].func,
-  placeholder: _propTypes["default"].string,
-  required: _propTypes["default"].bool,
-  showLeadingZeros: _propTypes["default"].bool,
-  step: _propTypes["default"].number,
-  value: _propTypes["default"].string
-};
-});
-
 var propTypes$2 = createCommonjsModule(function (module, exports) {
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.isMaxDate = exports.isMinDate = exports.isValueType = void 0;
+exports.isRef = exports.isMaxDate = exports.isMinDate = exports.isValueType = void 0;
 
 var _propTypes = _interopRequireDefault(propTypes$3);
 
@@ -52461,7 +51463,7 @@ function _unsupportedIterableToArray(o, minLen) {
 }
 
 function _iterableToArray(iter) {
-  if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
+  if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
 }
 
 function _arrayWithoutHoles(arr) {
@@ -52528,6 +51530,263 @@ var isMaxDate = function isMaxDate(props, propName, componentName) {
 };
 
 exports.isMaxDate = isMaxDate;
+
+var isRef = _propTypes["default"].oneOfType([_propTypes["default"].func, _propTypes["default"].shape({
+  // eslint-disable-next-line react/forbid-prop-types
+  current: _propTypes["default"].any
+})]);
+
+exports.isRef = isRef;
+});
+
+var require$$3$1 = /*@__PURE__*/getAugmentedNamespace(esm$6);
+
+var require$$3 = /*@__PURE__*/getAugmentedNamespace(esm$1);
+
+var require$$4$1 = /*@__PURE__*/getAugmentedNamespace(esm);
+
+var Input_1$1 = createCommonjsModule(function (module, exports) {
+
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = Input;
+
+var _react = _interopRequireDefault(React__default$1);
+
+var _propTypes = _interopRequireDefault(propTypes$3);
+
+var _mergeClassNames = _interopRequireDefault(require$$3$1);
+
+var _mergeRefs = _interopRequireDefault(require$$3);
+
+var _updateInputWidth = _interopRequireWildcard(require$$4$1);
+
+
+
+function _getRequireWildcardCache(nodeInterop) {
+  if (typeof WeakMap !== "function") return null;
+  var cacheBabelInterop = new WeakMap();
+  var cacheNodeInterop = new WeakMap();
+  return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) {
+    return nodeInterop ? cacheNodeInterop : cacheBabelInterop;
+  })(nodeInterop);
+}
+
+function _interopRequireWildcard(obj, nodeInterop) {
+  if (!nodeInterop && obj && obj.__esModule) {
+    return obj;
+  }
+
+  if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") {
+    return {
+      "default": obj
+    };
+  }
+
+  var cache = _getRequireWildcardCache(nodeInterop);
+
+  if (cache && cache.has(obj)) {
+    return cache.get(obj);
+  }
+
+  var newObj = {};
+  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+
+  for (var key in obj) {
+    if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
+      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+
+      if (desc && (desc.get || desc.set)) {
+        Object.defineProperty(newObj, key, desc);
+      } else {
+        newObj[key] = obj[key];
+      }
+    }
+  }
+
+  newObj["default"] = obj;
+
+  if (cache) {
+    cache.set(obj, newObj);
+  }
+
+  return newObj;
+}
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    "default": obj
+  };
+}
+/* eslint-disable jsx-a11y/no-autofocus */
+
+
+var isIEOrEdgeLegacy = typeof window !== 'undefined' && /(MSIE|Trident\/|Edge\/)/.test(window.navigator.userAgent);
+
+function onFocus(event) {
+  var target = event.target;
+
+  if (isIEOrEdgeLegacy) {
+    requestAnimationFrame(function () {
+      return target.select();
+    });
+  } else {
+    target.select();
+  }
+}
+
+function updateInputWidthOnFontLoad(element) {
+  if (!document.fonts) {
+    return;
+  }
+
+  var font = (0, _updateInputWidth.getFontShorthand)(element);
+
+  if (!font) {
+    return;
+  }
+
+  var isFontLoaded = document.fonts.check(font);
+
+  if (isFontLoaded) {
+    return;
+  }
+
+  function onLoadingDone() {
+    (0, _updateInputWidth["default"])(element);
+  }
+
+  document.fonts.addEventListener('loadingdone', onLoadingDone);
+}
+
+function getSelectionString(input) {
+  /**
+   * window.getSelection().toString() returns empty string in IE11 and Firefox,
+   * so alternatives come first.
+   */
+  if (input && 'selectionStart' in input && input.selectionStart !== null) {
+    return input.value.slice(input.selectionStart, input.selectionEnd);
+  }
+
+  if ('getSelection' in window) {
+    return window.getSelection().toString();
+  }
+
+  return null;
+}
+
+function makeOnKeyPress(maxLength) {
+  /**
+   * Prevents keystrokes that would not produce a number or when value after keystroke would
+   * exceed maxLength.
+   */
+  return function onKeyPress(event) {
+    var key = event.key,
+        input = event.target;
+    var value = input.value;
+    var isNumberKey = !isNaN(parseInt(key, 10));
+    var selection = getSelectionString(input);
+
+    if (isNumberKey && (selection || value.length < maxLength)) {
+      return;
+    }
+
+    event.preventDefault();
+  };
+}
+
+function Input(_ref) {
+  var ariaLabel = _ref.ariaLabel,
+      autoFocus = _ref.autoFocus,
+      className = _ref.className,
+      disabled = _ref.disabled,
+      inputRef = _ref.inputRef,
+      max = _ref.max,
+      min = _ref.min,
+      name = _ref.name,
+      nameForClass = _ref.nameForClass,
+      onChange = _ref.onChange,
+      onKeyDown = _ref.onKeyDown,
+      _onKeyUp = _ref.onKeyUp,
+      _ref$placeholder = _ref.placeholder,
+      placeholder = _ref$placeholder === void 0 ? '--' : _ref$placeholder,
+      required = _ref.required,
+      showLeadingZeros = _ref.showLeadingZeros,
+      step = _ref.step,
+      value = _ref.value;
+  var hasLeadingZero = showLeadingZeros && value && value < 10 && (value === '0' || !value.toString().startsWith('0'));
+  var maxLength = max ? max.toString().length : null;
+  return [hasLeadingZero && /*#__PURE__*/_react["default"].createElement("span", {
+    key: "leadingZero",
+    className: "".concat(className, "__leadingZero")
+  }, "0"), /*#__PURE__*/_react["default"].createElement("input", {
+    key: "input",
+    "aria-label": ariaLabel,
+    autoComplete: "off",
+    autoFocus: autoFocus,
+    className: (0, _mergeClassNames["default"])("".concat(className, "__input"), "".concat(className, "__").concat(nameForClass || name), hasLeadingZero && "".concat(className, "__input--hasLeadingZero")),
+    "data-input": "true",
+    disabled: disabled,
+    inputMode: "numeric",
+    max: max,
+    min: min,
+    name: name,
+    onChange: onChange,
+    onFocus: onFocus,
+    onKeyDown: onKeyDown,
+    onKeyPress: makeOnKeyPress(maxLength),
+    onKeyUp: function onKeyUp(event) {
+      (0, _updateInputWidth["default"])(event.target);
+
+      if (_onKeyUp) {
+        _onKeyUp(event);
+      }
+    },
+    placeholder: placeholder,
+    ref: (0, _mergeRefs["default"])(_updateInputWidth["default"], updateInputWidthOnFontLoad, inputRef),
+    required: required,
+    step: step,
+    type: "number",
+    value: value !== null ? value : ''
+  })];
+}
+
+Input.propTypes = {
+  ariaLabel: _propTypes["default"].string,
+  autoFocus: _propTypes["default"].bool,
+  className: _propTypes["default"].string.isRequired,
+  disabled: _propTypes["default"].bool,
+  inputRef: propTypes$2.isRef,
+  max: _propTypes["default"].number,
+  min: _propTypes["default"].number,
+  name: _propTypes["default"].string,
+  nameForClass: _propTypes["default"].string,
+  onChange: _propTypes["default"].func,
+  onKeyDown: _propTypes["default"].func,
+  onKeyUp: _propTypes["default"].func,
+  placeholder: _propTypes["default"].string,
+  required: _propTypes["default"].bool,
+  showLeadingZeros: _propTypes["default"].bool,
+  step: _propTypes["default"].number,
+  value: _propTypes["default"].string
+};
 });
 
 var between_1$1 = between$1;
@@ -52552,7 +51811,7 @@ function _unsupportedIterableToArray$2(o, minLen) {
 }
 
 function _iterableToArray$1(iter) {
-  if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
+  if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
 }
 
 function _arrayWithoutHoles$1(arr) {
@@ -52615,7 +51874,7 @@ var utils$2 = /*#__PURE__*/Object.defineProperty({
 	safeMax: safeMax_1$1
 }, '__esModule', {value: true});
 
-var _dateUtils = /*@__PURE__*/getAugmentedNamespace(esm$3);
+var _dateUtils = /*@__PURE__*/getAugmentedNamespace(esm$4);
 
 var DayInput_1 = createCommonjsModule(function (module, exports) {
 
@@ -52635,6 +51894,8 @@ var _Input = _interopRequireDefault(Input_1$1);
 
 
 
+
+var _excluded = ["maxDate", "minDate", "month", "year"];
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -52701,7 +51962,7 @@ function DayInput(_ref) {
       minDate = _ref.minDate,
       month = _ref.month,
       year = _ref.year,
-      otherProps = _objectWithoutProperties(_ref, ["maxDate", "minDate", "month", "year"]);
+      otherProps = _objectWithoutProperties(_ref, _excluded);
 
   var currentMonthMaxDays = function () {
     if (!month) {
@@ -52728,7 +51989,7 @@ DayInput.propTypes = {
   ariaLabel: _propTypes["default"].string,
   className: _propTypes["default"].string.isRequired,
   disabled: _propTypes["default"].bool,
-  itemRef: _propTypes["default"].func,
+  inputRef: propTypes$2.isRef,
   maxDate: propTypes$2.isMaxDate,
   minDate: propTypes$2.isMinDate,
   month: _propTypes["default"].string,
@@ -52761,6 +52022,8 @@ var _Input = _interopRequireDefault(Input_1$1);
 
 
 
+
+var _excluded = ["maxDate", "minDate", "year"];
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -52826,7 +52089,7 @@ function MonthInput(_ref) {
   var maxDate = _ref.maxDate,
       minDate = _ref.minDate,
       year = _ref.year,
-      otherProps = _objectWithoutProperties(_ref, ["maxDate", "minDate", "year"]);
+      otherProps = _objectWithoutProperties(_ref, _excluded);
 
   function isSameYear(date) {
     return date && year === (0, _dateUtils.getYear)(date).toString();
@@ -52845,7 +52108,7 @@ MonthInput.propTypes = {
   ariaLabel: _propTypes["default"].string,
   className: _propTypes["default"].string.isRequired,
   disabled: _propTypes["default"].bool,
-  itemRef: _propTypes["default"].func,
+  inputRef: propTypes$2.isRef,
   maxDate: propTypes$2.isMaxDate,
   minDate: propTypes$2.isMinDate,
   onChange: _propTypes["default"].func,
@@ -52859,7 +52122,7 @@ MonthInput.propTypes = {
 };
 });
 
-var require$$0 = /*@__PURE__*/getAugmentedNamespace(esm$4);
+var require$$0 = /*@__PURE__*/getAugmentedNamespace(esm$5);
 
 var dateFormatter$2 = createCommonjsModule(function (module, exports) {
 
@@ -52937,6 +52200,8 @@ var _mergeClassNames = _interopRequireDefault(require$$3$1);
 
 
 
+var _excluded = ["ariaLabel", "className", "inputRef", "locale", "maxDate", "minDate", "placeholder", "short", "value", "year"];
+
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
     "default": obj
@@ -52979,7 +52244,7 @@ function _unsupportedIterableToArray(o, minLen) {
 }
 
 function _iterableToArray(iter) {
-  if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
+  if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
 }
 
 function _arrayWithoutHoles(arr) {
@@ -53035,7 +52300,7 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 function MonthSelect(_ref) {
   var ariaLabel = _ref.ariaLabel,
       className = _ref.className,
-      itemRef = _ref.itemRef,
+      inputRef = _ref.inputRef,
       locale = _ref.locale,
       maxDate = _ref.maxDate,
       minDate = _ref.minDate,
@@ -53044,7 +52309,7 @@ function MonthSelect(_ref) {
       _short = _ref["short"],
       value = _ref.value,
       year = _ref.year,
-      otherProps = _objectWithoutProperties(_ref, ["ariaLabel", "className", "itemRef", "locale", "maxDate", "minDate", "placeholder", "short", "value", "year"]);
+      otherProps = _objectWithoutProperties(_ref, _excluded);
 
   function isSameYear(date) {
     return date && year === (0, _dateUtils.getYear)(date).toString();
@@ -53063,12 +52328,9 @@ function MonthSelect(_ref) {
     "aria-label": ariaLabel,
     className: (0, _mergeClassNames["default"])("".concat(className, "__input"), "".concat(className, "__").concat(name)),
     "data-input": "true",
+    "data-select": "true",
     name: name,
-    ref: function ref(_ref2) {
-      if (itemRef) {
-        itemRef(_ref2, name);
-      }
-    },
+    ref: inputRef,
     value: value !== null ? value : ''
   }, otherProps), !value && /*#__PURE__*/_react["default"].createElement("option", {
     value: ""
@@ -53087,7 +52349,7 @@ MonthSelect.propTypes = {
   ariaLabel: _propTypes["default"].string,
   className: _propTypes["default"].string.isRequired,
   disabled: _propTypes["default"].bool,
-  itemRef: _propTypes["default"].func,
+  inputRef: propTypes$2.isRef,
   locale: _propTypes["default"].string,
   maxDate: propTypes$2.isMaxDate,
   minDate: propTypes$2.isMinDate,
@@ -53120,6 +52382,8 @@ var _Input = _interopRequireDefault(Input_1$1);
 
 
 
+
+var _excluded = ["maxDate", "minDate", "placeholder", "valueType"];
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -53187,7 +52451,7 @@ function YearInput(_ref) {
       _ref$placeholder = _ref.placeholder,
       placeholder = _ref$placeholder === void 0 ? '----' : _ref$placeholder,
       valueType = _ref.valueType,
-      otherProps = _objectWithoutProperties(_ref, ["maxDate", "minDate", "placeholder", "valueType"]);
+      otherProps = _objectWithoutProperties(_ref, _excluded);
 
   var maxYear = (0, utils$2.safeMin)(275760, maxDate && (0, _dateUtils.getYear)(maxDate));
   var minYear = (0, utils$2.safeMax)(1, minDate && (0, _dateUtils.getYear)(minDate));
@@ -53213,7 +52477,7 @@ YearInput.propTypes = {
   ariaLabel: _propTypes["default"].string,
   className: _propTypes["default"].string.isRequired,
   disabled: _propTypes["default"].bool,
-  itemRef: _propTypes["default"].func,
+  inputRef: propTypes$2.isRef,
   maxDate: propTypes$2.isMaxDate,
   minDate: propTypes$2.isMinDate,
   onChange: _propTypes["default"].func,
@@ -53226,280 +52490,12 @@ YearInput.propTypes = {
 };
 });
 
-var Input_1 = createCommonjsModule(function (module, exports) {
-
-function _typeof(obj) {
-  "@babel/helpers - typeof";
-
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof = function _typeof(obj) {
-      return typeof obj;
-    };
-  } else {
-    _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-  }
-
-  return _typeof(obj);
-}
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = Input;
-
-var _react = _interopRequireDefault(React__default$1);
-
-var _propTypes = _interopRequireDefault(propTypes$3);
-
-var _mergeClassNames = _interopRequireDefault(require$$3$1);
-
-var _updateInputWidth = _interopRequireWildcard(require$$3);
-
-function _getRequireWildcardCache() {
-  if (typeof WeakMap !== "function") return null;
-  var cache = new WeakMap();
-
-  _getRequireWildcardCache = function _getRequireWildcardCache() {
-    return cache;
-  };
-
-  return cache;
-}
-
-function _interopRequireWildcard(obj) {
-  if (obj && obj.__esModule) {
-    return obj;
-  }
-
-  if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") {
-    return {
-      "default": obj
-    };
-  }
-
-  var cache = _getRequireWildcardCache();
-
-  if (cache && cache.has(obj)) {
-    return cache.get(obj);
-  }
-
-  var newObj = {};
-  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
-
-  for (var key in obj) {
-    if (Object.prototype.hasOwnProperty.call(obj, key)) {
-      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
-
-      if (desc && (desc.get || desc.set)) {
-        Object.defineProperty(newObj, key, desc);
-      } else {
-        newObj[key] = obj[key];
-      }
-    }
-  }
-
-  newObj["default"] = obj;
-
-  if (cache) {
-    cache.set(obj, newObj);
-  }
-
-  return newObj;
-}
-
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : {
-    "default": obj
-  };
-}
-/* eslint-disable jsx-a11y/no-autofocus */
-
-
-var isEdgeLegacy = typeof window !== 'undefined' && 'navigator' in window && navigator.userAgent.match(/ Edge\/1/);
-
-function onFocus(event) {
-  var target = event.target;
-
-  if (isEdgeLegacy) {
-    requestAnimationFrame(function () {
-      return target.select();
-    });
-  } else {
-    target.select();
-  }
-}
-
-function updateInputWidthOnFontLoad(element) {
-  if (!document.fonts) {
-    return;
-  }
-
-  var font = (0, _updateInputWidth.getFontShorthand)(element);
-
-  if (!font) {
-    return;
-  }
-
-  var isFontLoaded = document.fonts.check(font);
-
-  if (isFontLoaded) {
-    return;
-  }
-
-  function onLoadingDone() {
-    (0, _updateInputWidth["default"])(element);
-  }
-
-  document.fonts.addEventListener('loadingdone', onLoadingDone);
-}
-
-function getSelectionString() {
-  if (typeof window === 'undefined') {
-    return null;
-  }
-
-  return window.getSelection().toString();
-}
-
-function makeOnKeyPress(maxLength) {
-  /**
-   * Prevents keystrokes that would not produce a number or when value after keystroke would
-   * exceed maxLength.
-   */
-  return function onKeyPress(event) {
-    var key = event.key,
-        input = event.target;
-    var value = input.value;
-    var isNumberKey = !isNaN(parseInt(key, 10));
-    var selection = getSelectionString();
-
-    if (isNumberKey && (selection || value.length < maxLength)) {
-      return;
-    }
-
-    event.preventDefault();
-  };
-}
-
-function Input(_ref) {
-  var ariaLabel = _ref.ariaLabel,
-      autoFocus = _ref.autoFocus,
-      className = _ref.className,
-      disabled = _ref.disabled,
-      itemRef = _ref.itemRef,
-      max = _ref.max,
-      min = _ref.min,
-      name = _ref.name,
-      nameForClass = _ref.nameForClass,
-      onChange = _ref.onChange,
-      onKeyDown = _ref.onKeyDown,
-      _onKeyUp = _ref.onKeyUp,
-      _ref$placeholder = _ref.placeholder,
-      placeholder = _ref$placeholder === void 0 ? '--' : _ref$placeholder,
-      required = _ref.required,
-      showLeadingZeros = _ref.showLeadingZeros,
-      step = _ref.step,
-      value = _ref.value;
-  var hasLeadingZero = showLeadingZeros && value && value < 10 && (value === '0' || !value.toString().startsWith('0'));
-  var maxLength = max ? max.toString().length : null;
-  return [hasLeadingZero && /*#__PURE__*/_react["default"].createElement("span", {
-    key: "leadingZero",
-    className: "".concat(className, "__leadingZero")
-  }, "0"), /*#__PURE__*/_react["default"].createElement("input", {
-    key: "input",
-    "aria-label": ariaLabel,
-    autoComplete: "off",
-    autoFocus: autoFocus,
-    className: (0, _mergeClassNames["default"])("".concat(className, "__input"), "".concat(className, "__").concat(nameForClass || name), hasLeadingZero && "".concat(className, "__input--hasLeadingZero")),
-    "data-input": "true",
-    disabled: disabled,
-    inputMode: "numeric",
-    max: max,
-    min: min,
-    name: name,
-    onChange: onChange,
-    onFocus: onFocus,
-    onKeyDown: onKeyDown,
-    onKeyPress: makeOnKeyPress(maxLength),
-    onKeyUp: function onKeyUp(event) {
-      (0, _updateInputWidth["default"])(event.target);
-
-      if (_onKeyUp) {
-        _onKeyUp(event);
-      }
-    },
-    placeholder: placeholder,
-    ref: function ref(_ref2) {
-      if (_ref2) {
-        (0, _updateInputWidth["default"])(_ref2);
-        updateInputWidthOnFontLoad(_ref2);
-      }
-
-      if (itemRef) {
-        itemRef(_ref2, name);
-      }
-    },
-    required: required,
-    step: step,
-    type: "number",
-    value: value !== null ? value : ''
-  })];
-}
-
-Input.propTypes = {
-  ariaLabel: _propTypes["default"].string,
-  autoFocus: _propTypes["default"].bool,
-  className: _propTypes["default"].string.isRequired,
-  disabled: _propTypes["default"].bool,
-  itemRef: _propTypes["default"].func,
-  max: _propTypes["default"].number,
-  min: _propTypes["default"].number,
-  name: _propTypes["default"].string,
-  nameForClass: _propTypes["default"].string,
-  onChange: _propTypes["default"].func,
-  onKeyDown: _propTypes["default"].func,
-  onKeyUp: _propTypes["default"].func,
-  placeholder: _propTypes["default"].string,
-  required: _propTypes["default"].bool,
-  showLeadingZeros: _propTypes["default"].bool,
-  step: _propTypes["default"].number,
-  value: _propTypes["default"].string
-};
-});
-
-var convert12to24_1$1 = convert12to24$1;
-var convert24to12_1$1 = convert24to12$1;
-
-function convert12to24$1(hour12, amPm) {
-  var hour24 = parseInt(hour12, 10);
-
-  if (amPm === 'am' && hour24 === 12) {
-    hour24 = 0;
-  } else if (amPm === 'pm' && hour24 < 12) {
-    hour24 += 12;
-  }
-
-  return hour24;
-}
-
-function convert24to12$1(hour24) {
-  var hour12 = hour24 % 12 || 12;
-  return [hour12, hour24 < 12 ? 'am' : 'pm'];
-}
-
-var dates$1 = /*#__PURE__*/Object.defineProperty({
-	convert12to24: convert12to24_1$1,
-	convert24to12: convert24to12_1$1
-}, '__esModule', {value: true});
-
 var propTypes$1 = createCommonjsModule(function (module, exports) {
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.isValueType = exports.isTime = void 0;
+exports.isRef = exports.isValueType = exports.isTime = void 0;
 
 var _propTypes = _interopRequireDefault(propTypes$3);
 
@@ -53547,7 +52543,283 @@ exports.isTime = isTime;
 var isValueType = _propTypes["default"].oneOf(allValueTypes);
 
 exports.isValueType = isValueType;
+
+var isRef = _propTypes["default"].oneOfType([_propTypes["default"].func, _propTypes["default"].shape({
+  // eslint-disable-next-line react/forbid-prop-types
+  current: _propTypes["default"].any
+})]);
+
+exports.isRef = isRef;
 });
+
+var Input_1 = createCommonjsModule(function (module, exports) {
+
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports["default"] = Input;
+
+var _react = _interopRequireDefault(React__default$1);
+
+var _propTypes = _interopRequireDefault(propTypes$3);
+
+var _mergeClassNames = _interopRequireDefault(require$$3$1);
+
+var _mergeRefs = _interopRequireDefault(require$$3);
+
+var _updateInputWidth = _interopRequireWildcard(require$$4$1);
+
+
+
+function _getRequireWildcardCache(nodeInterop) {
+  if (typeof WeakMap !== "function") return null;
+  var cacheBabelInterop = new WeakMap();
+  var cacheNodeInterop = new WeakMap();
+  return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) {
+    return nodeInterop ? cacheNodeInterop : cacheBabelInterop;
+  })(nodeInterop);
+}
+
+function _interopRequireWildcard(obj, nodeInterop) {
+  if (!nodeInterop && obj && obj.__esModule) {
+    return obj;
+  }
+
+  if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") {
+    return {
+      "default": obj
+    };
+  }
+
+  var cache = _getRequireWildcardCache(nodeInterop);
+
+  if (cache && cache.has(obj)) {
+    return cache.get(obj);
+  }
+
+  var newObj = {};
+  var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+
+  for (var key in obj) {
+    if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
+      var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+
+      if (desc && (desc.get || desc.set)) {
+        Object.defineProperty(newObj, key, desc);
+      } else {
+        newObj[key] = obj[key];
+      }
+    }
+  }
+
+  newObj["default"] = obj;
+
+  if (cache) {
+    cache.set(obj, newObj);
+  }
+
+  return newObj;
+}
+
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : {
+    "default": obj
+  };
+}
+/* eslint-disable jsx-a11y/no-autofocus */
+
+
+var isIEOrEdgeLegacy = typeof window !== 'undefined' && /(MSIE|Trident\/|Edge\/)/.test(window.navigator.userAgent);
+
+function onFocus(event) {
+  var target = event.target;
+
+  if (isIEOrEdgeLegacy) {
+    requestAnimationFrame(function () {
+      return target.select();
+    });
+  } else {
+    target.select();
+  }
+}
+
+function updateInputWidthOnFontLoad(element) {
+  if (!document.fonts) {
+    return;
+  }
+
+  var font = (0, _updateInputWidth.getFontShorthand)(element);
+
+  if (!font) {
+    return;
+  }
+
+  var isFontLoaded = document.fonts.check(font);
+
+  if (isFontLoaded) {
+    return;
+  }
+
+  function onLoadingDone() {
+    (0, _updateInputWidth["default"])(element);
+  }
+
+  document.fonts.addEventListener('loadingdone', onLoadingDone);
+}
+
+function getSelectionString(input) {
+  /**
+   * window.getSelection().toString() returns empty string in IE11 and Firefox,
+   * so alternatives come first.
+   */
+  if (input && 'selectionStart' in input && input.selectionStart !== null) {
+    return input.value.slice(input.selectionStart, input.selectionEnd);
+  }
+
+  if ('getSelection' in window) {
+    return window.getSelection().toString();
+  }
+
+  return null;
+}
+
+function makeOnKeyPress(maxLength) {
+  /**
+   * Prevents keystrokes that would not produce a number or when value after keystroke would
+   * exceed maxLength.
+   */
+  return function onKeyPress(event) {
+    var key = event.key,
+        input = event.target;
+    var value = input.value;
+    var isNumberKey = !isNaN(parseInt(key, 10));
+    var selection = getSelectionString(input);
+
+    if (isNumberKey && (selection || value.length < maxLength)) {
+      return;
+    }
+
+    event.preventDefault();
+  };
+}
+
+function Input(_ref) {
+  var ariaLabel = _ref.ariaLabel,
+      autoFocus = _ref.autoFocus,
+      className = _ref.className,
+      disabled = _ref.disabled,
+      inputRef = _ref.inputRef,
+      max = _ref.max,
+      min = _ref.min,
+      name = _ref.name,
+      nameForClass = _ref.nameForClass,
+      onChange = _ref.onChange,
+      onKeyDown = _ref.onKeyDown,
+      _onKeyUp = _ref.onKeyUp,
+      _ref$placeholder = _ref.placeholder,
+      placeholder = _ref$placeholder === void 0 ? '--' : _ref$placeholder,
+      required = _ref.required,
+      showLeadingZeros = _ref.showLeadingZeros,
+      step = _ref.step,
+      value = _ref.value;
+  var hasLeadingZero = showLeadingZeros && value && value < 10 && (value === '0' || !value.toString().startsWith('0'));
+  var maxLength = max ? max.toString().length : null;
+  return [hasLeadingZero && /*#__PURE__*/_react["default"].createElement("span", {
+    key: "leadingZero",
+    className: "".concat(className, "__leadingZero")
+  }, "0"), /*#__PURE__*/_react["default"].createElement("input", {
+    key: "input",
+    "aria-label": ariaLabel,
+    autoComplete: "off",
+    autoFocus: autoFocus,
+    className: (0, _mergeClassNames["default"])("".concat(className, "__input"), "".concat(className, "__").concat(nameForClass || name), hasLeadingZero && "".concat(className, "__input--hasLeadingZero")),
+    "data-input": "true",
+    disabled: disabled,
+    inputMode: "numeric",
+    max: max,
+    min: min,
+    name: name,
+    onChange: onChange,
+    onFocus: onFocus,
+    onKeyDown: onKeyDown,
+    onKeyPress: makeOnKeyPress(maxLength),
+    onKeyUp: function onKeyUp(event) {
+      (0, _updateInputWidth["default"])(event.target);
+
+      if (_onKeyUp) {
+        _onKeyUp(event);
+      }
+    },
+    placeholder: placeholder,
+    ref: (0, _mergeRefs["default"])(_updateInputWidth["default"], updateInputWidthOnFontLoad, inputRef),
+    required: required,
+    step: step,
+    type: "number",
+    value: value !== null ? value : ''
+  })];
+}
+
+Input.propTypes = {
+  ariaLabel: _propTypes["default"].string,
+  autoFocus: _propTypes["default"].bool,
+  className: _propTypes["default"].string.isRequired,
+  disabled: _propTypes["default"].bool,
+  inputRef: propTypes$1.isRef,
+  max: _propTypes["default"].number,
+  min: _propTypes["default"].number,
+  name: _propTypes["default"].string,
+  nameForClass: _propTypes["default"].string,
+  onChange: _propTypes["default"].func,
+  onKeyDown: _propTypes["default"].func,
+  onKeyUp: _propTypes["default"].func,
+  placeholder: _propTypes["default"].string,
+  required: _propTypes["default"].bool,
+  showLeadingZeros: _propTypes["default"].bool,
+  step: _propTypes["default"].number,
+  value: _propTypes["default"].string
+};
+});
+
+var convert12to24_1$1 = convert12to24$1;
+var convert24to12_1$1 = convert24to12$1;
+
+function convert12to24$1(hour12, amPm) {
+  var hour24 = parseInt(hour12, 10);
+
+  if (amPm === 'am' && hour24 === 12) {
+    hour24 = 0;
+  } else if (amPm === 'pm' && hour24 < 12) {
+    hour24 += 12;
+  }
+
+  return hour24;
+}
+
+function convert24to12$1(hour24) {
+  var hour12 = hour24 % 12 || 12;
+  return [hour12, hour24 < 12 ? 'am' : 'pm'];
+}
+
+var dates$1 = /*#__PURE__*/Object.defineProperty({
+	convert12to24: convert12to24_1$1,
+	convert24to12: convert24to12_1$1
+}, '__esModule', {value: true});
 
 var getFormatter_1 = getFormatter;
 
@@ -53584,7 +52856,7 @@ function _nonIterableSpread() {
 }
 
 function _iterableToArray(iter) {
-  if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
+  if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
 }
 
 function _arrayWithoutHoles(arr) {
@@ -53619,14 +52891,17 @@ function _arrayLikeToArray$1(arr, len) {
 }
 
 function _iterableToArrayLimit$1(arr, i) {
-  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
+  var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"];
+
+  if (_i == null) return;
   var _arr = [];
   var _n = true;
   var _d = false;
-  var _e = undefined;
+
+  var _s, _e;
 
   try {
-    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+    for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) {
       _arr.push(_s.value);
 
       if (i && _arr.length === i) break;
@@ -53735,6 +53010,8 @@ var _Input = _interopRequireDefault(Input_1);
 
 
 
+var _excluded = ["amPm", "hour", "maxTime", "minTime", "value"];
+
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
     "default": obj
@@ -53787,14 +53064,17 @@ function _arrayLikeToArray(arr, len) {
 }
 
 function _iterableToArrayLimit(arr, i) {
-  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
+  var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"];
+
+  if (_i == null) return;
   var _arr = [];
   var _n = true;
   var _d = false;
-  var _e = undefined;
+
+  var _s, _e;
 
   try {
-    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+    for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) {
       _arr.push(_s.value);
 
       if (i && _arr.length === i) break;
@@ -53859,7 +53139,7 @@ function Hour12Input(_ref) {
       var maxTime = _ref.maxTime,
       minTime = _ref.minTime,
       value = _ref.value,
-      otherProps = _objectWithoutProperties(_ref, ["amPm", "hour", "maxTime", "minTime", "value"]);
+      otherProps = _objectWithoutProperties(_ref, _excluded);
 
   var maxHour = (0, utils$1.safeMin)(12, maxTime && function () {
     var _convert24to = (0, dates$1.convert24to12)((0, _dateUtils.getHours)(maxTime)),
@@ -53904,7 +53184,7 @@ Hour12Input.propTypes = {
   className: _propTypes["default"].string.isRequired,
   disabled: _propTypes["default"].bool,
   hour: _propTypes["default"].string,
-  itemRef: _propTypes["default"].func,
+  inputRef: propTypes$1.isRef,
   maxTime: propTypes$1.isTime,
   minTime: propTypes$1.isTime,
   onChange: _propTypes["default"].func,
@@ -53935,6 +53215,8 @@ var _Input = _interopRequireDefault(Input_1);
 
 
 
+
+var _excluded = ["hour", "maxTime", "minTime"];
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -54000,7 +53282,7 @@ function Hour24Input(_ref) {
   _ref.hour;
       var maxTime = _ref.maxTime,
       minTime = _ref.minTime,
-      otherProps = _objectWithoutProperties(_ref, ["hour", "maxTime", "minTime"]);
+      otherProps = _objectWithoutProperties(_ref, _excluded);
 
   var maxHour = (0, utils$1.safeMin)(23, maxTime && (0, _dateUtils.getHours)(maxTime));
   var minHour = (0, utils$1.safeMax)(0, minTime && (0, _dateUtils.getHours)(minTime));
@@ -54017,7 +53299,7 @@ Hour24Input.propTypes = {
   className: _propTypes["default"].string.isRequired,
   disabled: _propTypes["default"].bool,
   hour: _propTypes["default"].string,
-  itemRef: _propTypes["default"].func,
+  inputRef: propTypes$1.isRef,
   maxTime: propTypes$1.isTime,
   minTime: propTypes$1.isTime,
   onChange: _propTypes["default"].func,
@@ -54048,6 +53330,8 @@ var _Input = _interopRequireDefault(Input_1);
 
 
 
+
+var _excluded = ["hour", "maxTime", "minTime", "showLeadingZeros"];
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -54115,7 +53399,7 @@ function MinuteInput(_ref) {
       minTime = _ref.minTime,
       _ref$showLeadingZeros = _ref.showLeadingZeros,
       showLeadingZeros = _ref$showLeadingZeros === void 0 ? true : _ref$showLeadingZeros,
-      otherProps = _objectWithoutProperties(_ref, ["hour", "maxTime", "minTime", "showLeadingZeros"]);
+      otherProps = _objectWithoutProperties(_ref, _excluded);
 
   function isSameHour(date) {
     return date && hour === (0, _dateUtils.getHours)(date).toString();
@@ -54136,7 +53420,7 @@ MinuteInput.propTypes = {
   className: _propTypes["default"].string.isRequired,
   disabled: _propTypes["default"].bool,
   hour: _propTypes["default"].string,
-  itemRef: _propTypes["default"].func,
+  inputRef: propTypes$1.isRef,
   maxTime: propTypes$1.isTime,
   minTime: propTypes$1.isTime,
   onChange: _propTypes["default"].func,
@@ -54167,6 +53451,8 @@ var _Input = _interopRequireDefault(Input_1);
 
 
 
+
+var _excluded = ["hour", "maxTime", "minTime", "minute", "showLeadingZeros"];
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -54235,7 +53521,7 @@ function SecondInput(_ref) {
       minute = _ref.minute,
       _ref$showLeadingZeros = _ref.showLeadingZeros,
       showLeadingZeros = _ref$showLeadingZeros === void 0 ? true : _ref$showLeadingZeros,
-      otherProps = _objectWithoutProperties(_ref, ["hour", "maxTime", "minTime", "minute", "showLeadingZeros"]);
+      otherProps = _objectWithoutProperties(_ref, _excluded);
 
   function isSameMinute(date) {
     return date && hour === (0, _dateUtils.getHours)(date).toString() && minute === (0, _dateUtils.getMinutes)(date).toString();
@@ -54256,7 +53542,7 @@ SecondInput.propTypes = {
   className: _propTypes["default"].string.isRequired,
   disabled: _propTypes["default"].bool,
   hour: _propTypes["default"].string,
-  itemRef: _propTypes["default"].func,
+  inputRef: propTypes$1.isRef,
   maxTime: propTypes$1.isTime,
   minTime: propTypes$1.isTime,
   minute: _propTypes["default"].string,
@@ -54325,14 +53611,17 @@ function _arrayLikeToArray(arr, len) {
 }
 
 function _iterableToArrayLimit(arr, i) {
-  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
+  var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"];
+
+  if (_i == null) return;
   var _arr = [];
   var _n = true;
   var _d = false;
-  var _e = undefined;
+
+  var _s, _e;
 
   try {
-    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+    for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) {
       _arr.push(_s.value);
 
       if (i && _arr.length === i) break;
@@ -54359,7 +53648,7 @@ function AmPm(_ref) {
   var ariaLabel = _ref.ariaLabel,
       className = _ref.className,
       disabled = _ref.disabled,
-      itemRef = _ref.itemRef,
+      inputRef = _ref.inputRef,
       locale = _ref.locale,
       maxTime = _ref.maxTime,
       minTime = _ref.minTime,
@@ -54378,14 +53667,12 @@ function AmPm(_ref) {
   return /*#__PURE__*/_react["default"].createElement("select", {
     "aria-label": ariaLabel,
     className: (0, _mergeClassNames["default"])("".concat(className, "__input"), "".concat(className, "__").concat(name)),
+    "data-input": "true",
+    "data-select": "true",
     disabled: disabled,
     name: name,
     onChange: onChange,
-    ref: function ref(_ref2) {
-      if (itemRef) {
-        itemRef(_ref2, name);
-      }
-    },
+    ref: inputRef,
     required: required,
     value: value !== null ? value : ''
   }, !value && /*#__PURE__*/_react["default"].createElement("option", {
@@ -54403,7 +53690,7 @@ AmPm.propTypes = {
   ariaLabel: _propTypes["default"].string,
   className: _propTypes["default"].string.isRequired,
   disabled: _propTypes["default"].bool,
-  itemRef: _propTypes["default"].func,
+  inputRef: propTypes$1.isRef,
   locale: _propTypes["default"].string,
   maxTime: propTypes$1.isTime,
   minTime: propTypes$1.isTime,
@@ -54719,14 +54006,17 @@ function _arrayLikeToArray(arr, len) {
 }
 
 function _iterableToArrayLimit(arr, i) {
-  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
+  var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"];
+
+  if (_i == null) return;
   var _arr = [];
   var _n = true;
   var _d = false;
-  var _e = undefined;
+
+  var _s, _e;
 
   try {
-    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+    for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) {
       _arr.push(_s.value);
 
       if (i && _arr.length === i) break;
@@ -54815,6 +54105,22 @@ var utils = /*#__PURE__*/Object.defineProperty({
 
 var DateTimeInput_1 = createCommonjsModule(function (module, exports) {
 
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -54862,19 +54168,17 @@ function _interopRequireDefault(obj) {
   };
 }
 
-function _getRequireWildcardCache() {
+function _getRequireWildcardCache(nodeInterop) {
   if (typeof WeakMap !== "function") return null;
-  var cache = new WeakMap();
-
-  _getRequireWildcardCache = function _getRequireWildcardCache() {
-    return cache;
-  };
-
-  return cache;
+  var cacheBabelInterop = new WeakMap();
+  var cacheNodeInterop = new WeakMap();
+  return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) {
+    return nodeInterop ? cacheNodeInterop : cacheBabelInterop;
+  })(nodeInterop);
 }
 
-function _interopRequireWildcard(obj) {
-  if (obj && obj.__esModule) {
+function _interopRequireWildcard(obj, nodeInterop) {
+  if (!nodeInterop && obj && obj.__esModule) {
     return obj;
   }
 
@@ -54884,7 +54188,7 @@ function _interopRequireWildcard(obj) {
     };
   }
 
-  var cache = _getRequireWildcardCache();
+  var cache = _getRequireWildcardCache(nodeInterop);
 
   if (cache && cache.has(obj)) {
     return cache.get(obj);
@@ -54894,7 +54198,7 @@ function _interopRequireWildcard(obj) {
   var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
 
   for (var key in obj) {
-    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+    if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
       var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
 
       if (desc && (desc.get || desc.set)) {
@@ -54912,22 +54216,6 @@ function _interopRequireWildcard(obj) {
   }
 
   return newObj;
-}
-
-function _typeof(obj) {
-  "@babel/helpers - typeof";
-
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof = function _typeof(obj) {
-      return typeof obj;
-    };
-  } else {
-    _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-  }
-
-  return _typeof(obj);
 }
 
 function _extends() {
@@ -54957,14 +54245,17 @@ function _nonIterableRest() {
 }
 
 function _iterableToArrayLimit(arr, i) {
-  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
+  var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"];
+
+  if (_i == null) return;
   var _arr = [];
   var _n = true;
   var _d = false;
-  var _e = undefined;
+
+  var _s, _e;
 
   try {
-    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+    for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) {
       _arr.push(_s.value);
 
       if (i && _arr.length === i) break;
@@ -55055,6 +54346,8 @@ function _createSuper(Derived) {
 function _possibleConstructorReturn(self, call) {
   if (call && (_typeof(call) === "object" || typeof call === "function")) {
     return call;
+  } else if (call !== void 0) {
+    throw new TypeError("Derived constructors may only return object or undefined");
   }
 
   return _assertThisInitialized(self);
@@ -55074,7 +54367,7 @@ function _isNativeReflectConstruct() {
   if (typeof Proxy === "function") return true;
 
   try {
-    Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
+    Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {}));
     return true;
   } catch (e) {
     return false;
@@ -55121,7 +54414,7 @@ function _unsupportedIterableToArray(o, minLen) {
 }
 
 function _iterableToArray(iter) {
-  if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);
+  if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
 }
 
 function _arrayWithoutHoles(arr) {
@@ -55281,6 +54574,22 @@ var DateTimeInput = /*#__PURE__*/function (_PureComponent) {
       second: null
     });
 
+    _defineProperty(_assertThisInitialized(_this), "dayInput", /*#__PURE__*/(0, _react.createRef)());
+
+    _defineProperty(_assertThisInitialized(_this), "monthInput", /*#__PURE__*/(0, _react.createRef)());
+
+    _defineProperty(_assertThisInitialized(_this), "yearInput", /*#__PURE__*/(0, _react.createRef)());
+
+    _defineProperty(_assertThisInitialized(_this), "amPmInput", /*#__PURE__*/(0, _react.createRef)());
+
+    _defineProperty(_assertThisInitialized(_this), "hour12Input", /*#__PURE__*/(0, _react.createRef)());
+
+    _defineProperty(_assertThisInitialized(_this), "hour24Input", /*#__PURE__*/(0, _react.createRef)());
+
+    _defineProperty(_assertThisInitialized(_this), "minuteInput", /*#__PURE__*/(0, _react.createRef)());
+
+    _defineProperty(_assertThisInitialized(_this), "secondInput", /*#__PURE__*/(0, _react.createRef)());
+
     _defineProperty(_assertThisInitialized(_this), "onClick", function (event) {
       if (event.target === event.currentTarget) {
         // Wrapper was directly clicked
@@ -55425,8 +54734,8 @@ var DateTimeInput = /*#__PURE__*/function (_PureComponent) {
         return;
       }
 
-      var formElements = [_this.dayInput, _this.monthInput, _this.yearInput, _this.hour12Input, _this.hour24Input, _this.minuteInput, _this.secondInput, _this.amPmInput].filter(Boolean);
-      var formElementsWithoutSelect = formElements.slice(0, -1);
+      var formElements = [_this.amPmInput.current, _this.dayInput.current, _this.monthInput.current, _this.yearInput.current, _this.hour12Input.current, _this.hour24Input.current, _this.minuteInput.current, _this.secondInput.current].filter(Boolean);
+      var formElementsWithoutSelect = formElements.slice(1);
       var values = {};
       formElements.forEach(function (formElement) {
         values[formElement.name] = formElement.value;
@@ -55474,6 +54783,7 @@ var DateTimeInput = /*#__PURE__*/function (_PureComponent) {
       }, _this.commonInputProps, {
         ariaLabel: dayAriaLabel,
         autoFocus: index === 0 && autoFocus,
+        inputRef: _this.dayInput,
         month: month,
         placeholder: dayPlaceholder,
         showLeadingZeros: showLeadingZerosFromFormat || showLeadingZeros,
@@ -55503,6 +54813,7 @@ var DateTimeInput = /*#__PURE__*/function (_PureComponent) {
         }, _this.commonInputProps, {
           ariaLabel: monthAriaLabel,
           autoFocus: index === 0 && autoFocus,
+          inputRef: _this.monthInput,
           locale: locale,
           placeholder: monthPlaceholder,
           "short": currentMatch.length === 3,
@@ -55517,6 +54828,7 @@ var DateTimeInput = /*#__PURE__*/function (_PureComponent) {
       }, _this.commonInputProps, {
         ariaLabel: monthAriaLabel,
         autoFocus: index === 0 && autoFocus,
+        inputRef: _this.monthInput,
         placeholder: monthPlaceholder,
         showLeadingZeros: showLeadingZerosFromFormat || showLeadingZeros,
         value: month,
@@ -55535,6 +54847,7 @@ var DateTimeInput = /*#__PURE__*/function (_PureComponent) {
       }, _this.commonInputProps, {
         ariaLabel: yearAriaLabel,
         autoFocus: index === 0 && autoFocus,
+        inputRef: _this.yearInput,
         placeholder: yearPlaceholder,
         value: year,
         valueType: "day"
@@ -55569,6 +54882,7 @@ var DateTimeInput = /*#__PURE__*/function (_PureComponent) {
         amPm: amPm,
         ariaLabel: hourAriaLabel,
         autoFocus: index === 0 && autoFocus,
+        inputRef: _this.hour12Input,
         placeholder: hourPlaceholder,
         showLeadingZeros: showLeadingZeros,
         value: hour
@@ -55592,6 +54906,7 @@ var DateTimeInput = /*#__PURE__*/function (_PureComponent) {
       }, _this.commonInputProps, {
         ariaLabel: hourAriaLabel,
         autoFocus: index === 0 && autoFocus,
+        inputRef: _this.hour24Input,
         placeholder: hourPlaceholder,
         showLeadingZeros: showLeadingZeros,
         value: hour
@@ -55618,6 +54933,7 @@ var DateTimeInput = /*#__PURE__*/function (_PureComponent) {
         ariaLabel: minuteAriaLabel,
         autoFocus: index === 0 && autoFocus,
         hour: hour,
+        inputRef: _this.minuteInput,
         placeholder: minutePlaceholder,
         showLeadingZeros: showLeadingZeros,
         value: minute
@@ -55645,6 +54961,7 @@ var DateTimeInput = /*#__PURE__*/function (_PureComponent) {
         ariaLabel: secondAriaLabel,
         autoFocus: index === 0 && autoFocus,
         hour: hour,
+        inputRef: _this.secondInput,
         minute: minute,
         placeholder: secondPlaceholder,
         showLeadingZeros: showLeadingZeros,
@@ -55663,6 +54980,7 @@ var DateTimeInput = /*#__PURE__*/function (_PureComponent) {
       }, _this.commonInputProps, {
         ariaLabel: amPmAriaLabel,
         autoFocus: index === 0 && autoFocus,
+        inputRef: _this.amPmInput,
         locale: locale,
         onChange: _this.onChangeAmPm,
         value: amPm
@@ -55673,61 +54991,6 @@ var DateTimeInput = /*#__PURE__*/function (_PureComponent) {
   }
 
   _createClass(DateTimeInput, [{
-    key: "renderCustomInputs",
-    value: function renderCustomInputs() {
-      var placeholder = this.placeholder;
-      var format = this.props.format;
-      var elementFunctions = {
-        d: this.renderDay,
-        M: this.renderMonth,
-        y: this.renderYear,
-        h: this.renderHour,
-        H: this.renderHour,
-        m: this.renderMinute,
-        s: this.renderSecond,
-        a: this.renderAmPm
-      };
-      var allowMultipleInstances = typeof format !== 'undefined';
-      return _renderCustomInputs(placeholder, elementFunctions, allowMultipleInstances);
-    }
-  }, {
-    key: "renderNativeInput",
-    value: function renderNativeInput() {
-      var _this$props9 = this.props,
-          disabled = _this$props9.disabled,
-          maxDate = _this$props9.maxDate,
-          minDate = _this$props9.minDate,
-          name = _this$props9.name,
-          nativeInputAriaLabel = _this$props9.nativeInputAriaLabel,
-          required = _this$props9.required;
-      var value = this.state.value;
-      return /*#__PURE__*/_react["default"].createElement(_NativeInput["default"], {
-        key: "time",
-        ariaLabel: nativeInputAriaLabel,
-        disabled: disabled,
-        maxDate: maxDate || defaultMaxDate,
-        minDate: minDate || defaultMinDate,
-        name: name,
-        onChange: this.onChangeNative,
-        required: required,
-        value: value,
-        valueType: this.valueType
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var className = this.props.className;
-      /* eslint-disable jsx-a11y/click-events-have-key-events */
-
-      /* eslint-disable jsx-a11y/no-static-element-interactions */
-
-      return /*#__PURE__*/_react["default"].createElement("div", {
-        className: className,
-        onClick: this.onClick
-      }, this.renderNativeInput(), this.renderCustomInputs());
-    }
-  }, {
     key: "formatTime",
     get: function get() {
       var maxDetail = this.props.maxDetail;
@@ -55856,15 +55119,13 @@ var DateTimeInput = /*#__PURE__*/function (_PureComponent) {
   }, {
     key: "commonInputProps",
     get: function get() {
-      var _this2 = this;
-
-      var _this$props10 = this.props,
-          className = _this$props10.className,
-          disabled = _this$props10.disabled,
-          isWidgetOpen = _this$props10.isWidgetOpen,
-          maxDate = _this$props10.maxDate,
-          minDate = _this$props10.minDate,
-          required = _this$props10.required;
+      var _this$props9 = this.props,
+          className = _this$props9.className,
+          disabled = _this$props9.disabled,
+          isWidgetOpen = _this$props9.isWidgetOpen,
+          maxDate = _this$props9.maxDate,
+          minDate = _this$props9.minDate,
+          required = _this$props9.required;
       return {
         className: className,
         disabled: disabled,
@@ -55875,11 +55136,7 @@ var DateTimeInput = /*#__PURE__*/function (_PureComponent) {
         onKeyUp: this.onKeyUp,
         placeholder: '--',
         // This is only for showing validity when editing
-        required: required || isWidgetOpen,
-        itemRef: function itemRef(ref, name) {
-          // Save a reference to each input field
-          _this2["".concat(name, "Input")] = ref;
-        }
+        required: required || isWidgetOpen
       };
     }
   }, {
@@ -55901,6 +55158,61 @@ var DateTimeInput = /*#__PURE__*/function (_PureComponent) {
     get: function get() {
       var maxDetail = this.props.maxDetail;
       return maxDetail;
+    }
+  }, {
+    key: "renderCustomInputs",
+    value: function renderCustomInputs() {
+      var placeholder = this.placeholder;
+      var format = this.props.format;
+      var elementFunctions = {
+        d: this.renderDay,
+        M: this.renderMonth,
+        y: this.renderYear,
+        h: this.renderHour,
+        H: this.renderHour,
+        m: this.renderMinute,
+        s: this.renderSecond,
+        a: this.renderAmPm
+      };
+      var allowMultipleInstances = typeof format !== 'undefined';
+      return _renderCustomInputs(placeholder, elementFunctions, allowMultipleInstances);
+    }
+  }, {
+    key: "renderNativeInput",
+    value: function renderNativeInput() {
+      var _this$props10 = this.props,
+          disabled = _this$props10.disabled,
+          maxDate = _this$props10.maxDate,
+          minDate = _this$props10.minDate,
+          name = _this$props10.name,
+          nativeInputAriaLabel = _this$props10.nativeInputAriaLabel,
+          required = _this$props10.required;
+      var value = this.state.value;
+      return /*#__PURE__*/_react["default"].createElement(_NativeInput["default"], {
+        key: "time",
+        ariaLabel: nativeInputAriaLabel,
+        disabled: disabled,
+        maxDate: maxDate || defaultMaxDate,
+        minDate: minDate || defaultMinDate,
+        name: name,
+        onChange: this.onChangeNative,
+        required: required,
+        value: value,
+        valueType: this.valueType
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var className = this.props.className;
+      /* eslint-disable jsx-a11y/click-events-have-key-events */
+
+      /* eslint-disable jsx-a11y/no-static-element-interactions */
+
+      return /*#__PURE__*/_react["default"].createElement("div", {
+        className: className,
+        onClick: this.onClick
+      }, this.renderNativeInput(), this.renderCustomInputs());
     }
   }], [{
     key: "getDerivedStateFromProps",
@@ -56017,13 +55329,31 @@ DateTimeInput.propTypes = {
 };
 });
 
-var require$$4 = /*@__PURE__*/getAugmentedNamespace(esm$2);
+var require$$2 = /*@__PURE__*/getAugmentedNamespace(esm$7);
+
+var require$$4 = /*@__PURE__*/getAugmentedNamespace(esm$3);
 
 var require$$5 = /*@__PURE__*/getAugmentedNamespace(Fit$1);
 
-var require$$6 = /*@__PURE__*/getAugmentedNamespace(esm$1);
+var require$$6 = /*@__PURE__*/getAugmentedNamespace(esm$2);
 
 var DateTimePicker_1 = createCommonjsModule(function (module, exports) {
+
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -56034,7 +55364,7 @@ var _react = _interopRequireWildcard(React__default$1);
 
 var _propTypes = _interopRequireDefault(propTypes$3);
 
-var _makeEventProps = _interopRequireDefault(entry$1);
+var _makeEventProps = _interopRequireDefault(require$$2);
 
 var _mergeClassNames = _interopRequireDefault(require$$3$1);
 
@@ -56048,25 +55378,27 @@ var _DateTimeInput = _interopRequireDefault(DateTimeInput_1);
 
 
 
+var _excluded = ["calendarClassName", "className", "maxDetail", "onChange", "value"],
+    _excluded2 = ["clockClassName", "className", "maxDetail", "onChange", "value"],
+    _excluded3 = ["onChange"];
+
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
     "default": obj
   };
 }
 
-function _getRequireWildcardCache() {
+function _getRequireWildcardCache(nodeInterop) {
   if (typeof WeakMap !== "function") return null;
-  var cache = new WeakMap();
-
-  _getRequireWildcardCache = function _getRequireWildcardCache() {
-    return cache;
-  };
-
-  return cache;
+  var cacheBabelInterop = new WeakMap();
+  var cacheNodeInterop = new WeakMap();
+  return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) {
+    return nodeInterop ? cacheNodeInterop : cacheBabelInterop;
+  })(nodeInterop);
 }
 
-function _interopRequireWildcard(obj) {
-  if (obj && obj.__esModule) {
+function _interopRequireWildcard(obj, nodeInterop) {
+  if (!nodeInterop && obj && obj.__esModule) {
     return obj;
   }
 
@@ -56076,7 +55408,7 @@ function _interopRequireWildcard(obj) {
     };
   }
 
-  var cache = _getRequireWildcardCache();
+  var cache = _getRequireWildcardCache(nodeInterop);
 
   if (cache && cache.has(obj)) {
     return cache.get(obj);
@@ -56086,7 +55418,7 @@ function _interopRequireWildcard(obj) {
   var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
 
   for (var key in obj) {
-    if (Object.prototype.hasOwnProperty.call(obj, key)) {
+    if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
       var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
 
       if (desc && (desc.get || desc.set)) {
@@ -56104,22 +55436,6 @@ function _interopRequireWildcard(obj) {
   }
 
   return newObj;
-}
-
-function _typeof(obj) {
-  "@babel/helpers - typeof";
-
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof = function _typeof(obj) {
-      return typeof obj;
-    };
-  } else {
-    _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-  }
-
-  return _typeof(obj);
 }
 
 function _objectWithoutProperties(source, excluded) {
@@ -56204,14 +55520,17 @@ function _arrayLikeToArray(arr, len) {
 }
 
 function _iterableToArrayLimit(arr, i) {
-  if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;
+  var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"];
+
+  if (_i == null) return;
   var _arr = [];
   var _n = true;
   var _d = false;
-  var _e = undefined;
+
+  var _s, _e;
 
   try {
-    for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {
+    for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) {
       _arr.push(_s.value);
 
       if (i && _arr.length === i) break;
@@ -56302,6 +55621,8 @@ function _createSuper(Derived) {
 function _possibleConstructorReturn(self, call) {
   if (call && (_typeof(call) === "object" || typeof call === "function")) {
     return call;
+  } else if (call !== void 0) {
+    throw new TypeError("Derived constructors may only return object or undefined");
   }
 
   return _assertThisInitialized(self);
@@ -56321,7 +55642,7 @@ function _isNativeReflectConstruct() {
   if (typeof Proxy === "function") return true;
 
   try {
-    Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
+    Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {}));
     return true;
   } catch (e) {
     return false;
@@ -56373,7 +55694,10 @@ var DateTimePicker = /*#__PURE__*/function (_PureComponent) {
     _defineProperty(_assertThisInitialized(_this), "state", {});
 
     _defineProperty(_assertThisInitialized(_this), "onOutsideAction", function (event) {
-      if (_this.wrapper && !_this.wrapper.contains(event.target)) {
+      // Try event.composedPath first to handle clicks inside a Shadow DOM.
+      var target = 'composedPath' in event ? event.composedPath()[0] : event.target;
+
+      if (_this.wrapper && !_this.wrapper.contains(target)) {
         _this.closeWidgets();
       }
     });
@@ -56420,6 +55744,10 @@ var DateTimePicker = /*#__PURE__*/function (_PureComponent) {
       }
 
       if (openWidgetsOnFocus) {
+        if (event.target.getAttribute('data-select') === 'true') {
+          return;
+        }
+
         switch (event.target.name) {
           case 'day':
           case 'month':
@@ -56524,6 +55852,11 @@ var DateTimePicker = /*#__PURE__*/function (_PureComponent) {
     key: "componentWillUnmount",
     value: function componentWillUnmount() {
       this.handleOutsideActionListeners(false);
+    }
+  }, {
+    key: "eventProps",
+    get: function get() {
+      return (0, _makeEventProps["default"])(this.props);
     }
   }, {
     key: "handleOutsideActionListeners",
@@ -56651,7 +55984,7 @@ var DateTimePicker = /*#__PURE__*/function (_PureComponent) {
           _this$props4.maxDetail;
           _this$props4.onChange;
           var value = _this$props4.value,
-          calendarProps = _objectWithoutProperties(_this$props4, ["calendarClassName", "className", "maxDetail", "onChange", "value"]);
+          calendarProps = _objectWithoutProperties(_this$props4, _excluded);
 
       var className = "".concat(baseClassName, "__calendar");
       return /*#__PURE__*/_react["default"].createElement(_reactFit["default"], null, /*#__PURE__*/_react["default"].createElement("div", {
@@ -56678,7 +56011,7 @@ var DateTimePicker = /*#__PURE__*/function (_PureComponent) {
           var maxDetail = _this$props5.maxDetail;
           _this$props5.onChange;
           var value = _this$props5.value,
-          clockProps = _objectWithoutProperties(_this$props5, ["clockClassName", "className", "maxDetail", "onChange", "value"]);
+          clockProps = _objectWithoutProperties(_this$props5, _excluded2);
 
       var className = "".concat(baseClassName, "__clock");
 
@@ -56701,15 +56034,18 @@ var DateTimePicker = /*#__PURE__*/function (_PureComponent) {
     value: function render() {
       var _this3 = this;
 
+      var eventProps = this.eventProps;
       var _this$props6 = this.props,
           className = _this$props6.className,
           disabled = _this$props6.disabled;
-      var _this$state4 = this.state,
-          isCalendarOpen = _this$state4.isCalendarOpen,
-          isClockOpen = _this$state4.isClockOpen;
+      var isOpen = this.state.isOpen;
+
+      eventProps.onChange;
+          var eventPropsWithoutOnChange = _objectWithoutProperties(eventProps, _excluded3);
+
       return /*#__PURE__*/_react["default"].createElement("div", _extends({
-        className: (0, _mergeClassNames["default"])(baseClassName, "".concat(baseClassName, "--").concat(isCalendarOpen || isClockOpen ? 'open' : 'closed'), "".concat(baseClassName, "--").concat(disabled ? 'disabled' : 'enabled'), className)
-      }, this.eventProps, {
+        className: (0, _mergeClassNames["default"])(baseClassName, "".concat(baseClassName, "--").concat(isOpen ? 'open' : 'closed'), "".concat(baseClassName, "--").concat(disabled ? 'disabled' : 'enabled'), className)
+      }, eventPropsWithoutOnChange, {
         onFocus: this.onFocus,
         ref: function ref(_ref) {
           if (!_ref) {
@@ -56719,11 +56055,6 @@ var DateTimePicker = /*#__PURE__*/function (_PureComponent) {
           _this3.wrapper = _ref;
         }
       }), this.renderInputs(), this.renderCalendar(), this.renderClock());
-    }
-  }, {
-    key: "eventProps",
-    get: function get() {
-      return (0, _makeEventProps["default"])(this.props);
     }
   }], [{
     key: "getDerivedStateFromProps",
@@ -57740,6 +57071,11 @@ function BearForm({
       };
       const lpsda = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement(BearDiv$1, okawe), title);
       style["textAlign"] = "center";
+      ({
+        style: style,
+        ...zcvdf,
+        obj: lpsda
+      });
       return lpsda; //   return <BearDiv {...oaewc} />;
       // return "oskdasd";
     }
@@ -57928,6 +57264,9 @@ function BearCheckout({
       }
     };
     /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, /*#__PURE__*/React__default$1.createElement(BearDiv$1, ewurw, sidjwreed), message, /*#__PURE__*/React__default$1.createElement("br", null), "To disable these notification, set the \"disableNotification\" attribute to \"true\" in your ", typeComp, " component.");
+    ({ ...messageConfig,
+      ...sadre
+    });
     const odkeqd = //
     ""; // BearNotification(ijdwewe, ijdfer);
 
@@ -60476,6 +59815,8 @@ function pathToRegexp(path, keys, options) {
   /** @type {!Array} */
   keys, options);
 }
+
+var pathToRegexp$1 = pathToRegexp_1;
 pathToRegexp_1.parse = parse_1;
 pathToRegexp_1.compile = compile_1;
 pathToRegexp_1.tokensToFunction = tokensToFunction_1;
@@ -60487,15 +59828,8 @@ var createNamedContext = function createNamedContext(name) {
   return context;
 };
 
-var historyContext = /*#__PURE__*/createNamedContext("Router-History"); // TODO: Replace with React.createContext once we can assume React 16+
-
-var createNamedContext$1 = function createNamedContext(name) {
-  var context = index();
-  context.displayName = name;
-  return context;
-};
-
-var context = /*#__PURE__*/createNamedContext$1("Router");
+var historyContext = /*#__PURE__*/createNamedContext("Router-History");
+var context = /*#__PURE__*/createNamedContext("Router");
 /**
  * The public API for putting history on context.
  */
@@ -60555,18 +59889,22 @@ var Router = /*#__PURE__*/function (_React$Component) {
   };
 
   _proto.componentWillUnmount = function componentWillUnmount() {
-    if (this.unlisten) this.unlisten();
+    if (this.unlisten) {
+      this.unlisten();
+      this._isMounted = false;
+      this._pendingLocation = null;
+    }
   };
 
   _proto.render = function render() {
-    return React__default$1.createElement(context.Provider, {
+    return /*#__PURE__*/React__default$1.createElement(context.Provider, {
       value: {
         history: this.props.history,
         location: this.state.location,
         match: Router.computeRootMatch(this.state.location.pathname),
         staticContext: this.props.staticContext
       }
-    }, React__default$1.createElement(historyContext.Provider, {
+    }, /*#__PURE__*/React__default$1.createElement(historyContext.Provider, {
       children: this.props.children || null,
       value: this.props.history
     }));
@@ -60609,7 +59947,7 @@ var MemoryRouter = /*#__PURE__*/function (_React$Component) {
   var _proto = MemoryRouter.prototype;
 
   _proto.render = function render() {
-    return React__default$1.createElement(Router, {
+    return /*#__PURE__*/React__default$1.createElement(Router, {
       history: this.history,
       children: this.props.children
     });
@@ -60685,7 +60023,7 @@ function compilePath$1(path, options) {
   var pathCache = cache$1[cacheKey] || (cache$1[cacheKey] = {});
   if (pathCache[path]) return pathCache[path];
   var keys = [];
-  var regexp = pathToRegexp_1(path, keys, options);
+  var regexp = pathToRegexp$1(path, keys, options);
   var result = {
     regexp: regexp,
     keys: keys
@@ -60782,7 +60120,7 @@ var Route = /*#__PURE__*/function (_React$Component) {
   _proto.render = function render() {
     var _this = this;
 
-    return React__default$1.createElement(context.Consumer, null, function (context$1) {
+    return /*#__PURE__*/React__default$1.createElement(context.Consumer, null, function (context$1) {
       !context$1 ? process.env.NODE_ENV !== "production" ? invariant(false, "You should not use <Route> outside a <Router>") : invariant(false) : void 0;
       var location = _this.props.location || context$1.location;
       var match = _this.props.computedMatch ? _this.props.computedMatch // <Switch> already computed the match for us
@@ -60799,13 +60137,13 @@ var Route = /*#__PURE__*/function (_React$Component) {
           render = _this$props.render; // Preact uses an empty array as children by
       // default, so use null if that's the case.
 
-      if (Array.isArray(children) && children.length === 0) {
+      if (Array.isArray(children) && isEmptyChildren(children)) {
         children = null;
       }
 
-      return React__default$1.createElement(context.Provider, {
+      return /*#__PURE__*/React__default$1.createElement(context.Provider, {
         value: props
-      }, props.match ? children ? typeof children === "function" ? process.env.NODE_ENV !== "production" ? evalChildrenDev(children, props, _this.props.path) : children(props) : children : component ? React__default$1.createElement(component, props) : render ? render(props) : null : typeof children === "function" ? process.env.NODE_ENV !== "production" ? evalChildrenDev(children, props, _this.props.path) : children(props) : null);
+      }, props.match ? children ? typeof children === "function" ? process.env.NODE_ENV !== "production" ? evalChildrenDev(children, props, _this.props.path) : children(props) : children : component ? /*#__PURE__*/React__default$1.createElement(component, props) : render ? render(props) : null : typeof children === "function" ? process.env.NODE_ENV !== "production" ? evalChildrenDev(children, props, _this.props.path) : children(props) : null);
     });
   };
 
@@ -60931,7 +60269,7 @@ var StaticRouter = /*#__PURE__*/function (_React$Component) {
         context = _this$props2$context === void 0 ? {} : _this$props2$context,
         _this$props2$location = _this$props2.location,
         location = _this$props2$location === void 0 ? "/" : _this$props2$location,
-        rest = _objectWithoutPropertiesLoose$f(_this$props2, ["basename", "context", "location"]);
+        rest = _objectWithoutPropertiesLoose$e(_this$props2, ["basename", "context", "location"]);
 
     var history = {
       createHref: function createHref(path) {
@@ -60947,7 +60285,7 @@ var StaticRouter = /*#__PURE__*/function (_React$Component) {
       listen: this.handleListen,
       block: this.handleBlock
     };
-    return React__default$1.createElement(Router, _extends$N({}, rest, {
+    return /*#__PURE__*/React__default$1.createElement(Router, _extends$N({}, rest, {
       history: history,
       staticContext: context
     }));
@@ -60984,7 +60322,7 @@ var Switch = /*#__PURE__*/function (_React$Component) {
   _proto.render = function render() {
     var _this = this;
 
-    return React__default$1.createElement(context.Consumer, null, function (context) {
+    return /*#__PURE__*/React__default$1.createElement(context.Consumer, null, function (context) {
       !context ? process.env.NODE_ENV !== "production" ? invariant(false, "You should not use <Switch> outside a <Router>") : invariant(false) : void 0;
       var location = _this.props.location || context.location;
       var element, match; // We use React.Children.forEach instead of React.Children.toArray().find()
@@ -60993,7 +60331,7 @@ var Switch = /*#__PURE__*/function (_React$Component) {
       // component at different URLs.
 
       React__default$1.Children.forEach(_this.props.children, function (child) {
-        if (match == null && React__default$1.isValidElement(child)) {
+        if (match == null && /*#__PURE__*/React__default$1.isValidElement(child)) {
           element = child;
           var path = child.props.path || child.props.from;
           match = path ? matchPath(location.pathname, _extends$N({}, child.props, {
@@ -61001,7 +60339,7 @@ var Switch = /*#__PURE__*/function (_React$Component) {
           })) : context.match;
         }
       });
-      return match ? React__default$1.cloneElement(element, {
+      return match ? /*#__PURE__*/React__default$1.cloneElement(element, {
         location: location,
         computedMatch: match
       }) : null;
@@ -61069,7 +60407,7 @@ var BrowserRouter = /*#__PURE__*/function (_React$Component) {
   var _proto = BrowserRouter.prototype;
 
   _proto.render = function render() {
-    return React__default$1.createElement(Router, {
+    return /*#__PURE__*/React__default$1.createElement(Router, {
       history: this.history,
       children: this.props.children
     });
@@ -61114,7 +60452,7 @@ var HashRouter = /*#__PURE__*/function (_React$Component) {
   var _proto = HashRouter.prototype;
 
   _proto.render = function render() {
-    return React__default$1.createElement(Router, {
+    return /*#__PURE__*/React__default$1.createElement(Router, {
       history: this.history,
       children: this.props.children
     });
@@ -61162,7 +60500,7 @@ var LinkAnchor = forwardRef(function (_ref, forwardedRef) {
   var innerRef = _ref.innerRef,
       navigate = _ref.navigate,
       _onClick = _ref.onClick,
-      rest = _objectWithoutPropertiesLoose$f(_ref, ["innerRef", "navigate", "onClick"]);
+      rest = _objectWithoutPropertiesLoose$e(_ref, ["innerRef", "navigate", "onClick"]);
 
   var target = rest.target;
 
@@ -61180,9 +60518,9 @@ var LinkAnchor = forwardRef(function (_ref, forwardedRef) {
       !target || target === "_self") && // let browser handle "target=_blank" etc.
       !isModifiedEvent(event) // ignore clicks with modifier keys
       ) {
-          event.preventDefault();
-          navigate();
-        }
+        event.preventDefault();
+        navigate();
+      }
     }
   }); // React 15 compat
 
@@ -61195,7 +60533,7 @@ var LinkAnchor = forwardRef(function (_ref, forwardedRef) {
   /* eslint-disable-next-line jsx-a11y/anchor-has-content */
 
 
-  return React__default$1.createElement("a", props);
+  return /*#__PURE__*/React__default$1.createElement("a", props);
 });
 
 if (process.env.NODE_ENV !== "production") {
@@ -61212,9 +60550,9 @@ var Link = forwardRef(function (_ref2, forwardedRef) {
       replace = _ref2.replace,
       to = _ref2.to,
       innerRef = _ref2.innerRef,
-      rest = _objectWithoutPropertiesLoose$f(_ref2, ["component", "replace", "to", "innerRef"]);
+      rest = _objectWithoutPropertiesLoose$e(_ref2, ["component", "replace", "to", "innerRef"]);
 
-  return React__default$1.createElement(context.Consumer, null, function (context) {
+  return /*#__PURE__*/React__default$1.createElement(context.Consumer, null, function (context) {
     !context ? process.env.NODE_ENV !== "production" ? invariant(false, "You should not use <Link> outside a <Router>") : invariant(false) : void 0;
     var history = context.history;
     var location = normalizeToLocation(resolveToLocation(to, context.location), context.location);
@@ -61224,7 +60562,8 @@ var Link = forwardRef(function (_ref2, forwardedRef) {
       href: href,
       navigate: function navigate() {
         var location = resolveToLocation(to, context.location);
-        var method = replace ? history.replace : history.push;
+        var isDuplicateNavigation = createPath(context.location) === createPath(normalizeToLocation(location));
+        var method = replace || isDuplicateNavigation ? history.replace : history.push;
         method(location);
       }
     }); // React 15 compat
@@ -61236,7 +60575,7 @@ var Link = forwardRef(function (_ref2, forwardedRef) {
       props.innerRef = innerRef;
     }
 
-    return React__default$1.createElement(component, props);
+    return /*#__PURE__*/React__default$1.createElement(component, props);
   });
 });
 
@@ -61294,9 +60633,9 @@ var NavLink = forwardRef$1(function (_ref, forwardedRef) {
       styleProp = _ref.style,
       to = _ref.to,
       innerRef = _ref.innerRef,
-      rest = _objectWithoutPropertiesLoose$f(_ref, ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive", "location", "sensitive", "strict", "style", "to", "innerRef"]);
+      rest = _objectWithoutPropertiesLoose$e(_ref, ["aria-current", "activeClassName", "activeStyle", "className", "exact", "isActive", "location", "sensitive", "strict", "style", "to", "innerRef"]);
 
-  return React__default$1.createElement(context.Consumer, null, function (context) {
+  return /*#__PURE__*/React__default$1.createElement(context.Consumer, null, function (context) {
     !context ? process.env.NODE_ENV !== "production" ? invariant(false, "You should not use <NavLink> outside a <Router>") : invariant(false) : void 0;
     var currentLocation = locationProp || context.location;
     var toLocation = normalizeToLocation(resolveToLocation(to, currentLocation), currentLocation);
@@ -61310,8 +60649,13 @@ var NavLink = forwardRef$1(function (_ref, forwardedRef) {
       strict: strict
     }) : null;
     var isActive = !!(isActiveProp ? isActiveProp(match, currentLocation) : match);
-    var className = isActive ? joinClassnames(classNameProp, activeClassName) : classNameProp;
-    var style = isActive ? _extends$N({}, styleProp, {}, activeStyle) : styleProp;
+    var className = typeof classNameProp === "function" ? classNameProp(isActive) : classNameProp;
+    var style = typeof styleProp === "function" ? styleProp(isActive) : styleProp;
+
+    if (isActive) {
+      className = joinClassnames(className, activeClassName);
+      style = _extends$N({}, style, activeStyle);
+    }
 
     var props = _extends$N({
       "aria-current": isActive && ariaCurrent || null,
@@ -61327,24 +60671,24 @@ var NavLink = forwardRef$1(function (_ref, forwardedRef) {
       props.innerRef = innerRef;
     }
 
-    return React__default$1.createElement(Link, props);
+    return /*#__PURE__*/React__default$1.createElement(Link, props);
   });
 });
 
 if (process.env.NODE_ENV !== "production") {
   NavLink.displayName = "NavLink";
-  var ariaCurrentType = propTypes$3.oneOf(["page", "step", "location", "date", "time", "true"]);
+  var ariaCurrentType = propTypes$3.oneOf(["page", "step", "location", "date", "time", "true", "false"]);
   NavLink.propTypes = _extends$N({}, Link.propTypes, {
     "aria-current": ariaCurrentType,
     activeClassName: propTypes$3.string,
     activeStyle: propTypes$3.object,
-    className: propTypes$3.string,
+    className: propTypes$3.oneOfType([propTypes$3.string, propTypes$3.func]),
     exact: propTypes$3.bool,
     isActive: propTypes$3.func,
     location: propTypes$3.object,
     sensitive: propTypes$3.bool,
     strict: propTypes$3.bool,
-    style: propTypes$3.object
+    style: propTypes$3.oneOfType([propTypes$3.object, propTypes$3.func])
   });
 }
 
@@ -61481,10 +60825,10 @@ var dist = function (e) {
   function a() {}
 
   a.resetWarningCache = o, e.exports = function () {
-    function e(e, t, n, o, a, i) {
-      if (i !== r) {
-        var c = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
-        throw c.name = "Invariant Violation", c;
+    function e(e, t, n, o, a, c) {
+      if (c !== r) {
+        var i = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
+        throw i.name = "Invariant Violation", i;
       }
     }
 
@@ -61525,13 +60869,13 @@ var dist = function (e) {
   n.r(t), n.d(t, "FacebookLoginButton", function () {
     return M;
   }), n.d(t, "GoogleLoginButton", function () {
-    return F;
+    return H;
   }), n.d(t, "GithubLoginButton", function () {
     return V;
   }), n.d(t, "TwitterLoginButton", function () {
     return I;
   }), n.d(t, "AmazonLoginButton", function () {
-    return Y;
+    return U;
   }), n.d(t, "InstagramLoginButton", function () {
     return W;
   }), n.d(t, "LinkedInLoginButton", function () {
@@ -61546,22 +60890,28 @@ var dist = function (e) {
     return le;
   }), n.d(t, "DiscordLoginButton", function () {
     return fe;
+  }), n.d(t, "OktaLoginButton", function () {
+    return ge;
+  }), n.d(t, "SlackLoginButton", function () {
+    return ye;
+  }), n.d(t, "YahooLoginButton", function () {
+    return we;
   }), n.d(t, "createButton", function () {
-    return L;
+    return z;
   }), n.d(t, "createSvgIcon", function () {
-    return k;
+    return j;
   });
   var r = {};
   n.r(r), n.d(r, "FacebookLoginButton", function () {
     return M;
   }), n.d(r, "GoogleLoginButton", function () {
-    return F;
+    return H;
   }), n.d(r, "GithubLoginButton", function () {
     return V;
   }), n.d(r, "TwitterLoginButton", function () {
     return I;
   }), n.d(r, "AmazonLoginButton", function () {
-    return Y;
+    return U;
   }), n.d(r, "InstagramLoginButton", function () {
     return W;
   }), n.d(r, "LinkedInLoginButton", function () {
@@ -61576,16 +60926,22 @@ var dist = function (e) {
     return le;
   }), n.d(r, "DiscordLoginButton", function () {
     return fe;
+  }), n.d(r, "OktaLoginButton", function () {
+    return ge;
+  }), n.d(r, "SlackLoginButton", function () {
+    return ye;
+  }), n.d(r, "YahooLoginButton", function () {
+    return we;
   }), n.d(r, "createButton", function () {
-    return L;
+    return z;
   }), n.d(r, "createSvgIcon", function () {
-    return k;
+    return j;
   });
 
   var o = n(1),
       a = n.n(o),
-      i = n(0),
-      c = n.n(i),
+      c = n(0),
+      i = n.n(c),
       l = function (e) {
     var t = e.name,
         n = e.size,
@@ -61599,9 +60955,9 @@ var dist = function (e) {
   };
 
   l.propTypes = {
-    format: c.a.func,
-    name: c.a.string.isRequired,
-    size: c.a.oneOfType([c.a.string, c.a.number]).isRequired
+    format: i.a.func,
+    name: i.a.string.isRequired,
+    size: i.a.oneOfType([i.a.string, i.a.number]).isRequired
   }, l.defaultProps = {
     format: function (e) {
       return "demo-icon icon-".concat(e);
@@ -61615,22 +60971,22 @@ var dist = function (e) {
         n = e.size,
         r = e.format,
         o = e.color,
-        i = void 0 === o ? "#FFFFFF" : o;
+        c = void 0 === o ? "#FFFFFF" : o;
     return "string" == typeof t ? a.a.createElement(u, {
       format: r,
       name: t,
       size: n
     }) : a.a.createElement(t, {
       size: n,
-      color: i
+      color: c
     });
   };
 
   s.propTypes = {
-    format: c.a.func,
-    size: c.a.oneOfType([c.a.number, c.a.string]),
-    type: c.a.oneOfType([c.a.string, c.a.node, c.a.func]),
-    color: c.a.string
+    format: i.a.func,
+    size: i.a.oneOfType([i.a.number, i.a.string]),
+    type: i.a.oneOfType([i.a.string, i.a.node, i.a.func]),
+    color: i.a.string
   };
   var f = s;
 
@@ -61647,11 +61003,11 @@ var dist = function (e) {
     return n;
   }
 
-  function g(e) {
+  function h(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {};
       t % 2 ? p(Object(n), !0).forEach(function (t) {
-        h(e, t, n[t]);
+        g(e, t, n[t]);
       }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : p(Object(n)).forEach(function (t) {
         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t));
       });
@@ -61660,7 +61016,7 @@ var dist = function (e) {
     return e;
   }
 
-  function h(e, t, n) {
+  function g(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
       value: n,
       enumerable: !0,
@@ -61677,8 +61033,8 @@ var dist = function (e) {
     })(e);
   }
 
-  function y() {
-    return (y = Object.assign || function (e) {
+  function m() {
+    return (m = Object.assign || function (e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = arguments[t];
 
@@ -61689,7 +61045,7 @@ var dist = function (e) {
     }).apply(this, arguments);
   }
 
-  function m(e, t) {
+  function y(e, t) {
     for (var n = 0; n < t.length; n++) {
       var r = t[n];
       r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r);
@@ -61751,16 +61107,16 @@ var dist = function (e) {
           configurable: !0
         }
       }), t && v(e, t);
-    }(i, e);
+    }(c, e);
     var t,
         n,
-        o = b(i);
+        o = b(c);
 
-    function i(e) {
+    function c(e) {
       var t;
       return function (e, t) {
         if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
-      }(this, i), (t = o.call(this, e)).state = {
+      }(this, c), (t = o.call(this, e)).state = {
         focused: !1,
         hovered: !1
       }, t.handleMouseEnter = function () {
@@ -61779,12 +61135,12 @@ var dist = function (e) {
         t.setState({
           focused: !1
         });
-      }, t.handleClick = function () {
-        "function" == typeof t.props.onClick && t.props.onClick();
+      }, t.handleClick = function (e) {
+        "function" == typeof t.props.onClick && t.props.onClick(e);
       }, t;
     }
 
-    return t = i, (n = [{
+    return t = c, (n = [{
       key: "render",
       value: function () {
         var e = this.props,
@@ -61792,26 +61148,27 @@ var dist = function (e) {
             n = e.align,
             r = e.text,
             o = e.children,
-            i = void 0 === o ? r : o,
-            c = e.className,
+            c = void 0 === o ? r : o,
+            i = e.className,
             l = e.icon,
             u = e.iconFormat,
             s = e.iconSize,
             p = e.iconColor,
-            g = void 0 === p ? "#FFFFFF" : p,
-            h = e.preventActiveStyles,
+            h = void 0 === p ? "#FFFFFF" : p,
+            g = e.preventActiveStyles,
             d = e.size,
-            m = e.style,
+            y = e.style,
             v = this.state,
             b = v.focused,
             w = v.hovered,
             O = x(C.button, {
-          activeStyle: h ? m : t,
-          customStyle: m,
+          activeStyle: g ? y : t,
+          customStyle: y,
           active: w || b,
           size: d
         });
-        return a.a.createElement("button", y({
+        return a.a.createElement("button", m({
+          type: "button",
           style: O,
           onClick: this.handleClick,
           onMouseEnter: this.handleMouseEnter,
@@ -61819,7 +61176,7 @@ var dist = function (e) {
           onFocus: this.handleFocus,
           onBlur: this.handleBlur
         }, {
-          className: c
+          className: i
         }), a.a.createElement("div", {
           style: C.flex
         }, a.a.createElement("div", {
@@ -61832,7 +61189,7 @@ var dist = function (e) {
           type: l,
           size: s,
           format: u,
-          color: g
+          color: h
         })), a.a.createElement("div", {
           style: C.divider
         }), a.a.createElement("div", {
@@ -61840,35 +61197,35 @@ var dist = function (e) {
             textAlign: n,
             width: "100%"
           }
-        }, i)));
+        }, c)));
       }
-    }]) && m(t.prototype, n), i;
+    }]) && y(t.prototype, n), c;
   }(o.Component),
       x = function (e, t) {
     var n = t.size,
         r = t.customStyle,
         o = t.active,
         a = t.activeStyle;
-    return g(g(g({}, e), {}, {
+    return h(h(h({}, e), {}, {
       height: n
     }, r), o && a);
   };
 
   E.propTypes = {
-    activeStyle: c.a.object,
-    align: c.a.oneOf(["left", "right", "center"]),
-    children: c.a.node,
-    className: c.a.string,
-    icon: c.a.oneOfType([c.a.string, c.a.node, c.a.func]),
-    iconFormat: c.a.func,
-    iconSize: c.a.string,
-    onClick: c.a.func,
-    onMouseEnter: c.a.func,
-    onMouseLeave: c.a.func,
-    preventActiveStyles: c.a.bool,
-    size: c.a.string,
-    style: c.a.object,
-    text: c.a.string
+    activeStyle: i.a.object,
+    align: i.a.oneOf(["left", "right", "center"]),
+    children: i.a.node,
+    className: i.a.string,
+    icon: i.a.oneOfType([i.a.string, i.a.node, i.a.func]),
+    iconFormat: i.a.func,
+    iconSize: i.a.string,
+    onClick: i.a.func,
+    onMouseEnter: i.a.func,
+    onMouseLeave: i.a.func,
+    preventActiveStyles: i.a.bool,
+    size: i.a.string,
+    style: i.a.object,
+    text: i.a.string
   }, E.defaultProps = {
     align: "left",
     iconSize: "26px",
@@ -61913,11 +61270,11 @@ var dist = function (e) {
     return n;
   }
 
-  function j(e) {
+  function S(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {};
       t % 2 ? T(Object(n), !0).forEach(function (t) {
-        S(e, t, n[t]);
+        L(e, t, n[t]);
       }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : T(Object(n)).forEach(function (t) {
         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t));
       });
@@ -61926,7 +61283,7 @@ var dist = function (e) {
     return e;
   }
 
-  function S(e, t, n) {
+  function L(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
       value: n,
       enumerable: !0,
@@ -61935,19 +61292,19 @@ var dist = function (e) {
     }) : e[t] = n, e;
   }
 
-  var L = function (e) {
+  var z = function (e) {
     return function (t) {
-      var n = j(j(j({
-        activeStyle: j(j({}, e.activeStyle), t.activeStyle)
+      var n = S(S(S({
+        activeStyle: S(S({}, e.activeStyle), t.activeStyle)
       }, e), t), {}, {
-        style: j(j({}, e.style), t.style)
+        style: S(S({}, e.style), t.style)
       });
       return a.a.createElement(E, n);
     };
   };
 
-  function z() {
-    return (z = Object.assign || function (e) {
+  function k() {
+    return (k = Object.assign || function (e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = arguments[t];
 
@@ -61958,14 +61315,14 @@ var dist = function (e) {
     }).apply(this, arguments);
   }
 
-  var k = function e(t) {
+  var j = function e(t) {
     return function (n) {
       var r = n.size,
           o = n.color;
 
       if ("string" == typeof t) {
         return e(function (e) {
-          return a.a.createElement("img", z({
+          return a.a.createElement("img", k({
             src: t
           }, e));
         });
@@ -61982,13 +61339,13 @@ var dist = function (e) {
     activeStyle: {
       background: "#293e69"
     },
-    icon: k(P),
+    icon: j(P),
     style: {
       background: "#3b5998"
     },
     text: "Log in with Facebook"
   },
-      M = L(B);
+      M = z(B);
 
   function P(e) {
     var t = e.width,
@@ -62006,21 +61363,21 @@ var dist = function (e) {
   }
 
   P.propTypes = {
-    width: c.a.oneOfType([c.a.number, c.a.string]),
-    height: c.a.oneOfType([c.a.number, c.a.string])
+    width: i.a.oneOfType([i.a.number, i.a.string]),
+    height: i.a.oneOfType([i.a.number, i.a.string])
   };
-  var H = {
+  var F = {
     activeStyle: {
       background: "#EFF0EE"
     },
-    icon: k(_),
+    icon: j(_),
     style: {
       background: "white",
       color: "black"
     },
     text: "Log in with Google"
   },
-      F = L(H);
+      H = z(F);
 
   function _(e) {
     var t = e.width,
@@ -62123,22 +61480,22 @@ var dist = function (e) {
   }
 
   _.propTypes = {
-    width: c.a.oneOfType([c.a.number, c.a.string]),
-    height: c.a.oneOfType([c.a.number, c.a.string])
+    width: i.a.oneOfType([i.a.number, i.a.string]),
+    height: i.a.oneOfType([i.a.number, i.a.string])
   };
-  var R = {
+  var D = {
     activeStyle: {
       background: "#555555"
     },
-    icon: k(D),
+    icon: j(R),
     style: {
       background: "#333333"
     },
     text: "Log in with GitHub"
   },
-      V = L(R);
+      V = z(D);
 
-  function D(e) {
+  function R(e) {
     var t = e.width,
         n = e.height,
         r = e.color;
@@ -62154,23 +61511,23 @@ var dist = function (e) {
     }));
   }
 
-  D.propTypes = {
-    width: c.a.oneOfType([c.a.number, c.a.string]),
-    height: c.a.oneOfType([c.a.number, c.a.string])
+  R.propTypes = {
+    width: i.a.oneOfType([i.a.number, i.a.string]),
+    height: i.a.oneOfType([i.a.number, i.a.string])
   };
   var A = {
     activeStyle: {
       background: "#3b82da"
     },
-    icon: k(G),
+    icon: j(Y),
     style: {
       background: "#5aa4eb"
     },
     text: "Log in with Twitter"
   },
-      I = L(A);
+      I = z(A);
 
-  function G(e) {
+  function Y(e) {
     var t = e.width,
         n = e.height,
         r = e.color;
@@ -62185,31 +61542,31 @@ var dist = function (e) {
     }));
   }
 
-  G.propTypes = {
-    width: c.a.oneOfType([c.a.number, c.a.string]),
-    height: c.a.oneOfType([c.a.number, c.a.string])
+  Y.propTypes = {
+    width: i.a.oneOfType([i.a.number, i.a.string]),
+    height: i.a.oneOfType([i.a.number, i.a.string])
   };
-  var U = {
+  var G = {
     activeStyle: {
       background: "#ff9f23"
     },
-    icon: k(J),
+    icon: j(J),
     style: {
       background: "#f9ae32"
     },
     text: "Log in with Amazon"
   },
-      Y = L(U);
+      U = z(G);
 
   function J(e) {
     var t = e.width,
         n = void 0 === t ? 24 : t,
         r = e.height,
         o = void 0 === r ? 24 : r,
-        i = e.color;
+        c = e.color;
     return a.a.createElement("svg", {
       xmlns: "http://www.w3.org/2000/svg",
-      fill: i,
+      fill: c,
       width: n,
       height: o,
       viewBox: "0 0 24 24"
@@ -62221,20 +61578,20 @@ var dist = function (e) {
   }
 
   J.propTypes = {
-    width: c.a.oneOfType([c.a.number, c.a.string]),
-    height: c.a.oneOfType([c.a.number, c.a.string])
+    width: i.a.oneOfType([i.a.number, i.a.string]),
+    height: i.a.oneOfType([i.a.number, i.a.string])
   };
   var N = {
     activeStyle: {
       background: "linear-gradient(to right, rgb(214, 146, 60) 0%, rgb(160, 11, 143) 50%, rgb(56, 10, 115) 100%)"
     },
-    icon: k(q),
+    icon: j(q),
     style: {
       background: "linear-gradient(to right, rgb(236, 146, 35) 0%, rgb(177, 42, 160) 50%, rgb(105, 14, 224) 100%)"
     },
     text: "Log in with Instagram"
   },
-      W = L(N);
+      W = z(N);
 
   function q(e) {
     var t = e.width,
@@ -62257,20 +61614,20 @@ var dist = function (e) {
   }
 
   q.propTypes = {
-    width: c.a.oneOfType([c.a.number, c.a.string]),
-    height: c.a.oneOfType([c.a.number, c.a.string])
+    width: i.a.oneOfType([i.a.number, i.a.string]),
+    height: i.a.oneOfType([i.a.number, i.a.string])
   };
   var Z = {
     activeStyle: {
       background: "rgb(7, 112, 169)"
     },
-    icon: k(Q),
+    icon: j(Q),
     style: {
       background: "rgb(26, 129, 185)"
     },
     text: "Log in with LinkedIn"
   },
-      K = L(Z);
+      K = z(Z);
 
   function Q(e) {
     var t = e.width,
@@ -62288,20 +61645,20 @@ var dist = function (e) {
   }
 
   Q.propTypes = {
-    width: c.a.oneOfType([c.a.number, c.a.string]),
-    height: c.a.oneOfType([c.a.number, c.a.string])
+    width: i.a.oneOfType([i.a.number, i.a.string]),
+    height: i.a.oneOfType([i.a.number, i.a.string])
   };
   var X = {
     activeStyle: {
       background: "rgb(0, 137, 255)"
     },
-    icon: k(ee),
+    icon: j(ee),
     style: {
       background: "rgb(50, 159, 253)"
     },
     text: "Log in with Microsoft"
   },
-      $ = L(X);
+      $ = z(X);
 
   function ee(e) {
     var t = e.width,
@@ -62319,20 +61676,20 @@ var dist = function (e) {
   }
 
   ee.propTypes = {
-    width: c.a.oneOfType([c.a.number, c.a.string]),
-    height: c.a.oneOfType([c.a.number, c.a.string])
+    width: i.a.oneOfType([i.a.number, i.a.string]),
+    height: i.a.oneOfType([i.a.number, i.a.string])
   };
   var te = {
     activeStyle: {
       background: "#1171BB"
     },
-    icon: k(re),
+    icon: j(re),
     style: {
       background: "#168EEA"
     },
     text: "Log in with Buffer"
   },
-      ne = L(te);
+      ne = z(te);
 
   function re(e) {
     var t = e.width,
@@ -62352,22 +61709,22 @@ var dist = function (e) {
   }
 
   re.propTypes = {
-    width: c.a.oneOfType([c.a.number, c.a.string]),
-    height: c.a.oneOfType([c.a.number, c.a.string])
+    width: i.a.oneOfType([i.a.number, i.a.string]),
+    height: i.a.oneOfType([i.a.number, i.a.string])
   };
   var oe = {
     activeStyle: {
       background: "#0088cc"
     },
-    icon: k(ie),
+    icon: j(ce),
     style: {
       background: "#54a9eb"
     },
     text: "Log in with Telegram"
   },
-      ae = L(oe);
+      ae = z(oe);
 
-  function ie(e) {
+  function ce(e) {
     var t = e.width,
         n = e.height;
     e.color;
@@ -62408,22 +61765,22 @@ var dist = function (e) {
     }));
   }
 
-  ie.propTypes = {
-    width: c.a.oneOfType([c.a.number, c.a.string]),
-    height: c.a.oneOfType([c.a.number, c.a.string])
+  ce.propTypes = {
+    width: i.a.oneOfType([i.a.number, i.a.string]),
+    height: i.a.oneOfType([i.a.number, i.a.string])
   };
-  var ce = {
+  var ie = {
     activeStyle: {
       background: "#3333331c"
     },
-    icon: k(ue),
+    icon: j(ue),
     style: {
       background: "#FFFFFF",
       color: "#000000"
     },
     text: "Log in with Apple"
   },
-      le = L(ce);
+      le = z(ie);
 
   function ue(e) {
     var t = e.width,
@@ -62451,20 +61808,20 @@ var dist = function (e) {
   }
 
   ue.propTypes = {
-    width: c.a.oneOfType([c.a.number, c.a.string]),
-    height: c.a.oneOfType([c.a.number, c.a.string])
+    width: i.a.oneOfType([i.a.number, i.a.string]),
+    height: i.a.oneOfType([i.a.number, i.a.string])
   };
   var se = {
     activeStyle: {
       background: "#697ec4"
     },
-    icon: k(pe),
+    icon: j(pe),
     style: {
       background: "#7289DA"
     },
     text: "Log in with Discord"
   },
-      fe = L(se);
+      fe = z(se);
 
   function pe(e) {
     var t = e.width,
@@ -62483,8 +61840,142 @@ var dist = function (e) {
   }
 
   pe.propTypes = {
-    width: c.a.oneOfType([c.a.number, c.a.string]),
-    height: c.a.oneOfType([c.a.number, c.a.string])
+    width: i.a.oneOfType([i.a.number, i.a.string]),
+    height: i.a.oneOfType([i.a.number, i.a.string])
+  };
+  var he = {
+    activeStyle: {
+      background: "#f5f5f5"
+    },
+    icon: j(de),
+    style: {
+      background: "white",
+      color: "black"
+    },
+    text: "Log in with Okta"
+  },
+      ge = z(he);
+
+  function de(e) {
+    var t = e.width,
+        n = void 0 === t ? 24 : t,
+        r = e.height,
+        o = void 0 === r ? 24 : r;
+    return a.a.createElement("svg", {
+      version: "1.1",
+      xmlns: "http://www.w3.org/2000/svg",
+      x: "0px",
+      y: "0px",
+      viewBox: "0 0 400 134.7",
+      width: n,
+      height: o
+    }, a.a.createElement("g", null, a.a.createElement("g", null, a.a.createElement("path", {
+      fill: "#007DC1",
+      d: "M50.3,33.8C22.5,33.8,0,56.3,0,84.1s22.5,50.3,50.3,50.3s50.3-22.5,50.3-50.3S78.1,33.8,50.3,33.8z M50.3,109.3c-13.9,0-25.2-11.3-25.2-25.2s11.3-25.2,25.2-25.2s25.2,11.3,25.2,25.2S64.2,109.3,50.3,109.3z"
+    })), a.a.createElement("path", {
+      fill: "#007DC1",
+      d: "M138.7,101c0-4,4.8-5.9,7.6-3.1c12.6,12.8,33.4,34.8,33.5,34.9c0.3,0.3,0.6,0.8,1.8,1.2 c0.5,0.2,1.3,0.2,2.2,0.2l22.7,0c4.1,0,5.3-4.7,3.4-7.1l-37.6-38.5l-2-2c-4.3-5.1-3.8-7.1,1.1-12.3L201.2,41c1.9-2.4,0.7-7-3.5-7 h-20.6c-0.8,0-1.4,0-2,0.2c-1.2,0.4-1.7,0.8-2,1.2c-0.1,0.1-16.6,17.9-26.8,28.8c-2.8,3-7.8,1-7.8-3.1l0-57.1c0-2.9-2.4-4-4.3-4 h-16.8c-2.9,0-4.3,1.9-4.3,3.6v126.6c0,2.9,2.4,3.7,4.4,3.7h16.8c2.6,0,4.3-1.9,4.3-3.8v-1.3V101z"
+    }), a.a.createElement("path", {
+      fill: "#007DC1",
+      d: "M275.9,129.6l-1.8-16.8c-0.2-2.3-2.4-3.9-4.7-3.5c-1.3,0.2-2.6,0.3-3.9,0.3c-13.4,0-24.3-10.5-25.1-23.8 c0-0.4,0-0.9,0-1.4V63.8c0-2.7,2-4.9,4.7-4.9l22.5,0c1.6,0,4-1.4,4-4.3V38.7c0-3.1-2-4.7-3.8-4.7h-22.7c-2.6,0-4.7-1.9-4.8-4.5 l0-25.5c0-1.6-1.2-4-4.3-4h-16.7c-2.1,0-4.1,1.3-4.1,3.9c0,0,0,81.5,0,81.9c0.7,27.2,23,48.9,50.3,48.9c2.3,0,4.5-0.2,6.7-0.5 C274.6,133.9,276.2,131.9,275.9,129.6z"
+    })), a.a.createElement("g", null, a.a.createElement("path", {
+      fill: "#007DC1",
+      d: "M397.1,108.5c-14.2,0-16.4-5.1-16.4-24.2c0-0.1,0-0.1,0-0.2l0-45.9c0-1.6-1.2-4.3-4.4-4.3h-16.8 c-2.1,0-4.4,1.7-4.4,4.3l0,2.1c-7.3-4.2-15.8-6.6-24.8-6.6c-27.8,0-50.3,22.5-50.3,50.3c0,27.8,22.5,50.3,50.3,50.3 c12.5,0,23.9-4.6,32.7-12.1c4.7,7.2,12.3,12,24.2,12.1c2,0,12.8,0.4,12.8-4.7v-17.9C400,110.2,398.8,108.5,397.1,108.5z M330.4,109.3c-13.9,0-25.2-11.3-25.2-25.2c0-13.9,11.3-25.2,25.2-25.2c13.9,0,25.2,11.3,25.2,25.2 C355.5,98,344.2,109.3,330.4,109.3z"
+    })));
+  }
+
+  de.propTypes = {
+    width: i.a.oneOfType([i.a.number, i.a.string]),
+    height: i.a.oneOfType([i.a.number, i.a.string])
+  };
+  var me = {
+    activeStyle: {
+      background: "#f5f5f5"
+    },
+    icon: j(ve),
+    style: {
+      background: "white",
+      color: "black"
+    },
+    text: "Log in with Slack"
+  },
+      ye = z(me);
+
+  function ve(e) {
+    var t = e.width,
+        n = void 0 === t ? 24 : t,
+        r = e.height,
+        o = void 0 === r ? 24 : r,
+        c = e.color;
+    return a.a.createElement("svg", {
+      enableBackground: "new 0 0 2447.6 2452.5",
+      viewBox: "0 0 2447.6 2452.5",
+      fill: c,
+      width: n,
+      height: o,
+      xmlns: "http://www.w3.org/2000/svg"
+    }, a.a.createElement("g", {
+      clipRule: "evenodd",
+      fillRule: "evenodd"
+    }, a.a.createElement("path", {
+      d: "m897.4 0c-135.3.1-244.8 109.9-244.7 245.2-.1 135.3 109.5 245.1 244.8 245.2h244.8v-245.1c.1-135.3-109.5-245.1-244.9-245.3.1 0 .1 0 0 0m0 654h-652.6c-135.3.1-244.9 109.9-244.8 245.2-.2 135.3 109.4 245.1 244.7 245.3h652.7c135.3-.1 244.9-109.9 244.8-245.2.1-135.4-109.5-245.2-244.8-245.3z",
+      fill: "#36c5f0"
+    }), a.a.createElement("path", {
+      d: "m2447.6 899.2c.1-135.3-109.5-245.1-244.8-245.2-135.3.1-244.9 109.9-244.8 245.2v245.3h244.8c135.3-.1 244.9-109.9 244.8-245.3zm-652.7 0v-654c.1-135.2-109.4-245-244.7-245.2-135.3.1-244.9 109.9-244.8 245.2v654c-.2 135.3 109.4 245.1 244.7 245.3 135.3-.1 244.9-109.9 244.8-245.3z",
+      fill: "#2eb67d"
+    }), a.a.createElement("path", {
+      d: "m1550.1 2452.5c135.3-.1 244.9-109.9 244.8-245.2.1-135.3-109.5-245.1-244.8-245.2h-244.8v245.2c-.1 135.2 109.5 245 244.8 245.2zm0-654.1h652.7c135.3-.1 244.9-109.9 244.8-245.2.2-135.3-109.4-245.1-244.7-245.3h-652.7c-135.3.1-244.9 109.9-244.8 245.2-.1 135.4 109.4 245.2 244.7 245.3z",
+      fill: "#ecb22e"
+    }), a.a.createElement("path", {
+      d: "m0 1553.2c-.1 135.3 109.5 245.1 244.8 245.2 135.3-.1 244.9-109.9 244.8-245.2v-245.2h-244.8c-135.3.1-244.9 109.9-244.8 245.2zm652.7 0v654c-.2 135.3 109.4 245.1 244.7 245.3 135.3-.1 244.9-109.9 244.8-245.2v-653.9c.2-135.3-109.4-245.1-244.7-245.3-135.4 0-244.9 109.8-244.8 245.1 0 0 0 .1 0 0",
+      fill: "#e01e5a"
+    })));
+  }
+
+  ve.propTypes = {
+    width: i.a.oneOfType([i.a.number, i.a.string]),
+    height: i.a.oneOfType([i.a.number, i.a.string]),
+    color: i.a.string
+  };
+  var be = {
+    activeStyle: {
+      background: "#ac3ade"
+    },
+    icon: j(Oe),
+    style: {
+      background: "#720E9E"
+    },
+    text: "Log in with Yahoo"
+  },
+      we = z(be);
+
+  function Oe(e) {
+    var t = e.width,
+        n = e.height,
+        r = e.color;
+    return a.a.createElement("svg", {
+      version: "1.1",
+      xmlns: "http://www.w3.org/2000/svg",
+      x: "0px",
+      y: "0px",
+      viewBox: "0 0 291.319 291.319",
+      xstyle: "enable-background:new 0 0 291.319 291.319;",
+      xmlSpace: "preserve",
+      fill: r,
+      width: t,
+      height: n
+    }, a.a.createElement("g", null, a.a.createElement("path", {
+      fill: "transparent",
+      d: "M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659 S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"
+    }), a.a.createElement("path", {
+      fill: "#FFFFFF",
+      d: "M212.353,114.98l0.155-0.027l4.825-5.371l-0.237-0.018l0.51-0.801h-67.595l2.604,9.249h18.444 l-31.044,28.722c-6.336-9.24-21.184-30.479-31.544-46.411h19.254v-6.555l0.264-1.884l-0.264-0.036v-0.765H54.631v9.24H77.49 c8.876,7.328,47.358,54.049,48.76,58.51c0.564,4.179,1.366,28.841-0.291,30.698c-1.994,2.868-22.814,1.32-26.483,1.593 l-0.137,9.058c6.7,0.2,26.801-0.009,33.584-0.009c13.364,0,36.77-0.346,40.065-0.082l0.41-8.576l-26.901-0.401 c-0.564-3.887-1.183-28.422-0.619-31.098c2.54-7.765,43.816-39.902,48.059-41.112l3.997-0.901h12.472 C210.405,118.002,212.353,114.98,212.353,114.98z M202.266,179.079l11.689,0.892l13.628-49.979 c-2.276-0.082-22.95-1.93-25.636-2.431L202.266,179.079z M200.245,187.091l0.064,12.208l5.917,0.492l6.391,0.446l1.875-11.944 l-6.737-0.31C207.756,187.983,200.245,187.091,200.245,187.091z"
+    })));
+  }
+
+  Oe.propTypes = {
+    width: i.a.oneOfType([i.a.number, i.a.string]),
+    height: i.a.oneOfType([i.a.number, i.a.string])
   };
   t.default = r;
 }]);
@@ -63093,6 +62584,9 @@ function BearSocialBase({
     copyLink,
     ...asswd
   }) {
+    // toolText = "Share on " + toolText;
+    ({ ...style
+    });
     /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null);
     let mainIco = {
       iconConfig: {

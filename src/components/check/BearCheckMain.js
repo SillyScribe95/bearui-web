@@ -145,7 +145,10 @@ export function dfkbijv(
     centerConfig: disjwe,
   };
 
-  const ikjdwer = <BearFloat {...jfdert}>{dfsigwer}</BearFloat>;
+  const ikjdwer =
+    //
+    dfsigwer;
+  // BearFloat {...jfdert}>{dfsigwer}</BearFloat>;
 
   const okfdsd =
     //
@@ -153,7 +156,7 @@ export function dfkbijv(
   // dfsigwer;
 
   const idfg = {
-    textAlign: "center",
+    // textAlign: "center",
     ...style,
   };
 

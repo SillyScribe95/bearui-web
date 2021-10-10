@@ -1,6 +1,6 @@
 {
   "name": "@sillyscribe95/bear-ui-web",
-  "version": "0.1.1884",
+  "version": "0.1.1885",
   "main": "build/index.cjs.js",
   "module": "build/index.esm.js",
   "source": "src/index.js",
@@ -30,13 +30,11 @@
     "react-datetime-picker": "^3.3.0",
     "react-helmet": "^6.1.0",
     "react-hook-form": "^7.5.2",
-    "react-horizontal-scrolling-menu": "^2.3.3",
     "react-hot-loader": "^4.12.18",
     "react-scripts": "4.0.3",
     "react-select": "^4.3.1",
     "react-social-login-buttons": "^3.4.0",
     "react-textarea-autosize": "^8.3.2",
-    "reactstrap": "^8.10.0",
     "rollup-plugin-import-css": "^2.0.1",
     "url-metadata": "^2.5.0",
     "validator": "^13.6.0"
