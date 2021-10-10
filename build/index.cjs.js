@@ -3,10 +3,7 @@
 Object.defineProperty(exports, '__esModule', { value: true });
 
 var React = require('react');
-var ai = require('react-icons/ai');
 var reactDom = require('react-dom');
-require('react-icons/si');
-var fa = require('react-icons/fa');
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
@@ -39542,7 +39539,7 @@ function BearPassword({
   function asdijew() {
     const sdfgr = BearTextMedia({
       // style: BearBackBorder()
-      iconvar: show ? /*#__PURE__*/React__default$1["default"].createElement(ai.AiOutlineEyeInvisible, null) : /*#__PURE__*/React__default$1["default"].createElement(ai.AiOutlineEye, null),
+      // iconvar: show ? <AiOutlineEyeInvisible /> : <AiOutlineEye />,
       textvar: show ? "Hide" : "Show",
       ...showHideConfig
     });
@@ -56725,7 +56722,7 @@ function BearForm({
   bottomFormItem,
   buttonItem,
   //
-  // style,
+  style,
   marginBetween,
   //
   //
@@ -56934,7 +56931,7 @@ function BearForm({
     const sdijfwr = //
     loadVars ? loadingText : text ? text : buttonText;
     bearlog.lug("___ bForm BUTTON ___", dvbijkrw);
-    const adhwdse = /*#__PURE__*/React__default$1["default"].createElement(React__default$1["default"].Fragment, null, /*#__PURE__*/React__default$1["default"].createElement("button", dvbijkrw, sdijfwr));
+    const adhwdse = /*#__PURE__*/React__default$1["default"].createElement("div", null, /*#__PURE__*/React__default$1["default"].createElement("button", dvbijkrw, sdijfwr));
     return adhwdse;
   }
 
@@ -57106,6 +57103,10 @@ function BearForm({
       // return "oskdasd";
     }
 
+    style = {
+      textAlign: "center",
+      ...style
+    };
     const asodwe = {
       onClick: vijsd9,
       singleClick: true,
@@ -57146,7 +57147,9 @@ function BearForm({
   });
   bearlog.lug("bform ALL HOOKS", sdjifwer); // 1form
 
-  const xcvsfs = loadSetto ? /*#__PURE__*/React__default$1["default"].createElement(LoadMain, loadConfig) : noForm ? aidjwe : /*#__PURE__*/React__default$1["default"].createElement(React__default$1["default"].Fragment, null, /*#__PURE__*/React__default$1["default"].createElement("form", ijdfsr, aidjwe));
+  const xcvsfs = loadSetto ? /*#__PURE__*/React__default$1["default"].createElement(LoadMain, loadConfig) : noForm ? aidjwe : /*#__PURE__*/React__default$1["default"].createElement(React__default$1["default"].Fragment, null, /*#__PURE__*/React__default$1["default"].createElement("form", _extends$O({
+    style: style
+  }, ijdfsr), aidjwe));
   const nsdokfer = argPass(args);
   const isae = /*#__PURE__*/React__default$1["default"].createElement("div", nsdokfer, xcvsfs);
   const isjdwesdfoek = //   //
@@ -62480,11 +62483,10 @@ const ggge = {
   textConnect: "q"
 }; // 1embed
 
-const okfgfd =
-/*#__PURE__*/
-//
-//  <ImEmbed2/>
-React__default$1["default"].createElement(fa.FaCode, null);
+const okfgfd = //
+""; //  <ImEmbed2/>
+// <FaCode />
+
 const dkewqew = {
   iconvar: okfgfd,
   toolText: "Embed",
@@ -62524,8 +62526,8 @@ const cppyo = {
   // toolText: "Copy link to Clipboard",
   // noLink: true,
   toolText: "Copy Link",
-  copyLink: true,
-  iconvar: /*#__PURE__*/React__default$1["default"].createElement(ai.AiOutlineCopy, null)
+  copyLink: true // iconvar: <AiOutlineCopy />,
+
 };
 const authListDict = {
   facebook: fceConfo,

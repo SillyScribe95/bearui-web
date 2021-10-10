@@ -4,18 +4,18 @@ import React, {
   useContext,
   useEffect,
 } from "react";
-import {
-  SiFacebook,
-  SiGoogle,
-  SiLinkedin,
-  SiTelegram,
-  SiReddit,
-  SiTwitter,
-  SiWhatsapp,
-  SiYcombinator,
-} from "react-icons/si";
-import { AiOutlineCopy } from "react-icons/ai";
-import { FaCode } from "react-icons/fa";
+// import {
+//   SiFacebook,
+//   SiGoogle,
+//   SiLinkedin,
+//   SiTelegram,
+//   SiReddit,
+//   SiTwitter,
+//   SiWhatsapp,
+//   SiYcombinator,
+// } from "react-icons/si";
+// import { AiOutlineCopy } from "react-icons/ai";
+// import { FaCode } from "react-icons/fa";
 
 // 1social
 const facebookMessage = "https://www.facebook.com/messages/t/";
@@ -69,11 +69,11 @@ const ggge = {
 };
 
 // 1embed
-const okfgfd = (
+const okfgfd =
   //
-  //  <ImEmbed2/>
-  <FaCode />
-);
+  "";
+//  <ImEmbed2/>
+// <FaCode />
 
 const dkewqew = {
   iconvar: okfgfd,
@@ -113,7 +113,7 @@ const cppyo = {
   // noLink: true,
   toolText: "Copy Link",
   copyLink: true,
-  iconvar: <AiOutlineCopy />,
+  // iconvar: <AiOutlineCopy />,
 };
 
 export const testLinks = {

@@ -1,6 +1,6 @@
 {
   "name": "@sillyscribe95/bear-ui-web",
-  "version": "0.1.1885",
+  "version": "0.1.1886",
   "main": "build/index.cjs.js",
   "module": "build/index.esm.js",
   "source": "src/index.js",

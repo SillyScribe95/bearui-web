@@ -14,7 +14,7 @@ import { passwordStrength } from "check-password-strength";
 import { BearDiv } from "../BearDiv";
 import { BearButton } from "../button/BearButton";
 import { BearTextMedia } from "../BearTextMedia";
-import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
+// import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { BearBackBorder } from "../GlobalComps";
 
 export function BearPassword({
@@ -148,7 +148,7 @@ export function BearPassword({
   function asdijew() {
     const sdfgr = BearTextMedia({
       // style: BearBackBorder()
-      iconvar: show ? <AiOutlineEyeInvisible /> : <AiOutlineEye />,
+      // iconvar: show ? <AiOutlineEyeInvisible /> : <AiOutlineEye />,
       textvar: show ? "Hide" : "Show",
       ...showHideConfig,
     });

@@ -87,7 +87,7 @@ export function BearForm({
   bottomFormItem,
   buttonItem,
   //
-  // style,
+  style,
   marginBetween,
   //
   //
@@ -336,7 +336,7 @@ export function BearForm({
     bearlog.lug("___ bForm BUTTON ___", dvbijkrw);
 
     const adhwdse = (
-      <>
+      <div>
         {/* <BearButton {...dvbijkrw}>{buttonText}</BearButton> */}
         {/* <Button {...dvbijkrw}>{text}</Button> */}
         <button {...dvbijkrw}>
@@ -344,7 +344,7 @@ export function BearForm({
           {sdijfwr}
         </button>
         {/* <input {...dvbijkrw} /> */}
-      </>
+      </div>
     );
 
     return adhwdse;
@@ -569,6 +569,8 @@ export function BearForm({
       // return "oskdasd";
     }
 
+    style = { textAlign: "center", ...style };
+
     const asodwe = {
       onClick: vijsd9,
       singleClick: true,
@@ -661,9 +663,8 @@ export function BearForm({
     aidjwe
   ) : (
     <>
-      <form {...ijdfsr}>
+      <form style={style} {...ijdfsr}>
         {aidjwe}
-        {/* <button type="submit">asidje</button> */}
       </form>
     </>
   );
