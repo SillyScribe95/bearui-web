@@ -165,6 +165,7 @@ export function BearPage({
 
   const ijfer = {
     style: {
+      // minHeight: "100vh",
       padding: "2% 10%",
       ...style,
     },
@@ -188,5 +189,15 @@ export function BearPage({
     </>
   );
 
-  return aijewqe;
+  //
+  // 1console
+  bearlog.log("___ orga ___", orga);
+
+  let adsas = (
+    //
+    // <BearDiv {...orga}>{aijewqe}</BearDiv>;
+    <div {...orga}>{aijewqe}</div>
+  );
+
+  return adsas;
 }

@@ -64430,6 +64430,7 @@ function BearPage({
   const sdifjwe = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, sjd3as, children);
   const ijfer = {
     style: {
+      // minHeight: "100vh",
       padding: "2% 10%",
       ...style
     },
@@ -64443,8 +64444,16 @@ function BearPage({
   }); // 1footer
 
   const aoksdae = footer && /*#__PURE__*/React__default$1.createElement(BearFooter, footerConfig, footer);
-  const aijewqe = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, baseItHelm, headerConfig && Headdos(headerConfig), /*#__PURE__*/React__default$1.createElement("div", ijfer), dfigjsd, aoksdae);
-  return aijewqe;
+  const aijewqe = /*#__PURE__*/React__default$1.createElement(React__default$1.Fragment, null, baseItHelm, headerConfig && Headdos(headerConfig), /*#__PURE__*/React__default$1.createElement("div", ijfer), dfigjsd, aoksdae); //
+  // 1console
+
+  bearlog.log("___ orga ___", orga);
+  let adsas =
+  /*#__PURE__*/
+  //
+  // <BearDiv {...orga}>{aijewqe}</BearDiv>;
+  React__default$1.createElement("div", orga, aijewqe);
+  return adsas;
 }
 
 function BearNavigation({
@@ -64454,7 +64463,7 @@ function BearNavigation({
   //
   function asid(xcvdf) {
     // switch getTpye
-    bearlog.lug("aAS ssss", xcvdf); // return "forewa";
+    bearlog.log("aAS ssss", xcvdf); // return "forewa";
 
     return sdfrdsf(xcvdf);
   }
@@ -64484,8 +64493,9 @@ function BearNavigation({
     };
     bearlog.lug("___ kaszaa ___", kaszaa);
     let soksase = //
-    // BearDiv(kaszaa);
-    BearTextMedia(kaszaa);
+    "asdfew"; // BearDiv(kaszaa);
+    // BearTextMedia(kaszaa);
+
     return soksase;
   }
 

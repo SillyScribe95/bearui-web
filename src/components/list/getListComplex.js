@@ -5,7 +5,7 @@ import React, {
   useEffect,
 } from "react";
 
-import { isEmpty, remove } from "lodash";
+import { remove } from "lodash";
 import {
   //
   bearlog,

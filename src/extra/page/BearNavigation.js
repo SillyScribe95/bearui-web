@@ -10,7 +10,7 @@ export function BearNavigation({ blankTrue, ...aaaa }) {
   function asid(xcvdf) {
     // switch getTpye
 
-    bearlog.lug("aAS ssss", xcvdf);
+    bearlog.log("aAS ssss", xcvdf);
 
     // return "forewa";
     return sdfrdsf(xcvdf);
@@ -43,8 +43,9 @@ export function BearNavigation({ blankTrue, ...aaaa }) {
 
     let soksase =
       //
-      // BearDiv(kaszaa);
-      BearTextMedia(kaszaa);
+      "asdfew";
+    // BearDiv(kaszaa);
+    // BearTextMedia(kaszaa);
 
     return soksase;
   }

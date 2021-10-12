@@ -16,7 +16,6 @@ import { BearList } from "../../components/list/BearList";
 import { BearDiv } from "../../components/BearDiv";
 import { BearError } from "../../components/BearError";
 import { argPass, listArgPass, nameComb } from "../../components/GlobalComps";
-import { isEmpty } from "lodash";
 import { BearCheckList } from "../../components/check/BearCheckList";
 import { getListComplex } from "../../components/list/getListComplex";
 import { BearSearchSelect } from "./BearSearchSelect";

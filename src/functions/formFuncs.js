@@ -1,4 +1,3 @@
-import { isObject } from "lodash";
 import { bearlog } from "..";
 
 export function focusBase({

@@ -1,7 +1,6 @@
-import { filter, isEmpty, remove } from "lodash";
+import { sortBy, filter, isEmpty, remove } from "lodash";
 import { checkDict, objectTrue } from "./dictFuncs";
 import { bearlog } from "../index";
-import { sortBy } from "lodash";
 
 export function moveItemFront(listo, itemo) {
   const jsdas = sortBy(listo, ({ type }) => (type === itemo ? 0 : 1));
