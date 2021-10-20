@@ -5,12 +5,12 @@ import React, {
   useEffect,
 } from "react";
 
-import { remove } from "lodash";
 import {
   //
   bearlog,
 } from "../../index";
 import { turnarray } from "../../functions/arrayFuncs";
+import { remove } from "../../functions/globalFuncs";
 
 export function getListComplex(
   listo,

@@ -5,18 +5,17 @@ import postcss from "rollup-plugin-postcss";
 import pkg from "./package.json";
 import babel from "@rollup/plugin-babel";
 
-
 const isjfera = postcss({
   config: {
     path: "./postcss.config.js",
   },
-  extensions: [".css"],
+  extensions: ["css", ".scss"],
   minimize: true,
   inject: {
     insertAt: "top",
   },
   // extract: true,
-})
+});
 
 export default {
   input: pkg.source,
@@ -24,11 +23,5 @@ export default {
     { file: pkg.main, format: "cjs", sourcemap: true },
     { file: pkg.module, format: "esm", sourcemap: true },
   ],
-  plugins: [
-    peerDepsExternal(),
-    babel(),
-    resolve(),
-    commonjs(),
-    isjfera,
-  ]
+  plugins: [peerDepsExternal(), babel(), resolve(), commonjs(), isjfera],
 };

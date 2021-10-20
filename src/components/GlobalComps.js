@@ -361,6 +361,7 @@ export function argPass({
   name,
   flex,
   obj,
+  bearName,
   loadtrue,
   children,
   genConfig,
@@ -374,6 +375,7 @@ export function argPass({
     style,
     obj,
     children,
+    bearName,
     name,
     flex,
   });
@@ -423,6 +425,11 @@ export function nameComb(sfkr, oskdfr) {
   //
   // const ikasae
   return sfkr + "___" + oskdfr;
+}
+
+// 1classname
+export function repClass(sdfa = "", extra = "") {
+  return { className: `${sdfa} ${extra}` };
 }
 
 // 1function

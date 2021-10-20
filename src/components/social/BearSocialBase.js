@@ -4,10 +4,11 @@ import React, {
   useContext,
 } from "react";
 import { bearlog } from "../../index";
-import * as soco from "../../consts/socialConst";
+import { authListDict } from "../../consts/socialConst";
 import { BearTextMedia } from "../BearTextMedia";
 import { BearList } from "../list/BearList";
 import { BearCheckMain } from "../check/BearCheckMain";
+import { BearDiv } from "../BearDiv";
 
 export function BearSocialBase({
   //
@@ -18,18 +19,10 @@ export function BearSocialBase({
   nameTrue,
   iconPop,
   dictvar,
-  iconStyle,
   embedCode,
-  itemConfig,
+  renderItem,
   ...sdfsrew
 }) {
-  // 1const
-  const [type, setType] = useState("");
-  const [cosNamB, setcosNamB] = useState();
-  const sodkfwe = "asdqweqs";
-
-  userText = cosNamB ? cosNamB : userText;
-  // userText = "okwqeasd sodkdsfo";
   const sdokfwe = userText ? `&usrn=${userText}` : "";
 
   shareLink =
@@ -37,163 +30,35 @@ export function BearSocialBase({
     // shareLink + "sdokfwe";
     shareLink + sdokfwe;
 
-  let zoeqasd =
-    //
-    cosNamB;
-  // "cosNamB"
+  function asdf(itemName) {
+    const { styleIcon } = authListDict[itemName] ? authListDict[itemName] : "";
+    const { link, icon, style, ...aaa } = dictvar[itemName]
+      ? dictvar[itemName]
+      : "";
 
-  function iasjde({
-    //
-    typevar,
-    iconvar,
-    iconText,
-    textvar,
-    toolText,
-    styleIcon,
-    style,
-    copyLink,
-    ...asswd
-  }) {
-    // toolText = "Share on " + toolText;
-
-    const sdfebvjf = {
-      ...style,
-    };
-
-    const fdjwqe = <>{/*  */}</>;
-
-    let mainIco = {
-      iconConfig: {
-        className: "pointer",
-        style: {
-          fontSize: "0.9em",
-          // width: "50px",
-          // height: "50px",
-          borderRadius: "60%",
-          padding: "10px",
-          ...styleIcon,
-          ...iconStyle,
-        },
-      },
-    };
-
-    let saewawe = iconSide && {
-      textvar: toolText,
-      ...mainIco,
-    };
-
-    let ikasde = iconPop && {
-      popConfig: {
-        trigger: "click",
-        content: toolText,
-      },
-    };
-
-    // textvar: toolText,
-    // left: iconvar,
-    // popContent: toolText,
-
-    const jsaease = {
-      ...saewawe,
-      ...ikasde,
-      ...itemConfig,
-      ...mainIco,
-      iconvar,
-      noVertTop: true,
-      padvar: 5,
-      ...asswd,
-    };
-
-    bearlog.lug("___ jsaease ___", jsaease);
-
-    const gfnmeir = (
-      <>
-        <BearTextMedia {...jsaease} />
-        {/* <BearFloat {...jsaease} /> */}
-        {/* dowqe */}
-      </>
-    );
-
-    const sdjerw =
-      //
-      typevar == "facebook";
-    // true
-
-    if (sdjerw) {
-      // 1console
-      bearlog.lug(typevar + "___ns Link Social FULL ___", jsaease);
-      bearlog.lug(typevar, "___ mainIco ___", mainIco);
-    }
-
-    return gfnmeir;
+    return BearDiv({
+      style: { ...styleIcon, ...style },
+      outsideLink: link,
+      obj: icon,
+      ...aaa,
+    });
   }
 
-  const sdije = {
-    className: "buttonHover expandHover",
-  };
+  function zsdfadF(aaa) {
+    bearlog.lug("___ aaa ___", aaa);
 
-  const niajdw = [
-    //
-    "twitter",
-    // "twitterdm",
-    // "linkedin",
-    // ""
-  ];
-
-  function sadqwe({ itemName, ...cvdfa }) {
-    //
-
-    const jweqwe = !dictvar
-      ? cvdfa
-      : {
-          ...dictvar[itemName],
-          ...cvdfa,
-        };
-
-    bearlog.lug("___ jweqwe ___", jweqwe);
-
-    let osdasew =
+    let dewwqasxcc =
       //
-      iasjde({ iconvar: itemName, ...jweqwe });
-    // "qplwqe";
+      asdf(aaa);
 
-    bearlog.lug("___ osdasew ___", osdasew);
-
-    return osdasew;
+    return dewwqasxcc;
   }
-
-  let okaasad = [
-    //
-    "facebook",
-    "twitter",
-    "whatsapp",
-    "reddit",
-    "hackernews",
-    "embed",
-    "copy",
-  ];
-
   const ijsadwe = {
-    dictvar: soco.authListDict,
-    // list: okaasad,
-    renderItem: sadqwe,
-    typeTrue: "t",
-    iconSide: iconSide,
-    // horiz: true,
-    // itemConfig: sdije,
-    // linkConfig: linksos,
+    renderItem: zsdfadF,
     ...sdfsrew,
   };
 
-  bearlog.lug("___ LISTSOCIAL ___", ijsadwe);
-
-  const compBase = (
-    <>
-      <BearList {...ijsadwe} />
-    </>
-  );
-
-  //
+  const compBase = BearList(ijsadwe);
   const ijfdewr = BearCheckMain("BearSocialShare", compBase, ijsadwe);
 
   return ijfdewr;

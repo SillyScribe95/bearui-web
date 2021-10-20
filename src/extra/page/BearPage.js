@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useContext } from "react";
 import { BearDiv } from "../../components/BearDiv";
+import { repClass } from "../../components/GlobalComps";
 import { bearlog } from "../../index";
 import { BearFooter } from "../layout/BearFooter";
 // import HelmetInfo from "../functions/HelmetInfo";
@@ -21,7 +22,7 @@ export function BearPage({
   titleConfig,
   description,
   image,
-  style,
+  className,
   children,
   ...orga
 }) {
@@ -167,36 +168,42 @@ export function BearPage({
     style: {
       // minHeight: "100vh",
       padding: "2% 10%",
-      ...style,
     },
     children: sdifjwe,
   };
 
-  // 1height
-  const dfigjsd = heightBottom && <div style={{ height: heightBottom }} />;
-
   // 1footer
-  const aoksdae = footer && <BearFooter {...footerConfig}>{footer}</BearFooter>;
+  const footios = footer && (
+    // <div className="bearFooter">
+    <BearFooter {...footerConfig}>{footer}</BearFooter>
+    // {/* </div> */}
+  );
 
   const aijewqe = (
     <>
       {baseItHelm}
       {headerConfig && Headdos(headerConfig)}
       <div {...ijfer} />
-      {dfigjsd}
       {/* {eewewqw} */}
-      {aoksdae}
     </>
   );
 
+  orga = {
+    ...repClass(className, "bearPage"),
+    ...orga,
+  };
   //
   // 1console
-  bearlog.log("___ orga ___", orga);
+  bearlog.lug("___ orga ___", orga);
 
   let adsas = (
     //
     // <BearDiv {...orga}>{aijewqe}</BearDiv>;
-    <div {...orga}>{aijewqe}</div>
+    <div {...orga}>
+      {/*  */}
+      {aijewqe}
+      {footios}
+    </div>
   );
 
   return adsas;

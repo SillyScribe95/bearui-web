@@ -6,7 +6,7 @@ import React, {
 
 import { bearlog } from "../../index";
 import { BearError } from "../BearError";
-import { BearPossess } from "../InnerComps";
+import { BearPossess } from "../ExportComps";
 import { BearListItemExpand } from "./BearListItemExpand";
 
 export function BearListItem(

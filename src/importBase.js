@@ -3,7 +3,7 @@
 // 1div
 export * from "./components/BearDiv";
 export * from "./components/BearError";
-export * from "./components/InnerComps";
+export * from "./components/ExportComps";
 // export * from "./components/BearRouter";
 
 // // 1payment 1checkout
@@ -62,6 +62,7 @@ export * from "./components/input/BearInputSubmit";
 
 // 1auth
 export * from "./components/user/BearAuthPortal";
+export * from "./components/user/BearAuthPortalWithEmailForm";
 
 // 1function
 // export gun

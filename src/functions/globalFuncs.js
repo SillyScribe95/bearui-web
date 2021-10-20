@@ -132,3 +132,36 @@ export function EXAMPLE(sfkr, oskdfr) {
   return sfkr + "___" + oskdfr;
 }
 // 1function
+
+export function isEmpty(value) {
+  return (
+    value === undefined ||
+    value === null ||
+    (typeof value === "object" && Object.keys(value).length === 0) ||
+    (typeof value === "string" && value.trim().length === 0)
+  );
+}
+
+export function sortBy(list, func) {
+  // const sortBy = (key) => {
+  //   return (a, b) => (a[key] > b[key]) ? 1 : ((b[key] > a[key]) ? -1 : 0);
+  // };
+
+  // The native sort modifies the array in place. `_.orderBy` and `_.sortBy` do not, so we use `.concat()` to
+  // copy the array, then sort.
+  return list.concat().sort(func);
+}
+
+export const chunk = (input, size) => {
+  return input.reduce((arr, item, idx) => {
+    return idx % size === 0
+      ? [...arr, [item]]
+      : [...arr.slice(0, -1), [...arr.slice(-1)[0], item]];
+  }, []);
+};
+
+export function remove(array, filterMethod) {
+  return array.filter(function () {
+    return !filterMethod.apply(this, arguments);
+  });
+}

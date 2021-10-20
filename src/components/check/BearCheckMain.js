@@ -9,7 +9,7 @@ import { BearDiv } from "../BearDiv";
 import { BearFloat } from "../BearFloat";
 import { BearError } from "../BearError";
 import { getAnyDictValue } from "../../functions/dictFuncs";
-import { BearBorder } from "../InnerComps";
+import { BearBorder } from "../ExportComps";
 import { BearErrMiss } from "../ErrorComps";
 
 export function BearCheckMain(asdf, zczx, sdfwe = {}) {

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { isEmpty, isObject } from "lodash";
 import { BearDiv } from "../BearDiv";
 import { BearList } from "../list/BearList";
 import { BearButton } from "../button/BearButton";
@@ -13,12 +12,14 @@ import { BearCheckMain } from "../check/BearCheckMain";
 import { formValidPass } from "./formValidPass";
 import { BearFormSetup } from "./BearFormSetup";
 import { BearInputBase } from "../input/BearInputBase";
-import { focusBase } from "../../functions/formFuncs";
+import { BearFormList, focusBase } from "../../functions/formFuncs";
 import FormHook from "./FormHook";
 import { removeEmptyArray } from "../../functions/arrayFuncs";
 import { getDictvalues, mergeDict } from "../../functions/dictFuncs";
-import { BearBackBorder } from "../InnerComps";
+import { BearBackBorder } from "../ExportComps";
 import { BearErrMiss } from "../ErrorComps";
+import { isEmpty } from "../../functions/globalFuncs";
+import { BearCheckList } from "../check/BearCheckList";
 
 export function BearForm({
   noText,
@@ -194,7 +195,7 @@ export function BearForm({
   function sdaseas(values, funta) {
     //
 
-    // setloadVars(true);
+    setloadVars(true);
     // setloadSetto(true);
 
     const emptiosa = !isEmpty(values);
@@ -691,97 +692,14 @@ export function BearForm({
   // BearCheckMain("BearForm", <BearForm {...dfjgrt} />, args);
   // // <div {...genConfig}>{aweuw}</div>;
 
-  return isjdwesdfoek;
-}
+  let sdofkwe = { noContain: true, ...args };
 
-export function BearFormList({ inputList, horizList, ...jdfsd }) {
-  //
+  bearlog.lug("___ sdofkwe ___", sdofkwe);
 
-  const sijewer = inputList || horizList;
-  //
-  function sdjfwer() {
-    function cvlbk({ label, ...dfewer }) {
-      const isdjfre = !label && {
-        noLabel: true,
-      };
-      const dfjsds = {
-        ...jdfsd,
-        ...isdjfre,
-        ...dfewer,
-        label,
-      };
-
-      bearlog.lug("___ dfjsds ___", dfjsds);
-
-      const sidjer =
-        //
-        // sdfok(dfjsds);
-        BearFormList(dfjsds);
-
-      return sidjer;
-    }
-
-    const jdfwea =
-      //
-      // "oksdfer";
-      sijewer.map(cvlbk);
-
-    const fbjdfg = horizList && {
-      flex: true,
-      vertAlign: true,
-    };
-
-    const ijdfges = (
-      <>
-        {/* <BearList {...dijfgtr} /> */}
-        {/* <Flex> */}
-        {/* <BearFloat {...args} /> */}
-        <BearDiv {...fbjdfg}>{jdfwea}</BearDiv>
-        {/* </Flex> */}
-      </>
-    );
-
-    return BearInputBase(ijdfges, jdfsd);
-  }
-
-  const ijfgase = sijewer ? sdjfwer() : firstInputCheck(jdfsd);
-
-  return ijfgase;
-}
-
-export function firstInputCheck({ addTrue, noName, inputItem, ...baseObj }) {
-  //
-  const nameeo = baseObj.name;
-
-  bearlog.lug(nameeo, "___BeaForm firstInputCheck ___", {
-    baseObj: baseObj,
-    NAME: nameeo,
-  });
-
-  const ijsre = noName
-    ? {
-        //
-        // noLabel: true,
-      }
-    : {
-        name: inputItem,
-        // inputItem
-      };
-
-  const isjdfe = {
-    ...baseObj,
-    // ...ijsre,
-  };
-
-  // 1name
-  const okwaew =
+  let sdawe =
     //
-    // "oskdfwerw"
-    noName
-      ? BearFormSetup(isjdfe)
-      : nameeo
-      ? BearFormSetup(isjdfe)
-      : BearErrMiss("name", baseObj.bearName + "'s input elementk");
+    isjdwesdfoek;
+  // BearCheckList("BearForm", isjdwesdfoek, sdofkwe);
 
-  return okwaew;
+  return sdawe;
 }

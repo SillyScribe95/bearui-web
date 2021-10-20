@@ -10,8 +10,10 @@ import {
 import { vertAlign } from "../consts/genStyle";
 import { BearDiv } from "./BearDiv";
 import { Flex, Spacer } from "@chakra-ui/react";
+import { BearList } from "../importBase";
 
 export function BearFloat({
+  horiz = true,
   //
   bearName,
   layoutType,
@@ -29,6 +31,8 @@ export function BearFloat({
   paddingHorz = 0,
   //
   //
+  top,
+  topConfig = {},
   topLeft,
   topLeftConfig = {},
   topRight,
@@ -47,12 +51,13 @@ export function BearFloat({
   children,
   centerConfig = {},
   right,
+  vertAlign = true,
   rightConfig = {},
   ...args
 }) {
   const trueClass = {
-    flex: true,
-    ...args,
+    // flex: true,
+    className: "bearFloat",
     // vertAlign: true,
   };
 
@@ -80,7 +85,7 @@ export function BearFloat({
   };
 
   // 1left
-  const lefto = sasease && (
+  const lefto = (
     <>
       <div {...jndf}>
         {/*  */}
@@ -150,15 +155,17 @@ export function BearFloat({
     const asoke = {
       // align: typoe,
       style: ijsdrw,
-      class: "flex-none",
+      // class: "flex-none",
     };
 
+    bearlog.lug("___ asoke ___", asoke);
+
     const ijsdf = (
-      <BearDiv {...asoke}>
+      <div {...asoke}>
         {/*  */}
         {/* adsfjewro */}
         {itemo}
-      </BearDiv>
+      </div>
     );
 
     return ijsdf;
@@ -166,12 +173,15 @@ export function BearFloat({
 
   const sokwerr = (
     <>
+      {sfewr(top, topConfig, {
+        top: 0,
+        ...centros,
+      })}
       {sfewr(topLeft, topLeftConfig, { top: paddingVert, left: paddingHorz })}
       {sfewr(topRight, topRightConfig, {
         top: paddingVert,
         right: paddingHorz,
       })}
-      {centio}
       {sfewr(bottomLeft, bottomLeftConfig, {
         bottom: paddingVert,
         left: paddingHorz,
@@ -188,8 +198,12 @@ export function BearFloat({
     </>
   );
 
-  const ksaewe = (
-    <>
+  const asdokwe = {
+    vertAlign,
+  };
+
+  const dfgokew = (
+    <BearDiv flex {...asdokwe}>
       {/* {isjfwe} */}
       {lefto}
       {/* {eqweew(left, leftConfig, {
@@ -197,36 +211,25 @@ export function BearFloat({
         marginRight: "auto",
         // left: paddingHorz,
       })} */}
-      {sokwerr}
+      {centio}
       {rightos}
       {/* {eqweew(right, rightConfig, {
         padding: "0 10px",
         marginLeft: "auto",
         // right: paddingHorz,
       })} */}
+    </BearDiv>
+  );
+
+  const ksaewe = (
+    <>
+      {dfgokew}
+      {sokwerr}
     </>
   );
 
-  let endValue = "";
-  switch (layoutType) {
-    case "vertical":
-      endValue = ksaewe;
-      break;
-
-    default:
-      const oesfdrtw = {
-        ...trueClass,
-        obj: ksaewe,
-      };
-      endValue =
-        //
-        // ksaewe;
-        BearDiv(oesfdrtw);
-  }
-
-  const endios =
-    //
-    endValue;
-
-  return endios;
+  return BearDiv({
+    ...args,
+    obj: ksaewe,
+  });
 }

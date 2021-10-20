@@ -1,0 +1,85 @@
+
+  function iasjde({
+    //
+    typevar,
+    iconvar,
+    iconText,
+    textvar,
+    toolText,
+    styleIcon,
+    style,
+    copyLink,
+    ...asswd
+  }) {
+    // toolText = "Share on " + toolText;
+
+    const sdfebvjf = {
+      ...style,
+    };
+
+    const fdjwqe = <>{/*  */}</>;
+
+    let mainIco = {
+      iconConfig: {
+        className: "pointer",
+        style: {
+          fontSize: "0.9em",
+          // width: "50px",
+          // height: "50px",
+          borderRadius: "60%",
+          padding: "10px",
+          ...styleIcon,
+          ...iconStyle,
+        },
+      },
+    };
+
+    let saewawe = iconSide && {
+      textvar: toolText,
+      ...mainIco,
+    };
+
+    let ikasde = iconPop && {
+      popConfig: {
+        trigger: "click",
+        content: toolText,
+      },
+    };
+
+    // textvar: toolText,
+    // left: iconvar,
+    // popContent: toolText,
+
+    const jsaease = {
+      ...saewawe,
+      ...ikasde,
+      ...mainIco,
+      iconvar,
+      noVertTop: true,
+      padvar: 5,
+      ...asswd,
+    };
+
+    bearlog.lug("___ jsaease ___", jsaease);
+
+    const gfnmeir = (
+      <>
+        <BearTextMedia {...jsaease} />
+        {/* <BearFloat {...jsaease} /> */}
+        {/* dowqe */}
+      </>
+    );
+
+    const sdjerw =
+      //
+      typevar == "facebook";
+    // true
+
+    if (sdjerw) {
+      // 1console
+      bearlog.lug(typevar + "___ns Link Social FULL ___", jsaease);
+      bearlog.lug(typevar, "___ mainIco ___", mainIco);
+    }
+
+    return gfnmeir;
+  }

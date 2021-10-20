@@ -12,7 +12,7 @@ export function BearTitle({
   belowObj,
   // sizevar = "34px",
   subtitle,
-  spaceBetween = "30px",
+  spaceBetween = "5px",
   subtitleConfig = {},
   lineBetween,
   ...args

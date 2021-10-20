@@ -1,6 +1,6 @@
-import { sortBy, filter, isEmpty, remove } from "lodash";
 import { checkDict, objectTrue } from "./dictFuncs";
 import { bearlog } from "../index";
+import { isEmpty, sortBy } from "./globalFuncs";
 
 export function moveItemFront(listo, itemo) {
   const jsdas = sortBy(listo, ({ type }) => (type === itemo ? 0 : 1));
@@ -176,7 +176,7 @@ export function removeArray(array, obj, attr) {
     return asweas;
   }
 
-  let okdsasd = filter(array, baseRem);
+  let okdsasd = array.filter(baseRem);
 
   // remove(
 
@@ -204,7 +204,7 @@ export function removeArray(array, obj, attr) {
 }
 
 export function filterDictArray(myArr, sdofkewr) {
-  const okada = filter(myArr, sdofkewr);
+  const okada = myArr.filter(sdofkewr);
 
   return okada;
 }

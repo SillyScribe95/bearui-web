@@ -20,8 +20,9 @@ export function BearFooter({
   onClick,
   closeTrue,
   sticky,
-  className = "",
+  className,
   //   obj,
+  // style,
   ...argos
 }) {
   // const [truShowa, settruShowa] = useState(true);
@@ -29,9 +30,18 @@ export function BearFooter({
   let asdew = sticky ? "sticky" : "";
 
   const ajsw = {
-    className: `footer ${asdew} ${className}`,
+    className: `bearFooter mainfoot ${asdew} ${className}`,
+    // style: {...}
     ...argos,
   };
 
-  return <BearDiv {...ajsw} />;
+  bearlog.lug("___ ajsw ___", ajsw);
+
+  return <div {...ajsw} />;
+  // return (
+  //   <>
+  //     <div className="mainfoot"></div>
+  //     <div {...ajsw} />
+  //   </>
+  // );
 }

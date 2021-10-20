@@ -3,14 +3,13 @@ import React, {
   useState,
   useContext,
 } from "react";
+import { BearFormList } from "../../functions/formFuncs";
 
 import {
   //
   bearlog,
 } from "../../index";
 import { BearDiv } from "../BearDiv";
-import { BearFormList } from "../form/BearForm";
-import { BearInputBase } from "./BearInputBase";
 
 export function BearInputNameFirstLast({
   //

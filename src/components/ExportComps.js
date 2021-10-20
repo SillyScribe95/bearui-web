@@ -351,6 +351,10 @@ export function BearBlock({ children, ...asde }) {
   });
 }
 
+export function BearHeight(height, extra) {
+  return <div style={{ height, ...extra }}></div>;
+}
+
 export function BearSpan(asdwe) {
   return <BearDiv span {...asdwe} />;
 }

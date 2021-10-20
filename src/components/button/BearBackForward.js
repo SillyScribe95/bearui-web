@@ -14,18 +14,12 @@ import {
 } from "../../index";
 
 export function BearBackForward({
-  obj,
   onBack,
   onForward,
-  disVar,
-  arrVar,
-  textTrue,
-  disBack,
-  children,
-  disForward,
+  back = "Back",
+  forward = "Forward",
   hideBack,
   hideForward,
-  genConfig,
   backConfig,
   forwardConfig,
   buttonConfig = {},
@@ -39,14 +33,14 @@ export function BearBackForward({
   // }
 
   const endLeftfsa = {
-    iconvar: "back",
+    obj: back,
     onClick: onBack,
     // disVar: disBack,
     ...backConfig,
   };
 
   const endRighto = {
-    iconvar: "forward",
+    obj: forward,
     onClick: onForward,
     // disVar: disForward,
     ...forwardConfig,
@@ -69,57 +63,17 @@ export function BearBackForward({
     saaoekwq(endRighto);
 
   function saaoekwq(oskwe) {
-    const ijawe = {
-      // className: gens.butClass,
-    };
-
     const zdsdar = {
-      ...oskwe,
-      ...ijawe,
       ...buttonConfig,
-      itemType: "button",
+      ...oskwe,
     };
 
-    bearlog.lug("___ zdsdar ___", zdsdar);
-
-    const uajwe =
-      //
-      // "asdfeqws";
-      BearTextMedia(zdsdar);
-    // BearList();
-
-    return uajwe;
+    return BearDiv(zdsdar);
   }
 
-  // 1float
-  function Flaoto() {
-    const ksdfasd = {
-      // topLeft
-    };
-  }
-
-  const uawhe = {
-    // iconvar
-    obj: (
-      <>
-        {xcijsdf}
-        {children}
-        {dfgkmre}
-      </>
-    ),
-    // list: [xcijsdf, children, dfgkmre],
-    // left: xcijsdf,
-    // center: children,
-    // right: dfgkmre,
-    padvar: "5px",
+  return BearFloat({
+    left: xcijsdf,
+    right: dfgkmre,
     ...argssdf,
-  };
-
-  const ijwqeq = (
-    <>
-      <BearDiv flex vertAlign {...uawhe} />
-    </>
-  );
-
-  return ijwqeq;
+  });
 }

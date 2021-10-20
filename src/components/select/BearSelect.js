@@ -10,7 +10,7 @@ import AsyncCreatableSelect from "react-select/async-creatable";
 import { bearlog } from "../../index";
 import { vertAlign } from "../../consts/genStyle";
 import { BearDiv } from "../BearDiv";
-import { BearBorder } from "../InnerComps";
+import { BearBorder } from "../ExportComps";
 import { BearErrArgType } from "../ErrorComps";
 
 // import { Input } from "reactstrap";
@@ -627,7 +627,7 @@ export function BearSelect({
 
   // 1nooptions
   function Rendoa({ inputValue, ...sdsa }) {
-    noOptionsMessage
+    return noOptionsMessage
       ? Notspse(inputValue, sdsa)
       : sodkfre
       ? "You can only chooe"

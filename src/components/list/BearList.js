@@ -8,14 +8,14 @@ import {
   //
   bearlog,
 } from "../../index";
-import { isEmpty, remove } from "lodash";
 import { BearError } from "../BearError";
 import { BearListMap } from "./BearListMap";
 import { BearListItem } from "./BearListItem";
 import { argMiss, argPass } from "../GlobalComps";
 import { getListComplex } from "./getListComplex";
 import { BearCheckList } from "../check/BearCheckList";
-import { chunk } from "lodash";
+import { isEmpty, chunk } from "../../functions/globalFuncs";
+import { BearErrArgType } from "../ErrorComps";
 
 export function BearList(
   //
@@ -226,7 +226,7 @@ export function BearList(
   const saokwe = typeBullet ? <ul>{sadfwe}</ul> : sadfwe;
 
   function RendBase() {
-    const saidje = argPass({
+    const saidje = argMiss({
       obj: saokwe,
       flex,
       ...listArgs,
@@ -236,11 +236,16 @@ export function BearList(
     return BearDiv(saidje);
   }
 
+  // const asdas = {
+  //   ...sidjfwe,
+  // }
+
   const idjsae = BearCheckList(
     compName,
     RendBase(),
     //
-    argMiss(sidjfwe)
+    sidjfwe
+    // argPass(sidjfwe)
   );
   //
   // BearDiv(saidje)

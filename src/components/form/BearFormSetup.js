@@ -7,7 +7,7 @@ import {
   //
   bearlog,
 } from "../../index";
-import { BearUpper } from "../InnerComps";
+import { BearUpper } from "../ExportComps";
 import { BearFormInputCheck } from "./BearFormInputCheck";
 import { getFormPass } from "./getFormPass";
 

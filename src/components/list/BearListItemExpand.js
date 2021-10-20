@@ -9,7 +9,7 @@ import { BearButton } from "../button/BearButton";
 import { BearTextMedia } from "../BearTextMedia";
 import { BearDiv } from "../BearDiv";
 import { turnarray } from "../../functions/arrayFuncs";
-import { BearUpper } from "../InnerComps";
+import { BearUpper } from "../ExportComps";
 import { BearErrMiss } from "../ErrorComps";
 
 export function BearListItemExpand(
@@ -280,6 +280,7 @@ export function BearListItemExpand(
 
   function rettobjoo(objo, aokd) {
     const oksdf = {
+      children: endRet.itemName,
       ...endRet,
       ...aokd,
     };

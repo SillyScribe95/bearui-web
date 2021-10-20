@@ -31,7 +31,7 @@ const skeweewr = {
   toolText: "Twitter",
   textConnect: "text",
   linkConnect: "url",
-  styleIcon: { color: "white", background: "#1da1f2" },
+  styleIcon: { background: "#1da1f2" },
 };
 
 // 1reddit
@@ -40,7 +40,7 @@ const rddito = {
   linkConnect: "url",
   toolText: "Reddit",
   textConnect: "title",
-  styleIcon: { color: "white", background: "#FF4301" },
+  styleIcon: { background: "#FF4301" },
 };
 
 // 1hacker
@@ -58,7 +58,7 @@ const lnkeos = {
   // textConnect: "url",
   linkConnect: "url",
   summaryVar: "summary",
-  styleIcon: { color: "white", background: "#0e76a8" },
+  styleIcon: { background: "#0e76a8" },
 };
 
 // 1google
@@ -87,7 +87,10 @@ const whstConfo = {
   linkBase: "https://web.whatsapp.com/send",
   textConnect: "text",
   toolText: "Whatsapp",
-  styleIcon: { color: "white", background: "#128C7E" },
+  styleIcon: {
+    // background: "white",
+    color: "#128C7E",
+  },
 };
 
 // 1facebook
@@ -97,7 +100,10 @@ const fceConfo = {
   linkConnect: "u",
   typevar: "facebook",
   toolText: "Facebook",
-  styleIcon: { color: "white", background: "#3b5998" },
+  styleIcon: {
+    // background: "white"
+    color: "#3b5998",
+  },
 };
 
 // 1telegram

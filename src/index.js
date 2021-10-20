@@ -1,7 +1,7 @@
 // import "bootstrap/dist/css/bootstrap.css";
 // import "bootstrap/dist/css/bootstrap.min.css";
 // import "antd/dist/antd.css";
-import "./index.css";
+import "./index.scss";
 // 1css
 
 // 1bear 1emoji

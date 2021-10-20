@@ -22,7 +22,8 @@ export function BearTextMedia({
   vertSize,
   vertTrue,
   iconSize,
-  alignConfig,
+  align = "center",
+  alignConfig = {},
   imageConfig = {},
   textvar,
   renderText,
@@ -180,6 +181,15 @@ export function BearTextMedia({
         vertAlign: true,
       };
 
+      const aidwe = {
+        ...alignConfig,
+        style: {
+          textAlign: align,
+          justifyContent: align,
+          ...alignConfig.style,
+        },
+      };
+
       let xcvasd =
         //
         // lftoe;
@@ -187,7 +197,7 @@ export function BearTextMedia({
         // righto
         // oskdawe;
         // "dojwewq";
-        BearDiv({ obj: oskdawe, ...aokdas, ...alignConfig });
+        BearDiv({ obj: oskdawe, ...aokdas, ...aidwe });
 
       return xcvasd;
     }

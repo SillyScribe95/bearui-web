@@ -10,13 +10,14 @@ import {
 } from "../../index";
 import { BearCheckMain } from "./BearCheckMain";
 import { BearError } from "../BearError";
-import { BearErrMiss, BearMissing } from "../ErrorComps";
+import { BearErrArgType, BearErrMiss, BearMissing } from "../ErrorComps";
 
 export function BearCheckList(
   named,
   obj,
   {
     //
+    noContain,
     bearName,
     list,
     renderItem,
@@ -54,7 +55,7 @@ export function BearCheckList(
     return cisas;
   }
 
-  const okfdsd = renderCheck();
+  const okfdsd = noContain ? true : renderCheck();
   const jsdawse = Array.isArray(list);
   const listFull = jsdawse && list.length > 0;
 
@@ -71,7 +72,7 @@ export function BearCheckList(
 
   const idfjger = { bearName, hideError: "ignoreEmpty" };
 
-  const emptyall = !list || !listFull;
+  const emptyall = !list;
 
   const ijsfre =
     emptyall && !ignoreEmpty
@@ -81,7 +82,7 @@ export function BearCheckList(
           idfjger
         )
       : !jsdawse
-      ? BearError("list attribute must be an array!")
+      ? BearErrArgType("list", "array", { bearName })
       : okfdsd;
 
   return BearCheckMain(named, ijsfre, skfwe);
