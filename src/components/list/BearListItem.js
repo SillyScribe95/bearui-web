@@ -7,6 +7,7 @@ import React, {
 import { bearlog } from "../../index";
 import { BearError } from "../BearError";
 import { BearPossess } from "../ExportComps";
+import { BearPossQuote } from "../GlobalComps";
 import { BearListItemExpand } from "./BearListItemExpand";
 
 export function BearListItem(
@@ -21,6 +22,7 @@ export function BearListItem(
     emptyDictReplace,
     containFunc,
     logtrue,
+    ignoreEmpty,
     //
     //
     ...args
@@ -95,10 +97,11 @@ export function BearListItem(
     return asdase;
   }
 
+  const adsfewr = noShowItems || ignoreEmpty
   const sijfawe = dictvar
     ? dictTrue
       ? mainOso()
-      : noShowItems
+      : adsfewr
       ? ""
       : BearError(
           `No entry exists in '${BearPossess(
@@ -109,9 +112,9 @@ export function BearListItem(
         )
     : eixstso
     ? mainOso()
-    : noShowItems
+    : adsfewr
     ? ""
-    : BearError("No list item declared!");
+    : BearError(`No list item declared in ${BearPossQuote(bearName)} list!`);
 
   function xcjsd() {
     bearlog.lug("sijfawez--zz", sijfawe);

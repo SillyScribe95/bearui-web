@@ -67,7 +67,6 @@ export function BearListItemExpand(
     chooseTrue,
     chosenItem,
     chosenAttr = "itemName",
-    chosenStyle,
     chosenConfig = {},
     //
     // 1error
@@ -134,7 +133,12 @@ export function BearListItemExpand(
   const listarr = ijdfwr ? conDit() : dgste;
 
   function dfasdke(asfds) {
-    return dictTrue && adojaqw(asfds);
+    
+    const ieqweqe = 
+    // 
+    dictTrue || choseAll
+    
+    return ieqweqe && adojaqw(asfds);
   }
 
   let sokwe =
@@ -188,10 +192,6 @@ export function BearListItemExpand(
     const dfbidfg = selectTrue && {
       chosenTrue: true,
       ...chosenConfig,
-      style: {
-        ...(chosenConfig && chosenConfig.style),
-        ...chosenStyle,
-      },
     };
 
     const sidjas =
@@ -199,14 +199,13 @@ export function BearListItemExpand(
       // bearName == "explore tabs --- ";
       "logtrue";
 
-    if (sidjas) {
-      bearlog.laggu(bearName, "BEARLST- CHOSEN ITEM ", {
-        CURREITEM: itemBase,
-        CHOSiTEM: cvokbsdf,
-        SELECTTRUE: selectTrue,
-        CONFIG: dfbidfg,
-      });
-    }
+    bearlog.lug(bearName, "BEARLST- CHOSEN ITEM ", {
+      CURREITEM: itemBase,
+      CHOSiTEM: cvokbsdf,
+      SELECTTRUE: selectTrue,
+      CONFIG: dfbidfg,
+    });
+   
 
     return dfbidfg;
   }

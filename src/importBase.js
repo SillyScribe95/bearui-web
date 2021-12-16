@@ -1,18 +1,27 @@
 // 1components
 
+// 1test
+export * from "./components/TestComp";
+
+
 // 1div
 export * from "./components/BearDiv";
 export * from "./components/BearError";
 export * from "./components/ExportComps";
+export * from "./components/ExportComps";
+// export * from "./components/GlobalComps";
+
 // export * from "./components/BearRouter";
 
 // // 1payment 1checkout
 // export * from "./components/payment/BearCheckout";
+export * from "./components/payment/BearPageWithStripeCheckout";
 export * from "./components/payment/BearCheckoutStripe";
 export * from "./components/payment/BearPayButton";
+export * from "./components/payment/BearCurrency";
 
 // 1check
-// export * from "./components/check/BearCheckMain";
+export * from "./components/check/BearCheckMain";
 
 // 1icon 1image 1textme
 export * from "./components/BearTextMedia";
@@ -51,7 +60,7 @@ export * from "./components/title/BearTitle";
 // 1form
 export * from "./components/form/BearForm";
 // export * from "./components/form/BearFormBase";
-// export * from "./components/form/FormHook";
+// export * from "./components/form/BearFormHooks";
 
 // 1input
 export * from "./components/input/BearInput";
@@ -92,9 +101,15 @@ export * from "./extra/page/BearPage";
 // export * from "./components/page/BearMetaTags";
 export * from "./extra/page/BearNavigation";
 export * from "./extra/layout/BearHeader";
+export * from "./extra/layout/BearFooter";
+
+
 
 // // 1user
 // export * from "./components/user/BearUserPortal";
+
+// 1layout
+export * from "./extra/layout/BearFixSide";
 
 // // 1language
 // export * from "./components/user/BearLanguage";

@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useContext } from "react";
 import { BearDiv } from "../../components/BearDiv";
 import { repClass } from "../../components/GlobalComps";
+import { bearMobileView } from "../../components/ExportComps";
 import { bearlog } from "../../index";
 import { BearFooter } from "../layout/BearFooter";
 // import HelmetInfo from "../functions/HelmetInfo";
@@ -164,10 +165,14 @@ export function BearPage({
     </>
   );
 
+  // 1padding
+  const paddos = bearMobileView ? "2%"  : "10%"
+  const sdfwr = `2% ${paddos}`
+
   const ijfer = {
     style: {
       // minHeight: "100vh",
-      padding: "2% 10%",
+      padding: sdfwr,
     },
     children: sdifjwe,
   };

@@ -143,6 +143,8 @@ export function BearSearchList({
     );
   }
 
+  
+
   const vcxbfg =
     //
     // isdae;
@@ -209,8 +211,9 @@ export function BearSearchList({
     optionStyle: hsdr,
     menuIsOpen: true,
     placeholder: "Search",
-    searchBarIcon: "search",
+    hideSearchIcon: true,
     onChangeSetValue: false,
+    noBlur: true,
     ...vobkv,
     ...dfijgret,
     ...args,

@@ -23,7 +23,7 @@ export function BearInputNumber({
   positive,
   step,
   min,
-  style,
+  // style,
   onChange,
   initialValue,
   onChangeValue,
@@ -45,7 +45,7 @@ export function BearInputNumber({
     width: "100px",
     paddingRight: "20px",
     // fontSize:
-    ...style,
+    // ...style,
   };
 
   function asjwe(asdfoke) {

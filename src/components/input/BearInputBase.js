@@ -366,6 +366,7 @@ export function BearInputBase(
         <BearDiv
           //
           flex
+          vertAlign
           {...ijsa}
         >
           {/*  */}
@@ -383,6 +384,7 @@ export function BearInputBase(
 
   const zxcvdf =
     //
+    // <div {...ijsa}>{okaweasd}</div>;
     sameLine ? SameRet() : <div {...ijsa}>{okaweasd}</div>;
 
   const jsidew = {

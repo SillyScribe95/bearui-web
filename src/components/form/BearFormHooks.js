@@ -9,11 +9,11 @@ import {
 import { useForm, Controller } from "react-hook-form";
 import { focusBase } from "../../functions/formFuncs";
 
-export default function FormHook({
+export default function BearFormHooks({
   buttonList,
   onSubmit,
   hookConfig,
-  focusFirst,
+  // 1focus
   focusInput,
   ...args
 }) {
@@ -65,8 +65,8 @@ export default function FormHook({
     const sdjfrwe =
       //
       // "";
-      focusInput;
-    // focusFirst || focusInput;
+      // focusInput;
+    focusInput;
 
     //   const existo =
     //   //
@@ -74,6 +74,9 @@ export default function FormHook({
     // const ijdswer =
     //   //
     //   existo && isObject(existo) ? existo.name : existo;
+
+    bearlog.lug("___ BearFormHooks ___", sdjfrwe);
+
 
     if (sdjfrwe) {
       focusBase({

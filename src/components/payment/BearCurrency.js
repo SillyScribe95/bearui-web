@@ -4,6 +4,7 @@ import React, {
   useContext,
 } from "react";
 import { BearDiv } from "../BearDiv";
+import CurrencyConverter from 'react-currency-conv';
 
 export function BearCurrency(amount, { country = "US", ...sadf }) {
   const flotAm = parseFloat(amount);
@@ -11,43 +12,25 @@ export function BearCurrency(amount, { country = "US", ...sadf }) {
 
   function adojwer() {
     var ccvar = require("iso-country-currency");
-
     const kawe = ccvar.getAllInfoByISO(country);
     const ijadwe = kawe.currency;
 
-    const dkhdt = {
-      from: "USD",
-      to: ijadwe,
-      value: flotAm,
-    };
-
-    bearlog.lug("___ flotAm ___", flotAm);
-    bearlog.lug("___ dkhdt ___", dkhdt);
-
-    const amono =
-      //
-      // "ERRR";
-      showTrue ? <CurrencyConverter {...dkhdt} /> : "0.00";
-
-    const ijasdw = (
-      <>
-        {kawe.symbol}
-        {amono}
-      </>
-    );
-
-    return nijfs;
+    return ijadwe;
   }
 
+  
+
   const usTrue = country == "US";
-  const countryBase = showTrue ? flotAm.toFixed(2) : "0.00";
-  const dasjwee = usTrue ? "$" + countryBase : adojwer();
+  const countryBase = 
+  // 
+  ""
+  // showTrue ? adojwer()
+  
+  const dasjwee = 
+  // 
+  ""
+  // CurrencyConverter(sdfease)
+  // usTrue ? "$" + countryBase : adojwer();
 
-  const nsdijfre = {
-    obj: dasjwee,
-    flex: true,
-    ...sadf,
-  };
-
-  return <BearDiv {...nsdijfre} />;
+  return dasjwee
 }

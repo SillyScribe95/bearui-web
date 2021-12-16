@@ -81,7 +81,7 @@ export function BearCheckList(
           // "wtf is this mate"
           idfjger
         )
-      : !jsdawse
+      : !jsdawse && !ignoreEmpty
       ? BearErrArgType("list", "array", { bearName })
       : okfdsd;
 

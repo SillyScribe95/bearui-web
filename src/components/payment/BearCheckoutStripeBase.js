@@ -5,6 +5,7 @@ import React, {
   useContext,
 } from "react";
 import {
+  PaymentElement,
   CardElement,
   Elements,
   useStripe,
@@ -190,7 +191,12 @@ export function BearCheckoutStripeBase({
 
     // 1submit CHECK(){
     async function checkoSub() {
-      const nsidfre = elements.getElement(CardElement);
+      const dfsgr = 
+      // 
+      // CardElement
+      PaymentElement
+      
+      const nsidfre = elements.getElement(dfsgr);
 
       const { error, paymentMethod } = await stripe.createPaymentMethod({
         type: "card",
@@ -209,7 +215,12 @@ export function BearCheckoutStripeBase({
 
     // 1submit FIRST
     async function er9eras(dvbdero) {
-      const nsidfre = elements.getElement(CardElement);
+      const kass = 
+      // 
+      // CardElement
+      PaymentElement
+
+      const nsidfre = elements.getElement(kass);
 
       bearlog.lug("___ submit FIRST CARD ___", nsidfre, dvbdero);
 
@@ -265,13 +276,16 @@ export function BearCheckoutStripeBase({
         onChange: handleCardDetailsChange,
       };
 
+      const kasdf = {}
+
       const jsdrs = !paymentintentFunction && !ignoreErrors;
 
       return jsdrs ? (
         BearErrMiss("paymentintentFunction", bearName, "BearCheckoutStripe")
       ) : (
         <>
-          <CardElement {...dsfoqeqs} />
+          <PaymentElement />
+          {/* <CardElement {...dsfoqeqs} /> */}
           {/* {errTexto} */}
         </>
       );
@@ -291,7 +305,7 @@ export function BearCheckoutStripeBase({
     const ijsdf = {
       bearName: "STRIPE CARD",
       name: "card",
-      label: "Credit / Debit card",
+      // label: "Credit / Debit card",
       // required: true,
       // error: errTexto,
       errorFunction: asodke,
@@ -306,7 +320,9 @@ export function BearCheckoutStripeBase({
 
     // 1dict 1card INLCUDE IN LIST
     const ndufgase = {
-      dictvar: { card: ijsdf, ...dictvar },
+      dictvar: {
+         card: ijsdf, ...dictvar },
+      
     };
 
     function errorbaso({ code, message, type }) {

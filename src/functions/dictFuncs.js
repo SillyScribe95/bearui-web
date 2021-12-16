@@ -35,16 +35,26 @@ export function getAnyDictValue(vlbdf) {
 }
 
 export function checkDict(dictvar, cxzvd) {
+  const endit = dictvar[cxzvd]
   let asdrae;
   switch (typeof cxzvd) {
     case "object":
       asdrae = cxzvd;
       break;
     case "string":
-      asdrae = {
-        listItemName: cxzvd,
-        ...dictvar[cxzvd],
-      };
+       switch (typeof endit) {
+        case "object":
+          asdrae = {
+            listItemName: cxzvd,
+            ...endit,
+          };
+        break;
+        case "string":
+          asdrae = {
+            listItemName: endit,
+          }
+        break;
+       }
       break;
   }
 

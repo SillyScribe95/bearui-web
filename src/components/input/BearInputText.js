@@ -97,7 +97,7 @@ export function BearInputText({
   const baseo = {
     //
     rows: 1,
-    autoComplete: "off",
+    // autoComplete: "off",
     className: "noresize",
   };
 

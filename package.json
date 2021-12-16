@@ -1,6 +1,6 @@
 {
   "name": "@sillyscribe95/bear-ui-web",
-  "version": "0.1.18898",
+  "version": "0.1.18899997",
   "main": "build/index.cjs.js",
   "module": "build/index.esm.js",
   "source": "src/index.js",
@@ -27,6 +27,7 @@
     "node": "^16.11.1",
     "play": "^0.5.0",
     "pluralize": "^8.0.0",
+    "react-currency-conv": "^1.1.0",
     "react-helmet": "^6.1.0",
     "react-hook-form": "^7.5.2",
     "react-hot-loader": "^4.12.18",

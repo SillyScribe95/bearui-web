@@ -46,11 +46,14 @@ export function BearFloat({
   //
   //
   left,
+  noLeft,
   leftConfig = {},
   center,
+  noCenter,
   children,
   centerConfig = {},
   right,
+  noRight,
   vertAlign = true,
   rightConfig = {},
   ...args
@@ -85,7 +88,7 @@ export function BearFloat({
   };
 
   // 1left
-  const lefto = (
+  const lefto = !noLeft && (
     <>
       <div {...jndf}>
         {/*  */}
@@ -117,8 +120,9 @@ export function BearFloat({
     ...rightConfig,
   };
 
+  // 1right
   let askdw = right || showRight;
-  const rightos = (
+  const rightos =  !noRight && (
     <>
       {!noSpace && <Spacer />}
       <div {...ijsad}>
@@ -198,12 +202,13 @@ export function BearFloat({
     </>
   );
 
-  const asdokwe = {
+  const asdokwe = horiz && {
+    flex: true,
     vertAlign,
   };
 
   const dfgokew = (
-    <BearDiv flex {...asdokwe}>
+    <BearDiv {...asdokwe}>
       {/* {isjfwe} */}
       {lefto}
       {/* {eqweew(left, leftConfig, {

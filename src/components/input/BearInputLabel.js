@@ -41,7 +41,6 @@ export function BearInputLabel({
   required,
   requiredFormat = "star",
   requiredConfig,
-
   // 1remove
   register,
   innerRef,
@@ -54,11 +53,14 @@ export function BearInputLabel({
 
   // 1required
   function RendReq() {
-    const difjger =
-      //
-      "*";
-    // BearIcon("star");
-
+    let difjger; 
+    switch(requiredFormat) {
+      case "star":
+        difjger = "*";  
+      break;
+      default: 
+    }
+    
     const ijweq = {
       style: {
         marginLeft: "10px",

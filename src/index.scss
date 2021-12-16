@@ -437,13 +437,10 @@
   padding: 2px 5px;
 
   &:hover {
-    /* background: red; */
     border: 2px solid rgb(44, 65, 121);
-    /* border-radius: 5px; */
-    /* border-radius: 5px; */
   }
   &:active {
-    background: red;
+    border: 2px solid rgb(44, 65, 121);
   }
 }
 

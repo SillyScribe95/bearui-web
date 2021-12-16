@@ -15,6 +15,7 @@ import { BearCheckoutStripeBase } from "./BearCheckoutStripeBase";
 import { CheckPayStripe } from "./CheckPayStripe";
 
 export function BearCheckoutStripe({
+  paymentintentFunction,
   livepubKey,
   testpubKey,
   testsecKey,
@@ -22,51 +23,27 @@ export function BearCheckoutStripe({
   testTrue,
   nativePayment,
   nativePaymentConfig,
+  elementType,
   ...aaaaa
 }) {
-  const zvarew = testTrue ? testpubKey : livepubKey;
-  const secretos = testTrue ? testsecKey : livesecKey;
-  const stripePromise = loadStripe(zvarew);
+  const publicKey = testTrue ? testpubKey : livepubKey;
+  const secretKey = testTrue ? testsecKey : livesecKey;
+  const stripe = loadStripe(publicKey);
 
-  // // 1useeffect
-  // useEffect(() => {
-  //   if (stripe) {
-  //     const pr = stripe.paymentRequest();
+  const [clientSecret, setclientSecret] = useState();
+  useEffect(() => {
+    async function getto() {
+      const { client_secret } = 
+      await paymentintentFunction();
+      
+      setclientSecret(client_secret);
+    }
 
-  //     // Check the availability of the Payment Request API.
-  //     pr.canMakePayment().then((result) => {
-  //       if (result) {
-  //         setPaymentRequest(pr);
-  //       }
-  //     });
-  //   }
-  // }, [stripe]);
-
-  // 1console
-  bearlog.lug("stricheck main ", {
-    stripePromise,
-  });
+    getto();
+  }, []);
 
   async function getStripe() {
     return useStripe();
-  }
-
-  async function PayGo() {
-    const stripe =
-      //
-      getStripe();
-    // await getStripe();
-    // useStripe();
-
-    const payMe =
-      //
-      "";
-    // getReq();
-    const prMAIN = stripe.paymentRequest();
-    const makeTrue = prMAIN.canMakePayment();
-    bearlog.lug("---paybutton", { stripe, payMe, prMAIN, makeTrue });
-
-    return "asdjwe";
   }
 
   const saidjew = {
@@ -75,10 +52,17 @@ export function BearCheckoutStripe({
   };
   bearlog.lug("saidjew-zz", saidjew);
 
-  return (
+
+  const options = {
+    clientSecret,
+  };
+  const configo = { stripe, options };
+
+  return !clientSecret ? (
+    ""
+  ) : (
     <>
-      <Elements stripe={stripePromise}>
-        {/* <PayGo /> */}
+      <Elements {...configo}>
         <BearCheckoutStripeBase
           nativePayment={nativePayment && <CheckPayStripe {...saidjew} />}
           {...aaaaa}
@@ -86,9 +70,6 @@ export function BearCheckoutStripe({
         {/* {CheckPayStripe(aaaaa)} */}
         {/* <BearCheckoutStripeBase /> */}
         {/* aaaa */}
-        {/* <PayGo /> */}
-        {/* {payFirst ? <PayGo /> : <Bearios />} */}
-        {/* {Bearios()} */}
       </Elements>
     </>
   );

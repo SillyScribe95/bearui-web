@@ -9,18 +9,17 @@ import { BearAuthPortal } from "./BearAuthPortal";
 export function BearAuthPortalWithEmailForm({
   titleConfig = {},
   title = "Sign In",
-  emailFirst,
+  emailTrue,
+  onBackEmail,
   emailFormConfig = {},
   ...aaa
 }) {
   const { onSubmit } = aaa;
 
-  const [adsfwew, setemaTrue] = useState(emailFirst);
-
   // 1email
   const emaTrue =
     //
-    adsfwew;
+    emailTrue
   // emailFirst
 
   // 1title
@@ -28,9 +27,7 @@ export function BearAuthPortalWithEmailForm({
     return BearBackForward({
       hideBack: !emaTrue,
       hideForward: true,
-      onBack: function () {
-        setemaTrue(false);
-      },
+      onBack: onBackEmail,
       center: title,
       ...aaa,
       ...titleConfig,
@@ -58,7 +55,6 @@ export function BearAuthPortalWithEmailForm({
   }
 
   const xcvbijr = {
-    emailClick: () => setemaTrue(true),
     title: tiltos(),
     ...aaa,
   };

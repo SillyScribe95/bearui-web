@@ -61,7 +61,7 @@ export function BearTitle({
   };
 
   const sijwesae = {
-    style: { fontSize: "0.8em" },
+    fontSize: "0.8em",
     obj: subtitle,
     ...subtitleConfig,
   };

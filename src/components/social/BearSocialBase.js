@@ -32,16 +32,19 @@ export function BearSocialBase({
 
   function asdf(itemName) {
     const { styleIcon } = authListDict[itemName] ? authListDict[itemName] : "";
-    const { link, icon, style, ...aaa } = dictvar[itemName]
+    const { textvar, link, icon, ...aaa } = dictvar[itemName]
       ? dictvar[itemName]
       : "";
 
-    return BearDiv({
-      style: { ...styleIcon, ...style },
+    const iqeqwe = BearTextMedia({
+      iconConfig: {style: { ...styleIcon }},
       outsideLink: link,
-      obj: icon,
+      iconvar: icon,
+      textvar,
       ...aaa,
     });
+
+    return renderItem ? renderItem(iqeqwe) : iqeqwe
   }
 
   function zsdfadF(aaa) {

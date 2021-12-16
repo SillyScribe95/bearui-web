@@ -64,6 +64,7 @@ export function BearList(
     // 1horizotal
     centerItem = true,
     horiz,
+    vertAlign,
     flex,
     //
     // 1list,
@@ -124,15 +125,17 @@ export function BearList(
   function HozBar(lsoeas) {
     // align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
 
-    const okaewq = true && {
+    const okaewq = centerItem && {
       alignContent: "center",
       justifyContent: "space-around",
     };
 
     const okadwe = {
       flex: true,
+      vertAlign,
       style: okaewq,
       obj: donelist(lsoeas),
+      // ...horizConfig,
     };
 
     // 1console
@@ -168,7 +171,7 @@ export function BearList(
 
   // 1display
   function ksajda() {
-    const sdidsf = displayNumber && Number.isInteger(displayNumber);
+    const sdidsf = displayNumber && Number.isInteger(displayNumber) && list
 
     return sdidsf
       ? xvcbmf()
@@ -176,6 +179,9 @@ export function BearList(
   }
 
   function xvcbmf() {
+    
+    bearlog.lug("list-zzz", list)
+    
     const domase = chunk(list, displayNumber);
     const jfsdas = domase.map(sfjsd);
 

@@ -17,12 +17,11 @@ import { vertAlign } from "../consts/genStyle";
 import { BearList } from "./list/BearList";
 import { getListComplex } from "./list/getListComplex";
 import { BearTextMedia } from "./BearTextMedia";
-import { BearError } from "./BearError";
 import { BearListMap } from "./list/BearListMap";
 import { BearInputBase } from "./input/BearInputBase";
 import { BearCheckMain } from "./check/BearCheckMain";
 import { objectTrue, removeEmptyDict } from "../functions/dictFuncs";
-
+import { BearPossess, BearQuote} from "./ExportComps"
 // import SearchKnowledge from "../containers/search/SearchKnowledge";
 // import { AlignMain } from "./AlignMain";
 
@@ -293,7 +292,6 @@ export function listArgPass({
   chooseTrue,
   chosenItem,
   chosenAttr = "itemName",
-  chosenStyle,
   chosenConfig = {},
 
   ...args
@@ -333,7 +331,6 @@ export function listArgPass({
     chooseTrue,
     chosenItem,
     chosenAttr,
-    chosenStyle,
     chosenConfig,
   };
 
@@ -432,6 +429,34 @@ export function repClass(sdfa = "", extra = "") {
   return { className: `${sdfa} ${extra}` };
 }
 
+// 1style
+export function styClass(styl = "", extra = "") {
+  return { 
+      ...extra,
+      ...styl
+    }
+}
+
+export function addStyl(syl, {color, background}){
+    return {style: { 
+      color,
+      background,
+      ...syl,
+    }
+  }
+}
+
+
+// 1function
+export function BearPossQuote(dataVar) {
+  const ijseqw = `${BearPossess(BearQuote(dataVar))}`
+  return ijseqw
+}
+
+
+
+// 1eer
+
 // 1function
 export function Exmapl(dataVar) {
   const skdfsa = {
@@ -452,3 +477,5 @@ export function Exmapl(dataVar) {
 
   return <BearDiv {...kmxvs} />;
 }
+
+

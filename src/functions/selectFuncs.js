@@ -18,9 +18,11 @@ export function mapSelectValue(
       // asdae
       ndsire;
 
+    const value = valueFunc ? valueFunc(ndsire) : ndsire.listItemName
+
     let sakde = {
       label: labelFunc ? labelFunc(sidjf) : asdae,
-      value: valueFunc ? valueFunc(ndsire) : asdae,
+      value,
       isDisabled,
     };
 

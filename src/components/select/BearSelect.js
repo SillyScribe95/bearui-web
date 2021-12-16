@@ -9,9 +9,11 @@ import CreatableSelect from "react-select/creatable";
 import AsyncCreatableSelect from "react-select/async-creatable";
 import { bearlog } from "../../index";
 import { vertAlign } from "../../consts/genStyle";
+import { BearFloat } from "../BearFloat";
 import { BearDiv } from "../BearDiv";
 import { BearBorder } from "../ExportComps";
 import { BearErrArgType } from "../ErrorComps";
+import { BearCheckMain } from "../check/BearCheckMain"
 
 // import { Input } from "reactstrap";
 // import AsyncSelect, { makeAsyncSelect } from "react.-select/async";
@@ -54,6 +56,7 @@ export function BearSelect({
   //
   // 1blur
   onBlurValue,
+  noBlur,
   //
   //
   hideSearchIcon,
@@ -68,7 +71,10 @@ export function BearSelect({
   //
   //
   // 1input
+  renderInput,
   inputStyle,
+  customComponents,
+  renderMenu,
   clearInputonExit,
   //
   fontSize = "16px",
@@ -81,11 +87,15 @@ export function BearSelect({
   onChange,
   onChangeValue,
   //
+  // 1searchbar
+  isSearchable=true,
+  searchBarIcon,
+  searchBarConfig,
+  // 
   // 1menu
   introMessage,
   showMenuIfValue,
   menuStyle,
-  searchBarIcon,
   noMenuBorder,
   menuStick,
   //
@@ -105,11 +115,17 @@ export function BearSelect({
   width = "100%",
   style = {},
   noValueReturn,
+// 
+  // 
+// 
   ...args
 }) {
   // 1baseargs
   //
-  // bearName;
+  const baseArgs = {
+    ...args,
+    bearName,
+  }
 
   // 1const
   const [inputBase, setinputBase] = useState();
@@ -150,6 +166,19 @@ export function BearSelect({
 
     return uhfesa;
   }
+
+// 1input 1search
+  function RendInpu(props) {
+    bearlog.lug("___ Dropprops ___", props);
+    const isdjfew = 
+      <components.Input {...props}/>
+
+    return BearFloat({
+      center: isdjfew,
+      ...searchBarConfig,
+    });
+  }
+
 
   function showTrue(inputValue, selectValue, selectOptions) {
     if (!inputValue) {
@@ -427,19 +456,57 @@ export function BearSelect({
   // true;
   // isEmpty();
 
+  const aosk = renderInput && {
+      Input: renderInput,
+  }
+
+  // function MenListo(props) {
+  //   const jsdrwe = renderMenu(props)
+  //   const  {children} = props
+
+  //   return <components.Menu {...props}>
+  //     {jsdrwe}
+  //     </components.Menu>
+  // }
+
+  // 1menu 1rendermenu
+  function Menios(props) {
+    const jsdrwe = renderMenu(props)
+    // const iasdf
+
+    return <components.Menu {...props}>
+      {jsdrwe}
+      </components.Menu>
+  }
+  
+  const asdfw = renderMenu && {
+      // 
+      MenuList: Menios,
+      // Menu: Menios
+    }
+ 
+  const dqewse = {
+    // ...aosk,
+    ...asdfw,
+    // Input: RendInpu,
+    // NoOptionsMessage:
+    // NoOptionsMessage: () => null,
+    DropdownIndicator,
+    IndicatorSeparator: () => null,
+    // Menu: () => null,
+  }
+
+
+  
   // 1empty
   const fullOpts =
-    // emptio &&
-    {
-      components: {
-        // NoOptionsMessage:
-        // NoOptionsMessage: () => null,
-        DropdownIndicator,
-        // ClearIndicator: () => null,
-        IndicatorSeparator: () => null,
-        // Menu: () => null,
-      },
-    };
+    
+      {
+        // removeEmptyDict()
+        ...components,
+        ...dqewse,
+        ...customComponents,
+      }
 
   //   1menu
   //   newLineTrue
@@ -478,9 +545,13 @@ export function BearSelect({
 
     let sovkoe = valRemoveAfter ? qe4ead(sdfgas) : sdfgas;
 
-    if ("logtrue") {
-      bearlog.lug(messvar + "__SELECT onChange____", params);
-    }
+    
+    bearlog.lug(messvar + "__SELECT onChange____", {params, sdfgas, sovkoe,
+    onChange,
+    onChangeValue,
+    valueFunc,
+    });
+   
 
     // const ojsde = onChangeDict = onChangeDict
 
@@ -535,9 +606,9 @@ export function BearSelect({
 
   // 1id reffo
   let ideoBasa = {
-    inputProps: name,
-    inputId: name,
-    name: name,
+    // inputProps: name,
+    // inputId: name,
+    // name: name,
   };
 
   // 1ref
@@ -568,16 +639,14 @@ export function BearSelect({
   };
 
   // 1options 1format
-  const fsdogkdr =
-    //
-    optionConfig && bijewwe;
+  const fsdogkdr = optionConfig && {
+    formatOptionLabel: bijewwe,
+  }
 
   // 1args 1base
   const vsfewr = {
     // STYLE
     //
-    // 1blur
-    // ...blurBase,
     //
     //
     // 1create
@@ -585,8 +654,8 @@ export function BearSelect({
     style,
     ...sdijer,
     styles: stylBasoe,
-    formatOptionLabel: fsdogkdr,
-    isSearchable: true,
+    isSearchable,
+    ...fsdogkdr,
     ...iasjdwe,
     ...asidjwe,
     ...ideoBasa,
@@ -662,26 +731,39 @@ export function BearSelect({
     value: "",
   };
 
+  function mapvallos(vals) {
+    let aeae;
+    switch (typeof vals) {
+      case "string":
+        vals = fsfewr(vals);
+        break;
+      default:
+        vals = vals.map(fsfewr);
+    }
+
+    bearlog.lug("vals-zzz", vals);
+
+    return {
+      defaultValue: vals,
+    };
+  }
+
   // 1default
-  const fgoktr = initialValue && {
-    // initialValue: initialValue,
-    // defaultInputValue: initialValue,
-    // defaultValue:  asdiwje9(initialValue),
-    defaultValue: fsfewr(initialValue),
-    // value: fsfewr(initialValue),
-    // defaultValue: {label: initialValue, value: initialValue },
-    // inputValue: initialValue,
-  };
+  const fgoktr = initialValue && mapvallos(initialValue);
 
   // 1blur
-  function blurDone({ input, options }) {
+  function blurDone(zxcvs) {
+
+    bearlog.lug("bSelect--BLUR---", zxcvs);
+    
+    const { input, options } = zxcvs
     // this.setState(({
     //   menuIsOpen: false,
     // }))
-    input.onBlur(input.value);
+    // input.onBlur(input.value);
   }
 
-  const blurBase = {
+  const blurBase = noBlur && {
     onBlur: blurDone,
   };
 
@@ -723,16 +805,20 @@ export function BearSelect({
     menuIsOpen: inputBase,
   };
 
+  // 1args
   const MAINRGS = {
     // ...dfgjrt,
+    // 1onchange
     onChange: dfgoe,
     //
+    // 1blur
+    ...blurBase,
     //
     ...mensio,
     // 1nooptions
     ...nvxsads,
     // 1EMPTY
-    ...fullOpts,
+    components: fullOpts,
     isValidNewOption: showTrue,
     options: dsfijaae,
     ...dfijger,
@@ -783,22 +869,19 @@ export function BearSelect({
 
   // bearlog.lug("bear", dsfijaae);
 
-  // 1console
-
-  bearlog.lug("___ mensio ___", mensio);
-  bearlog.lug("MAINRGS---", MAINRGS);
-  if ("bmcvfd") {
-    // bearlog.lug(name, messvar + "___ BeSelect BASE___", xcvbfmg);
-    bearlog.lug(name, messvar + "___ BeSelect ALL___", dfijew);
-  }
-
   const sdknsr = create || onCreate || onCreateValue;
 
   typeSelect = !sodkfre && sdknsr ? "create" : typeSelect;
 
   let endValue = "";
 
-  //
+  
+  // 1console
+  bearlog.lug("___ mensio ___", mensio);
+  bearlog.lug("typeSelect---", typeSelect);
+  bearlog.lug("MAINRGS---", MAINRGS);
+  bearlog.lug(name, messvar + "___ BeSelect ALL___", dfijew);
+  
 
   switch (typeSelect) {
     case "create":
@@ -815,6 +898,11 @@ export function BearSelect({
         <Select {...dfijew} />
       );
   }
+
+  // endValue = 
+  // // // 
+  // endValue
+  // // BearCheckMain("BearSelect", endValue, baseArgs);
 
   return endValue;
 }

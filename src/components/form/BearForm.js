@@ -6,14 +6,14 @@ import {
   //
   bearlog,
 } from "../../index";
-import { argMiss, argPass, LoadMain } from "../GlobalComps";
+import { argMiss, argPass, LoadMain, styClass } from "../GlobalComps";
 import { BearError } from "../BearError";
 import { BearCheckMain } from "../check/BearCheckMain";
 import { formValidPass } from "./formValidPass";
 import { BearFormSetup } from "./BearFormSetup";
 import { BearInputBase } from "../input/BearInputBase";
 import { BearFormList, focusBase } from "../../functions/formFuncs";
-import FormHook from "./FormHook";
+import BearFormHooks from "./BearFormHooks";
 import { removeEmptyArray } from "../../functions/arrayFuncs";
 import { getDictvalues, mergeDict } from "../../functions/dictFuncs";
 import { BearBackBorder } from "../ExportComps";
@@ -46,8 +46,6 @@ export function BearForm({
   //
   //
   //
-  // 1focus
-  // focusFirst,
   //
   buttonList,
   toplist,
@@ -76,6 +74,10 @@ export function BearForm({
   formData,
   extractValues,
   //
+  // 1error
+  errorButton,
+  errorButtonConfig={},
+  // 
   // 1modal
   confirmModal,
   //
@@ -152,6 +154,23 @@ export function BearForm({
     }
   }
 
+  // 1error 
+
+function ErrBaseo(aaa){
+  const {style}= aaa
+  const sfqw = {
+    obj: errorButton,
+    ...aaa,
+    style: styClass(style, {
+      // height: "50px",
+      color: "red", fontWeight: "bold"})
+  }
+
+  return <div {...sfqw}>
+  {errorButton}
+  </div>
+}
+
   // 1modal 1presubmit
   async function cxvbmf(...asd) {
     bearlog.lug("preSubmit-zzz", { preSubmit, asd });
@@ -195,7 +214,9 @@ export function BearForm({
   function sdaseas(values, funta) {
     //
 
+  if (loadSubmit){
     setloadVars(true);
+  }
     // setloadSetto(true);
 
     const emptiosa = !isEmpty(values);
@@ -254,8 +275,12 @@ export function BearForm({
     onSubmit: onSubMain,
     ...args,
   };
+
+
+  const sdjifwer = BearFormHooks(sdnfer);
+
   bearlog.lug("sdnfer---", sdnfer);
-  const { ...sdjifwer } = FormHook(sdnfer);
+  bearlog.lug("sdjifwer---", sdjifwer);
 
   // 1args FORM
   const difjgr = {
@@ -371,6 +396,9 @@ export function BearForm({
   function sdfok(sdfi) {
     let sweas;
     switch (sdfi) {
+      case "errorButton":
+        sweas = ErrBaseo(errorButtonConfig) 
+        break;
       case "formButton":
         sweas = bettios();
         break;
@@ -436,12 +464,15 @@ export function BearForm({
   const initBase = topButtonTrue && list[0];
   const listRend = listDict && listDict[currForm];
   const atbosa = listRend ? listRend : currForm;
+
+  // 1items  1list
   const xcvbo = topButtonTrue
     ? [atbosa]
     : [
         //
         ...list,
         !noButtonEnd && "formButton",
+        "errorButton",
       ];
   const listaros = removeEmptyArray(xcvbo);
 
@@ -688,10 +719,6 @@ export function BearForm({
     !id
       ? BearErrMiss("bearName", bearName, "BearForm")
       : BearCheckMain("BearForm", isae, args);
-  // // aweuw;
-  // BearCheckMain("BearForm", <BearForm {...dfjgrt} />, args);
-  // // <div {...genConfig}>{aweuw}</div>;
-
   let sdofkwe = { noContain: true, ...args };
 
   bearlog.lug("___ sdofkwe ___", sdofkwe);

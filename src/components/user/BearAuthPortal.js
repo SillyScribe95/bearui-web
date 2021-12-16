@@ -29,7 +29,7 @@ export function BearAuthPortal({
   //
   funcvar,
   typeSign = "register",
-  itemConfig,
+  // itemConfig,
   socialSubmit,
   onSubmit,
   renderButton,
@@ -103,12 +103,12 @@ export function BearAuthPortal({
   };
 
   async function osadew(asdfas) {
-    bearlog.log("___ asdfas ___", asdfas);
+    bearlog.lug("___ asdfas ___", asdfas);
     sdadfs(asdfas);
   }
   async function sdadfs(itemName) {
     const typevar = itemName;
-    bearlog.log(typevar, "___ sinBas SOCIAL CLICK ___", {
+    bearlog.lug(typevar, "___ sinBas SOCIAL CLICK ___", {
       typevar,
       onSubmit,
       socialSubmit,
@@ -179,7 +179,10 @@ export function BearAuthPortal({
   bearlog.lug("___ SignBsae SOCIAL ___", igfder);
 
   function listo() {
-    const dsfijd = CheckListExist(igfder);
+    const dsfijd = 
+    // 
+    BearList(igfder);
+    // CheckListExist(igfder);
 
     return dsfijd;
   }

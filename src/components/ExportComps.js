@@ -169,6 +169,9 @@ export function BearPossess(item, name, othername = "") {
   return oasd;
 }
 
+
+
+
 export function BearLink(obj, link, ...sdsda) {
   const ksdase = {
     link: link,
@@ -198,6 +201,23 @@ export function BearPlural(stringVar, lengAfter, { noNumber }) {
 
   return finalSt;
 }
+
+
+
+export function BearURLParam(param) {
+  var url_string = 
+  // "http://www.example.com/t.html?a=1&b=3&c=m2-m3-m4-m5"; 
+  window.location.href
+    
+  var url = new URL(url_string);
+  var c = url.searchParams.get(param);
+  // console.log(c);
+  return c;
+}
+
+
+
+
 
 export function BearFlex({
   padvar = "20px",
@@ -331,6 +351,10 @@ export function BearUpper(sdkrwe) {
   return idfjgr;
 }
 
+export function BearLower(sdkrwe) {
+  return sdkrwe.toLowerCase();
+}
+
 export function BearSpace(dataVar, asdwe) {
   const kmxvs = {
     obj: " " + dataVar + " ",
@@ -417,3 +441,9 @@ export function BearButtonList(sfkr) {
 
   return BearList(sfkr);
 }
+
+
+
+// 1fixside
+
+

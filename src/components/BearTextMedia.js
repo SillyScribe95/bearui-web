@@ -149,8 +149,9 @@ export function BearTextMedia({
   const sdijwqe = iconvar || imagevar;
   const bothTrue =
     //
-    true;
-  // textShow && sdijwqe;
+    // true;
+  textShow && sdijwqe;
+  
   const centro = bothTrue && <BearDiv span ignoreNull {...okasew}></BearDiv>;
 
   function RendMain() {
@@ -215,6 +216,7 @@ export function BearTextMedia({
     obj: RendMain(),
     className,
     style,
+    // ...addStyl(style),
     ...args,
   };
 

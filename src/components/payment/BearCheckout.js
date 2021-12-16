@@ -186,6 +186,8 @@ export function BearCheckout({
     setloadPay(false);
   }
 
+  // 1warning: DO NOT EXTRACT 'DICTVAR' as an argument, must be in there for things like stripe to work 
+
   const dfjgrt = {
     list: oiksaaa,
     buttonConfig: usdjfwer,
@@ -198,6 +200,8 @@ export function BearCheckout({
   };
 
   bearlog.lug("___ dfjgrt ___", dfjgrt);
+
+  // 1warning: DO NOT CONVERT THIS TO FUNCTION, HAS TO BE THE <> </> FORMAT TO PASS THROUGH ANY EXTRA FEATURES LIKE STRIPE
 
   const okfdsd = (
     <>
